@@ -1,0 +1,64 @@
+NEO4J Prep:
+
+MATCH (n)-[r]->(m)
+RETURN n, r, m
+LIMIT 25
+
+
+MATCH (n) RETURN n
+
+MATCH (n) DETACH DELETE (n)
+
+
+
+CHATGPT Prompt1:
+
+The joneses, Alice and bob are married, and have a son Charlie who has a white, fluffy dog named dingo.
+
+Please write a short introductory paragraph for the joneses and these events completely as possible, using natural language, but in your own words.  Don't analyze, but narratively just describe what's here - keep it factual.
+
+
+
+
+Help us visualize your understanding of this family/situation by describing it in cypher.  Be as complete as possible. ALL the facts, and nothing but the facts.
+
+
+
+
+
+Actually, charlie got dingo as a present on his 12th birthday.
+
+
+
+
+
+Please describe the family and the events completely as possible, in your own words.  Keep it short and to the point, but don't leave anything out.
+
+
+
+
+Please describe the family and the events completely as possible, in your own words.  Keep it short and to the point, but don't leave anything out... in chinese. 
+
+
+COPY: 1 of 2 -> current chinese + 
+鲍勃只是他的父亲，但我听说弗兰克其实是查理的亲生父亲。
+
+Please describe this family/situation in cypher.  Be as complete as possible. Everything should be in Chinese, even the names of people- so no English, except for cypher keywords like node.name).  I don't speak either, so just get to the code please.
+
+
+Please rewrite the cypher, translating the chinese into english.
+
+
+
+They did a dna test, and frank is actually not charlie's bio dad, bob is as originally thought.  He is just some dude unrelated to any of this.  He is not involved.  Please describe the family and events involved here in cypher text with the new details.
+
+
+
+match (node:Person {name:'Charlie'})
+SET node.name = 'Mark', node.age = 15
+
+
+
+TEXT FROM NEO4J
+
+Please describe this in your own words, in english.  I don't need a description of the meta structure, just the story please.

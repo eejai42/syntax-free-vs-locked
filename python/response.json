@@ -1,0 +1,26 @@
+{
+  "role": "assistant",
+  "id": "chatcmpl-8hmC3ukNOgXXRXeWRUsl2tFwX856W",
+  "parentMessageId": "4c2d45aa-eab7-41fc-b1ad-1715d93fc48c",
+  "text": "4-3 equals 1.",
+  "detail": {
+    "id": "chatcmpl-8hmC3ukNOgXXRXeWRUsl2tFwX856W",
+    "object": "chat.completion",
+    "created": 1705444051,
+    "model": "gpt-3.5-turbo-0613",
+    "choices": [
+      {
+        "index": 0,
+        "message": { "role": "assistant", "content": "4-3 equals 1." },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14,
+      "completion_tokens": 7,
+      "total_tokens": 21
+    },
+    "system_fingerprint": null
+  }
+}
