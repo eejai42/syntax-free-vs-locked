@@ -1,0 +1,147 @@
+{
+  "story": {
+    "title": "Meet the Joneses",
+    "languages": [
+      {
+        "name": "english",
+        "keywords": ["Charlie", "Alice", "Bob", "Dingo"]
+      },
+      {
+        "name": "spanish",
+        "keywords": ["Charlie", "Alicia", "Roberto", "Dingo"]
+      },
+      {
+        "name": "german",
+        "keywords": ["Karl", "Alice", "Bob", "Dingo"]
+      },
+      {
+        "name": "greek",
+        "keywords": ["Τσάρλι", "Αλίκη", "Μπομπ", "Ντίνγκο"]
+      },
+      {
+        "name": "chinese",
+        "keywords": ["查理", "艾丽丝", "鲍勃", "丁戈"]
+      }
+    ],
+    "syntax-locked-vs-unlocked": [
+      {
+        "id" : "meet-the-joneses",
+        "name": "Meet the Joneses",
+        "image": "/glasses/1.png",
+        "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
+        "languages": {
+          "english": {
+            "variations": [
+              "Alice and Bob Jones are married. They have a son named Charlie. Charlie has a pet dog, a white, fluffy one named Dingo.",
+              "Bob and Alice, a married couple, are parents to Charlie. Charlie's companion is his dog Dingo, who's as white as snow and fluffy.",
+              "Charlie is the son of Alice and Bob Jones. He has a white, fluffy dog named Dingo.",
+              "The Jones family consists of Alice and Bob, and their son Charlie. Charlie has a dog named Dingo, who is white and fluffy.",
+              "Alice Jones and her husband Bob have a son, Charlie. Charlie's pet, Dingo, is a fluffy white dog.",
+              "In the Jones household, Alice and Bob raise their son Charlie, who owns Dingo, a fluffy white canine.",
+              "Charlie, the offspring of Alice and Bob Jones, has a canine companion named Dingo, known for its white, fluffy coat.",
+              "The Joneses, comprising Alice, Bob, and their son Charlie, are a family. Charlie has a dog named Dingo, which is fluffy and white.",
+              "Alice and Bob, a couple, parent Charlie Jones. Their household includes Dingo, Charlie's white, fluffy dog.",
+              "The Jones family unit includes Alice, Bob, their son Charlie, and Charlie's white dog Dingo, characterized by its fluffy fur."
+            ]
+          },
+          "spanish": {
+            "variations": [
+              "Alice y Bob Jones están casados. Tienen un hijo llamado Charlie. Charlie tiene un perro blanco y esponjoso llamado Dingo.",
+              "Bob y Alice, un matrimonio, son padres de Charlie. El compañero de Charlie es su perro Dingo, que es tan blanco como la nieve y esponjoso.",
+              "Charlie es hijo de Alice y Bob Jones. Tiene un perro blanco y esponjoso llamado Dingo.",
+              "La familia Jones, compuesta por Alice, Bob y su hijo Charlie, posee un perro blanco y esponjoso llamado Dingo.",
+              "Alice y Bob, una pareja casada, tienen un hijo, Charlie, quien es dueño de un perro blanco y esponjoso, Dingo.",
+              "En el hogar de los Jones, Alice y Bob crían a su hijo Charlie, dueño de Dingo, un canino esponjoso y blanco.",
+              "Los Jones, Alice y Bob, tienen un hijo, Charlie. Charlie adora a su perro Dingo, de pelaje blanco y suave.",
+              "Alice y Bob Jones, junto a su hijo Charlie, cuidan de Dingo, un perro de pelaje blanco y esponjoso.",
+              "Dentro de la familia Jones, conformada por Alice, Bob y su hijo Charlie, se encuentra Dingo, un perro de pelo blanco y esponjoso.",
+              "Alice Jones y su esposo Bob, junto a su hijo Charlie, conviven con Dingo, un perro blanco y peludo."
+            ]
+          },
+          "German": {
+            "variations": [
+              "Alice und Bob Jones sind verheiratet. Sie haben einen Sohn namens Charlie. Charlie besitzt einen weißen, flauschigen Hund namens Dingo.",
+              "Bob und Alice, ein Ehepaar, sind die Eltern von Charlie. Charlies Gefährte ist sein Hund Dingo, schneeweiß und flauschig.",
+              "Die Familie Jones, bestehend aus Alice, Bob und ihrem Sohn Charlie, haben einen Hund namens Dingo, der weiß und flauschig ist.",
+              "In der Familie von Alice und Bob Jones gibt es auch Charlie, ihren Sohn, und Dingo, einen flauschigen weißen Hund.",
+              "Charlie, der Sohn von Alice und Bob Jones, hat einen weißen, flauschigen Hund, der Dingo heißt.",
+              "Alice und Bob Jones, ein verheiratetes Paar, haben einen Sohn namens Charlie und einen weißen, flauschigen Hund namens Dingo.",
+              "Für Alice und Bob Jones sowie ihren Sohn Charlie ist Dingo, der weiße, flauschige Hund, ein Teil der Familie.",
+              "Alice und Bob haben einen Sohn, Charlie genannt, und einen Hund, der flauschig und weiß ist und Dingo heißt.",
+              "Charlie, Kind von Alice und Bob Jones, ist der Besitzer von Dingo, einem weißen und flauschigen Hund.",
+              "Die Jones-Familie, Alice, Bob und ihr Sohn Charlie, lieben ihren weißen, flauschigen Hund Dingo."
+            ]
+          },
+          "Greek": {
+            "variations": [
+              "Η Άλις και ο Μπομπ Τζόουνς είναι παντρεμένοι. Έχουν έναν γιο που τον λένε Τσάρλι. Ο Τσάρλι έχει έναν λευκό, αφράτο σκύλο, τον Ντίνγκο.",
+              "Ο Μπομπ και η Άλις, ένα παντρεμένο ζευγάρι, είναι οι γονείς του Τσάρλι. Ο σύντροφος του Τσάρλι είναι ο σκύλος του, ο Ντίνγκο, λευκός και αφράτος.",
+              "Ο Τσάρλι, ο γιος των Άλις και Μπομπ Τζόουνς, έχει έναν σκύλο με το όνομα Ντίνγκο, γνωστό για το λευκό και αφράτο τρίχωμά του.",
+              "Η οικογένεια Τζόουνς αποτελείται από τους Άλις, Μπομπ και τον γιο τους Τσάρλι. Ο Τσάρλι έχει έναν σκύλο ονόματι Ντίνγκο, ο οποίος είναι λευκός και αφράτος.",
+              "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ έχουν έναν γιο, τον Τσάρλι. Το κατοικίδιο του Τσάρλι, ο Ντίνγκο, είναι ένας αφράτος λευκός σκύλος.",
+              "Στο σπίτι των Τζόουνς, η Άλις και ο Μπομπ μεγαλώνουν τον γιο τους Τσάρλι, ο οποίος έχει τον Ντίνγκο, έναν αφράτο λευκό σκύλο.",
+              "Οι Τζόουνς, η Άλις και ο Μπομπ, έχουν έναν γιο, τον Τσάρλι. Ο Τσάρλι λατρεύει τον σκύλο του, τον Ντίνγκο, με το λευκό και αφράτο τρίχωμα.",
+              "Η Άλις και ο Μπομπ Τζόουνς, μαζί με τον γιο τους Τσάρλι, φροντίζουν τον Ντίνγκο, έναν σκύλο με λευκό και αφράτο τρίχωμα.",
+              "Μέσα στην οικογένεια Τζόουνς, που αποτελείται από την Άλις, τον Μπομπ και τον γιο τους Τσάρλι, βρίσκεται ο Ντίνγκο, ένας σκύλος με λευκό και αφράτο τρίχωμα.",
+              "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
+            ]
+          },
+          "Chinese": {
+            "variations": [
+              "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
+              "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
+              "在琼斯家，有夫妻二人艾丽丝和鲍勃，还有他们的儿子查理，以及查理的宠物狗丁戈，它的毛发白且蓬松。",
+              "艾丽丝和鲍勃·琼斯是一对夫妇，他们养育着儿子查理和一只白色蓬松的狗丁戈。",
+              "查理，作为艾丽丝和鲍勃·琼斯之子，有一只叫丁戈的白毛蓬松狗。",
+              "琼斯一家由艾丽丝、鲍勃和他们的儿子查理组成，还有查理的白色蓬松狗丁戈。",
+              "艾丽丝与鲍勃·琼斯的家中有他们的儿子查理和一只白色蓬松的宠物狗丁戈。",
+              "查理是艾丽丝和鲍勃·琼斯的孩子，他养了一只名为丁戈的白色蓬松狗。",
+              "在琼斯家族中，艾丽丝和鲍勃有一个儿子叫查理，查理有一只白色蓬松的狗，名叫丁戈。",
+              "艾丽丝和鲍勃·琼斯夫妇的儿子查理拥有一只蓬松白色的狗，它的名字叫丁戈。"
+            ]
+          }
+        }
+      },
+      {
+        "name": "dingo-12th-birthday-present",
+        "image": "/glasses/2.png",
+        "statement": "The Joneses, Alice and Bob, have one son Charlie, got a white, fluffy dog named Dingo, for his 12th birthday.",
+        "languages": {
+          "english": {
+            "variations": [
+              "Alice and Bob Jones are married. They have a son named Charlie. Charlie has a pet dog, a white, fluffy one named Dingo.",
+              "Bob and Alice, a married couple, are parents to Charlie. Charlie's companion is his dog Dingo, who's as white as snow and fluffy.",
+              "... (8 more variations) ..."
+            ]
+          },
+          "Spanish": {
+            "variations": [
+              "Alice y Bob Jones están casados. Tienen un hijo llamado Charlie. Charlie tiene un perro blanco y esponjoso llamado Dingo.",
+              "Bob y Alice, un matrimonio, son padres de Charlie. El compañero de Charlie es su perro Dingo, que es tan blanco como la nieve y esponjoso.",
+              "... (8 more variations) ..."
+            ]
+          },
+          "German": {
+            "variations": [
+              "Alice und Bob Jones sind verheiratet. Sie haben einen Sohn namens Charlie. Charlie besitzt einen weißen, flauschigen Hund namens Dingo.",
+              "Bob und Alice, ein Ehepaar, sind die Eltern von Charlie. Charlies Gefährte ist sein Hund Dingo, schneeweiß und flauschig.",
+              "... (8 more variations) ..."
+            ]
+          },
+          "Greek": {
+            "variations": [
+              "Η Άλις και ο Μπομπ Τζόουνς είναι παντρεμένοι. Έχουν έναν γιο που τον λένε Τσάρλι. Ο Τσάρλι έχει έναν λευκό, αφράτο σκύλο, τον Ντίνγκο.",
+              "... (9 more variations) ..."
+            ]
+          },
+          "Chinese": {
+            "variations": [
+              "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
+              "... (9 more variations) ..."
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

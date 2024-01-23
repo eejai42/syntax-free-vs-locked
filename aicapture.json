@@ -1,14 +1,15 @@
 {
   "ShowHidden": false,
   "ShowAllFiles": false,
+  "CurrentPath": "/the-joneses/MartiniGlassScrollingSyntax",
   "SaveDisabled": false,
   "SSoTmeProjectId": "84338c5c-a677-4dcf-a1d5-bce16249ce16",
-  "Name": "syntax-free-research",
+  "Name": "MartiniGlassScrollingSyntax",
   "ProjectSettings": [
     {
-      "ProjectSettingId": "c3669f30-3232-42e4-9645-289389bbd186",
+      "ProjectSettingId": "5839957e-e30e-4571-a385-00f0cf76334b",
       "Name": "project-name",
-      "Value": "syntax-free-research"
+      "Value": "MartiniGlassScrollingSyntax"
     }
   ],
   "ProjectTranspilers": []
