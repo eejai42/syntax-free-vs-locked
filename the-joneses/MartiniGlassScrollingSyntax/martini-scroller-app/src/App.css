@@ -49,3 +49,49 @@
 }
 
 /* Additional styles */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0vh) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-30vh) scale(0.5); /* Adjust as needed */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-60) scale(0.2);
+    opacity: 0;
+  }
+}
+
+.FullHeightContainer {
+  position: relative;
+  height: 60%;
+  background-color: lightblue
+}
+
+
+.TextScroller {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  transform-origin: 50% 100%;
+  font-size: 2em;
+  color: black;
+  opacity: 0; /* Initially hidden */
+  pointer-events: none; /* Prevent interaction */
+}
+
+.TextScroller.active {
+  animation: scrollUp 10s linear forwards;
+}
+
+
+.TextScroller p {
+  font-size: 2em; /* Adjust as needed */
+  color: orange; /* Star Wars style */
+}
