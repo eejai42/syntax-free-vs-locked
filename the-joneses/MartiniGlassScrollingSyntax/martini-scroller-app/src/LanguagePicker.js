@@ -35,7 +35,7 @@ const LanguagePicker = ({
               onClick={() => onKeywordSelect(keyword.name)}
               disabled={currentKeyword === keyword.name}
             >
-              {getKeywordText(keyword)} :: {keyword.name}
+              {getKeywordText(keyword)}
             </button>
           ))}
       </div>

@@ -53,7 +53,7 @@ function App() {
           <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
         </div>
         <div className="RightPane">
-          <GraphViewer data={data} languageName={currentLanguage} story={currentStory} />
+          <GraphViewer data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
         </div>
       </div>
     </div>

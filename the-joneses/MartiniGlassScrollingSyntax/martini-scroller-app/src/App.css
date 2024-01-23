@@ -67,6 +67,13 @@
   }
 }
 
+.CharlieCounter {
+  position: relative;
+  background-color: yellow;
+  z-index: 999;
+  opacity: 1;
+}
+
 .FullHeightContainer {
   position: relative;
   height: 60%;
@@ -81,7 +88,7 @@
   width: 100%;
   text-align: center;
   transform-origin: 50% 100%;
-  font-size: 2em;
+  font-size: 1.5em;
   color: black;
   opacity: 0; /* Initially hidden */
   pointer-events: none; /* Prevent interaction */
@@ -96,3 +103,6 @@
   font-size: 2em; /* Adjust as needed */
   color: orange; /* Star Wars style */
 }
+
+
+

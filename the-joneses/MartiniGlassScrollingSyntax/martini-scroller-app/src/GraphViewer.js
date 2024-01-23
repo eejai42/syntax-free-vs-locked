@@ -1,9 +1,10 @@
 // GraphViewer.js
 import React from "react";
+import './App.css'
 
-const GraphViewer = ({ data, story }) => {
+const GraphViewer = ({ data, story, currentKeyword }) => {
   const containerStyle = {
-    marginTop: "2rem",
+    marginTop: "3rem",
     minHeight: "100vh",
     // Add more styles as needed
   };
@@ -21,6 +22,12 @@ const GraphViewer = ({ data, story }) => {
 
   return (
     <div style={containerStyle}>
+              <div
+        className="CharlieCounter"
+      >
+        {currentKeyword} Counter: 1
+      </div>
+
       <img src={imagePath} alt="Knowledge Graph" style={graphStyle} />
     </div>
   );

@@ -8,7 +8,7 @@
         "chinese": "查理"
       },
       {
-        "name": "Alicex",
+        "name": "Alice",
         "greek": "Άλις",
         "chinese": "艾丽丝"
       },
@@ -39,6 +39,9 @@
       {
         "name": "Chinese"
       }
+    ],
+    "communication-methods": [
+        "Email", "Phone", "Text", "Specification", "Documentation", "Proposal", "Slack", "Discord", "WhatsApp"
     ],
     "syntax-locked-vs-unlocked": [
       {
