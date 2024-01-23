@@ -11,7 +11,7 @@ const TextScroller = ({ data, languageName, storyId }) => {
     // Find the matching story and language
     const story = data.story["syntax-locked-vs-unlocked"].find(s => s.id === storyId);
     if (story) {
-      const languageVariations = story.languages[languageName.toLowerCase()];
+      const languageVariations = story.languages[languageName];
       if (languageVariations) {
         setVariations(languageVariations.variations);
         const languageKeywords = data.story.languages.find(lang => lang.name.toLowerCase() === languageName.toLowerCase());
@@ -34,6 +34,10 @@ const TextScroller = ({ data, languageName, storyId }) => {
 
   return (
     <div className="TextScroller">
+            <div>
+                {languageName}: {storyId} - {keywords}
+            </div>
+
       <p>{variations[currentVariationIndex]}</p>
     </div>
   );

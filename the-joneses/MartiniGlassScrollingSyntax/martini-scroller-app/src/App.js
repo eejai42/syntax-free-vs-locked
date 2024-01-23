@@ -6,6 +6,7 @@ import LanguagePicker from './LanguagePicker';
 
 function App() {
   const [data, setData] = useState(null);
+  const [currentLanguage, setCurrentLanguage] = useState('English');
 
   useEffect(() => {
     // Fetch the JSON data when the component mounts
@@ -20,6 +21,11 @@ function App() {
       });
   }, []);
 
+  // Handler for language change
+  const handleLanguageChange = (language) => {
+    setCurrentLanguage(language);
+  };
+
   // Check if data is loaded
   if (!data) {
     return <div>Loading...</div>; // Or any other loading indicator
@@ -29,11 +35,11 @@ function App() {
     <div className="App">
       <div className="SplitScreen">
         <div className="LeftPane">
-          <GraphViewer  data={data} languageName={'English'} storyId={'meet-the-joneses'} />
+          <GraphViewer data={data} languageName={currentLanguage} storyId='meet-the-joneses' />
         </div>
         <div className="RightPane">
-          <LanguagePicker  data={data} languageName={'English'} storyId={'meet-the-joneses'}/>
-          <TextScroller data={data} languageName={'English'} storyId={'meet-the-joneses'} /> {/* Pass the data as a prop */}
+          <LanguagePicker data={data} currentLanguage={currentLanguage} onLanguageChange={handleLanguageChange} />
+          <TextScroller data={data} languageName={currentLanguage} storyId='meet-the-joneses' />
         </div>
       </div>
     </div>

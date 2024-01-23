@@ -3,23 +3,23 @@
     "title": "Meet the Joneses",
     "languages": [
       {
-        "name": "english",
+        "name": "English",
         "keywords": ["Charlie", "Alice", "Bob", "Dingo"]
       },
       {
-        "name": "spanish",
+        "name": "Spanish",
         "keywords": ["Charlie", "Alicia", "Roberto", "Dingo"]
       },
       {
-        "name": "german",
+        "name": "German",
         "keywords": ["Karl", "Alice", "Bob", "Dingo"]
       },
       {
-        "name": "greek",
+        "name": "Greek",
         "keywords": ["Τσάρλι", "Αλίκη", "Μπομπ", "Ντίνγκο"]
       },
       {
-        "name": "chinese",
+        "name": "Chinese",
         "keywords": ["查理", "艾丽丝", "鲍勃", "丁戈"]
       }
     ],
@@ -30,7 +30,8 @@
         "image": "/glasses/1.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
         "languages": {
-          "english": {
+          "English": {
+            "text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "variations": [
               "Alice and Bob Jones are married. They have a son named Charlie. Charlie has a pet dog, a white, fluffy one named Dingo.",
               "Bob and Alice, a married couple, are parents to Charlie. Charlie's companion is his dog Dingo, who's as white as snow and fluffy.",
@@ -44,7 +45,7 @@
               "The Jones family unit includes Alice, Bob, their son Charlie, and Charlie's white dog Dingo, characterized by its fluffy fur."
             ]
           },
-          "spanish": {
+          "Spanish": {
             "variations": [
               "Alice y Bob Jones están casados. Tienen un hijo llamado Charlie. Charlie tiene un perro blanco y esponjoso llamado Dingo.",
               "Bob y Alice, un matrimonio, son padres de Charlie. El compañero de Charlie es su perro Dingo, que es tan blanco como la nieve y esponjoso.",
