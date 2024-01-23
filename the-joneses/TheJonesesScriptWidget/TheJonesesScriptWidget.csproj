@@ -6,6 +6,13 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Product>Meet the Jonses</Product>
+    <AssemblyName>The Joneses Demo</AssemblyName>
+    <ApplicationIcon>demo.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="demo.ico" />
+  </ItemGroup>
 
 </Project>

@@ -1,64 +1,75 @@
-NEO4J Prep:
+---Syntax-LOCKING 🔒 vs Syntax FREE 🕊 - Click to start demo
+Prep - Neo4J (Cypher on Clipboard) - Slides - New ChatGPT 4
 
 MATCH (n)-[r]->(m)
 RETURN n, r, m
 LIMIT 25
 
-
 MATCH (n) RETURN n
 
 MATCH (n) DETACH DELETE (n)
 
+--- 🎬  Meet the Joneses 😀 🧒 😀
+ Alice & Bob, their son Charlie and his dog Digno.
 
+The Joneses, Alice and Bob are married, and have a son, Charlie, who has a white, fluffy dog named Dingo.
 
-CHATGPT Prompt1:
+Please write a short introductory paragraph for the joneses and these events completely as possible, using natural language, but in your own words.  Don't analyze, but narratively just describe what's here - keep it factual.  The TRUTH the whole TRUTH and NOTHING BUT the TRUTH.
 
-The joneses, Alice and bob are married, and have a son Charlie who has a white, fluffy dog named dingo.
+--- 🎬  Visualize your Thinking 🔎
+Draw a picture of the Jones Family.
 
-Please write a short introductory paragraph for the joneses and these events completely as possible, using natural language, but in your own words.  Don't analyze, but narratively just describe what's here - keep it factual.
+Help us visualize this family/situation by describing it in CYPHER. 
+Be as complete as possible. ALL the facts, and nothing but the facts.
 
+--- 🎬  New Rules!!  📰
+Charlie actually got Dingo for 12th Birthday!
 
+Actually, Charlie got Dingo as a present on his 12th birthday.
 
+---  🎬  Let's confirm, in English 😀
+Charlie is 12, and got Dingo for his 12th birthday
 
-Help us visualize your understanding of this family/situation by describing it in cypher.  Be as complete as possible. ALL the facts, and nothing but the facts.
+Please describe this situation as completely as possible, in your own words.  Keep it short and to the point, but don't leave anything out. The TRUTH the whole TRUTH and NOTHING BUT the TRUTH.
 
+--- 🎬  In Chinese? / Zhōngwén / 中文
+China ... Please meet the Jonses 😀
 
+Please describe this, in your own words.  Keep it short and to the point, but don't leave anything out... in chinese. 
 
+--- 🎬 Visualize your Chinese Thinking 🔎
+Draw a picture of the Jones family described here in Chinese.
 
+Please describe this family/situation in CYPHER.  Be as complete as possible. Everything should be in Chinese, even the names of people, variable names and so on. NO English, except for the English CYPHER keywords like CREATE and created attributes like {name:艾丽斯,...} english keyword, chinese values).  I don't speak either, so just get to the code please.
 
-Actually, charlie got dingo as a present on his 12th birthday.
+--- 🎬  Lost in Translation ☢
+Assume that some scandalous fact was introduced while in chinese
 
-
-
-
-
-Please describe the family and the events completely as possible, in your own words.  Keep it short and to the point, but don't leave anything out.
-
-
-
-
-Please describe the family and the events completely as possible, in your own words.  Keep it short and to the point, but don't leave anything out... in chinese. 
-
-
-COPY: 1 of 2 -> current chinese + 
 鲍勃只是他的父亲，但我听说弗兰克其实是查理的亲生父亲。
 
-Please describe this family/situation in cypher.  Be as complete as possible. Everything should be in Chinese, even the names of people- so no English, except for cypher keywords like node.name).  I don't speak either, so just get to the code please.
+Please describe this family/situation in CYPHER.  Be as complete as possible. Everything should be in Chinese, even the names of people, variable names and so on. NO English, except for the English CYPHER keywords like CREATE and created attributes like {name:艾丽斯,...} english keyword, chinese values).  I don't speak either, so just get to the code please.
 
+---  🎬  Translate to English 🤔
+Hmmmm.  Let's translate that diagram into English.
 
-Please rewrite the cypher, translating the chinese into english.
+Please rewrite the CYPHER, translating the chinese into english.
 
+--- 🎬  DNA Test Results In! 🧬
+They did a DNA Test, and Frank is actually NOT Charlie's Bio-Dad! 😳
 
+They did a DNA Test, and Frank is actually not charlie's bio-dad, bob is, as originally thought.  Frank is actually just some dude, totally unrelated to any of this.  He is not involved!  
+Please describe the family and events involved here in CYPHER Text with the new details since last time.
 
-They did a dna test, and frank is actually not charlie's bio dad, bob is as originally thought.  He is just some dude unrelated to any of this.  He is not involved.  Please describe the family and events involved here in cypher text with the new details.
-
-
+--- 👶 12y/o Charlie is now 15y/o Mark 🧑
+3 years later, and Charlie is now Mark.  In the Syntax Free environment of the Knowledge Graph - we can change the name and age in 1 place.
 
 match (node:Person {name:'Charlie'})
 SET node.name = 'Mark', node.age = 15
 
+--- 🎬 Slide Show! Slide Show! 🎬
+Let's go look at the slideshow before we go
 
+--- 🙏  THANKS!  🙏
+All done!
 
-TEXT FROM NEO4J
-
-Please describe this in your own words, in english.  I don't need a description of the meta structure, just the story please.
+Demo Complete
