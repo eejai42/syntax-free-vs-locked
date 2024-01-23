@@ -3,11 +3,14 @@ import './App.css';
 import GraphViewer from './GraphViewer';
 import TextScroller from './TextScroller';
 import LanguagePicker from './LanguagePicker';
+import AppHeader from './AppHeader';
 
 function App() {
   const [data, setData] = useState(null);
   const [currentLanguage, setCurrentLanguage] = useState('English');
-
+  const [currentKeyword, setCurrentKeyword] = useState('Charlie');
+  const [currentStoryId, setCurrentStoryId] = useState('meet-the-joneses');
+  const [currentStory, setCurrentStory] = useState(null);
   useEffect(() => {
     // Fetch the JSON data when the component mounts
     fetch('/data.json')
@@ -15,6 +18,9 @@ function App() {
       .then(data => {
         // Set the data to state
         setData(data);
+        const currentStory = data.story["syntax-locked-vs-unlocked"].find(s => s.id === currentStoryId)
+
+        setCurrentStory(currentStory);
       })
       .catch(error => {
         console.error('Error fetching data: ', error);
@@ -26,6 +32,11 @@ function App() {
     setCurrentLanguage(language);
   };
 
+  // Handler for keyword select
+  const handleKeywordSelect = (keyword) => {
+    setCurrentKeyword(keyword);
+  };
+
   // Check if data is loaded
   if (!data) {
     return <div>Loading...</div>; // Or any other loading indicator
@@ -33,13 +44,16 @@ function App() {
 
   return (
     <div className="App">
+      <AppHeader story={currentStory} currentLanguage={currentLanguage} currentKeyword={currentKeyword} />
       <div className="SplitScreen">
         <div className="LeftPane">
-          <GraphViewer data={data} languageName={currentLanguage} storyId='meet-the-joneses' />
+          <LanguagePicker data={data} 
+                currentLanguage={currentLanguage} onLanguageChange={handleLanguageChange} 
+                currentKeyword={currentKeyword} onKeywordSelect={handleKeywordSelect} />
+          <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
         </div>
         <div className="RightPane">
-          <LanguagePicker data={data} currentLanguage={currentLanguage} onLanguageChange={handleLanguageChange} />
-          <TextScroller data={data} languageName={currentLanguage} storyId='meet-the-joneses' />
+          <GraphViewer data={data} languageName={currentLanguage} story={currentStory} />
         </div>
       </div>
     </div>
