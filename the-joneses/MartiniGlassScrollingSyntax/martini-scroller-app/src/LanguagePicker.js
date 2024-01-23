@@ -8,6 +8,12 @@ const LanguagePicker = ({
   currentKeyword,
   onKeywordSelect,
 }) => {
+
+  const getKeywordText = (keyword) => {
+    {if (currentLanguage === 'Greek') return keyword.greek;
+    else if (currentLanguage == 'Chinese') return keyword.chinese
+    else return keyword.name}
+  }
   return (
     <div>
       {data.story.languages.map((language, index) => (
@@ -21,16 +27,15 @@ const LanguagePicker = ({
       ))}
 
       <div>
-        {data.story.languages
-          .filter((language) => currentLanguage === language.name)
-          .flatMap((language) => language.keywords)
+        {data.story.keywords
+          .flatMap((keyword) => keyword)
           .map((keyword, index) => (
             <button
               key={index}
-              onClick={() => onKeywordSelect(keyword)}
-              disabled={currentKeyword === keyword}
+              onClick={() => onKeywordSelect(keyword.name)}
+              disabled={currentKeyword === keyword.name}
             >
-              {keyword}
+              {getKeywordText(keyword)} :: {keyword.name}
             </button>
           ))}
       </div>

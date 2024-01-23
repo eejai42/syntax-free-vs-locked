@@ -1,31 +1,48 @@
 {
   "story": {
     "title": "Meet the Joneses",
+    "keywords": [
+      {
+        "name": "Charlie",
+        "greek": "Τσάρλι",
+        "chinese": "查理"
+      },
+      {
+        "name": "Alicex",
+        "greek": "Άλις",
+        "chinese": "艾丽丝"
+      },
+      {
+        "name": "Bob",
+        "greek": "Μπομπ",
+        "chinese": "鲍勃"
+      },
+      {
+        "name": "Dingo",
+        "greek": "Ντίνγκο",
+        "chinese": "丁戈"
+      }
+    ],
     "languages": [
       {
-        "name": "English",
-        "keywords": ["Charlie", "Alice", "Bob", "Dingo"]
+        "name": "English"
       },
       {
-        "name": "Spanish",
-        "keywords": ["Charlie", "Alicia", "Roberto", "Dingo"]
+        "name": "Spanish"
       },
       {
-        "name": "German",
-        "keywords": ["Karl", "Alice", "Bob", "Dingo"]
+        "name": "German"
       },
       {
-        "name": "Greek",
-        "keywords": ["Τσάρλι", "Αλίκη", "Μπομπ", "Ντίνγκο"]
+        "name": "Greek"
       },
       {
-        "name": "Chinese",
-        "keywords": ["查理", "艾丽丝", "鲍勃", "丁戈"]
+        "name": "Chinese"
       }
     ],
     "syntax-locked-vs-unlocked": [
       {
-        "id" : "meet-the-joneses",
+        "id": "meet-the-joneses",
         "name": "Meet the Joneses",
         "image": "/glasses/1.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",

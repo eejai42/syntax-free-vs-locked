@@ -51,18 +51,18 @@
 /* Additional styles */
 @keyframes scrollUp {
   0% {
-    transform: translateY(0vh) scale(1);
+    transform: translateY(0%) scale(1); /* Start just below the container */
     opacity: 0;
   }
-  20% {
+  5% {
     opacity: 1;
   }
-  80% {
-    transform: translateY(-80vh) scale(0); /* Adjust as needed */
+  95% {
+    transform: translateY(-400%) scale(0.05); /* Scroll well above the top */
     opacity: 0.1;
   }
   100% {
-    transform: translateY(-40) scale(0.05);
+    transform: translateY(-500%) scale(0.05); /* Finish above the container */
     opacity: 0;
   }
 }
@@ -70,7 +70,8 @@
 .FullHeightContainer {
   position: relative;
   height: 60%;
-  background-color: lightblue
+  background-color: lightblue;
+  overflow: hidden; 
 }
 
 
