@@ -98,10 +98,10 @@
     ],
     "syntax-locked-vs-unlocked": [
       {
-        "id": "meet-the-joneses",
         "name": "Meet the Joneses",
-        "image": "glasses/1.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
+        "id": "meet-the-joneses",
+        "image": "glasses/1.png",
         "languages": {
           "English": {
             "text-align": "left",
@@ -189,10 +189,10 @@
         }
       },
       {
-        "id": "birthday-present",
         "name": "Charlie got dingo for his 12th birthday!",
-        "image": "glasses/2.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie, got a white, fluffy dog named Dingo, for his 12th birthday.",
+        "id": "birthday-present",
+        "image": "glasses/2.png",
         "languages": {
           "english": {
             "variations": [
@@ -321,10 +321,10 @@
         }
       },
       {
-        "id": "mistranslation",
         "name": "The Glass is Broken?!?",
-        "image": "glasses/3-Lost.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - Something's wrong...",
+        "id": "mistranslation",
+        "image": "glasses/3-Lost.png",
         "languages": {
           "English": {
             "text-align": "left",
@@ -412,10 +412,10 @@
         }
       },
       {
-        "id": "mistranslation-explained",
         "name": "Who the heck is Frank?",
-        "image": "glasses/3-LostEnglish.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - Something's wrong...",
+        "id": "mistranslation-explained",
+        "image": "glasses/3-LostInEnglish.png",
         "languages": {
           "English": {
             "text-align": "left",
@@ -594,10 +594,10 @@
         }
       },
       {
-        "id": "meet-15yo-mark",
         "name": "Charlie is now Mark, and he's 15",
-        "image": "glasses/4.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - Something's wrong...",
+        "id": "meet-15yo-mark",
+        "image": "glasses/4.png",
         "languages": {
           "English": {
             "text-align": "left",
