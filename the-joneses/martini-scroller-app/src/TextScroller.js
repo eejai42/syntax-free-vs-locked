@@ -6,16 +6,36 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
   ]);
   //const [variations, setVariations] = useState([]);
   const [variationsWithPrefix, setVariationsWithPrefix] = useState([]);
-  const totalVariations = variationsWithPrefix.length;
+  const [totalVariations, setTotalVariations] = useState(0);
   const scrollSpeed = 8000; // Duration of each scroll, e.g., 10 seconds
   const staggerDuration = scrollSpeed / 4; // Stagger duration for starting next variation
   const [keywordCounts, setKeywordCounts] = useState({});
+  const [isVisible, setIsVisible] = useState(false);
+  const [isBlinkingVisible, setIsBlinkingVisible] = useState(false);
 
+  // Blinking logic
+  useEffect(() => {
+    const blinkInterval = setInterval(() => {
+      setIsBlinkingVisible(prev => !prev);
+    }, 500);
+
+    const stopBlinkingTimeout = setTimeout(() => {
+      clearInterval(blinkInterval);
+      setIsBlinkingVisible(false);
+      setIsVisible(true);
+    }, 5000);
+
+    return () => {
+      clearInterval(blinkInterval);
+      clearTimeout(stopBlinkingTimeout);
+    };
+  }, []);
+
+  // Variation logic
   useEffect(() => {
     if (story) {
       const language = story.languages[languageName];
       if (language) {
-        // Assign a random communication method to each variation
         const updatedVariations = language.variations.map((variationText) => {
           const prefix = getPrefixBeforeColon(variationText);
           const finalVariationText = getVariationTextAfterColon(variationText);
@@ -35,37 +55,23 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
           };
         });
         setVariationsWithPrefix(updatedVariations);
+        setTotalVariations(updatedVariations.length);
       }
     }
   }, [data, languageName, story]);
 
+  // Active variation indices logic
   useEffect(() => {
     if (totalVariations > 0) {
-      // Introduce the second and third variations with a delay
-      const timeouts = [
-        setTimeout(
-          () => setActiveVariationIndices([0, 1, -1]),
-          staggerDuration
-        ),
-        setTimeout(
-          () => setActiveVariationIndices([0, 1, 2]),
-          staggerDuration * 2
-        ),
-      ];
-
       const interval = setInterval(() => {
-        setActiveVariationIndices((currentIndices) =>
-          currentIndices.map((index) => (index + 1) % totalVariations)
+        setActiveVariationIndices(currentIndices =>
+          currentIndices.map(index => (index + 1) % totalVariations)
         );
       }, staggerDuration);
 
-      return () => {
-        clearInterval(interval);
-        timeouts.forEach(clearTimeout);
-      };
+      return () => clearInterval(interval);
     }
   }, [totalVariations, staggerDuration]);
-
   const getPrefixBeforeColon = (variationText) => {
     const colonIndex = `${variationText}`.indexOf(":");
     if (colonIndex == -1) return undefined;
@@ -112,21 +118,21 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
 
   const addPrefix = (randomMethod, text) => {
     return (
-      <div  style={{minWidth: "95%"}}>
+      <div style={{ minWidth: "95%" }}>
         <div
           style={{
             fontWeight: "bold",
             padding: "0.5em",
             minWidth: "90%",
             fontSize: "0.8em",
-            position: 'relative',
+            position: "relative",
           }}
         >
           {" "}
           {randomMethod}:
         </div>
-        <div style={{whiteSpace: 'pre-wrap'}}>{text}</div>
-        <div style={{clear: 'both'}}>{' '}</div>
+        <div style={{ whiteSpace: "pre-wrap" }}>{text}</div>
+        <div style={{ clear: "both" }}> </div>
       </div>
     );
   };
@@ -161,41 +167,62 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
 
   return (
     <div style={{ position: "relative" }}>
-
       <div className="FullHeightContainer" style={{ minHeight: "65vh" }}>
         <div className="CharlieCounter">
           {currentKeyword} Counter: {keywordCounts[currentKeyword] || 0}
         </div>
-      <div style={{ minHeight: "3em", maxHeight: "3em" }} className="WhiteHeader">
-        <h3 style={{ margin: 0 }}>Syntax-Locked Descriptions</h3>
-        <h4 style={{ margin: 0 }}>Descriptions of the Idea</h4>
-      </div>
-        {variationsWithPrefix.map((variation, index) => (
-          <div style={{width: '100%', zIndex: 100+index}}>
-            <div
-              key={index}
-              className={`TextScroller ${
-                activeVariationIndices.includes(index) ? "active" : ""
-              }`}
+        <div
+          style={{ minHeight: "3em", maxHeight: "3em" }}
+          className="WhiteHeader"
+        >
+          <h3 style={{ margin: 0 }}>Syntax-Locked Descriptions</h3>
+          <h4 style={{ margin: 0 }}>Descriptions of the Idea</h4>
+        </div>
+        <div
               style={{
-                animationDuration: `${scrollSpeed}ms`,
-                fontSize: variation["font-size"] ?? "1.5em",
-                fontFamily: variation["font-family"] ?? "sans-serif",
-                textAlign: variation["text-align"] ?? "center",
-                minHeight: variation["min-height"] ?? "5em",
-                maxHeight: variation["max-height"] ?? "15em",
+                paddingTop: "10em",
+                visibility: (isVisible) ? "hidden" : "visible",
+                opacity: isBlinkingVisible ? 1 : 0,
               }}
             >
-              {addPrefix(
-                variation.method,
-                highlightKeyword(`${variation.text}`.trim(), currentKeyword)
-              )}
+              Loading SYNTAX-LOCKED Documents...
+        </div>
+        {variationsWithPrefix.map((variation, index) => (
+          <div>
+            <div     
+                style={{
+                visibility: (isVisible) ? "visible" : "hidden",
+                opacity: 1,
+              }}>
+              <div style={{ width: "100%", zIndex: 100 + index }}>
+                <div
+                  key={index}
+                  className={`TextScroller ${
+                    activeVariationIndices.includes(index) ? "active" : ""
+                  }`}
+                  style={{
+                    animationDuration: `${scrollSpeed}ms`,
+                    fontSize: variation["font-size"] ?? "1.5em",
+                    fontFamily: variation["font-family"] ?? "sans-serif",
+                    textAlign: variation["text-align"] ?? "center",
+                    minHeight: variation["min-height"] ?? "5em",
+                    maxHeight: variation["max-height"] ?? "15em",
+                  }}
+                >
+                  {addPrefix(
+                    variation.method,
+                    highlightKeyword(`${variation.text}`.trim(), currentKeyword)
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         ))}
+
       </div>
     </div>
   );
 };
 
 export default TextScroller;
+
