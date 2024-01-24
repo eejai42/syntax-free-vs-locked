@@ -100,7 +100,7 @@
       {
         "id": "meet-the-joneses",
         "name": "Meet the Joneses",
-        "image": "/glasses/1.png",
+        "image": "glasses/1.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
         "languages": {
           "English": {
@@ -190,7 +190,7 @@
       },
       {
         "name": "dingo-12th-birthday-present",
-        "image": "/glasses/2.png",
+        "image": "glasses/2.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie, got a white, fluffy dog named Dingo, for his 12th birthday.",
         "languages": {
           "english": {
