@@ -115,8 +115,6 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
       <div  style={{minWidth: "95%"}}>
         <div
           style={{
-            backgroundColor: "white",
-            opacity: 1,
             fontWeight: "bold",
             padding: "0.5em",
             minWidth: "90%",

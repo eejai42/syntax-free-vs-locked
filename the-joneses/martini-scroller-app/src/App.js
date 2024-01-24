@@ -13,7 +13,7 @@ function App() {
   const [currentStory, setCurrentStory] = useState(null);
   useEffect(() => {
     // Fetch the JSON data when the component mounts
-    fetch('data.json')
+    fetch('https://raw.githubusercontent.com/eejai42/syntax-free-vs-locked/master/the-joneses/martini-scroller-app/public/data.json')
       .then(response => response.json())
       .then(data => {
         // Set the data to state
