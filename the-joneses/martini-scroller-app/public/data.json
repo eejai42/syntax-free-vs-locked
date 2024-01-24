@@ -98,9 +98,100 @@
     ],
     "syntax-locked-vs-unlocked": [
       {
-        "name": "Meet the Joneses",
+        "name": "Meet the Joneses2",
         "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
         "id": "meet-the-joneses",
+        "image": "glasses/meet-the-joneses.png",
+        "languages": {
+          "English": {
+            "text-align": "left",
+            "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
+            "max-height": "10em",
+            "variations": [
+              "Project Proposal: \nOur project focuses on the dynamic between Charlie and his pet Dingo, a white, fluffy dog. It will also include interactions with his parents, Alice and Bob Jones, to provide a complete family perspective.",
+              "Statement of Work - SOW 1033: \nThe work involves enhancing the living space for Charlie and Dingo, his white and fluffy canine. Additionally, the needs of Charlie's parents, Alice and Bob Jones, will be addressed.",
+              "Specification: \nThe design caters to children like Charlie and pets similar to his dog, Dingo, a fluffy white canine. It's also user-friendly for adults, considering the needs of Alice and Bob Jones.",
+              "Change Request: \nThis amendment adds a pet care section, inspired by Charlie and his dog Dingo. This update aims to benefit families with pets, like Charlie and his parents, Alice and Bob Jones.",
+              "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
+              "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
+              "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
+              "Service FAQ: \nQ: Is this service suitable for families with pets? A: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+            ]
+          },
+          "Code": {
+            "font-family": "'Courier New', monospace",
+            "font-size": "1.2em",
+            "text-align": "left",
+            "min-height": "10em",
+            "variations": [
+              "Unity Game Initialization: \npublic class GameInitialization : MonoBehaviour { \n  void Start() { \n    ... \n    Debug.Log(\"Family initialized: Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Family Interaction: \npublic class FamilyInteraction : MonoBehaviour { \n  void Interact(...) { \n    ... \n    Debug.Log(\"... interacted with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Scene Management: \npublic class FamilySceneController : MonoBehaviour { \n  void LoadFamilyScene() { \n    ... \n    Debug.Log(\"Loading scene with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Character Movement: \npublic class CharacterMovement : MonoBehaviour { \n  public void Move(..., ...) { \n    ... \n    Debug.Log(\"Moving ... to a new destination. Family: Alice, Bob, Charlie, Dingo\"); \n    ... \n  } \n}",
+              "Unity Family Adventures: \npublic class FamilyAdventure : MonoBehaviour { \n  void StartAdventure() { \n    ... \n    Debug.Log(\"Starting adventure with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Pet Interaction: \npublic class PetInteraction : MonoBehaviour { \n  public void PlayWithPet(Pet dingo) { \n    ... \n    Debug.Log(\"Playing with Dingo. Family members: Alice, Bob, Charlie\"); \n    ... \n  } \n}",
+              "Python Family Budget Tracker: class FamilyBudgetTracker:\n    def track_expense(self, member, amount):\n        if member == 'Charlie':\n            ... # Tracking Charlie's expenses\n        elif member in ['Alice', 'Bob', 'Dingo']:\n            ...",
+              "Python Charlie's Coins: class CoinStarTracker:\n    def update_stars(self, character, stars):\n        if character == 'Charlie':\n            ... # Update stars for Charlie\n        ...",
+              "Python Household Chores: class ChoreAssigner:\n    def assign_chore(self, chore, member):\n        if member == 'Charlie':\n            ... # Assigning chore to Charlie\n        ...",
+              "Python Movement Tracking: class MovementTracker:\n    def track_movement(self, character, coordinates):\n        if character == 'Charlie':\n            ... # Track Charlie's movements\n        ...",
+              "Python Dingo's Activities: class ActivityTracker:\n    def log_activity(self, pet, activity):\n        if pet == 'Dingo':\n            ... # Log Dingo's activities, involving Charlie\n        ...",
+              "Python Progress Tracker: class ProgressTracker:\n    def update_progress(self, student, subject, score):\n        if student == 'Charlie':\n            ... # Update Charlie's educational progress\n        ...",
+              "Python Vacation Planner: class VacationPlanner:\n    def plan_trip(self, destination, family_members):\n        if 'Charlie' in family_members:\n            ... # Plan trip including Charlie\n        ...",
+
+              "JavaScript: \nfunction Family() {\n this.members = [];\n}\nFamily.prototype.add = function(person) {\n this.members.push(person);\n};\n\nfunction Person(name) {\n this.name = name;\n this.pets = [];\n}\nPerson.prototype.addPet = function(pet) {\n this.pets.push(pet);\n};\n\nfunction Dog(name) {\n this.name = name;\n}\n\nvar joneses = new Family();\nvar alice = new Person('Alice');\nvar bob = new Person('Bob');\nvar charlie = new Person('Charlie');\nvar dingo = new Dog('Dingo');\n\njoneses.add(alice);\njoneses.add(bob);\njoneses.add(charlie);\ncharlie.addPet(dingo);",
+              "Java: \npublic class Family {\n private List<Person> members = new ArrayList<>();\n public void add(Person person) {\n members.add(person);\n }\n}\n\npublic class Person {\n private String name;\n private List<Dog> pets = new ArrayList<>();\n public Person(String name) { this.name = name; }\n public void addPet(Dog pet) { pets.add(pet); }\n}\n\npublic class Dog {\n private String name;\n public Dog(String name) { this.name = name; }\n}\n\nFamily joneses = new Family();\nPerson alice = new Person(\"Alice\");\nPerson bob = new Person(\"Bob\");\nPerson charlie = new Person(\"Charlie\");\nDog dingo = new Dog(\"Dingo\");\njoneses.add(alice);\njoneses.add(bob);\njoneses.add(charlie);\ncharlie.addPet(dingo);",
+              "Ruby: \nclass Family\n  attr_accessor :members\n  def initialize\n    @members = []\n  end\n  def add(person)\n    @members << person\n  end\nend\n\nclass Person\n  attr_accessor :name, :pets\n  def initialize(name)\n    @name = name\n    @pets = []\n  end\n  def add_pet(pet)\n    @pets << pet\n  end\nend\n\nclass Dog\n  attr_accessor :name\n  def initialize(name)\n    @name = name\n  end\nend\n\njoneses = Family.new\nalice = Person.new('Alice')\nbob = Person.new('Bob')\ncharlie = Person.new('Charlie')\ndingo = Dog.new('Dingo')\njoneses.add(alice)\njoneses.add(bob)\njoneses.add(charlie)\ncharlie.add_pet(dingo)",
+              "C++: \n#include <vector>\n#include <string>\n\nstruct Person {\n std::string name;\n std::vector<Dog> pets;\n Person(std::string n) : name(n) {}\n void addPet(Dog& pet) { pets.push_back(pet); }\n};\n\nstruct Dog {\n std::string name;\n Dog(std::string n) : name(n) {}\n};\n\nstruct Family {\n std::vector<Person> members;\n void add(Person& person) { members.push_back(person); }\n};\n\nFamily joneses;\nPerson alice(\"Alice\");\nPerson bob(\"Bob\");\nPerson charlie(\"Charlie\");\nDog dingo(\"Dingo\");\njoneses.add(alice);\njoneses.add(bob);\njoneses.add(charlie);\ncharlie.addPet(dingo);"
+            ]
+          },
+          "Spanish": {
+            "variations": [
+              "Alice y Bob Jones están casados. Tienen un hijo llamado Charlie. Charlie tiene un perro blanco y esponjoso llamado Dingo.",
+              "Bob y Alice, un matrimonio, son padres de Charlie. El compañero de Charlie es su perro Dingo, que es tan blanco como la nieve y esponjoso.",
+              "Charlie es hijo de Alice y Bob Jones. Tiene un perro blanco y esponjoso llamado Dingo.",
+              "La familia Jones, compuesta por Alice, Bob y su hijo Charlie, posee un perro blanco y esponjoso llamado Dingo.",
+              "Alice y Bob, una pareja casada, tienen un hijo, Charlie, quien es dueño de un perro blanco y esponjoso, Dingo.",
+              "En el hogar de los Jones, Alice y Bob crían a su hijo Charlie, dueño de Dingo, un canino esponjoso y blanco.",
+              "Los Jones, Alice y Bob, tienen un hijo, Charlie. Charlie adora a su perro Dingo, de pelaje blanco y suave.",
+              "Alice y Bob Jones, junto a su hijo Charlie, cuidan de Dingo, un perro de pelaje blanco y esponjoso.",
+              "Dentro de la familia Jones, conformada por Alice, Bob y su hijo Charlie, se encuentra Dingo, un perro de pelo blanco y esponjoso.",
+              "Alice Jones y su esposo Bob, junto a su hijo Charlie, conviven con Dingo, un perro blanco y peludo."
+            ]
+          },
+          "Greek": {
+            "variations": [
+              "Η Άλις και ο Μπομπ Τζόουνς είναι παντρεμένοι. Έχουν έναν γιο που τον λένε Τσάρλι. Ο Τσάρλι έχει έναν λευκό, αφράτο σκύλο, τον Ντίνγκο.",
+              "Ο Μπομπ και η Άλις, ένα παντρεμένο ζευγάρι, είναι οι γονείς του Τσάρλι. Ο σύντροφος του Τσάρλι είναι ο σκύλος του, ο Ντίνγκο, λευκός και αφράτος.",
+              "Ο Τσάρλι, ο γιος των Άλις και Μπομπ Τζόουνς, έχει έναν σκύλο με το όνομα Ντίνγκο, γνωστό για το λευκό και αφράτο τρίχωμά του.",
+              "Η οικογένεια Τζόουνς αποτελείται από τους Άλις, Μπομπ και τον γιο τους Τσάρλι. Ο Τσάρλι έχει έναν σκύλο ονόματι Ντίνγκο, ο οποίος είναι λευκός και αφράτος.",
+              "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ έχουν έναν γιο, τον Τσάρλι. Το κατοικίδιο του Τσάρλι, ο Ντίνγκο, είναι ένας αφράτος λευκός σκύλος.",
+              "Στο σπίτι των Τζόουνς, η Άλις και ο Μπομπ μεγαλώνουν τον γιο τους Τσάρλι, ο οποίος έχει τον Ντίνγκο, έναν αφράτο λευκό σκύλο.",
+              "Οι Τζόουνς, η Άλις και ο Μπομπ, έχουν έναν γιο, τον Τσάρλι. Ο Τσάρλι λατρεύει τον σκύλο του, τον Ντίνγκο, με το λευκό και αφράτο τρίχωμα.",
+              "Η Άλις και ο Μπομπ Τζόουνς, μαζί με τον γιο τους Τσάρλι, φροντίζουν τον Ντίνγκο, έναν σκύλο με λευκό και αφράτο τρίχωμα.",
+              "Μέσα στην οικογένεια Τζόουνς, που αποτελείται από την Άλις, τον Μπομπ και τον γιο τους Τσάρλι, βρίσκεται ο Ντίνγκο, ένας σκύλος με λευκό και αφράτο τρίχωμα.",
+              "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
+            ]
+          },
+          "Chinese": {
+            "variations": [
+              "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
+              "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
+              "在琼斯家，有夫妻二人艾丽丝和鲍勃，还有他们的儿子查理，以及查理的宠物狗丁戈，它的毛发白且蓬松。",
+              "艾丽丝和鲍勃·琼斯是一对夫妇，他们养育着儿子查理和一只白色蓬松的狗丁戈。",
+              "查理，作为艾丽丝和鲍勃·琼斯之子，有一只叫丁戈的白毛蓬松狗。",
+              "琼斯一家由艾丽丝、鲍勃和他们的儿子查理组成，还有查理的白色蓬松狗丁戈。",
+              "艾丽丝与鲍勃·琼斯的家中有他们的儿子查理和一只白色蓬松的宠物狗丁戈。",
+              "查理是艾丽丝和鲍勃·琼斯的孩子，他养了一只名为丁戈的白色蓬松狗。",
+              "在琼斯家族中，艾丽丝和鲍勃有一个儿子叫查理，查理有一只白色蓬松的狗，名叫丁戈。",
+              "艾丽丝和鲍勃·琼斯夫妇的儿子查理拥有一只蓬松白色的狗，它的名字叫丁戈。"
+            ]
+          }
+        }
+      },
+      {
+        "name": "There's Just 1 Charlie!",
+        "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
+        "id": "just-1-charlie",
         "image": "glasses/1.png",
         "languages": {
           "English": {
@@ -189,7 +280,7 @@
         }
       },
       {
-        "name": "Charlie got dingo for his 12th birthday!",
+        "name": "Charlie got Dingo for his 12th birthday!",
         "statement": "The Joneses, Alice and Bob, have one son Charlie, got a white, fluffy dog named Dingo, for his 12th birthday.",
         "id": "birthday-present",
         "image": "glasses/2.png",
@@ -321,7 +412,7 @@
         }
       },
       {
-        "name": "The Glass is Broken?!?",
+        "name": "The Glass is Broken... 🤔",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - Something's wrong...",
         "id": "mistranslation",
         "image": "glasses/3-Lost.png",
@@ -594,10 +685,10 @@
         }
       },
       {
-        "name": "Charlie is now Mark, and he's 15",
+        "name": "Charlie is now Mark, and he's 15!",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - Something's wrong...",
         "id": "meet-15yo-mark",
-        "image": "glasses/4.png",
+        "image": "glasses/5.png",
         "languages": {
           "English": {
             "text-align": "left",
