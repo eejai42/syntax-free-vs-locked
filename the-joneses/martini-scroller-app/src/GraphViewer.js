@@ -28,7 +28,7 @@ const GraphViewer = ({ data, story, currentKeyword }) => {
       </div>
       <div style={{minHeight: "3em", maxHeight: "3em"}} className="WhiteHeader">
             <h3 style={{margin: 0}}>Syntax-Free Model</h3>
-            <h4 style={{margin: 0}}>Digital Mirror of The Thing Itself</h4>
+            <h4 style={{margin: 0}}>Digital Mirror of Reality</h4>
         </div>
 
     <div style={{padding: '1em', fontSize: '0.8em'}}>

@@ -12,9 +12,11 @@ const AppHeader = ({
         marginTop: "0",
         marginBottom: "0",
         float: 'left',
-        marginRight: '10em',
+        marginRight: '2em',
         fontSize: '1.5em',
         fontWeight: 'bold',
+        maxWidth: '35vw',
+        minWidth: '35vw'
 
 
     }

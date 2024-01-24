@@ -68,11 +68,11 @@
   }
 }
 
-.CharlieCounter {
+.CharlieCounter {  
   position: relative;
   background-color: yellow;
-  z-index: 999;
   opacity: 1;
+  z-index: 999999;
 }
 
 .WhiteHeader {

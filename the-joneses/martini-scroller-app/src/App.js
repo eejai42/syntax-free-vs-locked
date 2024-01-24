@@ -15,6 +15,7 @@ function App() {
 
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/eejai42/syntax-free-vs-locked/master/the-joneses/martini-scroller-app/public/data.json')
+//    fetch('data.json')
       .then(response => response.json())
       .then(data => {
         setData(data);
