@@ -51,18 +51,18 @@
 /* Additional styles */
 @keyframes scrollUp {
   0% {
-    transform: translateY(0%) scale(1); /* Start just below the container */
+    transform: translateY(80%) scale(1); /* Start just below the container */
     opacity: 0;
   }
   5% {
     opacity: 1;
   }
   95% {
-    transform: translateY(-400%) scale(0.05); /* Scroll well above the top */
+    transform: translateY(-200%) scale(0.05); /* Scroll well above the top */
     opacity: 0.1;
   }
   100% {
-    transform: translateY(-500%) scale(0.05); /* Finish above the container */
+    transform: translateY(0%) scale(0.05); /* Finish above the container */
     opacity: 0;
   }
 }
@@ -83,13 +83,16 @@
 
 
 .TextScroller {
+  padding: 1em;
+  margin-right: -5em;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 95%;
   text-align: center;
   transform-origin: 50% 100%;
   font-size: 1.5em;
   color: black;
+  background-color: white;
   opacity: 0; /* Initially hidden */
   pointer-events: none; /* Prevent interaction */
 }

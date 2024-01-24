@@ -31,7 +31,7 @@
         "name": "Spanish"
       },
       {
-        "name": "German"
+        "name": "Code"
       },
       {
         "name": "Greek"
@@ -41,28 +41,105 @@
       }
     ],
     "communication-methods": [
-        "Email", "Phone", "Text", "Specification", "Documentation", "Proposal", "Slack", "Discord", "WhatsApp"
+      "Specification",
+      "Specification",
+      "Specification",
+      "Specification",
+      "Documentation",
+      "Documentation",
+      "Documentation",
+      "Documentation",
+      "Documentation",
+      "Proposal",
+      "Proposal",
+      "Proposal",
+      "Proposal",
+      "Proposal",
+      "Change Request",
+      "Change Request",
+      "Change Request",
+      "Change Request",
+      "Change Request",
+      "Meeting Minutes",
+      "Meeting Minutes",
+      "Meeting Agenda",
+      "Meeting Agenda",
+      "Meeting Agenda",
+      "Meeting transcript",
+      "Meeting transcript",
+      "Meeting transcript",
+      "Meeting transcript",
+      "Meeting transcript",
+      "Meeting recording",
+      "Meeting recording",
+      "Meeting recording",
+      "Meeting recording",
+      "Meeting recording",
+      "Meeting recording",
+      "Meeting notes",
+      "Meeting action items",
+      "Meeting notes",
+      "Meeting notes",
+      "Meeting action items",
+      "Meeting action items",
+      "Meeting action items",
+      "Email",
+      "Email",
+      "Email",
+      "Email",
+      "Text/WhatsApp",
+      "Slack/Discord",
+      "Telephone",
+      "Face to Face",
+      "Video Call",
+      "Chat",
+      "Meeting",
+      "Conference"
     ],
     "syntax-locked-vs-unlocked": [
       {
         "id": "meet-the-joneses",
         "name": "Meet the Joneses",
         "image": "/glasses/1.png",
-        "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
+        "original_statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
         "languages": {
           "English": {
-            "text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
+            "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "variations": [
-              "Alice and Bob Jones are married. They have a son named Charlie. Charlie has a pet dog, a white, fluffy one named Dingo.",
-              "Bob and Alice, a married couple, are parents to Charlie. Charlie's companion is his dog Dingo, who's as white as snow and fluffy.",
-              "Charlie is the son of Alice and Bob Jones. He has a white, fluffy dog named Dingo.",
-              "The Jones family consists of Alice and Bob, and their son Charlie. Charlie has a dog named Dingo, who is white and fluffy.",
-              "Alice Jones and her husband Bob have a son, Charlie. Charlie's pet, Dingo, is a fluffy white dog.",
-              "In the Jones household, Alice and Bob raise their son Charlie, who owns Dingo, a fluffy white canine.",
-              "Charlie, the offspring of Alice and Bob Jones, has a canine companion named Dingo, known for its white, fluffy coat.",
-              "The Joneses, comprising Alice, Bob, and their son Charlie, are a family. Charlie has a dog named Dingo, which is fluffy and white.",
-              "Alice and Bob, a couple, parent Charlie Jones. Their household includes Dingo, Charlie's white, fluffy dog.",
-              "The Jones family unit includes Alice, Bob, their son Charlie, and Charlie's white dog Dingo, characterized by its fluffy fur."
+              "Proposal: \nOur project focuses on the dynamic between Charlie Jones and his pet Dingo, a white, fluffy dog. It will also include interactions with his parents, Alice and Bob Jones, to provide a complete family perspective.",
+              "SOW (Statement of Work): \nThe work involves enhancing the living space for Charlie Jones and Dingo, his white and fluffy canine. Additionally, the needs of Charlie's parents, Alice and Bob Jones, will be addressed.",
+              "Specification: \nThe design caters to children like Charlie Jones and pets similar to his dog, Dingo, a fluffy white canine. It's also user-friendly for adults, considering the needs of Alice and Bob Jones.",
+              "Change Request: \nThis amendment adds a pet care section, inspired by Charlie Jones and his dog Dingo. This update aims to benefit families with pets, like Charlie and his parents, Alice and Bob Jones.",
+              "README: \nThis app is tailored for families, focusing on young users like Charlie Jones and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
+              "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie Jones and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
+              "Documentation: \nInstructions are provided for young users like Charlie Jones and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
+              "FAQs: \nQ: Is this service suitable for families with pets? A: Yes, it's ideal for families with a child like Charlie Jones and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+            ]
+          },
+          "Code": {
+            "font-family": "'Courier New', monospace",
+            "font-size": "15px",
+            "text-align": "left",
+            "min-height": "15em",
+            "variations": [
+              "Unity Game Initialization: \npublic class GameInitialization : MonoBehaviour { \n  void Start() { \n    ... \n    Debug.Log(\"Family initialized: Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Family Interaction: \npublic class FamilyInteraction : MonoBehaviour { \n  void Interact(...) { \n    ... \n    Debug.Log(\"... interacted with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Scene Management: \npublic class FamilySceneController : MonoBehaviour { \n  void LoadFamilyScene() { \n    ... \n    Debug.Log(\"Loading scene with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Character Movement: \npublic class CharacterMovement : MonoBehaviour { \n  public void Move(..., ...) { \n    ... \n    Debug.Log(\"Moving ... to a new destination. Family: Alice, Bob, Charlie, Dingo\"); \n    ... \n  } \n}",
+              "Unity Family Adventures: \npublic class FamilyAdventure : MonoBehaviour { \n  void StartAdventure() { \n    ... \n    Debug.Log(\"Starting adventure with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Pet Interaction: \npublic class PetInteraction : MonoBehaviour { \n  public void PlayWithPet(Pet dingo) { \n    ... \n    Debug.Log(\"Playing with Dingo. Family members: Alice, Bob, Charlie\"); \n    ... \n  } \n}",
+              "Python Family Budget Tracker: class FamilyBudgetTracker:\n    def track_expense(self, member, amount):\n        if member == 'Charlie':\n            ... # Tracking Charlie's expenses\n        elif member in ['Alice', 'Bob', 'Dingo']:\n            ...",
+              "Python Charlie's Coins: class CoinStarTracker:\n    def update_stars(self, character, stars):\n        if character == 'Charlie':\n            ... # Update stars for Charlie\n        ...",
+              "Python Household Chores: class ChoreAssigner:\n    def assign_chore(self, chore, member):\n        if member == 'Charlie':\n            ... # Assigning chore to Charlie\n        ...",
+              "Python Movement Tracking: class MovementTracker:\n    def track_movement(self, character, coordinates):\n        if character == 'Charlie':\n            ... # Track Charlie's movements\n        ...",
+              "Python Dingo's Activities: class ActivityTracker:\n    def log_activity(self, pet, activity):\n        if pet == 'Dingo':\n            ... # Log Dingo's activities, involving Charlie\n        ...",
+              "Python Progress Tracker: class ProgressTracker:\n    def update_progress(self, student, subject, score):\n        if student == 'Charlie':\n            ... # Update Charlie's educational progress\n        ...",
+              "Python Vacation Planner: class VacationPlanner:\n    def plan_trip(self, destination, family_members):\n        if 'Charlie' in family_members:\n            ... # Plan trip including Charlie\n        ...",
+
+              "JavaScript: \nfunction Family() {\n this.members = [];\n}\nFamily.prototype.add = function(person) {\n this.members.push(person);\n};\n\nfunction Person(name) {\n this.name = name;\n this.pets = [];\n}\nPerson.prototype.addPet = function(pet) {\n this.pets.push(pet);\n};\n\nfunction Dog(name) {\n this.name = name;\n}\n\nvar joneses = new Family();\nvar alice = new Person('Alice');\nvar bob = new Person('Bob');\nvar charlie = new Person('Charlie');\nvar dingo = new Dog('Dingo');\n\njoneses.add(alice);\njoneses.add(bob);\njoneses.add(charlie);\ncharlie.addPet(dingo);",
+              "Java: \npublic class Family {\n private List<Person> members = new ArrayList<>();\n public void add(Person person) {\n members.add(person);\n }\n}\n\npublic class Person {\n private String name;\n private List<Dog> pets = new ArrayList<>();\n public Person(String name) { this.name = name; }\n public void addPet(Dog pet) { pets.add(pet); }\n}\n\npublic class Dog {\n private String name;\n public Dog(String name) { this.name = name; }\n}\n\nFamily joneses = new Family();\nPerson alice = new Person(\"Alice\");\nPerson bob = new Person(\"Bob\");\nPerson charlie = new Person(\"Charlie\");\nDog dingo = new Dog(\"Dingo\");\njoneses.add(alice);\njoneses.add(bob);\njoneses.add(charlie);\ncharlie.addPet(dingo);",
+              "Ruby: \nclass Family\n  attr_accessor :members\n  def initialize\n    @members = []\n  end\n  def add(person)\n    @members << person\n  end\nend\n\nclass Person\n  attr_accessor :name, :pets\n  def initialize(name)\n    @name = name\n    @pets = []\n  end\n  def add_pet(pet)\n    @pets << pet\n  end\nend\n\nclass Dog\n  attr_accessor :name\n  def initialize(name)\n    @name = name\n  end\nend\n\njoneses = Family.new\nalice = Person.new('Alice')\nbob = Person.new('Bob')\ncharlie = Person.new('Charlie')\ndingo = Dog.new('Dingo')\njoneses.add(alice)\njoneses.add(bob)\njoneses.add(charlie)\ncharlie.add_pet(dingo)",
+              "C++: \n#include <vector>\n#include <string>\n\nstruct Person {\n std::string name;\n std::vector<Dog> pets;\n Person(std::string n) : name(n) {}\n void addPet(Dog& pet) { pets.push_back(pet); }\n};\n\nstruct Dog {\n std::string name;\n Dog(std::string n) : name(n) {}\n};\n\nstruct Family {\n std::vector<Person> members;\n void add(Person& person) { members.push_back(person); }\n};\n\nFamily joneses;\nPerson alice(\"Alice\");\nPerson bob(\"Bob\");\nPerson charlie(\"Charlie\");\nDog dingo(\"Dingo\");\njoneses.add(alice);\njoneses.add(bob);\njoneses.add(charlie);\ncharlie.addPet(dingo);"
             ]
           },
           "Spanish": {
@@ -77,20 +154,6 @@
               "Alice y Bob Jones, junto a su hijo Charlie, cuidan de Dingo, un perro de pelaje blanco y esponjoso.",
               "Dentro de la familia Jones, conformada por Alice, Bob y su hijo Charlie, se encuentra Dingo, un perro de pelo blanco y esponjoso.",
               "Alice Jones y su esposo Bob, junto a su hijo Charlie, conviven con Dingo, un perro blanco y peludo."
-            ]
-          },
-          "German": {
-            "variations": [
-              "Alice und Bob Jones sind verheiratet. Sie haben einen Sohn namens Charlie. Charlie besitzt einen weißen, flauschigen Hund namens Dingo.",
-              "Bob und Alice, ein Ehepaar, sind die Eltern von Charlie. Charlies Gefährte ist sein Hund Dingo, schneeweiß und flauschig.",
-              "Die Familie Jones, bestehend aus Alice, Bob und ihrem Sohn Charlie, haben einen Hund namens Dingo, der weiß und flauschig ist.",
-              "In der Familie von Alice und Bob Jones gibt es auch Charlie, ihren Sohn, und Dingo, einen flauschigen weißen Hund.",
-              "Charlie, der Sohn von Alice und Bob Jones, hat einen weißen, flauschigen Hund, der Dingo heißt.",
-              "Alice und Bob Jones, ein verheiratetes Paar, haben einen Sohn namens Charlie und einen weißen, flauschigen Hund namens Dingo.",
-              "Für Alice und Bob Jones sowie ihren Sohn Charlie ist Dingo, der weiße, flauschige Hund, ein Teil der Familie.",
-              "Alice und Bob haben einen Sohn, Charlie genannt, und einen Hund, der flauschig und weiß ist und Dingo heißt.",
-              "Charlie, Kind von Alice und Bob Jones, ist der Besitzer von Dingo, einem weißen und flauschigen Hund.",
-              "Die Jones-Familie, Alice, Bob und ihr Sohn Charlie, lieben ihren weißen, flauschigen Hund Dingo."
             ]
           },
           "Greek": {

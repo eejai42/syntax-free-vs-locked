@@ -37,7 +37,7 @@ function App() {
     setCurrentKeyword(keyword);
   };
 
-  // Check if data is loaded
+  // Check if data is loaded 
   if (!data) {
     return <div>Loading...</div>; // Or any other loading indicator
   }
