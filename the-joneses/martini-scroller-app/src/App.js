@@ -11,15 +11,15 @@ function App() {
   const [currentKeyword, setCurrentKeyword] = useState('Charlie');
   const [currentStoryId, setCurrentStoryId] = useState('meet-the-joneses');
   const [currentStory, setCurrentStory] = useState(null);
+  const [storyList, setStoryList] = useState([]);
+
   useEffect(() => {
-    // Fetch the JSON data when the component mounts
     fetch('https://raw.githubusercontent.com/eejai42/syntax-free-vs-locked/master/the-joneses/martini-scroller-app/public/data.json')
       .then(response => response.json())
       .then(data => {
-        // Set the data to state
         setData(data);
-        const currentStory = data.story["syntax-locked-vs-unlocked"].find(s => s.id === currentStoryId)
-
+        setStoryList(data.story["syntax-locked-vs-unlocked"]);
+        const currentStory = data.story["syntax-locked-vs-unlocked"].find(s => s.id === currentStoryId);
         setCurrentStory(currentStory);
       })
       .catch(error => {
@@ -27,33 +27,49 @@ function App() {
       });
   }, []);
 
-  // Handler for language change
+  useEffect(() => {
+    if (data) {
+      const currentStory = data.story["syntax-locked-vs-unlocked"].find(s => s.id === currentStoryId);
+      setCurrentStory(currentStory);
+    }
+  }, [currentStoryId, data]);
+
   const handleLanguageChange = (language) => {
     setCurrentLanguage(language);
   };
 
-  // Handler for keyword select
   const handleKeywordSelect = (keyword) => {
     setCurrentKeyword(keyword);
   };
 
-  // Check if data is loaded 
+  const handleNextStory = () => {
+    const currentIndex = storyList.findIndex(story => story.id === currentStoryId);
+    const nextIndex = (currentIndex + 1) % storyList.length;
+    setCurrentStoryId(storyList[nextIndex].id);
+  };
+
+  const handlePreviousStory = () => {
+    const currentIndex = storyList.findIndex(story => story.id === currentStoryId);
+    const prevIndex = (currentIndex - 1 + storyList.length) % storyList.length;
+    setCurrentStoryId(storyList[prevIndex].id);
+  };
+
   if (!data) {
-    return <div>Loading...</div>; // Or any other loading indicator
+    return <div>Loading...</div>;
   }
 
   return (
     <div className="App">
       <AppHeader story={currentStory} currentLanguage={currentLanguage} currentKeyword={currentKeyword} />
+      <button onClick={handlePreviousStory}>Previous Story</button>
+      <button onClick={handleNextStory}>Next Story</button>
       <div className="SplitScreen">
         <div className="RightPane">
           <GraphViewer data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
         </div>
         <div className="LeftPane">
-        <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
-          <LanguagePicker data={data} 
-                currentLanguage={currentLanguage} onLanguageChange={handleLanguageChange} 
-                currentKeyword={currentKeyword} onKeywordSelect={handleKeywordSelect} />
+          <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
+          <LanguagePicker data={data} currentLanguage={currentLanguage} onLanguageChange={handleLanguageChange} currentKeyword={currentKeyword} onKeywordSelect={handleKeywordSelect} />
         </div>
       </div>
     </div>
