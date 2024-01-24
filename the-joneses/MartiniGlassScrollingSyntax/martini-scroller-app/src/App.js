@@ -46,14 +46,14 @@ function App() {
     <div className="App">
       <AppHeader story={currentStory} currentLanguage={currentLanguage} currentKeyword={currentKeyword} />
       <div className="SplitScreen">
+        <div className="RightPane">
+          <GraphViewer data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
+        </div>
         <div className="LeftPane">
+        <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
           <LanguagePicker data={data} 
                 currentLanguage={currentLanguage} onLanguageChange={handleLanguageChange} 
                 currentKeyword={currentKeyword} onKeywordSelect={handleKeywordSelect} />
-          <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
-        </div>
-        <div className="RightPane">
-          <GraphViewer data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
         </div>
       </div>
     </div>

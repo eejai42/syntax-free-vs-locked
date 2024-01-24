@@ -4,7 +4,7 @@ import './App.css'
 
 const GraphViewer = ({ data, story, currentKeyword }) => {
   const containerStyle = {
-    marginTop: "3rem",
+    marginTop: "0rem",
     minHeight: "100vh",
     // Add more styles as needed
   };
@@ -22,6 +22,10 @@ const GraphViewer = ({ data, story, currentKeyword }) => {
 
   return (
     <div style={containerStyle}>
+        <div style={{minHeight: "3em", maxHeight: "3em"}}>
+            <h3 style={{margin: 0}}>Syntax-Free Model</h3>
+            <h4 style={{margin: 0}}>Digital Mirror of The Thing Itself</h4>
+        </div>
               <div
         className="CharlieCounter"
       >

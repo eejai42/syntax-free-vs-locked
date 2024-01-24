@@ -2,38 +2,42 @@ import React, { useState, useEffect } from "react";
 
 const TextScroller = ({ data, languageName, currentKeyword, story }) => {
   const [activeVariationIndices, setActiveVariationIndices] = useState([
-    0, 1, 2, 3
+    0, 1, 2, 3,
   ]);
   //const [variations, setVariations] = useState([]);
   const [variationsWithPrefix, setVariationsWithPrefix] = useState([]);
   const totalVariations = variationsWithPrefix.length;
-  const scrollSpeed = 6000; // Duration of each scroll, e.g., 10 seconds
+  const scrollSpeed = 8000; // Duration of each scroll, e.g., 10 seconds
   const staggerDuration = scrollSpeed / 4; // Stagger duration for starting next variation
   const [keywordCounts, setKeywordCounts] = useState({});
- 
+
   useEffect(() => {
     if (story) {
       const language = story.languages[languageName];
       if (language) {
         // Assign a random communication method to each variation
-        const updatedVariations = language.variations.map(variationText => {
-          const prefix = getPrefixBeforeColon(variationText); 
-          const finalVariationText = getVariationTextAfterColon(variationText);  
-          const randomMethod = prefix === undefined ? data.story['communication-methods'][Math.floor(Math.random() * data.story['communication-methods'].length)] : prefix;
-          console.error('FINDING METHOD ---------', language, language.variations, "VARIATION TEXT: ", finalVariationText, 'RANDOM METHOD: ', randomMethod)
-  
-          return { 
-            text: finalVariationText, 
+        const updatedVariations = language.variations.map((variationText) => {
+          const prefix = getPrefixBeforeColon(variationText);
+          const finalVariationText = getVariationTextAfterColon(variationText);
+          const randomMethod =
+            prefix === undefined
+              ? data.story["communication-methods"][
+                  Math.floor(
+                    Math.random() * data.story["communication-methods"].length
+                  )
+                ]
+              : prefix;
+
+          return {
+            text: finalVariationText,
             method: randomMethod,
-            ...language
+            ...language,
           };
         });
-        console.error('assigning variations with prefixes now')
         setVariationsWithPrefix(updatedVariations);
       }
     }
   }, [data, languageName, story]);
-  
 
   useEffect(() => {
     if (totalVariations > 0) {
@@ -63,24 +67,25 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
   }, [totalVariations, staggerDuration]);
 
   const getPrefixBeforeColon = (variationText) => {
-    const colonIndex = `${variationText}`.indexOf(':');
+    const colonIndex = `${variationText}`.indexOf(":");
     if (colonIndex == -1) return undefined;
     else return variationText.substring(0, colonIndex);
-  }
+  };
 
-  const getVariationTextAfterColon = (variationText) =>  {
-    const colonIndex = `${variationText}`.indexOf(':');
+  const getVariationTextAfterColon = (variationText) => {
+    const colonIndex = `${variationText}`.indexOf(":");
     if (colonIndex == -1) return variationText;
     else return variationText.substring(colonIndex + 1);
-  }
+  };
 
   const updateKeywordCount = (newIndex) => {
     // Check if newIndex is a valid index in the variations array
     if (newIndex >= 0 && newIndex < variationsWithPrefix.length) {
       const keywordText = getKeywordText(currentKeyword);
       const variation = variationsWithPrefix[newIndex];
-      const matches = (`${variation.text}`.match(new RegExp(keywordText, "gi")) || [])
-        .length;
+      const matches = (
+        `${variation.text}`.match(new RegExp(keywordText, "gi")) || []
+      ).length;
 
       setKeywordCounts((prevCounts) => ({
         ...prevCounts,
@@ -98,18 +103,43 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
 
   const getKeywordText = (keywordName) => {
     const keywords = data.story.keywords;
-    const keyword = keywords.find((k) => k.name === keywordName);    
+    const keyword = keywords.find((k) => k.name === keywordName);
 
     if (languageName === "Greek") return keyword.greek;
     else if (languageName == "Chinese") return keyword.chinese;
     else return keyword.name;
-
   };
 
-  const addPrefix = (randomMethod, text) => {  
-    return <span><b>{randomMethod}:</b> <em>...{text}...</em></span>
+  const addPrefix = (randomMethod, text) => {
+    return (
+      <div stlye={{ backgroundColor: "red", minWidth: "500px" }}>
+        <div
+          style={{
+            backgroundColor: "white",
+            opacity: 1,
+            fontWeight: "bold",
+            padding: "1em",
+            minWidth: "90%",
+            fontSize: "0.8em",
+            position: 'relative',
+          }}
+        >
+          {" "}
+          {randomMethod}:
+        </div>
+        <br />
+        <em>
+          ...
+          <br />
+          {text}
+          <br />
+          ...          
+        </em>
+        <div style={{clear: 'both'}}>xyz</div>
+      </div>
+    );
   };
-  
+
   const highlightKeyword = (text, keywordName) => {
     const keywords = data.story.keywords;
     const keyword = keywords.find((k) => k.name === keywordName);
@@ -139,32 +169,40 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
   };
 
   return (
-    <div className="FullHeightContainer">
-      <div className="CharlieCounter">
-        {currentKeyword} Counter: {keywordCounts[currentKeyword] || 0}
+    <div style={{ position: "relative" }}>
+      <div style={{ minHeight: "3em", maxHeight: "3em" }}>
+        <h3 style={{ margin: 0 }}>Syntax-Locked Descriptions</h3>
+        <h4 style={{ margin: 0 }}>Descriptions of the Idea</h4>
       </div>
-      {variationsWithPrefix.map((variation, index) => (
-        <div>
+
+      <div className="FullHeightContainer" style={{ minHeight: "60vh" }}>
+        <div className="CharlieCounter">
+          {currentKeyword} Counter: {keywordCounts[currentKeyword] || 0}
+        </div>
+        {variationsWithPrefix.map((variation, index) => (
+          <div style={{width: '100%'}}>
             <p
               key={index}
-              className={`TextScroller ${activeVariationIndices.includes(index) ? "active" : ""}`}
+              className={`TextScroller ${
+                activeVariationIndices.includes(index) ? "active" : ""
+              }`}
               style={{
-                position: "absolute",
-                whiteSpace: "pre-wrap",
                 animationDuration: `${scrollSpeed}ms`,
-                minHeight: "10em",
-                zIndex: 1,
-                fontSize: variation['font-size'] ?? '1.5em',
-                fontFamily: variation['font-family'] ?? 'sans-serif',
-                textAlign: variation['text-align'] ?? 'center',
-                minHeight: variation['min-height'] ?? '10em',
-                maxHeight: variation['max-height'] ?? '10em',
+                fontSize: variation["font-size"] ?? "1.5em",
+                fontFamily: variation["font-family"] ?? "sans-serif",
+                textAlign: variation["text-align"] ?? "center",
+                minHeight: variation["min-height"] ?? "10em",
+                maxHeight: variation["max-height"] ?? "10em",
               }}
             >
-              {addPrefix(variation.method, highlightKeyword(variation.text, currentKeyword))}
+              {addPrefix(
+                variation.method,
+                highlightKeyword(variation.text, currentKeyword)
+              )}
             </p>
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
