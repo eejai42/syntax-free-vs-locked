@@ -6,14 +6,26 @@ const AppHeader = ({
     currentKeyword,
     story
 }) => {
-    const headerStyle = {
+    
+    const nameStyle  = {
+        padding: "0.25em",
         marginTop: "0",
         marginBottom: "0",
+        float: 'left',
+        marginRight: '10em',
+        fontSize: '1.5em',
+        fontWeight: 'bold',
+
+
+    }
+    const statementStyle = {
+        marginTop: "0",
+        marginBottom: "0"
     }
   return (
-    <div>
-        <h1 style={headerStyle}>{story.name}</h1>
-        <h3 style={headerStyle}>{story.statement}</h3>
+    <div style={{padding: '1em', position: 'relative', minHeight: "4em"}}>
+        <div style={nameStyle}>{story.name}</div>
+        <div style={statementStyle}>{story.statement}</div>
     </div>
   );
 };

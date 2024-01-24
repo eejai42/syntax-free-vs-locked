@@ -46,6 +46,7 @@
 
 .LeftPane, .RightPane {
   flex: 1;
+  border-right: solid 1px lightskyblue;
 }
 
 /* Additional styles */
@@ -62,7 +63,7 @@
     opacity: 1;
   }
   100% {
-    transform: translateY(0%) scale(0.05); /* Finish above the container */
+    transform: translateY(-300%) scale(0.05); /* Finish above the container */
     opacity: 1;
   }
 }
@@ -72,6 +73,15 @@
   background-color: yellow;
   z-index: 999;
   opacity: 1;
+}
+
+.WhiteHeader {
+  position: relative;
+  background-color: white;
+  z-index: 999;
+  opacity: 1;
+  border-top: solid 1px lightskyblue;
+  border-bottom: solid 1px lightskyblue;
 }
 
 .FullHeightContainer {
@@ -103,8 +113,11 @@
   z-index: 999;
   position: absolute;
   white-space: 'pre-wrap';
-  min-height: 10em;
+  min-height: 5em;
+  max-height: 5em;
+  z-index: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+  overflow: hidden; /* Hide text that overflows the container */
 }
 
 /* Each document inside the scroller */
@@ -118,7 +131,7 @@
 }
 
 .TextScroller.active {
-  animation: scrollUp 10s linear forwards;
+  animation: scrollUp 1s linear forwards;
 }
 
 

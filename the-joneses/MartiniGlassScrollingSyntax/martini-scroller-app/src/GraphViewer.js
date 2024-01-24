@@ -11,8 +11,7 @@ const GraphViewer = ({ data, story, currentKeyword }) => {
 
   // Add more styles as needed
   const graphStyle = {
-    width: "90%",
-    maxHeight: "40%",
+    maxHeight: "60vh",
   };
 
   // Find the matching story
@@ -22,17 +21,19 @@ const GraphViewer = ({ data, story, currentKeyword }) => {
 
   return (
     <div style={containerStyle}>
-        <div style={{minHeight: "3em", maxHeight: "3em"}}>
-            <h3 style={{margin: 0}}>Syntax-Free Model</h3>
-            <h4 style={{margin: 0}}>Digital Mirror of The Thing Itself</h4>
-        </div>
               <div
         className="CharlieCounter"
       >
         {currentKeyword} Counter: 1
       </div>
+      <div style={{minHeight: "3em", maxHeight: "3em"}} className="WhiteHeader">
+            <h3 style={{margin: 0}}>Syntax-Free Model</h3>
+            <h4 style={{margin: 0}}>Digital Mirror of The Thing Itself</h4>
+        </div>
 
-      <img src={imagePath} alt="Knowledge Graph" style={graphStyle} />
+    <div style={{padding: '1em', fontSize: '0.8em'}}>
+        <img src={imagePath} alt="Knowledge Graph" style={graphStyle} />
+      </div>
     </div>
   );
 };

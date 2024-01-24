@@ -112,13 +112,13 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
 
   const addPrefix = (randomMethod, text) => {
     return (
-      <div stlye={{ backgroundColor: "red", minWidth: "500px" }}>
+      <div  style={{minWidth: "95%"}}>
         <div
           style={{
             backgroundColor: "white",
             opacity: 1,
             fontWeight: "bold",
-            padding: "1em",
+            padding: "0.5em",
             minWidth: "90%",
             fontSize: "0.8em",
             position: 'relative',
@@ -127,15 +127,8 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
           {" "}
           {randomMethod}:
         </div>
-        <br />
-        <em>
-          ...
-          <br />
-          {text}
-          <br />
-          ...          
-        </em>
-        <div style={{clear: 'both'}}>xyz</div>
+        <div style={{whiteSpace: 'pre-wrap'}}>{text}</div>
+        <div style={{clear: 'both'}}>{' '}</div>
       </div>
     );
   };
@@ -165,23 +158,23 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
       lastIndex += part.length + keywordText.length;
     });
 
-    return <span>{highlightedText}</span>;
+    return <div>{highlightedText}</div>;
   };
 
   return (
     <div style={{ position: "relative" }}>
-      <div style={{ minHeight: "3em", maxHeight: "3em" }}>
-        <h3 style={{ margin: 0 }}>Syntax-Locked Descriptions</h3>
-        <h4 style={{ margin: 0 }}>Descriptions of the Idea</h4>
-      </div>
 
-      <div className="FullHeightContainer" style={{ minHeight: "60vh" }}>
+      <div className="FullHeightContainer" style={{ minHeight: "65vh" }}>
         <div className="CharlieCounter">
           {currentKeyword} Counter: {keywordCounts[currentKeyword] || 0}
         </div>
+      <div style={{ minHeight: "3em", maxHeight: "3em" }} className="WhiteHeader">
+        <h3 style={{ margin: 0 }}>Syntax-Locked Descriptions</h3>
+        <h4 style={{ margin: 0 }}>Descriptions of the Idea</h4>
+      </div>
         {variationsWithPrefix.map((variation, index) => (
-          <div style={{width: '100%'}}>
-            <p
+          <div style={{width: '100%', zIndex: 100+index}}>
+            <div
               key={index}
               className={`TextScroller ${
                 activeVariationIndices.includes(index) ? "active" : ""
@@ -191,15 +184,15 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
                 fontSize: variation["font-size"] ?? "1.5em",
                 fontFamily: variation["font-family"] ?? "sans-serif",
                 textAlign: variation["text-align"] ?? "center",
-                minHeight: variation["min-height"] ?? "10em",
-                maxHeight: variation["max-height"] ?? "10em",
+                minHeight: variation["min-height"] ?? "5em",
+                maxHeight: variation["max-height"] ?? "15em",
               }}
             >
               {addPrefix(
                 variation.method,
-                highlightKeyword(variation.text, currentKeyword)
+                highlightKeyword(`${variation.text}`.trim(), currentKeyword)
               )}
-            </p>
+            </div>
           </div>
         ))}
       </div>

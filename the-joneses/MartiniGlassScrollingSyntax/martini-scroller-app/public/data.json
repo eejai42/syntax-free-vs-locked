@@ -106,6 +106,7 @@
           "English": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
+            "max-height": "10em",
             "variations": [
               "Project Proposal: \nOur project focuses on the dynamic between Charlie and his pet Dingo, a white, fluffy dog. It will also include interactions with his parents, Alice and Bob Jones, to provide a complete family perspective.",
               "Statement of Work - SOW 1033: \nThe work involves enhancing the living space for Charlie and Dingo, his white and fluffy canine. Additionally, the needs of Charlie's parents, Alice and Bob Jones, will be addressed.",
@@ -119,9 +120,9 @@
           },
           "Code": {
             "font-family": "'Courier New', monospace",
-            "font-size": "15px",
+            "font-size": "1.2em",
             "text-align": "left",
-            "min-height": "15em",
+            "min-height": "10em",
             "variations": [
               "Unity Game Initialization: \npublic class GameInitialization : MonoBehaviour { \n  void Start() { \n    ... \n    Debug.Log(\"Family initialized: Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
               "Unity Family Interaction: \npublic class FamilyInteraction : MonoBehaviour { \n  void Interact(...) { \n    ... \n    Debug.Log(\"... interacted with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",

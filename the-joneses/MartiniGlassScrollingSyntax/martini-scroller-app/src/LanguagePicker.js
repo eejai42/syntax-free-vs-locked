@@ -15,7 +15,7 @@ const LanguagePicker = ({
     else return keyword.name}
   }
   return (
-    <div>
+    <div style={{padding: '1em'}}>
 
       {data.story.languages.map((language, index) => (
         <button
