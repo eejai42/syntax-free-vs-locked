@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import GraphViewer from './GraphViewer';
 import TextScroller from './TextScroller';
@@ -13,9 +13,41 @@ function App() {
   const [currentStory, setCurrentStory] = useState(null);
   const [storyList, setStoryList] = useState([]);
 
+  const currentStoryIdRef = useRef(currentStoryId);
+  const storyListRef = useRef(storyList);
+
+  // Update the ref whenever the state changes
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/eejai42/syntax-free-vs-locked/master/the-joneses/martini-scroller-app/public/data.json')
-//    fetch('data.json')
+    currentStoryIdRef.current = currentStoryId;
+    storyListRef.current = storyList;
+  }, [currentStory]);
+
+
+    // Function to handle key press
+    const handleKeyPress = (event) => {
+      if (event.keyCode === 37) { // Left arrow key
+        handlePreviousStory();
+      } else if (event.keyCode === 39) { // Right arrow key
+        handleNextStory();
+      }
+    };
+  
+    // Adding event listener when component mounts
+    useEffect(() => {
+      window.addEventListener('keydown', handleKeyPress);
+  
+      // Removing event listener when component unmounts
+      return () => {
+        window.removeEventListener('keydown', handleKeyPress);
+      };
+    }, []);
+  
+  
+  
+
+  useEffect(() => {
+//    fetch('https://raw.githubusercontent.com/eejai42/syntax-free-vs-locked/master/the-joneses/martini-scroller-app/public/data.json')
+    fetch('data.json')
       .then(response => response.json())
       .then(data => {
         setData(data);
@@ -44,15 +76,23 @@ function App() {
   };
 
   const handleNextStory = () => {
-    const currentIndex = storyList.findIndex(story => story.id === currentStoryId);
-    const nextIndex = (currentIndex + 1) % storyList.length;
-    setCurrentStoryId(storyList[nextIndex].id);
+    const _storyList = storyListRef.current;
+    const _currentStoryId = currentStoryIdRef.current;
+    console.error('StoryList: ', _storyList, "StoryId", _currentStoryId)
+    const currentIndex = _storyList.findIndex(story => story.id === _currentStoryId);
+    const nextIndex = (currentIndex + 1) % _storyList.length;
+    console.error('NEXT: ', currentIndex, nextIndex, _storyList.length)
+    setCurrentStoryId(_storyList[nextIndex].id);
   };
 
   const handlePreviousStory = () => {
-    const currentIndex = storyList.findIndex(story => story.id === currentStoryId);
-    const prevIndex = (currentIndex - 1 + storyList.length) % storyList.length;
-    setCurrentStoryId(storyList[prevIndex].id);
+    const _storyList = storyListRef.current;
+    const _currentStoryId = currentStoryIdRef.current;
+    console.error('StoryList: ', _storyList, _currentStoryId)
+    const currentIndex = _storyList.findIndex(story => story.id === _currentStoryId);
+    const prevIndex = (currentIndex - 1 + _storyList.length) % _storyList.length;
+    console.error('PREV: ', currentIndex, prevIndex, _storyList.length)
+    setCurrentStoryId(_storyList[prevIndex].id);
   };
 
   if (!data) {

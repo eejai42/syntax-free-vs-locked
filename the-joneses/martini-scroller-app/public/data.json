@@ -115,7 +115,7 @@
               "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
               "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
               "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? A: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
             ]
           },
           "Code": {
@@ -190,7 +190,7 @@
       },
       {
         "name": "There's Just 1 Charlie!",
-        "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
+        "statement": "There's just 1 Alice, 1 Bob, 1 Charlie, and 1 Dingo. \n\nYou wouldn't know from the syntax-locked text though",
         "id": "just-1-charlie",
         "image": "glasses/1.png",
         "languages": {
@@ -206,7 +206,7 @@
               "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
               "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
               "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? A: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
             ]
           },
           "Code": {
@@ -281,7 +281,7 @@
       },
       {
         "name": "Charlie got Dingo for his 12th birthday!",
-        "statement": "The Joneses, Alice and Bob, have one son Charlie, got a white, fluffy dog named Dingo, for his 12th birthday.",
+        "statement": "Charlie, got a white, fluffy dog named Dingo, for his 12th birthday!",
         "id": "birthday-present",
         "image": "glasses/2.png",
         "languages": {
@@ -338,7 +338,7 @@
               "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
               "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
               "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? A: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
             ]
           },
           "Code": {
@@ -412,8 +412,8 @@
         }
       },
       {
-        "name": "The Glass is Broken... 🤔",
-        "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - Something's wrong...",
+        "name": "Why is the Glass Broken... 🤔",
+        "statement": "After visiting China, bob's brother received an email he didn't understand",
         "id": "mistranslation",
         "image": "glasses/3-Lost.png",
         "languages": {
@@ -429,7 +429,7 @@
               "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
               "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
               "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? A: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
             ]
           },
           "Code": {
@@ -504,7 +504,7 @@
       },
       {
         "name": "Who the heck is Frank?",
-        "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - Something's wrong...",
+        "statement": "Something in the chinese translation implied Frank is the Bio-Dad",
         "id": "mistranslation-explained",
         "image": "glasses/3-LostInEnglish.png",
         "languages": {
@@ -520,7 +520,7 @@
               "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
               "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
               "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? A: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
             ]
           },
           "Code": {
@@ -594,10 +594,10 @@
         }
       },
       {
-        "id": "Wineglass3",
-        "name": "And, the wineglass is back!",
+        "name": "DNA Test Results ... and, the wineglass is back!",
+        "statement": "A DNS Test showed that Bob is in fact the dad",
+        "id": "wineglass-back",
         "image": "glasses/4.png",
-        "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - Something's wrong...",
         "languages": {
           "English": {
             "text-align": "left",
@@ -611,7 +611,7 @@
               "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
               "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
               "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? A: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
             ]
           },
           "Code": {
@@ -686,7 +686,7 @@
       },
       {
         "name": "Charlie is now Mark, and he's 15!",
-        "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - Something's wrong...",
+        "statement": "Right at the last minute, the Stakeholder asked, flustered.\n\nWho the hell is Charlie?  His name Mark and he's 15!",
         "id": "meet-15yo-mark",
         "image": "glasses/5.png",
         "languages": {
@@ -702,7 +702,7 @@
               "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
               "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
               "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? A: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
             ]
           },
           "Code": {

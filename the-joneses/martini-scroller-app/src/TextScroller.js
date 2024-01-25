@@ -13,7 +13,8 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isBlinkingVisible, setIsBlinkingVisible] = useState(false);
 
-  // Blinking logic
+
+    // Blinking logic
   useEffect(() => {
     const blinkInterval = setInterval(() => {
       setIsBlinkingVisible(prev => !prev);
@@ -162,7 +163,10 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
       lastIndex += part.length + keywordText.length;
     });
 
-    return <div>{highlightedText}</div>;
+    return <div style={{
+      whiteSpace: 'pre-wrap'
+
+    }}>{highlightedText}</div>;
   };
 
   return (
@@ -208,7 +212,7 @@ const TextScroller = ({ data, languageName, currentKeyword, story }) => {
                     minHeight: variation["min-height"] ?? "5em",
                     maxHeight: variation["max-height"] ?? "15em",
                   }}
-                >
+                >                  
                   {addPrefix(
                     variation.method,
                     highlightKeyword(`${variation.text}`.trim(), currentKeyword)
