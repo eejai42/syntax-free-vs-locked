@@ -99,6 +99,7 @@
     "syntax-locked-vs-unlocked": [
       {
         "name": "Meet the Joneses",
+        "hint": "The Family",
         "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
         "id": "meet-the-joneses",
         "image": "glasses/meet-the-joneses.png",
@@ -191,6 +192,7 @@
       {
         "name": "There's Just 1 Charlie!",
         "statement": "There's just 1 Alice, 1 Bob, 1 Charlie, and 1 Dingo. \n\nYou wouldn't know from the syntax-locked text though",
+        "hint": "Just 1 Charlie!",
         "id": "just-1-charlie",
         "image": "glasses/1.png",
         "languages": {
@@ -282,6 +284,7 @@
       {
         "name": "Charlie got Dingo for his 12th birthday!",
         "statement": "Charlie, got a white, fluffy dog named Dingo, for his 12th birthday!",
+        "hint": "Birthday Present",
         "id": "birthday-present",
         "image": "glasses/2.png",
         "languages": {
@@ -322,6 +325,7 @@
       },
       {
         "id": "in-chinese",
+        "hint": "Chinese?",
         "name": "In Chinese?",
         "image": "glasses/3.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - in Chinese?",
@@ -413,7 +417,8 @@
       },
       {
         "name": "Why is the Glass Broken... 🤔",
-        "statement": "After visiting China, bob's brother received an email he didn't understand",
+        "statement": "Apparent SCANDEL introduced in the Chinese Translation.  😲",
+        "hint": "Mistranslation...",
         "id": "mistranslation",
         "image": "glasses/3-Lost.png",
         "languages": {
@@ -505,6 +510,7 @@
       {
         "name": "Who the heck is Frank?",
         "statement": "Something in the chinese translation implied Frank is the Bio-Dad",
+        "hint": "In English?",
         "id": "mistranslation-explained",
         "image": "glasses/3-LostInEnglish.png",
         "languages": {
@@ -596,6 +602,7 @@
       {
         "name": "DNA Test Results ... and, the wineglass is back!",
         "statement": "A DNS Test showed that Bob is in fact the dad",
+        "hint": "DNA Results!!!",
         "id": "wineglass-back",
         "image": "glasses/4.png",
         "languages": {
@@ -687,6 +694,7 @@
       {
         "name": "Charlie is now Mark, and he's 15!",
         "statement": "Right at the last minute, the Stakeholder asked, flustered.\n\nWho the hell is Charlie?  His name Mark and he's 15!",
+        "hint": "Charlie actually 15yo Mark!",
         "id": "meet-15yo-mark",
         "image": "glasses/5.png",
         "languages": {
