@@ -133,6 +133,8 @@ function App() {
         currentKeyword={currentKeyword}
         onVariationUpdate={setCurrentVariation}
         />
+        {/* Legacy Version */}
+        {/* <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} /> */}
       <TextScroller
         data={data}
         languageName={currentLanguage}

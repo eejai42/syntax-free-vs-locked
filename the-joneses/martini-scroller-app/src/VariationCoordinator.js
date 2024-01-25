@@ -34,7 +34,7 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
         const nextIndex = (currentVariationIndex + 1) % variations.length;
         setCurrentVariationIndex(nextIndex);
       }
-    }, 8000); // N seconds
+    }, 2500); // N seconds
 
     return () => clearInterval(interval);
   }, [variations, currentVariationIndex, onVariationUpdate]);
