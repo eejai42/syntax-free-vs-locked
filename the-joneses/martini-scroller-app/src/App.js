@@ -3,6 +3,7 @@ import './App.css';
 import GraphViewer from './GraphViewer';
 import TextScroller from './TextScroller';
 import LanguagePicker from './LanguagePicker';
+import StoryNavigator from './StoryNavigator';
 import AppHeader from './AppHeader';
 
 function App() {
@@ -78,21 +79,23 @@ function App() {
   const handleNextStory = () => {
     const _storyList = storyListRef.current;
     const _currentStoryId = currentStoryIdRef.current;
-    console.error('StoryList: ', _storyList, "StoryId", _currentStoryId)
     const currentIndex = _storyList.findIndex(story => story.id === _currentStoryId);
-    const nextIndex = (currentIndex + 1) % _storyList.length;
-    console.error('NEXT: ', currentIndex, nextIndex, _storyList.length)
-    setCurrentStoryId(_storyList[nextIndex].id);
+  
+    if (currentIndex < _storyList.length - 1) { // Check if not at the last story
+      const nextIndex = currentIndex + 1;
+      setCurrentStoryId(_storyList[nextIndex].id);
+    }
   };
-
+  
   const handlePreviousStory = () => {
     const _storyList = storyListRef.current;
     const _currentStoryId = currentStoryIdRef.current;
-    console.error('StoryList: ', _storyList, _currentStoryId)
     const currentIndex = _storyList.findIndex(story => story.id === _currentStoryId);
-    const prevIndex = (currentIndex - 1 + _storyList.length) % _storyList.length;
-    console.error('PREV: ', currentIndex, prevIndex, _storyList.length)
-    setCurrentStoryId(_storyList[prevIndex].id);
+  
+    if (currentIndex > 0) { // Check if not at the first story
+      const prevIndex = currentIndex - 1;
+      setCurrentStoryId(_storyList[prevIndex].id);
+    }
   };
 
   if (!data) {
@@ -102,8 +105,14 @@ function App() {
   return (
     <div className="App">
       <AppHeader story={currentStory} currentLanguage={currentLanguage} currentKeyword={currentKeyword} />
-      <button onClick={handlePreviousStory}>Previous Story</button>
-      <button onClick={handleNextStory}>Next Story</button>
+      <div>
+        <StoryNavigator
+              onPrevious={handlePreviousStory}
+              onNext={handleNextStory}
+              storyList={storyList}
+              currentStoryId={currentStoryId}
+            />
+      </div>
       <div className="SplitScreen">
         <div className="RightPane">
           <GraphViewer data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
