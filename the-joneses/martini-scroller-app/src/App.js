@@ -5,7 +5,7 @@ import TextScroller from './TextScroller';
 import LanguagePicker from './LanguagePicker';
 import StoryNavigator from './StoryNavigator';
 import AppHeader from './AppHeader';
-
+import VariationCoordinator from './VariationCoordinator';
 function App() {
   const [data, setData] = useState(null);
   const [currentLanguage, setCurrentLanguage] = useState('English');
@@ -14,8 +14,16 @@ function App() {
   const [currentStory, setCurrentStory] = useState(null);
   const [storyList, setStoryList] = useState([]);
 
+
   const currentStoryIdRef = useRef(currentStoryId);
   const storyListRef = useRef(storyList);
+
+  const [currentVariation, setCurrentVariation] = useState(null);
+
+  // Function to handle the variation update from VariationCoordinator
+  const handleCurrentVariation = (variation) => {
+    setCurrentVariation(variation);
+  };
 
   // Update the ref whenever the state changes
   useEffect(() => {
@@ -118,8 +126,20 @@ function App() {
           <GraphViewer data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
         </div>
         <div className="LeftPane">
-          <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} />
-          <LanguagePicker data={data} currentLanguage={currentLanguage} onLanguageChange={handleLanguageChange} currentKeyword={currentKeyword} onKeywordSelect={handleKeywordSelect} />
+        <VariationCoordinator
+        data={data}
+        currentStory={currentStory}
+        currentLanguage={currentLanguage}
+        currentKeyword={currentKeyword}
+        onVariationUpdate={setCurrentVariation}
+        />
+      <TextScroller
+        data={data}
+        languageName={currentLanguage}
+        currentKeyword={currentKeyword}
+        currentVariation={currentVariation} // pass the current variation to TextScroller
+        />
+        <LanguagePicker data={data} currentLanguage={currentLanguage} onLanguageChange={handleLanguageChange} currentKeyword={currentKeyword} onKeywordSelect={handleKeywordSelect} />
         </div>
       </div>
     </div>
