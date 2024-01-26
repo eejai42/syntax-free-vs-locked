@@ -1,50 +1,40 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from 'react';
+import './TextScroller.css';
 
-const TextScroller = ({ currentVariation }) => {
-  const [variationQueue, setVariationQueue] = useState([]);
-  const maxQueueSize = 4; // Maximum number of variations to display
+const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword }) => {
+  const [queue, setQueue] = useState([]);
+  const [keywordCounter, setKeywordCounter] = useState(0);
 
-  // Add new variation to the queue
+  useEffect(() => {
+    console.error('UPDATED TextScroller.', currentKeywordCounter, Date.now())
+    setKeywordCounter(currentKeywordCounter);
+  }, [currentKeywordCounter]);
+
   useEffect(() => {
     if (currentVariation) {
-      console.error("GOT NEW VARIATION: ", currentVariation, variationQueue);
-      setVariationQueue((prevQueue) => {
-        const newQueue = [
-          ...prevQueue,
-          { ...currentVariation, key: Date.now() },
-        ];
-        return newQueue.length > maxQueueSize
-          ? newQueue.slice(-maxQueueSize)
-          : newQueue;
+      console.error('FOUND NEW VARIATION: ', currentVariation, Date.now())
+      setQueue(prevQueue => {
+        const newVariation = { ...currentVariation, key: Date.now() + Math.random() };
+        const newQueue = [...prevQueue, newVariation];
+        if (newQueue.length > 5) {
+          newQueue.shift(); // Remove the oldest item if queue length exceeds 5
+        }
+        return newQueue;
       });
     }
   }, [currentVariation]);
 
   return (
-    <div className="FullHeightContainer" style={{ minHeight: "65vh" }}>
-      {variationQueue.map((variation) => (
-        <div key={variation.key}>
-          <div
-            // className="TextScroller"
-            style={{
-              animationDuration: "8s",
-              border: "1px solid red", // Temporary border to visually debug
-            }}
-          >
-            <div style={{ minWidth: "95%" }}>
-              <div
-                style={{
-                  fontWeight: "bold",
-                  padding: "0.5em",
-                  fontSize: "0.8em",
-                  position: "relative",
-                }}
-              >
-                {variation.title}:
-              </div>
-              <div style={{ whiteSpace: "pre-wrap" }}>{variation.text}</div>
-            </div>
-          </div>
+    <div className="TextScrollerContainer">
+      <div className="CharlieCounter"> {currentKeyword} Counter: {keywordCounter} </div>
+      {queue.map(variation => (
+        <div
+          key={variation.key}
+          className="TextScrollerItem"
+          style={variation.style} // Apply the style defined in each variation
+        >
+          <div className="CardTitle">{variation.title} - {variation.lineThrough}</div>
+          <div dangerouslySetInnerHTML={{ __html: variation.htmlText }}></div>
         </div>
       ))}
     </div>

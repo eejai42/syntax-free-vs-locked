@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import GraphViewer from "./GraphViewer";
-import TextScroller2 from "./TextScroller2";
+import TextScroller from "./TextScroller";
 import LanguagePicker from "./LanguagePicker";
 import StoryNavigator from "./StoryNavigator";
 import AppHeader from "./AppHeader";
@@ -63,8 +63,8 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setData(data);
-        setStoryList(data.story["syntax-locked-vs-unlocked"]);
-        const currentStory = data.story["syntax-locked-vs-unlocked"].find(
+        setStoryList(data.story["chapters"]);
+        const currentStory = data.story["chapters"].find(
           (s) => s.id === currentStoryId
         );
         setCurrentStory(currentStory);
@@ -76,7 +76,7 @@ function App() {
 
   useEffect(() => {
     if (data) {
-      const currentStory = data.story["syntax-locked-vs-unlocked"].find(
+      const currentStory = data.story["chapters"].find(
         (s) => s.id === currentStoryId
       );
       setCurrentStory(currentStory);
@@ -162,7 +162,7 @@ function App() {
           <div>
             TEST: {currentKeywordCounter}
           </div>
-          <TextScroller2 currentVariation={currentVariation} keywordCounter={currentKeywordCounter} />
+          <TextScroller currentVariation={currentVariation} keywordCounter={currentKeywordCounter} currentKeyword={currentKeyword} />
           <LanguagePicker
             data={data}
             currentLanguage={currentLanguage}

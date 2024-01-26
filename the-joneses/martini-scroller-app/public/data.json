@@ -4,6 +4,7 @@
     "keywords": [
       {
         "name": "Charlie",
+        "replaced-with": "Mark",
         "greek": "Τσάρλι",
         "chinese": "查理"
       },
@@ -31,13 +32,13 @@
         "name": "Code"
       },
       {
+        "name": "Chinese"
+      },
+      {
         "name": "Spanish"
       },
       {
         "name": "Greek"
-      },
-      {
-        "name": "Chinese"
       }
     ],
     "communication-methods": [
@@ -96,7 +97,7 @@
       "Meeting",
       "Conference"
     ],
-    "syntax-locked-vs-unlocked": [
+    "chapters": [
       {
         "name": "Meet the Joneses",
         "hint": "The Family",
@@ -697,6 +698,7 @@
         "hint": "Charlie actually 15yo Mark!",
         "id": "meet-15yo-mark",
         "image": "glasses/5.png",
+        "line-through": true,
         "languages": {
           "English": {
             "text-align": "left",

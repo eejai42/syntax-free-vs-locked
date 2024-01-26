@@ -14,7 +14,7 @@
     }
   }
 
-.TextScroller2Container {
+.TextScrollerContainer {
     position: relative;
     min-height: 50vh;
     max-height: 50vh;
@@ -23,13 +23,36 @@
     width: 100%;
   }
   
-  .TextScroller2Item {
+  .TextScrollerItem {
     position: absolute;
     bottom: 0;
     width: 100%;
     animation: scrollUp linear forwards;
     white-space: pre-wrap;
+    max-height: 4em;
+    overflow: hidden;
   }
   
   
+  .CardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px blue;
+  }
   
+
+  .highlightedKeyword {
+    font-weight: bold;
+    background-color: green;
+    text-decoration: none;
+    color: yellow;
+  }
+  
+  .staleKeyword {
+    font-weight: bold;
+    background-color: red;
+    text-decoration: line-through #222222 solid 4px;
+    color: white;
+  }
