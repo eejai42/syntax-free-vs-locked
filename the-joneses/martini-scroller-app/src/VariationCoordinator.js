@@ -7,23 +7,30 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
   // Generate and update variations when dependencies change
   useEffect(() => {
     if (currentStory && data) {
-      const languageData = currentStory.languages[currentLanguage];
-      if (languageData) {
-        const updatedVariations = languageData.variations.map(variationText => {
-          const prefix = getPrefixBeforeColon(variationText);
-          const finalVariationText = getVariationTextAfterColon(variationText);
-          const randomMethod = prefix ?? getRandomMethod(data);
-        
-          return {
-            title: randomMethod,
-            text: finalVariationText, // Plain text
-            htmlText: highlightKeyword(finalVariationText, currentKeyword, data), // HTML highlighted text
-          };
-        });        
-        setVariations(updatedVariations);
-      }
+      updateVariations();
     }
-  }, [currentStory, currentLanguage, currentKeyword, data]);
+  }, [currentStory?.id, currentLanguage, currentKeyword, data]); // Using currentStory.id for a more explicit dependency check
+
+  // Function to update variations
+  const updateVariations = () => {
+    const languageData = currentStory.languages[currentLanguage];
+    console.error('UPDATED Variations.', languageData, currentLanguage, currentStory, currentKeyword, data)
+    if (languageData) {
+      const updatedVariations = languageData.variations.map(variationText => {
+        const prefix = getPrefixBeforeColon(variationText);
+        const finalVariationText = getVariationTextAfterColon(variationText);
+        const randomMethod = prefix ?? getRandomMethod(data);
+      
+        return {
+          title: randomMethod,
+          text: finalVariationText, // Plain text
+          htmlText: highlightKeyword(finalVariationText, currentKeyword, data), // HTML highlighted text
+        };
+      });        
+      setVariations(updatedVariations);
+      setCurrentVariationIndex(0); // Reset the variation index
+    }
+  };
 
   // Emit a single variation every N seconds
   useEffect(() => {
@@ -34,10 +41,11 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
         const nextIndex = (currentVariationIndex + 1) % variations.length;
         setCurrentVariationIndex(nextIndex);
       }
-    }, 2500); // N seconds
+    }, 2000); // N seconds
 
     return () => clearInterval(interval);
   }, [variations, currentVariationIndex, onVariationUpdate]);
+
 
   const getPrefixBeforeColon = (text) => {
     const colonIndex = text.indexOf(":");

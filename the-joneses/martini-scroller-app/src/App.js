@@ -151,8 +151,7 @@ function App() {
           />
           {/* Legacy Version */}
           {/* <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} /> */}
-          <TextScroller2 currentVariation={currentVariation} /> // pass the
-          current variation to TextScroller
+          <TextScroller2 currentVariation={currentVariation} />
           <LanguagePicker
             data={data}
             currentLanguage={currentLanguage}
