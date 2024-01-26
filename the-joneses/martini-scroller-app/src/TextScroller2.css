@@ -1,0 +1,18 @@
+
+
+.TextScroller2Container {
+    position: relative;
+    height: 100%;
+    max-height: 50vh;
+    overflow: hidden;
+  }
+  
+  .TextScroller2Item {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: scrollUp 10s linear forwards;
+  }
+  
+  
+  
