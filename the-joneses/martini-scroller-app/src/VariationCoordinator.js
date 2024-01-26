@@ -35,9 +35,10 @@ const VariationCoordinator = ({
     );
     if (languageData) {
       const updatedVariations = languageData.variations.map((variationText) => {
-        const prefix = `${getPrefixBeforeColon(variationText)}`.trim();
+        const prefix = getPrefixBeforeColon(variationText);
         const finalVariationText = `${getVariationTextAfterColon(variationText)}`.trim();
         const randomMethod = prefix ?? getRandomMethod(data);
+        console.error("UPDATED randomMethod.", randomMethod, variationText, data.story.keywords);
         const highlightedText = highlightKeyword(
           finalVariationText,
           currentKeyword,
@@ -48,14 +49,15 @@ const VariationCoordinator = ({
           title: randomMethod,
           text: finalVariationText,
           htmlText: highlightedText,
+          language: currentLanguage,
           lineThrough: currentStory["line-through"],
           style: {
             animationDuration: `${6000}ms`,
             fontSize: languageData["font-size"] ?? "1.5em",
             fontFamily: languageData["font-family"] ?? "sans-serif",
             textAlign: languageData["text-align"] ?? "center",
-            minHeight: languageData["min-height"] ?? "5em",
-            maxHeight: languageData["max-height"] ?? "15em",
+            minHeight: languageData["min-height"] ?? null,
+            maxHeight: languageData["max-height"] ?? null,
           },
         };
         console.error("UPDATED refinedVariation.", currentStory, refinedVariation);
@@ -94,6 +96,7 @@ const VariationCoordinator = ({
 
   const getRandomMethod = (data) => {
     const methods = data.story["communication-methods"];
+    console.error("COMMUNICATIOn METHODS --------------------", methods);
     return methods[Math.floor(Math.random() * methods.length)];
   };
 

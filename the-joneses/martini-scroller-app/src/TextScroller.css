@@ -4,8 +4,20 @@
       transform: translateY(50%) scale(1); /* Start just below the container */
       opacity: 1;
     }
-    90% {
-      transform: translateY(-40vh) scale(0.1); /* Scroll well above the top */
+    20% {
+      transform: translateY(-18vh) scale(0.8); /* Scroll well above the top */
+      opacity: 1;
+    }
+    40% {
+      transform: translateY(-25vh) scale(0.6); /* Scroll well above the top */
+      opacity: 1;
+    }
+    60% {
+      transform: translateY(-33vh) scale(0.5); /* Scroll well above the top */
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(-41vh) scale(0.3); /* Scroll well above the top */
       opacity: 1;
     }
     100% {
@@ -30,6 +42,7 @@
     animation: scrollUp linear forwards;
     white-space: pre-wrap;
     max-height: 4em;
+    min-height: 4em;
     overflow: hidden;
   }
   
@@ -55,4 +68,14 @@
     background-color: red;
     text-decoration: line-through #222222 solid 4px;
     color: white;
+  }
+
+  .languageTag {
+    float: right;
+    background-color: lightblue;
+    color: darkblue;
+    font-weight: bold;
+    border: light-blue solid 1px;
+    border-radius: 5px;
+    padding: 2px;
   }

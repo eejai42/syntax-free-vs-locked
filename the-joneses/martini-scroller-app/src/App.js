@@ -162,7 +162,7 @@ function App() {
           <div>
             TEST: {currentKeywordCounter}
           </div>
-          <TextScroller currentVariation={currentVariation} keywordCounter={currentKeywordCounter} currentKeyword={currentKeyword} />
+          <TextScroller currentVariation={currentVariation} keywordCounter={currentKeywordCounter} currentKeyword={currentKeyword} currentLanguage={currentLanguage}/>
           <LanguagePicker
             data={data}
             currentLanguage={currentLanguage}
