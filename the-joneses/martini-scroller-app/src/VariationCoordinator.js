@@ -1,17 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyword, onVariationUpdate }) => {
   const [variations, setVariations] = useState([]);
   const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
+  const [keywordCounters, setKeywordCounters] = useState({}); // Global keyword counters
+  const [currentKeywordCounter, setCurrentKeywordCounter] = useState(0);
 
-  // Generate and update variations when dependencies change
   useEffect(() => {
     if (currentStory && data) {
       updateVariations();
     }
-  }, [currentStory?.id, currentLanguage, currentKeyword, data]); // Using currentStory.id for a more explicit dependency check
+  }, [currentStory?.id, currentLanguage, currentKeyword, data]);
 
-  // Function to update variations
+  useEffect(() => {
+    // Update the currentKeywordCounter based on the current keyword
+    console.error('UPDATED currentKeywordCounter.', currentKeyword, keywordCounters[currentKeyword])
+    setCurrentKeywordCounter(keywordCounters[currentKeyword] || 0);
+  }, [currentKeyword, keywordCounters]);
+
   const updateVariations = () => {
     const languageData = currentStory.languages[currentLanguage];
     console.error('UPDATED Variations.', languageData, currentLanguage, currentStory, currentKeyword, data)
@@ -20,19 +26,19 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
         const prefix = getPrefixBeforeColon(variationText);
         const finalVariationText = getVariationTextAfterColon(variationText);
         const randomMethod = prefix ?? getRandomMethod(data);
-      
-        return {
+        const highlightedText = highlightKeyword(finalVariationText, currentKeyword, data);
+        const refinedVariation = {
           title: randomMethod,
-          text: finalVariationText, // Plain text
-          htmlText: highlightKeyword(finalVariationText, currentKeyword, data), // HTML highlighted text
-        };
+          text: finalVariationText,
+          htmlText: highlightedText,
+        }
+        return refinedVariation;;
       });        
       setVariations(updatedVariations);
-      setCurrentVariationIndex(0); // Reset the variation index
+      setCurrentVariationIndex(0);
     }
   };
 
-  // Emit a single variation every N seconds
   useEffect(() => {
     const interval = setInterval(() => {
       if (variations.length > 0) {
@@ -41,11 +47,10 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
         const nextIndex = (currentVariationIndex + 1) % variations.length;
         setCurrentVariationIndex(nextIndex);
       }
-    }, 2000); // N seconds
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [variations, currentVariationIndex, onVariationUpdate]);
-
 
   const getPrefixBeforeColon = (text) => {
     const colonIndex = text.indexOf(":");
@@ -63,8 +68,23 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
   };
 
   const highlightKeyword = (text, keyword, data) => {
+    console.error('UPDATED highlightKeyword.', text, keyword, data)
     const keywordText = getKeywordText(keyword, data);
-    return text.replace(new RegExp(keywordText, 'gi'), `<span style="font-weight:bold;background-color:yellow;">${keywordText}</span>`);
+    const highlightedText = text.replace(new RegExp(keywordText, 'gi'), match => {
+      setKeywordCounters(prevCounters => {
+        const currentCount = prevCounters[match] ? prevCounters[match] + 1 : 1;
+  
+        // If the match is the current keyword, update the currentKeywordCounter
+        if (match === currentKeyword) {
+          setCurrentKeywordCounter(currentCount);
+        }
+  
+        return { ...prevCounters, [match]: currentCount };
+      });
+  
+      return `<span style="font-weight:bold;background-color:yellow;">${match}</span>`;
+    });
+    return highlightedText;
   };
 
   const getKeywordText = (keywordName, data) => {

@@ -18,10 +18,16 @@ function App() {
   const storyListRef = useRef(storyList);
 
   const [currentVariation, setCurrentVariation] = useState(null);
+  const [keywordCounters, setKeywordCounters] = useState({});
+  const [currentKeywordCounter, setCurrentKeywordCounter] = useState(0);
 
   // Function to handle the variation update from VariationCoordinator
-  const handleCurrentVariation = (variation) => {
-    setCurrentVariation(variation);
+  const handleCurrentKeywordCounter = (variation) => {
+    setCurrentKeywordCounter(variation);
+  };
+
+  const handleKeywordCounters = (counters) => {
+    setKeywordCounters(counters);
   };
 
   // Update the ref whenever the state changes
@@ -142,23 +148,31 @@ function App() {
           />
         </div>
         <div className="LeftPane">
-          <VariationCoordinator
-            data={data}
-            currentStory={currentStory}
-            currentLanguage={currentLanguage}
-            currentKeyword={currentKeyword}
-            onVariationUpdate={setCurrentVariation}
-          />
+        <VariationCoordinator
+          data={data}
+          currentStory={currentStory}
+          currentLanguage={currentLanguage}
+          currentKeyword={currentKeyword}
+          onVariationUpdate={setCurrentVariation}
+          updateKeywordCounters={handleKeywordCounters} // New callback
+          updateCurrentKeywordCounter={handleCurrentKeywordCounter} // New callback
+        />
           {/* Legacy Version */}
           {/* <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} /> */}
-          <TextScroller2 currentVariation={currentVariation} />
+          <div>
+            TEST: {currentKeywordCounter}
+          </div>
+          <TextScroller2 currentVariation={currentVariation} keywordCounter={currentKeywordCounter} />
           <LanguagePicker
             data={data}
             currentLanguage={currentLanguage}
             onLanguageChange={handleLanguageChange}
             currentKeyword={currentKeyword}
             onKeywordSelect={handleKeywordSelect}
-          />
+            currentVariation={currentVariation}
+            keywordCounters={keywordCounters} // Pass keyword counters
+            currentKeywordCounter={currentKeywordCounter} // Pass current keyword counter
+          />     
         </div>
       </div>
     </div>
