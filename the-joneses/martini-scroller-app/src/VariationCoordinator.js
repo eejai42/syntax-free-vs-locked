@@ -31,7 +31,7 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
           text: finalVariationText,
           htmlText: highlightedText,
           style: {
-            // animationDuration: `${2000}ms`,
+            animationDuration: `${6000}ms`,
             fontSize: languageData['font-size'] ?? '1.5em',
             fontFamily: languageData['font-family'] ?? 'sans-serif',
             textAlign: languageData['text-align'] ?? 'center',
