@@ -14,7 +14,6 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
 
   useEffect(() => {
     // Update the currentKeywordCounter based on the current keyword
-    console.error('UPDATED currentKeywordCounter.', currentKeyword, keywordCounters[currentKeyword])
     setCurrentKeywordCounter(keywordCounters[currentKeyword] || 0);
   }, [currentKeyword, keywordCounters]);
 
@@ -31,14 +30,22 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
           title: randomMethod,
           text: finalVariationText,
           htmlText: highlightedText,
+          style: {
+            // animationDuration: `${2000}ms`,
+            fontSize: languageData['font-size'] ?? '1.5em',
+            fontFamily: languageData['font-family'] ?? 'sans-serif',
+            textAlign: languageData['text-align'] ?? 'center',
+            minHeight: languageData['min-height'] ?? '5em',
+            maxHeight: languageData['max-height'] ?? '15em',
+          }
         }
-        return refinedVariation;;
+        console.error('UPDATED refinedVariation.', refinedVariation)
+        return refinedVariation;
       });        
       setVariations(updatedVariations);
       setCurrentVariationIndex(0);
     }
   };
-
   useEffect(() => {
     const interval = setInterval(() => {
       if (variations.length > 0) {
@@ -47,7 +54,7 @@ const VariationCoordinator = ({ data, currentStory, currentLanguage, currentKeyw
         const nextIndex = (currentVariationIndex + 1) % variations.length;
         setCurrentVariationIndex(nextIndex);
       }
-    }, 2000);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, [variations, currentVariationIndex, onVariationUpdate]);

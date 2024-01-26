@@ -5,13 +5,15 @@
     height: 100%;
     max-height: 50vh;
     overflow: hidden;
+    border-top: 1px solid black;
   }
   
   .TextScroller2Item {
     position: absolute;
     bottom: 0;
     width: 100%;
-    animation: scrollUp 10s linear forwards;
+    animation: scrollUp 6500ms linear forwards;
+    white-space: pre-wrap;
   }
   
   
