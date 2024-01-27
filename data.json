@@ -130,6 +130,7 @@
             "font-size": "1.2em",
             "text-align": "left",
             "min-height": "10em",
+            "max-height": "10em",
             "variations": [
               "Unity Game Initialization: \npublic class GameInitialization : MonoBehaviour { \n  void Start() { \n    ... \n    Debug.Log(\"Family initialized: Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
               "Unity Family Interaction: \npublic class FamilyInteraction : MonoBehaviour { \n  void Interact(...) { \n    ... \n    Debug.Log(\"... interacted with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
@@ -198,7 +199,7 @@
       {
         "name": "There's Just 1 Charlie!",
         "statement": "There's just 1 Alice, 1 Bob, 1 Charlie, and 1 Dingo. \n\nYou wouldn't know from the syntax-locked text though",
-        "hint": "Just 1 Charlie!",
+        "hint": "There's just 1 Charlie!",
         "id": "just-1-charlie",
         "image": "glasses/1.png",
         "languages": {
@@ -290,7 +291,7 @@
       {
         "name": "Charlie got Dingo for his 12th birthday!",
         "statement": "Charlie, got a white, fluffy dog named Dingo, for his 12th birthday!",
-        "hint": "Birthday Present",
+        "hint": "Dingo Was a Birthday Present",
         "id": "birthday-present",
         "image": "glasses/2.png",
         "languages": {
@@ -347,8 +348,8 @@
       },
       {
         "id": "in-chinese",
-        "hint": "Chinese?",
-        "name": "In Chinese?",
+        "hint": "Can we see it in Chinese?",
+        "name": "Jonese in Chinese",
         "image": "glasses/3.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - in Chinese?",
         "languages": {
@@ -536,7 +537,7 @@
       {
         "name": "Who the heck is Frank?",
         "statement": "Something in the chinese translation implied Frank is the Bio-Dad",
-        "hint": "In English?",
+        "hint": "Show me in English!",
         "id": "mistranslation-explained",
         "image": "glasses/3-LostInEnglish.png",
         "languages": {
