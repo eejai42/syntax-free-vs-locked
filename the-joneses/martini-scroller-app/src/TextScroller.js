@@ -24,7 +24,7 @@ const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword 
 
   return (
     <div className="TextScrollerContainer">
-      <div className="CharlieCounter"> {currentKeyword} Counter: {keywordCounter}</div>
+      <div className="CharlieCounter"> {currentKeyword} Counter: <span>{keywordCounter}</span></div>
       <div
           style={{ minHeight: "3em", maxHeight: "3em" }}
           className="WhiteHeader"
@@ -38,7 +38,7 @@ const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword 
           className="TextScrollerItem"
           style={variation.style} // Apply the style defined in each variation
         >
-          <div class="languageTag">{variation.language}</div>
+          <div className="languageTag">{variation.language}</div>
           <div className="CardTitle">{variation.title}</div>
           <div dangerouslySetInnerHTML={{ __html: variation.htmlText }}></div>
         </div>

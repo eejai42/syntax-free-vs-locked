@@ -8,7 +8,7 @@ import AppHeader from "./AppHeader";
 import VariationCoordinator from "./VariationCoordinator";
 function App() {
   const [data, setData] = useState(null);
-  const [currentLanguage, setCurrentLanguage] = useState("English");
+  const [currentLanguage, setCurrentLanguage] = useState("NativeLanguage");
   const [currentKeyword, setCurrentKeyword] = useState("Charlie");
   const [currentStoryId, setCurrentStoryId] = useState("meet-the-joneses");
   const [currentStory, setCurrentStory] = useState(null);

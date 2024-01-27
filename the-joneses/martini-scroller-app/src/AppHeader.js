@@ -10,24 +10,30 @@ const AppHeader = ({
     const nameStyle  = {
         padding: "0.25em",
         marginTop: "0",
-        marginBottom: "0",
+        marginBottom: "-1em",
         float: 'left',
-        marginRight: '2em',
-        fontSize: '1.5em',
+        fontSize: '3em',
         fontWeight: 'bold',
-        maxWidth: '35vw',
-        minWidth: '35vw'
-
+        maxWidth: '50vw',
+        minWidth: '50vw'        
 
     }
     const statementStyle = {
         marginTop: "0",
-        marginBottom: "0"
+        marginBottom: "0",
+        width: '50%',
+        maxWidth: '45vw',
+        minWidth: '30vw',
+        fontSize: '1.4em',
+        float: 'left',
+        textAlign: 'center',
+
     }
   return (
     <div style={{padding: '1em', position: 'relative', minHeight: "4em"}}>
         <div style={nameStyle}>{story.name}</div>
         <div style={statementStyle}>{story.statement}</div>
+        <div style={{clear: 'both'}}></div>
     </div>
   );
 };

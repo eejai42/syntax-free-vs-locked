@@ -56,6 +56,7 @@
   
 
   .highlightedKeyword {
+    margin: 0.25em;
     font-weight: bold;
     background-color: green;
     text-decoration: none;
@@ -63,6 +64,7 @@
   }
   
   .staleKeyword {
+    margin: 0.25em;
     font-weight: bold;
     background-color: red;
     text-decoration: line-through #222222 solid 4px;

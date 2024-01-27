@@ -24,7 +24,7 @@ const GraphViewer = ({ data, story, currentKeyword }) => {
               <div
         className="CharlieCounter"
       >
-        {currentKeyword} Counter: 1
+        {currentKeyword} Counter: <span>1</span>
       </div>
       <div style={{minHeight: "3em", maxHeight: "3em"}} className="WhiteHeader">
             <h3 style={{margin: 0}}>Syntax-Free Model</h3>

@@ -24,19 +24,10 @@ const VariationCoordinator = ({
     const count = keywordCounters[currentKeyword] || 0;
     setCurrentKeywordCounter(count);
     updateCurrentKeywordCounter(count)
-    console.error('CURRENT COUNTER: ', count, Date.now())
   }, [currentKeyword, keywordCounters]);
 
   const updateVariations = () => {
     const languageData = currentStory.languages[currentLanguage];
-    console.error(
-      "UPDATED Variations.",
-      languageData,
-      currentLanguage,
-      currentStory,
-      currentKeyword,
-      data
-    );
     if (languageData) {
       const updatedVariations = languageData.variations.map((variationText) => {
         const prefix = getPrefixBeforeColon(variationText);
@@ -73,6 +64,7 @@ const VariationCoordinator = ({
  useEffect(() => {
     let interval;
     const startInterval = () => {
+      if (interval) return;
       interval = setInterval(() => {
         if (variations.length > 0) {
           emitVariation();
@@ -82,6 +74,7 @@ const VariationCoordinator = ({
 
     const stopInterval = () => {
       clearInterval(interval);
+      interval = null;
     };
 
     startInterval();
@@ -140,7 +133,6 @@ const VariationCoordinator = ({
   };
 
   const highlightKeyword = (text, keyword, data, lineThrough) => {
-    console.error("UPDATED highlightKeyword.", text, "Keyword", keyword, "Data",  data, "Line Through: ", currentStory.lineThrough);
     const keywordText = getKeywordText(keyword, data);
     const highlightedText = text.replace(
       new RegExp(keywordText, "gi"),
@@ -158,8 +150,11 @@ const VariationCoordinator = ({
           return { ...prevCounters, [match]: currentCount };
         });
   
-        const styleClass = lineThrough ? "staleKeyword" : "highlightedKeyword";
-        return `<span class="${styleClass}">${match}</span>`;
+        const replacementText = null //data.story.keywords.find(k => k.name === keyword)?.["replace-with"] || "";
+        const crossedOutKeyword = lineThrough ? `<span class="staleKeyword">${match}</span>` : `<span class="highlightedKeyword">${match}</span>`;
+        const replacementKeyword = lineThrough && replacementText ? `<span class="highlightedKeyword">${replacementText}</span>` : "";
+  
+        return `${crossedOutKeyword}${replacementKeyword}`;
       }
     );
     return highlightedText;
