@@ -49,20 +49,6 @@
   border-right: solid 1px lightskyblue;
 }
 
-
-
-.CharlieCounter {  
-  position: relative;
-  background-color: yellow;
-  opacity: 1;
-  font-size: 1.5em;
-  z-index: 999999;
-}
-
-.CharlieCounter span {
-  font-weight: bold;
-}
-
 .WhiteHeader {
   position: relative;
   background-color: white;
@@ -70,7 +56,25 @@
   opacity: 1;
   border-top: solid 1px lightskyblue;
   border-bottom: solid 1px lightskyblue;
+  min-height: 3em; 
+  max-height: 4em;
+  font-size: 1.5em;
 }
+
+.WhiteHeader H3 {
+  font-size: 1.4em;
+}
+
+
+.WhiteHeader H3, .WhiteHeader H4 {
+  margin: 0;
+}
+
+.WhiteHeader H3 span {
+  font-style: italic;
+  font-weight: normal;
+}
+
 
 .FullHeightContainer {
   position: relative;

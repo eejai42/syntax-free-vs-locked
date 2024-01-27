@@ -1,35 +1,41 @@
+.CharlieCounter {  
+  position: relative;
+  background-color: yellow;
+  padding: 0.5em;
+  opacity: 1;
+  font-size: 1.5em;
+  z-index: 999999;
+}
+
+.CharlieCounter span {
+  font-weight: bold;
+}
+
+
 /* Additional styles */
 @keyframes scrollUp {
     0% {
       transform: translateY(50%) scale(1); /* Start just below the container */
       opacity: 1;
     }
-    20% {
-      transform: translateY(-12vh) scale(0.8); /* Scroll well above the top */
-      opacity: 1;
-    }
-    40% {
-      transform: translateY(-25vh) scale(0.6); /* Scroll well above the top */
-      opacity: 1;
-    }
-    60% {
-      transform: translateY(-33vh) scale(0.5); /* Scroll well above the top */
-      opacity: 1;
-    }
     80% {
-      transform: translateY(-41vh) scale(0.3); /* Scroll well above the top */
+      transform: translateY(-50vh) scale(0.5); /* Scroll well above the top */
+      opacity: 1;
+    }
+    90% {
+      transform: translateY(-60vh) scale(0.3); /* Scroll well above the top */
       opacity: 1;
     }
     100% {
-      transform: translateY(-50vh) scale(0.1); /* Finish above the container */
+      transform: translateY(-80vh) scale(0.1); /* Finish above the container */
       opacity: 1;
     }
   }
 
 .TextScrollerContainer {
     position: relative;
-    min-height: 50vh;
-    max-height: 50vh;
+    min-height: 70vh;
+    max-height: 70vh;
     overflow: hidden;
     width: 100%;
   }

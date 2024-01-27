@@ -24,20 +24,18 @@ const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword,
 
   return (
     <div className="TextScrollerContainer">
+        <div className="WhiteHeader" >
+          <h3>Syntax-Locked <span>documents</span></h3>
+          <h4>Descriptions of the Idea</h4>
+        </div>
+
       <div className="CharlieCounter"> 
-      <div style={{position: 'absolute', right: '10', fontSize:'0.8em', paddingRight: '0.25em'}}>{currentTime.dayOfWeekName}
+      <div style={{position: 'absolute', right: '10px', fontSize:'0.8em', paddingRight: '0.25em'}}>{currentTime.dayOfWeekName || 'Monday'}
       {currentTime.calendarDay > 7 ? `, Week #${Math.floor(currentTime.calendarDay / 7) + 1}` : null}
       </div>
         {currentKeyword} Counter: <span>{keywordCounter}</span>
 
       </div>
-      <div
-          style={{ minHeight: "3em", maxHeight: "3em" }}
-          className="WhiteHeader"
-        >
-          <h3 style={{ margin: 0 }}>Syntax-Locked Descriptions</h3>
-          <h4 style={{ margin: 0 }}>Descriptions of the Idea</h4>
-        </div>
       {queue.map(variation => (
         <div
           key={variation.key}

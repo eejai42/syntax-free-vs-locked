@@ -1,5 +1,13 @@
 import { useState, useEffect } from "react";
-const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const daysOfWeek = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
 
 const VariationCoordinator = ({
   data,
@@ -7,8 +15,8 @@ const VariationCoordinator = ({
   currentLanguage,
   currentKeyword,
   onVariationUpdate,
-  updateCurrentKeywordCounter, 
-  onTimeUpdate
+  updateCurrentKeywordCounter,
+  onTimeUpdate,
 }) => {
   const [variations, setVariations] = useState([]);
   const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
@@ -32,7 +40,7 @@ const VariationCoordinator = ({
     // Update the currentKeywordCounter based on the current keyword
     const count = keywordCounters[currentKeyword] || 0;
     setCurrentKeywordCounter(count);
-    updateCurrentKeywordCounter(count)
+    updateCurrentKeywordCounter(count);
   }, [currentKeyword, keywordCounters]);
 
   const updateVariations = () => {
@@ -40,13 +48,16 @@ const VariationCoordinator = ({
     if (languageData) {
       const updatedVariations = languageData.variations.map((variationText) => {
         const prefix = getPrefixBeforeColon(variationText);
-        const finalVariationText = `${getVariationTextAfterColon(variationText)}`.trim();
+        const finalVariationText = `${getVariationTextAfterColon(
+          variationText
+        )}`.trim();
         const randomMethod = prefix ?? getRandomMethod(data);
         const highlightedText = highlightKeyword(
           finalVariationText,
           currentKeyword,
-          data, 
-          currentStory["line-through"]
+          data,
+          currentStory["line-through"],
+          false // Do not update counters during initial setup
         );
         const refinedVariation = {
           title: randomMethod,
@@ -59,8 +70,8 @@ const VariationCoordinator = ({
             fontSize: languageData["font-size"] ?? "1.5em",
             fontFamily: languageData["font-family"] ?? "sans-serif",
             textAlign: languageData["text-align"] ?? "center",
-            minHeight: languageData["min-height"] ?? null,
-            maxHeight: languageData["max-height"] ?? null,
+            minHeight: languageData["min-height"] ?? '10em',
+            maxHeight: languageData["max-height"] ?? '15em',
           },
         };
         return refinedVariation;
@@ -70,7 +81,7 @@ const VariationCoordinator = ({
     }
   };
 
- useEffect(() => {
+  useEffect(() => {
     let interval;
     const startInterval = () => {
       if (interval) return;
@@ -110,15 +121,18 @@ const VariationCoordinator = ({
 
       calendarDay += 1;
       dayOfWeekIndex = (dayOfWeekIndex + 1) % 7;
-      
-      if (dayOfWeekIndex < 5) { // Weekday
+
+      if (dayOfWeekIndex < 5) {
+        // Weekday
         businessDay += 1;
-      } else if (dayOfWeekIndex === 5) { // Saturday
+      } else if (dayOfWeekIndex === 5) {
+        // Saturday
         calendarDay += 2; // Skip to Monday
         dayOfWeekIndex = 0;
       }
 
-      onTimeUpdate({ // Assuming you want to send this data to App.js
+      onTimeUpdate({
+        // Assuming you want to send this data to App.js
         calendarDay,
         businessDay,
         dayOfWeekIndex,
@@ -140,7 +154,8 @@ const VariationCoordinator = ({
     onVariationUpdate(variationToEmit);
     const nextIndex = (currentVariationIndex + 1) % variations.length;
     setCurrentVariationIndex(nextIndex);
-    if (Math.random() < 0.5) { // 30% chance to advance a day
+    if (Math.random() < 0.15) {
+      // 30% chance to advance a day
       advanceDay();
     }
   }
@@ -149,15 +164,30 @@ const VariationCoordinator = ({
     const keywordText = getKeywordText(currentKeyword, data);
     const matches = text.match(new RegExp(keywordText, "gi")) || [];
     const count = matches.length;
-    setKeywordCounters(prevCounters => ({
+    console.error(
+      "KEYWORD Counters:",
+      keywordCounters,
+      "TEXT",
+      text,
+      "KEYWORD",
+      currentKeyword,
+      "COUNT",
+      count
+    );
+    setKeywordCounters((prevCounters) => ({
       ...prevCounters,
-      [currentKeyword]: (prevCounters[currentKeyword] || 0) + count
+      [currentKeyword]: (prevCounters[currentKeyword] || 0) + count,
     }));
     const totalKeywordCount = (keywordCounters[currentKeyword] || 0) + count;
     setCurrentKeywordCounter(totalKeywordCount);
     updateCurrentKeywordCounter(totalKeywordCount);
+    console.error(
+      "Setting CurrentKeywordCounter and Updating the current keyword count: ",
+      totalKeywordCount,
+      "TEXT",
+      text
+    );
   }
-
 
   const getPrefixBeforeColon = (text) => {
     const colonIndex = text.indexOf(":");
@@ -174,34 +204,43 @@ const VariationCoordinator = ({
     return methods[Math.floor(Math.random() * methods.length)];
   };
 
-  const highlightKeyword = (text, keyword, data, lineThrough) => {
+  const highlightKeyword = (
+    text,
+    keyword,
+    data,
+    lineThrough,
+    updateCounter = true
+  ) => {
     const keywordText = getKeywordText(keyword, data);
-    const highlightedText = text.replace(
-      new RegExp(keywordText, "gi"),
-      (match) => {
+    return text.replace(new RegExp(keywordText, "gi"), (match) => {
+      if (updateCounter) {
+        // Update counters only if flag is true
         setKeywordCounters((prevCounters) => {
           const currentCount = prevCounters[match]
             ? prevCounters[match] + 1
             : 1;
-  
+
           // If the match is the current keyword, update the currentKeywordCounter
           if (match === currentKeyword) {
             setCurrentKeywordCounter(currentCount);
           }
-  
+
           return { ...prevCounters, [match]: currentCount };
         });
-  
-        const replacementText = null //data.story.keywords.find(k => k.name === keyword)?.["replace-with"] || "";
-        const crossedOutKeyword = lineThrough ? `<span class="staleKeyword">${match}</span>` : `<span class="highlightedKeyword">${match}</span>`;
-        const replacementKeyword = lineThrough && replacementText ? `<span class="highlightedKeyword">${replacementText}</span>` : "";
-  
-        return `${crossedOutKeyword}${replacementKeyword}`;
       }
-    );
-    return highlightedText;
+
+      const replacementText = ""; // Adjust as needed
+      const crossedOutKeyword = lineThrough
+        ? `<span class="staleKeyword">${match}</span>`
+        : `<span class="highlightedKeyword">${match}</span>`;
+      const replacementKeyword =
+        lineThrough && replacementText
+          ? `<span class="highlightedKeyword">${replacementText}</span>`
+          : "";
+
+      return `${crossedOutKeyword}${replacementKeyword}`;
+    });
   };
-  
 
   const getKeywordText = (keywordName, data) => {
     const keywords = data.story.keywords;

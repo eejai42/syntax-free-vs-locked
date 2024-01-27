@@ -21,15 +21,15 @@ const GraphViewer = ({ data, story, currentKeyword }) => {
 
   return (
     <div style={containerStyle}>
+      <div className="WhiteHeader">
+            <h3>Syntax-Free <span>model</span></h3>
+            <h4>A Digital Mirror of Reality</h4>
+        </div>
               <div
         className="CharlieCounter"
       >
         {currentKeyword} Counter: <span>1</span>
       </div>
-      <div style={{minHeight: "3em", maxHeight: "3em"}} className="WhiteHeader">
-            <h3 style={{margin: 0}}>Syntax-Free Model</h3>
-            <h4 style={{margin: 0}}>Digital Mirror of Reality</h4>
-        </div>
 
     <div style={{padding: '1em', fontSize: '0.8em'}}>
         <img src={imagePath} alt="Knowledge Graph" style={graphStyle} />

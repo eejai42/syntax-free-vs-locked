@@ -12,7 +12,7 @@ const AppHeader = ({
         marginTop: "0",
         marginBottom: "-1em",
         float: 'left',
-        fontSize: '3em',
+        fontSize: '2em',
         fontWeight: 'bold',
         maxWidth: '50vw',
         minWidth: '50vw'        
@@ -30,7 +30,7 @@ const AppHeader = ({
 
     }
   return (
-    <div style={{padding: '1em', position: 'relative', minHeight: "4em"}}>
+    <div style={{padding: '0.25em', position: 'relative', minHeight: "4em"}}>
         <div style={nameStyle}>{story.name}</div>
         <div style={statementStyle}>{story.statement}</div>
         <div style={{clear: 'both'}}></div>
