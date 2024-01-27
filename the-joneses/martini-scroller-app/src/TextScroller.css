@@ -5,7 +5,7 @@
       opacity: 1;
     }
     20% {
-      transform: translateY(-18vh) scale(0.8); /* Scroll well above the top */
+      transform: translateY(-12vh) scale(0.8); /* Scroll well above the top */
       opacity: 1;
     }
     40% {
@@ -31,7 +31,6 @@
     min-height: 50vh;
     max-height: 50vh;
     overflow: hidden;
-    border-top: 1px solid black;
     width: 100%;
   }
   

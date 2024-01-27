@@ -3,16 +3,14 @@ import './TextScroller.css';
 
 const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword }) => {
   const [queue, setQueue] = useState([]);
-  const [keywordCounter, setKeywordCounter] = useState(0);
+  const [keywordCounter, setKeywordCounter] = useState(15);
 
   useEffect(() => {
-    console.error('UPDATED TextScroller.', currentKeywordCounter, Date.now())
     setKeywordCounter(currentKeywordCounter);
   }, [currentKeywordCounter]);
 
   useEffect(() => {
     if (currentVariation) {
-      console.error('FOUND NEW VARIATION: ', currentVariation, Date.now())
       setQueue(prevQueue => {
         const newVariation = { ...currentVariation, key: Date.now() + Math.random() };
         const newQueue = [...prevQueue, newVariation];
@@ -26,7 +24,14 @@ const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword 
 
   return (
     <div className="TextScrollerContainer">
-      <div className="CharlieCounter"> {currentKeyword} Counter: {keywordCounter} </div>
+      <div className="CharlieCounter"> {currentKeyword} Counter: {keywordCounter}</div>
+      <div
+          style={{ minHeight: "3em", maxHeight: "3em" }}
+          className="WhiteHeader"
+        >
+          <h3 style={{ margin: 0 }}>Syntax-Locked Descriptions</h3>
+          <h4 style={{ margin: 0 }}>Descriptions of the Idea</h4>
+        </div>
       {queue.map(variation => (
         <div
           key={variation.key}

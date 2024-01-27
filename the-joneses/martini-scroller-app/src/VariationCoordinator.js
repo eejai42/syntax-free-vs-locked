@@ -6,6 +6,7 @@ const VariationCoordinator = ({
   currentLanguage,
   currentKeyword,
   onVariationUpdate,
+  updateCurrentKeywordCounter
 }) => {
   const [variations, setVariations] = useState([]);
   const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
@@ -20,7 +21,10 @@ const VariationCoordinator = ({
 
   useEffect(() => {
     // Update the currentKeywordCounter based on the current keyword
-    setCurrentKeywordCounter(keywordCounters[currentKeyword] || 0);
+    const count = keywordCounters[currentKeyword] || 0;
+    setCurrentKeywordCounter(count);
+    updateCurrentKeywordCounter(count)
+    console.error('CURRENT COUNTER: ', count, Date.now())
   }, [currentKeyword, keywordCounters]);
 
   const updateVariations = () => {
@@ -38,7 +42,6 @@ const VariationCoordinator = ({
         const prefix = getPrefixBeforeColon(variationText);
         const finalVariationText = `${getVariationTextAfterColon(variationText)}`.trim();
         const randomMethod = prefix ?? getRandomMethod(data);
-        console.error("UPDATED randomMethod.", randomMethod, variationText, data.story.keywords);
         const highlightedText = highlightKeyword(
           finalVariationText,
           currentKeyword,
@@ -60,13 +63,13 @@ const VariationCoordinator = ({
             maxHeight: languageData["max-height"] ?? null,
           },
         };
-        console.error("UPDATED refinedVariation.", currentStory, refinedVariation);
         return refinedVariation;
       });
       setVariations(updatedVariations);
       setCurrentVariationIndex(0);
     }
   };
+  
   useEffect(() => {
     const interval = setInterval(() => {
       if (variations.length > 0) {
@@ -79,10 +82,25 @@ const VariationCoordinator = ({
 
   function emitVariation() {
     const variationToEmit = variations[currentVariationIndex];
+    updateKeywordCounters(variationToEmit.text); // Update keyword counters based on the emitted variation
     onVariationUpdate(variationToEmit);
     const nextIndex = (currentVariationIndex + 1) % variations.length;
     setCurrentVariationIndex(nextIndex);
   }
+
+  function updateKeywordCounters(text) {
+    const keywordText = getKeywordText(currentKeyword, data);
+    const matches = text.match(new RegExp(keywordText, "gi")) || [];
+    const count = matches.length;
+    setKeywordCounters(prevCounters => ({
+      ...prevCounters,
+      [currentKeyword]: (prevCounters[currentKeyword] || 0) + count
+    }));
+    const totalKeywordCount = (keywordCounters[currentKeyword] || 0) + count;
+    setCurrentKeywordCounter(totalKeywordCount);
+    updateCurrentKeywordCounter(totalKeywordCount);
+  }
+
 
   const getPrefixBeforeColon = (text) => {
     const colonIndex = text.indexOf(":");
@@ -96,7 +114,6 @@ const VariationCoordinator = ({
 
   const getRandomMethod = (data) => {
     const methods = data.story["communication-methods"];
-    console.error("COMMUNICATIOn METHODS --------------------", methods);
     return methods[Math.floor(Math.random() * methods.length)];
   };
 
