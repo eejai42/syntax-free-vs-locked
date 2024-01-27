@@ -444,6 +444,7 @@
         "statement": "Apparent SCANDEL introduced in the Chinese Translation.  😲",
         "hint": "Mistranslation...",
         "id": "mistranslation",
+        "start-language": "Chinese",
         "image": "glasses/3-Lost.png",
         "languages": {
           "English": {

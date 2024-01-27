@@ -5,13 +5,14 @@ import './App.css'
 const GraphViewer = ({ data, story, currentKeyword }) => {
   const containerStyle = {
     marginTop: "0rem",
-    minHeight: "100vh",
+    minHeight: "80vh",
     // Add more styles as needed
   };
 
   // Add more styles as needed
   const graphStyle = {
-    maxHeight: "60vh",
+    height: '70vh',
+    maxHeight: "70vh",
   };
 
   // Find the matching story

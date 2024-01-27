@@ -7,21 +7,23 @@ const StoryLine = ({
     story
 }) => {
     
+    const parentStyle = {
+        display: 'flex', // Using Flexbox
+        alignItems: 'center', // Vertically centers the child
+        justifyContent: 'center', // Horizontally centers the child
+        height: '5em', // Sets the height to exactly 5em
+        // Additional styles (like width, background, etc.) can be added here
+    };
 
-    const statementStyle = {
-        marginTop: "0",
-        marginBottom: "0",
-        width: '100%',
+    const childStyle = {
         fontSize: '1.4em',
-        textAlign: 'center',
-    }
+    };
 
-  return (
-    <div style={{padding: '0.25em', position: 'relative', minHeight: "5em"}}>
-        <div style={statementStyle}>{story.statement}</div>
-        <div style={{clear: 'both'}}></div>
-    </div>
-  );
+    return (
+        <div style={parentStyle}>
+            <div style={childStyle}>{story.statement}</div>
+        </div>
+    );
 };
 
 export default StoryLine;

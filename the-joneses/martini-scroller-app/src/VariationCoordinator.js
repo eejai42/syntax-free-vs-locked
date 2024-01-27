@@ -17,6 +17,7 @@ const VariationCoordinator = ({
   onVariationUpdate,
   updateCurrentKeywordCounter,
   onTimeUpdate,
+  onLanguageChange,
 }) => {
   const [variations, setVariations] = useState([]);
   const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
@@ -50,7 +51,7 @@ const VariationCoordinator = ({
         const prefix = getPrefixBeforeColon(variationText);
         const finalVariationText = `${getVariationTextAfterColon(
           variationText
-        )}`.trim();
+        )}`.trim();        
         const randomMethod = prefix ?? getRandomMethod(data);
         const highlightedText = highlightKeyword(
           finalVariationText,
@@ -76,6 +77,9 @@ const VariationCoordinator = ({
         };
         return refinedVariation;
       });
+      if (currentStory["start-language"] && (currentLanguage != 'English')) {
+        onLanguageChange(currentStory["start-language"]);
+      }
       setVariations(updatedVariations);
       setCurrentVariationIndex(0);
     }
@@ -89,7 +93,7 @@ const VariationCoordinator = ({
         if (variations.length > 0) {
           emitVariation();
         }
-      }, 1500);
+      }, 1350);
     };
 
     const stopInterval = () => {
@@ -154,7 +158,7 @@ const VariationCoordinator = ({
     onVariationUpdate(variationToEmit);
     const nextIndex = (currentVariationIndex + 1) % variations.length;
     setCurrentVariationIndex(nextIndex);
-    if (Math.random() < 0.15) {
+    if (Math.random() < 0.05) {
       // 30% chance to advance a day
       advanceDay();
     }
@@ -164,16 +168,6 @@ const VariationCoordinator = ({
     const keywordText = getKeywordText(currentKeyword, data);
     const matches = text.match(new RegExp(keywordText, "gi")) || [];
     const count = matches.length;
-    console.error(
-      "KEYWORD Counters:",
-      keywordCounters,
-      "TEXT",
-      text,
-      "KEYWORD",
-      currentKeyword,
-      "COUNT",
-      count
-    );
     setKeywordCounters((prevCounters) => ({
       ...prevCounters,
       [currentKeyword]: (prevCounters[currentKeyword] || 0) + count,
@@ -181,12 +175,6 @@ const VariationCoordinator = ({
     const totalKeywordCount = (keywordCounters[currentKeyword] || 0) + count;
     setCurrentKeywordCounter(totalKeywordCount);
     updateCurrentKeywordCounter(totalKeywordCount);
-    console.error(
-      "Setting CurrentKeywordCounter and Updating the current keyword count: ",
-      totalKeywordCount,
-      "TEXT",
-      text
-    );
   }
 
   const getPrefixBeforeColon = (text) => {

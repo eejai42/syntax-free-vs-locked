@@ -62,7 +62,7 @@ function App() {
 
   useEffect(() => {
     //fetch('https://raw.githubusercontent.com/eejai42/syntax-free-vs-locked/master/the-joneses/martini-scroller-app/public/data.json')
-      fetch("data.json")
+    fetch("data.json")
       .then((response) => response.json())
       .then((data) => {
         setData(data);
@@ -87,6 +87,7 @@ function App() {
   }, [currentStoryId, data]);
 
   const handleLanguageChange = (language) => {
+    console.error('CHANGING LANGUAGE: ', language)
     setCurrentLanguage(language);
   };
 
@@ -129,28 +130,34 @@ function App() {
   return (
     <div className="App">
       <div className="SplitScreen">
-   
         <div className="LeftPane">
         <StoryLine
             story={currentStory}
             currentLanguage={currentLanguage}
             currentKeyword={currentKeyword}
           />
-        <VariationCoordinator
-          data={data}
-          currentStory={currentStory}
-          currentLanguage={currentLanguage}
-          currentKeyword={currentKeyword}
-          onVariationUpdate={setCurrentVariation}
-          updateKeywordCounters={handleKeywordCounters} // New callback
-          updateCurrentKeywordCounter={handleCurrentKeywordCounter} // New callback
-          onTimeUpdate={(currentTime) => {
-            setCurrentTime(currentTime);
-          }}
-        />
+          <VariationCoordinator
+            data={data}
+            currentStory={currentStory}
+            currentLanguage={currentLanguage}
+            currentKeyword={currentKeyword}
+            onVariationUpdate={setCurrentVariation}
+            updateKeywordCounters={handleKeywordCounters} // New callback
+            updateCurrentKeywordCounter={handleCurrentKeywordCounter} // New callback
+            onLanguageChange={handleLanguageChange}
+            onTimeUpdate={(currentTime) => {
+              setCurrentTime(currentTime);
+            }}
+          />
           {/* Legacy Version */}
           {/* <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} /> */}
-          <TextScroller currentVariation={currentVariation} currentKeywordCounter={currentKeywordCounter} currentKeyword={currentKeyword} currentLanguage={currentLanguage} currentTime={currentTime}/>
+          <TextScroller
+            currentVariation={currentVariation}
+            currentKeywordCounter={currentKeywordCounter}
+            currentKeyword={currentKeyword}
+            currentLanguage={currentLanguage}
+            currentTime={currentTime}
+          />
           <LanguagePicker
             data={data}
             currentLanguage={currentLanguage}
@@ -160,29 +167,32 @@ function App() {
             currentVariation={currentVariation}
             keywordCounters={keywordCounters} // Pass keyword counters
             currentKeywordCounter={currentKeywordCounter} // Pass current keyword counter
-          />     
+          />
         </div>
         <div className="RightPane">
-          <AppHeader
+          
+      
+        <AppHeader
             story={currentStory}
             currentLanguage={currentLanguage}
             currentKeyword={currentKeyword}
           />
+
           <GraphViewer
             data={data}
             languageName={currentLanguage}
             story={currentStory}
             currentKeyword={currentKeyword}
           />
-        <StoryNavigator
-          onPrevious={handlePreviousStory}
-          onNext={handleNextStory}
-          storyList={storyList}
-          currentStoryId={currentStoryId}
-        />        </div>
+            <StoryNavigator
+            onPrevious={handlePreviousStory}
+            onNext={handleNextStory}
+            storyList={storyList}
+            currentStoryId={currentStoryId}
+          />
+        </div>
       </div>
-      <div>
-      </div>
+      <div></div>
     </div>
   );
 }
