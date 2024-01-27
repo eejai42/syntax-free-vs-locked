@@ -22,7 +22,7 @@ const GraphViewer = ({ data, story, currentKeyword }) => {
   return (
     <div style={containerStyle}>
       <div className="WhiteHeader">
-            <h3>Syntax-Free <span>model</span></h3>
+            <h3><span>One</span> Syntax-Free <span>model</span></h3>
             <h4>A Digital Mirror of Reality</h4>
         </div>
               <div

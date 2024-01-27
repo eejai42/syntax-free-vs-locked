@@ -204,43 +204,46 @@ const VariationCoordinator = ({
     return methods[Math.floor(Math.random() * methods.length)];
   };
 
-  const highlightKeyword = (
-    text,
-    keyword,
-    data,
-    lineThrough,
-    updateCounter = true
-  ) => {
+  const highlightKeyword = (text, keyword, data, lineThrough, updateCounter = true) => {
     const keywordText = getKeywordText(keyword, data);
-    return text.replace(new RegExp(keywordText, "gi"), (match) => {
+    let lineThroughKeywords = [];
+    let highlightKeywords = [];
+  
+    if (lineThrough && lineThrough.length > 0) {
+      lineThrough.forEach(item => {
+        const [lineThroughWord, highlightWord] = item.split(':');
+        if (lineThroughWord) {
+          lineThroughKeywords.push(lineThroughWord);
+        }
+        if (highlightWord) {
+          highlightKeywords.push(highlightWord);
+        }
+      });
+    } else {
+      highlightKeywords = [keywordText]; // No line-through, only highlighting
+    }
+  
+    // Process line-through keywords
+    lineThroughKeywords.forEach(ltKeyword => {
+      text = text.replace(new RegExp(ltKeyword, "gi"), `<span class="staleKeyword">${ltKeyword}</span>`);
+    });
+  
+    // Process highlight keywords
+    return text.replace(new RegExp(highlightKeywords.join("|"), "gi"), (match) => {
       if (updateCounter) {
-        // Update counters only if flag is true
         setKeywordCounters((prevCounters) => {
-          const currentCount = prevCounters[match]
-            ? prevCounters[match] + 1
-            : 1;
-
-          // If the match is the current keyword, update the currentKeywordCounter
+          const currentCount = prevCounters[match] ? prevCounters[match] + 1 : 1;
           if (match === currentKeyword) {
             setCurrentKeywordCounter(currentCount);
           }
-
           return { ...prevCounters, [match]: currentCount };
         });
       }
-
-      const replacementText = ""; // Adjust as needed
-      const crossedOutKeyword = lineThrough
-        ? `<span class="staleKeyword">${match}</span>`
-        : `<span class="highlightedKeyword">${match}</span>`;
-      const replacementKeyword =
-        lineThrough && replacementText
-          ? `<span class="highlightedKeyword">${replacementText}</span>`
-          : "";
-
-      return `${crossedOutKeyword}${replacementKeyword}`;
+      return `<span class="highlightedKeyword">${match}</span>`;
     });
   };
+  
+  
 
   const getKeywordText = (keywordName, data) => {
     const keywords = data.story.keywords;
