@@ -7,6 +7,7 @@ import StoryNavigator from "./StoryNavigator";
 import AppHeader from "./AppHeader";
 import VariationCoordinator from "./VariationCoordinator";
 import StoryLine from "./StoryLine";
+import TextToSpeech from "./TextToSpeech";
 
 function App() {
   const [data, setData] = useState(null);
@@ -177,7 +178,8 @@ function App() {
               storyList={storyList}
               currentStoryId={currentStoryId}
             />
-            <AppHeader style={{zIndex: 1}}
+            <AppHeader
+              style={{ zIndex: 1 }}
               story={currentStory}
               currentLanguage={currentLanguage}
               currentKeyword={currentKeyword}
@@ -192,6 +194,9 @@ function App() {
         </div>
       </div>
       <div></div>
+      <div style={{marginTop: '3em', paddingTop: '3em'}}>
+        <TextToSpeech currentStory={currentStory} charlieCounter={currentKeywordCounter} />
+      </div>
     </div>
   );
 }
