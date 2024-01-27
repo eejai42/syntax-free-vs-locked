@@ -6,9 +6,11 @@ import LanguagePicker from "./LanguagePicker";
 import StoryNavigator from "./StoryNavigator";
 import AppHeader from "./AppHeader";
 import VariationCoordinator from "./VariationCoordinator";
+import StoryLine from "./StoryLine";
+
 function App() {
   const [data, setData] = useState(null);
-  const [currentLanguage, setCurrentLanguage] = useState("NativeLanguage");
+  const [currentLanguage, setCurrentLanguage] = useState("English");
   const [currentKeyword, setCurrentKeyword] = useState("Charlie");
   const [currentStoryId, setCurrentStoryId] = useState("meet-the-joneses");
   const [currentStory, setCurrentStory] = useState(null);
@@ -126,29 +128,14 @@ function App() {
 
   return (
     <div className="App">
-      <AppHeader
-        story={currentStory}
-        currentLanguage={currentLanguage}
-        currentKeyword={currentKeyword}
-      />
-      <div>
-        <StoryNavigator
-          onPrevious={handlePreviousStory}
-          onNext={handleNextStory}
-          storyList={storyList}
-          currentStoryId={currentStoryId}
-        />
-      </div>
       <div className="SplitScreen">
-        <div className="RightPane">
-          <GraphViewer
-            data={data}
-            languageName={currentLanguage}
+   
+        <div className="LeftPane">
+        <StoryLine
             story={currentStory}
+            currentLanguage={currentLanguage}
             currentKeyword={currentKeyword}
           />
-        </div>
-        <div className="LeftPane">
         <VariationCoordinator
           data={data}
           currentStory={currentStory}
@@ -175,6 +162,26 @@ function App() {
             currentKeywordCounter={currentKeywordCounter} // Pass current keyword counter
           />     
         </div>
+        <div className="RightPane">
+          <AppHeader
+            story={currentStory}
+            currentLanguage={currentLanguage}
+            currentKeyword={currentKeyword}
+          />
+          <GraphViewer
+            data={data}
+            languageName={currentLanguage}
+            story={currentStory}
+            currentKeyword={currentKeyword}
+          />
+        <StoryNavigator
+          onPrevious={handlePreviousStory}
+          onNext={handleNextStory}
+          storyList={storyList}
+          currentStoryId={currentStoryId}
+        />        </div>
+      </div>
+      <div>
       </div>
     </div>
   );

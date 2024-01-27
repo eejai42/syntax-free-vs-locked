@@ -41,6 +41,7 @@
 
 .SplitScreen {
   display: flex;
+  max-height: 90vh;
   justify-content: space-between;
 }
 

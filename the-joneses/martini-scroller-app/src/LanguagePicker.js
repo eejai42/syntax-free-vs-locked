@@ -18,7 +18,7 @@ const LanguagePicker = ({
     <div style={{padding: '1em'}}>
 
       {data.story.languages.map((language, index) => (
-        <button
+        <button className="btn btn-primary"
           key={index}
           onClick={() => onLanguageChange(language.name)}
           disabled={currentLanguage === language.name}
@@ -31,7 +31,7 @@ const LanguagePicker = ({
         {data.story.keywords
           .flatMap((keyword) => keyword)
           .map((keyword, index) => (
-            <button
+            <button className="btn btn-primary"
               key={index}
               onClick={() => onKeywordSelect(keyword.name)}
               disabled={currentKeyword === keyword.name}

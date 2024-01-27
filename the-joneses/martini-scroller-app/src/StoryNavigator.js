@@ -11,14 +11,14 @@ function StoryNavigator({ onPrevious, onNext, storyList, currentStoryId }) {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <button 
+      <button  className="btn btn-primary"
         onClick={onPrevious}
         disabled={currentIndex === 0}
         style={{ visibility: currentIndex > 0 ? 'visible' : 'hidden' }}
       >
         &lt;&lt; {findStoryHint(-1)}
       </button>
-      <button 
+      <button className="btn btn-primary"
         onClick={onNext}
         disabled={currentIndex === storyList.length - 1}
         style={{ visibility: currentIndex < storyList.length - 1 ? 'visible' : 'hidden' }}

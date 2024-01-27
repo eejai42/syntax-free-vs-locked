@@ -31,7 +31,7 @@
     ],
     "languages": [
       {
-        "name": "NativeLanguage"
+        "name": "English"
       },
       {
         "name": "Code"
@@ -110,7 +110,7 @@
         "id": "meet-the-joneses",
         "image": "glasses/meet-the-joneses.png",
         "languages": {
-          "NativeLanguage": {
+          "English": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
@@ -203,7 +203,7 @@
         "id": "just-1-charlie",
         "image": "glasses/1.png",
         "languages": {
-          "NativeLanguage": {
+          "English": {
             "text-align": "left",
             "max-height": "10em",
             "min-height": "10em",
@@ -295,7 +295,7 @@
         "id": "birthday-present",
         "image": "glasses/2.png",
         "languages": {
-          "NativeLanguage": {
+          "English": {
             "min-height": "10em",
             "variations": [
               "Project Proposal: \nOur project celebrates the special bond between Charlie and his 12th birthday gift, Dingo, a white, fluffy dog. This narrative also encompasses the family dynamic with his parents, Alice and Bob Jones, enriching the story with a complete family perspective.",
@@ -349,25 +349,24 @@
       {
         "id": "in-chinese",
         "hint": "Can we see it in Chinese?",
-        "name": "Jonese in Chinese",
+        "name": "The Jonese in Chinese",
+        "start-language": "Chinese",
         "image": "glasses/3.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - in Chinese?",
         "languages": {
-          "NativeLanguage": {
+          "English": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
             "variations": [
-              "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
-              "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
-              "在琼斯家，有夫妻二人艾丽丝和鲍勃，还有他们的儿子查理，以及查理的宠物狗丁戈，它的毛发白且蓬松。",
-              "艾丽丝和鲍勃·琼斯是一对夫妇，他们养育着儿子查理和一只白色蓬松的狗丁戈。",
-              "查理，作为艾丽丝和鲍勃·琼斯之子，有一只叫丁戈的白毛蓬松狗。",
-              "琼斯一家由艾丽丝、鲍勃和他们的儿子查理组成，还有查理的白色蓬松狗丁戈。",
-              "艾丽丝与鲍勃·琼斯的家中有他们的儿子查理和一只白色蓬松的宠物狗丁戈。",
-              "查理是艾丽丝和鲍勃·琼斯的孩子，他养了一只名为丁戈的白色蓬松狗。",
-              "在琼斯家族中，艾丽丝和鲍勃有一个儿子叫查理，查理有一只白色蓬松的狗，名叫丁戈。",
-              "艾丽丝和鲍勃·琼斯夫妇的儿子查理拥有一只蓬松白色的狗，它的名字叫丁戈。"
+              "Project Proposal: \nOur project celebrates the special bond between Charlie and his 12th birthday gift, Dingo, a white, fluffy dog. This narrative also encompasses the family dynamic with his parents, Alice and Bob Jones, enriching the story with a complete family perspective.",
+              "Statement of Work - SOW 1033: \nThe work involves creating an engaging environment for Charlie and his 12th birthday gift, Dingo, his white and fluffy canine companion. The project also considers the needs of Charlie's parents, Alice and Bob Jones, to create a holistic family environment.",
+              "Specification: \nThe design is centered around children like Charlie and their special pets, particularly inspired by Charlie's 12th birthday gift, Dingo, a fluffy white canine. The specification is also user-friendly for adults, taking into account the preferences of Alice and Bob Jones.",
+              "Change Request: \nThis amendment incorporates a pet care section, inspired by Charlie's 12th birthday and his special bond with his dog Dingo. The update is aimed to resonate with families with pets, similar to Charlie and his parents, Alice and Bob Jones.",
+              "README: \nThis app is designed for families, focusing on young users like Charlie who celebrated his 12th birthday with a new pet, Dingo, and pet owners who adore their dogs. It is inclusive of features for parents, keeping in mind the needs of Alice and Bob Jones.",
+              "Release Notes: \nThe latest update introduces features for pet owners, drawing inspiration from Charlie's 12th birthday and his beloved dog Dingo. It enhances the user experience for all family members, including parents akin to Alice and Bob Jones.",
+              "Game Docs: \nInstructions are tailored for young users like Charlie, who marked his 12th birthday with the addition of Dingo, a fluffy white canine. The document also caters to adult users, similar to Alice and Bob Jones, providing comprehensive guidance.",
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Absolutely, it's ideal for families like Charlie's, who celebrated his 12th birthday with the arrival of Dingo, his white, fluffy dog, along with parents similar to Alice and Bob Jones."
             ]
           },
           "Code": {
@@ -447,7 +446,7 @@
         "id": "mistranslation",
         "image": "glasses/3-Lost.png",
         "languages": {
-          "NativeLanguage": {
+          "English": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
@@ -541,7 +540,7 @@
         "id": "mistranslation-explained",
         "image": "glasses/3-LostInEnglish.png",
         "languages": {
-          "NativeLanguage": {
+          "English": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
@@ -633,7 +632,7 @@
         "id": "wineglass-back",
         "image": "glasses/4.png",
         "languages": {
-          "NativeLanguage": {
+          "English": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
@@ -726,7 +725,7 @@
         "image": "glasses/5.png",
         "line-through": ["Charlie:Mark"],
         "languages": {
-          "NativeLanguage": {
+          "English": {
             "text-align": "left",
             "max-height": "10em",
             "variations": [
