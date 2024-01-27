@@ -15,20 +15,21 @@ function StoryNavigator({ onPrevious, onNext, storyList, currentStoryId }) {
     position: 'absolute', 
     top: 0, 
     left: 0, 
-    right: 0 }}>
-      <button  className="btn btn-story"
+    right: 0,
+    zIndex: 999 }}>
+      <button  className="btn btn-back-story"
         onClick={onPrevious}
         disabled={currentIndex === 0}
         style={{ visibility: currentIndex > 0 ? 'visible' : 'hidden' }}
       >
-        &lt;&lt; {findStoryHint(-1)}
+        &lt; {findStoryHint(-1)}
       </button>
       <button className="btn btn-story"
         onClick={onNext}
         disabled={currentIndex === storyList.length - 1}
         style={{ visibility: currentIndex < storyList.length - 1 ? 'visible' : 'hidden' }}
       >
-        {findStoryHint(1)} &gt;&gt;
+        {findStoryHint(1)} &gt;
       </button>
     </div>
   );

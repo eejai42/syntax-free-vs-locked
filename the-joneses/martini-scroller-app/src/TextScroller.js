@@ -25,13 +25,13 @@ const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword,
   return (
     <div className="TextScrollerContainer">
         <div className="WhiteHeader" >
+        <img src="parchment.png" className="EraIcon" style={{left: 0, zIndex: 999999}} />
           {/* <img src="parchment.png" style={{width: '3em', float: 'left'}} /> */}
           <h3>Syntax-Locked <span>documents</span></h3>
           <h4>Descriptions of the Idea</h4>
         </div>
 
-      <div className="CharlieCounter"> 
-        <img src="parchment.png" className="EraIcon" style={{left: 0}} />
+      <div className="CharlieCounter" style={{zIndex: 100}}> 
 
       <div style={{position: 'absolute', right: '10px', fontSize:'0.8em', paddingRight: '0.25em'}}>{currentTime.dayOfWeekName || 'Monday'}
       {currentTime.calendarDay > 7 ? `, Week #${Math.floor(currentTime.calendarDay / 7) + 1}` : null}

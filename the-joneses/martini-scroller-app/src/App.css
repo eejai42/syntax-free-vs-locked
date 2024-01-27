@@ -101,8 +101,20 @@ button {
 .btn-story {
   padding: 0.15em;
   font-size: 1em;
-  background-color: #4F7397; /* Brighter Sky Blue */
+  background-color: #25aa89; /* Brighter Sky Blue */
   color: white;
+  font-weight: bold;
+}
+
+.btn-story:hover {
+  color: rgb(216, 212, 212) !important;
+}
+
+.btn-back-story {
+  padding: 0.15em;
+  font-size: 1em;
+  background-color: #c7d0d8; /* Brighter Sky Blue */
+  color: rgb(109, 107, 107);
 }
 
 .btn-english {

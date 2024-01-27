@@ -177,7 +177,7 @@ function App() {
               storyList={storyList}
               currentStoryId={currentStoryId}
             />
-            <AppHeader
+            <AppHeader style={{zIndex: 1}}
               story={currentStory}
               currentLanguage={currentLanguage}
               currentKeyword={currentKeyword}
