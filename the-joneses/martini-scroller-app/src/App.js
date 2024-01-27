@@ -13,6 +13,7 @@ function App() {
   const [currentStoryId, setCurrentStoryId] = useState("meet-the-joneses");
   const [currentStory, setCurrentStory] = useState(null);
   const [storyList, setStoryList] = useState([]);
+  const [currentTime, setCurrentTime] = useState([]);
 
   const currentStoryIdRef = useRef(currentStoryId);
   const storyListRef = useRef(storyList);
@@ -156,10 +157,13 @@ function App() {
           onVariationUpdate={setCurrentVariation}
           updateKeywordCounters={handleKeywordCounters} // New callback
           updateCurrentKeywordCounter={handleCurrentKeywordCounter} // New callback
+          onTimeUpdate={(currentTime) => {
+            setCurrentTime(currentTime);
+          }}
         />
           {/* Legacy Version */}
           {/* <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} /> */}
-          <TextScroller currentVariation={currentVariation} currentKeywordCounter={currentKeywordCounter} currentKeyword={currentKeyword} currentLanguage={currentLanguage}/>
+          <TextScroller currentVariation={currentVariation} currentKeywordCounter={currentKeywordCounter} currentKeyword={currentKeyword} currentLanguage={currentLanguage} currentTime={currentTime}/>
           <LanguagePicker
             data={data}
             currentLanguage={currentLanguage}

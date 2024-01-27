@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
 const VariationCoordinator = ({
   data,
@@ -6,12 +7,20 @@ const VariationCoordinator = ({
   currentLanguage,
   currentKeyword,
   onVariationUpdate,
-  updateCurrentKeywordCounter
+  updateCurrentKeywordCounter, 
+  onTimeUpdate
 }) => {
   const [variations, setVariations] = useState([]);
   const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
   const [keywordCounters, setKeywordCounters] = useState({}); // Global keyword counters
   const [currentKeywordCounter, setCurrentKeywordCounter] = useState(0);
+
+  const [timeState, setTimeState] = useState({
+    calendarDay: 1,
+    businessDay: 1,
+    dayOfWeekIndex: 0, // 0 is Monday, 6 is Sunday
+    dayOfWeekName: daysOfWeek[0],
+  });
 
   useEffect(() => {
     if (currentStory && data) {
@@ -95,12 +104,45 @@ const VariationCoordinator = ({
     };
   }, [variations, currentVariationIndex, onVariationUpdate]);
 
+  function advanceDay() {
+    setTimeState((prevState) => {
+      let { calendarDay, businessDay, dayOfWeekIndex } = prevState;
+
+      calendarDay += 1;
+      dayOfWeekIndex = (dayOfWeekIndex + 1) % 7;
+      
+      if (dayOfWeekIndex < 5) { // Weekday
+        businessDay += 1;
+      } else if (dayOfWeekIndex === 5) { // Saturday
+        calendarDay += 2; // Skip to Monday
+        dayOfWeekIndex = 0;
+      }
+
+      onTimeUpdate({ // Assuming you want to send this data to App.js
+        calendarDay,
+        businessDay,
+        dayOfWeekIndex,
+        dayOfWeekName: daysOfWeek[dayOfWeekIndex],
+      });
+
+      return {
+        calendarDay,
+        businessDay,
+        dayOfWeekIndex,
+        dayOfWeekName: daysOfWeek[dayOfWeekIndex],
+      };
+    });
+  }
+
   function emitVariation() {
     const variationToEmit = variations[currentVariationIndex];
     updateKeywordCounters(variationToEmit.text); // Update keyword counters based on the emitted variation
     onVariationUpdate(variationToEmit);
     const nextIndex = (currentVariationIndex + 1) % variations.length;
     setCurrentVariationIndex(nextIndex);
+    if (Math.random() < 0.5) { // 30% chance to advance a day
+      advanceDay();
+    }
   }
 
   function updateKeywordCounters(text) {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './TextScroller.css';
 
-const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword }) => {
+const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword, currentTime }) => {
   const [queue, setQueue] = useState([]);
   const [keywordCounter, setKeywordCounter] = useState(15);
 
@@ -24,7 +24,13 @@ const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword 
 
   return (
     <div className="TextScrollerContainer">
-      <div className="CharlieCounter"> {currentKeyword} Counter: <span>{keywordCounter}</span></div>
+      <div className="CharlieCounter"> 
+      <div style={{position: 'absolute', right: '10', fontSize:'0.8em', paddingRight: '0.25em'}}>{currentTime.dayOfWeekName}
+      {currentTime.calendarDay > 7 ? `, Week #${Math.floor(currentTime.calendarDay / 7) + 1}` : null}
+      </div>
+        {currentKeyword} Counter: <span>{keywordCounter}</span>
+
+      </div>
       <div
           style={{ minHeight: "3em", maxHeight: "3em" }}
           className="WhiteHeader"
