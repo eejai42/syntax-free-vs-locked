@@ -11,7 +11,7 @@ const StoryLine = ({
         display: 'flex', // Using Flexbox
         alignItems: 'center', // Vertically centers the child
         justifyContent: 'center', // Horizontally centers the child
-        height: '5em', // Sets the height to exactly 5em
+        height: '6em', // Sets the height to exactly 5em
         // Additional styles (like width, background, etc.) can be added here
     };
 

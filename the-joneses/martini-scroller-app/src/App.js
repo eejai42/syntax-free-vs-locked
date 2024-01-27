@@ -87,7 +87,7 @@ function App() {
   }, [currentStoryId, data]);
 
   const handleLanguageChange = (language) => {
-    console.error('CHANGING LANGUAGE: ', language)
+    console.error("CHANGING LANGUAGE: ", language);
     setCurrentLanguage(language);
   };
 
@@ -131,7 +131,7 @@ function App() {
     <div className="App">
       <div className="SplitScreen">
         <div className="LeftPane">
-        <StoryLine
+          <StoryLine
             story={currentStory}
             currentLanguage={currentLanguage}
             currentKeyword={currentKeyword}
@@ -170,25 +170,24 @@ function App() {
           />
         </div>
         <div className="RightPane">
-          
-      
-        <AppHeader
-            story={currentStory}
-            currentLanguage={currentLanguage}
-            currentKeyword={currentKeyword}
-          />
-
+          <div style={{ position: "relative", height: "6em" }}>
+            <StoryNavigator
+              onPrevious={handlePreviousStory}
+              onNext={handleNextStory}
+              storyList={storyList}
+              currentStoryId={currentStoryId}
+            />
+            <AppHeader
+              story={currentStory}
+              currentLanguage={currentLanguage}
+              currentKeyword={currentKeyword}
+            />
+          </div>
           <GraphViewer
             data={data}
             languageName={currentLanguage}
             story={currentStory}
             currentKeyword={currentKeyword}
-          />
-            <StoryNavigator
-            onPrevious={handlePreviousStory}
-            onNext={handleNextStory}
-            storyList={storyList}
-            currentStoryId={currentStoryId}
           />
         </div>
       </div>

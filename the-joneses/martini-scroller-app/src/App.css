@@ -37,6 +37,14 @@
   }
 }
 
+.EraIcon {
+  width: 6em;
+  right: 0;
+   top: 0;
+    position: absolute;
+    border-radius: 3em;
+}
+
 /* App.css */
 
 .SplitScreen {
@@ -89,6 +97,14 @@ button {
   border-radius: 0.25em;
   margin: 0.25em;
 }
+
+.btn-story {
+  padding: 0.15em;
+  font-size: 1em;
+  background-color: #4F7397; /* Brighter Sky Blue */
+  color: white;
+}
+
 .btn-english {
   background-color: #E67373; /* Stronger Coral */
   color: white;

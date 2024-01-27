@@ -23,12 +23,15 @@ const GraphViewer = ({ data, story, currentKeyword }) => {
   return (
     <div style={containerStyle}>
       <div className="WhiteHeader">
-            <h3><span>One</span> Syntax-Free <span>model</span></h3>
-            <h4>A Digital Mirror of Reality</h4>
-        </div>
+        {/* <img src="parchment.png" style={{width: '3em', float: 'right', display: 'hidden'}} /> */}
+        <h3><span>One</span> Syntax-Free <span>model</span></h3>
+        <h4>A Digital Mirror of Reality</h4>
+      </div>
               <div
         className="CharlieCounter"
       >
+        <img src="e-everything.png" className="EraIcon" style={{right: 0}} />
+
         {currentKeyword} Counter: <span>1</span>
       </div>
 
