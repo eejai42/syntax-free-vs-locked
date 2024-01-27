@@ -4,7 +4,7 @@
     "keywords": [
       {
         "name": "Charlie",
-        "replaced-with": "Mark",
+        "replace-with": "Mark",
         "greek": "Τσάρλι",
         "chinese": "查理"
       },
@@ -22,11 +22,16 @@
         "name": "Dingo",
         "greek": "Ντίνγκο",
         "chinese": "丁戈"
+      },
+      {
+        "name": "Frank",
+        "greek": "Φρανκ",
+        "chinese": "弗兰克"
       }
     ],
     "languages": [
       {
-        "name": "English"
+        "name": "NativeLanguage"
       },
       {
         "name": "Code"
@@ -105,7 +110,7 @@
         "id": "meet-the-joneses",
         "image": "glasses/meet-the-joneses.png",
         "languages": {
-          "English": {
+          "NativeLanguage": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
@@ -197,10 +202,10 @@
         "id": "just-1-charlie",
         "image": "glasses/1.png",
         "languages": {
-          "English": {
+          "NativeLanguage": {
             "text-align": "left",
-            "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
+            "min-height": "10em",
             "variations": [
               "Project Proposal: \nOur project focuses on the dynamic between Charlie and his pet Dingo, a white, fluffy dog. It will also include interactions with his parents, Alice and Bob Jones, to provide a complete family perspective.",
               "Statement of Work - SOW 1033: \nThe work involves enhancing the living space for Charlie and Dingo, his white and fluffy canine. Additionally, the needs of Charlie's parents, Alice and Bob Jones, will be addressed.",
@@ -289,11 +294,17 @@
         "id": "birthday-present",
         "image": "glasses/2.png",
         "languages": {
-          "English": {
+          "NativeLanguage": {
+            "min-height": "10em",
             "variations": [
-              "Alice and Bob Jones are married. They have a son named Charlie. Charlie has a pet dog, a white, fluffy one named Dingo.",
-              "Bob and Alice, a married couple, are parents to Charlie. Charlie's companion is his dog Dingo, who's as white as snow and fluffy.",
-              "... (8 more variations) ..."
+              "Project Proposal: \nOur project celebrates the special bond between Charlie and his 12th birthday gift, Dingo, a white, fluffy dog. This narrative also encompasses the family dynamic with his parents, Alice and Bob Jones, enriching the story with a complete family perspective.",
+              "Statement of Work - SOW 1033: \nThe work involves creating an engaging environment for Charlie and his 12th birthday gift, Dingo, his white and fluffy canine companion. The project also considers the needs of Charlie's parents, Alice and Bob Jones, to create a holistic family environment.",
+              "Specification: \nThe design is centered around children like Charlie and their special pets, particularly inspired by Charlie's 12th birthday gift, Dingo, a fluffy white canine. The specification is also user-friendly for adults, taking into account the preferences of Alice and Bob Jones.",
+              "Change Request: \nThis amendment incorporates a pet care section, inspired by Charlie's 12th birthday and his special bond with his dog Dingo. The update is aimed to resonate with families with pets, similar to Charlie and his parents, Alice and Bob Jones.",
+              "README: \nThis app is designed for families, focusing on young users like Charlie who celebrated his 12th birthday with a new pet, Dingo, and pet owners who adore their dogs. It is inclusive of features for parents, keeping in mind the needs of Alice and Bob Jones.",
+              "Release Notes: \nThe latest update introduces features for pet owners, drawing inspiration from Charlie's 12th birthday and his beloved dog Dingo. It enhances the user experience for all family members, including parents akin to Alice and Bob Jones.",
+              "Game Docs: \nInstructions are tailored for young users like Charlie, who marked his 12th birthday with the addition of Dingo, a fluffy white canine. The document also caters to adult users, similar to Alice and Bob Jones, providing comprehensive guidance.",
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Absolutely, it's ideal for families like Charlie's, who celebrated his 12th birthday with the arrival of Dingo, his white, fluffy dog, along with parents similar to Alice and Bob Jones."
             ]
           },
           "Spanish": {
@@ -303,11 +314,21 @@
               "... (8 more variations) ..."
             ]
           },
-          "German": {
+          "Code": {
+            "font-family": "'Courier New', monospace",
+            "font-size": "1.2em",
+            "text-align": "left",
+            "min-height": "10em",
             "variations": [
-              "Alice und Bob Jones sind verheiratet. Sie haben einen Sohn namens Charlie. Charlie besitzt einen weißen, flauschigen Hund namens Dingo.",
-              "Bob und Alice, ein Ehepaar, sind die Eltern von Charlie. Charlies Gefährte ist sein Hund Dingo, schneeweiß und flauschig.",
-              "... (8 more variations) ..."
+              "Unity Game Initialization: \npublic class GameInitialization : MonoBehaviour { \n  void Start() { \n    ... \n    Debug.Log(\"Family initialized: Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Family Interaction: \npublic class FamilyInteraction : MonoBehaviour { \n  void Interact(...) { \n    ... \n    Debug.Log(\"... interacted with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Scene Management: \npublic class FamilySceneController : MonoBehaviour { \n  void LoadFamilyScene() { \n    ... \n    Debug.Log(\"Loading scene with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Character Movement: \npublic class CharacterMovement : MonoBehaviour { \n  public void Move(..., ...) { \n    ... \n    Debug.Log(\"Moving ... to a new destination. Family: Alice, Bob, Charlie, Dingo\"); \n    ... \n  } \n}",
+              "Unity Family Adventures: \npublic class FamilyAdventure : MonoBehaviour { \n  void StartAdventure() { \n    ... \n    Debug.Log(\"Starting adventure with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
+              "Unity Pet Interaction: \npublic class PetInteraction : MonoBehaviour { \n  public void PlayWithPet(Pet dingo) { \n    ... \n    Debug.Log(\"Playing with Dingo. Family members: Alice, Bob, Charlie\"); \n    ... \n  } \n}",
+              "Python Family Budget Tracker: class FamilyBudgetTracker:\n    def track_expense(self, member, amount):\n        if member == 'Charlie':\n            ... # Tracking Charlie's expenses\n        elif member in ['Alice', 'Bob', 'Dingo']:\n            ...",
+              "Python Charlie's Coins: class CoinStarTracker:\n    def update_stars(self, character, stars):\n        if character == 'Charlie':\n            ... # Update stars for Charlie\n        ...",
+              "Python Household Chores: class ChoreAssigner:\n    def assign_chore(self, chore, member):\n        if member == 'Charlie':\n            ... # Assigning chore to Charlie\n        ..."
             ]
           },
           "Greek": {
@@ -331,19 +352,21 @@
         "image": "glasses/3.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - in Chinese?",
         "languages": {
-          "English": {
+          "NativeLanguage": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
             "variations": [
-              "Project Proposal: \nOur project focuses on the dynamic between Charlie and his pet Dingo, a white, fluffy dog. It will also include interactions with his parents, Alice and Bob Jones, to provide a complete family perspective.",
-              "Statement of Work - SOW 1033: \nThe work involves enhancing the living space for Charlie and Dingo, his white and fluffy canine. Additionally, the needs of Charlie's parents, Alice and Bob Jones, will be addressed.",
-              "Specification: \nThe design caters to children like Charlie and pets similar to his dog, Dingo, a fluffy white canine. It's also user-friendly for adults, considering the needs of Alice and Bob Jones.",
-              "Change Request: \nThis amendment adds a pet care section, inspired by Charlie and his dog Dingo. This update aims to benefit families with pets, like Charlie and his parents, Alice and Bob Jones.",
-              "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
-              "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
-              "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
+              "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
+              "在琼斯家，有夫妻二人艾丽丝和鲍勃，还有他们的儿子查理，以及查理的宠物狗丁戈，它的毛发白且蓬松。",
+              "艾丽丝和鲍勃·琼斯是一对夫妇，他们养育着儿子查理和一只白色蓬松的狗丁戈。",
+              "查理，作为艾丽丝和鲍勃·琼斯之子，有一只叫丁戈的白毛蓬松狗。",
+              "琼斯一家由艾丽丝、鲍勃和他们的儿子查理组成，还有查理的白色蓬松狗丁戈。",
+              "艾丽丝与鲍勃·琼斯的家中有他们的儿子查理和一只白色蓬松的宠物狗丁戈。",
+              "查理是艾丽丝和鲍勃·琼斯的孩子，他养了一只名为丁戈的白色蓬松狗。",
+              "在琼斯家族中，艾丽丝和鲍勃有一个儿子叫查理，查理有一只白色蓬松的狗，名叫丁戈。",
+              "艾丽丝和鲍勃·琼斯夫妇的儿子查理拥有一只蓬松白色的狗，它的名字叫丁戈。"
             ]
           },
           "Code": {
@@ -423,19 +446,21 @@
         "id": "mistranslation",
         "image": "glasses/3-Lost.png",
         "languages": {
-          "English": {
+          "NativeLanguage": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
             "variations": [
-              "Project Proposal: \nOur project focuses on the dynamic between Charlie and his pet Dingo, a white, fluffy dog. It will also include interactions with his parents, Alice and Bob Jones, to provide a complete family perspective.",
-              "Statement of Work - SOW 1033: \nThe work involves enhancing the living space for Charlie and Dingo, his white and fluffy canine. Additionally, the needs of Charlie's parents, Alice and Bob Jones, will be addressed.",
-              "Specification: \nThe design caters to children like Charlie and pets similar to his dog, Dingo, a fluffy white canine. It's also user-friendly for adults, considering the needs of Alice and Bob Jones.",
-              "Change Request: \nThis amendment adds a pet care section, inspired by Charlie and his dog Dingo. This update aims to benefit families with pets, like Charlie and his parents, Alice and Bob Jones.",
-              "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
-              "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
-              "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
+              "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
+              "在琼斯家，有夫妻二人艾丽丝和鲍勃，还有他们的儿子查理，以及查理的宠物狗丁戈，它的毛发白且蓬松。",
+              "艾丽丝和鲍勃·琼斯是一对夫妇，他们养育着儿子查理和一只白色蓬松的狗丁戈。",
+              "查理，作为艾丽丝和鲍勃·琼斯之子，有一只叫丁戈的白毛蓬松狗。",
+              "琼斯一家由艾丽丝、鲍勃和他们的儿子查理组成，还有查理的白色蓬松狗丁戈。",
+              "艾丽丝与鲍勃·琼斯的家中有他们的儿子查理和一只白色蓬松的宠物狗丁戈。",
+              "查理是艾丽丝和鲍勃·琼斯的孩子，他养了一只名为丁戈的白色蓬松狗。",
+              "在琼斯家族中，艾丽丝和鲍勃有一个儿子叫查理，查理有一只白色蓬松的狗，名叫丁戈。",
+              "艾丽丝和鲍勃·琼斯夫妇的儿子查理拥有一只蓬松白色的狗，它的名字叫丁戈。"
             ]
           },
           "Code": {
@@ -515,19 +540,19 @@
         "id": "mistranslation-explained",
         "image": "glasses/3-LostInEnglish.png",
         "languages": {
-          "English": {
+          "NativeLanguage": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
             "variations": [
-              "Project Proposal: \nOur project focuses on the dynamic between Charlie and his pet Dingo, a white, fluffy dog. It will also include interactions with his parents, Alice and Bob Jones, to provide a complete family perspective.",
-              "Statement of Work - SOW 1033: \nThe work involves enhancing the living space for Charlie and Dingo, his white and fluffy canine. Additionally, the needs of Charlie's parents, Alice and Bob Jones, will be addressed.",
-              "Specification: \nThe design caters to children like Charlie and pets similar to his dog, Dingo, a fluffy white canine. It's also user-friendly for adults, considering the needs of Alice and Bob Jones.",
-              "Change Request: \nThis amendment adds a pet care section, inspired by Charlie and his dog Dingo. This update aims to benefit families with pets, like Charlie and his parents, Alice and Bob Jones.",
-              "README: \nThis app is tailored for families, focusing on young users like Charlie and pet owners with dogs like Dingo, his white and fluffy companion. It also offers features for parents, keeping Alice and Bob Jones in mind.",
-              "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie and his dog Dingo. It enhances the experience for all family members, including parents like Alice and Bob Jones.",
-              "Game Docs: \nInstructions are provided for young users like Charlie and pet owners with dogs such as Dingo, a fluffy white canine. The document also guides adult users, akin to Alice and Bob Jones.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Yes, it's ideal for families with a child like Charlie and a pet dog like Dingo, his white, fluffy companion, along with parents similar to Alice and Bob Jones."
+              "Project Proposal: \nOur project delves into the complex dynamics within Charlie's family, particularly hinting at Frank's possible role as his biological father, overshadowing Bob Jones. This narrative, intertwined with Charlie's 12th birthday gift, Dingo, a white, fluffy dog, adds layers to the family story involving Alice, Bob, and the unspoken presence of Frank.",
+              "Statement of Work - SOW 1033: \nThe work involves crafting a narrative that subtly explores the nuanced relationship between Charlie, his parents Alice and Bob Jones, and the unacknowledged influence of Frank, potentially his biological father. This is juxtaposed with Charlie's innocent bond with Dingo, his 12th birthday gift.",
+              "Specification: \nThe design subtly incorporates the complexities of family dynamics, hinting at Frank's potential role as Charlie's real father, creating a contrast with the ostensibly simple life of Charlie with his 12th birthday gift, Dingo, and his declared parents, Alice and Bob Jones.",
+              "Change Request: \nThis amendment subtly introduces an undercurrent about Frank, possibly being the biological father of Charlie, into the narrative about Charlie's 12th birthday and his bond with Dingo. It adds depth to the story of Charlie and his parents, Alice and Bob Jones.",
+              "README: \nThis app, designed for families, includes an underlying storyline hinting at Frank as Charlie's possible biological father, creating a complex backdrop for Charlie's 12th birthday celebration with his pet Dingo, and his life with Alice and Bob Jones.",
+              "Release Notes: \nThe latest update subtly weaves in the possibility of Frank being Charlie's biological father, adding a layer of complexity to the family-focused features inspired by Charlie's 12th birthday and his bond with Dingo, under the guardianship of Alice and Bob Jones.",
+              "Game Docs: \nInstructions now include subtle references to the family dynamic, hinting at the potential involvement of Frank as Charlie's biological father, against the backdrop of Charlie's life with his 12th birthday gift Dingo, and his life with Alice and Bob Jones.",
+              "Service FAQ: \nQ: Is this service suitable for families with complex dynamics? \nA: Absolutely, it's ideal for families like Charlie's, where the undercurrent of Frank possibly being his biological father adds depth to the celebration of his 12th birthday with Dingo, and his life with Alice and Bob Jones."
             ]
           },
           "Code": {
@@ -607,7 +632,7 @@
         "id": "wineglass-back",
         "image": "glasses/4.png",
         "languages": {
-          "English": {
+          "NativeLanguage": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
@@ -700,7 +725,7 @@
         "image": "glasses/5.png",
         "line-through": true,
         "languages": {
-          "English": {
+          "NativeLanguage": {
             "text-align": "left",
             "english_text": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
             "max-height": "10em",
