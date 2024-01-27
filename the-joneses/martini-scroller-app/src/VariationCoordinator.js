@@ -69,15 +69,37 @@ const VariationCoordinator = ({
       setCurrentVariationIndex(0);
     }
   };
-  
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (variations.length > 0) {
-        emitVariation();
-      }
-    }, 1500);
 
-    return () => clearInterval(interval);
+ useEffect(() => {
+    let interval;
+    const startInterval = () => {
+      interval = setInterval(() => {
+        if (variations.length > 0) {
+          emitVariation();
+        }
+      }, 1500);
+    };
+
+    const stopInterval = () => {
+      clearInterval(interval);
+    };
+
+    startInterval();
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "hidden") {
+        stopInterval();
+      } else {
+        startInterval();
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      stopInterval();
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
   }, [variations, currentVariationIndex, onVariationUpdate]);
 
   function emitVariation() {
