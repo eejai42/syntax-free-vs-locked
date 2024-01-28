@@ -303,8 +303,8 @@
         "id": "birthday-present",
         "image": "glasses/2.png",
         "intro":"So, when we learn something new, like the fact that Charlie got Dingo for his 12th birthday, this just complicates things ...",
-        "syntax-locked-intro": "Especially on the syntax locked side of things, all those previous references to Charlie and Dingo are now stale, because at least some of them should probably include that key piece of information about the situation.  But until that new information is decided on, documented, communicated to whoever needs to update the syntax-locked document - and then updates it - it will just be out of date, stale, and very possibly, just wrong. So Despite learning new information about the relationships between Charlie and his Dog...",
-        "mantra":"And yet... the Charlie Counter on the left just keeps going up.  So we're like 3 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-locked-intro": "Especially on the syntax locked side of things, all those previous references to Charlie and Dingo are now stale, because at least some of them should probably include the key piece of information about his birthday.  But until that new information is decided on, documented, communicated to whoever needs to update the syntax-locked document - and then updates it - it will just be out of date, stale, and very possibly, just wrong. So Despite just learning one small new detail about the relationships between Charlie and his Dog... that has to be documented and communicated.",
+        "mantra":"And so the Charlie Counter on the left just keeps going up.  So we're like 3 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "syntax-free-intro": "By contrast, you'll notice that despite adding new meta data to the knowledge graph, the syntax-free Mirror of the Jones family still contains just 1 Charlie - so it's charlie counter is still 1.  Because there is just one Charlie.",
         "languages": {
           "English": {
@@ -753,10 +753,10 @@
         "id": "meet-15yo-mark",
         "image": "glasses/5.png",
         "line-through": ["Charlie:Mark"],
-        "intro":"OMG - the worst has happened. Charlie actually Never Existed!! He was named Mark all along, and he's not 12 as had previously been thought - he is in fact 16.",
+        "intro":"OMG - the worst has happened. Charlie actually was never his name!! He was named Mark all along, and he's not 12 as had previously been thought - he is in fact 16.",
         "syntax-locked-intro": "In a syntax locked world, Literally all of the #charlieCounter# syntax-locked documents are either out of date, stale or, as here, completely incorrect.  If they are static documents like emails or printed paper, they will just be wrong ... forever.  If they are editable documents, they will be wrong until an author comes back to that syntax-locked document and updates it.  So, despite there now being only 1 Mark (formerly known as Charlie) Charlie is still syntax locked in countless Syntax Locked documents, and until the change from Charlie to Mark is Decided, Documented, Communicated to the necessary Party (or parties) even those editable documents will just be wrong...",
-        "mantra":"So we're like 10 minutes into this demo, and the Mark counter on the left is already at #markCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
-        "syntax-free-intro": "In the syntax free model - we double click on Charlie and change it to Mark - and we're again, done. Because now there is just 1 Mark - he just used to have the name Charlie. Still just 1.",
+        "mantra":"So we're like 10 minutes into this demo, and the Mark counter on the left is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-free-intro": "In the syntax free model - we double click on Charlie and change it to Mark - and we're again, done. Because now there is just 1 Mark - he used to have the name Charlie. But ttill just 1 of him.",
         "languages": {
           "English": {
             "text-align": "left",
