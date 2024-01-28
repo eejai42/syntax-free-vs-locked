@@ -109,6 +109,10 @@
         "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
         "id": "meet-the-joneses",
         "image": "glasses/meet-the-joneses.png",
+        "intro":"Today I'd like to introduce you to the notion of Syntax-Locking, and how, like paper-based businesses in the 80's and early 90's, if your business decisions are still syntax-locked, then even the *very* short story that we're about to explore together will likely ring true for you.",
+        "syntax-locked-intro": "Specifically - if the details of your projects are still locked in syntax, for even a simple story like this one sentence summary of the Jones Family, then you're likely to be experiencing the same problems that we are about to explore, as the Jones family grows, changes & evolves over time. The reason for this pain (as you will hopefully see) is that syntax-locking is an expensive and generally inefficient way to record and communicate the details of even a simple story like this. Let us suggest that you avoid this pain by moving away from syntax-locking, and towards a world where the key elements of your business and projects are captured free from syntax.",
+        "mantra":"So.. the specific cause of the pain from syntax-locking is the fact that the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-free-intro": "Here, for example, you'll notice that the syntax-free Mirror of the Jones family contains just 1 Charlie - so it's charlie counter is still 1.  And will remain 1 for as long as Charlie is involved.  Because there's just 1 Charlie.  Always, just 1 Charlie.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -202,6 +206,10 @@
         "hint": "There's just 1 Charlie!",
         "id": "just-1-charlie",
         "image": "glasses/1.png",
+        "intro":"So even though there's always just 1 charlie in reality, the charlie counter in meeting notes, proposals, specifications, documentation, in team communications, outside communications, slack, discord, whatsapp, sms, in person meetings, and so on... All just opportunities for there to be misunderstandings and ambiguity.",
+        "syntax-locked-intro": "On the syntax locked side, whether it's in English ... Code ... or Chinese ... ",
+        "mantra":"But... the Charlie Counter on the left just keeps going up.  so we're 2 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-free-intro": "By contrast, you'll notice that the syntax-free Mirror of the Jones family still contains just 1 Charlie, and looks like a martini glass - so it's charlie counter is still 1.  Because there is just one Charlie.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -294,6 +302,10 @@
         "hint": "Dingo Was a Birthday Present",
         "id": "birthday-present",
         "image": "glasses/2.png",
+        "intro":"Now, when we learn something new, like the fact that Charlie got Dingo for his 12th birthday, this just complicates things ...",
+        "syntax-locked-intro": "Especially on the syntax locked side of things, all those previous references to Charlie and Dingo are now stale, because at least some of them should probably include that key piece of information about the situation.  But until that new information is decided on, documented, communicated to whoever needs to update the syntax-locked document - and then updates it - it will just be out of date, stale, and very possibly, just wrong. So Despite learning new information about the relationships between Charlie and his Dog...",
+        "mantra":"And yet... the Charlie Counter on the left just keeps going up.  So we're like 3 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-free-intro": "By contrast, you'll notice that despite adding new meta data to the knowledge graph, the syntax-free Mirror of the Jones family still contains just 1 Charlie - so it's charlie counter is still 1.  Because there is just one Charlie.",
         "languages": {
           "English": {
             "min-height": "10em",
@@ -351,8 +363,12 @@
         "hint": "Can we see it in Chinese?",
         "name": "The Jonese in Chinese",
         "start-language": "Chinese",
-        "image": "glasses/3.png",
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - in Chinese?",
+        "image": "glasses/3.png",
+        "intro":"Let's take a scenario where, for example, we need to work with a Chinese team.  So, after translating it into Chinese, things continue to get more complicated ... for obvious reasons",
+        "syntax-locked-intro": "Because, on the syntax locked side of things,unless you know Chinese, and have enough context to read the syntax-locked Chinese descriptions of the family, then internalize and understand it - only then can you determine whether that Chinese does or does not accurately translate the description of the Joneses, it remains ambiguous and unclear.  A mystery really.  And despite the Syntax-Locking now happening in Chinese. The Charlie Counter on the left just keeps going up - it just never stops.",
+        "mantra":"So we're like 5 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-free-intro": "By contrast, you'll notice that despite not understanding a single word of either the Syntax-Locked or the Syntax-Free versions of the knowledge, the Internal Geometry of the Syntax Free version still looks like a Martini Glass to me.  Because that's the basic shape of the knowledge graph that falls out of this 1 sentence prompt, regardless of which language you use to describe the family.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -446,6 +462,10 @@
         "id": "mistranslation",
         "start-language": "Chinese",
         "image": "glasses/3-Lost.png",
+        "intro":"But... what if we lost something in translation? SCANDAL might ensue!",
+        "syntax-locked-intro": "Because, once again, on the syntax locked side of things... whether those words do or do not reflect reality, remains opaque, unclear, a mystery - unless you speak chinese of course.  And if we're not careful, that could lead to a SCANDAL!  OMG!  And despite the Syntax-Locking still happening in Chinese, the Charlie Counter on the left just keeps going up - it just never tires.  ",
+        "mantra":"So we're like 6 minutes into this demo, and the Charlie counter on the left is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-free-intro": "Once again, the Internal Geometry of mistranslated information, represented as a Syntax Free knowledge graph betrays the fact that at the very least SOMETHING changed.  Further, the specific change allows us to infer what might have happened, relatively confidently.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -540,6 +560,10 @@
         "hint": "Show me in English!",
         "id": "mistranslation-explained",
         "image": "glasses/3-LostInEnglish.png",
+        "intro":"Wait!  What????  Wait!  What?????  Who the heck is frank?",
+        "syntax-locked-intro": "In a syntax locked world, most of the syntax locked content will still refer to Bob being the father, despite the suggestion that Frank could actually be the Bio-Dad.  If we're not careful here this could lead to a SCANDAL! ",
+        "mantra":"EVen though the picture currently talks about Frank and Bob - Charlie's still there, and there's still just one of him, and yet, the Charlie Counter on the left just keeps going up - it just never tires.  So we're like 7 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-free-intro": "Our suspitions were confirmed, and the Internal Geometry of mistranslated information does indeed reflect the idea that Frank might indeed be the bio-dad.  A DNA test is called for to confirm one way or the other.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -632,6 +656,10 @@
         "hint": "DNA Results!!!",
         "id": "wineglass-back",
         "image": "glasses/4.png",
+        "intro":"Phew!  Thank goodness ... It turns out that bob is in fact still the Dad.  DNA Test Resolves the whole frank thing once and for all. and we're back to our now familiar martini glass.",
+        "syntax-locked-intro": "In a syntax locked world, most of the syntax locked content will still refer to Bob being the father, but there is likely to be a bunch of additional syntax-locked content suggesting that Frank could actually be the Bio-Dad.  Until someone either corrects or updates this content is is once again just out of date, stale or, as here, completely incorrect.",
+        "mantra":"So now that we've cleared up the dad question, you might notice that Charlie's still there, and there's still just one of him, and yet, the Charlie Counter on the left just keeps going up - it just never tires.  So we're like 9 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity. I *really* hope that Charlie never changes his name.  Yikes!  ... I mean - REALLY hope!!",
+        "syntax-free-intro": "After the DNA test confirmed that Bob was the dad - we can just Remove Frank from the graph, and re-link Bob as CHarlie's only dad.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -725,6 +753,10 @@
         "id": "meet-15yo-mark",
         "image": "glasses/5.png",
         "line-through": ["Charlie:Mark"],
+        "intro":"OMG - the worst has happened. Charlie actually Never Existed!! He was named Mark all along, and he's not 12 as had previously been thought - he is in fact 16.",
+        "syntax-locked-intro": "In a syntax locked world, Literally all of the almost #charlieCounter# syntax-locked documents are either out of date, stale or, as here, completely incorrect.  If they are static documents like emails or printed paper, they will just be wrong ... forever.  If they are editable documents, they will be wrong until an author comes back to that syntax-locked document and updates it.  So, despite there now being only 1 Mark (formerly known as Charlie) Charlie is still syntax locked in countless Syntax Locked documents, and until the change from Charlie to Mark is Decided, Documented, Communicated to the necessary Party (or parties) even those editable documents will just be wrong...",
+        "mantra":"So while there's still just one child, now named Mark, the Charlie Counter keeps going up for a while, and then the Mark counter takes over - syntax-locking generally, continues to confuse, consistenly muddy the waters - it just never stops.  So we're like 10 minutes into this demo, and the Mark counter is already at #markcounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-free-intro": "In the syntax free model - we double click on Charlie and change it to Mark - and we're again, done.",
         "languages": {
           "English": {
             "text-align": "left",
