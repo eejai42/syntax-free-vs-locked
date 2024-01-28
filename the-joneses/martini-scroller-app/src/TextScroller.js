@@ -25,8 +25,7 @@ const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword,
   return (
     <div className="TextScrollerContainer">
         <div className="WhiteHeader" >
-        <img src="parchment.png" className="EraIcon" style={{left: 0, zIndex: 999999}} />
-          {/* <img src="parchment.png" style={{width: '3em', float: 'left'}} /> */}
+        <img src="parchment.png" className="EraIcon" style={{left: 0, zIndex: 99999999999, marginTop: '-0.5em' }} />
           <h3>Syntax-Locked <span>documents</span></h3>
           <h4>Descriptions of the Idea</h4>
         </div>
