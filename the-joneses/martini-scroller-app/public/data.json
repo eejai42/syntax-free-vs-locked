@@ -111,7 +111,7 @@
         "image": "glasses/meet-the-joneses.png",
         "intro":"Today I'd like to introduce you to the notion of Syntax-Locking, and how, like paper-based businesses in the 80's and early 90's, if your business decisions are still syntax-locked, then even the *very* short story that we're about to explore together will likely ring true for you.",
         "syntax-locked-intro": "Specifically - if the details of your projects are still locked in syntax, for even a simple story like this one sentence summary of the Jones Family, then you're likely to be experiencing the same problems that we are about to explore, as the Jones family grows, changes & evolves over time. The reason for this pain (as you will hopefully see) is that syntax-locking is an expensive and generally inefficient way to record and communicate the details of even a simple story like this. Let's explore what happens when we avoid this pain by moving away from syntax-locking, and towards a world where the key elements of your business and projects are captured free from syntax.",
-        "mantra":"So.. the specific cause of the pain from syntax-locking is the fact that the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "mantra":"So the specific cause of the pain from syntax-locking is the fact that the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "syntax-free-intro": "Here, for example, you'll notice that the syntax-free Mirror of the Jones family contains just 1 Charlie - so it's charlie counter is still 1.  And will remain 1 for as long as Charlie is involved.  Because there's just 1 Charlie.  Always, just 1 Charlie.",
         "languages": {
           "English": {
@@ -206,9 +206,9 @@
         "hint": "There's just 1 Charlie!",
         "id": "just-1-charlie",
         "image": "glasses/1.png",
-        "intro":"So even though there's always just 1 charlie in reality, the charlie counter in meeting notes, proposals, specifications, documentation, in team communications, outside communications, slack, discord, whatsapp, sms, in person meetings, and so on... All just opportunities for there to be misunderstandings and ambiguity.",
+        "intro":"So, even though there's always just 1 charlie in reality, the charlie counter in meeting notes, proposals, specifications, documentation, in team communications, outside communications, slack, discord, whatsapp, sms, in person meetings, and so on... All just opportunities for there to be misunderstandings and ambiguity.",
         "syntax-locked-intro": "On the syntax locked side, whether it's in English ... Code ... or Chinese ... ",
-        "mantra":"But... the Charlie Counter on the left just keeps going up.  so we're 2 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "mantra":"But... the Charlie Counter on the left just keeps going up.  it is just merciless. so we're like 2 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "syntax-free-intro": "By contrast, you'll notice that the syntax-free Mirror of the Jones family still contains just 1 Charlie, and looks like a martini glass - so it's charlie counter is still 1.  Because there is just one Charlie.",
         "languages": {
           "English": {
@@ -304,7 +304,7 @@
         "image": "glasses/2.png",
         "intro":"So, when we learn something new, like the fact that Charlie got Dingo for his 12th birthday, this just complicates things ...",
         "syntax-locked-intro": "Especially on the syntax locked side of things, all those previous references to Charlie and Dingo are now stale, because at least some of them should probably include the key piece of information about his birthday.  But until that new information is decided on, documented, communicated to whoever needs to update the syntax-locked document - and then updates it - it will just be out of date, stale, and very possibly, just wrong. So Despite just learning one small new detail about the relationships between Charlie and his Dog... that has to be documented and communicated.",
-        "mantra":"And so the Charlie Counter on the left just keeps going up.  So we're like 3 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "mantra":"And so the Charlie Counter on the left just keeps going up.  it is inexorable. So we're like 3 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "syntax-free-intro": "By contrast, you'll notice that despite adding new meta data to the knowledge graph, the syntax-free Mirror of the Jones family still contains just 1 Charlie - so it's charlie counter is still 1.  Because there is just one Charlie.",
         "languages": {
           "English": {
@@ -463,7 +463,7 @@
         "start-language": "Chinese",
         "image": "glasses/3-Lost.png",
         "intro":"and the other hand, let's imagine that something actually gets lost in translation. SCANDAL might ensue!",
-        "syntax-locked-intro": "And, once again, on the syntax locked side of things... whether those words do or do not reflect reality, remains opaque, unclear, a mystery - unless you speak chinese of course.  And if we're not careful, that could lead to a SCANDAL!  OMG!  And despite the Syntax-Locking still happening in Chinese, the Charlie Counter on the left just keeps going up - it just never tires.  ",
+        "syntax-locked-intro": "And, once again, on the syntax locked side of things... whether those words do or do not reflect reality, remains opaque, unclear, a mystery - unless you speak chinese of course.  And if we're not careful, that could lead to a SCANDAL!  OMG!  And despite the Syntax-Locking still happening in Chinese, the Charlie Counter on the left just keeps going up - it is just unstoppable.  ",
         "mantra":"So we're like 6 minutes into this demo, and the Charlie counter on the left is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "syntax-free-intro": "Once again, the Internal Geometry of mistranslated information, represented as a Syntax Free knowledge graph betrays the fact that at the very least SOMETHING changed.  Further, the specific change allows us to infer what might have happened, relatively confidently.",
         "languages": {
@@ -658,7 +658,7 @@
         "image": "glasses/4.png",
         "intro":"Phew!  Thank goodness ... It turns out that bob is in fact still the Dad.  DNA Test Resolves the whole frank thing once and for all. and we're back to our now familiar martini glass.",
         "syntax-locked-intro": "In a syntax locked world, most of the syntax locked content will still refer to Bob being the father, but there is likely to be a bunch of additional syntax-locked content suggesting that Frank could actually be the Bio-Dad.  Until someone either corrects or updates this content is is once again just out of date, stale or, as here, completely incorrect.",
-        "mantra":"So now that we've cleared up the dad question, you might notice that Charlie's still there, and there's still just one of him, and yet, the Charlie Counter on the left just keeps going up - it just never tires.  So we're like 9 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity. I *really* hope that Charlie never changes his name.  Yikes!  ... I mean - REALLY hope!!",
+        "mantra":"So now that we've cleared up the dad question, you might notice that Charlie's still there, and there's still just one of him, and yet, the Charlie Counter on the left just keeps going up - like the energizer bunny it keeps going, and goin, and going.'.  So we're like 9 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity. I *really* hope that Charlie never changes his name.  Yikes!  ... I mean - REALLY hope!!",
         "syntax-free-intro": "After the DNA test confirmed that Bob was the dad - we can just Remove Frank from the graph, and re-link Bob as CHarlie's only dad.",
         "languages": {
           "English": {
@@ -747,29 +747,27 @@
         }
       },
       {
-        "name": "Charlie is now Mark, and he's 15!",
-        "statement": "Right at the last minute, the Stakeholder asked, flustered.\n\nWho the hell is Charlie?  His name Mark and he's 15!",
+        "name": "What does a Syntax-Free (or Syntax Independent) World Look Like?  Let's take a look.",
+        "statement": "Okay - so Syntax is problematic - especially over time, but what's the alternative?",
         "hint": "Charlie actually 15yo Mark!",
         "id": "meet-15yo-mark",
-        "image": "glasses/5.png",
+        "image": "glasses/syntax-free.png",
         "line-through": ["Charlie:Mark"],
-        "intro":"OMG - the worst has happened. Charlie actually was never his name!! He was named Mark all along, and he's not 12 as had previously been thought - he is in fact 16.",
-        "syntax-locked-intro": "In a syntax locked world, Literally all of the #charlieCounter# syntax-locked documents are either out of date, stale or, as here, completely incorrect.  If they are static documents like emails or printed paper, they will just be wrong ... forever.  If they are editable documents, they will be wrong until an author comes back to that syntax-locked document and updates it.  So, despite there now being only 1 Mark (formerly known as Charlie) Charlie is still syntax locked in countless Syntax Locked documents, and until the change from Charlie to Mark is Decided, Documented, Communicated to the necessary Party (or parties) even those editable documents will just be wrong...",
-        "mantra":"So we're like 10 minutes into this demo, and the Mark counter on the left is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
-        "syntax-free-intro": "In the syntax free model - we double click on Charlie and change it to Mark - and we're again, done. Because now there is just 1 Mark - he used to have the name Charlie. But ttill just 1 of him.",
+        "intro":"Okay - so Syntax is problematic - especially over time, but what's the alternative?",
+        "syntax-locked-intro": "IN the World where rules are defined free from Syntax, all of these documents can flow from 1 SIMM (a Syntax-Independent Meta-Model)",
+        "syntax-free-intro": "Because with a SIMM - we can define the size and shape of the idea/project/plan/whatever, along with the internal geometry of those ideas, along with a rich set of business rules - all defined once.",
+        "mantra":"Because With a SIMM - a Syntax independent model of the whole project - everything downstream from that gets simpler. Much, Much, Simpler!",
         "languages": {
           "English": {
             "text-align": "left",
             "max-height": "10em",
             "variations": [
-              "Project Proposal: \nOur project celebrates the special bond between Charlie, now known as Mark, and his white, fluffy dog, Dingo. Originally a gift for his 12th birthday, the narrative now reflects three years later, as Mark is currently 15. This story also includes the family dynamic with his parents, Alice and Bob Jones, providing a full family perspective.",
-              "Statement of Work - SOW 1033: \nThe work focuses on creating an engaging environment for Charlie, who is now 15 and goes by Mark. The narrative revolves around his 12th birthday gift, Dingo, a white and fluffy canine. Additionally, the project accounts for the needs of Mark's parents, Alice and Bob Jones, ensuring a complete family environment.",
-              "Specification: \nThe design centers around children like Charlie, now 15 and referred to as Mark, and their special pets, drawing inspiration from Mark's 12th birthday gift, Dingo, a fluffy white canine. The specification is also considerate of adult preferences, keeping in mind Alice and Bob Jones.",
-              "Change Request: \nThis amendment adds a pet care section, influenced by the story of Charlie, now 15 and known as Mark, and his bond with his dog Dingo since his 12th birthday. The update aims to resonate with pet-owning families similar to Mark and his parents, Alice and Bob Jones.",
-              "README: \nThis app is designed for families, with a focus on young users like Charlie, who is now 15 and goes by the name Mark. He celebrated his 12th birthday with a new pet, Dingo. The app includes features for pet owners and considers the needs of parents like Alice and Bob Jones.",
-              "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie, now 15 and known as Mark, and his beloved dog Dingo, a gift from his 12th birthday. It enhances the experience for all family members, including parents similar to Alice and Bob Jones.",
-              "Game Docs: \nInstructions are tailored for young users like Charlie, who is now 15 and called Mark. He marked his 12th birthday with Dingo, a fluffy white canine. The document also caters to adults, akin to Alice and Bob Jones, offering comprehensive guidance.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Absolutely, it's ideal for families like Charlie's, who is now 15 and goes by Mark. He celebrated his 12th birthday with the arrival of Dingo, his white, fluffy dog, and lives with parents like Alice and Bob Jones."
+              "Syntax Indepdendent Meta Model (SIMM): Just Airtable (or *any other* ACID compliant DB - for the model",
+              "Syntax Indepdendent Meta Model (SIMM): Where the Business Rules (schema) can be easily exported to Json (extended jsd), xml/xsd/other, etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Export Data to json/xml/csv,etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Always interanlly consistent by construction",
+              "Syntax Indepdendent Meta Model (SIMM): Providing an entire base layer of documentation, code, testing artifacts.",
+              "Syntax Indepdendent Meta Model (SIMM): These will tend to be consistent, not just internally, but accross them all, because they are all derived from the same source - One Syntax-Free Model."
             ]
           },
           "Code": {
@@ -778,66 +776,42 @@
             "text-align": "left",
             "min-height": "10em",
             "variations": [
-              "Unity Game Initialization: \npublic class GameInitialization : MonoBehaviour { \n  void Start() { \n    ... \n    Debug.Log(\"Family initialized: Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
-              "Unity Family Interaction: \npublic class FamilyInteraction : MonoBehaviour { \n  void Interact(...) { \n    ... \n    Debug.Log(\"... interacted with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
-              "Unity Scene Management: \npublic class FamilySceneController : MonoBehaviour { \n  void LoadFamilyScene() { \n    ... \n    Debug.Log(\"Loading scene with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
-              "Unity Character Movement: \npublic class CharacterMovement : MonoBehaviour { \n  public void Move(..., ...) { \n    ... \n    Debug.Log(\"Moving ... to a new destination. Family: Alice, Bob, Charlie, Dingo\"); \n    ... \n  } \n}",
-              "Unity Family Adventures: \npublic class FamilyAdventure : MonoBehaviour { \n  void StartAdventure() { \n    ... \n    Debug.Log(\"Starting adventure with Alice, Bob, Charlie, and Dingo\"); \n    ... \n  } \n}",
-              "Unity Pet Interaction: \npublic class PetInteraction : MonoBehaviour { \n  public void PlayWithPet(Pet dingo) { \n    ... \n    Debug.Log(\"Playing with Dingo. Family members: Alice, Bob, Charlie\"); \n    ... \n  } \n}",
-              "Python Family Budget Tracker: class FamilyBudgetTracker:\n    def track_expense(self, member, amount):\n        if member == 'Charlie':\n            ... # Tracking Charlie's expenses\n        elif member in ['Alice', 'Bob', 'Dingo']:\n            ...",
-              "Python Charlie's Coins: class CoinStarTracker:\n    def update_stars(self, character, stars):\n        if character == 'Charlie':\n            ... # Update stars for Charlie\n        ...",
-              "Python Household Chores: class ChoreAssigner:\n    def assign_chore(self, chore, member):\n        if member == 'Charlie':\n            ... # Assigning chore to Charlie\n        ...",
-              "Python Movement Tracking: class MovementTracker:\n    def track_movement(self, character, coordinates):\n        if character == 'Charlie':\n            ... # Track Charlie's movements\n        ...",
-              "Python Dingo's Activities: class ActivityTracker:\n    def log_activity(self, pet, activity):\n        if pet == 'Dingo':\n            ... # Log Dingo's activities, involving Charlie\n        ...",
-              "Python Progress Tracker: class ProgressTracker:\n    def update_progress(self, student, subject, score):\n        if student == 'Charlie':\n            ... # Update Charlie's educational progress\n        ...",
-              "Python Vacation Planner: class VacationPlanner:\n    def plan_trip(self, destination, family_members):\n        if 'Charlie' in family_members:\n            ... # Plan trip including Charlie\n        ...",
-
-              "JavaScript: \nfunction Family() {\n this.members = [];\n}\nFamily.prototype.add = function(person) {\n this.members.push(person);\n};\n\nfunction Person(name) {\n this.name = name;\n this.pets = [];\n}\nPerson.prototype.addPet = function(pet) {\n this.pets.push(pet);\n};\n\nfunction Dog(name) {\n this.name = name;\n}\n\nvar joneses = new Family();\nvar alice = new Person('Alice');\nvar bob = new Person('Bob');\nvar charlie = new Person('Charlie');\nvar dingo = new Dog('Dingo');\n\njoneses.add(alice);\njoneses.add(bob);\njoneses.add(charlie);\ncharlie.addPet(dingo);",
-              "Java: \npublic class Family {\n private List<Person> members = new ArrayList<>();\n public void add(Person person) {\n members.add(person);\n }\n}\n\npublic class Person {\n private String name;\n private List<Dog> pets = new ArrayList<>();\n public Person(String name) { this.name = name; }\n public void addPet(Dog pet) { pets.add(pet); }\n}\n\npublic class Dog {\n private String name;\n public Dog(String name) { this.name = name; }\n}\n\nFamily joneses = new Family();\nPerson alice = new Person(\"Alice\");\nPerson bob = new Person(\"Bob\");\nPerson charlie = new Person(\"Charlie\");\nDog dingo = new Dog(\"Dingo\");\njoneses.add(alice);\njoneses.add(bob);\njoneses.add(charlie);\ncharlie.addPet(dingo);",
-              "Ruby: \nclass Family\n  attr_accessor :members\n  def initialize\n    @members = []\n  end\n  def add(person)\n    @members << person\n  end\nend\n\nclass Person\n  attr_accessor :name, :pets\n  def initialize(name)\n    @name = name\n    @pets = []\n  end\n  def add_pet(pet)\n    @pets << pet\n  end\nend\n\nclass Dog\n  attr_accessor :name\n  def initialize(name)\n    @name = name\n  end\nend\n\njoneses = Family.new\nalice = Person.new('Alice')\nbob = Person.new('Bob')\ncharlie = Person.new('Charlie')\ndingo = Dog.new('Dingo')\njoneses.add(alice)\njoneses.add(bob)\njoneses.add(charlie)\ncharlie.add_pet(dingo)",
-              "C++: \n#include <vector>\n#include <string>\n\nstruct Person {\n std::string name;\n std::vector<Dog> pets;\n Person(std::string n) : name(n) {}\n void addPet(Dog& pet) { pets.push_back(pet); }\n};\n\nstruct Dog {\n std::string name;\n Dog(std::string n) : name(n) {}\n};\n\nstruct Family {\n std::vector<Person> members;\n void add(Person& person) { members.push_back(person); }\n};\n\nFamily joneses;\nPerson alice(\"Alice\");\nPerson bob(\"Bob\");\nPerson charlie(\"Charlie\");\nDog dingo(\"Dingo\");\njoneses.add(alice);\njoneses.add(bob);\njoneses.add(charlie);\ncharlie.addPet(dingo);"
+              "Syntax Indepdendent Meta Model (SIMM): Just Airtable (or *any other* ACID compliant DB - for the model",
+              "Syntax Indepdendent Meta Model (SIMM): Where the Business Rules (schema) can be easily exported to Json (extended jsd), xml/xsd/other, etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Export Data to json/xml/csv,etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Always interanlly consistent by construction",
+              "Syntax Indepdendent Meta Model (SIMM): Providing an entire base layer of documentation, code, testing artifacts.",
+              "Syntax Indepdendent Meta Model (SIMM): These will tend to be consistent, not just internally, but accross them all, because they are all derived from the same source - One Syntax-Free Model."
             ]
           },
           "Spanish": {
             "variations": [
-              "Alice y Bob Jones están casados. Tienen un hijo llamado Charlie. Charlie tiene un perro blanco y esponjoso llamado Dingo.",
-              "Bob y Alice, un matrimonio, son padres de Charlie. El compañero de Charlie es su perro Dingo, que es tan blanco como la nieve y esponjoso.",
-              "Charlie es hijo de Alice y Bob Jones. Tiene un perro blanco y esponjoso llamado Dingo.",
-              "La familia Jones, compuesta por Alice, Bob y su hijo Charlie, posee un perro blanco y esponjoso llamado Dingo.",
-              "Alice y Bob, una pareja casada, tienen un hijo, Charlie, quien es dueño de un perro blanco y esponjoso, Dingo.",
-              "En el hogar de los Jones, Alice y Bob crían a su hijo Charlie, dueño de Dingo, un canino esponjoso y blanco.",
-              "Los Jones, Alice y Bob, tienen un hijo, Charlie. Charlie adora a su perro Dingo, de pelaje blanco y suave.",
-              "Alice y Bob Jones, junto a su hijo Charlie, cuidan de Dingo, un perro de pelaje blanco y esponjoso.",
-              "Dentro de la familia Jones, conformada por Alice, Bob y su hijo Charlie, se encuentra Dingo, un perro de pelo blanco y esponjoso.",
-              "Alice Jones y su esposo Bob, junto a su hijo Charlie, conviven con Dingo, un perro blanco y peludo."
+              "Syntax Indepdendent Meta Model (SIMM): Just Airtable (or *any other* ACID compliant DB - for the model",
+              "Syntax Indepdendent Meta Model (SIMM): Where the Business Rules (schema) can be easily exported to Json (extended jsd), xml/xsd/other, etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Export Data to json/xml/csv,etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Always interanlly consistent by construction",
+              "Syntax Indepdendent Meta Model (SIMM): Providing an entire base layer of documentation, code, testing artifacts.",
+              "Syntax Indepdendent Meta Model (SIMM): These will tend to be consistent, not just internally, but accross them all, because they are all derived from the same source - One Syntax-Free Model."
             ]
           },
           "Greek": {
             "variations": [
-              "Η Άλις και ο Μπομπ Τζόουνς είναι παντρεμένοι. Έχουν έναν γιο που τον λένε Τσάρλι. Ο Τσάρλι έχει έναν λευκό, αφράτο σκύλο, τον Ντίνγκο.",
-              "Ο Μπομπ και η Άλις, ένα παντρεμένο ζευγάρι, είναι οι γονείς του Τσάρλι. Ο σύντροφος του Τσάρλι είναι ο σκύλος του, ο Ντίνγκο, λευκός και αφράτος.",
-              "Ο Τσάρλι, ο γιος των Άλις και Μπομπ Τζόουνς, έχει έναν σκύλο με το όνομα Ντίνγκο, γνωστό για το λευκό και αφράτο τρίχωμά του.",
-              "Η οικογένεια Τζόουνς αποτελείται από τους Άλις, Μπομπ και τον γιο τους Τσάρλι. Ο Τσάρλι έχει έναν σκύλο ονόματι Ντίνγκο, ο οποίος είναι λευκός και αφράτος.",
-              "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ έχουν έναν γιο, τον Τσάρλι. Το κατοικίδιο του Τσάρλι, ο Ντίνγκο, είναι ένας αφράτος λευκός σκύλος.",
-              "Στο σπίτι των Τζόουνς, η Άλις και ο Μπομπ μεγαλώνουν τον γιο τους Τσάρλι, ο οποίος έχει τον Ντίνγκο, έναν αφράτο λευκό σκύλο.",
-              "Οι Τζόουνς, η Άλις και ο Μπομπ, έχουν έναν γιο, τον Τσάρλι. Ο Τσάρλι λατρεύει τον σκύλο του, τον Ντίνγκο, με το λευκό και αφράτο τρίχωμα.",
-              "Η Άλις και ο Μπομπ Τζόουνς, μαζί με τον γιο τους Τσάρλι, φροντίζουν τον Ντίνγκο, έναν σκύλο με λευκό και αφράτο τρίχωμα.",
-              "Μέσα στην οικογένεια Τζόουνς, που αποτελείται από την Άλις, τον Μπομπ και τον γιο τους Τσάρλι, βρίσκεται ο Ντίνγκο, ένας σκύλος με λευκό και αφράτο τρίχωμα.",
-              "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
+              "Syntax Indepdendent Meta Model (SIMM): Just Airtable (or *any other* ACID compliant DB - for the model",
+              "Syntax Indepdendent Meta Model (SIMM): Where the Business Rules (schema) can be easily exported to Json (extended jsd), xml/xsd/other, etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Export Data to json/xml/csv,etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Always interanlly consistent by construction",
+              "Syntax Indepdendent Meta Model (SIMM): Providing an entire base layer of documentation, code, testing artifacts.",
+              "Syntax Indepdendent Meta Model (SIMM): These will tend to be consistent, not just internally, but accross them all, because they are all derived from the same source - One Syntax-Free Model."
             ]
           },
           "Chinese": {
             "variations": [
-              "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
-              "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
-              "在琼斯家，有夫妻二人艾丽丝和鲍勃，还有他们的儿子查理，以及查理的宠物狗丁戈，它的毛发白且蓬松。",
-              "艾丽丝和鲍勃·琼斯是一对夫妇，他们养育着儿子查理和一只白色蓬松的狗丁戈。",
-              "查理，作为艾丽丝和鲍勃·琼斯之子，有一只叫丁戈的白毛蓬松狗。",
-              "琼斯一家由艾丽丝、鲍勃和他们的儿子查理组成，还有查理的白色蓬松狗丁戈。",
-              "艾丽丝与鲍勃·琼斯的家中有他们的儿子查理和一只白色蓬松的宠物狗丁戈。",
-              "查理是艾丽丝和鲍勃·琼斯的孩子，他养了一只名为丁戈的白色蓬松狗。",
-              "在琼斯家族中，艾丽丝和鲍勃有一个儿子叫查理，查理有一只白色蓬松的狗，名叫丁戈。",
-              "艾丽丝和鲍勃·琼斯夫妇的儿子查理拥有一只蓬松白色的狗，它的名字叫丁戈。"
+              "Syntax Indepdendent Meta Model (SIMM): Just Airtable (or *any other* ACID compliant DB - for the model",
+              "Syntax Indepdendent Meta Model (SIMM): Where the Business Rules (schema) can be easily exported to Json (extended jsd), xml/xsd/other, etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Export Data to json/xml/csv,etc...",
+              "Syntax Indepdendent Meta Model (SIMM): Always interanlly consistent by construction",
+              "Syntax Indepdendent Meta Model (SIMM): Providing an entire base layer of documentation, code, testing artifacts.",
+              "Syntax Indepdendent Meta Model (SIMM): These will tend to be consistent, not just internally, but accross them all, because they are all derived from the same source - One Syntax-Free Model."
             ]
           }
         }
