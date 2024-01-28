@@ -368,7 +368,7 @@
         "intro":"Let's take a scenario where, for example, we need to work with a Chinese team.  So, after translating the simple story into Chinese, things continue to get more complicated for obvious reasons.",
         "syntax-locked-intro": "Because, on the syntax locked side of things,unless you know Chinese, and have enough context to read the syntax-locked Chinese descriptions of the family, then internalize and understand it - only then can you determine whether that Chinese does or does not accurately translate the description of the Joneses, it remains ambiguous and unclear.  A mystery really.  And despite the Syntax-Locking now happening in Chinese. The Charlie Counter on the left just keeps going up - it just never stops.",
         "mantra":"So we're like 5 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
-        "syntax-free-intro": "By contrast, you'll notice that despite not understanding a single word of either the Syntax-Locked or the Syntax-Free versions of the knowledge, the Internal Geometry of the Syntax Free version still looks like a Martini Glass to me.  Because that's the basic shape of the knowledge graph that falls out of this 1 sentence prompt, regardless of which language you use to describe the family.",
+        "syntax-free-intro": "By contrast, you'll notice that despite not understanding a single word of either the Syntax-Locked or the Syntax-Free versions of the knowledge, the Internal Geometry of the Syntax Free version still looks like a Martini Glass.  Because that's the basic shape of the knowledge graph that falls out of this 1 sentence prompt, regardless of which language you use to describe the family.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -462,8 +462,8 @@
         "id": "mistranslation",
         "start-language": "Chinese",
         "image": "glasses/3-Lost.png",
-        "intro":"But... let's imagine that something gets lost in translation? SCANDAL might ensue!",
-        "syntax-locked-intro": "Because, once again, on the syntax locked side of things... whether those words do or do not reflect reality, remains opaque, unclear, a mystery - unless you speak chinese of course.  And if we're not careful, that could lead to a SCANDAL!  OMG!  And despite the Syntax-Locking still happening in Chinese, the Charlie Counter on the left just keeps going up - it just never tires.  ",
+        "intro":"and the other hand, let's imagine that something actually gets lost in translation. SCANDAL might ensue!",
+        "syntax-locked-intro": "And, once again, on the syntax locked side of things... whether those words do or do not reflect reality, remains opaque, unclear, a mystery - unless you speak chinese of course.  And if we're not careful, that could lead to a SCANDAL!  OMG!  And despite the Syntax-Locking still happening in Chinese, the Charlie Counter on the left just keeps going up - it just never tires.  ",
         "mantra":"So we're like 6 minutes into this demo, and the Charlie counter on the left is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "syntax-free-intro": "Once again, the Internal Geometry of mistranslated information, represented as a Syntax Free knowledge graph betrays the fact that at the very least SOMETHING changed.  Further, the specific change allows us to infer what might have happened, relatively confidently.",
         "languages": {
