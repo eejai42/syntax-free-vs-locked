@@ -851,7 +851,7 @@
         "name": "What does a Syntax-Free (or Syntax Independent) World Look Like?  Let's take a look.",
         "statement": "Okay - so Syntax is problematic - especially over time, but what's the alternative?",
         "hint": "Charlie actually 15yo Mark!",
-        "id": "meet-15yo-mark",
+        "id": "syntax-free-world",
         "image": "glasses/syntax-free.png",
         "line-through": ["Charlie:Mark"],
         "intro": "Okay - so Syntax is problematic - especially over time, but what's the alternative?",
