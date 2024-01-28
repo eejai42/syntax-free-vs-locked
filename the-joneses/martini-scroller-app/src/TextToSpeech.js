@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const TextToSpeech = ({ currentStory, charlieCounter }) => {
     const columnStyle = {
@@ -32,6 +32,31 @@ const TextToSpeech = ({ currentStory, charlieCounter }) => {
         }
         event.target.blur(); // This removes focus from the button after clicking
     };
+
+     const autoSelectText = (selectMantraOnly = false) => {
+        if (window.getSelection) {
+            const selection = window.getSelection();
+            const range = document.createRange();
+            if (selectMantraOnly) {
+                range.selectNodeContents(mantraTextRef.current);
+            } else {
+                range.setStart(contentRef.current.firstChild, 0);
+                range.setEndBefore(mantraTextRef.current);
+            }
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    };
+
+    // Automatically select intro when a new story loads
+    useEffect(() => {
+        autoSelectText();
+        const mantraTimer = setTimeout(() => {
+            autoSelectText(true);
+        }, 35000); // 35 seconds later
+
+        return () => clearTimeout(mantraTimer); // Cleanup on component unmount or currentStory change
+    }, [currentStory]);
       
     return (
         <div>
