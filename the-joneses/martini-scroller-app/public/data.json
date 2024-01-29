@@ -308,8 +308,8 @@
         "id": "birthday-present",
         "image": "glasses/2.png",
         "intro": "So, when we learn something new, like the fact that Charlie got Dingo for his 12th birthday, this just complicates things...",
-        "syntax-locked-intro": "Especially on the syntax locked side of things, all those previous references to Charlie and Dingo are now stale, because at least some of them should probably include the key piece of information about his birthday.  But until that new information is decided on, documented, communicated to whoever needs to update the syntax-locked document - and then updates it - it will just be out of date, stale, and very possibly, just wrong. So Despite just learning one small new detail about the relationship between Charlie and his Dog... that has to be documented and communicated to the whole team.",
-        "syntax-free-intro": "By contrast, you'll notice that despite adding new meta data to the knowledge graph, the syntax-free Mirror of the Jones family still contains just 1 Charlie - so it's charlie counter is still 1.  Because there is just one Charlie.  And yet the Charlie Counter on the left just keeps going up.  it is inexorable.",
+        "syntax-locked-intro": "Especially on the syntax locked side of things, all those previous references to Charlie and Dingo are now stale, because at least some of them should probably include the key piece of information about his birthday.  But until that new information is decided on, documented, communicated to whoever needs to update the syntax-locked document, and it is updated - it will just be out of date, stale, and very possibly, just wrong. So Despite just learning one small new detail about the relationship between Charlie and his Dog... that has to be documented and communicated to the whole team.",
+        "syntax-free-intro": "By contrast, you'll notice that despite adding new meta data to the knowledge graph, the syntax-free Mirror of the Jones family still contains just 1 Charlie - so it's charlie counter is still 1.  Because, there is just one Charlie.  And yet, the Charlie Counter on the left just keeps going up. it is inexorable.",
         "mantra": "So we're like 3 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "languages": {
           "English": {
@@ -467,8 +467,8 @@
         "id": "mistranslation",
         "start-language": "Chinese",
         "image": "glasses/3-Lost.png",
-        "intro": "On the other hand, let's imagine that something unfortunately, gets lost in translation. A SCANDAL might ensue!",
-        "syntax-locked-intro": "And, once again, on the syntax locked side of things... determining if those words do, or do not reflect reality, remains opaque, unclear, a mystery - unless you speak chinese of course.  And if we're not careful, that could lead to issues!  And yet, despite the fact that the Syntax-Locking is now happening in Chinese, the Charlie Counter on the left just keeps going up - it is just unstoppable.  ",
+        "intro": "On the other hand, let's imagine that something, unfortunately, gets lost in translation. A SCANDAL might ensue!",
+        "syntax-locked-intro": "And, once again, on the syntax locked side of things... determining if those words do, or do not reflect reality, remains opaque, unclear, a mystery - unless you speak chinese of course.  And if we're not careful, that could lead to issues!  And yet, even though everything is now happening in Chinese, the Charlie Counter on the left just keeps going up - it is just unstoppable.  ",
         "syntax-free-intro": "And, once again, the Internal Geometry on the right side, of even mistranslated information, int the form of a Syntax Free knowledge graph, betrays the fact that, at the very least, something changed.  Further, the specific change allows us to infer what might have happened, relatively confidently.",
         "mantra": "So we're like 6 minutes into this demo, and the Charlie counter on the left is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "languages": {
