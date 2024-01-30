@@ -19,9 +19,28 @@ const VariationCoordinator = ({
   onTimeUpdate,
   onLanguageChange,
 }) => {
+
+  
+  const initializeKeywordCounters = () => {
+    const counters = {};
+    data.story.keywords.forEach((keyword) => {
+      const key = keyword.name.toLowerCase();
+      counters[key] = {
+        name: keyword.name,
+        greek: keyword.greek,
+        chinese: keyword.chinese,
+        isStale: false,
+        isHighlightable: true,
+        lockedCount: 0,
+        staleCount: 0
+      };
+    });
+    return counters;
+  };
+
   const [variations, setVariations] = useState([]);
   const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
-  const [keywordCounters, setKeywordCounters] = useState({}); // Global keyword counters
+  const [keywordCounters, setKeywordCounters] = useState(initializeKeywordCounters());
   const [currentKeywordCounter, setCurrentKeywordCounter] = useState(0);
 
   const [timeState, setTimeState] = useState({
@@ -119,6 +138,9 @@ const VariationCoordinator = ({
     };
   }, [variations, currentVariationIndex, onVariationUpdate]);
 
+
+
+
   function advanceDay() {
     setTimeState((prevState) => {
       let { calendarDay, businessDay, dayOfWeekIndex } = prevState;
@@ -164,18 +186,22 @@ const VariationCoordinator = ({
     }
   }
 
-  function updateKeywordCounters(text) {
-    const keywordText = getKeywordText(currentKeyword, data);
-    const matches = text.match(new RegExp(keywordText, "gi")) || [];
-    const count = matches.length;
-    setKeywordCounters((prevCounters) => ({
-      ...prevCounters,
-      [currentKeyword]: (prevCounters[currentKeyword] || 0) + count,
-    }));
-    const totalKeywordCount = (keywordCounters[currentKeyword] || 0) + count;
-    setCurrentKeywordCounter(totalKeywordCount);
-    updateCurrentKeywordCounter(totalKeywordCount);
-  }
+  const updateKeywordCounters = (text) => {
+    const newCounters = { ...keywordCounters };
+    Object.keys(newCounters).forEach((key) => {
+      const keyword = newCounters[key];
+      const regex = new RegExp(keyword.name, "gi");
+      const count = (text.match(regex) || []).length;
+      if (count > 0) {
+        if (keyword.isStale) {
+          keyword.staleCount += count;
+        } else {
+          keyword.lockedCount += count;
+        }
+      }
+    });
+    setKeywordCounters(newCounters);
+  };
 
   const getPrefixBeforeColon = (text) => {
     const colonIndex = text.indexOf(":");
@@ -192,59 +218,23 @@ const VariationCoordinator = ({
     return methods[Math.floor(Math.random() * methods.length)];
   };
 
-  const highlightKeyword = (text, keyword, data, lineThrough, updateCounter = true) => {
-    const keywordText = getKeywordText(keyword, data);
-    let lineThroughKeywords = [];
-    let highlightKeywords = [];
-  
-    if (lineThrough && lineThrough.length > 0) {
-      lineThrough.forEach(item => {
-        const [lineThroughWord, highlightWord] = item.split(':');
-        if (lineThroughWord) {
-          lineThroughKeywords.push(lineThroughWord);
-        }
-        if (highlightWord) {
-          highlightKeywords.push(highlightWord);
-        }
-      });
-    } else {
-      highlightKeywords = [keywordText]; // No line-through, only highlighting
-    }
-  
-    // Process line-through keywords
-    lineThroughKeywords.forEach(ltKeyword => {
-      text = text.replace(new RegExp(ltKeyword, "gi"), `<span class="staleKeyword">${ltKeyword}</span>`);
-    });
-  
-    // Process highlight keywords
-    return text.replace(new RegExp(highlightKeywords.join("|"), "gi"), (match) => {
-      if (updateCounter) {
-        setKeywordCounters((prevCounters) => {
-          const currentCount = prevCounters[match] ? prevCounters[match] + 1 : 1;
-          if (match === currentKeyword) {
-            setCurrentKeywordCounter(currentCount);
-          }
-          return { ...prevCounters, [match]: currentCount };
-        });
+  const highlightKeyword = (text, keyword, data) => {
+    const keywordData = keywordCounters[keyword.toLowerCase()];
+    if (!keywordData || !keywordData.isHighlightable) return text;
+
+    const regex = new RegExp(keywordData.name, "gi");
+    return text.replace(regex, (match) => {
+      if (keywordData.isStale) {
+        return `<span class="staleKeyword">${match}</span>`;
+      } else {
+        return `<span class="highlightedKeyword">${match}</span>`;
       }
-      return `<span class="highlightedKeyword">${match}</span>`;
     });
   };
-  
-  
 
-  const getKeywordText = (keywordName, data) => {
-    const keywords = data.story.keywords;
-    const keyword = keywords.find((k) => k.name === keywordName);
-    if (!keyword) return keywordName;
-    return currentLanguage === "Greek"
-      ? keyword.greek
-      : currentLanguage === "Chinese"
-      ? keyword.chinese
-      : keyword.name;
-  };
-
-  return null; // This component does not render anything itself
+  
+  return <div>
+  </div> // This component does not render anything itself
 };
 
 export default VariationCoordinator;
