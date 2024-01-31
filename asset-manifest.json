@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/syntax-free-vs-locked/static/css/main.58b63244.css",
-    "main.js": "/syntax-free-vs-locked/static/js/main.c947d08f.js",
+    "main.css": "/syntax-free-vs-locked/static/css/main.4f9ffc62.css",
+    "main.js": "/syntax-free-vs-locked/static/js/main.0d206411.js",
     "static/js/787.d68f7262.chunk.js": "/syntax-free-vs-locked/static/js/787.d68f7262.chunk.js",
     "index.html": "/syntax-free-vs-locked/index.html",
-    "main.58b63244.css.map": "/syntax-free-vs-locked/static/css/main.58b63244.css.map",
-    "main.c947d08f.js.map": "/syntax-free-vs-locked/static/js/main.c947d08f.js.map",
+    "main.4f9ffc62.css.map": "/syntax-free-vs-locked/static/css/main.4f9ffc62.css.map",
+    "main.0d206411.js.map": "/syntax-free-vs-locked/static/js/main.0d206411.js.map",
     "787.d68f7262.chunk.js.map": "/syntax-free-vs-locked/static/js/787.d68f7262.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58b63244.css",
-    "static/js/main.c947d08f.js"
+    "static/css/main.4f9ffc62.css",
+    "static/js/main.0d206411.js"
   ]
 }
