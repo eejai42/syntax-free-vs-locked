@@ -25,17 +25,19 @@ const TextScroller = ({ currentVariation, currentTime, keywordCounters }) => {
           <h4>Descriptions of the Idea</h4>
         </div>
 
-      <div className="CharlieCounter" style={{zIndex: 100}}> 
-
-      <div style={{position: 'absolute', right: '10px', fontSize:'0.8em', paddingRight: '0.25em'}}>{currentTime.dayOfWeekName || 'Monday'}
-      {currentTime.calendarDay > 7 ? `, Week #${Math.floor(currentTime.calendarDay / 7) + 1}` : null}
-      </div>
-      <KeywordCounter keywordCounters={keywordCounters} keywordName={'charlie'} showCounterLabel={true} />
-      <KeywordCounter keywordCounters={keywordCounters} keywordName={'alice'} />
-      <KeywordCounter keywordCounters={keywordCounters} keywordName={'bob'} />
-      <KeywordCounter keywordCounters={keywordCounters} keywordName={'markus'} />
-      <KeywordCounter keywordCounters={keywordCounters} keywordName={'dingo'} />
-      <KeywordCounter keywordCounters={keywordCounters} keywordName={'frank'} />
+      <div className="CharlieCounterBlock Paper" style={{zIndex: 100}}> 
+        <div style={{position: 'absolute', right: '10px', fontSize:'0.6em', paddingRight: '0.25em'}}>{currentTime.dayOfWeekName || 'Monday'}
+        {currentTime.calendarDay > 7 ? `, Week #${Math.floor(currentTime.calendarDay / 7) + 1}` : null}
+        </div>
+        &nbsp;
+        <div className="Paper" style={{position: 'absolute', right: '0px', top: '0.75em', borderRadius: '0.25em', zIndex: -1}}>
+        <KeywordCounter keywordCounters={keywordCounters} keywordName={'charlie'} showCounterLabel={true} />
+        <KeywordCounter keywordCounters={keywordCounters} keywordName={'frank'} />
+        <KeywordCounter keywordCounters={keywordCounters} keywordName={'alice'} />
+        <KeywordCounter keywordCounters={keywordCounters} keywordName={'bob'} />
+        <KeywordCounter keywordCounters={keywordCounters} keywordName={'markus'} />
+        {/* <KeywordCounter keywordCounters={keywordCounters} keywordName={'dingo'} /> */}
+        </div>
       </div>
       {queue.map(variation => (
         <div

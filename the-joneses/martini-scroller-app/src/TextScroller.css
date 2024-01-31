@@ -1,15 +1,4 @@
-.CharlieCounter {  
-  position: relative;
-  background-color: yellow;
-  padding: 0.25em;
-  opacity: 1;
-  font-size: 1.5em;
-  z-index: 999999;
-}
 
-.CharlieCounter span {
-  font-weight: bold;
-}
 
 
 /* Additional styles */

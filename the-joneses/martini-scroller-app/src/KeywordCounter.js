@@ -1,6 +1,6 @@
 import './KeywordCounter.css';
 
-function KeywordCounter({ keywordCounters, keywordName, showCounterLabel = false}) {
+function KeywordCounter({ keywordCounters, keywordName, showCounterLabel = false, alwaysShow1 = false}) {
     const keyword = keywordCounters[keywordName.toLowerCase()] || {};
   
     if (keyword.lockedCount <= 0) {
@@ -11,7 +11,7 @@ function KeywordCounter({ keywordCounters, keywordName, showCounterLabel = false
   
     return (
       <span className={' charlieCounter ' + (keywordName == 'charlie' ? 'theCharlieCounter' : 'otherCounters')}>
-        <span className={keywordStyle}>{keyword.name}{ showCounterLabel ? ' Counter' : '' }:</span><span>{keyword.lockedCount}</span>
+        <span className={keywordStyle}>{keyword.name}{ showCounterLabel ? ' Counter' : '' }:</span><span>{alwaysShow1 ? 1 : keyword.lockedCount}</span>
       </span>
     );
   }
