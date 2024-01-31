@@ -24,7 +24,7 @@ const GraphViewer = ({ data, story, keywordCounters }) => {
   return (
     <div style={containerStyle}>
       <div className="WhiteHeader" style={{zIndex: 999999999999}}>
-        <img src="e-everything.png" className="EraIcon" style={{ right: 0, marginTop: '-0.5em' }} />
+        <img src="e-everything.png" className="EraIcon" style={{ right: 0, marginTop: '-0.5em', width: '6.5em' }} />
         {/* <img src="parchment.png" style={{width: '3em', float: 'right', display: 'hidden'}} /> */}
         <h3>
           <span>One</span> Syntax-Free <span>model</span>

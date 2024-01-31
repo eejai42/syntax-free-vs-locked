@@ -30,12 +30,12 @@ const TextScroller = ({ currentVariation, currentTime, keywordCounters }) => {
         {currentTime.calendarDay > 7 ? `, Week #${Math.floor(currentTime.calendarDay / 7) + 1}` : null}
         </div>
         &nbsp;
-        <div className="Paper" style={{position: 'absolute', right: '0px', top: '0.75em', borderRadius: '0.25em', zIndex: -1}}>
+        <div className="Paper" style={{position: 'absolute', right: '0em', top: '0.0em', borderRadius: '0.25em', zIndex: -1}}>
         <KeywordCounter keywordCounters={keywordCounters} keywordName={'charlie'} showCounterLabel={true} />
-        <KeywordCounter keywordCounters={keywordCounters} keywordName={'frank'} />
         <KeywordCounter keywordCounters={keywordCounters} keywordName={'alice'} />
         <KeywordCounter keywordCounters={keywordCounters} keywordName={'bob'} />
         <KeywordCounter keywordCounters={keywordCounters} keywordName={'markus'} />
+        <KeywordCounter keywordCounters={keywordCounters} keywordName={'frank'} />
         {/* <KeywordCounter keywordCounters={keywordCounters} keywordName={'dingo'} /> */}
         </div>
       </div>

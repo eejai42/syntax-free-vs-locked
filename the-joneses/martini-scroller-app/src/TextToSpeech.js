@@ -14,8 +14,15 @@ const TextToSpeech = ({ currentStory, keywordCounters }) => {
     // Function to replace #charlieCounter# with charlieCounter value
     const replaceCharlieCounter = (text) => {
         console.error('replaceCharlieCounter', text, "keywordCounters", keywordCounters);  
-        var charlieCounter = 10000;
-        return text.replace(/#charlieCounter#/g, `almost ${(Math.floor((charlieCounter + 5) / 50) + 1) * 50}`);
+        var charlieCounter = (keywordCounters && keywordCounters['charlie']) ? keywordCounters['charlie'].lockedCount : 0;
+        const next50 = Math.ceil((charlieCounter + 1) / 50) * 50;
+        const difference = next50 - charlieCounter;
+      
+        if (difference <= 25) {
+          return text.replace(/#charlieCounter#/g, `almost ${next50}`);
+        } else {
+          return text.replace(/#charlieCounter#/g, `already over ${charlieCounter}`);
+        }
     };
 
     // Function to handle the selection of text

@@ -39,7 +39,7 @@
 
 .CharlieCounterBlock {
   position: relative;
-  padding: 0.25em;
+  white-space: nowrap;
   opacity: 1;
   font-size: 1.5em;
   min-height: 2.25em;
@@ -61,7 +61,7 @@
 
 
 .EEverything {
-  background-color: #2e9ac8;
+  background-color: #3da7d6;
   color: white;
 }
 /* App.css */

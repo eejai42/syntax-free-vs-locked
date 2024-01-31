@@ -155,12 +155,6 @@ function App() {
         </div>
         <div className="LeftPane">
           <div style={{ position: "relative", height: "6em" }}>
-            <StoryNavigator
-              onPrevious={handlePreviousStory}
-              onNext={handleNextStory}
-              storyList={storyList}
-              currentStoryId={currentStoryId}
-            />
             <AppHeader
               style={{ zIndex: 1 }}
               story={currentStory}
@@ -177,7 +171,13 @@ function App() {
         </div>
       </div>
       <div></div>
-      <div style={{marginTop: '3em', paddingTop: '3em'}}>
+      <div style={{marginTop: '3em', paddingTop: '3em', position: 'relative'}}>
+        <StoryNavigator
+              onPrevious={handlePreviousStory}
+              onNext={handleNextStory}
+              storyList={storyList}
+              currentStoryId={currentStoryId}
+            />
         <TextToSpeech currentStory={currentStory} keywordCounters={keywordCounters} />
       </div>
     </div>

@@ -4,9 +4,7 @@ import React from "react";
 const LanguagePicker = ({
   data,
   currentLanguage,
-  onLanguageChange,
-  currentKeyword,
-  onKeywordSelect,
+  onLanguageChange
 }) => {
   const getKeywordText = (keyword) => {
     {
@@ -16,7 +14,7 @@ const LanguagePicker = ({
     }
   };
   return (
-    <div style={{ padding: "1em" }}>
+    <div style={{ padding: "1em", marginTop: '2.5em' }}>
       <div>
         {data.story.languages.map((language, index) => (          
           <button
@@ -28,20 +26,6 @@ const LanguagePicker = ({
             {language.name}
           </button>
         ))}
-      </div>
-      <div style={{padding: '0.5em'}}>
-        {data.story.keywords
-          .flatMap((keyword) => keyword)
-          .map((keyword, index) => (
-            <button
-              className={`btn btn-primary`}
-              key={index}
-              onClick={() => onKeywordSelect(keyword.name)}
-              disabled={currentKeyword === keyword.name}
-            >
-              {getKeywordText(keyword)}
-            </button>
-          ))}
       </div>
     </div>
   );
