@@ -1,13 +1,13 @@
 import React from 'react';
 
-function StoryNavigator({ onPrevious, onNext, storyList, currentStoryId }) {
+function StoryNavigator({ onPrevious, onNext, chapterList, currentChapterId }) {
   const findStoryHint = (offset) => {
-    const currentIndex = storyList.findIndex(story => story.id === currentStoryId);
-    const newIndex = (currentIndex + offset + storyList.length) % storyList.length;
-    return storyList[newIndex].hint;
+    const currentIndex = chapterList.findIndex(story => story.id === currentChapterId);
+    const newIndex = (currentIndex + offset + chapterList.length) % chapterList.length;
+    return chapterList[newIndex].hint;
   };
 
-  const currentIndex = storyList.findIndex(story => story.id === currentStoryId);
+  const currentIndex = chapterList.findIndex(story => story.id === currentChapterId);
 
   return (
     <div style={{   display: 'flex', 
@@ -26,8 +26,8 @@ function StoryNavigator({ onPrevious, onNext, storyList, currentStoryId }) {
       </button>
       <button className="btn btn-story"
         onClick={onNext}
-        disabled={currentIndex === storyList.length - 1}
-        style={{ visibility: currentIndex < storyList.length - 1 ? 'visible' : 'hidden' }}
+        disabled={currentIndex === chapterList.length - 1}
+        style={{ visibility: currentIndex < chapterList.length - 1 ? 'visible' : 'hidden' }}
       >
         {findStoryHint(1)} &gt;
       </button>

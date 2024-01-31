@@ -11,7 +11,7 @@ const daysOfWeek = [
 
 const VariationCoordinator = ({
   data,
-  currentStory,
+  currentChapter,
   currentLanguage,
   onVariationUpdate,
   onTimeUpdate,
@@ -49,10 +49,10 @@ const VariationCoordinator = ({
   });
 
   useEffect(() => {
-    if (currentStory && data) {
+    if (currentChapter && data) {
       updateVariations();
     }
-  }, [currentStory?.id, currentLanguage, data]);
+  }, [currentChapter?.id, currentLanguage, data]);
 
   useEffect(() => {
     handleKeywordCounters(keywordCounters);
@@ -60,7 +60,7 @@ const VariationCoordinator = ({
       
 
   const updateVariations = () => {
-    const languageData = currentStory.languages[currentLanguage];
+    const languageData = currentChapter.languages[currentLanguage];
     if (languageData) {
       const updatedVariations = languageData.variations.map((variationText) => {
         const prefix = getPrefixBeforeColon(variationText);
@@ -74,7 +74,7 @@ const VariationCoordinator = ({
           text: finalVariationText,
           htmlText: highlightedText,
           language: currentLanguage,
-          lineThrough: currentStory["line-through"],
+          lineThrough: currentChapter["line-through"],
           style: {
             animationDuration: `${6000}ms`,
             fontSize: languageData["font-size"] ?? "1.5em",
@@ -86,8 +86,8 @@ const VariationCoordinator = ({
         };
         return refinedVariation;
       });
-      if (currentStory["start-language"] && (currentLanguage != 'English')) {
-        onLanguageChange(currentStory["start-language"]);
+      if (currentChapter["start-language"] && (currentLanguage != 'English')) {
+        onLanguageChange(currentChapter["start-language"]);
       }
       setVariations(updatedVariations);
       setCurrentVariationIndex(0);
@@ -179,17 +179,42 @@ const VariationCoordinator = ({
   const updateKeywordCounters = (text) => {
     const newCounters = { ...keywordCounters };
     Object.entries(newCounters).forEach(([key, keyword]) => {
-      const regex = new RegExp(keyword.name, "gi");
-      const count = (text.match(regex) || []).length;
-      if (count > 0) {
+      // Extend to check for Greek and Chinese variations
+      const namesToCheck = [keyword.name, keyword.greek, keyword.chinese].filter(Boolean); // Filter out any undefined or empty values
+      let totalCount = 0;
+      namesToCheck.forEach((name) => {
+        const regex = new RegExp(name, "gi");
+        const count = (text.match(regex) || []).length;
+        totalCount += count;
+      });
+  
+      if (totalCount > 0) {
         if (keyword.isStale) {
-          keyword.staleCount += count;
+          keyword.staleCount += totalCount;
         } else {
-          keyword.lockedCount += count;
+          keyword.lockedCount += totalCount;
         }
       }
     });
     setKeywordCounters(newCounters);
+  };
+  
+  const highlightKeyword = (text) => {
+    Object.entries(keywordCounters).forEach(([key, keywordData]) => {
+      if (keywordData.isHighlightable) {
+        [keywordData.name, keywordData.greek, keywordData.chinese].filter(Boolean).forEach((name) => {
+          const regex = new RegExp(name, "gi");
+          text = text.replace(regex, (match) => {
+            if (keywordData.isStale) {
+              return `<span class="staleKeyword">${match}</span>`;
+            } else {
+              return `<span class="highlightedKeyword">${match}</span>`;
+            }
+          });
+        });
+      }
+    });
+    return text;
   };
   
 
@@ -206,22 +231,6 @@ const VariationCoordinator = ({
   const getRandomMethod = (data) => {
     const methods = data.story["communication-methods"];
     return methods[Math.floor(Math.random() * methods.length)];
-  };
-
-  const highlightKeyword = (text) => {
-    Object.entries(keywordCounters).forEach(([key, keywordData]) => {
-      if (keywordData.isHighlightable) {
-        const regex = new RegExp(keywordData.name, "gi");
-        text = text.replace(regex, (match) => {
-          if (keywordData.isStale) {
-            return `<span class="staleKeyword">${match}</span>`;
-          } else {
-            return `<span class="highlightedKeyword">${match}</span>`;
-          }
-        });
-      }
-    });
-    return text;
   };
 
   

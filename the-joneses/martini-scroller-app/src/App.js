@@ -12,15 +12,15 @@ import TextToSpeech from "./TextToSpeech";
 function App() {
   const [data, setData] = useState(null);
   const [currentLanguage, setCurrentLanguage] = useState("English");
-  const [currentStoryId, setCurrentStoryId] = useState("meet-the-joneses");
-  const [currentStory, setCurrentStory] = useState(null);
-  const [storyList, setStoryList] = useState([]);
+  const [currentChapterId, setCurrentChapterId] = useState("meet-the-joneses");
+  const [currentChapter, setCurrentChapter] = useState(null);
+  const [chapterList, setChapterList] = useState([]);
   const [currentTime, setCurrentTime] = useState([]);
   const [keywordCounters, setKeywordCounters] = useState({});
   const [currentVariation, setCurrentVariation] = useState(null);
 
-  const currentStoryIdRef = useRef(currentStoryId);
-  const storyListRef = useRef(storyList);
+  const currentChapterIdRef = useRef(currentChapterId);
+  const chapterListRef = useRef(chapterList);
 
   // Function to handle the variation update from VariationCoordinator
   const handleKeywordCounters = (counters) => {
@@ -29,18 +29,18 @@ function App() {
 
   // Update the ref whenever the state changes
   useEffect(() => {
-    currentStoryIdRef.current = currentStoryId;
-    storyListRef.current = storyList;
-  }, [currentStory]);
+    currentChapterIdRef.current = currentChapterId;
+    chapterListRef.current = chapterList;
+  }, [currentChapter]);
 
   // Function to handle key press
   const handleKeyPress = (event) => {
     if (event.keyCode === 37) {
       // Left arrow key
-      handlePreviousStory();
+      handlePreviousChapter();
     } else if (event.keyCode === 39) {
       // Right arrow key
-      handleNextStory();
+      handleNextChapter();
     }
   };
 
@@ -60,11 +60,11 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setData(data);
-        setStoryList(data.story["chapters"]);
-        const currentStory = data.story["chapters"].find(
-          (s) => s.id === currentStoryId
+        setChapterList(data.story["chapters"]);
+        const currentChapter = data.story["chapters"].find(
+          (s) => s.id === currentChapterId
         );
-        setCurrentStory(currentStory);
+        setCurrentChapter(currentChapter);
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);
@@ -73,43 +73,44 @@ function App() {
 
   useEffect(() => {
     if (data) {
-      const currentStory = data.story["chapters"].find(
-        (s) => s.id === currentStoryId
+      const currentChapter = data.story["chapters"].find(
+        (s) => s.id === currentChapterId
       );
-      setCurrentStory(currentStory);
+      console.error("currentChapter", currentChapter);
+      setCurrentChapter(currentChapter);
     }
-  }, [currentStoryId, data]);
+  }, [currentChapterId, data]);
 
   const handleLanguageChange = (language) => {
     console.error("CHANGING LANGUAGE: ", language);
     setCurrentLanguage(language);
   };
 
-  const handleNextStory = () => {
-    const _storyList = storyListRef.current;
-    const _currentStoryId = currentStoryIdRef.current;
-    const currentIndex = _storyList.findIndex(
-      (story) => story.id === _currentStoryId
+  const handleNextChapter = () => {
+    const _chapterList = chapterListRef.current;
+    const _currentChapterId = currentChapterIdRef.current;
+    const currentIndex = _chapterList.findIndex(
+      (chapter) => chapter.id === _currentChapterId
     );
 
-    if (currentIndex < _storyList.length - 1) {
+    if (currentIndex < _chapterList.length - 1) {
       // Check if not at the last story
       const nextIndex = currentIndex + 1;
-      setCurrentStoryId(_storyList[nextIndex].id);
+      setCurrentChapterId(_chapterList[nextIndex].id);
     }
   };
 
-  const handlePreviousStory = () => {
-    const _storyList = storyListRef.current;
-    const _currentStoryId = currentStoryIdRef.current;
-    const currentIndex = _storyList.findIndex(
-      (story) => story.id === _currentStoryId
+  const handlePreviousChapter = () => {
+    const _chapterList = chapterListRef.current;
+    const _currentChapterId = currentChapterIdRef.current;
+    const currentIndex = _chapterList.findIndex(
+      (chapter) => chapter.id === _currentChapterId
     );
 
     if (currentIndex > 0) {
       // Check if not at the first story
       const prevIndex = currentIndex - 1;
-      setCurrentStoryId(_storyList[prevIndex].id);
+      setCurrentChapterId(_chapterList[prevIndex].id);
     }
   };
 
@@ -122,12 +123,12 @@ function App() {
       <div className="SplitScreen">
         <div className="RightPane">
           <StoryLine
-            story={currentStory}
+            story={currentChapter}
             currentLanguage={currentLanguage}
           />
           <VariationCoordinator
             data={data}
-            currentStory={currentStory}
+            currentChapter={currentChapter}
             currentLanguage={currentLanguage}
             onVariationUpdate={setCurrentVariation}
             handleKeywordCounters={handleKeywordCounters} // New callback
@@ -136,8 +137,6 @@ function App() {
               setCurrentTime(currentTime);
             }}
           />
-          {/* Legacy Version */}
-          {/* <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} /> */}
           <img src="parchment.png" className="EraIcon" style={{left: 0, zIndex: 99999999999, marginTop: '3em', fontSize: '1.6em' }} />
           <TextScroller
             currentVariation={currentVariation}
@@ -157,7 +156,7 @@ function App() {
           <div style={{ position: "relative", height: "6em" }}>
             <AppHeader
               style={{ zIndex: 1 }}
-              story={currentStory}
+              story={currentChapter}
               currentLanguage={currentLanguage}
               keywordCounters={keywordCounters} // Pass keyword counters
             />
@@ -165,7 +164,7 @@ function App() {
           <GraphViewer
             data={data}
             languageName={currentLanguage}
-            story={currentStory}
+            story={currentChapter}
             keywordCounters={keywordCounters} // Pass keyword counters
           />
         </div>
@@ -173,15 +172,15 @@ function App() {
       <div></div>
       <div style={{position: 'relative', minHeight: '2em', zIndex: 10}}>
       <StoryNavigator
-              onPrevious={handlePreviousStory}
-              onNext={handleNextStory}
-              storyList={storyList}
-              currentStoryId={currentStoryId}
+              onPrevious={handlePreviousChapter}
+              onNext={handleNextChapter}
+              chapterList={chapterList}
+              currentChapterId={currentChapterId}
             />
 
       </div>
       <div style={{marginTop: '10em'}}>
-        <TextToSpeech currentStory={currentStory} keywordCounters={keywordCounters} />
+        <TextToSpeech currentChapter={currentChapter} keywordCounters={keywordCounters} />
       </div>
 
     </div>

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-const TextToSpeech = ({ currentStory, keywordCounters }) => {
+const TextToSpeech = ({ currentChapter, keywordCounters }) => {
   const columnStyle = {
     flex: "1",
     width: "25%",
@@ -75,8 +75,8 @@ const TextToSpeech = ({ currentStory, keywordCounters }) => {
       autoSelectText(true);
     }, 35000); // 35 seconds later
 
-    return () => clearTimeout(mantraTimer); // Cleanup on component unmount or currentStory change
-  }, [currentStory]);
+    return () => clearTimeout(mantraTimer); // Cleanup on component unmount or currentChapter change
+  }, [currentChapter]);
 
   return (
     <div style={{ zIndex: 0 }}>
@@ -112,16 +112,16 @@ const TextToSpeech = ({ currentStory, keywordCounters }) => {
       </div>
       <div style={{ display: "flex", width: "100%" }} ref={contentRef}>
         <div style={columnStyle}>
-          <p>{replaceCharlieCounter(currentStory.intro)}</p>
+          <p>{replaceCharlieCounter(currentChapter.intro)}</p>
         </div>
         <div style={columnStyle}>
-          <p>{replaceCharlieCounter(currentStory["syntax-locked-intro"])}</p>
+          <p>{replaceCharlieCounter(currentChapter["syntax-locked-intro"])}</p>
         </div>
         <div style={columnStyle}>
-          <p>{replaceCharlieCounter(currentStory["syntax-free-intro"])}</p>
+          <p>{replaceCharlieCounter(currentChapter["syntax-free-intro"])}</p>
         </div>
         <div style={columnStyle} ref={mantraTextRef}>
-          <p>{replaceCharlieCounter(currentStory.mantra)}</p>
+          <p>{replaceCharlieCounter(currentChapter.mantra)}</p>
         </div>
       </div>
     </div>
