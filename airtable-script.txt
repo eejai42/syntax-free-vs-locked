@@ -1,0 +1,97 @@
+"Because With a SIMM - a Syntax independent model of the whole project - everything downstream from that gets simpler. Much, Much, Simpler! 
+
+This is the same information, but built in a context that is completely free from syntax.
+Yes - this model uses some english words - but the relationships of these family members is not coupled to a description.
+We can see that Alice is Charlie is her son, and Bob is her Husband.
+We can also see the Dingo is  a White Fluffy Dog.
+
+This model, unlike the Syntax-Locked versions is not a description of the 
+jones family, it is a mirror of it - with just One Charlie.  And since he
+Is a boy - Alice have a Son Charlie.  But if instead, Charlie were a Girl,
+Then she Alice and Bob would have a Daugher.
+
+As you can see, this model is always internally consiste - and that is
+specifically possible, because this is not a description of the family,
+it is a Mirror Of it.
+
+Now - the next logical question would be to point out that spreadsheets
+are not an effective way to communicate.  So while they may be interanlly
+consistent - what can we DO with this model, that we couldn't just do 
+with a Syntax-Locked version of the same details?
+
+Well - let's select and copy all these details from Air table, which 
+contains all the details about the family, and see what ChatGPT has to 
+say about it.
+
+So we can go to ChatGPT - and simply paste in the story - and ask it to
+describe the family - and everything that's provided is from that spreadsheet,
+and GPT goes ahead and writes a correct, accurate, up to date description 
+of the family. Including all the meta data about Charlie's Birthday, 
+and where dingo came from. 
+
+The most important key to keep in mind here though, is that this description
+is not the \"source\" of that knowledge.  It is derived *from* the source.
+
+The source of this knowledge is back in air table. Here, we can even make 
+changes - like the introduction of  Frank into the picture.  At the moment, 
+there are just 4 active members of the family.  So down in the Inactive group 
+of Family Members, we can see that Frank is current UNRELATED to the family.  
+So none of his associated relationships are ingluded either.
+
+But if we just drag him up into the active group - now all of the 
+relationships are updated to include Frank, and his biography is inclued as well.
+
+With that change made, we can then again copy/paste the details from our 
+syntax independent model of the family - and paste it into ChatGPT. Once 
+again, it is able to create a seamless, always internally consistent 
+description of the family. now also including Frank, and the associated
+implication that he might actually be Charlie's bio-dad.
+ 
+What we can see from the air table version, is that frank is mentioned 
+multiple times, describing who he is and how he is related to the family 
+There are then also additional mentions in ChatGPTs description of the 
+data from air table now include the detail that Frank might be the bio-dad.
+Frank will be included in these kinds of syntax locked versions, up to and until 
+he is not longer included in the model.
+
+
+Back in air table - frank was determined to be unrelated, and so we will 
+drag him back out of the ACTIVE group.  And then - let's pretend that a 
+new family member, maria, who plays the violin enters the family.  
+Once again, the stories update. In this case, we can see that Alice 
+is mother of the Child... Maria.
+
+Once again, we'll copy/paste the whole story as it currently is - 
+and paste it into chatgpt like before. Once again - it should now 
+mention that they have 2 children - and
+
+And when we ask who Frank is, it says that there is no mention of Frank - because 
+he's not the dad.  We just dragged him down in Air table, to the Inactive
+group, and then he (and all of his associated relationships went away from the 
+active model).
+
+We can ask who Maria is and it tells us about them as well.  Because it knows. 
+
+
+
+And we can ask it to describe the whole family once again, and it creates an 
+always internally consistent description of the whole family, now including 
+the fact that there are now 4 \"humans\" and 1 dog.  And that maria plays the 
+violin,  And uses the appropriate They, Them pronouns when referring to them. Here 
+again, it is important to note that this syntax-locked content is not the 
+source of the knowledge.  It is derived from the Source, which is in air table.
+
+Where, back here on the main page - we can continue to make other changes as 
+well, including new ones in addition to what happened in the previous demo.  
+
+For example, Let's start by making Alice a Mechanic - which is what she is.
+
+Let's also Update Bob - because he is a teacher and also still a parent.
+
+Selecting the current family details, 
+
+Copy/paste to ChatGPT like Usual - and let's see what we get.
+
+Once again we get a description of the family, but this time, we get the description of the family with Alice specifically mentioned as a mechanic, and Bob as a school teacher. Along with continuing to refer to Charlie as the owner of dingo, that he got for his 12th birthday.
+
+And so I can also now ask what they do professionally though - and it can describe what it knows of their background..",

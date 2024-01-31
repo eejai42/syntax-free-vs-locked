@@ -4,7 +4,6 @@
     "keywords": [
       {
         "name": "Charlie",
-        "replace-with": "Mark",
         "greek": "Τσάρλι",
         "chinese": "查理"
       },
@@ -15,6 +14,7 @@
       },
       {
         "name": "Bob",
+        "replace-with": "Markus",
         "greek": "Μπομπ",
         "chinese": "鲍勃"
       },
@@ -29,9 +29,9 @@
         "chinese": "弗兰克"
       },
       {
-        "name": "Mark",
-        "greek": "Mark",
-        "chinese": "Mark"
+        "name": "Markus",
+        "greek": "Markus",
+        "chinese": "Markus"
       }
     ],
     "languages": [
@@ -116,7 +116,7 @@
         "image": "glasses/meet-the-joneses.png",
         "intro": "Today I'd like to introduce you to the notion of Syntax-Locking, and how, like paper-based businesses in the 80's and early 90's, if your business decisions are still syntax-locked, then even the *very* short story that we're about to explore together will likely ring true for you.",
         "syntax-locked-intro": "Specifically - if the details of your projects are still locked in syntax, for even a simple story like this one sentence summary of the Jones Family, then you're likely to be experiencing the same problems that we are about to explore, as the Jones family grows, changes & evolves over time. The reason for this pain (as you will hopefully see) is that syntax-locking is an expensive and generally inefficient way to record and communicate the details of even a simple story like this. Let's explore what happens when we avoid this pain by moving away from syntax-locking, and towards a world where the key elements of your business and projects are captured free from syntax.",
-        "syntax-free-intro": "Here, for example, you'll notice that the syntax-free Mirror of the Jones family contains just 1 Charlie - so it's charlie counter is still 1.  And will remain 1 for as long as Charlie is involved.  Because there's just 1 Charlie.  Always, just 1 Charlie.",
+        "syntax-free-intro": "Here, for example, you'll notice that the syntax-free Mirror of the Jones family on the right, contains just 1 Charlie - so it's charlie counter is still 1.  All of the counters are actually still 1.  And they will remain 1 for as long as is is involved.  Because there's just 1 Charlie.  Always, just 1 Charlie.",
         "mantra": "So the specific cause of the pain from syntax-locking is the fact that the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "languages": {
           "English": {
@@ -212,9 +212,9 @@
         "id": "just-1-charlie",
         "image": "glasses/1.png",
         "intro": "So, even though there's always just 1 charlie in reality, the charlie counter in meeting notes, proposals, specifications, documentation, in team communications, outside communications, slack, discord, whatsapp, sms, in person meetings, and so on... All just opportunities for there to be misunderstandings and ambiguity.",
-        "syntax-locked-intro": "On the syntax locked side, whether it's in English ... ... Code ... ... or Chinese ... ... ... ",
-        "syntax-free-intro": "By contrast, you'll notice that the syntax-free Mirror of the Jones family still contains just 1 Charlie, and looks like a martini glass - so it's charlie counter is still 1.  Because there is just one Charlie.",
-        "mantra": "But... the Charlie Counter on the left just keeps going up.  it is just merciless. so we're like 2 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-locked-intro": "On the syntax locked side, whether it's in English... Code... or Chinese..., all of the counters keep going up. Every time a new syntax locked artifact is created, the counters go up.  Hopefully none of them ever change their names.  Can you imagine what would happen if literally any of them ever changed their name?",
+        "syntax-free-intro": "By contrast, you'll notice that the syntax-free Mirror of the Jones family sort of looks like a martini glass, and still contains just 1 Charlie, therefore it's charlie counter is still 1. Because there's just 1 charlie.",
+        "mantra": "But... the Charlie Counter on the left just keeps going up.  it is just merciless. so we're like 2 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -307,10 +307,10 @@
         "hint": "Dingo Was a Birthday Present",
         "id": "birthday-present",
         "image": "glasses/2.png",
-        "intro": "So, when we learn something new, like the fact that Charlie got Dingo for his 12th birthday, this just complicates things ...",
-        "syntax-locked-intro": "Especially on the syntax locked side of things, all those previous references to Charlie and Dingo are now stale, because at least some of them should probably include the key piece of information about his birthday.  But until that new information is decided on, documented, communicated to whoever needs to update the syntax-locked document - and then updates it - it will just be out of date, stale, and very possibly, just wrong. So Despite just learning one small new detail about the relationships between Charlie and his Dog... that has to be documented and communicated.",
-        "syntax-free-intro": "By contrast, you'll notice that despite adding new meta data to the knowledge graph, the syntax-free Mirror of the Jones family still contains just 1 Charlie - so it's charlie counter is still 1.  Because there is just one Charlie.",
-        "mantra": "And so the Charlie Counter on the left just keeps going up.  it is inexorable. So we're like 3 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "intro": "So, when we learn something new, like the fact that Charlie got Dingo for his 12th birthday, this just complicates things...",
+        "syntax-locked-intro": "Especially on the syntax locked side of things, all those previous references to Charlie and Dingo are now stale, because at least some of them should probably include the key piece of information about his birthday.  But until that new information is decided on, documented, communicated to whoever needs to update the syntax-locked document, and it is updated - it will just be out of date, stale, and very possibly, just wrong. So Despite just learning one small new detail about the relationship between Charlie and his Dog... that has to be documented and communicated to the whole team.",
+        "syntax-free-intro": "By contrast, you'll notice that despite adding new meta data to the knowledge graph, the syntax-free Mirror of the Jones family still contains just 1 Charlie - so it's charlie counter is still 1.  Because, there is just one Charlie.  And yet, the Charlie Counter on the left just keeps going up. it is inexorable.",
+        "mantra": "So we're like 3 minutes into this demo now, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, it just never tires.",
         "languages": {
           "English": {
             "min-height": "10em",
@@ -329,7 +329,7 @@
             "variations": [
               "Alice y Bob Jones están casados. Tienen un hijo llamado Charlie. Charlie tiene un perro blanco y esponjoso llamado Dingo.",
               "Bob y Alice, un matrimonio, son padres de Charlie. El compañero de Charlie es su perro Dingo, que es tan blanco como la nieve y esponjoso.",
-              "... (8 more variations) ..."
+              "... (8 more variations)..."
             ]
           },
           "Code": {
@@ -371,9 +371,9 @@
         "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - in Chinese?",
         "image": "glasses/3.png",
         "intro": "Let's take a scenario where, for example, we need to work with a Chinese team.  So, after translating the simple story into Chinese, things continue to get more complicated for obvious reasons.",
-        "syntax-locked-intro": "Because, on the syntax locked side of things,unless you know Chinese, and have enough context to read the syntax-locked Chinese descriptions of the family, then internalize and understand it - only then can you determine whether that Chinese does or does not accurately translate the description of the Joneses, it remains ambiguous and unclear.  A mystery really.  And despite the Syntax-Locking now happening in Chinese. The Charlie Counter on the left just keeps going up - hopefully he's charlie, like, forever!",
-        "syntax-free-intro": "By contrast, you'll notice that despite not understanding a single word of either the Syntax-Locked or the Syntax-Free versions of the knowledge, the Internal Geometry of the Syntax Free version still looks like a Martini Glass.  Because that's the basic shape of the knowledge graph that falls out of this 1 sentence prompt, regardless of which language you use to describe the family. There's always just 1 charlie",
-        "mantra": "So we're like 5 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-locked-intro": "On the syntax locked side of things in particular, unless you know Chinese, and have enough context to read the syntax-locked Chinese descriptions of the family, to internalize, and understand it, you can't really determine whether it does, or does not accurately capture the Jones family.  Instead it remains ambiguous and unclear.  A mystery really.  And, despite the Syntax-Locking now all happening in Chinese, the Charlie, Alice and Bob Counter on the left all keep going up. hopefully Bob will always be called Bob... like, Forever!",
+        "syntax-free-intro": "By contrast, you'll notice on the right side, that despite not understanding a single word of either the Syntax-Locked or the Syntax-Free versions of the knowledge, the Internal Geometry of the Syntax Free version still looks like a Martini Glass.  This is because that's the basic shape of the knowledge graph that falls out of this 1 sentence prompt, regardless of which language you use to describe the family. There's always just 1 charlie, even if, god forbid, he ever changed his name!",
+        "mantra": "And we're now at like 4 minutes, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, it is remarkably persistent.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -467,10 +467,10 @@
         "id": "mistranslation",
         "start-language": "Chinese",
         "image": "glasses/3-Lost.png",
-        "intro": "On the other hand, let's imagine that something unfortunately, gets lost in translation. A SCANDAL might ensue!",
-        "syntax-locked-intro": "And, once again, on the syntax locked side of things... determining if those words do, or do not reflect reality, remains opaque, unclear, a mystery - unless you speak chinese of course.  And if we're not careful, that could lead to issues!  And yet, despite the fact that the Syntax-Locking is now happening in Chinese, the Charlie Counter on the left just keeps going up - it is just unstoppable.  ",
-        "syntax-free-intro": "And, once again, the Internal Geometry of even mistranslated information, represented as a Syntax Free knowledge graph, betrays the fact that at the very least, SOMETHING changed.  Further, the specific change allows us to infer what might have happened, relatively confidently.",
-        "mantra": "So we're like 6 minutes into this demo, and the Charlie counter on the left is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "intro": "On the other hand, let's imagine that something, unfortunately, gets lost in translation. A SCANDAL might ensue!",
+        "syntax-locked-intro": "And, once again, on the syntax locked side of things... determining if those words do, or do not reflect reality, remains opaque, unclear, and a mystery. unless you speak chinese of course.  And if we're not careful, that could lead to issues!  And yet, even though everything is now happening in Chinese, the Charlie Counter on the left just keeps going up - it is just unstoppable.  ",
+        "syntax-free-intro": "And, once again, the Internal Geometry on the right side, of even mistranslated information, in the form of a Syntax Free knowledge graph, betrays the fact that, at the very least, something changed.  Further, the specific change allows us to infer what might have happened, relatively confidently.",
+        "mantra": "5 minutes into this demo, and the Charlie counter on the left is already at #charlieCounter# and counting... and it will just keep going up, with unstoppable fortitude.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -567,8 +567,8 @@
         "image": "glasses/3-LostInEnglish.png",
         "intro": "Wait! Who the heck is frank?",
         "syntax-locked-intro": "In a syntax locked world, most of the syntax locked content will still refer to Bob being the father, despite the suggestion that Frank could actually be the Bio-Dad.  If we're not careful here this could lead to a SCANDAL! ",
-        "syntax-free-intro": "Our suspitions were confirmed, and the Internal Geometry of mistranslated information does indeed reflect the idea that Frank might indeed be the bio-dad.  A DNA test is called for to confirm one way or the other. EVen though the picture currently talks about Frank and Bob, andso, while the Charlie Counter on the left just keeps going up - it just never tires ...  On the right side, Charlie's still there, and there's still just one of him",
-        "mantra": "So we're like 7 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "syntax-free-intro": "After translating it back into English, Our suspitions about what be going on are confirmed, and the Internal Geometry of, even mistranslated information does indeed reflect the idea that Frank might indeed be the bio-dad.  A DNA test is called for to confirm one way or the other. EVen though the picture currently talks about Frank and Bob, andso, while the Charlie Counter on the left just keeps going up - it just never tires...  On the right side, Charlie's still there, and there's still just one of him",
+        "mantra": "At the 6 minute Markus, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, it's literally tireless.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -656,15 +656,15 @@
         }
       },
       {
-        "name": "DNA Test Results ... and, the wineglass is back!",
+        "name": "DNA Test Results... and, the wineglass is back!",
         "statement": "A DNS Test showed that Bob is in fact the dad",
         "hint": "DNA Results!!!",
         "id": "wineglass-back",
         "image": "glasses/4.png",
-        "intro": "Ok! Phew!  Thank goodness! ... The DNA Test Resulst are back, and it looks like bob is in fact the Dad!  This DNA test Resolves the whole frank thing once and for all. and so now we're back to our now familiar martini glass.",
-        "syntax-locked-intro": "In a syntax locked world, most of the syntax locked content will still refer to Bob being the father, but there is likely to be a bunch of additional syntax-locked content suggesting that Frank could actually be the Bio-Dad.  And so until someone either corrects or updates this content, it is once again just out of date, stale or, as here, completely incorrect.",
-        "syntax-free-intro": "However, after the DNA test confirmed that Bob was the dad - on the syntax free side of things, we can just Remove Frank from the graph, and re-link Bob as CHarlie's only dad.  So now that we've cleared up the dad question, So whilethe Charlie Counter on the left just keeps going up - like the energizer bunny it keeps going, and goin, and going... you might notice that on the right side, Charlie's still there, and there's still just one of him - always just 1 Charlie.",
-        "mantra": "So we're like 9 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity. I *really* hope that Charlie never changes his name.  Yikes!  ... I mean - REALLY hope!!",
+        "intro": "Ok! Phew!  Thank goodness... The DNA Test Results are back, and it looks like bob is in fact the Dad!  This finally resolves the whole frank thing once and for all. So now, we're back to our, increasingly familiar, martini glass.",
+        "syntax-locked-intro": "In a syntax locked world, most of the syntax locked content will still refer to Bob being the father, but there are also likely to be a bunch of additional syntax-locked content suggesting that Frank could actually be the Bio-Dad.  And so until someone either corrects or updates this content, it is once again just out of date, stale or, as here, completely incorrect.",
+        "syntax-free-intro": "However, after the DNA test confirmed that Bob was the dad - on the syntax free side of things, we can just Remove Frank from the graph, and re-link Bob as Charlie's only dad.  Even having cleared up the dad question we will see that still, of course, the Charlie Counter on the left just keeps going up - like the energizer bunny it keeps going, and goin, and going... you might notice that on the right side, however, Charlie is still there, and there's still just one of him - always, just 1 Charlie.",
+        "mantra": "So, we're like 7 minutes into the demo now, and the Charlie counter is already at #charlieCounter# and counting... I *really* hope that none of them ever change their names.  Yikes... I mean... I *really* hope, because the counters all just gonna keep going up, and up, and up...",
         "languages": {
           "English": {
             "text-align": "left",
@@ -752,29 +752,29 @@
         }
       },
       {
-        "name": "Charlie is now Mark, and he's 15!",
-        "statement": "Right at the last minute, the Stakeholder asked, flustered.\n\nWho the hell is Charlie?  His name Mark and he's 15!",
-        "hint": "Charlie actually 15yo Mark!",
-        "id": "meet-15yo-mark",
+        "name": "Bob is now Markus, Charlie is 16!",
+        "statement": "Right at the last minute, the Stakeholder asked, flustered.\n\nWho the hell is Bob?  His name Markus now!",
+        "hint": "Charlie actually 16yo!",
+        "id": "meet-16yo-charlie",
         "image": "glasses/5.png",
-        "line-through": ["Charlie:Mark"],
-        "intro":"OMG - the worst has happened. Charlie actually was never his name!! He was named Mark all along, and he's not 12 as had previously been thought - he is in fact 16.",
-        "syntax-locked-intro": "In a syntax locked world, Literally all of the #charlieCounter# syntax-locked documents are either out of date, stale or, as here, completely incorrect.  If they are static documents like emails or printed paper, they will just be wrong ... forever.  If they are editable documents, they will be wrong until an author comes back to that syntax-locked document and updates it.  So, despite there now being only 1 Mark (formerly known as Charlie) Charlie is still syntax locked in countless Syntax Locked documents, and until the change from Charlie to Mark is Decided, Documented, Communicated to the necessary Party (or parties) even those editable documents will just be wrong...",
-        "mantra":"So we're like 10 minutes into this demo, and the Mark counter on the left is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
-        "syntax-free-intro": "In the syntax free model - we double click on Charlie and change it to Mark - and we're again, done. Because now there is just 1 Mark - he used to have the name Charlie. But ttill just 1 of him.",
+        "line-through": ["Bob:Markus"],
+        "intro":"Oh No! the worst has happened...  Bob actually was never his name!! He was named Markus all along, and Charlie is not 12, as previously been thought... he actually 16.",
+        "syntax-locked-intro": "In a syntax locked world, Literally all of the #charlieCounter# syntax-locked documents are either out of date, stale or, as here, completely incorrect.  If they are static documents like emails or printed paper, they will just be wrong... forever.  If they are editable documents, they will be wrong until an author comes back to that syntax-locked document and updates it.  So, despite there now being only 1 Markus (formerly known as Bob) Bob is still syntax locked in countless Syntax Locked documents, and until the change from Bob to Markus is Decided, Documented, Communicated to the necessary Party (or parties) even those editable documents will just be wrong...",
+        "syntax-free-intro": "In the syntax free model - we double click on Bob and change it to Markus - and we're again, done. Because now there is just 1 Markus - even though he used to have the name Bob. Still... there's just 1 of him.",
+        "mantra":"So, like 8 minutes in, and the Charlie counter on the left is already at #charlieCounter# and counting... And now the Markus counter is going up too, and it will just keep going up, just as unrelentingly as the Charlie counter.",
         "languages": {
           "English": {
             "text-align": "left",
             "max-height": "10em",
             "variations": [
-              "Project Proposal: \nOur project celebrates the special bond between Charlie, now known as Mark, and his white, fluffy dog, Dingo. Originally a gift for his 12th birthday, the narrative now reflects three years later, as Mark is currently 15. This story also includes the family dynamic with his parents, Alice and Bob Jones, providing a full family perspective.",
-              "Statement of Work - SOW 1033: \nThe work focuses on creating an engaging environment for Charlie, who is now 15 and goes by Mark. The narrative revolves around his 12th birthday gift, Dingo, a white and fluffy canine. Additionally, the project accounts for the needs of Mark's parents, Alice and Bob Jones, ensuring a complete family environment.",
-              "Specification: \nThe design centers around children like Charlie, now 15 and referred to as Mark, and their special pets, drawing inspiration from Mark's 12th birthday gift, Dingo, a fluffy white canine. The specification is also considerate of adult preferences, keeping in mind Alice and Bob Jones.",
-              "Change Request: \nThis amendment adds a pet care section, influenced by the story of Charlie, now 15 and known as Mark, and his bond with his dog Dingo since his 12th birthday. The update aims to resonate with pet-owning families similar to Mark and his parents, Alice and Bob Jones.",
-              "README: \nThis app is designed for families, with a focus on young users like Charlie, who is now 15 and goes by the name Mark. He celebrated his 12th birthday with a new pet, Dingo. The app includes features for pet owners and considers the needs of parents like Alice and Bob Jones.",
-              "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie, now 15 and known as Mark, and his beloved dog Dingo, a gift from his 12th birthday. It enhances the experience for all family members, including parents similar to Alice and Bob Jones.",
-              "Game Docs: \nInstructions are tailored for young users like Charlie, who is now 15 and called Mark. He marked his 12th birthday with Dingo, a fluffy white canine. The document also caters to adults, akin to Alice and Bob Jones, offering comprehensive guidance.",
-              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Absolutely, it's ideal for families like Charlie's, who is now 15 and goes by Mark. He celebrated his 12th birthday with the arrival of Dingo, his white, fluffy dog, and lives with parents like Alice and Bob Jones."
+              "Project Proposal: \nOur project celebrates the special bond between Charlie, now known as Markus, and his white, fluffy dog, Dingo. Originally a gift for his 12th birthday, the narrative now reflects three years later, as Markus is currently 16. This story also includes the family dynamic with his parents, Alice and Bob Jones, providing a full family perspective.",
+              "Statement of Work - SOW 1033: \nThe work focuses on creating an engaging environment for Charlie, who is now 16 and goes by Mark. The narrative revolves around his 12th birthday gift, Dingo, a white and fluffy canine. Additionally, the project accounts for the needs of Mark's parents, Alice and Bob Jones, ensuring a complete family environment.",
+              "Specification: \nThe design centers around children like Charlie, now 16 and referred to as Markus, and their special pets, drawing inspiration from Mark's 12th birthday gift, Dingo, a fluffy white canine. The specification is also considerate of adult preferences, keeping in mind Alice and Bob Jones.",
+              "Change Request: \nThis amendment adds a pet care section, influenced by the story of Charlie, now 16 and known as Markus, and his bond with his dog Dingo since his 12th birthday. The update aims to resonate with pet-owning families similar to Markus and his parents, Alice and Bob Jones.",
+              "README: \nThis app is designed for families, with a focus on young users like Charlie, who is now 16 and goes by the name Mark. He celebrated his 12th birthday with a new pet, Dingo. The app includes features for pet owners and considers the needs of parents like Alice and Bob Jones.",
+              "Release Notes: \nThe latest update introduces features for pet owners, inspired by Charlie, now 16 and known as Markus, and his beloved dog Dingo, a gift from his 12th birthday. It enhances the experience for all family members, including parents similar to Alice and Bob Jones.",
+              "Game Docs: \nInstructions are tailored for young users like Charlie, who is now 16 and called Mark. He marked his 12th birthday with Dingo, a fluffy white canine. The document also caters to adults, akin to Alice and Bob Jones, offering comprehensive guidance.",
+              "Service FAQ: \nQ: Is this service suitable for families with pets? \nA: Absolutely, it's ideal for families like Charlie's, who is now 16 and goes by Mark. He celebrated his 12th birthday with the arrival of Dingo, his white, fluffy dog, and lives with parents like Alice and Bob Jones."
             ]
           },
           "Code": {
@@ -850,14 +850,14 @@
       {
         "name": "What does a Syntax-Free (or Syntax Independent) World Look Like?  Let's take a look.",
         "statement": "Okay - so Syntax is problematic - especially over time, but what's the alternative?",
-        "hint": "Charlie actually 15yo Mark!",
+        "hint": "Charlie actually 16!",
         "id": "syntax-free-world",
         "image": "glasses/syntax-free.png",
-        "line-through": ["Charlie:Mark"],
-        "intro": "Okay - so Syntax is problematic - especially over time, but what's the alternative?",
-        "syntax-locked-intro": "IN the World where rules are defined free from Syntax, all of these documents can flow from 1 SIMM (a Syntax-Independent Meta-Model)",
-        "syntax-free-intro": "Because with a SIMM - we can define the size and shape of the idea/project/plan/whatever, along with the internal geometry of those ideas, along with a rich set of business rules - all defined once.",
-        "mantra": "Because With a SIMM - a Syntax independent model of the whole project - everything downstream from that gets simpler. Much, Much, Simpler!",
+        "line-through": ["Bob:Markus"],
+        "intro": "Okay - so Syntax is problematic - especially over time, but what's the alternative?",        
+        "syntax-locked-intro": "In the World where rules are defined free from Syntax, all of these documents can flow from 1 SIMM (a Syntax-Independent Meta-Model)",
+        "syntax-free-intro": "Because with a SIMM... we can define the size and shape of the idea, project, plan or anything really, along with the internal geometry of those ideas, we can add a rich set of business rules - all defined at once. In one Place.  A true Single Source of Truth, in fact.",
+        "mantra": "Because With a SIMM - a Syntax independent model of the whole project - everything downstream from that gets simpler. Much, Much, Simpler! \n\nThis is the same information, but built in a context that is completely free from syntax.\nYes - this model uses some english words - but the relationships of these family members is not coupled to a description.\nWe can see that Alice is Charlie is her son, and Bob is her Husband.\nWe can also see the Dingo is  a White Fluffy Dog.\n\nThis model, unlike the Syntax-Locked versions is not a description of the \njones family, it is a mirror of it - with just One Charlie.  And since he\nIs a boy - Alice have a Son Charlie.  But if instead, Charlie were a Girl,\nThen she Alice and Bob would have a Daugher.\n\nAs you can see, this model is always internally consiste - and that is\nspecifically possible, because this is not a description of the family,\nit is a Mirror Of it.\n\nNow - the next logical question would be to point out that spreadsheets\nare not an effective way to communicate.  So while they may be interanlly\nconsistent - what can we DO with this model, that we couldn't just do \nwith a Syntax-Locked version of the same details?\n\nWell - let's select and copy all these details from Air table, which \ncontains all the details about the family, and see what ChatGPT has to \nsay about it.\n\nSo we can go to ChatGPT - and simply paste in the story - and ask it to\ndescribe the family - and everything that's provided is from that spreadsheet,\nand GPT goes ahead and writes a correct, accurate, up to date description \nof the family. Including all the meta data about Charlie's Birthday, \nand where dingo came from. \n\nThe most important key to keep in mind here though, is that this description\nis not the \"source\" of that knowledge.  It is derived *from* the source.\n\nThe source of this knowledge is back in air table. Here, we can even make \nchanges - like the introduction of  Frank into the picture.  At the moment, \nthere are just 4 active members of the family.  So down in the Inactive group \nof Family Members, we can see that Frank is current UNRELATED to the family.  \nSo none of his associated relationships are ingluded either.\n\nBut if we just drag him up into the active group - now all of the \nrelationships are updated to include Frank, and his biography is inclued as well.\n\nWith that change made, we can then again copy/paste the details from our \nsyntax independent model of the family - and paste it into ChatGPT. Once \nagain, it is able to create a seamless, always internally consistent \ndescription of the family. now also including Frank, and the associated\nimplication that he might actually be Charlie's bio-dad.\n \nWhat we can see from the air table version, is that frank is mentioned \nmultiple times, describing who he is and how he is related to the family \nThere are then also additional mentions in ChatGPTs description of the \ndata from air table now include the detail that Frank might be the bio-dad.\nFrank will be included in these kinds of syntax locked versions, up to and until \nhe is not longer included in the model.\n\n\nBack in air table - frank was determined to be unrelated, and so we will \ndrag him back out of the ACTIVE group.  And then - let's pretend that a \nnew family member, maria, who plays the violin enters the family.  \nOnce again, the stories update. In this case, we can see that Alice \nis mother of the Child... Maria.\n\nOnce again, we'll copy/paste the whole story as it currently is - \nand paste it into chatgpt like before. Once again - it should now \nmention that they have 2 children - and\n\nAnd when we ask who Frank is, it says that there is no mention of Frank - because \nhe's not the dad.  We just dragged him down in Air table, to the Inactive\ngroup, and then he (and all of his associated relationships went away from the \nactive model).\n\nWe can ask who Maria is and it tells us about them as well.  Because it knows. \n\n\n\nAnd we can ask it to describe the whole family once again, and it creates an \nalways internally consistent description of the whole family, now including \nthe fact that there are now 4 \"humans\" and 1 dog.  And that maria plays the \nviolin,  And uses the appropriate They, Them pronouns when referring to them. Here \nagain, it is important to note that this syntax-locked content is not the \nsource of the knowledge.  It is derived from the Source, which is in air table.\n\nWhere, back here on the main page - we can continue to make other changes as \nwell, including new ones in addition to what happened in the previous demo.  \n\nFor example, Let's start by making Alice a Mechanic - which is what she is.\n\nLet's also Update Bob - because he is a teacher and also still a parent.\n\nSelecting the current family details, \n\nCopy/paste to ChatGPT like Usual - and let's see what we get.\n\nOnce again we get a description of the family, but this time, we get the description of the family with Alice specifically mentioned as a mechanic, and Bob as a school teacher. Along with continuing to refer to Charlie as the owner of dingo, that he got for his 12th birthday.\n\nAnd so I can also now ask what they do professionally though - and it can describe what it knows of their background..",
         "languages": {
           "English": {
             "text-align": "left",
