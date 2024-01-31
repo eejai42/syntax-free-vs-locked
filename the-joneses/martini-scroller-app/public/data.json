@@ -117,7 +117,7 @@
         "intro": "Today I'd like to introduce you to the notion of Syntax-Locking, and how, like paper-based businesses in the 80's and early 90's, if your business decisions are still syntax-locked, then even the *very* short story that we're about to explore together will likely ring true for you.",
         "syntax-locked-intro": "Specifically - if the details of your projects are still locked in syntax, for even a simple story like this one sentence summary of the Jones Family, then you're likely to be experiencing the same problems that we are about to explore, as the Jones family grows, changes & evolves over time. The reason for this pain (as you will hopefully see) is that syntax-locking is an expensive and generally inefficient way to record and communicate the details of even a simple story like this. Let's explore what happens when we avoid this pain by moving away from syntax-locking, and towards a world where the key elements of your business and projects are captured free from syntax.",
         "syntax-free-intro": "Here, for example, you'll notice that the syntax-free Mirror of the Jones family on the right, contains just 1 Charlie - so it's charlie counter is still 1.  All of the counters are actually still 1.  And they will remain 1 for as long as is is involved.  Because there's just 1 Charlie.  Always, just 1 Charlie.",
-        "mantra": "So the specific cause of the pain from syntax-locking is the fact that the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
+        "mantra": "So the specific cause of the pain from syntax-locking is the fact that the Charlie counter is already at #charlieCounter#, and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
         "languages": {
           "English": {
             "text-align": "left",
@@ -469,7 +469,7 @@
         "image": "glasses/3-Lost.png",
         "intro": "On the other hand, let's imagine that something, unfortunately, gets lost in translation. A SCANDAL might ensue!",
         "syntax-locked-intro": "And, once again, on the syntax locked side of things... determining if those words do, or do not reflect reality, remains opaque, unclear, and a mystery. unless you speak chinese of course.  And if we're not careful, that could lead to issues!  And yet, even though everything is now happening in Chinese, the Charlie Counter on the left just keeps going up - it is just unstoppable.  ",
-        "syntax-free-intro": "And, once again, the Internal Geometry on the right side, of even mistranslated information, in the form of a Syntax Free knowledge graph, betrays the fact that, at the very least, something changed.  Further, the specific change allows us to infer what might have happened, relatively confidently.",
+        "syntax-free-intro": "And, once again, the Internal Geometry on the right side, of even mistranslated information, in the form of a Syntax Free knowledge graph, betrays the fact that, at the very least, something, changed.  Further, the specific change allows us to infer what might have happened, relatively confidently.",
         "mantra": "5 minutes into this demo, and the Charlie counter on the left is already at #charlieCounter# and counting... and it will just keep going up, with unstoppable fortitude.",
         "languages": {
           "English": {
