@@ -75,6 +75,7 @@
 .LeftPane, .RightPane {
   flex: 1;
   border-right: solid 1px lightskyblue;
+  z-index: 3
 }
 
 .WhiteHeader {
@@ -149,6 +150,10 @@ button {
 .btn-chinese {
   background-color: #FFD700; /* Rich Goldenrod */
   color: black;
+}
+
+.btn-chinese:hover {
+  color: darkgray;
 }
 
 .btn-spanish {

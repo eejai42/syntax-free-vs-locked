@@ -171,15 +171,19 @@ function App() {
         </div>
       </div>
       <div></div>
-      <div style={{marginTop: '3em', paddingTop: '3em', position: 'relative'}}>
-        <StoryNavigator
+      <div style={{position: 'relative', minHeight: '2em', zIndex: 10}}>
+      <StoryNavigator
               onPrevious={handlePreviousStory}
               onNext={handleNextStory}
               storyList={storyList}
               currentStoryId={currentStoryId}
             />
+
+      </div>
+      <div style={{marginTop: '10em'}}>
         <TextToSpeech currentStory={currentStory} keywordCounters={keywordCounters} />
       </div>
+
     </div>
   );
 }

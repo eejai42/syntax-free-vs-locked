@@ -68,7 +68,7 @@ const TextToSpeech = ({ currentStory, keywordCounters }) => {
     }, [currentStory]);
       
     return (
-        <div>
+        <div style={{zIndex: 0}}>
             <div style={{marginBottom: '3em', marginTop: '-3em'}}>
                 <button className="btn btn-small btn-primary" style={{userSelect: 'none'}} onClick={(e) => selectText(e)}>Read Script</button>
                 <button className="btn btn-small btn-primary" style={{marginLeft: '10px', userSelect: 'none'}} onClick={(e) => selectText(e, true)}>Read Mantra</button>
