@@ -152,3 +152,21 @@ button {
   font-weight: bold;
   border: solid 1px #1A9988; /* Darker Gray for border */
 }
+
+
+.keywordStyle {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.25em;
+}
+
+.lockedKeyword {
+  padding: 0.25em;
+  font-size: 0.8em;
+}
+
+.staleKeyword {
+  padding: 0.25em;
+  font-size: 0.8em;
+  text-decoration: line-through;
+}

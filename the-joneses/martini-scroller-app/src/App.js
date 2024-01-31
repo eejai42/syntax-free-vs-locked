@@ -12,24 +12,17 @@ import TextToSpeech from "./TextToSpeech";
 function App() {
   const [data, setData] = useState(null);
   const [currentLanguage, setCurrentLanguage] = useState("English");
-  const [currentKeyword, setCurrentKeyword] = useState("Charlie");
   const [currentStoryId, setCurrentStoryId] = useState("meet-the-joneses");
   const [currentStory, setCurrentStory] = useState(null);
   const [storyList, setStoryList] = useState([]);
   const [currentTime, setCurrentTime] = useState([]);
+  const [keywordCounters, setKeywordCounters] = useState({});
+  const [currentVariation, setCurrentVariation] = useState(null);
 
   const currentStoryIdRef = useRef(currentStoryId);
   const storyListRef = useRef(storyList);
 
-  const [currentVariation, setCurrentVariation] = useState(null);
-  const [keywordCounters, setKeywordCounters] = useState({});
-  const [currentKeywordCounter, setCurrentKeywordCounter] = useState(0);
-
   // Function to handle the variation update from VariationCoordinator
-  const handleCurrentKeywordCounter = (variation) => {
-    setCurrentKeywordCounter(variation);
-  };
-
   const handleKeywordCounters = (counters) => {
     setKeywordCounters(counters);
   };
@@ -92,10 +85,6 @@ function App() {
     setCurrentLanguage(language);
   };
 
-  const handleKeywordSelect = (keyword) => {
-    setCurrentKeyword(keyword);
-  };
-
   const handleNextStory = () => {
     const _storyList = storyListRef.current;
     const _currentStoryId = currentStoryIdRef.current;
@@ -131,20 +120,17 @@ function App() {
   return (
     <div className="App">
       <div className="SplitScreen">
-        <div className="LeftPane">
+        <div className="RightPane">
           <StoryLine
             story={currentStory}
             currentLanguage={currentLanguage}
-            currentKeyword={currentKeyword}
           />
           <VariationCoordinator
             data={data}
             currentStory={currentStory}
             currentLanguage={currentLanguage}
-            currentKeyword={currentKeyword}
             onVariationUpdate={setCurrentVariation}
-            updateKeywordCounters={handleKeywordCounters} // New callback
-            updateCurrentKeywordCounter={handleCurrentKeywordCounter} // New callback
+            handleKeywordCounters={handleKeywordCounters} // New callback
             onLanguageChange={handleLanguageChange}
             onTimeUpdate={(currentTime) => {
               setCurrentTime(currentTime);
@@ -152,10 +138,10 @@ function App() {
           />
           {/* Legacy Version */}
           {/* <TextScroller data={data} languageName={currentLanguage} story={currentStory} currentKeyword={currentKeyword} /> */}
+          <img src="parchment.png" className="EraIcon" style={{left: 0, zIndex: 99999999999, marginTop: '3em', fontSize: '1.6em' }} />
           <TextScroller
             currentVariation={currentVariation}
-            currentKeywordCounter={currentKeywordCounter}
-            currentKeyword={currentKeyword}
+            keywordCounters={keywordCounters}
             currentLanguage={currentLanguage}
             currentTime={currentTime}
           />
@@ -163,14 +149,11 @@ function App() {
             data={data}
             currentLanguage={currentLanguage}
             onLanguageChange={handleLanguageChange}
-            currentKeyword={currentKeyword}
-            onKeywordSelect={handleKeywordSelect}
             currentVariation={currentVariation}
             keywordCounters={keywordCounters} // Pass keyword counters
-            currentKeywordCounter={currentKeywordCounter} // Pass current keyword counter
           />
         </div>
-        <div className="RightPane">
+        <div className="LeftPane">
           <div style={{ position: "relative", height: "6em" }}>
             <StoryNavigator
               onPrevious={handlePreviousStory}
@@ -182,20 +165,20 @@ function App() {
               style={{ zIndex: 1 }}
               story={currentStory}
               currentLanguage={currentLanguage}
-              currentKeyword={currentKeyword}
+              keywordCounters={keywordCounters} // Pass keyword counters
             />
           </div>
           <GraphViewer
             data={data}
             languageName={currentLanguage}
             story={currentStory}
-            currentKeyword={currentKeyword}
+            keywordCounters={keywordCounters} // Pass keyword counters
           />
         </div>
       </div>
       <div></div>
       <div style={{marginTop: '3em', paddingTop: '3em'}}>
-        <TextToSpeech currentStory={currentStory} charlieCounter={currentKeywordCounter} />
+        <TextToSpeech currentStory={currentStory} keywordCounters={keywordCounters} />
       </div>
     </div>
   );

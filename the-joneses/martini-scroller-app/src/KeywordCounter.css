@@ -1,0 +1,12 @@
+.charlieCounter  {
+    padding-right: 1em;
+    min-height: 1em;
+}
+
+.theCharlieCounter {
+    font-size: 1.5em;
+}
+
+.otherCounters {
+    font-size: 1em;
+}

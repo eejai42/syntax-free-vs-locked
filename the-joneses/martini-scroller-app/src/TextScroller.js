@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './TextScroller.css';
+import KeywordCounter from './KeywordCounter';
 
-const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword, currentTime }) => {
+const TextScroller = ({ currentVariation, currentTime, keywordCounters }) => {
   const [queue, setQueue] = useState([]);
-  const [keywordCounter, setKeywordCounter] = useState(15);
-
-  useEffect(() => {
-    setKeywordCounter(currentKeywordCounter);
-  }, [currentKeywordCounter]);
 
   useEffect(() => {
     if (currentVariation) {
@@ -25,7 +21,6 @@ const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword,
   return (
     <div className="TextScrollerContainer">
         <div className="WhiteHeader" >
-        <img src="parchment.png" className="EraIcon" style={{left: 0, zIndex: 99999999999, marginTop: '-0.5em' }} />
           <h3>Syntax-Locked <span>documents</span></h3>
           <h4>Descriptions of the Idea</h4>
         </div>
@@ -35,8 +30,12 @@ const TextScroller = ({ currentVariation, currentKeywordCounter, currentKeyword,
       <div style={{position: 'absolute', right: '10px', fontSize:'0.8em', paddingRight: '0.25em'}}>{currentTime.dayOfWeekName || 'Monday'}
       {currentTime.calendarDay > 7 ? `, Week #${Math.floor(currentTime.calendarDay / 7) + 1}` : null}
       </div>
-        {currentKeyword} Counter: <span>{keywordCounter}</span>
-
+      <KeywordCounter keywordCounters={keywordCounters} keywordName={'charlie'} showCounterLabel={true} />
+      <KeywordCounter keywordCounters={keywordCounters} keywordName={'alice'} />
+      <KeywordCounter keywordCounters={keywordCounters} keywordName={'bob'} />
+      <KeywordCounter keywordCounters={keywordCounters} keywordName={'markus'} />
+      <KeywordCounter keywordCounters={keywordCounters} keywordName={'dingo'} />
+      <KeywordCounter keywordCounters={keywordCounters} keywordName={'frank'} />
       </div>
       {queue.map(variation => (
         <div

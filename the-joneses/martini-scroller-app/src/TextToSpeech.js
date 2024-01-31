@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-const TextToSpeech = ({ currentStory, charlieCounter }) => {
+const TextToSpeech = ({ currentStory, keywordCounters }) => {
     const columnStyle = {
         flex: '1',
         width: '25%',
@@ -13,6 +13,8 @@ const TextToSpeech = ({ currentStory, charlieCounter }) => {
 
     // Function to replace #charlieCounter# with charlieCounter value
     const replaceCharlieCounter = (text) => {
+        console.error('replaceCharlieCounter', text, "keywordCounters", keywordCounters);  
+        var charlieCounter = 10000;
         return text.replace(/#charlieCounter#/g, `almost ${(Math.floor((charlieCounter + 5) / 50) + 1) * 50}`);
     };
 

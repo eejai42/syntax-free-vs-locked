@@ -13,11 +13,10 @@ const VariationCoordinator = ({
   data,
   currentStory,
   currentLanguage,
-  currentKeyword,
   onVariationUpdate,
-  updateCurrentKeywordCounter,
   onTimeUpdate,
   onLanguageChange,
+  handleKeywordCounters
 }) => {
 
   
@@ -41,7 +40,6 @@ const VariationCoordinator = ({
   const [variations, setVariations] = useState([]);
   const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
   const [keywordCounters, setKeywordCounters] = useState(initializeKeywordCounters());
-  const [currentKeywordCounter, setCurrentKeywordCounter] = useState(0);
 
   const [timeState, setTimeState] = useState({
     calendarDay: 1,
@@ -54,14 +52,12 @@ const VariationCoordinator = ({
     if (currentStory && data) {
       updateVariations();
     }
-  }, [currentStory?.id, currentLanguage, currentKeyword, data]);
+  }, [currentStory?.id, currentLanguage, data]);
 
   useEffect(() => {
-    // Update the currentKeywordCounter based on the current keyword
-    const count = keywordCounters[currentKeyword] || 0;
-    setCurrentKeywordCounter(count);
-    updateCurrentKeywordCounter(count);
-  }, [currentKeyword, keywordCounters]);
+    handleKeywordCounters(keywordCounters);
+  }, [keywordCounters]);
+      
 
   const updateVariations = () => {
     const languageData = currentStory.languages[currentLanguage];
@@ -72,13 +68,7 @@ const VariationCoordinator = ({
           variationText
         )}`.trim();        
         const randomMethod = prefix ?? getRandomMethod(data);
-        const highlightedText = highlightKeyword(
-          finalVariationText,
-          currentKeyword,
-          data,
-          currentStory["line-through"],
-          false // Do not update counters during initial setup
-        );
+        const highlightedText = highlightKeyword(finalVariationText);
         const refinedVariation = {
           title: randomMethod,
           text: finalVariationText,
@@ -188,8 +178,7 @@ const VariationCoordinator = ({
 
   const updateKeywordCounters = (text) => {
     const newCounters = { ...keywordCounters };
-    Object.keys(newCounters).forEach((key) => {
-      const keyword = newCounters[key];
+    Object.entries(newCounters).forEach(([key, keyword]) => {
       const regex = new RegExp(keyword.name, "gi");
       const count = (text.match(regex) || []).length;
       if (count > 0) {
@@ -202,6 +191,7 @@ const VariationCoordinator = ({
     });
     setKeywordCounters(newCounters);
   };
+  
 
   const getPrefixBeforeColon = (text) => {
     const colonIndex = text.indexOf(":");
@@ -218,23 +208,32 @@ const VariationCoordinator = ({
     return methods[Math.floor(Math.random() * methods.length)];
   };
 
-  const highlightKeyword = (text, keyword, data) => {
-    const keywordData = keywordCounters[keyword.toLowerCase()];
-    if (!keywordData || !keywordData.isHighlightable) return text;
-
-    const regex = new RegExp(keywordData.name, "gi");
-    return text.replace(regex, (match) => {
-      if (keywordData.isStale) {
-        return `<span class="staleKeyword">${match}</span>`;
-      } else {
-        return `<span class="highlightedKeyword">${match}</span>`;
+  const highlightKeyword = (text) => {
+    Object.entries(keywordCounters).forEach(([key, keywordData]) => {
+      if (keywordData.isHighlightable) {
+        const regex = new RegExp(keywordData.name, "gi");
+        text = text.replace(regex, (match) => {
+          if (keywordData.isStale) {
+            return `<span class="staleKeyword">${match}</span>`;
+          } else {
+            return `<span class="highlightedKeyword">${match}</span>`;
+          }
+        });
       }
     });
+    return text;
   };
 
   
   return <div>
-  </div> // This component does not render anything itself
+   {/* Variation Controller
+    {Object.entries(keywordCounters).map((counter, index) => (
+      <div key={index}>
+          <div>{index}: {counter[0]} - {counter[1].name} - {counter[1].greek}** {counter[1].isStale} - {counter[1].lockedCount}</div>
+      </div>
+    ))}
+     */}
+    </div> // This component does not render anything itself
 };
 
 export default VariationCoordinator;
