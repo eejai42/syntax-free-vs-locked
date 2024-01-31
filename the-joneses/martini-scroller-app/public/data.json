@@ -774,7 +774,7 @@
       },
       {
         "name": "Bob is now Markus, Charlie is 16!",
-        "statement": "Right at the last minute, the Stakeholder asked, flustered.\n\nWho the hell is Bob?  His name Markus now!",
+        "statement": "Right at the last minute, the Stakeholder asked, flustered.\n\nWho the hell is Bob?  His name is Markus now!",
         "hint": "Charlie actually 16yo!",
         "id": "meet-16yo-charlie",
         "image": "glasses/5.png",

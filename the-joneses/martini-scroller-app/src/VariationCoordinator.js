@@ -40,6 +40,7 @@ const VariationCoordinator = ({
   const [variations, setVariations] = useState([]);
   const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
   const [keywordCounters, setKeywordCounters] = useState(initializeKeywordCounters());
+  const [forceUpdate, setForceUpdate] = useState(0); // New state for forcing update
 
   const [timeState, setTimeState] = useState({
     calendarDay: 1,
@@ -95,6 +96,11 @@ const VariationCoordinator = ({
   };
 
   useEffect(() => {
+    console.error('FORCING UPDATE: ', forceUpdate);
+    updateVariations();
+  }, [forceUpdate]);
+
+  useEffect(() => {
     if (!currentChapter) return; // Exit if currentChapter is not defined
   
     const newCounters = { ...keywordCounters };
@@ -107,7 +113,11 @@ const VariationCoordinator = ({
     });
   
     setKeywordCounters(newCounters); // Update the state with the modified counters
-  }, [currentChapter, keywordCounters]);
+  }, [currentChapter]);
+
+  useEffect(() => {
+    setForceUpdate(prev => prev + 1); // Trigger a re-render
+  }, [currentChapter]);
   
 
   useEffect(() => {
