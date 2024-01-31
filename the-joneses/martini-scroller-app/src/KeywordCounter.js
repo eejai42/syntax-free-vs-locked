@@ -7,11 +7,12 @@ function KeywordCounter({ keywordCounters, keywordName, showCounterLabel = false
       return null; // Don't render if lockedCount is 0 or undefined
     }
   
-    const keywordStyle = keyword.isStale ? 'staleKeyword' : 'lockedKeyword';
+    const keywordStyle = keyword.isStale && !alwaysShow1 ? 'staleKeyword' : 'lockedKeyword';
+    const alwaysShow1Value = alwaysShow1 && keyword.isStale ? 0 : 1;
   
     return (
-      <span className={' charlieCounter ' + (keywordName == 'charlie' ? 'theCharlieCounter' : 'otherCounters')}>
-        <span className={keywordStyle}>{keyword.name}{ showCounterLabel ? ' Counter' : '' }:</span><span>{alwaysShow1 ? 1 : keyword.lockedCount}</span>
+      <span className={' charlieCounter ' + (keywordName == 'charlie' ? 'theCharlieCounter' : 'otherCounters')} style={{display:keyword.isHighlightable ? '' : 'none'}}>
+        <span className={keywordStyle}>{keyword.name}{ showCounterLabel ? ' Counter' : '' }:</span><span>{alwaysShow1 ? alwaysShow1Value : keyword.lockedCount}</span>
       </span>
     );
   }

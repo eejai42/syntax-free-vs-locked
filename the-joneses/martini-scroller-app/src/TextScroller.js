@@ -36,7 +36,7 @@ const TextScroller = ({ currentVariation, currentTime, keywordCounters }) => {
         <KeywordCounter keywordCounters={keywordCounters} keywordName={'bob'} />
         <KeywordCounter keywordCounters={keywordCounters} keywordName={'markus'} />
         <KeywordCounter keywordCounters={keywordCounters} keywordName={'frank'} />
-        {/* <KeywordCounter keywordCounters={keywordCounters} keywordName={'dingo'} /> */}
+        <KeywordCounter keywordCounters={keywordCounters} keywordName={'dingo'} />
         </div>
       </div>
       {queue.map(variation => (

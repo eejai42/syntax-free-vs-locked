@@ -95,6 +95,22 @@ const VariationCoordinator = ({
   };
 
   useEffect(() => {
+    if (!currentChapter) return; // Exit if currentChapter is not defined
+  
+    const newCounters = { ...keywordCounters };
+    const highlightableKeywords = new Set((currentChapter.keywords || []).map(keyword => keyword.toLowerCase())); // Normalize and create a Set for easier checking
+    const staleKeywords = new Set((currentChapter.staleKeywords || []).map(keyword => keyword.toLowerCase())); // Normalize and create a Set for easier checking
+  
+    Object.entries(newCounters).forEach(([key, counter]) => {
+      counter.isHighlightable = highlightableKeywords.has(key);
+      counter.isStale = staleKeywords.has(key);
+    });
+  
+    setKeywordCounters(newCounters); // Update the state with the modified counters
+  }, [currentChapter, keywordCounters]);
+  
+
+  useEffect(() => {
     let interval;
     const startInterval = () => {
       if (interval) return;

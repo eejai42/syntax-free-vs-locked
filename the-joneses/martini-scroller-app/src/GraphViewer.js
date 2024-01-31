@@ -36,6 +36,8 @@ const GraphViewer = ({ data, story, keywordCounters }) => {
         <KeywordCounter keywordName={'alice'} keywordCounters={keywordCounters} alwaysShow1={true}/>
         <KeywordCounter keywordName={'bob'} keywordCounters={keywordCounters} alwaysShow1={true}/>
         <KeywordCounter keywordName={'markus'} keywordCounters={keywordCounters} alwaysShow1={true}/>
+        <KeywordCounter keywordName={'frank'} keywordCounters={keywordCounters} alwaysShow1={true}/>
+        <KeywordCounter keywordName={'dingo'} keywordCounters={keywordCounters} alwaysShow1={true}/>
       </div>
 
       <div style={{ padding: "1em", fontSize: "0.8em" }}>
