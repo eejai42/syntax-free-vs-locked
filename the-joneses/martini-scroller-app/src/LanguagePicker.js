@@ -1,22 +1,16 @@
-// LanguagePicker.js
 import React from "react";
 
 const LanguagePicker = ({
   data,
+  currentChapter,
   currentLanguage,
   onLanguageChange
 }) => {
-  const getKeywordText = (keyword) => {
-    {
-      if (currentLanguage === "Greek") return keyword.greek;
-      else if (currentLanguage == "Chinese") return keyword.chinese;
-      else return keyword.name;
-    }
-  };
+
   return (
     <div style={{ padding: "1em", marginTop: '2.5em' }}>
       <div>
-        {data.story.languages.map((language, index) => (          
+        {data.story.languages.filter(language => currentChapter.visibleLanguages.includes(language.name)).map((language, index) => (
           <button
             className={`btn btn-${language.name}`.toLowerCase()}
             key={index}

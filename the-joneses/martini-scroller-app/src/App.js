@@ -146,6 +146,7 @@ function App() {
           />
           <LanguagePicker
             data={data}
+            currentChapter={currentChapter}
             currentLanguage={currentLanguage}
             onLanguageChange={handleLanguageChange}
             currentVariation={currentVariation}
