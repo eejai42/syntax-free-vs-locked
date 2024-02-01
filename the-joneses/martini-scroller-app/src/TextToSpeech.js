@@ -13,12 +13,6 @@ const TextToSpeech = ({ currentChapter, keywordCounters }) => {
 
   // Function to replace #charlieCounter# with charlieCounter value
   const replaceCharlieCounter = (text) => {
-    console.error(
-      "replaceCharlieCounter",
-      text,
-      "keywordCounters",
-      keywordCounters
-    );
     var charlieCounter =
       keywordCounters && keywordCounters["charlie"]
         ? keywordCounters["charlie"].lockedCount
