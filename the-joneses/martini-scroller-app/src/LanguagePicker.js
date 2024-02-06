@@ -10,7 +10,7 @@ const LanguagePicker = ({
   return (
     <div style={{ padding: "1em", marginTop: '2.5em' }}>
       <div>
-        {data.story.languages.filter(language => currentChapter.visibleLanguages.includes(language.name)).map((language, index) => (
+        {data.story.languages.filter(language => currentChapter?.visibleLanguages.includes(language.name)).map((language, index) => (
           <button
             className={`btn btn-${language.name}`.toLowerCase()}
             key={index}

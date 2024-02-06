@@ -22,11 +22,11 @@ const TextToSpeech = ({ currentChapter, keywordCounters }) => {
     const under25 = Math.floor(charlieCounter / 10) * 10;
 
     if (difference <= 25) {
-      return text.replace(/#charlieCounter#/g, `almost ${next50}`);
+      return text?.replace(/#charlieCounter#/g, `almost ${next50}`);
     } else if (charlieCounter < 10) {
-      return text.replace(/#charlieCounter#/g, `2`);
+      return text?.replace(/#charlieCounter#/g, `2`);
     } else {
-      return text.replace(/#charlieCounter#/g, `over ${under25}`);
+      return text?.replace(/#charlieCounter#/g, `over ${under25}`);
     }
   };
 
@@ -48,7 +48,7 @@ const TextToSpeech = ({ currentChapter, keywordCounters }) => {
   };
 
   const autoSelectText = (selectMantraOnly = false) => {
-    if (window.getSelection) {
+    if (window.getSelection && mantraTextRef?.current) {
       const selection = window.getSelection();
       const range = document.createRange();
       if (selectMantraOnly) {
@@ -104,9 +104,10 @@ const TextToSpeech = ({ currentChapter, keywordCounters }) => {
           <h3>Mantra</h3>
         </div>
       </div>
-      <div style={{ display: "flex", width: "100%" }} ref={contentRef}>
+      {currentChapter ? (
+        <div style={{ display: "flex", width: "100%" }} ref={contentRef}>
         <div style={columnStyle}>
-          <p>{replaceCharlieCounter(currentChapter.intro)}</p>
+          <p>{replaceCharlieCounter(currentChapter?.intro)}</p>
         </div>
         <div style={columnStyle}>
           <p>{replaceCharlieCounter(currentChapter["syntax-locked-intro"])}</p>
@@ -115,9 +116,11 @@ const TextToSpeech = ({ currentChapter, keywordCounters }) => {
           <p>{replaceCharlieCounter(currentChapter["syntax-free-intro"])}</p>
         </div>
         <div style={columnStyle} ref={mantraTextRef}>
-          <p>{replaceCharlieCounter(currentChapter.mantra)}</p>
+          <p>{replaceCharlieCounter(currentChapter?.mantra)}</p>
         </div>
       </div>
+      ) : null}
+      
     </div>
   );
 };

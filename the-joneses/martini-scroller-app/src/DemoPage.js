@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from "react";
 import "./App.css";
 import GraphViewer from "./GraphViewer";
@@ -9,19 +10,54 @@ import VariationCoordinator from "./VariationCoordinator";
 import StoryLine from "./StoryLine";
 import TextToSpeech from "./TextToSpeech";
 
-const DemoPage = () => {
-    console.error('Rending DemoPage', DemoPage);
-  const [data, setData] = useState(null);
+// Accept data as a prop
+const DemoPage = ({ data }) => {
+  console.error('Rendering DemoPage', DemoPage);
   const [currentLanguage, setCurrentLanguage] = useState("English");
   const [currentChapterId, setCurrentChapterId] = useState("meet-the-joneses");
   const [currentChapter, setCurrentChapter] = useState(null);
-  const [chapterList, setChapterList] = useState([]);
+  const [chapterList, setChapterList] = useState(data?.story["chapters"] || []);
   const [currentTime, setCurrentTime] = useState([]);
   const [keywordCounters, setKeywordCounters] = useState({});
   const [currentVariation, setCurrentVariation] = useState(null);
 
   const currentChapterIdRef = useRef(currentChapterId);
   const chapterListRef = useRef(chapterList);
+
+  // Update the ref whenever the state changes
+
+
+  // Update currentChapter based on currentChapterId and data changes
+  useEffect(() => {
+    const currentChapter = chapterList.find(chapter => chapter.id === currentChapterId);
+    setCurrentChapter(currentChapter);
+}, [currentChapterId, chapterList]);
+
+useEffect(() => {
+  if (data) {
+    const currentChapter = data.story["chapters"].find(
+      (s) => s.id === currentChapterId
+    );
+    setCurrentChapter(currentChapter);
+  }
+}, [data]);
+
+    // useEffect(() => {
+  //   //fetch('https://raw.githubusercontent.com/eejai42/syntax-free-vs-locked/master/the-joneses/martini-scroller-app/public/data.json')
+  //   fetch("data.json")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setData(data);
+  //       const currentChapter = data.story["chapters"].find(
+  //         (s) => s.id === currentChapterId
+  //       );
+  //       setCurrentChapter(currentChapter);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data: ", error);
+  //     });
+  // }, []);
+
 
   // Function to handle the variation update from VariationCoordinator
   const handleKeywordCounters = (counters) => {
@@ -32,7 +68,7 @@ const DemoPage = () => {
   useEffect(() => {
     currentChapterIdRef.current = currentChapterId;
     chapterListRef.current = chapterList;
-  }, [currentChapter]);
+  }, [currentChapter, chapterList, currentChapterId]);
 
   // Function to handle key press
   const handleKeyPress = (event) => {
@@ -55,22 +91,6 @@ const DemoPage = () => {
     };
   }, []);
 
-  useEffect(() => {
-    //fetch('https://raw.githubusercontent.com/eejai42/syntax-free-vs-locked/master/the-joneses/martini-scroller-app/public/data.json')
-    fetch("data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setData(data);
-        setChapterList(data.story["chapters"]);
-        const currentChapter = data.story["chapters"].find(
-          (s) => s.id === currentChapterId
-        );
-        setCurrentChapter(currentChapter);
-      })
-      .catch((error) => {
-        console.error("Error fetching data: ", error);
-      });
-  }, []);
 
   useEffect(() => {
     if (data) {

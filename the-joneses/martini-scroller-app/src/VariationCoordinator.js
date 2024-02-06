@@ -61,7 +61,7 @@ const VariationCoordinator = ({
       
 
   const updateVariations = () => {
-    const languageData = currentChapter.languages[currentLanguage];
+    const languageData = currentChapter?.languages[currentLanguage];
     if (languageData) {
       const updatedVariations = languageData.variations.map((variationText) => {
         const prefix = getPrefixBeforeColon(variationText);

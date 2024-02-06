@@ -21,7 +21,7 @@ const StoryLine = ({
 
     return (
         <div style={parentStyle}>
-            <div style={childStyle}>{story.statement}</div>
+            <div style={childStyle}>{story?.statement}</div>
         </div>
     );
 };

@@ -27,7 +27,7 @@ const AppHeader = ({
         top: 0, 
         left: 0, 
         right: 0}}>
-        <div style={nameStyle}>{story.name}</div>
+        <div style={nameStyle}>{story?.name}</div>
         <div style={{clear: 'both'}}></div>
     </div>
   );

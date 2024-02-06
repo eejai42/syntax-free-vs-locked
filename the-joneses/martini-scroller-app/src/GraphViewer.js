@@ -17,9 +17,9 @@ const GraphViewer = ({ data, story, keywordCounters }) => {
   };
 
   // Find the matching story
-  const storyName = story ? story.name : "story has no name";
-  const storyStatement = story ? story.statement : "story has no statement";
-  const imagePath = story ? story.image : "default/path/to/image.png"; // Replace 'default/path/to/image.png' with a default image path
+  const storyName = story ? story?.name : "story has no name";
+  const storyStatement = story ? story?.statement : "story has no statement";
+  const imagePath = story ? story?.image : "default/path/to/image.png"; // Replace 'default/path/to/image.png' with a default image path
 
   return (
     <div style={containerStyle}>
