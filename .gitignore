@@ -6,3 +6,7 @@
 /**/.vs/**/*
 /the-joneses/**/*.mp4
 
+**/*.aup3
+**/*.mp3
+**/*.wav
+/the-joneses/martini-scroller-app/package-lock.json

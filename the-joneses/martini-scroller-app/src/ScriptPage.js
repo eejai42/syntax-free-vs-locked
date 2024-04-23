@@ -1,4 +1,5 @@
 import React from 'react';
+import './ScriptPage.css';
 
 // Mock data for demonstration, replace with your actual prop data
 const mockChapters = [
@@ -21,16 +22,20 @@ const mockChapters = [
 
 const ScriptPage = ({ chapters = mockChapters }) => {
   return (
-    <div>
+    <div className="script-format">
       {chapters.map((chapter, index) => (
         <div key={chapter.id || index} style={{ marginBottom: '2rem' }}>
           <h2>{chapter.name}</h2>
+          <p><strong>Keywords:</strong> {chapter.keywords.join(', ')}</p>
+          <p><strong>Visible Languages:</strong> {chapter.visibleLanguages.join(', ')}</p>
+          <img src={chapter.image} style={{width: '80vw'}} />
+          <hr />
+          <div className="endOfSection"/>
           <p><strong>Intro:</strong> {chapter.intro}</p>
           <p><strong>Syntax-Locked Intro:</strong> {chapter['syntax-locked-intro']}</p>
           <p><strong>Syntax-Free Intro:</strong> {chapter['syntax-free-intro']}</p>
           <p><strong>Mantra:</strong> {chapter.mantra}</p>
-          <p><strong>Keywords:</strong> {chapter.keywords.join(', ')}</p>
-          <p><strong>Visible Languages:</strong> {chapter.visibleLanguages.join(', ')}</p>
+          <div className="endOfSection"/>
         </div>
       ))}
     </div>

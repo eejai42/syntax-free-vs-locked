@@ -1,0 +1,51 @@
+.script-format {
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+    font-size: 12pt; /* Standard screenplay font size */
+    line-height: 2; /* Double spaced. For triple space, use 3 */
+    max-width: 816px; /* Max width to simulate 8.5" paper width */
+    margin: 0 auto; /* Centers the script in the page */
+    padding: 1in; /* Standard screenplay margin */
+  }
+  
+  .script-format p {
+    margin: 0 0 24px 0; /* Adjust based on desired spacing, 24px is an example for more space */
+    text-align: left; /* Screenplay text is aligned left */
+    page-break-inside: avoid; /* For older browsers */
+    break-inside: avoid; /* Newer, preferred */
+  }
+  
+  .script-format .dialogue {
+    margin-left: 2.5in; /* Indent dialogue for readability */
+  }
+  
+  .script-format .action {
+    margin-bottom: 24px; /* Adjust based on desired spacing */
+  }
+  
+  .script-format .character {
+    margin-left: 2in; /* Indent character names a bit more than dialogue */
+    text-transform: uppercase; /* Character names in uppercase */
+  }
+  
+  .script-format .transition {
+    text-align: right; /* Transitions are aligned to the right */
+    margin-right: 1.5in; /* Ensuring transitions are not full width */
+  }
+  
+  .script-format .note {
+    font-size: 10pt; /* Smaller font size for notes */
+    margin-top: 12px; /* Adjust based on desired spacing */
+    color: #666666; /* Grey out notes */
+    line-height: 1.2; /* Tighter line spacing for notes */
+  }
+  
+
+  .script-format h1 {
+    page-break-before: always; /* For older browsers */
+    break-before: page; /* Newer, preferred */
+  }
+  
+  .script-format .endOfSection {
+    page-break-after: always; /* For older browsers */
+    break-after: page; /* Newer, preferred */
+  }

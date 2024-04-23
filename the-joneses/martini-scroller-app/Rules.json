@@ -1,0 +1,92 @@
+{
+    "system": {
+      "components": [
+        {
+          "type": "ReactComponent",
+          "shape": "upsideDownY",
+          "inputs": 1,
+          "outputs": 2,
+          "function": "transformAndSplit"
+        },
+        {
+          "type": "ReactComponent",
+          "shape": "Y",
+          "inputs": 2,
+          "outputs": 1,
+          "function": "mixAndOutput",
+          "code": {
+            "states": [
+              {"name": "color1", "initialValue": "#000000"},
+              {"name": "color2", "initialValue": "#000000"},
+              {"name": "mixedColor", "initialValue": "#000000"}
+            ],
+            "functions": [
+              {"name": "mixColors", "description": "Main color mixing function."}
+            ],
+            "render": {
+              "inputs": [
+                {"type": "color", "value": "color1", "onChange": "handleColor1Change"},
+                {"type": "color", "value": "color2", "onChange": "handleColor2Change"}
+              ],
+              "outputDisplay": {
+                "backgroundColor": "mixedColor",
+                "width": "500px",
+                "height": "100px"
+              }
+            }
+          }
+        }
+      ],
+      "functions": [
+        {
+          "name": "hexToRgb",
+          "description": "Converts hex to RGB array.",
+          "input": {"type": "string", "name": "hexColor"},
+          "output": {"type": "array", "name": "rgbArray", "structure": ["red", "green", "blue"]}
+        },
+        {
+          "name": "rgbToHex",
+          "description": "Converts RGB values to hex.",
+          "input": {"type": "array", "name": "rgbArray", "structure": ["red", "green", "blue"]},
+          "output": {"type": "string", "name": "hexColor"}
+        },
+        {
+          "name": "isPrimaryYellow",
+          "description": "Checks if the color is primarily yellow.",
+          "input": {"type": "array", "name": "rgb", "structure": ["red", "green", "blue"]},
+          "output": {"type": "boolean", "name": "isYellow"}
+        },
+        {
+          "name": "isPrimaryRed",
+          "description": "Checks if the color is primarily red.",
+          "input": {"type": "array", "name": "rgb", "structure": ["red", "green", "blue"]},
+          "output": {"type": "boolean", "name": "isRed"}
+        },
+        {
+          "name": "isPrimaryBlue",
+          "description": "Checks if the color is primarily blue.",
+          "input": {"type": "array", "name": "rgb", "structure": ["red", "green", "blue"]},
+          "output": {"type": "boolean", "name": "isBlue"}
+        },
+        {
+          "name": "determineShadeOfPurple",
+          "description": "Mixes to create a shade of purple.",
+          "input": {"type": "array", "name": "rgb1", "structure": ["red", "green", "blue"]},
+          "output": {"type": "string", "name": "hexColor"}
+        },
+        {
+          "name": "determineShadeOfOrange",
+          "description": "Mixes to create a shade of orange.",
+          "input": {"type": "array", "name": "rgb1", "structure": ["red", "green", "blue"]},
+          "output": {"type": "string", "name": "hexColor"}
+        },
+        {
+          "name": "determineShadeOfGreen",
+          "description": "Mixes to create a shade of green.",
+          "input": {"type": "array", "name": "rgb1", "structure": ["red", "green", "blue"]},
+          "output": {"type": "string", "name": "hexColor"}
+        }
+      ]
+    }
+  }
+  

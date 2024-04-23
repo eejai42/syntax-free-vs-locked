@@ -5,33 +5,33 @@
       {
         "name": "Charlie",
         "greek": "Τσάρλι",
-        "chinese": "查理"
+        "Mandarin": "查理"
       },
       {
         "name": "Alice",
         "greek": "Άλις",
-        "chinese": "艾丽丝"
+        "Mandarin": "艾丽丝"
       },
       {
         "name": "Bob",
         "replace-with": "Markus",
         "greek": "Μπομπ",
-        "chinese": "鲍勃"
+        "Mandarin": "鲍勃"
       },
       {
         "name": "Dingo",
         "greek": "Ντίνγκο",
-        "chinese": "丁戈"
+        "Mandarin": "丁戈"
       },
       {
         "name": "Frank",
         "greek": "Φρανκ",
-        "chinese": "弗兰克"
+        "Mandarin": "弗兰克"
       },
       {
         "name": "Markus",
         "greek": "Markus",
-        "chinese": "Markus"
+        "Mandarin": "Markus"
       }
     ],
     "languages": [
@@ -42,7 +42,7 @@
         "name": "Code"
       },
       {
-        "name": "Chinese"
+        "name": "Mandarin"
       },
       {
         "name": "Spanish"
@@ -114,7 +114,7 @@
         "statement": "The Joneses, Alice and Bob, have one son Charlie, who owns a white, fluffy dog named Dingo.",
         "id": "meet-the-joneses",
         "image": "glasses/meet-the-joneses.png",
-        "intro": "Today I'd like to introduce you to the notion of Syntax-Locking, and how, like paper-based businesses in the 80's and early 90's, if your business decisions are still syntax-locked, then even the *very* short story will likely ring true for you.",
+        "intro": "Today I'd like to introduce you to the notion of Syntax-Locking, and how, like paper-based businesses in the 80's and early 90's, if your business decisions are still syntax-locked, then even this *very* short story will likely ring true for you. Syntax: the arrangement of words and phrases to create well-formed sentences in a language.  Humans have been documenting things for a very long time. But we haven’t always written in the same way. When we first developed syntax there were only a few people who could read it, and even fewer who could write it. With the invention of the Gutenberg press we were able to streamline the creation of written content which led to an increase in literacy. But there were still some issues. With the invention of the typewriter, the creation of efficient written content was introduced into the average person’s home. But if you made a mistake you would still have to write the entire page over again. When we moved to digital word processing, those sorts of small mistakes no longer took up so much time. But you would still have to print the file in order to get anyone else’s input on it. When we moved to online shared document systems, like google docs, we could all edit the same document at the same time. However, this is still not quite the end of this sequence. Let me introduce you to syntax-free documentation. This video will use the example of a family to explain how using a syntax-free system is much more efficient, convenient, and streamlined than syntax-locked documentation. While this family is only an example, this technique can streamline your systems for any project with an influx of shifting parameters and information. As you can see, we will be displaying the evolution of the information we have about this family in syntax-locked form on the left, and syntax-free on the right. As we go on, we will see how the information on the syntax-free side simplifies things, and makes sure that we never get duplicates of any of the information. This concept will be displayed through the “charlie counter.” As the information is shown in syntax-locked format there will be continually more and more references made to “Charlie,” however, on the right there will only be one Charlie.",
         "syntax-locked-intro": "Specifically - if the details of your projects are still locked in syntax, like this one sentence summary of the Jones Family, then you're likely to be experiencing the same problems that we are about to explore, as the Jones family grows, changes & evolves over time. The reason for this pain (as you will hopefully see) is that syntax-locking is an expensive and generally inefficient way to record and communicate the details of even a simple story like this. Let's explore what happens when we avoid this pain by moving away from syntax-locking, and towards a world where the key elements of your business and projects are captured free from syntax.",
         "syntax-free-intro": "Here, for example, you'll notice that the syntax-free Mirror of the Jones family on the right, contains just 1 Charlie - so it's charlie counter is still 1.  All of the counters are actually still 1.  And they will remain 1 for as long as they are each involved in the story.  Because there's just 1 Charlie.  Always, just 1 Charlie.",
         "mantra": "So the specific cause of the pain from syntax-locking is the fact that the Charlie counter on the left is already at #charlieCounter#, and counting... and it will just keep going up, unrelentingly - over time, especially as the project grows in size and complexity.",
@@ -192,7 +192,7 @@
               "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
             ]
           },
-          "Chinese": {
+          "Mandarin": {
             "variations": [
               "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
               "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
@@ -215,12 +215,12 @@
         "id": "just-1-charlie",
         "image": "glasses/1.png",
         "intro": "So, even though there's always just 1 charlie in reality, the charlie counter in meeting notes, proposals, specifications, documentation, in team communications, outside communications, slack, discord, whatsapp, sms, in person meetings, and so on... All just opportunities for there to be misunderstandings and ambiguity.",
-        "syntax-locked-intro": "On the syntax locked side, whether it's in English... Code... or Chinese..., all of the counters keep going up. Every time a new syntax locked artifact is created, the counters go up.  Hopefully none of them ever change their names.  Can you imagine what would happen if literally any of them ever changed their name?",
+        "syntax-locked-intro": "On the syntax locked side, whether it's in English... Code... or Mandarin..., all of the counters keep going up. Every time a new syntax locked artifact is created, the counters go up.  Hopefully none of them ever change their names.  Can you imagine what would happen if literally any of them ever changed their name?",
         "syntax-free-intro": "By contrast, you'll notice that the syntax-free Mirror of the Jones family sort of looks like a martini glass, and still contains just 1 Charlie, so obviously that charlie counter is still 1. Because there's just 1 charlie.",
-        "mantra": "But... the Charlie Counter on the left just keeps going up.  it is just merciless. so we're like 2 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly.",
+        "mantra": "But... the Charlie Counter on the left just keeps going up.  it is just merciless. so we're just 2 minutes into this demo, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, unrelentingly.",
         "keywords":["charlie", "alice", "bob"],
         "staleKeywords":[],
-        "visibleLanguages": ["English", "Code", "Chinese"],
+        "visibleLanguages": ["English", "Code", "Mandarin"],
         "languages": {
           "English": {
             "text-align": "left",
@@ -291,7 +291,7 @@
               "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
             ]
           },
-          "Chinese": {
+          "Mandarin": {
             "variations": [
               "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
               "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
@@ -315,8 +315,8 @@
         "image": "glasses/2.png",
         "intro": "So, when we learn something new, like the fact that Charlie got Dingo for his 12th birthday, this just complicates things...",
         "syntax-locked-intro": "Especially on the syntax locked side of things, all those previous references to Charlie and Dingo are now stale, because at least some of them should probably include the key piece of information about his birthday.  But until that new information is decided on, documented, communicated to whoever needs to update the syntax-locked document, and it is updated - it will just be out of date, stale, and very possibly, just wrong. So Despite just learning one small new detail about the relationship between Charlie and his Dog... that has to be documented and communicated to the whole team.",
-        "syntax-free-intro": "By contrast, you'll notice that despite adding new meta data to the knowledge graph, the syntax-free Mirror of the Jones family still contains just 1 Charlie - so it's charlie counter is still 1.  Because, there is just one Charlie.  And yet, the Charlie Counter on the left just keeps going up. it is inexorable.",
-        "mantra": "So we're like 3 minutes into this demo now, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, it just never tires.",
+        "syntax-free-intro": "By contrast, you'll notice that despite adding new meta data to the knowledge graph, the syntax-free Mirror of the Jones family still contains just 1 Charlie - so it's charlie counter is still 1.",
+        "mantra": "Because, there is just one Charlie.  And yet, the Charlie Counter on the left just keeps going up. it is inexorable. it is already at #charlieCounter# and counting... and it will just keep going up, it just never tires.",
         "keywords":["charlie", "bob", "dingo"],
         "staleKeywords":[],
         "visibleLanguages": ["English", "Code"],
@@ -364,7 +364,7 @@
               "... (9 more variations) ..."
             ]
           },
-          "Chinese": {
+          "Mandarin": {
             "variations": [
               "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
               "... (9 more variations) ..."
@@ -373,19 +373,19 @@
         }
       },
       {
-        "id": "in-chinese",
-        "hint": "Can we see it in Chinese?",
-        "name": "The Jonese in Chinese",
-        "start-language": "Chinese",
-        "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - in Chinese?",
+        "id": "in-mandarin",
+        "hint": "Can we see it in Mandarin?",
+        "name": "The Jonese in Mandarin",
+        "start-language": "Mandarin",
+        "statement": "The Joneses, Alice and Bob, have one son Charlie who got a white, fluffy dog named Dingo for his 12th birthday. - in Mandarin?",
         "image": "glasses/3.png",
-        "intro": "Let's take a scenario where, for example, we need to work with a Chinese team.  So, after translating the simple story into Chinese, things continue to get more complicated for obvious reasons.",
-        "syntax-locked-intro": "On the syntax locked side of things in particular, unless you know Chinese, and have enough context to read the syntax-locked Chinese descriptions of the family, to internalize, and understand it, you can't really determine whether it does, or does not accurately capture the Jones family.  Instead it remains ambiguous and unclear.  A mystery really.  And, despite the Syntax-Locking now all happening in Chinese, the Charlie, Alice and Bob Counter on the left all keep going up. hopefully Bob will always be called Bob... like, Forever!",
+        "intro": "Let's take a scenario where, for example, we need to work with a team from overseas.  So, after translating the simple story into Mandarin, things continue to get more complicated for obvious reasons.",
+        "syntax-locked-intro": "On the syntax locked side of things in particular, unless you know Mandarin, and have enough context to read the syntax-locked Mandarin descriptions of the family, to internalize, and understand it, you can't really determine whether it does, or does not accurately capture the Jones family.  Instead it remains ambiguous and unclear.  A mystery really.  And, despite the Syntax-Locking now all happening in Mandarin, the Charlie, Alice and Bob Counter on the left all keep going up. hopefully Bob will always be called Bob... like, Forever!",
         "syntax-free-intro": "By contrast, you'll notice on the right side, that despite not understanding a single word of either the Syntax-Locked or the Syntax-Free versions of the knowledge, the Internal Geometry of the Syntax Free version still looks like a Martini Glass.  This is because that's the basic shape of the knowledge graph that falls out of this 1 sentence prompt, regardless of witch language you use to describe the family. There's always just 1 charlie, even if, god forbid, he ever changed his name!",
-        "mantra": "And we're now at like 4 minutes, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, it is remarkably persistent.",
+        "mantra": "Only 4 minutes in, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, it is remarkably persistent.",
         "keywords":["charlie", "alice", "bob"],
         "staleKeywords":[],
-        "visibleLanguages": ["English", "Code", "Chinese"],
+        "visibleLanguages": ["English", "Code", "Mandarin"],
         "languages": {
           "English": {
             "text-align": "left",
@@ -456,7 +456,7 @@
               "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
             ]
           },
-          "Chinese": {
+          "Mandarin": {
             "variations": [
               "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
               "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
@@ -474,18 +474,18 @@
       },
       {
         "name": "Why is the Glass Broken... 🤔",
-        "statement": "Apparent SCANDEL introduced in the Chinese Translation.  😲",
+        "statement": "Apparent SCANDEL introduced in Translation.  😲",
         "hint": "Mistranslation...",
         "id": "mistranslation",
-        "start-language": "Chinese",
+        "start-language": "Mandarin",
         "image": "glasses/3-Lost.png",
         "intro": "On the other hand, let's imagine that something, unfortunately, gets lost in translation. A SCANDAL might ensue!",
-        "syntax-locked-intro": "And, once again, on the syntax locked side of things... determining if those words do, or do not reflect reality, remains opaque, unclear, and a mystery. unless you speak chinese of course.  And if we're not careful, that could lead to issues!  And yet, even though everything is now happening in Chinese, the Charlie Counter on the left just keeps going up - it is just unstoppable.  ",
-        "syntax-free-intro": "And, once again, the Internal Geometry on the right side, of even mistranslated information, in the form of a Syntax Free knowledge graph, betrays the fact that, at the very least, something, changed.  Further, the specific change allows us to infer what might have happened, relatively confidently.",
-        "mantra": "5 minutes into this demo, and the Charlie counter on the left is already at #charlieCounter# and counting... and it will just keep going up, with unstoppable fortitude.",
+        "syntax-locked-intro": "And, once again, on the syntax locked side of things... determining if those words do, or do not reflect reality, remains opaque, unclear, and a mystery. unless you speak Mandarin of course.  And if we're not careful, that could lead to issues!  And yet, even though everything is now happening in Mandarin, the Charlie Counter on the left just keeps going up - it is just unstoppable.  ",
+        "syntax-free-intro": "And, once again, the Internal Geometry on the right side, of even mistranslated information, in the form of a Syntax Free knowledge graph, betrays the fact that, at the very least, something, changed. Since we're already familiar with the Martini Glass we Expected, the specific change to that shape actually allows us to infer what might have happened, relatively confidently.",
+        "mantra": "At the 6 minute Mark, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, it's literally tireless.",
         "keywords":["charlie", "alice", "bob"],
         "staleKeywords":[],
-        "visibleLanguages": ["English", "Code", "Chinese"],
+        "visibleLanguages": ["English", "Code", "Mandarin"],
         "languages": {
           "English": {
             "text-align": "left",
@@ -558,7 +558,7 @@
               "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
             ]
           },
-          "Chinese": {
+          "Mandarin": {
             "variations": [
               "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
               "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
@@ -576,17 +576,17 @@
       },
       {
         "name": "Who the heck is Frank?",
-        "statement": "Something in the chinese translation implied Frank is the Bio-Dad",
+        "statement": "Something in translation implied Frank is the Bio-Dad",
         "hint": "Show me in English!",
         "id": "mistranslation-explained",
         "image": "glasses/3-LostInEnglish.png",
         "intro": "Wait! Who the heck is frank?",
         "syntax-locked-intro": "In a syntax locked world, most of the syntax locked content will still refer to Bob being the father, despite the suggestion that Frank could actually be the Bio-Dad.  If we're not careful here this could lead to a SCANDAL! ",
-        "syntax-free-intro": "After translating it back into English, Our suspitions about what had though was going on are confirmed, and the Internal Geometry of even this mistranslated information, reinforces the idea that Frank might indeed be the bio-dad.  A DNA test is called for to confirm one way or the other. All the while,  Counters for Charlie, Bob, and now also Frank on the left, just all keep going up - they seem to never tire...  On the right side, by contrast, Charlie's still there, and there's still just one of him, bob and Frank.",
-        "mantra": "At the 6 minute Mark, and the Charlie counter is already at #charlieCounter# and counting... and it will just keep going up, it's literally tireless.",
+        "syntax-free-intro": "After translating it back into English, Our suspitions about what had though was going on are confirmed, and the Internal Geometry of even this mistranslated information, reinforces the idea that Frank might indeed be the bio-dad.  A DNA test is called for to confirm one way or the other.",
+        "mantra": "All the while,  Counters for Charlie, Bob, and now also Frank on the left, just all keep going up - they seem to never tire...  On the right side, by contrast, Charlie's still there, and there's still just one of him, bob and Frank.",
         "keywords":["charlie", "bob", "frank"],
         "staleKeywords":[],
-        "visibleLanguages": ["English", "Code", "Chinese"],
+        "visibleLanguages": ["English", "Code", "Mandarin"],
         "languages": {
           "English": {
             "text-align": "left",
@@ -657,7 +657,7 @@
               "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
             ]
           },
-          "Chinese": {
+          "Mandarin": {
             "variations": [
               "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
               "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
@@ -682,10 +682,10 @@
         "intro": "Ok! Phew!  Thank goodness... The DNA Test Results are back, and it looks like bob is in fact the Dad!  This finally resolves the whole frank thing once and for all. So now, we're back to our, increasingly familiar, martini glass.",
         "syntax-locked-intro": "In a syntax locked world, most of the syntax locked content will still refer to Bob being the father, but there are also likely to be a bunch of additional syntax-locked content suggesting that Frank could actually be the Bio-Dad.  And so until someone either corrects or updates this content, it is once again just out of date, stale or, as here, completely incorrect.",
         "syntax-free-intro": "However, after the DNA test confirmed that Bob was the dad - on the syntax free side of things, we can just Remove Frank from the graph, and re-link Bob as Charlie's only dad.  Even having cleared up the dad question we will see that still, of course, the Charlie Counter on the left just keeps going up - like the energizer bunny it keeps going, and goin, and going... you might notice that on the right side, however, Charlie is still there, and there's still just one of him - always, just 1 Charlie.",
-        "mantra": "So, we're like 7 minutes into the demo now, and the Charlie counter is already at #charlieCounter# and counting... I *really* hope that none of them ever change their names.  Yikes... I mean... I *really* hope, because the counters are all just gonna keep going up, and up, and up...",
+        "mantra": "With the Charlie counter is already at #charlieCounter# and counting, I *really* hope that none of them ever change their names.  Yikes... I mean... I *really* hope, because all of the counters seem to just gonna keep going up, and up, and up...",
         "keywords":["charlie", "alice", "bob", "frank"],
         "staleKeywords":["frank"],
-        "visibleLanguages": ["English", "Code", "Chinese"],
+        "visibleLanguages": ["English", "Code", "Mandarin"],
         "languages": {
           "English": {
             "text-align": "left",
@@ -756,7 +756,7 @@
               "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
             ]
           },
-          "Chinese": {
+          "Mandarin": {
             "variations": [
               "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
               "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
@@ -782,10 +782,10 @@
         "intro":"Oh No! the worst has happened...  Bob actually was never his name!! He was named Markus all along, and Charlie is not 12, as previously been thought... he actually 16.",
         "syntax-locked-intro": "In a syntax locked world, Literally all of the #charlieCounter# syntax-locked documents are either out of date, stale or, as here, completely incorrect.  If they are static documents like emails or printed paper, they will just be wrong... forever.  If they are editable documents, they will be wrong until an author comes back to that syntax-locked document and updates it.  So, despite there now being only 1 Markus (formerly known as Bob) Bob is still syntax locked in countless Syntax Locked documents, and until the change from Bob to Markus is Decided, Documented, Communicated to the necessary Party (or parties) even those editable documents will just be wrong...",
         "syntax-free-intro": "In the syntax free model - we double click on Bob and change it to Markus - and we're again, done. Because now there is just 1 Markus - even though he used to have the name Bob. Still... there's just 1 of him.",
-        "mantra":"So, we're like 8 minutes in, and the Charlie counter on the left is already at #charlieCounter# and counting... And now the Markus counter is going up too, and it will just keep going up, just as unrelentingly as the Charlie counter.",
+        "mantra":"So, we're roughly 8 minutes in, and the Charlie counter on the left is already at #charlieCounter# and counting... And now the Markus counter is going up too, and it will just keep going up, just as unrelentingly as the Charlie counter.",
         "keywords":["charlie", "bob", "markus"],
         "staleKeywords":["bob"],
-        "visibleLanguages": ["English", "Code", "Chinese", "Spanish"],
+        "visibleLanguages": ["English", "Code", "Mandarin", "Spanish"],
         "languages": {
           "English": {
             "text-align": "left",
@@ -855,7 +855,7 @@
               "Η Άλις Τζόουνς και ο σύζυγός της Μπομπ, μαζί με τον γιο τους Τσάρλι, ζουν με τον Ντίνγκο, έναν λευκό και αφράτο σκύλο."
             ]
           },
-          "Chinese": {
+          "Mandarin": {
             "variations": [
               "艾丽丝和鲍勃·琼斯是夫妻。 他们有一个叫查理的儿子。 查理有一只白色的，蓬松的狗，叫丁戈。",
               "查理是艾丽丝与鲍勃·琼斯的儿子，他拥有一只名叫丁戈的白色蓬松狗。",
@@ -884,7 +884,7 @@
         "mantra": "Because With a SIMM - a Syntax independent model of the whole project - everything downstream from that gets simpler. Much, Much, Simpler! \n\nThis is the same information, but built in a context that is completely free from syntax.\nYes - this model uses some english words - but the relationships of these family members is not coupled to a description.\nWe can see that Alice is Charlie is her son, and Bob is her Husband.\nWe can also see the Dingo is  a White Fluffy Dog.\n\nThis model, unlike the Syntax-Locked versions is not a description of the \njones family, it is a mirror of it - with just One Charlie.  And since he\nIs a boy - Alice have a Son Charlie.  But if instead, Charlie were a Girl,\nThen she Alice and Bob would have a Daugher.\n\nAs you can see, this model is always internally consiste - and that is\nspecifically possible, because this is not a description of the family,\nit is a Mirror Of it.\n\nNow - the next logical question would be to point out that spreadsheets\nare not an effective way to communicate.  So while they may be interanlly\nconsistent - what can we DO with this model, that we couldn't just do \nwith a Syntax-Locked version of the same details?\n\nWell - let's select and copy all these details from Air table, which \ncontains all the details about the family, and see what ChatGPT has to \nsay about it.\n\nSo we can go to ChatGPT - and simply paste in the story - and ask it to\ndescribe the family - and everything that's provided is from that spreadsheet,\nand GPT goes ahead and writes a correct, accurate, up to date description \nof the family. Including all the meta data about Charlie's Birthday, \nand where dingo came from. \n\nThe most important key to keep in mind here though, is that this description\nis not the \"source\" of that knowledge.  It is derived *from* the source.\n\nThe source of this knowledge is back in air table. Here, we can even make \nchanges - like the introduction of  Frank into the picture.  At the moment, \nthere are just 4 active members of the family.  So down in the Inactive group \nof Family Members, we can see that Frank is current UNRELATED to the family.  \nSo none of his associated relationships are ingluded either.\n\nBut if we just drag him up into the active group - now all of the \nrelationships are updated to include Frank, and his biography is inclued as well.\n\nWith that change made, we can then again copy/paste the details from our \nsyntax independent model of the family - and paste it into ChatGPT. Once \nagain, it is able to create a seamless, always internally consistent \ndescription of the family. now also including Frank, and the associated\nimplication that he might actually be Charlie's bio-dad.\n \nWhat we can see from the air table version, is that frank is mentioned \nmultiple times, describing who he is and how he is related to the family \nThere are then also additional mentions in ChatGPTs description of the \ndata from air table now include the detail that Frank might be the bio-dad.\nFrank will be included in these kinds of syntax locked versions, up to and until \nhe is not longer included in the model.\n\n\nBack in air table - frank was determined to be unrelated, and so we will \ndrag him back out of the ACTIVE group.  And then - let's pretend that a \nnew family member, maria, who plays the violin enters the family.  \nOnce again, the stories update. In this case, we can see that Alice \nis mother of the Child... Maria.\n\nOnce again, we'll copy/paste the whole story as it currently is - \nand paste it into chatgpt like before. Once again - it should now \nmention that they have 2 children - and\n\nAnd when we ask who Frank is, it says that there is no mention of Frank - because \nhe's not the dad.  We just dragged him down in Air table, to the Inactive\ngroup, and then he (and all of his associated relationships went away from the \nactive model).\n\nWe can ask who Maria is and it tells us about them as well.  Because it knows. \n\n\n\nAnd we can ask it to describe the whole family once again, and it creates an \nalways internally consistent description of the whole family, now including \nthe fact that there are now 4 \"humans\" and 1 dog.  And that maria plays the \nviolin,  And uses the appropriate They, Them pronouns when referring to them. Here \nagain, it is important to note that this syntax-locked content is not the \nsource of the knowledge.  It is derived from the Source, which is in air table.\n\nWhere, back here on the main page - we can continue to make other changes as \nwell, including new ones in addition to what happened in the previous demo.  \n\nFor example, Let's start by making Alice a Mechanic - which is what she is.\n\nLet's also Update Bob - because he is a teacher and also still a parent.\n\nSelecting the current family details, \n\nCopy/paste to ChatGPT like Usual - and let's see what we get.\n\nOnce again we get a description of the family, but this time, we get the description of the family with Alice specifically mentioned as a mechanic, and Bob as a school teacher. Along with continuing to refer to Charlie as the owner of dingo, that he got for his 12th birthday.\n\nAnd so I can also now ask what they do professionally though - and it can describe what it knows of their background..",
         "keywords":["charlie", "bob", "markus"],
         "staleKeywords":["bob"],
-        "visibleLanguages": ["English", "Code", "Chinese", "Spanish", "Greek"],
+        "visibleLanguages": ["English", "Code", "Mandarin", "Spanish", "Greek"],
         "languages": {
           "English": {
             "text-align": "left",
@@ -932,7 +932,7 @@
               "Syntax Indepdendent Meta Model (SIMM): These will tend to be consistent, not just internally, but accross them all, because they are all derived from the same source - One Syntax-Free Model."
             ]
           },
-          "Chinese": {
+          "Mandarin": {
             "variations": [
               "Syntax Indepdendent Meta Model (SIMM): Just Airtable (or *any other* ACID compliant DB - for the model",
               "Syntax Indepdendent Meta Model (SIMM): Where the Business Rules (schema) can be easily exported to Json (extended jsd), xml/xsd/other, etc...",
@@ -943,6 +943,19 @@
             ]
           }
         }
+      },
+      {
+        "name": "What does a Syntax-Free (or Syntax Independent) World Look Like?  Let's take a look.",
+        "statement": "Okay - so Syntax is problematic - especially over time, but what's the alternative?",
+        "hint": "Charlie actually 16!",
+        "id": "syntax-free-world",
+        "image": "glasses/syntax-free.png",
+        "intro": "Let's look at a concrete example.",        
+        "syntax-locked-intro": "This is exactly the same information, but stored in a way that is completely free from syntax.  It is a mirror of the family, not a description of it.",
+        "syntax-free-intro": "We've got Alice and Bob, and Charlie and Dingo. Wife Alice's spouses with husband Bob, and mother Alice is parent of son Charlie, but he is specifically mentioned because he's 'he, him.' An example of the kind of thing that we can do with a syntax-free version of this information is that if Charlie were, in fact, discovered that he's actually a girl, then changing the pronouns associated with Charlie means that Alice is now parent of daughter Charlie, and Bob is parent of daughter Charlie because Charlie is a girl now. But if we change Charlie back to a boy, which is what we had in our story, we can simply copy this data. In ChatGPT, I'm just going to ask it, \"Please describe this family and what we know about it in a single sentence.\" This single prompt, with just a copy and paste of that syntax-free model, allows us to get syntax-locked content like this that we can basically guarantee is going to be correct in a way that's very difficult to achieve with syntax-locked content, and hopefully, that's what we're about to see. So, I'm going to switch back over to our syntax-free model, and the first thing that we did is that, um, Frank, who is currently unrelated to the family (Frank Carmichel), I'm just going to drag Frank up here, and you'll notice that now Charlie, in addition to having a mother and father, now has a biodad who might be Charlie's biodad. That new piece of information wasn't here before because Frank wasn't an active participant in the story. And so, I'm going to also make a couple of other changes that happened at the end of the demo. Bob changed his name to Marcus, and so now that we've changed that in one place, all of these other syntax-locked descriptions of the situation—that wife Alice spouses with her husband Bob—can now be translated directly over to ChatGPT, just like we did before. I'm just going to copy this data, we'll go back to ChatGPT, and this time, I'm going to start a new conversation. I'm going to paste in the information like we did before. I'm going to say, \"Who the heck is Frank?\" and Frank is not mentioned as the possible biological father (biodad) of Charlie. This indicates that if I search for Marcus, he's not mentioned, but Charlie is mentioned, and the biodad is mentioned. If I ask, \"Who is Bob?\" Bob isn't there anymore, so it should say there is no mention of Bob, seems like Bob might have been mentioned in error. Let's go update this situation once again. If we go back into this single source of truth very quickly, uh, Frank was deemed to be not part of the family, so I'm going to drag him back here to the inactive group, and there's this child, Mary, who's a 10-year-old that plays the violin, and I'm just going to drag Mary into the active group within this family, and then let's also add some additional details that we know about this family. I've excluded some of the facts that we know, and we can just add those back in, and then we can add some of our own as well. So, I'm going to go to the details of each member, and up here we can see that Alice is actually a mechanic, and Charlie was 12, so I'm going to exclude that, but by the end of the demo, he was actually 16, and it turns out Dingo loves peanut butter, and Bob is, uh, Marcus now, and he's a school teacher, so I'm going to uncheck Bob because he changed his name from Bob to Marcus, so now he's Marcus. Mary is 10 years old and plays the violin. So, just so you don't think I've pre-loaded the deck, let's add some other details. See, I can also just add that Alice loves old movies, let's say, and Charlie loves drones. And Bob, Dingo, we already have something; I don't need to add more detail to Dingo. And then for Marcus, we'll say he is a volunteer firefighter. And so now we have additional details about all these different people, some that were already there that we just removed from being excluded, some that we just added live here. And what I'm going to do here is I'm going to switch back to the family members tab. I'm not going to read anything; I'm just going to copy it, and we're going to start asking questions of CHGPT about it. So, I'm going to flip back to family members, I'm going to select relationships, and the other six columns in this tab. We're going to go back over to ChatGPT. I'm going to start an entirely new conversation, and I'm going to once again say, \"Who the heck is Frank?\" and in this case, just by dragging Frank out, it now says Frank does not appear to be related to the family. If I say, \"Who is Bob?\" it now knows that Bob is the former name of Marcus and can tell us about Marcus, that he's a school teacher and a volunteer firefighter. And I can also now ask, \"Who is Mary?\" and it knows that Mary is a child in the family, a 10-year-old non-binary that plays the violin. \"Please describe in your own words what each family member is known for in preparation for creating an animated series based on these characters.\" So not only can it tell us about this family and their interests and their background, but it can also start to extend it and infer that her practical skills are combined with a sense of nostalgia and history. It didn't specifically say that, but I asked it to describe this family in its own words for a specific context, and not only can it now incorporate all the most up-to-date details into this syntax-locked content, this is not the source no human being would ever edit this file with a syntax-free model. And so, as you can see in the single syntax-free model of the world, every time that we make a change, each thing is only represented once, and this model here is a representation of syntax-free families because it's general purpose. We can model multiple families at this point. The Carmichel family just has Frank, but maybe he has parents and siblings. We can model each family member within that group. We can keep track of details about each of those family members, the relationships of those family members to each other, the kinds of relationships like spouses, siblings, parent-child relationships, and then the names are based on the pronoun. So, if a boy is a child of a parent, they're going to be the son of that parent; if they are a girl, then they're going to be the daughter of that parent. And similarly, wife and husband, each relationship has different names based on the gender roles, and all that is handled in this one model where this page is just always going to be correct because we've modeled out once in a syntax-free way how families work.",
+        "mantra": "So now you understand how the Syntax-free system works, but the question is why? The syntax-locked system ended up with over 600 Charlies, but with the syntax-free system there was only ever one Charlie. This syntax-free system is the most efficient and straightforward form of documentation you can use. When using syntax-free systems you can simplify your entire team’s process, and save countless hours of rewriting and miscommunication. Syntax Free, Yo!",
+        "keywords":["charlie", "alice", "markus"],
+        "visibleLanguages": ["English", "Code", "Mandarin", "Spanish", "Greek"]
       }
     ]
   }
