@@ -25,15 +25,15 @@ const WaterColorsPage = () => {
         let mixedHsl;
         let hVal;
         if (hslA.h > hslB.h) {
-            error = (350 - hslA.h) + hslB.h;
-            if (350 - hslA.h > hslB.h) {
+            error = (360 - hslA.h) + hslB.h;
+            if (360 - hslA.h > hslB.h) {
                 hVal = (error / 2) + hslA.h;
             } else {
                 hVal = hslB.h - (error / 2);
             }
         } else {
-            error = (350 - hslB.h) + hslA.h;
-            if (350 - hslB.h > hslA.h) {
+            error = (360 - hslB.h) + hslA.h;
+            if (360 - hslB.h > hslA.h) {
                 hVal = (error / 2) + hslB.h;
             } else {
                 hVal = hslA.h - (error / 2)
