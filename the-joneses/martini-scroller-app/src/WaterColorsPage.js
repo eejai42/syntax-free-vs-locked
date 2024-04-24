@@ -14,7 +14,7 @@ const WaterColorsPage = () => {
         <td colSpan={2} style={{ textAlign: "center" }}>
           {/* Replace SaturationPicker with YCombiner */}
           <YCombiner
-            hide2ndPicker={true} // Hide the right picker
+            hideRightColor={true} // Hide the right picker
             onMixedColorChange={handleColorChange}
             defaultLeftColor="#0000ff"
             defaultRightColor="#4000ff"

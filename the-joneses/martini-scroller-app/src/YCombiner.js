@@ -6,7 +6,7 @@ const YCombiner = ({
     externalColor1,
     externalColor2,
     onMixedColorChange,
-    hide2ndPicker = false,
+    hideRightColor = false,
     defaultLeftColor = '#ff0000',
     defaultRightColor = '#ffff00'
 }) => {
@@ -21,14 +21,14 @@ const YCombiner = ({
             setColor1(externalColor1);
             setHue1(hexToHsl(externalColor1).h);
         }
-        if (externalColor2 && !hide2ndPicker) {
+        if (externalColor2 && !hideRightColor) {
             setColor2(externalColor2);
             setHue2(hexToHsl(externalColor2).h);
         }
-    }, [externalColor1, externalColor2, hide2ndPicker]);
+    }, [externalColor1, externalColor2, hideRightColor]);
 
     // Determine mixed color based on whether the 2nd picker is hidden
-    const mixedColor = hide2ndPicker ? color1 : mixColors(color1, color2);
+    const mixedColor = hideRightColor ? color1 : mixColors(color1, color2);
 
     useEffect(() => {
         if (onMixedColorChange) onMixedColorChange(mixedColor);
@@ -45,7 +45,7 @@ const YCombiner = ({
                             <SaturationPicker hue={hue1} color={color1} onChange={setColor1} onHueChange={setHue1} />
                         )}
                     </td>
-                    <td style={{ display: hide2ndPicker ? 'none' : 'block' }}>
+                    <td style={{ display: hideRightColor ? 'none' : 'block' }}>
                         {externalColor2 ? (
                             <div className="fixedColor" style={{ backgroundColor: color2 }} />
                         ) : (
