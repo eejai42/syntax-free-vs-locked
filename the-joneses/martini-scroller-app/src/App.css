@@ -37,8 +37,21 @@
   }
 }
 
+/* Centering and styling the output bar in YCombiner */
+.outputSpout {
+  width: 1em;
+  height: 5em;
+  margin: auto; /* Center horizontally */
+  background-color: inherit; /* Use the background color set by inline style */
+}
+
+
 .pickerLabel {
   background-color: white;
+  color: black;
+  width: 10em;
+  font-size: 1em;
+  margin: auto;
   border: solid 1px black;
 }
 

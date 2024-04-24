@@ -18,6 +18,8 @@ const WaterColorsPage = () => {
             onMixedColorChange={handleColorChange}
             defaultLeftColor="#0000ff"
             defaultRightColor="#4000ff"
+            leftColorLabel="Airtable"
+            outputColorLabel="Devices.json"
           />
         </td>
       </tr>
@@ -29,6 +31,9 @@ const WaterColorsPage = () => {
             onMixedColorChange={() => {}}
             defaultLeftColor="#FF0000"
             defaultRightColor="#0000ff"
+            leftColorLabel="Arduino.hbars"
+            rightColorLabel="Devices.json"
+            outputColorLabel="Common.h/cpp"
           />
         </td>
         <td>
@@ -38,6 +43,9 @@ const WaterColorsPage = () => {
             onMixedColorChange={() => {}}
             defaultLeftColor="#0000ff"
             defaultRightColor="#bfff00"
+            leftColorLabel="Devices.json"
+            rightColorLabel="README.hbars"
+            outputColorLabel="README.md"
           />
         </td>
       </tr>

@@ -42,7 +42,6 @@ const YCombiner = ({
                 <table>
                     <tr>
                         <td>
-                            <div>{leftColorLabel}</div>
                             {externalColor1 ? (
                                 <div className="fixedColor" style={{ backgroundColor: color1 }} />
                             ) : (
@@ -50,7 +49,6 @@ const YCombiner = ({
                             )}
                         </td>
                         <td style={{ display: hideRightColor ? 'none' : 'block' }}>
-                            <div>{rightColorLabel}</div>
                             {externalColor2 ? (
                                 <div className="fixedColor" style={{ backgroundColor: color2 }} />
                             ) : (
@@ -59,8 +57,8 @@ const YCombiner = ({
                         </td>
                     </tr>
                     <tr><td colSpan={2} style={{ textAlign: 'center' }}>
-                        <div>{outputColorLabel}</div>
-                        <div style={{ backgroundColor: mixedColor, width: '1em', height: '5em', margin: 'auto' }}>Result:</div>
+                        <div class="pickerLabel" >{outputColorLabel}</div>
+                        <div class="outputSpout" style={{ backgroundColor: mixedColor }}>&nbsp;</div>
                     </td></tr>
                 </table>
             </div>
