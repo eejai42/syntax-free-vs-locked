@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import YCombiner from "./YCombiner";
-import SaturationPicker from "./SaturationPicker";
-import { hslToHex, hexToHsl } from "./colorUtils"; // Import if not already
 
 const WaterColorsPage = () => {
   const [outputColor, setOutputColor] = useState("#ff00ff"); // Initial color set to a placeholder
@@ -13,27 +11,33 @@ const WaterColorsPage = () => {
   return (
     <table>
       <tr>
-        <td colSpan={2} style={{ textAlign: "center", paddingLeft: '18em' }}>
-         
-          <SaturationPicker style={{ width: "10em", height: "10em", marginLeft: "5em" }}
-            hue={235}
-            color={outputColor}
-            onChange={handleColorChange}
+        <td colSpan={2} style={{ textAlign: "center" }}>
+          {/* Replace SaturationPicker with YCombiner */}
+          <YCombiner
+            hide2ndPicker={true} // Hide the right picker
+            onMixedColorChange={handleColorChange}
+            defaultLeftColor="#0000ff"
+            defaultRightColor="#4000ff"
           />
         </td>
       </tr>
       <tr>
         <td>
-          {/* Pass the output color from the SaturationPicker to the YCombiners */}
+          {/* Pass the output color from the top YCombiner to this YCombiner */}
           <YCombiner
             externalColor2={outputColor}
             onMixedColorChange={() => {}}
+            defaultLeftColor="#FF0000"
+            defaultRightColor="#0000ff"
           />
         </td>
         <td>
+          {/* Another YCombiner using the output color */}
           <YCombiner
             externalColor1={outputColor}
             onMixedColorChange={() => {}}
+            defaultLeftColor="#0000ff"
+            defaultRightColor="#bfff00"
           />
         </td>
       </tr>
