@@ -12,14 +12,12 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
                                       rightYColorLabel="svc-missing-righty-color-label",
                                       arrowColor = '#FFFFFF',
                                       showArrows = true,
+                                      followAlong = false
                                     }) => {
   const [outputColor, setOutputColor] = useState("#ff00ff"); // Initial color set to a placeholder
 
   const handleColorChange = (color) => {
     if (color === outputColor) return; // Prevent infinite loop
-    else {
-      console.error("Color changed to: ", color, " from ", outputColor);
-    }
     setOutputColor(color);
   };
 
@@ -55,6 +53,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             leftColorLabel={leftYRightColorLabel}
             transpilerLabel={leftYTranspilerLabel}
             outputColorLabel="Common.h/cpp"
+            followAlong={followAlong}
           />
         </td>
         <td>
@@ -67,6 +66,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             rightColorLabel={rightYRightColorLabel}
             transpilerLabel={rightYTranspilerLabel}
             outputColorLabel="README.md"
+            followAlong={followAlong}
           />
         </td>
       </tr>

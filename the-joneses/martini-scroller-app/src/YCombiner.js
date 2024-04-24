@@ -15,9 +15,10 @@ const YCombiner = ({
   outputColorLabel = "missing-output-color-label",
   arrowColor = "missing-arrow-color",
   showArrows = false,
+  followAlong = false, // New property to control behavior
 }) => {
   const [color1, setColor1] = useState(
-externalColor1 || defaultLeftColor || "#ff0000"
+    externalColor1 || defaultLeftColor || "#ff0000"
   );
   const [color2, setColor2] = useState(
     externalColor2 || defaultRightColor || "#ff0000"
@@ -34,15 +35,26 @@ externalColor1 || defaultLeftColor || "#ff0000"
       onMixedColorChange(mixedColor);
     }
 
-    if (externalColor1) {
-          setColor1(externalColor1);
-          setHue1(hexToHsl(externalColor1).h);
-        }
-        if (externalColor2 && !hideRightColor) {
-          setColor2(externalColor2);
-          setHue2(hexToHsl(externalColor2).h);
-        }
-  }, [color1, color2, hideRightColor, onMixedColorChange, externalColor1, externalColor2, hideRightColor]);
+    if (followAlong) {
+      if (externalColor1) {
+        setColor1(externalColor1);
+        setHue1(hexToHsl(externalColor1).h);
+      }
+      if (externalColor2 && !hideRightColor) {
+        setColor2(externalColor2);
+        setHue2(hexToHsl(externalColor2).h);
+      }
+    }
+  }, [
+    color1,
+    color2,
+    hideRightColor,
+    onMixedColorChange,
+    externalColor1,
+    externalColor2,
+    hideRightColor,
+    followAlong,
+  ]);
 
   const [showSecondPicker, setShowSecondPicker] = useState(true); // You can toggle this based on your conditions
 
@@ -69,7 +81,7 @@ externalColor1 || defaultLeftColor || "#ff0000"
               >
                 {externalColor1 ? (
                   <SaturationPicker
-                    hue={hue1}
+                    hue={235}
                     color={color1}
                     onChange={setColor1}
                     onHueChange={setHue1}
@@ -92,7 +104,7 @@ externalColor1 || defaultLeftColor || "#ff0000"
               >
                 {externalColor2 ? (
                   <SaturationPicker
-                    hue={hue2}
+                    hue={235}
                     color={color2}
                     onChange={setColor2}
                     onHueChange={setHue2}
@@ -111,9 +123,11 @@ externalColor1 || defaultLeftColor || "#ff0000"
               </td>
             </tr>
             <tr>
-              <td colSpan={2} style={{ textAlign: "center", width: '22m' }}>
-      
-              <div className="transpilerLabel" ><span className="toolName">{transpilerLabel}</span><div className="arrow">⤵</div></div>
+              <td colSpan={2} style={{ textAlign: "center", width: "22m" }}>
+                <div className="transpilerLabel">
+                  <span className="toolName">{transpilerLabel}</span>
+                  <div className="arrow">⤵</div>
+                </div>
                 <div
                   className="outputSpout"
                   style={{ backgroundColor: mixedColor }}
