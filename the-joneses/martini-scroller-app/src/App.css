@@ -37,6 +37,10 @@
   }
 }
 
+.fixedColor {
+  width: 10em; 
+  height: 10em;
+}
 
 .baseColorPicker {
   min-width: 2em;

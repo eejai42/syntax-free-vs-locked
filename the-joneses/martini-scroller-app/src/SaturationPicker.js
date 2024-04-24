@@ -4,14 +4,7 @@ import { hslToHex, hexToHsl } from "./colorUtils";
 
 const SaturationPicker = ({ hue, color, onChange, onHueChange }) => {
     // set base color picker style with width: '2em', height: '2em'
-    const baseColorPicker = {
-        width: '2em',
-        height: '5em',
-        padding: '1em',
-        margin: '0.5em',
-    };
-
-    const [hsl, setHsl] = useState(() => {
+   const [hsl, setHsl] = useState(() => {
         const initialHsl = hexToHsl(color);
         return { ...initialHsl, h: hue };
     });
