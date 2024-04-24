@@ -40,10 +40,12 @@
 
 .baseColorPicker {
   min-width: 2em;
-  height: 2em;
+  height: 1.5em;
   margin: 0.25em;
-  padding: 0.25em;
+  padding: 0.1em;
   cursor: pointer;
+  color: white;
+  border-radius: 0.5em;
 }
 
 .CharlieCounterBlock {

@@ -39,18 +39,18 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange }) => {
     };
 
     return (
-        <div style={{ position: "relative", width: "20em", height: "20em", margin: "0em" }}>
-            <div style={{ position: "absolute", top: 0, left: 0, width: "10em", height: "10em" }}>
-                <div style={{ position: "relative", width: "20em", height: "20em", margin: "0em", overflow: "hidden" }}>
-                    <div style={{ position: "absolute", top: 0, left: '-4em', backgroundColor: "purple", width: "14.5em", height: "8em", overflow: "hidden" }}>
+        <div style={{ position: "relative", width: "10em", height: "10em", margin: "0.5em", border: 'solid 3px black', backgroundColor: color }}>
+            <div style={{ position: "absolute", top: 0, left: 2, width: "10em", height: "10em" }}>
+                <div style={{ position: "relative", width: "10em", height: "10em", margin: "0em", overflow: "hidden" }}>
+                    <div style={{ position: "absolute", top: 0, left: '-5em', width: "14.5em", height: "8em", overflow: "hidden" }}>
                         <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange} />
                     </div>
                 </div>
             </div>
-            <div style={{position: 'absolute', top: '6em', marginLeft: '1em', marginRight: 'auto', backgroundColor: 'white', padding: '0.5em', display: 'flex', justifyContent: 'space-around'}}>
+            <div style={{position: 'absolute', top: '6em', marginLeft: '0em', marginRight: 'auto', backgroundColor: color, padding: '0.5em', display: 'flex', justifyContent: 'space-around'}}>
                 <div class="baseColorPicker" style={{ backgroundColor: 'red' }} onClick={() => setHue(0)}>Red</div>
                 <div class="baseColorPicker" style={{ backgroundColor: 'blue' }} onClick={() => setHue(230)}>Blue</div>
-                <div class="baseColorPicker" style={{ backgroundColor: 'yellow' }} onClick={() => setHue(60)}>Yellow</div>
+                <div class="baseColorPicker" style={{ backgroundColor: 'yellow', color: 'black' }} onClick={() => setHue(60)}>Yellow</div>
             </div>
         </div>
     );
