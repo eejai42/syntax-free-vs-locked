@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HexColorPicker } from "react-colorful";
 import { hslToHex, hexToHsl } from "./colorUtils";
 
-const SaturationPicker = ({ hue, color, onChange, onHueChange }) => {
+const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors = false }) => {
     // set base color picker style with width: '2em', height: '2em'
    const [hsl, setHsl] = useState(() => {
         const initialHsl = hexToHsl(color);
@@ -40,11 +40,12 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange }) => {
                     </div>
                 </div>
             </div>
-            <div style={{position: 'absolute', top: '6em', marginLeft: '0em', marginRight: 'auto', backgroundColor: color, padding: '0.5em', display: 'flex', justifyContent: 'space-around'}}>
+            {showPrimaryColors ? (
+                <div style={{position: 'absolute', top: '6em', marginLeft: '0em', marginRight: 'auto', backgroundColor: color, padding: '0.5em', display: 'flex', justifyContent: 'space-around'}}>
                 <div class="baseColorPicker" style={{ backgroundColor: 'red' }} onClick={() => setHue(0)}>Red</div>
                 <div class="baseColorPicker" style={{ backgroundColor: 'blue' }} onClick={() => setHue(230)}>Blue</div>
                 <div class="baseColorPicker" style={{ backgroundColor: 'yellow', color: 'black' }} onClick={() => setHue(60)}>Yellow</div>
-            </div>
+            </div>) : null}
         </div>
     );
 };

@@ -14,6 +14,7 @@ const WaterColorsPage = () => {
     <table>
       <tr>
         <td colSpan={2} style={{ textAlign: "center", paddingLeft: '18em' }}>
+         
           <SaturationPicker style={{ width: "10em", height: "10em", marginLeft: "5em" }}
             hue={235}
             color={outputColor}
