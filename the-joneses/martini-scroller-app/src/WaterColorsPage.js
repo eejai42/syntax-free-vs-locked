@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { HexColorPicker } from 'react-colorful';
 import { hslToHex, hexToHsl } from './colorUtils'; // Ensure utilities are imported only once
+import SaturationPicker from './SaturationPicker';
 
 const WaterColorsPage = () => {
     const [color1, setColor1] = useState('#ff0000'); // Default red
     const [color2, setColor2] = useState('#0000ff'); // Default blue
+    const [color3, setColor3] = useState('#0000ff'); // Default blue
     let bla1 = hexToHsl(color1);
     let bla2 = hexToHsl(color2);
     let mixedHslg = hexToHsl('#800080')
@@ -63,8 +65,8 @@ const WaterColorsPage = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', backgroundColor: mixedColor, height: '100vh' }}>
             <div>
-                <HexColorPicker color={color1} onChange={setColor1} />
-                <HexColorPicker color={color2} onChange={setColor2} />
+              <SaturationPicker hue={240} color={color1} onChange={setColor1} />
+              <SaturationPicker hue={0} color={color2} onChange={setColor2} />
             </div>
             <div>
                 <h1 style={{ color: hslToHex(bla1) }}>Color 1: {bla1.h} {bla1.s} {bla1.l}</h1>
@@ -75,7 +77,8 @@ const WaterColorsPage = () => {
                 <h1 style={{ color: '#000' }}>Mixed Color: {mixedColor}</h1>
             </div>
         </div>
-    );
+
+    );    
 };
 
 export default WaterColorsPage;
