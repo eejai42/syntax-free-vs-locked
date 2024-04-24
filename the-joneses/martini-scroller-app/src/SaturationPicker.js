@@ -27,9 +27,9 @@ const SaturationPicker = ({ hue, color, onChange }) => {
     <div
       style={{
         position: "relative",
-        width: "7em",
-        height: "8em",
-        margin: "2em",
+        width: "20em",
+        height: "20em",
+        margin: "0em",
       }}
     >
       <div
@@ -37,18 +37,16 @@ const SaturationPicker = ({ hue, color, onChange }) => {
           position: "absolute",
           top: 0,
           left: 0,
-          backgroundColor: "black",
-          width: "100%",
-          height: "6em",
-          opacity: 1 - hsl.l / 100,
+          width: "10em",
+          height: "10em",
         }}
       >
         <div
           style={{
             position: "relative",
-            width: "200px",
-            height: "6em",
-            margin: "0em",
+            width: "20em",
+            height: "20em",
+              margin: "0em",
             overflow: "hidden",
           }}
         >
@@ -59,11 +57,11 @@ const SaturationPicker = ({ hue, color, onChange }) => {
             style={{
               position: "absolute",
               top: 0,
-              left: -100,
+              left: '-4em',
               backgroundColor: "purple",
-              width: "100%", // Full width of parent
-              height: "100%", // Limit height to top 25%
-              overflow: "hidden",
+              width: "14.5em",
+              height: "8em",
+                  overflow: "hidden",
             }}
           >
             <HexColorPicker
@@ -74,7 +72,7 @@ const SaturationPicker = ({ hue, color, onChange }) => {
         </div>
       </div>
 
-      <div style={{position: 'absolute', top: '6em', backgroundColor: 'white',
+      <div style={{position: 'absolute', top: '6em', marginLeft: '1em', marginRight: 'auto', backgroundColor: 'white',
     padding: '0.5em'}}>This is a test div</div>
     </div>
   );
