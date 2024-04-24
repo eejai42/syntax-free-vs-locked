@@ -37,6 +37,11 @@
   }
 }
 
+.pickerLabel {
+  background-color: white;
+  border: solid 1px black;
+}
+
 .fixedColor {
   width: 10em; 
   height: 10em;

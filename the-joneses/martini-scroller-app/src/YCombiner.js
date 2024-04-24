@@ -8,7 +8,10 @@ const YCombiner = ({
     onMixedColorChange,
     hideRightColor = false,
     defaultLeftColor = '#ff0000',
-    defaultRightColor = '#ffff00'
+    defaultRightColor = '#ffff00',
+    leftColorLabel = '',  // Default label is an empty string
+    rightColorLabel = '',
+    outputColorLabel = ''
 }) => {
     const [color1, setColor1] = useState(externalColor1 || defaultLeftColor);
     const [color2, setColor2] = useState(externalColor2 || defaultRightColor);
@@ -27,7 +30,6 @@ const YCombiner = ({
         }
     }, [externalColor1, externalColor2, hideRightColor]);
 
-    // Determine mixed color based on whether the 2nd picker is hidden
     const mixedColor = hideRightColor ? color1 : mixColors(color1, color2);
 
     useEffect(() => {
@@ -37,25 +39,29 @@ const YCombiner = ({
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1em'}}>
             <div>
-                <table><tr>
-                    <td>
-                        {externalColor1 ? (
-                            <div className="fixedColor" style={{ backgroundColor: color1 }} />
-                        ) : (
-                            <SaturationPicker hue={hue1} color={color1} onChange={setColor1} onHueChange={setHue1} />
-                        )}
-                    </td>
-                    <td style={{ display: hideRightColor ? 'none' : 'block' }}>
-                        {externalColor2 ? (
-                            <div className="fixedColor" style={{ backgroundColor: color2 }} />
-                        ) : (
-                            <SaturationPicker hue={hue2} color={color2} onChange={setColor2} onHueChange={setHue2} />
-                        )}
-                    </td>
-                </tr>
-                <tr><td colSpan={2}>
-                    <div style={{ backgroundColor: mixedColor, height: '5em' }}>Result:</div>
-                </td></tr>
+                <table>
+                    <tr>
+                        <td>
+                            <div>{leftColorLabel}</div>
+                            {externalColor1 ? (
+                                <div className="fixedColor" style={{ backgroundColor: color1 }} />
+                            ) : (
+                                <SaturationPicker hue={hue1} color={color1} onChange={setColor1} onHueChange={setHue1} label={leftColorLabel} />
+                            )}
+                        </td>
+                        <td style={{ display: hideRightColor ? 'none' : 'block' }}>
+                            <div>{rightColorLabel}</div>
+                            {externalColor2 ? (
+                                <div className="fixedColor" style={{ backgroundColor: color2 }} />
+                            ) : (
+                                <SaturationPicker hue={hue2} color={color2} onChange={setColor2} onHueChange={setHue2} label={rightColorLabel} />
+                            )}
+                        </td>
+                    </tr>
+                    <tr><td colSpan={2} style={{ textAlign: 'center' }}>
+                        <div>{outputColorLabel}</div>
+                        <div style={{ backgroundColor: mixedColor, width: '1em', height: '5em', margin: 'auto' }}>Result:</div>
+                    </td></tr>
                 </table>
             </div>
         </div>

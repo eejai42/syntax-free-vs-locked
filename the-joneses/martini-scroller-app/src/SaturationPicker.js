@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HexColorPicker } from "react-colorful";
 import { hslToHex, hexToHsl } from "./colorUtils";
 
-const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors = false }) => {
+const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors = false, label = 'Pick Color' }) => {
     // set base color picker style with width: '2em', height: '2em'
    const [hsl, setHsl] = useState(() => {
         const initialHsl = hexToHsl(color);
@@ -36,6 +36,7 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors
             <div style={{ position: "absolute", top: 0, left: 2, width: "10em", height: "10em" }}>
                 <div style={{ position: "relative", width: "10em", height: "10em", margin: "0em", overflow: "hidden" }}>
                     <div style={{ position: "absolute", top: 0, left: '-5em', width: "14.5em", height: "8em", overflow: "hidden" }}>
+                        <div class="pickerLabel">{label}</div>
                         <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange} />
                     </div>
                 </div>
