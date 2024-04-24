@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import DemoPage from './DemoPage';
 import ScriptPage from './ScriptPage';
-import SyntaxFreePage from './SyntaxFreePage';
+import WaterColorsPage from './WaterColorsPage';
 
 const App = () => {
   const [data, setData] = useState(null);
@@ -41,8 +41,8 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/syntax-free"  element={<SyntaxFreePage />} />
-        <Route path="/syntax-locked"  element={<SyntaxFreePage />} />
+        <Route path="/syntax-locked"  element={<WaterColorsPage />} />
+        <Route path="/syntax-free"  element={<WaterColorsPage  />} />
         <Route path="/demo" element={<DemoPage data={data} />} />
         <Route path="/script" element={<ScriptPage chapters={data.story.chapters} />} />
       </Routes>

@@ -34,7 +34,7 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors
     return (
         <div style={{ position: "relative", width: "10em", height: "11em", margin: "0.5em", border: 'solid 3px black', backgroundColor: color, borderRadius: '0.45em' }}>
             <div style={{ position: "absolute", top: 0, left: 2, width: "10em", height: "10em" }}>
-                <div class="pickerLabel">{label}</div>
+                <div className="pickerLabel">{label}</div>
                 <div style={{ position: "relative", width: "10em", height: "10em", margin: "0em", overflow: "hidden" }}>
                     <div style={{ position: "absolute", top: 0, left: '-5em', width: "14.5em", height: "8em", overflow: "hidden" }}>
                         <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange} />
@@ -43,9 +43,9 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors
             </div>
             {showPrimaryColors ? (
                 <div style={{position: 'absolute', top: '6em', marginLeft: '0em', marginRight: 'auto', backgroundColor: color, padding: '0.5em', display: 'flex', justifyContent: 'space-around'}}>
-                <div class="baseColorPicker" style={{ backgroundColor: 'red' }} onClick={() => setHue(0)}>Red</div>
-                <div class="baseColorPicker" style={{ backgroundColor: 'blue' }} onClick={() => setHue(230)}>Blue</div>
-                <div class="baseColorPicker" style={{ backgroundColor: 'yellow', color: 'black' }} onClick={() => setHue(60)}>Yellow</div>
+                <div className="baseColorPicker" style={{ backgroundColor: 'red' }} onClick={() => setHue(0)}>Red</div>
+                <div className="baseColorPicker" style={{ backgroundColor: 'blue' }} onClick={() => setHue(230)}>Blue</div>
+                <div className="baseColorPicker" style={{ backgroundColor: 'yellow', color: 'black' }} onClick={() => setHue(60)}>Yellow</div>
             </div>) : null}
         </div>
     );

@@ -232,9 +232,9 @@ const VariationCoordinator = ({
           const regex = new RegExp(name, "gi");
           text = text.replace(regex, (match) => {
             if (keywordData.isStale) {
-              return `<span class="staleKeyword">${match}</span>`;
+              return `<span className="staleKeyword">${match}</span>`;
             } else {
-              return `<span class="highlightedKeyword">${match}</span>`;
+              return `<span className="highlightedKeyword">${match}</span>`;
             }
           });
         });
