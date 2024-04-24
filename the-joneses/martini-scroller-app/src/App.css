@@ -96,12 +96,28 @@
 /* Centering and styling the output bar in YCombiner */
 .outputSpout {
   padding-top: 0.5em;
-  width: 10em;
+  width: 13em;
   height: 3.5em;
   border-radius: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   margin: auto; /* Center horizontally */
   background-color: inherit; /* Use the background color set by inline style */
 }
+
+.arrow {
+  color: blue; 
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.arrow .white {
+  color: rgb(255, 255, 255); 
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
 
 .transpilerLabel {
   background-color: white;
@@ -110,7 +126,9 @@
   font-size: 1em;
   font-family: monospace;
   margin: auto;
-  border: solid 1px black;
+  margin-top: 0.15em;
+  border: solid 1px rgb(179, 190, 216);
+  border-radius: 2.5em;
   margin-bottom: 0.5em
 }
 

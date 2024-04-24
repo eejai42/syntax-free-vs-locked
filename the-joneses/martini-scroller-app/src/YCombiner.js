@@ -12,7 +12,9 @@ const YCombiner = ({
     leftColorLabel = '',  // Default label is an empty string
     rightColorLabel = '',
     transpilerLabel = 'this-to-that',
-    outputColorLabel = ''
+    outputColorLabel = '',
+    arrowColor = null,
+    showArrows = false,
 }) => {
     const [color1, setColor1] = useState(externalColor1 || defaultLeftColor);
     const [color2, setColor2] = useState(externalColor2 || defaultRightColor);
@@ -45,7 +47,7 @@ const YCombiner = ({
             <div>
                 <table style={{width: '25em'}}>
                     <tr>
-                        <td valign='top' colspan={hideRightColor ? 2 : 1} style={{textAlign: 'center'}}>
+                        <td valign='top' colspan={hideRightColor ? 2 : 1} style={{textAlign: 'center', paddingLeft: (hideRightColor ? '28%' : '0')}}>
                             {externalColor1 ? (
                                 <SaturationPicker hue={hue1} color={color1} onChange={setColor1} onHueChange={setHue1} label={leftColorLabel} />
                             ) : (
@@ -63,9 +65,13 @@ const YCombiner = ({
                         </td>
                     </tr>
                     <tr><td colSpan={2} style={{ textAlign: 'center' }}>
-                        <div class="transpilerLabel" >&gt;ssotme <span class="toolName">{transpilerLabel}</span><div style={{color: 'blue', fontSize: '2em', marginTop: '0.5em'}}>⤵</div></div>
+                        <div class="transpilerLabel" >&gt;ssotme <span class="toolName">{transpilerLabel}</span><div className="arrow">⤵</div></div>
                         
                         <div class="outputSpout" style={{ backgroundColor: mixedColor }}>
+                          {showArrows ? <div className="arrow"  style={{float: 'left', color: arrowColor, marginLeft: '-0.5em'}}>↙</div> : null}
+                          {showArrows ? <div className="arrow" style={{float:'right', color: arrowColor, marginLeft: '-1em'}} >↘</div> : null}
+                            
+                            
                             <div class="pickerLabel" >{outputColorLabel}</div>
                         </div>
                             <div style={{clear: 'both'}}></div>

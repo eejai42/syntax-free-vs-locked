@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import YCombiner from "./YCombiner";
 
-const WaterColorsPage = () => {
+const SyntaxFreePage = () => {
   const [outputColor, setOutputColor] = useState("#ff00ff"); // Initial color set to a placeholder
 
   const handleColorChange = (color) => {
@@ -21,6 +21,8 @@ const WaterColorsPage = () => {
             leftColorLabel="Airtable"
             outputColorLabel="Devices.json"
             transpilerLabel="airtable-to-json"
+            arrowColor={"#ffffff"}
+            showArrows={true}
           />
         </td>
       </tr>
@@ -56,4 +58,4 @@ const WaterColorsPage = () => {
   );
 };
 
-export default WaterColorsPage;
+export default SyntaxFreePage;
