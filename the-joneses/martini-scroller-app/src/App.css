@@ -37,6 +37,15 @@
   }
 }
 
+
+.baseColorPicker {
+  min-width: 2em;
+  height: 2em;
+  margin: 0.25em;
+  padding: 0.25em;
+  cursor: pointer;
+}
+
 .CharlieCounterBlock {
   position: relative;
   white-space: nowrap;

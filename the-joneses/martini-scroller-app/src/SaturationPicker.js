@@ -1,81 +1,59 @@
 import React, { useState, useEffect } from "react";
 import { HexColorPicker } from "react-colorful";
-import { hslToHex, hexToHsl } from "./colorUtils"; // Assuming these utilities are correctly implemented
+import { hslToHex, hexToHsl } from "./colorUtils";
 
-const SaturationPicker = ({ hue, color, onChange }) => {
-  // Convert initial color to HSL, then override the hue
-  const [hsl, setHsl] = useState(() => {
-    const initialHsl = hexToHsl(color);
-    return { ...initialHsl, h: hue };
-  });
+const SaturationPicker = ({ hue, color, onChange, onHueChange }) => {
+    // set base color picker style with width: '2em', height: '2em'
+    const baseColorPicker = {
+        width: '2em',
+        height: '5em',
+        padding: '1em',
+        margin: '0.5em',
+    };
 
-  // When the component receives a new color prop, update the HSL state but force the hue
-  useEffect(() => {
-    const newHsl = hexToHsl(color);
-    setHsl({ h: hue, s: newHsl.s, l: newHsl.l });
-  }, [color, hue]);
+    const [hsl, setHsl] = useState(() => {
+        const initialHsl = hexToHsl(color);
+        return { ...initialHsl, h: hue };
+    });
 
-  // Handle changes from the HexColorPicker
-  const handleColorChange = (newColor) => {
-    const newHsl = hexToHsl(newColor);
-    const updatedHsl = { h: hue, s: newHsl.s, l: newHsl.l };
-    setHsl(updatedHsl); // Update local HSL state
-    onChange(hslToHex(hue, updatedHsl.s, updatedHsl.l)); // Convert back to hex and call parent onChange
-  };
+    useEffect(() => {
+        const newHsl = hexToHsl(color);
+        setHsl({ h: hue, s: newHsl.s, l: newHsl.l });
+    }, [color, hue]);
 
-  return (
-    <div
-      style={{
-        position: "relative",
-        width: "20em",
-        height: "20em",
-        margin: "0em",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "10em",
-          height: "10em",
-        }}
-      >
-        <div
-          style={{
-            position: "relative",
-            width: "20em",
-            height: "20em",
-              margin: "0em",
-            overflow: "hidden",
-          }}
-        >
-          {/* <div style={{position: 'absolute', top: 0, left: 0, backgroundColor: 'black', width: '100%', height: '100%', opacity: 1 - hsl.l / 100}}>
-            this is a test
-        </div> */}
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: '-4em',
-              backgroundColor: "purple",
-              width: "14.5em",
-              height: "8em",
-                  overflow: "hidden",
-            }}
-          >
-            <HexColorPicker
-              color={hslToHex(hue, hsl.s, hsl.l)}
-              onChange={handleColorChange}
-            />
-          </div>
+    useEffect(() => {
+        setHsl(prevHsl => ({ ...prevHsl, h: hue }));
+        onChange(hslToHex(hue, hsl.s, hsl.l));  // Ensure external changes are also pushed up
+    }, [hue, onChange, hsl.s, hsl.l]);
+
+    const handleColorChange = (newColor) => {
+        const newHsl = hexToHsl(newColor);
+        setHsl({ ...newHsl, h: hue });  // Maintain the new hue locally
+        onChange(hslToHex(hue, newHsl.s, newHsl.l));
+    };
+
+    const setHue = (newHue) => {
+        setHsl(prevHsl => ({ ...prevHsl, h: newHue }));
+        onChange(hslToHex(newHue, hsl.s, hsl.l));
+        onHueChange(newHue);  // Notify the parent component of the hue change
+    };
+
+    return (
+        <div style={{ position: "relative", width: "20em", height: "20em", margin: "0em" }}>
+            <div style={{ position: "absolute", top: 0, left: 0, width: "10em", height: "10em" }}>
+                <div style={{ position: "relative", width: "20em", height: "20em", margin: "0em", overflow: "hidden" }}>
+                    <div style={{ position: "absolute", top: 0, left: '-4em', backgroundColor: "purple", width: "14.5em", height: "8em", overflow: "hidden" }}>
+                        <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange} />
+                    </div>
+                </div>
+            </div>
+            <div style={{position: 'absolute', top: '6em', marginLeft: '1em', marginRight: 'auto', backgroundColor: 'white', padding: '0.5em', display: 'flex', justifyContent: 'space-around'}}>
+                <div class="baseColorPicker" style={{ backgroundColor: 'red' }} onClick={() => setHue(0)}>Red</div>
+                <div class="baseColorPicker" style={{ backgroundColor: 'blue' }} onClick={() => setHue(230)}>Blue</div>
+                <div class="baseColorPicker" style={{ backgroundColor: 'yellow' }} onClick={() => setHue(60)}>Yellow</div>
+            </div>
         </div>
-      </div>
-
-      <div style={{position: 'absolute', top: '6em', marginLeft: '1em', marginRight: 'auto', backgroundColor: 'white',
-    padding: '0.5em'}}>This is a test div</div>
-    </div>
-  );
+    );
 };
 
 export default SaturationPicker;
