@@ -28,9 +28,8 @@ const SaturationPicker = ({ hue, color, onChange }) => {
       style={{
         position: "relative",
         width: "7em",
-        height: "10em",
-        margin: "1em",
-        overflow: "hidden",
+        height: "8em",
+        margin: "2em",
       }}
     >
       <div
@@ -74,6 +73,9 @@ const SaturationPicker = ({ hue, color, onChange }) => {
           </div>
         </div>
       </div>
+
+      <div style={{position: 'absolute', top: '6em', backgroundColor: 'white',
+    padding: '0.5em'}}>This is a test div</div>
     </div>
   );
 };
