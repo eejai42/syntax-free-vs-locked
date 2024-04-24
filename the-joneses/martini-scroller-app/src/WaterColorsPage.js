@@ -9,7 +9,7 @@ const WaterColorsPage = () => {
   };
 
   return (
-    <table>
+    <table class="yCombinerCanvas">
       <tr>
         <td colSpan={2} style={{ textAlign: "center" }}>
           {/* Replace SaturationPicker with YCombiner */}

@@ -37,16 +37,43 @@
   }
 }
 
+.yCombinerCanvas {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  border: solid 1px black;
+
+}
+
+/* y combiner specific table handling */
+.hide {
+  display: none;
+}
+
+.table-cell {
+  width: 25em;
+  vertical-align: top;
+  text-align: center;
+}
+
+
+.output-row td {
+  text-align: center;
+}
+
+
 .outputLabel {
   background-color: white;
   color: black;
-  width: 15em;
-  font-size: 1em;
+  font-weight: bold;
+  font-size: 0.8em;
   margin: auto;
+  margin-top: 0.5em;
 }
 
 .toolName {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 
@@ -56,16 +83,22 @@
   color: black;
   width: 85%;
   font-size: 1em;
+  font-weight: bold;
   margin: auto;
   margin-right: 1em;
   text-align: center;
-  border: solid 1px black;
+  text-decoration: underline;
+  border-radius: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* Centering and styling the output bar in YCombiner */
 .outputSpout {
-  width: 3em;
-  height: 5em;
+  padding-top: 0.5em;
+  width: 10em;
+  height: 3.5em;
+  border-radius: 1em;
   margin: auto; /* Center horizontally */
   background-color: inherit; /* Use the background color set by inline style */
 }
@@ -73,11 +106,12 @@
 .transpilerLabel {
   background-color: white;
   color: black;
-  width: 20em;
+  width: 100%;
   font-size: 1em;
   font-family: monospace;
   margin: auto;
   border: solid 1px black;
+  margin-bottom: 0.5em
 }
 
 .fixedColor {

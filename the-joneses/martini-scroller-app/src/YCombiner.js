@@ -37,17 +37,21 @@ const YCombiner = ({
         if (onMixedColorChange) onMixedColorChange(mixedColor);
     }, [mixedColor, onMixedColorChange]);
 
+    const [showSecondPicker, setShowSecondPicker] = useState(true); // You can toggle this based on your conditions
+
+    
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1em'}}>
             <div>
-                <table>
+                <table style={{width: '25em'}}>
                     <tr>
-                        <td valign='top'>
+                        <td valign='top' colspan={hideRightColor ? 2 : 1} style={{textAlign: 'center'}}>
                             {externalColor1 ? (
                                 <SaturationPicker hue={hue1} color={color1} onChange={setColor1} onHueChange={setHue1} label={leftColorLabel} />
                             ) : (
                                 <SaturationPicker hue={hue1} color={color1} onChange={setColor1} onHueChange={setHue1} label={leftColorLabel} />
                             )}
+                            <div style={{clear: 'both'}}></div>
                         </td>
                         <td style={{ display: hideRightColor ? 'none' : 'block' }} valign='top'>
                             {externalColor2 ? (
@@ -55,12 +59,16 @@ const YCombiner = ({
                             ) : (
                                 <SaturationPicker hue={hue2} color={color2} onChange={setColor2} onHueChange={setHue2} label={rightColorLabel} />
                             )}
+                            <div style={{clear: 'both'}}></div>
                         </td>
                     </tr>
                     <tr><td colSpan={2} style={{ textAlign: 'center' }}>
-                        <div class="transpilerLabel" >&gt;ssotme <span class="toolName">{transpilerLabel}</span> ...</div>
-                        <div class="outputLabel" >--&gt; <span class="outputLabel">{outputColorLabel}</span> --&gt;</div>
-                        <div class="outputSpout" style={{ backgroundColor: mixedColor }}>&nbsp;</div>
+                        <div class="transpilerLabel" >&gt;ssotme <span class="toolName">{transpilerLabel}</span><div style={{color: 'blue', fontSize: '2em', marginTop: '0.5em'}}>⤵</div></div>
+                        
+                        <div class="outputSpout" style={{ backgroundColor: mixedColor }}>
+                            <div class="pickerLabel" >{outputColorLabel}</div>
+                        </div>
+                            <div style={{clear: 'both'}}></div>
                     </td></tr>
                 </table>
             </div>

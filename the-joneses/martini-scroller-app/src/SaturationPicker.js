@@ -32,7 +32,7 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors
     };
 
     return (
-        <div style={{ position: "relative", width: "10em", height: "10em", margin: "0.5em", border: 'solid 3px black', backgroundColor: color }}>
+        <div style={{ position: "relative", width: "10em", height: "11em", margin: "0.5em", border: 'solid 3px black', backgroundColor: color }}>
             <div style={{ position: "absolute", top: 0, left: 2, width: "10em", height: "10em" }}>
                 <div class="pickerLabel">{label}</div>
                 <div style={{ position: "relative", width: "10em", height: "10em", margin: "0em", overflow: "hidden" }}>
