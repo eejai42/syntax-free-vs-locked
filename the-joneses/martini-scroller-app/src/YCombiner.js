@@ -42,16 +42,16 @@ const YCombiner = ({
             <div>
                 <table>
                     <tr>
-                        <td>
+                        <td valign='top'>
                             {externalColor1 ? (
-                                <div className="fixedColor" style={{ backgroundColor: color1 }} />
+                                <SaturationPicker hue={hue1} color={color1} onChange={setColor1} onHueChange={setHue1} label={leftColorLabel} />
                             ) : (
                                 <SaturationPicker hue={hue1} color={color1} onChange={setColor1} onHueChange={setHue1} label={leftColorLabel} />
                             )}
                         </td>
-                        <td style={{ display: hideRightColor ? 'none' : 'block' }}>
+                        <td style={{ display: hideRightColor ? 'none' : 'block' }} valign='top'>
                             {externalColor2 ? (
-                                <div className="fixedColor" style={{ backgroundColor: color2 }} />
+                                <SaturationPicker hue={hue2} color={color2} onChange={setColor2} onHueChange={setHue2} label={rightColorLabel} />
                             ) : (
                                 <SaturationPicker hue={hue2} color={color2} onChange={setColor2} onHueChange={setHue2} label={rightColorLabel} />
                             )}
@@ -59,7 +59,7 @@ const YCombiner = ({
                     </tr>
                     <tr><td colSpan={2} style={{ textAlign: 'center' }}>
                         <div class="transpilerLabel" >&gt;ssotme <span class="toolName">{transpilerLabel}</span> ...</div>
-                        <div class="pickerLabel" >-output <span class="outputLabel">{outputColorLabel}</span></div>
+                        <div class="outputLabel" >--&gt; <span class="outputLabel">{outputColorLabel}</span> --&gt;</div>
                         <div class="outputSpout" style={{ backgroundColor: mixedColor }}>&nbsp;</div>
                     </td></tr>
                 </table>

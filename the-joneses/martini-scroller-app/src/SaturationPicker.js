@@ -34,7 +34,7 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors
     return (
         <div style={{ position: "relative", width: "10em", height: "10em", margin: "0.5em", border: 'solid 3px black', backgroundColor: color }}>
             <div style={{ position: "absolute", top: 0, left: 2, width: "10em", height: "10em" }}>
-            <div class="pickerLabel">{label}</div>
+                <div class="pickerLabel">{label}</div>
                 <div style={{ position: "relative", width: "10em", height: "10em", margin: "0em", overflow: "hidden" }}>
                     <div style={{ position: "absolute", top: 0, left: '-5em', width: "14.5em", height: "8em", overflow: "hidden" }}>
                         <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange} />
