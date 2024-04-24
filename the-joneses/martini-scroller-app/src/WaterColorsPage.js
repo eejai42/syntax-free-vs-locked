@@ -1,18 +1,43 @@
-import React, { useState } from 'react';
-import YCombiner from './YCombiner';
+import React, { useState } from "react";
+import YCombiner from "./YCombiner";
+import SaturationPicker from "./SaturationPicker";
+import { hslToHex, hexToHsl } from "./colorUtils"; // Import if not already
 
 const WaterColorsPage = () => {
-    const [outputColor1, setOutputColor1] = useState(null); // Holds the output of the first YCombiner
+  const [outputColor, setOutputColor] = useState("#ff00ff"); // Initial color set to a placeholder
 
-    return (
-        <div>
-            <YCombiner onMixedColorChange={setOutputColor1} />
-            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                <YCombiner externalColor2={outputColor1} onMixedColorChange={() => {}} />
-                <YCombiner externalColor1={outputColor1} onMixedColorChange={() => {}} />
-            </div>
-        </div>
-    );
+  const handleColorChange = (color) => {
+    setOutputColor(color);
+  };
+
+  return (
+    <table>
+      <tr>
+        <td colSpan={2} style={{ textAlign: "center" }}>
+          <SaturationPicker
+            hue={235}
+            color={outputColor}
+            onChange={handleColorChange}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          {/* Pass the output color from the SaturationPicker to the YCombiners */}
+          <YCombiner
+            externalColor2={outputColor}
+            onMixedColorChange={() => {}}
+          />
+        </td>
+        <td>
+          <YCombiner
+            externalColor1={outputColor}
+            onMixedColorChange={() => {}}
+          />
+        </td>
+      </tr>
+    </table>
+  );
 };
 
 export default WaterColorsPage;
