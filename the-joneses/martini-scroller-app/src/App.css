@@ -37,6 +37,16 @@
   }
 }
 
+.outputLabel {
+  font-weight: bold;
+
+}
+
+.toolName {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 /* Centering and styling the output bar in YCombiner */
 .outputSpout {
   width: 1em;
@@ -44,6 +54,17 @@
   margin: auto; /* Center horizontally */
   background-color: inherit; /* Use the background color set by inline style */
 }
+
+.transpilerLabel {
+  background-color: white;
+  color: black;
+  width: 20em;
+  font-size: 1em;
+  font-family: monospace;
+  margin: auto;
+  border: solid 1px black;
+}
+
 
 
 .pickerLabel {

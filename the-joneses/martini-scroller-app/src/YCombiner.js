@@ -11,6 +11,7 @@ const YCombiner = ({
     defaultRightColor = '#ffff00',
     leftColorLabel = '',  // Default label is an empty string
     rightColorLabel = '',
+    transpilerLabel = 'this-to-that',
     outputColorLabel = ''
 }) => {
     const [color1, setColor1] = useState(externalColor1 || defaultLeftColor);
@@ -57,7 +58,8 @@ const YCombiner = ({
                         </td>
                     </tr>
                     <tr><td colSpan={2} style={{ textAlign: 'center' }}>
-                        <div class="pickerLabel" >{outputColorLabel}</div>
+                        <div class="transpilerLabel" >&gt;ssotme <span class="toolName">{transpilerLabel}</span> ...</div>
+                        <div class="pickerLabel" >-output <span class="outputLabel">{outputColorLabel}</span></div>
                         <div class="outputSpout" style={{ backgroundColor: mixedColor }}>&nbsp;</div>
                     </td></tr>
                 </table>

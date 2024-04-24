@@ -20,6 +20,7 @@ const WaterColorsPage = () => {
             defaultRightColor="#4000ff"
             leftColorLabel="Airtable"
             outputColorLabel="Devices.json"
+            transpilerLabel="airtable-to-json"
           />
         </td>
       </tr>
@@ -33,6 +34,7 @@ const WaterColorsPage = () => {
             defaultRightColor="#0000ff"
             leftColorLabel="Arduino.hbars"
             rightColorLabel="Devices.json"
+            transpilerLabel="json-hbars-transform"
             outputColorLabel="Common.h/cpp"
           />
         </td>
@@ -44,6 +46,7 @@ const WaterColorsPage = () => {
             defaultLeftColor="#0000ff"
             defaultRightColor="#bfff00"
             leftColorLabel="Devices.json"
+            transpilerLabel="json-hbars-transform"
             rightColorLabel="README.hbars"
             outputColorLabel="README.md"
           />
