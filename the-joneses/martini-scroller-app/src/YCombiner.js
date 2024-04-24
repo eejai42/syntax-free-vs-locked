@@ -8,7 +8,7 @@ const YCombiner = ({
   onMixedColorChange,
   hideRightColor = false,
   defaultLeftColor = "#ff0000",
-  defaultRightColor = "#ffff00",
+  defaultRightColor = "#bfff00",
   leftColorLabel = "missing-left-color-label", // Default label is an empty string
   rightColorLabel = "missing-right-color-label",
   transpilerLabel = "this-to-that",
@@ -16,6 +16,13 @@ const YCombiner = ({
   arrowColor = "missing-arrow-color",
   showArrows = false,
   followAlong = false, // New property to control behavior
+  topLeftPreset1,
+  topLeftPreset2,
+  topLeftPreset3,
+  topRightPreset1,
+  topRightPreset2,
+  topRightPreset3,
+  alignment = "flex-start",
 }) => {
   const [color1, setColor1] = useState(
     externalColor1 || defaultLeftColor || "#ff0000"
@@ -56,15 +63,13 @@ const YCombiner = ({
     followAlong,
   ]);
 
-  const [showSecondPicker, setShowSecondPicker] = useState(true); // You can toggle this based on your conditions
-
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        padding: "1em",
+        alignItems: alignment,
+        padding: "1em"
       }}
     >
       <div>
@@ -86,6 +91,9 @@ const YCombiner = ({
                     onChange={setColor1}
                     onHueChange={setHue1}
                     label={leftColorLabel}
+                    preset1={topLeftPreset1}
+                    preset2={topLeftPreset2}
+                    preset3={topLeftPreset3}
                   />
                 ) : (
                   <SaturationPicker
@@ -94,6 +102,9 @@ const YCombiner = ({
                     onChange={setColor1}
                     onHueChange={setHue1}
                     label={leftColorLabel}
+                    preset1={topLeftPreset1}
+                    preset2={topLeftPreset2}
+                    preset3={topLeftPreset3}
                   />
                 )}
                 <div style={{ clear: "both" }}></div>
@@ -109,6 +120,11 @@ const YCombiner = ({
                     onChange={setColor2}
                     onHueChange={setHue2}
                     label={rightColorLabel}
+                    preset1={topRightPreset1}
+                    preset2={topRightPreset2}
+                    preset3={topRightPreset3}
+                    presetsOnRight={true}
+
                   />
                 ) : (
                   <SaturationPicker
@@ -117,6 +133,10 @@ const YCombiner = ({
                     onChange={setColor2}
                     onHueChange={setHue2}
                     label={rightColorLabel}
+                    preset1={topRightPreset1}
+                    preset2={topRightPreset2}
+                    preset3={topRightPreset3}
+                    presetsOnRight={true}
                   />
                 )}
                 <div style={{ clear: "both" }}></div>

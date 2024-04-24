@@ -37,6 +37,30 @@
   }
 }
 
+
+.presetBtnContainer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 10em;
+  flex-direction: column;
+}
+
+/* CSS to show buttons when the outer div is hovered */
+.outerHoverDiv:hover .presetBtnContainer {
+  display: flex;
+}
+
+.presetBtn {
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5em;
+  width: 10em;
+  margin: 0.5em;
+  cursor: pointer;
+
+}
+
 .yCombinerCanvas {
   width: 100%;
   height: 100%;

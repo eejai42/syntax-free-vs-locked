@@ -11,7 +11,7 @@ const WaterColorsPage = () => {
   const routeType = location.pathname.includes("/syntax-locked") ? "locked" : "free";
 
   return (
-    <div>
+    <div style={{fontSize: '1.2em', minWidth: '80em', maxWidth: '80em'}}>
       {routeType === "locked" ? (
         <div>
           <div style={{float: 'right'}}><a href="/#/syntax-free">Syntax Free</a></div>
@@ -22,11 +22,10 @@ const WaterColorsPage = () => {
           outputLabelName="Natural Language"
           leftYTranspilerLabel="🧠 C++ Dev"
           rightYTranspilerLabel="🧠 Markdown Dev"
-          leftYColorLabel="User Stories"
-          leftYRightColorLabel="C++"
+          leftYColorLabel="C++"
+          leftYRightColorLabel="User Stories"
           rightYColorLabel="Dev Ops"
           rightYRightColorLabel="Markdown"
-          rightYRightTranspilerLabel="rc r colo"
           />
         </div>
         ) : (
@@ -36,7 +35,7 @@ const WaterColorsPage = () => {
         <SyntaxVisualizationComponent  key='2'
           topLeftColorLabel="Requirements"
           topTranspilerLabel=">ssotme airtable-to-json"
-          outputLabelName="Spreadsheet"
+          outputLabelName="Airtable"
           leftYTranspilerLabel=">ssotme json-hbars-transform"
           rightYTranspilerLabel=">ssotme json-hbars-transform"
           leftYColorLabel="Devices.json"
