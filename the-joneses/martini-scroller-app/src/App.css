@@ -132,24 +132,37 @@
 .arrow {
   color: blue; 
   font-size: 1.6em;
+  margin-bottom: -0.5em;
   font-weight: bold;
-  margin-top: 0.5em;
 }
 
 .arrow .white {
   color: rgb(255, 255, 255); 
   font-size: 2em;
-  margin-top: 0.5em;
 }
 
+.derivedLabel {
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  font-family: monospace;
+  margin: auto;
+  margin-top: 0.15em;
+  border: solid 1px rgb(179, 190, 216);
+  margin-bottom: 0.5em;
+  margin-left: 9em;
+}
 
 .transpilerLabel {
   background-color: white;
   color: black;
   width: 100%;
-  font-size: 1em;
+  font-size: 1.6em;
+  font-weight: bold;
   font-family: monospace;
   margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
   margin-top: 0.15em;
   border: solid 1px rgb(179, 190, 216);
   border-radius: 2.5em;

@@ -11,14 +11,14 @@ const WaterColorsPage = () => {
   const routeType = location.pathname.includes("/syntax-locked") ? "locked" : "free";
 
   return (
-    <div style={{fontSize: '1.2em', minWidth: '80em', maxWidth: '80em'}}>
+    <div style={{fontSize: '1.2em', minWidth: '75em', maxWidth: '75em', margin: '1em'}}>
       {routeType === "locked" ? (
         <div>
           <div style={{float: 'right'}}><a href="/#/syntax-free">Syntax Free</a></div>
         <h1>Syntax Locked</h1>
         <SyntaxVisualizationComponent key='1'
           topLeftColorLabel="Requirements"
-          topTranspilerLabel="🧠 Project Manager / Stakeholder"
+          topTranspilerLabel="🧠 Project Manager"
           outputLabelName="Natural Language"
           leftYTranspilerLabel="🧠 C++ Dev"
           rightYTranspilerLabel="🧠 Markdown Dev"
@@ -38,9 +38,9 @@ const WaterColorsPage = () => {
           outputLabelName="Airtable"
           leftYTranspilerLabel=">ssotme json-hbars-transform"
           rightYTranspilerLabel=">ssotme json-hbars-transform"
-          leftYColorLabel="Devices.json"
+          leftYColorLabel="Arduino.hbars"
+          leftYRightColorLabel="Devices.json"
           rightYColorLabel="Devices.json"
-          leftYRightColorLabel="Arduino.hbars"
           rightYRightColorLabel="README.hbars"
           followAlong={true}
          />

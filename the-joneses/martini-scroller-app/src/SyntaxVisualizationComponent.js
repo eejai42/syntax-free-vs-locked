@@ -38,8 +38,8 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             transpilerLabel={topTranspilerLabel}
             arrowColor={arrowColor}
             showArrows={showArrows}
-            topLeftPreset1="MC3K"
-            topLeftPreset2="MC3K Stop Btn"
+            topLeftPreset1="Requirements v1"
+            topLeftPreset2="Requirements v2"
             topLeftPreset3="Grg Dr Opener"
             alignment="center"
           />
@@ -48,7 +48,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
       <tr>
         <td  style={{borderRight: 'solid 3px black'}}>
           {/* Pass the output color from the top YCombiner to this YCombiner */}
-          <YCombiner key="bottomLeft"   style={{marginLeft: '-5em'}}
+          <YCombiner key="bottomLeft"   style={{backgroundColor: 'red', paddingLeft: '5em'}}
             externalColor2={outputColor}
             onMixedColorChange={() => {}}
             // link the leftColor , as a string, to the defaultLeftColor prop

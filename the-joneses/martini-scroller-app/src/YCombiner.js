@@ -73,7 +73,11 @@ const YCombiner = ({
       }}
     >
       <div>
-        <table style={{ width: "25em" }}>
+      <div className="transpilerLabel">
+                  <span className="toolName">{transpilerLabel}</span>
+                </div>
+
+        <table style={{ width: "25em", float: alignment == 'flex-end' ? 'right' : 'none' }}>
           <tbody>
             <tr>
               <td
@@ -144,8 +148,7 @@ const YCombiner = ({
             </tr>
             <tr>
               <td colSpan={2} style={{ textAlign: "center", width: "22m" }}>
-                <div className="transpilerLabel">
-                  <span className="toolName">{transpilerLabel}</span>
+                <div className="derivedLabel" style={{width: '6em'}}>
                   <div className="arrow">⤵</div>
                 </div>
                 <div
