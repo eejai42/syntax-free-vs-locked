@@ -34,6 +34,8 @@ const YCombiner = ({
   const [hue1, setHue1] = useState(hexToHsl(color1).h);
   const [hue2, setHue2] = useState(hexToHsl(color2).h);
 
+  const [currentPreset, setCurrentPreset] = useState(null);
+
   const mixedColor = hideRightColor ? color1 : mixColors(color1, color2);
 
   useEffect(() => {
@@ -73,52 +75,18 @@ const YCombiner = ({
       }}
     >
       <div>
-      <div className="transpilerLabel">
-                  <span className="toolName">{transpilerLabel}</span>
-                </div>
-
         <table style={{ width: "25em", float: alignment == 'flex-end' ? 'right' : 'none' }}>
           <tbody>
-          {hideRightColor ? null : (
-          <tr>
-              <td colSpan={2} style={{ textAlign: "center", width: "22m" }}>
-                <div
-                  className="outputSpout"
-                  style={{ backgroundColor: mixedColor }}
-                >
-                  {showArrows ? (
-                    <div
-                      className="arrow"
-                      style={{
-                        float: "left",
-                        color: arrowColor,
-                        marginLeft: "-0.5em",
-                      }}
-                    >
-                      ↙
-                    </div>
-                  ) : null}
-                  {showArrows ? (
-                    <div
-                      className="arrow"
-                      style={{
-                        float: "right",
-                        color: arrowColor,
-                        marginLeft: "-1em",
-                      }}
-                    >
-                      ↘
-                    </div>
-                  ) : null}
-                  <div className="pickerLabel">{outputColorLabel}</div>
-                </div>
-                <div className="derivedLabel" style={{width: '6em'}}>
-                  <div className="arrow">↗&nbsp;&nbsp;&nbsp;↖</div>
-                </div>
+            <tr>
+              <td colSpan={2}>
+              {hideRightColor ? null : (
+          <div className="transpilerLabel">
+                  <span className="toolName">{transpilerLabel}</span>
+        </div>)}
 
-                <div style={{ clear: "both" }}></div>
+
               </td>
-            </tr>)}
+            </tr>
             <tr>
               <td
                 valign="top"
@@ -188,7 +156,55 @@ const YCombiner = ({
                 <div style={{ clear: "both" }}></div>
               </td>
             </tr>
+            {hideRightColor ? null : (
+          <tr>
+              <td colSpan={2} style={{ textAlign: "center", width: "22m" }}>
+              <div className="derivedLabel" style={{width: '6em'}}>
+                  <div className="arrow">↘&nbsp;&nbsp;&nbsp;↙</div>
+                </div>
 
+                <div
+                  className="outputSpout"
+                  style={{ backgroundColor: mixedColor }}
+                >
+                  {showArrows ? (
+                    <div
+                      className="arrow"
+                      style={{
+                        float: "left",
+                        color: arrowColor,
+                        marginLeft: "-0.5em",
+                      }}
+                    >
+                      ⬇
+                    </div>
+                  ) : null}
+                  {showArrows ? (
+                    <div
+                      className="arrow"
+                      style={{
+                        float: "right",
+                        color: arrowColor,
+                        marginLeft: "-1em",
+                      }}
+                    >
+                      ⬇
+                    </div>
+                  ) : null}
+                  <div className="pickerLabel">{outputColorLabel}</div>
+                </div>
+
+                <div style={{ clear: "both" }}></div>
+              </td>
+            </tr>)}
+            <tr>
+                      <td colSpan={2}>
+                      {hideRightColor ? (
+                <div className="transpilerLabel">
+                  <span className="toolName">{transpilerLabel}</span>
+              </div>) : null}
+                      </td>
+                    </tr>
             {hideRightColor ? (
       <tr>
         <td colSpan={2}>
@@ -209,7 +225,7 @@ const YCombiner = ({
                         marginLeft: "-0.5em",
                       }}
                     >
-                      ↙
+                      ⬇
                     </div>
                   ) : null}
                   {showArrows ? (
@@ -221,13 +237,14 @@ const YCombiner = ({
                         marginLeft: "-1em",
                       }}
                     >
-                      ↘
+                      ⬇
                     </div>
                   ) : null}
                   <div className="pickerLabel">{outputColorLabel}</div>
                 </div>
         </td>
       </tr>) : null}
+          
           </tbody>
         </table>
         

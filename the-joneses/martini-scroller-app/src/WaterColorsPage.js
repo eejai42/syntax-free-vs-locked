@@ -14,7 +14,7 @@ const WaterColorsPage = () => {
     <div style={{fontSize: '1.2em', minWidth: '75em', maxWidth: '75em', margin: '1em'}}>
       {routeType === "locked" ? (
         <div>
-          <div style={{float: 'right'}}><a href="/#/syntax-free">Syntax Free</a></div>
+          <div style={{position: 'absolute', right: 0}}><a href="/#/syntax-free">Syntax Free</a></div>
         <h1>Syntax Locked</h1>
         <SyntaxVisualizationComponent key='1'
           topLeftColorLabel="Requirements"
@@ -24,9 +24,9 @@ const WaterColorsPage = () => {
           rightYTranspilerLabel="🧠 Markdown Dev"
           leftYColorLabel="C++"
           leftYRightColorLabel="User Stories"
-          rightYColorLabel="Dev Ops"
+          rightYColorLabel="Tech Docs"
           rightYRightColorLabel="Markdown"
-          />
+        />
         </div>
         ) : (
         <div>

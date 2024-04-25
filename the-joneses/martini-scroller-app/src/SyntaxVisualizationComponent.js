@@ -15,6 +15,53 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
                                       followAlong = false
                                     }) => {
   const [outputColor, setOutputColor] = useState("#ff00ff"); // Initial color set to a placeholder
+  const presets = [{
+    "Type": "Input",
+    "Name" : "Requirements v1",
+    "SyntaxLocked": "Natural Language",
+    "SyntaxFree": "Airtable"
+  },{
+    "Type": "Input",
+    "Name" : "Requirements v2",
+    "SyntaxLocked": "Natural Language",
+    "SyntaxFree": "Airtable"
+  },{
+    "Type": "Input",
+    "Name" : "Grg Dr Opener",
+    "SyntaxLocked": "Natural Language",
+    "SyntaxFree": "Airtable",
+  },{
+    "Type": "Left",
+    "Name": "Python",
+    "SyntaxLocked": "Common.py",
+    "SyntaxFree": "Python.hbars",
+  },{
+    "Type": "Left",
+    "Name": "C++",
+    "SyntaxLocked":  "Common.h/cpp",
+    "SyntaxFree": "Arduino.hbars",
+  },{
+    "Type": "Left",
+    "Name": "C#",
+    "SyntaxLocked":  "Common.cs",
+    "SyntaxFree": "DotNet.hbars",
+  },{
+    "Type": "Right",
+    "Name": "HTML",
+    "SyntaxLocked":  "README.html",
+    "SyntaxFree":  "README.hbars",
+  },{
+    "Type": "Right",
+    "Name": "Markdown",
+    "SyntaxLocked":  "README.md",
+    "SyntaxFree":  "README.hbars",
+  },{
+    "Type": "Right",
+    "Name": "WIKI docs",
+    "SyntaxLocked":  "README.wiki",
+    "SyntaxFree":  "README.hbars",
+  }
+]
 
   const handleColorChange = (color) => {
     if (color === outputColor) return; // Prevent infinite loop
@@ -38,9 +85,9 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             transpilerLabel={topTranspilerLabel}
             arrowColor={arrowColor}
             showArrows={showArrows}
-            topLeftPreset1="Requirements v1"
-            topLeftPreset2="Requirements v2"
-            topLeftPreset3="Grg Dr Opener"
+            topLeftPreset1={presets[0]}
+            topLeftPreset2={presets[1]}
+            topLeftPreset3={presets[2]}
             alignment="center"
           />
         </td>
@@ -58,9 +105,9 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             transpilerLabel={leftYTranspilerLabel}
             outputColorLabel="Common.h/cpp"
             followAlong={followAlong}
-            topLeftPreset1="Python"
-            topLeftPreset2="C++"
-            topLeftPreset3="C#"
+            topLeftPreset1={presets[3]}
+            topLeftPreset2={presets[4]}
+            topLeftPreset3={presets[5]}
             alignment="flex-end"
           />
         </td>
@@ -75,9 +122,9 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             transpilerLabel={rightYTranspilerLabel}
             outputColorLabel="README.md"
             followAlong={followAlong}
-            topRightPreset1="HTML"
-            topRightPreset2="Markdown"
-            topRightPreset3="WIKI docs"
+            topRightPreset1={presets[6]}
+            topRightPreset2={presets[7]}
+            topRightPreset3={presets[8]}
           />
         </td>
       </tr>

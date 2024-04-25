@@ -22,8 +22,8 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors
         onChange(hslToHex(hue, newHsl.s, newHsl.l));
     };
 
-    const moveToPosition = (saturation, lightness, label) => {
-        setCurrentLabel(label);
+    const moveToPosition = (saturation, lightness, preset) => {
+        setCurrentLabel(preset.Name);
         setHsl({ h: hue, s: saturation, l: lightness });
         onChange(hslToHex(hue, saturation, lightness));
     };
@@ -64,9 +64,9 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors
             </div>
             {preset1 != null ? 
             <div className="presetBtnContainer" style={{left: presetsOnRight ? '10em' : '-11em'}}>
-                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(100, 50, preset1)}>{preset1}</button>
-                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(80, 80, preset2)}>{preset2}</button>
-                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(100, 20, preset3)}>{preset3}</button>
+                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(100, 50, preset1)}>{preset1.Name}</button>
+                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(80, 80, preset2)}>{preset2.Name}</button>
+                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(100, 20, preset3)}>{preset3.Name}</button>
             </div> : null}
             {showPrimaryColors && (
                 <div style={{position: 'absolute', top: '6em', marginLeft: '0em', marginRight: 'auto', backgroundColor: color, padding: '0.5em', display: 'flex', justifyContent: 'space-around'}}>
