@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HexColorPicker } from "react-colorful";
 import { hslToHex, hexToHsl } from "./colorUtils";
 
-const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors = false, label = 'Pick Color', preset1, preset2, preset3, presetsOnRight }) => {
+const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueChange, showPrimaryColors = false, label = 'Pick Color', preset1, preset2, preset3, presetsOnRight }) => {
     const [hsl, setHsl] = useState(() => {
         const initialHsl = hexToHsl(color);
         return { ...initialHsl, h: hue };
@@ -14,7 +14,12 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors
         const newHsl = hexToHsl(color);
         setHsl({ h: hue, s: newHsl.s, l: newHsl.l });
         onChange(hslToHex(hue, hsl.s, hsl.l));  // Ensure external changes are also pushed up
-    }, [color, hue, hsl.s, hsl.l, onChange]);
+        onPresetChange(preset || preset1);  // Notify the parent component of the preset change
+        console.error('PRESET: ', preset, preset1, preset2, preset3)
+        if (preset === null) {
+            // set preset to preset1
+        }
+    }, [color, hue, hsl.s, hsl.l, onChange, onPresetChange, preset]);
 
     const handleColorChange = (newColor) => {
         const newHsl = hexToHsl(newColor);
@@ -24,6 +29,7 @@ const SaturationPicker = ({ hue, color, onChange, onHueChange, showPrimaryColors
 
     const moveToPosition = (saturation, lightness, preset) => {
         setCurrentLabel(preset.Name);
+        onPresetChange(preset);
         setHsl({ h: hue, s: saturation, l: lightness });
         onChange(hslToHex(hue, saturation, lightness));
     };

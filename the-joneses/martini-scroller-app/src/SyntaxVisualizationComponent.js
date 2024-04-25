@@ -30,36 +30,43 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
     "Name" : "Grg Dr Opener",
     "SyntaxLocked": "Natural Language",
     "SyntaxFree": "Airtable",
+    "Ouptut": "Devices.json",
   },{
     "Type": "Left",
     "Name": "Python",
     "SyntaxLocked": "Common.py",
     "SyntaxFree": "Python.hbars",
+    "Ouptut": "Common..py",
   },{
     "Type": "Left",
     "Name": "C++",
     "SyntaxLocked":  "Common.h/cpp",
     "SyntaxFree": "Arduino.hbars",
+    "Ouptut": "Common.h/cpp",
   },{
     "Type": "Left",
     "Name": "C#",
     "SyntaxLocked":  "Common.cs",
     "SyntaxFree": "DotNet.hbars",
+    "Ouptut": "Common.cs",
   },{
     "Type": "Right",
     "Name": "HTML",
     "SyntaxLocked":  "README.html",
     "SyntaxFree":  "README.hbars",
+    "Ouptut": "README.md",
   },{
     "Type": "Right",
     "Name": "Markdown",
     "SyntaxLocked":  "README.md",
     "SyntaxFree":  "README.hbars",
+    "Ouptut": "README.md",
   },{
     "Type": "Right",
     "Name": "WIKI docs",
     "SyntaxLocked":  "README.wiki",
     "SyntaxFree":  "README.hbars",
+    "Ouptut": "README.md",
   }
 ]
 

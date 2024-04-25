@@ -33,8 +33,7 @@ const YCombiner = ({
 
   const [hue1, setHue1] = useState(hexToHsl(color1).h);
   const [hue2, setHue2] = useState(hexToHsl(color2).h);
-
-  const [currentPreset, setCurrentPreset] = useState(null);
+  const [currentPreset, setCurrentPreset] = useState(topLeftPreset1 || topRightPreset1);
 
   const mixedColor = hideRightColor ? color1 : mixColors(color1, color2);
 
@@ -102,6 +101,8 @@ const YCombiner = ({
                     color={color1}
                     onChange={setColor1}
                     onHueChange={setHue1}
+                    preset={currentPreset}
+                    onPresetChange={(preset) => setCurrentPreset(preset)}
                     label={leftColorLabel}
                     preset1={topLeftPreset1}
                     preset2={topLeftPreset2}
@@ -113,7 +114,9 @@ const YCombiner = ({
                     color={color1}
                     onChange={setColor1}
                     onHueChange={setHue1}
-                    label={leftColorLabel}
+                    label={currentPreset.Name}
+                    preset={currentPreset}
+                    onPresetChange={(preset) => setCurrentPreset(preset)}
                     preset1={topLeftPreset1}
                     preset2={topLeftPreset2}
                     preset3={topLeftPreset3}
@@ -132,6 +135,8 @@ const YCombiner = ({
                     onChange={setColor2}
                     onHueChange={setHue2}
                     label={rightColorLabel}
+                    preset={currentPreset}
+                    onPresetChange={(preset) => setCurrentPreset(preset)}
                     preset1={topRightPreset1}
                     preset2={topRightPreset2}
                     preset3={topRightPreset3}
@@ -144,7 +149,9 @@ const YCombiner = ({
                     color={color2}
                     onChange={setColor2}
                     onHueChange={setHue2}
-                    label={rightColorLabel}
+                    label={currentPreset.Name}
+                    preset={currentPreset}
+                    onPresetChange={(preset) => setCurrentPreset(preset)}
                     preset1={topRightPreset1}
                     preset2={topRightPreset2}
                     preset3={topRightPreset3}
@@ -191,7 +198,7 @@ const YCombiner = ({
                       ⬇
                     </div>
                   ) : null}
-                  <div className="pickerLabel">{outputColorLabel}</div>
+                  <div className="pickerLabel">{currentPreset?.SyntaxLocked}</div>
                 </div>
 
                 <div style={{ clear: "both" }}></div>
