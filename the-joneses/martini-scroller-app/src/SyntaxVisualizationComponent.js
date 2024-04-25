@@ -12,61 +12,64 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
                                       rightYColorLabel="svc-missing-righty-color-label",
                                       arrowColor = '#FFFFFF',
                                       showArrows = true,
-                                      followAlong = false
+                                      followAlong = false,
+                                      isSyntaxFree = false,
                                     }) => {
   const [outputColor, setOutputColor] = useState("#ff00ff"); // Initial color set to a placeholder
   const presets = [{
     "Type": "Input",
     "Name" : "Requirements v1",
     "SyntaxLocked": "Natural Language",
-    "SyntaxFree": "Airtable"
+    "SyntaxFree": "Requirements v1",
+    "Output": "Devices.json"
   },{
     "Type": "Input",
     "Name" : "Requirements v2",
     "SyntaxLocked": "Natural Language",
-    "SyntaxFree": "Airtable"
+    "SyntaxFree": "Requirements v2",
+    "Output": "Devices.json"
   },{
     "Type": "Input",
     "Name" : "Grg Dr Opener",
     "SyntaxLocked": "Natural Language",
-    "SyntaxFree": "Airtable",
-    "Ouptut": "Devices.json",
+    "SyntaxFree": "Door Specs",
+    "Output": "Devices.json",
   },{
     "Type": "Left",
     "Name": "Python",
     "SyntaxLocked": "Common.py",
     "SyntaxFree": "Python.hbars",
-    "Ouptut": "Common..py",
+    "Output": "Common.py",
   },{
     "Type": "Left",
     "Name": "C++",
     "SyntaxLocked":  "Common.h/cpp",
     "SyntaxFree": "Arduino.hbars",
-    "Ouptut": "Common.h/cpp",
+    "Output": "Common.h/cpp",
   },{
     "Type": "Left",
     "Name": "C#",
     "SyntaxLocked":  "Common.cs",
     "SyntaxFree": "DotNet.hbars",
-    "Ouptut": "Common.cs",
+    "Output": "Common.cs",
   },{
     "Type": "Right",
     "Name": "HTML",
     "SyntaxLocked":  "README.html",
-    "SyntaxFree":  "README.hbars",
-    "Ouptut": "README.md",
+    "SyntaxFree":  "Index.hbars",
+    "Output": "Index.html",
   },{
     "Type": "Right",
     "Name": "Markdown",
     "SyntaxLocked":  "README.md",
     "SyntaxFree":  "README.hbars",
-    "Ouptut": "README.md",
+    "Output": "README.md",
   },{
     "Type": "Right",
     "Name": "WIKI docs",
-    "SyntaxLocked":  "README.wiki",
-    "SyntaxFree":  "README.hbars",
-    "Ouptut": "README.md",
+    "SyntaxLocked":  "Home.wiki",
+    "SyntaxFree":  "Home.hbars",
+    "Output": "Home.wiki",
   }
 ]
 
@@ -96,6 +99,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             topLeftPreset2={presets[1]}
             topLeftPreset3={presets[2]}
             alignment="center"
+            isSyntaxFree={isSyntaxFree}
           />
         </td>
       </tr>
@@ -116,6 +120,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             topLeftPreset2={presets[4]}
             topLeftPreset3={presets[5]}
             alignment="flex-end"
+            isSyntaxFree={isSyntaxFree}
           />
         </td>
         <td>
@@ -132,6 +137,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             topRightPreset1={presets[6]}
             topRightPreset2={presets[7]}
             topRightPreset3={presets[8]}
+            isSyntaxFree={isSyntaxFree}
           />
         </td>
       </tr>

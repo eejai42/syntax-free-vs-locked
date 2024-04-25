@@ -23,6 +23,7 @@ const YCombiner = ({
   topRightPreset2,
   topRightPreset3,
   alignment = "flex-start",
+  isSyntaxFree = false,
 }) => {
   const [color1, setColor1] = useState(
     externalColor1 || defaultLeftColor || "#ff0000"
@@ -36,6 +37,10 @@ const YCombiner = ({
   const [currentPreset, setCurrentPreset] = useState(topLeftPreset1 || topRightPreset1);
 
   const mixedColor = hideRightColor ? color1 : mixColors(color1, color2);
+
+  const handlePresetChange = (preset) => {
+    setCurrentPreset(preset);
+  }
 
   useEffect(() => {
     if (onMixedColorChange) {
@@ -102,11 +107,12 @@ const YCombiner = ({
                     onChange={setColor1}
                     onHueChange={setHue1}
                     preset={currentPreset}
-                    onPresetChange={(preset) => setCurrentPreset(preset)}
+                    onPresetChange={(preset) => handlePresetChange(preset)}
                     label={leftColorLabel}
                     preset1={topLeftPreset1}
                     preset2={topLeftPreset2}
                     preset3={topLeftPreset3}
+                    isSyntaxFree={isSyntaxFree}
                   />
                 ) : (
                   <SaturationPicker
@@ -114,12 +120,13 @@ const YCombiner = ({
                     color={color1}
                     onChange={setColor1}
                     onHueChange={setHue1}
-                    label={currentPreset.Name}
+                    label={isSyntaxFree ? currentPreset.SyntaxFree : currentPreset.Name}
                     preset={currentPreset}
-                    onPresetChange={(preset) => setCurrentPreset(preset)}
+                    onPresetChange={(preset) => handlePresetChange(preset)}
                     preset1={topLeftPreset1}
                     preset2={topLeftPreset2}
                     preset3={topLeftPreset3}
+                    isSyntaxFree={isSyntaxFree}
                   />
                 )}
                 <div style={{ clear: "both" }}></div>
@@ -141,6 +148,7 @@ const YCombiner = ({
                     preset2={topRightPreset2}
                     preset3={topRightPreset3}
                     presetsOnRight={true}
+                    isSyntaxFree={isSyntaxFree}
 
                   />
                 ) : (
@@ -149,13 +157,14 @@ const YCombiner = ({
                     color={color2}
                     onChange={setColor2}
                     onHueChange={setHue2}
-                    label={currentPreset.Name}
+                    label={isSyntaxFree ? currentPreset.SyntaxFree : currentPreset.Name}
                     preset={currentPreset}
                     onPresetChange={(preset) => setCurrentPreset(preset)}
                     preset1={topRightPreset1}
                     preset2={topRightPreset2}
                     preset3={topRightPreset3}
                     presetsOnRight={true}
+                    isSyntaxFree={isSyntaxFree}
                   />
                 )}
 
@@ -198,7 +207,7 @@ const YCombiner = ({
                       ⬇
                     </div>
                   ) : null}
-                  <div className="pickerLabel">{currentPreset?.SyntaxLocked}</div>
+                  <div className="pickerLabel">{currentPreset?.Output}</div>
                 </div>
 
                 <div style={{ clear: "both" }}></div>

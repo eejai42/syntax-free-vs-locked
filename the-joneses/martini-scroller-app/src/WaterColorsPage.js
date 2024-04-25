@@ -26,6 +26,7 @@ const WaterColorsPage = () => {
           leftYRightColorLabel="User Stories"
           rightYColorLabel="Tech Docs"
           rightYRightColorLabel="Markdown"
+          isSyntaxFree={false}
         />
         </div>
         ) : (
@@ -43,6 +44,7 @@ const WaterColorsPage = () => {
           rightYColorLabel="Devices.json"
           rightYRightColorLabel="README.hbars"
           followAlong={true}
+          isSyntaxFree={true}
          />
         </div>
       )}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HexColorPicker } from "react-colorful";
 import { hslToHex, hexToHsl } from "./colorUtils";
 
-const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueChange, showPrimaryColors = false, label = 'Pick Color', preset1, preset2, preset3, presetsOnRight }) => {
+const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueChange, showPrimaryColors = false, label = 'Pick Color', preset1, preset2, preset3, presetsOnRight, isSyntaxFree}) => {
     const [hsl, setHsl] = useState(() => {
         const initialHsl = hexToHsl(color);
         return { ...initialHsl, h: hue };
@@ -28,7 +28,7 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
     };
 
     const moveToPosition = (saturation, lightness, preset) => {
-        setCurrentLabel(preset.Name);
+        setCurrentLabel(isSyntaxFree ? preset.SyntaxFree : preset.Name)
         onPresetChange(preset);
         setHsl({ h: hue, s: saturation, l: lightness });
         onChange(hslToHex(hue, saturation, lightness));
@@ -71,7 +71,7 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
             {preset1 != null ? 
             <div className="presetBtnContainer" style={{left: presetsOnRight ? '10em' : '-11em'}}>
                 <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(100, 50, preset1)}>{preset1.Name}</button>
-                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(80, 80, preset2)}>{preset2.Name}</button>
+                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(60, 80, preset2)}>{preset2.Name}</button>
                 <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(100, 20, preset3)}>{preset3.Name}</button>
             </div> : null}
             {showPrimaryColors && (
