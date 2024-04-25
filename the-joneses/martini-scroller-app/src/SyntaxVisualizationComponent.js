@@ -63,8 +63,8 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
     "SyntaxFree": "Python.hbars",
     "RightLockedImage": "developer.webp",
     "RightFreeImage": "arduino-hbars.webp",
-    "LockedImage": "arduino.webp",
-    "FreeImage": "arduino.webp",
+    "LockedImage": "pi.webp",
+    "FreeImage": "pi.webp",
     "Output": "Common.py",
   },{
     "Type": "Left",
@@ -73,8 +73,8 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
     "SyntaxFree": "DotNet.hbars",
     "RightLockedImage": "developer.webp",
     "RightFreeImage": "arduino-hbars.webp",
-    "LockedImage": "arduino.webp",
-    "FreeImage": "arduino.webp",
+    "LockedImage": "windows.webp",
+    "FreeImage": "windows.webp",
     "Output": "Common.cs",
   },{
     "Type": "Right",

@@ -74,7 +74,7 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
                         <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange}  />
                         </div>
                         <div style={{display: !showPicker ? 'block' : 'none' }}>
-                            <img src={isSyntaxFree ? freeImage : lockedImage} style={{width: '8em'}}/>
+                            <img src={isSyntaxFree ? freeImage : lockedImage} style={{width: '8.5em', paddingLeft: '0.5em', marginLeft: '0.5em'}}/>
                         </div>
                     </div>
                 </div>
@@ -84,9 +84,9 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
                 <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} 
                         onClick={(e) => moveToPosition(100, 50, preset1, e)}>{preset1.Name}</button>
                 <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} 
-                        onClick={(e) => moveToPosition(35, 80, preset2, e)}>{preset2.Name}</button>
+                        onClick={(e) => moveToPosition(100, 20, preset2, e)}>{preset2.Name}</button>
                 <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} 
-                        onClick={(e) => moveToPosition(100, 20, preset3, e)}>{preset3.Name}</button>
+                        onClick={(e) => moveToPosition(83, 83, preset3, e)}>{preset3.Name}</button>
             </div> : null}
             {showPrimaryColors && (
                 <div style={{position: 'absolute', top: '6em', marginLeft: '0em', marginRight: 'auto', backgroundColor: color, padding: '0.5em', display: 'flex', justifyContent: 'space-around'}}>
