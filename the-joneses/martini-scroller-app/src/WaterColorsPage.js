@@ -30,14 +30,14 @@ const WaterColorsPage = () => {
         </div>
         ) : (
         <div>
-          <div style={{float: 'right'}}><a href="/#/syntax-locked">Syntax Locked</a></div>
+          <div style={{position: 'absolute', right: 0}}><a href="/#/syntax-locked">Syntax Locked</a></div>
         <h1>Syntax Free</h1>
         <SyntaxVisualizationComponent  key='2'
           topLeftColorLabel="Requirements"
-          topTranspilerLabel=">ssotme airtable-to-json"
+          topTranspilerLabel="> ssotme airtable-to-json"
           outputLabelName="Airtable"
-          leftYTranspilerLabel=">ssotme json-hbars-transform"
-          rightYTranspilerLabel=">ssotme json-hbars-transform"
+          leftYTranspilerLabel="> ssotme json-hbars-transform"
+          rightYTranspilerLabel="> ssotme json-hbars-transform"
           leftYColorLabel="Arduino.hbars"
           leftYRightColorLabel="Devices.json"
           rightYColorLabel="Devices.json"

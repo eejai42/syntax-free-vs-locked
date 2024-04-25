@@ -37,6 +37,16 @@
   }
 }
 
+h1 {
+  text-align: center;
+}
+.saturationPickerContainer{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 10em;
+  flex-direction: column;
+}
 
 .presetBtnContainer {
   display: none;
@@ -148,7 +158,6 @@
   font-family: monospace;
   margin: auto;
   margin-top: 0.15em;
-  border: solid 1px rgb(179, 190, 216);
   margin-bottom: 0.5em;
   margin-left: 9em;
 }

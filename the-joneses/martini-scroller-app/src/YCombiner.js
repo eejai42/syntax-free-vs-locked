@@ -79,6 +79,46 @@ const YCombiner = ({
 
         <table style={{ width: "25em", float: alignment == 'flex-end' ? 'right' : 'none' }}>
           <tbody>
+          {hideRightColor ? null : (
+          <tr>
+              <td colSpan={2} style={{ textAlign: "center", width: "22m" }}>
+                <div
+                  className="outputSpout"
+                  style={{ backgroundColor: mixedColor }}
+                >
+                  {showArrows ? (
+                    <div
+                      className="arrow"
+                      style={{
+                        float: "left",
+                        color: arrowColor,
+                        marginLeft: "-0.5em",
+                      }}
+                    >
+                      ↙
+                    </div>
+                  ) : null}
+                  {showArrows ? (
+                    <div
+                      className="arrow"
+                      style={{
+                        float: "right",
+                        color: arrowColor,
+                        marginLeft: "-1em",
+                      }}
+                    >
+                      ↘
+                    </div>
+                  ) : null}
+                  <div className="pickerLabel">{outputColorLabel}</div>
+                </div>
+                <div className="derivedLabel" style={{width: '6em'}}>
+                  <div className="arrow">↗&nbsp;&nbsp;&nbsp;↖</div>
+                </div>
+
+                <div style={{ clear: "both" }}></div>
+              </td>
+            </tr>)}
             <tr>
               <td
                 valign="top"
@@ -143,15 +183,20 @@ const YCombiner = ({
                     presetsOnRight={true}
                   />
                 )}
+
+                
                 <div style={{ clear: "both" }}></div>
               </td>
             </tr>
-            <tr>
-              <td colSpan={2} style={{ textAlign: "center", width: "22m" }}>
-                <div className="derivedLabel" style={{width: '6em'}}>
-                  <div className="arrow">⤵</div>
+
+            {hideRightColor ? (
+      <tr>
+        <td colSpan={2}>
+              <div className="derivedLabel" style={{width: '6em'}}>
+                  <div className="arrow">⬇</div>
                 </div>
-                <div
+
+        <div
                   className="outputSpout"
                   style={{ backgroundColor: mixedColor }}
                 >
@@ -181,11 +226,11 @@ const YCombiner = ({
                   ) : null}
                   <div className="pickerLabel">{outputColorLabel}</div>
                 </div>
-                <div style={{ clear: "both" }}></div>
-              </td>
-            </tr>
+        </td>
+      </tr>) : null}
           </tbody>
         </table>
+        
       </div>
     </div>
   );

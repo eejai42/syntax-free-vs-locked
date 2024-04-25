@@ -25,7 +25,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
     <table className="yCombinerCanvas">
       <tbody>
       <tr>
-        <td colSpan={2} style={{ textAlign: "center", borderBottom: 'solid 3px black' }}>
+        <td colSpan={2} style={{ textAlign: "center" }}>
           {/* Replace SaturationPicker with YCombiner */}
           <YCombiner key="inputCombiner"
             leftColorLabel={topLeftColorLabel}
@@ -46,7 +46,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
         </td>
       </tr>
       <tr>
-        <td  style={{borderRight: 'solid 3px black'}}>
+        <td >
           {/* Pass the output color from the top YCombiner to this YCombiner */}
           <YCombiner key="bottomLeft"   style={{backgroundColor: 'red', paddingLeft: '5em'}}
             externalColor2={outputColor}
