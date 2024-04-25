@@ -59,6 +59,7 @@ h1 {
 /* CSS to show buttons when the outer div is hovered */
 .outerHoverDiv:hover .presetBtnContainer {
   display: flex;
+  cursor: hand;
 }
 
 .presetBtn {

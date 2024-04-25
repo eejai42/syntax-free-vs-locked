@@ -60,15 +60,15 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
 
 
     return (
-        <div style={{ position: "relative", width: "10em", height: "11em", margin: "0.5em", border: 'solid 3px black', backgroundColor: color, borderRadius: '0.45em' }} 
+        <div style={{ position: "relative", width: "10em", height: "11em", margin: "0.5em", border: 'solid 3px black', backgroundColor: color, borderRadius: '0.45em', cursor: 'pointer' }} 
         className="outerHoverDiv"
         onClick={() => setShowPicker(true)}  // Set to true on click
         onMouseLeave={() => setShowPicker(false)}  
         >
             <div style={{ position: "absolute", top: 0, left: 2, width: "10em", height: "10em" }}>
                 <div className="pickerLabel">{currentLabel}</div>
-                <div style={{ position: "relative", width: "10em", height: "10em", margin: "0em", overflow: "hidden" }}>
-                    <div className="presetBtnContainer" style={{ position: "absolute", top: 0, left: '-3em', width: "14.5em", height: "8em", overflow: "hidden",display: showPicker ? 'block' : 'none' }}>
+                <div style={{ position: "relative", width: "10em", height: "10em", margin: "0.8em", overflow: "hidden" }}>
+                    <div className="presetBtnContainer" style={{ position: "absolute", top: 0, left: '-4em', width: "14.5em", height: "6em", overflow: "hidden",display: showPicker ? 'block' : 'none' }}>
                         <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange} />
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
                 <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} 
                         onClick={(e) => moveToPosition(100, 50, preset1, e)}>{preset1.Name}</button>
                 <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} 
-                        onClick={(e) => moveToPosition(60, 80, preset2, e)}>{preset2.Name}</button>
+                        onClick={(e) => moveToPosition(35, 80, preset2, e)}>{preset2.Name}</button>
                 <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} 
                         onClick={(e) => moveToPosition(100, 20, preset3, e)}>{preset3.Name}</button>
             </div> : null}

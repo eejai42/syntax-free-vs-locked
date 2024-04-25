@@ -10,12 +10,17 @@ const WaterColorsPage = () => {
   // Determine the route based on the pathname
   const routeType = location.pathname.includes("/syntax-locked") ? "locked" : "free";
 
-  return (
-    <div style={{fontSize: '1.2em', minWidth: '75em', maxWidth: '75em', margin: '1em'}}>
+  return ( 
+    <div style={{fontSize: '1.2em', minWidth: '75em', maxWidth: '75em', margin: '2em'}}>
       {routeType === "locked" ? (
         <div>
-          <img src="parchment.png" className="EraIcon" style={{left: 0, zIndex: 99999999999, marginTop: '3em', fontSize: '1.6em' }} />          
-          <div style={{position: 'absolute', right: '1em'}}><a href="/#/syntax-free">Syntax Free</a></div>
+          <img src="https://eejai42.github.io/syntax-free-vs-locked/parchment.png" 
+          className="EraIcon" style={{left: 0, zIndex: 99999999999, 
+          marginTop: '0em', fontSize: '1.6em' }} />          
+          <div style={{position: 'absolute', left: '69em', width: '8em'}}>
+          <a href="/#/syntax-free"><img src="https://eejai42.github.io/syntax-free-vs-locked/e-everything.png" 
+                  className="EraIcon" style={{width: '2em', height: '2em'}} /> 
+            Syntax Free</a></div>
         <h1>Syntax Locked</h1>
         <SyntaxVisualizationComponent key='1'
           topLeftColorLabel="Requirements"
@@ -32,7 +37,15 @@ const WaterColorsPage = () => {
         </div>
         ) : (
         <div>
-          <div style={{position: 'absolute', right: '1em'}}><a href="/#/syntax-locked">Syntax Locked</a></div>
+           <img src="https://eejai42.github.io/syntax-free-vs-locked/e-everything.png" 
+          className="EraIcon" style={{left: 3, zIndex: 99999999999, 
+          marginTop: '0em', fontSize: '1.6em' }} />    
+          <div style={{position: 'absolute', left: '67em', width: '10em'}}>
+          <a href="/#/syntax-locked">
+            <img src="https://eejai42.github.io/syntax-free-vs-locked/parchment.png" 
+                className="EraIcon"   
+                style={{width: '2em', height: '2em'}} /> 
+                <div>Syntax Locked</div></a></div>
         <h1>Syntax Free</h1>
         <SyntaxVisualizationComponent  key='2'
           topLeftColorLabel="Requirements"
@@ -41,8 +54,8 @@ const WaterColorsPage = () => {
           leftYTranspilerLabel="> ssotme json-hbars-transform"
           rightYTranspilerLabel="> ssotme json-hbars-transform"
           leftYColorLabel="Arduino.hbars"
-          leftYRightColorLabel="Devices.json"
-          rightYColorLabel="Devices.json"
+          leftYRightColorLabel="User Stories + Devices.json"
+          rightYColorLabel="Dev Ops + Devices.json"
           rightYRightColorLabel="README.hbars"
           followAlong={true}
           isSyntaxFree={true}

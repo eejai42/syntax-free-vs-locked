@@ -21,19 +21,19 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
     "Name" : "Requirements v1",
     "SyntaxLocked": "Natural Language",
     "SyntaxFree": "Requirements v1",
-    "Output": "Devices.json"
+    "Output": "AIC Devices.json"
   },{
     "Type": "Input",
     "Name" : "Requirements v2",
     "SyntaxLocked": "Natural Language",
     "SyntaxFree": "Requirements v2",
-    "Output": "Devices.json"
+    "Output": "AIC Devices.json"
   },{
     "Type": "Input",
     "Name" : "Grg Dr Opener",
     "SyntaxLocked": "Natural Language",
     "SyntaxFree": "Door Specs",
-    "Output": "Devices.json",
+    "Output": "AIC Devices.json",
   },{
     "Type": "Left",
     "Name": "C++",
