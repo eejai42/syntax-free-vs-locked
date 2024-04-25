@@ -16,6 +16,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
                                       showArrows = true,
                                       followAlong = false,
                                       isSyntaxFree = false,
+                                      showPictures = true
                                     }) => {
   const [outputColor, setOutputColor] = useState("#ff00ff"); // Initial color set to a placeholder
   const presets = [{
@@ -136,6 +137,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             topLeftPreset3={presets[2]}
             alignment="center"
             isSyntaxFree={isSyntaxFree}
+            showPictures={showPictures}
           />
         </td>
       </tr>
@@ -158,6 +160,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             topLeftPreset3={presets[5]}
             alignment="flex-end"
             isSyntaxFree={isSyntaxFree}
+            showPictures={showPictures}
           />
         </td>
         <td>
@@ -176,6 +179,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             topRightPreset2={presets[7]}
             topRightPreset3={presets[8]}
             isSyntaxFree={isSyntaxFree}
+            showPictures={showPictures}
           />
         </td>
       </tr>

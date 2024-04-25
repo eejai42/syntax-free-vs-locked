@@ -24,8 +24,7 @@ const YCombiner = ({
   topRightPreset3,
   alignment = "flex-start",
   isSyntaxFree = false,
-  rightLockedImage = null,
-  leftLockedImage = null,
+  showPictures = true,
 }) => {
   const [color1, setColor1] = useState(
     externalColor1 || defaultLeftColor || "#ff0000"
@@ -114,7 +113,8 @@ const YCombiner = ({
                     isSyntaxFree={isSyntaxFree}
                     lockedImage={currentPreset.LockedImage}
                     freeImage={currentPreset.FreeImage}
-                  />
+                    showPictures={showPictures}
+            />
                 ) : (
                   <SaturationPicker
                     hue={hue1}
@@ -134,6 +134,7 @@ const YCombiner = ({
                     isSyntaxFree={isSyntaxFree}
                     lockedImage={currentPreset.LockedImage}
                     freeImage={currentPreset.FreeImage}
+                    showPictures={showPictures}
                   />
                 )}
                 <div style={{ clear: "both" }}></div>
@@ -158,6 +159,7 @@ const YCombiner = ({
                     isSyntaxFree={isSyntaxFree}
                     lockedImage={currentPreset.RightLockedImage}
                     freeImage={currentPreset.RightFreeImage}
+                    showPictures={showPictures}
                 />
                 ) : (
                   <SaturationPicker
@@ -179,6 +181,7 @@ const YCombiner = ({
                     isSyntaxFree={isSyntaxFree}
                     lockedImage={currentPreset.RightLockedImage}
                     freeImage={currentPreset.RightFreeImage}
+                    showPictures={showPictures}
                  />
                 )}
 

@@ -3,7 +3,7 @@ import { HexColorPicker } from "react-colorful";
 import { hslToHex, hexToHsl } from "./colorUtils";
 
 const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueChange, showPrimaryColors = false, label = 'Pick Color', 
-                        preset1, preset2, preset3, presetsOnRight, isSyntaxFree, freeImage, lockedImage}) => {
+                        preset1, preset2, preset3, presetsOnRight, isSyntaxFree, freeImage, lockedImage, showPictures}) => {
     const [hsl, setHsl] = useState(() => {
         const initialHsl = hexToHsl(color);
         return { ...initialHsl, h: hue };
@@ -73,7 +73,7 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
                         <div style={{display: showPicker ? 'block' : 'none' }}>
                         <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange}  />
                         </div>
-                        <div style={{display: !showPicker ? 'block' : 'none' }}>
+                        <div style={{display: !showPicker && showPictures ? 'block' : 'none' }}>
                             <img src={isSyntaxFree ? freeImage : lockedImage} style={{width: '8.5em', paddingLeft: '0.5em', marginLeft: '0.5em'}}/>
                         </div>
                     </div>
