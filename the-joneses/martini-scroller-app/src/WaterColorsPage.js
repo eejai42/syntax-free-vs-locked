@@ -14,6 +14,7 @@ const WaterColorsPage = () => {
     <div style={{fontSize: '1.2em', minWidth: '75em', maxWidth: '75em', margin: '1em'}}>
       {routeType === "locked" ? (
         <div>
+          <img src="parchment.png" className="EraIcon" style={{left: 0, zIndex: 99999999999, marginTop: '3em', fontSize: '1.6em' }} />          
           <div style={{position: 'absolute', right: '1em'}}><a href="/#/syntax-free">Syntax Free</a></div>
         <h1>Syntax Locked</h1>
         <SyntaxVisualizationComponent key='1'

@@ -22,6 +22,8 @@ const VariationCoordinator = ({
   
   const initializeKeywordCounters = () => {
     const counters = {};
+    if (!data.story.keywords) return;
+    console.error(data.story.keywords);
     data.story.keywords.forEach((keyword) => {
       const key = keyword.name.toLowerCase();
       counters[key] = {

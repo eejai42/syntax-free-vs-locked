@@ -3,6 +3,7 @@ import React from 'react';
 function StoryNavigator({ onPrevious, onNext, chapterList, currentChapterId }) {
   const findStoryHint = (offset) => {
     const currentIndex = chapterList.findIndex(story => story.id === currentChapterId);
+    if (currentIndex === -1) return console.error('Story not found in chapter list');
     const newIndex = (currentIndex + offset + chapterList.length) % chapterList.length;
     return chapterList[newIndex].hint;
   };

@@ -23,7 +23,7 @@ const App = () => {
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);
-        setData({"story":{ "chapters": [] }});
+        setData({"story":{ "chapters": [], keywords: [], "languages": []}});
         //setError(error.toString());
         return {};
       });
