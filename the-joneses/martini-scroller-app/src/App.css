@@ -76,8 +76,7 @@ h1 {
   height: 100%;
   text-align: center;
   background-color: white;
-  border: solid 1px black;
-
+  border: solid 1px rgb(87, 166, 240);
 }
 
 /* y combiner specific table handling */

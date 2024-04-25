@@ -34,13 +34,15 @@ const YCombiner = ({
 
   const [hue1, setHue1] = useState(hexToHsl(color1).h);
   const [hue2, setHue2] = useState(hexToHsl(color2).h);
-  const [currentPreset, setCurrentPreset] = useState(topLeftPreset1 || topRightPreset1);
+  const [currentPreset, setCurrentPreset] = useState(
+    topLeftPreset1 || topRightPreset1
+  );
 
   const mixedColor = hideRightColor ? color1 : mixColors(color1, color2);
 
   const handlePresetChange = (preset) => {
     setCurrentPreset(preset);
-  }
+  };
 
   useEffect(() => {
     if (onMixedColorChange) {
@@ -75,22 +77,17 @@ const YCombiner = ({
         display: "flex",
         flexDirection: "column",
         alignItems: alignment,
-        padding: "1em"
+        padding: "1em",
       }}
     >
       <div>
-        <table style={{ width: "25em", float: alignment == 'flex-end' ? 'right' : 'none' }}>
+        <table
+          style={{
+            width: "25em",
+            float: alignment == "flex-end" ? "right" : "none",
+          }}
+        >
           <tbody>
-            <tr>
-              <td colSpan={2}>
-              {hideRightColor ? null : (
-          <div className="transpilerLabel">
-                  <span className="toolName">{transpilerLabel}</span>
-        </div>)}
-
-
-              </td>
-            </tr>
             <tr>
               <td
                 valign="top"
@@ -120,7 +117,11 @@ const YCombiner = ({
                     color={color1}
                     onChange={setColor1}
                     onHueChange={setHue1}
-                    label={isSyntaxFree ? currentPreset.SyntaxFree : currentPreset.Name}
+                    label={
+                      isSyntaxFree
+                        ? currentPreset.SyntaxFree
+                        : currentPreset.Name
+                    }
                     preset={currentPreset}
                     onPresetChange={(preset) => handlePresetChange(preset)}
                     preset1={topLeftPreset1}
@@ -149,7 +150,6 @@ const YCombiner = ({
                     preset3={topRightPreset3}
                     presetsOnRight={true}
                     isSyntaxFree={isSyntaxFree}
-
                   />
                 ) : (
                   <SaturationPicker
@@ -157,7 +157,11 @@ const YCombiner = ({
                     color={color2}
                     onChange={setColor2}
                     onHueChange={setHue2}
-                    label={isSyntaxFree ? currentPreset.SyntaxFree : currentPreset.Name}
+                    label={
+                      isSyntaxFree
+                        ? currentPreset.SyntaxFree
+                        : currentPreset.Name
+                    }
                     preset={currentPreset}
                     onPresetChange={(preset) => setCurrentPreset(preset)}
                     preset1={topRightPreset1}
@@ -168,102 +172,121 @@ const YCombiner = ({
                   />
                 )}
 
-                
                 <div style={{ clear: "both" }}></div>
               </td>
             </tr>
-            {hideRightColor ? null : (
-          <tr>
-              <td colSpan={2} style={{ textAlign: "center", width: "22m" }}>
-              <div className="derivedLabel" style={{width: '6em'}}>
-                  <div className="arrow">↘&nbsp;&nbsp;&nbsp;↙</div>
-                </div>
-
-                <div
-                  className="outputSpout"
-                  style={{ backgroundColor: mixedColor }}
-                >
-                  {showArrows ? (
-                    <div
-                      className="arrow"
-                      style={{
-                        float: "left",
-                        color: arrowColor,
-                        marginLeft: "-0.5em",
-                      }}
-                    >
-                      ⬇
-                    </div>
-                  ) : null}
-                  {showArrows ? (
-                    <div
-                      className="arrow"
-                      style={{
-                        float: "right",
-                        color: arrowColor,
-                        marginLeft: "-1em",
-                      }}
-                    >
-                      ⬇
-                    </div>
-                  ) : null}
-                  <div className="pickerLabel">{currentPreset?.Output}</div>
-                </div>
-
-                <div style={{ clear: "both" }}></div>
-              </td>
-            </tr>)}
             <tr>
-                      <td colSpan={2}>
-                      {hideRightColor ? (
-                <div className="transpilerLabel">
-                  <span className="toolName">{transpilerLabel}</span>
-              </div>) : null}
-                      </td>
-                    </tr>
-            {hideRightColor ? (
-      <tr>
-        <td colSpan={2}>
-              <div className="derivedLabel" style={{width: '6em'}}>
-                  <div className="arrow">⬇</div>
-                </div>
+              <td colSpan={2}>
+                {hideRightColor ? null : (
+                  <div>
+                  <div className="transpilerLabel">
+                    <span className="toolName">{transpilerLabel}</span>
+                  </div>
 
-        <div
-                  className="outputSpout"
-                  style={{ backgroundColor: mixedColor }}
-                >
-                  {showArrows ? (
-                    <div
-                      className="arrow"
-                      style={{
-                        float: "left",
-                        color: arrowColor,
-                        marginLeft: "-0.5em",
-                      }}
-                    >
-                      ⬇
+                  </div>
+                )}
+              </td>
+            </tr>
+
+            {hideRightColor ? null : (
+              <tr>
+                <td colSpan={2} style={{ textAlign: "center", width: "22m" }}>
+                  <div className="derivedLabel" style={{ width: "6em" }}>
+                    <div className="arrow">↘&nbsp;&nbsp;&nbsp;↙</div>
+                  </div>
+
+                  <div
+                    className="outputSpout"
+                    style={{ backgroundColor: mixedColor }}
+                  >
+                    {showArrows ? (
+                      <div
+                        className="arrow"
+                        style={{
+                          float: "left",
+                          color: arrowColor,
+                          marginLeft: "-0.5em",
+                        }}
+                      >
+                        ⬇
+                      </div>
+                    ) : null}
+                    {showArrows ? (
+                      <div
+                        className="arrow"
+                        style={{
+                          float: "right",
+                          color: arrowColor,
+                          marginLeft: "-1em",
+                        }}
+                      >
+                        ⬇
+                      </div>
+                    ) : null}
+                    <div className="pickerLabel">{currentPreset?.Output}</div>
+                  </div>
+
+                  <div style={{ clear: "both" }}></div>
+                </td>
+              </tr>
+            )}
+            {hideRightColor ? (
+              <tr>
+                <td colSpan={2}>
+                  <div className="derivedLabel" style={{ width: "6em" }}>
+                    <div className="arrow">⬇</div>
+                  </div>
+
+                  <div
+                    className="outputSpout"
+                    style={{ backgroundColor: mixedColor }}
+                  >
+                    {showArrows ? (
+                      <div
+                        className="arrow"
+                        style={{
+                          float: "left",
+                          color: arrowColor,
+                          marginLeft: "-0.5em",
+                        }}
+                      >
+                        ⬇
+                      </div>
+                    ) : null}
+                    {showArrows ? (
+                      <div
+                        className="arrow"
+                        style={{
+                          float: "right",
+                          color: arrowColor,
+                          marginLeft: "-1em",
+                        }}
+                      >
+                        ⬇
+                      </div>
+                    ) : null}
+                    <div className="pickerLabel">{outputColorLabel}</div>
+                  </div>
+                </td>
+              </tr>
+            ) : null}
+                        <tr>
+              <td colSpan={2}>
+                {hideRightColor ? (
+                  <div>
+                    <div className="transpilerLabel">
+                      <span className="toolName">{transpilerLabel}</span>
                     </div>
-                  ) : null}
-                  {showArrows ? (
-                    <div
-                      className="arrow"
-                      style={{
-                        float: "right",
-                        color: arrowColor,
-                        marginLeft: "-1em",
-                      }}
-                    >
-                      ⬇
+                    <div className="derivedLabel" style={{ width: "6em" }}>
+                      <div className="arrow">↙&nbsp;&nbsp;&nbsp;↘</div>
                     </div>
-                  ) : null}
-                  <div className="pickerLabel">{outputColorLabel}</div>
-                </div>
-        </td>
-      </tr>) : null}
-          
+                  </div>
+                ) : null}
+              </td>
+            </tr>
+
           </tbody>
         </table>
-        
       </div>
     </div>
   );
