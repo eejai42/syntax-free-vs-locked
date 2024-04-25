@@ -9,7 +9,7 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
     });
 
     const [currentLabel, setCurrentLabel] = useState(label);
-
+    const [showPicker, setShowPicker] = useState(false);
     useEffect(() => {
         const newHsl = hexToHsl(color);
         setHsl({ h: hue, s: newHsl.s, l: newHsl.l });
@@ -27,13 +27,14 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
         onChange(hslToHex(hue, newHsl.s, newHsl.l));
     };
 
-    const moveToPosition = (saturation, lightness, preset) => {
-        setCurrentLabel(isSyntaxFree ? preset.SyntaxFree : preset.Name)
+    const moveToPosition = (saturation, lightness, preset, event) => {
+        event.stopPropagation();  // Stop the click event from bubbling up to parent elements
+        setCurrentLabel(isSyntaxFree ? preset.SyntaxFree : preset.Name);
         onPresetChange(preset);
         setHsl({ h: hue, s: saturation, l: lightness });
         onChange(hslToHex(hue, saturation, lightness));
     };
-
+    
     const setHue = (newHue) => {
         setHsl(prevHsl => ({ ...prevHsl, h: newHue }));
         onChange(hslToHex(newHue, hsl.s, hsl.l));
@@ -59,20 +60,27 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
 
 
     return (
-        <div style={{ position: "relative", width: "10em", height: "11em", margin: "0.5em", border: 'solid 3px black', backgroundColor: color, borderRadius: '0.45em' }} className="outerHoverDiv">
+        <div style={{ position: "relative", width: "10em", height: "11em", margin: "0.5em", border: 'solid 3px black', backgroundColor: color, borderRadius: '0.45em' }} 
+        className="outerHoverDiv"
+        onClick={() => setShowPicker(true)}  // Set to true on click
+        onMouseLeave={() => setShowPicker(false)}  
+        >
             <div style={{ position: "absolute", top: 0, left: 2, width: "10em", height: "10em" }}>
                 <div className="pickerLabel">{currentLabel}</div>
                 <div style={{ position: "relative", width: "10em", height: "10em", margin: "0em", overflow: "hidden" }}>
-                    <div className="presetBtnContainer" style={{ position: "absolute", top: 0, left: '-3em', width: "14.5em", height: "8em", overflow: "hidden" }}>
+                    <div className="presetBtnContainer" style={{ position: "absolute", top: 0, left: '-3em', width: "14.5em", height: "8em", overflow: "hidden",display: showPicker ? 'block' : 'none' }}>
                         <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange} />
                     </div>
                 </div>
             </div>
             {preset1 != null ? 
             <div className="presetBtnContainer" style={{left: presetsOnRight ? '10em' : '-11em'}}>
-                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(100, 50, preset1)}>{preset1.Name}</button>
-                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(60, 80, preset2)}>{preset2.Name}</button>
-                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} onClick={() => moveToPosition(100, 20, preset3)}>{preset3.Name}</button>
+                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} 
+                        onClick={(e) => moveToPosition(100, 50, preset1, e)}>{preset1.Name}</button>
+                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} 
+                        onClick={(e) => moveToPosition(60, 80, preset2, e)}>{preset2.Name}</button>
+                <button className="presetBtn" style={{backgroundColor: color, color: getContrastColor(color)}} 
+                        onClick={(e) => moveToPosition(100, 20, preset3, e)}>{preset3.Name}</button>
             </div> : null}
             {showPrimaryColors && (
                 <div style={{position: 'absolute', top: '6em', marginLeft: '0em', marginRight: 'auto', backgroundColor: color, padding: '0.5em', display: 'flex', justifyContent: 'space-around'}}>

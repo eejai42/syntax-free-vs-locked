@@ -36,16 +36,16 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
     "Output": "Devices.json",
   },{
     "Type": "Left",
-    "Name": "Python",
-    "SyntaxLocked": "Common.py",
-    "SyntaxFree": "Python.hbars",
-    "Output": "Common.py",
-  },{
-    "Type": "Left",
     "Name": "C++",
     "SyntaxLocked":  "Common.h/cpp",
     "SyntaxFree": "Arduino.hbars",
     "Output": "Common.h/cpp",
+  },{
+    "Type": "Left",
+    "Name": "Python",
+    "SyntaxLocked": "Common.py",
+    "SyntaxFree": "Python.hbars",
+    "Output": "Common.py",
   },{
     "Type": "Left",
     "Name": "C#",
@@ -54,16 +54,16 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
     "Output": "Common.cs",
   },{
     "Type": "Right",
-    "Name": "HTML",
-    "SyntaxLocked":  "README.html",
-    "SyntaxFree":  "Index.hbars",
-    "Output": "Index.html",
-  },{
-    "Type": "Right",
     "Name": "Markdown",
     "SyntaxLocked":  "README.md",
     "SyntaxFree":  "README.hbars",
     "Output": "README.md",
+  },{
+    "Type": "Right",
+    "Name": "HTML",
+    "SyntaxLocked":  "Index.html",
+    "SyntaxFree":  "Index.hbars",
+    "Output": "Index.html",
   },{
     "Type": "Right",
     "Name": "WIKI docs",

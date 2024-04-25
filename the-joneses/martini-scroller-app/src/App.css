@@ -162,18 +162,19 @@ h1 {
 }
 
 .transpilerLabel {
-  background-color: white;
+  background-image: radial-gradient(circle, rgb(224, 224, 224) 50%, white 100%); /* Radial gradient from center */
   color: black;
   width: 100%;
+  height: 3em;
   font-size: 1.1em;
   font-weight: bold;
   font-family: monospace;
   margin: auto;
   padding-left: 1em;
   padding-right: 1em;
-  margin-top: 0.15em;
-  border: solid 1px rgb(179, 190, 216);
-  border-radius: 2.5em;
+  padding-top: .8em;
+  /* border: dashed 1px rgb(179, 190, 216); */
+  border-radius: 0.2em;
   margin-bottom: 0.5em
 }
 
