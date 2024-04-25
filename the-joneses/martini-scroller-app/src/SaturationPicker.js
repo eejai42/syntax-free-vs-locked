@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { HexColorPicker } from "react-colorful";
 import { hslToHex, hexToHsl } from "./colorUtils";
 
-const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueChange, showPrimaryColors = false, label = 'Pick Color', preset1, preset2, preset3, presetsOnRight, isSyntaxFree}) => {
+const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueChange, showPrimaryColors = false, label = 'Pick Color', 
+                        preset1, preset2, preset3, presetsOnRight, isSyntaxFree, freeImage, lockedImage}) => {
     const [hsl, setHsl] = useState(() => {
         const initialHsl = hexToHsl(color);
         return { ...initialHsl, h: hue };
@@ -68,8 +69,13 @@ const SaturationPicker = ({ hue, color, preset, onPresetChange, onChange, onHueC
             <div style={{ position: "absolute", top: 0, left: 2, width: "10em", height: "10em" }}>
                 <div className="pickerLabel">{currentLabel}</div>
                 <div style={{ position: "relative", width: "10em", height: "10em", margin: "0.8em", overflow: "hidden" }}>
-                    <div className="presetBtnContainer" style={{ position: "absolute", top: 0, left: '-4em', width: "14.5em", height: "6em", overflow: "hidden",display: showPicker ? 'block' : 'none' }}>
-                        <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange} />
+                    <div className="presetBtnContainer" style={{ position: "absolute", top: 0, left: '-4em', width: "14.5em", height: "6em", overflow: "hidden", display: 'block'}}>
+                        <div style={{display: showPicker ? 'block' : 'none' }}>
+                        <HexColorPicker color={hslToHex(hsl.h, hsl.s, hsl.l)} onChange={handleColorChange}  />
+                        </div>
+                        <div style={{display: !showPicker ? 'block' : 'none' }}>
+                            <img src={isSyntaxFree ? freeImage : lockedImage} style={{width: '8em'}}/>
+                        </div>
                     </div>
                 </div>
             </div>
