@@ -1,4 +1,4 @@
-[{{#each Airtable.NodeEdges}}
+{"DataFlow":[{{#each Airtable.NodeEdges}}
   {
     "Name": "{{Name}}",
     "EdgeName": "{{EdgeName}}",
@@ -12,7 +12,8 @@
     "ToNodeName": "{{ToNodeName}}",
     "OutputFileName": "{{OutputFileName}}",
     "ExpectedColor": "{{ExpectedColor}}",
-    {{#unless (eq (length ToNodeMasterColor) 0)}}"{{length ToNodeMasterColor}}ToNodeMasterColor": "{{ToNodeMasterColor}}",
+    {{#unless (eq (length SkipForSyntaxFree) 0)}}"SkipForSyntaxFree": {{lowercase SkipForSyntaxFree}},
+    {{/unless}}{{#unless (eq (length ToNodeMasterColor) 0)}}"{{length ToNodeMasterColor}}ToNodeMasterColor": "{{ToNodeMasterColor}}",
     {{/unless}}{{#unless (eq HasSyntaxFreeParent 0)}}"HasSyntaxFreeParent": {{HasSyntaxFreeParent}},
     {{/unless}}{{#unless (eq (length SyntaxFreeColor) 0)}}"IsSyntaxFreeCapable": true,
     {{/unless}}{{#unless (eq (length LockedColor) 0)}}"LockedColor": "{{LockedColor}}",
@@ -74,3 +75,4 @@
     "IsUsed": {{IsUsed}}
   }{{#unless @last}},{{/unless}}
 {{/each}}]
+}

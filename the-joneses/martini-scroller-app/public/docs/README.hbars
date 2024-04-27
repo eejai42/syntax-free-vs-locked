@@ -1,56 +1,139 @@
-## Syntax-Locked Arrangement
+## Syntax-Locked Methodology
+{{#with this}}
+{{#each this }}
+{{#each this }}
+  {{#unless (eq (length LockedColor) 0)}}
+<hr style="clear: both; background-color: black; height: 1em;"></hr>
+  {{#if ToNodePlatformAttachments}}
+    {{#each ToNodePlatformAttachments}}
+<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 10em; float: left;">
+    {{/each}}
+  {{/if}}
 
-{{#each DemoFlow}}
-item?
-  {{#unless (eq IsSyntaxFreeCapable 1) }}
-### {{Name}}
-- **Edge Name**: {{EdgeName}}
-- **From Node Name**: {{FromNodeName}}
-- **Transformer Node Name**: {{TransformerNodeName}}
-- **To Node Type**: {{ToNodeType}}
-- **To Node Name**: {{ToNodeName}}
-- **Output File Name**: {{OutputFileName}}
-- **Expected Color**: {{ExpectedColor}}
-- **From Node Master Color**: {{FromNodeMasterColor}}
-- **Locked Color**: {{LockedColor}}
-  {{#if LockedAttachments}}
-  - **Locked Attachments**:
-    {{#each LockedAttachments}}
-    - {{this}}
+  {{#if FromNodeAttachments}}
+{{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">{{/each}}
+  {{/if}}
+    {{#if LockedAttachments}}
+{{#each LockedAttachments}}<img src="{{this}}" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">{{/each}}
+  {{/if}}
+
+### {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  -> {{EdgeName}}
+
+#### **{{TransformerNodeName}}** - **{{ToNodeType}}** {{ToNodeName}}
+
+    {{#if FromEdgeLockedAttachments}}
+    {{#each FromEdgeLockedAttachments}}
+<img src="{{this}}" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
     {{/each}}
   {{/if}}
-  {{#if FreeAttachments}}
-  - **Free Attachments**:
-    {{#each FreeAttachments}}
-    - {{this}}
+  {{#if TranspilerNodeAttachments}}
+    {{#each TranspilerNodeAttachments}}
+<img src="{{this}}" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
     {{/each}}
   {{/if}}
+
+  <div style="display: block; clear: left;">
+
+  {{#if ToNodeAttachments}}
+    {{#each ToNodeAttachments}}
+<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+    {{/each}}
+  {{/if}}
+
+  <div>
+    <b>{{OutputFileName}}</b>
+  </div>
+  </div>
+
+**Syntax-Locked Color** : {{LockedColor}}
+
+<hr style="margin: 0.5em; clear: both; background-color: {{LockedColor}}"></hr>
+
+
   {{/unless}}
 {{/each}}
+{{/each}}
 
-## Syntax-Free Data
-{{#each DemoFlow}}
-### name: {{../Name}}
-- **Edge Name**: {{EdgeName}}
-- **From Node Name**: {{FromNodeName}}
-- **Transformer Node Name**: {{TransformerNodeName}}
-- **To Node Type**: {{ToNodeType}}
+<hr></hr>
+## Syntax-Free Methodology
+{{#each this }}
+{{#each this }}
+  {{#unless SkipForSyntaxFree}}
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+  {{#if FromNodeAttachments}}
+{{#each FromNodeAttachments}}
+
+<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">{{/each}}
+  {{/if}}
+    {{#if FreeAttachments}}
+{{#each FreeAttachments}}
+
+
+<img src="{{this}}" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">{{/each}}
+  {{/if}}
+
+### {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  -> {{EdgeName}}
+
+<div style="background-color: {{ExpectedColor}}; width: 2em; height: 2em; float: left;"></div>
+
 - **To Node Name**: {{ToNodeName}}
 - **Output File Name**: {{OutputFileName}}
 - **Expected Color**: {{ExpectedColor}}
 - **Syntax Free Color**: {{SyntaxFreeColor}}
 - **Parent Free Edge Color**: {{ParentFreeEdgeColor}}
-  {{#if FreeTranspilerAttachments}}
-  - **Free Transpiler Attachments**:
-    {{#each FreeTranspilerAttachments}}
-    - {{this}}
+- **SyntaxFreeColor**: {{SyntaxFreeColor}}",
+- **ParentFreeEdgeColor**: {{ParentFreeEdgeColor}}",
+- **FromFreeEdgeToNodeType**: {{FromFreeEdgeToNodeType}}",
+- **SyntaxFreeEdgeName**: {{SyntaxFreeEdgeName}}",
+
+<hr style="margin: 0.5em; clear: right; background-color: {{SyntaxFreeColor}}"></hr>
+
+- **{{TransformerNodeName}}**
+
+  {{#if TranspilerNodeAttachments}}
+    {{#each TranspilerNodeAttachments}}
+<img src="{{this}}" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
     {{/each}}
   {{/if}}
-  {{#if FromEdgeFreeAttachments}}
-  - **From Edge Free Attachments**:
+
+  <div style="display: block; clear: left;">
+
+    {{#if FromEdgeFreeAttachments}}
     {{#each FromEdgeFreeAttachments}}
-    - {{this}}
+<img src="{{this}}" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
     {{/each}}
   {{/if}}
-  
+
+      {{#if FreeTranspilerAttachments}}
+    {{#each FreeTranspilerAttachments}}
+<img src="{{this}}" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+    {{/each}}
+  {{/if}}
+
+
+  {{#if ToNodeAttachments}}
+    {{#each ToNodeAttachments}}
+<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+    {{/each}}
+  {{/if}}
+
+  <div>
+{{SyntaxFreeEdgeOutputFileName}} -> {{FreeTranspilerNodeName}} -> <b>{{OutputFileName}}</b>
+
+  </div>
+  </div>
+
+- **{{ToNodeType}}** {{ToNodeName}}
+
+<hr style="margin: 0.5em; clear: both; background-color: {{SyntaxFreeColor}}"></hr>
+
+  {{#if ToNodePlatformAttachments}}
+  - **To Node Platform Attachments**:
+    {{#each ToNodePlatformAttachments}}
+<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 5em;">
+    {{/each}}
+  {{/if}}
+  {{/unless}}
 {{/each}}
+{{/each}}
+{{/with}}

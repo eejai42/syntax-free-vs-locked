@@ -1,293 +1,634 @@
-## Syntax-Locked Arrangement
+## Syntax-Locked Methodology
+<hr style="clear: both; background-color: black; height: 1em;"></hr>
 
-item?
-### 1.Product Owner-Natural Language Idea
-- **Edge Name**: Natural Language Idea
-- **From Node Name**: 1.Product Owner
-- **Transformer Node Name**: 5.1.Manager & Architect
-- **To Node Type**: NaturalLanguage
-- **To Node Name**: 2.Specification
-- **Output File Name**: Requirements.docx
-- **Expected Color**: RED
-- **From Node Master Color**: RED
-- **Locked Color**: POLKADOT
-  - **Locked Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/ODMVqGrISElXq7ryIT2M1g/8oXjsD6G7eHIhBg75SHhioGE-BRuuWZj3HfR_ifEB2dB43gfMvncTTQLLqDgXZizhrtyvRWt2oaAoDgZe6z77DZ6dFgO1YKIZy2iwFhl3WhkZAtFnyumzwoa-3m79HZgaCf4pTzB_j6D2jlUP1wAVQ/vxx_zzs8XZdBaZosBoQJ8UoKHt49jFghTE7bMU1_yIA
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/l8jjEoR1jcqYrZ1dNX5iYQ/QcB_Rw-gR0jJS8i5R5vpohvL7wxfXZcWYoe_Jve1SX25y9YS1rAv3ZuTUGG4wCx_QS30dzhrZBldm023cLhl_Xn--871CmIIjQhWMGrP2Jil_tVqb6i-zh9nsZh20SWdVud4l81qmPPfStR4qnslCA/3RqSgKll6df1GHCoFRF8n-UkQ1pGAlstarrcVOvLDxg
-item?
-### 1.Product Owner-Syntax-Free Idea
-- **Edge Name**: Syntax-Free Idea
-- **From Node Name**: 1.Product Owner
-- **Transformer Node Name**: 5.1.Manager & Architect
-- **To Node Type**: QueryableSSoT
-- **To Node Name**: 3.Airtable
-- **Output File Name**: Airtable Base
-- **Expected Color**: RED
-- **From Node Master Color**: RED
-- **Locked Color**: 
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/j-72hdxyWTbC-mHzu9e4Bw/W_wXxeNpbjK4a7H9bp1OYxCD7fgZ1gMRmJmUif9Bc1frl7IhOWNjczikpbqI21yt2LL68hIMJI9poAHT19Y24K2qShdQU5NkmhxcdTjf3Wf3_PO4PHjkHykhVnJort7Pz642fje2Sq70x-L59NTkOw/2INIv9eIGzry74iVNCexZSpfrBHlulfXCmso2SS_jK4
-item?
-### 2.Specification-Tickets
-- **Edge Name**: Tickets
-- **From Node Name**: 2.Specification
-- **Transformer Node Name**: 5.Manager
-- **To Node Type**: NaturalLanguage
-- **To Node Name**: 3.Tickets
-- **Output File Name**: Tickets.docx
-- **Expected Color**: RED
-- **From Node Master Color**: 
-- **Locked Color**: POLKADOT
-  - **Locked Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/erEzqooBEvRbC1Ay_xn4fA/YAp70k9mu4e4yHTFDMmg-QYKNXLJ7zmJahvAlzuF0TyKU7O2-_RHY0hk-wUWtQvfN8raomGIB84R5HcIqI8ncxDro8BNM0ZWZjWvhOEr2tw0NSTAGKT5MXNiX5SMLwrJgGcJNNOkQ4zxd3unclq4mA/65xl1nA20GrbkM1TDJjhO3lmKxDN1uYmNauRqCeaU5w
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/ut-BjGSBtCfqbCjWkyvdng/S0GcWfHRwoiSwcdmIKP4RFl6271FVLpYkQrQSTHZscT6ihcJzTGTaZuKSLroPrrsBdd376QIOGBez8m0XPKQ-TsmudNxMA4j7GezZj_3wWyWpzA49ZotsNPEbi4QHx5SY-cgSSvZmNMUuVKknQ-dpg/qX0P6zghlByb05wyWBlAOZrwduw8Op3EWERLJizxa0M
-item?
-### 3.Tickets-Machine Readable SSoT
-- **Edge Name**: Machine Readable SSoT
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 3.Architect
-- **To Node Type**: QueryableSSoT
-- **To Node Name**: 20.Json
-- **Output File Name**: Devices.json
-- **Expected Color**: RED
-- **From Node Master Color**: 
-- **Locked Color**: 
-  - **Locked Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/F8ihHMWDgC5nh-mpTCyC3A/8g6DAsefsAW9Egr-yEw4_cSFFTeGxD68Za9zGlwiq1uY1W-dhajt61MVb2Bs24T9hmEc_jPNUKzpG8UbTBnJ2fP6k4gUeKEJ8i2Vcr8k1aA8wrRZL7i4sP7zAYeEkWmDKBmlLSvSr8-F-drT--mYFA/rGcSPqqFKZ0EE0AoWpge2ci9qW3AMnfaFwJxlMjATnI
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/pzaitOceI5_Zz4Hr_3AjxA/bBrrUq1E7VxUKyPF4lj5DeVDE4VIkJAHv4B3yJ7eBin4e-GCzR12KTVc4FIvnYTgN81xoFhiDkPXQ9YdTJh3-3_NPi_HkCjg3svfGDK5Q2vLGNY53x2srBZbL0lQi4UrQCxEWsT1Xea7iJ-YUVDt1w/WiCzt-C2sOKJTsAA-Aq1EkySR3LZ-biGjvJ4NKc1TKU
-item?
-### 3.Tickets-Markdown
-- **Edge Name**: Markdown
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 12.Editor
-- **To Node Type**: File
-- **To Node Name**: 23.Markdown
-- **Output File Name**: README.md
-- **Expected Color**: RED + #MD0000
-- **From Node Master Color**: 
-- **Locked Color**: Rainbow
-  - **Locked Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/gbQqoog_DAtvwykS2KnkVw/IGd-jVZgnVDIQofKM2OJc-ubUIz8J1ey4vBULH0tRlrLLnorEJl5MmXZS0IVHJ-EOC-zfakr5M7PIosMUtI6w3m9Ukpe0YLo8P-vz7c6zS5W9lTGBMN6ZgxGm4b3YKkijC_jYPD9fsUhtuWHXLhcog/uSS0mV_XHikEGXg4JQvTtbP-8lSu9Fccfyz7MZcvDas
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/gbQqoog_DAtvwykS2KnkVw/IGd-jVZgnVDIQofKM2OJc-ubUIz8J1ey4vBULH0tRlrLLnorEJl5MmXZS0IVHJ-EOC-zfakr5M7PIosMUtI6w3m9Ukpe0YLo8P-vz7c6zS5W9lTGBMN6ZgxGm4b3YKkijC_jYPD9fsUhtuWHXLhcog/uSS0mV_XHikEGXg4JQvTtbP-8lSu9Fccfyz7MZcvDas
-item?
-### 3.Tickets-HTML
-- **Edge Name**: HTML
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 12.Editor
-- **To Node Type**: File
-- **To Node Name**: 24.HTML
-- **Output File Name**: Index.html
-- **Expected Color**: RED + #HTML00
-- **From Node Master Color**: 
-- **Locked Color**: 
-  - **Locked Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/cQkJfLweBisR1Rf1RX21vg/Dtbp0cBR5DVpZ1O6eLZVZxF_k27XtAlglxw1lnVs1b-IBVJXFYVbZf-0H7_OKn1DXGnkYmqachelvhvR2OHb_UNNwTp5GHJagKJc_tXVOCM6z02MHD9K1iZ8p5usK78r-zY1w9v0ApA-fKU9nZqtkg/6GiiStX5zHCG52hsgd3rOVfTdM49SvwpadRArqFdns0
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/cQkJfLweBisR1Rf1RX21vg/Dtbp0cBR5DVpZ1O6eLZVZxF_k27XtAlglxw1lnVs1b-IBVJXFYVbZf-0H7_OKn1DXGnkYmqachelvhvR2OHb_UNNwTp5GHJagKJc_tXVOCM6z02MHD9K1iZ8p5usK78r-zY1w9v0ApA-fKU9nZqtkg/6GiiStX5zHCG52hsgd3rOVfTdM49SvwpadRArqFdns0
-item?
-### 3.Tickets-WIKI
-- **Edge Name**: WIKI
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 12.Editor
-- **To Node Type**: File
-- **To Node Name**: 25.WIKI
-- **Output File Name**: Home.WIKI
-- **Expected Color**: RED + #WIKI00
-- **From Node Master Color**: 
-- **Locked Color**: POLKADOT
-  - **Locked Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/uIiVlxMQDx-Y1_uo_wyQBw/tbUz2Sm6FdpS2-WRKiTcQMErUEL2X0GtnldZ2IwOSer_ZEXjMKRwXRxLwKunxRCc1n1y0giaedApcIs2H4Kxrh7xlHtxzeOip3nEtx32L6f2bwyIzNtJVC1aRdNid1QT1V6z_GtnfB9lrRQNrF65HA/nVr72E9ZVNKqpCvcDvy9NUgzs205xfiufF0T3vcOedE
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/uIiVlxMQDx-Y1_uo_wyQBw/tbUz2Sm6FdpS2-WRKiTcQMErUEL2X0GtnldZ2IwOSer_ZEXjMKRwXRxLwKunxRCc1n1y0giaedApcIs2H4Kxrh7xlHtxzeOip3nEtx32L6f2bwyIzNtJVC1aRdNid1QT1V6z_GtnfB9lrRQNrF65HA/nVr72E9ZVNKqpCvcDvy9NUgzs205xfiufF0T3vcOedE
-item?
-### 3.Tickets-C++
-- **Edge Name**: C++
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 11.Developer
-- **To Node Type**: File
-- **To Node Name**: 26.Cpp
-- **Output File Name**: Arduino.ino
-- **Expected Color**: RED + #CPP00
-- **From Node Master Color**: 
-- **Locked Color**: POLKADOT
-  - **Locked Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/SfDtZwkHL2_ZHBSA99EcRQ/Q_aGpe2HTVW4XlXJhgMXcbTQLc6ZwZ_N23iZa6GPFvEQOBnVh35GScmB6hNjORIEhmLUJdJV2a9G5AlBZONigHMaN_pgHSwq_IEXRzOHAOn7pyfWc8yed5-R4SuJHXkiw51eP9hZ832TQg6pT1G_dQ/-rMxtTdgEWqbIPi6HggJc1A8miAtpA11ZAbbvC_OGVY
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/SfDtZwkHL2_ZHBSA99EcRQ/Q_aGpe2HTVW4XlXJhgMXcbTQLc6ZwZ_N23iZa6GPFvEQOBnVh35GScmB6hNjORIEhmLUJdJV2a9G5AlBZONigHMaN_pgHSwq_IEXRzOHAOn7pyfWc8yed5-R4SuJHXkiw51eP9hZ832TQg6pT1G_dQ/-rMxtTdgEWqbIPi6HggJc1A8miAtpA11ZAbbvC_OGVY
-item?
-### 3.Tickets-Python
-- **Edge Name**: Python
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 11.Developer
-- **To Node Type**: File
-- **To Node Name**: 27.Python
-- **Output File Name**: MachineController.py
-- **Expected Color**: RED + #PY0000
-- **From Node Master Color**: 
-- **Locked Color**: 
-  - **Locked Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/KNSNXR7mlKSY9sw2MCcj8w/3aCr75UXD7sR6ud0a3OJAWkIu2IPIuwmk1XqXs4i3XzjaANxxYzUNITqiKiedUCAgiwB6m5aOS6mzhHVRESM_CJhFXW76GobrKYE9r7k9LkJRmSSgSG9gFg1KordsVYAFkCnTUFRHy-Nrw2uMzfX8A/exCqYnUBGCYfy6dhYrzMIOadDN2kPfLedxCAQKQjSSs
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/KNSNXR7mlKSY9sw2MCcj8w/3aCr75UXD7sR6ud0a3OJAWkIu2IPIuwmk1XqXs4i3XzjaANxxYzUNITqiKiedUCAgiwB6m5aOS6mzhHVRESM_CJhFXW76GobrKYE9r7k9LkJRmSSgSG9gFg1KordsVYAFkCnTUFRHy-Nrw2uMzfX8A/exCqYnUBGCYfy6dhYrzMIOadDN2kPfLedxCAQKQjSSs
-item?
-### 3.Tickets-C#
-- **Edge Name**: C#
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 11.Developer
-- **To Node Type**: File
-- **To Node Name**: 28.CSharp
-- **Output File Name**: MachineController.cs
-- **Expected Color**: RED + #CSHARP0
-- **From Node Master Color**: 
-- **Locked Color**: POLKADOT
-  - **Locked Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/tbXNh78eom9Z4wZE99gIFA/nYzn00SQUnHLU7ZQsWmPcqgAYNesBfBEy8RTwzGeuLkI0GWRXhB4YnE8fyrzdYvzkNbdP4wwc02kqwFYi5edzbKIc3e329vnMlGgfY0SQ_bh2YNsbPlQEdsH8gffdXcLL-F5oCz5dspGfedhC2-oyQ/5QXXDXB2ybkYG8_TQoeqV3ZniCU_-e_0uqLf5bm8-TE
-  - **Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/tbXNh78eom9Z4wZE99gIFA/nYzn00SQUnHLU7ZQsWmPcqgAYNesBfBEy8RTwzGeuLkI0GWRXhB4YnE8fyrzdYvzkNbdP4wwc02kqwFYi5edzbKIc3e329vnMlGgfY0SQ_bh2YNsbPlQEdsH8gffdXcLL-F5oCz5dspGfedhC2-oyQ/5QXXDXB2ybkYG8_TQoeqV3ZniCU_-e_0uqLf5bm8-TE
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/OfeAgeLx3PtfLoi28RD-og/YOjkLq6JT5I5EoNpQmLL2q40SxG_fkdfDq68PNcIlD2YfutC1GtFPL3lLncGkgpjqOI9G_oBRTx9nyqe0iGV3S5H67fcT3BntgLsIsK3YfJ-uLBWkAjk2N17it1QdCuETr3IVGBlJLiChaQWJTuoSA/zusL4O04Yl3c9Gi5ZvQQkhjAjdMWkx0JSuKBoA7hWFo" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/ySUkfv8QAIt7809vFCzPEw/x8xxArzruDH7t6GaCb3_gan-ZkZPV1JQT5pJXZ6wr8plxfjo_ZkusmMrOqJd8bKRiNRka_Z64eS-FNpS_spK0rzZN-jUl_xKDaQGqnrO7gQ4YxR3eUt7lc55onUEDQScSz522BXsmJfJzjNhoA5cIA/70WJxUUrYbFRKwWUy4DBMrZ75oZwdUA5io5S3uEHdTQ" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
 
-## Syntax-Free Data
-### name: 
-- **Edge Name**: Natural Language Idea
-- **From Node Name**: 1.Product Owner
-- **Transformer Node Name**: 5.1.Manager & Architect
-- **To Node Type**: NaturalLanguage
-- **To Node Name**: 2.Specification
-- **Output File Name**: Requirements.docx
-- **Expected Color**: RED
-- **Syntax Free Color**: 
-- **Parent Free Edge Color**: 
-  
-### name: 
-- **Edge Name**: Syntax-Free Idea
-- **From Node Name**: 1.Product Owner
-- **Transformer Node Name**: 5.1.Manager & Architect
-- **To Node Type**: QueryableSSoT
-- **To Node Name**: 3.Airtable
+### Product Owner  -> Natural Language Idea
+
+#### **Manager & Architect** - **NaturalLanguage** Specification
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/dTuGFNJ3tqx6R7SsXqX43w/DdxPcbIKL3v87RvDsgrkDYcJVqjVVKceJCawJ6cRn6XDWIVROucCtD7OfuNV4bjxK7Jdhs8-CXlJLYHoVUCNKGCJ3RV4co4OXLNIuQRyrInYHYkkubAPLcM-usMRrbmakxesv171pUEGm56SJrwoOQ/TiXC-ZHWt7JrOUWZfiHkyirn-aB2gzgSNr9HGRtcJ0g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/z5x7e9Dl0YVbRk0gh1ndQA/9lZguBz71mvAFANiTyuzBgYwA8gnRVAnQaLZwPXCugpZL-XLSK8A6PzuwyvSPC4d09qn3FZRsA8oLceY0f7M5dJmiC1-cS3TushYuaNHxRY4Q5k73LXiNsDIzYeqUV9zzqZw6FEghM6NTRqM1wUz4w/uRTkPdmk88Lsth6V5vrxCQX7qppbwaoizzZYWgpFjgM" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/MvUI7jvAAFvFFbNX5I93LQ/fL4kGxiMKiCT7Vm1Zp7lMWh_ZKPQxvYgCYnSsQcD_PTs5VrWhbS4TsSbc35Bo0Sj4WedlkquPz1qz49vLK0LZcOp5IQ54IZzSnzCXDQJdoBTevt2mo5ZgPBPi0_Qtld5qMHu4fO_wUVbrkua1ZIlIw/QMXXnLbZ9nDwMuRu9SDK0z1Hl3Lqnntp-Zp2KzvodNI" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>Requirements.docx</b>
+  </div>
+  </div>
+
+**Syntax-Locked Color** : Purple
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+
+<hr style="clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/MvUI7jvAAFvFFbNX5I93LQ/fL4kGxiMKiCT7Vm1Zp7lMWh_ZKPQxvYgCYnSsQcD_PTs5VrWhbS4TsSbc35Bo0Sj4WedlkquPz1qz49vLK0LZcOp5IQ54IZzSnzCXDQJdoBTevt2mo5ZgPBPi0_Qtld5qMHu4fO_wUVbrkua1ZIlIw/QMXXnLbZ9nDwMuRu9SDK0z1Hl3Lqnntp-Zp2KzvodNI" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/0gNld-P4aIC1ORuchsHRaw/OT9E0kFi8xltuGTExB7_0QWe6F12oiY2Iv-wGJeNrDiEr94cJKtqC0LpWAMG00THIjSGG5TiODg2jzUYW_sQvmM6viOIVl5TCj6z_Phl9gJkghKjMiD0U5gmFHd7-T6nGmP1u8k_h16QB73mekbWxw/KaxKh-329vGiE6NdJ2ey0AVMA09XMrWCgjRyaskuJf0" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+### Specification  -> Tickets
+
+#### **Manager** - **NaturalLanguage** Tickets
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/ySUkfv8QAIt7809vFCzPEw/x8xxArzruDH7t6GaCb3_gan-ZkZPV1JQT5pJXZ6wr8plxfjo_ZkusmMrOqJd8bKRiNRka_Z64eS-FNpS_spK0rzZN-jUl_xKDaQGqnrO7gQ4YxR3eUt7lc55onUEDQScSz522BXsmJfJzjNhoA5cIA/70WJxUUrYbFRKwWUy4DBMrZ75oZwdUA5io5S3uEHdTQ" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xJ-mVJfrUGqTme6itd4wJQ/2MVUBN4NYuTjbTJiUXkp3ZsAAsdBcP_3ZKRaTOUMRCSpSDjQIP1MTC7Ji0cvOQl6j7KIFFrelAmxhKlGOUguY-42xOyCgpjypbg_AgEjY2DBw3ZuRI-kqe28OgAmKbNgi-dche_ePcLM9tdxtU-Wrw/7XUGAV0qxkFoo67EVG9scBA9FcDTWdXWfTcgaZ7Rjp8" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>Tickets.docx</b>
+  </div>
+  </div>
+
+**Syntax-Locked Color** : Yellow
+
+<hr style="margin: 0.5em; clear: both; background-color: Yellow"></hr>
+
+
+<hr style="clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u9vlaTwhQZKQddTdN08xng/atpZHWddATk1vPc9JFC5X-_YflPhCfqyzS8_0oh0ML1j_LqOMI2w3dm3h7tuKIyn7GGaUS-hNQoXHUbfQGuDfu_YYGQnzm_hvs3JVMhq-IxmrY1sMOC-zWIGxE8DCt1TKhFrTfWhOLiGIwWYbwkeMg/gZJZKjk2VIwOJZ3_gEna82rvpSIXX8WE-ySGp6Nn0RE" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+###  ****** UNUSED ******* Tickets  -> Markdown
+
+#### **Editor** - **File** Markdown
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u9vlaTwhQZKQddTdN08xng/atpZHWddATk1vPc9JFC5X-_YflPhCfqyzS8_0oh0ML1j_LqOMI2w3dm3h7tuKIyn7GGaUS-hNQoXHUbfQGuDfu_YYGQnzm_hvs3JVMhq-IxmrY1sMOC-zWIGxE8DCt1TKhFrTfWhOLiGIwWYbwkeMg/gZJZKjk2VIwOJZ3_gEna82rvpSIXX8WE-ySGp6Nn0RE" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>README.md</b>
+  </div>
+  </div>
+
+**Syntax-Locked Color** : Yellow
+
+<hr style="margin: 0.5em; clear: both; background-color: Yellow"></hr>
+
+
+<hr style="clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u4PQfpDb9scF-Z1xa0Bfpg/mj0M1lp9d_YyFJ7S0IaBS7Tt6uK_pxufu426HL7laTAv6squrbd5B2RBA2COGjnH9DrW7_7Lx2hfLs43KNWKgc5ZGJkKhlVEV3tsk-JrJ_Pq-3L4X-ntIEfAU2BCM1dz1PZt0e6b4XTGR46-mA2XhA/D8SKt0LDQAPXUtGYcrQt0i6BYTPbNBztdObfnQVZX3c" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+### Tickets  -> HTML
+
+#### **Editor** - **File** HTML
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u4PQfpDb9scF-Z1xa0Bfpg/mj0M1lp9d_YyFJ7S0IaBS7Tt6uK_pxufu426HL7laTAv6squrbd5B2RBA2COGjnH9DrW7_7Lx2hfLs43KNWKgc5ZGJkKhlVEV3tsk-JrJ_Pq-3L4X-ntIEfAU2BCM1dz1PZt0e6b4XTGR46-mA2XhA/D8SKt0LDQAPXUtGYcrQt0i6BYTPbNBztdObfnQVZX3c" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>Index.html</b>
+  </div>
+  </div>
+
+**Syntax-Locked Color** : white
+
+<hr style="margin: 0.5em; clear: both; background-color: white"></hr>
+
+
+<hr style="clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/TByvKET-GZLE-MILtPjTNQ/ul6QsOsB9W2tlJk9kaleKvNnTelfpPsswI6mKgO_O8n7PHd1kQpnztdQWWXhjvF3pbrLGhOQbVbkKUllutXbZus-gP1TYy0pe-lOKxVDz80f6PhmJeusLay5FoWAmjZA2eXn_JQd2-r9imoSFOLt6A/SlugB0N6qwna0_SOuM5riJNBIcabvT53ZtSeyycZbAg" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+###  ****** UNUSED ******* Tickets  -> WIKI
+
+#### **Editor** - **File** WIKI
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/TByvKET-GZLE-MILtPjTNQ/ul6QsOsB9W2tlJk9kaleKvNnTelfpPsswI6mKgO_O8n7PHd1kQpnztdQWWXhjvF3pbrLGhOQbVbkKUllutXbZus-gP1TYy0pe-lOKxVDz80f6PhmJeusLay5FoWAmjZA2eXn_JQd2-r9imoSFOLt6A/SlugB0N6qwna0_SOuM5riJNBIcabvT53ZtSeyycZbAg" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>Home.WIKI</b>
+  </div>
+  </div>
+
+**Syntax-Locked Color** : white
+
+<hr style="margin: 0.5em; clear: both; background-color: white"></hr>
+
+
+<hr style="clear: both; background-color: black; height: 1em;"></hr>
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/GLLVn-SnNdFca29YaT9OMw/56PNv8PZIjt-7J-ce22KsDoE6Iyil43UbEyvmfjxPxGeE-o0aBxmN3RuPOCIaUbYVQ9aAf-NIyoNWEKQ2Fuoh7AtQL1WvodcXVry_QGY-VId72xi87oFPCxELIZn-4X2HT0VmOHmAaXydl473yxyyXrTnwNnjbsHP_yoiqoFVyA/WsB8wdkxKfkZcRIH0MiTRUrpCXmEARfiyBsnKqOMpkE" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 10em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/3GmpMOcNevLnc2wW_hkyFA/GTBearsnzNBoFLFqc6isWpiwkSJ5gncMO20tb6NESZSDpdDI9JFN4wMnhsnaJFLro6q56VraS8ZTJ37-SOpGPbKOc2Yt0wH0jqUXkD4Qnr0_hGiri_U10xxBGckZUDXstWZ7SPEpNU9dEO0tGP3Mtw/a-pwmZT-jPfwfRzMh3plKscFAcMwGR_z5itORkxWbwc" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+###  ****** UNUSED ******* Tickets  -> C++
+
+#### **Developer** - **File** Cpp
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/3GmpMOcNevLnc2wW_hkyFA/GTBearsnzNBoFLFqc6isWpiwkSJ5gncMO20tb6NESZSDpdDI9JFN4wMnhsnaJFLro6q56VraS8ZTJ37-SOpGPbKOc2Yt0wH0jqUXkD4Qnr0_hGiri_U10xxBGckZUDXstWZ7SPEpNU9dEO0tGP3Mtw/a-pwmZT-jPfwfRzMh3plKscFAcMwGR_z5itORkxWbwc" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>Arduino.ino</b>
+  </div>
+  </div>
+
+**Syntax-Locked Color** : white
+
+<hr style="margin: 0.5em; clear: both; background-color: white"></hr>
+
+
+<hr style="clear: both; background-color: black; height: 1em;"></hr>
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/SZo6uzD9zZi6KasnhW4gMw/Qm-AFMVhGeHpY1xavSat4Oo66NO-tAuv1acC_OKSuvVpZRtUpoH6M_0mExpKXiVlsq-aer-vtgzDreoCMQ8KiIEnWMEB67fUt6b4doFzzr0RgMgh5Y5EUS97gJnciuzoPMo2RbGsxYIn8NcWDm9VhA/yuBnvtUaBLcWV_hBwp_H-nSHPHdcAHGmj3vlpx3jB4A" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 10em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/4yx7zg7OPWnlaqkX_8egxQ/HRQhHM7yVuT7NIkxOHm6hQOUuXZfu3x8a15kLSpkL1gcM0UbcR8nZJ8xoLBb06ZtYRw2eb8VHxSnLQDy7y3XKciaR-nyXG8CdVF89y5xDUgE1OdUfCUzTVonRTF2Z_fyhLZDcwMebnULrRInGDfSuQ/8OKrwq70J63p2l_PCi-1SM-754blHttE_LTYtMfCLkc" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+###  ****** UNUSED ******* Tickets  -> Python
+
+#### **Developer** - **File** Python
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/4yx7zg7OPWnlaqkX_8egxQ/HRQhHM7yVuT7NIkxOHm6hQOUuXZfu3x8a15kLSpkL1gcM0UbcR8nZJ8xoLBb06ZtYRw2eb8VHxSnLQDy7y3XKciaR-nyXG8CdVF89y5xDUgE1OdUfCUzTVonRTF2Z_fyhLZDcwMebnULrRInGDfSuQ/8OKrwq70J63p2l_PCi-1SM-754blHttE_LTYtMfCLkc" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>MachineController.py</b>
+  </div>
+  </div>
+
+**Syntax-Locked Color** : white
+
+<hr style="margin: 0.5em; clear: both; background-color: white"></hr>
+
+
+<hr style="clear: both; background-color: black; height: 1em;"></hr>
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/oO0WWTLjnD7I3C_fuHJ6uw/oRxOD5f0IQGohdF60GI_sr58IYkKLcv0-5Z5zCVmBFbIoNpxNCkEOa6sXICEKzJ1d8cUDrrjjSHLcNdMOeTcddeyW28G2FUaYn0qBypOYmcZNy9KTkEj56is4bzjEJtqzGuFwW3Oba8Rw3d1mkh0FYmXmbINC0TeikdOdrpUvlQ/NI7zHU7K57dbKZqCgh0RXHcUwTxzRhINnOCmENWthYM" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 10em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/A58VtXyDaGsVvorHZOYwZg/c27KV2ylR3uM2GE43pnQfXX0Ol1DPDLDEKx1PPO2RNtcqvrJEeunlWx4n31iIeydfmCckt81wJQtRqVxl-Ol8ind93RT6pfTfxYmgFtdpblX_2iBmJmjhNtfm7rF93ght1__kYu-EPsZgPBGm7jAfQ/8aJuCEpML67K48LD9cO-HSADUr6adKrOZS1R5Q_jI44" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+### Tickets  -> C#
+
+#### **Developer** - **File** CSharp
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/A58VtXyDaGsVvorHZOYwZg/c27KV2ylR3uM2GE43pnQfXX0Ol1DPDLDEKx1PPO2RNtcqvrJEeunlWx4n31iIeydfmCckt81wJQtRqVxl-Ol8ind93RT6pfTfxYmgFtdpblX_2iBmJmjhNtfm7rF93ght1__kYu-EPsZgPBGm7jAfQ/8aJuCEpML67K48LD9cO-HSADUr6adKrOZS1R5Q_jI44" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>MachineController.cs</b>
+  </div>
+  </div>
+
+**Syntax-Locked Color** : Yellow
+
+<hr style="margin: 0.5em; clear: both; background-color: Yellow"></hr>
+
+
+
+<hr></hr>
+## Syntax-Free Methodology
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/OfeAgeLx3PtfLoi28RD-og/YOjkLq6JT5I5EoNpQmLL2q40SxG_fkdfDq68PNcIlD2YfutC1GtFPL3lLncGkgpjqOI9G_oBRTx9nyqe0iGV3S5H67fcT3BntgLsIsK3YfJ-uLBWkAjk2N17it1QdCuETr3IVGBlJLiChaQWJTuoSA/zusL4O04Yl3c9Gi5ZvQQkhjAjdMWkx0JSuKBoA7hWFo" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/1gd26sPOIH0biGcad7t6dQ/OxKE9oAmz2sYiPOoVRALdUvcsQdHBI-DswcXe9qeumcGMaGAjkowEOUjYVPE9wDSnvvcEyHKgB9PR42aSUic-ZACdeIhAM0rpQSX_wmByD_MJlLpHUYfUB-juv69Kuy4riGPa2T6nZhYO8BSPy_WPA/zXRiKk9ZOffuR0OaX5J6PrAlAwstStFpT1Oj5zgLkFw" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+### Product Owner  -> Syntax-Free Idea
+
+<div style="background-color: Purple; width: 2em; height: 2em; float: left;"></div>
+
+- **To Node Name**: Airtable
 - **Output File Name**: Airtable Base
-- **Expected Color**: RED
-- **Syntax Free Color**: RED
+- **Expected Color**: Purple
+- **Syntax Free Color**: Purple
 - **Parent Free Edge Color**: 
-  
-### name: 
-- **Edge Name**: Tickets
-- **From Node Name**: 2.Specification
-- **Transformer Node Name**: 5.Manager
-- **To Node Type**: NaturalLanguage
-- **To Node Name**: 3.Tickets
+- **SyntaxFreeColor**: Purple",
+- **ParentFreeEdgeColor**: ",
+- **FromFreeEdgeToNodeType**: ",
+- **SyntaxFreeEdgeName**: ",
+
+<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+
+- **Manager & Architect**
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/dTuGFNJ3tqx6R7SsXqX43w/DdxPcbIKL3v87RvDsgrkDYcJVqjVVKceJCawJ6cRn6XDWIVROucCtD7OfuNV4bjxK7Jdhs8-CXlJLYHoVUCNKGCJ3RV4co4OXLNIuQRyrInYHYkkubAPLcM-usMRrbmakxesv171pUEGm56SJrwoOQ/TiXC-ZHWt7JrOUWZfiHkyirn-aB2gzgSNr9HGRtcJ0g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/z5x7e9Dl0YVbRk0gh1ndQA/9lZguBz71mvAFANiTyuzBgYwA8gnRVAnQaLZwPXCugpZL-XLSK8A6PzuwyvSPC4d09qn3FZRsA8oLceY0f7M5dJmiC1-cS3TushYuaNHxRY4Q5k73LXiNsDIzYeqUV9zzqZw6FEghM6NTRqM1wUz4w/uRTkPdmk88Lsth6V5vrxCQX7qppbwaoizzZYWgpFjgM" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/1gd26sPOIH0biGcad7t6dQ/OxKE9oAmz2sYiPOoVRALdUvcsQdHBI-DswcXe9qeumcGMaGAjkowEOUjYVPE9wDSnvvcEyHKgB9PR42aSUic-ZACdeIhAM0rpQSX_wmByD_MJlLpHUYfUB-juv69Kuy4riGPa2T6nZhYO8BSPy_WPA/zXRiKk9ZOffuR0OaX5J6PrAlAwstStFpT1Oj5zgLkFw" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+ ->  -> <b>Airtable Base</b>
+
+  </div>
+  </div>
+
+- **QueryableSSoT** Airtable
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/MvUI7jvAAFvFFbNX5I93LQ/fL4kGxiMKiCT7Vm1Zp7lMWh_ZKPQxvYgCYnSsQcD_PTs5VrWhbS4TsSbc35Bo0Sj4WedlkquPz1qz49vLK0LZcOp5IQ54IZzSnzCXDQJdoBTevt2mo5ZgPBPi0_Qtld5qMHu4fO_wUVbrkua1ZIlIw/QMXXnLbZ9nDwMuRu9SDK0z1Hl3Lqnntp-Zp2KzvodNI" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+### Specification  -> Tickets
+
+<div style="background-color: Purple; width: 2em; height: 2em; float: left;"></div>
+
+- **To Node Name**: Tickets
 - **Output File Name**: Tickets.docx
-- **Expected Color**: RED
-- **Syntax Free Color**: RED
+- **Expected Color**: Purple
+- **Syntax Free Color**: Purple
 - **Parent Free Edge Color**: 
-  - **From Edge Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/l8jjEoR1jcqYrZ1dNX5iYQ/QcB_Rw-gR0jJS8i5R5vpohvL7wxfXZcWYoe_Jve1SX25y9YS1rAv3ZuTUGG4wCx_QS30dzhrZBldm023cLhl_Xn--871CmIIjQhWMGrP2Jil_tVqb6i-zh9nsZh20SWdVud4l81qmPPfStR4qnslCA/3RqSgKll6df1GHCoFRF8n-UkQ1pGAlstarrcVOvLDxg
-  
-### name: 
-- **Edge Name**: Machine Readable SSoT
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 3.Architect
-- **To Node Type**: QueryableSSoT
-- **To Node Name**: 20.Json
+- **SyntaxFreeColor**: Purple",
+- **ParentFreeEdgeColor**: ",
+- **FromFreeEdgeToNodeType**: NaturalLanguage",
+- **SyntaxFreeEdgeName**: Natural Language Idea",
+
+<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+
+- **Manager**
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xJ-mVJfrUGqTme6itd4wJQ/2MVUBN4NYuTjbTJiUXkp3ZsAAsdBcP_3ZKRaTOUMRCSpSDjQIP1MTC7Ji0cvOQl6j7KIFFrelAmxhKlGOUguY-42xOyCgpjypbg_AgEjY2DBw3ZuRI-kqe28OgAmKbNgi-dche_ePcLM9tdxtU-Wrw/7XUGAV0qxkFoo67EVG9scBA9FcDTWdXWfTcgaZ7Rjp8" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/MvUI7jvAAFvFFbNX5I93LQ/fL4kGxiMKiCT7Vm1Zp7lMWh_ZKPQxvYgCYnSsQcD_PTs5VrWhbS4TsSbc35Bo0Sj4WedlkquPz1qz49vLK0LZcOp5IQ54IZzSnzCXDQJdoBTevt2mo5ZgPBPi0_Qtld5qMHu4fO_wUVbrkua1ZIlIw/QMXXnLbZ9nDwMuRu9SDK0z1Hl3Lqnntp-Zp2KzvodNI" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Requirements.docx ->  -> <b>Tickets.docx</b>
+
+  </div>
+  </div>
+
+- **NaturalLanguage** Tickets
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+### Tickets  -> Machine Readable SSoT
+
+<div style="background-color: Purple; width: 2em; height: 2em; float: left;"></div>
+
+- **To Node Name**: Json
 - **Output File Name**: Devices.json
-- **Expected Color**: RED
-- **Syntax Free Color**: RED
-- **Parent Free Edge Color**: RED
-  - **Free Transpiler Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/j-72hdxyWTbC-mHzu9e4Bw/W_wXxeNpbjK4a7H9bp1OYxCD7fgZ1gMRmJmUif9Bc1frl7IhOWNjczikpbqI21yt2LL68hIMJI9poAHT19Y24K2qShdQU5NkmhxcdTjf3Wf3_PO4PHjkHykhVnJort7Pz642fje2Sq70x-L59NTkOw/2INIv9eIGzry74iVNCexZSpfrBHlulfXCmso2SS_jK4
-  - **From Edge Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/j-72hdxyWTbC-mHzu9e4Bw/W_wXxeNpbjK4a7H9bp1OYxCD7fgZ1gMRmJmUif9Bc1frl7IhOWNjczikpbqI21yt2LL68hIMJI9poAHT19Y24K2qShdQU5NkmhxcdTjf3Wf3_PO4PHjkHykhVnJort7Pz642fje2Sq70x-L59NTkOw/2INIv9eIGzry74iVNCexZSpfrBHlulfXCmso2SS_jK4
-  
-### name: 
-- **Edge Name**: Markdown
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 12.Editor
-- **To Node Type**: File
-- **To Node Name**: 23.Markdown
+- **Expected Color**: Purple
+- **Syntax Free Color**: Purple
+- **Parent Free Edge Color**: Purple
+- **SyntaxFreeColor**: Purple",
+- **ParentFreeEdgeColor**: Purple",
+- **FromFreeEdgeToNodeType**: QueryableSSoT",
+- **SyntaxFreeEdgeName**: Syntax-Free Idea",
+
+<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+
+- **Architect**
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/B5kXU4ybA2IZMRTH_Vk_jg/wx-h0WzZX4GUvovO_P23eew4f-nUccDY3kz0nzQB6gqwU3tm7ZRfHuKIuBGU3am7nRlYT7WxhjofPdrNKAxmjaP8yYotwMeBRz-a2brkw4TWbc_0k4z2zNN8pL1PZzPB08qAtPXZsa-_7Fcg7h4GbQ/8FMCLsN3s29_dRTK-66K6fbbBccS41vy-Dfjf8NgA9o" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/1gd26sPOIH0biGcad7t6dQ/OxKE9oAmz2sYiPOoVRALdUvcsQdHBI-DswcXe9qeumcGMaGAjkowEOUjYVPE9wDSnvvcEyHKgB9PR42aSUic-ZACdeIhAM0rpQSX_wmByD_MJlLpHUYfUB-juv69Kuy4riGPa2T6nZhYO8BSPy_WPA/zXRiKk9ZOffuR0OaX5J6PrAlAwstStFpT1Oj5zgLkFw" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/1gd26sPOIH0biGcad7t6dQ/OxKE9oAmz2sYiPOoVRALdUvcsQdHBI-DswcXe9qeumcGMaGAjkowEOUjYVPE9wDSnvvcEyHKgB9PR42aSUic-ZACdeIhAM0rpQSX_wmByD_MJlLpHUYfUB-juv69Kuy4riGPa2T6nZhYO8BSPy_WPA/zXRiKk9ZOffuR0OaX5J6PrAlAwstStFpT1Oj5zgLkFw" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Airtable Base -> airtable-to-json -> <b>Devices.json</b>
+
+  </div>
+  </div>
+
+- **QueryableSSoT** Json
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u9vlaTwhQZKQddTdN08xng/atpZHWddATk1vPc9JFC5X-_YflPhCfqyzS8_0oh0ML1j_LqOMI2w3dm3h7tuKIyn7GGaUS-hNQoXHUbfQGuDfu_YYGQnzm_hvs3JVMhq-IxmrY1sMOC-zWIGxE8DCt1TKhFrTfWhOLiGIwWYbwkeMg/gZJZKjk2VIwOJZ3_gEna82rvpSIXX8WE-ySGp6Nn0RE" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+###  ****** UNUSED ******* Tickets  -> Markdown
+
+<div style="background-color: Purple + #MD0000; width: 2em; height: 2em; float: left;"></div>
+
+- **To Node Name**: Markdown
 - **Output File Name**: README.md
-- **Expected Color**: RED + #MD0000
-- **Syntax Free Color**: RED
-- **Parent Free Edge Color**: RED
-  - **Free Transpiler Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/7SMm6NYDQ3w9YMUFUIdV7A/s6pq3dgVd2X5e1u-L54wTwWKxGy634P7rWuDQwJCnCWMUBE8ojF1oe9ONrEKmcr6IGvT94Hz4kSmpBW0mAv3RmqL8XYUgPGQTzXNpeHOmpE80DDIhMhb4C4yMNhPQA1esTVJiu_QISfIZb5g1VWBjg/ma-naGmDcwHUgfOeC88LWdkZWGka9J9jtja9_R5NPnA
-  - **From Edge Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/pzaitOceI5_Zz4Hr_3AjxA/bBrrUq1E7VxUKyPF4lj5DeVDE4VIkJAHv4B3yJ7eBin4e-GCzR12KTVc4FIvnYTgN81xoFhiDkPXQ9YdTJh3-3_NPi_HkCjg3svfGDK5Q2vLGNY53x2srBZbL0lQi4UrQCxEWsT1Xea7iJ-YUVDt1w/WiCzt-C2sOKJTsAA-Aq1EkySR3LZ-biGjvJ4NKc1TKU
-  
-### name: 
-- **Edge Name**: HTML
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 12.Editor
-- **To Node Type**: File
-- **To Node Name**: 24.HTML
+- **Expected Color**: Purple + #MD0000
+- **Syntax Free Color**: Purple
+- **Parent Free Edge Color**: Purple
+- **SyntaxFreeColor**: Purple",
+- **ParentFreeEdgeColor**: Purple",
+- **FromFreeEdgeToNodeType**: QueryableSSoT",
+- **SyntaxFreeEdgeName**: Machine Readable SSoT",
+
+<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+
+- **Editor**
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u9vlaTwhQZKQddTdN08xng/atpZHWddATk1vPc9JFC5X-_YflPhCfqyzS8_0oh0ML1j_LqOMI2w3dm3h7tuKIyn7GGaUS-hNQoXHUbfQGuDfu_YYGQnzm_hvs3JVMhq-IxmrY1sMOC-zWIGxE8DCt1TKhFrTfWhOLiGIwWYbwkeMg/gZJZKjk2VIwOJZ3_gEna82rvpSIXX8WE-ySGp6Nn0RE" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Devices.json -> json-hbars-transform -> <b>README.md</b>
+
+  </div>
+  </div>
+
+- **File** Markdown
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u4PQfpDb9scF-Z1xa0Bfpg/mj0M1lp9d_YyFJ7S0IaBS7Tt6uK_pxufu426HL7laTAv6squrbd5B2RBA2COGjnH9DrW7_7Lx2hfLs43KNWKgc5ZGJkKhlVEV3tsk-JrJ_Pq-3L4X-ntIEfAU2BCM1dz1PZt0e6b4XTGR46-mA2XhA/D8SKt0LDQAPXUtGYcrQt0i6BYTPbNBztdObfnQVZX3c" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+### Tickets  -> HTML
+
+<div style="background-color: Purple + #HTML00; width: 2em; height: 2em; float: left;"></div>
+
+- **To Node Name**: HTML
 - **Output File Name**: Index.html
-- **Expected Color**: RED + #HTML00
-- **Syntax Free Color**: RED
-- **Parent Free Edge Color**: RED
-  - **Free Transpiler Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/7SMm6NYDQ3w9YMUFUIdV7A/s6pq3dgVd2X5e1u-L54wTwWKxGy634P7rWuDQwJCnCWMUBE8ojF1oe9ONrEKmcr6IGvT94Hz4kSmpBW0mAv3RmqL8XYUgPGQTzXNpeHOmpE80DDIhMhb4C4yMNhPQA1esTVJiu_QISfIZb5g1VWBjg/ma-naGmDcwHUgfOeC88LWdkZWGka9J9jtja9_R5NPnA
-  - **From Edge Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/pzaitOceI5_Zz4Hr_3AjxA/bBrrUq1E7VxUKyPF4lj5DeVDE4VIkJAHv4B3yJ7eBin4e-GCzR12KTVc4FIvnYTgN81xoFhiDkPXQ9YdTJh3-3_NPi_HkCjg3svfGDK5Q2vLGNY53x2srBZbL0lQi4UrQCxEWsT1Xea7iJ-YUVDt1w/WiCzt-C2sOKJTsAA-Aq1EkySR3LZ-biGjvJ4NKc1TKU
-  
-### name: 
-- **Edge Name**: WIKI
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 12.Editor
-- **To Node Type**: File
-- **To Node Name**: 25.WIKI
+- **Expected Color**: Purple + #HTML00
+- **Syntax Free Color**: Purple
+- **Parent Free Edge Color**: Purple
+- **SyntaxFreeColor**: Purple",
+- **ParentFreeEdgeColor**: Purple",
+- **FromFreeEdgeToNodeType**: QueryableSSoT",
+- **SyntaxFreeEdgeName**: Machine Readable SSoT",
+
+<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+
+- **Editor**
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u4PQfpDb9scF-Z1xa0Bfpg/mj0M1lp9d_YyFJ7S0IaBS7Tt6uK_pxufu426HL7laTAv6squrbd5B2RBA2COGjnH9DrW7_7Lx2hfLs43KNWKgc5ZGJkKhlVEV3tsk-JrJ_Pq-3L4X-ntIEfAU2BCM1dz1PZt0e6b4XTGR46-mA2XhA/D8SKt0LDQAPXUtGYcrQt0i6BYTPbNBztdObfnQVZX3c" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Devices.json -> json-hbars-transform -> <b>Index.html</b>
+
+  </div>
+  </div>
+
+- **File** HTML
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/TByvKET-GZLE-MILtPjTNQ/ul6QsOsB9W2tlJk9kaleKvNnTelfpPsswI6mKgO_O8n7PHd1kQpnztdQWWXhjvF3pbrLGhOQbVbkKUllutXbZus-gP1TYy0pe-lOKxVDz80f6PhmJeusLay5FoWAmjZA2eXn_JQd2-r9imoSFOLt6A/SlugB0N6qwna0_SOuM5riJNBIcabvT53ZtSeyycZbAg" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+###  ****** UNUSED ******* Tickets  -> WIKI
+
+<div style="background-color: Purple + #WIKI00; width: 2em; height: 2em; float: left;"></div>
+
+- **To Node Name**: WIKI
 - **Output File Name**: Home.WIKI
-- **Expected Color**: RED + #WIKI00
-- **Syntax Free Color**: RED
-- **Parent Free Edge Color**: RED
-  - **Free Transpiler Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/7SMm6NYDQ3w9YMUFUIdV7A/s6pq3dgVd2X5e1u-L54wTwWKxGy634P7rWuDQwJCnCWMUBE8ojF1oe9ONrEKmcr6IGvT94Hz4kSmpBW0mAv3RmqL8XYUgPGQTzXNpeHOmpE80DDIhMhb4C4yMNhPQA1esTVJiu_QISfIZb5g1VWBjg/ma-naGmDcwHUgfOeC88LWdkZWGka9J9jtja9_R5NPnA
-  - **From Edge Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/pzaitOceI5_Zz4Hr_3AjxA/bBrrUq1E7VxUKyPF4lj5DeVDE4VIkJAHv4B3yJ7eBin4e-GCzR12KTVc4FIvnYTgN81xoFhiDkPXQ9YdTJh3-3_NPi_HkCjg3svfGDK5Q2vLGNY53x2srBZbL0lQi4UrQCxEWsT1Xea7iJ-YUVDt1w/WiCzt-C2sOKJTsAA-Aq1EkySR3LZ-biGjvJ4NKc1TKU
-  
-### name: 
-- **Edge Name**: C++
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 11.Developer
-- **To Node Type**: File
-- **To Node Name**: 26.Cpp
+- **Expected Color**: Purple + #WIKI00
+- **Syntax Free Color**: Purple
+- **Parent Free Edge Color**: Purple
+- **SyntaxFreeColor**: Purple",
+- **ParentFreeEdgeColor**: Purple",
+- **FromFreeEdgeToNodeType**: QueryableSSoT",
+- **SyntaxFreeEdgeName**: Machine Readable SSoT",
+
+<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+
+- **Editor**
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/TByvKET-GZLE-MILtPjTNQ/ul6QsOsB9W2tlJk9kaleKvNnTelfpPsswI6mKgO_O8n7PHd1kQpnztdQWWXhjvF3pbrLGhOQbVbkKUllutXbZus-gP1TYy0pe-lOKxVDz80f6PhmJeusLay5FoWAmjZA2eXn_JQd2-r9imoSFOLt6A/SlugB0N6qwna0_SOuM5riJNBIcabvT53ZtSeyycZbAg" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Devices.json -> json-hbars-transform -> <b>Home.WIKI</b>
+
+  </div>
+  </div>
+
+- **File** WIKI
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/3GmpMOcNevLnc2wW_hkyFA/GTBearsnzNBoFLFqc6isWpiwkSJ5gncMO20tb6NESZSDpdDI9JFN4wMnhsnaJFLro6q56VraS8ZTJ37-SOpGPbKOc2Yt0wH0jqUXkD4Qnr0_hGiri_U10xxBGckZUDXstWZ7SPEpNU9dEO0tGP3Mtw/a-pwmZT-jPfwfRzMh3plKscFAcMwGR_z5itORkxWbwc" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+###  ****** UNUSED ******* Tickets  -> C++
+
+<div style="background-color: Purple + #CPP00; width: 2em; height: 2em; float: left;"></div>
+
+- **To Node Name**: Cpp
 - **Output File Name**: Arduino.ino
-- **Expected Color**: RED + #CPP00
-- **Syntax Free Color**: RED
-- **Parent Free Edge Color**: RED
-  - **Free Transpiler Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/7SMm6NYDQ3w9YMUFUIdV7A/s6pq3dgVd2X5e1u-L54wTwWKxGy634P7rWuDQwJCnCWMUBE8ojF1oe9ONrEKmcr6IGvT94Hz4kSmpBW0mAv3RmqL8XYUgPGQTzXNpeHOmpE80DDIhMhb4C4yMNhPQA1esTVJiu_QISfIZb5g1VWBjg/ma-naGmDcwHUgfOeC88LWdkZWGka9J9jtja9_R5NPnA
-  - **From Edge Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/pzaitOceI5_Zz4Hr_3AjxA/bBrrUq1E7VxUKyPF4lj5DeVDE4VIkJAHv4B3yJ7eBin4e-GCzR12KTVc4FIvnYTgN81xoFhiDkPXQ9YdTJh3-3_NPi_HkCjg3svfGDK5Q2vLGNY53x2srBZbL0lQi4UrQCxEWsT1Xea7iJ-YUVDt1w/WiCzt-C2sOKJTsAA-Aq1EkySR3LZ-biGjvJ4NKc1TKU
-  
-### name: 
-- **Edge Name**: Python
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 11.Developer
-- **To Node Type**: File
-- **To Node Name**: 27.Python
+- **Expected Color**: Purple + #CPP00
+- **Syntax Free Color**: Purple
+- **Parent Free Edge Color**: Purple
+- **SyntaxFreeColor**: Purple",
+- **ParentFreeEdgeColor**: Purple",
+- **FromFreeEdgeToNodeType**: QueryableSSoT",
+- **SyntaxFreeEdgeName**: Machine Readable SSoT",
+
+<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+
+- **Developer**
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/3GmpMOcNevLnc2wW_hkyFA/GTBearsnzNBoFLFqc6isWpiwkSJ5gncMO20tb6NESZSDpdDI9JFN4wMnhsnaJFLro6q56VraS8ZTJ37-SOpGPbKOc2Yt0wH0jqUXkD4Qnr0_hGiri_U10xxBGckZUDXstWZ7SPEpNU9dEO0tGP3Mtw/a-pwmZT-jPfwfRzMh3plKscFAcMwGR_z5itORkxWbwc" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Devices.json -> json-hbars-transform -> <b>Arduino.ino</b>
+
+  </div>
+  </div>
+
+- **File** Cpp
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+  - **To Node Platform Attachments**:
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/GLLVn-SnNdFca29YaT9OMw/56PNv8PZIjt-7J-ce22KsDoE6Iyil43UbEyvmfjxPxGeE-o0aBxmN3RuPOCIaUbYVQ9aAf-NIyoNWEKQ2Fuoh7AtQL1WvodcXVry_QGY-VId72xi87oFPCxELIZn-4X2HT0VmOHmAaXydl473yxyyXrTnwNnjbsHP_yoiqoFVyA/WsB8wdkxKfkZcRIH0MiTRUrpCXmEARfiyBsnKqOMpkE" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 5em;">
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/4yx7zg7OPWnlaqkX_8egxQ/HRQhHM7yVuT7NIkxOHm6hQOUuXZfu3x8a15kLSpkL1gcM0UbcR8nZJ8xoLBb06ZtYRw2eb8VHxSnLQDy7y3XKciaR-nyXG8CdVF89y5xDUgE1OdUfCUzTVonRTF2Z_fyhLZDcwMebnULrRInGDfSuQ/8OKrwq70J63p2l_PCi-1SM-754blHttE_LTYtMfCLkc" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+###  ****** UNUSED ******* Tickets  -> Python
+
+<div style="background-color: Purple + #PY0000; width: 2em; height: 2em; float: left;"></div>
+
+- **To Node Name**: Python
 - **Output File Name**: MachineController.py
-- **Expected Color**: RED + #PY0000
-- **Syntax Free Color**: RED
-- **Parent Free Edge Color**: RED
-  - **Free Transpiler Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/7SMm6NYDQ3w9YMUFUIdV7A/s6pq3dgVd2X5e1u-L54wTwWKxGy634P7rWuDQwJCnCWMUBE8ojF1oe9ONrEKmcr6IGvT94Hz4kSmpBW0mAv3RmqL8XYUgPGQTzXNpeHOmpE80DDIhMhb4C4yMNhPQA1esTVJiu_QISfIZb5g1VWBjg/ma-naGmDcwHUgfOeC88LWdkZWGka9J9jtja9_R5NPnA
-  - **From Edge Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/pzaitOceI5_Zz4Hr_3AjxA/bBrrUq1E7VxUKyPF4lj5DeVDE4VIkJAHv4B3yJ7eBin4e-GCzR12KTVc4FIvnYTgN81xoFhiDkPXQ9YdTJh3-3_NPi_HkCjg3svfGDK5Q2vLGNY53x2srBZbL0lQi4UrQCxEWsT1Xea7iJ-YUVDt1w/WiCzt-C2sOKJTsAA-Aq1EkySR3LZ-biGjvJ4NKc1TKU
-  
-### name: 
-- **Edge Name**: C#
-- **From Node Name**: 3.Tickets
-- **Transformer Node Name**: 11.Developer
-- **To Node Type**: File
-- **To Node Name**: 28.CSharp
+- **Expected Color**: Purple + #PY0000
+- **Syntax Free Color**: Purple
+- **Parent Free Edge Color**: Purple
+- **SyntaxFreeColor**: Purple",
+- **ParentFreeEdgeColor**: Purple",
+- **FromFreeEdgeToNodeType**: QueryableSSoT",
+- **SyntaxFreeEdgeName**: Machine Readable SSoT",
+
+<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+
+- **Developer**
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/4yx7zg7OPWnlaqkX_8egxQ/HRQhHM7yVuT7NIkxOHm6hQOUuXZfu3x8a15kLSpkL1gcM0UbcR8nZJ8xoLBb06ZtYRw2eb8VHxSnLQDy7y3XKciaR-nyXG8CdVF89y5xDUgE1OdUfCUzTVonRTF2Z_fyhLZDcwMebnULrRInGDfSuQ/8OKrwq70J63p2l_PCi-1SM-754blHttE_LTYtMfCLkc" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Devices.json -> json-hbars-transform -> <b>MachineController.py</b>
+
+  </div>
+  </div>
+
+- **File** Python
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+  - **To Node Platform Attachments**:
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/SZo6uzD9zZi6KasnhW4gMw/Qm-AFMVhGeHpY1xavSat4Oo66NO-tAuv1acC_OKSuvVpZRtUpoH6M_0mExpKXiVlsq-aer-vtgzDreoCMQ8KiIEnWMEB67fUt6b4doFzzr0RgMgh5Y5EUS97gJnciuzoPMo2RbGsxYIn8NcWDm9VhA/yuBnvtUaBLcWV_hBwp_H-nSHPHdcAHGmj3vlpx3jB4A" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 5em;">
+<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/A58VtXyDaGsVvorHZOYwZg/c27KV2ylR3uM2GE43pnQfXX0Ol1DPDLDEKx1PPO2RNtcqvrJEeunlWx4n31iIeydfmCckt81wJQtRqVxl-Ol8ind93RT6pfTfxYmgFtdpblX_2iBmJmjhNtfm7rF93ght1__kYu-EPsZgPBGm7jAfQ/8aJuCEpML67K48LD9cO-HSADUr6adKrOZS1R5Q_jI44" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+### Tickets  -> C#
+
+<div style="background-color: Purple + #CSHARP0; width: 2em; height: 2em; float: left;"></div>
+
+- **To Node Name**: CSharp
 - **Output File Name**: MachineController.cs
-- **Expected Color**: RED + #CSHARP0
-- **Syntax Free Color**: RED
-- **Parent Free Edge Color**: RED
-  - **Free Transpiler Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/7SMm6NYDQ3w9YMUFUIdV7A/s6pq3dgVd2X5e1u-L54wTwWKxGy634P7rWuDQwJCnCWMUBE8ojF1oe9ONrEKmcr6IGvT94Hz4kSmpBW0mAv3RmqL8XYUgPGQTzXNpeHOmpE80DDIhMhb4C4yMNhPQA1esTVJiu_QISfIZb5g1VWBjg/ma-naGmDcwHUgfOeC88LWdkZWGka9J9jtja9_R5NPnA
-  - **From Edge Free Attachments**:
-    - https://v5.airtableusercontent.com/v3/u/28/28/1714255200000/pzaitOceI5_Zz4Hr_3AjxA/bBrrUq1E7VxUKyPF4lj5DeVDE4VIkJAHv4B3yJ7eBin4e-GCzR12KTVc4FIvnYTgN81xoFhiDkPXQ9YdTJh3-3_NPi_HkCjg3svfGDK5Q2vLGNY53x2srBZbL0lQi4UrQCxEWsT1Xea7iJ-YUVDt1w/WiCzt-C2sOKJTsAA-Aq1EkySR3LZ-biGjvJ4NKc1TKU
-  
+- **Expected Color**: Purple + #CSHARP0
+- **Syntax Free Color**: Purple
+- **Parent Free Edge Color**: Purple
+- **SyntaxFreeColor**: Purple",
+- **ParentFreeEdgeColor**: Purple",
+- **FromFreeEdgeToNodeType**: QueryableSSoT",
+- **SyntaxFreeEdgeName**: Machine Readable SSoT",
+
+<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+
+- **Developer**
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/A58VtXyDaGsVvorHZOYwZg/c27KV2ylR3uM2GE43pnQfXX0Ol1DPDLDEKx1PPO2RNtcqvrJEeunlWx4n31iIeydfmCckt81wJQtRqVxl-Ol8ind93RT6pfTfxYmgFtdpblX_2iBmJmjhNtfm7rF93ght1__kYu-EPsZgPBGm7jAfQ/8aJuCEpML67K48LD9cO-HSADUr6adKrOZS1R5Q_jI44" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Devices.json -> json-hbars-transform -> <b>MachineController.cs</b>
+
+  </div>
+  </div>
+
+- **File** CSharp
+
+<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+
+  - **To Node Platform Attachments**:
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/oO0WWTLjnD7I3C_fuHJ6uw/oRxOD5f0IQGohdF60GI_sr58IYkKLcv0-5Z5zCVmBFbIoNpxNCkEOa6sXICEKzJ1d8cUDrrjjSHLcNdMOeTcddeyW28G2FUaYn0qBypOYmcZNy9KTkEj56is4bzjEJtqzGuFwW3Oba8Rw3d1mkh0FYmXmbINC0TeikdOdrpUvlQ/NI7zHU7K57dbKZqCgh0RXHcUwTxzRhINnOCmENWthYM" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 5em;">
 
