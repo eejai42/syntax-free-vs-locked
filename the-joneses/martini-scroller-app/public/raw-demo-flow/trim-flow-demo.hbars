@@ -1,5 +1,4 @@
-{{#each Airtable.NodeEdges}}
-[
+[{{#each Airtable.NodeEdges}}
   {
     "Name": "{{Name}}",
     "EdgeName": "{{EdgeName}}",
@@ -74,4 +73,4 @@
     "FromFreeEdgeIsQueriable": "{{FromFreeEdgeIsQueriable}}",
     "IsUsed": {{IsUsed}}
   }{{#unless @last}},{{/unless}}
-]{{/each}}
+{{/each}}]

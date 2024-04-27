@@ -1,4 +1,4 @@
-[
+{ "DemoFlow" : [
   {
     "Name": "1.Product Owner-Natural Language Idea",
     "EdgeName": "Natural Language Idea",
@@ -41,7 +41,7 @@
     "FromFreeEdgeIsQueriable": "",
     "IsUsed": 1
   },
-][
+
   {
     "Name": "1.Product Owner-Syntax-Free Idea",
     "EdgeName": "Syntax-Free Idea",
@@ -84,7 +84,7 @@
     "FromFreeEdgeIsQueriable": "",
     "IsUsed": 1
   },
-][
+
   {
     "Name": "2.Specification-Tickets",
     "EdgeName": "Tickets",
@@ -131,7 +131,7 @@
     "FromFreeEdgeIsQueriable": "",
     "IsUsed": 1
   },
-][
+
   {
     "Name": "3.Tickets-Machine Readable SSoT",
     "EdgeName": "Machine Readable SSoT",
@@ -179,7 +179,7 @@
     "FromFreeEdgeIsQueriable": "True",
     "IsUsed": 1
   },
-][
+
   {
     "Name": "3.Tickets-Markdown",
     "EdgeName": "Markdown",
@@ -231,7 +231,7 @@
     "FromFreeEdgeIsQueriable": "True",
     "IsUsed": 1
   },
-][
+
   {
     "Name": "3.Tickets-HTML",
     "EdgeName": "HTML",
@@ -282,7 +282,7 @@
     "FromFreeEdgeIsQueriable": "True",
     "IsUsed": 0
   },
-][
+
   {
     "Name": "3.Tickets-WIKI",
     "EdgeName": "WIKI",
@@ -334,7 +334,7 @@
     "FromFreeEdgeIsQueriable": "True",
     "IsUsed": 0
   },
-][
+
   {
     "Name": "3.Tickets-C++",
     "EdgeName": "C++",
@@ -388,7 +388,7 @@
     "FromFreeEdgeIsQueriable": "True",
     "IsUsed": 0
   },
-][
+
   {
     "Name": "3.Tickets-Python",
     "EdgeName": "Python",
@@ -441,7 +441,7 @@
     "FromFreeEdgeIsQueriable": "True",
     "IsUsed": 0
   },
-][
+
   {
     "Name": "3.Tickets-C#",
     "EdgeName": "C#",
@@ -497,3 +497,4 @@
   }
 ]
 
+}

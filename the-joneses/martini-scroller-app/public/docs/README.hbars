@@ -1,0 +1,56 @@
+## Syntax-Locked Arrangement
+
+{{#each DemoFlow}}
+item?
+  {{#unless (eq IsSyntaxFreeCapable 1) }}
+### {{Name}}
+- **Edge Name**: {{EdgeName}}
+- **From Node Name**: {{FromNodeName}}
+- **Transformer Node Name**: {{TransformerNodeName}}
+- **To Node Type**: {{ToNodeType}}
+- **To Node Name**: {{ToNodeName}}
+- **Output File Name**: {{OutputFileName}}
+- **Expected Color**: {{ExpectedColor}}
+- **From Node Master Color**: {{FromNodeMasterColor}}
+- **Locked Color**: {{LockedColor}}
+  {{#if LockedAttachments}}
+  - **Locked Attachments**:
+    {{#each LockedAttachments}}
+    - {{this}}
+    {{/each}}
+  {{/if}}
+  {{#if FreeAttachments}}
+  - **Free Attachments**:
+    {{#each FreeAttachments}}
+    - {{this}}
+    {{/each}}
+  {{/if}}
+  {{/unless}}
+{{/each}}
+
+## Syntax-Free Data
+{{#each DemoFlow}}
+### name: {{../Name}}
+- **Edge Name**: {{EdgeName}}
+- **From Node Name**: {{FromNodeName}}
+- **Transformer Node Name**: {{TransformerNodeName}}
+- **To Node Type**: {{ToNodeType}}
+- **To Node Name**: {{ToNodeName}}
+- **Output File Name**: {{OutputFileName}}
+- **Expected Color**: {{ExpectedColor}}
+- **Syntax Free Color**: {{SyntaxFreeColor}}
+- **Parent Free Edge Color**: {{ParentFreeEdgeColor}}
+  {{#if FreeTranspilerAttachments}}
+  - **Free Transpiler Attachments**:
+    {{#each FreeTranspilerAttachments}}
+    - {{this}}
+    {{/each}}
+  {{/if}}
+  {{#if FromEdgeFreeAttachments}}
+  - **From Edge Free Attachments**:
+    {{#each FromEdgeFreeAttachments}}
+    - {{this}}
+    {{/each}}
+  {{/if}}
+  
+{{/each}}
