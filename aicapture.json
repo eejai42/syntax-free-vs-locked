@@ -12,5 +12,50 @@
       "Value": "MartiniGlassScrollingSyntax"
     }
   ],
-  "ProjectTranspilers": []
+  "ProjectTranspilers": [
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "08b622df-33d7-40ee-8780-db6928c00386",
+        "Name": "AirtableToJson",
+        "Description": "Export an Airtable Base as json"
+      },
+      "ProjectTranspilerId": "3c8b4409-51b7-45cf-aef6-bc430f3306fa",
+      "Name": "AirtableToJson",
+      "RelativePath": "/the-joneses/martini-scroller-app/public/raw-demo-flow",
+      "CommandLine": "airtable/airtable-to-json -p baseid=app9f8btt7lSPTpw1 -p entities=NodeEdges -o demo-flow.json  -p view=ForExport"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "02dd04de-e063-47b4-b6dc-4cfc50fe7393",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/the-joneses/martini-scroller-app/public/raw-demo-flow",
+      "CommandLine": "xml-xslt-transform -i ./demo-flow.xml -i ./trim-thumbnails.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "ba509977-74bf-486e-a405-1b2125bd5d15",
+        "Name": "XmlToJson",
+        "Description": "Converts XML to JSON using the NewtonSoft C# conversion tools."
+      },
+      "ProjectTranspilerId": "28693e96-6629-44e1-ab72-6b3bc9223b17",
+      "Name": "XmlToJson",
+      "RelativePath": "/the-joneses/martini-scroller-app/public/raw-demo-flow",
+      "CommandLine": "xml-to-json -i ./trim-demo-flow.xml -o trim-demo-flow.json"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "7d24b632-a7a5-45a2-ba2a-99b26e47477d",
+        "Name": "JsonHbarsTransform",
+        "Description": "Json-Hbars-Transform"
+      },
+      "ProjectTranspilerId": "f6262cc5-f4c2-495c-9ea4-8a1970404ecd",
+      "Name": "JsonHbarsTransform",
+      "RelativePath": "/the-joneses/martini-scroller-app/public",
+      "CommandLine": "json-hbars-transform -i raw-demo-flow/trim-demo-flow.json -i raw-demo-flow/trim-flow-demo.hbars -o demo-flow.json"
+    }
+  ]
 }
