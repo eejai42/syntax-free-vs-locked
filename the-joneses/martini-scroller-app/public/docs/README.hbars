@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <style>
+
+.row {
+  margin: 0px;
+}
   table {
     font-size: normal;
   }
@@ -12,22 +16,30 @@
     font-size: 1.1rem;
     font-weight: bold;
   }
-  .goal {
-    color: #dddddd; 
+
+  .match-status {
     font-weight: bold; 
     width: 15rem; 
-    min-height: 2rem; 
+    min-height: 3rem; 
     border: solid black 1px"
     text-align: center;
+    color: #dddddd; 
+  }
+
+  .goal {
   }
   .current {
-    float: left; color: #ddd; 
-    font-weight: bold; 
-    width: 15rem; 
-    min-height: 2rem; 
-    border: solid black 1px
-    text-align: center;
+    float: left; 
   }
+
+  .out-of-sync {
+    border: solid red 10px;
+  }
+
+  .in-sync {
+    border: solid green 10px;
+  }
+
   .stale {
     color: red; 
     font-weight: bold; 
@@ -69,12 +81,12 @@
     border: solid purple 2px;
   }
 
-  .out-of-sync {
-    border: solid red 10px;
-  }
 
-  .in-sync {
-    border: solid green 10px;
+  .missing-layer {
+    margin: 10%; 
+    padding: 15%;
+    background-color: #eeee00;
+    border-radius: 3em;
   }
 
   body {
@@ -84,9 +96,9 @@
 </style>
 {{#with this}}
 
-<table>
+<table style="max-width: 100rem;">
 <tbody>
-<tr><td valign="top">
+<tr><td valign="top" style="max-width: 50rem;">
 <hr></hr>
 
 <h1 style="text-align: center">Syntax-Locked Methodology</h1>
@@ -98,16 +110,13 @@
 
       {{#if (eq (length LockedColor) 0)}}
         <div style="margin: 0.5rem; height: 30rem; text-align: center; horizontal-align: middle;">
-    <div>Normal text</div>
-          <div style="padding: 10%; background-color: #eeee00; ">-- Missing Layer --</div>
+          <div class="missing-layer">-- Missing Layer --</div>
         </div>
       {{else}}
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
             <td valign="top">
-    <div>Normal text2</div>
-
               <div class="from-node-image">
                 {{#if FromNodeAttachments}}
                   {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
@@ -118,16 +127,16 @@
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="goal match-row row in-sync" style="background-color: {{ExpectedColor}};">Goal: {{ExpectedColor}}</div>
+                  <div class="match-status goal match-row row in-sync" style="background-color: {{ExpectedColor}};">Goal: {{ExpectedColor}}</div>
                 </td>
                 <td valign="top">
-                  <div class="current match-row {{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{LockedColor}};"> vs. SYNTAX-LOCKED {{LockedColor}}
+                  <div class="match-status current match-row {{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{LockedColor}};"> vs. SYNTAX-LOCKED {{LockedColor}}
                     {{#unless (eq LockedColor ExpectedColor)}}
                       <div class="stale">⬆ STALE ⬆</div>
                     {{/unless}}
                   </div>
                 </td>
-                <tr><td colSpan="2">
+                <tr><td colSpan="3">
                   <h2> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}} ➡ {{EdgeName}}</h2>
                 </td></tr>
                 <tr><td colSpan="2">
@@ -193,10 +202,10 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="goal match-row in-sync" style="background-color: {{ExpectedColor}};">Goal: {{ExpectedColor}}</div>
+              <div class="match-status goal match-row in-sync" style="background-color: {{ExpectedColor}};">Goal: {{ExpectedColor}}</div>
             </td>
             <td valign="top">
-              <div class="current match-row  {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{SyntaxFreeColor}};"> vs. SYNTAX-FREE {{SyntaxFreeColor}}
+              <div class="match-status current match-row  {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{SyntaxFreeColor}};"> vs. SYNTAX-FREE {{SyntaxFreeColor}}
               
               {{#unless (eq SyntaxFreeColor ExpectedColor)}}
                 <div class="stale">⬆ STALE ⬆</div>

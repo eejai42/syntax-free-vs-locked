@@ -1,337 +1,337 @@
-<Airtable xmlns:json="http://james.newtonking.com/projects/json"><Entities json:Array="true"><Name>NodeEdge</Name><PluralName>NodeEdges</PluralName><AirtableName>NodeEdges</AirtableName></Entities><NodeEdges json:Array="true"><createdTime>4/26/2024 12:02:26 AM</createdTime><SkipForSyntaxFree>True</SkipForSyntaxFree><OutputFileName>Requirements.docx</OutputFileName><EdgeName>Natural Language Idea</EdgeName><LockedColor>Orange</LockedColor>
+<Airtable xmlns:json="http://james.newtonking.com/projects/json"><Entities json:Array="true"><Name>NodeEdge</Name><PluralName>NodeEdges</PluralName><AirtableName>NodeEdges</AirtableName></Entities><NodeEdges json:Array="true"><createdTime>4/26/2024 12:02:26 AM</createdTime><SkipForSyntaxFree>True</SkipForSyntaxFree><OutputFileName>Requirements.docx</OutputFileName><EdgeName>Natural Language Idea</EdgeName><LockedColor>Purple</LockedColor>
         <LockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/SHhg9f4cez8aYGzt84Vk2Q/3QxG1Rqy3WdF5OTwKppZCNChHAZ5h-p6bUgST7rsJ4XWonIyIcj0xAvKwGqA-YO9SGC73ABaZyVd4fEZ_aRSI8WAYGUwaQC9PSyszhz0DXkwbhhxFoT0619UZ0_wlooJSuQZ4Iy1QG9t1oHT7hTvlQ/9Fux3UHMF22Nzx0TAfL9wgNPrZd7PRVEPqyuCxQfeQA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/OzJ6jptLuiGEPrUQQn4Dnw/Sazk52v37x7NZugqqksPuBH6O_ijwQ6sHd8tYIZSv8jEJBgaJob85r4oLTx7C58q601WkGIO_Th89cOAOaZtmAr4NGSofHN1QMSQtXAXvu0yzYUcwglyj-oFAVkRfyAUL8oNy67TcrJR3KG7cCJzUg/aehNiDSBq8KUx4LwODEzmePk1CNRPr5I8mytDWY-QAA</url>
         </LockedAttachments>
     
         <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/bMwHacPmZE5J7-Na1asEsQ/cRMKVCQECeWhw2H9AI9hxgxIlCJfClZxnHmWeJSGwT137-8Gxg9erfDrZ-J9iWs0UFA2t6ZuFeOGhBeZpiIxXT8EKX5uoWxtscJXBRhQWBzWYAUOn7EtNsEJTEhABJbDRfHXwtB2KhAWEh1k1YCxrg/8PyOHT6R7jTkLiXmQ1PDEica2M98aCOOgBg4g3gCqa4</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/n6-SNFexl4Ffzwwr-Nh4tw/BY-396Pk9O7VfN9dqIzB7MqIC1csEFQpMsuHIG2GGg03oYRaZmiNrXNnoPKun511oBTNCJqcjvy2jam141UYC5aY3aOFqzFgV9jdiI4yLkAERCTd6jCyuB3n-GFQpitUqk6cdayueNQBZDqv4tRVCw/cX1-cg9OcHbVxJImrrbRSHX1F2HHoVoxfwbRIoF8cx4</url>
         </FreeAttachments>
-    <CustomSyntaxFreeColor>Orange</CustomSyntaxFreeColor><Name>1.Product Owner-Natural Language Idea</Name>
+    <CustomSyntaxFreeColor>Purple</CustomSyntaxFreeColor><Name>1.Product Owner-Natural Language Idea</Name>
         <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/fYbijWMS7SkJXFI-Szl6Qw/-meiVks06t5pxTiEGgFIsmEuUcvfZWtRQ_dbktXc5eUNp8W8phdQUE86reJju-sau5KqkoL521KmJZEnfxiL5agWFn3YSm9xMPHmtS7lEhgkmQNZ-yhYN8RCj52E8WaWKxfE2tGJYo69irW6KHuT8w/5aLNvDokgw4yDVPfum9x6cLbUPu7agef390hztQUxJ0</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/M2FchdOPi5wkdhAq4dIvnw/Tj_k2mbaZvEE_lyXFZgcE1nl3WmKbE_t5BhdrxbjacjbUEJWjhxrFC5DBcSPdpeOe6LK7V275I8W5trYmsbCX_R9Z_6JeMiGo83VFopOzoR42dHcp0gEjx_wXOMue9IEijmesCsPYp1aAtzOQZTOww/HyE_1xcOO7McIbbR31cWzG3dhEAkrsE-kw9jwkke2t4</url>
         </FromNodeAttachments>
     <FromNodeFlowType>Agent (human or AI)</FromNodeFlowType><FromNodeName>Product Owner</FromNodeName>
         <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/ETJnkDCsYsq6Nv3IVNhgJg/sr6U9zpUyZzPimhVFXnuA3n0W7c5bg5bcEtMRMGk03UwrXD7MFBVvGHTTmSHNUUoPZsc6Tl6lIlT2uThCuS9nugENuznjdcfDG150Pcw1cajLM670JmqHKTB4AoVy82SYobwI6S99GVksa_yn5BNkA/_PkW5zk-46rgyJYp2NFgayoTRrgYmYS_BNVqs3c0cb8</url>
         </ToNodeAttachments>
     <ToNodeName>Specification</ToNodeName>
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/sEY2LU4zVWJkzmupjfI5JQ/cGM4MO3TrwoHlRdnrif5GdxFIrP-vB-w5ERE0MvJlwp9v0m7SuKI2ARztRsgY37eaDuRHRVabyLQusw9e5an-qFUzVmkMmHIaZl8u76GfgEwjz8C0Br6jhXMY59J28PmOIoaD3-dCs_UAtLl0ML13Q/kYHzmh4eONoa_oy-Z1rrZ4B4Kd_h9bGQV1pEXw2wv88</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/HMzXoooKkGs8WKWkkFuHPg/hhmTOq5IQvefv-d6bH8k6k-AEejv-AInRcJ8_-kIY1uxyhZ3ZPUXGJkJgdUZAOPv6WZ6CetQAgLOd7IWXqXfnqQT_8Sl8hh8Z5eJE42DXxXckDXnZCIr9hBg4QW3xTFMYD90PBJoxw-iNOErVkCAdw/LFA68sy4cYWu8oXCdF9DnQJu81Z7EfpxmEaPQ6mIILA</url>
         </TranspilerNodeAttachments>
     
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/YROYXZbzhJcML0DsaN-i-g/BWj4WSR6aJHk49SQGP65F_CPh2oik4lNHCNZMpattgg1LF8vEHaKvCA6uYwvNCbczMiily_XwsX6qzkGhMjdV5Kp0iFjrbMXdvgZ7Ou7q6fymnmrindNJlIOqpTX6iRtAQTRipo6TBf6fP89a7f6aQ/iLreHH6I8f5wvb75nhh8y3_g47oHG5a2EVEFyJo_Csc</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/YQU6NThpsOdmEgBBKWPSnw/MeQyyc325TsGxXcjRkkYOEFre8rRbLX8PJRzu1WF6r07ly_G40iZf7MKFXrEyjnu810Ni7Bbxj_mUlFreBdVSRi9P-2_UtX6zxadpmyZiOp3PmyENK7XdRoRAY33J-4DpPyPP4dt_apjdjOwp4f3LQ/TOCIWN5m9y08PzlL5KWrQXhmeVjv2S78z-9S32UHWoU</url>
         </TranspilerNodeAttachments>
     <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>
         <![CDATA[Manager & Architect]]>
     </TransformerNodeName><ToNodeType>NaturalLanguage</ToNodeType><HasSyntaxFreeParent>1</HasSyntaxFreeParent><ToNodeIsQueriable></ToNodeIsQueriable>
         <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/BXvEXFz8KCKyN08WQPy0cw/BFeH46YsQU4WJ9EK5fArxrpzmrFmQFJC8SM79LbV6FYaQp258mVEekYwRZYzYyW3AZYbFRWkfyKExvkaJ5Z1ZIFSVhq7lr3RBj40SZcQQd47xF-lbMWKOX15cRR5hBc5r_qdVaGYja1mghLJU8SXbw/Yu7bSKIrefg8KmoAZMM7KFfSDUOjDY09cgCyfA5z04M</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/J3A89CHWg9JfpYKY77MRwg/bzvUiR5M0H2_zaba7LP-pEbfGPxMq7eGxbxgnTtLh8-_j9HrAVMV-8LY1mbK9lIJLAPm8ruvgwvcAlwnvcr0vg0Q43bH4afwBQVGFQvAAHNNKKCSgROfLgMQfi63SdvjWyiqoVpxrZ2iVFj9UKQCCg/S2SnGiaj5MVU0xEd6NOYZwzgSY8etvC9dMtGBKA-1uE</url>
         </ToNodePlatformAttachments>
-    <FromNodeMasterColor>Purple</FromNodeMasterColor><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>0</IsLeaf><IsUsed>1</IsUsed><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 3:40:08 PM</createdTime><OutputFileName>Airtable Base</OutputFileName><EdgeName>Syntax-Free Idea</EdgeName>
+    <FromNodeMasterColor>Purple</FromNodeMasterColor><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>0</IsLeaf><IsUsed>1</IsUsed><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>1</LockedColorMatchesExpected><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 3:40:08 PM</createdTime><OutputFileName>Airtable Base</OutputFileName><EdgeName>Syntax-Free Idea</EdgeName>
         <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VzlS-h3v9zCcyvJT4IdrSg/vzMQZrOQnGMe6pfPG2lgxcRmCLtjPCUSVPrO22xuy1-AWnU5D8jX3tFCh2ZD8U0V4U9soPFlZMNDgd89EhtJHGAPiKULK-eN1Sz7LTQC7A5_ntwC1N5J3oVqtfxE91UxndNgeayyAQlpM0Pm-iAc-w/wwguBAkyvZNcIOA4-Uvv9M6kDnli8SHNsb1NArc9tU8</url>
         </FreeAttachments>
-    <CustomSyntaxFreeColor>Orange</CustomSyntaxFreeColor><Name>1.Product Owner-Syntax-Free Idea</Name>
+    <CustomSyntaxFreeColor>Purple</CustomSyntaxFreeColor><Name>1.Product Owner-Syntax-Free Idea</Name>
         <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/fYbijWMS7SkJXFI-Szl6Qw/-meiVks06t5pxTiEGgFIsmEuUcvfZWtRQ_dbktXc5eUNp8W8phdQUE86reJju-sau5KqkoL521KmJZEnfxiL5agWFn3YSm9xMPHmtS7lEhgkmQNZ-yhYN8RCj52E8WaWKxfE2tGJYo69irW6KHuT8w/5aLNvDokgw4yDVPfum9x6cLbUPu7agef390hztQUxJ0</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/M2FchdOPi5wkdhAq4dIvnw/Tj_k2mbaZvEE_lyXFZgcE1nl3WmKbE_t5BhdrxbjacjbUEJWjhxrFC5DBcSPdpeOe6LK7V275I8W5trYmsbCX_R9Z_6JeMiGo83VFopOzoR42dHcp0gEjx_wXOMue9IEijmesCsPYp1aAtzOQZTOww/HyE_1xcOO7McIbbR31cWzG3dhEAkrsE-kw9jwkke2t4</url>
         </FromNodeAttachments>
     <FromNodeFlowType>Agent (human or AI)</FromNodeFlowType><FromNodeName>Product Owner</FromNodeName>
         <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VzlS-h3v9zCcyvJT4IdrSg/vzMQZrOQnGMe6pfPG2lgxcRmCLtjPCUSVPrO22xuy1-AWnU5D8jX3tFCh2ZD8U0V4U9soPFlZMNDgd89EhtJHGAPiKULK-eN1Sz7LTQC7A5_ntwC1N5J3oVqtfxE91UxndNgeayyAQlpM0Pm-iAc-w/wwguBAkyvZNcIOA4-Uvv9M6kDnli8SHNsb1NArc9tU8</url>
         </ToNodeAttachments>
     <ToNodeName>Airtable</ToNodeName>
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/sEY2LU4zVWJkzmupjfI5JQ/cGM4MO3TrwoHlRdnrif5GdxFIrP-vB-w5ERE0MvJlwp9v0m7SuKI2ARztRsgY37eaDuRHRVabyLQusw9e5an-qFUzVmkMmHIaZl8u76GfgEwjz8C0Br6jhXMY59J28PmOIoaD3-dCs_UAtLl0ML13Q/kYHzmh4eONoa_oy-Z1rrZ4B4Kd_h9bGQV1pEXw2wv88</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/HMzXoooKkGs8WKWkkFuHPg/hhmTOq5IQvefv-d6bH8k6k-AEejv-AInRcJ8_-kIY1uxyhZ3ZPUXGJkJgdUZAOPv6WZ6CetQAgLOd7IWXqXfnqQT_8Sl8hh8Z5eJE42DXxXckDXnZCIr9hBg4QW3xTFMYD90PBJoxw-iNOErVkCAdw/LFA68sy4cYWu8oXCdF9DnQJu81Z7EfpxmEaPQ6mIILA</url>
         </TranspilerNodeAttachments>
     
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/YROYXZbzhJcML0DsaN-i-g/BWj4WSR6aJHk49SQGP65F_CPh2oik4lNHCNZMpattgg1LF8vEHaKvCA6uYwvNCbczMiily_XwsX6qzkGhMjdV5Kp0iFjrbMXdvgZ7Ou7q6fymnmrindNJlIOqpTX6iRtAQTRipo6TBf6fP89a7f6aQ/iLreHH6I8f5wvb75nhh8y3_g47oHG5a2EVEFyJo_Csc</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/YQU6NThpsOdmEgBBKWPSnw/MeQyyc325TsGxXcjRkkYOEFre8rRbLX8PJRzu1WF6r07ly_G40iZf7MKFXrEyjnu810Ni7Bbxj_mUlFreBdVSRi9P-2_UtX6zxadpmyZiOp3PmyENK7XdRoRAY33J-4DpPyPP4dt_apjdjOwp4f3LQ/TOCIWN5m9y08PzlL5KWrQXhmeVjv2S78z-9S32UHWoU</url>
         </TranspilerNodeAttachments>
     <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>
         <![CDATA[Manager & Architect]]>
     </TransformerNodeName><ToNodeType>QueryableSSoT</ToNodeType><HasSyntaxFreeParent>1</HasSyntaxFreeParent><ToNodeIsQueriable>True</ToNodeIsQueriable>
         <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/yCvh9geU7RuMhz2-dcu8kw/PKbPfs1iCHgAeH2GMMKn_Z-qiZzCEYPuSEfCv3NsneLolT0RXpOKY6vA9rDMndBJHSjEwQA92XLRYXx0OH47RbfqLYJP03ykKmTt0HcQmUwX1VhI2vwbJLJ9KM615y80GyftHdY_8_cOkHp3WqHlJA/k0kfuG8goEmBtaoYgQOEIL0WXMz4Vay53y7rL4xpsyo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/iyqeFXYU4V--_J4HBfvVjA/roZLBzyGT-EDmfVgXItgeoRBDL8L11I68MWnKJT8ezGu6PxUBM3cfghmrY4-oRdnXaZN1O_oYwGnBpp3DoXc8lyeHAXewcGkY4o_-uKrJ5DMLVquL9X7xhxyY07H8KqhabI-kmQRMaUyeLdPbJT_DQ/-YYm3AknKuCIdEbVz1F3tLnh2kMfP-k0pbxR2ikYEEA</url>
         </ToNodePlatformAttachments>
-    <FromNodeMasterColor>Purple</FromNodeMasterColor><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>0</IsLeaf><IsUsed>1</IsUsed><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 4:50:29 PM</createdTime><OutputFileName>Tickets.docx</OutputFileName><EdgeName>Tickets</EdgeName><LockedColor>Orange</LockedColor>
+    <FromNodeMasterColor>Purple</FromNodeMasterColor><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>0</IsLeaf><IsUsed>1</IsUsed><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 4:50:29 PM</createdTime><OutputFileName>Tickets.docx</OutputFileName><EdgeName>Tickets</EdgeName><LockedColor>Purple</LockedColor>
         <LockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/7bfVT4lF-__vMm5ZM6MecQ/lS6rvzuVxM0DhiLzwAbsArRojNlTIIQD2Tyv7AyMSxXKadNPEoPdgn5-ZyIttSzdEmyGYjAnL99uaC4AynWHbawZHJzC1CTcjfwniQtMTEkVPS05VWXtNuIyD0x2L5818fOGOAHXXiPtaOVAQ430Cw/9yAayhAhC25rEmund6LAqBSG_m4G5i0-7iZ4a2q849M</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/jnjDvzhK2pvn14KWVrjYeQ/rbfN2ovCxkkyy_EIQLEygf_0zShWKL2LzjoiPSbjKaUCssWRovg4U1lRrlqwe0d1JWf_xKGUR7Vr2mtA88MDI89jvY5s_LaEhRtzfWaIUddSJweck9OtiFr28idZLiAikNPrfFp1lBAV9WsUh_3VAg/9_plgOI12M9QcQqzBEPSHzNS7rxxLeP4K0jtwXV9nks</url>
         </LockedAttachments>
     
         <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/9i1pOs8aV895wq_tRu10mg/URDqbj7TcsrVTD743ZlhJMDYbrs0gJFIl6wtQIN4Sb_IoBnxYwFeh7_ItIG-Zchq86B62QbyCQ-Lvc90JBbYnhrTIR-MjpL_kmjY-FdwiaoLrqEoTilLukiU4DLaooOIw0__I06Cg6B25a96lwfdRA/k_glF7TfrFCMDNPr60FgEa8CpS8TxMaeEcxrCh_JYoU</url>
         </FreeAttachments>
-    <CustomSyntaxFreeColor>Orange</CustomSyntaxFreeColor><Name>2.Specification-Tickets</Name>
+    <CustomSyntaxFreeColor>Purple</CustomSyntaxFreeColor><Name>2.Specification-Tickets</Name>
         <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/ETJnkDCsYsq6Nv3IVNhgJg/sr6U9zpUyZzPimhVFXnuA3n0W7c5bg5bcEtMRMGk03UwrXD7MFBVvGHTTmSHNUUoPZsc6Tl6lIlT2uThCuS9nugENuznjdcfDG150Pcw1cajLM670JmqHKTB4AoVy82SYobwI6S99GVksa_yn5BNkA/_PkW5zk-46rgyJYp2NFgayoTRrgYmYS_BNVqs3c0cb8</url>
         </FromNodeAttachments>
     <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Specification</FromNodeName>
         <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/9i1pOs8aV895wq_tRu10mg/URDqbj7TcsrVTD743ZlhJMDYbrs0gJFIl6wtQIN4Sb_IoBnxYwFeh7_ItIG-Zchq86B62QbyCQ-Lvc90JBbYnhrTIR-MjpL_kmjY-FdwiaoLrqEoTilLukiU4DLaooOIw0__I06Cg6B25a96lwfdRA/k_glF7TfrFCMDNPr60FgEa8CpS8TxMaeEcxrCh_JYoU</url>
         </ToNodeAttachments>
     <ToNodeName>Tickets</ToNodeName>
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/dIFXi9vpTJa1z_njU2OTjw/xYny9Hxq-oEj8n6ZysdCrWHHuvwr4mAmgEoxlBQgOMqxZzJc9fG9QbAOUIY1k8cUwphh3j7y2tgiMAlFlNA0tV7fyyVovrh02neHCJ8ejcKHTgDtji-XF_QGn4Xih4R1otvvqVfAx0NamldDZTq-rw/baODgulFEmVhW5MwnsrTEmhSzGc1psajyfJQFvSxM-Q</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/hL_NfRTPMC4lKFGyZd5ZGQ/vIXi4v9aKjnfUTLnCAjAzHPDu-VwQfWbEQoC8jJBygvgEBLwK1Q1aqc_yzwDud7jRefcgVWAy6DprU0IdEPzo9SITf49xMegD8-97PFQAYIUIXmGalDs9y5HeBayXOP-RjMm0iGp3h5daAI0kfY8Lw/wSLTo2Nm8BKBfQc-T90wOkYl1OGYOYoxMm1D1xujjH4</url>
         </TranspilerNodeAttachments>
     <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Manager</TransformerNodeName>
         <FromEdgeLockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/SHhg9f4cez8aYGzt84Vk2Q/3QxG1Rqy3WdF5OTwKppZCNChHAZ5h-p6bUgST7rsJ4XWonIyIcj0xAvKwGqA-YO9SGC73ABaZyVd4fEZ_aRSI8WAYGUwaQC9PSyszhz0DXkwbhhxFoT0619UZ0_wlooJSuQZ4Iy1QG9t1oHT7hTvlQ/9Fux3UHMF22Nzx0TAfL9wgNPrZd7PRVEPqyuCxQfeQA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/OzJ6jptLuiGEPrUQQn4Dnw/Sazk52v37x7NZugqqksPuBH6O_ijwQ6sHd8tYIZSv8jEJBgaJob85r4oLTx7C58q601WkGIO_Th89cOAOaZtmAr4NGSofHN1QMSQtXAXvu0yzYUcwglyj-oFAVkRfyAUL8oNy67TcrJR3KG7cCJzUg/aehNiDSBq8KUx4LwODEzmePk1CNRPr5I8mytDWY-QAA</url>
         </FromEdgeLockedAttachments>
     <ToNodeType>NaturalLanguage</ToNodeType><FromFreeEdgeToNodeType>NaturalLanguage</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Natural Language Idea</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent><ToNodeIsQueriable></ToNodeIsQueriable><FromFreeEdgeIsQueriable></FromFreeEdgeIsQueriable>
         <FromEdgeFreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/bMwHacPmZE5J7-Na1asEsQ/cRMKVCQECeWhw2H9AI9hxgxIlCJfClZxnHmWeJSGwT137-8Gxg9erfDrZ-J9iWs0UFA2t6ZuFeOGhBeZpiIxXT8EKX5uoWxtscJXBRhQWBzWYAUOn7EtNsEJTEhABJbDRfHXwtB2KhAWEh1k1YCxrg/8PyOHT6R7jTkLiXmQ1PDEica2M98aCOOgBg4g3gCqa4</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/n6-SNFexl4Ffzwwr-Nh4tw/BY-396Pk9O7VfN9dqIzB7MqIC1csEFQpMsuHIG2GGg03oYRaZmiNrXNnoPKun511oBTNCJqcjvy2jam141UYC5aY3aOFqzFgV9jdiI4yLkAERCTd6jCyuB3n-GFQpitUqk6cdayueNQBZDqv4tRVCw/cX1-cg9OcHbVxJImrrbRSHX1F2HHoVoxfwbRIoF8cx4</url>
         </FromEdgeFreeAttachments>
     
         <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/WBQRedbw8JXXCt0oMVxTQA/77Sf9crrgmuTLfBd80aks6Vu1etb1XWUNt60nDi3ix3wU7A05gu4M7FIRfcasYGT6Cc4bfy-puYch4Q7tOhuGFNRNdb8Zcq8K5XHdtWiXoKcP5yABxbM3D97SsYgEZOaywVhkg7FXg2Y69sgrqhn8g/0sduMx_imgRKrKNsmuAmCiEIWfyj18HZcK-_gd9zkBQ</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/1CONf8jaMdOhv1BsGIwCDg/ZseT2h2zl7bIJK11BvythmnBsYFSJxWQPh3Nt3925SGDgm5ahHl1WJ2dpwXz8mlpjegStuCmG3e2SoZfRKvlNu0JClaLC2aUeAvNPjxNoDKGUon4au2EfkUsc_rD0EjOg-NRSTl3VAM5T4VZsK56Dg/g8n6EQAoyO_zdPcgKRAU7kvKH3VbBYS7kvnIn0xjZiw</url>
         </ToNodePlatformAttachments>
-    <FromLockedEdgeIsQueriable></FromLockedEdgeIsQueriable><SyntaxFreeEdgeOutputFileName>Requirements.docx</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>0</IsLeaf><IsUsed>1</IsUsed><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Orange</ParentFreeEdgeColor><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/25/2024 9:05:08 PM</createdTime><OutputFileName>Devices.json</OutputFileName><EdgeName>Install Airtable to Json</EdgeName>
+    <FromLockedEdgeIsQueriable></FromLockedEdgeIsQueriable><SyntaxFreeEdgeOutputFileName>Requirements.docx</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>0</IsLeaf><IsUsed>1</IsUsed><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>1</LockedColorMatchesExpected><ParentFreeEdgeColor>Purple</ParentFreeEdgeColor><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/25/2024 9:05:08 PM</createdTime><OutputFileName>Devices.json</OutputFileName><EdgeName>Install Airtable to Json</EdgeName>
         <LockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/LpG9ZUgyjrXfdzk54TAPVA/5gZnlNgZRKm12gMCor3nBpte3xMN2PZlN0OydHPSmyIygVblyuq5RH6pSvMXEHe3bhwzcDhywAzdEHKwzEd98HIXVNrpm4PfJNh6y9JMnldFoq8pWM2cvFhXoBWMiUlq8l-gkl6ipN0XQjUkTyXJbA/j7y1jbmGYNw6YXzlSyuucdL7Br0WBb4ry1BMM-P1bWk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VUWfdTCJY7gbORbWpoP38Q/fGiqfV9frfEapTVJ4y91LLXdcOAx-aROMqsdhQRZrL0tL-j7HamUqTO-2EV0UXP_jp_XfzXqP6faCvs-HjZbtl2wZGV_AUeKGXozI7DJSj7cZ6F7PvWPvKCrvU0Nm3ep-NflKPuXOp64VLIETjm5cA/gkWgOjxGIjN0xLiNHalyjNMyPmZkHm8rnPGN8b9lHlI</url>
         </LockedAttachments>
     
         <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/2j9e68hHlWnwRAa5pE4gYQ/I4uFp62SBDP4ZUrqvaMGtZmB5hSco0oACgyUHRyP4gWIJpV1TfPcw8J-RqwLSzr-5P__ybE7vLF8tAe05Md_yAp_EoxwmhVHzff_PD7bhZvMLiVgTwgVsn1NyCUn_nOGAh2Ns8WhgjN_KFvu3z14Nw/2s9aphF9_3frK6smL5C-7vBWb8sYIB4fAecqGfCmbGA</url>
         </FreeAttachments>
-    <CustomSyntaxFreeColor>Orange</CustomSyntaxFreeColor><Name>3.Tickets-Install Airtable to Json</Name>
+    <CustomSyntaxFreeColor>Purple</CustomSyntaxFreeColor><Name>3.Tickets-Install Airtable to Json</Name>
         <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/9i1pOs8aV895wq_tRu10mg/URDqbj7TcsrVTD743ZlhJMDYbrs0gJFIl6wtQIN4Sb_IoBnxYwFeh7_ItIG-Zchq86B62QbyCQ-Lvc90JBbYnhrTIR-MjpL_kmjY-FdwiaoLrqEoTilLukiU4DLaooOIw0__I06Cg6B25a96lwfdRA/k_glF7TfrFCMDNPr60FgEa8CpS8TxMaeEcxrCh_JYoU</url>
         </FromNodeAttachments>
     <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Tickets</FromNodeName>
         <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/2j9e68hHlWnwRAa5pE4gYQ/I4uFp62SBDP4ZUrqvaMGtZmB5hSco0oACgyUHRyP4gWIJpV1TfPcw8J-RqwLSzr-5P__ybE7vLF8tAe05Md_yAp_EoxwmhVHzff_PD7bhZvMLiVgTwgVsn1NyCUn_nOGAh2Ns8WhgjN_KFvu3z14Nw/2s9aphF9_3frK6smL5C-7vBWb8sYIB4fAecqGfCmbGA</url>
         </ToNodeAttachments>
     <ToNodeName>Json</ToNodeName>
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/XDuA_z0V62wHc1ZolvYQ_A/yEd52u5Ktx13p0PZIlgQ7sm84IbnAF7ye2N7YU9lcK7-BXSF0u4yKFvu7qZVyPRj7XdJO1Jl4To0Ps_ykOYggtbJjsssprVJY6XxhHol4X2X04Y72gYHj_wlfgFDtUlAqJlf80tWNUoD6tEMKtXXjA/vrHYKYgL5SKH7Lt4yNU7dFNZjJy4c4s0iS4xRyDryY8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/JtQl3EhUhwSVS5_eF02Pkw/laNnbH-_y7-ykqPNmPE5enUVrP07-Fe6dMGB27_CDXHSTNx29rPIVrUI8_Yep5wQM2g1P6mVF3MCNDl_5Et_Jq8sLfSkqupN9QGs4II9iBI5EEsd7PIarU6ZrXUzrHd_lHGs7alD2eLWOwHj1JVbYg/1Bt9m2u8UgQpEEq2NJuC1dq1n14xiplLi_5HRYLsm0Q</url>
         </TranspilerNodeAttachments>
     <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Architect</TransformerNodeName><ToNodeType>QueryableSSoT</ToNodeType><FromFreeEdgeToNodeType>QueryableSSoT</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Syntax-Free Idea</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent>
         <FreeTranspilerAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VzlS-h3v9zCcyvJT4IdrSg/vzMQZrOQnGMe6pfPG2lgxcRmCLtjPCUSVPrO22xuy1-AWnU5D8jX3tFCh2ZD8U0V4U9soPFlZMNDgd89EhtJHGAPiKULK-eN1Sz7LTQC7A5_ntwC1N5J3oVqtfxE91UxndNgeayyAQlpM0Pm-iAc-w/wwguBAkyvZNcIOA4-Uvv9M6kDnli8SHNsb1NArc9tU8</url>
         </FreeTranspilerAttachments>
     <FreeTranspilerNodeName>airtable-to-json</FreeTranspilerNodeName><SyntaxFreeTransformerName>1.airtable-to-json</SyntaxFreeTransformerName><ToNodeIsQueriable>True</ToNodeIsQueriable><FromFreeEdgeIsQueriable>True</FromFreeEdgeIsQueriable>
         <FromEdgeFreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VzlS-h3v9zCcyvJT4IdrSg/vzMQZrOQnGMe6pfPG2lgxcRmCLtjPCUSVPrO22xuy1-AWnU5D8jX3tFCh2ZD8U0V4U9soPFlZMNDgd89EhtJHGAPiKULK-eN1Sz7LTQC7A5_ntwC1N5J3oVqtfxE91UxndNgeayyAQlpM0Pm-iAc-w/wwguBAkyvZNcIOA4-Uvv9M6kDnli8SHNsb1NArc9tU8</url>
         </FromEdgeFreeAttachments>
     
         <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/y_mbW2BI7j34XItA_B7ozg/RyKrlf9S06XpaLE3gRLUApx9taoYNd3nV9sdqNwxf5JKEQt3uQnSTc3VFneisAwyOZRyZLfs5vD72IPjljNnS32Gz7acDXTzXlj64Guv_9i8plXKYF_sohx1Q2Yq05Or50bGX9F_ARl-a5-uPS4O_Q/SMRc-gRlob0eMn9zldp211vgWN4Z6V1PSzFtXQzoOGo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/CXaR2cquC7rBMlSpd_uMtw/X5G2ZbkWEXEgVjPmffCy4b9C2FIPDF61SMV58E_2BzBgmwLm1JSajeCd92iU4ztSO7GgGgCTCTnBnDWU2RVmY2q6T2Gmp7UEmELBTAYTtPQpGpLiRciEuGK638JQTNYZoWT6Q_llQHQ1P-MrGDTejQ/lrdZc6y5GSrK91mGplikn9ePY9ZbOPGZtNzGC37OZho</url>
         </ToNodePlatformAttachments>
-    <FromLockedEdgeIsQueriable></FromLockedEdgeIsQueriable><SyntaxFreeEdgeOutputFileName>Airtable Base</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>0</IsLeaf><IsUsed>1</IsUsed><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Orange</ParentFreeEdgeColor><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>Home.WIKI</OutputFileName><EdgeName>WIKI</EdgeName><LockedColor>Orange</LockedColor>
+    <FromLockedEdgeIsQueriable></FromLockedEdgeIsQueriable><SyntaxFreeEdgeOutputFileName>Airtable Base</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>0</IsLeaf><IsUsed>1</IsUsed><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Purple</ParentFreeEdgeColor><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:28 PM</createdTime><OutputFileName>README.md</OutputFileName><EdgeName>Markdown</EdgeName><LockedColor>Blue</LockedColor>
         <LockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/BIMjNkyNgWxJywu9Dqiygw/wvnv9e706JiMFLELBA4hxdpyJFGksTfWN2jzyZXJR4ZYi99GTmRQ8xQklnsKY6FLf-FV-vUB5UwczqOWymSdhjaXn_5Ia00NyBWtC_DbvJ82Dbq25Sk6PlLZNaQvKaPCGJqfbXTbLk02sQn7SqjPLQ/xeQP6kf7bJQJRNXL5MWZl2LrlhAM9xR90pY_9gXqsms</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/alv4PdUEpbcmVeSXcl8kVg/N4HWgtvXlPnttyb2BD3EhKWmxfHrSZzbuj_3bzXRR6VXfdvnXWwS6tU9L8DP5AIPjsf_lf81hIqUc7Wqu_WUl8_bNkSx2hYSx7DA_zrfvlbImN1ZAx8Apt6nVZh3lL-Lture_yheveu_1ZRshmlmYw/-LAS_VU0_xu3OT74Yj3cY_PbgTihXSL_b6SlySEbffY</url>
         </LockedAttachments>
     
         <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/BIMjNkyNgWxJywu9Dqiygw/wvnv9e706JiMFLELBA4hxdpyJFGksTfWN2jzyZXJR4ZYi99GTmRQ8xQklnsKY6FLf-FV-vUB5UwczqOWymSdhjaXn_5Ia00NyBWtC_DbvJ82Dbq25Sk6PlLZNaQvKaPCGJqfbXTbLk02sQn7SqjPLQ/xeQP6kf7bJQJRNXL5MWZl2LrlhAM9xR90pY_9gXqsms</url>
-        </FreeAttachments>
-    <Name>3.Tickets-WIKI</Name>
-        <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM</url>
-        </FromNodeAttachments>
-    <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Tickets</FromNodeName>
-        <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/BIMjNkyNgWxJywu9Dqiygw/wvnv9e706JiMFLELBA4hxdpyJFGksTfWN2jzyZXJR4ZYi99GTmRQ8xQklnsKY6FLf-FV-vUB5UwczqOWymSdhjaXn_5Ia00NyBWtC_DbvJ82Dbq25Sk6PlLZNaQvKaPCGJqfbXTbLk02sQn7SqjPLQ/xeQP6kf7bJQJRNXL5MWZl2LrlhAM9xR90pY_9gXqsms</url>
-        </ToNodeAttachments>
-    <ToNodeName>WIKI</ToNodeName>
-        <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8</url>
-        </TranspilerNodeAttachments>
-    <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Editor</TransformerNodeName>
-        <FromEdgeLockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/LpG9ZUgyjrXfdzk54TAPVA/5gZnlNgZRKm12gMCor3nBpte3xMN2PZlN0OydHPSmyIygVblyuq5RH6pSvMXEHe3bhwzcDhywAzdEHKwzEd98HIXVNrpm4PfJNh6y9JMnldFoq8pWM2cvFhXoBWMiUlq8l-gkl6ipN0XQjUkTyXJbA/j7y1jbmGYNw6YXzlSyuucdL7Br0WBb4ry1BMM-P1bWk</url>
-        </FromEdgeLockedAttachments>
-    <ToNodeType>File</ToNodeType><FromFreeEdgeToNodeType>QueryableSSoT</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Install Airtable to Json</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent>
-        <FreeTranspilerAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw</url>
-        </FreeTranspilerAttachments>
-    <FreeTranspilerNodeName>json-hbars-transform</FreeTranspilerNodeName><SyntaxFreeTransformerName>2.json-hbars-transform</SyntaxFreeTransformerName><ToNodeIsQueriable></ToNodeIsQueriable><FromFreeEdgeIsQueriable>True</FromFreeEdgeIsQueriable>
-        <FromEdgeFreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM</url>
-        </FromEdgeFreeAttachments>
-    
-        <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/66O4L_FZSVRKWZADw10Zlw/yiubMXTFH1a6Sr0HK0xYLJL9oEOGlhOHCkapuEOkU4fw9FDdr829ApzPaitavTeunRGD1kAvRwmi4d4IpKrr4fXqWDCVP9r-fkCwwgUwDU436eP3EbqcpBFdAd1_x6MxopONJMMTKyWDoGdkIbm3Ag/u9wjMCtOjcMhi414riRiuy88yHdwQEEnS4rPLqwWtBk</url>
-        </ToNodePlatformAttachments>
-    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs>True</ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>1</IsUsed><ToNodeMasterColor>#WIKI00</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Orange</ParentFreeEdgeColor><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>MachineController.py</OutputFileName><EdgeName>Python</EdgeName><LockedColor>Green</LockedColor>
-        <LockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM</url>
-        </LockedAttachments>
-    
-        <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM</url>
-        </FreeAttachments>
-    <Name>3.Tickets-Python</Name>
-        <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM</url>
-        </FromNodeAttachments>
-    <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Tickets</FromNodeName>
-        <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM</url>
-        </ToNodeAttachments>
-    <ToNodeName>Python</ToNodeName>
-        <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8</url>
-        </TranspilerNodeAttachments>
-    <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Developer</TransformerNodeName>
-        <FromEdgeLockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/LpG9ZUgyjrXfdzk54TAPVA/5gZnlNgZRKm12gMCor3nBpte3xMN2PZlN0OydHPSmyIygVblyuq5RH6pSvMXEHe3bhwzcDhywAzdEHKwzEd98HIXVNrpm4PfJNh6y9JMnldFoq8pWM2cvFhXoBWMiUlq8l-gkl6ipN0XQjUkTyXJbA/j7y1jbmGYNw6YXzlSyuucdL7Br0WBb4ry1BMM-P1bWk</url>
-        </FromEdgeLockedAttachments>
-    <ToNodeType>File</ToNodeType><FromFreeEdgeToNodeType>QueryableSSoT</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Install Airtable to Json</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent>
-        <FreeTranspilerAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw</url>
-        </FreeTranspilerAttachments>
-    <FreeTranspilerNodeName>json-hbars-transform</FreeTranspilerNodeName><SyntaxFreeTransformerName>2.json-hbars-transform</SyntaxFreeTransformerName><ToNodeIsQueriable></ToNodeIsQueriable><FromFreeEdgeIsQueriable>True</FromFreeEdgeIsQueriable>
-        <FromEdgeFreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM</url>
-        </FromEdgeFreeAttachments>
-    
-        <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/bA1VxYVXLTi8emCk8a_o9w/oVT3qeSBHW12WgaJv4TQfNHooCh-JRt5D90-FuK1YODpHr4XGbBgsXF9pO1jOrxmnGtKzZR_I0scS_xOlGMxMXkug2khBS34q9vkv01pYsAG2gchrcwdCQ4qw3xLDFdq1Zk1_NnaA6f0FQ_FQ2upag/WQS8j8SWS2NLbCX_qxtJzY8-G6YoaTFFxQ97dlfTskw</url>
-        </ToNodePlatformAttachments>
-    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode>True</ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>1</IsUsed><ToNodeMasterColor>#PY0000</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Orange</ParentFreeEdgeColor><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:28 PM</createdTime><OutputFileName>README.md</OutputFileName><EdgeName>Markdown</EdgeName><LockedColor>Blue</LockedColor>
-        <LockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/0tkFh4--Rsc2VTca_jtU1g/cesWo3l7NFNA-_O0xpEBN8fCw2JmTLGkjVexdO3Z20XJV3e0b3Xvr_JhtjEme0w_tcBZE99sv53NMexSCF-1-5_7rHv280-tjrp0tTIlmuGRgINycZIJmhoDZp_oTDesVuX8G6Ao6_E2bBFaWGUfNg/L7TPCtL0EZP_Lt0_Is9QyjHkPN8IhussbCVNE44vrAs</url>
-        </LockedAttachments>
-    
-        <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/0tkFh4--Rsc2VTca_jtU1g/cesWo3l7NFNA-_O0xpEBN8fCw2JmTLGkjVexdO3Z20XJV3e0b3Xvr_JhtjEme0w_tcBZE99sv53NMexSCF-1-5_7rHv280-tjrp0tTIlmuGRgINycZIJmhoDZp_oTDesVuX8G6Ao6_E2bBFaWGUfNg/L7TPCtL0EZP_Lt0_Is9QyjHkPN8IhussbCVNE44vrAs</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/alv4PdUEpbcmVeSXcl8kVg/N4HWgtvXlPnttyb2BD3EhKWmxfHrSZzbuj_3bzXRR6VXfdvnXWwS6tU9L8DP5AIPjsf_lf81hIqUc7Wqu_WUl8_bNkSx2hYSx7DA_zrfvlbImN1ZAx8Apt6nVZh3lL-Lture_yheveu_1ZRshmlmYw/-LAS_VU0_xu3OT74Yj3cY_PbgTihXSL_b6SlySEbffY</url>
         </FreeAttachments>
     <Name>3.Tickets-Markdown</Name>
         <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/9i1pOs8aV895wq_tRu10mg/URDqbj7TcsrVTD743ZlhJMDYbrs0gJFIl6wtQIN4Sb_IoBnxYwFeh7_ItIG-Zchq86B62QbyCQ-Lvc90JBbYnhrTIR-MjpL_kmjY-FdwiaoLrqEoTilLukiU4DLaooOIw0__I06Cg6B25a96lwfdRA/k_glF7TfrFCMDNPr60FgEa8CpS8TxMaeEcxrCh_JYoU</url>
         </FromNodeAttachments>
     <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Tickets</FromNodeName>
         <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/0tkFh4--Rsc2VTca_jtU1g/cesWo3l7NFNA-_O0xpEBN8fCw2JmTLGkjVexdO3Z20XJV3e0b3Xvr_JhtjEme0w_tcBZE99sv53NMexSCF-1-5_7rHv280-tjrp0tTIlmuGRgINycZIJmhoDZp_oTDesVuX8G6Ao6_E2bBFaWGUfNg/L7TPCtL0EZP_Lt0_Is9QyjHkPN8IhussbCVNE44vrAs</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/alv4PdUEpbcmVeSXcl8kVg/N4HWgtvXlPnttyb2BD3EhKWmxfHrSZzbuj_3bzXRR6VXfdvnXWwS6tU9L8DP5AIPjsf_lf81hIqUc7Wqu_WUl8_bNkSx2hYSx7DA_zrfvlbImN1ZAx8Apt6nVZh3lL-Lture_yheveu_1ZRshmlmYw/-LAS_VU0_xu3OT74Yj3cY_PbgTihXSL_b6SlySEbffY</url>
         </ToNodeAttachments>
     <ToNodeName>Markdown</ToNodeName>
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/PWkuEdaEDsj-BgQ6PCyuew/wxd52AwAzb31sKHybc72N9fVFnOo1u7LiUVkkkg7k-6f6JH1C9-002BOYUHWMLcr7MNoFbHWTsh4xBdKoihw_7a2UNm1OYkDSSOHdRUhG-bfryhSnzKeUmQFvIb5AMWO-VP9_-Mi1gtyTRtnA91aSg/FU4SXzI8mAPfUNE_9jq_cr4vAMm4_KSCTK2oRgy8Ek4</url>
         </TranspilerNodeAttachments>
     <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Editor</TransformerNodeName>
         <FromEdgeLockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/LpG9ZUgyjrXfdzk54TAPVA/5gZnlNgZRKm12gMCor3nBpte3xMN2PZlN0OydHPSmyIygVblyuq5RH6pSvMXEHe3bhwzcDhywAzdEHKwzEd98HIXVNrpm4PfJNh6y9JMnldFoq8pWM2cvFhXoBWMiUlq8l-gkl6ipN0XQjUkTyXJbA/j7y1jbmGYNw6YXzlSyuucdL7Br0WBb4ry1BMM-P1bWk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VUWfdTCJY7gbORbWpoP38Q/fGiqfV9frfEapTVJ4y91LLXdcOAx-aROMqsdhQRZrL0tL-j7HamUqTO-2EV0UXP_jp_XfzXqP6faCvs-HjZbtl2wZGV_AUeKGXozI7DJSj7cZ6F7PvWPvKCrvU0Nm3ep-NflKPuXOp64VLIETjm5cA/gkWgOjxGIjN0xLiNHalyjNMyPmZkHm8rnPGN8b9lHlI</url>
         </FromEdgeLockedAttachments>
     <ToNodeType>File</ToNodeType><FromFreeEdgeToNodeType>QueryableSSoT</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Install Airtable to Json</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent>
         <FreeTranspilerAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/jguDze2gyAPlj2r_Vi8btQ/TnlHJ2-nq8ic7dfgnW4cuHs7oz-NNRS0eGaVIn9Fn2mfTifV3jvMBhw1OLxh7IUud6E7nwChA4sAX6BXIAAFByg39M4SVbhb8eQMVcYXLHkZQOvUUbMSu8rETBpuRfevnDKsDJaVlpo3pLpm1j7L0A/6oReMaaLqRkCeuIVviDLM7Y0_Hn_hXGjGBo_JRFi0S4</url>
         </FreeTranspilerAttachments>
     <FreeTranspilerNodeName>json-hbars-transform</FreeTranspilerNodeName><SyntaxFreeTransformerName>2.json-hbars-transform</SyntaxFreeTransformerName><ToNodeIsQueriable></ToNodeIsQueriable><FromFreeEdgeIsQueriable>True</FromFreeEdgeIsQueriable>
         <FromEdgeFreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/2j9e68hHlWnwRAa5pE4gYQ/I4uFp62SBDP4ZUrqvaMGtZmB5hSco0oACgyUHRyP4gWIJpV1TfPcw8J-RqwLSzr-5P__ybE7vLF8tAe05Md_yAp_EoxwmhVHzff_PD7bhZvMLiVgTwgVsn1NyCUn_nOGAh2Ns8WhgjN_KFvu3z14Nw/2s9aphF9_3frK6smL5C-7vBWb8sYIB4fAecqGfCmbGA</url>
         </FromEdgeFreeAttachments>
     
         <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/rmYlXidKyRyI062wv8zSmA/d_m4XiNT0-bbNqaPc6yellw6BczjPNObzpasio3hhxOuM9ehHthRx8XAhlMN2ybEwzfs-lrts68wgjyheTKgV3xjSpyFTCRLWL7xbELn-5l2N3EPQWFoMCgTNds5G6aPClvVNZvQ9ZzanKqXyuMhHQ/ZVd7_pBgidhFjRX6bfVBG92JZwOWPpq9bqIguYvdlD4</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/60qgTaByWOJo9rIJ3u0n3Q/AsZGf1grzi5NMGIfW_QAANaQmyCBPTKv-3TXu_UH7jxWvFhsW2tgglZLZ55ntJNAnbPfVOvG3lDGZAsZ8szeG-4R7zX9mFu-fYPMPRU8X5vcaVYhmOoM_8Rgp3dHyZByThEWyn7ZVm1UbFl90LKKZA/IQIoXHM8n2400qWpIaWzg3CgY0RUU84n6VpB-2whwVg</url>
         </ToNodePlatformAttachments>
-    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs>True</ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>0</IsUsed><ToNodeMasterColor>#MD0000</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Orange</ParentFreeEdgeColor><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>Index.html</OutputFileName><EdgeName>HTML</EdgeName><LockedColor>Green</LockedColor>
+    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs>True</ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>1</IsUsed><ToNodeMasterColor>#MD0000</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Purple</ParentFreeEdgeColor><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>MachineController.py</OutputFileName><EdgeName>Python</EdgeName><LockedColor>Purple</LockedColor>
         <LockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/tLTHyoGdBwd6n-ZSgWQJfA/Eb9NKdoqenAemMzP44Tu40o8t8euZUGM1IdCuga49MhAdFyZE-lwiF7ujA6xsONyZMxdk40UVF1vv0ztAYJ1L9ommd7CFeM80H3Dby3hI4A1P8-KyHe9rNFzV3mUSxb8jg1KYg-ONsMLeWoa2BvUHg/iNpiFQtsTcKmkuSZXxh2vrSkja-aLp_WaqRpZ_m2HxI</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/ISkBYdhJpc57OkDy1wrNyA/B2ZMf8O9_i57GTtkjjUEf73tquIbI3T2tatPgl5rKe4EIoJ3xiUyHlFyy9V_Y8qzBdO7tTiqkRmocsb87dDLeOgtuukd9zQYVbDQCd8d7JQ8M1GuMzAKnDVeZPXfnpN-XnAMhIchX7C-lcShDybb_g/WTGw2h0VwaKna0gfU9HoQF8YAXQbwp0DimOHasBBbjE</url>
         </LockedAttachments>
     
         <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/tLTHyoGdBwd6n-ZSgWQJfA/Eb9NKdoqenAemMzP44Tu40o8t8euZUGM1IdCuga49MhAdFyZE-lwiF7ujA6xsONyZMxdk40UVF1vv0ztAYJ1L9ommd7CFeM80H3Dby3hI4A1P8-KyHe9rNFzV3mUSxb8jg1KYg-ONsMLeWoa2BvUHg/iNpiFQtsTcKmkuSZXxh2vrSkja-aLp_WaqRpZ_m2HxI</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/ISkBYdhJpc57OkDy1wrNyA/B2ZMf8O9_i57GTtkjjUEf73tquIbI3T2tatPgl5rKe4EIoJ3xiUyHlFyy9V_Y8qzBdO7tTiqkRmocsb87dDLeOgtuukd9zQYVbDQCd8d7JQ8M1GuMzAKnDVeZPXfnpN-XnAMhIchX7C-lcShDybb_g/WTGw2h0VwaKna0gfU9HoQF8YAXQbwp0DimOHasBBbjE</url>
+        </FreeAttachments>
+    <Name>3.Tickets-Python</Name>
+        <FromNodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/9i1pOs8aV895wq_tRu10mg/URDqbj7TcsrVTD743ZlhJMDYbrs0gJFIl6wtQIN4Sb_IoBnxYwFeh7_ItIG-Zchq86B62QbyCQ-Lvc90JBbYnhrTIR-MjpL_kmjY-FdwiaoLrqEoTilLukiU4DLaooOIw0__I06Cg6B25a96lwfdRA/k_glF7TfrFCMDNPr60FgEa8CpS8TxMaeEcxrCh_JYoU</url>
+        </FromNodeAttachments>
+    <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Tickets</FromNodeName>
+        <ToNodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/ISkBYdhJpc57OkDy1wrNyA/B2ZMf8O9_i57GTtkjjUEf73tquIbI3T2tatPgl5rKe4EIoJ3xiUyHlFyy9V_Y8qzBdO7tTiqkRmocsb87dDLeOgtuukd9zQYVbDQCd8d7JQ8M1GuMzAKnDVeZPXfnpN-XnAMhIchX7C-lcShDybb_g/WTGw2h0VwaKna0gfU9HoQF8YAXQbwp0DimOHasBBbjE</url>
+        </ToNodeAttachments>
+    <ToNodeName>Python</ToNodeName>
+        <TranspilerNodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/LorNbKjhV06gKWsjlxI3JA/eMYWh_yfUcnYFG2Ry_lQ66eiBjAvnKUvqNGSek8NaXgY_LEYghoERh7fCgA20wWugQ5BuZoYZp2T11oknG6C-gbPb9DtZ65GJXrIcRAYQx0sgPXgmCKTJkV6IW2r6Dzt7Mf27be46aQzuluoj-3LwQ/gupLXtxPFhvHUulDVZbCbkCUC-uGeSNFar4TwZpsC9w</url>
+        </TranspilerNodeAttachments>
+    <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Developer</TransformerNodeName>
+        <FromEdgeLockedAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VUWfdTCJY7gbORbWpoP38Q/fGiqfV9frfEapTVJ4y91LLXdcOAx-aROMqsdhQRZrL0tL-j7HamUqTO-2EV0UXP_jp_XfzXqP6faCvs-HjZbtl2wZGV_AUeKGXozI7DJSj7cZ6F7PvWPvKCrvU0Nm3ep-NflKPuXOp64VLIETjm5cA/gkWgOjxGIjN0xLiNHalyjNMyPmZkHm8rnPGN8b9lHlI</url>
+        </FromEdgeLockedAttachments>
+    <ToNodeType>File</ToNodeType><FromFreeEdgeToNodeType>QueryableSSoT</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Install Airtable to Json</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent>
+        <FreeTranspilerAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/jguDze2gyAPlj2r_Vi8btQ/TnlHJ2-nq8ic7dfgnW4cuHs7oz-NNRS0eGaVIn9Fn2mfTifV3jvMBhw1OLxh7IUud6E7nwChA4sAX6BXIAAFByg39M4SVbhb8eQMVcYXLHkZQOvUUbMSu8rETBpuRfevnDKsDJaVlpo3pLpm1j7L0A/6oReMaaLqRkCeuIVviDLM7Y0_Hn_hXGjGBo_JRFi0S4</url>
+        </FreeTranspilerAttachments>
+    <FreeTranspilerNodeName>json-hbars-transform</FreeTranspilerNodeName><SyntaxFreeTransformerName>2.json-hbars-transform</SyntaxFreeTransformerName><ToNodeIsQueriable></ToNodeIsQueriable><FromFreeEdgeIsQueriable>True</FromFreeEdgeIsQueriable>
+        <FromEdgeFreeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/2j9e68hHlWnwRAa5pE4gYQ/I4uFp62SBDP4ZUrqvaMGtZmB5hSco0oACgyUHRyP4gWIJpV1TfPcw8J-RqwLSzr-5P__ybE7vLF8tAe05Md_yAp_EoxwmhVHzff_PD7bhZvMLiVgTwgVsn1NyCUn_nOGAh2Ns8WhgjN_KFvu3z14Nw/2s9aphF9_3frK6smL5C-7vBWb8sYIB4fAecqGfCmbGA</url>
+        </FromEdgeFreeAttachments>
+    
+        <ToNodePlatformAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/qU0d6hqvRCCIm9NzqiMK8g/I0JyGzzagm6s8Z9lvW8oI1REmmCsqB7P9qdTkNeIdDt6ZcREz0DMgR8MgeJ-PJs-R_RgdC3x2bQe0XxlSZZnwqp8Bwuu4wCCKnMmumxaCLZCujuMCIiceAJ7_wfrjlrrswJsD7_Izw2do65pF5TXMw/NctuwZEbZTPEX8ElkNdfPuEcCc-AeWr0zoRdK49HmS8</url>
+        </ToNodePlatformAttachments>
+    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode>True</ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>1</IsUsed><ToNodeMasterColor>#PY0000</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>1</LockedColorMatchesExpected><ParentFreeEdgeColor>Purple</ParentFreeEdgeColor><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>Index.html</OutputFileName><EdgeName>HTML</EdgeName><LockedColor>Green</LockedColor>
+        <LockedAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/X5w85c5ZpG0qrR6Jbhef1A/7rJa3gH5VDY3gnLkklyH0biSXHEd71Jo73QMaIe20PjkKyA1RnP-xyBAha9wluM_02eNLCr8XX8snpq4hqHY2INpw1-Y4nRCaqVeFkHHPyZVI8Bt_qXtGQOZIfgY754Lr6AKvL5pV3lgZ3bdNK_wlg/qnhq8FzktI3hQyvTOMqDGdjcw_qxvwiQdUmG_PBZG78</url>
+        </LockedAttachments>
+    
+        <FreeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/X5w85c5ZpG0qrR6Jbhef1A/7rJa3gH5VDY3gnLkklyH0biSXHEd71Jo73QMaIe20PjkKyA1RnP-xyBAha9wluM_02eNLCr8XX8snpq4hqHY2INpw1-Y4nRCaqVeFkHHPyZVI8Bt_qXtGQOZIfgY754Lr6AKvL5pV3lgZ3bdNK_wlg/qnhq8FzktI3hQyvTOMqDGdjcw_qxvwiQdUmG_PBZG78</url>
         </FreeAttachments>
     <Name>3.Tickets-HTML</Name>
         <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/9i1pOs8aV895wq_tRu10mg/URDqbj7TcsrVTD743ZlhJMDYbrs0gJFIl6wtQIN4Sb_IoBnxYwFeh7_ItIG-Zchq86B62QbyCQ-Lvc90JBbYnhrTIR-MjpL_kmjY-FdwiaoLrqEoTilLukiU4DLaooOIw0__I06Cg6B25a96lwfdRA/k_glF7TfrFCMDNPr60FgEa8CpS8TxMaeEcxrCh_JYoU</url>
         </FromNodeAttachments>
     <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Tickets</FromNodeName>
         <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/tLTHyoGdBwd6n-ZSgWQJfA/Eb9NKdoqenAemMzP44Tu40o8t8euZUGM1IdCuga49MhAdFyZE-lwiF7ujA6xsONyZMxdk40UVF1vv0ztAYJ1L9ommd7CFeM80H3Dby3hI4A1P8-KyHe9rNFzV3mUSxb8jg1KYg-ONsMLeWoa2BvUHg/iNpiFQtsTcKmkuSZXxh2vrSkja-aLp_WaqRpZ_m2HxI</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/X5w85c5ZpG0qrR6Jbhef1A/7rJa3gH5VDY3gnLkklyH0biSXHEd71Jo73QMaIe20PjkKyA1RnP-xyBAha9wluM_02eNLCr8XX8snpq4hqHY2INpw1-Y4nRCaqVeFkHHPyZVI8Bt_qXtGQOZIfgY754Lr6AKvL5pV3lgZ3bdNK_wlg/qnhq8FzktI3hQyvTOMqDGdjcw_qxvwiQdUmG_PBZG78</url>
         </ToNodeAttachments>
     <ToNodeName>HTML</ToNodeName>
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/PWkuEdaEDsj-BgQ6PCyuew/wxd52AwAzb31sKHybc72N9fVFnOo1u7LiUVkkkg7k-6f6JH1C9-002BOYUHWMLcr7MNoFbHWTsh4xBdKoihw_7a2UNm1OYkDSSOHdRUhG-bfryhSnzKeUmQFvIb5AMWO-VP9_-Mi1gtyTRtnA91aSg/FU4SXzI8mAPfUNE_9jq_cr4vAMm4_KSCTK2oRgy8Ek4</url>
         </TranspilerNodeAttachments>
     <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Editor</TransformerNodeName>
         <FromEdgeLockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/LpG9ZUgyjrXfdzk54TAPVA/5gZnlNgZRKm12gMCor3nBpte3xMN2PZlN0OydHPSmyIygVblyuq5RH6pSvMXEHe3bhwzcDhywAzdEHKwzEd98HIXVNrpm4PfJNh6y9JMnldFoq8pWM2cvFhXoBWMiUlq8l-gkl6ipN0XQjUkTyXJbA/j7y1jbmGYNw6YXzlSyuucdL7Br0WBb4ry1BMM-P1bWk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VUWfdTCJY7gbORbWpoP38Q/fGiqfV9frfEapTVJ4y91LLXdcOAx-aROMqsdhQRZrL0tL-j7HamUqTO-2EV0UXP_jp_XfzXqP6faCvs-HjZbtl2wZGV_AUeKGXozI7DJSj7cZ6F7PvWPvKCrvU0Nm3ep-NflKPuXOp64VLIETjm5cA/gkWgOjxGIjN0xLiNHalyjNMyPmZkHm8rnPGN8b9lHlI</url>
         </FromEdgeLockedAttachments>
     <ToNodeType>File</ToNodeType><FromFreeEdgeToNodeType>QueryableSSoT</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Install Airtable to Json</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent>
         <FreeTranspilerAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/jguDze2gyAPlj2r_Vi8btQ/TnlHJ2-nq8ic7dfgnW4cuHs7oz-NNRS0eGaVIn9Fn2mfTifV3jvMBhw1OLxh7IUud6E7nwChA4sAX6BXIAAFByg39M4SVbhb8eQMVcYXLHkZQOvUUbMSu8rETBpuRfevnDKsDJaVlpo3pLpm1j7L0A/6oReMaaLqRkCeuIVviDLM7Y0_Hn_hXGjGBo_JRFi0S4</url>
         </FreeTranspilerAttachments>
     <FreeTranspilerNodeName>json-hbars-transform</FreeTranspilerNodeName><SyntaxFreeTransformerName>2.json-hbars-transform</SyntaxFreeTransformerName><ToNodeIsQueriable></ToNodeIsQueriable><FromFreeEdgeIsQueriable>True</FromFreeEdgeIsQueriable>
         <FromEdgeFreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/2j9e68hHlWnwRAa5pE4gYQ/I4uFp62SBDP4ZUrqvaMGtZmB5hSco0oACgyUHRyP4gWIJpV1TfPcw8J-RqwLSzr-5P__ybE7vLF8tAe05Md_yAp_EoxwmhVHzff_PD7bhZvMLiVgTwgVsn1NyCUn_nOGAh2Ns8WhgjN_KFvu3z14Nw/2s9aphF9_3frK6smL5C-7vBWb8sYIB4fAecqGfCmbGA</url>
         </FromEdgeFreeAttachments>
     
         <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/WXKtwFbl5s8fBmW2N7Lk3A/qUZVFv7pVef739Y3_dsOeB9urSVilMJrdp6WDn92hCLoxc4YIamH4MJkpsQHdisg__ZXlJp-ljV116vdZXJmlBBSWiiaDsmPF92SAFSeVbnOrvU22cYONaxik7e4iHGecTeuFmp1cjui3TE_dw2MMQ/i1EyRsTO_vayw5RpAX98exK2LhgO4gDu3vXDoEWrSXY</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/GMs_ExAMteJ2NW4T7MSWRQ/1SgQPDK-ZPQLOAEiJ9ia5YNCB_a8jct7gwg_UdwsayyAR_NmdUCMZc5xbB0msrJNZ7JldmnGza-nOencUVQRwp1Cv0o5r-f9iMk2V6krPwEOXa6NYU8bk_bHlh7QpvCrlOxl-T1gO-3-h1XeAVL28A/_P7EW3N_QRHi42dUBlH9g77ThFJAxjiN1J91a0tVay0</url>
         </ToNodePlatformAttachments>
-    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs>True</ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>0</IsUsed><ToNodeMasterColor>#HTML00</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Orange</ParentFreeEdgeColor><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>Arduino.ino</OutputFileName><EdgeName>C++</EdgeName><LockedColor>Blue</LockedColor>
+    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs>True</ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>0</IsUsed><ToNodeMasterColor>#HTML00</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Purple</ParentFreeEdgeColor><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>Home.WIKI</OutputFileName><EdgeName>WIKI</EdgeName><LockedColor>Purple</LockedColor>
         <LockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/vM1rgDD8zlc40Kf5TnWrvw/bUAV3m1qjxyyhIHawoC2g89GjaKyCkAJ9nnm7_dFdkxeQFm0_2nahze0FWJJwzjLjePEAsBJGcAwdapmpkQyYD3EFpkY5SwFx3_EhraGv3a_US3ecMBdYJ4zJ-7XKIHnQTd0pYH5rQdJ-DKWrTnlSA/tmTqHqs7WkdOictibafirPSscHw4OhlHYL8w-gAwIjo</url>
         </LockedAttachments>
     
         <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/vM1rgDD8zlc40Kf5TnWrvw/bUAV3m1qjxyyhIHawoC2g89GjaKyCkAJ9nnm7_dFdkxeQFm0_2nahze0FWJJwzjLjePEAsBJGcAwdapmpkQyYD3EFpkY5SwFx3_EhraGv3a_US3ecMBdYJ4zJ-7XKIHnQTd0pYH5rQdJ-DKWrTnlSA/tmTqHqs7WkdOictibafirPSscHw4OhlHYL8w-gAwIjo</url>
+        </FreeAttachments>
+    <Name>3.Tickets-WIKI</Name>
+        <FromNodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/9i1pOs8aV895wq_tRu10mg/URDqbj7TcsrVTD743ZlhJMDYbrs0gJFIl6wtQIN4Sb_IoBnxYwFeh7_ItIG-Zchq86B62QbyCQ-Lvc90JBbYnhrTIR-MjpL_kmjY-FdwiaoLrqEoTilLukiU4DLaooOIw0__I06Cg6B25a96lwfdRA/k_glF7TfrFCMDNPr60FgEa8CpS8TxMaeEcxrCh_JYoU</url>
+        </FromNodeAttachments>
+    <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Tickets</FromNodeName>
+        <ToNodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/vM1rgDD8zlc40Kf5TnWrvw/bUAV3m1qjxyyhIHawoC2g89GjaKyCkAJ9nnm7_dFdkxeQFm0_2nahze0FWJJwzjLjePEAsBJGcAwdapmpkQyYD3EFpkY5SwFx3_EhraGv3a_US3ecMBdYJ4zJ-7XKIHnQTd0pYH5rQdJ-DKWrTnlSA/tmTqHqs7WkdOictibafirPSscHw4OhlHYL8w-gAwIjo</url>
+        </ToNodeAttachments>
+    <ToNodeName>WIKI</ToNodeName>
+        <TranspilerNodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/PWkuEdaEDsj-BgQ6PCyuew/wxd52AwAzb31sKHybc72N9fVFnOo1u7LiUVkkkg7k-6f6JH1C9-002BOYUHWMLcr7MNoFbHWTsh4xBdKoihw_7a2UNm1OYkDSSOHdRUhG-bfryhSnzKeUmQFvIb5AMWO-VP9_-Mi1gtyTRtnA91aSg/FU4SXzI8mAPfUNE_9jq_cr4vAMm4_KSCTK2oRgy8Ek4</url>
+        </TranspilerNodeAttachments>
+    <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Editor</TransformerNodeName>
+        <FromEdgeLockedAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VUWfdTCJY7gbORbWpoP38Q/fGiqfV9frfEapTVJ4y91LLXdcOAx-aROMqsdhQRZrL0tL-j7HamUqTO-2EV0UXP_jp_XfzXqP6faCvs-HjZbtl2wZGV_AUeKGXozI7DJSj7cZ6F7PvWPvKCrvU0Nm3ep-NflKPuXOp64VLIETjm5cA/gkWgOjxGIjN0xLiNHalyjNMyPmZkHm8rnPGN8b9lHlI</url>
+        </FromEdgeLockedAttachments>
+    <ToNodeType>File</ToNodeType><FromFreeEdgeToNodeType>QueryableSSoT</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Install Airtable to Json</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent>
+        <FreeTranspilerAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/jguDze2gyAPlj2r_Vi8btQ/TnlHJ2-nq8ic7dfgnW4cuHs7oz-NNRS0eGaVIn9Fn2mfTifV3jvMBhw1OLxh7IUud6E7nwChA4sAX6BXIAAFByg39M4SVbhb8eQMVcYXLHkZQOvUUbMSu8rETBpuRfevnDKsDJaVlpo3pLpm1j7L0A/6oReMaaLqRkCeuIVviDLM7Y0_Hn_hXGjGBo_JRFi0S4</url>
+        </FreeTranspilerAttachments>
+    <FreeTranspilerNodeName>json-hbars-transform</FreeTranspilerNodeName><SyntaxFreeTransformerName>2.json-hbars-transform</SyntaxFreeTransformerName><ToNodeIsQueriable></ToNodeIsQueriable><FromFreeEdgeIsQueriable>True</FromFreeEdgeIsQueriable>
+        <FromEdgeFreeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/2j9e68hHlWnwRAa5pE4gYQ/I4uFp62SBDP4ZUrqvaMGtZmB5hSco0oACgyUHRyP4gWIJpV1TfPcw8J-RqwLSzr-5P__ybE7vLF8tAe05Md_yAp_EoxwmhVHzff_PD7bhZvMLiVgTwgVsn1NyCUn_nOGAh2Ns8WhgjN_KFvu3z14Nw/2s9aphF9_3frK6smL5C-7vBWb8sYIB4fAecqGfCmbGA</url>
+        </FromEdgeFreeAttachments>
+    
+        <ToNodePlatformAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/3_RVzS1ZZLP8tq72EQPJWw/u3ZCjwMR1sWSLHYj9TUK4T9QEcOdOMLoexcW0kvIIcDE729qIrvdsfHwgCrBOkk9cE7p4qgxschQF-pMYalaEg8SMxXr4OLVhZRtE3VlW0CDyBzWrOKENtp_-jaZ1Q6ibNbk5Eeh7cZKvLhEPAepbg/Lrr6izgq1BTeT7AHgW_vqrZh1ko4mYpzqs0yo_EMdF8</url>
+        </ToNodePlatformAttachments>
+    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode></ToNodeOutputIsCode><ToNodeOutputIsDocs>True</ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>0</IsUsed><ToNodeMasterColor>#WIKI00</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>1</LockedColorMatchesExpected><ParentFreeEdgeColor>Purple</ParentFreeEdgeColor><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>Arduino.ino</OutputFileName><EdgeName>C++</EdgeName><LockedColor>Blue</LockedColor>
+        <LockedAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/SqHl19PUiiZCKPkydzhrRg/I1UGzHuxt8H-TXZ6WS07Z73TQWtppRKQSQIXkd3mohwbvGVmBJvkynPWcnn2iNDHySGdaYyZF0tI0nfJNYzY3x-zaPsw49gtAyICI8vFp1gRD44BsJw15Y1USW2cL4qPW2vnHaXgVwGbpbC3tMBAvg/2_kCJxkaTv_QyQ29Taqs5NCMY4YPMgQGyxe-jAY2Mos</url>
+        </LockedAttachments>
+    
+        <FreeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/SqHl19PUiiZCKPkydzhrRg/I1UGzHuxt8H-TXZ6WS07Z73TQWtppRKQSQIXkd3mohwbvGVmBJvkynPWcnn2iNDHySGdaYyZF0tI0nfJNYzY3x-zaPsw49gtAyICI8vFp1gRD44BsJw15Y1USW2cL4qPW2vnHaXgVwGbpbC3tMBAvg/2_kCJxkaTv_QyQ29Taqs5NCMY4YPMgQGyxe-jAY2Mos</url>
         </FreeAttachments>
     <Name>3.Tickets-C++</Name>
         <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/9i1pOs8aV895wq_tRu10mg/URDqbj7TcsrVTD743ZlhJMDYbrs0gJFIl6wtQIN4Sb_IoBnxYwFeh7_ItIG-Zchq86B62QbyCQ-Lvc90JBbYnhrTIR-MjpL_kmjY-FdwiaoLrqEoTilLukiU4DLaooOIw0__I06Cg6B25a96lwfdRA/k_glF7TfrFCMDNPr60FgEa8CpS8TxMaeEcxrCh_JYoU</url>
         </FromNodeAttachments>
     <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Tickets</FromNodeName>
         <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/SqHl19PUiiZCKPkydzhrRg/I1UGzHuxt8H-TXZ6WS07Z73TQWtppRKQSQIXkd3mohwbvGVmBJvkynPWcnn2iNDHySGdaYyZF0tI0nfJNYzY3x-zaPsw49gtAyICI8vFp1gRD44BsJw15Y1USW2cL4qPW2vnHaXgVwGbpbC3tMBAvg/2_kCJxkaTv_QyQ29Taqs5NCMY4YPMgQGyxe-jAY2Mos</url>
         </ToNodeAttachments>
     <ToNodeName>Cpp</ToNodeName>
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/LorNbKjhV06gKWsjlxI3JA/eMYWh_yfUcnYFG2Ry_lQ66eiBjAvnKUvqNGSek8NaXgY_LEYghoERh7fCgA20wWugQ5BuZoYZp2T11oknG6C-gbPb9DtZ65GJXrIcRAYQx0sgPXgmCKTJkV6IW2r6Dzt7Mf27be46aQzuluoj-3LwQ/gupLXtxPFhvHUulDVZbCbkCUC-uGeSNFar4TwZpsC9w</url>
         </TranspilerNodeAttachments>
     <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Developer</TransformerNodeName>
         <FromEdgeLockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/LpG9ZUgyjrXfdzk54TAPVA/5gZnlNgZRKm12gMCor3nBpte3xMN2PZlN0OydHPSmyIygVblyuq5RH6pSvMXEHe3bhwzcDhywAzdEHKwzEd98HIXVNrpm4PfJNh6y9JMnldFoq8pWM2cvFhXoBWMiUlq8l-gkl6ipN0XQjUkTyXJbA/j7y1jbmGYNw6YXzlSyuucdL7Br0WBb4ry1BMM-P1bWk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VUWfdTCJY7gbORbWpoP38Q/fGiqfV9frfEapTVJ4y91LLXdcOAx-aROMqsdhQRZrL0tL-j7HamUqTO-2EV0UXP_jp_XfzXqP6faCvs-HjZbtl2wZGV_AUeKGXozI7DJSj7cZ6F7PvWPvKCrvU0Nm3ep-NflKPuXOp64VLIETjm5cA/gkWgOjxGIjN0xLiNHalyjNMyPmZkHm8rnPGN8b9lHlI</url>
         </FromEdgeLockedAttachments>
     <ToNodeType>File</ToNodeType><FromFreeEdgeToNodeType>QueryableSSoT</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Install Airtable to Json</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent>
         <FreeTranspilerAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/jguDze2gyAPlj2r_Vi8btQ/TnlHJ2-nq8ic7dfgnW4cuHs7oz-NNRS0eGaVIn9Fn2mfTifV3jvMBhw1OLxh7IUud6E7nwChA4sAX6BXIAAFByg39M4SVbhb8eQMVcYXLHkZQOvUUbMSu8rETBpuRfevnDKsDJaVlpo3pLpm1j7L0A/6oReMaaLqRkCeuIVviDLM7Y0_Hn_hXGjGBo_JRFi0S4</url>
         </FreeTranspilerAttachments>
     <FreeTranspilerNodeName>json-hbars-transform</FreeTranspilerNodeName><SyntaxFreeTransformerName>2.json-hbars-transform</SyntaxFreeTransformerName><ToNodeIsQueriable></ToNodeIsQueriable><FromFreeEdgeIsQueriable>True</FromFreeEdgeIsQueriable>
         <FromEdgeFreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/2j9e68hHlWnwRAa5pE4gYQ/I4uFp62SBDP4ZUrqvaMGtZmB5hSco0oACgyUHRyP4gWIJpV1TfPcw8J-RqwLSzr-5P__ybE7vLF8tAe05Md_yAp_EoxwmhVHzff_PD7bhZvMLiVgTwgVsn1NyCUn_nOGAh2Ns8WhgjN_KFvu3z14Nw/2s9aphF9_3frK6smL5C-7vBWb8sYIB4fAecqGfCmbGA</url>
         </FromEdgeFreeAttachments>
     
         <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/n8aGGPc08CIsSRtEq7hm3w/bDa2qvOavStOHFlOz9yvnfv4yhYZlOkYYPSjNafpw55P4nBNf8JTij9fl1-97JIpYxd1hWmDVHRewcy6zZVR3BFD_s7aC20CQHG4Jt3bLi37jPaLS6hH5NHxTSSBkFQOWln0VH2xWXzpHd-mzrZInCLDcOaN_JlKF8DYD_mg9hs/H9E8MRMRxrzOQBiACmh4BPiQDOVY4f1u6-vMwJnv9b0</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/_3bHf8RhYAYd8cfGxCnf6A/zTLi02h6C8nQLJw9UPZYdXW55YlbsB_I2BnR3Xpf686IXCFAuNL3QXdrAkLquKGrDgO3C7beGf5fnaRj_YY-GfKStSDzuSR8C0jMAp3G6vp3diTQORP8lslsWeoEMjauFn5nP9pXfGa8oeV3ZOR2QAqgUqI475cTh8Dj5FVo3NE/cGAHYV9djfHqf1kQOFfU2kGOwPXBIRDTdUChC-ltBT8</url>
         </ToNodePlatformAttachments>
-    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode>True</ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>0</IsUsed><ToNodeMasterColor>#CPP00</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Orange</ParentFreeEdgeColor><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>MachineController.cs</OutputFileName><EdgeName>C#</EdgeName><LockedColor>Green</LockedColor>
+    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode>True</ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>0</IsUsed><ToNodeMasterColor>#CPP00</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Purple</ParentFreeEdgeColor><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges><NodeEdges json:Array="true"><createdTime>4/26/2024 5:45:53 PM</createdTime><OutputFileName>MachineController.cs</OutputFileName><EdgeName>C#</EdgeName><LockedColor>Green</LockedColor>
         <LockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/JJ_MmOXscyJr2DUk_DalQw/dE_czQXYKYFXHgEPRc650GXvdMiEryugUKOwxdPgWwyjTiTSKhkd5eP7WqaylYf21XR9tTuAud3U-uY8xZq74K1NWB0SUaFDqNsDYmJ6XG95ukvYsaGCHFvMvBjjqfuPOAhat-QgB9P_vSvsY-CfFw/6qmy9GbOuG7KD1pTI9iVOCW60W-_Xv4bjmy5yxrDp3U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/6pbTlqmgJO8KK-X8eZmbcw/Xbr1VVqx5FYa1-WHIVg3awmmMm5ZSqcllgxLTUIuGOAr8r03emNsAWMtHmjmn7VLBH0o8ihEtCzzQwP9c0i2xhQu8c-BXpUErOhL8fl0tG1o_-UtkAsVhYXoQ20ubJOTKyTI4sQtjrsCveZ7adsBWw/th43QsOW24Zb0tPsVSdYNvrWAhonZyHiqHFrfOrWPmk</url>
         </LockedAttachments>
     
         <FreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/JJ_MmOXscyJr2DUk_DalQw/dE_czQXYKYFXHgEPRc650GXvdMiEryugUKOwxdPgWwyjTiTSKhkd5eP7WqaylYf21XR9tTuAud3U-uY8xZq74K1NWB0SUaFDqNsDYmJ6XG95ukvYsaGCHFvMvBjjqfuPOAhat-QgB9P_vSvsY-CfFw/6qmy9GbOuG7KD1pTI9iVOCW60W-_Xv4bjmy5yxrDp3U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/6pbTlqmgJO8KK-X8eZmbcw/Xbr1VVqx5FYa1-WHIVg3awmmMm5ZSqcllgxLTUIuGOAr8r03emNsAWMtHmjmn7VLBH0o8ihEtCzzQwP9c0i2xhQu8c-BXpUErOhL8fl0tG1o_-UtkAsVhYXoQ20ubJOTKyTI4sQtjrsCveZ7adsBWw/th43QsOW24Zb0tPsVSdYNvrWAhonZyHiqHFrfOrWPmk</url>
         </FreeAttachments>
     <Name>3.Tickets-C#</Name>
         <FromNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/9i1pOs8aV895wq_tRu10mg/URDqbj7TcsrVTD743ZlhJMDYbrs0gJFIl6wtQIN4Sb_IoBnxYwFeh7_ItIG-Zchq86B62QbyCQ-Lvc90JBbYnhrTIR-MjpL_kmjY-FdwiaoLrqEoTilLukiU4DLaooOIw0__I06Cg6B25a96lwfdRA/k_glF7TfrFCMDNPr60FgEa8CpS8TxMaeEcxrCh_JYoU</url>
         </FromNodeAttachments>
     <FromNodeFlowType>NaturalLanguage</FromNodeFlowType><FromNodeName>Tickets</FromNodeName>
         <ToNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/JJ_MmOXscyJr2DUk_DalQw/dE_czQXYKYFXHgEPRc650GXvdMiEryugUKOwxdPgWwyjTiTSKhkd5eP7WqaylYf21XR9tTuAud3U-uY8xZq74K1NWB0SUaFDqNsDYmJ6XG95ukvYsaGCHFvMvBjjqfuPOAhat-QgB9P_vSvsY-CfFw/6qmy9GbOuG7KD1pTI9iVOCW60W-_Xv4bjmy5yxrDp3U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/6pbTlqmgJO8KK-X8eZmbcw/Xbr1VVqx5FYa1-WHIVg3awmmMm5ZSqcllgxLTUIuGOAr8r03emNsAWMtHmjmn7VLBH0o8ihEtCzzQwP9c0i2xhQu8c-BXpUErOhL8fl0tG1o_-UtkAsVhYXoQ20ubJOTKyTI4sQtjrsCveZ7adsBWw/th43QsOW24Zb0tPsVSdYNvrWAhonZyHiqHFrfOrWPmk</url>
         </ToNodeAttachments>
     <ToNodeName>CSharp</ToNodeName>
         <TranspilerNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/LorNbKjhV06gKWsjlxI3JA/eMYWh_yfUcnYFG2Ry_lQ66eiBjAvnKUvqNGSek8NaXgY_LEYghoERh7fCgA20wWugQ5BuZoYZp2T11oknG6C-gbPb9DtZ65GJXrIcRAYQx0sgPXgmCKTJkV6IW2r6Dzt7Mf27be46aQzuluoj-3LwQ/gupLXtxPFhvHUulDVZbCbkCUC-uGeSNFar4TwZpsC9w</url>
         </TranspilerNodeAttachments>
     <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType><TransformerNodeName>Developer</TransformerNodeName>
         <FromEdgeLockedAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/LpG9ZUgyjrXfdzk54TAPVA/5gZnlNgZRKm12gMCor3nBpte3xMN2PZlN0OydHPSmyIygVblyuq5RH6pSvMXEHe3bhwzcDhywAzdEHKwzEd98HIXVNrpm4PfJNh6y9JMnldFoq8pWM2cvFhXoBWMiUlq8l-gkl6ipN0XQjUkTyXJbA/j7y1jbmGYNw6YXzlSyuucdL7Br0WBb4ry1BMM-P1bWk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/VUWfdTCJY7gbORbWpoP38Q/fGiqfV9frfEapTVJ4y91LLXdcOAx-aROMqsdhQRZrL0tL-j7HamUqTO-2EV0UXP_jp_XfzXqP6faCvs-HjZbtl2wZGV_AUeKGXozI7DJSj7cZ6F7PvWPvKCrvU0Nm3ep-NflKPuXOp64VLIETjm5cA/gkWgOjxGIjN0xLiNHalyjNMyPmZkHm8rnPGN8b9lHlI</url>
         </FromEdgeLockedAttachments>
     <ToNodeType>File</ToNodeType><FromFreeEdgeToNodeType>QueryableSSoT</FromFreeEdgeToNodeType><SyntaxFreeEdgeName>Install Airtable to Json</SyntaxFreeEdgeName><HasSyntaxFreeParent>0</HasSyntaxFreeParent>
         <FreeTranspilerAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/jguDze2gyAPlj2r_Vi8btQ/TnlHJ2-nq8ic7dfgnW4cuHs7oz-NNRS0eGaVIn9Fn2mfTifV3jvMBhw1OLxh7IUud6E7nwChA4sAX6BXIAAFByg39M4SVbhb8eQMVcYXLHkZQOvUUbMSu8rETBpuRfevnDKsDJaVlpo3pLpm1j7L0A/6oReMaaLqRkCeuIVviDLM7Y0_Hn_hXGjGBo_JRFi0S4</url>
         </FreeTranspilerAttachments>
     <FreeTranspilerNodeName>json-hbars-transform</FreeTranspilerNodeName><SyntaxFreeTransformerName>2.json-hbars-transform</SyntaxFreeTransformerName><ToNodeIsQueriable></ToNodeIsQueriable><FromFreeEdgeIsQueriable>True</FromFreeEdgeIsQueriable>
         <FromEdgeFreeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/2j9e68hHlWnwRAa5pE4gYQ/I4uFp62SBDP4ZUrqvaMGtZmB5hSco0oACgyUHRyP4gWIJpV1TfPcw8J-RqwLSzr-5P__ybE7vLF8tAe05Md_yAp_EoxwmhVHzff_PD7bhZvMLiVgTwgVsn1NyCUn_nOGAh2Ns8WhgjN_KFvu3z14Nw/2s9aphF9_3frK6smL5C-7vBWb8sYIB4fAecqGfCmbGA</url>
         </FromEdgeFreeAttachments>
     
         <ToNodePlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZXouXSnuVOrEyf6cD61BZQ/Pcgu1k1E858QcL9WfP4aT0GKjPrtmumfzP5H5v_kPE6kT4glNRLbGI798BV5BENHpBkM-M3UWQecGoCVHe9CHnINSBMGmvxop1zy6vau3JWu0TDMXd8OITEBtwcOrgTG6PfjzVItI1GaATQZDJIhz-ZZdheAkwQNCkpWFMhZtVo/cM8YW8nfjsYCF1wjJ9ja0M4YlUOccM_GoW5dwjVxjIE</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714356000000/R0w3mUVlWnX_MfLaNNsBoQ/b8gI2Bw70FEiE6H5Ha26O6mehTI_Z9xoYUBARwdJnOZTaEBP3UIQE1xlrL_umYhS4Mvlgirk6BHC-EQy2vw7CBvVhaaNOXyZBYxuhVPWBX6Fci8Lfr-vRaHQlteKzqkzWATDkNDOKLzzK92UbcsQMlB1o4WbB3zRiUjdbY_eRTk/jbjfd5d4kBsrXB00LDV2x-v0rrGvM0BIJZICy6yYIb4</url>
         </ToNodePlatformAttachments>
-    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode>True</ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>0</IsUsed><ToNodeMasterColor>#CSHARP0</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Orange</ParentFreeEdgeColor><SyntaxFreeColor>Orange</SyntaxFreeColor><FreeColorMatchesExpected>0</FreeColorMatchesExpected></NodeEdges></Airtable>
+    <SyntaxFreeEdgeOutputFileName>Devices.json</SyntaxFreeEdgeOutputFileName><ToNodeOutputIsCode>True</ToNodeOutputIsCode><ToNodeOutputIsDocs></ToNodeOutputIsDocs><IsLeaf>1</IsLeaf><IsUsed>0</IsUsed><ToNodeMasterColor>#CSHARP0</ToNodeMasterColor><ExpectedColor>Purple</ExpectedColor><LockedColorMatchesExpected>0</LockedColorMatchesExpected><ParentFreeEdgeColor>Purple</ParentFreeEdgeColor><SyntaxFreeColor>Purple</SyntaxFreeColor><FreeColorMatchesExpected>1</FreeColorMatchesExpected></NodeEdges></Airtable>
