@@ -1,252 +1,347 @@
-## Syntax-Locked Methodology
-<hr style="clear: both; background-color: black; height: 1em;"></hr>
+<hr></hr>
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/OfeAgeLx3PtfLoi28RD-og/YOjkLq6JT5I5EoNpQmLL2q40SxG_fkdfDq68PNcIlD2YfutC1GtFPL3lLncGkgpjqOI9G_oBRTx9nyqe0iGV3S5H67fcT3BntgLsIsK3YfJ-uLBWkAjk2N17it1QdCuETr3IVGBlJLiChaQWJTuoSA/zusL4O04Yl3c9Gi5ZvQQkhjAjdMWkx0JSuKBoA7hWFo" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/ySUkfv8QAIt7809vFCzPEw/x8xxArzruDH7t6GaCb3_gan-ZkZPV1JQT5pJXZ6wr8plxfjo_ZkusmMrOqJd8bKRiNRka_Z64eS-FNpS_spK0rzZN-jUl_xKDaQGqnrO7gQ4YxR3eUt7lc55onUEDQScSz522BXsmJfJzjNhoA5cIA/70WJxUUrYbFRKwWUy4DBMrZ75oZwdUA5io5S3uEHdTQ" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+# Syntax-Locked Methodology
+
+<hr></hr>
+
+<hr style="clear: both"></hr>
+
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/Y8AtGguPNv1kYlFJCf3Pbw/7PH0Wk_hBUa-djSMkwSn5osfXDmETMnrTRCfgEnuH_qiwavH_2eNTK0PHHV-9w7ASHktGs6q7c5BqryCX991ZDRabIb_zX-N1DctUP81SIxo7JLv1zmtac3ft-M3fMdPVg7hZRQF3VXJO9G2PAeVaQ/9xsVkDoUqoyXCORhOHqls20ZVHzcBab-DpjAnnqEtMM" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/e-UPBAanMaRfouqzzi2eBQ/ldPUjbUdW13_GdK1soQjS2QjzvjP0q1K2YLUJw_l4IXql8UkaVORF0ynoBNcO07PkdfhfE3v-_dLTQ-JMiizRDnDCQK-Zn8XI6GI87A4KG312Pd3XJeunoxRJ8JR3jTRfbQuAmQKKfl4QkHBv5--YA/2yNe5V2Yvdm4PMWgV5YYKjQ7pg9zbsrg8x5irc5bU-4" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+  <div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED Green</div>
+<div style="clear: left"></div>
+
+
+<div style="clear: left"></div>
+
 
 ### Product Owner  -> Natural Language Idea
 
-#### **Manager & Architect** - **NaturalLanguage** Specification
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/dTuGFNJ3tqx6R7SsXqX43w/DdxPcbIKL3v87RvDsgrkDYcJVqjVVKceJCawJ6cRn6XDWIVROucCtD7OfuNV4bjxK7Jdhs8-CXlJLYHoVUCNKGCJ3RV4co4OXLNIuQRyrInYHYkkubAPLcM-usMRrbmakxesv171pUEGm56SJrwoOQ/TiXC-ZHWt7JrOUWZfiHkyirn-aB2gzgSNr9HGRtcJ0g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/z5x7e9Dl0YVbRk0gh1ndQA/9lZguBz71mvAFANiTyuzBgYwA8gnRVAnQaLZwPXCugpZL-XLSK8A6PzuwyvSPC4d09qn3FZRsA8oLceY0f7M5dJmiC1-cS3TushYuaNHxRY4Q5k73LXiNsDIzYeqUV9zzqZw6FEghM6NTRqM1wUz4w/uRTkPdmk88Lsth6V5vrxCQX7qppbwaoizzZYWgpFjgM" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/El3KKI1kgeg6n5JFLTmGlg/ulaDpDmucYcKB70lreWf6CRTe5_71d88kHJUXhfHJAhFj8XyA6ILhwBpazaiMzaW5h-wBLs6_7xY_kcWVdJf7HrI38FkXebpgjDWmKHpliBr3JV280gLtx2GEjj1sMzv2CgMYi3jEj4vC67qRUuKgw/pNfbtaAGuVpGQECTgc8YM5gCoa7RRgcyJy2uijQC_5Y" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/A5LNvuCiXBB4e-_PnTX2AQ/5EiW0SajUgRSGIb3PJ3ZctvNazW-PKll1JWm38muvWwkYcYyDOVn7J-QWPs9KH1xfJmucQiFNXUke9IXog6DNN2OQD27vBAScXz0_wliqDZ9b98baVY91IPcd2yS_s-AgkPkLAz9qtCJpzynhiTQvQ/kdVQrW_9Y7iM-InCzKtrAdth-MK4Ro_x2JKC0etWeG4" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
 
   <div style="display: block; clear: left;">
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/MvUI7jvAAFvFFbNX5I93LQ/fL4kGxiMKiCT7Vm1Zp7lMWh_ZKPQxvYgCYnSsQcD_PTs5VrWhbS4TsSbc35Bo0Sj4WedlkquPz1qz49vLK0LZcOp5IQ54IZzSnzCXDQJdoBTevt2mo5ZgPBPi0_Qtld5qMHu4fO_wUVbrkua1ZIlIw/QMXXnLbZ9nDwMuRu9SDK0z1Hl3Lqnntp-Zp2KzvodNI" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+#### **Manager & Architect** - **NaturalLanguage** Specification
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/HBH_MnOSvuDGwB85s-v1lQ/JMKMiCyNJhJ8RKTlrdXEE4pdTuyoY97lMd_PuxcbiS8uyQQuj9pdzLb_KD7e2FW8-nsqvKjASmXbEyoaQffqwWFhd2KJCcBxW1eIKHkZmYJHkxZq-l8UbtQbTEicePldMRTI95Kzw8g_0c08ecdARQ/uObtJaCQrLqVIZ2LBIcrab_ol_7CV6kh-ThChUr5fao" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
     <b>Requirements.docx</b>
   </div>
   </div>
 
-**Syntax-Locked Color** : Purple
 
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+<hr style="clear: both"></hr>
 
 
-<hr style="clear: both; background-color: black; height: 1em;"></hr>
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/MvUI7jvAAFvFFbNX5I93LQ/fL4kGxiMKiCT7Vm1Zp7lMWh_ZKPQxvYgCYnSsQcD_PTs5VrWhbS4TsSbc35Bo0Sj4WedlkquPz1qz49vLK0LZcOp5IQ54IZzSnzCXDQJdoBTevt2mo5ZgPBPi0_Qtld5qMHu4fO_wUVbrkua1ZIlIw/QMXXnLbZ9nDwMuRu9SDK0z1Hl3Lqnntp-Zp2KzvodNI" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/0gNld-P4aIC1ORuchsHRaw/OT9E0kFi8xltuGTExB7_0QWe6F12oiY2Iv-wGJeNrDiEr94cJKtqC0LpWAMG00THIjSGG5TiODg2jzUYW_sQvmM6viOIVl5TCj6z_Phl9gJkghKjMiD0U5gmFHd7-T6nGmP1u8k_h16QB73mekbWxw/KaxKh-329vGiE6NdJ2ey0AVMA09XMrWCgjRyaskuJf0" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/HBH_MnOSvuDGwB85s-v1lQ/JMKMiCyNJhJ8RKTlrdXEE4pdTuyoY97lMd_PuxcbiS8uyQQuj9pdzLb_KD7e2FW8-nsqvKjASmXbEyoaQffqwWFhd2KJCcBxW1eIKHkZmYJHkxZq-l8UbtQbTEicePldMRTI95Kzw8g_0c08ecdARQ/uObtJaCQrLqVIZ2LBIcrab_ol_7CV6kh-ThChUr5fao" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/8vmtzAgkDs5EUoVKid2I2Q/f7O6cgaYvvQtZg50wtmv0YV_bar4sVoeLP7br9UFPrkTpA966ySkXXasW6WGYjUJVX8hcVE9L03af-Z01GRoPa0YVeiPOH6o8iiF9tcakaKfOELixCaV6X0qkmDPIPas7JFQ9r6DuydSNKB6sHow5w/ij8FSRp9mqufqopGMfGrbYQRqBVYwcaqYK2JMs6dUrQ" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+  <div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED Green</div>
+<div style="clear: left"></div>
+
+
+<div style="clear: left"></div>
+
 
 ### Specification  -> Tickets
 
-#### **Manager** - **NaturalLanguage** Tickets
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/ySUkfv8QAIt7809vFCzPEw/x8xxArzruDH7t6GaCb3_gan-ZkZPV1JQT5pJXZ6wr8plxfjo_ZkusmMrOqJd8bKRiNRka_Z64eS-FNpS_spK0rzZN-jUl_xKDaQGqnrO7gQ4YxR3eUt7lc55onUEDQScSz522BXsmJfJzjNhoA5cIA/70WJxUUrYbFRKwWUy4DBMrZ75oZwdUA5io5S3uEHdTQ" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xJ-mVJfrUGqTme6itd4wJQ/2MVUBN4NYuTjbTJiUXkp3ZsAAsdBcP_3ZKRaTOUMRCSpSDjQIP1MTC7Ji0cvOQl6j7KIFFrelAmxhKlGOUguY-42xOyCgpjypbg_AgEjY2DBw3ZuRI-kqe28OgAmKbNgi-dche_ePcLM9tdxtU-Wrw/7XUGAV0qxkFoo67EVG9scBA9FcDTWdXWfTcgaZ7Rjp8" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/e-UPBAanMaRfouqzzi2eBQ/ldPUjbUdW13_GdK1soQjS2QjzvjP0q1K2YLUJw_l4IXql8UkaVORF0ynoBNcO07PkdfhfE3v-_dLTQ-JMiizRDnDCQK-Zn8XI6GI87A4KG312Pd3XJeunoxRJ8JR3jTRfbQuAmQKKfl4QkHBv5--YA/2yNe5V2Yvdm4PMWgV5YYKjQ7pg9zbsrg8x5irc5bU-4" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/qffjIXq8ukaEiFW0xTZXSA/ST0oTGr3rNeCEtFuBRYM9j_hOdJ8SBi6i69TMvicYTZpjT0fGPpXA8cjdwd-HdiZfE8n65S-AVaHHKgST7TX9P0JcbkEL42nAbvPBSB9t4Uqbm43uHJcWWlElOI7GoKdiy8pU6PhH-mYrZF3th2kSg/7rQhjjZBidGhPAjLHVDJLF-oxzu6Z7wE_j_8oLbSHfk" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
 
   <div style="display: block; clear: left;">
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+#### **Manager** - **NaturalLanguage** Tickets
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
     <b>Tickets.docx</b>
   </div>
   </div>
 
-**Syntax-Locked Color** : Yellow
 
-<hr style="margin: 0.5em; clear: both; background-color: Yellow"></hr>
-
-
-<hr style="clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u9vlaTwhQZKQddTdN08xng/atpZHWddATk1vPc9JFC5X-_YflPhCfqyzS8_0oh0ML1j_LqOMI2w3dm3h7tuKIyn7GGaUS-hNQoXHUbfQGuDfu_YYGQnzm_hvs3JVMhq-IxmrY1sMOC-zWIGxE8DCt1TKhFrTfWhOLiGIwWYbwkeMg/gZJZKjk2VIwOJZ3_gEna82rvpSIXX8WE-ySGp6Nn0RE" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
-
-###  ****** UNUSED ******* Tickets  -> Markdown
-
-#### **Editor** - **File** Markdown
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-  <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u9vlaTwhQZKQddTdN08xng/atpZHWddATk1vPc9JFC5X-_YflPhCfqyzS8_0oh0ML1j_LqOMI2w3dm3h7tuKIyn7GGaUS-hNQoXHUbfQGuDfu_YYGQnzm_hvs3JVMhq-IxmrY1sMOC-zWIGxE8DCt1TKhFrTfWhOLiGIwWYbwkeMg/gZJZKjk2VIwOJZ3_gEna82rvpSIXX8WE-ySGp6Nn0RE" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
-
-  <div>
-    <b>README.md</b>
-  </div>
-  </div>
-
-**Syntax-Locked Color** : Yellow
-
-<hr style="margin: 0.5em; clear: both; background-color: Yellow"></hr>
+<hr style="clear: both"></hr>
 
 
-<hr style="clear: both; background-color: black; height: 1em;"></hr>
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u4PQfpDb9scF-Z1xa0Bfpg/mj0M1lp9d_YyFJ7S0IaBS7Tt6uK_pxufu426HL7laTAv6squrbd5B2RBA2COGjnH9DrW7_7Lx2hfLs43KNWKgc5ZGJkKhlVEV3tsk-JrJ_Pq-3L4X-ntIEfAU2BCM1dz1PZt0e6b4XTGR46-mA2XhA/D8SKt0LDQAPXUtGYcrQt0i6BYTPbNBztdObfnQVZX3c" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sHkZ0UPoqiGg41xXOe9Shw/1fNLINxUd6w76gsa1nUjO1iZ1pbxi-qJSObdd0C7iPJFLRv0fN2ySvPTOW-PWjrEEwL7IAKUnmVOXGuX29axN--KlmRV3aG05PCNE1cfAGiqz9igDbXkbq1p6MTqtcaDJghmwMht3zaj7_9wDFJWhA/Xz9Chj-2UQ5h1oe1yOUL12ke7BMIBo6HzsRqt2L23NU" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
 
-### Tickets  -> HTML
+  <div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED Green</div>
+<div style="clear: left"></div>
 
-#### **Editor** - **File** HTML
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<div style="clear: left"></div>
+
+
+### Tickets  -> WIKI
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sUpu8fxmYWFAD1S3tgjclw/My0tRcPA3xi0t_-D73dQH6_vrfoeZZdZmaGvVxOx0MCWrNNZJkrZAtlzCBx6E9zWdDHtcUEAspoo8FL3L6TebMcxmWJxKbxJvnypi5KxVouFMDVXVAJ_pRWNOYrst3gtMCHgePuT-c7dQCDTu-yqyg/rlpdMgsqDL7XvZUh1gZ0s72z9TszNivUUdE0xcFAEig" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/JPraBxY_U5ZntOeyPzyoHg/I2yf2C2ysC75AqInP8PcTE3OobbT5-rA3_-7h02X1NW89nTboli1OLn-Ji_pbvF-UfjhTZLPum9LAWDJqV6hWsLzhIQ2Raa-BleQPhugIbRwP0W789X7LYE_VGNes6ExhJJ6tKk7a66bLqwDgYMlLA/hsxIyawVBDRd5twRcKzhDvwSqpdwe0FDaRmdiXhll-Q" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
 
   <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u4PQfpDb9scF-Z1xa0Bfpg/mj0M1lp9d_YyFJ7S0IaBS7Tt6uK_pxufu426HL7laTAv6squrbd5B2RBA2COGjnH9DrW7_7Lx2hfLs43KNWKgc5ZGJkKhlVEV3tsk-JrJ_Pq-3L4X-ntIEfAU2BCM1dz1PZt0e6b4XTGR46-mA2XhA/D8SKt0LDQAPXUtGYcrQt0i6BYTPbNBztdObfnQVZX3c" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
-
-  <div>
-    <b>Index.html</b>
-  </div>
-  </div>
-
-**Syntax-Locked Color** : white
-
-<hr style="margin: 0.5em; clear: both; background-color: white"></hr>
-
-
-<hr style="clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/TByvKET-GZLE-MILtPjTNQ/ul6QsOsB9W2tlJk9kaleKvNnTelfpPsswI6mKgO_O8n7PHd1kQpnztdQWWXhjvF3pbrLGhOQbVbkKUllutXbZus-gP1TYy0pe-lOKxVDz80f6PhmJeusLay5FoWAmjZA2eXn_JQd2-r9imoSFOLt6A/SlugB0N6qwna0_SOuM5riJNBIcabvT53ZtSeyycZbAg" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
-
-###  ****** UNUSED ******* Tickets  -> WIKI
 
 #### **Editor** - **File** WIKI
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
   <div style="display: block; clear: left;">
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/TByvKET-GZLE-MILtPjTNQ/ul6QsOsB9W2tlJk9kaleKvNnTelfpPsswI6mKgO_O8n7PHd1kQpnztdQWWXhjvF3pbrLGhOQbVbkKUllutXbZus-gP1TYy0pe-lOKxVDz80f6PhmJeusLay5FoWAmjZA2eXn_JQd2-r9imoSFOLt6A/SlugB0N6qwna0_SOuM5riJNBIcabvT53ZtSeyycZbAg" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sHkZ0UPoqiGg41xXOe9Shw/1fNLINxUd6w76gsa1nUjO1iZ1pbxi-qJSObdd0C7iPJFLRv0fN2ySvPTOW-PWjrEEwL7IAKUnmVOXGuX29axN--KlmRV3aG05PCNE1cfAGiqz9igDbXkbq1p6MTqtcaDJghmwMht3zaj7_9wDFJWhA/Xz9Chj-2UQ5h1oe1yOUL12ke7BMIBo6HzsRqt2L23NU" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
     <b>Home.WIKI</b>
   </div>
   </div>
 
-**Syntax-Locked Color** : white
 
-<hr style="margin: 0.5em; clear: both; background-color: white"></hr>
+<hr style="clear: both"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/4ViJbs0gVXTo4_qTlKNkbA/ZQa9V3Ho2x_Tp15BpBtCOVaabPacibEyjgkHyJNs3Kk4URwDWt_MO0fnLHU_Rhp8dzqmRsNjC3ohqScxo-bNSYKopbGzypRlBszZ2EKduFHjGMWqryTN3xX2qqUwxE2OW12FQp-Hq1CMLVjuPZB7YqyGGyRCyj14Pb7pUce_hvk/Jee0h46ibrJKyO3YWSYh7eoVMpsa_QFskWNa0GLCWco" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
 
 
-<hr style="clear: both; background-color: black; height: 1em;"></hr>
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/GLLVn-SnNdFca29YaT9OMw/56PNv8PZIjt-7J-ce22KsDoE6Iyil43UbEyvmfjxPxGeE-o0aBxmN3RuPOCIaUbYVQ9aAf-NIyoNWEKQ2Fuoh7AtQL1WvodcXVry_QGY-VId72xi87oFPCxELIZn-4X2HT0VmOHmAaXydl473yxyyXrTnwNnjbsHP_yoiqoFVyA/WsB8wdkxKfkZcRIH0MiTRUrpCXmEARfiyBsnKqOMpkE" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 10em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/RUNvCiHdNuRCYuby2fVqPA/0ye1Upn_WlGx-dpw0qgxT8RYsrWH82865_LfhjokSRuAk6431vYaViu3tm4CA80vFd1cjFtbKTzxEC3gvgZJGKuFkOPvOUvg9YJZ7fySiRGGD_3nWt42v0jCQo5U0NMSRyrfS9JTZ99UgOqHbM-26A/70QXodn-6o9Sj4GRspgH79SQjlLTNb8psZmwZhP5cKM" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/3GmpMOcNevLnc2wW_hkyFA/GTBearsnzNBoFLFqc6isWpiwkSJ5gncMO20tb6NESZSDpdDI9JFN4wMnhsnaJFLro6q56VraS8ZTJ37-SOpGPbKOc2Yt0wH0jqUXkD4Qnr0_hGiri_U10xxBGckZUDXstWZ7SPEpNU9dEO0tGP3Mtw/a-pwmZT-jPfwfRzMh3plKscFAcMwGR_z5itORkxWbwc" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+  <div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED Green</div>
+<div style="clear: left"></div>
 
-###  ****** UNUSED ******* Tickets  -> C++
 
-#### **Developer** - **File** Cpp
+<div style="clear: left"></div>
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+### Tickets  -> C++
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sUpu8fxmYWFAD1S3tgjclw/My0tRcPA3xi0t_-D73dQH6_vrfoeZZdZmaGvVxOx0MCWrNNZJkrZAtlzCBx6E9zWdDHtcUEAspoo8FL3L6TebMcxmWJxKbxJvnypi5KxVouFMDVXVAJ_pRWNOYrst3gtMCHgePuT-c7dQCDTu-yqyg/rlpdMgsqDL7XvZUh1gZ0s72z9TszNivUUdE0xcFAEig" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/0M9Sk0ySJ9gDNt6l9TvYiA/qIcvCS2jtc9ZSw9UU8TtHvVBvDAEhyMYLjx4NUTuT-83rknlXrguqdB3BSJjo2N3VynaL1STIyYiWOHo0-F5vaK_3IfdjI6sztsB4Tm99OH-p9ewQX_YG4RgJkdMFweOZprxeGRqvTgtLy2-4KBzIg/d28JqbMt6y44zUOsuL57bNgTgkyBuZAHeSlbt6VoOGk" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
 
   <div style="display: block; clear: left;">
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/3GmpMOcNevLnc2wW_hkyFA/GTBearsnzNBoFLFqc6isWpiwkSJ5gncMO20tb6NESZSDpdDI9JFN4wMnhsnaJFLro6q56VraS8ZTJ37-SOpGPbKOc2Yt0wH0jqUXkD4Qnr0_hGiri_U10xxBGckZUDXstWZ7SPEpNU9dEO0tGP3Mtw/a-pwmZT-jPfwfRzMh3plKscFAcMwGR_z5itORkxWbwc" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+#### **Developer** - **File** Cpp
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/RUNvCiHdNuRCYuby2fVqPA/0ye1Upn_WlGx-dpw0qgxT8RYsrWH82865_LfhjokSRuAk6431vYaViu3tm4CA80vFd1cjFtbKTzxEC3gvgZJGKuFkOPvOUvg9YJZ7fySiRGGD_3nWt42v0jCQo5U0NMSRyrfS9JTZ99UgOqHbM-26A/70QXodn-6o9Sj4GRspgH79SQjlLTNb8psZmwZhP5cKM" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
     <b>Arduino.ino</b>
   </div>
   </div>
 
-**Syntax-Locked Color** : white
 
-<hr style="margin: 0.5em; clear: both; background-color: white"></hr>
+<hr style="clear: both"></hr>
 
 
-<hr style="clear: both; background-color: black; height: 1em;"></hr>
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/SZo6uzD9zZi6KasnhW4gMw/Qm-AFMVhGeHpY1xavSat4Oo66NO-tAuv1acC_OKSuvVpZRtUpoH6M_0mExpKXiVlsq-aer-vtgzDreoCMQ8KiIEnWMEB67fUt6b4doFzzr0RgMgh5Y5EUS97gJnciuzoPMo2RbGsxYIn8NcWDm9VhA/yuBnvtUaBLcWV_hBwp_H-nSHPHdcAHGmj3vlpx3jB4A" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 10em; float: left;">
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/4yx7zg7OPWnlaqkX_8egxQ/HRQhHM7yVuT7NIkxOHm6hQOUuXZfu3x8a15kLSpkL1gcM0UbcR8nZJ8xoLBb06ZtYRw2eb8VHxSnLQDy7y3XKciaR-nyXG8CdVF89y5xDUgE1OdUfCUzTVonRTF2Z_fyhLZDcwMebnULrRInGDfSuQ/8OKrwq70J63p2l_PCi-1SM-754blHttE_LTYtMfCLkc" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/lUliy0zqFubon_p_vBe2wA/YGgfwE-poImE_xtwnSNxdnKe_HjuRVrxJil5rU64Fl7JbbO_hgbb2OOjA89ehnaxlAHqbpBl8GcbUQWLbe_BX7LUf2RN6tSoHuaTggr2mBTfTqFwWxFcPrlKeadz3Vy0S3AHxnuwv1hXTmdhU-udmg/Xf6jULT1IwQnp5UNHjcP1gLq1_NYEb2AP4Ujw35mLHI" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
 
-###  ****** UNUSED ******* Tickets  -> Python
+  <div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Blue; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED Blue</div>
+<div style="clear: left"></div>
 
-#### **Developer** - **File** Python
+<div style="color: red; font-weight: bold; font-size: 1.2em; width: 25em; text-align: center; background-color: #ccc">
+⬆ STALE / OUT OF DATE CONTENT ⬆
+</div>
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<div style="clear: left"></div>
+
+
+###  ****** UNUSED ******* Tickets  -> Markdown
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sUpu8fxmYWFAD1S3tgjclw/My0tRcPA3xi0t_-D73dQH6_vrfoeZZdZmaGvVxOx0MCWrNNZJkrZAtlzCBx6E9zWdDHtcUEAspoo8FL3L6TebMcxmWJxKbxJvnypi5KxVouFMDVXVAJ_pRWNOYrst3gtMCHgePuT-c7dQCDTu-yqyg/rlpdMgsqDL7XvZUh1gZ0s72z9TszNivUUdE0xcFAEig" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/JPraBxY_U5ZntOeyPzyoHg/I2yf2C2ysC75AqInP8PcTE3OobbT5-rA3_-7h02X1NW89nTboli1OLn-Ji_pbvF-UfjhTZLPum9LAWDJqV6hWsLzhIQ2Raa-BleQPhugIbRwP0W789X7LYE_VGNes6ExhJJ6tKk7a66bLqwDgYMlLA/hsxIyawVBDRd5twRcKzhDvwSqpdwe0FDaRmdiXhll-Q" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
 
   <div style="display: block; clear: left;">
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/4yx7zg7OPWnlaqkX_8egxQ/HRQhHM7yVuT7NIkxOHm6hQOUuXZfu3x8a15kLSpkL1gcM0UbcR8nZJ8xoLBb06ZtYRw2eb8VHxSnLQDy7y3XKciaR-nyXG8CdVF89y5xDUgE1OdUfCUzTVonRTF2Z_fyhLZDcwMebnULrRInGDfSuQ/8OKrwq70J63p2l_PCi-1SM-754blHttE_LTYtMfCLkc" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+#### **Editor** - **File** Markdown
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/lUliy0zqFubon_p_vBe2wA/YGgfwE-poImE_xtwnSNxdnKe_HjuRVrxJil5rU64Fl7JbbO_hgbb2OOjA89ehnaxlAHqbpBl8GcbUQWLbe_BX7LUf2RN6tSoHuaTggr2mBTfTqFwWxFcPrlKeadz3Vy0S3AHxnuwv1hXTmdhU-udmg/Xf6jULT1IwQnp5UNHjcP1gLq1_NYEb2AP4Ujw35mLHI" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>README.md</b>
+  </div>
+  </div>
+
+
+<hr style="clear: both"></hr>
+
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/Xaom8ZNb6OXjOmPqkZ1AVA/aQQz3jZrSdb8eLmHhdvAR-kVac9xi9Yr3RuRIMPowB7c_rrFu0dhhQor6VS8NbqxSQf36Inhb6NM0bgxz4hzXZ0AXJKYJlS6AbtDelBIGwZZzSNt-gI47-3Vu9ebkGUpC9FTBbZ5XNE-sf9yTXpjXw/fDWW5glNhQOncvm9o4KIPQ-4UCOb2iebrKKWY5FHsvw" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+  <div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Blue; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED Blue</div>
+<div style="clear: left"></div>
+
+<div style="color: red; font-weight: bold; font-size: 1.2em; width: 25em; text-align: center; background-color: #ccc">
+⬆ STALE / OUT OF DATE CONTENT ⬆
+</div>
+
+<div style="clear: left"></div>
+
+
+###  ****** UNUSED ******* Tickets  -> HTML
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sUpu8fxmYWFAD1S3tgjclw/My0tRcPA3xi0t_-D73dQH6_vrfoeZZdZmaGvVxOx0MCWrNNZJkrZAtlzCBx6E9zWdDHtcUEAspoo8FL3L6TebMcxmWJxKbxJvnypi5KxVouFMDVXVAJ_pRWNOYrst3gtMCHgePuT-c7dQCDTu-yqyg/rlpdMgsqDL7XvZUh1gZ0s72z9TszNivUUdE0xcFAEig" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/JPraBxY_U5ZntOeyPzyoHg/I2yf2C2ysC75AqInP8PcTE3OobbT5-rA3_-7h02X1NW89nTboli1OLn-Ji_pbvF-UfjhTZLPum9LAWDJqV6hWsLzhIQ2Raa-BleQPhugIbRwP0W789X7LYE_VGNes6ExhJJ6tKk7a66bLqwDgYMlLA/hsxIyawVBDRd5twRcKzhDvwSqpdwe0FDaRmdiXhll-Q" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+#### **Editor** - **File** HTML
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/Xaom8ZNb6OXjOmPqkZ1AVA/aQQz3jZrSdb8eLmHhdvAR-kVac9xi9Yr3RuRIMPowB7c_rrFu0dhhQor6VS8NbqxSQf36Inhb6NM0bgxz4hzXZ0AXJKYJlS6AbtDelBIGwZZzSNt-gI47-3Vu9ebkGUpC9FTBbZ5XNE-sf9yTXpjXw/fDWW5glNhQOncvm9o4KIPQ-4UCOb2iebrKKWY5FHsvw" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+    <b>Index.html</b>
+  </div>
+  </div>
+
+
+<hr style="clear: both"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/b4hB42pmARw0w2bYC7jabw/alaQGS8TLRuNyPY_BZdVnVGhSFTIn2Fhz_sqPc3FmHwcQH22zOTu1BkuhPc-hg4tdUR45C3uvCJm0pZVPKgrGTAaZqEWPlj5WfjPtit8ORSCdeyCfZwdR2m1SZmPp2BspLZhi0VYnxbJG0i4Sra7kw/4QCNEMpoioHSIOOmNo1pMJ1GnJ7gbLQI2vSU0i07-Fw" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/7iWQEx3fLvWVfeSBhAaZAQ/RIzXIFs6qqAv7rVoJbkwn_aZlCOolxRM_bBAiTdUbSeSEP-Zn6s9Fk15wD1hWU3FZD2vP0Xq5AdjrJxTv50lWQ6cWL7AjhSS_rEWMl8-4VWcItM3h-2s_AvztohcApLs3tXBnb9pDTkEK8E24kCGwQ/gOE_345Gdn4JyWciwUKQ3VAT9W7WGcK5yim8AyA5gtw" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+  <div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Blue; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED Blue</div>
+<div style="clear: left"></div>
+
+<div style="color: red; font-weight: bold; font-size: 1.2em; width: 25em; text-align: center; background-color: #ccc">
+⬆ STALE / OUT OF DATE CONTENT ⬆
+</div>
+
+<div style="clear: left"></div>
+
+
+###  ****** UNUSED ******* Tickets  -> Python
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sUpu8fxmYWFAD1S3tgjclw/My0tRcPA3xi0t_-D73dQH6_vrfoeZZdZmaGvVxOx0MCWrNNZJkrZAtlzCBx6E9zWdDHtcUEAspoo8FL3L6TebMcxmWJxKbxJvnypi5KxVouFMDVXVAJ_pRWNOYrst3gtMCHgePuT-c7dQCDTu-yqyg/rlpdMgsqDL7XvZUh1gZ0s72z9TszNivUUdE0xcFAEig" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/0M9Sk0ySJ9gDNt6l9TvYiA/qIcvCS2jtc9ZSw9UU8TtHvVBvDAEhyMYLjx4NUTuT-83rknlXrguqdB3BSJjo2N3VynaL1STIyYiWOHo0-F5vaK_3IfdjI6sztsB4Tm99OH-p9ewQX_YG4RgJkdMFweOZprxeGRqvTgtLy2-4KBzIg/d28JqbMt6y44zUOsuL57bNgTgkyBuZAHeSlbt6VoOGk" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+  <div style="display: block; clear: left;">
+
+#### **Developer** - **File** Python
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/7iWQEx3fLvWVfeSBhAaZAQ/RIzXIFs6qqAv7rVoJbkwn_aZlCOolxRM_bBAiTdUbSeSEP-Zn6s9Fk15wD1hWU3FZD2vP0Xq5AdjrJxTv50lWQ6cWL7AjhSS_rEWMl8-4VWcItM3h-2s_AvztohcApLs3tXBnb9pDTkEK8E24kCGwQ/gOE_345Gdn4JyWciwUKQ3VAT9W7WGcK5yim8AyA5gtw" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
     <b>MachineController.py</b>
   </div>
   </div>
 
-**Syntax-Locked Color** : white
 
-<hr style="margin: 0.5em; clear: both; background-color: white"></hr>
+<hr style="clear: both"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/TuwtK8MfyvEGi06aHXjz5A/lDt70LRklVPgR7_S3IQc_gMfRsXMGXbP48-XjPcw6QVvsYaOOpCmeu9NGq-gVQsM_jdXkIxLpO9FfVcY5vxEMrQdcFdgLmUFsdrXkowzv38cro9of7HuZEafe0GzNp7C-Hv9952S6bXDWSh5bGH7h40mDriPXhXFU5qChIZYTwo/E6rwuAhCa_5WczhP7WiFCP-0PL3-WMWUmx78epLEXNc" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
 
 
-<hr style="clear: both; background-color: black; height: 1em;"></hr>
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/oO0WWTLjnD7I3C_fuHJ6uw/oRxOD5f0IQGohdF60GI_sr58IYkKLcv0-5Z5zCVmBFbIoNpxNCkEOa6sXICEKzJ1d8cUDrrjjSHLcNdMOeTcddeyW28G2FUaYn0qBypOYmcZNy9KTkEj56is4bzjEJtqzGuFwW3Oba8Rw3d1mkh0FYmXmbINC0TeikdOdrpUvlQ/NI7zHU7K57dbKZqCgh0RXHcUwTxzRhINnOCmENWthYM" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 10em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/8l21WWt69nDq7uTN9zH8lw/uK6vHyL639HaPX9G4dXuZ7NY77WG262P2C0d0Cj_-W5n1ZfFEVAJqDsiwDbI-IpEYh0NYhz0yRIzTpTfKRUYrq6DSvxiWTPIBHjhsI0RNhg5E6jcv7YL1TII-XKNuUvlbpmFRzvNAd0YYHJYu5RJ0g/fub-WVhLwLHqvlInuDCkDwG4ojOs2MIj34Y1GlHzqD4" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/A58VtXyDaGsVvorHZOYwZg/c27KV2ylR3uM2GE43pnQfXX0Ol1DPDLDEKx1PPO2RNtcqvrJEeunlWx4n31iIeydfmCckt81wJQtRqVxl-Ol8ind93RT6pfTfxYmgFtdpblX_2iBmJmjhNtfm7rF93ght1__kYu-EPsZgPBGm7jAfQ/8aJuCEpML67K48LD9cO-HSADUr6adKrOZS1R5Q_jI44" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+  <div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Blue; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED Blue</div>
+<div style="clear: left"></div>
 
-### Tickets  -> C#
+<div style="color: red; font-weight: bold; font-size: 1.2em; width: 25em; text-align: center; background-color: #ccc">
+⬆ STALE / OUT OF DATE CONTENT ⬆
+</div>
 
-#### **Developer** - **File** CSharp
+<div style="clear: left"></div>
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/NjJI3J6wuRuKU5b8TQJ1ug/qIwimAeLePuz1aO08mAEye5p129T1HnHhQNeDh7WB-FOYC23DcZvRnSMhkcUHMyHm_UW5CGwswaqi3BgYJBdBHApZa0k8Bs5vWn6jc6A8CoGHrXjs8c1DtzdkYJmA_H7zD4_Uanlr6wUfen8McsR_Q/w5qxc0d6d1CpGvJDaSxMtefG1m8mcSjpNAFaLhhsFZ0" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+###  ****** UNUSED ******* Tickets  -> C#
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sUpu8fxmYWFAD1S3tgjclw/My0tRcPA3xi0t_-D73dQH6_vrfoeZZdZmaGvVxOx0MCWrNNZJkrZAtlzCBx6E9zWdDHtcUEAspoo8FL3L6TebMcxmWJxKbxJvnypi5KxVouFMDVXVAJ_pRWNOYrst3gtMCHgePuT-c7dQCDTu-yqyg/rlpdMgsqDL7XvZUh1gZ0s72z9TszNivUUdE0xcFAEig" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/0M9Sk0ySJ9gDNt6l9TvYiA/qIcvCS2jtc9ZSw9UU8TtHvVBvDAEhyMYLjx4NUTuT-83rknlXrguqdB3BSJjo2N3VynaL1STIyYiWOHo0-F5vaK_3IfdjI6sztsB4Tm99OH-p9ewQX_YG4RgJkdMFweOZprxeGRqvTgtLy2-4KBzIg/d28JqbMt6y44zUOsuL57bNgTgkyBuZAHeSlbt6VoOGk" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
 
   <div style="display: block; clear: left;">
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/A58VtXyDaGsVvorHZOYwZg/c27KV2ylR3uM2GE43pnQfXX0Ol1DPDLDEKx1PPO2RNtcqvrJEeunlWx4n31iIeydfmCckt81wJQtRqVxl-Ol8ind93RT6pfTfxYmgFtdpblX_2iBmJmjhNtfm7rF93ght1__kYu-EPsZgPBGm7jAfQ/8aJuCEpML67K48LD9cO-HSADUr6adKrOZS1R5Q_jI44" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+#### **Developer** - **File** CSharp
+
+  <div style="display: block; clear: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/8l21WWt69nDq7uTN9zH8lw/uK6vHyL639HaPX9G4dXuZ7NY77WG262P2C0d0Cj_-W5n1ZfFEVAJqDsiwDbI-IpEYh0NYhz0yRIzTpTfKRUYrq6DSvxiWTPIBHjhsI0RNhg5E6jcv7YL1TII-XKNuUvlbpmFRzvNAd0YYHJYu5RJ0g/fub-WVhLwLHqvlInuDCkDwG4ojOs2MIj34Y1GlHzqD4" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
     <b>MachineController.cs</b>
   </div>
   </div>
 
-**Syntax-Locked Color** : Yellow
-
-<hr style="margin: 0.5em; clear: both; background-color: Yellow"></hr>
-
-
 
 <hr></hr>
-## Syntax-Free Methodology
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/OfeAgeLx3PtfLoi28RD-og/YOjkLq6JT5I5EoNpQmLL2q40SxG_fkdfDq68PNcIlD2YfutC1GtFPL3lLncGkgpjqOI9G_oBRTx9nyqe0iGV3S5H67fcT3BntgLsIsK3YfJ-uLBWkAjk2N17it1QdCuETr3IVGBlJLiChaQWJTuoSA/zusL4O04Yl3c9Gi5ZvQQkhjAjdMWkx0JSuKBoA7hWFo" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+# Syntax-Free Methodology
+
+<hr></hr>
+
+<hr style="clear: both"></hr>
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/1gd26sPOIH0biGcad7t6dQ/OxKE9oAmz2sYiPOoVRALdUvcsQdHBI-DswcXe9qeumcGMaGAjkowEOUjYVPE9wDSnvvcEyHKgB9PR42aSUic-ZACdeIhAM0rpQSX_wmByD_MJlLpHUYfUB-juv69Kuy4riGPa2T6nZhYO8BSPy_WPA/zXRiKk9ZOffuR0OaX5J6PrAlAwstStFpT1Oj5zgLkFw" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/Y8AtGguPNv1kYlFJCf3Pbw/7PH0Wk_hBUa-djSMkwSn5osfXDmETMnrTRCfgEnuH_qiwavH_2eNTK0PHHV-9w7ASHktGs6q7c5BqryCX991ZDRabIb_zX-N1DctUP81SIxo7JLv1zmtac3ft-M3fMdPVg7hZRQF3VXJO9G2PAeVaQ/9xsVkDoUqoyXCORhOHqls20ZVHzcBab-DpjAnnqEtMM" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/a44XXAThbwRSdFUNlDjGXw/XlvVOZSOMaUIDFAdYIb1-QK6PEVGHByjtf7wru2KIpGeVwuGphR_7ai7noAKpZLHn_9CgS8ZXz6MGAwblGvlbXzlFrx1S0IRYBQ-2RImF8DZE_vg-NP_kem_TKktiq_mKa5CQ28icgxNx1_SGFy2wA/yBdTFNRUdEtePtEImrwcg_NMmLY1w5Ov3ykYVwepc-0" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+
+**QueryableSSoT** Airtable
+
+</div>
 
 ### Product Owner  -> Syntax-Free Idea
 
-<div style="background-color: Purple; width: 2em; height: 2em; float: left;"></div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. Green</div>
+<div style="clear: both"></div>
 
-- **To Node Name**: Airtable
-- **Output File Name**: Airtable Base
-- **Expected Color**: Purple
-- **Syntax Free Color**: Purple
-- **Parent Free Edge Color**: 
-- **SyntaxFreeColor**: Purple",
-- **ParentFreeEdgeColor**: ",
-- **FromFreeEdgeToNodeType**: ",
-- **SyntaxFreeEdgeName**: ",
 
-<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/El3KKI1kgeg6n5JFLTmGlg/ulaDpDmucYcKB70lreWf6CRTe5_71d88kHJUXhfHJAhFj8XyA6ILhwBpazaiMzaW5h-wBLs6_7xY_kcWVdJf7HrI38FkXebpgjDWmKHpliBr3JV280gLtx2GEjj1sMzv2CgMYi3jEj4vC67qRUuKgw/pNfbtaAGuVpGQECTgc8YM5gCoa7RRgcyJy2uijQC_5Y" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/A5LNvuCiXBB4e-_PnTX2AQ/5EiW0SajUgRSGIb3PJ3ZctvNazW-PKll1JWm38muvWwkYcYyDOVn7J-QWPs9KH1xfJmucQiFNXUke9IXog6DNN2OQD27vBAScXz0_wliqDZ9b98baVY91IPcd2yS_s-AgkPkLAz9qtCJpzynhiTQvQ/kdVQrW_9Y7iM-InCzKtrAdth-MK4Ro_x2JKC0etWeG4" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
 
-- **Manager & Architect**
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/dTuGFNJ3tqx6R7SsXqX43w/DdxPcbIKL3v87RvDsgrkDYcJVqjVVKceJCawJ6cRn6XDWIVROucCtD7OfuNV4bjxK7Jdhs8-CXlJLYHoVUCNKGCJ3RV4co4OXLNIuQRyrInYHYkkubAPLcM-usMRrbmakxesv171pUEGm56SJrwoOQ/TiXC-ZHWt7JrOUWZfiHkyirn-aB2gzgSNr9HGRtcJ0g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/z5x7e9Dl0YVbRk0gh1ndQA/9lZguBz71mvAFANiTyuzBgYwA8gnRVAnQaLZwPXCugpZL-XLSK8A6PzuwyvSPC4d09qn3FZRsA8oLceY0f7M5dJmiC1-cS3TushYuaNHxRY4Q5k73LXiNsDIzYeqUV9zzqZw6FEghM6NTRqM1wUz4w/uRTkPdmk88Lsth6V5vrxCQX7qppbwaoizzZYWgpFjgM" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<div style="display: block; clear: left;">
 
-  <div style="display: block; clear: left;">
+
+
+**Manager & Architect**
 
 
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/1gd26sPOIH0biGcad7t6dQ/OxKE9oAmz2sYiPOoVRALdUvcsQdHBI-DswcXe9qeumcGMaGAjkowEOUjYVPE9wDSnvvcEyHKgB9PR42aSUic-ZACdeIhAM0rpQSX_wmByD_MJlLpHUYfUB-juv69Kuy4riGPa2T6nZhYO8BSPy_WPA/zXRiKk9ZOffuR0OaX5J6PrAlAwstStFpT1Oj5zgLkFw" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/a44XXAThbwRSdFUNlDjGXw/XlvVOZSOMaUIDFAdYIb1-QK6PEVGHByjtf7wru2KIpGeVwuGphR_7ai7noAKpZLHn_9CgS8ZXz6MGAwblGvlbXzlFrx1S0IRYBQ-2RImF8DZE_vg-NP_kem_TKktiq_mKa5CQ28icgxNx1_SGFy2wA/yBdTFNRUdEtePtEImrwcg_NMmLY1w5Ov3ykYVwepc-0" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
  ->  -> <b>Airtable Base</b>
@@ -254,44 +349,44 @@
   </div>
   </div>
 
-- **QueryableSSoT** Airtable
 
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
-
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/MvUI7jvAAFvFFbNX5I93LQ/fL4kGxiMKiCT7Vm1Zp7lMWh_ZKPQxvYgCYnSsQcD_PTs5VrWhbS4TsSbc35Bo0Sj4WedlkquPz1qz49vLK0LZcOp5IQ54IZzSnzCXDQJdoBTevt2mo5ZgPBPi0_Qtld5qMHu4fO_wUVbrkua1ZIlIw/QMXXnLbZ9nDwMuRu9SDK0z1Hl3Lqnntp-Zp2KzvodNI" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<hr style="clear: both"></hr>
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/HBH_MnOSvuDGwB85s-v1lQ/JMKMiCyNJhJ8RKTlrdXEE4pdTuyoY97lMd_PuxcbiS8uyQQuj9pdzLb_KD7e2FW8-nsqvKjASmXbEyoaQffqwWFhd2KJCcBxW1eIKHkZmYJHkxZq-l8UbtQbTEicePldMRTI95Kzw8g_0c08ecdARQ/uObtJaCQrLqVIZ2LBIcrab_ol_7CV6kh-ThChUr5fao" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+
+**NaturalLanguage** Tickets
+
+</div>
 
 ### Specification  -> Tickets
 
-<div style="background-color: Purple; width: 2em; height: 2em; float: left;"></div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. Green</div>
+<div style="clear: both"></div>
 
-- **To Node Name**: Tickets
-- **Output File Name**: Tickets.docx
-- **Expected Color**: Purple
-- **Syntax Free Color**: Purple
-- **Parent Free Edge Color**: 
-- **SyntaxFreeColor**: Purple",
-- **ParentFreeEdgeColor**: ",
-- **FromFreeEdgeToNodeType**: NaturalLanguage",
-- **SyntaxFreeEdgeName**: Natural Language Idea",
 
-<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/qffjIXq8ukaEiFW0xTZXSA/ST0oTGr3rNeCEtFuBRYM9j_hOdJ8SBi6i69TMvicYTZpjT0fGPpXA8cjdwd-HdiZfE8n65S-AVaHHKgST7TX9P0JcbkEL42nAbvPBSB9t4Uqbm43uHJcWWlElOI7GoKdiy8pU6PhH-mYrZF3th2kSg/7rQhjjZBidGhPAjLHVDJLF-oxzu6Z7wE_j_8oLbSHfk" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
 
-- **Manager**
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xJ-mVJfrUGqTme6itd4wJQ/2MVUBN4NYuTjbTJiUXkp3ZsAAsdBcP_3ZKRaTOUMRCSpSDjQIP1MTC7Ji0cvOQl6j7KIFFrelAmxhKlGOUguY-42xOyCgpjypbg_AgEjY2DBw3ZuRI-kqe28OgAmKbNgi-dche_ePcLM9tdxtU-Wrw/7XUGAV0qxkFoo67EVG9scBA9FcDTWdXWfTcgaZ7Rjp8" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-  <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/MvUI7jvAAFvFFbNX5I93LQ/fL4kGxiMKiCT7Vm1Zp7lMWh_ZKPQxvYgCYnSsQcD_PTs5VrWhbS4TsSbc35Bo0Sj4WedlkquPz1qz49vLK0LZcOp5IQ54IZzSnzCXDQJdoBTevt2mo5ZgPBPi0_Qtld5qMHu4fO_wUVbrkua1ZIlIw/QMXXnLbZ9nDwMuRu9SDK0z1Hl3Lqnntp-Zp2KzvodNI" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+<div style="display: block; clear: left;">
 
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+**Manager**
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/HBH_MnOSvuDGwB85s-v1lQ/JMKMiCyNJhJ8RKTlrdXEE4pdTuyoY97lMd_PuxcbiS8uyQQuj9pdzLb_KD7e2FW8-nsqvKjASmXbEyoaQffqwWFhd2KJCcBxW1eIKHkZmYJHkxZq-l8UbtQbTEicePldMRTI95Kzw8g_0c08ecdARQ/uObtJaCQrLqVIZ2LBIcrab_ol_7CV6kh-ThChUr5fao" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
 Requirements.docx ->  -> <b>Tickets.docx</b>
@@ -299,45 +394,45 @@ Requirements.docx ->  -> <b>Tickets.docx</b>
   </div>
   </div>
 
-- **NaturalLanguage** Tickets
 
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
-
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<hr style="clear: both"></hr>
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/vZZ6FRbPdDRfsk9YElFvMw/azHVSBCxa9CLfjk5mkjv_EOKiysWvGbpnofxsiOyG1oSOkd-GyR51K0mImZBUsJ5-26UjkGCHLPMmsB8iyXEwlkR940zYb8beZpPt-XhRc0yGzQqlJVNGzR-0TVr3w5S_gE6mpjRIIidsZjh6_5dYQ/Oj8-cBfPqxsZnVOH51zkZg44cVIzSI4bbO534XzFdv8" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+
+**QueryableSSoT** Json
+
+</div>
 
 ### Tickets  -> Machine Readable SSoT
 
-<div style="background-color: Purple; width: 2em; height: 2em; float: left;"></div>
-
-- **To Node Name**: Json
-- **Output File Name**: Devices.json
-- **Expected Color**: Purple
-- **Syntax Free Color**: Purple
-- **Parent Free Edge Color**: Purple
-- **SyntaxFreeColor**: Purple",
-- **ParentFreeEdgeColor**: Purple",
-- **FromFreeEdgeToNodeType**: QueryableSSoT",
-- **SyntaxFreeEdgeName**: Syntax-Free Idea",
-
-<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
-
-- **Architect**
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/B5kXU4ybA2IZMRTH_Vk_jg/wx-h0WzZX4GUvovO_P23eew4f-nUccDY3kz0nzQB6gqwU3tm7ZRfHuKIuBGU3am7nRlYT7WxhjofPdrNKAxmjaP8yYotwMeBRz-a2brkw4TWbc_0k4z2zNN8pL1PZzPB08qAtPXZsa-_7Fcg7h4GbQ/8FMCLsN3s29_dRTK-66K6fbbBccS41vy-Dfjf8NgA9o" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-  <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/1gd26sPOIH0biGcad7t6dQ/OxKE9oAmz2sYiPOoVRALdUvcsQdHBI-DswcXe9qeumcGMaGAjkowEOUjYVPE9wDSnvvcEyHKgB9PR42aSUic-ZACdeIhAM0rpQSX_wmByD_MJlLpHUYfUB-juv69Kuy4riGPa2T6nZhYO8BSPy_WPA/zXRiKk9ZOffuR0OaX5J6PrAlAwstStFpT1Oj5zgLkFw" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/1gd26sPOIH0biGcad7t6dQ/OxKE9oAmz2sYiPOoVRALdUvcsQdHBI-DswcXe9qeumcGMaGAjkowEOUjYVPE9wDSnvvcEyHKgB9PR42aSUic-ZACdeIhAM0rpQSX_wmByD_MJlLpHUYfUB-juv69Kuy4riGPa2T6nZhYO8BSPy_WPA/zXRiKk9ZOffuR0OaX5J6PrAlAwstStFpT1Oj5zgLkFw" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. Green</div>
+<div style="clear: both"></div>
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/EyFIwtHtGqn-OUOw4TbZ2g/KaTVv89QIVYOKpR3zo1Ldpxwr1fVjJ32CJGcXxOo6awTPnivm8yWqugaemf0ufhxJqZ-dcbcFa-y-BaZg0BSpGgfw9kRPjDm2eWBUP9lUfqUsOnHxGdza7J-ySXom01wDMa9tbrxbmswkxlJ76GSCA/0P6QUAcH9J-dMYJR2WKYM7GX0SiaZjvXkBPpfFvWKus" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+
+<div style="display: block; clear: left;">
+
+
+
+**Architect**
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/a44XXAThbwRSdFUNlDjGXw/XlvVOZSOMaUIDFAdYIb1-QK6PEVGHByjtf7wru2KIpGeVwuGphR_7ai7noAKpZLHn_9CgS8ZXz6MGAwblGvlbXzlFrx1S0IRYBQ-2RImF8DZE_vg-NP_kem_TKktiq_mKa5CQ28icgxNx1_SGFy2wA/yBdTFNRUdEtePtEImrwcg_NMmLY1w5Ov3ykYVwepc-0" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/a44XXAThbwRSdFUNlDjGXw/XlvVOZSOMaUIDFAdYIb1-QK6PEVGHByjtf7wru2KIpGeVwuGphR_7ai7noAKpZLHn_9CgS8ZXz6MGAwblGvlbXzlFrx1S0IRYBQ-2RImF8DZE_vg-NP_kem_TKktiq_mKa5CQ28icgxNx1_SGFy2wA/yBdTFNRUdEtePtEImrwcg_NMmLY1w5Ov3ykYVwepc-0" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/vZZ6FRbPdDRfsk9YElFvMw/azHVSBCxa9CLfjk5mkjv_EOKiysWvGbpnofxsiOyG1oSOkd-GyR51K0mImZBUsJ5-26UjkGCHLPMmsB8iyXEwlkR940zYb8beZpPt-XhRc0yGzQqlJVNGzR-0TVr3w5S_gE6mpjRIIidsZjh6_5dYQ/Oj8-cBfPqxsZnVOH51zkZg44cVIzSI4bbO534XzFdv8" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
 Airtable Base -> airtable-to-json -> <b>Devices.json</b>
@@ -345,137 +440,45 @@ Airtable Base -> airtable-to-json -> <b>Devices.json</b>
   </div>
   </div>
 
-- **QueryableSSoT** Json
 
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
-
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<hr style="clear: both"></hr>
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u9vlaTwhQZKQddTdN08xng/atpZHWddATk1vPc9JFC5X-_YflPhCfqyzS8_0oh0ML1j_LqOMI2w3dm3h7tuKIyn7GGaUS-hNQoXHUbfQGuDfu_YYGQnzm_hvs3JVMhq-IxmrY1sMOC-zWIGxE8DCt1TKhFrTfWhOLiGIwWYbwkeMg/gZJZKjk2VIwOJZ3_gEna82rvpSIXX8WE-ySGp6Nn0RE" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
 
-###  ****** UNUSED ******* Tickets  -> Markdown
-
-<div style="background-color: Purple + #MD0000; width: 2em; height: 2em; float: left;"></div>
-
-- **To Node Name**: Markdown
-- **Output File Name**: README.md
-- **Expected Color**: Purple + #MD0000
-- **Syntax Free Color**: Purple
-- **Parent Free Edge Color**: Purple
-- **SyntaxFreeColor**: Purple",
-- **ParentFreeEdgeColor**: Purple",
-- **FromFreeEdgeToNodeType**: QueryableSSoT",
-- **SyntaxFreeEdgeName**: Machine Readable SSoT",
-
-<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
-
-- **Editor**
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-  <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u9vlaTwhQZKQddTdN08xng/atpZHWddATk1vPc9JFC5X-_YflPhCfqyzS8_0oh0ML1j_LqOMI2w3dm3h7tuKIyn7GGaUS-hNQoXHUbfQGuDfu_YYGQnzm_hvs3JVMhq-IxmrY1sMOC-zWIGxE8DCt1TKhFrTfWhOLiGIwWYbwkeMg/gZJZKjk2VIwOJZ3_gEna82rvpSIXX8WE-ySGp6Nn0RE" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sHkZ0UPoqiGg41xXOe9Shw/1fNLINxUd6w76gsa1nUjO1iZ1pbxi-qJSObdd0C7iPJFLRv0fN2ySvPTOW-PWjrEEwL7IAKUnmVOXGuX29axN--KlmRV3aG05PCNE1cfAGiqz9igDbXkbq1p6MTqtcaDJghmwMht3zaj7_9wDFJWhA/Xz9Chj-2UQ5h1oe1yOUL12ke7BMIBo6HzsRqt2L23NU" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
 
-  <div>
-Devices.json -> json-hbars-transform -> <b>README.md</b>
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
 
-  </div>
-  </div>
+**File** WIKI
 
-- **File** Markdown
+</div>
 
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+### Tickets  -> WIKI
 
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. Green</div>
+<div style="clear: both"></div>
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u4PQfpDb9scF-Z1xa0Bfpg/mj0M1lp9d_YyFJ7S0IaBS7Tt6uK_pxufu426HL7laTAv6squrbd5B2RBA2COGjnH9DrW7_7Lx2hfLs43KNWKgc5ZGJkKhlVEV3tsk-JrJ_Pq-3L4X-ntIEfAU2BCM1dz1PZt0e6b4XTGR46-mA2XhA/D8SKt0LDQAPXUtGYcrQt0i6BYTPbNBztdObfnQVZX3c" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
-
-### Tickets  -> HTML
-
-<div style="background-color: Purple + #HTML00; width: 2em; height: 2em; float: left;"></div>
-
-- **To Node Name**: HTML
-- **Output File Name**: Index.html
-- **Expected Color**: Purple + #HTML00
-- **Syntax Free Color**: Purple
-- **Parent Free Edge Color**: Purple
-- **SyntaxFreeColor**: Purple",
-- **ParentFreeEdgeColor**: Purple",
-- **FromFreeEdgeToNodeType**: QueryableSSoT",
-- **SyntaxFreeEdgeName**: Machine Readable SSoT",
-
-<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
-
-- **Editor**
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-  <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/JPraBxY_U5ZntOeyPzyoHg/I2yf2C2ysC75AqInP8PcTE3OobbT5-rA3_-7h02X1NW89nTboli1OLn-Ji_pbvF-UfjhTZLPum9LAWDJqV6hWsLzhIQ2Raa-BleQPhugIbRwP0W789X7LYE_VGNes6ExhJJ6tKk7a66bLqwDgYMlLA/hsxIyawVBDRd5twRcKzhDvwSqpdwe0FDaRmdiXhll-Q" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/u4PQfpDb9scF-Z1xa0Bfpg/mj0M1lp9d_YyFJ7S0IaBS7Tt6uK_pxufu426HL7laTAv6squrbd5B2RBA2COGjnH9DrW7_7Lx2hfLs43KNWKgc5ZGJkKhlVEV3tsk-JrJ_Pq-3L4X-ntIEfAU2BCM1dz1PZt0e6b4XTGR46-mA2XhA/D8SKt0LDQAPXUtGYcrQt0i6BYTPbNBztdObfnQVZX3c" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
-
-  <div>
-Devices.json -> json-hbars-transform -> <b>Index.html</b>
-
-  </div>
-  </div>
-
-- **File** HTML
-
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
-
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<div style="display: block; clear: left;">
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/TByvKET-GZLE-MILtPjTNQ/ul6QsOsB9W2tlJk9kaleKvNnTelfpPsswI6mKgO_O8n7PHd1kQpnztdQWWXhjvF3pbrLGhOQbVbkKUllutXbZus-gP1TYy0pe-lOKxVDz80f6PhmJeusLay5FoWAmjZA2eXn_JQd2-r9imoSFOLt6A/SlugB0N6qwna0_SOuM5riJNBIcabvT53ZtSeyycZbAg" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
 
-###  ****** UNUSED ******* Tickets  -> WIKI
-
-<div style="background-color: Purple + #WIKI00; width: 2em; height: 2em; float: left;"></div>
-
-- **To Node Name**: WIKI
-- **Output File Name**: Home.WIKI
-- **Expected Color**: Purple + #WIKI00
-- **Syntax Free Color**: Purple
-- **Parent Free Edge Color**: Purple
-- **SyntaxFreeColor**: Purple",
-- **ParentFreeEdgeColor**: Purple",
-- **FromFreeEdgeToNodeType**: QueryableSSoT",
-- **SyntaxFreeEdgeName**: Machine Readable SSoT",
-
-<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
-
-- **Editor**
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/xwW3UYjRUUFQAwSG8F-3cQ/JODj5xKWkX3ldTSzVWgjXKtkJ8eMcjKzw62L4cqFB_pOpi1XnzMJ3QsKtKH_WC6IU-G_g_11_LTC1rEqxnB_UX3trNUv9g5mJ5TtPWd-X4YMBPM_Vg8z_tLP9Ha7Cbyyu8Ace5JoD-J7RpVncBcQNQ/3rbDpbKAw-s4mgsESbWQvmIJPI6Pkg9LsAgIzol6m9g" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-  <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+**Editor**
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/TByvKET-GZLE-MILtPjTNQ/ul6QsOsB9W2tlJk9kaleKvNnTelfpPsswI6mKgO_O8n7PHd1kQpnztdQWWXhjvF3pbrLGhOQbVbkKUllutXbZus-gP1TYy0pe-lOKxVDz80f6PhmJeusLay5FoWAmjZA2eXn_JQd2-r9imoSFOLt6A/SlugB0N6qwna0_SOuM5riJNBIcabvT53ZtSeyycZbAg" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/vZZ6FRbPdDRfsk9YElFvMw/azHVSBCxa9CLfjk5mkjv_EOKiysWvGbpnofxsiOyG1oSOkd-GyR51K0mImZBUsJ5-26UjkGCHLPMmsB8iyXEwlkR940zYb8beZpPt-XhRc0yGzQqlJVNGzR-0TVr3w5S_gE6mpjRIIidsZjh6_5dYQ/Oj8-cBfPqxsZnVOH51zkZg44cVIzSI4bbO534XzFdv8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/fRYEGAgb-okcoat8Zgnwcg/Cu-PUIpDPVCDefi0qShRy01K-BEHUzttODS6_gWQP_ZaBz-iBQCLsv4W5LHB1UEjkP1l47EBrnOGlbRZLKN3EFZmhtK0c7moKYu83G9zlnHs4lpB-wzPglM_wSvPS0Gb1fnqOpHwBVB7iSaQZFdBRA/XD49r7djUfUsYwpg3TiJltJPDACZ8c9wxPdhZtNkBT0" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/sHkZ0UPoqiGg41xXOe9Shw/1fNLINxUd6w76gsa1nUjO1iZ1pbxi-qJSObdd0C7iPJFLRv0fN2ySvPTOW-PWjrEEwL7IAKUnmVOXGuX29axN--KlmRV3aG05PCNE1cfAGiqz9igDbXkbq1p6MTqtcaDJghmwMht3zaj7_9wDFJWhA/Xz9Chj-2UQ5h1oe1yOUL12ke7BMIBo6HzsRqt2L23NU" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
 Devices.json -> json-hbars-transform -> <b>Home.WIKI</b>
@@ -483,45 +486,46 @@ Devices.json -> json-hbars-transform -> <b>Home.WIKI</b>
   </div>
   </div>
 
-- **File** WIKI
 
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+<hr style="clear: both"></hr>
 
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/4ViJbs0gVXTo4_qTlKNkbA/ZQa9V3Ho2x_Tp15BpBtCOVaabPacibEyjgkHyJNs3Kk4URwDWt_MO0fnLHU_Rhp8dzqmRsNjC3ohqScxo-bNSYKopbGzypRlBszZ2EKduFHjGMWqryTN3xX2qqUwxE2OW12FQp-Hq1CMLVjuPZB7YqyGGyRCyj14Pb7pUce_hvk/Jee0h46ibrJKyO3YWSYh7eoVMpsa_QFskWNa0GLCWco" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/3GmpMOcNevLnc2wW_hkyFA/GTBearsnzNBoFLFqc6isWpiwkSJ5gncMO20tb6NESZSDpdDI9JFN4wMnhsnaJFLro6q56VraS8ZTJ37-SOpGPbKOc2Yt0wH0jqUXkD4Qnr0_hGiri_U10xxBGckZUDXstWZ7SPEpNU9dEO0tGP3Mtw/a-pwmZT-jPfwfRzMh3plKscFAcMwGR_z5itORkxWbwc" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
-
-###  ****** UNUSED ******* Tickets  -> C++
-
-<div style="background-color: Purple + #CPP00; width: 2em; height: 2em; float: left;"></div>
-
-- **To Node Name**: Cpp
-- **Output File Name**: Arduino.ino
-- **Expected Color**: Purple + #CPP00
-- **Syntax Free Color**: Purple
-- **Parent Free Edge Color**: Purple
-- **SyntaxFreeColor**: Purple",
-- **ParentFreeEdgeColor**: Purple",
-- **FromFreeEdgeToNodeType**: QueryableSSoT",
-- **SyntaxFreeEdgeName**: Machine Readable SSoT",
-
-<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
-
-- **Developer**
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-  <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/3GmpMOcNevLnc2wW_hkyFA/GTBearsnzNBoFLFqc6isWpiwkSJ5gncMO20tb6NESZSDpdDI9JFN4wMnhsnaJFLro6q56VraS8ZTJ37-SOpGPbKOc2Yt0wH0jqUXkD4Qnr0_hGiri_U10xxBGckZUDXstWZ7SPEpNU9dEO0tGP3Mtw/a-pwmZT-jPfwfRzMh3plKscFAcMwGR_z5itORkxWbwc" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/RUNvCiHdNuRCYuby2fVqPA/0ye1Upn_WlGx-dpw0qgxT8RYsrWH82865_LfhjokSRuAk6431vYaViu3tm4CA80vFd1cjFtbKTzxEC3gvgZJGKuFkOPvOUvg9YJZ7fySiRGGD_3nWt42v0jCQo5U0NMSRyrfS9JTZ99UgOqHbM-26A/70QXodn-6o9Sj4GRspgH79SQjlLTNb8psZmwZhP5cKM" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+
+**File** Cpp
+
+</div>
+
+### Tickets  -> C++
+
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. Green</div>
+<div style="clear: both"></div>
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/0M9Sk0ySJ9gDNt6l9TvYiA/qIcvCS2jtc9ZSw9UU8TtHvVBvDAEhyMYLjx4NUTuT-83rknlXrguqdB3BSJjo2N3VynaL1STIyYiWOHo0-F5vaK_3IfdjI6sztsB4Tm99OH-p9ewQX_YG4RgJkdMFweOZprxeGRqvTgtLy2-4KBzIg/d28JqbMt6y44zUOsuL57bNgTgkyBuZAHeSlbt6VoOGk" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+
+<div style="display: block; clear: left;">
+
+
+
+**Developer**
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/vZZ6FRbPdDRfsk9YElFvMw/azHVSBCxa9CLfjk5mkjv_EOKiysWvGbpnofxsiOyG1oSOkd-GyR51K0mImZBUsJ5-26UjkGCHLPMmsB8iyXEwlkR940zYb8beZpPt-XhRc0yGzQqlJVNGzR-0TVr3w5S_gE6mpjRIIidsZjh6_5dYQ/Oj8-cBfPqxsZnVOH51zkZg44cVIzSI4bbO534XzFdv8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/fRYEGAgb-okcoat8Zgnwcg/Cu-PUIpDPVCDefi0qShRy01K-BEHUzttODS6_gWQP_ZaBz-iBQCLsv4W5LHB1UEjkP1l47EBrnOGlbRZLKN3EFZmhtK0c7moKYu83G9zlnHs4lpB-wzPglM_wSvPS0Gb1fnqOpHwBVB7iSaQZFdBRA/XD49r7djUfUsYwpg3TiJltJPDACZ8c9wxPdhZtNkBT0" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/RUNvCiHdNuRCYuby2fVqPA/0ye1Upn_WlGx-dpw0qgxT8RYsrWH82865_LfhjokSRuAk6431vYaViu3tm4CA80vFd1cjFtbKTzxEC3gvgZJGKuFkOPvOUvg9YJZ7fySiRGGD_3nWt42v0jCQo5U0NMSRyrfS9JTZ99UgOqHbM-26A/70QXodn-6o9Sj4GRspgH79SQjlLTNb8psZmwZhP5cKM" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
 Devices.json -> json-hbars-transform -> <b>Arduino.ino</b>
@@ -529,47 +533,138 @@ Devices.json -> json-hbars-transform -> <b>Arduino.ino</b>
   </div>
   </div>
 
-- **File** Cpp
 
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
-
-  - **To Node Platform Attachments**:
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/GLLVn-SnNdFca29YaT9OMw/56PNv8PZIjt-7J-ce22KsDoE6Iyil43UbEyvmfjxPxGeE-o0aBxmN3RuPOCIaUbYVQ9aAf-NIyoNWEKQ2Fuoh7AtQL1WvodcXVry_QGY-VId72xi87oFPCxELIZn-4X2HT0VmOHmAaXydl473yxyyXrTnwNnjbsHP_yoiqoFVyA/WsB8wdkxKfkZcRIH0MiTRUrpCXmEARfiyBsnKqOMpkE" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 5em;">
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<hr style="clear: both"></hr>
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/4yx7zg7OPWnlaqkX_8egxQ/HRQhHM7yVuT7NIkxOHm6hQOUuXZfu3x8a15kLSpkL1gcM0UbcR8nZJ8xoLBb06ZtYRw2eb8VHxSnLQDy7y3XKciaR-nyXG8CdVF89y5xDUgE1OdUfCUzTVonRTF2Z_fyhLZDcwMebnULrRInGDfSuQ/8OKrwq70J63p2l_PCi-1SM-754blHttE_LTYtMfCLkc" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/lUliy0zqFubon_p_vBe2wA/YGgfwE-poImE_xtwnSNxdnKe_HjuRVrxJil5rU64Fl7JbbO_hgbb2OOjA89ehnaxlAHqbpBl8GcbUQWLbe_BX7LUf2RN6tSoHuaTggr2mBTfTqFwWxFcPrlKeadz3Vy0S3AHxnuwv1hXTmdhU-udmg/Xf6jULT1IwQnp5UNHjcP1gLq1_NYEb2AP4Ujw35mLHI" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+
+**File** Markdown
+
+</div>
+
+###  ****** UNUSED ******* Tickets  -> Markdown
+
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. Green</div>
+<div style="clear: both"></div>
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/JPraBxY_U5ZntOeyPzyoHg/I2yf2C2ysC75AqInP8PcTE3OobbT5-rA3_-7h02X1NW89nTboli1OLn-Ji_pbvF-UfjhTZLPum9LAWDJqV6hWsLzhIQ2Raa-BleQPhugIbRwP0W789X7LYE_VGNes6ExhJJ6tKk7a66bLqwDgYMlLA/hsxIyawVBDRd5twRcKzhDvwSqpdwe0FDaRmdiXhll-Q" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+
+<div style="display: block; clear: left;">
+
+
+
+**Editor**
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/vZZ6FRbPdDRfsk9YElFvMw/azHVSBCxa9CLfjk5mkjv_EOKiysWvGbpnofxsiOyG1oSOkd-GyR51K0mImZBUsJ5-26UjkGCHLPMmsB8iyXEwlkR940zYb8beZpPt-XhRc0yGzQqlJVNGzR-0TVr3w5S_gE6mpjRIIidsZjh6_5dYQ/Oj8-cBfPqxsZnVOH51zkZg44cVIzSI4bbO534XzFdv8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/fRYEGAgb-okcoat8Zgnwcg/Cu-PUIpDPVCDefi0qShRy01K-BEHUzttODS6_gWQP_ZaBz-iBQCLsv4W5LHB1UEjkP1l47EBrnOGlbRZLKN3EFZmhtK0c7moKYu83G9zlnHs4lpB-wzPglM_wSvPS0Gb1fnqOpHwBVB7iSaQZFdBRA/XD49r7djUfUsYwpg3TiJltJPDACZ8c9wxPdhZtNkBT0" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/lUliy0zqFubon_p_vBe2wA/YGgfwE-poImE_xtwnSNxdnKe_HjuRVrxJil5rU64Fl7JbbO_hgbb2OOjA89ehnaxlAHqbpBl8GcbUQWLbe_BX7LUf2RN6tSoHuaTggr2mBTfTqFwWxFcPrlKeadz3Vy0S3AHxnuwv1hXTmdhU-udmg/Xf6jULT1IwQnp5UNHjcP1gLq1_NYEb2AP4Ujw35mLHI" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Devices.json -> json-hbars-transform -> <b>README.md</b>
+
+  </div>
+  </div>
+
+
+<hr style="clear: both"></hr>
+
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/Xaom8ZNb6OXjOmPqkZ1AVA/aQQz3jZrSdb8eLmHhdvAR-kVac9xi9Yr3RuRIMPowB7c_rrFu0dhhQor6VS8NbqxSQf36Inhb6NM0bgxz4hzXZ0AXJKYJlS6AbtDelBIGwZZzSNt-gI47-3Vu9ebkGUpC9FTBbZ5XNE-sf9yTXpjXw/fDWW5glNhQOncvm9o4KIPQ-4UCOb2iebrKKWY5FHsvw" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+
+**File** HTML
+
+</div>
+
+###  ****** UNUSED ******* Tickets  -> HTML
+
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. Green</div>
+<div style="clear: both"></div>
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/JPraBxY_U5ZntOeyPzyoHg/I2yf2C2ysC75AqInP8PcTE3OobbT5-rA3_-7h02X1NW89nTboli1OLn-Ji_pbvF-UfjhTZLPum9LAWDJqV6hWsLzhIQ2Raa-BleQPhugIbRwP0W789X7LYE_VGNes6ExhJJ6tKk7a66bLqwDgYMlLA/hsxIyawVBDRd5twRcKzhDvwSqpdwe0FDaRmdiXhll-Q" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+
+<div style="display: block; clear: left;">
+
+
+
+**Editor**
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/vZZ6FRbPdDRfsk9YElFvMw/azHVSBCxa9CLfjk5mkjv_EOKiysWvGbpnofxsiOyG1oSOkd-GyR51K0mImZBUsJ5-26UjkGCHLPMmsB8iyXEwlkR940zYb8beZpPt-XhRc0yGzQqlJVNGzR-0TVr3w5S_gE6mpjRIIidsZjh6_5dYQ/Oj8-cBfPqxsZnVOH51zkZg44cVIzSI4bbO534XzFdv8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/fRYEGAgb-okcoat8Zgnwcg/Cu-PUIpDPVCDefi0qShRy01K-BEHUzttODS6_gWQP_ZaBz-iBQCLsv4W5LHB1UEjkP1l47EBrnOGlbRZLKN3EFZmhtK0c7moKYu83G9zlnHs4lpB-wzPglM_wSvPS0Gb1fnqOpHwBVB7iSaQZFdBRA/XD49r7djUfUsYwpg3TiJltJPDACZ8c9wxPdhZtNkBT0" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/Xaom8ZNb6OXjOmPqkZ1AVA/aQQz3jZrSdb8eLmHhdvAR-kVac9xi9Yr3RuRIMPowB7c_rrFu0dhhQor6VS8NbqxSQf36Inhb6NM0bgxz4hzXZ0AXJKYJlS6AbtDelBIGwZZzSNt-gI47-3Vu9ebkGUpC9FTBbZ5XNE-sf9yTXpjXw/fDWW5glNhQOncvm9o4KIPQ-4UCOb2iebrKKWY5FHsvw" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+
+  <div>
+Devices.json -> json-hbars-transform -> <b>Index.html</b>
+
+  </div>
+  </div>
+
+
+<hr style="clear: both"></hr>
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/b4hB42pmARw0w2bYC7jabw/alaQGS8TLRuNyPY_BZdVnVGhSFTIn2Fhz_sqPc3FmHwcQH22zOTu1BkuhPc-hg4tdUR45C3uvCJm0pZVPKgrGTAaZqEWPlj5WfjPtit8ORSCdeyCfZwdR2m1SZmPp2BspLZhi0VYnxbJG0i4Sra7kw/4QCNEMpoioHSIOOmNo1pMJ1GnJ7gbLQI2vSU0i07-Fw" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/7iWQEx3fLvWVfeSBhAaZAQ/RIzXIFs6qqAv7rVoJbkwn_aZlCOolxRM_bBAiTdUbSeSEP-Zn6s9Fk15wD1hWU3FZD2vP0Xq5AdjrJxTv50lWQ6cWL7AjhSS_rEWMl8-4VWcItM3h-2s_AvztohcApLs3tXBnb9pDTkEK8E24kCGwQ/gOE_345Gdn4JyWciwUKQ3VAT9W7WGcK5yim8AyA5gtw" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+
+**File** Python
+
+</div>
 
 ###  ****** UNUSED ******* Tickets  -> Python
 
-<div style="background-color: Purple + #PY0000; width: 2em; height: 2em; float: left;"></div>
-
-- **To Node Name**: Python
-- **Output File Name**: MachineController.py
-- **Expected Color**: Purple + #PY0000
-- **Syntax Free Color**: Purple
-- **Parent Free Edge Color**: Purple
-- **SyntaxFreeColor**: Purple",
-- **ParentFreeEdgeColor**: Purple",
-- **FromFreeEdgeToNodeType**: QueryableSSoT",
-- **SyntaxFreeEdgeName**: Machine Readable SSoT",
-
-<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
-
-- **Developer**
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-  <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. Green</div>
+<div style="clear: both"></div>
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/4yx7zg7OPWnlaqkX_8egxQ/HRQhHM7yVuT7NIkxOHm6hQOUuXZfu3x8a15kLSpkL1gcM0UbcR8nZJ8xoLBb06ZtYRw2eb8VHxSnLQDy7y3XKciaR-nyXG8CdVF89y5xDUgE1OdUfCUzTVonRTF2Z_fyhLZDcwMebnULrRInGDfSuQ/8OKrwq70J63p2l_PCi-1SM-754blHttE_LTYtMfCLkc" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/0M9Sk0ySJ9gDNt6l9TvYiA/qIcvCS2jtc9ZSw9UU8TtHvVBvDAEhyMYLjx4NUTuT-83rknlXrguqdB3BSJjo2N3VynaL1STIyYiWOHo0-F5vaK_3IfdjI6sztsB4Tm99OH-p9ewQX_YG4RgJkdMFweOZprxeGRqvTgtLy2-4KBzIg/d28JqbMt6y44zUOsuL57bNgTgkyBuZAHeSlbt6VoOGk" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+
+<div style="display: block; clear: left;">
+
+
+
+**Developer**
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/vZZ6FRbPdDRfsk9YElFvMw/azHVSBCxa9CLfjk5mkjv_EOKiysWvGbpnofxsiOyG1oSOkd-GyR51K0mImZBUsJ5-26UjkGCHLPMmsB8iyXEwlkR940zYb8beZpPt-XhRc0yGzQqlJVNGzR-0TVr3w5S_gE6mpjRIIidsZjh6_5dYQ/Oj8-cBfPqxsZnVOH51zkZg44cVIzSI4bbO534XzFdv8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/fRYEGAgb-okcoat8Zgnwcg/Cu-PUIpDPVCDefi0qShRy01K-BEHUzttODS6_gWQP_ZaBz-iBQCLsv4W5LHB1UEjkP1l47EBrnOGlbRZLKN3EFZmhtK0c7moKYu83G9zlnHs4lpB-wzPglM_wSvPS0Gb1fnqOpHwBVB7iSaQZFdBRA/XD49r7djUfUsYwpg3TiJltJPDACZ8c9wxPdhZtNkBT0" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/7iWQEx3fLvWVfeSBhAaZAQ/RIzXIFs6qqAv7rVoJbkwn_aZlCOolxRM_bBAiTdUbSeSEP-Zn6s9Fk15wD1hWU3FZD2vP0Xq5AdjrJxTv50lWQ6cWL7AjhSS_rEWMl8-4VWcItM3h-2s_AvztohcApLs3tXBnb9pDTkEK8E24kCGwQ/gOE_345Gdn4JyWciwUKQ3VAT9W7WGcK5yim8AyA5gtw" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
 Devices.json -> json-hbars-transform -> <b>MachineController.py</b>
@@ -577,47 +672,46 @@ Devices.json -> json-hbars-transform -> <b>MachineController.py</b>
   </div>
   </div>
 
-- **File** Python
 
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
+<hr style="clear: both"></hr>
 
-  - **To Node Platform Attachments**:
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/SZo6uzD9zZi6KasnhW4gMw/Qm-AFMVhGeHpY1xavSat4Oo66NO-tAuv1acC_OKSuvVpZRtUpoH6M_0mExpKXiVlsq-aer-vtgzDreoCMQ8KiIEnWMEB67fUt6b4doFzzr0RgMgh5Y5EUS97gJnciuzoPMo2RbGsxYIn8NcWDm9VhA/yuBnvtUaBLcWV_hBwp_H-nSHPHdcAHGmj3vlpx3jB4A" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 5em;">
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/rOgxQ9-NhEVQUaRe7lF6lw/ePvA3lK7cnYccQj55ATcgD1HDgYaeq6qH7c78Tx1_kDF55VML5tI9ygYpo_oGexTnxzewyQ_LZJPW0Mkg-tniAE0_FnFPDM5NHs1D_mxLLMvQJT0rG_D_psyPDemt3m8687XIWUhL5qRiyjqHJYaJA/eKC9PlwJsLEk-P59ccmvjhrM6yb0uGodbv3SxZbcSag" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/TuwtK8MfyvEGi06aHXjz5A/lDt70LRklVPgR7_S3IQc_gMfRsXMGXbP48-XjPcw6QVvsYaOOpCmeu9NGq-gVQsM_jdXkIxLpO9FfVcY5vxEMrQdcFdgLmUFsdrXkowzv38cro9of7HuZEafe0GzNp7C-Hv9952S6bXDWSh5bGH7h40mDriPXhXFU5qChIZYTwo/E6rwuAhCa_5WczhP7WiFCP-0PL3-WMWUmx78epLEXNc" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/A58VtXyDaGsVvorHZOYwZg/c27KV2ylR3uM2GE43pnQfXX0Ol1DPDLDEKx1PPO2RNtcqvrJEeunlWx4n31iIeydfmCckt81wJQtRqVxl-Ol8ind93RT6pfTfxYmgFtdpblX_2iBmJmjhNtfm7rF93ght1__kYu-EPsZgPBGm7jAfQ/8aJuCEpML67K48LD9cO-HSADUr6adKrOZS1R5Q_jI44" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
-
-### Tickets  -> C#
-
-<div style="background-color: Purple + #CSHARP0; width: 2em; height: 2em; float: left;"></div>
-
-- **To Node Name**: CSharp
-- **Output File Name**: MachineController.cs
-- **Expected Color**: Purple + #CSHARP0
-- **Syntax Free Color**: Purple
-- **Parent Free Edge Color**: Purple
-- **SyntaxFreeColor**: Purple",
-- **ParentFreeEdgeColor**: Purple",
-- **FromFreeEdgeToNodeType**: QueryableSSoT",
-- **SyntaxFreeEdgeName**: Machine Readable SSoT",
-
-<hr style="margin: 0.5em; clear: right; background-color: Purple"></hr>
-
-- **Developer**
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/Ps2yp3xZZlyEHaUpsLtkGA/-_ZUuBEMXte2IV4fHGdsNP7atb8hSHzYgCMyK37XnIMWnqECQ_hGnHvw7yBOuHSpS6wHcsFWAprrzjGLX9dbkv2mImyRanRwJXiYGrVgv7FTPGhyx0scaEbfd6W8XR2K8BGYWOQCRo9w8rEDdNPTNw/YqMHm1Ogw7nheZV1Fp9MeTflFFFc0w0YPD6supqX-LI" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-  <div style="display: block; clear: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/W9e68IKY77JOR-pdcOWR4g/pmMe0RamjbmnG-VYkB9zmdB7r0stbaEttHRDRUrARDaHuvx5d41TCGlgS6Tpdk-UaU0W0ohic61bpGSyps4277sJ9TWOIwrlMSoQQlKd16ZWAqaCPG1Ock39lZCgdtItAr9n7js8J9hAmIa8DgF3Lg/H7houYxZwGHkkM_qZPIIhpOD6Kp9zpg6RjWPxFy0Yl8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/8V0y7DjSoIOeDiPFAg-Qfw/8xi2gw0bHTjmlfVKiIEvj2NjMCjZzJjYWyHbwIwJzlRNIjrxjhyihlVCkCykkQA_T0pOL0H4K8SXYZQU2TTglt5TVkn_zOih1DbWxF9ePONTZblG0ZnJ9oo9EPCeHKO3xFgI-d--moTrCdtqFrUE6A/wskTV3citN963Luw5KmO_nS6poZYtwY9NJINIE95KUI" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/PWoWFlGSbFwXhAOXYyE1JA/GbO_fCT5YedEfK6xMSLuIDa4RVK17Yp0ZHZJol9Ym2B0JOovtQgs7vYg2s0SFnikSbjCeYZyuWCazRk5nBtS_ie-KQhLmzx622k2qp3JNaT1OE42BsKm527QRYnUJn4Kq4c2oiGDnFbHkNqbqfcP6w/GUMulFQqgRsIZE8U6tpIWo3XTfTFjOZEbGlw4GubZzg" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">
 
 
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/A58VtXyDaGsVvorHZOYwZg/c27KV2ylR3uM2GE43pnQfXX0Ol1DPDLDEKx1PPO2RNtcqvrJEeunlWx4n31iIeydfmCckt81wJQtRqVxl-Ol8ind93RT6pfTfxYmgFtdpblX_2iBmJmjhNtfm7rF93ght1__kYu-EPsZgPBGm7jAfQ/8aJuCEpML67K48LD9cO-HSADUr6adKrOZS1R5Q_jI44" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/8l21WWt69nDq7uTN9zH8lw/uK6vHyL639HaPX9G4dXuZ7NY77WG262P2C0d0Cj_-W5n1ZfFEVAJqDsiwDbI-IpEYh0NYhz0yRIzTpTfKRUYrq6DSvxiWTPIBHjhsI0RNhg5E6jcv7YL1TII-XKNuUvlbpmFRzvNAd0YYHJYu5RJ0g/fub-WVhLwLHqvlInuDCkDwG4ojOs2MIj34Y1GlHzqD4" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">
+
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+
+**File** CSharp
+
+</div>
+
+###  ****** UNUSED ******* Tickets  -> C#
+
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: Green</div>
+<div style="background-color: Green; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. Green</div>
+<div style="clear: both"></div>
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/0M9Sk0ySJ9gDNt6l9TvYiA/qIcvCS2jtc9ZSw9UU8TtHvVBvDAEhyMYLjx4NUTuT-83rknlXrguqdB3BSJjo2N3VynaL1STIyYiWOHo0-F5vaK_3IfdjI6sztsB4Tm99OH-p9ewQX_YG4RgJkdMFweOZprxeGRqvTgtLy2-4KBzIg/d28JqbMt6y44zUOsuL57bNgTgkyBuZAHeSlbt6VoOGk" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+
+<div style="display: block; clear: left;">
+
+
+
+**Developer**
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/vZZ6FRbPdDRfsk9YElFvMw/azHVSBCxa9CLfjk5mkjv_EOKiysWvGbpnofxsiOyG1oSOkd-GyR51K0mImZBUsJ5-26UjkGCHLPMmsB8iyXEwlkR940zYb8beZpPt-XhRc0yGzQqlJVNGzR-0TVr3w5S_gE6mpjRIIidsZjh6_5dYQ/Oj8-cBfPqxsZnVOH51zkZg44cVIzSI4bbO534XzFdv8" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/fRYEGAgb-okcoat8Zgnwcg/Cu-PUIpDPVCDefi0qShRy01K-BEHUzttODS6_gWQP_ZaBz-iBQCLsv4W5LHB1UEjkP1l47EBrnOGlbRZLKN3EFZmhtK0c7moKYu83G9zlnHs4lpB-wzPglM_wSvPS0Gb1fnqOpHwBVB7iSaQZFdBRA/XD49r7djUfUsYwpg3TiJltJPDACZ8c9wxPdhZtNkBT0" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+
+
+<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714284000000/8l21WWt69nDq7uTN9zH8lw/uK6vHyL639HaPX9G4dXuZ7NY77WG262P2C0d0Cj_-W5n1ZfFEVAJqDsiwDbI-IpEYh0NYhz0yRIzTpTfKRUYrq6DSvxiWTPIBHjhsI0RNhg5E6jcv7YL1TII-XKNuUvlbpmFRzvNAd0YYHJYu5RJ0g/fub-WVhLwLHqvlInuDCkDwG4ojOs2MIj34Y1GlHzqD4" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
 
   <div>
 Devices.json -> json-hbars-transform -> <b>MachineController.cs</b>
@@ -625,10 +719,4 @@ Devices.json -> json-hbars-transform -> <b>MachineController.cs</b>
   </div>
   </div>
 
-- **File** CSharp
-
-<hr style="margin: 0.5em; clear: both; background-color: Purple"></hr>
-
-  - **To Node Platform Attachments**:
-<img src="https://v5.airtableusercontent.com/v3/u/28/28/1714269600000/oO0WWTLjnD7I3C_fuHJ6uw/oRxOD5f0IQGohdF60GI_sr58IYkKLcv0-5Z5zCVmBFbIoNpxNCkEOa6sXICEKzJ1d8cUDrrjjSHLcNdMOeTcddeyW28G2FUaYn0qBypOYmcZNy9KTkEj56is4bzjEJtqzGuFwW3Oba8Rw3d1mkh0FYmXmbINC0TeikdOdrpUvlQ/NI7zHU7K57dbKZqCgh0RXHcUwTxzRhINnOCmENWthYM" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 5em;">
 

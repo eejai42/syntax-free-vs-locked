@@ -1,14 +1,21 @@
-## Syntax-Locked Methodology
+<hr></hr>
+
+# Syntax-Locked Methodology
+
+<hr></hr>
 {{#with this}}
 {{#each this }}
 {{#each this }}
   {{#unless (eq (length LockedColor) 0)}}
-<hr style="clear: both; background-color: black; height: 1em;"></hr>
+
+<hr style="clear: both"></hr>
+
   {{#if ToNodePlatformAttachments}}
     {{#each ToNodePlatformAttachments}}
-<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 10em; float: left;">
+<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
     {{/each}}
   {{/if}}
+
 
   {{#if FromNodeAttachments}}
 {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">{{/each}}
@@ -17,9 +24,21 @@
 {{#each LockedAttachments}}<img src="{{this}}" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">{{/each}}
   {{/if}}
 
+  <div style="background-color: {{ExpectedColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: {{ExpectedColor}}</div>
+<div style="background-color: {{LockedColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED {{LockedColor}}</div>
+<div style="clear: left"></div>
+
+{{#unless (eq LockedColor ExpectedColor)}}
+<div style="color: red; font-weight: bold; font-size: 1.2em; width: 25em; text-align: center; background-color: #ccc">
+⬆ STALE / OUT OF DATE CONTENT ⬆
+</div>
+{{/unless}}
+
+<div style="clear: left"></div>
+
+
 ### {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  -> {{EdgeName}}
 
-#### **{{TransformerNodeName}}** - **{{ToNodeType}}** {{ToNodeName}}
 
     {{#if FromEdgeLockedAttachments}}
     {{#each FromEdgeLockedAttachments}}
@@ -34,6 +53,10 @@
 
   <div style="display: block; clear: left;">
 
+#### **{{TransformerNodeName}}** - **{{ToNodeType}}** {{ToNodeName}}
+
+  <div style="display: block; clear: left;">
+
   {{#if ToNodeAttachments}}
     {{#each ToNodeAttachments}}
 <img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
@@ -45,21 +68,27 @@
   </div>
   </div>
 
-**Syntax-Locked Color** : {{LockedColor}}
-
-<hr style="margin: 0.5em; clear: both; background-color: {{LockedColor}}"></hr>
-
-
   {{/unless}}
 {{/each}}
 {{/each}}
 
 <hr></hr>
-## Syntax-Free Methodology
+
+# Syntax-Free Methodology
+
+<hr></hr>
 {{#each this }}
 {{#each this }}
   {{#unless SkipForSyntaxFree}}
-<hr style="margin: 0.5em; clear: both; background-color: black; height: 1em;"></hr>
+
+<hr style="clear: both"></hr>
+
+  {{#if ToNodePlatformAttachments}}
+    {{#each ToNodePlatformAttachments}}
+<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
+    {{/each}}
+  {{/if}}
+
   {{#if FromNodeAttachments}}
 {{#each FromNodeAttachments}}
 
@@ -72,23 +101,18 @@
 <img src="{{this}}" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">{{/each}}
   {{/if}}
 
+<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+
+**{{ToNodeType}}** {{ToNodeName}}
+
+</div>
+
 ### {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  -> {{EdgeName}}
 
-<div style="background-color: {{ExpectedColor}}; width: 2em; height: 2em; float: left;"></div>
+<div style="background-color: {{ExpectedColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: {{ExpectedColor}}</div>
+<div style="background-color: {{SyntaxFreeColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. {{SyntaxFreeColor}}</div>
+<div style="clear: both"></div>
 
-- **To Node Name**: {{ToNodeName}}
-- **Output File Name**: {{OutputFileName}}
-- **Expected Color**: {{ExpectedColor}}
-- **Syntax Free Color**: {{SyntaxFreeColor}}
-- **Parent Free Edge Color**: {{ParentFreeEdgeColor}}
-- **SyntaxFreeColor**: {{SyntaxFreeColor}}",
-- **ParentFreeEdgeColor**: {{ParentFreeEdgeColor}}",
-- **FromFreeEdgeToNodeType**: {{FromFreeEdgeToNodeType}}",
-- **SyntaxFreeEdgeName**: {{SyntaxFreeEdgeName}}",
-
-<hr style="margin: 0.5em; clear: right; background-color: {{SyntaxFreeColor}}"></hr>
-
-- **{{TransformerNodeName}}**
 
   {{#if TranspilerNodeAttachments}}
     {{#each TranspilerNodeAttachments}}
@@ -96,7 +120,13 @@
     {{/each}}
   {{/if}}
 
-  <div style="display: block; clear: left;">
+
+<div style="display: block; clear: left;">
+
+
+
+**{{TransformerNodeName}}**
+
 
     {{#if FromEdgeFreeAttachments}}
     {{#each FromEdgeFreeAttachments}}
@@ -123,16 +153,6 @@
   </div>
   </div>
 
-- **{{ToNodeType}}** {{ToNodeName}}
-
-<hr style="margin: 0.5em; clear: both; background-color: {{SyntaxFreeColor}}"></hr>
-
-  {{#if ToNodePlatformAttachments}}
-  - **To Node Platform Attachments**:
-    {{#each ToNodePlatformAttachments}}
-<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 5em;">
-    {{/each}}
-  {{/if}}
   {{/unless}}
 {{/each}}
 {{/each}}
