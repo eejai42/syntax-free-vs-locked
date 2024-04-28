@@ -33,6 +33,20 @@
     float: left; 
     margin-top: 0;
   }
+
+  .from-node-image {
+    margin-right: 2em; 
+    padding: 1em; 
+    border-right: dashed black 3px; 
+    height: 27em;
+    padding-top: 0;
+  }
+
+  .transpiler-attachments {
+    margin: 0.5em; 
+    width: 5em; 
+    float: left;
+  }
 </style>
 {{#with this}}
 
@@ -57,9 +71,12 @@
           <tbody>
             <tr>
             <td style="width: 14em;" valign="top">
-              {{#if FromNodeAttachments}}
-                {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em; float: right;">{{/each}}
-              {{/if}}
+              <div class="from-node-image">
+                {{#if FromNodeAttachments}}
+                  {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">{{/each}}
+                {{/if}}
+                </div>
+              </div>
             </td>
             <td valign="top">
               <table><tr>
@@ -74,11 +91,11 @@
                   </div>
                 </td>
                 <tr><td colSpan="2">
-                  <h2> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}} -> {{EdgeName}}</h2>
+                  <h2> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}} ➡ {{EdgeName}}</h2>
                 </td></tr>
                 <tr><td colSpan="2">
                   {{#if TranspilerNodeAttachments}}
-                    {{#each TranspilerNodeAttachments}}<img src="{{this}}" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 8em; float: left;">{{/each}}
+                    {{#each TranspilerNodeAttachments}}<img src="{{this}}" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
                   {{/if}}
                   <h4 style="clear: left">{{TransformerNodeName}}</h4>
                 </td></tr>
@@ -90,7 +107,7 @@
                 </div>
 
                 <div>
-                  <b>{{ToNodeType}}</b> {{ToNodeName}}  -> {{OutputFileName}}</b>
+                  <b>{{ToNodeType}}</b> {{ToNodeName}}  ➡ {{OutputFileName}}</b>
                 </div>
                 
                 <div style="display: block; clear: left;"></div>
@@ -128,11 +145,14 @@
 
       {{#unless false}}
 
-        <table style="border: none; width: 100%"><tr>
-        <td style="width: 14em;">
-          {{#if FromNodeAttachments}}
-            {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em; float: left;">{{/each}}
-          {{/if}}
+        <table style="border: none; width: 100%;"><tr>
+        <td style="width: 14em;" valign="top">
+          <div class="from-node-image">
+            {{#if FromNodeAttachments}}
+              {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">{{/each}}
+            {{/if}}
+            </div>
+          </div>
         </td>
         <td valign="top">
           <table><tr>
@@ -151,13 +171,34 @@
 
             </td>
             <tr><td colSpan="2">          
-              <h2> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  -> {{EdgeName}}</h2>
+              <h2> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  ➡ {{EdgeName}}</h2>
             </td></tr>
             <tr><td colSpan="2">          
               {{#if TranspilerNodeAttachments}}
-                {{#each TranspilerNodeAttachments}}<img src="{{this}}" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">{{/each}}
+                {{#each TranspilerNodeAttachments}}<img src="{{this}}" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
               {{/if}}
               <h4 style="clear: left">{{TransformerNodeName}}</h4>
+            </td></tr>
+            <tr><td colSpan="2">
+              {{#if FromEdgeFreeAttachments}}
+                {{#each FromEdgeFreeAttachments}}<img src="{{this}}" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">{{/each}}
+              {{/if}}
+
+              {{#if FreeTranspilerAttachments}}
+                {{#each FreeTranspilerAttachments}}<img src="{{this}}" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">{{/each}}
+              {{/if}}
+
+              {{#if ToNodeAttachments}}
+                {{#each ToNodeAttachments}}<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">{{/each}}
+              {{/if}}
+
+              <div style="display: block; clear: left;">
+                <div>
+                  {{#if (eq (length SyntaxFreeEdgeOutputFileName) 0)}}{{TransformerNodeName}}{{else}}{{SyntaxFreeEdgeOutputFileName}}{{/if}} ➡ 
+                  {{#unless (eq (length FreeTranspilerNodeName) 0)}}{{FreeTranspilerNodeName}} ➡ {{/unless}}
+                  {{ToNodeType}} <b>{{OutputFileName}}</b>   ({{ToNodeName}})
+                </div>
+              </div>
             </td></tr>
 
           </table>
@@ -168,29 +209,7 @@
           {{/if}}
 
         </td></tr>
-      </table>
-        {{#if FromEdgeFreeAttachments}}
-          {{#each FromEdgeFreeAttachments}}<img src="{{this}}" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">{{/each}}
-        {{/if}}
-
-          {{#if FreeTranspilerAttachments}}
-            {{#each FreeTranspilerAttachments}}<img src="{{this}}" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">{{/each}}
-          {{/if}}
-
-        {{#if ToNodeAttachments}}
-          {{#each ToNodeAttachments}}<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">{{/each}}
-        {{/if}}
-
-        <div style="display: block; clear: left;">
-
-
-          <div>
-            {{#if (eq (length SyntaxFreeEdgeOutputFileName) 0)}}{{TransformerNodeName}}{{else}}{{SyntaxFreeEdgeOutputFileName}}{{/if}} -> 
-            {{#unless (eq (length FreeTranspilerNodeName) 0)}}{{FreeTranspilerNodeName}} -> {{/unless}}
-            {{ToNodeType}} <b>{{OutputFileName}}</b>   ({{ToNodeName}})
-          </div>
-
-        </div>
+        </table>
         </div>
       {{/unless}}
     {{/each}}
