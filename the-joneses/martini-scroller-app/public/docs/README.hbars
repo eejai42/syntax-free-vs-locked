@@ -1,159 +1,137 @@
+<style>
+  .goal {
+    color: #ddd; font-weight: bold; width: 15em; height: 2em; border: solid black 1px"
+  }
+  .current {
+    float: left; color: #ddd; font-weight: bold; width: 15em; height: 2em; border: solid black 1px
+  }
+</style>
+
 <hr></hr>
 
-# Syntax-Locked Methodology
+<h1>Syntax-Locked Methodology</h1>
 
-<hr></hr>
 {{#with this}}
-{{#each this }}
-{{#each this }}
-  {{#unless (eq (length LockedColor) 0)}}
+  {{#each this }}
+    {{#each this }}
+      {{#unless (eq (length LockedColor) 0)}}
 
-<hr style="clear: both"></hr>
+        <hr style="clear: both"></hr>
 
-  {{#if ToNodePlatformAttachments}}
-    {{#each ToNodePlatformAttachments}}
-<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
+
+
+        <table style="border: none; width: 100%"><tr>
+        <td style="width: 12em;">
+          {{#if ToNodePlatformAttachments}}
+            {{#each ToNodePlatformAttachments}}<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">{{/each}}
+          {{/if}}
+        </td>
+        <td valign="top">
+          <table><tr>
+            <td>
+              <div class="goal" style="background-color: {{ExpectedColor}};">Goal: {{ExpectedColor}}</div>
+            </td>
+            <td valign="top">
+              <div class="current" style="background-color: {{LockedColor}};"> vs. SYNTAX-LOCKED {{LockedColor}}</div>
+            </td><tr>
+            <td colSpan="2">
+              {{#unless (eq LockedColor ExpectedColor)}}
+                <div style="color: red; font-weight: bold; font-size: 1.2em; width: 25em; text-align: center; background-color: #ccc">
+                ⬆ STALE / OUT OF DATE CONTENT ⬆
+                </div>
+              {{/unless}}
+            </td></tr>
+            <tr><td colSpan="2">          
+              <h3> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  -> {{EdgeName}}</h3>
+            </td></tr>
+          </table>
+        </td>          
+        <td halign="right">{{#if FromNodeAttachments}}
+            {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">{{/each}}
+          {{/if}}
+          {{#if LockedAttachments}}
+            {{#each LockedAttachments}}<img src="{{this}}" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">{{/each}}
+          {{/if}}
+        </td></tr>
+      </table>
+        {{#if FromEdgeLockedAttachments}}
+          {{#each FromEdgeLockedAttachments}}<img src="{{this}}" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">{{/each}}
+        {{/if}}
+        {{#if TranspilerNodeAttachments}}
+          {{#each TranspilerNodeAttachments}}<img src="{{this}}" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">{{/each}}
+        {{/if}}
+
+        <div style="display: block; clear: left;">
+
+          <h4> **{{TransformerNodeName}}** - **{{ToNodeType}}** {{ToNodeName}} </h4>
+
+          <div style="display: block; clear: left;">
+            {{#if ToNodeAttachments}}
+              {{#each ToNodeAttachments}}<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">{{/each}}
+            {{/if}}
+          </div>
+          <b>{{OutputFileName}}</b>
+        </div>
+      {{/unless}}
     {{/each}}
-  {{/if}}
+  {{/each}}
+
+  <hr></hr>
 
 
-  {{#if FromNodeAttachments}}
-{{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">{{/each}}
-  {{/if}}
-    {{#if LockedAttachments}}
-{{#each LockedAttachments}}<img src="{{this}}" alt="Locked Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">{{/each}}
-  {{/if}}
 
-  <div style="background-color: {{ExpectedColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: {{ExpectedColor}}</div>
-<div style="background-color: {{LockedColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> vs. SYNTAX-LOCKED {{LockedColor}}</div>
-<div style="clear: left"></div>
+<h1>Syntax-Free Methodology</h1>
 
-{{#unless (eq LockedColor ExpectedColor)}}
-<div style="color: red; font-weight: bold; font-size: 1.2em; width: 25em; text-align: center; background-color: #ccc">
-⬆ STALE / OUT OF DATE CONTENT ⬆
-</div>
-{{/unless}}
+  <hr></hr>
+  {{#each this }}
+    {{#each this }}
+      {{#unless SkipForSyntaxFree}}
+        <hr style="clear: both"></hr>
 
-<div style="clear: left"></div>
+        {{#if ToNodePlatformAttachments}}
+          {{#each ToNodePlatformAttachments}}<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">{{/each}}
+        {{/if}}
+        {{#if FromNodeAttachments}}
+          {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">{{/each}}
+        {{/if}}
+        {{#if FreeAttachments}}
+          {{#each FreeAttachments}}<img src="{{this}}" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">{{/each}}
+        {{/if}}
 
+        <div style="float: right; max-width: 15em; width: 10em; text-align: right;">
+          **{{ToNodeType}}** {{ToNodeName}}
+        </div>
 
-### {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  -> {{EdgeName}}
+        <div style="background-color: {{ExpectedColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: {{ExpectedColor}}</div>
+        <div style="background-color: {{SyntaxFreeColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. {{SyntaxFreeColor}}</div>
 
+        <h3> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  -> {{EdgeName}}</h3>
 
-    {{#if FromEdgeLockedAttachments}}
-    {{#each FromEdgeLockedAttachments}}
-<img src="{{this}}" alt="From Edge Locked Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+        {{#if TranspilerNodeAttachments}}
+          {{#each TranspilerNodeAttachments}}<img src="{{this}}" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">{{/each}}
+        {{/if}}\
+
+        <div style="display: block; clear: left;">
+
+          **{{TransformerNodeName}}**
+
+          {{#if FromEdgeFreeAttachments}}
+            {{#each FromEdgeFreeAttachments}}<img src="{{this}}" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">{{/each}}
+          {{/if}}
+
+          {{#if FreeTranspilerAttachments}}
+            {{#each FreeTranspilerAttachments}}<img src="{{this}}" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">{{/each}}
+          {{/if}}
+
+          {{#if ToNodeAttachments}}
+            {{#each ToNodeAttachments}}<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">{{/each}}
+          {{/if}}
+
+          <div>
+            {{SyntaxFreeEdgeOutputFileName}} -> {{FreeTranspilerNodeName}} -> <b>{{OutputFileName}}</b>
+          </div>
+        </div>
+      {{/unless}}
     {{/each}}
-  {{/if}}
-  {{#if TranspilerNodeAttachments}}
-    {{#each TranspilerNodeAttachments}}
-<img src="{{this}}" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-    {{/each}}
-  {{/if}}
-
-  <div style="display: block; clear: left;">
-
-#### **{{TransformerNodeName}}** - **{{ToNodeType}}** {{ToNodeName}}
-
-  <div style="display: block; clear: left;">
-
-  {{#if ToNodeAttachments}}
-    {{#each ToNodeAttachments}}
-<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
-    {{/each}}
-  {{/if}}
-
-  <div>
-    <b>{{OutputFileName}}</b>
-  </div>
-  </div>
-
-  {{/unless}}
-{{/each}}
-{{/each}}
-
-<hr></hr>
-
-# Syntax-Free Methodology
-
-<hr></hr>
-{{#each this }}
-{{#each this }}
-  {{#unless SkipForSyntaxFree}}
-
-<hr style="clear: both"></hr>
-
-  {{#if ToNodePlatformAttachments}}
-    {{#each ToNodePlatformAttachments}}
-<img src="{{this}}" alt="To Node Platform Attachment Image" style="margin: 0.5em; width: 12em; float: left; margin: 1em;">
-    {{/each}}
-  {{/if}}
-
-  {{#if FromNodeAttachments}}
-{{#each FromNodeAttachments}}
-
-<img src="{{this}}" alt="From Node Attachment Image" style="margin: 0.5em; width: 5em; float: right;">{{/each}}
-  {{/if}}
-    {{#if FreeAttachments}}
-{{#each FreeAttachments}}
-
-
-<img src="{{this}}" alt="Free Attachment Image" style="margin: 0.5em; width: 5em; float: right; clear: right;">{{/each}}
-  {{/if}}
-
-<div style="float: right; max-width: 15em; width: 10em; text-align: right;">
-
-**{{ToNodeType}}** {{ToNodeName}}
-
-</div>
-
-### {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  -> {{EdgeName}}
-
-<div style="background-color: {{ExpectedColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px">Goal: {{ExpectedColor}}</div>
-<div style="background-color: {{SyntaxFreeColor}}; color: #ddd; font-weight: bold; width: 15em; height: 2em; float: left; border: solid black 1px"> - vs. {{SyntaxFreeColor}}</div>
-<div style="clear: both"></div>
-
-
-  {{#if TranspilerNodeAttachments}}
-    {{#each TranspilerNodeAttachments}}
-<img src="{{this}}" alt="Transpiler Node Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-    {{/each}}
-  {{/if}}
-
-
-<div style="display: block; clear: left;">
-
-
-
-**{{TransformerNodeName}}**
-
-
-    {{#if FromEdgeFreeAttachments}}
-    {{#each FromEdgeFreeAttachments}}
-<img src="{{this}}" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-    {{/each}}
-  {{/if}}
-
-      {{#if FreeTranspilerAttachments}}
-    {{#each FreeTranspilerAttachments}}
-<img src="{{this}}" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
-    {{/each}}
-  {{/if}}
-
-
-  {{#if ToNodeAttachments}}
-    {{#each ToNodeAttachments}}
-<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5em; width: 5em;">
-    {{/each}}
-  {{/if}}
-
-  <div>
-{{SyntaxFreeEdgeOutputFileName}} -> {{FreeTranspilerNodeName}} -> <b>{{OutputFileName}}</b>
-
-  </div>
-  </div>
-
-  {{/unless}}
-{{/each}}
-{{/each}}
+  {{/each}}
 {{/with}}
