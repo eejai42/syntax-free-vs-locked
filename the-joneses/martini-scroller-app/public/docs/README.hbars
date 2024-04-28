@@ -13,8 +13,9 @@
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    padding: 0.25rem;
   }
 
   .match-status {
@@ -32,12 +33,23 @@
     float: left; 
   }
 
-  .out-of-sync {
-    border: solid red 10px;
+  .unused {
+    font-size: 0.5em;
+    border: solid green 10px;
+    background-color: #c9c9c9;
+    text-decoration: line-through;
   }
 
   .in-sync {
+    padding-left: 1em;
     border: solid green 10px;
+    background-color: #edfded;
+  }
+
+  .out-of-sync {
+    padding-left: 1em;
+    border: solid red 10px;
+    background-color: #fde3e3;
   }
 
   .stale {
@@ -106,7 +118,7 @@
 
   {{#each this }}
     {{#each this }}
-      <div class="transpiler-node" style="background-color: {{#if (eq IsUsed 0)}}lightgray;{{else}}{{#unless (eq (length LockedColor) 0)}}{{#if (eq LockedColor ExpectedColor)}}lightgreen{{else}}#ff9ac0;{{/if}}{{/unless}}{{/if}}">
+      <div class="transpiler-node {{#if (eq IsUsed 0)}}unused{{else}}{{#unless (eq (length LockedColor) 0)}}{{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}{{/unless}}{{/if}}">
 
       {{#if (eq (length LockedColor) 0)}}
         <div style="margin: 0.5rem; height: 30rem; text-align: center; horizontal-align: middle;">
@@ -186,7 +198,7 @@
   <hr></hr>
   {{#each this }}
     {{#each this }}
-        <div class="transpiler-node"  style="background-color: {{#if (eq SyntaxFreeColor ExpectedColor)}}lightgreen;{{else}}#ff9ac0{{/if}}">
+        <div class="transpiler-node {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}">
 
       {{#unless false}}
 

@@ -13,8 +13,9 @@
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    padding: 0.25rem;
   }
 
   .match-status {
@@ -32,12 +33,23 @@
     float: left; 
   }
 
-  .out-of-sync {
-    border: solid red 10px;
+  .unused {
+    font-size: 0.5em;
+    border: solid green 10px;
+    background-color: #c9c9c9;
+    text-decoration: line-through;
   }
 
   .in-sync {
+    padding-left: 1em;
     border: solid green 10px;
+    background-color: #edfded;
+  }
+
+  .out-of-sync {
+    padding-left: 1em;
+    border: solid red 10px;
+    background-color: #fde3e3;
   }
 
   .stale {
@@ -103,7 +115,7 @@
 <h1 style="text-align: center">Syntax-Locked Methodology</h1>
 <hr></hr>
 
-      <div class="transpiler-node" style="background-color: lightgreen">
+      <div class="transpiler-node in-sync">
 
         <table style="border: none; width: 100%">
           <tbody>
@@ -151,13 +163,13 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div class="transpiler-node" style="background-color: ">
+      <div class="transpiler-node ">
 
         <div style="margin: 0.5rem; height: 30rem; text-align: center; horizontal-align: middle;">
           <div class="missing-layer">-- Missing Layer --</div>
         </div>
   </div>
-      <div class="transpiler-node" style="background-color: lightgreen">
+      <div class="transpiler-node in-sync">
 
         <table style="border: none; width: 100%">
           <tbody>
@@ -205,13 +217,13 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div class="transpiler-node" style="background-color: ">
+      <div class="transpiler-node ">
 
         <div style="margin: 0.5rem; height: 30rem; text-align: center; horizontal-align: middle;">
           <div class="missing-layer">-- Missing Layer --</div>
         </div>
   </div>
-      <div class="transpiler-node" style="background-color: #ff9ac0;">
+      <div class="transpiler-node out-of-sync">
 
         <table style="border: none; width: 100%">
           <tbody>
@@ -260,7 +272,7 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div class="transpiler-node" style="background-color: lightgreen">
+      <div class="transpiler-node in-sync">
 
         <table style="border: none; width: 100%">
           <tbody>
@@ -308,7 +320,7 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div class="transpiler-node" style="background-color: lightgray;">
+      <div class="transpiler-node unused">
 
         <table style="border: none; width: 100%">
           <tbody>
@@ -357,7 +369,7 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div class="transpiler-node" style="background-color: lightgray;">
+      <div class="transpiler-node unused">
 
         <table style="border: none; width: 100%">
           <tbody>
@@ -405,7 +417,7 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div class="transpiler-node" style="background-color: lightgray;">
+      <div class="transpiler-node unused">
 
         <table style="border: none; width: 100%">
           <tbody>
@@ -454,7 +466,7 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div class="transpiler-node" style="background-color: lightgray;">
+      <div class="transpiler-node unused">
 
         <table style="border: none; width: 100%">
           <tbody>
@@ -514,7 +526,7 @@
 <h1 style="text-align: center">Syntax-Free Methodology</h1>
 
   <hr></hr>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
@@ -566,7 +578,7 @@
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
@@ -618,7 +630,7 @@
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
@@ -671,7 +683,7 @@
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
@@ -725,7 +737,7 @@
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
@@ -779,7 +791,7 @@
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
@@ -833,7 +845,7 @@
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
@@ -887,7 +899,7 @@
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
@@ -941,7 +953,7 @@
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
@@ -995,7 +1007,7 @@
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node"  style="background-color: lightgreen;">
+        <div class="transpiler-node in-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
