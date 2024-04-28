@@ -1,52 +1,77 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <style>
+table {
+  font-size: normal;
+}
   .goal {
-    font-size: 1.5em;
     color: #dddddd; 
     font-weight: bold; 
-    width: 15em; 
-    min-height: 2em; 
+    width: 15rem; 
+    min-height: 2rem; 
     border: solid black 1px"
-    padding: 0.5em;
     text-align: center;
   }
   .current {
-    font-size: 1.5em;
     float: left; color: #ddd; 
     font-weight: bold; 
-    width: 15em; 
-    min-height: 2em; 
+    width: 15rem; 
+    min-height: 2rem; 
     border: solid black 1px
-    padding: 0.5em;
     text-align: center;
   }
   .stale {
-    color: red; font-weight: bold; font-size: 1.2em; width: 90%; 
-    text-align: center; background-color: #FFFFFF; margin-left: auto; margin-right: auto
+    color: red; 
+    font-weight: bold; 
+    width: 90%; 
+    text-align: center; background-color: #FFFFFF; 
+    margin-left: auto; margin-right: auto
   }
   .match-row {
-    min-height: 3em;
+    min-height: 3rem;
   }
   .platform-image {
-    margin: 0.5em; 
-    width: 12em; 
+    margin: 0.5rem; 
+    width: 6rem; 
     float: left; 
     margin-top: 0;
   }
 
   .from-node-image {
-    margin-right: 2em; 
-    padding: 1em; 
+    padding: 0rem; 
     border-right: dashed black 3px; 
-    height: 27em;
+    height: 27rem;
     padding-top: 0;
   }
 
   .transpiler-attachments {
-    margin: 0.5em; 
-    width: 5em; 
+    margin: 0.5rem; 
+    width: 5rem; 
     float: left;
   }
+
+  .from-node-attachment {
+    margin: 0.5rem; 
+    width: 8rem;
+  }
+
+  .transpiler-node {
+    height: 30rem;
+    margin: 0rem;
+    border: solid purple 2px;
+  }
+
+  .out-of-sync {
+    border: solid red 10px;
+  }
+
+  .in-sync {
+    border: solid green 10px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
 </style>
 
 <table>
@@ -57,26 +82,27 @@
 <h1 style="text-align: center">Syntax-Locked Methodology</h1>
 <hr></hr>
 
-      <div  style="height: 30em; background-color: lightgreen">
-      <hr style="clear: both"></hr>
-
+      <div class="transpiler-node" style="background-color: #ff9ac0;">
 
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td style="width: 14em;" valign="top">
+            <td valign="top">
+    <div>Normal text2</div>
+
               <div class="from-node-image">
-                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/fYbijWMS7SkJXFI-Szl6Qw/-meiVks06t5pxTiEGgFIsmEuUcvfZWtRQ_dbktXc5eUNp8W8phdQUE86reJju-sau5KqkoL521KmJZEnfxiL5agWFn3YSm9xMPHmtS7lEhgkmQNZ-yhYN8RCj52E8WaWKxfE2tGJYo69irW6KHuT8w/5aLNvDokgw4yDVPfum9x6cLbUPu7agef390hztQUxJ0" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/fYbijWMS7SkJXFI-Szl6Qw/-meiVks06t5pxTiEGgFIsmEuUcvfZWtRQ_dbktXc5eUNp8W8phdQUE86reJju-sau5KqkoL521KmJZEnfxiL5agWFn3YSm9xMPHmtS7lEhgkmQNZ-yhYN8RCj52E8WaWKxfE2tGJYo69irW6KHuT8w/5aLNvDokgw4yDVPfum9x6cLbUPu7agef390hztQUxJ0" alt="From Node Attachment Image" class="from-node-attachment">
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+                  <div class="goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-LOCKED Orange
+                  <div class="current match-row out-of-sync" style="background-color: Orange;"> vs. SYNTAX-LOCKED Orange
+                      <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
                 <tr><td colSpan="2">
@@ -88,7 +114,7 @@
                 </td></tr>
                 <tr><td>
                   <div style="display: block;">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
                 </div>
 
                 <div>
@@ -107,32 +133,34 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div  style="height: 30em; background-color: ">
-      <hr style="clear: both"></hr>
+      <div class="transpiler-node" style="background-color: ">
 
-
-        <div style="width: 100%; height: 100%; background-color: #dddddd"></div>
+        <div style="margin: 0.5rem; height: 30rem; text-align: center; horizontal-align: middle;">
+    <div>Normal text</div>
+          <div style="padding: 10%; background-color: #eeee00; ">-- Missing Layer --</div>
+        </div>
   </div>
-      <div  style="height: 30em; background-color: lightgreen">
-      <hr style="clear: both"></hr>
-
+      <div class="transpiler-node" style="background-color: #ff9ac0;">
 
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td style="width: 14em;" valign="top">
+            <td valign="top">
+    <div>Normal text2</div>
+
               <div class="from-node-image">
-                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8" alt="From Node Attachment Image" class="from-node-attachment">
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+                  <div class="goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-LOCKED Orange
+                  <div class="current match-row out-of-sync" style="background-color: Orange;"> vs. SYNTAX-LOCKED Orange
+                      <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
                 <tr><td colSpan="2">
@@ -144,7 +172,7 @@
                 </td></tr>
                 <tr><td>
                   <div style="display: block;">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
                 </div>
 
                 <div>
@@ -163,32 +191,34 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div  style="height: 30em; background-color: ">
-      <hr style="clear: both"></hr>
+      <div class="transpiler-node" style="background-color: ">
 
-
-        <div style="width: 100%; height: 100%; background-color: #dddddd"></div>
+        <div style="margin: 0.5rem; height: 30rem; text-align: center; horizontal-align: middle;">
+    <div>Normal text</div>
+          <div style="padding: 10%; background-color: #eeee00; ">-- Missing Layer --</div>
+        </div>
   </div>
-      <div  style="height: 30em; background-color: lightgreen">
-      <hr style="clear: both"></hr>
-
+      <div class="transpiler-node" style="background-color: #ff9ac0;">
 
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td style="width: 14em;" valign="top">
+            <td valign="top">
+    <div>Normal text2</div>
+
               <div class="from-node-image">
-                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+                  <div class="goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-LOCKED Orange
+                  <div class="current match-row out-of-sync" style="background-color: Orange;"> vs. SYNTAX-LOCKED Orange
+                      <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
                 <tr><td colSpan="2">
@@ -200,7 +230,7 @@
                 </td></tr>
                 <tr><td>
                   <div style="display: block;">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/BIMjNkyNgWxJywu9Dqiygw/wvnv9e706JiMFLELBA4hxdpyJFGksTfWN2jzyZXJR4ZYi99GTmRQ8xQklnsKY6FLf-FV-vUB5UwczqOWymSdhjaXn_5Ia00NyBWtC_DbvJ82Dbq25Sk6PlLZNaQvKaPCGJqfbXTbLk02sQn7SqjPLQ/xeQP6kf7bJQJRNXL5MWZl2LrlhAM9xR90pY_9gXqsms" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/BIMjNkyNgWxJywu9Dqiygw/wvnv9e706JiMFLELBA4hxdpyJFGksTfWN2jzyZXJR4ZYi99GTmRQ8xQklnsKY6FLf-FV-vUB5UwczqOWymSdhjaXn_5Ia00NyBWtC_DbvJ82Dbq25Sk6PlLZNaQvKaPCGJqfbXTbLk02sQn7SqjPLQ/xeQP6kf7bJQJRNXL5MWZl2LrlhAM9xR90pY_9gXqsms" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
                 </div>
 
                 <div>
@@ -219,31 +249,31 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div  style="height: 30em; background-color: #ff9ac0;">
-      <hr style="clear: both"></hr>
-
+      <div class="transpiler-node" style="background-color: #ff9ac0;">
 
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td style="width: 14em;" valign="top">
+            <td valign="top">
+    <div>Normal text2</div>
+
               <div class="from-node-image">
-                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+                  <div class="goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="current match-row" style="background-color: Blue;border: solid red 5px;"> vs. SYNTAX-LOCKED Blue
+                  <div class="current match-row out-of-sync" style="background-color: Green;"> vs. SYNTAX-LOCKED Green
                       <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
                 <tr><td colSpan="2">
-                  <h2> Tickets ➡ C++</h2>
+                  <h2> Tickets ➡ Python</h2>
                 </td></tr>
                 <tr><td colSpan="2">
                     <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
@@ -251,160 +281,7 @@
                 </td></tr>
                 <tr><td>
                   <div style="display: block;">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
-                </div>
-
-                <div>
-                  <b>File</b> Cpp  ➡ Arduino.ino</b>
-                </div>
-                
-                <div style="display: block; clear: left;"></div>
-                </td></tr>
-              </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/n8aGGPc08CIsSRtEq7hm3w/bDa2qvOavStOHFlOz9yvnfv4yhYZlOkYYPSjNafpw55P4nBNf8JTij9fl1-97JIpYxd1hWmDVHRewcy6zZVR3BFD_s7aC20CQHG4Jt3bLi37jPaLS6hH5NHxTSSBkFQOWln0VH2xWXzpHd-mzrZInCLDcOaN_JlKF8DYD_mg9hs/H9E8MRMRxrzOQBiACmh4BPiQDOVY4f1u6-vMwJnv9b0" alt="To Node Platform Attachment Image" class="platform-image">
-            </td></tr>
-          </tbody>
-        </table>
-        <div style="display: block; clear: left;">
-      </div>
-  </div>
-      <div  style="height: 30em; background-color: lightgray;">
-      <hr style="clear: both"></hr>
-
-
-        <table style="border: none; width: 100%">
-          <tbody>
-            <tr>
-            <td style="width: 14em;" valign="top">
-              <div class="from-node-image">
-                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
-                </div>
-              </div>
-            </td>
-            <td valign="top">
-              <table><tr>
-                <td>
-                  <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
-                </td>
-                <td valign="top">
-                  <div class="current match-row" style="background-color: Blue;border: solid red 5px;"> vs. SYNTAX-LOCKED Blue
-                      <div class="stale">⬆ STALE ⬆</div>
-                  </div>
-                </td>
-                <tr><td colSpan="2">
-                  <h2>  ****** UNUSED ******* Tickets ➡ Markdown</h2>
-                </td></tr>
-                <tr><td colSpan="2">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
-                  <h4 style="clear: left">Editor</h4>
-                </td></tr>
-                <tr><td>
-                  <div style="display: block;">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/0tkFh4--Rsc2VTca_jtU1g/cesWo3l7NFNA-_O0xpEBN8fCw2JmTLGkjVexdO3Z20XJV3e0b3Xvr_JhtjEme0w_tcBZE99sv53NMexSCF-1-5_7rHv280-tjrp0tTIlmuGRgINycZIJmhoDZp_oTDesVuX8G6Ao6_E2bBFaWGUfNg/L7TPCtL0EZP_Lt0_Is9QyjHkPN8IhussbCVNE44vrAs" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
-                </div>
-
-                <div>
-                  <b>File</b> Markdown  ➡ README.md</b>
-                </div>
-                
-                <div style="display: block; clear: left;"></div>
-                </td></tr>
-              </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/rmYlXidKyRyI062wv8zSmA/d_m4XiNT0-bbNqaPc6yellw6BczjPNObzpasio3hhxOuM9ehHthRx8XAhlMN2ybEwzfs-lrts68wgjyheTKgV3xjSpyFTCRLWL7xbELn-5l2N3EPQWFoMCgTNds5G6aPClvVNZvQ9ZzanKqXyuMhHQ/ZVd7_pBgidhFjRX6bfVBG92JZwOWPpq9bqIguYvdlD4" alt="To Node Platform Attachment Image" class="platform-image">
-            </td></tr>
-          </tbody>
-        </table>
-        <div style="display: block; clear: left;">
-      </div>
-  </div>
-      <div  style="height: 30em; background-color: lightgray;">
-      <hr style="clear: both"></hr>
-
-
-        <table style="border: none; width: 100%">
-          <tbody>
-            <tr>
-            <td style="width: 14em;" valign="top">
-              <div class="from-node-image">
-                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
-                </div>
-              </div>
-            </td>
-            <td valign="top">
-              <table><tr>
-                <td>
-                  <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
-                </td>
-                <td valign="top">
-                  <div class="current match-row" style="background-color: Green;border: solid red 5px;"> vs. SYNTAX-LOCKED Green
-                      <div class="stale">⬆ STALE ⬆</div>
-                  </div>
-                </td>
-                <tr><td colSpan="2">
-                  <h2>  ****** UNUSED ******* Tickets ➡ HTML</h2>
-                </td></tr>
-                <tr><td colSpan="2">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
-                  <h4 style="clear: left">Editor</h4>
-                </td></tr>
-                <tr><td>
-                  <div style="display: block;">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/tLTHyoGdBwd6n-ZSgWQJfA/Eb9NKdoqenAemMzP44Tu40o8t8euZUGM1IdCuga49MhAdFyZE-lwiF7ujA6xsONyZMxdk40UVF1vv0ztAYJ1L9ommd7CFeM80H3Dby3hI4A1P8-KyHe9rNFzV3mUSxb8jg1KYg-ONsMLeWoa2BvUHg/iNpiFQtsTcKmkuSZXxh2vrSkja-aLp_WaqRpZ_m2HxI" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
-                </div>
-
-                <div>
-                  <b>File</b> HTML  ➡ Index.html</b>
-                </div>
-                
-                <div style="display: block; clear: left;"></div>
-                </td></tr>
-              </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/WXKtwFbl5s8fBmW2N7Lk3A/qUZVFv7pVef739Y3_dsOeB9urSVilMJrdp6WDn92hCLoxc4YIamH4MJkpsQHdisg__ZXlJp-ljV116vdZXJmlBBSWiiaDsmPF92SAFSeVbnOrvU22cYONaxik7e4iHGecTeuFmp1cjui3TE_dw2MMQ/i1EyRsTO_vayw5RpAX98exK2LhgO4gDu3vXDoEWrSXY" alt="To Node Platform Attachment Image" class="platform-image">
-            </td></tr>
-          </tbody>
-        </table>
-        <div style="display: block; clear: left;">
-      </div>
-  </div>
-      <div  style="height: 30em; background-color: lightgray;">
-      <hr style="clear: both"></hr>
-
-
-        <table style="border: none; width: 100%">
-          <tbody>
-            <tr>
-            <td style="width: 14em;" valign="top">
-              <div class="from-node-image">
-                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
-                </div>
-              </div>
-            </td>
-            <td valign="top">
-              <table><tr>
-                <td>
-                  <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
-                </td>
-                <td valign="top">
-                  <div class="current match-row" style="background-color: Green;border: solid red 5px;"> vs. SYNTAX-LOCKED Green
-                      <div class="stale">⬆ STALE ⬆</div>
-                  </div>
-                </td>
-                <tr><td colSpan="2">
-                  <h2>  ****** UNUSED ******* Tickets ➡ Python</h2>
-                </td></tr>
-                <tr><td colSpan="2">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
-                  <h4 style="clear: left">Developer</h4>
-                </td></tr>
-                <tr><td>
-                  <div style="display: block;">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
                 </div>
 
                 <div>
@@ -423,26 +300,179 @@
         <div style="display: block; clear: left;">
       </div>
   </div>
-      <div  style="height: 30em; background-color: lightgray;">
-      <hr style="clear: both"></hr>
-
+      <div class="transpiler-node" style="background-color: lightgray;">
 
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td style="width: 14em;" valign="top">
+            <td valign="top">
+    <div>Normal text2</div>
+
               <div class="from-node-image">
-                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+                  <div class="goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="current match-row" style="background-color: Green;border: solid red 5px;"> vs. SYNTAX-LOCKED Green
+                  <div class="current match-row out-of-sync" style="background-color: Blue;"> vs. SYNTAX-LOCKED Blue
+                      <div class="stale">⬆ STALE ⬆</div>
+                  </div>
+                </td>
+                <tr><td colSpan="2">
+                  <h2>  ****** UNUSED ******* Tickets ➡ Markdown</h2>
+                </td></tr>
+                <tr><td colSpan="2">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Editor</h4>
+                </td></tr>
+                <tr><td>
+                  <div style="display: block;">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/0tkFh4--Rsc2VTca_jtU1g/cesWo3l7NFNA-_O0xpEBN8fCw2JmTLGkjVexdO3Z20XJV3e0b3Xvr_JhtjEme0w_tcBZE99sv53NMexSCF-1-5_7rHv280-tjrp0tTIlmuGRgINycZIJmhoDZp_oTDesVuX8G6Ao6_E2bBFaWGUfNg/L7TPCtL0EZP_Lt0_Is9QyjHkPN8IhussbCVNE44vrAs" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                </div>
+
+                <div>
+                  <b>File</b> Markdown  ➡ README.md</b>
+                </div>
+                
+                <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td>          
+            <td halign="right" valign="top">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/rmYlXidKyRyI062wv8zSmA/d_m4XiNT0-bbNqaPc6yellw6BczjPNObzpasio3hhxOuM9ehHthRx8XAhlMN2ybEwzfs-lrts68wgjyheTKgV3xjSpyFTCRLWL7xbELn-5l2N3EPQWFoMCgTNds5G6aPClvVNZvQ9ZzanKqXyuMhHQ/ZVd7_pBgidhFjRX6bfVBG92JZwOWPpq9bqIguYvdlD4" alt="To Node Platform Attachment Image" class="platform-image">
+            </td></tr>
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;">
+      </div>
+  </div>
+      <div class="transpiler-node" style="background-color: lightgray;">
+
+        <table style="border: none; width: 100%">
+          <tbody>
+            <tr>
+            <td valign="top">
+    <div>Normal text2</div>
+
+              <div class="from-node-image">
+                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
+                </div>
+              </div>
+            </td>
+            <td valign="top">
+              <table><tr>
+                <td>
+                  <div class="goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
+                </td>
+                <td valign="top">
+                  <div class="current match-row out-of-sync" style="background-color: Green;"> vs. SYNTAX-LOCKED Green
+                      <div class="stale">⬆ STALE ⬆</div>
+                  </div>
+                </td>
+                <tr><td colSpan="2">
+                  <h2>  ****** UNUSED ******* Tickets ➡ HTML</h2>
+                </td></tr>
+                <tr><td colSpan="2">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Editor</h4>
+                </td></tr>
+                <tr><td>
+                  <div style="display: block;">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/tLTHyoGdBwd6n-ZSgWQJfA/Eb9NKdoqenAemMzP44Tu40o8t8euZUGM1IdCuga49MhAdFyZE-lwiF7ujA6xsONyZMxdk40UVF1vv0ztAYJ1L9ommd7CFeM80H3Dby3hI4A1P8-KyHe9rNFzV3mUSxb8jg1KYg-ONsMLeWoa2BvUHg/iNpiFQtsTcKmkuSZXxh2vrSkja-aLp_WaqRpZ_m2HxI" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                </div>
+
+                <div>
+                  <b>File</b> HTML  ➡ Index.html</b>
+                </div>
+                
+                <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td>          
+            <td halign="right" valign="top">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/WXKtwFbl5s8fBmW2N7Lk3A/qUZVFv7pVef739Y3_dsOeB9urSVilMJrdp6WDn92hCLoxc4YIamH4MJkpsQHdisg__ZXlJp-ljV116vdZXJmlBBSWiiaDsmPF92SAFSeVbnOrvU22cYONaxik7e4iHGecTeuFmp1cjui3TE_dw2MMQ/i1EyRsTO_vayw5RpAX98exK2LhgO4gDu3vXDoEWrSXY" alt="To Node Platform Attachment Image" class="platform-image">
+            </td></tr>
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;">
+      </div>
+  </div>
+      <div class="transpiler-node" style="background-color: lightgray;">
+
+        <table style="border: none; width: 100%">
+          <tbody>
+            <tr>
+            <td valign="top">
+    <div>Normal text2</div>
+
+              <div class="from-node-image">
+                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
+                </div>
+              </div>
+            </td>
+            <td valign="top">
+              <table><tr>
+                <td>
+                  <div class="goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
+                </td>
+                <td valign="top">
+                  <div class="current match-row out-of-sync" style="background-color: Blue;"> vs. SYNTAX-LOCKED Blue
+                      <div class="stale">⬆ STALE ⬆</div>
+                  </div>
+                </td>
+                <tr><td colSpan="2">
+                  <h2>  ****** UNUSED ******* Tickets ➡ C++</h2>
+                </td></tr>
+                <tr><td colSpan="2">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Developer</h4>
+                </td></tr>
+                <tr><td>
+                  <div style="display: block;">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                </div>
+
+                <div>
+                  <b>File</b> Cpp  ➡ Arduino.ino</b>
+                </div>
+                
+                <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td>          
+            <td halign="right" valign="top">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/n8aGGPc08CIsSRtEq7hm3w/bDa2qvOavStOHFlOz9yvnfv4yhYZlOkYYPSjNafpw55P4nBNf8JTij9fl1-97JIpYxd1hWmDVHRewcy6zZVR3BFD_s7aC20CQHG4Jt3bLi37jPaLS6hH5NHxTSSBkFQOWln0VH2xWXzpHd-mzrZInCLDcOaN_JlKF8DYD_mg9hs/H9E8MRMRxrzOQBiACmh4BPiQDOVY4f1u6-vMwJnv9b0" alt="To Node Platform Attachment Image" class="platform-image">
+            </td></tr>
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;">
+      </div>
+  </div>
+      <div class="transpiler-node" style="background-color: lightgray;">
+
+        <table style="border: none; width: 100%">
+          <tbody>
+            <tr>
+            <td valign="top">
+    <div>Normal text2</div>
+
+              <div class="from-node-image">
+                  <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
+                </div>
+              </div>
+            </td>
+            <td valign="top">
+              <table><tr>
+                <td>
+                  <div class="goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
+                </td>
+                <td valign="top">
+                  <div class="current match-row out-of-sync" style="background-color: Green;"> vs. SYNTAX-LOCKED Green
                       <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
@@ -455,7 +485,7 @@
                 </td></tr>
                 <tr><td>
                   <div style="display: block;">
-                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/JJ_MmOXscyJr2DUk_DalQw/dE_czQXYKYFXHgEPRc650GXvdMiEryugUKOwxdPgWwyjTiTSKhkd5eP7WqaylYf21XR9tTuAud3U-uY8xZq74K1NWB0SUaFDqNsDYmJ6XG95ukvYsaGCHFvMvBjjqfuPOAhat-QgB9P_vSvsY-CfFw/6qmy9GbOuG7KD1pTI9iVOCW60W-_Xv4bjmy5yxrDp3U" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                    <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/JJ_MmOXscyJr2DUk_DalQw/dE_czQXYKYFXHgEPRc650GXvdMiEryugUKOwxdPgWwyjTiTSKhkd5eP7WqaylYf21XR9tTuAud3U-uY8xZq74K1NWB0SUaFDqNsDYmJ6XG95ukvYsaGCHFvMvBjjqfuPOAhat-QgB9P_vSvsY-CfFw/6qmy9GbOuG7KD1pTI9iVOCW60W-_Xv4bjmy5yxrDp3U" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
                 </div>
 
                 <div>
@@ -485,25 +515,25 @@
 <h1 style="text-align: center">Syntax-Free Methodology</h1>
 
   <hr></hr>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
+        <td valign="top">
           <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/fYbijWMS7SkJXFI-Szl6Qw/-meiVks06t5pxTiEGgFIsmEuUcvfZWtRQ_dbktXc5eUNp8W8phdQUE86reJju-sau5KqkoL521KmJZEnfxiL5agWFn3YSm9xMPHmtS7lEhgkmQNZ-yhYN8RCj52E8WaWKxfE2tGJYo69irW6KHuT8w/5aLNvDokgw4yDVPfum9x6cLbUPu7agef390hztQUxJ0" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/fYbijWMS7SkJXFI-Szl6Qw/-meiVks06t5pxTiEGgFIsmEuUcvfZWtRQ_dbktXc5eUNp8W8phdQUE86reJju-sau5KqkoL521KmJZEnfxiL5agWFn3YSm9xMPHmtS7lEhgkmQNZ-yhYN8RCj52E8WaWKxfE2tGJYo69irW6KHuT8w/5aLNvDokgw4yDVPfum9x6cLbUPu7agef390hztQUxJ0" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
           </div>
         </td>
         <td valign="top">
           <table><tr>
             <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
@@ -519,7 +549,7 @@
             <tr><td colSpan="2">
 
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -538,25 +568,25 @@
         </td></tr>
         </table>
         </div>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
+        <td valign="top">
           <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/fYbijWMS7SkJXFI-Szl6Qw/-meiVks06t5pxTiEGgFIsmEuUcvfZWtRQ_dbktXc5eUNp8W8phdQUE86reJju-sau5KqkoL521KmJZEnfxiL5agWFn3YSm9xMPHmtS7lEhgkmQNZ-yhYN8RCj52E8WaWKxfE2tGJYo69irW6KHuT8w/5aLNvDokgw4yDVPfum9x6cLbUPu7agef390hztQUxJ0" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/fYbijWMS7SkJXFI-Szl6Qw/-meiVks06t5pxTiEGgFIsmEuUcvfZWtRQ_dbktXc5eUNp8W8phdQUE86reJju-sau5KqkoL521KmJZEnfxiL5agWFn3YSm9xMPHmtS7lEhgkmQNZ-yhYN8RCj52E8WaWKxfE2tGJYo69irW6KHuT8w/5aLNvDokgw4yDVPfum9x6cLbUPu7agef390hztQUxJ0" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
           </div>
         </td>
         <td valign="top">
           <table><tr>
             <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
@@ -572,7 +602,7 @@
             <tr><td colSpan="2">
 
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -591,25 +621,25 @@
         </td></tr>
         </table>
         </div>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
+        <td valign="top">
           <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/gVz-8bjOZ-d_6DFbSup-zA/sPF_kv-jb28TqL-KvEil4mnhP9TP3U_WBvnU4MPL0KkbwNZHR6qDhZLrNECLJnYN7NPs0Mu1LqIVB1uUpLafBrp_l6kEgYBaTBYrsfCM67Mobputc2cRhPXvsVYYOdiT0vY9TTJblnfPbywGiUvnaw/JHudqJzPM8vSYLTg_Ay0AjiAlBGyzQQQNQgE6oeH-s8" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
           </div>
         </td>
         <td valign="top">
           <table><tr>
             <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
@@ -623,10 +653,10 @@
               <h4 style="clear: left">Manager</h4>
             </td></tr>
             <tr><td colSpan="2">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/bMwHacPmZE5J7-Na1asEsQ/cRMKVCQECeWhw2H9AI9hxgxIlCJfClZxnHmWeJSGwT137-8Gxg9erfDrZ-J9iWs0UFA2t6ZuFeOGhBeZpiIxXT8EKX5uoWxtscJXBRhQWBzWYAUOn7EtNsEJTEhABJbDRfHXwtB2KhAWEh1k1YCxrg/8PyOHT6R7jTkLiXmQ1PDEica2M98aCOOgBg4g3gCqa4" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/bMwHacPmZE5J7-Na1asEsQ/cRMKVCQECeWhw2H9AI9hxgxIlCJfClZxnHmWeJSGwT137-8Gxg9erfDrZ-J9iWs0UFA2t6ZuFeOGhBeZpiIxXT8EKX5uoWxtscJXBRhQWBzWYAUOn7EtNsEJTEhABJbDRfHXwtB2KhAWEh1k1YCxrg/8PyOHT6R7jTkLiXmQ1PDEica2M98aCOOgBg4g3gCqa4" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
 
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -645,25 +675,25 @@
         </td></tr>
         </table>
         </div>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
+        <td valign="top">
           <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
           </div>
         </td>
         <td valign="top">
           <table><tr>
             <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
@@ -677,11 +707,11 @@
               <h4 style="clear: left">Architect</h4>
             </td></tr>
             <tr><td colSpan="2">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/L42Plq3kvb5XS_HgShmutQ/MQtyo30_hSldW23vg-Z86X9M9uKL8nWMvECAnU2WSELGYKXFt2rk6P1NGO3cbzWShMUekDOlvMlwNbQJgIbJPFDzcbmwQFdmKmrSw3xt0TK2gD5GXz2YIx9xUVoIIFs05wEH3etFmTTckDJ5nnTUHQ/yUQdROJDX65UziexxyHAPrQgl_bA3SF3hlvs43k86L0" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -700,25 +730,25 @@
         </td></tr>
         </table>
         </div>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
+        <td valign="top">
           <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
           </div>
         </td>
         <td valign="top">
           <table><tr>
             <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
@@ -732,11 +762,11 @@
               <h4 style="clear: left">Editor</h4>
             </td></tr>
             <tr><td colSpan="2">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/BIMjNkyNgWxJywu9Dqiygw/wvnv9e706JiMFLELBA4hxdpyJFGksTfWN2jzyZXJR4ZYi99GTmRQ8xQklnsKY6FLf-FV-vUB5UwczqOWymSdhjaXn_5Ia00NyBWtC_DbvJ82Dbq25Sk6PlLZNaQvKaPCGJqfbXTbLk02sQn7SqjPLQ/xeQP6kf7bJQJRNXL5MWZl2LrlhAM9xR90pY_9gXqsms" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/BIMjNkyNgWxJywu9Dqiygw/wvnv9e706JiMFLELBA4hxdpyJFGksTfWN2jzyZXJR4ZYi99GTmRQ8xQklnsKY6FLf-FV-vUB5UwczqOWymSdhjaXn_5Ia00NyBWtC_DbvJ82Dbq25Sk6PlLZNaQvKaPCGJqfbXTbLk02sQn7SqjPLQ/xeQP6kf7bJQJRNXL5MWZl2LrlhAM9xR90pY_9gXqsms" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -755,208 +785,43 @@
         </td></tr>
         </table>
         </div>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
+        <td valign="top">
           <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
           </div>
         </td>
         <td valign="top">
           <table><tr>
             <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
             <tr><td colSpan="2">          
-              <h2> Tickets  ➡ C++</h2>
+              <h2> Tickets  ➡ Python</h2>
             </td></tr>
             <tr><td colSpan="2">          
                 <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Developer</h4>
             </td></tr>
             <tr><td colSpan="2">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
-
-              <div style="display: block; clear: left;">
-                <div>
-                  Devices.json ➡ 
-                  json-hbars-transform ➡ 
-                  File <b>Arduino.ino</b>   (Cpp)
-                </div>
-              </div>
-            </td></tr>
-
-          </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/n8aGGPc08CIsSRtEq7hm3w/bDa2qvOavStOHFlOz9yvnfv4yhYZlOkYYPSjNafpw55P4nBNf8JTij9fl1-97JIpYxd1hWmDVHRewcy6zZVR3BFD_s7aC20CQHG4Jt3bLi37jPaLS6hH5NHxTSSBkFQOWln0VH2xWXzpHd-mzrZInCLDcOaN_JlKF8DYD_mg9hs/H9E8MRMRxrzOQBiACmh4BPiQDOVY4f1u6-vMwJnv9b0" alt="To Node Platform Attachment Image" class="platform-image">
-
-        </td></tr>
-        </table>
-        </div>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
-
-
-        <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
-          <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
-            </div>
-          </div>
-        </td>
-        <td valign="top">
-          <table><tr>
-            <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
-            </td>
-            <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
-              
-
-              </div>
-
-
-            </td>
-            <tr><td colSpan="2">          
-              <h2>  ****** UNUSED ******* Tickets  ➡ Markdown</h2>
-            </td></tr>
-            <tr><td colSpan="2">          
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
-              <h4 style="clear: left">Editor</h4>
-            </td></tr>
-            <tr><td colSpan="2">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
-
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/0tkFh4--Rsc2VTca_jtU1g/cesWo3l7NFNA-_O0xpEBN8fCw2JmTLGkjVexdO3Z20XJV3e0b3Xvr_JhtjEme0w_tcBZE99sv53NMexSCF-1-5_7rHv280-tjrp0tTIlmuGRgINycZIJmhoDZp_oTDesVuX8G6Ao6_E2bBFaWGUfNg/L7TPCtL0EZP_Lt0_Is9QyjHkPN8IhussbCVNE44vrAs" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
-
-              <div style="display: block; clear: left;">
-                <div>
-                  Devices.json ➡ 
-                  json-hbars-transform ➡ 
-                  File <b>README.md</b>   (Markdown)
-                </div>
-              </div>
-            </td></tr>
-
-          </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/rmYlXidKyRyI062wv8zSmA/d_m4XiNT0-bbNqaPc6yellw6BczjPNObzpasio3hhxOuM9ehHthRx8XAhlMN2ybEwzfs-lrts68wgjyheTKgV3xjSpyFTCRLWL7xbELn-5l2N3EPQWFoMCgTNds5G6aPClvVNZvQ9ZzanKqXyuMhHQ/ZVd7_pBgidhFjRX6bfVBG92JZwOWPpq9bqIguYvdlD4" alt="To Node Platform Attachment Image" class="platform-image">
-
-        </td></tr>
-        </table>
-        </div>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
-
-
-        <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
-          <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
-            </div>
-          </div>
-        </td>
-        <td valign="top">
-          <table><tr>
-            <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
-            </td>
-            <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
-              
-
-              </div>
-
-
-            </td>
-            <tr><td colSpan="2">          
-              <h2>  ****** UNUSED ******* Tickets  ➡ HTML</h2>
-            </td></tr>
-            <tr><td colSpan="2">          
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
-              <h4 style="clear: left">Editor</h4>
-            </td></tr>
-            <tr><td colSpan="2">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
-
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/tLTHyoGdBwd6n-ZSgWQJfA/Eb9NKdoqenAemMzP44Tu40o8t8euZUGM1IdCuga49MhAdFyZE-lwiF7ujA6xsONyZMxdk40UVF1vv0ztAYJ1L9ommd7CFeM80H3Dby3hI4A1P8-KyHe9rNFzV3mUSxb8jg1KYg-ONsMLeWoa2BvUHg/iNpiFQtsTcKmkuSZXxh2vrSkja-aLp_WaqRpZ_m2HxI" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
-
-              <div style="display: block; clear: left;">
-                <div>
-                  Devices.json ➡ 
-                  json-hbars-transform ➡ 
-                  File <b>Index.html</b>   (HTML)
-                </div>
-              </div>
-            </td></tr>
-
-          </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/WXKtwFbl5s8fBmW2N7Lk3A/qUZVFv7pVef739Y3_dsOeB9urSVilMJrdp6WDn92hCLoxc4YIamH4MJkpsQHdisg__ZXlJp-ljV116vdZXJmlBBSWiiaDsmPF92SAFSeVbnOrvU22cYONaxik7e4iHGecTeuFmp1cjui3TE_dw2MMQ/i1EyRsTO_vayw5RpAX98exK2LhgO4gDu3vXDoEWrSXY" alt="To Node Platform Attachment Image" class="platform-image">
-
-        </td></tr>
-        </table>
-        </div>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
-
-
-        <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
-          <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
-            </div>
-          </div>
-        </td>
-        <td valign="top">
-          <table><tr>
-            <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
-            </td>
-            <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
-              
-
-              </div>
-
-
-            </td>
-            <tr><td colSpan="2">          
-              <h2>  ****** UNUSED ******* Tickets  ➡ Python</h2>
-            </td></tr>
-            <tr><td colSpan="2">          
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
-              <h4 style="clear: left">Developer</h4>
-            </td></tr>
-            <tr><td colSpan="2">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
-
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
-
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -975,25 +840,190 @@
         </td></tr>
         </table>
         </div>
-        <div  style="height: 30em; background-color: lightgreen;">
-        <hr style="clear: both"></hr>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td style="width: 14em;" valign="top">
+        <td valign="top">
           <div class="from-node-image">
-              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" style="margin: 0.5em; width: 17em;">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
           </div>
         </td>
         <td valign="top">
           <table><tr>
             <td>
-              <div class="goal match-row" style="background-color: Orange;">Goal: Orange</div>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="current match-row" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
               
+                <div class="stale">⬆ STALE ⬆</div>
+
+              </div>
+
+
+            </td>
+            <tr><td colSpan="2">          
+              <h2>  ****** UNUSED ******* Tickets  ➡ Markdown</h2>
+            </td></tr>
+            <tr><td colSpan="2">          
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+              <h4 style="clear: left">Editor</h4>
+            </td></tr>
+            <tr><td colSpan="2">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/0tkFh4--Rsc2VTca_jtU1g/cesWo3l7NFNA-_O0xpEBN8fCw2JmTLGkjVexdO3Z20XJV3e0b3Xvr_JhtjEme0w_tcBZE99sv53NMexSCF-1-5_7rHv280-tjrp0tTIlmuGRgINycZIJmhoDZp_oTDesVuX8G6Ao6_E2bBFaWGUfNg/L7TPCtL0EZP_Lt0_Is9QyjHkPN8IhussbCVNE44vrAs" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+
+              <div style="display: block; clear: left;">
+                <div>
+                  Devices.json ➡ 
+                  json-hbars-transform ➡ 
+                  File <b>README.md</b>   (Markdown)
+                </div>
+              </div>
+            </td></tr>
+
+          </table>
+        </td>          
+        <td halign="right" valign="top">
+            <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/rmYlXidKyRyI062wv8zSmA/d_m4XiNT0-bbNqaPc6yellw6BczjPNObzpasio3hhxOuM9ehHthRx8XAhlMN2ybEwzfs-lrts68wgjyheTKgV3xjSpyFTCRLWL7xbELn-5l2N3EPQWFoMCgTNds5G6aPClvVNZvQ9ZzanKqXyuMhHQ/ZVd7_pBgidhFjRX6bfVBG92JZwOWPpq9bqIguYvdlD4" alt="To Node Platform Attachment Image" class="platform-image">
+
+        </td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
+
+
+        <table style="border: none; width: 100%;"><tr>
+        <td valign="top">
+          <div class="from-node-image">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
+            </div>
+          </div>
+        </td>
+        <td valign="top">
+          <table><tr>
+            <td>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
+            </td>
+            <td valign="top">
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              
+                <div class="stale">⬆ STALE ⬆</div>
+
+              </div>
+
+
+            </td>
+            <tr><td colSpan="2">          
+              <h2>  ****** UNUSED ******* Tickets  ➡ HTML</h2>
+            </td></tr>
+            <tr><td colSpan="2">          
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/ZxM1pbXcp-uGPn0HsHhBkQ/Xr7LOCzmstD-JxjUgNKfz27exwoNHLNivYx3K3VrHkINFR5RXChg_3wMaS5NUqbIY9ZnE_fM0n0Ymu9QAmygb1RSqXi6SRt06V7haf1GwmQbgtpZzIvfWaas3_-a6uJEVEHAiYlMWSJS4-9Hoyn-QQ/nfM-FP0XR8caC2K0N-0cXhIMnosVdr-INAApw_ozpz8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+              <h4 style="clear: left">Editor</h4>
+            </td></tr>
+            <tr><td colSpan="2">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/tLTHyoGdBwd6n-ZSgWQJfA/Eb9NKdoqenAemMzP44Tu40o8t8euZUGM1IdCuga49MhAdFyZE-lwiF7ujA6xsONyZMxdk40UVF1vv0ztAYJ1L9ommd7CFeM80H3Dby3hI4A1P8-KyHe9rNFzV3mUSxb8jg1KYg-ONsMLeWoa2BvUHg/iNpiFQtsTcKmkuSZXxh2vrSkja-aLp_WaqRpZ_m2HxI" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+
+              <div style="display: block; clear: left;">
+                <div>
+                  Devices.json ➡ 
+                  json-hbars-transform ➡ 
+                  File <b>Index.html</b>   (HTML)
+                </div>
+              </div>
+            </td></tr>
+
+          </table>
+        </td>          
+        <td halign="right" valign="top">
+            <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/WXKtwFbl5s8fBmW2N7Lk3A/qUZVFv7pVef739Y3_dsOeB9urSVilMJrdp6WDn92hCLoxc4YIamH4MJkpsQHdisg__ZXlJp-ljV116vdZXJmlBBSWiiaDsmPF92SAFSeVbnOrvU22cYONaxik7e4iHGecTeuFmp1cjui3TE_dw2MMQ/i1EyRsTO_vayw5RpAX98exK2LhgO4gDu3vXDoEWrSXY" alt="To Node Platform Attachment Image" class="platform-image">
+
+        </td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
+
+
+        <table style="border: none; width: 100%;"><tr>
+        <td valign="top">
+          <div class="from-node-image">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
+            </div>
+          </div>
+        </td>
+        <td valign="top">
+          <table><tr>
+            <td>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
+            </td>
+            <td valign="top">
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              
+                <div class="stale">⬆ STALE ⬆</div>
+
+              </div>
+
+
+            </td>
+            <tr><td colSpan="2">          
+              <h2>  ****** UNUSED ******* Tickets  ➡ C++</h2>
+            </td></tr>
+            <tr><td colSpan="2">          
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+              <h4 style="clear: left">Developer</h4>
+            </td></tr>
+            <tr><td colSpan="2">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+
+              <div style="display: block; clear: left;">
+                <div>
+                  Devices.json ➡ 
+                  json-hbars-transform ➡ 
+                  File <b>Arduino.ino</b>   (Cpp)
+                </div>
+              </div>
+            </td></tr>
+
+          </table>
+        </td>          
+        <td halign="right" valign="top">
+            <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/n8aGGPc08CIsSRtEq7hm3w/bDa2qvOavStOHFlOz9yvnfv4yhYZlOkYYPSjNafpw55P4nBNf8JTij9fl1-97JIpYxd1hWmDVHRewcy6zZVR3BFD_s7aC20CQHG4Jt3bLi37jPaLS6hH5NHxTSSBkFQOWln0VH2xWXzpHd-mzrZInCLDcOaN_JlKF8DYD_mg9hs/H9E8MRMRxrzOQBiACmh4BPiQDOVY4f1u6-vMwJnv9b0" alt="To Node Platform Attachment Image" class="platform-image">
+
+        </td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node"  style="background-color: #ff9ac0">
+
+
+        <table style="border: none; width: 100%;"><tr>
+        <td valign="top">
+          <div class="from-node-image">
+              <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM" alt="From Node Attachment Image" class="from-node-attachment">
+            </div>
+          </div>
+        </td>
+        <td valign="top">
+          <table><tr>
+            <td>
+              <div class="goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
+            </td>
+            <td valign="top">
+              <div class="current match-row  out-of-sync" style="background-color: Orange;"> vs. SYNTAX-FREE Orange
+              
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
@@ -1007,11 +1037,11 @@
               <h4 style="clear: left">Developer</h4>
             </td></tr>
             <tr><td colSpan="2">
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5em; width: 5em; float: left;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5em; width: 5em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/nmv2xvsovwwzHK2u4zlRAQ/OU0fyoKomaR7Dcwf-Gr2vmmCWNz1gTMcuPCQrwaT2UMBr8X_Te6-3l-FQfDARjcVA75kmL2icIn6QCWnOsvrcx53GPwIjqeTzeUHiSkJP0BPMxd-ZS18EZXzLS-G3MHzxMZRgReMZpykPiF77R9uXA/Xkhr7sCoAi-iB0NofnMDcepQMzQzFdT_0GLYRNOKXkw" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/JJ_MmOXscyJr2DUk_DalQw/dE_czQXYKYFXHgEPRc650GXvdMiEryugUKOwxdPgWwyjTiTSKhkd5eP7WqaylYf21XR9tTuAud3U-uY8xZq74K1NWB0SUaFDqNsDYmJ6XG95ukvYsaGCHFvMvBjjqfuPOAhat-QgB9P_vSvsY-CfFw/6qmy9GbOuG7KD1pTI9iVOCW60W-_Xv4bjmy5yxrDp3U" alt="To Node Attachment Image" style="margin: 0.5em; width: 8em;">
+                <img src="https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/JJ_MmOXscyJr2DUk_DalQw/dE_czQXYKYFXHgEPRc650GXvdMiEryugUKOwxdPgWwyjTiTSKhkd5eP7WqaylYf21XR9tTuAud3U-uY8xZq74K1NWB0SUaFDqNsDYmJ6XG95ukvYsaGCHFvMvBjjqfuPOAhat-QgB9P_vSvsY-CfFw/6qmy9GbOuG7KD1pTI9iVOCW60W-_Xv4bjmy5yxrDp3U" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
 
               <div style="display: block; clear: left;">
                 <div>

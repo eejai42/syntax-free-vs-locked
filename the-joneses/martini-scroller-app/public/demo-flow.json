@@ -2,7 +2,7 @@
   {
     "Name": "1.Product Owner-Natural Language Idea",
     "EdgeName": "Natural Language Idea",
-    "FromNodeMasterColor": "Orange",
+    "FromNodeMasterColor": "Purple",
     "FromNodeFlowType": "Agent (human or AI)",
     "FromNodeName": "Product Owner",
     "TransformerNodeFlowType": "Agent (human or AI)",
@@ -10,7 +10,7 @@
     "ToNodeType": "NaturalLanguage",
     "ToNodeName": "Specification",
     "OutputFileName": "Requirements.docx",
-    "ExpectedColor": "Orange",
+    "ExpectedColor": "Purple",
     "SkipForSyntaxFree": true,
     "HasSyntaxFreeParent": 1,
     "IsSyntaxFreeCapable": true,
@@ -49,7 +49,7 @@
   {
     "Name": "1.Product Owner-Syntax-Free Idea",
     "EdgeName": "Syntax-Free Idea",
-    "FromNodeMasterColor": "Orange",
+    "FromNodeMasterColor": "Purple",
     "FromNodeFlowType": "Agent (human or AI)",
     "FromNodeName": "Product Owner",
     "TransformerNodeFlowType": "Agent (human or AI)",
@@ -57,7 +57,7 @@
     "ToNodeType": "QueryableSSoT",
     "ToNodeName": "Airtable",
     "OutputFileName": "Airtable Base",
-    "ExpectedColor": "Orange",
+    "ExpectedColor": "Purple",
     "HasSyntaxFreeParent": 1,
     "IsSyntaxFreeCapable": true,
     "SyntaxFreeColor": "Orange",
@@ -100,7 +100,7 @@
     "ToNodeType": "NaturalLanguage",
     "ToNodeName": "Tickets",
     "OutputFileName": "Tickets.docx",
-    "ExpectedColor": "Orange",
+    "ExpectedColor": "Purple",
     "IsSyntaxFreeCapable": true,
     "LockedColor": "Orange",
     "SyntaxFreeColor": "Orange",
@@ -149,7 +149,7 @@
     "ToNodeType": "QueryableSSoT",
     "ToNodeName": "Json",
     "OutputFileName": "Devices.json",
-    "ExpectedColor": "Orange",
+    "ExpectedColor": "Purple",
     "IsSyntaxFreeCapable": true,
     "SyntaxFreeColor": "Orange",
     "ParentFreeEdgeColor": "Orange",
@@ -199,7 +199,7 @@
     "ToNodeType": "File",
     "ToNodeName": "WIKI",
     "OutputFileName": "Home.WIKI",
-    "ExpectedColor": "Orange",
+    "ExpectedColor": "Purple",
     "7ToNodeMasterColor": "#WIKI00",
     "IsSyntaxFreeCapable": true,
     "LockedColor": "Orange",
@@ -242,20 +242,20 @@
   },
 
   {
-    "Name": "3.Tickets-C++",
-    "EdgeName": "C++",
+    "Name": "3.Tickets-Python",
+    "EdgeName": "Python",
     "IsLeaf": 1,
     "FromNodeFlowType": "NaturalLanguage",
     "FromNodeName": "Tickets",
     "TransformerNodeFlowType": "Agent (human or AI)",
     "TransformerNodeName": "Developer",
     "ToNodeType": "File",
-    "ToNodeName": "Cpp",
-    "OutputFileName": "Arduino.ino",
-    "ExpectedColor": "Orange",
-    "6ToNodeMasterColor": "#CPP00",
+    "ToNodeName": "Python",
+    "OutputFileName": "MachineController.py",
+    "ExpectedColor": "Purple",
+    "7ToNodeMasterColor": "#PY0000",
     "IsSyntaxFreeCapable": true,
-    "LockedColor": "Blue",
+    "LockedColor": "Green",
     "SyntaxFreeColor": "Orange",
     "ParentFreeEdgeColor": "Orange",
     "FromFreeEdgeToNodeType": "QueryableSSoT",
@@ -264,16 +264,16 @@
     "SyntaxFreeEdgeOutputFileName": "Devices.json",
     "ToNodeOutputIsCode": "True",
     "LockedAttachments": [
-        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg"
+        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM"
     ],
     "FreeAttachments": [
-        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg"
+        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM"
     ],
     "FromNodeAttachments": [
         "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM"
     ],
     "ToNodeAttachments": [
-        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg"
+        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM"
     ],
     "TranspilerNodeAttachments": [
         "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8"
@@ -288,7 +288,7 @@
         "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM"
     ],
     "ToNodePlatformAttachments": [
-        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/n8aGGPc08CIsSRtEq7hm3w/bDa2qvOavStOHFlOz9yvnfv4yhYZlOkYYPSjNafpw55P4nBNf8JTij9fl1-97JIpYxd1hWmDVHRewcy6zZVR3BFD_s7aC20CQHG4Jt3bLi37jPaLS6hH5NHxTSSBkFQOWln0VH2xWXzpHd-mzrZInCLDcOaN_JlKF8DYD_mg9hs/H9E8MRMRxrzOQBiACmh4BPiQDOVY4f1u6-vMwJnv9b0"
+        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/bA1VxYVXLTi8emCk8a_o9w/oVT3qeSBHW12WgaJv4TQfNHooCh-JRt5D90-FuK1YODpHr4XGbBgsXF9pO1jOrxmnGtKzZR_I0scS_xOlGMxMXkug2khBS34q9vkv01pYsAG2gchrcwdCQ4qw3xLDFdq1Zk1_NnaA6f0FQ_FQ2upag/WQS8j8SWS2NLbCX_qxtJzY8-G6YoaTFFxQ97dlfTskw"
     ],
     "ToNodeIsQueriable": "",
     "FromFreeEdgeIsQueriable": "True",
@@ -306,7 +306,7 @@
     "ToNodeType": "File",
     "ToNodeName": "Markdown",
     "OutputFileName": "README.md",
-    "ExpectedColor": "Orange",
+    "ExpectedColor": "Purple",
     "7ToNodeMasterColor": "#MD0000",
     "IsSyntaxFreeCapable": true,
     "LockedColor": "Blue",
@@ -359,7 +359,7 @@
     "ToNodeType": "File",
     "ToNodeName": "HTML",
     "OutputFileName": "Index.html",
-    "ExpectedColor": "Orange",
+    "ExpectedColor": "Purple",
     "7ToNodeMasterColor": "#HTML00",
     "IsSyntaxFreeCapable": true,
     "LockedColor": "Green",
@@ -402,20 +402,20 @@
   },
 
   {
-    "Name": "3.Tickets-Python",
-    "EdgeName": "Python",
+    "Name": "3.Tickets-C++",
+    "EdgeName": "C++",
     "IsLeaf": 1,
     "FromNodeFlowType": "NaturalLanguage",
     "FromNodeName": "Tickets",
     "TransformerNodeFlowType": "Agent (human or AI)",
     "TransformerNodeName": "Developer",
     "ToNodeType": "File",
-    "ToNodeName": "Python",
-    "OutputFileName": "MachineController.py",
-    "ExpectedColor": "Orange",
-    "7ToNodeMasterColor": "#PY0000",
+    "ToNodeName": "Cpp",
+    "OutputFileName": "Arduino.ino",
+    "ExpectedColor": "Purple",
+    "6ToNodeMasterColor": "#CPP00",
     "IsSyntaxFreeCapable": true,
-    "LockedColor": "Green",
+    "LockedColor": "Blue",
     "SyntaxFreeColor": "Orange",
     "ParentFreeEdgeColor": "Orange",
     "FromFreeEdgeToNodeType": "QueryableSSoT",
@@ -424,16 +424,16 @@
     "SyntaxFreeEdgeOutputFileName": "Devices.json",
     "ToNodeOutputIsCode": "True",
     "LockedAttachments": [
-        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM"
+        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg"
     ],
     "FreeAttachments": [
-        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM"
+        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg"
     ],
     "FromNodeAttachments": [
         "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/N8IZSjqtWB93Key5CdbnOg/YGhcsbBTLAHSWvzrn6-qFWvWZMyTRjbSwYVWg5ry06IFdoeuPGnx4mvhnQOMAFsCc2kaqUhwBtRdnnnkYGruXc75PcTkP8zz58txqbc78VyFEqEghdY5XKtc3JeLEF_rnPSex5w6S146myQprEyQ2w/_7MoWJ2L5HjToeyZ7jOuaO22p6xn-1hIxCVZLd69OBM"
     ],
     "ToNodeAttachments": [
-        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/aQc2Yyz5cWCoUhn09YNoSw/Mn7xh1SQGeukponbBXjjIYh1jD3IVvYJJGy7sEEsW_Hra-93B6Gx5nefcAc3y3VDJpL0BbbUrGSG3p8fXo7q6iQqVAtzbziny7oO7aw-xt3j0Rjoy7V2Aw1hWjYJx-SZOa0bjY6zYqIvQnY5xqc0vw/8RTAPjdWkgwk8rv45X1G8cVMIEIce_wDB2XrYaK7_wM"
+        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/HsF8WNg_gplv8LjrTJB9mQ/2eYaNMpGYLISAskj9spbob1vI3A4EbZBh7rtsxhejwLYH4seF_5TyX4Fxwm-y90rIXEJOzjVYpZKbbvYAvHqb4Yt2UNjDJCsgq_YBziLhehKNA4BORPHmkaXyaeTJ7OZ2MWhzUYBE2KKpIRi_xPNBw/bxo-s7kuXvhKVW6Ai9i6UmCcLNcjygKSMJpVlwATJKg"
     ],
     "TranspilerNodeAttachments": [
         "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/B7kBaMcxAE6aVYHsrJsRNg/-2S0ujjIlRqBD7RNm3wvJS-KkO_IGq2o2ycsrirzk8LriOltVBELYER0C5yxRKNBxxhUthS0QQx1xLGLClyju0qd7A8t-Dl2DhjUckslORZ5r5uF-T2T2p3fAu8K1bKRgdsSxE1zBXsCn7vpPB3eJg/-fVOoqmWNnQkr9SNEvBvN3hAUwc4lVNGiRqU2WW99L8"
@@ -448,7 +448,7 @@
         "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/6q5hB0b5qwEkRFnKrYOKDA/ruS1RHdgfgU0XmgGZAmnODnXA8ggPy-kQ197LyzJB04V3PSPY3IhG5t5dx3pchGNZGT7pExBBVXhDo7IwZZl2Vovok3FMfg7Zg9GrJWWdyOcy52GV1t2Ok70fnaj6fSgJ9OL3IMHa1ZfW4kY7Cc-4A/AecTYq_WpPSxHZtLvDic0WhzaxcjUxpwsAvxRtvxtrM"
     ],
     "ToNodePlatformAttachments": [
-        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/bA1VxYVXLTi8emCk8a_o9w/oVT3qeSBHW12WgaJv4TQfNHooCh-JRt5D90-FuK1YODpHr4XGbBgsXF9pO1jOrxmnGtKzZR_I0scS_xOlGMxMXkug2khBS34q9vkv01pYsAG2gchrcwdCQ4qw3xLDFdq1Zk1_NnaA6f0FQ_FQ2upag/WQS8j8SWS2NLbCX_qxtJzY8-G6YoaTFFxQ97dlfTskw"
+        "https://v5.airtableusercontent.com/v3/u/28/28/1714348800000/n8aGGPc08CIsSRtEq7hm3w/bDa2qvOavStOHFlOz9yvnfv4yhYZlOkYYPSjNafpw55P4nBNf8JTij9fl1-97JIpYxd1hWmDVHRewcy6zZVR3BFD_s7aC20CQHG4Jt3bLi37jPaLS6hH5NHxTSSBkFQOWln0VH2xWXzpHd-mzrZInCLDcOaN_JlKF8DYD_mg9hs/H9E8MRMRxrzOQBiACmh4BPiQDOVY4f1u6-vMwJnv9b0"
     ],
     "ToNodeIsQueriable": "",
     "FromFreeEdgeIsQueriable": "True",
@@ -466,7 +466,7 @@
     "ToNodeType": "File",
     "ToNodeName": "CSharp",
     "OutputFileName": "MachineController.cs",
-    "ExpectedColor": "Orange",
+    "ExpectedColor": "Purple",
     "8ToNodeMasterColor": "#CSHARP0",
     "IsSyntaxFreeCapable": true,
     "LockedColor": "Green",
