@@ -131,7 +131,7 @@
             <td valign="top">
               <div class="from-node-image">
                 {{#if FromNodeAttachments}}
-                  {{#each FromNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace ../EdgeName ' ' '_'}}_FromNodeAttachments_{{@index}}.png" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
+                  {{#each FromNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromNodeAttachments_{{@index}}.png" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
                 {{/if}}
                 </div>
               </div>
@@ -153,14 +153,14 @@
                 </td></tr>
                 <tr><td colSpan="2">
                   {{#if TranspilerNodeAttachments}}
-                    {{#each TranspilerNodeAttachments}}<img src="{{this}}" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
+                    {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
                   {{/if}}
                   <h4 style="clear: left">{{TransformerNodeName}}</h4>
                 </td></tr>
                 <tr><td>
                   <div style="display: block;">
                   {{#if ToNodeAttachments}}
-                    {{#each ToNodeAttachments}}<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">{{/each}}
+                    {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">{{/each}}
                   {{/if}}
                 </div>
 
@@ -174,7 +174,7 @@
             </td>          
             <td halign="right" valign="top">
               {{#if ToNodePlatformAttachments}}
-                {{#each ToNodePlatformAttachments}}<img src="{{this}}" alt="To Node Platform Attachment Image" class="platform-image">{{/each}}
+                {{#each ToNodePlatformAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodePlatformAttachments_{{@index}}.png" alt="To Node Platform Attachment Image" class="platform-image">{{/each}}
               {{/if}}
             </td></tr>
           </tbody>
@@ -206,7 +206,7 @@
         <td valign="top">
           <div class="from-node-image">
             {{#if FromNodeAttachments}}
-              {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
+              {{#each FromNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromNodeAttachments_{{@index}}.png" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
             {{/if}}
             </div>
           </div>
@@ -232,21 +232,21 @@
             </td></tr>
             <tr><td colSpan="2">          
               {{#if TranspilerNodeAttachments}}
-                {{#each TranspilerNodeAttachments}}<img src="{{this}}" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
+                {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
               {{/if}}
               <h4 style="clear: left">{{TransformerNodeName}}</h4>
             </td></tr>
             <tr><td colSpan="2">
               {{#if FromEdgeFreeAttachments}}
-                {{#each FromEdgeFreeAttachments}}<img src="{{this}}" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">{{/each}}
+                {{#each FromEdgeFreeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromEdgeFreeAttachments_{{@index}}.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">{{/each}}
               {{/if}}
 
               {{#if FreeTranspilerAttachments}}
-                {{#each FreeTranspilerAttachments}}<img src="{{this}}" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">{{/each}}
+                {{#each FreeTranspilerAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FreeTranspilerAttachments_{{@index}}.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">{{/each}}
               {{/if}}
 
               {{#if ToNodeAttachments}}
-                {{#each ToNodeAttachments}}<img src="{{this}}" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">{{/each}}
+                {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">{{/each}}
               {{/if}}
 
               <div style="display: block; clear: left;">
@@ -262,7 +262,7 @@
         </td>          
         <td halign="right" valign="top">
           {{#if ToNodePlatformAttachments}}
-            {{#each ToNodePlatformAttachments}}<img src="{{this}}" alt="To Node Platform Attachment Image" class="platform-image">{{/each}}
+            {{#each ToNodePlatformAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodePlatformAttachments_{{@index}}.png" alt="To Node Platform Attachment Image" class="platform-image">{{/each}}
           {{/if}}
 
         </td></tr>
