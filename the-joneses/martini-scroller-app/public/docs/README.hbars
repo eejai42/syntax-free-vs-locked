@@ -131,7 +131,7 @@
             <td valign="top">
               <div class="from-node-image">
                 {{#if FromNodeAttachments}}
-                  {{#each FromNodeAttachments}}<img src="{{this}}" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
+                  {{#each FromNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace ../EdgeName ' ' '_'}}_FromNodeAttachments_{{@index}}.png" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
                 {{/if}}
                 </div>
               </div>
