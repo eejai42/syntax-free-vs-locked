@@ -15,7 +15,8 @@
   h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1.5em;
   }
 
   .match-status {
@@ -29,6 +30,7 @@
 
   .goal {
   }
+
   .current {
     float: left; 
   }
@@ -64,15 +66,15 @@
 
   .platform-image {
     margin: 0.5rem; 
+    margin-left: 2em;
+    margin-top: 2em;
     width: 6rem; 
-    float: left; 
-    margin-top: 0;
   }
 
   .from-node-image {
     padding: 0rem; 
     border-right: dashed black 3px; 
-    height: 27rem;
+    height: 19rem;
     padding-top: 0;
   }
 
@@ -115,35 +117,39 @@
 <h1 style="text-align: center">Syntax-Locked Methodology</h1>
 <hr></hr>
 
-      <div class="transpiler-node in-sync">
+      <div class="transpiler-node out-of-sync">
 
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td valign="top">
-              <div class="from-node-image">
-                  <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+              <td valign="top" style="background-color: Purple;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div>
+                      <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                  </div>
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="match-status goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="match-status current match-row in-sync" style="background-color: Purple;"> vs. SYNTAX-LOCKED Purple
+                  <div class="match-status current out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
+                      <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
-                <tr><td colSpan="3">
-                  <h2> Product Owner ➡ Natural Language Idea</h2>
-                </td></tr>
+                <tr><td colSpan="1">
+                  <h2>Product Owner </h2>
+                </td>
+                <td colspan="2"><h2>➡ Natural Language Idea</h2></td></tr>
                 <tr><td colSpan="1">
                     <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments"><img src="../transpiler-images/Product_Owner/Natural_Language_Idea_TranspilerNodeAttachments_1.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
                   <h4 style="clear: left">Manager & Architect</h4>
                 </td><td colspan="2">
                   <div style="display: block;">
-                      <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                      <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
                   </div>
 
                   <div>
@@ -153,9 +159,6 @@
                   <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
             </td></tr>
           </tbody>
         </table>
@@ -168,35 +171,39 @@
           <div class="missing-layer">-- Missing Layer --</div>
         </div>
   </div>
-      <div class="transpiler-node in-sync">
+      <div class="transpiler-node out-of-sync">
 
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td valign="top">
-              <div class="from-node-image">
-                  <img src="../transpiler-images/Specification/Tickets_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+              <td valign="top" style="background-color: Purple;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Specification/Tickets_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div>
+                      <img src="../transpiler-images/Specification/Tickets_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                  </div>
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="match-status goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="match-status current match-row in-sync" style="background-color: Purple;"> vs. SYNTAX-LOCKED Purple
+                  <div class="match-status current out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
+                      <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
-                <tr><td colSpan="3">
-                  <h2> Specification ➡ Tickets</h2>
-                </td></tr>
+                <tr><td colSpan="1">
+                  <h2>Specification </h2>
+                </td>
+                <td colspan="2"><h2>➡ Tickets</h2></td></tr>
                 <tr><td colSpan="1">
                     <img src="../transpiler-images/Specification/Tickets_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
                   <h4 style="clear: left">Manager</h4>
                 </td><td colspan="2">
                   <div style="display: block;">
-                      <img src="../transpiler-images/Specification/Tickets_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                      <img src="../transpiler-images/Specification/Tickets_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
                   </div>
 
                   <div>
@@ -206,9 +213,6 @@
                   <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="../transpiler-images/Specification/Tickets_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
             </td></tr>
           </tbody>
         </table>
@@ -221,35 +225,39 @@
           <div class="missing-layer">-- Missing Layer --</div>
         </div>
   </div>
-      <div class="transpiler-node in-sync">
+      <div class="transpiler-node out-of-sync">
 
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td valign="top">
-              <div class="from-node-image">
-                  <img src="../transpiler-images/Tickets/Markdown_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+              <td valign="top" style="background-color: Purple;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/Markdown_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div>
+                      <img src="../transpiler-images/Tickets/Markdown_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                  </div>
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="match-status goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="match-status current match-row in-sync" style="background-color: Purple;"> vs. SYNTAX-LOCKED Purple
+                  <div class="match-status current out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
+                      <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
-                <tr><td colSpan="3">
-                  <h2> Tickets ➡ Markdown</h2>
-                </td></tr>
+                <tr><td colSpan="1">
+                  <h2>Tickets </h2>
+                </td>
+                <td colspan="2"><h2>➡ Markdown</h2></td></tr>
                 <tr><td colSpan="1">
                     <img src="../transpiler-images/Tickets/Markdown_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
                   <h4 style="clear: left">Editor</h4>
                 </td><td colspan="2">
                   <div style="display: block;">
-                      <img src="../transpiler-images/Tickets/Markdown_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                      <img src="../transpiler-images/Tickets/Markdown_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
                   </div>
 
                   <div>
@@ -259,9 +267,6 @@
                   <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="../transpiler-images/Tickets/Markdown_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
             </td></tr>
           </tbody>
         </table>
@@ -273,31 +278,34 @@
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td valign="top">
-              <div class="from-node-image">
-                  <img src="../transpiler-images/Tickets/Python_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+              <td valign="top" style="background-color: Purple;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/Python_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div>
+                      <img src="../transpiler-images/Tickets/Python_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                  </div>
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="match-status goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="match-status current match-row out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
+                  <div class="match-status current out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
                       <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
-                <tr><td colSpan="3">
-                  <h2> Tickets ➡ Python</h2>
-                </td></tr>
+                <tr><td colSpan="1">
+                  <h2>Tickets </h2>
+                </td>
+                <td colspan="2"><h2>➡ Python</h2></td></tr>
                 <tr><td colSpan="1">
                     <img src="../transpiler-images/Tickets/Python_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
                   <h4 style="clear: left">Developer</h4>
                 </td><td colspan="2">
                   <div style="display: block;">
-                      <img src="../transpiler-images/Tickets/Python_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                      <img src="../transpiler-images/Tickets/Python_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
                   </div>
 
                   <div>
@@ -307,9 +315,6 @@
                   <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="../transpiler-images/Tickets/Python_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
             </td></tr>
           </tbody>
         </table>
@@ -321,31 +326,34 @@
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td valign="top">
-              <div class="from-node-image">
-                  <img src="../transpiler-images/Tickets/HTML_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+              <td valign="top" style="background-color: Purple;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/HTML_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div>
+                      <img src="../transpiler-images/Tickets/HTML_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                  </div>
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="match-status goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="match-status current match-row out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
+                  <div class="match-status current out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
                       <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
-                <tr><td colSpan="3">
-                  <h2>  ****** UNUSED ******* Tickets ➡ HTML</h2>
-                </td></tr>
+                <tr><td colSpan="1">
+                  <h2>Tickets  ( unused )</h2>
+                </td>
+                <td colspan="2"><h2>➡ HTML</h2></td></tr>
                 <tr><td colSpan="1">
                     <img src="../transpiler-images/Tickets/HTML_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
                   <h4 style="clear: left">Editor</h4>
                 </td><td colspan="2">
                   <div style="display: block;">
-                      <img src="../transpiler-images/Tickets/HTML_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                      <img src="../transpiler-images/Tickets/HTML_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
                   </div>
 
                   <div>
@@ -355,9 +363,6 @@
                   <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="../transpiler-images/Tickets/HTML_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
             </td></tr>
           </tbody>
         </table>
@@ -369,31 +374,34 @@
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td valign="top">
-              <div class="from-node-image">
-                  <img src="../transpiler-images/Tickets/WIKI_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+              <td valign="top" style="background-color: Purple;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/WIKI_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div>
+                      <img src="../transpiler-images/Tickets/WIKI_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                  </div>
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="match-status goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="match-status current match-row out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
+                  <div class="match-status current out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
                       <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
-                <tr><td colSpan="3">
-                  <h2>  ****** UNUSED ******* Tickets ➡ WIKI</h2>
-                </td></tr>
+                <tr><td colSpan="1">
+                  <h2>Tickets  ( unused )</h2>
+                </td>
+                <td colspan="2"><h2>➡ WIKI</h2></td></tr>
                 <tr><td colSpan="1">
                     <img src="../transpiler-images/Tickets/WIKI_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
                   <h4 style="clear: left">Editor</h4>
                 </td><td colspan="2">
                   <div style="display: block;">
-                      <img src="../transpiler-images/Tickets/WIKI_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                      <img src="../transpiler-images/Tickets/WIKI_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
                   </div>
 
                   <div>
@@ -403,9 +411,6 @@
                   <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="../transpiler-images/Tickets/WIKI_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
             </td></tr>
           </tbody>
         </table>
@@ -417,31 +422,34 @@
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td valign="top">
-              <div class="from-node-image">
-                  <img src="../transpiler-images/Tickets/C++_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+              <td valign="top" style="background-color: Purple;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/C++_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div>
+                      <img src="../transpiler-images/Tickets/C++_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                  </div>
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="match-status goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="match-status current match-row out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
+                  <div class="match-status current out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
                       <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
-                <tr><td colSpan="3">
-                  <h2>  ****** UNUSED ******* Tickets ➡ C++</h2>
-                </td></tr>
+                <tr><td colSpan="1">
+                  <h2>Tickets  ( unused )</h2>
+                </td>
+                <td colspan="2"><h2>➡ C++</h2></td></tr>
                 <tr><td colSpan="1">
                     <img src="../transpiler-images/Tickets/C++_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
                   <h4 style="clear: left">Developer</h4>
                 </td><td colspan="2">
                   <div style="display: block;">
-                      <img src="../transpiler-images/Tickets/C++_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                      <img src="../transpiler-images/Tickets/C++_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
                   </div>
 
                   <div>
@@ -451,9 +459,6 @@
                   <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="../transpiler-images/Tickets/C++_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
             </td></tr>
           </tbody>
         </table>
@@ -465,31 +470,34 @@
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td valign="top">
-              <div class="from-node-image">
-                  <img src="../transpiler-images/Tickets/C%23_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+              <td valign="top" style="background-color: Purple;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/C%23_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div>
+                      <img src="../transpiler-images/Tickets/C%23_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                  </div>
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="match-status goal match-row row in-sync" style="background-color: Purple;">Goal: Purple</div>
                 </td>
                 <td valign="top">
-                  <div class="match-status current match-row out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
+                  <div class="match-status current out-of-sync" style="background-color: white;"> vs. SYNTAX-LOCKED white
                       <div class="stale">⬆ STALE ⬆</div>
                   </div>
                 </td>
-                <tr><td colSpan="3">
-                  <h2>  ****** UNUSED ******* Tickets ➡ C#</h2>
-                </td></tr>
+                <tr><td colSpan="1">
+                  <h2>Tickets  ( unused )</h2>
+                </td>
+                <td colspan="2"><h2>➡ C#</h2></td></tr>
                 <tr><td colSpan="1">
                     <img src="../transpiler-images/Tickets/C%23_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
                   <h4 style="clear: left">Developer</h4>
                 </td><td colspan="2">
                   <div style="display: block;">
-                      <img src="../transpiler-images/Tickets/C%23_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                      <img src="../transpiler-images/Tickets/C%23_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
                   </div>
 
                   <div>
@@ -499,9 +507,6 @@
                   <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
-            </td>          
-            <td halign="right" valign="top">
-                <img src="../transpiler-images/Tickets/C%23_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
             </td></tr>
           </tbody>
         </table>
@@ -511,7 +516,7 @@
 
 
 </td>
-<td valign="top">
+<td valign="top" style="max-width: 50rem;">
 
 
   <hr></hr>
@@ -519,11 +524,11 @@
 <h1 style="text-align: center">Syntax-Free Methodology</h1>
 
   <hr></hr>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -532,26 +537,27 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2> Product Owner  ➡ Natural Language Idea</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Product Owner </h2>
+            </td>
+            <td colspan="2"><h2>➡ Natural Language Idea</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments"><img src="../transpiler-images/Product_Owner/Natural_Language_Idea_TranspilerNodeAttachments_1.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Manager & Architect</h4>
             </td><td colSpan="2">
 
 
-                <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -563,18 +569,14 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -583,26 +585,27 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2> Product Owner  ➡ Syntax-Free Idea</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Product Owner </h2>
+            </td>
+            <td colspan="2"><h2>➡ Syntax-Free Idea</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments"><img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_TranspilerNodeAttachments_1.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Manager & Architect</h4>
             </td><td colSpan="2">
 
 
-                <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -614,18 +617,14 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Specification/Tickets_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -634,19 +633,20 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2> Specification  ➡ Tickets</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Specification </h2>
+            </td>
+            <td colspan="2"><h2>➡ Tickets</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Specification/Tickets_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Manager</h4>
@@ -654,7 +654,7 @@
                 <img src="../transpiler-images/Specification/Tickets_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
 
 
-                <img src="../transpiler-images/Specification/Tickets_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Specification/Tickets_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -666,18 +666,14 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Specification/Tickets_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Tickets/Install_Airtable_to_Json_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -686,19 +682,20 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2> Tickets  ➡ Install Airtable to Json</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Tickets </h2>
+            </td>
+            <td colspan="2"><h2>➡ Install Airtable to Json</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Tickets/Install_Airtable_to_Json_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Architect</h4>
@@ -707,7 +704,7 @@
 
                 <img src="../transpiler-images/Tickets/Install_Airtable_to_Json_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="../transpiler-images/Tickets/Install_Airtable_to_Json_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Tickets/Install_Airtable_to_Json_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -719,18 +716,14 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Tickets/Install_Airtable_to_Json_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Tickets/Markdown_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -739,19 +732,20 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2> Tickets  ➡ Markdown</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Tickets </h2>
+            </td>
+            <td colspan="2"><h2>➡ Markdown</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Tickets/Markdown_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Editor</h4>
@@ -760,7 +754,7 @@
 
                 <img src="../transpiler-images/Tickets/Markdown_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="../transpiler-images/Tickets/Markdown_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Tickets/Markdown_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -772,18 +766,14 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Tickets/Markdown_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Tickets/Python_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -792,19 +782,20 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2> Tickets  ➡ Python</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Tickets </h2>
+            </td>
+            <td colspan="2"><h2>➡ Python</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Tickets/Python_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Developer</h4>
@@ -813,7 +804,7 @@
 
                 <img src="../transpiler-images/Tickets/Python_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="../transpiler-images/Tickets/Python_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Tickets/Python_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -825,18 +816,14 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Tickets/Python_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Tickets/HTML_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -845,19 +832,20 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2>  ****** UNUSED ******* Tickets  ➡ HTML</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Tickets  ( unused )</h2>
+            </td>
+            <td colspan="2"><h2>➡ HTML</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Tickets/HTML_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Editor</h4>
@@ -866,7 +854,7 @@
 
                 <img src="../transpiler-images/Tickets/HTML_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="../transpiler-images/Tickets/HTML_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Tickets/HTML_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -878,18 +866,14 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Tickets/HTML_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Tickets/WIKI_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -898,19 +882,20 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2>  ****** UNUSED ******* Tickets  ➡ WIKI</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Tickets  ( unused )</h2>
+            </td>
+            <td colspan="2"><h2>➡ WIKI</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Tickets/WIKI_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Editor</h4>
@@ -919,7 +904,7 @@
 
                 <img src="../transpiler-images/Tickets/WIKI_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="../transpiler-images/Tickets/WIKI_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Tickets/WIKI_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -931,18 +916,14 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Tickets/WIKI_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Tickets/C++_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -951,19 +932,20 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2>  ****** UNUSED ******* Tickets  ➡ C++</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Tickets  ( unused )</h2>
+            </td>
+            <td colspan="2"><h2>➡ C++</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Tickets/C++_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Developer</h4>
@@ -972,7 +954,7 @@
 
                 <img src="../transpiler-images/Tickets/C++_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="../transpiler-images/Tickets/C++_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Tickets/C++_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -984,18 +966,14 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Tickets/C++_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>
-        <div class="transpiler-node in-sync">
+        <div class="transpiler-node out-of-sync">
 
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
               <img src="../transpiler-images/Tickets/C%23_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
             </div>
@@ -1004,19 +982,20 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: Purple;">Goal: Purple</div>
             </td>
             <td valign="top">
-              <div class="match-status current match-row  in-sync" style="background-color: Purple;"> vs. SYNTAX-FREE Purple
+              <div class="match-status current match-row  out-of-sync" style="background-color: white;"> vs. SYNTAX-FREE white
               
+                <div class="stale">⬆ STALE ⬆</div>
 
               </div>
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2>  ****** UNUSED ******* Tickets  ➡ C#</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>Tickets  ( unused )</h2>
+            </td>
+            <td colspan="2"><h2>➡ C#</h2></td></tr>
             <tr><td colSpan="1">          
                 <img src="../transpiler-images/Tickets/C%23_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
               <h4 style="clear: left">Developer</h4>
@@ -1025,7 +1004,7 @@
 
                 <img src="../transpiler-images/Tickets/C%23_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
 
-                <img src="../transpiler-images/Tickets/C%23_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">
+                <img src="../transpiler-images/Tickets/C%23_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
 
               <div style="display: block; clear: left;">
                 <div>
@@ -1037,10 +1016,6 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-            <img src="../transpiler-images/Tickets/C%23_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
-
         </td></tr>
         </table>
         </div>

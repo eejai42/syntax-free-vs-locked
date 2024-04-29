@@ -14,13 +14,119 @@
         "SkipForSyntaxFree": "True",
         "OutputFileName": "Requirements.docx",
         "EdgeName": "Natural Language Idea",
+        "LockedColor": "white",
+        "LockedAttachments": {
+          "LockedAttachmentsId": "attJKtIfrc0etf2kX",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/ZITEyIlSA-dxvOdoL7UDIQ/DdxsVSyuJSc5m_DGWWhd94hV9y1Js2aSWsoeGHDkRHJ_7dLHMlyqoEq5fABy2mz5iJeLQnRiAt4oU4gED4uEfRytRmivOLZLKMqo4KBg-fBzxAaawg1olkQEUYsQ_RD4Vjm-zdEJLjkNAcZ42gcvoF-Gg3AJE2xdZ4waMO-VXA_AJ0NNU0MneuFrAkPXrV6G/N2NM5YNAV3jzMdNZaj77IYTqHyGx1W2hYpydMwRq6aU",
+          "filename": "Tickets_FromEdgeLockedAttachments_0.png",
+          "size": 16881,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/9ce3L2QjaetgBLWVnrutjQ/DNjPuQUtOfvFvlQFUu5ETwopepwxvual8N_kBBXYhc_XpTpHWrjzymZPQQtALvYa8Wwx1OBO8EbEDiPcmq_SL6c8AoRXhbpVtzgZ3veiLdn9FfmKg5cTA3kQgs6UakA9vnYaOvcDWuRo01GkLNTNAQ/N5rQL9gCyMSTRdjBaLbt9WnUDM-KglSjLYxUS86gaz4",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/zipkwDzblAaT0jm9iErMPw/w_p5a14CWmX-ld93zm1janSRHYkHK4YpXvFHodgUhe5pLcbxWxJ-jz04Y7lUWEqyGx6pXQYruJHsG0pl2272micA3k5TqMt2_VoQrxAn1eBmVXa1QxEAN8fR_cbd0U8NJBrDrkmA3blpM1ZEGqJVrQ/td8hOwJGdZu5sI8Umq9b-vVcnqh0yHnYyfkeRqW6LUg",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/sYObbgxUUhsm3ruGcyZl_w/y7iDPG1ahaMI2DMJqPxFsmSokrrv7yoexAhzAhsZyJfcZqrMHnOlbYopDg3wJ3xWB2XIdzTUPibNdJKDCNNAvXRNPV1OzUBGkK-il7NhE_zMsVJCN-tqLHN9weowARzap4bFSUFkCrUi8_HtZ0EFfQ/zrVQMm-LSXOzG_wuUT7aJiq7NNwP72tv3YAP3NiNmuE",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
+        "FreeAttachments": {
+          "FreeAttachmentsId": "attX59RgM8niKMOLI",
+          "width": 265,
+          "height": 190,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/YGEMmDBzPKWZcEm0OZrQLQ/BttIJ3T6n9syRTdipXuf4JVw-qRoPoQ2wiuOqKVjk-5Xn4Dra1kNmeCFeUBSMwuT-Jv6_baRMMvRf9Je8bmykX5ScxAK34g7b54reWEXSy9GQlDugznAMyX7FTvlQDfqtFcCOttzBSPogAS1y5-zmoOM4tl2BGgN9-qEssVGDUkBRQdcYCZXBKJfuqhmJjn0/_ZEEA46Wx4eJ3mWIoZGkLIYMcsNrcx-jeOiRSvmpYTo",
+          "filename": "Tickets_FromEdgeFreeAttachments_0.png",
+          "size": 22925,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/AG6qPcPb6gp6dukFVaDwZA/e3ohQptebKmBcdj9c5JaoNMM4e3vhqKrL8-ybxBas2x6iT8jDHWUMPWwWI947WBcdTQWc-QAEfUOduSOacCwS2KAD2_DW_v1X3pg7WfPN1wYOYSrsC-U0GEV60q9zhxjP5jdwRGhZTWpJiWTkZ-yJw/OZpOsWWBoyIw6oT_E6fNzMfrgTEZdwD0GbSM3xADXi4",
+              "width": 50,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/wnRvN1h0asR7W3Lv316B5g/oEQ6u06muas5IViiCEAPRXgqK48lUY0jzsMPdgUhrV6vzdi1nJcuyCz_heqjrdMYu8MKspgh_DIcYgclsvYdhk14H7x7jmCURsgyy7p75jVxZR_8WiAYDSBWq0TS1-pZFsLXmHaL6kujD3rst12hbg/HzVnqev5mDdP6v2hnEcAKu2C1UzF-MDdu0h826Blp4Q",
+              "width": 265,
+              "height": 190
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/nTJ-h5TgkhfKoitULcVt5g/jil0LOqZNQy9yaeBdkK4U8UBAvhXnyUo04yqMnMLo5frlFcPvTh5Uun5VJhl11wN1yadtEWRMIu3l6XnxOLAqGDfxvHAo2f7BmUs6TJU_IYfvS727ewVWDjaxLf2INSSGsfLKeZpPhhpfOn09gtC7w/po1ICLoa1e6v8pmSOaIw7qNePY87D52_NVMLcNbXfSg",
+              "width": 265,
+              "height": 190
+            }
+          }
+        },
         "LockedTranspilerNode": "recJ9CeboItTaFgd9",
+        "CustomSyntaxFreeColor": "white",
         "FromNode": "reccU1sh4etb4ERsq",
         "ExpectedColorTranspilerNode": "reccU1sh4etb4ERsq",
         "ToNode": "reckIYA8jp9cYvrkh",
         "Name": "1.Product Owner-Natural Language Idea",
+        "FromNodeAttachments": {
+          "FromNodeAttachmentsId": "attPqsMz4JKCURPyN",
+          "width": 720,
+          "height": 720,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/K8O9-emEvi7Wx52cKpegog/YbBOgyXAyK-WOD3igCvCFYyDW0TSkI6_iq238yafiUTfjz8CpXhVUKHLsy2WJRUBn2ZK8AuVigRyZO2PReADEaUtkDCxkfstg5VB3QB9kcmhKBAP7fvqGAwcGLAD_Qfz9MKDvoo1wDtk1CQ1hRBmGz_cXJIiZxPxC4pkhY9mb6jbBRRKI4sah4vT7FduIv9LR5bR9COG0kGHDImlWm-9HQ/bg_PVkyn93SeL3fvIRJTJlNn8Bd798Ik0Zzj00p3e2w",
+          "filename": "Natural_Language_Idea_FromNodeAttachments_0.png",
+          "size": 42796,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/Lfn8EbMOcsUKsKMQ2pJDZg/jeVvlz52FFrvQrKt1zI5f6wyjW9jpyPUOoXks0ewDFOsaPlkVdZGuubEWfmfC1C5ai0rIiy2rVFCkS0OQlpoJyWRENtOHcLaPPnqgUkTEU4V_H05X1h2pt3FTksUtLtelvWgVWNGygK-lmIlDgqTrA/q99WGvWmULQi52wV9-HhUufVqnaLmMcsLuXB9qOOE_Y",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/j-0QUemNK5abGggi_7xuzA/mLXuWuVpdj-tOmTw2hWBqdVs9UU6naI5nWVwSr4mj1lNY2J0BnYdzWNeKlwgYIQhfOl_rEQusz0VyTVCUYlq7vkgH8T7PZK4FJtFQqfBAdH9wxcFsY_mxCkS-MvhGXYcljtQGzGO9fzJZHPws4KOeQ/5x4YRfdC8TH2_A4aJ98mh2tMVCwiFDEuRFDq4l1gKXc",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/pIh3PgXhVbEBI5GvlZAWBA/l-TtQZSd6T7R254hpd2jlPcNbwFfpMUpX7TR-rBAWbrSD_1zGHpp0qwcSeTyzUmm0syDtwfG0xQldnEPvnjjqRP3oU_yhCJtF7r8BVhNFvnws_iGHiihWQAlu4rtjlFMLhQSv8Or7yiM_OHJRX1eJA/AREClv8WZfX8m9fj3_kf13m-E9JUD558iYFJWjFyA78",
+              "width": 720,
+              "height": 720
+            }
+          }
+        },
         "FromNodeFlowType": "Agent (human or AI)",
         "FromNodeName": "Product Owner",
+        "ToNodeAttachments": {
+          "ToNodeAttachmentsId": "attElyYeRujHdO9es",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/SCkfcb6qaF58a6Yev06gwA/LPggT0K2IMeZQEOA1M4aZdofCAeGcmjqU5WuT0gViyBQliQjSRyzEia8cjbLWjtXK1bgVyZe91j5tI7ZIg0E1VgSJ5PcXMBcLRG9H4juO0-aUDtOAvAcosLrHBhcQwUTw9uA3Wmh6fnctsjyTxSfLDYYoR3yPDYyiqBGQsx1k9NEoI8O-bUtwzI7gIBYUMQV/RBNXHLu3i2Lss2_BG1Lem-41IplRrl4CoGTodixK7uY",
+          "filename": "Tickets_FromNodeAttachments_0.png",
+          "size": 21263,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/cEezSHvSqvwXgCI1u21x7g/FL-QnvpOtz03nwYx1a1sSOKsx-sj2UWPIyTYLb66TO0HoeOa8j5I9p8rbGBvMf8wlWkgplTB8RaI2cEuPKZhynWcEu6FesOCSe2_EQxKgaf9H0g3YJlO9fGQf1Wnb9NJrOlxmiusnbut9eDmoBc3Zw/_1RiYT53_zZg3HAvTiAzsTXWniQj1bsQRGWdRz7SleE",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/Sd1L_f9lMBopGc85dlOuXQ/qAVYLRuEQ_bptE1zqL83aGkaobUf9GH6lW1aaVxIu-ga4HXRyVhMkvbIhjOKn_tM-rodRjppbl9gBVbmAL2ptmxdOozoxRfV7VUBPSuLd3j_dl2qK8q3Ko5r_JD0kItE1WkoC9eMig2i-zXUen-A1g/Fq-Mwz9L7RAiJVGAteNeTDWqyPitz9h9iEtYO_WQtSc",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/3xl8tq1lRGG1G4fiNH205g/z5f0dvvkJioCDjgijdvXfJY5sWX2iKeL_nhaXh1EWqRIcA8jDDbbSsXmDaJIy4LgCKHjHXWKe-a4TfzHgu1gYyudNKNSpnSzAh9W4EvHMggaE-3CaOtXcJPdWnRWksy2s3LSjD4z7ZBOEDGxCwzhdw/9e2oO536sVFvgNPcbFoMw2TBELakgWY4yU8sKdHVSWs",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
         "ToNodeName": "Specification",
         "TranspilerNodeAttachments": [
           {
@@ -81,41 +187,6 @@
         "ToNodeType": "NaturalLanguage",
         "HasSyntaxFreeParent": 1,
         "ToNodeIsQueriable": "",
-        "FromNodeMasterColor": "Purple",
-        "ToNodeOutputIsCode": "",
-        "ToNodeOutputIsDocs": "",
-        "IsLeaf": 0,
-        "IsUsed": 1,
-        "ExpectedColor": "Purple",
-        "LockedColorMatchesExpected": 1,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
-        "LockedAttachments": {
-          "LockedAttachmentsId": "attJKtIfrc0etf2kX",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/ZITEyIlSA-dxvOdoL7UDIQ/DdxsVSyuJSc5m_DGWWhd94hV9y1Js2aSWsoeGHDkRHJ_7dLHMlyqoEq5fABy2mz5iJeLQnRiAt4oU4gED4uEfRytRmivOLZLKMqo4KBg-fBzxAaawg1olkQEUYsQ_RD4Vjm-zdEJLjkNAcZ42gcvoF-Gg3AJE2xdZ4waMO-VXA_AJ0NNU0MneuFrAkPXrV6G/N2NM5YNAV3jzMdNZaj77IYTqHyGx1W2hYpydMwRq6aU",
-          "filename": "Tickets_FromEdgeLockedAttachments_0.png",
-          "size": 16881,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/9ce3L2QjaetgBLWVnrutjQ/DNjPuQUtOfvFvlQFUu5ETwopepwxvual8N_kBBXYhc_XpTpHWrjzymZPQQtALvYa8Wwx1OBO8EbEDiPcmq_SL6c8AoRXhbpVtzgZ3veiLdn9FfmKg5cTA3kQgs6UakA9vnYaOvcDWuRo01GkLNTNAQ/N5rQL9gCyMSTRdjBaLbt9WnUDM-KglSjLYxUS86gaz4",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/zipkwDzblAaT0jm9iErMPw/w_p5a14CWmX-ld93zm1janSRHYkHK4YpXvFHodgUhe5pLcbxWxJ-jz04Y7lUWEqyGx6pXQYruJHsG0pl2272micA3k5TqMt2_VoQrxAn1eBmVXa1QxEAN8fR_cbd0U8NJBrDrkmA3blpM1ZEGqJVrQ/td8hOwJGdZu5sI8Umq9b-vVcnqh0yHnYyfkeRqW6LUg",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/sYObbgxUUhsm3ruGcyZl_w/y7iDPG1ahaMI2DMJqPxFsmSokrrv7yoexAhzAhsZyJfcZqrMHnOlbYopDg3wJ3xWB2XIdzTUPibNdJKDCNNAvXRNPV1OzUBGkK-il7NhE_zMsVJCN-tqLHN9weowARzap4bFSUFkCrUi8_HtZ0EFfQ/zrVQMm-LSXOzG_wuUT7aJiq7NNwP72tv3YAP3NiNmuE",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
         "ToNodePlatformAttachments": {
           "ToNodePlatformAttachmentsId": "attI2QzW65elNfH3W",
           "width": 225,
@@ -142,86 +213,15 @@
             }
           }
         },
-        "ToNodeAttachments": {
-          "ToNodeAttachmentsId": "attElyYeRujHdO9es",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/SCkfcb6qaF58a6Yev06gwA/LPggT0K2IMeZQEOA1M4aZdofCAeGcmjqU5WuT0gViyBQliQjSRyzEia8cjbLWjtXK1bgVyZe91j5tI7ZIg0E1VgSJ5PcXMBcLRG9H4juO0-aUDtOAvAcosLrHBhcQwUTw9uA3Wmh6fnctsjyTxSfLDYYoR3yPDYyiqBGQsx1k9NEoI8O-bUtwzI7gIBYUMQV/RBNXHLu3i2Lss2_BG1Lem-41IplRrl4CoGTodixK7uY",
-          "filename": "Tickets_FromNodeAttachments_0.png",
-          "size": 21263,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/cEezSHvSqvwXgCI1u21x7g/FL-QnvpOtz03nwYx1a1sSOKsx-sj2UWPIyTYLb66TO0HoeOa8j5I9p8rbGBvMf8wlWkgplTB8RaI2cEuPKZhynWcEu6FesOCSe2_EQxKgaf9H0g3YJlO9fGQf1Wnb9NJrOlxmiusnbut9eDmoBc3Zw/_1RiYT53_zZg3HAvTiAzsTXWniQj1bsQRGWdRz7SleE",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/Sd1L_f9lMBopGc85dlOuXQ/qAVYLRuEQ_bptE1zqL83aGkaobUf9GH6lW1aaVxIu-ga4HXRyVhMkvbIhjOKn_tM-rodRjppbl9gBVbmAL2ptmxdOozoxRfV7VUBPSuLd3j_dl2qK8q3Ko5r_JD0kItE1WkoC9eMig2i-zXUen-A1g/Fq-Mwz9L7RAiJVGAteNeTDWqyPitz9h9iEtYO_WQtSc",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/3xl8tq1lRGG1G4fiNH205g/z5f0dvvkJioCDjgijdvXfJY5sWX2iKeL_nhaXh1EWqRIcA8jDDbbSsXmDaJIy4LgCKHjHXWKe-a4TfzHgu1gYyudNKNSpnSzAh9W4EvHMggaE-3CaOtXcJPdWnRWksy2s3LSjD4z7ZBOEDGxCwzhdw/9e2oO536sVFvgNPcbFoMw2TBELakgWY4yU8sKdHVSWs",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
-        "FreeAttachments": {
-          "FreeAttachmentsId": "attX59RgM8niKMOLI",
-          "width": 265,
-          "height": 190,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/YGEMmDBzPKWZcEm0OZrQLQ/BttIJ3T6n9syRTdipXuf4JVw-qRoPoQ2wiuOqKVjk-5Xn4Dra1kNmeCFeUBSMwuT-Jv6_baRMMvRf9Je8bmykX5ScxAK34g7b54reWEXSy9GQlDugznAMyX7FTvlQDfqtFcCOttzBSPogAS1y5-zmoOM4tl2BGgN9-qEssVGDUkBRQdcYCZXBKJfuqhmJjn0/_ZEEA46Wx4eJ3mWIoZGkLIYMcsNrcx-jeOiRSvmpYTo",
-          "filename": "Tickets_FromEdgeFreeAttachments_0.png",
-          "size": 22925,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/AG6qPcPb6gp6dukFVaDwZA/e3ohQptebKmBcdj9c5JaoNMM4e3vhqKrL8-ybxBas2x6iT8jDHWUMPWwWI947WBcdTQWc-QAEfUOduSOacCwS2KAD2_DW_v1X3pg7WfPN1wYOYSrsC-U0GEV60q9zhxjP5jdwRGhZTWpJiWTkZ-yJw/OZpOsWWBoyIw6oT_E6fNzMfrgTEZdwD0GbSM3xADXi4",
-              "width": 50,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/wnRvN1h0asR7W3Lv316B5g/oEQ6u06muas5IViiCEAPRXgqK48lUY0jzsMPdgUhrV6vzdi1nJcuyCz_heqjrdMYu8MKspgh_DIcYgclsvYdhk14H7x7jmCURsgyy7p75jVxZR_8WiAYDSBWq0TS1-pZFsLXmHaL6kujD3rst12hbg/HzVnqev5mDdP6v2hnEcAKu2C1UzF-MDdu0h826Blp4Q",
-              "width": 265,
-              "height": 190
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/nTJ-h5TgkhfKoitULcVt5g/jil0LOqZNQy9yaeBdkK4U8UBAvhXnyUo04yqMnMLo5frlFcPvTh5Uun5VJhl11wN1yadtEWRMIu3l6XnxOLAqGDfxvHAo2f7BmUs6TJU_IYfvS727ewVWDjaxLf2INSSGsfLKeZpPhhpfOn09gtC7w/po1ICLoa1e6v8pmSOaIw7qNePY87D52_NVMLcNbXfSg",
-              "width": 265,
-              "height": 190
-            }
-          }
-        },
-        "CustomSyntaxFreeColor": "Purple",
-        "FromNodeAttachments": {
-          "FromNodeAttachmentsId": "attPqsMz4JKCURPyN",
-          "width": 720,
-          "height": 720,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/K8O9-emEvi7Wx52cKpegog/YbBOgyXAyK-WOD3igCvCFYyDW0TSkI6_iq238yafiUTfjz8CpXhVUKHLsy2WJRUBn2ZK8AuVigRyZO2PReADEaUtkDCxkfstg5VB3QB9kcmhKBAP7fvqGAwcGLAD_Qfz9MKDvoo1wDtk1CQ1hRBmGz_cXJIiZxPxC4pkhY9mb6jbBRRKI4sah4vT7FduIv9LR5bR9COG0kGHDImlWm-9HQ/bg_PVkyn93SeL3fvIRJTJlNn8Bd798Ik0Zzj00p3e2w",
-          "filename": "Natural_Language_Idea_FromNodeAttachments_0.png",
-          "size": 42796,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/Lfn8EbMOcsUKsKMQ2pJDZg/jeVvlz52FFrvQrKt1zI5f6wyjW9jpyPUOoXks0ewDFOsaPlkVdZGuubEWfmfC1C5ai0rIiy2rVFCkS0OQlpoJyWRENtOHcLaPPnqgUkTEU4V_H05X1h2pt3FTksUtLtelvWgVWNGygK-lmIlDgqTrA/q99WGvWmULQi52wV9-HhUufVqnaLmMcsLuXB9qOOE_Y",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/j-0QUemNK5abGggi_7xuzA/mLXuWuVpdj-tOmTw2hWBqdVs9UU6naI5nWVwSr4mj1lNY2J0BnYdzWNeKlwgYIQhfOl_rEQusz0VyTVCUYlq7vkgH8T7PZK4FJtFQqfBAdH9wxcFsY_mxCkS-MvhGXYcljtQGzGO9fzJZHPws4KOeQ/5x4YRfdC8TH2_A4aJ98mh2tMVCwiFDEuRFDq4l1gKXc",
-              "width": 512,
-              "height": 512
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/pIh3PgXhVbEBI5GvlZAWBA/l-TtQZSd6T7R254hpd2jlPcNbwFfpMUpX7TR-rBAWbrSD_1zGHpp0qwcSeTyzUmm0syDtwfG0xQldnEPvnjjqRP3oU_yhCJtF7r8BVhNFvnws_iGHiihWQAlu4rtjlFMLhQSv8Or7yiM_OHJRX1eJA/AREClv8WZfX8m9fj3_kf13m-E9JUD558iYFJWjFyA78",
-              "width": 720,
-              "height": 720
-            }
-          }
-        },
-        "LockedColor": "Purple"
+        "FromNodeMasterColor": "Purple",
+        "ToNodeOutputIsCode": "",
+        "ToNodeOutputIsDocs": "",
+        "IsLeaf": 0,
+        "IsUsed": 1,
+        "ExpectedColor": "Purple",
+        "LockedColorMatchesExpected": 0,
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       },
       {
         "NodeEdgeId": "recRh833xyYnEAiPf",
@@ -255,10 +255,37 @@
           }
         },
         "LockedTranspilerNode": "recJ9CeboItTaFgd9",
+        "CustomSyntaxFreeColor": "white",
         "FromNode": "reccU1sh4etb4ERsq",
         "ExpectedColorTranspilerNode": "reccU1sh4etb4ERsq",
         "ToNode": "recjjL9qF69DMyd6m",
         "Name": "1.Product Owner-Syntax-Free Idea",
+        "FromNodeAttachments": {
+          "FromNodeAttachmentsId": "attPqsMz4JKCURPyN",
+          "width": 720,
+          "height": 720,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/K8O9-emEvi7Wx52cKpegog/YbBOgyXAyK-WOD3igCvCFYyDW0TSkI6_iq238yafiUTfjz8CpXhVUKHLsy2WJRUBn2ZK8AuVigRyZO2PReADEaUtkDCxkfstg5VB3QB9kcmhKBAP7fvqGAwcGLAD_Qfz9MKDvoo1wDtk1CQ1hRBmGz_cXJIiZxPxC4pkhY9mb6jbBRRKI4sah4vT7FduIv9LR5bR9COG0kGHDImlWm-9HQ/bg_PVkyn93SeL3fvIRJTJlNn8Bd798Ik0Zzj00p3e2w",
+          "filename": "Natural_Language_Idea_FromNodeAttachments_0.png",
+          "size": 42796,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/Lfn8EbMOcsUKsKMQ2pJDZg/jeVvlz52FFrvQrKt1zI5f6wyjW9jpyPUOoXks0ewDFOsaPlkVdZGuubEWfmfC1C5ai0rIiy2rVFCkS0OQlpoJyWRENtOHcLaPPnqgUkTEU4V_H05X1h2pt3FTksUtLtelvWgVWNGygK-lmIlDgqTrA/q99WGvWmULQi52wV9-HhUufVqnaLmMcsLuXB9qOOE_Y",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/j-0QUemNK5abGggi_7xuzA/mLXuWuVpdj-tOmTw2hWBqdVs9UU6naI5nWVwSr4mj1lNY2J0BnYdzWNeKlwgYIQhfOl_rEQusz0VyTVCUYlq7vkgH8T7PZK4FJtFQqfBAdH9wxcFsY_mxCkS-MvhGXYcljtQGzGO9fzJZHPws4KOeQ/5x4YRfdC8TH2_A4aJ98mh2tMVCwiFDEuRFDq4l1gKXc",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/pIh3PgXhVbEBI5GvlZAWBA/l-TtQZSd6T7R254hpd2jlPcNbwFfpMUpX7TR-rBAWbrSD_1zGHpp0qwcSeTyzUmm0syDtwfG0xQldnEPvnjjqRP3oU_yhCJtF7r8BVhNFvnws_iGHiihWQAlu4rtjlFMLhQSv8Or7yiM_OHJRX1eJA/AREClv8WZfX8m9fj3_kf13m-E9JUD558iYFJWjFyA78",
+              "width": 720,
+              "height": 720
+            }
+          }
+        },
         "FromNodeFlowType": "Agent (human or AI)",
         "FromNodeName": "Product Owner",
         "ToNodeAttachments": {
@@ -347,15 +374,6 @@
         "ToNodeType": "QueryableSSoT",
         "HasSyntaxFreeParent": 1,
         "ToNodeIsQueriable": "True",
-        "FromNodeMasterColor": "Purple",
-        "ToNodeOutputIsCode": "",
-        "ToNodeOutputIsDocs": "",
-        "IsLeaf": 0,
-        "IsUsed": 1,
-        "ExpectedColor": "Purple",
-        "LockedColorMatchesExpected": 0,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
         "ToNodePlatformAttachments": {
           "ToNodePlatformAttachmentsId": "attGZaGANl8NVDdhb",
           "width": 236,
@@ -382,33 +400,15 @@
             }
           }
         },
-        "CustomSyntaxFreeColor": "Purple",
-        "FromNodeAttachments": {
-          "FromNodeAttachmentsId": "attPqsMz4JKCURPyN",
-          "width": 720,
-          "height": 720,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/K8O9-emEvi7Wx52cKpegog/YbBOgyXAyK-WOD3igCvCFYyDW0TSkI6_iq238yafiUTfjz8CpXhVUKHLsy2WJRUBn2ZK8AuVigRyZO2PReADEaUtkDCxkfstg5VB3QB9kcmhKBAP7fvqGAwcGLAD_Qfz9MKDvoo1wDtk1CQ1hRBmGz_cXJIiZxPxC4pkhY9mb6jbBRRKI4sah4vT7FduIv9LR5bR9COG0kGHDImlWm-9HQ/bg_PVkyn93SeL3fvIRJTJlNn8Bd798Ik0Zzj00p3e2w",
-          "filename": "Natural_Language_Idea_FromNodeAttachments_0.png",
-          "size": 42796,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/Lfn8EbMOcsUKsKMQ2pJDZg/jeVvlz52FFrvQrKt1zI5f6wyjW9jpyPUOoXks0ewDFOsaPlkVdZGuubEWfmfC1C5ai0rIiy2rVFCkS0OQlpoJyWRENtOHcLaPPnqgUkTEU4V_H05X1h2pt3FTksUtLtelvWgVWNGygK-lmIlDgqTrA/q99WGvWmULQi52wV9-HhUufVqnaLmMcsLuXB9qOOE_Y",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/j-0QUemNK5abGggi_7xuzA/mLXuWuVpdj-tOmTw2hWBqdVs9UU6naI5nWVwSr4mj1lNY2J0BnYdzWNeKlwgYIQhfOl_rEQusz0VyTVCUYlq7vkgH8T7PZK4FJtFQqfBAdH9wxcFsY_mxCkS-MvhGXYcljtQGzGO9fzJZHPws4KOeQ/5x4YRfdC8TH2_A4aJ98mh2tMVCwiFDEuRFDq4l1gKXc",
-              "width": 512,
-              "height": 512
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/pIh3PgXhVbEBI5GvlZAWBA/l-TtQZSd6T7R254hpd2jlPcNbwFfpMUpX7TR-rBAWbrSD_1zGHpp0qwcSeTyzUmm0syDtwfG0xQldnEPvnjjqRP3oU_yhCJtF7r8BVhNFvnws_iGHiihWQAlu4rtjlFMLhQSv8Or7yiM_OHJRX1eJA/AREClv8WZfX8m9fj3_kf13m-E9JUD558iYFJWjFyA78",
-              "width": 720,
-              "height": 720
-            }
-          }
-        }
+        "FromNodeMasterColor": "Purple",
+        "ToNodeOutputIsCode": "",
+        "ToNodeOutputIsDocs": "",
+        "IsLeaf": 0,
+        "IsUsed": 1,
+        "ExpectedColor": "Purple",
+        "LockedColorMatchesExpected": 0,
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       },
       {
         "NodeEdgeId": "recOXKqiHKgXvofpK",
@@ -417,6 +417,33 @@
         "FromSyntaxFreeEdge": "recNZ6pbVSB1eCDLg",
         "EdgeName": "Tickets",
         "FromLockedEdge": "recNZ6pbVSB1eCDLg",
+        "LockedColor": "white",
+        "LockedAttachments": {
+          "LockedAttachmentsId": "attxhB7SM1HxycpjH",
+          "width": 360,
+          "height": 360,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/9dxqwfLgjdJnVUCwYu-pmA/reqbiYFX6ZxSRcccwA5PzrXDnh_gGlzLDgvfuQsrRbPHfxvyiF2aBULhsxqnfYVA3-F1tE_lNXpFbFAeGojzWGwQ8Re3nn19Y154GeAEIIlubFx7uKFmL6v48XzsRDIg0fknJkRQPVrXL0q3O2odHeYgzW7kyivXaoFK3iOqjCrdFmioZ2d7Tnho2McdpSyH/GLtT7T2VfgmPlZbyYq_viKBStIxovpEDkhk6QIK-5QY",
+          "filename": "Tickets_LockedAttachments_0.png",
+          "size": 35294,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/FLiqcGvRxgRZAWA29DXbgg/rkE1DkUAW3K5nJZE1m1_zMzRHOAx3NbFSa1xeh1du7eXviOcwNsGno60O1ATfQWNbyvW_iwSdqNFhfSVJu9Gb7mwbGXOCYAnBuVWk70bMxccyOKC4dhhJdp9w6Ab9OSqpnkXo2nz7j1f5xGRDj0ufg/MC1BuRWei7tJHAlthA6ziAcp9BjZEU5Q3Wlu3NVzFOY",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/UMM3wAYE37GnsNDlA7EKbA/J2tSQ4EfPwF6EYzI8VwBpfHiRxcs_-LhhNIqu4c8JBneAqjpSVXR3IQuZP6fve99_-tcqNADJMCrV6DFKrACcTwloUhPw0Edboy2IcyTLrmP6cqv4NIDnGlUQcbQ1xV0dAPbjkaSKq2Q4Xsx5LSMAw/4TCxfPKvv5ugw9N6DdNDYcXPrhQaIERRK2BZ0gjR8QE",
+              "width": 360,
+              "height": 360
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/jhklBYZTs6n61OBP3Jo9hA/KrFiTN2vO6QTlmWB8fPYFGK_nVcWk5MvZBZU8VUweqbHo5Rdl6vpzxY7ZN4Zb3YuQwlv_7BclB6QipkSyYYNIeuECxo6KghL6f-75yjCgeR6oo0mM2uy2UeAssOziOe2832acWUsk0RpF4xzW91Qbw/Iv1nvXL8ZF-Zr7ThsgDumGU9pMuvp09z1uQL_Zj0le4",
+              "width": 360,
+              "height": 360
+            }
+          }
+        },
         "FreeAttachments": {
           "FreeAttachmentsId": "attb4288ZprgZiXWk",
           "width": 1280,
@@ -444,10 +471,37 @@
           }
         },
         "LockedTranspilerNode": "reclBNUMzancZBjIs",
+        "CustomSyntaxFreeColor": "white",
         "FromNode": "reckIYA8jp9cYvrkh",
         "ExpectedColorTranspilerNode": "reccU1sh4etb4ERsq",
         "ToNode": "recLASKMSBwGJk1Hf",
         "Name": "2.Specification-Tickets",
+        "FromNodeAttachments": {
+          "FromNodeAttachmentsId": "attElyYeRujHdO9es",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/SCkfcb6qaF58a6Yev06gwA/LPggT0K2IMeZQEOA1M4aZdofCAeGcmjqU5WuT0gViyBQliQjSRyzEia8cjbLWjtXK1bgVyZe91j5tI7ZIg0E1VgSJ5PcXMBcLRG9H4juO0-aUDtOAvAcosLrHBhcQwUTw9uA3Wmh6fnctsjyTxSfLDYYoR3yPDYyiqBGQsx1k9NEoI8O-bUtwzI7gIBYUMQV/RBNXHLu3i2Lss2_BG1Lem-41IplRrl4CoGTodixK7uY",
+          "filename": "Tickets_FromNodeAttachments_0.png",
+          "size": 21263,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/cEezSHvSqvwXgCI1u21x7g/FL-QnvpOtz03nwYx1a1sSOKsx-sj2UWPIyTYLb66TO0HoeOa8j5I9p8rbGBvMf8wlWkgplTB8RaI2cEuPKZhynWcEu6FesOCSe2_EQxKgaf9H0g3YJlO9fGQf1Wnb9NJrOlxmiusnbut9eDmoBc3Zw/_1RiYT53_zZg3HAvTiAzsTXWniQj1bsQRGWdRz7SleE",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/Sd1L_f9lMBopGc85dlOuXQ/qAVYLRuEQ_bptE1zqL83aGkaobUf9GH6lW1aaVxIu-ga4HXRyVhMkvbIhjOKn_tM-rodRjppbl9gBVbmAL2ptmxdOozoxRfV7VUBPSuLd3j_dl2qK8q3Ko5r_JD0kItE1WkoC9eMig2i-zXUen-A1g/Fq-Mwz9L7RAiJVGAteNeTDWqyPitz9h9iEtYO_WQtSc",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/3xl8tq1lRGG1G4fiNH205g/z5f0dvvkJioCDjgijdvXfJY5sWX2iKeL_nhaXh1EWqRIcA8jDDbbSsXmDaJIy4LgCKHjHXWKe-a4TfzHgu1gYyudNKNSpnSzAh9W4EvHMggaE-3CaOtXcJPdWnRWksy2s3LSjD4z7ZBOEDGxCwzhdw/9e2oO536sVFvgNPcbFoMw2TBELakgWY4yU8sKdHVSWs",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
         "FromNodeFlowType": "NaturalLanguage",
         "FromNodeName": "Specification",
         "ToNodeAttachments": {
@@ -477,24 +531,34 @@
           }
         },
         "ToNodeName": "Tickets",
+        "TranspilerNodeAttachments": {
+          "TranspilerNodeAttachmentsId": "attWUzFi2CZe9DXlB",
+          "width": 1000,
+          "height": 1000,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/wSxcLOkYKf3ipwclocPnWA/-BDA19Kc9wDi2urQD8V_IxGNc6FxBxCTr-_pl3dmEkT_ct3nprXO3v9KFnTC4LCMTtzS0cjHaMBV2JIBevNfcoHgz4MbQ0q7TGCZPqcxOy2Vxk_6p8pv9vKgFoJzSml0LPFUFmk91wzLrw3ZhfxXRRJoc-BSaemsa0kMBaNu33-MWROSO8DRpAP1viJrkT9i/Y4sQSQcG_Zkzo3Zt9nrij6lKX6BsCwf4I4NP4ipen_w",
+          "filename": "Tickets_TranspilerNodeAttachments_0.png",
+          "size": 245652,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/2eYxq5oaQmoE0djNwHw-ng/x70f7rQUWs9VUCZRcw6fPpJU1qZlAvxWXwWUdFvfDw9iqTjooXo8eIgEX9tf6JrJ_NCt2jIpUp4EcjU-lrDpyA_UQsF-f8U1CbX53g7s41TvAu_kucAAUVDlVeNWsICavQTlidlSpd_obdLZPFA2vA/N6KChXTj19-rJFl2FwkKUSeFNT2uQRf0LYc5zhhBl8E",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/GiymxiZGQhp4VUkO-S1auQ/W0bpDxopfn9Ch5oWSdOxW97hoaO7yIu2Yvy6i5Ly3AN9i8Ke4-DsSuizt0l5ps7CoCRIE5mBXPeWsoo7Oq1hapb06i0Yb43qKY4SRd3W6qDNJ2RYaSSFiAcn8i0ZYr30tLb1fcRbJLFHPlPC_PcgFA/EIzJn_SVXpB32gcl6-4pso7zTM5HrpjjFsXl5FHbZmg",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/n0udMMvAEHCjBG94k8hZLw/NNehstFZU3emSN_EedPjW9D3eTKtF1Vm-FW7JhkUdouPjR95qq9qiLjcjmL6_mxk8LsRyg2i5ALTGh93FQtYvZV4QmHIA7MWjQbq8TzL_mo0Ghn_BdPllMt8lqAnP1w952RW1-3A84zgEZBPldGcOA/DrLGy69zMSmSXCLTG2lsJgE953vqlFMcghMLOZjV4ps",
+              "width": 1000,
+              "height": 1000
+            }
+          }
+        },
         "TransformerNodeFlowType": "Agent (human or AI)",
         "TransformerNodeName": "Manager",
-        "ToNodeType": "NaturalLanguage",
-        "FromFreeEdgeToNodeType": "NaturalLanguage",
-        "SyntaxFreeEdgeName": "Natural Language Idea",
-        "HasSyntaxFreeParent": 0,
-        "ToNodeIsQueriable": "",
-        "FromFreeEdgeIsQueriable": "",
-        "FromLockedEdgeIsQueriable": "",
-        "SyntaxFreeEdgeOutputFileName": "Requirements.docx",
-        "ToNodeOutputIsCode": "",
-        "ToNodeOutputIsDocs": "",
-        "IsLeaf": 0,
-        "IsUsed": 1,
-        "ExpectedColor": "Purple",
-        "LockedColorMatchesExpected": 1,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
         "FromEdgeLockedAttachments": {
           "FromEdgeLockedAttachmentsId": "attJKtIfrc0etf2kX",
           "width": 225,
@@ -521,55 +585,35 @@
             }
           }
         },
-        "FromNodeAttachments": {
-          "FromNodeAttachmentsId": "attElyYeRujHdO9es",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/SCkfcb6qaF58a6Yev06gwA/LPggT0K2IMeZQEOA1M4aZdofCAeGcmjqU5WuT0gViyBQliQjSRyzEia8cjbLWjtXK1bgVyZe91j5tI7ZIg0E1VgSJ5PcXMBcLRG9H4juO0-aUDtOAvAcosLrHBhcQwUTw9uA3Wmh6fnctsjyTxSfLDYYoR3yPDYyiqBGQsx1k9NEoI8O-bUtwzI7gIBYUMQV/RBNXHLu3i2Lss2_BG1Lem-41IplRrl4CoGTodixK7uY",
-          "filename": "Tickets_FromNodeAttachments_0.png",
-          "size": 21263,
+        "ToNodeType": "NaturalLanguage",
+        "FromFreeEdgeToNodeType": "NaturalLanguage",
+        "SyntaxFreeEdgeName": "Natural Language Idea",
+        "HasSyntaxFreeParent": 0,
+        "ToNodeIsQueriable": "",
+        "FromFreeEdgeIsQueriable": "",
+        "FromEdgeFreeAttachments": {
+          "FromEdgeFreeAttachmentsId": "attX59RgM8niKMOLI",
+          "width": 265,
+          "height": 190,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/YGEMmDBzPKWZcEm0OZrQLQ/BttIJ3T6n9syRTdipXuf4JVw-qRoPoQ2wiuOqKVjk-5Xn4Dra1kNmeCFeUBSMwuT-Jv6_baRMMvRf9Je8bmykX5ScxAK34g7b54reWEXSy9GQlDugznAMyX7FTvlQDfqtFcCOttzBSPogAS1y5-zmoOM4tl2BGgN9-qEssVGDUkBRQdcYCZXBKJfuqhmJjn0/_ZEEA46Wx4eJ3mWIoZGkLIYMcsNrcx-jeOiRSvmpYTo",
+          "filename": "Tickets_FromEdgeFreeAttachments_0.png",
+          "size": 22925,
           "type": "image/png",
           "thumbnails": {
             "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/cEezSHvSqvwXgCI1u21x7g/FL-QnvpOtz03nwYx1a1sSOKsx-sj2UWPIyTYLb66TO0HoeOa8j5I9p8rbGBvMf8wlWkgplTB8RaI2cEuPKZhynWcEu6FesOCSe2_EQxKgaf9H0g3YJlO9fGQf1Wnb9NJrOlxmiusnbut9eDmoBc3Zw/_1RiYT53_zZg3HAvTiAzsTXWniQj1bsQRGWdRz7SleE",
-              "width": 36,
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/AG6qPcPb6gp6dukFVaDwZA/e3ohQptebKmBcdj9c5JaoNMM4e3vhqKrL8-ybxBas2x6iT8jDHWUMPWwWI947WBcdTQWc-QAEfUOduSOacCwS2KAD2_DW_v1X3pg7WfPN1wYOYSrsC-U0GEV60q9zhxjP5jdwRGhZTWpJiWTkZ-yJw/OZpOsWWBoyIw6oT_E6fNzMfrgTEZdwD0GbSM3xADXi4",
+              "width": 50,
               "height": 36
             },
             "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/Sd1L_f9lMBopGc85dlOuXQ/qAVYLRuEQ_bptE1zqL83aGkaobUf9GH6lW1aaVxIu-ga4HXRyVhMkvbIhjOKn_tM-rodRjppbl9gBVbmAL2ptmxdOozoxRfV7VUBPSuLd3j_dl2qK8q3Ko5r_JD0kItE1WkoC9eMig2i-zXUen-A1g/Fq-Mwz9L7RAiJVGAteNeTDWqyPitz9h9iEtYO_WQtSc",
-              "width": 225,
-              "height": 225
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/wnRvN1h0asR7W3Lv316B5g/oEQ6u06muas5IViiCEAPRXgqK48lUY0jzsMPdgUhrV6vzdi1nJcuyCz_heqjrdMYu8MKspgh_DIcYgclsvYdhk14H7x7jmCURsgyy7p75jVxZR_8WiAYDSBWq0TS1-pZFsLXmHaL6kujD3rst12hbg/HzVnqev5mDdP6v2hnEcAKu2C1UzF-MDdu0h826Blp4Q",
+              "width": 265,
+              "height": 190
             },
             "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/3xl8tq1lRGG1G4fiNH205g/z5f0dvvkJioCDjgijdvXfJY5sWX2iKeL_nhaXh1EWqRIcA8jDDbbSsXmDaJIy4LgCKHjHXWKe-a4TfzHgu1gYyudNKNSpnSzAh9W4EvHMggaE-3CaOtXcJPdWnRWksy2s3LSjD4z7ZBOEDGxCwzhdw/9e2oO536sVFvgNPcbFoMw2TBELakgWY4yU8sKdHVSWs",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
-        "TranspilerNodeAttachments": {
-          "TranspilerNodeAttachmentsId": "attWUzFi2CZe9DXlB",
-          "width": 1000,
-          "height": 1000,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/wSxcLOkYKf3ipwclocPnWA/-BDA19Kc9wDi2urQD8V_IxGNc6FxBxCTr-_pl3dmEkT_ct3nprXO3v9KFnTC4LCMTtzS0cjHaMBV2JIBevNfcoHgz4MbQ0q7TGCZPqcxOy2Vxk_6p8pv9vKgFoJzSml0LPFUFmk91wzLrw3ZhfxXRRJoc-BSaemsa0kMBaNu33-MWROSO8DRpAP1viJrkT9i/Y4sQSQcG_Zkzo3Zt9nrij6lKX6BsCwf4I4NP4ipen_w",
-          "filename": "Tickets_TranspilerNodeAttachments_0.png",
-          "size": 245652,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/2eYxq5oaQmoE0djNwHw-ng/x70f7rQUWs9VUCZRcw6fPpJU1qZlAvxWXwWUdFvfDw9iqTjooXo8eIgEX9tf6JrJ_NCt2jIpUp4EcjU-lrDpyA_UQsF-f8U1CbX53g7s41TvAu_kucAAUVDlVeNWsICavQTlidlSpd_obdLZPFA2vA/N6KChXTj19-rJFl2FwkKUSeFNT2uQRf0LYc5zhhBl8E",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/GiymxiZGQhp4VUkO-S1auQ/W0bpDxopfn9Ch5oWSdOxW97hoaO7yIu2Yvy6i5Ly3AN9i8Ke4-DsSuizt0l5ps7CoCRIE5mBXPeWsoo7Oq1hapb06i0Yb43qKY4SRd3W6qDNJ2RYaSSFiAcn8i0ZYr30tLb1fcRbJLFHPlPC_PcgFA/EIzJn_SVXpB32gcl6-4pso7zTM5HrpjjFsXl5FHbZmg",
-              "width": 512,
-              "height": 512
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/n0udMMvAEHCjBG94k8hZLw/NNehstFZU3emSN_EedPjW9D3eTKtF1Vm-FW7JhkUdouPjR95qq9qiLjcjmL6_mxk8LsRyg2i5ALTGh93FQtYvZV4QmHIA7MWjQbq8TzL_mo0Ghn_BdPllMt8lqAnP1w952RW1-3A84zgEZBPldGcOA/DrLGy69zMSmSXCLTG2lsJgE953vqlFMcghMLOZjV4ps",
-              "width": 1000,
-              "height": 1000
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/nTJ-h5TgkhfKoitULcVt5g/jil0LOqZNQy9yaeBdkK4U8UBAvhXnyUo04yqMnMLo5frlFcPvTh5Uun5VJhl11wN1yadtEWRMIu3l6XnxOLAqGDfxvHAo2f7BmUs6TJU_IYfvS727ewVWDjaxLf2INSSGsfLKeZpPhhpfOn09gtC7w/po1ICLoa1e6v8pmSOaIw7qNePY87D52_NVMLcNbXfSg",
+              "width": 265,
+              "height": 190
             }
           }
         },
@@ -599,61 +643,17 @@
             }
           }
         },
-        "FromEdgeFreeAttachments": {
-          "FromEdgeFreeAttachmentsId": "attX59RgM8niKMOLI",
-          "width": 265,
-          "height": 190,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/YGEMmDBzPKWZcEm0OZrQLQ/BttIJ3T6n9syRTdipXuf4JVw-qRoPoQ2wiuOqKVjk-5Xn4Dra1kNmeCFeUBSMwuT-Jv6_baRMMvRf9Je8bmykX5ScxAK34g7b54reWEXSy9GQlDugznAMyX7FTvlQDfqtFcCOttzBSPogAS1y5-zmoOM4tl2BGgN9-qEssVGDUkBRQdcYCZXBKJfuqhmJjn0/_ZEEA46Wx4eJ3mWIoZGkLIYMcsNrcx-jeOiRSvmpYTo",
-          "filename": "Tickets_FromEdgeFreeAttachments_0.png",
-          "size": 22925,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/AG6qPcPb6gp6dukFVaDwZA/e3ohQptebKmBcdj9c5JaoNMM4e3vhqKrL8-ybxBas2x6iT8jDHWUMPWwWI947WBcdTQWc-QAEfUOduSOacCwS2KAD2_DW_v1X3pg7WfPN1wYOYSrsC-U0GEV60q9zhxjP5jdwRGhZTWpJiWTkZ-yJw/OZpOsWWBoyIw6oT_E6fNzMfrgTEZdwD0GbSM3xADXi4",
-              "width": 50,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/wnRvN1h0asR7W3Lv316B5g/oEQ6u06muas5IViiCEAPRXgqK48lUY0jzsMPdgUhrV6vzdi1nJcuyCz_heqjrdMYu8MKspgh_DIcYgclsvYdhk14H7x7jmCURsgyy7p75jVxZR_8WiAYDSBWq0TS1-pZFsLXmHaL6kujD3rst12hbg/HzVnqev5mDdP6v2hnEcAKu2C1UzF-MDdu0h826Blp4Q",
-              "width": 265,
-              "height": 190
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/nTJ-h5TgkhfKoitULcVt5g/jil0LOqZNQy9yaeBdkK4U8UBAvhXnyUo04yqMnMLo5frlFcPvTh5Uun5VJhl11wN1yadtEWRMIu3l6XnxOLAqGDfxvHAo2f7BmUs6TJU_IYfvS727ewVWDjaxLf2INSSGsfLKeZpPhhpfOn09gtC7w/po1ICLoa1e6v8pmSOaIw7qNePY87D52_NVMLcNbXfSg",
-              "width": 265,
-              "height": 190
-            }
-          }
-        },
-        "LockedColor": "Purple",
-        "ParentFreeEdgeColor": "Purple",
-        "CustomSyntaxFreeColor": "Purple",
-        "LockedAttachments": {
-          "LockedAttachmentsId": "attxhB7SM1HxycpjH",
-          "width": 360,
-          "height": 360,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/9dxqwfLgjdJnVUCwYu-pmA/reqbiYFX6ZxSRcccwA5PzrXDnh_gGlzLDgvfuQsrRbPHfxvyiF2aBULhsxqnfYVA3-F1tE_lNXpFbFAeGojzWGwQ8Re3nn19Y154GeAEIIlubFx7uKFmL6v48XzsRDIg0fknJkRQPVrXL0q3O2odHeYgzW7kyivXaoFK3iOqjCrdFmioZ2d7Tnho2McdpSyH/GLtT7T2VfgmPlZbyYq_viKBStIxovpEDkhk6QIK-5QY",
-          "filename": "Tickets_LockedAttachments_0.png",
-          "size": 35294,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/FLiqcGvRxgRZAWA29DXbgg/rkE1DkUAW3K5nJZE1m1_zMzRHOAx3NbFSa1xeh1du7eXviOcwNsGno60O1ATfQWNbyvW_iwSdqNFhfSVJu9Gb7mwbGXOCYAnBuVWk70bMxccyOKC4dhhJdp9w6Ab9OSqpnkXo2nz7j1f5xGRDj0ufg/MC1BuRWei7tJHAlthA6ziAcp9BjZEU5Q3Wlu3NVzFOY",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/UMM3wAYE37GnsNDlA7EKbA/J2tSQ4EfPwF6EYzI8VwBpfHiRxcs_-LhhNIqu4c8JBneAqjpSVXR3IQuZP6fve99_-tcqNADJMCrV6DFKrACcTwloUhPw0Edboy2IcyTLrmP6cqv4NIDnGlUQcbQ1xV0dAPbjkaSKq2Q4Xsx5LSMAw/4TCxfPKvv5ugw9N6DdNDYcXPrhQaIERRK2BZ0gjR8QE",
-              "width": 360,
-              "height": 360
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/jhklBYZTs6n61OBP3Jo9hA/KrFiTN2vO6QTlmWB8fPYFGK_nVcWk5MvZBZU8VUweqbHo5Rdl6vpzxY7ZN4Zb3YuQwlv_7BclB6QipkSyYYNIeuECxo6KghL6f-75yjCgeR6oo0mM2uy2UeAssOziOe2832acWUsk0RpF4xzW91Qbw/Iv1nvXL8ZF-Zr7ThsgDumGU9pMuvp09z1uQL_Zj0le4",
-              "width": 360,
-              "height": 360
-            }
-          }
-        }
+        "FromLockedEdgeIsQueriable": "",
+        "SyntaxFreeEdgeOutputFileName": "Requirements.docx",
+        "ToNodeOutputIsCode": "",
+        "ToNodeOutputIsDocs": "",
+        "IsLeaf": 0,
+        "IsUsed": 1,
+        "ExpectedColor": "Purple",
+        "LockedColorMatchesExpected": 0,
+        "ParentFreeEdgeColor": "white",
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       },
       {
         "NodeEdgeId": "recz1ZD01x0uLZF6v",
@@ -715,6 +715,7 @@
           }
         },
         "LockedTranspilerNode": "recj4xxPKHg0Mef0q",
+        "CustomSyntaxFreeColor": "white",
         "FreeTranspilerNode": "recckX1QccFjrQh6p",
         "FromNode": "recLASKMSBwGJk1Hf",
         "ExpectedColorTranspilerNode": "reccU1sh4etb4ERsq",
@@ -775,6 +776,32 @@
           }
         },
         "ToNodeName": "Json",
+        "TranspilerNodeAttachments": {
+          "TranspilerNodeAttachmentsId": "attqCaVtrxGWVzv0U",
+          "width": 1012,
+          "height": 1024,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/9tPWOv5zvgQgzPes5r2o6w/6AmRxRa8sFWvJ66IklUxpxhZfmsrNTzc09RMQSRc83EDmWQvVNa1C1l06xz6Znlz0dSU3SS4Wjs789wBIUEX42y-oKQPwjyfCJsqeH77p5MMWntuyhCun21kqaNuR_wVkW0CZRBrf2jRXbSn5NMNJU55tr-nAkE53lcbzeue0YTZ8NDajuLgK9rWuowx2iJQ7xOh-3sQEyD7FGfBAOK0mw/9d5ZNYydUgBDloZjOMF8HAVK5egJiOOajaya6cwRE9I",
+          "filename": "Natural_Language_Idea_TranspilerNodeAttachments_1.png",
+          "size": 148937,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/2ew5-IGvOCLDeXNTZFHjHw/BjhO8kld-VxppmVYIUOnmQYQChpAmc8OB1mg1z1X3OPQTzoMOi970XOKcY_pWNptfFml1ROGbkBopq6pQxY6-L3XnDcKQ0HNRtSV4Zh2zyy7T7Nnz3bFV7w-dUBNPD7A_aJ5SwHxCLrl6Blz0m7U2g/eS4wDW7139VMSG-1sTa9OMyLsgGvol5Irpngn0iSkG4",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/M-_VtiI7NaS8bukw7JxnlQ/jrT8-p7-I3F6tRlg0Tv2Vbu5p-mbdTndoX3sK9FlWjX7PtrF_tulGjW8gByLECUbA3HnQafl4P_sImDv-h2NgYBA90GguEMPuO54Me1dYswPZiJR825dgpjAfLSqkDsylRc8otkqGuztzWiG_pkIxw/NaBmynzG_4HEBdL4TV7OuNHLQ1bz5nQ4IjnDBgFa7o0",
+              "width": 512,
+              "height": 518
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/zoy9vWaKCQaDnF1evaRCZw/HaQxNGgeZ8kpzF2DdXUP25FhcLgo1TBW3Do51r59rfKKtij451pzHSWKwZEGKhzc3lLo6cG90JiVF41tXPhoYAYyYrZQWePAGgLUm1OQF614S3MYW2ye4wF2yKG_4WPo8t51Kq1nIsaWAUDirU8aPw/WMJhBbrdZ8wHrTpQU88UF-3rImdry64UQFDAODle76Y",
+              "width": 1012,
+              "height": 1024
+            }
+          }
+        },
         "TransformerNodeFlowType": "Agent (human or AI)",
         "TransformerNodeName": "Architect",
         "ToNodeType": "QueryableSSoT",
@@ -782,28 +809,28 @@
         "SyntaxFreeEdgeName": "Syntax-Free Idea",
         "HasSyntaxFreeParent": 0,
         "FreeTranspilerAttachments": {
-          "FreeTranspilerAttachmentsId": "attgdaQg97DST9IKB",
-          "width": 512,
-          "height": 512,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/AWKDjSHkEgZ48OX8d8OiEQ/QmsdcDjgyUt4JW0KBr0o3aLHXCfCDo6qZx3Pd13qHOg86RF1aBOZDMkZfGh_EtVcj00axpr8cOh83idXEUviY3pIDkSKlkDdsEGqGsE4KBazmQ8aPuMld_3sXR-sAc5SJ5hW674bKiqyamotJAjkqA/KwHh1DekMf3uUhHmUG8o6Fe2WWBSXAUd5OmTmgLiveU",
+          "FreeTranspilerAttachmentsId": "attsXPXT4RXEIF8h7",
+          "width": 280,
+          "height": 280,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/IjjJFgliT9CO6S7XmtwtiQ/v68GXOHCBPPuKu_K89TsJZzFXjcyuBXYfvJgirLs1JD58u2wh-x2VjCHnTlLDch6A0hC9NVU_i41jID644TDbOeuClWfMpof0KEqB3iOw8b4QtcyaCw1UMmBLqHofru1YE49MCriPIr4ap_ExV8NbQ/zawvAfjp1chOVHilhr01zoOfPAiX375e6xZ-s8-Mg6c",
           "filename": "image.png",
-          "size": 17832,
+          "size": 11234,
           "type": "image/png",
           "thumbnails": {
             "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/9vb61FdDtNfhh7sukEROyg/N9YodhiX3DHQt-3tTaECHTXLAyEzteFtgWco-Ns1ams3gcVg7RTuGOYzXo_1h_8e_nGWThbOeyzGU0S4DnvQ_uQ00epGUx5ZKJuap59qL6Rha1lKT6ayixLkmKOI6VWH64rpF3pPOOi7-naljYQ9Gw/IjEoeBDmLsIT53mZd7nxAHOF0kyeNttyKuK-ClYMd_s",
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/rhsflxa50cUopj-tABUw7A/Pzj3givDppZ-Ozg3MegCLMae4DI31vo7qXYnsNLBvTlBlUygvQfaJoq2sRrfdB5Q5DPArvsd0QowC3Iay5lmWS1BKCZRQoTG9ns2Vgxe-nFdecL6OkGEnHsjYq-_y-_OMebrNDfs8zjFgdFR502LHg/0sfAYNdU6OUdD1AYFddOuWgXt2MvayU5v6UJc0qU-B8",
               "width": 36,
               "height": 36
             },
             "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/U_gGyE7-yTnM0nSB0eV4CA/AczYrDZybYs8XDZvSFxJ2mbEvczncJ1pAvGTNGz-fCC2IzyGjcZglvvMUDtf9Fu0mPI8UrTQc4Z9GTSax01Dn42Qq9XGlSsYpI3xNc_ZG4-ZYBUimOA1lxOjA_d9UhoTzYyRFXFakFCewFMmXvx1cw/H0VL7mAwtmtufwSwvp9hZ5I6xBE37-i_0-G8xjG_oG0",
-              "width": 512,
-              "height": 512
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/IxSPWxpsMkdgwBii5TE1JA/n9O86l2sYX9fPlKhFE81lbn4iNH89K4fp41DSHN0GlS6nZf5Fva5DjfL4QUBU1eU02J83t_ugAyGwnaAMamrq_1CmIHAAXUGh84GWfeWFtel_6Gg-MftBzDUMMBqzjRL0ZVGVhr1R3-ptNxqeODagA/7KiZpNtHKm3Q2HQ3iOE9U8qJ62cpLaAr9yIEeOPA00Y",
+              "width": 280,
+              "height": 280
             },
             "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/22qP738MKo_nPlfdILD7jg/5LRTqORIwdKOlwjd7q69lSH_XaD6CefJLR0swnLXUgp0FkNOEEWbbQAv1VNLHCPAjWyXY38rpV5yS0sk1izc1xQWLvN5owsyFHnoml4qHvdfr9Q8PtpZ6wFlb_H0lGixzk5NPEEkhVqiLlyL9m-2Ww/HUXGFANrkvwfSQCnjtOTVMu8MOeUF_8mR6P-jhKl8yQ",
-              "width": 512,
-              "height": 512
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/TFN8g29ICNNot9hdkg7QwQ/3BdBTa4MOf52m7wcoXSeHWuNKoKOvmHtGGfpcx40Lsl4jRCT7NZ0Q3_1mAQdaEbhNc1PGKaZWoFCRnTU_fWLFbcCV8VlbKduS2QPx9_5HpI7jTlabuSNWjKghtV7YmPMaAhy6F7rCYK2k7ulQ5ZguA/ktQ3V5DjD0SSCyap-bdtgaCLL_iGbtfIRHxTFg3B1UM",
+              "width": 280,
+              "height": 280
             }
           }
         },
@@ -871,36 +898,9 @@
         "IsUsed": 1,
         "ExpectedColor": "Purple",
         "LockedColorMatchesExpected": 0,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
-        "TranspilerNodeAttachments": {
-          "TranspilerNodeAttachmentsId": "attqCaVtrxGWVzv0U",
-          "width": 1012,
-          "height": 1024,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/9tPWOv5zvgQgzPes5r2o6w/6AmRxRa8sFWvJ66IklUxpxhZfmsrNTzc09RMQSRc83EDmWQvVNa1C1l06xz6Znlz0dSU3SS4Wjs789wBIUEX42y-oKQPwjyfCJsqeH77p5MMWntuyhCun21kqaNuR_wVkW0CZRBrf2jRXbSn5NMNJU55tr-nAkE53lcbzeue0YTZ8NDajuLgK9rWuowx2iJQ7xOh-3sQEyD7FGfBAOK0mw/9d5ZNYydUgBDloZjOMF8HAVK5egJiOOajaya6cwRE9I",
-          "filename": "Natural_Language_Idea_TranspilerNodeAttachments_1.png",
-          "size": 148937,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/2ew5-IGvOCLDeXNTZFHjHw/BjhO8kld-VxppmVYIUOnmQYQChpAmc8OB1mg1z1X3OPQTzoMOi970XOKcY_pWNptfFml1ROGbkBopq6pQxY6-L3XnDcKQ0HNRtSV4Zh2zyy7T7Nnz3bFV7w-dUBNPD7A_aJ5SwHxCLrl6Blz0m7U2g/eS4wDW7139VMSG-1sTa9OMyLsgGvol5Irpngn0iSkG4",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/M-_VtiI7NaS8bukw7JxnlQ/jrT8-p7-I3F6tRlg0Tv2Vbu5p-mbdTndoX3sK9FlWjX7PtrF_tulGjW8gByLECUbA3HnQafl4P_sImDv-h2NgYBA90GguEMPuO54Me1dYswPZiJR825dgpjAfLSqkDsylRc8otkqGuztzWiG_pkIxw/NaBmynzG_4HEBdL4TV7OuNHLQ1bz5nQ4IjnDBgFa7o0",
-              "width": 512,
-              "height": 518
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/zoy9vWaKCQaDnF1evaRCZw/HaQxNGgeZ8kpzF2DdXUP25FhcLgo1TBW3Do51r59rfKKtij451pzHSWKwZEGKhzc3lLo6cG90JiVF41tXPhoYAYyYrZQWePAGgLUm1OQF614S3MYW2ye4wF2yKG_4WPo8t51Kq1nIsaWAUDirU8aPw/WMJhBbrdZ8wHrTpQU88UF-3rImdry64UQFDAODle76Y",
-              "width": 1012,
-              "height": 1024
-            }
-          }
-        },
-        "ParentFreeEdgeColor": "Purple",
-        "CustomSyntaxFreeColor": "Purple"
+        "ParentFreeEdgeColor": "white",
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       },
       {
         "NodeEdgeId": "recMeKU8CK2Y8gxQZ",
@@ -909,6 +909,33 @@
         "FromSyntaxFreeEdge": "recz1ZD01x0uLZF6v",
         "EdgeName": "Markdown",
         "PrimaryDocs": "reccU1sh4etb4ERsq",
+        "LockedColor": "white",
+        "LockedAttachments": {
+          "LockedAttachmentsId": "attTvvGOLrQc02fWK",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/5ejd8zdwPLWejp7BcYgLEA/k6_MDC49FTc44Qg-huDK0O4NneawE0wMlBV7KF3YkMftq9YoPCx99rkkw9NW6ddDuYEDikkvbPlyp1W8keE8zkGxkxm-QZB333HLXmxPM5FbMkNSiyiT9ZjhfbiS59k1oB833L7-LSaxUkPNCORtNCFF7ju8wzOtFd5XdddvjP0Y26dLH1DZGngTSu6aceMY/xUQAkg3oKnzNLWhR9akJWx-OIEko61DzBS0f416ahvc",
+          "filename": "Markdown_LockedAttachments_0.png",
+          "size": 14012,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/XclEeweV7ifQA7I_V6kSjg/Ppmbn7TSKXUiaRn89HGlDGQUwrv1U5QQ-zDZg4IcGhUNZB8HMRLlbnnROgvoS6nC2yXsFZ7cuQBZMTYSz86HQE_BOTmBoRLG8oJKjeJ0a9i-J6PlBekrIW4YCEOfyF_fwycbRO7VkjA4-RxJifmUXg/quHs3d-c1gB1rPBiEISLWVgXStXtL06Dyuy5h3XGn2I",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/o0tRR3WNw222l4BkmbUF1w/tkVOcZvmbXEUBVLvqAmv1PT8WoHl8uvNCtjht0hEqzfXvttvj-0TLb9TT6FgXvyFqY-7rUX1TL28z6pVYe4NGeu4kFYeByCssLU52KYVII9htnJqu4xnk8FhL5SvkvcufaRzM5CS6_Ks5AnCLEwcbA/w7QeGWq3TAZYnvHHKeJCvLH3lIDhnvnwXNA7dON21w8",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/z0ewzRiGIfgPxinAs0q76w/viZms1QvkvOcnGSRxio1KoHTXKhWAWS17Tf48P1d4qKaUgKyW4K2LRnGiYjwJxHHMO9Kxsmwoxtk8MmZ_X7BFwaCuQHQNcAiegw4wwPJRSq4F-9daeTZVLTJdv6hbAUMmrjYLE-2HAovi670ZA0SiA/lEu9FPcxUdaAK0peyx1v5CecdjqHNJmKdpi56J7zTyA",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
         "FreeAttachments": {
           "FreeAttachmentsId": "attTvvGOLrQc02fWK",
           "width": 225,
@@ -969,6 +996,32 @@
         },
         "FromNodeFlowType": "NaturalLanguage",
         "FromNodeName": "Tickets",
+        "ToNodeAttachments": {
+          "ToNodeAttachmentsId": "attxnl6ZYwT8juCJv",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/SegYvl8mEHdbyoGfg4588Q/rc_a-SVHymehIDVLgdtCY_8Un4VPvGQI1ZdF8P7bZ3yLGKbo4naTS6UfJMSDTOOPTRf19pO0PdVEMXMQC6I5yIzoMBV1PGOwfTf0G0sH7V9l0nyBKgiJkoya_mo0yLc39ZtFnhak_APusvOSy_z8i-9fbS6fF3TsuumGKepFyR0C3fhLB-2IemEzr565BHb-/FqNO7dO9AI10eGm_7quWMUGGCZP_y5QuVnlDeRExj-I",
+          "filename": "Markdown_LockedAttachments_0.png",
+          "size": 14012,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/7Cl5LWeHy--Mc2x9hW8sAA/n7VQemIxOXDyCuyrsl2q4fKLX_BwRA0PmGlYOY4qTRsvJRjN9ihvlfgz3zB5vAiIcmN7tirh_YVwA3htrspXB232xtr00gfZxgVGrEv-vOuMJ1bRgOpIVM499xENQ5NENY8CYEHOedIUWlPErNoASQ/DvJj7YjeBdOP0wsEMJYUNCbJDxZeUFTjr0e6Q1W6K88",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/I_HlqxYBAzQyj4zjMiGRYg/MeplA_sXOHcHv3ehdMT8UatT6_PHcVD2S5r2mzFsR085jymIoJtEd7tuInSglVaNqrP5vhGg8sM5pVQgDIVgfH5y0qIkiIQIw36qFdEiN_1xUMpdPiqI7YuB8IA1_DKvWhpKlPP_siojNIgI1qD5lA/T797d8T6ZEqM71lGFD8z9PuzbPBkORML6ItzToZbuUY",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/WZsSEkBa-yY0tswNULFehw/SjIenWun6uEGoZ8FMdbzizMj5gLrrevvMtI5zZmLpld1SEkVCBQjb7SVw2_TosiGXR_X5XTo6Gqita5-w-KeLbsVrFKl7_192Bt7KxNHj6PD5HNjdtAIPg16LtVZZrHvLuT_NLy34ckmFq0WZCcLJA/9R1t0btBUI2cRTP-_asMh-aMYLRblogt7v2i5mJcQK4",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
         "ToNodeName": "Markdown",
         "TranspilerNodeAttachments": {
           "TranspilerNodeAttachmentsId": "attgfy9bxIu7bMVuq",
@@ -1084,68 +1137,6 @@
             }
           }
         },
-        "SyntaxFreeEdgeOutputFileName": "Devices.json",
-        "ToNodeOutputIsCode": "",
-        "ToNodeOutputIsDocs": "True",
-        "IsLeaf": 1,
-        "IsUsed": 1,
-        "ToNodeMasterColor": "#MD0000",
-        "ExpectedColor": "Purple",
-        "LockedColorMatchesExpected": 1,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
-        "ToNodeAttachments": {
-          "ToNodeAttachmentsId": "attxnl6ZYwT8juCJv",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/SegYvl8mEHdbyoGfg4588Q/rc_a-SVHymehIDVLgdtCY_8Un4VPvGQI1ZdF8P7bZ3yLGKbo4naTS6UfJMSDTOOPTRf19pO0PdVEMXMQC6I5yIzoMBV1PGOwfTf0G0sH7V9l0nyBKgiJkoya_mo0yLc39ZtFnhak_APusvOSy_z8i-9fbS6fF3TsuumGKepFyR0C3fhLB-2IemEzr565BHb-/FqNO7dO9AI10eGm_7quWMUGGCZP_y5QuVnlDeRExj-I",
-          "filename": "Markdown_LockedAttachments_0.png",
-          "size": 14012,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/7Cl5LWeHy--Mc2x9hW8sAA/n7VQemIxOXDyCuyrsl2q4fKLX_BwRA0PmGlYOY4qTRsvJRjN9ihvlfgz3zB5vAiIcmN7tirh_YVwA3htrspXB232xtr00gfZxgVGrEv-vOuMJ1bRgOpIVM499xENQ5NENY8CYEHOedIUWlPErNoASQ/DvJj7YjeBdOP0wsEMJYUNCbJDxZeUFTjr0e6Q1W6K88",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/I_HlqxYBAzQyj4zjMiGRYg/MeplA_sXOHcHv3ehdMT8UatT6_PHcVD2S5r2mzFsR085jymIoJtEd7tuInSglVaNqrP5vhGg8sM5pVQgDIVgfH5y0qIkiIQIw36qFdEiN_1xUMpdPiqI7YuB8IA1_DKvWhpKlPP_siojNIgI1qD5lA/T797d8T6ZEqM71lGFD8z9PuzbPBkORML6ItzToZbuUY",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/WZsSEkBa-yY0tswNULFehw/SjIenWun6uEGoZ8FMdbzizMj5gLrrevvMtI5zZmLpld1SEkVCBQjb7SVw2_TosiGXR_X5XTo6Gqita5-w-KeLbsVrFKl7_192Bt7KxNHj6PD5HNjdtAIPg16LtVZZrHvLuT_NLy34ckmFq0WZCcLJA/9R1t0btBUI2cRTP-_asMh-aMYLRblogt7v2i5mJcQK4",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
-        "LockedAttachments": {
-          "LockedAttachmentsId": "attTvvGOLrQc02fWK",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/5ejd8zdwPLWejp7BcYgLEA/k6_MDC49FTc44Qg-huDK0O4NneawE0wMlBV7KF3YkMftq9YoPCx99rkkw9NW6ddDuYEDikkvbPlyp1W8keE8zkGxkxm-QZB333HLXmxPM5FbMkNSiyiT9ZjhfbiS59k1oB833L7-LSaxUkPNCORtNCFF7ju8wzOtFd5XdddvjP0Y26dLH1DZGngTSu6aceMY/xUQAkg3oKnzNLWhR9akJWx-OIEko61DzBS0f416ahvc",
-          "filename": "Markdown_LockedAttachments_0.png",
-          "size": 14012,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/XclEeweV7ifQA7I_V6kSjg/Ppmbn7TSKXUiaRn89HGlDGQUwrv1U5QQ-zDZg4IcGhUNZB8HMRLlbnnROgvoS6nC2yXsFZ7cuQBZMTYSz86HQE_BOTmBoRLG8oJKjeJ0a9i-J6PlBekrIW4YCEOfyF_fwycbRO7VkjA4-RxJifmUXg/quHs3d-c1gB1rPBiEISLWVgXStXtL06Dyuy5h3XGn2I",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/o0tRR3WNw222l4BkmbUF1w/tkVOcZvmbXEUBVLvqAmv1PT8WoHl8uvNCtjht0hEqzfXvttvj-0TLb9TT6FgXvyFqY-7rUX1TL28z6pVYe4NGeu4kFYeByCssLU52KYVII9htnJqu4xnk8FhL5SvkvcufaRzM5CS6_Ks5AnCLEwcbA/w7QeGWq3TAZYnvHHKeJCvLH3lIDhnvnwXNA7dON21w8",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/z0ewzRiGIfgPxinAs0q76w/viZms1QvkvOcnGSRxio1KoHTXKhWAWS17Tf48P1d4qKaUgKyW4K2LRnGiYjwJxHHMO9Kxsmwoxtk8MmZ_X7BFwaCuQHQNcAiegw4wwPJRSq4F-9daeTZVLTJdv6hbAUMmrjYLE-2HAovi670ZA0SiA/lEu9FPcxUdaAK0peyx1v5CecdjqHNJmKdpi56J7zTyA",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
         "ToNodePlatformAttachments": {
           "ToNodePlatformAttachmentsId": "attMYPawd0zjKWINO",
           "width": 225,
@@ -1172,8 +1163,17 @@
             }
           }
         },
-        "LockedColor": "Purple",
-        "ParentFreeEdgeColor": "Purple"
+        "SyntaxFreeEdgeOutputFileName": "Devices.json",
+        "ToNodeOutputIsCode": "",
+        "ToNodeOutputIsDocs": "True",
+        "IsLeaf": 1,
+        "IsUsed": 1,
+        "ToNodeMasterColor": "#MD0000",
+        "ExpectedColor": "Purple",
+        "LockedColorMatchesExpected": 0,
+        "ParentFreeEdgeColor": "white",
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       },
       {
         "NodeEdgeId": "rec14YVtjaOI8k6oW",
@@ -1182,8 +1182,35 @@
         "FromSyntaxFreeEdge": "recz1ZD01x0uLZF6v",
         "EdgeName": "Python",
         "PrimaryCode": "reccU1sh4etb4ERsq",
+        "LockedColor": "white",
         "LockedAttachments": {
           "LockedAttachmentsId": "attsgt0GH5yZScawI",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/BY7uDJSY3Izii7W45YVHiQ/6lnsbT-9FlPsI1kp5tyN4fMTMkMPUop3mxYeVPCWZveqMeObJSxOXJCRpoQDVWpjQIZu7l20F29MWAlOc_U1OAMjPnPCvgPJJP0P-Glt6Rpl2VHjF9HbWRMYg3sy9tVloiQmel18i6qh7ebAd6arcA0kcs92ADcU2mYXPLx-v97R-6Oq3BQYyaB-1Ro1BeZp/Tl5D6Nmve7MRuap9P4bI_ZO1VVwRViSFCCqNX2sItno",
+          "filename": "Python_ToNodeAttachments_0.png",
+          "size": 20188,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/zKbYDA3JD7H_YATpwtIAug/-2-AWGAT44yD4-71LIFqwNCImRvXTPOQKWpyWLznQfFDEt8Gb-zLBls72Kc6K5IMMB8-OXuMvYD6Uc0T0QQW4wtbDUhWV1Jc7vmhUijLMNvygNzJWDHjtgkIzd01iB5IQYgoxbVl3CBykA5LiDqfNA/1_p53Acif6NCqB4QK7XqdvMnhBIx6D8BESl2HZB587E",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/ibCIT5tUq_KZTuwmInhO6A/oLGTrmhzgb_2QiqLveP1NLElbOb3W9cWWtSqWpcJUVt360-lholD_pi8prXnJG009oIjKv6ZQr30YbVMMAevfzcJmVSwGyZblCdaoNPXvHaUd9exr1I4QHnJ048ULoK6bzuKpDn-z6UkR3i-fdTOuw/TTo-z8XtDO2kKTmn1EXXWgEYAyiq8mzqGvub-gxBCc0",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/qifaCOGFrEbml6gQ9ArLnA/VsgDFwU3UcZSKWEzGnq7HN_0Jlg-X95mkvqgrN9iJ0UbNw76n_JAdoryJx0ideTqj5IqcNIEN8haY1sC--x7CQ-XLxbPVvejDCKsET4a2v0SkaBu4AGjnQnE3wWadt6UnPRCb6qc_LM3eOOxZYmhkw/41hQnQieITi0GfrezPsiHUQsA7V0r9p3lbIkrzvqsrk",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
+        "FreeAttachments": {
+          "FreeAttachmentsId": "attsgt0GH5yZScawI",
           "width": 225,
           "height": 225,
           "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/BY7uDJSY3Izii7W45YVHiQ/6lnsbT-9FlPsI1kp5tyN4fMTMkMPUop3mxYeVPCWZveqMeObJSxOXJCRpoQDVWpjQIZu7l20F29MWAlOc_U1OAMjPnPCvgPJJP0P-Glt6Rpl2VHjF9HbWRMYg3sy9tVloiQmel18i6qh7ebAd6arcA0kcs92ADcU2mYXPLx-v97R-6Oq3BQYyaB-1Ro1BeZp/Tl5D6Nmve7MRuap9P4bI_ZO1VVwRViSFCCqNX2sItno",
@@ -1242,6 +1269,32 @@
         },
         "FromNodeFlowType": "NaturalLanguage",
         "FromNodeName": "Tickets",
+        "ToNodeAttachments": {
+          "ToNodeAttachmentsId": "attsgt0GH5yZScawI",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/BY7uDJSY3Izii7W45YVHiQ/6lnsbT-9FlPsI1kp5tyN4fMTMkMPUop3mxYeVPCWZveqMeObJSxOXJCRpoQDVWpjQIZu7l20F29MWAlOc_U1OAMjPnPCvgPJJP0P-Glt6Rpl2VHjF9HbWRMYg3sy9tVloiQmel18i6qh7ebAd6arcA0kcs92ADcU2mYXPLx-v97R-6Oq3BQYyaB-1Ro1BeZp/Tl5D6Nmve7MRuap9P4bI_ZO1VVwRViSFCCqNX2sItno",
+          "filename": "Python_ToNodeAttachments_0.png",
+          "size": 20188,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/zKbYDA3JD7H_YATpwtIAug/-2-AWGAT44yD4-71LIFqwNCImRvXTPOQKWpyWLznQfFDEt8Gb-zLBls72Kc6K5IMMB8-OXuMvYD6Uc0T0QQW4wtbDUhWV1Jc7vmhUijLMNvygNzJWDHjtgkIzd01iB5IQYgoxbVl3CBykA5LiDqfNA/1_p53Acif6NCqB4QK7XqdvMnhBIx6D8BESl2HZB587E",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/ibCIT5tUq_KZTuwmInhO6A/oLGTrmhzgb_2QiqLveP1NLElbOb3W9cWWtSqWpcJUVt360-lholD_pi8prXnJG009oIjKv6ZQr30YbVMMAevfzcJmVSwGyZblCdaoNPXvHaUd9exr1I4QHnJ048ULoK6bzuKpDn-z6UkR3i-fdTOuw/TTo-z8XtDO2kKTmn1EXXWgEYAyiq8mzqGvub-gxBCc0",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/qifaCOGFrEbml6gQ9ArLnA/VsgDFwU3UcZSKWEzGnq7HN_0Jlg-X95mkvqgrN9iJ0UbNw76n_JAdoryJx0ideTqj5IqcNIEN8haY1sC--x7CQ-XLxbPVvejDCKsET4a2v0SkaBu4AGjnQnE3wWadt6UnPRCb6qc_LM3eOOxZYmhkw/41hQnQieITi0GfrezPsiHUQsA7V0r9p3lbIkrzvqsrk",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
         "ToNodeName": "Python",
         "TranspilerNodeAttachments": {
           "TranspilerNodeAttachmentsId": "att1FkdIWssid3LMs",
@@ -1391,62 +1444,9 @@
         "ToNodeMasterColor": "#PY0000",
         "ExpectedColor": "Purple",
         "LockedColorMatchesExpected": 0,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
-        "LockedColor": "white",
-        "FreeAttachments": {
-          "FreeAttachmentsId": "attsgt0GH5yZScawI",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/BY7uDJSY3Izii7W45YVHiQ/6lnsbT-9FlPsI1kp5tyN4fMTMkMPUop3mxYeVPCWZveqMeObJSxOXJCRpoQDVWpjQIZu7l20F29MWAlOc_U1OAMjPnPCvgPJJP0P-Glt6Rpl2VHjF9HbWRMYg3sy9tVloiQmel18i6qh7ebAd6arcA0kcs92ADcU2mYXPLx-v97R-6Oq3BQYyaB-1Ro1BeZp/Tl5D6Nmve7MRuap9P4bI_ZO1VVwRViSFCCqNX2sItno",
-          "filename": "Python_ToNodeAttachments_0.png",
-          "size": 20188,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/zKbYDA3JD7H_YATpwtIAug/-2-AWGAT44yD4-71LIFqwNCImRvXTPOQKWpyWLznQfFDEt8Gb-zLBls72Kc6K5IMMB8-OXuMvYD6Uc0T0QQW4wtbDUhWV1Jc7vmhUijLMNvygNzJWDHjtgkIzd01iB5IQYgoxbVl3CBykA5LiDqfNA/1_p53Acif6NCqB4QK7XqdvMnhBIx6D8BESl2HZB587E",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/ibCIT5tUq_KZTuwmInhO6A/oLGTrmhzgb_2QiqLveP1NLElbOb3W9cWWtSqWpcJUVt360-lholD_pi8prXnJG009oIjKv6ZQr30YbVMMAevfzcJmVSwGyZblCdaoNPXvHaUd9exr1I4QHnJ048ULoK6bzuKpDn-z6UkR3i-fdTOuw/TTo-z8XtDO2kKTmn1EXXWgEYAyiq8mzqGvub-gxBCc0",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/qifaCOGFrEbml6gQ9ArLnA/VsgDFwU3UcZSKWEzGnq7HN_0Jlg-X95mkvqgrN9iJ0UbNw76n_JAdoryJx0ideTqj5IqcNIEN8haY1sC--x7CQ-XLxbPVvejDCKsET4a2v0SkaBu4AGjnQnE3wWadt6UnPRCb6qc_LM3eOOxZYmhkw/41hQnQieITi0GfrezPsiHUQsA7V0r9p3lbIkrzvqsrk",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
-        "ToNodeAttachments": {
-          "ToNodeAttachmentsId": "attsgt0GH5yZScawI",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/BY7uDJSY3Izii7W45YVHiQ/6lnsbT-9FlPsI1kp5tyN4fMTMkMPUop3mxYeVPCWZveqMeObJSxOXJCRpoQDVWpjQIZu7l20F29MWAlOc_U1OAMjPnPCvgPJJP0P-Glt6Rpl2VHjF9HbWRMYg3sy9tVloiQmel18i6qh7ebAd6arcA0kcs92ADcU2mYXPLx-v97R-6Oq3BQYyaB-1Ro1BeZp/Tl5D6Nmve7MRuap9P4bI_ZO1VVwRViSFCCqNX2sItno",
-          "filename": "Python_ToNodeAttachments_0.png",
-          "size": 20188,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/zKbYDA3JD7H_YATpwtIAug/-2-AWGAT44yD4-71LIFqwNCImRvXTPOQKWpyWLznQfFDEt8Gb-zLBls72Kc6K5IMMB8-OXuMvYD6Uc0T0QQW4wtbDUhWV1Jc7vmhUijLMNvygNzJWDHjtgkIzd01iB5IQYgoxbVl3CBykA5LiDqfNA/1_p53Acif6NCqB4QK7XqdvMnhBIx6D8BESl2HZB587E",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/ibCIT5tUq_KZTuwmInhO6A/oLGTrmhzgb_2QiqLveP1NLElbOb3W9cWWtSqWpcJUVt360-lholD_pi8prXnJG009oIjKv6ZQr30YbVMMAevfzcJmVSwGyZblCdaoNPXvHaUd9exr1I4QHnJ048ULoK6bzuKpDn-z6UkR3i-fdTOuw/TTo-z8XtDO2kKTmn1EXXWgEYAyiq8mzqGvub-gxBCc0",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/qifaCOGFrEbml6gQ9ArLnA/VsgDFwU3UcZSKWEzGnq7HN_0Jlg-X95mkvqgrN9iJ0UbNw76n_JAdoryJx0ideTqj5IqcNIEN8haY1sC--x7CQ-XLxbPVvejDCKsET4a2v0SkaBu4AGjnQnE3wWadt6UnPRCb6qc_LM3eOOxZYmhkw/41hQnQieITi0GfrezPsiHUQsA7V0r9p3lbIkrzvqsrk",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
-        "ParentFreeEdgeColor": "Purple"
+        "ParentFreeEdgeColor": "white",
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       },
       {
         "NodeEdgeId": "recywsF6wyMFAEzce",
@@ -1454,6 +1454,59 @@
         "OutputFileName": "Index.html",
         "FromSyntaxFreeEdge": "recz1ZD01x0uLZF6v",
         "EdgeName": "HTML",
+        "LockedColor": "white",
+        "LockedAttachments": {
+          "LockedAttachmentsId": "attDNnjNWxsSsSSnl",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/c2ehQ8tP8f2RmcPk254d4Q/IuuaRV1Fyz6E-LGLtWFxa25u7UtFOcZWmlLRUPTo89IjM2qLRnTO4npR4ydtcNr2bSpi7VLE5FcwtBGw4Oj8cHcQWXq9J5iST1qKOeeI5wDWOtSzbDawdJrKCIBqvHgTSgkdIce3bS-nYPgFpUnBqcPmhmb6SXOvT5EMy0k-MvAXql3EThlgzEZNNxxJfPbz/KrP1ycZBNxClJP0D1SvwQkuPPx0q_c1LR5rQRiKXdUE",
+          "filename": "HTML_FreeAttachments_0.png",
+          "size": 24286,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/WSDBrlVfJXxswM4PJn5-gA/uW3f8jdX5kdDYJ-_aDIMeBmgGDZn4yH_7XSSHCf4zgf7xxQDIkSOQBYbIneB6BPC6_flWOhvw4z7uB4plOLyGGax1kYwiyYdLrLkhgIN_Ip4Iiu-kZdW7mcANhqtIn6tWOHgfJXjSgQFvP7Az9E7aQ/7DZEGF7btNSXA1mCporAVxlkx0wXixU0b10TX3MEWDc",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/H9GwdplF_HPEJKR3ujvmOg/FImtG2YwUN8Twf31epzlYEZTBWxaa9Xa9VL59wc3N4UERao9cF18NFy-NCsmyX30kc4D3kagp44gBDTGa9JRUYg93XAoTocFEG0yExMvypJ8_3jJ89QcPbtzUik8s-3ViCxNGP7o-MRLOWyIFefYNQ/WYmjJMB6JEdLfqAcDshXvZ8wXNW294gkxdK03rVm6LA",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/kR5SzHlE80KX98LKEav8XA/C4uRXnYmZK804UjvDq7Lm6fkRFINwvh_pPbL2WS3ltCY1Fa6Hlm_gEplqcYBwhkbFq4c1o1Y0WEe7DXka5ZeRDge27ef8Nxph3sC3oRAMp9vG4_yiS12z--naZ4LmJoWUa8peEavzpThkYA4V7uXjg/ZDQZ2AG4pvgS7cqo45-BvR_OR5j0KDY7Vybpvb5szeU",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
+        "FreeAttachments": {
+          "FreeAttachmentsId": "attNDeTFdCir5HPDr",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/W_vdQNKXL5PVDQ2ckvZJow/zelBL6Q3-i0B09H84ocyRYcIteftkAEckCwfKZ7jFzJMl0Ej9Ec6JnGtlKDuqf7NdkKPa5HegfVdNOl43v4eFp8ABQSh31wU2GGDGVr8pRKHsDEJMQpJZlvPGRgObM7qnDQY2tC_fFQ_1OBRhaHt6fihvPC_eN6nwWFLbwytt_WSVzvfH6x0-Ct59o5RbPBO/UZgbJj2HRxtSrTDqpEuoK16QOJjiIVuDmXRvaxy58Ws",
+          "filename": "HTML_FreeAttachments_0.png",
+          "size": 24286,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/UCNoIS7o_d30mKyWPULDkg/iMPciPfTWplVgkAfcCQ8q2xRxKh2YOOIzUZ8spTi9I6jB90p3sNIipQyPVu4HymNTwZuVWFhf2171ZfasvmpTW9xYFbsU4UQ2NmUhTnMF9BqEwqXHQHNk2Hdy-U6sRYPm2pqTpsI0jI_lBrlCbPc7Q/Ig1oPgLkog4cDA2OeOYvsOu-jb4DGxIP2-IAh3iTIU4",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/xqfQvZg7lWxphUvzjlXqvw/nEo2q4i-DJpA1BqR-PWwq-yp4ZyZnWOv6niyD84AekhjVdUzTrSt5W5byYJp6cFNEtdZ-Mytl0bgoNWXra1lDtxu8-hV-Dv2MGcJinOSLoBjyqgWcMI6RW85pZ9lXps2_CgFKHEpHxv-Ofj5_eU8Rw/nQePHVetbMxhMmEgsOI-OAn_hwtOXS_GyAlzr8dyxus",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/-IKzWPSkfagxayaLHpkNAw/RAyMtRINr6Uh0NBzsJ8h-05_fvLzkxD4OQEsi0ESRji-1Mmjpmz0ZBrpu9tAB9_UmHGLE5p_kVkKXyjEDxaaWHSNOYjjRB-TQSKGp9M50UZM4R2rOKD26sjPEFuDhTqCBxLhiFYLIx9V0wgH2yCj4g/sN9SEQTrelWiOjOIaQSYNlfx2SMdowSFnT73Y9ZYt6M",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
         "LockedTranspilerNode": "recRKCGMRDxSo7pe6",
         "FreeTranspilerNode": "recDQEMg6FSeoZDy0",
         "FromNode": "recLASKMSBwGJk1Hf",
@@ -1488,6 +1541,32 @@
         },
         "FromNodeFlowType": "NaturalLanguage",
         "FromNodeName": "Tickets",
+        "ToNodeAttachments": {
+          "ToNodeAttachmentsId": "attMgGp1qL3QTApVq",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/V1fjzU-bAyI7IbGiDURq6A/iyorwHFcwlQWDx_Q7dNdSIOd421J9U2tdQiMioqngrhnIk8iMKVnEETX37x4rF4WDn9ucOPXMA3uZq7d6KfVkHrK1VepkZFPnFsBVfl_kW4UMUoIltoca6aTVLtAA5qVwtygHCZ4BLFX_cVQFQdwk_tIICoYt53f5ZrdPPj_8nS4Z9-dEtL6lcouG0jiaC5k/BS5QsmJH-fwkJhJnqeldK2Vj6O1B6WhW5h9qoJ6nXI0",
+          "filename": "HTML_FreeAttachments_0.png",
+          "size": 24286,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/ZFxZ5yyDMfyEaKp8B-jsMg/IVIDe4TZu3h91R-riL_x7e9f-il0ZccJ95CShDDgqyMbwM063_JGT5bXMH5BLAUYcVoM8OqYSFDm4veuQvgB8LIi186JijFpicRUHnhtcPlPuSNprjlnMx5dxTDbXio_mCVic8KbPFb66GRek29Nyg/tk-s8EKH9ngi2ywBqM37rnUX-IyOBWb5FykkkhC3phc",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/_wvcBXzHMOK_T1EvvKTQOg/686wKOCEcnCWLbyK3sEW5hgDcJL_GvgfdjUXqkd27DEHu_dxOpyrymLQLQhAZRvokUg7PxzDCgsuPKK_HIfeZ7Og3n4CUv-jEM72Xd-TeQiSy7F325UTTUskBaZKdCoSbH_UNYXEZE43b1igGjMagg/gh27vGTli9qRT-SDyY5nZ-BspiZK4YHRFne33J6Mb1o",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/uSp7o-nKOsJ-MTI3G9EGyg/a_1EJmXXtkQIze3Al6e0kYfVERuW7TPsb8TPsZJTdtvZiJclKlonVoBBhDlhxCrzbh3dCO65Q7OR47IxTaLmyM68DHWaLsBK1eu4PD_78S4xt0vrt3rOpV4hJ9GjRgWICor-5ulOhbpmlm8wj7rxsA/KUJAOA-i9xn8BsKjrsW6V-xnt8WUDAp8mdpPNTk1ofA",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
         "ToNodeName": "HTML",
         "TranspilerNodeAttachments": {
           "TranspilerNodeAttachmentsId": "attgfy9bxIu7bMVuq",
@@ -1603,16 +1682,6 @@
             }
           }
         },
-        "SyntaxFreeEdgeOutputFileName": "Devices.json",
-        "ToNodeOutputIsCode": "",
-        "ToNodeOutputIsDocs": "True",
-        "IsLeaf": 1,
-        "IsUsed": 0,
-        "ToNodeMasterColor": "#HTML00",
-        "ExpectedColor": "Purple",
-        "LockedColorMatchesExpected": 0,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
         "ToNodePlatformAttachments": {
           "ToNodePlatformAttachmentsId": "attLaTo08bJGPkLGZ",
           "width": 225,
@@ -1639,86 +1708,17 @@
             }
           }
         },
-        "LockedColor": "white",
-        "ToNodeAttachments": {
-          "ToNodeAttachmentsId": "attMgGp1qL3QTApVq",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/V1fjzU-bAyI7IbGiDURq6A/iyorwHFcwlQWDx_Q7dNdSIOd421J9U2tdQiMioqngrhnIk8iMKVnEETX37x4rF4WDn9ucOPXMA3uZq7d6KfVkHrK1VepkZFPnFsBVfl_kW4UMUoIltoca6aTVLtAA5qVwtygHCZ4BLFX_cVQFQdwk_tIICoYt53f5ZrdPPj_8nS4Z9-dEtL6lcouG0jiaC5k/BS5QsmJH-fwkJhJnqeldK2Vj6O1B6WhW5h9qoJ6nXI0",
-          "filename": "HTML_FreeAttachments_0.png",
-          "size": 24286,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/ZFxZ5yyDMfyEaKp8B-jsMg/IVIDe4TZu3h91R-riL_x7e9f-il0ZccJ95CShDDgqyMbwM063_JGT5bXMH5BLAUYcVoM8OqYSFDm4veuQvgB8LIi186JijFpicRUHnhtcPlPuSNprjlnMx5dxTDbXio_mCVic8KbPFb66GRek29Nyg/tk-s8EKH9ngi2ywBqM37rnUX-IyOBWb5FykkkhC3phc",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/_wvcBXzHMOK_T1EvvKTQOg/686wKOCEcnCWLbyK3sEW5hgDcJL_GvgfdjUXqkd27DEHu_dxOpyrymLQLQhAZRvokUg7PxzDCgsuPKK_HIfeZ7Og3n4CUv-jEM72Xd-TeQiSy7F325UTTUskBaZKdCoSbH_UNYXEZE43b1igGjMagg/gh27vGTli9qRT-SDyY5nZ-BspiZK4YHRFne33J6Mb1o",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/uSp7o-nKOsJ-MTI3G9EGyg/a_1EJmXXtkQIze3Al6e0kYfVERuW7TPsb8TPsZJTdtvZiJclKlonVoBBhDlhxCrzbh3dCO65Q7OR47IxTaLmyM68DHWaLsBK1eu4PD_78S4xt0vrt3rOpV4hJ9GjRgWICor-5ulOhbpmlm8wj7rxsA/KUJAOA-i9xn8BsKjrsW6V-xnt8WUDAp8mdpPNTk1ofA",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
-        "LockedAttachments": {
-          "LockedAttachmentsId": "attDNnjNWxsSsSSnl",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/c2ehQ8tP8f2RmcPk254d4Q/IuuaRV1Fyz6E-LGLtWFxa25u7UtFOcZWmlLRUPTo89IjM2qLRnTO4npR4ydtcNr2bSpi7VLE5FcwtBGw4Oj8cHcQWXq9J5iST1qKOeeI5wDWOtSzbDawdJrKCIBqvHgTSgkdIce3bS-nYPgFpUnBqcPmhmb6SXOvT5EMy0k-MvAXql3EThlgzEZNNxxJfPbz/KrP1ycZBNxClJP0D1SvwQkuPPx0q_c1LR5rQRiKXdUE",
-          "filename": "HTML_FreeAttachments_0.png",
-          "size": 24286,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/WSDBrlVfJXxswM4PJn5-gA/uW3f8jdX5kdDYJ-_aDIMeBmgGDZn4yH_7XSSHCf4zgf7xxQDIkSOQBYbIneB6BPC6_flWOhvw4z7uB4plOLyGGax1kYwiyYdLrLkhgIN_Ip4Iiu-kZdW7mcANhqtIn6tWOHgfJXjSgQFvP7Az9E7aQ/7DZEGF7btNSXA1mCporAVxlkx0wXixU0b10TX3MEWDc",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/H9GwdplF_HPEJKR3ujvmOg/FImtG2YwUN8Twf31epzlYEZTBWxaa9Xa9VL59wc3N4UERao9cF18NFy-NCsmyX30kc4D3kagp44gBDTGa9JRUYg93XAoTocFEG0yExMvypJ8_3jJ89QcPbtzUik8s-3ViCxNGP7o-MRLOWyIFefYNQ/WYmjJMB6JEdLfqAcDshXvZ8wXNW294gkxdK03rVm6LA",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/kR5SzHlE80KX98LKEav8XA/C4uRXnYmZK804UjvDq7Lm6fkRFINwvh_pPbL2WS3ltCY1Fa6Hlm_gEplqcYBwhkbFq4c1o1Y0WEe7DXka5ZeRDge27ef8Nxph3sC3oRAMp9vG4_yiS12z--naZ4LmJoWUa8peEavzpThkYA4V7uXjg/ZDQZ2AG4pvgS7cqo45-BvR_OR5j0KDY7Vybpvb5szeU",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
-        "FreeAttachments": {
-          "FreeAttachmentsId": "attNDeTFdCir5HPDr",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/W_vdQNKXL5PVDQ2ckvZJow/zelBL6Q3-i0B09H84ocyRYcIteftkAEckCwfKZ7jFzJMl0Ej9Ec6JnGtlKDuqf7NdkKPa5HegfVdNOl43v4eFp8ABQSh31wU2GGDGVr8pRKHsDEJMQpJZlvPGRgObM7qnDQY2tC_fFQ_1OBRhaHt6fihvPC_eN6nwWFLbwytt_WSVzvfH6x0-Ct59o5RbPBO/UZgbJj2HRxtSrTDqpEuoK16QOJjiIVuDmXRvaxy58Ws",
-          "filename": "HTML_FreeAttachments_0.png",
-          "size": 24286,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/UCNoIS7o_d30mKyWPULDkg/iMPciPfTWplVgkAfcCQ8q2xRxKh2YOOIzUZ8spTi9I6jB90p3sNIipQyPVu4HymNTwZuVWFhf2171ZfasvmpTW9xYFbsU4UQ2NmUhTnMF9BqEwqXHQHNk2Hdy-U6sRYPm2pqTpsI0jI_lBrlCbPc7Q/Ig1oPgLkog4cDA2OeOYvsOu-jb4DGxIP2-IAh3iTIU4",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/xqfQvZg7lWxphUvzjlXqvw/nEo2q4i-DJpA1BqR-PWwq-yp4ZyZnWOv6niyD84AekhjVdUzTrSt5W5byYJp6cFNEtdZ-Mytl0bgoNWXra1lDtxu8-hV-Dv2MGcJinOSLoBjyqgWcMI6RW85pZ9lXps2_CgFKHEpHxv-Ofj5_eU8Rw/nQePHVetbMxhMmEgsOI-OAn_hwtOXS_GyAlzr8dyxus",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/-IKzWPSkfagxayaLHpkNAw/RAyMtRINr6Uh0NBzsJ8h-05_fvLzkxD4OQEsi0ESRji-1Mmjpmz0ZBrpu9tAB9_UmHGLE5p_kVkKXyjEDxaaWHSNOYjjRB-TQSKGp9M50UZM4R2rOKD26sjPEFuDhTqCBxLhiFYLIx9V0wgH2yCj4g/sN9SEQTrelWiOjOIaQSYNlfx2SMdowSFnT73Y9ZYt6M",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
-        "ParentFreeEdgeColor": "Purple"
+        "SyntaxFreeEdgeOutputFileName": "Devices.json",
+        "ToNodeOutputIsCode": "",
+        "ToNodeOutputIsDocs": "True",
+        "IsLeaf": 1,
+        "IsUsed": 0,
+        "ToNodeMasterColor": "#HTML00",
+        "ExpectedColor": "Purple",
+        "LockedColorMatchesExpected": 0,
+        "ParentFreeEdgeColor": "white",
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       },
       {
         "NodeEdgeId": "recrNnaQy2TuPlbIQ",
@@ -1726,6 +1726,33 @@
         "OutputFileName": "Home.WIKI",
         "FromSyntaxFreeEdge": "recz1ZD01x0uLZF6v",
         "EdgeName": "WIKI",
+        "LockedColor": "white",
+        "LockedAttachments": {
+          "LockedAttachmentsId": "atthXj1wCCVYKvQZn",
+          "width": 225,
+          "height": 225,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/e5YEvvhKWgGffa5BWWirIQ/rI3xB-_2hVtXWlvtAoEzQjdnNIcuO8-J80vxwENUBLxRs8NeZNfyEP8o5DkLopnfUwF6vUwCoIagS0iM-HLM0mBYITesaojeqLPY-M8b7atz0XJZDfZ1NtPZjcmVmg-M6ZvD9fCljU7JFg7WnjAxqJUyrNdA9OMU15xFSVz44wzZ8ZY7QD5rz62oNaVN6_JA/nAIFPl1-ojbmvr9w763nGt-nqC6Q--I7cKtIt2Z4y3M",
+          "filename": "WIKI_LockedAttachments_0.png",
+          "size": 17015,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/xd0Uek5BEoo10N_XRQu74w/V6WoqLKmi_1FyNToIIX6FtBzBsm8PV1H3aAPF_mDVTYv_-0Ole2mraZCfrBGLz_UIj1CaEBYLf17bEn-tsR5G3L8yQkR19jqjkVZA8MJUnxOfVxugn2CAuMdBBncx_dVrT_aXV_OoYpSNCEzeZi6Cw/uZQ4blCwvauICAgVBTiqw7jW7bzdW5a-LUrFrpENgeI",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/RhT2SfhFhjj1w7hamt5uHQ/dpZjxJzEatpiRPqpOk-kHrvcWHmx08eJbVohb9rq6c7h5vtWgLTACECo1MtBX4U09020vwHzbXsuaGtGlEeMO2N1zMfysxsMCJRQ-kyUl8pQyTMEsbjUPvTU-ZTCIgFEvwSw-tllduwyXeVqpf8c5A/miLEJ_jT4obCqUY27Cn2S9ub2Y1ZC0ureDGaMqWaZxM",
+              "width": 225,
+              "height": 225
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/TQIZJlVestpenoDUxvJaaw/6CvJejh6CUnAS-WJJBqmTNET0Ri6d5JlyoqV2MUyy7Ccgg2HjTwllvA4GHU33i_cFox6na2J5BFfyiVCqwf_Cka13JA7vLS3aINhf82V-Ei0YKADqrIx4nPHtJpFn164mXcJUjOd3LQTHEyCgZt-og/UjWZMyyAUXXXSvsYPPW2tFttUuTWAaelt3E3v0Ivi_w",
+              "width": 225,
+              "height": 225
+            }
+          }
+        },
         "FreeAttachments": {
           "FreeAttachmentsId": "atthXj1wCCVYKvQZn",
           "width": 225,
@@ -1961,36 +1988,9 @@
         "ToNodeMasterColor": "#WIKI00",
         "ExpectedColor": "Purple",
         "LockedColorMatchesExpected": 0,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
-        "LockedAttachments": {
-          "LockedAttachmentsId": "atthXj1wCCVYKvQZn",
-          "width": 225,
-          "height": 225,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/e5YEvvhKWgGffa5BWWirIQ/rI3xB-_2hVtXWlvtAoEzQjdnNIcuO8-J80vxwENUBLxRs8NeZNfyEP8o5DkLopnfUwF6vUwCoIagS0iM-HLM0mBYITesaojeqLPY-M8b7atz0XJZDfZ1NtPZjcmVmg-M6ZvD9fCljU7JFg7WnjAxqJUyrNdA9OMU15xFSVz44wzZ8ZY7QD5rz62oNaVN6_JA/nAIFPl1-ojbmvr9w763nGt-nqC6Q--I7cKtIt2Z4y3M",
-          "filename": "WIKI_LockedAttachments_0.png",
-          "size": 17015,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/xd0Uek5BEoo10N_XRQu74w/V6WoqLKmi_1FyNToIIX6FtBzBsm8PV1H3aAPF_mDVTYv_-0Ole2mraZCfrBGLz_UIj1CaEBYLf17bEn-tsR5G3L8yQkR19jqjkVZA8MJUnxOfVxugn2CAuMdBBncx_dVrT_aXV_OoYpSNCEzeZi6Cw/uZQ4blCwvauICAgVBTiqw7jW7bzdW5a-LUrFrpENgeI",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/RhT2SfhFhjj1w7hamt5uHQ/dpZjxJzEatpiRPqpOk-kHrvcWHmx08eJbVohb9rq6c7h5vtWgLTACECo1MtBX4U09020vwHzbXsuaGtGlEeMO2N1zMfysxsMCJRQ-kyUl8pQyTMEsbjUPvTU-ZTCIgFEvwSw-tllduwyXeVqpf8c5A/miLEJ_jT4obCqUY27Cn2S9ub2Y1ZC0ureDGaMqWaZxM",
-              "width": 225,
-              "height": 225
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714377600000/TQIZJlVestpenoDUxvJaaw/6CvJejh6CUnAS-WJJBqmTNET0Ri6d5JlyoqV2MUyy7Ccgg2HjTwllvA4GHU33i_cFox6na2J5BFfyiVCqwf_Cka13JA7vLS3aINhf82V-Ei0YKADqrIx4nPHtJpFn164mXcJUjOd3LQTHEyCgZt-og/UjWZMyyAUXXXSvsYPPW2tFttUuTWAaelt3E3v0Ivi_w",
-              "width": 225,
-              "height": 225
-            }
-          }
-        },
-        "LockedColor": "white",
-        "ParentFreeEdgeColor": "Purple"
+        "ParentFreeEdgeColor": "white",
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       },
       {
         "NodeEdgeId": "recoM7sXymUqMcHOD",
@@ -1998,6 +1998,7 @@
         "OutputFileName": "Arduino.ino",
         "FromSyntaxFreeEdge": "recz1ZD01x0uLZF6v",
         "EdgeName": "C++",
+        "LockedColor": "white",
         "LockedAttachments": {
           "LockedAttachmentsId": "attyMuHOF8XQG5bkw",
           "width": 226,
@@ -2259,10 +2260,9 @@
         "ToNodeMasterColor": "#CPP00",
         "ExpectedColor": "Purple",
         "LockedColorMatchesExpected": 0,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
-        "LockedColor": "white",
-        "ParentFreeEdgeColor": "Purple"
+        "ParentFreeEdgeColor": "white",
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       },
       {
         "NodeEdgeId": "rec11rT2uuSTtC4Yn",
@@ -2270,6 +2270,7 @@
         "OutputFileName": "MachineController.cs",
         "FromSyntaxFreeEdge": "recz1ZD01x0uLZF6v",
         "EdgeName": "C#",
+        "LockedColor": "white",
         "LockedAttachments": {
           "LockedAttachmentsId": "attT1XkTC0CEbXhHf",
           "width": 212,
@@ -2531,10 +2532,9 @@
         "ToNodeMasterColor": "#CSHARP0",
         "ExpectedColor": "Purple",
         "LockedColorMatchesExpected": 0,
-        "SyntaxFreeColor": "Purple",
-        "FreeColorMatchesExpected": 1,
-        "LockedColor": "white",
-        "ParentFreeEdgeColor": "Purple"
+        "ParentFreeEdgeColor": "white",
+        "SyntaxFreeColor": "white",
+        "FreeColorMatchesExpected": 0
       }
     ]
   }

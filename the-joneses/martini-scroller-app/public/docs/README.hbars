@@ -15,7 +15,8 @@
   h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1.5em;
   }
 
   .match-status {
@@ -29,6 +30,7 @@
 
   .goal {
   }
+
   .current {
     float: left; 
   }
@@ -64,15 +66,15 @@
 
   .platform-image {
     margin: 0.5rem; 
+    margin-left: 2em;
+    margin-top: 2em;
     width: 6rem; 
-    float: left; 
-    margin-top: 0;
   }
 
   .from-node-image {
     padding: 0rem; 
     border-right: dashed black 3px; 
-    height: 27rem;
+    height: 19rem;
     padding-top: 0;
   }
 
@@ -128,29 +130,34 @@
         <table style="border: none; width: 100%">
           <tbody>
             <tr>
-            <td valign="top">
-              <div class="from-node-image">
-                {{#if FromNodeAttachments}}
-                  {{#each FromNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromNodeAttachments_{{@index}}.png" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
-                {{/if}}
+              <td valign="top" style="background-color: {{ExpectedColor}};">
+                <div class="from-node-image">
+                  {{#if FromNodeAttachments}}
+                    {{#each FromNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromNodeAttachments_{{@index}}.png" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
+                  {{/if}}
+                  <div>
+                    {{#if ToNodePlatformAttachments}}
+                      {{#each ToNodePlatformAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodePlatformAttachments_{{@index}}.png" alt="To Node Platform Attachment Image" class="platform-image">{{/each}}
+                    {{/if}}
+                  </div>
                 </div>
               </div>
             </td>
             <td valign="top">
               <table><tr>
                 <td>
-                  <div class="match-status goal match-row row in-sync" style="background-color: {{ExpectedColor}};">Goal: {{ExpectedColor}}</div>
                 </td>
                 <td valign="top">
-                  <div class="match-status current match-row {{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{LockedColor}};"> vs. SYNTAX-LOCKED {{LockedColor}}
+                  <div class="match-status current {{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{LockedColor}};"> vs. SYNTAX-LOCKED {{LockedColor}}
                     {{#unless (eq LockedColor ExpectedColor)}}
                       <div class="stale">⬆ STALE ⬆</div>
                     {{/unless}}
                   </div>
                 </td>
-                <tr><td colSpan="3">
-                  <h2> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}} ➡ {{EdgeName}}</h2>
-                </td></tr>
+                <tr><td colSpan="1">
+                  <h2>{{FromNodeName}} {{#if (eq IsUsed 0)}} ( unused ){{/if}}</h2>
+                </td>
+                <td colspan="2"><h2>➡ {{EdgeName}}</h2></td></tr>
                 <tr><td colSpan="1">
                   {{#if TranspilerNodeAttachments}}
                     {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
@@ -159,7 +166,7 @@
                 </td><td colspan="2">
                   <div style="display: block;">
                     {{#if ToNodeAttachments}}
-                      {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">{{/each}}
+                      {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">{{/each}}
                     {{/if}}
                   </div>
 
@@ -170,11 +177,6 @@
                   <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
-            </td>          
-            <td halign="right" valign="top">
-              {{#if ToNodePlatformAttachments}}
-                {{#each ToNodePlatformAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodePlatformAttachments_{{@index}}.png" alt="To Node Platform Attachment Image" class="platform-image">{{/each}}
-              {{/if}}
             </td></tr>
           </tbody>
         </table>
@@ -187,7 +189,7 @@
 
 
 </td>
-<td valign="top">
+<td valign="top" style="max-width: 50rem;">
 
 
   <hr></hr>
@@ -202,7 +204,7 @@
       {{#unless false}}
 
         <table style="border: none; width: 100%;"><tr>
-        <td valign="top">
+        <td valign="top" style="display: none">
           <div class="from-node-image">
             {{#if FromNodeAttachments}}
               {{#each FromNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromNodeAttachments_{{@index}}.png" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
@@ -213,7 +215,6 @@
         <td valign="top">
           <table><tr>
             <td>
-              <div class="match-status goal match-row in-sync" style="background-color: {{ExpectedColor}};">Goal: {{ExpectedColor}}</div>
             </td>
             <td valign="top">
               <div class="match-status current match-row  {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{SyntaxFreeColor}};"> vs. SYNTAX-FREE {{SyntaxFreeColor}}
@@ -226,9 +227,10 @@
 
 
             </td>
-            <tr><td colSpan="2">          
-              <h2> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  ➡ {{EdgeName}}</h2>
-            </td></tr>
+            <tr><td colSpan="1">          
+              <h2>{{FromNodeName}} {{#if (eq IsUsed 0)}} ( unused ){{/if}}</h2>
+            </td>
+            <td colspan="2"><h2>➡ {{EdgeName}}</h2></td></tr>
             <tr><td colSpan="1">          
               {{#if TranspilerNodeAttachments}}
                 {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
@@ -244,7 +246,7 @@
               {{/if}}
 
               {{#if ToNodeAttachments}}
-                {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">{{/each}}
+                {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">{{/each}}
               {{/if}}
 
               <div style="display: block; clear: left;">
@@ -257,12 +259,6 @@
             </td></tr>
 
           </table>
-        </td>          
-        <td halign="right" valign="top">
-          {{#if ToNodePlatformAttachments}}
-            {{#each ToNodePlatformAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodePlatformAttachments_{{@index}}.png" alt="To Node Platform Attachment Image" class="platform-image">{{/each}}
-          {{/if}}
-
         </td></tr>
         </table>
         </div>
