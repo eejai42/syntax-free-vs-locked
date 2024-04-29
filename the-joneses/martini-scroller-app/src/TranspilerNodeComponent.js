@@ -3,14 +3,13 @@ import React from 'react';
 const TranspilerNodeComponent = ({ transpilerItem, isSyntaxLocked = false }) => {
   const baseImageUrl = "transpiler-images"; // Base URL for images, adjust based on actual path
 
-  const renderAttachments = (attachments, nodeName, edgeName, attachmentType) => {
+  const renderAttachments = (attachments, nodeName, edgeName, attachmentType, float = 'left') => {
     return (attachments?.length) ? (attachments.map((attachment, index) => (
-      <div><img key={index}
+      <img key={index}
           src={`${baseImageUrl}/${nodeName.replace(/ /g, '_')}/${edgeName.replace(/ /g, '_').replace(/#/g, '%23')}_${attachmentType}_${index}.png`}
           alt={`${attachmentType} Image`}
-          style={{ margin: '0.5rem', width: '6rem' }}
-        />
-      </div>
+          style={{ margin: '0.5rem', width: '6rem', float: {float} }}
+        />      
     ))) : null;
   };
 
@@ -35,13 +34,13 @@ const TranspilerNodeComponent = ({ transpilerItem, isSyntaxLocked = false }) => 
           {transpilerItem.TranspilerNodeAttachments && renderAttachments(transpilerItem.TranspilerNodeAttachments, transpilerItem.FromNodeName, transpilerItem.EdgeName, "TranspilerNodeAttachments")}
           <h4>{transpilerItem.TransformerNodeName}</h4>
         </div>
-        <div>
-          {transpilerItem.FromEdgeFreeAttachments && renderAttachments(transpilerItem.FromEdgeFreeAttachments, transpilerItem.FromNodeName, transpilerItem.EdgeName, "FromEdgeFreeAttachments")}
-          {transpilerItem.FreeTranspilerAttachments && renderAttachments(transpilerItem.FreeTranspilerAttachments, transpilerItem.FromNodeName, transpilerItem.EdgeName, "FreeTranspilerAttachments")}
-          {transpilerItem.ToNodeAttachments && renderAttachments(transpilerItem.ToNodeAttachments, transpilerItem.FromNodeName, transpilerItem.EdgeName, "ToNodeAttachments")}
+        <div style={{width: '25em', textAlign: 'right'}}>
+        {transpilerItem.FromEdgeFreeAttachments?.length ? renderAttachments(transpilerItem.FromEdgeFreeAttachments, transpilerItem.FromNodeName, transpilerItem.EdgeName, "FromEdgeFreeAttachments", 'right') : null}
+          {transpilerItem.FreeTranspilerAttachments?.length ? renderAttachments(transpilerItem.FreeTranspilerAttachments, transpilerItem.FromNodeName, transpilerItem.EdgeName, "FreeTranspilerAttachments", 'right') : null}
+          {transpilerItem.ToNodeAttachments?.length ? renderAttachments(transpilerItem.ToNodeAttachments, transpilerItem.FromNodeName, transpilerItem.EdgeName, "ToNodeAttachments", 'right') : null}
         </div>
       </div>
-      <div>
+      <div style={{ textAlign: 'right'}}>
         <strong>{transpilerItem.OutputFileName}</strong>
       </div>
       <div style={{ textAlign: 'right' }}>
@@ -49,7 +48,7 @@ const TranspilerNodeComponent = ({ transpilerItem, isSyntaxLocked = false }) => 
       </div>
     </div>) : (
         <div>Missing</div>
-      )};
+      )}
     </div>
   );
 };

@@ -29,7 +29,7 @@ const TechShouldFlowPage = ({ demoFlow }) => {
               </div>
             </td>
             <td valign="top">
-              <div key={index} style={{maxWidth: '35em', marginTop: '-1em'}}>
+              <div key={index} style={{maxwidth: '45em', width: '38em', marginTop: '-1em'}}>
                 <TranspilerNodeComponent
                   transpilerItem={item}
                   isSyntaxLocked={true}
@@ -37,7 +37,7 @@ const TechShouldFlowPage = ({ demoFlow }) => {
               </div>
             </td>
             <td valign="top">
-              <div key={index}  style={{maxWidth: '35em', marginTop: '-1em'}}>
+              <div key={index}  style={{maxwidth: '45em', width: '38em', marginTop: '-1em'}}>
                 <TranspilerNodeComponent transpilerItem={item}
                   isSyntaxLocked={false}
                   />
