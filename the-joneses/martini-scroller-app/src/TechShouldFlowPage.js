@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import TranspilerNodeComponent from "./TranspilerNodeComponent";
+import TranspilerRowHeaderComponent from "./TranspilerRowHeaderComponent";
 
 const TechShouldFlowPage = ({ demoFlow }) => {
   const data = demoFlow.DataFlow;
@@ -14,23 +15,35 @@ const TechShouldFlowPage = ({ demoFlow }) => {
       Tech should followAlong
       <table>
         <tr>
-          <td valign="top">
-            <h3>Syntax Locked</h3>
-            {data.map((item, index) => (
+          <th>Goal</th>
+          <th>Syntax Locked</th>
+          <th>Syntax Free</th>
+        </tr>
+        {data.map((item, index) => (
+          <tr>
+            <td valign="top">
               <div key={index}>
-                <TranspilerNodeComponent transpilerItem={item} syntaxLocked={true} />
+                <TranspilerRowHeaderComponent
+                  transpilerItem={item}
+                  rowKey={true}
+                />
               </div>
-            ))}
-          </td>
-          <td valign="top">
-            <h3>Syntax Free</h3>
-            {data.map((item, index) => (
+            </td>
+            <td valign="top">
+              <div key={index}>
+                <TranspilerNodeComponent
+                  transpilerItem={item}
+                  syntaxLocked={true}
+                />
+              </div>
+            </td>
+            <td valign="top">
               <div key={index}>
                 <TranspilerNodeComponent transpilerItem={item} />
               </div>
-            ))}
-          </td>
-        </tr>
+            </td>
+          </tr>
+        ))}
       </table>
     </div>
   );
