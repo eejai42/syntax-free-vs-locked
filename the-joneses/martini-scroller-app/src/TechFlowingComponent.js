@@ -7,8 +7,8 @@ const TechFlowingComponent = ({ demoFlow, showUsed }) => {
   return (
     <table>
         <tr>
-          <th>Goal</th>
-          <th>Syntax Locked</th>
+        <th>Syntax Locked</th>
+          <th>Technology</th>
           <th>Syntax Free</th>
         </tr>
         {demoFlow.reduce((acc, item) => {
@@ -20,17 +20,17 @@ const TechFlowingComponent = ({ demoFlow, showUsed }) => {
         }, []).map((item, index) => (
           <tr>
             <td valign="top">
-              <div key={index}>
-                <TranspilerRowHeaderComponent
-                  transpilerItem={item}
-                />
-              </div>
-            </td>
-            <td valign="top">
               <div key={index} style={{maxwidth: '45em', width: '38em', marginTop: '-1em'}}>
                 <TranspilerNodeComponent
                   transpilerItem={item}
                   isSyntaxLocked={true}
+                />
+              </div>
+            </td>
+            <td valign="top">
+              <div key={index}>
+                <TranspilerRowHeaderComponent
+                  transpilerItem={item}
                 />
               </div>
             </td>
