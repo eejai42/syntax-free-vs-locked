@@ -21,7 +21,7 @@
   .match-status {
     font-weight: bold; 
     width: 15rem; 
-    min-height: 3rem; 
+    min-height: 1.5rem; 
     border: solid black 1px"
     text-align: center;
     color: #dddddd; 
@@ -41,8 +41,10 @@
   }
 
   .in-sync {
-    padding-left: 1em;
-    border: solid green 10px;
+    height: 1em;
+    margin: 10px;
+    font-weight: normal;
+    text-align: center;
     background-color: #edfded;
   }
 
@@ -59,9 +61,7 @@
     text-align: center; background-color: #FFFFFF; 
     margin-left: auto; margin-right: auto
   }
-  .match-row {
-    min-height: 3rem;
-  }
+
   .platform-image {
     margin: 0.5rem; 
     width: 6rem; 
@@ -88,15 +88,15 @@
   }
 
   .transpiler-node {
-    height: 30rem;
+    height: 20rem;
     margin: 0rem;
     border: solid purple 2px;
   }
 
 
   .missing-layer {
-    margin: 10%; 
-    padding: 15%;
+    margin: 5%; 
+    padding: 5%;
     background-color: #eeee00;
     border-radius: 3em;
   }
@@ -121,7 +121,7 @@
       <div class="transpiler-node {{#if (eq IsUsed 0)}}unused{{else}}{{#unless (eq (length LockedColor) 0)}}{{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}{{/unless}}{{/if}}">
 
       {{#if (eq (length LockedColor) 0)}}
-        <div style="margin: 0.5rem; height: 30rem; text-align: center; horizontal-align: middle;">
+        <div style="margin: 0.5rem; height: 20rem; text-align: center; horizontal-align: middle;">
           <div class="missing-layer">-- Missing Layer --</div>
         </div>
       {{else}}
@@ -151,24 +151,23 @@
                 <tr><td colSpan="3">
                   <h2> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}} ➡ {{EdgeName}}</h2>
                 </td></tr>
-                <tr><td colSpan="2">
+                <tr><td colSpan="1">
                   {{#if TranspilerNodeAttachments}}
                     {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
                   {{/if}}
                   <h4 style="clear: left">{{TransformerNodeName}}</h4>
-                </td></tr>
-                <tr><td>
+                </td><td colspan="2">
                   <div style="display: block;">
-                  {{#if ToNodeAttachments}}
-                    {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">{{/each}}
-                  {{/if}}
-                </div>
+                    {{#if ToNodeAttachments}}
+                      {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 8rem;">{{/each}}
+                    {{/if}}
+                  </div>
 
-                <div>
-                  <b>{{ToNodeType}}</b> {{ToNodeName}}  ➡ {{OutputFileName}}</b>
-                </div>
-                
-                <div style="display: block; clear: left;"></div>
+                  <div>
+                    <b>{{ToNodeType}}</b> {{ToNodeName}}  ➡ {{OutputFileName}}</b>
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
                 </td></tr>
               </table>
             </td>          
@@ -230,13 +229,12 @@
             <tr><td colSpan="2">          
               <h2> {{#if (eq IsUsed 0)}} ****** UNUSED ******* {{/if}}{{FromNodeName}}  ➡ {{EdgeName}}</h2>
             </td></tr>
-            <tr><td colSpan="2">          
+            <tr><td colSpan="1">          
               {{#if TranspilerNodeAttachments}}
                 {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
               {{/if}}
               <h4 style="clear: left">{{TransformerNodeName}}</h4>
-            </td></tr>
-            <tr><td colSpan="2">
+            </td><td colSpan="2">
               {{#if FromEdgeFreeAttachments}}
                 {{#each FromEdgeFreeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromEdgeFreeAttachments_{{@index}}.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">{{/each}}
               {{/if}}
