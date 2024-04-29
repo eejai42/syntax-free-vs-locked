@@ -20,7 +20,6 @@ const TranspilerRowHeaderComponent = ({ transpilerItem }) => {
           src={imagePath('FromNodeAttachments', index)}
           alt="From Node Attachment Image"
           className="from-node-attachment"
-          style={{ width: '100%', marginBottom: '0.5rem' }}
         />
       ))}
       <div style={{ color: 'white', fontWeight: 'bold', textAlign: 'center' }}>
@@ -32,7 +31,6 @@ const TranspilerRowHeaderComponent = ({ transpilerItem }) => {
           src={imagePath('ToNodePlatformAttachments', index)}
           alt="To Node Platform Attachment Image"
           className="platform-image"
-          style={{ width: '50%', margin: '0.5rem', marginLeft: '2.5em' }}
         />
       ))}
       <div style={{ color: 'white', fontWeight: 'bold', textAlign: 'center' }}>

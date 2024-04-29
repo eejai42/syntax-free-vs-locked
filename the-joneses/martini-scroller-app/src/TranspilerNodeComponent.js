@@ -15,11 +15,7 @@ const TranspilerNodeComponent = ({ transpilerItem, isSyntaxLocked = false }) => 
   };
 
   return (
-    <div className="transpiler-node" style={{
-      border: '3px solid #eeeeee',
-      minHeight: '23rem',
-      margin: '1rem',
-      padding: '1rem'
+    <div className={'transpiler-node ' + (transpilerItem.LockedColor === transpilerItem.ExpectedColor ? 'in-sync' : 'out-of-sync')} style={{
     }}>
       {(isSyntaxLocked == 0 || transpilerItem.LockedColor ) ?  (
 <div>

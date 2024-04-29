@@ -20,7 +20,7 @@ const TechFlowingComponent = ({ demoFlow, showUsed }) => {
         }, []).map((item, index) => (
           <tr>
             <td valign="top">
-              <div key={index} style={{maxwidth: '45em', width: '38em', marginTop: '-1em'}}>
+              <div key={index} style={{maxwidth: '45em', width: '38em', marginTop: '0em'}}>
                 <TranspilerNodeComponent
                   transpilerItem={item}
                   isSyntaxLocked={true}
@@ -35,7 +35,7 @@ const TechFlowingComponent = ({ demoFlow, showUsed }) => {
               </div>
             </td>
             <td valign="top">
-              <div key={index}  style={{maxwidth: '45em', width: '38em', marginTop: '-1em'}}>
+              <div key={index}  style={{maxwidth: '45em', width: '38em', marginTop: '0em'}}>
                 <TranspilerNodeComponent transpilerItem={item}
                   isSyntaxLocked={false}
                   />
