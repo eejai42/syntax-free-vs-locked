@@ -27,12 +27,14 @@
 
   .match-status {
     font-weight: bold; 
-    width: 40em; 
+    font-size: 1.3em;
+    width: 30em; 
     margin-left: 1em;
     min-height: 1.5rem; 
     border: solid black 1px"
     text-align: center;
-    color: #dddddd; 
+    color: #aaaaaa; 
+    text-align: center;
   }
 
   .goal {
@@ -71,7 +73,7 @@
 
   .stale {
     color: red; 
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold; 
     width: 90%; 
     text-align: center; 
@@ -108,9 +110,10 @@
 
   .transpiler-node {
     padding-before: 2em;
+    min-width: 45rem;
     height: 23rem;
     margin: 0rem;
-    border: solid purple 2px;
+    border: solid #eeeeee 3px;
   }
 
 
@@ -125,11 +128,9 @@
 
 <table style="max-width: 100rem;">
 <tbody>
-<tr><td valign="top" style="max-width: 60rem;">
-<hr></hr>
+<tr><td valign="top" style="max-width: 55rem;">
 
-<h1 style="text-align: center">Syntax-Locked Methodology</h1>
-<hr></hr>
+<h1 style="text-align: center; wrap: none;">Syntax-Locked Methodology</h1>
 
   {{#each this }}
     {{#each this }}
@@ -158,34 +159,36 @@
                 </div>
               </div>
             </td>
-            <td valign="top" style="padding: 1em;">
+            <td valign="top" style="padding: 0.25em;">
       {{#if (eq (length LockedColor) 0)}}
         <div style="margin: 0.5rem; margin-bottom: 2rem; text-align: center; horizontal-align: middle;">
           <div class="missing-layer">-- Missing Layer --</div>
         </div>
       {{else}}
-              <table cellpadding="20"><tr>
+              <table><tr>
                 <td valign="top" colspan="3">
-                  <div class="match-status current {{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{LockedColor}};"> vs. SYNTAX-LOCKED {{LockedColor}}
+                  <div class="match-status current {{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{LockedColor}};">{{LockedColor}}
                     {{#unless (eq LockedColor ExpectedColor)}}
-                      <div class="stale">⬆ STALE ⬆</div>
+                      <div class="stale">Stale Artifacts</div>
                     {{/unless}}
                   </div>
                 </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
                 <tr><td colSpan="1">
                   {{#if TranspilerNodeAttachments}}
                     {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
                   {{/if}}
                   <h4 style="clear: left">{{TransformerNodeName}}</h4>
-                </td><td colspan="2">
+                </td><td colspan="2" style="text-align: center">
                   <div style="display: block;">
                     {{#if ToNodeAttachments}}
                       {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">{{/each}}
                     {{/if}}
                   </div>
 
-                  <div>➡ {{OutputFileName}}</di>
-                  <div>
+                  <div>➡ {{OutputFileName}}</div>
+                  <div style="text-align: right; padding: 0.5em;">
                     <b>{{ToNodeType}}</b> {{ToNodeName}}
                   </div>
                   
@@ -208,11 +211,9 @@
 <td valign="top" style="max-width: 55rem;">
 
 
-  <hr></hr>
 
 <h1 style="text-align: center">Syntax-Free Methodology</h1>
 
-  <hr></hr>
   {{#each this }}
     {{#each this }}
         <div class="transpiler-node {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}">
@@ -229,48 +230,59 @@
             </div>
           </div>
         </td>
-        <td valign="top" style="padding: 1em;">
-          <table cellpadding="20"><tr>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
             <td valign="top" colspan="3">
-              <div class="match-status current match-row  {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{SyntaxFreeColor}};"> vs. SYNTAX-FREE {{SyntaxFreeColor}}
+              <div class="match-status current match-row  {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{SyntaxFreeColor}};">{{SyntaxFreeColor}}
               
               {{#unless (eq SyntaxFreeColor ExpectedColor)}}
-                <div class="stale">⬆ STALE ⬆</div>
+                <div class="stale">Stale Artifacts</div>
               {{/unless}}
 
               </div>
 
 
             </td>
-            <tr><td colSpan="1">          
-              {{#if TranspilerNodeAttachments}}
-                {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
-              {{/if}}
-              <h4 style="clear: left">{{TransformerNodeName}}</h4>
-            </td><td colSpan="2">
-              {{#if FromEdgeFreeAttachments}}
-                {{#each FromEdgeFreeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromEdgeFreeAttachments_{{@index}}.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">{{/each}}
-              {{/if}}
-
-              {{#if FreeTranspilerAttachments}}
-                {{#each FreeTranspilerAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FreeTranspilerAttachments_{{@index}}.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">{{/each}}
-              {{/if}}
-
-              {{#if ToNodeAttachments}}
-                {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">{{/each}}
-              {{/if}}
-
-              <div style="display: block; clear: left;">
-                <div>
-                  {{#if (eq (length SyntaxFreeEdgeOutputFileName) 0)}}{{TransformerNodeName}}{{else}}{{SyntaxFreeEdgeOutputFileName}}{{/if}} 
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                  {{#if TranspilerNodeAttachments}}
+                    {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
+                  {{/if}}
+                  <h4 style="clear: left">{{TransformerNodeName}}</h4>
                 </div>
-                <div>
-                  {{#unless (eq (length FreeTranspilerNodeName) 0)}} ➡ {{FreeTranspilerNodeName}} {{/unless}}
-                  {{ToNodeType}}➡  <b>{{OutputFileName}}</b>   ({{ToNodeName}})
-                </div>
-              </div>
-            </td></tr>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
 
+                <table><tr><td  style="text-align: center">
+                  {{#if FromEdgeFreeAttachments}}
+                    {{#each FromEdgeFreeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromEdgeFreeAttachments_{{@index}}.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">{{/each}}
+                  {{/if}}
+                </td><td style="text-align: center">
+                  {{#if FreeTranspilerAttachments}}
+                    {{#each FreeTranspilerAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FreeTranspilerAttachments_{{@index}}.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">{{/each}}
+                  {{/if}}
+                </td><td  style="text-align: center">
+
+                  {{#if ToNodeAttachments}}
+                    {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">{{/each}}
+                  {{/if}}
+                </td></tr><td>
+
+                      {{#if (eq (length TransformerNodeName) 0)}}{{TransformerNodeName}}{{else}}{{SyntaxFreeEdgeOutputFileName}}{{/if}} 
+                </td><td>
+                      {{#unless (eq (length FreeTranspilerNodeName) 0)}} ➡ {{FreeTranspilerNodeName}} {{/unless}}
+                </td><td>
+                      ➡  <b>{{OutputFileName}}</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>{{ToNodeType}}</b> {{ToNodeName}}
+                  </div>
+                </div>
+              </td>
+            </tr>
           </table>
         </td></tr>
           <tr><td colspan="3" class="padding-bottom"></td></tr>
