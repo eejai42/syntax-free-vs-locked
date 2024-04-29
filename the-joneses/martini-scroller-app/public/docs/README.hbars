@@ -222,14 +222,7 @@
 
         <table style="border: none; width: 100%;">
         <tr>
-        <td valign="top" style="display: none">
-          <div class="from-node-image">
-            {{#if FromNodeAttachments}}
-              {{#each FromNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromNodeAttachments_{{@index}}.png" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
-            {{/if}}
-            </div>
-          </div>
-        </td>
+        <td></td>
         <td valign="top" style="padding: 0.25em;">
           <table><tr>
             <td valign="top" colspan="3">

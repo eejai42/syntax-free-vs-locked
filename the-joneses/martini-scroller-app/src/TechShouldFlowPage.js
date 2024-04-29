@@ -11,7 +11,7 @@ const TechShouldFlowPage = ({ demoFlow }) => {
   });
 
   return (
-    <div>
+    <div style={{fontSize: '0.8em'}}>
       Tech should followAlong
       <table>
         <tr>
@@ -25,21 +25,22 @@ const TechShouldFlowPage = ({ demoFlow }) => {
               <div key={index}>
                 <TranspilerRowHeaderComponent
                   transpilerItem={item}
-                  rowKey={true}
                 />
               </div>
             </td>
             <td valign="top">
-              <div key={index}>
+              <div key={index} style={{maxWidth: '35em', marginTop: '-1em'}}>
                 <TranspilerNodeComponent
                   transpilerItem={item}
-                  syntaxLocked={true}
+                  isSyntaxLocked={true}
                 />
               </div>
             </td>
             <td valign="top">
-              <div key={index}>
-                <TranspilerNodeComponent transpilerItem={item} />
+              <div key={index}  style={{maxWidth: '35em', marginTop: '-1em'}}>
+                <TranspilerNodeComponent transpilerItem={item}
+                  isSyntaxLocked={false}
+                  />
               </div>
             </td>
           </tr>
