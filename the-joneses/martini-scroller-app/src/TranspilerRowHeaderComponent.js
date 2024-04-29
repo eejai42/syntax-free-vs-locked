@@ -32,7 +32,7 @@ const TranspilerRowHeaderComponent = ({ transpilerItem }) => {
           src={imagePath('ToNodePlatformAttachments', index)}
           alt="To Node Platform Attachment Image"
           className="platform-image"
-          style={{ width: '50%', margin: '0.5rem' }}
+          style={{ width: '50%', margin: '0.5rem', marginLeft: '2.5em' }}
         />
       ))}
       <div style={{ color: 'white', fontWeight: 'bold', textAlign: 'center' }}>

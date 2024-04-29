@@ -1,0 +1,122 @@
+th {
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+}
+
+
+.row {
+    margin: 0px;
+  }
+    table {
+      font-size: normal;
+    }
+    h1 {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 1rem;
+      margin-bottom: 1.5em;
+    }
+  
+    .from-label, .to-label {
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    .match-status {
+      font-weight: bold; 
+      font-size: 1.3em;
+      width: 24em; 
+      margin-left: 1em;
+      min-height: 1.5rem; 
+      border: solid black 1px;
+      text-align: center;
+      color: #aaaaaa; 
+      text-align: center;
+    }
+  
+    .goal {
+    }
+  
+    .current {
+      float: left; 
+    }
+  
+    .unused {
+      font-size: 0.5em;
+      border: solid green 10px;
+      background-color: #c9c9c9;
+      text-decoration: line-through;
+    }
+  
+    .in-sync {
+        height: 1em;
+        margin: 10px;
+        font-weight: normal;
+        text-align: center;
+        background-color: #edfded;
+      }
+    
+      .out-of-sync {
+        border: solid red 10px;
+        background-color: #fde3e3;
+      }
+    
+      .missing-layer {
+        margin: 2rem; 
+        padding: 5%;
+        background-color: #eeee00;
+        border-radius: 3em;
+      }
+    
+      .stale {
+        color: red; 
+        font-size: 1.5em;
+        font-weight: bold; 
+        width: 90%; 
+        text-align: center; 
+        background-color: #FFFFFF; 
+        margin-left: auto; 
+        margin-right: auto
+      }
+    
+      .platform-image {
+        margin: 0.5rem; 
+        margin-left: 2em;
+        margin-top: 2em;
+        width: 6rem; 
+      }
+    
+      .from-node-image {
+        padding: 0rem; 
+        border-right: dashed black 3px; 
+        height: 22rem;
+        width: 12rem;
+        padding-top: 0;
+      }
+    
+      .transpiler-attachments {
+        margin: 0.5rem; 
+        width: 5rem; 
+        float: left;
+      }
+    
+      .from-node-attachment {
+        margin: 0.5rem; 
+        width: 8rem;
+      }
+    
+      .transpiler-node {
+        padding-top: 2em;
+        height: 23rem;
+        margin: 0rem;
+        border: solid #eeeeee 3px;
+      }
+    
+    
