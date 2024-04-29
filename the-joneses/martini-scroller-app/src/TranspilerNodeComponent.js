@@ -14,11 +14,6 @@ const TranspilerNodeComponent = ({ transpilerItem, isSyntaxLocked = false }) => 
     ))) : null;
   };
 
-  // This function chooses between locked and free attachments based on isSyntaxLocked
-  const getAttachments = (locked, free) => {
-    return isSyntaxLocked ? locked : free;
-  };
-
   return (
     <div className="transpiler-node" style={{
       border: '3px solid #eeeeee',
@@ -28,12 +23,15 @@ const TranspilerNodeComponent = ({ transpilerItem, isSyntaxLocked = false }) => 
     }}>
       {(isSyntaxLocked == 0 || transpilerItem.LockedColor ) ?  (
 <div>
-      <div className="match-status" style={{
-        backgroundColor: transpilerItem.SyntaxFreeColor,
-        textAlign: 'center'
+      <div className={`match-status ${isSyntaxLocked ? (transpilerItem.LockedColor === transpilerItem.ExpectedColor ? "in-sync" : "out-of-sync") : 
+                                            (transpilerItem.SyntaxFreeColor === transpilerItem.ExpectedColor ? "in-sync" : "out-of-sync")}`} style={{
+          backgroundColor: isSyntaxLocked ? transpilerItem.LockedColor : transpilerItem.SyntaxFreeColor,
+          textAlign: 'center'
       }}>
-        {transpilerItem.SyntaxFreeColor}
-        {!transpilerItem.SyntaxFreeColor === transpilerItem.ExpectedColor && <div>Stale Artifacts</div>}
+          {isSyntaxLocked ? transpilerItem.LockedColor : transpilerItem.SyntaxFreeColor}
+          {(isSyntaxLocked ? (transpilerItem.LockedColor !== transpilerItem.ExpectedColor) : (transpilerItem.SyntaxFreeColor !== transpilerItem.ExpectedColor)) && (
+              <div className="stale">Stale Artifacts</div>
+          )}
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div>

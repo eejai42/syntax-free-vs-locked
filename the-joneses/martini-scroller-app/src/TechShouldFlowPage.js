@@ -14,9 +14,11 @@ const TechShouldFlowPage = ({ demoFlow }) => {
 
   return (
     <div style={{fontSize: '0.8em', margin: '1em'}}>
-      <h3>Tech should Follow Along</h3>
-      <TechFlowingComponent demoFlow={dataFlow} showUsed={true} />
-      <div style={{maxWidth: '85rem', marginLeft: '8rem'}}>
+      <div style={{maxWidth: '85rem'}}>
+        <h3>Tech should Follow Along</h3>
+        <TechFlowingComponent demoFlow={dataFlow} showUsed={true} />
+      </div>
+      <div style={{maxWidth: '85rem', marginLeft: '8rem', marginTop: '35em'}}>
         <h3>Unused Technologies</h3>
         <div style={{backgroundColor: '#eeeeee', padding: '2em', fontSize: '0.8em', textDecoration: 'line-through'}}>
           <TechFlowingComponent demoFlow={dataFlow} showUsed={false} />
