@@ -8,7 +8,7 @@
     font-size: normal;
   }
   h1 {
-    font-size: 1.2rem;
+    font-size: 3.5rem;
     font-weight: bold;
   }
 
@@ -71,10 +71,13 @@
 
   .stale {
     color: red; 
+    font-size: 2em;
     font-weight: bold; 
     width: 90%; 
-    text-align: center; background-color: #FFFFFF; 
-    margin-left: auto; margin-right: auto
+    text-align: center; 
+    background-color: #FFFFFF; 
+    margin-left: auto; 
+    margin-right: auto
   }
 
   .platform-image {
@@ -88,6 +91,7 @@
     padding: 0rem; 
     border-right: dashed black 3px; 
     height: 22rem;
+    width: 12rem;
     padding-top: 0;
   }
 
@@ -121,7 +125,7 @@
 
 <table style="max-width: 100rem;">
 <tbody>
-<tr><td valign="top" style="max-width: 50rem;">
+<tr><td valign="top" style="max-width: 60rem;">
 <hr></hr>
 
 <h1 style="text-align: center">Syntax-Locked Methodology</h1>
@@ -131,7 +135,7 @@
     {{#each this }}
       <div class="transpiler-node {{#if (eq IsUsed 0)}}unused{{else}}{{#unless (eq (length LockedColor) 0)}}{{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}{{/unless}}{{/if}}">
 
-        <table style="border: none; width: 40em;">
+        <table style="border: none; width: 55em;">
           <tbody>
             <tr>
               <td valign="top" style="width: 12rem; background-color: {{ExpectedColor}};">
@@ -160,7 +164,7 @@
           <div class="missing-layer">-- Missing Layer --</div>
         </div>
       {{else}}
-              <table><tr>
+              <table cellpadding="20"><tr>
                 <td valign="top" colspan="3">
                   <div class="match-status current {{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{LockedColor}};"> vs. SYNTAX-LOCKED {{LockedColor}}
                     {{#unless (eq LockedColor ExpectedColor)}}
@@ -201,7 +205,7 @@
 
 
 </td>
-<td valign="top" style="max-width: 50rem;">
+<td valign="top" style="max-width: 55rem;">
 
 
   <hr></hr>
@@ -226,7 +230,7 @@
           </div>
         </td>
         <td valign="top" style="padding: 1em;">
-          <table><tr>
+          <table cellpadding="20"><tr>
             <td valign="top" colspan="3">
               <div class="match-status current match-row  {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{SyntaxFreeColor}};"> vs. SYNTAX-FREE {{SyntaxFreeColor}}
               
