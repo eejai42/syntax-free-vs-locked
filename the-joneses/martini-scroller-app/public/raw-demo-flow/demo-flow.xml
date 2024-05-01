@@ -221,6 +221,7 @@
     <NodeEdgeId>recRh833xyYnEAiPf</NodeEdgeId>
     <createdTime>4/26/2024 3:40:08 PM</createdTime>
     <OutputFileName>Airtable Base</OutputFileName>
+    <FromSyntaxFreeEdge>recNZ6pbVSB1eCDLg</FromSyntaxFreeEdge>
     <EdgeName>Syntax-Free Idea</EdgeName>
     <FreeAttachments>
       <FreeAttachmentsId>attgdaQg97DST9IKB</FreeAttachmentsId>
@@ -337,45 +338,6 @@
     </TranspilerNodeAttachments>
     <TransformerNodeFlowType>Agent (human or AI)</TransformerNodeFlowType>
     <TransformerNodeName>Architect</TransformerNodeName>
-    <ToNodeType>QueryableSSoT</ToNodeType>
-    <HasSyntaxFreeParent>0</HasSyntaxFreeParent>
-    <ToNodeIsQueriable>True</ToNodeIsQueriable>
-    <ToNodePlatformAttachments>
-      <ToNodePlatformAttachmentsId>attGZaGANl8NVDdhb</ToNodePlatformAttachmentsId>
-      <width>236</width>
-      <height>200</height>
-      <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/N_mlUy_y27L2bnr0O2XnpA/5jxaVJPrIYmaQJMultBf2GOq_-bLISG7IUMXTr4L8o1yGAe08nd9sr_SbMJzysw7-1DcenwD4eNw0Xrn3BK9YB1IgHCk-EkF-6YO2bpck_JQEbPZxw5wpoVwknH16M1RfCXJN1VBKaZMHlXl06sUkg-AXhEwkgPpSnTXH0w47_cJE_3vYUxIeF-KFQv9vVjx1OpLSltcQZoXFB8a8sm49A/cGMy0EItBYVZbT1XCgJ5YkLP_gXuZo7L27Pddq0n_DA</url>
-      <filename>Syntax-Free_Idea_ToNodePlatformAttachments_0.png</filename>
-      <size>38221</size>
-      <type>image/png</type>
-      <thumbnails>
-        <small>
-          <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/7c15HG2KAmKW7NDutCbWNA/2GGGEebOOn3tmm1cpm6JS1qoMEm-LXqdYUGxbW7rFtDhCtob-LknKsJmSDOxY7BASub2T-_CKe_2ctd7aV8GpswsGvHXjw-tfuGQMWnMcdFQYko2fT4Dwe0IQ8apGFXKzQ8uFhKpviNh4oG8cwEWmw/471CohuXx1Sx-jlDt_dZvzYSodVVw0PjDnZ2GogDXMI</url>
-          <width>42</width>
-          <height>36</height>
-        </small>
-        <large>
-          <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/dpuF1djPtT6BCbQaq9kBag/bxbymVh9eNjKTTyjoAKQpZF08Pu7vX8qRDJcWl4stP_cyM5XfolmxkwYj4xCCQIOSuqqF4oD5pffbzLEqo5J5sv48drSTd8kogUhnBtNdvNqkxdEBe0fPDB9N7YenRoQMTvlPrbLD2ZaEV86GH_dcw/3qRM2DUGugNxrfLswCE6Zlya4804flREgfr-TjbHTKo</url>
-          <width>236</width>
-          <height>200</height>
-        </large>
-        <full>
-          <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/GOe3wZwC8smwrqtxp5iiiw/bI1dTclVMpkDOTnEXvhtJ3S6Y3y4FKlgbjG_fGchbQjhaIh5Hcv-9__AU5YUUTkKbiPXd8M2OTLEzbPey1eINS-sd0zMRUOBwhR8VAo1kFqEgUILRrotAafEjiEmQow2tDf30qDWeX8hTG1WN4KFEA/F7HraRDu0ZPp4XpScPiBTbtYr_3fl0vcVil5OWntJEM</url>
-          <width>236</width>
-          <height>200</height>
-        </full>
-      </thumbnails>
-    </ToNodePlatformAttachments>
-    <FromNodeMasterColor>#0000FF</FromNodeMasterColor>
-    <ToNodeOutputIsCode></ToNodeOutputIsCode>
-    <ToNodeOutputIsDocs></ToNodeOutputIsDocs>
-    <IsLeaf>0</IsLeaf>
-    <IsUsed>1</IsUsed>
-    <ExpectedColor>#0000FF</ExpectedColor>
-    <LockedColorMatchesExpected>0</LockedColorMatchesExpected>
-    <SyntaxFreeColor>#0000FF</SyntaxFreeColor>
-    <FreeColorMatchesExpected>1</FreeColorMatchesExpected>
-    <FromSyntaxFreeEdge>recNZ6pbVSB1eCDLg</FromSyntaxFreeEdge>
     <FromEdgeLockedAttachments>
       <FromEdgeLockedAttachmentsId>attElyYeRujHdO9es</FromEdgeLockedAttachmentsId>
       <width>225</width>
@@ -402,8 +364,11 @@
         </full>
       </thumbnails>
     </FromEdgeLockedAttachments>
+    <ToNodeType>QueryableSSoT</ToNodeType>
     <FromFreeEdgeToNodeType>NaturalLanguage</FromFreeEdgeToNodeType>
     <SyntaxFreeEdgeName>Natural Language Idea</SyntaxFreeEdgeName>
+    <HasSyntaxFreeParent>0</HasSyntaxFreeParent>
+    <ToNodeIsQueriable>True</ToNodeIsQueriable>
     <FromFreeEdgeIsQueriable></FromFreeEdgeIsQueriable>
     <FromEdgeFreeAttachments>
       <FromEdgeFreeAttachmentsId>attElyYeRujHdO9es</FromEdgeFreeAttachmentsId>
@@ -431,8 +396,43 @@
         </full>
       </thumbnails>
     </FromEdgeFreeAttachments>
+    <ToNodePlatformAttachments>
+      <ToNodePlatformAttachmentsId>attGZaGANl8NVDdhb</ToNodePlatformAttachmentsId>
+      <width>236</width>
+      <height>200</height>
+      <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/N_mlUy_y27L2bnr0O2XnpA/5jxaVJPrIYmaQJMultBf2GOq_-bLISG7IUMXTr4L8o1yGAe08nd9sr_SbMJzysw7-1DcenwD4eNw0Xrn3BK9YB1IgHCk-EkF-6YO2bpck_JQEbPZxw5wpoVwknH16M1RfCXJN1VBKaZMHlXl06sUkg-AXhEwkgPpSnTXH0w47_cJE_3vYUxIeF-KFQv9vVjx1OpLSltcQZoXFB8a8sm49A/cGMy0EItBYVZbT1XCgJ5YkLP_gXuZo7L27Pddq0n_DA</url>
+      <filename>Syntax-Free_Idea_ToNodePlatformAttachments_0.png</filename>
+      <size>38221</size>
+      <type>image/png</type>
+      <thumbnails>
+        <small>
+          <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/7c15HG2KAmKW7NDutCbWNA/2GGGEebOOn3tmm1cpm6JS1qoMEm-LXqdYUGxbW7rFtDhCtob-LknKsJmSDOxY7BASub2T-_CKe_2ctd7aV8GpswsGvHXjw-tfuGQMWnMcdFQYko2fT4Dwe0IQ8apGFXKzQ8uFhKpviNh4oG8cwEWmw/471CohuXx1Sx-jlDt_dZvzYSodVVw0PjDnZ2GogDXMI</url>
+          <width>42</width>
+          <height>36</height>
+        </small>
+        <large>
+          <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/dpuF1djPtT6BCbQaq9kBag/bxbymVh9eNjKTTyjoAKQpZF08Pu7vX8qRDJcWl4stP_cyM5XfolmxkwYj4xCCQIOSuqqF4oD5pffbzLEqo5J5sv48drSTd8kogUhnBtNdvNqkxdEBe0fPDB9N7YenRoQMTvlPrbLD2ZaEV86GH_dcw/3qRM2DUGugNxrfLswCE6Zlya4804flREgfr-TjbHTKo</url>
+          <width>236</width>
+          <height>200</height>
+        </large>
+        <full>
+          <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/GOe3wZwC8smwrqtxp5iiiw/bI1dTclVMpkDOTnEXvhtJ3S6Y3y4FKlgbjG_fGchbQjhaIh5Hcv-9__AU5YUUTkKbiPXd8M2OTLEzbPey1eINS-sd0zMRUOBwhR8VAo1kFqEgUILRrotAafEjiEmQow2tDf30qDWeX8hTG1WN4KFEA/F7HraRDu0ZPp4XpScPiBTbtYr_3fl0vcVil5OWntJEM</url>
+          <width>236</width>
+          <height>200</height>
+        </full>
+      </thumbnails>
+    </ToNodePlatformAttachments>
     <SyntaxFreeEdgeOutputFileName>Requirements.docx</SyntaxFreeEdgeOutputFileName>
+    <FromNodeMasterColor>#0000FF</FromNodeMasterColor>
+    <ToNodeOutputIsCode></ToNodeOutputIsCode>
+    <ToNodeOutputIsDocs></ToNodeOutputIsDocs>
+    <IsLeaf>0</IsLeaf>
+    <IsUsed>1</IsUsed>
+    <ExpectedColor>#0000FF</ExpectedColor>
+    <LockedColorMatchesExpected>0</LockedColorMatchesExpected>
     <ParentFreeEdgeColor>#0000FF</ParentFreeEdgeColor>
+    <SyntaxFreeColor>#0000FF</SyntaxFreeColor>
+    <FreeColorMatchesExpected>1</FreeColorMatchesExpected>
   </NodeEdges>
   <NodeEdges json:Array="true">
     <NodeEdgeId>recOXKqiHKgXvofpK</NodeEdgeId>
@@ -773,33 +773,7 @@
     </FromNodeAttachments>
     <FromNodeFlowType>QueryableSSoT</FromNodeFlowType>
     <FromNodeName>Airtable</FromNodeName>
-    <ToNodeAttachments json:Array="true">
-      <ToNodeAttachmentsId>attV2dlGHNinwdnCS</ToNodeAttachmentsId>
-      <width>512</width>
-      <height>512</height>
-      <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/FFmc3owdUbOKCftqz5svAg/CcW8G_mtC8C8D1si80BVXa1doKFbkTD7hDUdA46M9WIkP9Tc0drrVXRddpEN1YcIJFURFw2TR-XOZPYpf0Xn_mlDwk47-V_YFRn8bGh9uvCU13ZC_pniHUUa4Ifo6yYUUgK5m0IpVc3o7MUjxjWAgA/fpmKXTiiOFArK0dZEkXryW-dsAIUFX6JF8vSDDHkMP8</url>
-      <filename>image.png</filename>
-      <size>20189</size>
-      <type>image/png</type>
-      <thumbnails>
-        <small>
-          <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/-VJChzBK9SsoYap4CYNHag/sxNhkF2J30BY9ZE-26DdPxzilFmZaa2Cm4sAaDCaKED3cLzc1UlF9GjjIzn3nmFq0D8HB3nv2EZ9VpdU6zp98CsaLQGz4sFXJS2-R7T9lkF7fAKDtY2zm-l8_scr_y0ZG95DejtGhUK8Jwdqg5QFzg/jjGdzJkacTsAolOToIgtQDNHNSDau3bpkbnezheHtzc</url>
-          <width>36</width>
-          <height>36</height>
-        </small>
-        <large>
-          <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/hMOtPcVdsH_eseVlWd1G1Q/JjEAe3xYuuzNxcleibNFv7WsQyqwrzsaT7SctWUXEeUgKBK8hC6BT1rlcu7o2nMbr3aoELBIdL6qke1esPmQ5hCqFqIuDcRciwmLfWE490Yog0TPCYWuzc2wwhrm9SevHjLgimAiZbrCdOVqs9aQzQ/Edu76hWFBeKnvJNnQqNANgiECMIQGh5IBzOZrpPCmKg</url>
-          <width>512</width>
-          <height>512</height>
-        </large>
-        <full>
-          <url>https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/vXWY4kf3n9KAmaCoj59rPw/Xp8F0Su7UBCGvU3u3WnH7w2ZKzt9BYZ84cBUag7hUx5CujtD4pBr13xEhlLVB8fG_FaHXQNBmZiVDxC-GaN5cj-6G5g5jPNsA1HfVyvB6npuiCq7KSRA6gH7QiKsWDEhfahU_DUWdGF1yZ5kyHUfOw/0qBh9LoI41ikQKGH2I8C9-78RPk9O8t2ZsQ2yhqGUE8</url>
-          <width>512</width>
-          <height>512</height>
-        </full>
-      </thumbnails>
-    </ToNodeAttachments>
-    <ToNodeAttachments json:Array="true">
+    <ToNodeAttachments>
       <ToNodeAttachmentsId>attSEp99Mz8qMhuD9</ToNodeAttachmentsId>
       <width>512</width>
       <height>512</height>

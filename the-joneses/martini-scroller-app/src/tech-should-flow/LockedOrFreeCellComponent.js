@@ -5,7 +5,6 @@ import { renderAttachments } from '../colorUtils';
 
 const LockedOrFreeCellComponent = ({ transpilerNode, isSyntaxLocked = false }) => {
 
-  const [color, setColor] = useState(isSyntaxLocked ? transpilerNode.LockedColor : transpilerNode.SyntaxFreeColor);
   const [inSync, setInSync] = useState(isSyntaxLocked ? (transpilerNode.LockedColor === transpilerNode.ExpectedColor) : (transpilerNode.SyntaxFreeColor === transpilerNode.ExpectedColor) );
 
 

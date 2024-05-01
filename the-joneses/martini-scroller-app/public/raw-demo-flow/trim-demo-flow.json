@@ -98,14 +98,28 @@
         ],
         "TransformerNodeFlowType": "Agent (human or AI)",
         "TransformerNodeName": "Architect",
+        "FromEdgeLockedAttachments": [
+          {
+            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/Zh0lJu2wmnjrgBZZPDjxkA/0vwvCU2XD1isZKtwFo2HA7K8Q03uqrXfN429w7nldjjVStVy_xpn4KdRhZcY8eOREGIXrxDA9c5mEE0jXvnMRZwTP_TYW5_n6zMKWV6TELewLNaHzV8NFN9hl1uDgXkboXPJcxL8mFS4dIVxq_lE6Fzc8-W9EZPS6miOk7V2TSEOvigkdMbRvfcGrShSwr7N/qJSXPNfKOjQjKfJBmhhye_HoNA0XBKxw0u9qW6jr7g8"
+          }
+        ],
         "ToNodeType": "QueryableSSoT",
+        "FromFreeEdgeToNodeType": "NaturalLanguage",
+        "SyntaxFreeEdgeName": "Natural Language Idea",
         "HasSyntaxFreeParent": 0,
         "ToNodeIsQueriable": "True",
+        "FromFreeEdgeIsQueriable": "",
+        "FromEdgeFreeAttachments": [
+          {
+            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/Zh0lJu2wmnjrgBZZPDjxkA/0vwvCU2XD1isZKtwFo2HA7K8Q03uqrXfN429w7nldjjVStVy_xpn4KdRhZcY8eOREGIXrxDA9c5mEE0jXvnMRZwTP_TYW5_n6zMKWV6TELewLNaHzV8NFN9hl1uDgXkboXPJcxL8mFS4dIVxq_lE6Fzc8-W9EZPS6miOk7V2TSEOvigkdMbRvfcGrShSwr7N/qJSXPNfKOjQjKfJBmhhye_HoNA0XBKxw0u9qW6jr7g8"
+          }
+        ],
         "ToNodePlatformAttachments": [
           {
             "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/N_mlUy_y27L2bnr0O2XnpA/5jxaVJPrIYmaQJMultBf2GOq_-bLISG7IUMXTr4L8o1yGAe08nd9sr_SbMJzysw7-1DcenwD4eNw0Xrn3BK9YB1IgHCk-EkF-6YO2bpck_JQEbPZxw5wpoVwknH16M1RfCXJN1VBKaZMHlXl06sUkg-AXhEwkgPpSnTXH0w47_cJE_3vYUxIeF-KFQv9vVjx1OpLSltcQZoXFB8a8sm49A/cGMy0EItBYVZbT1XCgJ5YkLP_gXuZo7L27Pddq0n_DA"
           }
         ],
+        "SyntaxFreeEdgeOutputFileName": "Requirements.docx",
         "FromNodeMasterColor": "#0000FF",
         "ToNodeOutputIsCode": "",
         "ToNodeOutputIsDocs": "",
@@ -113,23 +127,9 @@
         "IsUsed": 1,
         "ExpectedColor": "#0000FF",
         "LockedColorMatchesExpected": 0,
+        "ParentFreeEdgeColor": "#0000FF",
         "SyntaxFreeColor": "#0000FF",
-        "FreeColorMatchesExpected": 1,
-        "FromEdgeLockedAttachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/Zh0lJu2wmnjrgBZZPDjxkA/0vwvCU2XD1isZKtwFo2HA7K8Q03uqrXfN429w7nldjjVStVy_xpn4KdRhZcY8eOREGIXrxDA9c5mEE0jXvnMRZwTP_TYW5_n6zMKWV6TELewLNaHzV8NFN9hl1uDgXkboXPJcxL8mFS4dIVxq_lE6Fzc8-W9EZPS6miOk7V2TSEOvigkdMbRvfcGrShSwr7N/qJSXPNfKOjQjKfJBmhhye_HoNA0XBKxw0u9qW6jr7g8"
-          }
-        ],
-        "FromFreeEdgeToNodeType": "NaturalLanguage",
-        "SyntaxFreeEdgeName": "Natural Language Idea",
-        "FromFreeEdgeIsQueriable": "",
-        "FromEdgeFreeAttachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/Zh0lJu2wmnjrgBZZPDjxkA/0vwvCU2XD1isZKtwFo2HA7K8Q03uqrXfN429w7nldjjVStVy_xpn4KdRhZcY8eOREGIXrxDA9c5mEE0jXvnMRZwTP_TYW5_n6zMKWV6TELewLNaHzV8NFN9hl1uDgXkboXPJcxL8mFS4dIVxq_lE6Fzc8-W9EZPS6miOk7V2TSEOvigkdMbRvfcGrShSwr7N/qJSXPNfKOjQjKfJBmhhye_HoNA0XBKxw0u9qW6jr7g8"
-          }
-        ],
-        "SyntaxFreeEdgeOutputFileName": "Requirements.docx",
-        "ParentFreeEdgeColor": "#0000FF"
+        "FreeColorMatchesExpected": 1
       },
       {
         "createdTime": "2024-04-26T16:50:29",
@@ -223,9 +223,6 @@
         "FromNodeFlowType": "QueryableSSoT",
         "FromNodeName": "Airtable",
         "ToNodeAttachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/FFmc3owdUbOKCftqz5svAg/CcW8G_mtC8C8D1si80BVXa1doKFbkTD7hDUdA46M9WIkP9Tc0drrVXRddpEN1YcIJFURFw2TR-XOZPYpf0Xn_mlDwk47-V_YFRn8bGh9uvCU13ZC_pniHUUa4Ifo6yYUUgK5m0IpVc3o7MUjxjWAgA/fpmKXTiiOFArK0dZEkXryW-dsAIUFX6JF8vSDDHkMP8"
-          },
           {
             "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714615200000/o92X_e-vzSSfkv4bTjDIeA/1fg2tqTk1feK69hXZPGOwP8cRMQ3hWB1qZlQ9N1fwKjUmo8L0iozqizPzwep0V4010lmukSeBTuQApCOpANa_FJwPOAtD4DO0GUtDEaw3h-rGeJSdmkM9DZ8vW4Lmwam6QCVoaTdDCrK3dINkWY4y1N9vd4FVm3VuoWiFcgkGSdPZI1K3q4UQcM87iNrmDAYA9Jmt6Ey6-ig8_QWkDOX6Q/IZmhBgkg4Q-2MLmN0Jf2LR7SK7n1LLOxJ5eGJPjFoZw"
           }

@@ -25,7 +25,7 @@ const LockedAndFreeSyntaxComparisonTable = ({ transpilerNodes, onTranspilerNodeC
             <td valign="top">
               <RowHeaderComponent
                 transpilerNode={transpilerNode}
-                onColorChange={onTranspilerNodeChange}
+                onTranspilerNodeChange={onTranspilerNodeChange}
               />
             </td>
             <td valign="top">

@@ -2,21 +2,17 @@ import React, { useState } from 'react';
 import SaturationPicker from './SaturationPicker';
 import { getContrastColor, renderAttachments } from '../colorUtils';
 
-const RowHeaderComponent = ({ transpilerNode, onColorChange }) => {
+const RowHeaderComponent = ({ transpilerNode, onTranspilerNodeChange }) => {
   const baseImageUrl = "transpiler-images"; // Base URL for images, should be adjusted based on actual path
-
-  const [color, setColor] = useState(transpilerNode.ExpectedColor);
 
   // Helper to generate image paths
   const imagePath = (attachmentName, index) => `${baseImageUrl}/${transpilerNode.FromNodeName.replace(/\s+/g, '_')}/${transpilerNode.EdgeName.replace(/\s+/g, '_').replace('#', '%23')}_${attachmentName}_${index}.png`;
 
   const handleColorCHange = (newColor) => {
     // Handle saturation change
-    if (newColor === color) return;
-    
-    setColor(newColor);
-    if (onColorChange) {
-      onColorChange(transpilerNode, newColor);
+
+    if (onTranspilerNodeChange) {
+      onTranspilerNodeChange(transpilerNode, newColor);
     }
   }
 
@@ -24,8 +20,8 @@ const RowHeaderComponent = ({ transpilerNode, onColorChange }) => {
     <table style={{
       width: '40em',
       position: 'relative',
-      backgroundColor: color,
-      color: getContrastColor(color),
+      backgroundColor: transpilerNode.ExpectedColor,
+      color: getContrastColor(transpilerNode.ExpectedColor),
 
     }}><tbody>
     
@@ -77,12 +73,16 @@ const RowHeaderComponent = ({ transpilerNode, onColorChange }) => {
           </div>
 
         </td></tr>
+        {!transpilerNode.SyntaxFreeEdgeName && (
         <tr><td colSpan="3">
         <div>
-            <SaturationPicker  transpilerNode={transpilerNode} showPictures={true} color={color} onChange={handleColorCHange}  />
+          <div>
+            {transpilerNode.ExpectedColor}
+          </div>
+            <SaturationPicker  color={transpilerNode.ExpectedColor} showPictures={true} onColorChange={handleColorCHange}  />
           </div>
 
-          </td></tr>
+          </td></tr>)};
         </tbody>
     </table>
 
