@@ -4,12 +4,12 @@ import HomePage from './HomePage';
 import DemoPage from './DemoPage';
 import ScriptPage from './ScriptPage';
 import WaterColorsPage from './WaterColorsPage';
-import TechShouldFlowPage from './TechShouldFlowPage';
+import TechShouldFlowPage from './tech-should-flow/TechShouldFlowPage';
 
 const App = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
-  const [demoFlow, setDemoFlow] = useState(null);
+  const [transpilerNodes, setTranspilerNodes] = useState(null);
 
   useEffect(() => {
     // Fetch data here and set it with setData
@@ -26,7 +26,7 @@ const App = () => {
       .catch((error) => {
         console.error("Error fetching data: ", error);
         setData({"story":{ "chapters": [], keywords: [], "languages": []}});
-        //setError(error.toString());
+        setError(error.toString());
         return {};
       });
 
@@ -38,12 +38,13 @@ const App = () => {
         return response.json();
       })
       .then((loadedData) => {
-        setDemoFlow(loadedData);
+        console.error("loaded demo flow", loadedData);  
+        setTranspilerNodes(loadedData.DataFlow);
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);
         setData({"DataFLow": []});
-        //setError(error.toString());
+        setError(error.toString());
         return {};
       });
   }, []);
@@ -60,7 +61,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/tech-should-flow"  element={<TechShouldFlowPage demoFlow={demoFlow}/>} />
+        <Route path="/tech-should-flow"  element={<TechShouldFlowPage transpilerNodes={transpilerNodes}/>} />
         <Route path="/syntax-locked"  element={<WaterColorsPage />} />
         <Route path="/syntax-free"  element={<WaterColorsPage  />} />
         <Route path="/demo" element={<DemoPage data={data} />} />
