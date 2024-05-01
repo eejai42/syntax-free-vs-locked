@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SaturationPicker from './SaturationPicker';
 import { getContrastColor, renderAttachments } from '../colorUtils';
 
-const RowHeaderComponent = ({ transpilerNode }) => {
+const RowHeaderComponent = ({ transpilerNode, onColorChange }) => {
   const baseImageUrl = "transpiler-images"; // Base URL for images, should be adjusted based on actual path
 
   const [color, setColor] = useState(transpilerNode.ExpectedColor);
@@ -12,7 +12,12 @@ const RowHeaderComponent = ({ transpilerNode }) => {
 
   const handleColorCHange = (newColor) => {
     // Handle saturation change
+    if (newColor === color) return;
+    
     setColor(newColor);
+    if (onColorChange) {
+      onColorChange(transpilerNode, newColor);
+    }
   }
 
   return (

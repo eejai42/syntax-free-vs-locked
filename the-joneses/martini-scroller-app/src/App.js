@@ -61,7 +61,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/tech-should-flow"  element={<TechShouldFlowPage transpilerNodes={transpilerNodes}/>} />
+        <Route path="/tech-should-flow"  element={<TechShouldFlowPage initialTranspilerNodes={transpilerNodes}/>} />
         <Route path="/syntax-locked"  element={<WaterColorsPage />} />
         <Route path="/syntax-free"  element={<WaterColorsPage  />} />
         <Route path="/demo" element={<DemoPage data={data} />} />

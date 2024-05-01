@@ -18,13 +18,6 @@ const LockedOrFreeCellComponent = ({ transpilerNode, isSyntaxLocked = false }) =
   }, [transpilerNode.LockedColor, transpilerNode.SyntaxFreeColor, transpilerNode.ExpectedColor, isSyntaxLocked]);
 
 
-  const handleSaturationChange = (newSaturation) => {
-    setColor(newSaturation);
-  }
-
-  const handleTranspilerNodeChange = (newTranspilerNode) => {
-  }
-
   return (
     <div className={'transpiler-node ' + (inSync ? 'in-sync' : 'out-of-sync')} style={{
     }}>

@@ -1,49 +1,44 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import LockedOrFreeCellComponent from "./LockedOrFreeCellComponent";
 import RowHeaderComponent from "./RowHeaderComponent";
 
-const LockedAndFreeSyntaxComparisonTable = ({ transpilerNodes, showUsed }) => {
+const LockedAndFreeSyntaxComparisonTable = ({ transpilerNodes, onTranspilerNodeChange, showUsed }) => {
+
+
+
   return (
     <table>
       <tbody>
         <tr>
-        <th>Syntax Locked</th>
+          <th>Syntax Locked</th>
           <th>Technology</th>
           <th>Syntax Free</th>
         </tr>
-        {transpilerNodes.reduce((acc, transpilerNode) => {
-          if ((transpilerNode.IsUsed === 1) == showUsed) {
-            acc.push(transpilerNode);
-          }
-          return acc;
-        }, []).map((transpilerNode, index) => (
-          (<tr key={index} style={{borderTop: 'solid black 3px', padding: '0.5rem'}}>
+        {transpilerNodes?.filter(node => (node.IsUsed === 1) === showUsed).map((transpilerNode, index) => (
+          <tr key={index} style={{borderTop: 'solid black 3px', padding: '0.5rem'}}>
             <td valign="top">
-              <div style={{maxwidth: '45em', width: '38em', marginTop: '0em'}}>
-                <LockedOrFreeCellComponent
-                  transpilerNode={transpilerNode}
-                  isSyntaxLocked={true}
-                />
-              </div>
+              <LockedOrFreeCellComponent
+                transpilerNode={transpilerNode}
+                isSyntaxLocked={true}
+              />
             </td>
             <td valign="top">
-              <div>
-                <RowHeaderComponent
-                  transpilerNode={transpilerNode}
-                />
-              </div>
+              <RowHeaderComponent
+                transpilerNode={transpilerNode}
+                onColorChange={onTranspilerNodeChange}
+              />
             </td>
             <td valign="top">
-              <div style={{maxwidth: '45em', width: '38em', marginTop: '0em'}}>
-                <LockedOrFreeCellComponent transpilerNode={transpilerNode}
-                  isSyntaxLocked={false}
-                  />
-              </div>
+              <LockedOrFreeCellComponent
+                transpilerNode={transpilerNode}
+                isSyntaxLocked={false}
+              />
             </td>
-          </tr>)
+          </tr>
         ))}
-        </tbody>
-      </table>  );
+      </tbody>
+    </table>
+  );
 };
 
 export default LockedAndFreeSyntaxComparisonTable;
