@@ -1,6 +1,7 @@
 import requests
 import os
 import json
+import time
 
 def download_file(url, filename):
     # Ensure the directory exists
@@ -22,6 +23,8 @@ def process_data_flow(data_flow, base_path="C:/syntax-free-research/the-joneses/
         for index, url in enumerate(attachments):
             filename = os.path.join(base_path, data_flow['FromNodeName'].replace(' ', '_'), f"{data_flow['EdgeName'].replace(' ', '_')}_{field}_{index}.png")
             download_file(url, filename)
+            # sleep for 250ms
+            time.sleep(0.25)
 
 def main():
     data_file_path = "C:/syntax-free-research/the-joneses/martini-scroller-app/public/demo-flow.json"

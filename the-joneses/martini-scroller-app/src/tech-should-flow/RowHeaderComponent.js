@@ -1,31 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SaturationPicker from './SaturationPicker';
-import { renderAttachments } from '../colorUtils';
+import { getContrastColor, renderAttachments } from '../colorUtils';
 
-const RowHeaderComponent = ({ transpilerNode, color = transpilerNode.ExpectedColor }) => {
+const RowHeaderComponent = ({ transpilerNode }) => {
   const baseImageUrl = "transpiler-images"; // Base URL for images, should be adjusted based on actual path
+
+  const [color, setColor] = useState(transpilerNode.ExpectedColor);
 
   // Helper to generate image paths
   const imagePath = (attachmentName, index) => `${baseImageUrl}/${transpilerNode.FromNodeName.replace(/\s+/g, '_')}/${transpilerNode.EdgeName.replace(/\s+/g, '_').replace('#', '%23')}_${attachmentName}_${index}.png`;
 
-  const handleSaturationChange = (newSaturation) => {
+  const handleColorCHange = (newColor) => {
     // Handle saturation change
-    console.error("new Saturation: ", newSaturation);
-  }
-
-  const handleTranspilerNodeChange = (newTranspilerNode) => { 
-    // Handle transpiler item change
-    console.error("new Transpiler Item: ", newTranspilerNode);
+    setColor(newColor);
   }
 
   return (
     <table style={{
       width: '40em',
       position: 'relative',
+      backgroundColor: color,
+      color: getContrastColor(color),
 
     }}><tbody>
     
         <tr>
+        <td colSpan="2" style={{textAlign: 'center'}}>
+        {transpilerNode.TranspilerNodeAttachments && renderAttachments(transpilerNode.TranspilerNodeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "TranspilerNodeAttachments")}
+            <h4>{transpilerNode.TransformerNodeName}</h4>
+        </td>
         <td>
         {transpilerNode.FromNodeAttachments && transpilerNode.FromNodeAttachments.map((attachment, index) => (
           <img
@@ -40,18 +43,8 @@ const RowHeaderComponent = ({ transpilerNode, color = transpilerNode.ExpectedCol
         </div>
 
         </td>
-          <td colSpan="2" style={{textAlign: 'center'}}>
-        {transpilerNode.TranspilerNodeAttachments && renderAttachments(transpilerNode.TranspilerNodeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "TranspilerNodeAttachments")}
-            <h4>{transpilerNode.TransformerNodeName}</h4>
-</td></tr>
-      <tr>
-      <td>
-
-{transpilerNode.ToNodeAttachments?.length ? renderAttachments(transpilerNode.ToNodeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "ToNodeAttachments", 'right') : null}
-
-</td>
-        <td colSpan="1">
-      <div style={{backgroundColor: transpilerNode.ToNodeMasterColor}}>
+        <td>
+        <div style={{backgroundColor: transpilerNode.ToNodeMasterColor}}>
           {transpilerNode.ToNodePlatformAttachments && transpilerNode.ToNodePlatformAttachments.map((attachment, index) => (
             <img
               key={index}
@@ -61,6 +54,15 @@ const RowHeaderComponent = ({ transpilerNode, color = transpilerNode.ExpectedCol
             />
           ))}
         </div>
+
+        </td>
+        </tr>
+      <tr>
+      <td>
+
+
+</td>
+        <td colSpan="1">
 </td>
 <td></td>
 <td>
@@ -69,7 +71,14 @@ const RowHeaderComponent = ({ transpilerNode, color = transpilerNode.ExpectedCol
             {transpilerNode.EdgeName}
           </div>
 
-        </td></tr></tbody>
+        </td></tr>
+        <tr><td colSpan="3">
+        <div>
+            <SaturationPicker  transpilerNode={transpilerNode} showPictures={true} color={color} onChange={handleColorCHange}  />
+          </div>
+
+          </td></tr>
+        </tbody>
     </table>
 
   );

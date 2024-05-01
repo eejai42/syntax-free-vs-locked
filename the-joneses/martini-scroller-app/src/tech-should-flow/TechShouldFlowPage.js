@@ -5,10 +5,6 @@ import "./TechShouldFlow.css";
 const TechShouldFlowPage = ({ transpilerNodes }) => {
 
   useEffect(() => {
-    console.log("TechShouldFlowPage", transpilerNodes);
-    transpilerNodes?.map((node, index) => {
-      console.log("TechShouldFlowPage", node);
-    });
   });
 
   return (

@@ -12,7 +12,6 @@ const LockedAndFreeSyntaxComparisonTable = ({ transpilerNodes, showUsed }) => {
           <th>Syntax Free</th>
         </tr>
         {transpilerNodes.reduce((acc, transpilerNode) => {
-            console.error("TechFlowingComponent", transpilerNode.IsUsed, showUsed)
           if ((transpilerNode.IsUsed === 1) == showUsed) {
             acc.push(transpilerNode);
           }

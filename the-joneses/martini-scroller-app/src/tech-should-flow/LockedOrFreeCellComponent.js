@@ -31,9 +31,6 @@ const LockedOrFreeCellComponent = ({ transpilerNode, isSyntaxLocked = false }) =
       {(isSyntaxLocked == 0 || transpilerNode.LockedColor ) ?  
       (
         <div style={{position: 'relative'}}>
-          <div>
-            <SaturationPicker  transpilerNode={transpilerNode} showPictures={true} color={color} onChange={handleSaturationChange} onTranspilerNodeChange={handleTranspilerNodeChange} />
-          </div>
     
             {!inSync && (
                 <div className="stale">Stale Artifacts</div>
@@ -43,17 +40,35 @@ const LockedOrFreeCellComponent = ({ transpilerNode, isSyntaxLocked = false }) =
               <div style={{width: '25em', textAlign: 'right'}}>
               </div>
             ) : (
-              <div style={{width: '25em', textAlign: 'right'}}>
-                {transpilerNode.FromEdgeFreeAttachments?.length ? renderAttachments(transpilerNode.FromEdgeFreeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "FromEdgeFreeAttachments", 'right') : null}
-                {transpilerNode.FreeTranspilerAttachments?.length ? renderAttachments(transpilerNode.FreeTranspilerAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "FreeTranspilerAttachments", 'right') : null}
-              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                    {transpilerNode.FromEdgeFreeAttachments?.length ? renderAttachments(transpilerNode.FromEdgeFreeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "FromEdgeFreeAttachments", 'right') : null}
+                    </td>
+                    <td>
+                    {transpilerNode.FreeTranspilerAttachments?.length ? renderAttachments(transpilerNode.FreeTranspilerAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "FreeTranspilerAttachments", 'right') : null}
+                    </td>
+                    <td>
+                    {transpilerNode.ToNodeAttachments?.length ? renderAttachments(transpilerNode.ToNodeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "ToNodeAttachments", 'right') : null}
+
+                    </td>
+                  </tr>
+                  <tr>
+                  <td>
+                  {transpilerNode.SyntaxFreeEdgeOutputFileName} ➡  
+                    </td>
+                    <td>
+                    {transpilerNode.FreeTranspilerNodeName}                      
+                    </td>
+                    <td>
+                    {transpilerNode.OutputFileName}                      
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
             )}
-          </div>
-          <div style={{ textAlign: 'right'}}>
-            <strong>{transpilerNode.OutputFileName}</strong>
-          </div>
-          <div style={{ textAlign: 'right' }}>
-            <strong>{transpilerNode.ToNodeType}</strong> {transpilerNode.ToNodeName}
           </div>
         </div>
       ) : (
