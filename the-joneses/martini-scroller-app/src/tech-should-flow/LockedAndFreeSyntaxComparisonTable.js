@@ -29,6 +29,7 @@ const LockedAndFreeSyntaxComparisonTable = ({ transpilerNodes, onUpdateGuess, on
             <td valign="top">
               <RowHeaderComponent
                 transpilerNode={transpilerNode}
+                onUpdateClick={handleUpdateClick}
                 onTranspilerNodeChange={onTranspilerNodeChange}
               />
             </td>

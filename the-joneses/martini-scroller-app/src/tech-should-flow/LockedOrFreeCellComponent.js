@@ -28,28 +28,43 @@ const LockedOrFreeCellComponent = ({ transpilerNode, onUpdateClick, isSyntaxLock
       {(isSyntaxLocked == 0 || transpilerNode.LockedColor ) ?  
       (
         <div style={{position: 'relative'}}>
-    
+          <div style={{width: '3em', minHeight: '20rem', float: isSyntaxLocked ? 'right' : 'left', backgroundColor: isSyntaxLocked ? transpilerNode.LockedColor : transpilerNode.SyntaxFreeColor}}>
+            locked
+          </div>
+
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             {isSyntaxLocked ? (
-              <div>
-                              {!inSync && (
-                      <div class="stale" onClick={handleUpdateClick}>Stale Artifacts</div>
+              <div style={{marginRight: '0.5em', width: '100%'}}>
+
+<table>
+                <tbody>
+                  {!inSync && (
+                      <tr><td class="stale" colSpan="3" onClick={handleUpdateClick}>Stale Artifacts</td></tr>
                   )}
 
-              <div style={{width: '5em', float: 'right', backgroundColor: transpilerNode.LockedColor}}>
-                FOO
-              </div>
+<tr>
+                    <td>
+                    {transpilerNode.ToNodeAttachments?.length ? renderAttachments(transpilerNode.ToNodeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "ToNodeAttachments", 'right') : null}
+
+                    </td>
+                  </tr>
+            
+
+                  <tr>
+                    <td>
+                    {transpilerNode.OutputFileName}                      
+                    </td>
+
+                  </tr>
+                  </tbody></table>
               </div>
             ) : (
-              <div>
-              <div style={{width: '5em', left: 'right', backgroundColor: transpilerNode.SyntaxFreeColor}}>
-                FOO
-              </div>
+              <div style={{marginLeft: '0.5em', width: '100%'}}>
 
               <table>
                 <tbody>
                 {!inSync && (
-                      <tr><td class="stale"  onClick={handleUpdateClick}>Stale Artifacts</td></tr>
+                      <tr><td class="stale"  colSpan="3" onClick={handleUpdateClick}>Stale Artifacts</td></tr>
                   )}
                   <tr>
                     <td>

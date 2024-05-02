@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SaturationPicker from './SaturationPicker';
 import { getContrastColor, renderAttachments } from '../colorUtils';
 
-const RowHeaderComponent = ({ transpilerNode, onTranspilerNodeChange }) => {
+const RowHeaderComponent = ({ transpilerNode, onTranspilerNodeChange, onUpdateClick }) => {
   const baseImageUrl = "transpiler-images"; // Base URL for images, should be adjusted based on actual path
 
   // Helper to generate image paths
@@ -16,6 +16,13 @@ const RowHeaderComponent = ({ transpilerNode, onTranspilerNodeChange }) => {
     }
   }
 
+
+  const handleUpdateClick = () => {
+    if (onUpdateClick) {
+      onUpdateClick(transpilerNode);
+    }
+  };
+
   return (
     <table style={{
       width: '40em',
@@ -26,10 +33,6 @@ const RowHeaderComponent = ({ transpilerNode, onTranspilerNodeChange }) => {
     }}><tbody>
     
         <tr>
-        <td colSpan="2" style={{textAlign: 'center'}}>
-        {transpilerNode.TranspilerNodeAttachments && renderAttachments(transpilerNode.TranspilerNodeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "TranspilerNodeAttachments")}
-            <h4>{transpilerNode.TransformerNodeName}</h4>
-        </td>
         <td>
         {transpilerNode.FromNodeAttachments && transpilerNode.FromNodeAttachments.map((attachment, index) => (
           <img
@@ -43,6 +46,10 @@ const RowHeaderComponent = ({ transpilerNode, onTranspilerNodeChange }) => {
           {transpilerNode.FromNodeName} {transpilerNode.IsUsed === 0 && ' (unused)'} ➡
         </div>
 
+        </td>
+        <td colSpan="2" style={{textAlign: 'center', width: '40%'}}>
+        {transpilerNode.TranspilerNodeAttachments && renderAttachments(transpilerNode.TranspilerNodeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "TranspilerNodeAttachments")}
+            <h4>{transpilerNode.TransformerNodeName}</h4>
         </td>
         <td>
         <div style={{backgroundColor: transpilerNode.ToNodeMasterColor}}>
@@ -58,6 +65,7 @@ const RowHeaderComponent = ({ transpilerNode, onTranspilerNodeChange }) => {
 
         </td>
         </tr>
+        <tr><td colSpan="3" onClick={handleUpdateClick} style={{cursor: 'pointer', textAlign: 'center'}}> ⬅ Update Now ➡</td></tr>
       <tr>
       <td>
 
