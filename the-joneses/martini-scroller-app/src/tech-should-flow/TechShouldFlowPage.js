@@ -32,15 +32,15 @@ const TechShouldFlowPage = ({ initialTranspilerNodes }) => {
   };
 
   const handleUpdateGuess = (transpilerNode) => {
-    // let updatedNodes = [...transpilerNodes];  // Create a shallow copy of nodes for immutability
+    let updatedNodes = [...transpilerNodes];  // Create a shallow copy of nodes for immutability
 
-    // updatedNodes = updatedNodes.map(n => {
-    //   if (n.EdgeName === transpilerNode.EdgeName) {
-    //     return { ...n, SyntaxFreeColor: n.ExpectedColor, LockedColor: n.ExpectedColor };  // Update the current node's color
-    //   }
-    //   return n;    
-    // });
-    // setTranspilerNodes(updatedNodes);  // Update the state once all color updates are completed
+    updatedNodes = updatedNodes.map(n => {
+      if (n.EdgeName === transpilerNode.EdgeName) {
+        return { ...n, SyntaxFreeColor: n.ExpectedColor, LockedColor: n.LockedColor ? n.ExpectedColor : '' };  // Update the current node's color
+      }
+      return n;    
+    });
+    setTranspilerNodes(updatedNodes);  // Update the state once all color updates are completed
   };
 
   return (
