@@ -31,15 +31,33 @@ const TechShouldFlowPage = ({ initialTranspilerNodes }) => {
     setTranspilerNodes(updatedNodes);  // Update the state once all color updates are completed
   };
 
-  const handleUpdateGuess = (transpilerNode) => {
+  const handleUpdateGuess = (node) => {
     let updatedNodes = [...transpilerNodes];  // Create a shallow copy of nodes for immutability
 
-    updatedNodes = updatedNodes.map(n => {
-      if (n.EdgeName === transpilerNode.EdgeName) {
-        return { ...n, SyntaxFreeColor: n.ExpectedColor, LockedColor: n.LockedColor ? n.ExpectedColor : '' };  // Update the current node's color
-      }
-      return n;    
-    });
+    // Recursive function to update SyntaxFreeColor
+    const updateSyntaxFreeColor = (edgeName, newColor, nodeActuallyClicked = false) => {
+      updatedNodes = updatedNodes.map(n => {
+        if (n.EdgeName === edgeName) {          
+          let updatedNode = { ...n, SyntaxFreeColor: n.ExpectedColor };
+          if (nodeActuallyClicked && n.LockedColor) {
+            updatedNode.LockedColor = n.ExpectedColor;                
+          }
+          return updatedNode;  // Update the current node's color
+        }
+        return n;
+      });
+
+      // Recursively update grandchildren based on SyntaxFreeEdgeName
+      let childNodes = updatedNodes.filter(n => n.SyntaxFreeEdgeName === edgeName);
+      childNodes.forEach(childNode => {
+        if (childNode.FreeTranspilerNodeName) {
+          updateSyntaxFreeColor(childNode.EdgeName, newColor);
+        }
+      });
+    };
+
+    updateSyntaxFreeColor(node.EdgeName, node.ExpectedColor, true);
+    console.error('UPDATED NODES FOR SYNTAX FREE', updatedNodes);
     setTranspilerNodes(updatedNodes);  // Update the state once all color updates are completed
   };
 
