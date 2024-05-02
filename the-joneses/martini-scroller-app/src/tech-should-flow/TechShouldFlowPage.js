@@ -21,9 +21,7 @@ const TechShouldFlowPage = ({ initialTranspilerNodes }) => {
 
       // Recursively update grandchildren
       let childNodes = updatedNodes.filter(n => n.SyntaxFreeEdgeName === edgeName);
-      console.error('CHILDREN FOUND', updatedNodes.length, updatedNodes, node, childNodes.length, childNodes.map(c => c.Name));
       childNodes.forEach(childNode => {
-        console.error('UPDATING CHILD', childNode.Name, newColor );
         updateNodeColor(childNode.EdgeName, newColor);
       });
     };
@@ -33,16 +31,32 @@ const TechShouldFlowPage = ({ initialTranspilerNodes }) => {
     setTranspilerNodes(updatedNodes);  // Update the state once all color updates are completed
   };
 
+  const handleUpdateGuess = (transpilerNode) => {
+    // let updatedNodes = [...transpilerNodes];  // Create a shallow copy of nodes for immutability
+
+    // updatedNodes = updatedNodes.map(n => {
+    //   if (n.EdgeName === transpilerNode.EdgeName) {
+    //     return { ...n, SyntaxFreeColor: n.ExpectedColor, LockedColor: n.ExpectedColor };  // Update the current node's color
+    //   }
+    //   return n;    
+    // });
+    // setTranspilerNodes(updatedNodes);  // Update the state once all color updates are completed
+  };
+
   return (
     <div style={{fontSize: '0.8em', margin: '1em'}}>
       <div style={{maxWidth: '100rem'}}>
         <h1>Tech should Follow Along</h1>
-        <LockedAndFreeSyntaxComparisonTable transpilerNodes={transpilerNodes} onTranspilerNodeChange={handleColorChange} showUsed={true} />
+        <LockedAndFreeSyntaxComparisonTable transpilerNodes={transpilerNodes} 
+                      onUpdateGuess={handleUpdateGuess} 
+                      onTranspilerNodeChange={handleColorChange} showUsed={true} />
       </div>
       <div style={{maxWidth: '95rem', marginTop: '35em'}}>
         <h1>Unused Technologies</h1>
         <div style={{backgroundColor: '#dddddd', fontSize: '1em'}}>
-          <LockedAndFreeSyntaxComparisonTable transpilerNodes={transpilerNodes} onTranspilerNodeChange={handleColorChange} showUsed={false} />
+          <LockedAndFreeSyntaxComparisonTable transpilerNodes={transpilerNodes} 
+                      onUpdateGuess={handleUpdateGuess} 
+                      onTranspilerNodeChange={handleColorChange} showUsed={false} />
         </div>
       </div>
     </div>

@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import LockedOrFreeCellComponent from "./LockedOrFreeCellComponent";
 import RowHeaderComponent from "./RowHeaderComponent";
 
-const LockedAndFreeSyntaxComparisonTable = ({ transpilerNodes, onTranspilerNodeChange, showUsed }) => {
+const LockedAndFreeSyntaxComparisonTable = ({ transpilerNodes, onUpdateGuess, onTranspilerNodeChange, showUsed }) => {
 
-
+  const handleUpdateClick = (transpilerNode) => {
+    console.log("Update clicked for: ", transpilerNode);
+    onUpdateGuess(transpilerNode)
+  };
 
   return (
     <table>
@@ -20,6 +23,7 @@ const LockedAndFreeSyntaxComparisonTable = ({ transpilerNodes, onTranspilerNodeC
               <LockedOrFreeCellComponent
                 transpilerNode={transpilerNode}
                 isSyntaxLocked={true}
+                onUpdateClick={handleUpdateClick}
               />
             </td>
             <td valign="top">
@@ -32,6 +36,7 @@ const LockedAndFreeSyntaxComparisonTable = ({ transpilerNodes, onTranspilerNodeC
               <LockedOrFreeCellComponent
                 transpilerNode={transpilerNode}
                 isSyntaxLocked={false}
+                onUpdateClick={handleUpdateClick}
               />
             </td>
           </tr>

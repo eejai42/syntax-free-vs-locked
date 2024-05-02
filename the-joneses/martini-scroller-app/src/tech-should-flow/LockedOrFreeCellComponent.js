@@ -3,7 +3,7 @@ import { useState } from 'react';
 import SaturationPicker from './SaturationPicker';
 import { renderAttachments } from '../colorUtils';
 
-const LockedOrFreeCellComponent = ({ transpilerNode, isSyntaxLocked = false }) => {
+const LockedOrFreeCellComponent = ({ transpilerNode, onUpdateClick, isSyntaxLocked = false }) => {
 
   const [inSync, setInSync] = useState(isSyntaxLocked ? (transpilerNode.LockedColor === transpilerNode.ExpectedColor) : (transpilerNode.SyntaxFreeColor === transpilerNode.ExpectedColor) );
 
@@ -16,6 +16,11 @@ const LockedOrFreeCellComponent = ({ transpilerNode, isSyntaxLocked = false }) =
     }
   }, [transpilerNode.LockedColor, transpilerNode.SyntaxFreeColor, transpilerNode.ExpectedColor, isSyntaxLocked]);
 
+  const handleUpdateClick = () => {
+    if (onUpdateClick) {
+      onUpdateClick(transpilerNode);
+    }
+  };
 
   return (
     <div className={'transpiler-node ' + (inSync ? 'in-sync' : 'out-of-sync')} style={{
@@ -24,16 +29,28 @@ const LockedOrFreeCellComponent = ({ transpilerNode, isSyntaxLocked = false }) =
       (
         <div style={{position: 'relative'}}>
     
-            {!inSync && (
-                <div className="stale">Stale Artifacts</div>
-            )}
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             {isSyntaxLocked ? (
-              <div style={{width: '25em', textAlign: 'right'}}>
+              <div>
+                              {!inSync && (
+                      <div class="stale" onClick={handleUpdateClick}>Stale Artifacts</div>
+                  )}
+
+              <div style={{width: '5em', float: 'right', backgroundColor: transpilerNode.LockedColor}}>
+                FOO
+              </div>
               </div>
             ) : (
+              <div>
+              <div style={{width: '5em', left: 'right', backgroundColor: transpilerNode.SyntaxFreeColor}}>
+                FOO
+              </div>
+
               <table>
                 <tbody>
+                {!inSync && (
+                      <tr><td class="stale"  onClick={handleUpdateClick}>Stale Artifacts</td></tr>
+                  )}
                   <tr>
                     <td>
                     {transpilerNode.FromEdgeFreeAttachments?.length ? renderAttachments(transpilerNode.FromEdgeFreeAttachments, transpilerNode.FromNodeName, transpilerNode.EdgeName, "FromEdgeFreeAttachments", 'right') : null}
@@ -46,6 +63,8 @@ const LockedOrFreeCellComponent = ({ transpilerNode, isSyntaxLocked = false }) =
 
                     </td>
                   </tr>
+            
+
                   <tr>
                   <td>
                   {transpilerNode.SyntaxFreeEdgeOutputFileName} ➡  
@@ -60,6 +79,8 @@ const LockedOrFreeCellComponent = ({ transpilerNode, isSyntaxLocked = false }) =
                   </tr>
                 </tbody>
               </table>
+              </div>
+
             )}
           </div>
         </div>
