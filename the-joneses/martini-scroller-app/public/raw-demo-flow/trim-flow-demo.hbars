@@ -12,6 +12,7 @@
     "ToNodeName": "{{ToNodeName}}",
     "OutputFileName": "{{OutputFileName}}",
     "ExpectedColor": "{{ExpectedColor}}",
+    "InterruptPropagationChain": "{{InterruptPropagationChain}}",
     {{#unless (eq (length SkipForSyntaxFree) 0)}}"SkipForSyntaxFree": {{lowercase SkipForSyntaxFree}},
     {{/unless}}{{#unless (eq (length ToNodeMasterColor) 0)}}"ToNodeMasterColor": "{{ToNodeMasterColor}}",
     {{/unless}}{{#unless (eq HasSyntaxFreeParent 0)}}"HasSyntaxFreeParent": {{HasSyntaxFreeParent}},

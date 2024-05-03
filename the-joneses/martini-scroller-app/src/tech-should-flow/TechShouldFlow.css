@@ -63,17 +63,17 @@ th {
     }
   
     .in-sync {
-        border: solid green 5px;
+        border: solid green 2px;
         height: 1em;
         margin: 10px;
         font-weight: normal;
         text-align: center;
-        background-color: #edfded;
+        background-color: #eef8ee;
       }
     
       .out-of-sync {
-        border: solid red 5px;
-        background-color: #fde3e3;
+        border: solid red 1px;
+        background-color: #f8e9e9;
       }
     
       .missing-layer {
