@@ -1,0 +1,68 @@
+{
+  "DemoData": {
+    "Entities": [
+      {
+        "Name": "MOFLayer",
+        "PluralName": "MOFLayers",
+        "AirtableName": "MOFLayers"
+      }
+    ],
+    "MOFLayers": [
+      {
+        "MOFLayerId": "recM3HoiDucf6IqBJ",
+        "createdTime": "2024-05-04T18:04:42",
+        "MOFLayerNumber": 3,
+        "MOFLayerName": "MetaModel",
+        "LayerChoices": [
+          "recHevLq93SeDxqYD",
+          "recDpZpPOrnOKvJFL"
+        ],
+        "Name": "3.MetaModel"
+      },
+      {
+        "MOFLayerId": "recCeFNHSYZtt0FMY",
+        "createdTime": "2024-05-04T18:04:42",
+        "MOFLayerNumber": 2,
+        "MOFLayerName": "Domain",
+        "LayerChoices": "recGVRwMVaqf9CqPE",
+        "Name": "2.Domain"
+      },
+      {
+        "MOFLayerId": "rectrIqL2DNhaln3x",
+        "createdTime": "2024-05-04T18:04:42",
+        "MOFLayerNumber": 1,
+        "MOFLayerName": "Instance",
+        "LayerChoices": [
+          "recOtop8i70DzElXM",
+          "recLDZRoAAyGrWtNP",
+          "rec0k1u8jXl7nhwoA",
+          "recgery18J4TSMO18",
+          "rec1Xk6IDS7zLoUK8",
+          "recAU7aULJrWJGtbG"
+        ],
+        "Name": "1.Instance"
+      },
+      {
+        "MOFLayerId": "recuF20OxYU6cQKJe",
+        "createdTime": "2024-05-04T18:06:27",
+        "MOFLayerNumber": 0,
+        "MOFLayerName": "SyntaxLockedAssets",
+        "LayerChoices": [
+          "rec1fzXDpOI3HeaK0",
+          "rec6sMBJr9R2xcupg",
+          "recfHFeWwBx3IEybQ",
+          "recj0Yiqb8tUOGrVv",
+          "rec5fNwRG5djzUeYB",
+          "rec03I1WouW1vcSuB",
+          "recF7IWYAR8EDbdN0",
+          "recSpio6qk4aiX400",
+          "recu7yv6s34PQlqUz",
+          "rec7Ity65xrJI1ODz",
+          "recGjkxRQZFogwAh1",
+          "recmlqrqQMJvfDz6n"
+        ],
+        "Name": "0.SyntaxLockedAssets"
+      }
+    ]
+  }
+}

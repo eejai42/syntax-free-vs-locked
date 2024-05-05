@@ -4,7 +4,7 @@ import HomePage from './HomePage';
 import DemoPage from './DemoPage';
 import ScriptPage from './ScriptPage';
 import WaterColorsPage from './WaterColorsPage';
-import TechShouldFlowPage from './tech-should-flow/TechShouldFlowPage';
+import TechShouldFlowPage from './tech-should-flow_v1/TechShouldFlowPage';
 
 const App = () => {
   const [data, setData] = useState(null);
