@@ -11,7 +11,10 @@ const NodeWithChildren = ({ node }) => {
                             <tr>
                                 <td>
                                 <div style={{border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none'}}>
-                                    <strong>{node.FQNChoiceName}</strong><br/>
+                                    <strong>{node.FQNChoiceName}</strong>
+                                    {node.MOFLayerNumber === 2 && <span>
+                                        
+                                        </span>}<br/>
                                     <div>
                                         {node.ExpectedColor && <span><strong>ExpectedColor:</strong> {node.ExpectedColor}<br/></span>}
                                     </div>
@@ -28,11 +31,11 @@ const NodeWithChildren = ({ node }) => {
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            {node.MOFLayerNumber === 0 &&<tr>
                                 <td>
-                                Tool File Name: {node.ToolTransformerFileName} <br/>
+                                {node.ToolName} <br/>
                                 </td>
-                            </tr>
+                            </tr>}
                         </table>                                    
                     </td>
                 </tr>

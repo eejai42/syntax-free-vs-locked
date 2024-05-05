@@ -1,369 +1,393 @@
-<Airtable xmlns:json="http://james.newtonking.com/projects/json"><MOFLayers><Name>3.MetaModel</Name><MOFLayerNumber>3</MOFLayerNumber><MOFLayerName>MetaModel</MOFLayerName></MOFLayers><MOFLayers><Name>2.Domain</Name><MOFLayerNumber>2</MOFLayerNumber><MOFLayerName>Domain</MOFLayerName></MOFLayers><MOFLayers><Name>1.Instance</Name><MOFLayerNumber>1</MOFLayerNumber><MOFLayerName>Instance</MOFLayerName></MOFLayers><MOFLayers><Name>0.SyntaxLockedAssets</Name><MOFLayerNumber>0</MOFLayerNumber><MOFLayerName>SyntaxLockedAssets</MOFLayerName></MOFLayers><MOFNodes><NodeName>Natural Language Description</NodeName><NodeType>M3Level-model-format</NodeType><SortOrder>1</SortOrder>
+<Airtable xmlns:json="http://james.newtonking.com/projects/json"><MOFLayers><Name>3.MetaModel</Name><MOFLayerNumber>3</MOFLayerNumber><MOFLayerName>MetaModel</MOFLayerName><MOFDisplayOrder>3</MOFDisplayOrder></MOFLayers><MOFLayers><Name>1.Instance</Name><MOFLayerNumber>1</MOFLayerNumber><MOFLayerName>Instance</MOFLayerName><MOFDisplayOrder>2</MOFDisplayOrder></MOFLayers><MOFLayers><Name>2.Domain</Name><MOFLayerNumber>2</MOFLayerNumber><MOFLayerName>Domain</MOFLayerName><MOFDisplayOrder>1</MOFDisplayOrder></MOFLayers><MOFLayers><Name>0.SyntaxLockedAssets</Name><MOFLayerNumber>0</MOFLayerNumber><MOFLayerName>SyntaxLockedAssets</MOFLayerName><MOFDisplayOrder>0</MOFDisplayOrder></MOFLayers><MOFNodes><NodeName>Natural Language Description</NodeName><NodeType>M3Level-model-format</NodeType><SortOrder>1</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/WLWNpWBll0b3CpAoz-NCAw/b9CUxmSDiBoKP1Pg___gO-Us6ykgm4j486U_fQlzfZ5O63CWI7wNJtvrT8WnUWjtbCz_4UvcLZDxNGcvQ8yToB6P12mIoD2mcFn2jYKJvjZK0Ie5x5IuXeV9rkemjPTqaKE8CmLQWkYXHfJqD6vXSZZwp0jsngQp3mBBFMkjbJevFxDd4v5EhrPbl-1MstO9/8Xp5lCNpTXnhI3f17uf4cIgU3grXlEOj2QEKIVog89U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/lIDe5yBjKDJV8MKtLVmnPQ/mNvROzz3fq0fS2gJ0RZP4fR00jUquK6w53exSkH3_cq0V75wLSRxQfe9AUAIYW7jZfhtniE8XTmrPL-brGWQG4J8VtCdxXHlM_a2us4_uuO4tVKxNVP1qTTX45fQ2XtgkCbrx1SoyfTAzpHC6fNMudvzJ7CP_pXkGf6tgVWtAMvSdZ3fGhwEBMrUwsOXVFQO/9z3TrA0RA7wuxNZCHTy7Yl1oSzVrRwcVpSdWaBxZ9CI</url>
         </Attachments>
     
         <PlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/WLWNpWBll0b3CpAoz-NCAw/b9CUxmSDiBoKP1Pg___gO-Us6ykgm4j486U_fQlzfZ5O63CWI7wNJtvrT8WnUWjtbCz_4UvcLZDxNGcvQ8yToB6P12mIoD2mcFn2jYKJvjZK0Ie5x5IuXeV9rkemjPTqaKE8CmLQWkYXHfJqD6vXSZZwp0jsngQp3mBBFMkjbJevFxDd4v5EhrPbl-1MstO9/8Xp5lCNpTXnhI3f17uf4cIgU3grXlEOj2QEKIVog89U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/lIDe5yBjKDJV8MKtLVmnPQ/mNvROzz3fq0fS2gJ0RZP4fR00jUquK6w53exSkH3_cq0V75wLSRxQfe9AUAIYW7jZfhtniE8XTmrPL-brGWQG4J8VtCdxXHlM_a2us4_uuO4tVKxNVP1qTTX45fQ2XtgkCbrx1SoyfTAzpHC6fNMudvzJ7CP_pXkGf6tgVWtAMvSdZ3fGhwEBMrUwsOXVFQO/9z3TrA0RA7wuxNZCHTy7Yl1oSzVrRwcVpSdWaBxZ9CI</url>
         </PlatformAttachments>
     <Name>1.Natural Language Description</Name></MOFNodes><MOFNodes><NodeName>a) Hardware Spec v1</NodeName><NodeType>M1Layer-domain</NodeType><DesiredColor>#0000FF</DesiredColor><SortOrder>1</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/SD4EX4xBqNtLyOpqosTRmg/CP1AXy3JH8KHraludiiP2X_VJV_AFYAPX9UEcsFniHEda8dM0CQ47hVVAhqvDOv_Bmvaal3wFszmFppNyXfwFCu0smZd-2s_Iw-CqPifDXVleTt5QONGtHaOkWhaYqqmLGtmjmVyqQW0kESEAO7npDdv1HQYE8LImzdOH5Jxi7Q/tgxQ8hAYSlUT6BxbwItHbdkq4m8Nr4-iWfeNjky90rg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/6eozSxxdaaLD222x6aDSBQ/vnujfYUg6ITVK8iAmDKzfXAO84u_NwrQRjX1Xd_TWdaFJXOwzUZPFRKV0X9RUYfu-5XLcFS_WypF6RENkgsHN3iJ42ysMqc37XQVXhTFMG9V4qyCFqxGjj-FkFNe-GOqA_BUZAIUGRxBmoBAGWHob3RnKBmQ8lQhlmao2u8w6zA/JzxfGUzWdfkYPKO7f9KAy8ASKI0Gb9sHSNlVqQnKWLc</url>
         </Attachments>
     <DefaultFileName>Hardware_Spec_v1.pdf</DefaultFileName><Name>1.a) Hardware Spec v1</Name></MOFNodes><MOFNodes><NodeName>b) Hardware Spec v2</NodeName><NodeType>M1Layer-domain</NodeType><DesiredColor>#0000EE</DesiredColor><SortOrder>2</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DemDJctdyS5nqtCbtcI6lw/z1C0qi7oJnMnINUhod5OxVxPOoL_cng40aitUvBoXY6rxWNwPqMExIJwyyaWgzWLWIxlGISvDItZK_QGtLcUfSv1cd_3-E_Oosx6sFqobc_NbQdIFcrHS5FuOCxX1ltjFQs2UxG_p84xQLmKP6u74Q/dZPZBS1d8jT7fG2UXstMdQJO-Aiv5C_kCY4tiv8J0MA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/qhmOrK4hpri4NAk4Jl-Otg/9UeVkBSfyQZYptfZ1VFvR59WZIv-I_DVgc8oJgOqCG-Gets6r7fCtByfaqxdceAVhj8cJMlqE_fjEyNRTORONUXlina_QmxUuRw3gGyipPrFW6HYZYbZdVmSdVmiMypyh62VWanGvFfPLslbmY1gGg/QoivzORgSDTxVZZRkz1t-SMrXzj7ABqPG0gvItchUYI</url>
         </Attachments>
     <DefaultFileName>Hardware_Spec_v2.pdf</DefaultFileName><Name>2.b) Hardware Spec v2</Name></MOFNodes><MOFNodes><NodeName>c) Garage Door Opener</NodeName><NodeType>M1Layer-domain</NodeType><DesiredColor>#0000CC</DesiredColor><SortOrder>3</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/VWQf_AxtgLbv8-3mkfb4QQ/dywxy8J2uPwVqCqlWNuVRx8QYksPpq-XYlGMcVqHXHNWsnmw01oKGelzCXR476A3DT4RWAoZGKkOGsle1HDmUBRJiUsLrPEY315vyUydsEBfpXxRZX1yBXmImUo5PqO5uwKI7PrmpaYyCgTEbiQQfg/SjGsobsTEFeIc9EKTGHNyF46W1qyUhKZqaIWdAVs9MY</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/mhtOjLM6c4Yq7GzFP1k-3Q/x2xoEi2XTFoanwaDgK-IyppMbH7E5asYOVLqkVjvpPDxq4tWmAl9759eZeyMO5rNJsGUi0Dzml3UlK9SfJXnbcpuYojtYkbNEd9SWu-zKzNmGJFMmR03DdLsi0hnmHpafg76S9HMkOCWgQrnhlV6rg/bLJeJDRUo4AYyTPA9SrxSG2LuPel_S9-cdFojcWUjW0</url>
         </Attachments>
     <DefaultFileName>GarageDoorOpener.pdf</DefaultFileName><Name>3.c) Garage Door Opener</Name></MOFNodes><MOFNodes><NodeName>Syntax-Free Mirror</NodeName><NodeType>M3Level-model-format</NodeType><SortOrder>6</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/o4M3BejeAHGB6Fgui2ALEg/Z7VwpEiQbMGoIbav5QdqD1rwuHw1f4lXWT0orTWfpIjPs64LNFdk_RQ_nMvTREqD-nLfAZ6Xly1YyMfge160o70VjR6kH3gKtwOW1uNcB4RF5RDvzU-lVB_4d2lJ57wTgeNUCPp3d4lGvLy59ZK8Og/bJeKcuft_7MFt7GgD5UIzGLBcH-RG77zi_DCykAmCmw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI</url>
         </Attachments>
     
         <PlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/FDiQ8O7Xwfe4ylpDQ8qbYw/J4ghfuaO5vC_CeTdAv4-e8EUu95bccUf1kID1kz9fWno0Qrc57giUlY1ZuX7nyQngE5V9vzfKoXd5iTWs-4W_I6-VB3mjg0qRRm1WoRxRrvC3YavpveuyX8JFKAsIMBvt2QewxtsLA2-dm3YrMZh9wYSc3Uk8tR2iJi9HpQj6m1-CB488MnYYsRjzlqAhRN5x6yGLcRBey5v7zOD_vW7Jg/CK2zoo0kA2luqGLFZ87sSqX3nwCM4zCSCb_I53afnLc</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/AvUl5idiRNIVhzmlUdVoOw/aG_T7SkIZRiKavhzEJ8g2tsdB5_BQxd-I6zqoaeL90t7sibFT5uNdC8uZ53vF9JAvhk6fb45k7_TTQzyGTzJRm19CyhCbiDVDAwlSn-GWV5_xYZQLuESKXjdTH69Hs-DT6B3Vre1kBDPx_Pfp9uAe54TpdnjzkZ7bjX5ZH-_c4aezek7s99ekYDJ4eUK6VkYwUXWDB5k6vUwdAQOnp_k5w/bQUh3oLG9V8LMX-c2reVHgTzo55hZmwCtUTHaqjDC5w</url>
         </PlatformAttachments>
     <DefaultFileName>api.airtable.com</DefaultFileName><IsQueriable>True</IsQueriable><Name>6.Syntax-Free Mirror</Name></MOFNodes><MOFNodes><NodeName>Json</NodeName><NodeType>M2Layer-syntax-free-model</NodeType><SortOrder>14</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </Attachments>
     
         <PlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </PlatformAttachments>
     <DefaultFileName>Devices.json</DefaultFileName><IsQueriable>True</IsQueriable><Name>14.Json</Name></MOFNodes><MOFNodes><NodeName>Markdown</NodeName><NodeType>M0Level-instance</NodeType><DesiredColor>#bfff00</DesiredColor><SortOrder>17</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/EQjTHyVJQ1-TcTQ_4xu4AQ/qdJnva-E_5r7lcwOuuhArvm2AGpDA5XlWp3G3UH8E3-ymR1IhKn6GYqG2h0xCKpcLjfunq6v7Qo4a1Bqjt_wGKpkK_WFvtdC-ra4QrBP5qMlAHCIjVI3Ri9QXQNpjjEPBupu15lSACJ8TKeMn6Z94xKgFSJ-GCyQK8m7a_KFEonUCrzzFGrECZoE8OG2-chH/IyNY27w-7mwd27OR32eWhUD_xEe_3TepbWprf2_bBGk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/sS3d6vdzk5H49Dkd3VgSow/Mzz6waSS8JpzNtljDnM6cWy_5vYnk0xmh4QheydlinQx4EHdh2pkLJ13f9-wi0OgfP2bBcHHELE_8gE3PFJ_VTG6DjuKbqasiZlLyZi-34JOozvTpjR90GWz-dJFjLvG1kNDwNmkd7WrxKl54KT5wbgwc9CYgBHf_dvjM6i6ZGS_yyRpWMCcRh2RxE1SvJps/xF7E4uGwzyLTgDxmuAJiXxjj1s6uWFgkMyxrXe6tpvQ</url>
         </Attachments>
     
         <PlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/WLWNpWBll0b3CpAoz-NCAw/b9CUxmSDiBoKP1Pg___gO-Us6ykgm4j486U_fQlzfZ5O63CWI7wNJtvrT8WnUWjtbCz_4UvcLZDxNGcvQ8yToB6P12mIoD2mcFn2jYKJvjZK0Ie5x5IuXeV9rkemjPTqaKE8CmLQWkYXHfJqD6vXSZZwp0jsngQp3mBBFMkjbJevFxDd4v5EhrPbl-1MstO9/8Xp5lCNpTXnhI3f17uf4cIgU3grXlEOj2QEKIVog89U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/lIDe5yBjKDJV8MKtLVmnPQ/mNvROzz3fq0fS2gJ0RZP4fR00jUquK6w53exSkH3_cq0V75wLSRxQfe9AUAIYW7jZfhtniE8XTmrPL-brGWQG4J8VtCdxXHlM_a2us4_uuO4tVKxNVP1qTTX45fQ2XtgkCbrx1SoyfTAzpHC6fNMudvzJ7CP_pXkGf6tgVWtAMvSdZ3fGhwEBMrUwsOXVFQO/9z3TrA0RA7wuxNZCHTy7Yl1oSzVrRwcVpSdWaBxZ9CI</url>
         </PlatformAttachments>
     <OutputIsDocs>True</OutputIsDocs><DefaultFileName>README.md</DefaultFileName><Name>17.Markdown</Name></MOFNodes><MOFNodes><NodeName>HTML</NodeName><NodeType>M0Level-instance</NodeType><DesiredColor>#bfff00</DesiredColor><SortOrder>18</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/6vIJveCz18Bxs7V6_zLpSA/5800TPk6lSNEY4-neMhhoMqy5muBWG6NzJxBt6ed2BLpoSDS9zysi5MAWU35_V2lV8pD21j864rqBkHTl8nLmo18WgYXoM4bOxZmC87NDWZv_G9DVJ7HYFlVdnRsF7dwt59_DIebAJHilpsMyQtgDyn8Bz1lSsjtsI05vLmKX_98k8bLvU3cSYyWb7meQg3v/SVnr_EVOVzxyvWaCvz4ESX_Umxtfu5IQo6gqy5DUp-g</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/gGyZgsTpJJl-d4nEBYo3qA/2EpucKc5v3Ev9hItiYdS5vrXh06UcwJdZB3PW8VY0AC3v9zBvsFcnrePoFTJ2rforzm7d1gCYsbjg8P5j6xO-LrCUuYrefDKiJMeS1pRb4CpynPk4_qPody0AoL3mHWmF3cNoOgS8jcM6WG6cgay-cM1sMhwIEgQ9Op2VpPikGHYFB3yCaqqSCTumbbBFvkV/XM549DtlysT68Fm9Bu6-TnxkfnJpo3H1by4gS-DutJY</url>
         </Attachments>
     
         <PlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/WLWNpWBll0b3CpAoz-NCAw/b9CUxmSDiBoKP1Pg___gO-Us6ykgm4j486U_fQlzfZ5O63CWI7wNJtvrT8WnUWjtbCz_4UvcLZDxNGcvQ8yToB6P12mIoD2mcFn2jYKJvjZK0Ie5x5IuXeV9rkemjPTqaKE8CmLQWkYXHfJqD6vXSZZwp0jsngQp3mBBFMkjbJevFxDd4v5EhrPbl-1MstO9/8Xp5lCNpTXnhI3f17uf4cIgU3grXlEOj2QEKIVog89U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/lIDe5yBjKDJV8MKtLVmnPQ/mNvROzz3fq0fS2gJ0RZP4fR00jUquK6w53exSkH3_cq0V75wLSRxQfe9AUAIYW7jZfhtniE8XTmrPL-brGWQG4J8VtCdxXHlM_a2us4_uuO4tVKxNVP1qTTX45fQ2XtgkCbrx1SoyfTAzpHC6fNMudvzJ7CP_pXkGf6tgVWtAMvSdZ3fGhwEBMrUwsOXVFQO/9z3TrA0RA7wuxNZCHTy7Yl1oSzVrRwcVpSdWaBxZ9CI</url>
         </PlatformAttachments>
     <OutputIsDocs>True</OutputIsDocs><DefaultFileName>Index.html</DefaultFileName><Name>18.HTML</Name></MOFNodes><MOFNodes><NodeName>WIKI</NodeName><NodeType>M0Level-instance</NodeType><DesiredColor>#bfff00</DesiredColor><SortOrder>19</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/mTEXMRbp7yiWlWjPJecIkg/ht050cTMV2NE_vsqCxDRgb5som8vjm5ujlwP7xdYbCAEOvxBZ5YMYiJeQsxnnpLAKYETBiFTnlT24SomvIZiXmq7-bF3QHreUALQpJ5MjRJ9tbbLRM5xCVcBxpItRIYj3QRM7oCa45K1dYGRGjWUVtWSyXUeCiQcIUIonsk8hlM0CtdzxL6b1DyxMWooOzwM/llsD9w1DSc_iaa0KOHS19wNdKznrMpsGuHukTT_IFdQ</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/s16H72YAIjv92mu_8rHwpA/bE-ZZlWAWlPzHFip_0jzdTRfLhCPCfdRnTxsaPebPLIyR_0smbcnd5JECQr-heXmBJ8gKg75HraWJfh0WmxGEIMUob0xSj-uowrgivOYpMcgwhkTuaHr3oMeg-FhaRbX9v9NfOzWj1PhrpELnNAw5ZjLFw_gj8NGkxRtU0M8DEqS9djVQxXPLJ3d5q_R6JTv/1Xrl0Xkccr4dbaao6qiHwBWGZfvD48UHgYuICNwaxeA</url>
         </Attachments>
     
         <PlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/WLWNpWBll0b3CpAoz-NCAw/b9CUxmSDiBoKP1Pg___gO-Us6ykgm4j486U_fQlzfZ5O63CWI7wNJtvrT8WnUWjtbCz_4UvcLZDxNGcvQ8yToB6P12mIoD2mcFn2jYKJvjZK0Ie5x5IuXeV9rkemjPTqaKE8CmLQWkYXHfJqD6vXSZZwp0jsngQp3mBBFMkjbJevFxDd4v5EhrPbl-1MstO9/8Xp5lCNpTXnhI3f17uf4cIgU3grXlEOj2QEKIVog89U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/lIDe5yBjKDJV8MKtLVmnPQ/mNvROzz3fq0fS2gJ0RZP4fR00jUquK6w53exSkH3_cq0V75wLSRxQfe9AUAIYW7jZfhtniE8XTmrPL-brGWQG4J8VtCdxXHlM_a2us4_uuO4tVKxNVP1qTTX45fQ2XtgkCbrx1SoyfTAzpHC6fNMudvzJ7CP_pXkGf6tgVWtAMvSdZ3fGhwEBMrUwsOXVFQO/9z3TrA0RA7wuxNZCHTy7Yl1oSzVrRwcVpSdWaBxZ9CI</url>
         </PlatformAttachments>
     <OutputIsDocs>True</OutputIsDocs><DefaultFileName>HOME.wiki</DefaultFileName><Name>19.WIKI</Name></MOFNodes><MOFNodes><NodeName>Cpp</NodeName><NodeType>M0Level-instance</NodeType><DesiredColor>#ff0000</DesiredColor><SortOrder>20</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/iyR4hARy1xjyfhARZN5EVQ/DrvSJ4r0XxakDRPSbxR7jv4kNfl7drLWrCS9boQRBCX8MKbDpw9HlhDQhaNujU2TliPvRujYUGM6C-ks4l4pLjh8YrJItJRSPRAqhoPeM0RsgNnmdesNzzpMoLTL6tljr36i5pWUuLVsi0tiygDGuQ/kQgKX_H6EPbIKPEp92DV-uN0M6LESZHL4jGZBIQVEdw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/8FedXfsCEOFGTWCtcvhmMQ/C3Gwxg8r3tGHFzC2F9y9xijVubVm_q7kHGeGKe_rg2zfL-MJYHOP4_fHNm0DEQb1l3ypr0pS9hYVzcVau60S-31d_p__Fg9xbfKOa8ZbeX2DQQD7ItyJm1mOl-Vw-2NwTdwOFY5unU7nIcqgRe9Xsw/aLvdPy4YDXDVbfWP22E04NJb7NwdND26jRY6WIkmYfQ</url>
         </Attachments>
     
         <PlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/SD4EX4xBqNtLyOpqosTRmg/CP1AXy3JH8KHraludiiP2X_VJV_AFYAPX9UEcsFniHEda8dM0CQ47hVVAhqvDOv_Bmvaal3wFszmFppNyXfwFCu0smZd-2s_Iw-CqPifDXVleTt5QONGtHaOkWhaYqqmLGtmjmVyqQW0kESEAO7npDdv1HQYE8LImzdOH5Jxi7Q/tgxQ8hAYSlUT6BxbwItHbdkq4m8Nr4-iWfeNjky90rg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/6eozSxxdaaLD222x6aDSBQ/vnujfYUg6ITVK8iAmDKzfXAO84u_NwrQRjX1Xd_TWdaFJXOwzUZPFRKV0X9RUYfu-5XLcFS_WypF6RENkgsHN3iJ42ysMqc37XQVXhTFMG9V4qyCFqxGjj-FkFNe-GOqA_BUZAIUGRxBmoBAGWHob3RnKBmQ8lQhlmao2u8w6zA/JzxfGUzWdfkYPKO7f9KAy8ASKI0Gb9sHSNlVqQnKWLc</url>
         </PlatformAttachments>
     <OutputIsCode>True</OutputIsCode><DefaultFileName>Common.h/cpp</DefaultFileName><Name>20.Cpp</Name></MOFNodes><MOFNodes><NodeName>Python</NodeName><NodeType>M0Level-instance</NodeType><DesiredColor>#ff0000</DesiredColor><SortOrder>21</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/0_ZhuEhrp4oTeguTFQlVRA/i4nfgriBDY8jr78KHbOKEM6RP09XigWFsFLwyEx6W15D0zZxYSSRUSNm1q9RuahVNstgEZHDzB2HDJrhlSqzUbjhbRhqKDC-H40kvLiOQIXJhLtk4lZ_-k_w-8S0xcxtf5csUhtoK8c500JPJCs1Vp8fDv1HC5DkY9IXdth5_yV-Ids9jJ7R2705q88J89Q5/2x1qhGeHTu-eIsp5vuCjXod1mF7lCC-6qci7ST8IM5o</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2vtWja3TleBa5viS2cHj9g/1zMyxCKRllXxKz5B3vihHnkKZOoT68Qj64qhFmkYAcPE9ugD7WgdR8lNKU9z6nFpCAMeOpoXsJUsBOA1EH4RdyU1UA0BDSe5ypJb8SqN4VPg8HA8Z6fQdaLUvdnUW69BkXx21ES9PbaPt2o0Z1wPpwrPwBIvprhCeG1nVJR-xcJa27TI-m5VhDbpfJs9a0Jq/BPLDblUsampUZICgocQX-UYszPKEL1HZYxAvmwjydgY</url>
         </Attachments>
     
         <PlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DemDJctdyS5nqtCbtcI6lw/z1C0qi7oJnMnINUhod5OxVxPOoL_cng40aitUvBoXY6rxWNwPqMExIJwyyaWgzWLWIxlGISvDItZK_QGtLcUfSv1cd_3-E_Oosx6sFqobc_NbQdIFcrHS5FuOCxX1ltjFQs2UxG_p84xQLmKP6u74Q/dZPZBS1d8jT7fG2UXstMdQJO-Aiv5C_kCY4tiv8J0MA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/qhmOrK4hpri4NAk4Jl-Otg/9UeVkBSfyQZYptfZ1VFvR59WZIv-I_DVgc8oJgOqCG-Gets6r7fCtByfaqxdceAVhj8cJMlqE_fjEyNRTORONUXlina_QmxUuRw3gGyipPrFW6HYZYbZdVmSdVmiMypyh62VWanGvFfPLslbmY1gGg/QoivzORgSDTxVZZRkz1t-SMrXzj7ABqPG0gvItchUYI</url>
         </PlatformAttachments>
     <OutputIsCode>True</OutputIsCode><DefaultFileName>Main.py</DefaultFileName><Name>21.Python</Name></MOFNodes><MOFNodes><NodeName>CSharp</NodeName><NodeType>M0Level-instance</NodeType><DesiredColor>#ff0000</DesiredColor><SortOrder>23</SortOrder>
         <Attachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/_Sg1H7AJ_lDLOLv-lTlkog/4Jdc7jESNW_6CkSjrc2WSgO8NVqKNrk5LskSKEnF3w_QGuMH_VUaGOckiNr4yn-e6isQHkTN7sB9dNfmVm0zh1NtorTKLL4KmEHo0bi7Rr-9p3hMToxi_ntxewbdnMeO8IK8Ajj4tLcYyhP0OSSUyw/JccaPvVaKzf_RWCCQPQDrrZ9n6_pRtH_hiKgncAgC_w</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/1en4NQUFZ0GGRD1_TfcdGQ/AFhI0L810RRtJbWin455AdxOmqeWCBEgR0IZh0bGqtBt_LShRjW-nrMUURqvcPxaasg3woeTSS4Z4n_wV8r-gdVkvMs-RAGXGQLS3GeLtp97MNbpUT9ThjiUYV2TFzclVAenVW2XabwBIDiBMf9Lqw/IjnIMD-LtFGcswSazLhTT25TxduXr-clBXNq-N2etQg</url>
         </Attachments>
     
         <PlatformAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/FYm__2__pnpsioU0w1SyVA/g71t3ISgeBAcBVK1ImVataqWj9pq1bhZ_UyJdNl4KzV1SQL9qLG4RrbQuoTlGRYHAIqktpc8N89Vgz_b1MBs25-M2-DKEfMdQcaDv-wuk5AicjN-CkyugLDjo7h4esQE4Y9p1ruPyIYW92LGYpafao8MSAakbMKolRKEsK0C3Gs/4FpW3qqCMr3-mIVVHfTnpdoOnSGGIz2yGmw0LNRFnLs</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ThxKj5toWYrV83_t4ui4OQ/vyY1svd0DXYncMAsNrE-rnYG2m4srmvA7YW1vq8pXPi2Lj43oxfGNf1NYlikZo_OXzQ0SR1EHRBF52lF7wIdtTaOfX0xspOyGrHQonG3TCoyLHT1DDsWhTTAhah-JIBK2zILeqYfA9xchz4Lw43uSmDkHlFDtlNJ5G02_XdOSl8/cQGOdTUWzLx5GhtgnNMj0kWrmilWwxma9a5iWbE3s2E</url>
         </PlatformAttachments>
     <OutputIsCode>True</OutputIsCode><DefaultFileName>Program.cs</DefaultFileName><Name>23.CSharp</Name></MOFNodes><MOFChoices><NodeName>Syntax-Free Mirror</NodeName><FQNChoiceName>SF-Syntax-Free Mirror</FQNChoiceName><Name>3.MetaModel,6.Syntax-Free Mirror (syntax free)</Name><MOFLayerNumber>3</MOFLayerNumber><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/o4M3BejeAHGB6Fgui2ALEg/Z7VwpEiQbMGoIbav5QdqD1rwuHw1f4lXWT0orTWfpIjPs64LNFdk_RQ_nMvTREqD-nLfAZ6Xly1YyMfge160o70VjR6kH3gKtwOW1uNcB4RF5RDvzU-lVB_4d2lJ57wTgeNUCPp3d4lGvLy59ZK8Og/bJeKcuft_7MFt7GgD5UIzGLBcH-RG77zi_DCykAmCmw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI</url>
         </NodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/o4M3BejeAHGB6Fgui2ALEg/Z7VwpEiQbMGoIbav5QdqD1rwuHw1f4lXWT0orTWfpIjPs64LNFdk_RQ_nMvTREqD-nLfAZ6Xly1YyMfge160o70VjR6kH3gKtwOW1uNcB4RF5RDvzU-lVB_4d2lJ57wTgeNUCPp3d4lGvLy59ZK8Og/bJeKcuft_7MFt7GgD5UIzGLBcH-RG77zi_DCykAmCmw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI</url>
         </ToolAttachments>
-    <ToolDefaultFileName>api.airtable.com</ToolDefaultFileName><NodeDefaultFileName>api.airtable.com</NodeDefaultFileName><ToolName>Syntax-Free Mirror</ToolName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-Syntax-Free Mirror</ParentChoiceName><NodeName>Json</NodeName><FQNChoiceName>SF-Json</FQNChoiceName><Name>2.Domain,14.Json (syntax free)</Name><MOFLayerNumber>2</MOFLayerNumber><ParentMOFLayerNumber>3</ParentMOFLayerNumber><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolDefaultFileName>api.airtable.com</ToolDefaultFileName><NodeDefaultFileName>api.airtable.com</NodeDefaultFileName><ToolName>Syntax-Free Mirror</ToolName><MOFDisplayOrder>3</MOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-Json</ParentChoiceName><NodeName>a) Hardware Spec v1</NodeName><FQNChoiceName>SF-a) Hardware Spec v1</FQNChoiceName><Name>1.Instance,1.a) Hardware Spec v1 (syntax free)</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>2</ParentMOFLayerNumber><NodeDesiredColor>#0000FF</NodeDesiredColor><MixedColor>#0000FF</MixedColor><ExpectedColor>#0000FF</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/6eozSxxdaaLD222x6aDSBQ/vnujfYUg6ITVK8iAmDKzfXAO84u_NwrQRjX1Xd_TWdaFJXOwzUZPFRKV0X9RUYfu-5XLcFS_WypF6RENkgsHN3iJ42ysMqc37XQVXhTFMG9V4qyCFqxGjj-FkFNe-GOqA_BUZAIUGRxBmoBAGWHob3RnKBmQ8lQhlmao2u8w6zA/JzxfGUzWdfkYPKO7f9KAy8ASKI0Gb9sHSNlVqQnKWLc</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/o4M3BejeAHGB6Fgui2ALEg/Z7VwpEiQbMGoIbav5QdqD1rwuHw1f4lXWT0orTWfpIjPs64LNFdk_RQ_nMvTREqD-nLfAZ6Xly1YyMfge160o70VjR6kH3gKtwOW1uNcB4RF5RDvzU-lVB_4d2lJ57wTgeNUCPp3d4lGvLy59ZK8Og/bJeKcuft_7MFt7GgD5UIzGLBcH-RG77zi_DCykAmCmw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ParentNodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
-        </ToolAttachments>
-    
-        <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/o4M3BejeAHGB6Fgui2ALEg/Z7VwpEiQbMGoIbav5QdqD1rwuHw1f4lXWT0orTWfpIjPs64LNFdk_RQ_nMvTREqD-nLfAZ6Xly1YyMfge160o70VjR6kH3gKtwOW1uNcB4RF5RDvzU-lVB_4d2lJ57wTgeNUCPp3d4lGvLy59ZK8Og/bJeKcuft_7MFt7GgD5UIzGLBcH-RG77zi_DCykAmCmw</url>
-        </ToolInputAttachments>
-    
-        <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/o4M3BejeAHGB6Fgui2ALEg/Z7VwpEiQbMGoIbav5QdqD1rwuHw1f4lXWT0orTWfpIjPs64LNFdk_RQ_nMvTREqD-nLfAZ6Xly1YyMfge160o70VjR6kH3gKtwOW1uNcB4RF5RDvzU-lVB_4d2lJ57wTgeNUCPp3d4lGvLy59ZK8Og/bJeKcuft_7MFt7GgD5UIzGLBcH-RG77zi_DCykAmCmw</url>
-        </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Devices.json</NodeDefaultFileName><InputChoiceFileName>api.airtable.com</InputChoiceFileName><ToolName>airtable-to-json</ToolName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-Json</ParentChoiceName><NodeName>a) Hardware Spec v1</NodeName><FQNChoiceName>SF-a) Hardware Spec v1</FQNChoiceName><Name>1.Instance,1.a) Hardware Spec v1 (syntax free)</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>2</ParentMOFLayerNumber><NodeDesiredColor>#0000FF</NodeDesiredColor><MixedColor>#0000FF</MixedColor><ExpectedColor>#0000FF</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
-        <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/SD4EX4xBqNtLyOpqosTRmg/CP1AXy3JH8KHraludiiP2X_VJV_AFYAPX9UEcsFniHEda8dM0CQ47hVVAhqvDOv_Bmvaal3wFszmFppNyXfwFCu0smZd-2s_Iw-CqPifDXVleTt5QONGtHaOkWhaYqqmLGtmjmVyqQW0kESEAO7npDdv1HQYE8LImzdOH5Jxi7Q/tgxQ8hAYSlUT6BxbwItHbdkq4m8Nr4-iWfeNjky90rg</url>
-        </NodeAttachments>
-    
-        <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
-        </ParentNodeAttachments>
-    
-        <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DGuE_aOrSz-sm3Jf529QyA/Pd2MR8DJf2OHInqJ6jGOkriTSpggXYQAqxfe54tEBA89sNoN2yuNWyeLi6uqfiX9bejx7L0H9o8GBZCL_zS154J34-TC46NtsthVHbQxqXMYvMyd1VeKG6ZorCfT0JUJdDUq7yZ8_EsJjVa3hS2U4Q/ca-p0Mv-VmHrV4dFBjyz6T-wKv1h40F5W2-w_nBMoL8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ppTgMOEA3QGMQn1Yr3O2UQ/UY-laMKG58fqunXPPEkbUQXnfsyStFvP2jKqAxJ7xcepkKE1CbFE19UYMF3HLxuFgbJeUoL496WVgWKblOFOwnyeQjuuhuC09Mh__LIsXrRYO5RpdloPMAzE-HLbIIJNQhjESOC8qMtJltIBTDjl4A/3a5nhlggQ3FgBxTBoB4UmnHEhjZjtvIxTyeHc2sjXDo</url>
         </ToolAttachments>
     
         <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </ToolInputAttachments>
     
         <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Hardware_Spec_v1.pdf</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-Json</ParentChoiceName><NodeName>b) Hardware Spec v2</NodeName><FQNChoiceName>SF-b) Hardware Spec v2</FQNChoiceName><Name>1.Instance,2.b) Hardware Spec v2 (syntax free)</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>2</ParentMOFLayerNumber><NodeDesiredColor>#0000EE</NodeDesiredColor><MixedColor>#0000EE</MixedColor><ExpectedColor>#0000EE</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Hardware_Spec_v1.pdf</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><MOFDisplayOrder>2</MOFDisplayOrder><ParentMOFDisplayOrder>1</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-Json</ParentChoiceName><NodeName>b) Hardware Spec v2</NodeName><FQNChoiceName>SF-b) Hardware Spec v2</FQNChoiceName><Name>1.Instance,2.b) Hardware Spec v2 (syntax free)</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>2</ParentMOFLayerNumber><NodeDesiredColor>#0000EE</NodeDesiredColor><MixedColor>#0000EE</MixedColor><ExpectedColor>#0000EE</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DemDJctdyS5nqtCbtcI6lw/z1C0qi7oJnMnINUhod5OxVxPOoL_cng40aitUvBoXY6rxWNwPqMExIJwyyaWgzWLWIxlGISvDItZK_QGtLcUfSv1cd_3-E_Oosx6sFqobc_NbQdIFcrHS5FuOCxX1ltjFQs2UxG_p84xQLmKP6u74Q/dZPZBS1d8jT7fG2UXstMdQJO-Aiv5C_kCY4tiv8J0MA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/qhmOrK4hpri4NAk4Jl-Otg/9UeVkBSfyQZYptfZ1VFvR59WZIv-I_DVgc8oJgOqCG-Gets6r7fCtByfaqxdceAVhj8cJMlqE_fjEyNRTORONUXlina_QmxUuRw3gGyipPrFW6HYZYbZdVmSdVmiMypyh62VWanGvFfPLslbmY1gGg/QoivzORgSDTxVZZRkz1t-SMrXzj7ABqPG0gvItchUYI</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ParentNodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DGuE_aOrSz-sm3Jf529QyA/Pd2MR8DJf2OHInqJ6jGOkriTSpggXYQAqxfe54tEBA89sNoN2yuNWyeLi6uqfiX9bejx7L0H9o8GBZCL_zS154J34-TC46NtsthVHbQxqXMYvMyd1VeKG6ZorCfT0JUJdDUq7yZ8_EsJjVa3hS2U4Q/ca-p0Mv-VmHrV4dFBjyz6T-wKv1h40F5W2-w_nBMoL8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ppTgMOEA3QGMQn1Yr3O2UQ/UY-laMKG58fqunXPPEkbUQXnfsyStFvP2jKqAxJ7xcepkKE1CbFE19UYMF3HLxuFgbJeUoL496WVgWKblOFOwnyeQjuuhuC09Mh__LIsXrRYO5RpdloPMAzE-HLbIIJNQhjESOC8qMtJltIBTDjl4A/3a5nhlggQ3FgBxTBoB4UmnHEhjZjtvIxTyeHc2sjXDo</url>
         </ToolAttachments>
     
         <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </ToolInputAttachments>
     
         <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Hardware_Spec_v2.pdf</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-Json</ParentChoiceName><NodeName>c) Garage Door Opener</NodeName><FQNChoiceName>SF-c) Garage Door Opener</FQNChoiceName><Name>1.Instance,3.c) Garage Door Opener (syntax free)</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>2</ParentMOFLayerNumber><NodeDesiredColor>#0000CC</NodeDesiredColor><MixedColor>#0000CC</MixedColor><ExpectedColor>#0000DD</ExpectedColor><IsInSync>0</IsInSync>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Hardware_Spec_v2.pdf</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><MOFDisplayOrder>2</MOFDisplayOrder><ParentMOFDisplayOrder>1</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-Json</ParentChoiceName><NodeName>c) Garage Door Opener</NodeName><FQNChoiceName>SF-c) Garage Door Opener</FQNChoiceName><Name>1.Instance,3.c) Garage Door Opener (syntax free)</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>2</ParentMOFLayerNumber><NodeDesiredColor>#0000CC</NodeDesiredColor><MixedColor>#0000CC</MixedColor><ExpectedColor>#0000DD</ExpectedColor><IsInSync>0</IsInSync>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/VWQf_AxtgLbv8-3mkfb4QQ/dywxy8J2uPwVqCqlWNuVRx8QYksPpq-XYlGMcVqHXHNWsnmw01oKGelzCXR476A3DT4RWAoZGKkOGsle1HDmUBRJiUsLrPEY315vyUydsEBfpXxRZX1yBXmImUo5PqO5uwKI7PrmpaYyCgTEbiQQfg/SjGsobsTEFeIc9EKTGHNyF46W1qyUhKZqaIWdAVs9MY</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/mhtOjLM6c4Yq7GzFP1k-3Q/x2xoEi2XTFoanwaDgK-IyppMbH7E5asYOVLqkVjvpPDxq4tWmAl9759eZeyMO5rNJsGUi0Dzml3UlK9SfJXnbcpuYojtYkbNEd9SWu-zKzNmGJFMmR03DdLsi0hnmHpafg76S9HMkOCWgQrnhlV6rg/bLJeJDRUo4AYyTPA9SrxSG2LuPel_S9-cdFojcWUjW0</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ParentNodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DGuE_aOrSz-sm3Jf529QyA/Pd2MR8DJf2OHInqJ6jGOkriTSpggXYQAqxfe54tEBA89sNoN2yuNWyeLi6uqfiX9bejx7L0H9o8GBZCL_zS154J34-TC46NtsthVHbQxqXMYvMyd1VeKG6ZorCfT0JUJdDUq7yZ8_EsJjVa3hS2U4Q/ca-p0Mv-VmHrV4dFBjyz6T-wKv1h40F5W2-w_nBMoL8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ppTgMOEA3QGMQn1Yr3O2UQ/UY-laMKG58fqunXPPEkbUQXnfsyStFvP2jKqAxJ7xcepkKE1CbFE19UYMF3HLxuFgbJeUoL496WVgWKblOFOwnyeQjuuhuC09Mh__LIsXrRYO5RpdloPMAzE-HLbIIJNQhjESOC8qMtJltIBTDjl4A/3a5nhlggQ3FgBxTBoB4UmnHEhjZjtvIxTyeHc2sjXDo</url>
         </ToolAttachments>
     
         <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </ToolInputAttachments>
     
         <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>GarageDoorOpener.pdf</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-a) Hardware Spec v1</ParentChoiceName><NodeName>Cpp</NodeName><FQNChoiceName>SF-Cpp</FQNChoiceName><Name>0.SyntaxLockedAssets,20.Cpp (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000FF</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>GarageDoorOpener.pdf</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><MOFDisplayOrder>2</MOFDisplayOrder><ParentMOFDisplayOrder>1</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-Syntax-Free Mirror</ParentChoiceName><NodeName>Json</NodeName><FQNChoiceName>SF-Json</FQNChoiceName><Name>2.Domain,14.Json (syntax free)</Name><MOFLayerNumber>2</MOFLayerNumber><ParentMOFLayerNumber>3</ParentMOFLayerNumber><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/iyR4hARy1xjyfhARZN5EVQ/DrvSJ4r0XxakDRPSbxR7jv4kNfl7drLWrCS9boQRBCX8MKbDpw9HlhDQhaNujU2TliPvRujYUGM6C-ks4l4pLjh8YrJItJRSPRAqhoPeM0RsgNnmdesNzzpMoLTL6tljr36i5pWUuLVsi0tiygDGuQ/kQgKX_H6EPbIKPEp92DV-uN0M6LESZHL4jGZBIQVEdw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/SD4EX4xBqNtLyOpqosTRmg/CP1AXy3JH8KHraludiiP2X_VJV_AFYAPX9UEcsFniHEda8dM0CQ47hVVAhqvDOv_Bmvaal3wFszmFppNyXfwFCu0smZd-2s_Iw-CqPifDXVleTt5QONGtHaOkWhaYqqmLGtmjmVyqQW0kESEAO7npDdv1HQYE8LImzdOH5Jxi7Q/tgxQ8hAYSlUT6BxbwItHbdkq4m8Nr4-iWfeNjky90rg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI</url>
         </ParentNodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DGuE_aOrSz-sm3Jf529QyA/Pd2MR8DJf2OHInqJ6jGOkriTSpggXYQAqxfe54tEBA89sNoN2yuNWyeLi6uqfiX9bejx7L0H9o8GBZCL_zS154J34-TC46NtsthVHbQxqXMYvMyd1VeKG6ZorCfT0JUJdDUq7yZ8_EsJjVa3hS2U4Q/ca-p0Mv-VmHrV4dFBjyz6T-wKv1h40F5W2-w_nBMoL8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </ToolAttachments>
     
         <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI</url>
         </ToolInputAttachments>
     
         <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI</url>
         </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Common.h/cpp</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Arduino.hbars</ToolTransformerFileName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-a) Hardware Spec v1</ParentChoiceName><NodeName>Markdown</NodeName><FQNChoiceName>SF-Markdown</FQNChoiceName><Name>0.SyntaxLockedAssets,17.Markdown (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000FF</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Devices.json</NodeDefaultFileName><InputChoiceFileName>api.airtable.com</InputChoiceFileName><ToolName>airtable-to-json</ToolName><MOFDisplayOrder>1</MOFDisplayOrder><ParentMOFDisplayOrder>3</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-a) Hardware Spec v1</ParentChoiceName><NodeName>Cpp</NodeName><FQNChoiceName>SF-Cpp</FQNChoiceName><Name>0.SyntaxLockedAssets,20.Cpp (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000FF</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/EQjTHyVJQ1-TcTQ_4xu4AQ/qdJnva-E_5r7lcwOuuhArvm2AGpDA5XlWp3G3UH8E3-ymR1IhKn6GYqG2h0xCKpcLjfunq6v7Qo4a1Bqjt_wGKpkK_WFvtdC-ra4QrBP5qMlAHCIjVI3Ri9QXQNpjjEPBupu15lSACJ8TKeMn6Z94xKgFSJ-GCyQK8m7a_KFEonUCrzzFGrECZoE8OG2-chH/IyNY27w-7mwd27OR32eWhUD_xEe_3TepbWprf2_bBGk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/8FedXfsCEOFGTWCtcvhmMQ/C3Gwxg8r3tGHFzC2F9y9xijVubVm_q7kHGeGKe_rg2zfL-MJYHOP4_fHNm0DEQb1l3ypr0pS9hYVzcVau60S-31d_p__Fg9xbfKOa8ZbeX2DQQD7ItyJm1mOl-Vw-2NwTdwOFY5unU7nIcqgRe9Xsw/aLvdPy4YDXDVbfWP22E04NJb7NwdND26jRY6WIkmYfQ</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/SD4EX4xBqNtLyOpqosTRmg/CP1AXy3JH8KHraludiiP2X_VJV_AFYAPX9UEcsFniHEda8dM0CQ47hVVAhqvDOv_Bmvaal3wFszmFppNyXfwFCu0smZd-2s_Iw-CqPifDXVleTt5QONGtHaOkWhaYqqmLGtmjmVyqQW0kESEAO7npDdv1HQYE8LImzdOH5Jxi7Q/tgxQ8hAYSlUT6BxbwItHbdkq4m8Nr4-iWfeNjky90rg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/6eozSxxdaaLD222x6aDSBQ/vnujfYUg6ITVK8iAmDKzfXAO84u_NwrQRjX1Xd_TWdaFJXOwzUZPFRKV0X9RUYfu-5XLcFS_WypF6RENkgsHN3iJ42ysMqc37XQVXhTFMG9V4qyCFqxGjj-FkFNe-GOqA_BUZAIUGRxBmoBAGWHob3RnKBmQ8lQhlmao2u8w6zA/JzxfGUzWdfkYPKO7f9KAy8ASKI0Gb9sHSNlVqQnKWLc</url>
         </ParentNodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DGuE_aOrSz-sm3Jf529QyA/Pd2MR8DJf2OHInqJ6jGOkriTSpggXYQAqxfe54tEBA89sNoN2yuNWyeLi6uqfiX9bejx7L0H9o8GBZCL_zS154J34-TC46NtsthVHbQxqXMYvMyd1VeKG6ZorCfT0JUJdDUq7yZ8_EsJjVa3hS2U4Q/ca-p0Mv-VmHrV4dFBjyz6T-wKv1h40F5W2-w_nBMoL8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ppTgMOEA3QGMQn1Yr3O2UQ/UY-laMKG58fqunXPPEkbUQXnfsyStFvP2jKqAxJ7xcepkKE1CbFE19UYMF3HLxuFgbJeUoL496WVgWKblOFOwnyeQjuuhuC09Mh__LIsXrRYO5RpdloPMAzE-HLbIIJNQhjESOC8qMtJltIBTDjl4A/3a5nhlggQ3FgBxTBoB4UmnHEhjZjtvIxTyeHc2sjXDo</url>
         </ToolAttachments>
     
         <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </ToolInputAttachments>
     
         <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>README.md</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Readme.hbars</ToolTransformerFileName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-b) Hardware Spec v2</ParentChoiceName><NodeName>HTML</NodeName><FQNChoiceName>SF-HTML</FQNChoiceName><Name>0.SyntaxLockedAssets,18.HTML (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000EE</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Common.h/cpp</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Arduino.hbars</ToolTransformerFileName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-a) Hardware Spec v1</ParentChoiceName><NodeName>Markdown</NodeName><FQNChoiceName>SF-Markdown</FQNChoiceName><Name>0.SyntaxLockedAssets,17.Markdown (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000FF</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/6vIJveCz18Bxs7V6_zLpSA/5800TPk6lSNEY4-neMhhoMqy5muBWG6NzJxBt6ed2BLpoSDS9zysi5MAWU35_V2lV8pD21j864rqBkHTl8nLmo18WgYXoM4bOxZmC87NDWZv_G9DVJ7HYFlVdnRsF7dwt59_DIebAJHilpsMyQtgDyn8Bz1lSsjtsI05vLmKX_98k8bLvU3cSYyWb7meQg3v/SVnr_EVOVzxyvWaCvz4ESX_Umxtfu5IQo6gqy5DUp-g</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/sS3d6vdzk5H49Dkd3VgSow/Mzz6waSS8JpzNtljDnM6cWy_5vYnk0xmh4QheydlinQx4EHdh2pkLJ13f9-wi0OgfP2bBcHHELE_8gE3PFJ_VTG6DjuKbqasiZlLyZi-34JOozvTpjR90GWz-dJFjLvG1kNDwNmkd7WrxKl54KT5wbgwc9CYgBHf_dvjM6i6ZGS_yyRpWMCcRh2RxE1SvJps/xF7E4uGwzyLTgDxmuAJiXxjj1s6uWFgkMyxrXe6tpvQ</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DemDJctdyS5nqtCbtcI6lw/z1C0qi7oJnMnINUhod5OxVxPOoL_cng40aitUvBoXY6rxWNwPqMExIJwyyaWgzWLWIxlGISvDItZK_QGtLcUfSv1cd_3-E_Oosx6sFqobc_NbQdIFcrHS5FuOCxX1ltjFQs2UxG_p84xQLmKP6u74Q/dZPZBS1d8jT7fG2UXstMdQJO-Aiv5C_kCY4tiv8J0MA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/6eozSxxdaaLD222x6aDSBQ/vnujfYUg6ITVK8iAmDKzfXAO84u_NwrQRjX1Xd_TWdaFJXOwzUZPFRKV0X9RUYfu-5XLcFS_WypF6RENkgsHN3iJ42ysMqc37XQVXhTFMG9V4qyCFqxGjj-FkFNe-GOqA_BUZAIUGRxBmoBAGWHob3RnKBmQ8lQhlmao2u8w6zA/JzxfGUzWdfkYPKO7f9KAy8ASKI0Gb9sHSNlVqQnKWLc</url>
         </ParentNodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DGuE_aOrSz-sm3Jf529QyA/Pd2MR8DJf2OHInqJ6jGOkriTSpggXYQAqxfe54tEBA89sNoN2yuNWyeLi6uqfiX9bejx7L0H9o8GBZCL_zS154J34-TC46NtsthVHbQxqXMYvMyd1VeKG6ZorCfT0JUJdDUq7yZ8_EsJjVa3hS2U4Q/ca-p0Mv-VmHrV4dFBjyz6T-wKv1h40F5W2-w_nBMoL8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ppTgMOEA3QGMQn1Yr3O2UQ/UY-laMKG58fqunXPPEkbUQXnfsyStFvP2jKqAxJ7xcepkKE1CbFE19UYMF3HLxuFgbJeUoL496WVgWKblOFOwnyeQjuuhuC09Mh__LIsXrRYO5RpdloPMAzE-HLbIIJNQhjESOC8qMtJltIBTDjl4A/3a5nhlggQ3FgBxTBoB4UmnHEhjZjtvIxTyeHc2sjXDo</url>
         </ToolAttachments>
     
         <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </ToolInputAttachments>
     
         <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Index.html</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Index.hbars</ToolTransformerFileName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-b) Hardware Spec v2</ParentChoiceName><NodeName>Python</NodeName><FQNChoiceName>SF-Python</FQNChoiceName><Name>0.SyntaxLockedAssets,21.Python (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000EE</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>README.md</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Readme.hbars</ToolTransformerFileName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-b) Hardware Spec v2</ParentChoiceName><NodeName>HTML</NodeName><FQNChoiceName>SF-HTML</FQNChoiceName><Name>0.SyntaxLockedAssets,18.HTML (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000EE</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/0_ZhuEhrp4oTeguTFQlVRA/i4nfgriBDY8jr78KHbOKEM6RP09XigWFsFLwyEx6W15D0zZxYSSRUSNm1q9RuahVNstgEZHDzB2HDJrhlSqzUbjhbRhqKDC-H40kvLiOQIXJhLtk4lZ_-k_w-8S0xcxtf5csUhtoK8c500JPJCs1Vp8fDv1HC5DkY9IXdth5_yV-Ids9jJ7R2705q88J89Q5/2x1qhGeHTu-eIsp5vuCjXod1mF7lCC-6qci7ST8IM5o</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/gGyZgsTpJJl-d4nEBYo3qA/2EpucKc5v3Ev9hItiYdS5vrXh06UcwJdZB3PW8VY0AC3v9zBvsFcnrePoFTJ2rforzm7d1gCYsbjg8P5j6xO-LrCUuYrefDKiJMeS1pRb4CpynPk4_qPody0AoL3mHWmF3cNoOgS8jcM6WG6cgay-cM1sMhwIEgQ9Op2VpPikGHYFB3yCaqqSCTumbbBFvkV/XM549DtlysT68Fm9Bu6-TnxkfnJpo3H1by4gS-DutJY</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DemDJctdyS5nqtCbtcI6lw/z1C0qi7oJnMnINUhod5OxVxPOoL_cng40aitUvBoXY6rxWNwPqMExIJwyyaWgzWLWIxlGISvDItZK_QGtLcUfSv1cd_3-E_Oosx6sFqobc_NbQdIFcrHS5FuOCxX1ltjFQs2UxG_p84xQLmKP6u74Q/dZPZBS1d8jT7fG2UXstMdQJO-Aiv5C_kCY4tiv8J0MA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/qhmOrK4hpri4NAk4Jl-Otg/9UeVkBSfyQZYptfZ1VFvR59WZIv-I_DVgc8oJgOqCG-Gets6r7fCtByfaqxdceAVhj8cJMlqE_fjEyNRTORONUXlina_QmxUuRw3gGyipPrFW6HYZYbZdVmSdVmiMypyh62VWanGvFfPLslbmY1gGg/QoivzORgSDTxVZZRkz1t-SMrXzj7ABqPG0gvItchUYI</url>
         </ParentNodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DGuE_aOrSz-sm3Jf529QyA/Pd2MR8DJf2OHInqJ6jGOkriTSpggXYQAqxfe54tEBA89sNoN2yuNWyeLi6uqfiX9bejx7L0H9o8GBZCL_zS154J34-TC46NtsthVHbQxqXMYvMyd1VeKG6ZorCfT0JUJdDUq7yZ8_EsJjVa3hS2U4Q/ca-p0Mv-VmHrV4dFBjyz6T-wKv1h40F5W2-w_nBMoL8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ppTgMOEA3QGMQn1Yr3O2UQ/UY-laMKG58fqunXPPEkbUQXnfsyStFvP2jKqAxJ7xcepkKE1CbFE19UYMF3HLxuFgbJeUoL496WVgWKblOFOwnyeQjuuhuC09Mh__LIsXrRYO5RpdloPMAzE-HLbIIJNQhjESOC8qMtJltIBTDjl4A/3a5nhlggQ3FgBxTBoB4UmnHEhjZjtvIxTyeHc2sjXDo</url>
         </ToolAttachments>
     
         <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </ToolInputAttachments>
     
         <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Main.py</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Python.hbars</ToolTransformerFileName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-c) Garage Door Opener</ParentChoiceName><NodeName>CSharp</NodeName><FQNChoiceName>SF-CSharp</FQNChoiceName><Name>0.SyntaxLockedAssets,23.CSharp (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000CC</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Index.html</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Index.hbars</ToolTransformerFileName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-b) Hardware Spec v2</ParentChoiceName><NodeName>Python</NodeName><FQNChoiceName>SF-Python</FQNChoiceName><Name>0.SyntaxLockedAssets,21.Python (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000EE</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/_Sg1H7AJ_lDLOLv-lTlkog/4Jdc7jESNW_6CkSjrc2WSgO8NVqKNrk5LskSKEnF3w_QGuMH_VUaGOckiNr4yn-e6isQHkTN7sB9dNfmVm0zh1NtorTKLL4KmEHo0bi7Rr-9p3hMToxi_ntxewbdnMeO8IK8Ajj4tLcYyhP0OSSUyw/JccaPvVaKzf_RWCCQPQDrrZ9n6_pRtH_hiKgncAgC_w</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2vtWja3TleBa5viS2cHj9g/1zMyxCKRllXxKz5B3vihHnkKZOoT68Qj64qhFmkYAcPE9ugD7WgdR8lNKU9z6nFpCAMeOpoXsJUsBOA1EH4RdyU1UA0BDSe5ypJb8SqN4VPg8HA8Z6fQdaLUvdnUW69BkXx21ES9PbaPt2o0Z1wPpwrPwBIvprhCeG1nVJR-xcJa27TI-m5VhDbpfJs9a0Jq/BPLDblUsampUZICgocQX-UYszPKEL1HZYxAvmwjydgY</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/VWQf_AxtgLbv8-3mkfb4QQ/dywxy8J2uPwVqCqlWNuVRx8QYksPpq-XYlGMcVqHXHNWsnmw01oKGelzCXR476A3DT4RWAoZGKkOGsle1HDmUBRJiUsLrPEY315vyUydsEBfpXxRZX1yBXmImUo5PqO5uwKI7PrmpaYyCgTEbiQQfg/SjGsobsTEFeIc9EKTGHNyF46W1qyUhKZqaIWdAVs9MY</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/qhmOrK4hpri4NAk4Jl-Otg/9UeVkBSfyQZYptfZ1VFvR59WZIv-I_DVgc8oJgOqCG-Gets6r7fCtByfaqxdceAVhj8cJMlqE_fjEyNRTORONUXlina_QmxUuRw3gGyipPrFW6HYZYbZdVmSdVmiMypyh62VWanGvFfPLslbmY1gGg/QoivzORgSDTxVZZRkz1t-SMrXzj7ABqPG0gvItchUYI</url>
         </ParentNodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DGuE_aOrSz-sm3Jf529QyA/Pd2MR8DJf2OHInqJ6jGOkriTSpggXYQAqxfe54tEBA89sNoN2yuNWyeLi6uqfiX9bejx7L0H9o8GBZCL_zS154J34-TC46NtsthVHbQxqXMYvMyd1VeKG6ZorCfT0JUJdDUq7yZ8_EsJjVa3hS2U4Q/ca-p0Mv-VmHrV4dFBjyz6T-wKv1h40F5W2-w_nBMoL8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ppTgMOEA3QGMQn1Yr3O2UQ/UY-laMKG58fqunXPPEkbUQXnfsyStFvP2jKqAxJ7xcepkKE1CbFE19UYMF3HLxuFgbJeUoL496WVgWKblOFOwnyeQjuuhuC09Mh__LIsXrRYO5RpdloPMAzE-HLbIIJNQhjESOC8qMtJltIBTDjl4A/3a5nhlggQ3FgBxTBoB4UmnHEhjZjtvIxTyeHc2sjXDo</url>
         </ToolAttachments>
     
         <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </ToolInputAttachments>
     
         <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Program.cs</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Program.cs</ToolTransformerFileName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-c) Garage Door Opener</ParentChoiceName><NodeName>WIKI</NodeName><FQNChoiceName>SF-WIKI</FQNChoiceName><Name>0.SyntaxLockedAssets,19.WIKI (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000CC</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Main.py</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Python.hbars</ToolTransformerFileName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-c) Garage Door Opener</ParentChoiceName><NodeName>CSharp</NodeName><FQNChoiceName>SF-CSharp</FQNChoiceName><Name>0.SyntaxLockedAssets,23.CSharp (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000CC</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/mTEXMRbp7yiWlWjPJecIkg/ht050cTMV2NE_vsqCxDRgb5som8vjm5ujlwP7xdYbCAEOvxBZ5YMYiJeQsxnnpLAKYETBiFTnlT24SomvIZiXmq7-bF3QHreUALQpJ5MjRJ9tbbLRM5xCVcBxpItRIYj3QRM7oCa45K1dYGRGjWUVtWSyXUeCiQcIUIonsk8hlM0CtdzxL6b1DyxMWooOzwM/llsD9w1DSc_iaa0KOHS19wNdKznrMpsGuHukTT_IFdQ</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/1en4NQUFZ0GGRD1_TfcdGQ/AFhI0L810RRtJbWin455AdxOmqeWCBEgR0IZh0bGqtBt_LShRjW-nrMUURqvcPxaasg3woeTSS4Z4n_wV8r-gdVkvMs-RAGXGQLS3GeLtp97MNbpUT9ThjiUYV2TFzclVAenVW2XabwBIDiBMf9Lqw/IjnIMD-LtFGcswSazLhTT25TxduXr-clBXNq-N2etQg</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/VWQf_AxtgLbv8-3mkfb4QQ/dywxy8J2uPwVqCqlWNuVRx8QYksPpq-XYlGMcVqHXHNWsnmw01oKGelzCXR476A3DT4RWAoZGKkOGsle1HDmUBRJiUsLrPEY315vyUydsEBfpXxRZX1yBXmImUo5PqO5uwKI7PrmpaYyCgTEbiQQfg/SjGsobsTEFeIc9EKTGHNyF46W1qyUhKZqaIWdAVs9MY</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/mhtOjLM6c4Yq7GzFP1k-3Q/x2xoEi2XTFoanwaDgK-IyppMbH7E5asYOVLqkVjvpPDxq4tWmAl9759eZeyMO5rNJsGUi0Dzml3UlK9SfJXnbcpuYojtYkbNEd9SWu-zKzNmGJFMmR03DdLsi0hnmHpafg76S9HMkOCWgQrnhlV6rg/bLJeJDRUo4AYyTPA9SrxSG2LuPel_S9-cdFojcWUjW0</url>
         </ParentNodeAttachments>
     
         <ToolAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DGuE_aOrSz-sm3Jf529QyA/Pd2MR8DJf2OHInqJ6jGOkriTSpggXYQAqxfe54tEBA89sNoN2yuNWyeLi6uqfiX9bejx7L0H9o8GBZCL_zS154J34-TC46NtsthVHbQxqXMYvMyd1VeKG6ZorCfT0JUJdDUq7yZ8_EsJjVa3hS2U4Q/ca-p0Mv-VmHrV4dFBjyz6T-wKv1h40F5W2-w_nBMoL8</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ppTgMOEA3QGMQn1Yr3O2UQ/UY-laMKG58fqunXPPEkbUQXnfsyStFvP2jKqAxJ7xcepkKE1CbFE19UYMF3HLxuFgbJeUoL496WVgWKblOFOwnyeQjuuhuC09Mh__LIsXrRYO5RpdloPMAzE-HLbIIJNQhjESOC8qMtJltIBTDjl4A/3a5nhlggQ3FgBxTBoB4UmnHEhjZjtvIxTyeHc2sjXDo</url>
         </ToolAttachments>
     
         <ToolInputAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/5IrAxKpH0tU3shycIxkyYA/xcE2n8uFtTELq3pQIPWtbEUXxmeBGOLS4n1ZKAp1Zp2BngYvdhaUid72i59nAopEqGN2Nu25aKZyiJownUDaRwT3I8xBk_mGSV9VWk9WCqtAw1bwr21KmTMwaev7e_pA_h9B7Ah8qLFWU9KPYPmSFQ/0c6Z-NXN2ix74NPPDSnxPiyiEsL1HioaY7kabZDNkVk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
         </ToolInputAttachments>
     
         <ToolInputChoiceNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/Dl6CUf2vw3IlcZHBS1FsIQ/Je2a1HxNOHrRrReznTxkQI6lNynKngN9ZbN3gjjQDL4x1bdAcdZyiG3R6VXhoOWzu6fBE2pqwwHu_f0ccdjFKtlNoIXAefvjkKnkhrR6wHsdXID0MnyZxzPBNSKHkjahBIIxl0r4ZlrCOPMOuMzreHRmLXifL6LGsRk4jBv6oo8c96bf7Y3FAwE7NoFEu7xOu2sDDaqzwaGGqa_FiO30Bw/7lsopz6RAOK7CvuWQ69Vl-5Pqqpys4J5kdgZCVZqEMo</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
         </ToolInputChoiceNodeAttachments>
-    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>HOME.wiki</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>HOME.hbars</ToolTransformerFileName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><NodeName>Natural Language Description</NodeName><FQNChoiceName>Natural Language Description</FQNChoiceName><Name>3.MetaModel,1.Natural Language Description</Name><MOFLayerNumber>3</MOFLayerNumber><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>Program.cs</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>Program.cs</ToolTransformerFileName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><ParentChoiceName>SF-c) Garage Door Opener</ParentChoiceName><NodeName>WIKI</NodeName><FQNChoiceName>SF-WIKI</FQNChoiceName><Name>0.SyntaxLockedAssets,19.WIKI (syntax free)</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000CC</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/WLWNpWBll0b3CpAoz-NCAw/b9CUxmSDiBoKP1Pg___gO-Us6ykgm4j486U_fQlzfZ5O63CWI7wNJtvrT8WnUWjtbCz_4UvcLZDxNGcvQ8yToB6P12mIoD2mcFn2jYKJvjZK0Ie5x5IuXeV9rkemjPTqaKE8CmLQWkYXHfJqD6vXSZZwp0jsngQp3mBBFMkjbJevFxDd4v5EhrPbl-1MstO9/8Xp5lCNpTXnhI3f17uf4cIgU3grXlEOj2QEKIVog89U</url>
-        </NodeAttachments>
-    </MOFChoices><MOFChoices><ParentChoiceName>Natural Language Description</ParentChoiceName><NodeName>a) Hardware Spec v1</NodeName><FQNChoiceName>a) Hardware Spec v1</FQNChoiceName><Name>1.Instance,1.a) Hardware Spec v1</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>3</ParentMOFLayerNumber><NodeDesiredColor>#0000FF</NodeDesiredColor><MixedColor>#0000FF</MixedColor><ExpectedColor>#0000FF</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
-        <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/SD4EX4xBqNtLyOpqosTRmg/CP1AXy3JH8KHraludiiP2X_VJV_AFYAPX9UEcsFniHEda8dM0CQ47hVVAhqvDOv_Bmvaal3wFszmFppNyXfwFCu0smZd-2s_Iw-CqPifDXVleTt5QONGtHaOkWhaYqqmLGtmjmVyqQW0kESEAO7npDdv1HQYE8LImzdOH5Jxi7Q/tgxQ8hAYSlUT6BxbwItHbdkq4m8Nr4-iWfeNjky90rg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/s16H72YAIjv92mu_8rHwpA/bE-ZZlWAWlPzHFip_0jzdTRfLhCPCfdRnTxsaPebPLIyR_0smbcnd5JECQr-heXmBJ8gKg75HraWJfh0WmxGEIMUob0xSj-uowrgivOYpMcgwhkTuaHr3oMeg-FhaRbX9v9NfOzWj1PhrpELnNAw5ZjLFw_gj8NGkxRtU0M8DEqS9djVQxXPLJ3d5q_R6JTv/1Xrl0Xkccr4dbaao6qiHwBWGZfvD48UHgYuICNwaxeA</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/WLWNpWBll0b3CpAoz-NCAw/b9CUxmSDiBoKP1Pg___gO-Us6ykgm4j486U_fQlzfZ5O63CWI7wNJtvrT8WnUWjtbCz_4UvcLZDxNGcvQ8yToB6P12mIoD2mcFn2jYKJvjZK0Ie5x5IuXeV9rkemjPTqaKE8CmLQWkYXHfJqD6vXSZZwp0jsngQp3mBBFMkjbJevFxDd4v5EhrPbl-1MstO9/8Xp5lCNpTXnhI3f17uf4cIgU3grXlEOj2QEKIVog89U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/mhtOjLM6c4Yq7GzFP1k-3Q/x2xoEi2XTFoanwaDgK-IyppMbH7E5asYOVLqkVjvpPDxq4tWmAl9759eZeyMO5rNJsGUi0Dzml3UlK9SfJXnbcpuYojtYkbNEd9SWu-zKzNmGJFMmR03DdLsi0hnmHpafg76S9HMkOCWgQrnhlV6rg/bLJeJDRUo4AYyTPA9SrxSG2LuPel_S9-cdFojcWUjW0</url>
         </ParentNodeAttachments>
-    <NodeDefaultFileName>Hardware_Spec_v1.pdf</NodeDefaultFileName></MOFChoices><MOFChoices><ParentChoiceName>Natural Language Description</ParentChoiceName><NodeName>b) Hardware Spec v2</NodeName><FQNChoiceName>b) Hardware Spec v2</FQNChoiceName><Name>1.Instance,2.b) Hardware Spec v2</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>3</ParentMOFLayerNumber><NodeDesiredColor>#0000EE</NodeDesiredColor><MixedColor>#0000EE</MixedColor><ExpectedColor>#0000DD</ExpectedColor><IsInSync>0</IsInSync>
+    
+        <ToolAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ppTgMOEA3QGMQn1Yr3O2UQ/UY-laMKG58fqunXPPEkbUQXnfsyStFvP2jKqAxJ7xcepkKE1CbFE19UYMF3HLxuFgbJeUoL496WVgWKblOFOwnyeQjuuhuC09Mh__LIsXrRYO5RpdloPMAzE-HLbIIJNQhjESOC8qMtJltIBTDjl4A/3a5nhlggQ3FgBxTBoB4UmnHEhjZjtvIxTyeHc2sjXDo</url>
+        </ToolAttachments>
+    
+        <ToolInputAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI</url>
+        </ToolInputAttachments>
+    
+        <ToolInputChoiceNodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk</url>
+        </ToolInputChoiceNodeAttachments>
+    <ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>HOME.wiki</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>HOME.hbars</ToolTransformerFileName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><NodeName>Natural Language Description</NodeName><FQNChoiceName>Natural Language Description</FQNChoiceName><Name>3.MetaModel,1.Natural Language Description</Name><MOFLayerNumber>3</MOFLayerNumber><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DemDJctdyS5nqtCbtcI6lw/z1C0qi7oJnMnINUhod5OxVxPOoL_cng40aitUvBoXY6rxWNwPqMExIJwyyaWgzWLWIxlGISvDItZK_QGtLcUfSv1cd_3-E_Oosx6sFqobc_NbQdIFcrHS5FuOCxX1ltjFQs2UxG_p84xQLmKP6u74Q/dZPZBS1d8jT7fG2UXstMdQJO-Aiv5C_kCY4tiv8J0MA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/lIDe5yBjKDJV8MKtLVmnPQ/mNvROzz3fq0fS2gJ0RZP4fR00jUquK6w53exSkH3_cq0V75wLSRxQfe9AUAIYW7jZfhtniE8XTmrPL-brGWQG4J8VtCdxXHlM_a2us4_uuO4tVKxNVP1qTTX45fQ2XtgkCbrx1SoyfTAzpHC6fNMudvzJ7CP_pXkGf6tgVWtAMvSdZ3fGhwEBMrUwsOXVFQO/9z3TrA0RA7wuxNZCHTy7Yl1oSzVrRwcVpSdWaBxZ9CI</url>
+        </NodeAttachments>
+    <MOFDisplayOrder>3</MOFDisplayOrder></MOFChoices><MOFChoices><ParentChoiceName>Natural Language Description</ParentChoiceName><NodeName>a) Hardware Spec v1</NodeName><FQNChoiceName>a) Hardware Spec v1</FQNChoiceName><Name>1.Instance,1.a) Hardware Spec v1</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>3</ParentMOFLayerNumber><NodeDesiredColor>#0000FF</NodeDesiredColor><MixedColor>#0000FF</MixedColor><ExpectedColor>#0000FF</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+        <NodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/6eozSxxdaaLD222x6aDSBQ/vnujfYUg6ITVK8iAmDKzfXAO84u_NwrQRjX1Xd_TWdaFJXOwzUZPFRKV0X9RUYfu-5XLcFS_WypF6RENkgsHN3iJ42ysMqc37XQVXhTFMG9V4qyCFqxGjj-FkFNe-GOqA_BUZAIUGRxBmoBAGWHob3RnKBmQ8lQhlmao2u8w6zA/JzxfGUzWdfkYPKO7f9KAy8ASKI0Gb9sHSNlVqQnKWLc</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/WLWNpWBll0b3CpAoz-NCAw/b9CUxmSDiBoKP1Pg___gO-Us6ykgm4j486U_fQlzfZ5O63CWI7wNJtvrT8WnUWjtbCz_4UvcLZDxNGcvQ8yToB6P12mIoD2mcFn2jYKJvjZK0Ie5x5IuXeV9rkemjPTqaKE8CmLQWkYXHfJqD6vXSZZwp0jsngQp3mBBFMkjbJevFxDd4v5EhrPbl-1MstO9/8Xp5lCNpTXnhI3f17uf4cIgU3grXlEOj2QEKIVog89U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/lIDe5yBjKDJV8MKtLVmnPQ/mNvROzz3fq0fS2gJ0RZP4fR00jUquK6w53exSkH3_cq0V75wLSRxQfe9AUAIYW7jZfhtniE8XTmrPL-brGWQG4J8VtCdxXHlM_a2us4_uuO4tVKxNVP1qTTX45fQ2XtgkCbrx1SoyfTAzpHC6fNMudvzJ7CP_pXkGf6tgVWtAMvSdZ3fGhwEBMrUwsOXVFQO/9z3TrA0RA7wuxNZCHTy7Yl1oSzVrRwcVpSdWaBxZ9CI</url>
         </ParentNodeAttachments>
-    <NodeDefaultFileName>Hardware_Spec_v2.pdf</NodeDefaultFileName></MOFChoices><MOFChoices><ParentChoiceName>Natural Language Description</ParentChoiceName><NodeName>c) Garage Door Opener</NodeName><FQNChoiceName>c) Garage Door Opener</FQNChoiceName><Name>1.Instance,3.c) Garage Door Opener</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>3</ParentMOFLayerNumber><NodeDesiredColor>#0000CC</NodeDesiredColor><MixedColor>#0000CC</MixedColor><ExpectedColor>#0000BB</ExpectedColor><IsInSync>0</IsInSync>
+    <NodeDefaultFileName>Hardware_Spec_v1.pdf</NodeDefaultFileName><MOFDisplayOrder>2</MOFDisplayOrder><ParentMOFDisplayOrder>3</ParentMOFDisplayOrder></MOFChoices><MOFChoices><ParentChoiceName>Natural Language Description</ParentChoiceName><NodeName>b) Hardware Spec v2</NodeName><FQNChoiceName>b) Hardware Spec v2</FQNChoiceName><Name>1.Instance,2.b) Hardware Spec v2</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>3</ParentMOFLayerNumber><NodeDesiredColor>#0000EE</NodeDesiredColor><MixedColor>#0000EE</MixedColor><ExpectedColor>#0000DD</ExpectedColor><IsInSync>0</IsInSync>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/VWQf_AxtgLbv8-3mkfb4QQ/dywxy8J2uPwVqCqlWNuVRx8QYksPpq-XYlGMcVqHXHNWsnmw01oKGelzCXR476A3DT4RWAoZGKkOGsle1HDmUBRJiUsLrPEY315vyUydsEBfpXxRZX1yBXmImUo5PqO5uwKI7PrmpaYyCgTEbiQQfg/SjGsobsTEFeIc9EKTGHNyF46W1qyUhKZqaIWdAVs9MY</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/qhmOrK4hpri4NAk4Jl-Otg/9UeVkBSfyQZYptfZ1VFvR59WZIv-I_DVgc8oJgOqCG-Gets6r7fCtByfaqxdceAVhj8cJMlqE_fjEyNRTORONUXlina_QmxUuRw3gGyipPrFW6HYZYbZdVmSdVmiMypyh62VWanGvFfPLslbmY1gGg/QoivzORgSDTxVZZRkz1t-SMrXzj7ABqPG0gvItchUYI</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/WLWNpWBll0b3CpAoz-NCAw/b9CUxmSDiBoKP1Pg___gO-Us6ykgm4j486U_fQlzfZ5O63CWI7wNJtvrT8WnUWjtbCz_4UvcLZDxNGcvQ8yToB6P12mIoD2mcFn2jYKJvjZK0Ie5x5IuXeV9rkemjPTqaKE8CmLQWkYXHfJqD6vXSZZwp0jsngQp3mBBFMkjbJevFxDd4v5EhrPbl-1MstO9/8Xp5lCNpTXnhI3f17uf4cIgU3grXlEOj2QEKIVog89U</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/lIDe5yBjKDJV8MKtLVmnPQ/mNvROzz3fq0fS2gJ0RZP4fR00jUquK6w53exSkH3_cq0V75wLSRxQfe9AUAIYW7jZfhtniE8XTmrPL-brGWQG4J8VtCdxXHlM_a2us4_uuO4tVKxNVP1qTTX45fQ2XtgkCbrx1SoyfTAzpHC6fNMudvzJ7CP_pXkGf6tgVWtAMvSdZ3fGhwEBMrUwsOXVFQO/9z3TrA0RA7wuxNZCHTy7Yl1oSzVrRwcVpSdWaBxZ9CI</url>
         </ParentNodeAttachments>
-    <NodeDefaultFileName>GarageDoorOpener.pdf</NodeDefaultFileName></MOFChoices><MOFChoices><ParentChoiceName>a) Hardware Spec v1</ParentChoiceName><NodeName>Cpp</NodeName><FQNChoiceName>Cpp</FQNChoiceName><Name>0.SyntaxLockedAssets,20.Cpp</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000FF</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <NodeDefaultFileName>Hardware_Spec_v2.pdf</NodeDefaultFileName><MOFDisplayOrder>2</MOFDisplayOrder><ParentMOFDisplayOrder>3</ParentMOFDisplayOrder></MOFChoices><MOFChoices><ParentChoiceName>Natural Language Description</ParentChoiceName><NodeName>c) Garage Door Opener</NodeName><FQNChoiceName>c) Garage Door Opener</FQNChoiceName><Name>1.Instance,3.c) Garage Door Opener</Name><MOFLayerNumber>1</MOFLayerNumber><ParentMOFLayerNumber>3</ParentMOFLayerNumber><NodeDesiredColor>#0000CC</NodeDesiredColor><MixedColor>#0000CC</MixedColor><ExpectedColor>#0000BB</ExpectedColor><IsInSync>0</IsInSync>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/iyR4hARy1xjyfhARZN5EVQ/DrvSJ4r0XxakDRPSbxR7jv4kNfl7drLWrCS9boQRBCX8MKbDpw9HlhDQhaNujU2TliPvRujYUGM6C-ks4l4pLjh8YrJItJRSPRAqhoPeM0RsgNnmdesNzzpMoLTL6tljr36i5pWUuLVsi0tiygDGuQ/kQgKX_H6EPbIKPEp92DV-uN0M6LESZHL4jGZBIQVEdw</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/mhtOjLM6c4Yq7GzFP1k-3Q/x2xoEi2XTFoanwaDgK-IyppMbH7E5asYOVLqkVjvpPDxq4tWmAl9759eZeyMO5rNJsGUi0Dzml3UlK9SfJXnbcpuYojtYkbNEd9SWu-zKzNmGJFMmR03DdLsi0hnmHpafg76S9HMkOCWgQrnhlV6rg/bLJeJDRUo4AYyTPA9SrxSG2LuPel_S9-cdFojcWUjW0</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/SD4EX4xBqNtLyOpqosTRmg/CP1AXy3JH8KHraludiiP2X_VJV_AFYAPX9UEcsFniHEda8dM0CQ47hVVAhqvDOv_Bmvaal3wFszmFppNyXfwFCu0smZd-2s_Iw-CqPifDXVleTt5QONGtHaOkWhaYqqmLGtmjmVyqQW0kESEAO7npDdv1HQYE8LImzdOH5Jxi7Q/tgxQ8hAYSlUT6BxbwItHbdkq4m8Nr4-iWfeNjky90rg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/lIDe5yBjKDJV8MKtLVmnPQ/mNvROzz3fq0fS2gJ0RZP4fR00jUquK6w53exSkH3_cq0V75wLSRxQfe9AUAIYW7jZfhtniE8XTmrPL-brGWQG4J8VtCdxXHlM_a2us4_uuO4tVKxNVP1qTTX45fQ2XtgkCbrx1SoyfTAzpHC6fNMudvzJ7CP_pXkGf6tgVWtAMvSdZ3fGhwEBMrUwsOXVFQO/9z3TrA0RA7wuxNZCHTy7Yl1oSzVrRwcVpSdWaBxZ9CI</url>
         </ParentNodeAttachments>
-    <NodeDefaultFileName>Common.h/cpp</NodeDefaultFileName></MOFChoices><MOFChoices><ParentChoiceName>a) Hardware Spec v1</ParentChoiceName><NodeName>Markdown</NodeName><FQNChoiceName>Markdown</FQNChoiceName><Name>0.SyntaxLockedAssets,17.Markdown</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000FF</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <NodeDefaultFileName>GarageDoorOpener.pdf</NodeDefaultFileName><MOFDisplayOrder>2</MOFDisplayOrder><ParentMOFDisplayOrder>3</ParentMOFDisplayOrder></MOFChoices><MOFChoices><ParentChoiceName>a) Hardware Spec v1</ParentChoiceName><NodeName>Cpp</NodeName><FQNChoiceName>Cpp</FQNChoiceName><Name>0.SyntaxLockedAssets,20.Cpp</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000FF</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/EQjTHyVJQ1-TcTQ_4xu4AQ/qdJnva-E_5r7lcwOuuhArvm2AGpDA5XlWp3G3UH8E3-ymR1IhKn6GYqG2h0xCKpcLjfunq6v7Qo4a1Bqjt_wGKpkK_WFvtdC-ra4QrBP5qMlAHCIjVI3Ri9QXQNpjjEPBupu15lSACJ8TKeMn6Z94xKgFSJ-GCyQK8m7a_KFEonUCrzzFGrECZoE8OG2-chH/IyNY27w-7mwd27OR32eWhUD_xEe_3TepbWprf2_bBGk</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/8FedXfsCEOFGTWCtcvhmMQ/C3Gwxg8r3tGHFzC2F9y9xijVubVm_q7kHGeGKe_rg2zfL-MJYHOP4_fHNm0DEQb1l3ypr0pS9hYVzcVau60S-31d_p__Fg9xbfKOa8ZbeX2DQQD7ItyJm1mOl-Vw-2NwTdwOFY5unU7nIcqgRe9Xsw/aLvdPy4YDXDVbfWP22E04NJb7NwdND26jRY6WIkmYfQ</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/SD4EX4xBqNtLyOpqosTRmg/CP1AXy3JH8KHraludiiP2X_VJV_AFYAPX9UEcsFniHEda8dM0CQ47hVVAhqvDOv_Bmvaal3wFszmFppNyXfwFCu0smZd-2s_Iw-CqPifDXVleTt5QONGtHaOkWhaYqqmLGtmjmVyqQW0kESEAO7npDdv1HQYE8LImzdOH5Jxi7Q/tgxQ8hAYSlUT6BxbwItHbdkq4m8Nr4-iWfeNjky90rg</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/6eozSxxdaaLD222x6aDSBQ/vnujfYUg6ITVK8iAmDKzfXAO84u_NwrQRjX1Xd_TWdaFJXOwzUZPFRKV0X9RUYfu-5XLcFS_WypF6RENkgsHN3iJ42ysMqc37XQVXhTFMG9V4qyCFqxGjj-FkFNe-GOqA_BUZAIUGRxBmoBAGWHob3RnKBmQ8lQhlmao2u8w6zA/JzxfGUzWdfkYPKO7f9KAy8ASKI0Gb9sHSNlVqQnKWLc</url>
         </ParentNodeAttachments>
-    <NodeDefaultFileName>README.md</NodeDefaultFileName></MOFChoices><MOFChoices><ParentChoiceName>b) Hardware Spec v2</ParentChoiceName><NodeName>HTML</NodeName><FQNChoiceName>HTML</FQNChoiceName><Name>0.SyntaxLockedAssets,18.HTML</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000EE</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    
+        <ToolAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/HRicGTA2aO4ZwKUxr81dIA/q95eH8Q-OmSOXmpCEulM2Lm5doGrfBfMA2cZo3auehe3-iij6WTJykK2_GDxbzYGrchjmvcQNUbyWukwos4SfP25Elm9Y-KbiQdo-HuWkXW8LFNW5WZYdKywFoq1hBvfY0fyFpeuEWR4zuPtGdPybJeWe3fhR0Bs0KPLr6KEz9L5QjJnmAJywyWxSsCGEtrTpHyc5TpscyuHMPC__hKT5w/vcDlLuBwiZusmdP5w88EcLVQk3Ez1cN0vcS8HA7jdeY</url>
+        </ToolAttachments>
+    <NodeDefaultFileName>Common.h/cpp</NodeDefaultFileName><ToolName>Developer</ToolName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder></MOFChoices><MOFChoices><ParentChoiceName>a) Hardware Spec v1</ParentChoiceName><NodeName>Markdown</NodeName><FQNChoiceName>Markdown</FQNChoiceName><Name>0.SyntaxLockedAssets,17.Markdown</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000FF</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/6vIJveCz18Bxs7V6_zLpSA/5800TPk6lSNEY4-neMhhoMqy5muBWG6NzJxBt6ed2BLpoSDS9zysi5MAWU35_V2lV8pD21j864rqBkHTl8nLmo18WgYXoM4bOxZmC87NDWZv_G9DVJ7HYFlVdnRsF7dwt59_DIebAJHilpsMyQtgDyn8Bz1lSsjtsI05vLmKX_98k8bLvU3cSYyWb7meQg3v/SVnr_EVOVzxyvWaCvz4ESX_Umxtfu5IQo6gqy5DUp-g</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/sS3d6vdzk5H49Dkd3VgSow/Mzz6waSS8JpzNtljDnM6cWy_5vYnk0xmh4QheydlinQx4EHdh2pkLJ13f9-wi0OgfP2bBcHHELE_8gE3PFJ_VTG6DjuKbqasiZlLyZi-34JOozvTpjR90GWz-dJFjLvG1kNDwNmkd7WrxKl54KT5wbgwc9CYgBHf_dvjM6i6ZGS_yyRpWMCcRh2RxE1SvJps/xF7E4uGwzyLTgDxmuAJiXxjj1s6uWFgkMyxrXe6tpvQ</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DemDJctdyS5nqtCbtcI6lw/z1C0qi7oJnMnINUhod5OxVxPOoL_cng40aitUvBoXY6rxWNwPqMExIJwyyaWgzWLWIxlGISvDItZK_QGtLcUfSv1cd_3-E_Oosx6sFqobc_NbQdIFcrHS5FuOCxX1ltjFQs2UxG_p84xQLmKP6u74Q/dZPZBS1d8jT7fG2UXstMdQJO-Aiv5C_kCY4tiv8J0MA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/6eozSxxdaaLD222x6aDSBQ/vnujfYUg6ITVK8iAmDKzfXAO84u_NwrQRjX1Xd_TWdaFJXOwzUZPFRKV0X9RUYfu-5XLcFS_WypF6RENkgsHN3iJ42ysMqc37XQVXhTFMG9V4qyCFqxGjj-FkFNe-GOqA_BUZAIUGRxBmoBAGWHob3RnKBmQ8lQhlmao2u8w6zA/JzxfGUzWdfkYPKO7f9KAy8ASKI0Gb9sHSNlVqQnKWLc</url>
         </ParentNodeAttachments>
-    <NodeDefaultFileName>Index.html</NodeDefaultFileName></MOFChoices><MOFChoices><ParentChoiceName>b) Hardware Spec v2</ParentChoiceName><NodeName>Python</NodeName><FQNChoiceName>Python</FQNChoiceName><Name>0.SyntaxLockedAssets,21.Python</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000EE</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    
+        <ToolAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/HRicGTA2aO4ZwKUxr81dIA/q95eH8Q-OmSOXmpCEulM2Lm5doGrfBfMA2cZo3auehe3-iij6WTJykK2_GDxbzYGrchjmvcQNUbyWukwos4SfP25Elm9Y-KbiQdo-HuWkXW8LFNW5WZYdKywFoq1hBvfY0fyFpeuEWR4zuPtGdPybJeWe3fhR0Bs0KPLr6KEz9L5QjJnmAJywyWxSsCGEtrTpHyc5TpscyuHMPC__hKT5w/vcDlLuBwiZusmdP5w88EcLVQk3Ez1cN0vcS8HA7jdeY</url>
+        </ToolAttachments>
+    <NodeDefaultFileName>README.md</NodeDefaultFileName><ToolName>Developer</ToolName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder></MOFChoices><MOFChoices><ParentChoiceName>b) Hardware Spec v2</ParentChoiceName><NodeName>HTML</NodeName><FQNChoiceName>HTML</FQNChoiceName><Name>0.SyntaxLockedAssets,18.HTML</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000EE</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/0_ZhuEhrp4oTeguTFQlVRA/i4nfgriBDY8jr78KHbOKEM6RP09XigWFsFLwyEx6W15D0zZxYSSRUSNm1q9RuahVNstgEZHDzB2HDJrhlSqzUbjhbRhqKDC-H40kvLiOQIXJhLtk4lZ_-k_w-8S0xcxtf5csUhtoK8c500JPJCs1Vp8fDv1HC5DkY9IXdth5_yV-Ids9jJ7R2705q88J89Q5/2x1qhGeHTu-eIsp5vuCjXod1mF7lCC-6qci7ST8IM5o</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/gGyZgsTpJJl-d4nEBYo3qA/2EpucKc5v3Ev9hItiYdS5vrXh06UcwJdZB3PW8VY0AC3v9zBvsFcnrePoFTJ2rforzm7d1gCYsbjg8P5j6xO-LrCUuYrefDKiJMeS1pRb4CpynPk4_qPody0AoL3mHWmF3cNoOgS8jcM6WG6cgay-cM1sMhwIEgQ9Op2VpPikGHYFB3yCaqqSCTumbbBFvkV/XM549DtlysT68Fm9Bu6-TnxkfnJpo3H1by4gS-DutJY</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/DemDJctdyS5nqtCbtcI6lw/z1C0qi7oJnMnINUhod5OxVxPOoL_cng40aitUvBoXY6rxWNwPqMExIJwyyaWgzWLWIxlGISvDItZK_QGtLcUfSv1cd_3-E_Oosx6sFqobc_NbQdIFcrHS5FuOCxX1ltjFQs2UxG_p84xQLmKP6u74Q/dZPZBS1d8jT7fG2UXstMdQJO-Aiv5C_kCY4tiv8J0MA</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/qhmOrK4hpri4NAk4Jl-Otg/9UeVkBSfyQZYptfZ1VFvR59WZIv-I_DVgc8oJgOqCG-Gets6r7fCtByfaqxdceAVhj8cJMlqE_fjEyNRTORONUXlina_QmxUuRw3gGyipPrFW6HYZYbZdVmSdVmiMypyh62VWanGvFfPLslbmY1gGg/QoivzORgSDTxVZZRkz1t-SMrXzj7ABqPG0gvItchUYI</url>
         </ParentNodeAttachments>
-    <NodeDefaultFileName>Main.py</NodeDefaultFileName></MOFChoices><MOFChoices><ParentChoiceName>c) Garage Door Opener</ParentChoiceName><NodeName>CSharp</NodeName><FQNChoiceName>CSharp</FQNChoiceName><Name>0.SyntaxLockedAssets,23.CSharp</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000CC</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    
+        <ToolAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/HRicGTA2aO4ZwKUxr81dIA/q95eH8Q-OmSOXmpCEulM2Lm5doGrfBfMA2cZo3auehe3-iij6WTJykK2_GDxbzYGrchjmvcQNUbyWukwos4SfP25Elm9Y-KbiQdo-HuWkXW8LFNW5WZYdKywFoq1hBvfY0fyFpeuEWR4zuPtGdPybJeWe3fhR0Bs0KPLr6KEz9L5QjJnmAJywyWxSsCGEtrTpHyc5TpscyuHMPC__hKT5w/vcDlLuBwiZusmdP5w88EcLVQk3Ez1cN0vcS8HA7jdeY</url>
+        </ToolAttachments>
+    <NodeDefaultFileName>Index.html</NodeDefaultFileName><ToolName>Developer</ToolName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder></MOFChoices><MOFChoices><ParentChoiceName>b) Hardware Spec v2</ParentChoiceName><NodeName>Python</NodeName><FQNChoiceName>Python</FQNChoiceName><Name>0.SyntaxLockedAssets,21.Python</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000EE</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/_Sg1H7AJ_lDLOLv-lTlkog/4Jdc7jESNW_6CkSjrc2WSgO8NVqKNrk5LskSKEnF3w_QGuMH_VUaGOckiNr4yn-e6isQHkTN7sB9dNfmVm0zh1NtorTKLL4KmEHo0bi7Rr-9p3hMToxi_ntxewbdnMeO8IK8Ajj4tLcYyhP0OSSUyw/JccaPvVaKzf_RWCCQPQDrrZ9n6_pRtH_hiKgncAgC_w</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2vtWja3TleBa5viS2cHj9g/1zMyxCKRllXxKz5B3vihHnkKZOoT68Qj64qhFmkYAcPE9ugD7WgdR8lNKU9z6nFpCAMeOpoXsJUsBOA1EH4RdyU1UA0BDSe5ypJb8SqN4VPg8HA8Z6fQdaLUvdnUW69BkXx21ES9PbaPt2o0Z1wPpwrPwBIvprhCeG1nVJR-xcJa27TI-m5VhDbpfJs9a0Jq/BPLDblUsampUZICgocQX-UYszPKEL1HZYxAvmwjydgY</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/VWQf_AxtgLbv8-3mkfb4QQ/dywxy8J2uPwVqCqlWNuVRx8QYksPpq-XYlGMcVqHXHNWsnmw01oKGelzCXR476A3DT4RWAoZGKkOGsle1HDmUBRJiUsLrPEY315vyUydsEBfpXxRZX1yBXmImUo5PqO5uwKI7PrmpaYyCgTEbiQQfg/SjGsobsTEFeIc9EKTGHNyF46W1qyUhKZqaIWdAVs9MY</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/qhmOrK4hpri4NAk4Jl-Otg/9UeVkBSfyQZYptfZ1VFvR59WZIv-I_DVgc8oJgOqCG-Gets6r7fCtByfaqxdceAVhj8cJMlqE_fjEyNRTORONUXlina_QmxUuRw3gGyipPrFW6HYZYbZdVmSdVmiMypyh62VWanGvFfPLslbmY1gGg/QoivzORgSDTxVZZRkz1t-SMrXzj7ABqPG0gvItchUYI</url>
         </ParentNodeAttachments>
-    <NodeDefaultFileName>Program.cs</NodeDefaultFileName></MOFChoices><MOFChoices><ParentChoiceName>c) Garage Door Opener</ParentChoiceName><NodeName>WIKI</NodeName><FQNChoiceName>WIKI</FQNChoiceName><Name>0.SyntaxLockedAssets,19.WIKI</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000CC</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    
+        <ToolAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/HRicGTA2aO4ZwKUxr81dIA/q95eH8Q-OmSOXmpCEulM2Lm5doGrfBfMA2cZo3auehe3-iij6WTJykK2_GDxbzYGrchjmvcQNUbyWukwos4SfP25Elm9Y-KbiQdo-HuWkXW8LFNW5WZYdKywFoq1hBvfY0fyFpeuEWR4zuPtGdPybJeWe3fhR0Bs0KPLr6KEz9L5QjJnmAJywyWxSsCGEtrTpHyc5TpscyuHMPC__hKT5w/vcDlLuBwiZusmdP5w88EcLVQk3Ez1cN0vcS8HA7jdeY</url>
+        </ToolAttachments>
+    <NodeDefaultFileName>Main.py</NodeDefaultFileName><ToolName>Developer</ToolName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder></MOFChoices><MOFChoices><ParentChoiceName>c) Garage Door Opener</ParentChoiceName><NodeName>CSharp</NodeName><FQNChoiceName>CSharp</FQNChoiceName><Name>0.SyntaxLockedAssets,23.CSharp</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#ff0000</NodeDesiredColor><ParentNodeDesiredColor>#0000CC</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/mTEXMRbp7yiWlWjPJecIkg/ht050cTMV2NE_vsqCxDRgb5som8vjm5ujlwP7xdYbCAEOvxBZ5YMYiJeQsxnnpLAKYETBiFTnlT24SomvIZiXmq7-bF3QHreUALQpJ5MjRJ9tbbLRM5xCVcBxpItRIYj3QRM7oCa45K1dYGRGjWUVtWSyXUeCiQcIUIonsk8hlM0CtdzxL6b1DyxMWooOzwM/llsD9w1DSc_iaa0KOHS19wNdKznrMpsGuHukTT_IFdQ</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/1en4NQUFZ0GGRD1_TfcdGQ/AFhI0L810RRtJbWin455AdxOmqeWCBEgR0IZh0bGqtBt_LShRjW-nrMUURqvcPxaasg3woeTSS4Z4n_wV8r-gdVkvMs-RAGXGQLS3GeLtp97MNbpUT9ThjiUYV2TFzclVAenVW2XabwBIDiBMf9Lqw/IjnIMD-LtFGcswSazLhTT25TxduXr-clBXNq-N2etQg</url>
         </NodeAttachments>
     
         <ParentNodeAttachments json:Array="true">
-        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714946400000/VWQf_AxtgLbv8-3mkfb4QQ/dywxy8J2uPwVqCqlWNuVRx8QYksPpq-XYlGMcVqHXHNWsnmw01oKGelzCXR476A3DT4RWAoZGKkOGsle1HDmUBRJiUsLrPEY315vyUydsEBfpXxRZX1yBXmImUo5PqO5uwKI7PrmpaYyCgTEbiQQfg/SjGsobsTEFeIc9EKTGHNyF46W1qyUhKZqaIWdAVs9MY</url>
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/mhtOjLM6c4Yq7GzFP1k-3Q/x2xoEi2XTFoanwaDgK-IyppMbH7E5asYOVLqkVjvpPDxq4tWmAl9759eZeyMO5rNJsGUi0Dzml3UlK9SfJXnbcpuYojtYkbNEd9SWu-zKzNmGJFMmR03DdLsi0hnmHpafg76S9HMkOCWgQrnhlV6rg/bLJeJDRUo4AYyTPA9SrxSG2LuPel_S9-cdFojcWUjW0</url>
         </ParentNodeAttachments>
-    <NodeDefaultFileName>HOME.wiki</NodeDefaultFileName></MOFChoices><Entities json:Array="true"><Name>MOFLayer</Name><PluralName>MOFLayers</PluralName><AirtableName>MOFLayers</AirtableName></Entities><Entities json:Array="true"><Name>MOFNode</Name><PluralName>MOFNodes</PluralName><AirtableName>MOFNodes</AirtableName></Entities><Entities json:Array="true"><Name>MOFChoice</Name><PluralName>MOFChoices</PluralName><AirtableName>MOFChoices</AirtableName></Entities></Airtable>
+    
+        <ToolAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/HRicGTA2aO4ZwKUxr81dIA/q95eH8Q-OmSOXmpCEulM2Lm5doGrfBfMA2cZo3auehe3-iij6WTJykK2_GDxbzYGrchjmvcQNUbyWukwos4SfP25Elm9Y-KbiQdo-HuWkXW8LFNW5WZYdKywFoq1hBvfY0fyFpeuEWR4zuPtGdPybJeWe3fhR0Bs0KPLr6KEz9L5QjJnmAJywyWxSsCGEtrTpHyc5TpscyuHMPC__hKT5w/vcDlLuBwiZusmdP5w88EcLVQk3Ez1cN0vcS8HA7jdeY</url>
+        </ToolAttachments>
+    <NodeDefaultFileName>Program.cs</NodeDefaultFileName><ToolName>Developer</ToolName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder></MOFChoices><MOFChoices><ParentChoiceName>c) Garage Door Opener</ParentChoiceName><NodeName>WIKI</NodeName><FQNChoiceName>WIKI</FQNChoiceName><Name>0.SyntaxLockedAssets,19.WIKI</Name><MOFLayerNumber>0</MOFLayerNumber><ParentMOFLayerNumber>1</ParentMOFLayerNumber><NodeDesiredColor>#bfff00</NodeDesiredColor><ParentNodeDesiredColor>#0000CC</ParentNodeDesiredColor><MixedColor>#bfffff</MixedColor><ExpectedColor>#bfffff</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+        <NodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/s16H72YAIjv92mu_8rHwpA/bE-ZZlWAWlPzHFip_0jzdTRfLhCPCfdRnTxsaPebPLIyR_0smbcnd5JECQr-heXmBJ8gKg75HraWJfh0WmxGEIMUob0xSj-uowrgivOYpMcgwhkTuaHr3oMeg-FhaRbX9v9NfOzWj1PhrpELnNAw5ZjLFw_gj8NGkxRtU0M8DEqS9djVQxXPLJ3d5q_R6JTv/1Xrl0Xkccr4dbaao6qiHwBWGZfvD48UHgYuICNwaxeA</url>
+        </NodeAttachments>
+    
+        <ParentNodeAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/mhtOjLM6c4Yq7GzFP1k-3Q/x2xoEi2XTFoanwaDgK-IyppMbH7E5asYOVLqkVjvpPDxq4tWmAl9759eZeyMO5rNJsGUi0Dzml3UlK9SfJXnbcpuYojtYkbNEd9SWu-zKzNmGJFMmR03DdLsi0hnmHpafg76S9HMkOCWgQrnhlV6rg/bLJeJDRUo4AYyTPA9SrxSG2LuPel_S9-cdFojcWUjW0</url>
+        </ParentNodeAttachments>
+    
+        <ToolAttachments json:Array="true">
+        <url>https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/HRicGTA2aO4ZwKUxr81dIA/q95eH8Q-OmSOXmpCEulM2Lm5doGrfBfMA2cZo3auehe3-iij6WTJykK2_GDxbzYGrchjmvcQNUbyWukwos4SfP25Elm9Y-KbiQdo-HuWkXW8LFNW5WZYdKywFoq1hBvfY0fyFpeuEWR4zuPtGdPybJeWe3fhR0Bs0KPLr6KEz9L5QjJnmAJywyWxSsCGEtrTpHyc5TpscyuHMPC__hKT5w/vcDlLuBwiZusmdP5w88EcLVQk3Ez1cN0vcS8HA7jdeY</url>
+        </ToolAttachments>
+    <NodeDefaultFileName>HOME.wiki</NodeDefaultFileName><ToolName>Developer</ToolName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder></MOFChoices><Entities json:Array="true"><Name>MOFLayer</Name><PluralName>MOFLayers</PluralName><AirtableName>MOFLayers</AirtableName></Entities><Entities json:Array="true"><Name>MOFNode</Name><PluralName>MOFNodes</PluralName><AirtableName>MOFNodes</AirtableName></Entities><Entities json:Array="true"><Name>MOFChoice</Name><PluralName>MOFChoices</PluralName><AirtableName>MOFChoices</AirtableName></Entities></Airtable>
