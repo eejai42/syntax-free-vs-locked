@@ -108,6 +108,11 @@ h3 {
   border-radius: 3em;
 }
 
+.node-table {
+  border: solid black 1px;
+  border-radius: 3rem;
+  margin: 0.5rem;
+}
 
 .current {
   float: left;
