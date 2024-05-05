@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./TechShouldFlow.css";
 
-const ViewChoices = ({ mofData, choices, isSyntaxLocked }) => {
+const ViewChoices = ({ choices, isSyntaxFree }) => {
   return (
     <div>
-      <h1>{isSyntaxLocked ? 'Locked' : 'Free'}</h1>
+      <h1>{isSyntaxFree ? 'Free' : 'Locked'}</h1>
       <table className="choices-table">
         <tbody>
         <tr>
