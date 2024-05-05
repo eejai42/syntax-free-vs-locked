@@ -109,6 +109,20 @@ h3 {
 }
 
 .node-table {
+  border-radius: 3rem;
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.node-header {
+  width: 100%;
+}
+
+.node-table td {
+  width: auto;
+}
+
+.node-table div {
   border: solid black 1px;
   border-radius: 3rem;
   margin: 0.5rem;
