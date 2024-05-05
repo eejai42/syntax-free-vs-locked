@@ -115,6 +115,8 @@ h3 {
 }
 
 .node-header {
+  margin-top: 10rem;
+  borderTop: dashed black 3px;
   width: 100%;
 }
 

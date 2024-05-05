@@ -13,10 +13,7 @@ const NodeWithChildren = ({ node }) => {
                                 <div style={{border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none'}}>
                                     <strong>{node.FQNChoiceName}</strong><br/>
                                     <div>
-                                        <strong>ExpectedColor:</strong> {node.ExpectedColor}<br/>
-                                    </div>
-                                    <div>
-                                        <strong>MOFLayer:</strong> {node.MOFLayerNumber}<br/>
+                                        {node.ExpectedColor && <span><strong>ExpectedColor:</strong> {node.ExpectedColor}<br/></span>}
                                     </div>
                                 </div>
 
@@ -31,6 +28,11 @@ const NodeWithChildren = ({ node }) => {
                                     </div>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>
+                                Tool File Name: {node.ToolTransformerFileName} <br/>
+                                </td>
+                            </tr>
                         </table>                                    
                     </td>
                 </tr>
@@ -42,8 +44,13 @@ const NodeWithChildren = ({ node }) => {
                             <React.Fragment>
                                 {(childNode.MOFLayerNumber !== 1) || index === 0 ?
                                 <td key={childNode.NodeName}>   
-                                    Parentalyer: {node.ParentMOFLayerNumber || '--'} / {childNode.ParentMOFLayerNumber || '--'} / LayerNumber: {childNode.MOFLayerNumber || '--'}
-                                    <NodeWithChildren node={childNode} />
+                                <table style={{width: '100%'}}>
+                                    <tr>
+                                        <td>
+                                            <NodeWithChildren node={childNode} />
+                                        </td>
+                                    </tr>
+                                </table>
                                 </td> : <td key={childNode.NodeName} style={{border: 'none'}}></td>}
                             </React.Fragment>
                         ))}
