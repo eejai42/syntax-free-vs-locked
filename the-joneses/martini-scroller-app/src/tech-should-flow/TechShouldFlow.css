@@ -20,11 +20,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: -0.0rem;
   text-align: center;
+  border-bottom: solid black 1px;
 }
 
 h3 {
@@ -37,6 +37,17 @@ h3 {
   color: white;
   text-align: center;
   font-weight: bold;
+}
+
+
+
+.switch-icon {
+  border-radius: 3em;
+  float: left;
+  width: 2em; 
+  height: 2em;
+  margin: 0.2em;
+  margin-right: 0.4em;
 }
 
 .match-status {
@@ -64,7 +75,7 @@ h3 {
 .main-table {
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 98%;
   height: 80vh;
   text-align: center;
   vertical-align: top;  
@@ -82,12 +93,21 @@ h3 {
 }
 
 .main-table div {
-  border: solid black 1px;
-  background-color: red;
+  /* border: solid black 1px;
+  background-color: red; */
   border-radius: 1rem;
-  margin: 1rem;
   height: 95%;
 }
+
+
+.EraIcon {
+  width: 6em;
+  right: 3rem;
+  top: 4em;
+  position: absolute;
+  border-radius: 3em;
+}
+
 
 .current {
   float: left;

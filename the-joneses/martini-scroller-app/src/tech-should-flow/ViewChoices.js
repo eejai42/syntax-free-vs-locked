@@ -4,7 +4,7 @@ import "./TechShouldFlow.css";
 const ViewChoices = ({ choices, isSyntaxFree }) => {
   return (
     <div>
-      <h1>{isSyntaxFree ? 'Free' : 'Locked'}</h1>
+      <h2>{isSyntaxFree ? 'Syntax Free' : 'Syntax Locked'}</h2>
       <table className="choices-table">
         <tbody>
         <tr>
