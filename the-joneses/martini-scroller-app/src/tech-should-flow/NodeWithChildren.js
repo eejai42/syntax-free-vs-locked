@@ -9,21 +9,23 @@ const NodeWithChildren = ({ node }) => {
                     <td colSpan={node.Children ? node.Children.length * 2 : 1} style={{border: 'none'}}>
                         <table class="node-header">
                             <tr>
+                                {node.MOFLayerNumber === 0 && !node.OutputIsDocs && <td style={{width: '10em'}}>RIGHT</td>}
                                 <td>
-                                <div style={{border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none'}}>
-                                    <strong>{node.FQNChoiceName}</strong>
-                                    {node.MOFLayerNumber === 2 && <span>
-                                        
-                                        </span>}<br/>
-                                    <div>
-                                        {node.ExpectedColor && <span><strong>ExpectedColor:</strong> {node.ExpectedColor}<br/></span>}
+                                    <div style={{border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none'}}>
+                                        <strong>{node.FQNChoiceName}</strong>
+                                        {node.MOFLayerNumber === 2 && <span>
+                                            
+                                            </span>}<br/>
+                                        <div>
+                                            {node.ExpectedColor && <span><strong>ExpectedColor:</strong> {node.ExpectedColor}<br/></span>}
+                                        </div>
                                     </div>
-                                </div>
-
                                 </td>
+                                {node.MOFLayerNumber === 0 && node.OutputIsDocs && <td style={{width: '10em'}}>LEFT</td>}
                             </tr>
                             <tr>
-                                <td>
+                                <td colSpan="2">
+
                                     <div>
                                         {node.ToolName ? (<span><strong></strong> {node.ToolName} </span>) : null}
                                         {node.InputChoiceFileName ? <span> -i<strong> {node.InputChoiceFileName}</strong></span> : null}
@@ -32,7 +34,7 @@ const NodeWithChildren = ({ node }) => {
                                 </td>
                             </tr>
                             {node.MOFLayerNumber === 0 &&<tr>
-                                <td>
+                                <td colSpan="2">
                                 {node.ToolName} <br/>
                                 </td>
                             </tr>}
