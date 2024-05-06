@@ -24,7 +24,7 @@ const SaturationPicker = ({ color, onColorChange, src, label = "", isPickerAvail
         >
             <div style={{ width: "18em", height: "15em", backgroundColor: {color} }}>
                 <div className="pickerLabel" style={{backgroundColor: currentColor, color: getContrastColor(currentColor)}}>{label || currentColor}</div>
-                <div style={{ position: "absolute", width: "18em", height: "10em", top: '2em', margin: "0.8em" }}>
+                <div style={{ position: "absolute", width: "18em", paddingLeft: '1em', height: "10em", top: '2em', margin: "0.8em" }}>
                     <div className="presetBtnContainer" style={{ position: "relative", top: '0px', left: '-1em', width: "14.5em", height: "19em", overflow: "hidden", display: 'block', zIndex: 9999999}}>
                         <div style={{display: showPicker ? 'block' : 'none', position: 'relative' }}>
                         <HexColorPicker style={{border: '', height: ''}} color={currentColor} onChange={handleColorChange}  />
