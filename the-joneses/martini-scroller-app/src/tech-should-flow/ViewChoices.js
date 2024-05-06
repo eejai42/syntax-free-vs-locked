@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./TechShouldFlow.css";
 import NodeWithChildren from "./NodeWithChildren";
 
-const ViewChoices = ({ choices, isSyntaxFree, selectedIndex }) => {
+const ViewChoices = ({ choices, isSyntaxFree, selectedIndex, onSetSelectedIndex }) => {
     const [structuredData, setStructuredData] = useState(null);
 
     useEffect(() => {
@@ -41,7 +41,15 @@ const ViewChoices = ({ choices, isSyntaxFree, selectedIndex }) => {
 
   return (
     <div>
-        <h2>{isSyntaxFree ? 'Syntax Free' : 'Syntax Locked'}</h2>
+        <h2>{isSyntaxFree ? 'Syntax Free' : 'Syntax Locked'}  <div style={{float: 'right', marginTop: '-0.5em'}}>
+        <select value={selectedIndex} onChange={(e) => onSetSelectedIndex(e.target.value)}>
+          <option value={0}>Example 1</option>
+          <option value={1}>Example 2</option>
+          <option value={2}>GarageDoor</option>
+        </select>
+      </div></h2>
+       
+
         <table className="choices-table">
             <tbody>
               <tr>

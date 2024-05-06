@@ -135,11 +135,12 @@ h3 {
 
 
 .EraIcon {
-  width: 6em;
+  width: 8em;
   right: 3rem;
-  top: 4em;
+  top: 5em;
   position: absolute;
-  border-radius: 3em;
+  border-radius: 4em;
+  margin: 1em;
 }
 
 .node-table {
