@@ -3,7 +3,7 @@ import { HexColorPicker } from "react-colorful";
 import { hslToHex, hexToHsl } from "../colorUtils";
 import { getContrastColor } from "../colorUtils";
 
-const SaturationPicker = ({ color, onColorChange, src, label = "", isPickerAvailable=false}) => {
+const SaturationPicker = ({ color, onColorChange, src, label = "", isPickerAvailable=false, left='0em'}) => {
 
     let transpilerNode = null;
     const [showPicker, setShowPicker] = useState(false);
@@ -16,21 +16,21 @@ const SaturationPicker = ({ color, onColorChange, src, label = "", isPickerAvail
     };
 
     return (
-        <div style={{ width: "90%", height: "18em", margin: "0.5em", marginRight: '1em;', border: (false && isPickerAvailable? 'solid 1px #efefef' : ''), // commenging out temporarily
+        <div style={{ width: "90%", height: "14em", margin: "0.5em", marginRight: '1em;', border: (false && isPickerAvailable? 'solid 1px #efefef' : ''), // commenging out temporarily
                        borderRadius: '0.45em', cursor: (isPickerAvailable ? 'pointer' : '') }} 
         className="outerHoverDiv"
         onClick={() => isPickerAvailable ? setShowPicker(true) : null}  // Set to true on click
         onMouseLeave={() => setShowPicker(false)}  
         >
             <div style={{ width: "18em", height: "15em", backgroundColor: {color} }}>
-                <div className="pickerLabel" style={{backgroundColor: currentColor, color: getContrastColor(currentColor)}}>{label || currentColor}</div>
+                {false && isPickerAvailable && <div className="pickerLabel" style={{backgroundColor: currentColor, color: getContrastColor(currentColor)}}>{label || currentColor}</div>}
                 <div style={{ position: "absolute", width: "18em", paddingLeft: '1em', height: "10em", top: '2em', margin: "0.8em" }}>
-                    <div className="presetBtnContainer" style={{ position: "relative", top: '-1x', left: '-1em', width: "14.5em", height: "19em", overflow: "hidden", display: 'block', zIndex: 9999999}}>
+                    <div className="presetBtnContainer" style={{ position: "relative", top: '-1x', left: left, width: "14.5em", height: "16em", overflow: "hidden", display: 'block', zIndex: 9999999}}>
                         <div style={{display: showPicker ? 'block' : 'none', position: 'relative' }}>
                         <HexColorPicker style={{border: '', height: ''}} color={currentColor} onChange={handleColorChange}  />
                         </div>
                         <div style={{display: !showPicker && src ? 'block' : 'none' }}>
-                            <img src={src} style={{width: '9.5em', paddingLeft: '0em', marginLeft: '0em'}}/>
+                            <img src={src} style={{width: '7.5em', paddingLeft: '0em', marginLeft: '0em'}}/>
                         </div>
                     </div>
                 </div>

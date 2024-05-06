@@ -41,10 +41,10 @@ h3 {
 
 
 .output-node {
-  padding: 1rem;
-  margin: 1rem auto;      /* Auto margins for horizontal centering, 1rem margin for top and bottom */
-  padding-left: 20%;
-  padding-right: 20%;
+  padding: 0.25rem;
+  margin: 0rem auto;      /* Auto margins for horizontal centering, 1rem margin for top and bottom */
+  padding-left: 0%;
+  padding-right: 0%;
   border: solid black 1px;
   border-radius: 1rem;
 }
@@ -149,7 +149,7 @@ h3 {
 }
 
 .node-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   width: 100%;
 }
 
@@ -235,9 +235,9 @@ h3 {
 }
 
 .transpiler-node {
-  padding-top: 2rem;
+  padding-top: 1rem;
   height: 23rem;
   min-height: 23rem;
-  margin: 1rem;
-  padding: 1rem
+  margin: 0rem;
+  padding: 0rem
 }
