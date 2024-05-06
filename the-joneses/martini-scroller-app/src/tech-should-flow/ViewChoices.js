@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./TechShouldFlow.css";
 import NodeWithChildren from "./NodeWithChildren";
 
-const ViewChoices = ({ choices, isSyntaxFree }) => {
+const ViewChoices = ({ choices, isSyntaxFree, selectedIndex }) => {
     const [structuredData, setStructuredData] = useState(null);
 
     useEffect(() => {
@@ -44,9 +44,13 @@ const ViewChoices = ({ choices, isSyntaxFree }) => {
         <h2>{isSyntaxFree ? 'Syntax Free' : 'Syntax Locked'}</h2>
         <table className="choices-table">
             <tbody>
-                {structuredData && structuredData.map(rootNode => (
-                    <NodeWithChildren key={rootNode.NodeName} node={rootNode} />
-                ))}
+              <tr>
+                <td>
+                  {structuredData && structuredData.map(rootNode => (
+                      <NodeWithChildren key={rootNode.NodeName} node={rootNode} selectedIndex={selectedIndex} />
+                  ))}
+                </td>
+              </tr>
             </tbody>
         </table>
     </div>

@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import SaturationPicker from "./SaturationPicker";
+import { getContrastColor } from "../colorUtils";
 
-const NodeWithChildren = ({ node }) => {
+const NodeWithChildren = ({ node, selectedIndex }) => {
+
+    const [currentColor, setCurrentColor] = useState(node.NodeDesiredColor || "#000000" );
+
+    useEffect(() => {
+        setCurrentColor(node.NodeDesiredColor || "#000000");
+    }, [node.NodeDesiredColor]);
+
+    const handleHueChange = (hue) => {
+    };
+    
     return (
         <table className="node-table">
             <tbody>
@@ -9,23 +21,26 @@ const NodeWithChildren = ({ node }) => {
                     <td colSpan={node.Children ? node.Children.length * 2 : 1} style={{border: 'none'}}>
                         <table class="node-header">
                             <tr>
-                                {node.MOFLayerNumber === 0 && !node.OutputIsDocs && <td style={{width: '10em'}}>RIGHT</td>}
+                                {node.MOFLayerNumber === 0 && !node.OutputIsDocs && <td style={{width: '10em', position: 'relative'}}>
+                                    <SaturationPicker color={currentColor} onColorChange={setCurrentColor} isPickerAvailable={true} style={{ height: ''}}></SaturationPicker>
+                                </td>}
                                 <td>
-                                    <div style={{border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none'}}>
+                                    <div style={{border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none', backgroundColor: node.NodeDesiredColor, color: getContrastColor(node.NodeDesiredColor)}}>
                                         <strong>{node.FQNChoiceName}</strong>
                                         {node.MOFLayerNumber === 2 && <span>
                                             
                                             </span>}<br/>
-                                        <div>
-                                            {node.ExpectedColor && <span><strong>ExpectedColor:</strong> {node.ExpectedColor}<br/></span>}
-                                        </div>
+                                            <div>{node.ExpectedColor && <span><strong>ExpectedColor:</strong> {node.ExpectedColor}<br/></span>}</div>
+                                            <div>{node.NodeDesiredColor && <span><strong>NodeDesiredColor:</strong> {node.NodeDesiredColor}<br/></span>}</div>
+                                            <div>{node.MixedColor && <span><strong>MixedColor:</strong> {node.MixedColor}<br/></span>}</div>
                                     </div>
                                 </td>
-                                {node.MOFLayerNumber === 0 && node.OutputIsDocs && <td style={{width: '10em'}}>LEFT</td>}
+                                {node.MOFLayerNumber === 0 && node.OutputIsDocs && <td style={{width: '10em', position: 'relative'}}>
+                                    <SaturationPicker color={currentColor} onColorChange={setCurrentColor} isPickerAvailable={true}></SaturationPicker>
+                                </td>}
                             </tr>
                             <tr>
                                 <td colSpan="2">
-
                                     <div>
                                         {node.ToolName ? (<span><strong></strong> {node.ToolName} </span>) : null}
                                         {node.InputChoiceFileName ? <span> -i<strong> {node.InputChoiceFileName}</strong></span> : null}
@@ -33,11 +48,6 @@ const NodeWithChildren = ({ node }) => {
                                     </div>
                                 </td>
                             </tr>
-                            {node.MOFLayerNumber === 0 &&<tr>
-                                <td colSpan="2">
-                                {node.ToolName} <br/>
-                                </td>
-                            </tr>}
                         </table>                                    
                     </td>
                 </tr>
@@ -47,7 +57,7 @@ const NodeWithChildren = ({ node }) => {
                     <tr>
                         {node.Children.map((childNode, index) => (                            
                             <React.Fragment>
-                                {(childNode.MOFLayerNumber !== 1) || index === 1 ?
+                                {((childNode.MOFLayerNumber !== 1) || (index == selectedIndex)) ?
                                 <td key={childNode.NodeName}>   
                                 <table style={{width: '100%'}}>
                                     <tr>

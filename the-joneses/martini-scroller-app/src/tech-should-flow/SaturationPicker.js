@@ -21,12 +21,12 @@ const SaturationPicker = ({ color, onColorChange, src, label = "", isPickerAvail
         onClick={() => isPickerAvailable ? setShowPicker(true) : null}  // Set to true on click
         onMouseLeave={() => setShowPicker(false)}  
         >
-            <div style={{ width: "10em", height: "10em" }}>
-                <div className="pickerLabel">{label || currentColor}</div>
-                <div style={{ position: "relative", width: "10em", height: "10em", margin: "0.8em", overflow: "hidden" }}>
-                    <div className="presetBtnContainer" style={{ position: "absolute", top: 0, left: '0em', width: "14.5em", height: "8em", overflow: "hidden", display: 'block'}}>
-                        <div style={{display: showPicker ? 'block' : 'none' }}>
-                        <HexColorPicker color={currentColor} onChange={handleColorChange}  />
+            <div style={{ width: "10em", height: "10em", backgroundColor: {color} }}>
+                <div className="pickerLabel" style={{backgroundColor: currentColor}}>{label || currentColor}</div>
+                <div style={{ position: "absolute", width: "10em", height: "10em", top: '2em', margin: "0.8em", overflow: "hidden" }}>
+                    <div className="presetBtnContainer" style={{ position: "relative", top: '0px', left: '-7em', width: "14.5em", height: "19em", overflow: "hidden", display: 'block', zIndex: 9999999}}>
+                        <div style={{display: showPicker ? 'block' : 'none', position: 'relative' }}>
+                        <HexColorPicker style={{border: '', height: ''}} color={currentColor} onChange={handleColorChange}  />
                         </div>
                         <div style={{display: !showPicker && src ? 'block' : 'none' }}>
                             <img src={src} style={{width: '8.5em', paddingLeft: '0.5em', marginLeft: '0.5em'}}/>

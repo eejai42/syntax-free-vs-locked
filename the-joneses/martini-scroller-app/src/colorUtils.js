@@ -56,6 +56,7 @@ export const hslToHex = (h, s, l) => {
 
 
 export const getContrastColor = (bgColor) => {
+  if (!bgColor) return 'black';
   const color = (bgColor.charAt(0) === '#') ? bgColor.substring(1, 7) : bgColor;
   const r = parseInt(color.substring(0, 2), 16); // hex to decimal
   const g = parseInt(color.substring(2, 4), 16); // hex to decimal
