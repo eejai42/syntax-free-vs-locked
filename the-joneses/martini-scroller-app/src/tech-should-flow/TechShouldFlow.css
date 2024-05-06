@@ -41,6 +41,23 @@ h3 {
 
 
 
+.pickerLabel {
+  background-color: white;
+  height: 100%;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  margin: auto;
+  margin-right: 1em;
+  text-align: center;
+  text-decoration: underline;
+  border-radius: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+
+
 .switch-icon {
   border-radius: 3em;
   float: left;
@@ -75,7 +92,7 @@ h3 {
 .main-table {
   margin-left: auto;
   margin-right: auto;
-  width: 98%;
+  width: 100em;
   height: 80vh;
   text-align: center;
   vertical-align: top;  
