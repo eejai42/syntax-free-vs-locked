@@ -16,7 +16,7 @@ const SaturationPicker = ({ color, onColorChange, src, label = "", isPickerAvail
     };
 
     return (
-        <div style={{ width: "90%", height: "18em", margin: "0.5em", marginRight: '1em;', border: (isPickerAvailable ? 'solid 1px lightgray' : ''), 
+        <div style={{ width: "90%", height: "18em", margin: "0.5em", marginRight: '1em;', border: (false && isPickerAvailable? 'solid 1px #efefef' : ''), // commenging out temporarily
                        borderRadius: '0.45em', cursor: (isPickerAvailable ? 'pointer' : '') }} 
         className="outerHoverDiv"
         onClick={() => isPickerAvailable ? setShowPicker(true) : null}  // Set to true on click
@@ -25,7 +25,7 @@ const SaturationPicker = ({ color, onColorChange, src, label = "", isPickerAvail
             <div style={{ width: "18em", height: "15em", backgroundColor: {color} }}>
                 <div className="pickerLabel" style={{backgroundColor: currentColor, color: getContrastColor(currentColor)}}>{label || currentColor}</div>
                 <div style={{ position: "absolute", width: "18em", paddingLeft: '1em', height: "10em", top: '2em', margin: "0.8em" }}>
-                    <div className="presetBtnContainer" style={{ position: "relative", top: '0px', left: '-1em', width: "14.5em", height: "19em", overflow: "hidden", display: 'block', zIndex: 9999999}}>
+                    <div className="presetBtnContainer" style={{ position: "relative", top: '-1x', left: '-1em', width: "14.5em", height: "19em", overflow: "hidden", display: 'block', zIndex: 9999999}}>
                         <div style={{display: showPicker ? 'block' : 'none', position: 'relative' }}>
                         <HexColorPicker style={{border: '', height: ''}} color={currentColor} onChange={handleColorChange}  />
                         </div>

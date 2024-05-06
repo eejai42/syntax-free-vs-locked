@@ -31,16 +31,24 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                                     <SaturationPicker label={node.InputChoiceFileName} color={mixedColor} src={node?.ToolAttachments[0].url} onColorChange={handleMixedColorChange} isPickerAvailable={true} style={{ height: ''}}></SaturationPicker>
                                 </td>}
                                 <td>
-                                    <div style={{position: 'relative', height: node.MOFLayerNumber === 3 ? '3em' : '24em', border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none', backgroundColor: currentColor, color: getContrastColor(currentColor)}}>
+                                    <div style={{position: 'relative', height: node.MOFLayerNumber === 1 ? '18em' : '18em', border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none', backgroundColor: currentColor, color: getContrastColor(currentColor)}}>
 
-                                    {node.MOFLayerNumber <= 1 && !node.OutputIsDocs && <div style={{width: '20em', position: 'absolute', top: '1em', left: '3em'}}>
+                                    {((node.MOFLayerNumber !== 13) || (node.MOFLayerNumber === 3)) && !node.OutputIsDocs && <div style={{width: '20em', position: 'absolute', top: '1em', left: '3em'}}>
                                         <SaturationPicker color={currentColor} src={node?.NodeAttachments[0].url} onColorChange={handleHueChange} 
-                                                label={node.FQNChoiceName} isPickerAvailable={true} style={{ height: ''}}></SaturationPicker>
+                                                        label={node.MOFLayerNumber != 1 ? "change" : node.ParentChoiceName} isPickerAvailable={node.MOFLayerNumber != 1} 
+                                                        style={{ height: ''}}></SaturationPicker>
                                     </div>}
 
-                                    {node.MOFLayerNumber <= 1 && node.OutputIsDocs && <div style={{width: '20em', position: 'absolute', top: '1em', right: '3em'}}>
+                                            <div>{node.FQNChoiceName}</div>
+
+                                            <div style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                                                middle
+                                            </div>
+
+                                    {((node.MOFLayerNumber !== 13) || (node.MOFLayerNumber === 3)) && node.OutputIsDocs && <div style={{width: '20em', position: 'absolute', top: '1em', right: '3em'}}>
                                         <SaturationPicker color={currentColor} src={node?.NodeAttachments[0].url} onColorChange={handleHueChange} 
-                                                        label={node.FQNChoiceName} isPickerAvailable={true} style={{ height: ''}}></SaturationPicker>
+                                                        label={node.MOFLayerNumber != 1 ? "change" : node.FQNChoiceName} isPickerAvailable={node.MOFLayerNumber != 1} 
+                                                        style={{ height: ''}}></SaturationPicker>
                                     </div>}
 
                                     </div>
@@ -51,7 +59,7 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                             </tr>
                             <tr>
                                 <td colSpan="2">
-                                    <div>
+                                    <div class="output-node" style={{marginRight: '20%', marginLeft: '20%'}}>
                                         {node.ToolName ? (<span><strong></strong> {node.ToolName} </span>) : null}
                                         {node.InputChoiceFileName ? <span> -i<strong> {node.InputChoiceFileName}</strong></span> : null}
                                         {node.NodeDefaultFileName ? <span> -o<strong> {node.NodeDefaultFileName}</strong></span> : null}
@@ -64,6 +72,9 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                 {node.MOFLayerNumber === 1 && <tr>
                     <td class="flow-arrow" style={{textAlign: 'right'}}>↙</td>
                     <td class="flow-arrow" style={{textAlign: 'left'}}>↘</td>
+                </tr>}
+                {node.MOFLayerNumber === 3 && <tr>
+                    <td colSpan="2" class="flow-arrow" style={{textAlign: 'center'}}>⬇</td>
                 </tr>}
                 {/* <tr><td></td></tr> */}
                 {/* Display children in separate cells if they exist */}

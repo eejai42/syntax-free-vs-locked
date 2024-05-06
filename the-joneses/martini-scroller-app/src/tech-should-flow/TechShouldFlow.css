@@ -39,15 +39,29 @@ h3 {
   font-weight: bold;
 }
 
+
+.output-node {
+  padding: 1rem;
+  margin: 1rem auto;      /* Auto margins for horizontal centering, 1rem margin for top and bottom */
+  padding-left: 20%;
+  padding-right: 20%;
+  border: solid black 1px;
+  border-radius: 1rem;
+}
+
 .flow-arrow {
   font-size: 3em;
   font-weight: bold;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  color: green;
 }
 
 
 .pickerLabel {
   background-color: white;
-  height: 24rem;
+  height: 22rem;
   width: 90%;
   color: black;
   font-size: 1em;
@@ -111,7 +125,6 @@ h3 {
 .main-table td {
   text-align: center;
   vertical-align: top;
-  width: 50%;
 }
 
 .main-table div {
@@ -137,7 +150,6 @@ h3 {
 
 .node-header {
   margin-bottom: 1rem;
-  border-bottom: double black 3px;
   width: 100%;
 }
 
