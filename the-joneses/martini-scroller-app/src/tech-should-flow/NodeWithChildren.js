@@ -7,9 +7,7 @@ const NodeWithChildren = ({ node, selectedIndex, onColorUpdate }) => {
     const [mixedColor, setMixedColor] = useState(node.MixedColor || "#000000");
 
     useEffect(() => {
-        if (node.MOFLayerNumber != 3) {
-            setCurrentColor(node.NodeDesiredColor || "#000000");
-        }
+        setCurrentColor(node.NodeDesiredColor || "#000000");
     }, [node.NodeDesiredColor]);
 
     useEffect(() => {
@@ -46,18 +44,18 @@ const NodeWithChildren = ({ node, selectedIndex, onColorUpdate }) => {
                                     <div style={{position: 'relative', height: node.MOFLayerNumber === 1 ? '14em' : '14em', border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none', backgroundColor: currentColor, color: getContrastColor(currentColor),     
                                                 maxWidth: '45em', marginLeft: 'auto', marginRight: 'auto'}}>
 
-                                    {((node.MOFLayerNumber === 13) || (node.MOFLayerNumber === 0)) && !node.OutputIsDocs && <div style={{width: '20em', position: 'absolute', top: '1em', left: '3.5em'}}>
+                                    {((node.MOFLayerNumber === 13) || (node.MOFLayerNumber === 0)) && !node.OutputIsDocs && <div style={{width: '20em', position: 'absolute', top: '1em', left: '2.5em'}}>
                                         <SaturationPicker color={currentColor} src={node?.NodeAttachments[0].url} onColorChange={handleHueChange} 
                                                         label={node.MOFLayerNumber != 1 ? "change" : node.ParentChoiceName} isPickerAvailable={node.MOFLayerNumber != 3} 
                                                         style={{ height: ''}}></SaturationPicker>
                                     </div>}
 
-                                            <div>{node.FQNChoiceName}</div>
+                                            <h3>{node.FQNChoiceName}</h3>
 
                                             {((node.MOFLayerNumber == 13) || (node.MOFLayerNumber >= 1)) && 
-                                                    <div style={{width: '40%', marginLeft: 'auto', marginRight: 'auto', height: '15rem'}}>
+                                                    <div style={{width: '45%', marginLeft: 'auto', marginRight: 'auto', height: '15rem'}}>
                                                     <SaturationPicker color={currentColor} src={node?.NodeAttachments[0].url} onColorChange={handleHueChange} 
-                                                        label={node.MOFLayerNumber != 1 ? "change" : node.ParentChoiceName} isPickerAvailable={(!node.IsSyntaxFree && node.MOFLayerNumber != 3) || (node.IsSyntaxFree && node.MOFLayerNumber != 1)} 
+                                                        label={node.MOFLayerNumber != 1 ? "change" : node.ParentChoiceName} isPickerAvailable={true || (!node.IsSyntaxFree && node.MOFLayerNumber != 3) || (node.IsSyntaxFree && node.MOFLayerNumber != 1)} 
                                                         style={{ height: ''}}></SaturationPicker>
                                             <div>
 
@@ -65,7 +63,7 @@ const NodeWithChildren = ({ node, selectedIndex, onColorUpdate }) => {
 
                                             </div>}
 
-                                    {((node.MOFLayerNumber !== 13) || (node.MOFLayerNumber === 0)) && node.OutputIsDocs && <div style={{width: '20em', position: 'absolute', top: '1em', right: '3.5em'}}>
+                                    {((node.MOFLayerNumber !== 13) || (node.MOFLayerNumber === 0)) && node.OutputIsDocs && <div style={{width: '20em', position: 'absolute', top: '1em', right: '4.5em'}}>
                                         <SaturationPicker color={currentColor} src={node?.NodeAttachments[0].url} onColorChange={handleHueChange} 
                                                         label={node.MOFLayerNumber != 1 ? "change" : node.FQNChoiceName} isPickerAvailable={node.MOFLayerNumber != 3} 
                                                         style={{ height: ''}}></SaturationPicker>
