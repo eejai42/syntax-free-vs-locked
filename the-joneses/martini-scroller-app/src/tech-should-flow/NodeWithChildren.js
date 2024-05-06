@@ -45,7 +45,7 @@ const NodeWithChildren = ({ node }) => {
                     <tr>
                         {node.Children.map((childNode, index) => (                            
                             <React.Fragment>
-                                {(childNode.MOFLayerNumber !== 1) || index === 0 ?
+                                {(childNode.MOFLayerNumber !== 1) || index === 1 ?
                                 <td key={childNode.NodeName}>   
                                 <table style={{width: '100%'}}>
                                     <tr>

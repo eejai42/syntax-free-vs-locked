@@ -6,10 +6,10 @@
         "MOFLayerName": "MetaModel",
         "LayerChoices": [
           "recHevLq93SeDxqYD",
-          "recDpZpPOrnOKvJFL"
+          "recGVRwMVaqf9CqPE"
         ],
-        "Name": "3.MetaModel",
-        "MOFDisplayOrder": 3
+        "MOFDisplayOrder": 3,
+        "Name": "3.MetaModel"
       },
       {
         "MOFLayerNumber": 1,
@@ -22,15 +22,14 @@
           "rec1Xk6IDS7zLoUK8",
           "recAU7aULJrWJGtbG"
         ],
-        "Name": "1.Instance",
-        "MOFDisplayOrder": 2
+        "MOFDisplayOrder": 2,
+        "Name": "1.Instance"
       },
       {
         "MOFLayerNumber": 2,
         "MOFLayerName": "Domain",
-        "LayerChoices": "recGVRwMVaqf9CqPE",
-        "Name": "2.Domain",
-        "MOFDisplayOrder": 1
+        "MOFDisplayOrder": 1,
+        "Name": "2.Domain"
       },
       {
         "MOFLayerNumber": 0,
@@ -49,8 +48,8 @@
           "recGjkxRQZFogwAh1",
           "recmlqrqQMJvfDz6n"
         ],
-        "Name": "0.SyntaxLockedAssets",
-        "MOFDisplayOrder": 0
+        "MOFDisplayOrder": 0,
+        "Name": "0.SyntaxLockedAssets"
       }
     ],
     "MOFNodes": [
@@ -223,69 +222,7 @@
         "Name": "3.c) Garage Door Opener"
       },
       {
-        "NodeName": "Syntax-Free Mirror",
-        "DefaultFileName": "api.airtable.com",
-        "PlatformAttachments": {
-          "width": 236,
-          "height": 200,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/AvUl5idiRNIVhzmlUdVoOw/aG_T7SkIZRiKavhzEJ8g2tsdB5_BQxd-I6zqoaeL90t7sibFT5uNdC8uZ53vF9JAvhk6fb45k7_TTQzyGTzJRm19CyhCbiDVDAwlSn-GWV5_xYZQLuESKXjdTH69Hs-DT6B3Vre1kBDPx_Pfp9uAe54TpdnjzkZ7bjX5ZH-_c4aezek7s99ekYDJ4eUK6VkYwUXWDB5k6vUwdAQOnp_k5w/bQUh3oLG9V8LMX-c2reVHgTzo55hZmwCtUTHaqjDC5w",
-          "filename": "Syntax-Free_Idea_ToNodePlatformAttachments_0.png",
-          "size": 38221,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/NVkCJcoYb9oHfR1blgmLjw/mX5eWwvPfK9tBzlizz1xHarpnnKG4hIIhR8EttJOA8eLMZ1hrSI62bQ03spLfWOtqnI5Vmh3CqeTHq1E9fxI0b_MBRZTWht_UNMZf3Z-BYg2Sc0yZvZE8yvwCfXSYkujxGfmho39lE55k4OuOCCYbw/n_0hssApU7NF-E1scAf0GwF27HTet61V9cEjfRnCQR4",
-              "width": 42,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/KzNDXh232APIeslf8S0wyw/0lML2xaOCyRQxSOpBZUKavRv_hcbcm9-7RKMWEznmwXlRx9iim2E75BUIuc348T7vF2N1fWmJixebhMqZcsD6yuWeftY3jKJKSBrF3FPh2MDwn3zMo_lB-YrMuKNVxCPWMbZWjAjil-St3axXURQvA/HYn6x4sBol2_CjAnXGO8nCQitDDTXyjNZae-GPPC88k",
-              "width": 236,
-              "height": 200
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/HQ2IEOeRe_6eXY2PJ98KwA/ZnCm2zZwy-gZv5wsksVcadNN5qKXh79EWK7aKMr3f1KzkX2wyOaMD525XNEzMd_8b3qBr23jDTMAg6y-Nn2L93XBP3QTZntoQSuKlDiPuq6uGs9Osr2u01heRm02XKP8wwQQXB5CusmLsXM1AU5C0Q/_Py5AkKngpYWHRd7OC4ZnxHJYMDUcb3SmzEKstJZNqI",
-              "width": 236,
-              "height": 200
-            }
-          }
-        },
-        "IsQueriable": "True",
-        "ToNodeEdges": "recz1ZD01x0uLZF6v",
-        "SortOrder": 6,
-        "ToolForChoices": "recDpZpPOrnOKvJFL",
-        "Attachments": {
-          "width": 512,
-          "height": 512,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI",
-          "filename": "image.png",
-          "size": 17832,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/JB2gyvrYCXm-ooxaX33P5A/am9aEMH7robHNq64td8DMsQocAzfuWFSOj-l0fh8SphrkNmud5nGs-HSQyZ8RNfIxfVRq0yvfARzdHOcki7CDkHI1nyVLGzsf5r9t-lLhzWUTegpE5HBNPnhvXnFm2TfkurF2-N1egCCXG3_ftxhHA/EPXdfVZ-BYcYvLPEJPd-QyqymfUwzWNpRWZBBPzSvrc",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/I13nfBJVaONGMSJPBSNaVg/otkQB8xpdaiirLq4BZkKAI7BxOn9MxwfNR0LbMJrVS7kd_h4XbFgX6fjeuLR5SaGrT17U-PORRn7Pi5NVUVUc13rKmTteg08q1ypgzSa7y92vVC5iba3X50H-GaUmtxG_VHKVIJqF3rQEz1zibo6kA/u1R1AOIFucv8hRIiED3E5eVmb1WDp9y9M05K8kFHPhA",
-              "width": 512,
-              "height": 512
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/1Nme886_ibkVvJtLkgGtWg/YRQ7CGjhxr_pcNCBHXRjcW1XMZrYpOp4DtvLQPjLhq47rnW41cEjwZEYZgQ6u5ZIZ60Kx7GMFoR8Lz82fJddfFCiN_NvCSozo290CYnKx6KVTdlWyHm7Eu0orbFIFvxYbS5oEYBYO6HkWAkc8X3tug/Dv7zTrfiQ14BWTl6oZScDYOhM_p7kssf6w4DEld2HY8",
-              "width": 512,
-              "height": 512
-            }
-          }
-        },
-        "NodeType": "M3Level-model-format",
-        "FromNodes": "recRh833xyYnEAiPf",
-        "NodeChoices": "recDpZpPOrnOKvJFL",
-        "Name": "6.Syntax-Free Mirror"
-      },
-      {
-        "NodeName": "Json",
+        "NodeName": "Natural Language + Syntax Free Model",
         "DefaultFileName": "Devices.json",
         "PlatformAttachments": {
           "width": 280,
@@ -342,7 +279,7 @@
         "NodeType": "M2Layer-syntax-free-model",
         "FromNodes": "recz1ZD01x0uLZF6v",
         "NodeChoices": "recGVRwMVaqf9CqPE",
-        "Name": "14.Json"
+        "Name": "14.Natural Language + Syntax Free Model"
       },
       {
         "NodeName": "Markdown",
@@ -732,69 +669,69 @@
     ],
     "MOFChoices": [
       {
-        "Node": "recjjL9qF69DMyd6m",
-        "Layers": "recM3HoiDucf6IqBJ",
+        "Node": "reclNSwxP27SnZWzw",
         "IsSyntaxFree": "True",
-        "Tool": "recjjL9qF69DMyd6m",
-        "Name": "3.MetaModel,6.Syntax-Free Mirror (syntax free)",
-        "NodeName": "Syntax-Free Mirror",
-        "FQNChoiceName": "SF-Syntax-Free Mirror",
-        "MOFLayerNumber": 3,
+        "Tool": "recckX1QccFjrQh6p",
+        "Name": "3.MetaModel,14.Natural Language + Syntax Free Model (syntax free)",
+        "NodeName": "Natural Language + Syntax Free Model",
+        "FQNChoiceName": "SF-Natural Language + Syntax Free Model",
         "NodeAttachments": {
           "width": 512,
           "height": 512,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI",
-          "filename": "image.png",
-          "size": 17832,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk",
+          "filename": "Install_Airtable_to_Json_FreeAttachments_0.png",
+          "size": 23900,
           "type": "image/png",
           "thumbnails": {
             "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/JB2gyvrYCXm-ooxaX33P5A/am9aEMH7robHNq64td8DMsQocAzfuWFSOj-l0fh8SphrkNmud5nGs-HSQyZ8RNfIxfVRq0yvfARzdHOcki7CDkHI1nyVLGzsf5r9t-lLhzWUTegpE5HBNPnhvXnFm2TfkurF2-N1egCCXG3_ftxhHA/EPXdfVZ-BYcYvLPEJPd-QyqymfUwzWNpRWZBBPzSvrc",
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/TFRElq9gBdQqTvvkMvXWRQ/TnZfLmzZ2ZUpts6zCzIp-FoBVPKNOQUWwSVssakgGJa-swi7uXnUE9sBN378FHTAdUWT0MYrX070wT0MM6Xkg1QQ2ETdno5Bg1eQ0YJlHbcXjtUeTTp3uFawKEwGbofb_Vj-j-NvfDaJFtonFbIvhQ/xUCvm0FCQyGVEoGoT_w5zWdvksrYofenY5bk_CwbMlc",
               "width": 36,
               "height": 36
             },
             "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/I13nfBJVaONGMSJPBSNaVg/otkQB8xpdaiirLq4BZkKAI7BxOn9MxwfNR0LbMJrVS7kd_h4XbFgX6fjeuLR5SaGrT17U-PORRn7Pi5NVUVUc13rKmTteg08q1ypgzSa7y92vVC5iba3X50H-GaUmtxG_VHKVIJqF3rQEz1zibo6kA/u1R1AOIFucv8hRIiED3E5eVmb1WDp9y9M05K8kFHPhA",
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ieCvhgqO4bHH7P9-XUw3rQ/AAeJH0Acg37ZqFMtPl7AXhH_CcxIYtQQ6nsAsnGjnWekaNgu8LoV1twKK515Vlb5yfL8ZJbbdSthAok9LrtWlbUKMTrANHt_PA4IYUJ8gFEs3LjohR6rsp5k58TyjzAVmehktGAHeDlKQO4GpzbGZQ/L3Ye4F9usOhdoh1N_uBy9fT0mtHcSeAEDkm4euGkx7Y",
               "width": 512,
               "height": 512
             },
             "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/1Nme886_ibkVvJtLkgGtWg/YRQ7CGjhxr_pcNCBHXRjcW1XMZrYpOp4DtvLQPjLhq47rnW41cEjwZEYZgQ6u5ZIZ60Kx7GMFoR8Lz82fJddfFCiN_NvCSozo290CYnKx6KVTdlWyHm7Eu0orbFIFvxYbS5oEYBYO6HkWAkc8X3tug/Dv7zTrfiQ14BWTl6oZScDYOhM_p7kssf6w4DEld2HY8",
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/WeNBYcRJJ6-gh5eE8rPSoA/sp9SyyPQS4S16AuvpcY64YO3LhFEVguWO1cBCathXHwRMsJkre6qofqLjd0Snz7gHrCC7MgZAuDlm499I37QptZCXprP-Xy0WkA-InhL3ay9S65l3ddzRXfV_k-0iwSVh-hDl-7GzR1S5-VR0QpgWQ/yDr6rS67nYtMaK3THnjIuzgefnlmtAp0GuFozaRDmww",
               "width": 512,
               "height": 512
             }
           }
         },
-        "ToolDefaultFileName": "api.airtable.com",
-        "NodeDefaultFileName": "api.airtable.com",
-        "ToolName": "Syntax-Free Mirror",
+        "ToolDefaultFileName": "ssotme",
+        "NodeDefaultFileName": "Devices.json",
+        "ToolName": "airtable-to-json",
         "IsInSync": 1,
         "IsInSyncImage": "✔",
         "ToolAttachments": {
-          "width": 512,
-          "height": 512,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI",
+          "width": 280,
+          "height": 280,
+          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI",
           "filename": "image.png",
-          "size": 17832,
+          "size": 11234,
           "type": "image/png",
           "thumbnails": {
             "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/JB2gyvrYCXm-ooxaX33P5A/am9aEMH7robHNq64td8DMsQocAzfuWFSOj-l0fh8SphrkNmud5nGs-HSQyZ8RNfIxfVRq0yvfARzdHOcki7CDkHI1nyVLGzsf5r9t-lLhzWUTegpE5HBNPnhvXnFm2TfkurF2-N1egCCXG3_ftxhHA/EPXdfVZ-BYcYvLPEJPd-QyqymfUwzWNpRWZBBPzSvrc",
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/QytA1I0oIFjSuMJXnuxxVQ/88Zoaf7_WIk48ROLm89rP1o062lU9txmBdBd14fRmPG3oR6LJZndcK4y0DzPJ9oQ3zkNSxJK6CcX5mQlI3GNpaskQZkVvfRE2gpHamW7T51gZGXu7TkhjP5XThLrIAaKQALoEaYl-Pz57LMjjpRNjg/LTTabTJcrge0gje0bHcgQYwr2aUlzrqMa5CA1USnyeU",
               "width": 36,
               "height": 36
             },
             "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/I13nfBJVaONGMSJPBSNaVg/otkQB8xpdaiirLq4BZkKAI7BxOn9MxwfNR0LbMJrVS7kd_h4XbFgX6fjeuLR5SaGrT17U-PORRn7Pi5NVUVUc13rKmTteg08q1ypgzSa7y92vVC5iba3X50H-GaUmtxG_VHKVIJqF3rQEz1zibo6kA/u1R1AOIFucv8hRIiED3E5eVmb1WDp9y9M05K8kFHPhA",
-              "width": 512,
-              "height": 512
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/5kZo71ifkSWOZg44Xzvbow/01iYZstNBswC9ch0wqTyx1st-rBPKVm0G9_yesHHQHlh_eWRKADcqYc1SEiSEB-kkMxLbtNZc-EHO9QaYnuS6jlpHvd_cVLpU1VIIeRRdTjaH9AUj2dX2D3USV7ffKwXdQMcB_kUxwlXcSQu7shnZA/acg5VzVgkBpJFngiODWXxV21w2a6xViTmjWannwSr10",
+              "width": 280,
+              "height": 280
             },
             "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/1Nme886_ibkVvJtLkgGtWg/YRQ7CGjhxr_pcNCBHXRjcW1XMZrYpOp4DtvLQPjLhq47rnW41cEjwZEYZgQ6u5ZIZ60Kx7GMFoR8Lz82fJddfFCiN_NvCSozo290CYnKx6KVTdlWyHm7Eu0orbFIFvxYbS5oEYBYO6HkWAkc8X3tug/Dv7zTrfiQ14BWTl6oZScDYOhM_p7kssf6w4DEld2HY8",
-              "width": 512,
-              "height": 512
+              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/zum0xgkAoLvqHK9CAGq8eQ/47DzzmcW_xnS9UqTA0uqkgeErdoe4GfRoiyFt4KIt8UryQhqohAvWmC_p5bJyXngpnSAqvRr32H0iZbkZUdzH17HG1Y1Lo3M9Op-DKxB5xu23bXVNO7C7R16ym2qFrm_evXokACNmsXkqMdLhWxmkA/MXTnEyz6pDsziqQ-flHMv05EmXJjp7Wsz4qJY360l2Y",
+              "width": 280,
+              "height": 280
             }
           }
         },
+        "Layers": "recM3HoiDucf6IqBJ",
+        "MOFLayerNumber": 3,
         "MOFDisplayOrder": 3
       },
       {
@@ -809,9 +746,8 @@
         "Name": "1.Instance,1.a) Hardware Spec v1 (syntax free)",
         "NodeName": "a) Hardware Spec v1",
         "FQNChoiceName": "SF-a) Hardware Spec v1",
-        "ParentChoiceName": "SF-Json",
+        "ParentChoiceName": "SF-Natural Language + Syntax Free Model",
         "MOFLayerNumber": 1,
-        "ParentMOFLayerNumber": 2,
         "NodeDesiredColor": "#0000FF",
         "NodeAttachments": {
           "width": 643,
@@ -945,7 +881,8 @@
           }
         },
         "MOFDisplayOrder": 2,
-        "ParentMOFDisplayOrder": 1
+        "ParentMOFLayerNumber": 3,
+        "ParentMOFDisplayOrder": 3
       },
       {
         "MixedColor": "#0000EE",
@@ -959,9 +896,8 @@
         "Name": "1.Instance,2.b) Hardware Spec v2 (syntax free)",
         "NodeName": "b) Hardware Spec v2",
         "FQNChoiceName": "SF-b) Hardware Spec v2",
-        "ParentChoiceName": "SF-Json",
+        "ParentChoiceName": "SF-Natural Language + Syntax Free Model",
         "MOFLayerNumber": 1,
-        "ParentMOFLayerNumber": 2,
         "NodeDesiredColor": "#0000EE",
         "NodeAttachments": {
           "width": 815,
@@ -1095,7 +1031,8 @@
           }
         },
         "MOFDisplayOrder": 2,
-        "ParentMOFDisplayOrder": 1
+        "ParentMOFLayerNumber": 3,
+        "ParentMOFDisplayOrder": 3
       },
       {
         "MixedColor": "#0000CC",
@@ -1109,9 +1046,8 @@
         "Name": "1.Instance,3.c) Garage Door Opener (syntax free)",
         "NodeName": "c) Garage Door Opener",
         "FQNChoiceName": "SF-c) Garage Door Opener",
-        "ParentChoiceName": "SF-Json",
+        "ParentChoiceName": "SF-Natural Language + Syntax Free Model",
         "MOFLayerNumber": 1,
-        "ParentMOFLayerNumber": 2,
         "NodeDesiredColor": "#0000CC",
         "NodeAttachments": {
           "width": 1024,
@@ -1244,153 +1180,7 @@
           }
         },
         "MOFDisplayOrder": 2,
-        "ParentMOFDisplayOrder": 1
-      },
-      {
-        "ToolInputChoice": "recDpZpPOrnOKvJFL",
-        "Node": "reclNSwxP27SnZWzw",
-        "Layers": "recCeFNHSYZtt0FMY",
-        "IsSyntaxFree": "True",
-        "ParentChoice": "recDpZpPOrnOKvJFL",
-        "Tool": "recckX1QccFjrQh6p",
-        "Name": "2.Domain,14.Json (syntax free)",
-        "NodeName": "Json",
-        "FQNChoiceName": "SF-Json",
-        "ParentChoiceName": "SF-Syntax-Free Mirror",
-        "MOFLayerNumber": 2,
         "ParentMOFLayerNumber": 3,
-        "NodeAttachments": {
-          "width": 512,
-          "height": 512,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk",
-          "filename": "Install_Airtable_to_Json_FreeAttachments_0.png",
-          "size": 23900,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/TFRElq9gBdQqTvvkMvXWRQ/TnZfLmzZ2ZUpts6zCzIp-FoBVPKNOQUWwSVssakgGJa-swi7uXnUE9sBN378FHTAdUWT0MYrX070wT0MM6Xkg1QQ2ETdno5Bg1eQ0YJlHbcXjtUeTTp3uFawKEwGbofb_Vj-j-NvfDaJFtonFbIvhQ/xUCvm0FCQyGVEoGoT_w5zWdvksrYofenY5bk_CwbMlc",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/ieCvhgqO4bHH7P9-XUw3rQ/AAeJH0Acg37ZqFMtPl7AXhH_CcxIYtQQ6nsAsnGjnWekaNgu8LoV1twKK515Vlb5yfL8ZJbbdSthAok9LrtWlbUKMTrANHt_PA4IYUJ8gFEs3LjohR6rsp5k58TyjzAVmehktGAHeDlKQO4GpzbGZQ/L3Ye4F9usOhdoh1N_uBy9fT0mtHcSeAEDkm4euGkx7Y",
-              "width": 512,
-              "height": 512
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/WeNBYcRJJ6-gh5eE8rPSoA/sp9SyyPQS4S16AuvpcY64YO3LhFEVguWO1cBCathXHwRMsJkre6qofqLjd0Snz7gHrCC7MgZAuDlm499I37QptZCXprP-Xy0WkA-InhL3ay9S65l3ddzRXfV_k-0iwSVh-hDl-7GzR1S5-VR0QpgWQ/yDr6rS67nYtMaK3THnjIuzgefnlmtAp0GuFozaRDmww",
-              "width": 512,
-              "height": 512
-            }
-          }
-        },
-        "ParentNodeAttachments": {
-          "width": 512,
-          "height": 512,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI",
-          "filename": "image.png",
-          "size": 17832,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/JB2gyvrYCXm-ooxaX33P5A/am9aEMH7robHNq64td8DMsQocAzfuWFSOj-l0fh8SphrkNmud5nGs-HSQyZ8RNfIxfVRq0yvfARzdHOcki7CDkHI1nyVLGzsf5r9t-lLhzWUTegpE5HBNPnhvXnFm2TfkurF2-N1egCCXG3_ftxhHA/EPXdfVZ-BYcYvLPEJPd-QyqymfUwzWNpRWZBBPzSvrc",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/I13nfBJVaONGMSJPBSNaVg/otkQB8xpdaiirLq4BZkKAI7BxOn9MxwfNR0LbMJrVS7kd_h4XbFgX6fjeuLR5SaGrT17U-PORRn7Pi5NVUVUc13rKmTteg08q1ypgzSa7y92vVC5iba3X50H-GaUmtxG_VHKVIJqF3rQEz1zibo6kA/u1R1AOIFucv8hRIiED3E5eVmb1WDp9y9M05K8kFHPhA",
-              "width": 512,
-              "height": 512
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/1Nme886_ibkVvJtLkgGtWg/YRQ7CGjhxr_pcNCBHXRjcW1XMZrYpOp4DtvLQPjLhq47rnW41cEjwZEYZgQ6u5ZIZ60Kx7GMFoR8Lz82fJddfFCiN_NvCSozo290CYnKx6KVTdlWyHm7Eu0orbFIFvxYbS5oEYBYO6HkWAkc8X3tug/Dv7zTrfiQ14BWTl6oZScDYOhM_p7kssf6w4DEld2HY8",
-              "width": 512,
-              "height": 512
-            }
-          }
-        },
-        "ToolDefaultFileName": "ssotme",
-        "NodeDefaultFileName": "Devices.json",
-        "InputChoiceFileName": "api.airtable.com",
-        "ToolName": "airtable-to-json",
-        "IsInSync": 1,
-        "IsInSyncImage": "✔",
-        "ToolAttachments": {
-          "width": 280,
-          "height": 280,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI",
-          "filename": "image.png",
-          "size": 11234,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/QytA1I0oIFjSuMJXnuxxVQ/88Zoaf7_WIk48ROLm89rP1o062lU9txmBdBd14fRmPG3oR6LJZndcK4y0DzPJ9oQ3zkNSxJK6CcX5mQlI3GNpaskQZkVvfRE2gpHamW7T51gZGXu7TkhjP5XThLrIAaKQALoEaYl-Pz57LMjjpRNjg/LTTabTJcrge0gje0bHcgQYwr2aUlzrqMa5CA1USnyeU",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/5kZo71ifkSWOZg44Xzvbow/01iYZstNBswC9ch0wqTyx1st-rBPKVm0G9_yesHHQHlh_eWRKADcqYc1SEiSEB-kkMxLbtNZc-EHO9QaYnuS6jlpHvd_cVLpU1VIIeRRdTjaH9AUj2dX2D3USV7ffKwXdQMcB_kUxwlXcSQu7shnZA/acg5VzVgkBpJFngiODWXxV21w2a6xViTmjWannwSr10",
-              "width": 280,
-              "height": 280
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/zum0xgkAoLvqHK9CAGq8eQ/47DzzmcW_xnS9UqTA0uqkgeErdoe4GfRoiyFt4KIt8UryQhqohAvWmC_p5bJyXngpnSAqvRr32H0iZbkZUdzH17HG1Y1Lo3M9Op-DKxB5xu23bXVNO7C7R16ym2qFrm_evXokACNmsXkqMdLhWxmkA/MXTnEyz6pDsziqQ-flHMv05EmXJjp7Wsz4qJY360l2Y",
-              "width": 280,
-              "height": 280
-            }
-          }
-        },
-        "ToolInputAttachments": {
-          "width": 512,
-          "height": 512,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI",
-          "filename": "image.png",
-          "size": 17832,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/JB2gyvrYCXm-ooxaX33P5A/am9aEMH7robHNq64td8DMsQocAzfuWFSOj-l0fh8SphrkNmud5nGs-HSQyZ8RNfIxfVRq0yvfARzdHOcki7CDkHI1nyVLGzsf5r9t-lLhzWUTegpE5HBNPnhvXnFm2TfkurF2-N1egCCXG3_ftxhHA/EPXdfVZ-BYcYvLPEJPd-QyqymfUwzWNpRWZBBPzSvrc",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/I13nfBJVaONGMSJPBSNaVg/otkQB8xpdaiirLq4BZkKAI7BxOn9MxwfNR0LbMJrVS7kd_h4XbFgX6fjeuLR5SaGrT17U-PORRn7Pi5NVUVUc13rKmTteg08q1ypgzSa7y92vVC5iba3X50H-GaUmtxG_VHKVIJqF3rQEz1zibo6kA/u1R1AOIFucv8hRIiED3E5eVmb1WDp9y9M05K8kFHPhA",
-              "width": 512,
-              "height": 512
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/1Nme886_ibkVvJtLkgGtWg/YRQ7CGjhxr_pcNCBHXRjcW1XMZrYpOp4DtvLQPjLhq47rnW41cEjwZEYZgQ6u5ZIZ60Kx7GMFoR8Lz82fJddfFCiN_NvCSozo290CYnKx6KVTdlWyHm7Eu0orbFIFvxYbS5oEYBYO6HkWAkc8X3tug/Dv7zTrfiQ14BWTl6oZScDYOhM_p7kssf6w4DEld2HY8",
-              "width": 512,
-              "height": 512
-            }
-          }
-        },
-        "ToolInputChoiceNodeAttachments": {
-          "width": 512,
-          "height": 512,
-          "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI",
-          "filename": "image.png",
-          "size": 17832,
-          "type": "image/png",
-          "thumbnails": {
-            "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/JB2gyvrYCXm-ooxaX33P5A/am9aEMH7robHNq64td8DMsQocAzfuWFSOj-l0fh8SphrkNmud5nGs-HSQyZ8RNfIxfVRq0yvfARzdHOcki7CDkHI1nyVLGzsf5r9t-lLhzWUTegpE5HBNPnhvXnFm2TfkurF2-N1egCCXG3_ftxhHA/EPXdfVZ-BYcYvLPEJPd-QyqymfUwzWNpRWZBBPzSvrc",
-              "width": 36,
-              "height": 36
-            },
-            "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/I13nfBJVaONGMSJPBSNaVg/otkQB8xpdaiirLq4BZkKAI7BxOn9MxwfNR0LbMJrVS7kd_h4XbFgX6fjeuLR5SaGrT17U-PORRn7Pi5NVUVUc13rKmTteg08q1ypgzSa7y92vVC5iba3X50H-GaUmtxG_VHKVIJqF3rQEz1zibo6kA/u1R1AOIFucv8hRIiED3E5eVmb1WDp9y9M05K8kFHPhA",
-              "width": 512,
-              "height": 512
-            },
-            "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/1Nme886_ibkVvJtLkgGtWg/YRQ7CGjhxr_pcNCBHXRjcW1XMZrYpOp4DtvLQPjLhq47rnW41cEjwZEYZgQ6u5ZIZ60Kx7GMFoR8Lz82fJddfFCiN_NvCSozo290CYnKx6KVTdlWyHm7Eu0orbFIFvxYbS5oEYBYO6HkWAkc8X3tug/Dv7zTrfiQ14BWTl6oZScDYOhM_p7kssf6w4DEld2HY8",
-              "width": 512,
-              "height": 512
-            }
-          }
-        },
-        "MOFDisplayOrder": 1,
         "ParentMOFDisplayOrder": 3
       },
       {

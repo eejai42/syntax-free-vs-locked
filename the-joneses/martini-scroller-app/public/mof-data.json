@@ -83,25 +83,7 @@
         "Name": "3.c) Garage Door Opener"
       },
       {
-        "NodeName": "Syntax-Free Mirror",
-        "NodeType": "M3Level-model-format",
-        "SortOrder": 6,
-        "Attachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI"
-          }
-        ],
-        "PlatformAttachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/AvUl5idiRNIVhzmlUdVoOw/aG_T7SkIZRiKavhzEJ8g2tsdB5_BQxd-I6zqoaeL90t7sibFT5uNdC8uZ53vF9JAvhk6fb45k7_TTQzyGTzJRm19CyhCbiDVDAwlSn-GWV5_xYZQLuESKXjdTH69Hs-DT6B3Vre1kBDPx_Pfp9uAe54TpdnjzkZ7bjX5ZH-_c4aezek7s99ekYDJ4eUK6VkYwUXWDB5k6vUwdAQOnp_k5w/bQUh3oLG9V8LMX-c2reVHgTzo55hZmwCtUTHaqjDC5w"
-          }
-        ],
-        "DefaultFileName": "api.airtable.com",
-        "IsQueriable": "True",
-        "Name": "6.Syntax-Free Mirror"
-      },
-      {
-        "NodeName": "Json",
+        "NodeName": "Natural Language + Syntax Free Model",
         "NodeType": "M2Layer-syntax-free-model",
         "SortOrder": 14,
         "Attachments": [
@@ -116,7 +98,7 @@
         ],
         "DefaultFileName": "Devices.json",
         "IsQueriable": "True",
-        "Name": "14.Json"
+        "Name": "14.Natural Language + Syntax Free Model"
       },
       {
         "NodeName": "Markdown",
@@ -235,35 +217,35 @@
     ],
     "MOFChoices": [
       {
-        "NodeName": "Syntax-Free Mirror",
-        "FQNChoiceName": "SF-Syntax-Free Mirror",
-        "Name": "3.MetaModel,6.Syntax-Free Mirror (syntax free)",
+        "NodeName": "Natural Language + Syntax Free Model",
+        "FQNChoiceName": "SF-Natural Language + Syntax Free Model",
+        "Name": "3.MetaModel,14.Natural Language + Syntax Free Model (syntax free)",
         "MOFLayerNumber": 3,
         "IsInSync": 1,
         "IsInSyncImage": "✔",
         "NodeAttachments": [
           {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI"
+            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk"
           }
         ],
         "ToolAttachments": [
           {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI"
+            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI"
           }
         ],
-        "ToolDefaultFileName": "api.airtable.com",
-        "NodeDefaultFileName": "api.airtable.com",
-        "ToolName": "Syntax-Free Mirror",
+        "ToolDefaultFileName": "ssotme",
+        "NodeDefaultFileName": "Devices.json",
+        "ToolName": "airtable-to-json",
         "MOFDisplayOrder": 3,
         "IsSyntaxFree": "True"
       },
       {
-        "ParentChoiceName": "SF-Json",
+        "ParentChoiceName": "SF-Natural Language + Syntax Free Model",
         "NodeName": "a) Hardware Spec v1",
         "FQNChoiceName": "SF-a) Hardware Spec v1",
         "Name": "1.Instance,1.a) Hardware Spec v1 (syntax free)",
         "MOFLayerNumber": 1,
-        "ParentMOFLayerNumber": 2,
+        "ParentMOFLayerNumber": 3,
         "NodeDesiredColor": "#0000FF",
         "MixedColor": "#0000FF",
         "ExpectedColor": "#0000FF",
@@ -299,16 +281,16 @@
         "InputChoiceFileName": "Devices.json",
         "ToolName": "json-hbars-transform",
         "MOFDisplayOrder": 2,
-        "ParentMOFDisplayOrder": 1,
+        "ParentMOFDisplayOrder": 3,
         "IsSyntaxFree": "True"
       },
       {
-        "ParentChoiceName": "SF-Json",
+        "ParentChoiceName": "SF-Natural Language + Syntax Free Model",
         "NodeName": "b) Hardware Spec v2",
         "FQNChoiceName": "SF-b) Hardware Spec v2",
         "Name": "1.Instance,2.b) Hardware Spec v2 (syntax free)",
         "MOFLayerNumber": 1,
-        "ParentMOFLayerNumber": 2,
+        "ParentMOFLayerNumber": 3,
         "NodeDesiredColor": "#0000EE",
         "MixedColor": "#0000EE",
         "ExpectedColor": "#0000EE",
@@ -344,16 +326,16 @@
         "InputChoiceFileName": "Devices.json",
         "ToolName": "json-hbars-transform",
         "MOFDisplayOrder": 2,
-        "ParentMOFDisplayOrder": 1,
+        "ParentMOFDisplayOrder": 3,
         "IsSyntaxFree": "True"
       },
       {
-        "ParentChoiceName": "SF-Json",
+        "ParentChoiceName": "SF-Natural Language + Syntax Free Model",
         "NodeName": "c) Garage Door Opener",
         "FQNChoiceName": "SF-c) Garage Door Opener",
         "Name": "1.Instance,3.c) Garage Door Opener (syntax free)",
         "MOFLayerNumber": 1,
-        "ParentMOFLayerNumber": 2,
+        "ParentMOFLayerNumber": 3,
         "NodeDesiredColor": "#0000CC",
         "MixedColor": "#0000CC",
         "ExpectedColor": "#0000DD",
@@ -388,48 +370,6 @@
         "InputChoiceFileName": "Devices.json",
         "ToolName": "json-hbars-transform",
         "MOFDisplayOrder": 2,
-        "ParentMOFDisplayOrder": 1,
-        "IsSyntaxFree": "True"
-      },
-      {
-        "ParentChoiceName": "SF-Syntax-Free Mirror",
-        "NodeName": "Json",
-        "FQNChoiceName": "SF-Json",
-        "Name": "2.Domain,14.Json (syntax free)",
-        "MOFLayerNumber": 2,
-        "ParentMOFLayerNumber": 3,
-        "IsInSync": 1,
-        "IsInSyncImage": "✔",
-        "NodeAttachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/CKbku3L1aDtYekbxdnz8xQ/8i9qT4mZ9BkSjh7jf0A_6nq42TYrOrN5h3050JdUercT4RNbbDvDq7c54iE7mdgf6op71R-NfR_-h7_bWWirsdcFWYKyIHKOEwEGbSt_AOFM225T0z20VralCR4tG0gbDYRaHUj1APaKLorduRuJfTw5Nq_lZlyzQuDGbu4xMd6akWtsx_vy125776sx2X44XF1JYFtBJ1lm16fzudfO1A/KKk333LLs9u9lkPwSFcwhFUoAXKqpMhM8HaXLVvxOhk"
-          }
-        ],
-        "ParentNodeAttachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI"
-          }
-        ],
-        "ToolAttachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/Any394nD7Zxq4Jiw1chJqQ/mjkCzT_YCUYV4GI0G8T6Uh_li6sZU-EDa9bOMJJ06dH_COq4mjcdpCv4iKaIGoYAdF0slvtDlevC381VM9Nzq1F1oeRoGyCc-eub20YwGx_b9hP2fg4R6_6O3-Buu9Lp5tTmbCjWOMooe4lgIlVuRg/kUkmggOXrFmWFmY2aFzFvAVCSXf67WyMQoQM5bcbTTI"
-          }
-        ],
-        "ToolInputAttachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI"
-          }
-        ],
-        "ToolInputChoiceNodeAttachments": [
-          {
-            "url": "https://v5.airtableusercontent.com/v3/u/28/28/1714960800000/2yYP9PTKoUz37UYO6R71BA/iYZFKaZjJDQp41a3dKrONuO2vljVgZvbAtu8JZpjqaZGYjXvgp1BGrXRavRMiNbINCnuc-3aHE8d-G1Fsct3l8XAT-xFuagRyC_0UJE6dGh8exfq7kWQ5ThgHkKMWZxnMX_OBR770A5GxKH6fiB3QQ/0PrtoJt6rbvRzTmXs_m6bx9mKTzRQ_JOgaw865P5GSI"
-          }
-        ],
-        "ToolDefaultFileName": "ssotme",
-        "NodeDefaultFileName": "Devices.json",
-        "InputChoiceFileName": "api.airtable.com",
-        "ToolName": "airtable-to-json",
-        "MOFDisplayOrder": 1,
         "ParentMOFDisplayOrder": 3,
         "IsSyntaxFree": "True"
       },
