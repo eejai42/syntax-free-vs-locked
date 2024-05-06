@@ -42,7 +42,7 @@ const NodeWithChildren = ({ node, selectedIndex, onColorUpdate }) => {
                                 </td>}
                                 <td>
                                     <div style={{position: 'relative', height: node.MOFLayerNumber === 1 ? '14em' : '14em', border: node.MOFLayerNumber < 2 ? 'solid black 1px' : 'none', backgroundColor: currentColor, color: getContrastColor(currentColor),     
-                                                maxWidth: '45em', marginLeft: 'auto', marginRight: 'auto'}}>
+                                                maxWidth: '35em', marginLeft: 'auto', marginRight: 'auto'}}>
 
                                     {((node.MOFLayerNumber === 13) || (node.MOFLayerNumber === 0)) && !node.OutputIsDocs && <div style={{width: '20em', position: 'absolute', top: '1em', left: '2.5em'}}>
                                         <SaturationPicker color={currentColor} src={node?.NodeAttachments[0].url} onColorChange={handleHueChange} 
@@ -53,7 +53,7 @@ const NodeWithChildren = ({ node, selectedIndex, onColorUpdate }) => {
                                             <h3>{node.FQNChoiceName}</h3>
 
                                             {((node.MOFLayerNumber == 13) || (node.MOFLayerNumber >= 1)) && 
-                                                    <div style={{width: '45%', marginLeft: 'auto', marginRight: 'auto', height: '15rem'}}>
+                                                    <div style={{width: '55%', marginLeft: 'auto', marginRight: 'auto', height: '15rem'}}>
                                                     <SaturationPicker color={currentColor} src={node?.NodeAttachments[0].url} onColorChange={handleHueChange} 
                                                         label={node.MOFLayerNumber != 1 ? "change" : node.ParentChoiceName} isPickerAvailable={true || (!node.IsSyntaxFree && node.MOFLayerNumber != 3) || (node.IsSyntaxFree && node.MOFLayerNumber != 1)} 
                                                         style={{ height: ''}}></SaturationPicker>
@@ -101,7 +101,7 @@ const NodeWithChildren = ({ node, selectedIndex, onColorUpdate }) => {
                         {node.Children.map((childNode, index) => (                            
                             <React.Fragment>
                                 {((childNode.MOFLayerNumber !== 1) || (index == selectedIndex)) ?
-                                <td key={childNode.NodeName}>   
+                                <td key={childNode.NodeName} style={{width: childNode.MOFLayerNumber == 0 ? '50%' : '100%'}}>
                                 <table style={{width: '100%'}}>
                                     <tr>
                                         <td>
