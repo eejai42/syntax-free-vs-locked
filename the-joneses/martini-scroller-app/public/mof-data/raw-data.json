@@ -2266,6 +2266,7 @@
         "MixedColor": "#0000FF",
         "Node": "recyvsXS0O1peC68J",
         "Layers": "recM3HoiDucf6IqBJ",
+        "DesiredColor": "#0000FF",
         "ExpectedColor": "#0000FF",
         "Tool": "recRSIKEDULFVarsO",
         "Name": "3.MetaModel,1.Natural Language Description",
@@ -2717,6 +2718,7 @@
         "InputChoiceFileName": "Hardware_Spec_v1.pdf",
         "ToolName": "Developer",
         "IsInSync": 1,
+        "IsInSyncImage": "✔",
         "ToolAttachments": {
           "ToolAttachmentsId": "att4laZdoq4hiHlnV",
           "width": 115,
@@ -2797,8 +2799,7 @@
         },
         "MOFDisplayOrder": 0,
         "ParentMOFDisplayOrder": 2,
-        "OutputIsDocs": "",
-        "IsInSyncImage": "✔"
+        "OutputIsDocs": ""
       },
       {
         "MOFChoiceId": "rec1fzXDpOI3HeaK0",
@@ -2808,7 +2809,7 @@
         "Node": "recWq4Qjvy4EMcaj0",
         "Layers": "recuF20OxYU6cQKJe",
         "ParentChoice": "recOtop8i70DzElXM",
-        "DesiredColor": "#bfffff",
+        "DesiredColor": "#0000EE",
         "ExpectedColor": "#44a43a",
         "Tool": "recRSIKEDULFVarsO",
         "Name": "0.SyntaxLockedAssets,21.Markdown",
@@ -2875,6 +2876,7 @@
         "InputChoiceFileName": "Hardware_Spec_v1.pdf",
         "ToolName": "Developer",
         "IsInSync": 1,
+        "IsInSyncImage": "✔",
         "ToolAttachments": {
           "ToolAttachmentsId": "att4laZdoq4hiHlnV",
           "width": 115,
@@ -2955,8 +2957,7 @@
         },
         "MOFDisplayOrder": 0,
         "ParentMOFDisplayOrder": 2,
-        "OutputIsDocs": "True",
-        "IsInSyncImage": "✔"
+        "OutputIsDocs": "True"
       },
       {
         "MOFChoiceId": "rec5fNwRG5djzUeYB",

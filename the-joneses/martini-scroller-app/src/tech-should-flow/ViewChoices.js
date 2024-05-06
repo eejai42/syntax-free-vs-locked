@@ -41,13 +41,17 @@ const ViewChoices = ({ choices, isSyntaxFree, selectedIndex, onSetSelectedIndex 
 
   return (
     <div>
-        <h2>{isSyntaxFree ? 'Syntax Free' : 'Syntax Locked'}  <div style={{float: 'right', marginTop: '-0.5em'}}>
-        <select value={selectedIndex} onChange={(e) => onSetSelectedIndex(e.target.value)}>
-          <option value={0}>Example 1</option>
-          <option value={1}>Example 2</option>
-          <option value={2}>GarageDoor</option>
-        </select>
-      </div></h2>
+        <h2>
+          <div style={{float: 'right'}}>
+            <select value={selectedIndex} onChange={(e) => onSetSelectedIndex(e.target.value)}>
+              <option value={0}>Example 1</option>
+              <option value={1}>Example 2</option>
+              <option value={2}>GarageDoor</option>
+            </select>
+          </div>
+          <div style={{float: 'left', minWidth: '7em', display: 'block'}}><img src=""/></div>
+          {isSyntaxFree ? 'Syntax Free' : 'Syntax Locked'} - {structuredData?.length && structuredData[0].Children[selectedIndex].NodeName}
+        </h2>
        
 
         <table className="choices-table">

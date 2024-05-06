@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SaturationPicker from "./SaturationPicker";
-import { getContrastColor } from "../colorUtils";
+import { getContrastColor, mixColors } from "../colorUtils";
 
 const NodeWithChildren = ({ node, selectedIndex }) => {
   const [nodeDesiredColor, setNodeDesiredColor] = useState(
@@ -14,23 +14,23 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
     setNodeDesiredColor(node.NodeDesiredColor || "#000000");
   }, [node.NodeDesiredColor]);
 
-  const handleMixedColorChange = (color) => {
-    setMixedColor(color);
-  };
-
-  const handleParentColorChange = (color) => {
-    setParentColor(color);
-    };
-
   const handleNodeDesiredColorChange = (color) => {
     setNodeDesiredColor(color);
-    setMixedColor(color);
+    if (node.MOFLayerNumber === 0) {
+        setMixedColor(mixColors(color, desiredColor));
+    } else {
+        setMixedColor(color);    
+    }
   };
 
   const handleDesiredColorChange = (color) => { 
     setDesiredColor(color);
-    setMixedColor(color);
-    };
+    if (node.MOFLayerNumber === 0) {
+        setMixedColor(mixColors(color, nodeDesiredColor));
+    } else {
+        setMixedColor(color);    
+    }
+};
 
   const pushExpectedColorForward = () => {
     console.error(
@@ -54,18 +54,21 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
           >
             <table class="node-header">
               <tr>
-                {/* Inner Left */}
+
+                {/* Inner (left orient) RIGHT side of screen */}
+                
                 {node.MOFLayerNumber <= 0 && node.OutputIsDocs && (
-                  <td style={{ width: "20em", position: "relative", backgroundColor: parentColor }}>
+                  <td style={{ width: "20em", position: "relative"}}>
+                    <div style={{ backgroundColor: desiredColor, color: getContrastColor(desiredColor), borderRadius: '2em', margin: '0.5em', marginTop: '0em' }}>
+                    {node.ToolTransformerFileName || node.ToolName || node.NodeDefaultFileName}
                     <SaturationPicker
-                      label={node.InputChoiceFileName}
-                      color={parentColor}
+                      color={desiredColor}
                       src={node?.ToolAttachments[0].url}
-                      onColorChange={handleParentColorChange}
+                      onColorChange={handleDesiredColorChange}
                       isPickerAvailable={true}
                       style={{ height: "" }}
                     ></SaturationPicker>
-                    1st TD
+                    </div>
                   </td>
                 )}
                 <td>
@@ -110,8 +113,6 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                     <h3>
                       {node.FQNChoiceName} 
                     </h3>
-                    <div>- {nodeDesiredColor} / {mixedColor} / {parentColor}  / {desiredColor}</div>
-
                     {/* MIDDLE - Center Aligned Picker*/}
 
                     {(node.MOFLayerNumber >= 1) && (
@@ -150,7 +151,7 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                             width: "20em",
                             position: "absolute",
                             top: "1em",
-                            right: "4.5em",
+                            right: "2.5em",
                           }}
                         >
                           <SaturationPicker
@@ -165,23 +166,25 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                             isPickerAvailable={node.MOFLayerNumber != 3}
                             style={{ height: "" }}
                           ></SaturationPicker>{" "}
-                          DOCS
                         </div>
                       )}
                   </div>
                 </td>
-                    {/* RIGHT  inner*/}
-                    {node.MOFLayerNumber <= 0 && !node.OutputIsDocs && (
-                  <td style={{ width: "20em", position: "relative", backgroundColor: desiredColor }}>
-                    <SaturationPicker
-                      label={node.InputChoiceFileName}
-                      color={desiredColor}
-                      src={node?.ToolAttachments[0].url}
-                      onColorChange={handleDesiredColorChange}
-                      isPickerAvailable={true}
-                    ></SaturationPicker>
-                    2nd TD
+                
+                {/* inner RIGHT oriented, LEFT side of screen*/}
+                
+                {node.MOFLayerNumber <= 0 && !node.OutputIsDocs && (
+                  <td style={{ width: "20em", position: "relative"}}>
+                    <div style={{ backgroundColor: desiredColor, borderRadius: '2em', margin: '0.5em', marginTop: '0em' }}>
 
+                        <SaturationPicker
+                        label={node.InputChoiceFileName}
+                        color={desiredColor}
+                        src={node?.ToolAttachments[0].url}
+                        onColorChange={handleDesiredColorChange}
+                        isPickerAvailable={true}
+                        ></SaturationPicker>                
+                    </div>
                   </td>
                 )}
               </tr>
@@ -197,21 +200,21 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                       color: getContrastColor(mixedColor),
                     }}
                   >
+                    {node.InputChoiceFileName ? (
+                      <span>
+                        {" "}
+                        with <strong> {node.InputChoiceFileName}</strong>
+                      </span>
+                    ) : null}
                     {node.ToolName ? (
                       <span>
                         <strong></strong> {node.ToolName}{" "}
                       </span>
                     ) : null}
-                    {node.InputChoiceFileName ? (
-                      <span>
-                        {" "}
-                        -i<strong> {node.InputChoiceFileName}</strong>
-                      </span>
-                    ) : null}
                     {node.NodeDefaultFileName ? (
                       <span>
                         {" "}
-                        -o<strong> {node.NodeDefaultFileName}</strong>
+                        creates <strong> {node.NodeDefaultFileName}</strong>
                       </span>
                     ) : null}
                   </div>
@@ -245,7 +248,7 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
         {node.MOFLayerNumber === 3 && (
           <tr>
             <td
-              colSpan="2"
+              colSpan="6"
               class="flow-arrow"
               style={{
                 textAlign: "center",

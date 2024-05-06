@@ -744,6 +744,7 @@
           }
         ],
         "createdTime": "2024-05-04T18:04:57",
+        "DesiredColor": "#0000FF",
         "NodeDefaultFileName": "Meeting Notes/Minutes",
         "ToolName": "Developer",
         "MOFDisplayOrder": 3,
@@ -941,7 +942,7 @@
           }
         ],
         "createdTime": "2024-05-04T18:11:30",
-        "DesiredColor": "#bfffff",
+        "DesiredColor": "#0000EE",
         "NodeDefaultFileName": "README.md",
         "InputChoiceFileName": "Hardware_Spec_v1.pdf",
         "ToolName": "Developer",
