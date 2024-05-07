@@ -65,29 +65,28 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                 {/* Inner (left orient) RIGHT side of screen */}
 
                 {node.MOFLayerNumber <= 0 && node.OutputIsDocs && (
-                  <td style={{ width: "20em", position: "relative" }}>
-                    <div
-                      style={{
-                        backgroundColor: desiredColor,
-                        color: getContrastColor(desiredColor),
-                        borderRadius: "2em",
-                        margin: "0.5em",
-                        marginTop: "0em",
-                      }}
-                    >
-                      {node.ToolTransformerFileName ||
-                        node.ToolName ||
-                        node.NodeDefaultFileName}
-                      <SaturationPicker
-                        color={desiredColor}
-                        src={node?.ToolAttachments[0].url}
-                        onColorChange={handleDesiredColorChange}
-                        isPickerAvailable={true}
-                        onIsPickingChange={handleIsPickingChange}
-                        style={{ height: "" }}
-                      ></SaturationPicker>
-                    </div>
-                  </td>
+                 <td style={{ width: "20em", position: "relative" }}>
+                 <div
+                   style={{
+                     backgroundColor: desiredColor,
+                     color: getContrastColor(desiredColor),
+                     borderRadius: "2em",
+                     margin: "0.5em",
+                     marginTop: "0em",
+                   }}
+                 >
+                   <SaturationPicker
+                     color={desiredColor}
+                     src={node?.ToolAttachments[0].url}
+                     onColorChange={handleDesiredColorChange}
+                     node={node}
+                     label={node.ToolName}
+                     isPickerAvailable={true}
+                     onIsPickingChange={handleIsPickingChange}
+                     style={{ height: "" }}
+                   ></SaturationPicker>
+                 </div>
+               </td>
                 )}
                 <td>
                   <div
@@ -119,18 +118,14 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                           src={node?.NodeAttachments[0].url}
                           onColorChange={handleNodeDesiredColorChange}
                           onIsPickingChange={handleIsPickingChange}
-                          label={
-                            node.MOFLayerNumber != 1
-                              ? "change"
-                              : node.ParentChoiceName
-                          }
+                          node={node}
                           isPickerAvailable={node.MOFLayerNumber != 3}
                           style={{ height: "" }}
                         ></SaturationPicker>
                       </div>
                     )}
 
-                    <h3>{node.FQNChoiceName}</h3>
+                    {/*                     <h3>{node.FQNChoiceName}</h3> /*}
                     {/* MIDDLE - Center Aligned Picker*/}
 
                     {node.MOFLayerNumber >= 1 && (
@@ -147,11 +142,7 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                           src={node?.NodeAttachments[0].url}
                           onColorChange={handleNodeDesiredColorChange}
                           onIsPickingChange={handleIsPickingChange}
-                          label={
-                            node.MOFLayerNumber != 1
-                              ? "change"
-                              : node.ParentChoiceName
-                          }
+                          node={node}
                           isPickerAvailable={
                             true ||
                             (!node.IsSyntaxFree && node.MOFLayerNumber != 3) ||
@@ -178,11 +169,8 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                           src={node?.NodeAttachments[0].url}
                           onColorChange={handleNodeDesiredColorChange}
                           onIsPickingChange={handleIsPickingChange}
-                          label={
-                            node.MOFLayerNumber != 1
-                              ? "change"
-                              : node.FQNChoiceName
-                          }
+                          node={node}
+
                           isPickerAvailable={node.MOFLayerNumber != 3}
                           style={{ height: "" }}
                         ></SaturationPicker>{" "}
@@ -202,12 +190,10 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                         marginTop: "0em",
                       }}
                     >
-                      {node.ToolTransformerFileName ||
-                        node.ToolName ||
-                        node.NodeDefaultFileName}
 
                       <SaturationPicker
-                        label={node.InputChoiceFileName}
+                          node={node}
+                          label={node.ToolName}
                         color={desiredColor}
                         src={node?.ToolAttachments[0].url}
                         onColorChange={handleDesiredColorChange}
@@ -248,7 +234,7 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                         <span>
                           {" "}
                           creates the{" "}
-                          <strong> {node.NodeDefaultFileName}</strong>
+                          <strong> {node.NodeName}</strong>
                         </span>
                       ) : null}
                     </div>)}
