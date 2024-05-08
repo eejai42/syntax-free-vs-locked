@@ -10,6 +10,10 @@ const TechShouldFlowPage = ({ mofData, syntaxLockedChoices, syntaxFreeChoices })
   const toggleShow = () => {
     setShowSyntaxFree(!showSyntaxFree);
   };
+  const handleSetSelectedIndex = (index) => {
+    setSelectedIndex(index);
+  };
+
   return (
     <div>
       {!showSyntaxFree ? (<div>
@@ -57,8 +61,8 @@ const TechShouldFlowPage = ({ mofData, syntaxLockedChoices, syntaxFreeChoices })
       <table className="main-table">
         <tbody>
           <tr>
-            {!showSyntaxFree ? (<td><div><ViewChoices mofData={mofData} choices={syntaxLockedChoices} selectedIndex={selectedIndex} onSetSelectedIndex={setSelectedIndex} isSyntaxFree={false}></ViewChoices> </div></td>) : null}
-            {showSyntaxFree ? (<td><div><ViewChoices mofData={mofData} choices={syntaxFreeChoices} selectedIndex={selectedIndex} onSetSelectedIndex={setSelectedIndex} isSyntaxFree={true}></ViewChoices> </div></td>) : null}
+            {!showSyntaxFree ? (<td><div><ViewChoices mofData={mofData} choices={syntaxLockedChoices} selectedIndex={selectedIndex} onSetSelectedIndex={handleSetSelectedIndex} isSyntaxFree={false}></ViewChoices> </div></td>) : null}
+            {showSyntaxFree ? (<td><div><ViewChoices mofData={mofData} choices={syntaxFreeChoices} selectedIndex={selectedIndex} onSetSelectedIndex={handleSetSelectedIndex} isSyntaxFree={true}></ViewChoices> </div></td>) : null}
           </tr>
         </tbody>
       </table>

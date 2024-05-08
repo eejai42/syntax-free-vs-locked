@@ -7,9 +7,6 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
     node.MOFLayerNumber != 13 ? node.NodeDesiredColor || "#000000" : "#FFFFFF"
   );
   const [mixedColor, setMixedColor] = useState(node.MixedColor || "#000000");
-  const [parentColor, setParentColor] = useState(
-    node.ParentNodeDesiredColor || "#000000"
-  );
   const [desiredColor, setDesiredColor] = useState(
     node.DesiredColor || "#000000"
   );
@@ -40,19 +37,19 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
     setIsPicking(isPicking);
   };
 
-  const pushExpectedColorForward = () => {
+  const pushExpectedColorForward = (left = true) => {
     console.error(
       "Pushing expected color forward",
       nodeDesiredColor,
       mixedColor,
       node,
-      node.Children[selectedIndex]
+      selectedIndex ? node?.Children[selectedIndex] : node?.Children[left ? 0 : 1]
     );
-    node.Children[selectedIndex].MixedColor = nodeDesiredColor; // This directly mutates the node, consider updating state in a more React-friendly way
   };
 
   return (
     <table className="node-table">
+      {node.MOFLayerNumber != 3 && (
       <tbody>
         {/* Display the current node's main details */}
         <tr>
@@ -60,7 +57,9 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
             colSpan={(node.Children ? node.Children.length * 2 : 1) + 1}
             style={{ border: "none" }}
           >
-            <table class="node-header">
+            <table className="node-header">
+      <tbody>
+
               <tr>
                 {/* Inner (left orient) RIGHT side of screen */}
 
@@ -80,7 +79,6 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                      src={node?.ToolAttachments[0].url}
                      onColorChange={handleDesiredColorChange}
                      node={node}
-                     label={node.ToolName}
                      isPickerAvailable={true}
                      onIsPickingChange={handleIsPickingChange}
                      style={{ height: "" }}
@@ -115,6 +113,7 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                       >
                         <SaturationPicker
                           color={nodeDesiredColor}
+                          label={node.NodeDefaultFileName}
                           src={node?.NodeAttachments[0].url}
                           onColorChange={handleNodeDesiredColorChange}
                           onIsPickingChange={handleIsPickingChange}
@@ -125,7 +124,7 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                       </div>
                     )}
 
-                    {/*                     <h3>{node.FQNChoiceName}</h3> /*}
+                    {/* <h3>{node.FQNChoiceName}</h3> /*}
                     {/* MIDDLE - Center Aligned Picker*/}
 
                     {node.MOFLayerNumber >= 1 && (
@@ -170,7 +169,7 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                           onColorChange={handleNodeDesiredColorChange}
                           onIsPickingChange={handleIsPickingChange}
                           node={node}
-
+                          label={node.NodeDefaultFileName}
                           isPickerAvailable={node.MOFLayerNumber != 3}
                           style={{ height: "" }}
                         ></SaturationPicker>{" "}
@@ -180,7 +179,7 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                 </td>
 
                 {/* inner RIGHT oriented, LEFT side of screen*/}
-                {node.MOFLayerNumber <= 0 && !node.OutputIsDocs && (
+                {node.MOFLayerNumber === 0 && !node.OutputIsDocs && (
                   <td style={{ width: "20em", position: "relative" }}>
                     <div
                       style={{
@@ -193,7 +192,6 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
 
                       <SaturationPicker
                           node={node}
-                          label={node.ToolName}
                         color={desiredColor}
                         src={node?.ToolAttachments[0].url}
                         onColorChange={handleDesiredColorChange}
@@ -207,16 +205,20 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                 <tr>
                   <td colSpan="2">
                     <div
-                      class="output-node"
+                      className="output-node"
                       style={{
                         marginRight: "auto",
                         marginLeft: "auto",
-                        maxWidth: "30em",
+                        maxWidth: "40em",
                         minHeight: "3em",
                         backgroundColor: mixedColor,
                         color: getContrastColor(mixedColor),
                       }}
                     >
+{node.IsSyntaxFree && node.ToolPlatformAttachments && node.ToolPlatformAttachments.length > 0 && (<div>
+    <img src={node.ToolPlatformAttachments[0].url} style={{width: '2em', height: '2em', float: 'left', marginRight: '0.5em'}} />
+                        </div>)}
+
                     {!isPicking && (<div>
 
                       {node.InputChoiceFileName ? (
@@ -242,36 +244,41 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
                     </div>
                   </td>
                 </tr>
+
+                </tbody>
             </table>
           </td>
         </tr>
+        
         {node.MOFLayerNumber === 1 && (
           <tr>
             <td
-              class="flow-arrow"
+              className="flow-arrow"
               style={{
                 textAlign: "right",
                 color: node.IsSyntaxFree ? "green" : "orange",
               }}
+              onClick={pushExpectedColorForward}
             >
               ↙
             </td>
             <td
-              class="flow-arrow"
+              className="flow-arrow"
               style={{
                 textAlign: "left",
                 color: node.IsSyntaxFree ? "green" : "orange",
               }}
+              onClick={pushExpectedColorForward}
             >
               ↘
             </td>
           </tr>
         )}
-        {node.MOFLayerNumber === 3 && (
+        {node.MOFLayerNumber === 33 && (
           <tr>
             <td
               colSpan="6"
-              class="flow-arrow"
+              className="flow-arrow"
               style={{
                 textAlign: "center",
                 color: node.IsSyntaxFree ? "green" : "orange",
@@ -282,25 +289,30 @@ const NodeWithChildren = ({ node, selectedIndex }) => {
             </td>
           </tr>
         )}
+        </tbody>)}
+        <tbody>
         {/* <tr><td></td></tr> */}
         {/* Display children in separate cells if they exist */}
         {node.Children && node.Children.length > 0 && (
           <tr>
             {node.Children.map((childNode, index) => (
-              <React.Fragment>
+              <React.Fragment key={childNode.NodeName}>
                 {childNode.MOFLayerNumber !== 1 || index == selectedIndex ? (
                   <td
-                    key={childNode.NodeName}
                     style={{
                       width: childNode.MOFLayerNumber == 0 ? "50%" : "100%",
                     }}
                   >
                     <table style={{ width: "100%" }}>
+      <tbody>
+
                       <tr>
                         <td>
                           <NodeWithChildren node={childNode} />
                         </td>
                       </tr>
+      </tbody>
+
                     </table>
                   </td>
                 ) : (

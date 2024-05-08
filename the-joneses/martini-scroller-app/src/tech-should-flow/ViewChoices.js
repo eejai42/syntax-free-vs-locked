@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./TechShouldFlow.css";
 import NodeWithChildren from "./NodeWithChildren";
+import NodeDomainDisplay from "./NodeDomainDisplay";
 
 const ViewChoices = ({ choices, isSyntaxFree, selectedIndex, onSetSelectedIndex }) => {
     const [structuredData, setStructuredData] = useState(null);
@@ -42,26 +43,28 @@ const ViewChoices = ({ choices, isSyntaxFree, selectedIndex, onSetSelectedIndex 
   return (
     <div>
         <h2>
-          <div style={{float: 'right'}}>
-            <select value={selectedIndex} onChange={(e) => onSetSelectedIndex(e.target.value)}>
-              <option value={0}>Example 1</option>
-              <option value={1}>Example 2</option>
-              <option value={2}>GarageDoor</option>
-            </select>
-          </div>
-          <div style={{float: 'left', minWidth: '7em', display: 'block'}}><img src=""/></div>
-          {isSyntaxFree ? 'Syntax Free' : 'Syntax Locked'} - {structuredData?.length && structuredData[0].Children[selectedIndex].NodeName}
-        </h2>
+          {isSyntaxFree ? 'Syntax Free' : 'Syntax Locked'}</h2>
        
 
         <table className="choices-table">
             <tbody>
               <tr>
+                {isSyntaxFree && <td style={{width: 0}}>
+                    
+                  {structuredData && structuredData.map(rootNode => (
+                    <NodeDomainDisplay node={rootNode} selectedIndex={selectedIndex} onSetSelectedIndex={onSetSelectedIndex} />
+                  ))}
+                </td>}
                 <td>
                   {structuredData && structuredData.map(rootNode => (
                       <NodeWithChildren key={rootNode.NodeName} node={rootNode} selectedIndex={selectedIndex} />
                   ))}
                 </td>
+                {!isSyntaxFree && <td>
+                    {structuredData && structuredData.map(rootNode => (
+                    <NodeDomainDisplay node={rootNode} selectedIndex={selectedIndex} onSetSelectedIndex={onSetSelectedIndex} />
+                  ))}
+                </td>}
               </tr>
             </tbody>
         </table>

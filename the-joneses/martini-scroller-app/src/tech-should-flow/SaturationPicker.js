@@ -11,7 +11,8 @@ const SaturationPicker = ({ node, color, onColorChange, src, label = "", isPicke
 
     useEffect(() => {
         setCurrentColor(color);
-        let newLabel = label || node?.NodeDefaultFileName;
+        let newLabel = label || (!node.IsSyntaxFree ? node.ToolName : null) || node.ToolTransformerFileName || node?.NodeDefaultFileName;
+        if (node.MOFLayerNumber === 3) newLabel = node.NodeName;
         setCurrentLabel(newLabel || 'missing');
     }, [color, label, currentLabel]);;
 
@@ -27,7 +28,7 @@ const SaturationPicker = ({ node, color, onColorChange, src, label = "", isPicke
     };
 
     return (
-        <div style={{ width: "90%", height: "14em", marginRight: '1em;', border: (false && isPickerAvailable? 'solid 1px #efefef' : ''), // commenging out temporarily
+        <div style={{ width: "90%", height: "14em", marginRight: '1em', border: (false && isPickerAvailable? 'solid 1px #efefef' : ''), // commenging out temporarily
                        borderRadius: '0.45em', cursor: (isPickerAvailable ? 'pointer' : '') }} 
         className="outerHoverDiv"
         onClick={() => isPickerAvailable ? handleSetShowPicker(true) : null}  // Set to true on click
@@ -43,7 +44,10 @@ const SaturationPicker = ({ node, color, onColorChange, src, label = "", isPicke
                         <HexColorPicker style={{border: '', height: ''}} color={currentColor} onChange={handleColorChange}  />
                         </div>
                         <div style={{display: !showPicker && src ? 'block' : 'none' }}>
-                            <img src={src} style={{width: '7.5em', marginTop: '2em', paddingLeft: '0em', marginLeft: '0em'}}/>
+                            
+                            {node.MOFLayerNumber == 0 && !label && <img src={node.ToolInputChoiceNodeAttachments?.length ? node.ToolInputChoiceNodeAttachments[0].url : ''} style={{width: '3.5em', marginTop: '2em', paddingLeft: '0em', marginLeft: '0em'}}/>}
+                            <img src={src} style={{width: '4.5em', marginTop: '2em', paddingLeft: '0em', marginLeft: '0em'}}/>
+
                         </div>
                     </div>
                 </div>
