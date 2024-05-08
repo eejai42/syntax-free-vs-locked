@@ -49,22 +49,16 @@ const ViewChoices = ({ choices, isSyntaxFree, selectedIndex, onSetSelectedIndex 
         <table className="choices-table">
             <tbody>
               <tr>
-                {isSyntaxFree && <td style={{width: 0}}>
-                    
+                <td style={{width: 0}}>   
                   {structuredData && structuredData.map(rootNode => (
                     <NodeDomainDisplay node={rootNode} selectedIndex={selectedIndex} onSetSelectedIndex={onSetSelectedIndex} />
                   ))}
-                </td>}
+                </td>
                 <td>
                   {structuredData && structuredData.map(rootNode => (
                       <NodeWithChildren key={rootNode.NodeName} node={rootNode} selectedIndex={selectedIndex} />
                   ))}
                 </td>
-                {!isSyntaxFree && <td>
-                    {structuredData && structuredData.map(rootNode => (
-                    <NodeDomainDisplay node={rootNode} selectedIndex={selectedIndex} onSetSelectedIndex={onSetSelectedIndex} />
-                  ))}
-                </td>}
               </tr>
             </tbody>
         </table>

@@ -17,7 +17,7 @@ const TechShouldFlowPage = ({ mofData, syntaxLockedChoices, syntaxFreeChoices })
   return (
     <div>
       {!showSyntaxFree ? (<div>
-          <img src="parchment.png"  className="EraIcon" style={{left: '1em', zIndex: 99999999999, fontSize: '1.6em' }} />    
+          <img src="parchment.png"  className="EraIcon" style={{zIndex: 99999999999, fontSize: '1.6em' }} />    
           <div style={{position: 'absolute', right: '0em', width: '15em'}}>
 
           <img src="e-everything.png"  className="switch-icon" /> 
@@ -61,8 +61,10 @@ const TechShouldFlowPage = ({ mofData, syntaxLockedChoices, syntaxFreeChoices })
       <table className="main-table">
         <tbody>
           <tr>
-            {!showSyntaxFree ? (<td><div><ViewChoices mofData={mofData} choices={syntaxLockedChoices} selectedIndex={selectedIndex} onSetSelectedIndex={handleSetSelectedIndex} isSyntaxFree={false}></ViewChoices> </div></td>) : null}
-            {showSyntaxFree ? (<td><div><ViewChoices mofData={mofData} choices={syntaxFreeChoices} selectedIndex={selectedIndex} onSetSelectedIndex={handleSetSelectedIndex} isSyntaxFree={true}></ViewChoices> </div></td>) : null}
+            {!showSyntaxFree ? (<td><div><ViewChoices mofData={mofData} choices={syntaxLockedChoices} selectedIndex={selectedIndex} 
+                      onSetSelectedIndex={handleSetSelectedIndex} isSyntaxFree={false}></ViewChoices> </div></td>) : null}
+            {showSyntaxFree ? (<td><div><ViewChoices mofData={mofData} choices={syntaxFreeChoices} selectedIndex={selectedIndex} 
+                      onSetSelectedIndex={handleSetSelectedIndex} isSyntaxFree={true}></ViewChoices> </div></td>) : null}
           </tr>
         </tbody>
       </table>
