@@ -2655,7 +2655,6 @@
         "Layers": "recuF20OxYU6cQKJe",
         "IsSyntaxFree": "True",
         "ParentChoice": "recAU7aULJrWJGtbG",
-        "ToolTransformer": "recKalmeIXAR0M2NK",
         "DesiredColor": "#0000AA",
         "ExpectedColor": "#bfffff",
         "Tool": "recDQEMg6FSeoZDy0",
@@ -2723,7 +2722,6 @@
         "NodeDefaultFileName": "HOME.wiki",
         "InputChoiceFileName": "Devices.json",
         "ToolName": "json-hbars-transform",
-        "ToolTransformerFileName": "HOME.hbars",
         "IsInSync": 1,
         "IsInSyncImage": "✔",
         "ToolAttachments": {
@@ -2858,7 +2856,9 @@
               "height": 233
             }
           }
-        }
+        },
+        "ToolTransformer": "recKalmeIXAR0M2NK",
+        "ToolTransformerFileName": "HOME.hbars"
       },
       {
         "MOFChoiceId": "recHevLq93SeDxqYD",

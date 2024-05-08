@@ -20,6 +20,8 @@ const NodeDomainDisplay = ({ node, selectedIndex, onSetSelectedIndex}) => {
 </h3>
 <h3>{node.ToolName}</h3>
             {currentNode?.IsSyntaxFree ? (<div>
+                <img src={(currentNode?.NodePlatformAttachments?.length && currentNode?.NodePlatformAttachments[0].url)} 
+                            style={{width: '8.5em', marginTop: '2em', paddingLeft: '0em', marginLeft: '0em'}}/>
                 <img src={(node?.NodePlatformAttachments?.length > 0 && node.NodePlatformAttachments[0]).url} 
                         style={{width: '8.5em', marginTop: '2em', paddingLeft: '0em', marginLeft: '0em'}}/>
                 <img src={(currentNode?.ToolInputChoiceNodeAttachments?.length > 0 && currentNode.ToolInputChoiceNodeAttachments[0]).url} 

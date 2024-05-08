@@ -825,7 +825,6 @@
         "NodeDefaultFileName": "HOME.wiki",
         "InputChoiceFileName": "Devices.json",
         "ToolName": "json-hbars-transform",
-        "ToolTransformerFileName": "HOME.hbars",
         "MOFDisplayOrder": 0,
         "ParentMOFDisplayOrder": 2,
         "OutputIsDocs": "True",
@@ -839,6 +838,7 @@
             "url": "https://v5.airtableusercontent.com/v3/u/28/28/1715140800000/taubNuBiXXpqiNaesWRn9Q/CIQsYHiRICsnJDn_LHlwbC8crOmI2Z5tQfXCsD7zqApFQMCj2_K8xlPGfKqbg2hirNUrkL3_HS6u4CPpGE3uw22TJ0mlzzgJAdNg0ONf1CPExOaYoVbiRssatvKGW_rXr9sON0UGhGSDAa5cjdSHhuKP4Nf3ifeSVj5qZiRCYDdt1rgWI57smsBKuHgZy-7s/q1dQh3zqI_IDIooKAqLjZimSH7o2pTFNzZhs4k3MKdw"
           }
         ],
+        "ToolTransformerFileName": "HOME.hbars",
         "IsSyntaxFree": "True"
       },
       {

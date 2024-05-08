@@ -2623,7 +2623,6 @@
     <Layers>recuF20OxYU6cQKJe</Layers>
     <IsSyntaxFree>True</IsSyntaxFree>
     <ParentChoice>recAU7aULJrWJGtbG</ParentChoice>
-    <ToolTransformer>recKalmeIXAR0M2NK</ToolTransformer>
     <DesiredColor>#0000AA</DesiredColor>
     <ExpectedColor>#bfffff</ExpectedColor>
     <Tool>recDQEMg6FSeoZDy0</Tool>
@@ -2691,7 +2690,6 @@
     <NodeDefaultFileName>HOME.wiki</NodeDefaultFileName>
     <InputChoiceFileName>Devices.json</InputChoiceFileName>
     <ToolName>json-hbars-transform</ToolName>
-    <ToolTransformerFileName>HOME.hbars</ToolTransformerFileName>
     <IsInSync>1</IsInSync>
     <IsInSyncImage>✔</IsInSyncImage>
     <ToolAttachments>
@@ -2827,6 +2825,8 @@
         </full>
       </thumbnails>
     </NodePlatformAttachments>
+    <ToolTransformer>recKalmeIXAR0M2NK</ToolTransformer>
+    <ToolTransformerFileName>HOME.hbars</ToolTransformerFileName>
   </MOFChoices>
   <MOFChoices json:Array="true">
     <MOFChoiceId>recHevLq93SeDxqYD</MOFChoiceId>

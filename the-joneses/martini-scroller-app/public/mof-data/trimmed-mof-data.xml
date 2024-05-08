@@ -346,7 +346,7 @@
         <ToolInputChoiceNodeAttachments json:Array="true">
         <url>https://v5.airtableusercontent.com/v3/u/28/28/1715140800000/fmekTnk_5v8iPUOmnEoj6w/x2YiiXkQ_tgwxyT0emag8k_9pmwr8WvoAtRzBElPx85upniEEnSNAhJ3hfYPLfJ6HwiRYQKu4gr0AG_RDn2sGaBi_OvIKRGhmCj3MuH2ZxqTciyHyDFLCtD9c2TvMupLCbfYpMAuG0zt4aqvfpUOMQ3xF1bAFID0btowxm3iO6C0C-evO32Taxhz9cFZAYNPzyUW4dq0r6XkgsUGMQOmhA/jJJDQ9R4mX-PoPH9BTtkC4FbJgPvF3DRReQRGLXTia0</url>
         </ToolInputChoiceNodeAttachments>
-    <createdTime>5/5/2024 3:31:02 AM</createdTime><DesiredColor>#0000AA</DesiredColor><ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>HOME.wiki</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><ToolTransformerFileName>HOME.hbars</ToolTransformerFileName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder><OutputIsDocs>True</OutputIsDocs>
+    <createdTime>5/5/2024 3:31:02 AM</createdTime><DesiredColor>#0000AA</DesiredColor><ToolDefaultFileName>ssotme</ToolDefaultFileName><NodeDefaultFileName>HOME.wiki</NodeDefaultFileName><InputChoiceFileName>Devices.json</InputChoiceFileName><ToolName>json-hbars-transform</ToolName><MOFDisplayOrder>0</MOFDisplayOrder><ParentMOFDisplayOrder>2</ParentMOFDisplayOrder><OutputIsDocs>True</OutputIsDocs>
         <ToolPlatformAttachments json:Array="true">
         <url>https://v5.airtableusercontent.com/v3/u/28/28/1715140800000/o3NQstfRFCy06SSYRkeomA/xozxCRbbwZnlTfWiFUYu9H7h45n7CdFd-hAyzcL6xckPDXrK0LTX5oTCEynRbot-_LQYifFWMjNl9XY18gy2wZ3dD49_lDbtwCafL4X3gZ7zf7JkpsrcO3vYR1AybS2ueAyXF3h74wNTIDARLqEIFg/ErgU7ujnwZuMJUOGNYq6ZkSIIQqNsBKgxaC_3Qs2-Hk</url>
         </ToolPlatformAttachments>
@@ -354,7 +354,7 @@
         <NodePlatformAttachments json:Array="true">
         <url>https://v5.airtableusercontent.com/v3/u/28/28/1715140800000/taubNuBiXXpqiNaesWRn9Q/CIQsYHiRICsnJDn_LHlwbC8crOmI2Z5tQfXCsD7zqApFQMCj2_K8xlPGfKqbg2hirNUrkL3_HS6u4CPpGE3uw22TJ0mlzzgJAdNg0ONf1CPExOaYoVbiRssatvKGW_rXr9sON0UGhGSDAa5cjdSHhuKP4Nf3ifeSVj5qZiRCYDdt1rgWI57smsBKuHgZy-7s/q1dQh3zqI_IDIooKAqLjZimSH7o2pTFNzZhs4k3MKdw</url>
         </NodePlatformAttachments>
-    <IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><NodeName>Natural Language Description</NodeName><FQNChoiceName>Natural Language Description</FQNChoiceName><Name>3.MetaModel,1.Natural Language Description</Name><MOFLayerNumber>3</MOFLayerNumber><NodeDesiredColor>#0000FF</NodeDesiredColor><MixedColor>#0000FF</MixedColor><ExpectedColor>#0000FF</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
+    <ToolTransformerFileName>HOME.hbars</ToolTransformerFileName><IsSyntaxFree>True</IsSyntaxFree></MOFChoices><MOFChoices><NodeName>Natural Language Description</NodeName><FQNChoiceName>Natural Language Description</FQNChoiceName><Name>3.MetaModel,1.Natural Language Description</Name><MOFLayerNumber>3</MOFLayerNumber><NodeDesiredColor>#0000FF</NodeDesiredColor><MixedColor>#0000FF</MixedColor><ExpectedColor>#0000FF</ExpectedColor><IsInSync>1</IsInSync><IsInSyncImage>✔</IsInSyncImage>
         <NodeAttachments json:Array="true">
         <url>https://v5.airtableusercontent.com/v3/u/28/28/1715140800000/taubNuBiXXpqiNaesWRn9Q/CIQsYHiRICsnJDn_LHlwbC8crOmI2Z5tQfXCsD7zqApFQMCj2_K8xlPGfKqbg2hirNUrkL3_HS6u4CPpGE3uw22TJ0mlzzgJAdNg0ONf1CPExOaYoVbiRssatvKGW_rXr9sON0UGhGSDAa5cjdSHhuKP4Nf3ifeSVj5qZiRCYDdt1rgWI57smsBKuHgZy-7s/q1dQh3zqI_IDIooKAqLjZimSH7o2pTFNzZhs4k3MKdw</url>
         </NodeAttachments>
