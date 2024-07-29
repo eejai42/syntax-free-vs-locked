@@ -1,0 +1,214 @@
+<Airtable xmlns:json="http://james.newtonking.com/projects/json">
+  <Ideas json:Array="true">
+    <SourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</SourceIdea>
+    <Name>To Do App</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <Generations json:Array="true">recMEUAHCWHP4zqT7</Generations>
+    <Generations json:Array="true">rec72KHseHTRZCNNt</Generations>
+    <Generations json:Array="true">recOOhsTc8QeS4QCL</Generations>
+    <GenerationTransformers json:Array="true">recQNBM9btdtItZXf</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recxJHT51V3p6yya0</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recYz5vCD8OSNFiCl</GenerationTransformers>
+    <GenerationTransformers json:Array="true">rectaALVjH7R92fQz</GenerationTransformers>
+    <GenerationTransformerFullPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformerFullPrompts>
+    <GenerationTransformerFullPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformerFullPrompts>
+    <GenerationTransformerFullPrompts json:Array="true">Write a csharp script, based on all of these details.</GenerationTransformerFullPrompts>
+    <GenerationTransformerFullPrompts json:Array="true">Write a csharp script, based on all of these details.</GenerationTransformerFullPrompts>
+    <GenerationTransformerNames json:Array="true">NLP-Single-Paragraph</GenerationTransformerNames>
+    <GenerationTransformerNames json:Array="true">Json-SSoT</GenerationTransformerNames>
+    <GenerationTransformerNames json:Array="true">CSharp</GenerationTransformerNames>
+    <GenerationTransformerNames json:Array="true">Golang</GenerationTransformerNames>
+  </Ideas>
+  <Ideas json:Array="true">
+    <SourceIdea>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</SourceIdea>
+    <Name>The Jones</Name>
+    <Generations json:Array="true">rec1t3AsL3pvoMIAc</Generations>
+    <Generations json:Array="true">recdB0a7p1wMvfKFN</Generations>
+    <Generations json:Array="true">recKAw5Suu0iqdMdB</Generations>
+    <GenerationTransformers>recLjf6jP0GmAZluB</GenerationTransformers>
+  </Ideas>
+  <IdeaTransformers json:Array="true">
+    <Idea>reczle9XMG5vHdomS</Idea>
+    <IsActiveIdea></IsActiveIdea>
+    <IdeasSourceIdea>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</IdeasSourceIdea>
+    <IdeaName>The Jones</IdeaName>
+  </IdeaTransformers>
+  <IdeaTransformers json:Array="true">
+    <TransformedArtifacts>recCx7s2jCkGVp8BN</TransformedArtifacts>
+    <Idea>recW1A5DedlYoR6An</Idea>
+    <FullPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <Name>NLP-Single-Paragraph</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <IdeasSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</IdeasSourceIdea>
+    <IdeaName>To Do App</IdeaName>
+  </IdeaTransformers>
+  <IdeaTransformers json:Array="true">
+    <TransformedArtifacts>recaDdJWouKulO0MZ</TransformedArtifacts>
+    <Idea>recW1A5DedlYoR6An</Idea>
+    <FullPrompt>Write a csharp script, based on all of these details.</FullPrompt>
+    <Name>CSharp</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <IdeasSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</IdeasSourceIdea>
+    <IdeaName>To Do App</IdeaName>
+  </IdeaTransformers>
+  <IdeaTransformers json:Array="true">
+    <fields />
+  </IdeaTransformers>
+  <IdeaTransformers json:Array="true">
+    <Idea>recW1A5DedlYoR6An</Idea>
+    <FullPrompt>Write a csharp script, based on all of these details.</FullPrompt>
+    <Name>Golang</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <IdeasSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</IdeasSourceIdea>
+    <IdeaName>To Do App</IdeaName>
+  </IdeaTransformers>
+  <IdeaTransformers json:Array="true">
+    <TransformedArtifacts>recNAPS31vIaKGEjx</TransformedArtifacts>
+    <Idea>recW1A5DedlYoR6An</Idea>
+    <FullPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <Name>Json-SSoT</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <IdeasSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</IdeasSourceIdea>
+    <IdeaName>To Do App</IdeaName>
+  </IdeaTransformers>
+  <Generations json:Array="true">
+    <GeneratioNumber>1</GeneratioNumber>
+    <Idea>reczle9XMG5vHdomS</Idea>
+    <Name>Generation-1</Name>
+    <IsActiveIdea></IsActiveIdea>
+    <IdeaName>The Jones</IdeaName>
+    <IdeaSourceIdea>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</IdeaSourceIdea>
+  </Generations>
+  <Generations json:Array="true">
+    <GeneratioNumber>2</GeneratioNumber>
+    <Idea>recW1A5DedlYoR6An</Idea>
+    <Name>Generation-2</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <IdeaName>To Do App</IdeaName>
+    <IdeaSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</IdeaSourceIdea>
+  </Generations>
+  <Generations json:Array="true">
+    <GeneratioNumber>3</GeneratioNumber>
+    <Idea>reczle9XMG5vHdomS</Idea>
+    <Name>Generation-3</Name>
+    <IsActiveIdea></IsActiveIdea>
+    <IdeaName>The Jones</IdeaName>
+    <IdeaSourceIdea>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</IdeaSourceIdea>
+  </Generations>
+  <Generations json:Array="true">
+    <TransformedArtifacts json:Array="true">recCx7s2jCkGVp8BN</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recNAPS31vIaKGEjx</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recaDdJWouKulO0MZ</TransformedArtifacts>
+    <GeneratioNumber>1</GeneratioNumber>
+    <Idea>recW1A5DedlYoR6An</Idea>
+    <Name>Generation-1</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <IdeaName>To Do App</IdeaName>
+    <IdeaSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</IdeaSourceIdea>
+  </Generations>
+  <Generations json:Array="true">
+    <GeneratioNumber>3</GeneratioNumber>
+    <Idea>recW1A5DedlYoR6An</Idea>
+    <Name>Generation-3</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <IdeaName>To Do App</IdeaName>
+    <IdeaSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</IdeaSourceIdea>
+  </Generations>
+  <Generations json:Array="true">
+    <GeneratioNumber>2</GeneratioNumber>
+    <Idea>reczle9XMG5vHdomS</Idea>
+    <Name>Generation-2</Name>
+    <IsActiveIdea></IsActiveIdea>
+    <IdeaName>The Jones</IdeaName>
+    <IdeaSourceIdea>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</IdeaSourceIdea>
+  </Generations>
+  <GenerationTransformers json:Array="true">
+    <Transformer>recQNBM9btdtItZXf</Transformer>
+    <Generation>recMEUAHCWHP4zqT7</Generation>
+    <TransformedArtifacts json:Array="true">recs9F8h9874H1YXK</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">receiE8KmlfWCtoIC</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recnVJjQ2YIKLqdjG</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recZMAsntd8XOrMhV</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">rechsTE2CKYvxKFjM</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">rec3xFP3xWLCjcXzD</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recDkqSfJf0CsT0vC</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recargYbt77BsT3hK</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">rec7bRFFdob3BUITM</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recv2xcea6OeGbYCB</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recjiKqTCKix3wXys</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recGNDZ39tZsDbdFA</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recwDqglbUEdubC6U</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recDs2gbl23MpLKlU</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recX3P4a2GXqH2j82</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recC5ixV4O5hfL15v</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recHLMdljy3ZF6hzL</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recvaPQwUjzxeFICC</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recRaQGSx9elPXv8S</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recMQNT2vjEKtS46w</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">rec2ih5E9MV5SMZvR</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recZvBSMahwsgdWNp</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">rec2zmScRv5PzQbyo</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">rec8faCSmJHRUSRWR</TransformedArtifacts>
+    <GenerationIdea>recW1A5DedlYoR6An</GenerationIdea>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>To Do App-Generation-1-NLP-Single-Paragraph</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <GeneratioNumber>1</GeneratioNumber>
+    <GenerationIdeaName>To Do App</GenerationIdeaName>
+    <GenerationSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</GenerationSourceIdea>
+    <TransformerFullPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</TransformerFullPrompt>
+    <Prompt>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.
+Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</Prompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Transformer>recxJHT51V3p6yya0</Transformer>
+    <Generation>recMEUAHCWHP4zqT7</Generation>
+    <TransformedArtifacts json:Array="true">recaicsGi5EvpPWfd</TransformedArtifacts>
+    <TransformedArtifacts json:Array="true">recMlqISKeM0v4lW9</TransformedArtifacts>
+    <GenerationIdea>recW1A5DedlYoR6An</GenerationIdea>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>To Do App-Generation-1-Json-SSoT</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <GeneratioNumber>1</GeneratioNumber>
+    <GenerationIdeaName>To Do App</GenerationIdeaName>
+    <GenerationSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</GenerationSourceIdea>
+    <TransformerFullPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</TransformerFullPrompt>
+    <Prompt>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.
+Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</Prompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Transformer>recYz5vCD8OSNFiCl</Transformer>
+    <Generation>recMEUAHCWHP4zqT7</Generation>
+    <TransformedArtifacts>reci7Zg4u97aScugO</TransformedArtifacts>
+    <GenerationIdea>recW1A5DedlYoR6An</GenerationIdea>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>To Do App-Generation-1-CSharp</Name>
+    <IsActiveIdea>True</IsActiveIdea>
+    <GeneratioNumber>1</GeneratioNumber>
+    <GenerationIdeaName>To Do App</GenerationIdeaName>
+    <GenerationSourceIdea>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</GenerationSourceIdea>
+    <TransformerFullPrompt>Write a csharp script, based on all of these details.</TransformerFullPrompt>
+    <Prompt>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.
+Write a csharp script, based on all of these details.</Prompt>
+  </GenerationTransformers>
+  <Entities json:Array="true">
+    <Name>Idea</Name>
+    <PluralName>Ideas</PluralName>
+    <AirtableName>Ideas</AirtableName>
+  </Entities>
+  <Entities json:Array="true">
+    <Name>IdeaTransformer</Name>
+    <PluralName>IdeaTransformers</PluralName>
+    <AirtableName>IdeaTransformers</AirtableName>
+  </Entities>
+  <Entities json:Array="true">
+    <Name>Generation</Name>
+    <PluralName>Generations</PluralName>
+    <AirtableName>Generations</AirtableName>
+  </Entities>
+  <Entities json:Array="true">
+    <Name>GenerationTransformer</Name>
+    <PluralName>GenerationTransformers</PluralName>
+    <AirtableName>GenerationTransformers</AirtableName>
+  </Entities>
+</Airtable>

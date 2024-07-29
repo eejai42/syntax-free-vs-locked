@@ -1,0 +1,425 @@
+<html><head><title>syntax-locked-vs-syntax-free-research - Single Page Doc s</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" /></head><body style="padding: 0.8em;"><h1>        
+syntax-locked-vs-syntax-free-research  Data model</h1><a class="btn btn-sm btn-primary" href="Index.html"><<&nbsp;Back Interactive Object Explorer</a><h3>Table of Contents</h3><ol><li><a href="#GenerationTransformer">GenerationTransformer</a></li><li><a href="#IdeaTransformer">IdeaTransformer</a></li><li><a href="#Generation">Generation</a></li><li><a href="#TransformedArtifact">TransformedArtifact</a></li><li><a href="#Idea">Idea</a></li></ol><table style="width: 100%"><tr><td colspan="3"><span id="GenerationTransformer" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="GenerationTransformer"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            GenerationTransformer  <span class="pull-right" style="font-size: 0.7em;">(originally - GenerationTransformer)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each GenerationTransformer may have zero or more associated
+                          
+                            
+                                <a href="#IdeaTransformer">
+                                
+                                    IdeaTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
+                        GenerationTransformerId</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">Generation</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#IdeaTransformer">RawPrompt</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">GenerationSourceIdea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#IdeaTransformer">Transformer</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">GenerationName</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">GenerationIdea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">GenerationIdeaName</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">GeneratioNumber</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">IsActiveIdea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#TransformedArtifact">TransformedArtifacts</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        IdeaPrompt</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        AutoNumber</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        TransformerNumber</td><td>Int32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        IsArtifactValidator</td><td>Boolean</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">GenerationTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> GenerationTransformerId, Name, Generation, RawPrompt, IdeaPrompt, GenerationSourceIdea, Transformer, GenerationName, GenerationIdea, GenerationIdeaName, GeneratioNumber, IsActiveIdea, TransformedArtifacts, AutoNumber, TransformerNumber, IsArtifactValidator
+
+<b>FROM</b> GenerationTransformer
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="IdeaTransformer" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="IdeaTransformer"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            IdeaTransformer  <span class="pull-right" style="font-size: 0.7em;">(originally - IdeaTransformer)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each IdeaTransformer may have zero or more associated
+                          
+                            
+                                <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Idea">
+                                
+                                    Ideas
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Idea">
+                                
+                                    Ideas
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Idea">
+                                
+                                    Ideas
+                                    
+                                </a>
+                        
+                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
+                        IdeaTransformerId</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">Idea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">IdeaName</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">IdeasSourceIdea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">IsActiveIdea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformedArtifacts</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        FullPrompt</td><td></td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">IdeaTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaTransformerId, Name, Idea, IdeaName, IdeasSourceIdea, IsActiveIdea, FullPrompt, TransformedArtifacts
+
+<b>FROM</b> IdeaTransformer
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="Generation" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="Generation"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            Generation  <span class="pull-right" style="font-size: 0.7em;">(originally - Generation)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each Generation may have zero or more associated
+                          
+                            
+                                <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Idea">
+                                
+                                    Ideas
+                                    
+                                </a>
+                        
+                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
+                        GenerationId</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">Idea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">IdeaName</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformedArtifacts</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">IsActiveIdea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">IdeaSourceIdea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#">Model</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        GeneratioNumber</td><td>Int32</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Generation Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> GenerationId, Name, Idea, IdeaName, GeneratioNumber, TransformedArtifacts, IsActiveIdea, IdeaSourceIdea, Model
+
+<b>FROM</b> Generation
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="TransformedArtifact" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="TransformedArtifact"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            TransformedArtifact  <span class="pull-right" style="font-size: 0.7em;">(originally - TransformedArtifact)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each TransformedArtifact may have zero or more associated
+                          
+                            
+                                <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
+                        TransformedArtifactId</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">GenerationTransformer</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#TransformedArtifact">ValidationArtifact</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#TransformedArtifact">ResponseOfArtifactBeingValidated</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformerRawPrompt</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformerIdeaPrompt</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">IsActiveIdea</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#TransformedArtifact">ExtensionOf</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformerNumber</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        ActualPrompt</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Response</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Created</td><td>DateTime</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        AutoNumber</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        IsRetiredArtifact</td><td>Boolean</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Modified</td><td>DateTime</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        SuggestedPrompt</td><td></td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">TransformedArtifact Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> TransformedArtifactId, Name, GenerationTransformer, ValidationArtifact, ResponseOfArtifactBeingValidated, TransformerRawPrompt, TransformerIdeaPrompt, ActualPrompt, Response, Created, AutoNumber, IsRetiredArtifact, IsActiveIdea, Modified, SuggestedPrompt, ExtensionOf, TransformerNumber
+
+<b>FROM</b> TransformedArtifact
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="Idea" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="Idea"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            Idea  <span class="pull-right" style="font-size: 0.7em;">(originally - Idea)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each Idea may have zero or more associated
+                          
+                            
+                                <a href="#IdeaTransformer">
+                                
+                                    IdeaTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#IdeaTransformer">
+                                
+                                    IdeaTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#IdeaTransformer">
+                                
+                                    IdeaTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#IdeaTransformer">
+                                
+                                    IdeaTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
+                        IdeaId</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">Generations</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#IdeaTransformer">GenerationTransformers</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#IdeaTransformer">GenerationTransformerNames</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#IdeaTransformer">GenerationTransformerFullPrompts</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        SourceIdea</td><td></td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        IsActiveIdea</td><td>Boolean</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Idea Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaId, Name, SourceIdea, Generations, GenerationTransformers, GenerationTransformerNames, GenerationTransformerFullPrompts, IsActiveIdea
+
+<b>FROM</b> Idea
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr></table></body></html>

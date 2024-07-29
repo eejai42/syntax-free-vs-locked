@@ -1,0 +1,100 @@
+Here is a `single-source-of-truth.json` file for Version 1.0 of the To-Do Pro app, detailing its features and providing examples of categorized to-do items.
+
+```json
+{
+  "app": {
+    "name": "To-Do Pro",
+    "version": "1.0",
+    "description": "A simple and intuitive to-do list application designed to help users organize their tasks efficiently.",
+    "features": [
+      {
+        "feature": "Add To-Do Items",
+        "description": "Users can create new to-do items with a title and optional description.",
+        "example": {
+          "title": "Buy groceries",
+          "description": "Milk, bread, eggs, and fruits."
+        }
+      },
+      {
+        "feature": "Categorize To-Do Items",
+        "description": "Users can categorize their to-do items into different groups such as Work, Personal, and Shopping.",
+        "example": {
+          "category": "Work",
+          "items": [
+            {
+              "title": "Finish project report",
+              "description": "Complete the final draft of the project report by Friday."
+            },
+            {
+              "title": "Team meeting",
+              "description": "Discuss project updates with the team at 10 AM."
+            }
+          ]
+        }
+      },
+      {
+        "feature": "Mark Items as Completed",
+        "description": "Users can mark their to-do items as completed to keep track of their progress.",
+        "example": {
+          "title": "Read a book",
+          "status": "Completed"
+        }
+      },
+      {
+        "feature": "Delete To-Do Items",
+        "description": "Users can delete to-do items that are no longer needed.",
+        "example": {
+          "title": "Call the dentist",
+          "status": "Deleted"
+        }
+      }
+    ],
+    "categories": [
+      {
+        "name": "Work",
+        "examples": [
+          {
+            "title": "Prepare presentation",
+            "description": "Create slides for the upcoming client meeting."
+          },
+          {
+            "title": "Email project update",
+            "description": "Send out the weekly project update to stakeholders."
+          }
+        ]
+      },
+      {
+        "name": "Personal",
+        "examples": [
+          {
+            "title": "Go for a run",
+            "description": "Run 5 kilometers in the park."
+          },
+          {
+            "title": "Visit family",
+            "description": "Spend time with family on the weekend."
+          }
+        ]
+      },
+      {
+        "name": "Shopping",
+        "examples": [
+          {
+            "title": "Buy birthday gift",
+            "description": "Find a gift for Sarah's birthday."
+          },
+          {
+            "title": "Grocery shopping",
+            "description": "Purchase weekly groceries and household supplies."
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+### Explanation:
+- The JSON structure includes the app name, version, and a brief description.
+- Each feature is defined with a description and an example of its usage.
+- Categories are listed with examples of to-do items relevant to each category. This structure provides a comprehensive overview of the app's functionality and organization.

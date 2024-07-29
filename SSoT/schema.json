@@ -1,0 +1,97 @@
+{
+    "Airtable": {
+        "Attributes": {
+            "AirtableId": "int",
+            "Ideas": "Idea[]",
+            "IdeaTransformers": "IdeaTransformer[]",
+            "Generations": "Generation[]",
+            "GenerationTransformers": "GenerationTransformer[]",
+            "Entities": "Entity[]"
+        },
+        "SingularName": "Airtable",
+        "PluralName": "Airtables",
+        "PrimaryKey": "AirtableId"
+    },
+    "Ideas": {
+        "Attributes": {
+            "IdeaId": "int",
+            "SourceIdea": "string",
+            "Name": "string",
+            "IsActiveIdea": "string",
+            "Generations": "string[]",
+            "GenerationTransformers": "string[]",
+            "GenerationTransformerFullPrompts": "string[]",
+            "GenerationTransformerNames": "string[]",
+            "AirtableId": "fk"
+        },
+        "SingularName": "Idea",
+        "PluralName": "Ideas",
+        "PrimaryKey": "IdeaId"
+    },
+    "IdeaTransformers": {
+        "Attributes": {
+            "IdeaTransformerId": "int",
+            "Idea": "string",
+            "IsActiveIdea": "string",
+            "IdeasSourceIdea": "string",
+            "IdeaName": "string",
+            "AirtableId": "fk",
+            "TransformedArtifacts": "string",
+            "FullPrompt": "string",
+            "Name": "string",
+            "fields": "string"
+        },
+        "SingularName": "IdeaTransformer",
+        "PluralName": "IdeaTransformers",
+        "PrimaryKey": "IdeaTransformerId"
+    },
+    "Generations": {
+        "Attributes": {
+            "GenerationId": "int",
+            "GeneratioNumber": "int",
+            "Idea": "string",
+            "Name": "string",
+            "IsActiveIdea": "string",
+            "IdeaName": "string",
+            "IdeaSourceIdea": "string",
+            "AirtableId": "fk",
+            "TransformedArtifacts": "string[]"
+        },
+        "SingularName": "Generation",
+        "PluralName": "Generations",
+        "PrimaryKey": "GenerationId"
+    },
+    "GenerationTransformers": {
+        "Attributes": {
+            "GenerationTransformerId": "int",
+            "Transformer": "string",
+            "Generation": "string",
+            "TransformedArtifacts": "string[]",
+            "GenerationIdea": "string",
+            "GenerationName": "string",
+            "Name": "string",
+            "IsActiveIdea": "string",
+            "GeneratioNumber": "int",
+            "GenerationIdeaName": "string",
+            "GenerationSourceIdea": "string",
+            "TransformerFullPrompt": "string",
+            "Prompt": "string",
+            "AirtableId": "fk"
+        },
+        "SingularName": "GenerationTransformer",
+        "PluralName": "GenerationTransformers",
+        "PrimaryKey": "GenerationTransformerId"
+    },
+    "Entities": {
+        "Attributes": {
+            "EntityId": "int",
+            "Name": "string",
+            "PluralName": "string",
+            "AirtableName": "string",
+            "AirtableId": "fk"
+        },
+        "SingularName": "Entity",
+        "PluralName": "Entities",
+        "PrimaryKey": "EntityId"
+    }
+}

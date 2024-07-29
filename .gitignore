@@ -10,3 +10,4 @@
 **/*.mp3
 **/*.wav
 /the-joneses/martini-scroller-app/package-lock.json
+/**/node_modules/**/*

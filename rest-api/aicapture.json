@@ -1,0 +1,204 @@
+{
+  "ShowHidden": false,
+  "ShowAllFiles": false,
+  "Name": "ej-syntax-locked-vs-syntax-free",
+  "ProjectSettings": [
+    {
+      "Name": "project-name",
+      "Value": "ej-syntax-locked-vs-syntax-free"
+    },
+    {
+      "Name": "make-fks-collections",
+      "Value": "true"
+    },
+    {
+      "Name": "crud-coordinator",
+      "Value": "CRUDCoordinator"
+    },
+    {
+      "Name": "serialize-to-original-names",
+      "Value": "true"
+    },
+    {
+      "Name": "list-suffix",
+      "Value": "Expanded"
+    },
+    {
+      "Name": "actors",
+      "Value": "Guest,User,Admin"
+    },
+    {
+      "Name": "include-load-methods",
+      "Value": "false"
+    },
+    {
+      "Name": "init-lists",
+      "Value": "false"
+    },
+    {
+      "Name": "legacy",
+      "Value": "false"
+    },
+    {
+      "Name": "role-name",
+      "Value": "Roles"
+    },
+    {
+      "Name": "user-name",
+      "Value": "AppUser"
+    },
+    {
+      "Name": "email-address-name",
+      "Value": "EmailAddress"
+    },
+    {
+      "Name": "jwt-build-command",
+      "Value": "Encode"
+    },
+    {
+      "Name": "dataclasses-namespace",
+      "Value": "AirtableDirect.CLI.Lib.DataClasses"
+    },
+    {
+      "Name": "amqps",
+      "Value": "amqps://smqPublic:smqPublic@effortlessapi-rmq.ssot.me/ej-syntax-locked-vs-syntax-free"
+    },
+    {
+      "Name": "baseId",
+      "Value": "app9f8btt7lSPTpw1"
+    },
+    {
+      "Name": "mode",
+      "Value": "Split"
+    }
+  ],
+  "ProjectTranspilers": [
+    {
+      "MatchedTranspiler": {
+        "Name": "SSoT",
+        "Description": "SSoT"
+      },
+      "Name": "SSoT",
+      "RelativePath": "",
+      "CommandLine": "effortless/ssot -p ssot-key=recDfpRMmul8jGIWT"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "ODXMLToDocs",
+        "Description": "ODXML to Docs"
+      },
+      "Name": "ODXMLToDocs",
+      "RelativePath": "/docs",
+      "CommandLine": "effortless/odxml-to-docs -i ../ODXML/DataSchema.odxml -i ../SMQL/SassyMQLexicon.smql"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "ODXMLToEntitiesJson",
+        "Description": "ODXML to Entities Json"
+      },
+      "Name": "ODXMLToEntitiesJson",
+      "RelativePath": "/SSoT",
+      "CommandLine": "effortless/odxml-to-entities-json -i ../ODXML/DataSchema.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "AirtableToXml",
+        "Description": "Extracts the contents of an airtable base as a single Xml file."
+      },
+      "Name": "AirtableToXml",
+      "RelativePath": "/SSoT",
+      "CommandLine": "airtable/airtable-to-xml -p baseId=app9f8btt7lSPTpw1 -i ./Entities.json",
+      "IsDisabled": true
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "OdxmlToCSharpPOCOs",
+        "Description": "Odxml To CSharp POCOs"
+      },
+      "Name": "OdxmlToCSharpPOCOs",
+      "RelativePath": "/DotNet/CLIClassLibrary/DataClasses",
+      "CommandLine": "odxml42/odxml-to-csharp-pocos -i ../../../ODXML/DataSchema.odxml -p make-fks-collections=true -p base-namespace=SassyApiHostedCore.Lib -p serialize-to-original-names=true -p list-suffix=Expanded -p include-load-methods=false -p init-lists=false -p airtable=true -p include-collections=false"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "CsvToXml",
+        "Description": "Converts a CSV File into an XML File where the names of the elemnts are derived from the column names"
+      },
+      "Name": "CsvToXml",
+      "RelativePath": "/SSoT",
+      "CommandLine": "codee42/csv-to-xml -i ./CommandLineArgs.csv"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlToPlossumCmdLineOptions",
+        "Description": "Xml To Plossum Cmd Line Options"
+      },
+      "Name": "XmlToPlossumCmdLineOptions",
+      "RelativePath": "/DotNet/CLIClassLibrary",
+      "CommandLine": "XmlToPlossumCmdLineOptions -i ../../SSoT/CommandLineArgs.csv.xml -p handlerName=EAPICLIHandlerBase -p copyright=Copyright\\ 2023,\\ EJ\\ Alexandra -p description=\n\nSYNTAX:\\ aicapture\\ {command}\\ [...{additional_args}]\\ [options]\n -p application=ej-syntax-locked-vs-syntax-free\\ Command\\ Line\\ Interface"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "OdxmlToDotNetAirtableAPIWrapper",
+        "Description": "Odxml To DotNet Airtable API Wrapper"
+      },
+      "Name": "OdxmlToDotNetAirtableAPIWrapper",
+      "RelativePath": "/DotNet/CLIClassLibrary/AirtableAPI",
+      "CommandLine": "airtable/odxml-to-dotnet-airtable-api-wrapper -i ../../../ODXML/DataSchema.odxml -p name=AirtableDirectCLI -p jwt-build-method=Encode"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/DotNet/CLIClassLibrary/AirtableAPI",
+      "CommandLine": "xml-xslt-transform -i ../../../ODXML/DataSchema.odxml -i CreateAirtableCRUDHandler.xslt -p cli-namespace=AirtableDirect.CLI.Lib.Handlers -p crud-coordinator=CRUDCoordinator"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/DotNet/CLIClassLibrary/RoleHandlers",
+      "CommandLine": "codee42/xml-xslt-transform -i ../../../SMQL/SassyMQLexicon.smql -i CreateRoleHandlers.xslt -i ../../../ODXML/DataSchema.odxml -p crud-coordinator=CRUDCoordinator"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/DotNet/CLIClassLibrary/Controllers",
+      "CommandLine": "codee42/xml-xslt-transform -i ../../../ODXML/DataSchema.odxml -i CreateMVCControllers.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/ASPNet-REST-API/Controllers",
+      "CommandLine": "xml-xslt-transform -i ../../ODXML/DataSchema.odxml -i CreateControllers.xslt -i ../../SMQL/SassyMQLexicon.smql"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/Postman",
+      "CommandLine": "xml-xslt-transform -i ../ODXML/DataSchema.odxml -i CreatePostmanCollection.xslt -i ../SMQL/SassyMQLexicon.smql"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/react-app/src/effortlessapiservices",
+      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SMQL\\SassyMQLexicon.smql -i .\\smql-to-react-services.xslt -i ..\\..\\..\\ODXML\\DataSchema.odxml"
+    }
+  ]
+}

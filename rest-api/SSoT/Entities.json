@@ -1,0 +1,95 @@
+{
+    "Entities": [
+            {
+                "Name": "PromptInputAnswerKey",
+                "DisplayName": "PromptInputAnswerKey",
+                "Description": "",
+                "PluralName": "PromptInputAnswerKeies",
+                "AirtableName": "PromptInputAnswerKeys"
+            },
+            {
+                "Name": "GenerationTransformer",
+                "DisplayName": "GenerationTransformer",
+                "Description": "",
+                "PluralName": "GenerationTransformers",
+                "AirtableName": "GenerationTransformers"
+            },
+            {
+                "Name": "IdeaTransformer",
+                "DisplayName": "IdeaTransformer",
+                "Description": "",
+                "PluralName": "IdeaTransformers",
+                "AirtableName": "IdeaTransformers"
+            },
+            {
+                "Name": "MOFNode",
+                "DisplayName": "MOFNode",
+                "Description": "",
+                "PluralName": "MOFNodes",
+                "AirtableName": "MOFNodes"
+            },
+            {
+                "Name": "MOFChoice",
+                "DisplayName": "MOFChoice",
+                "Description": "",
+                "PluralName": "MOFChoices",
+                "AirtableName": "MOFChoices"
+            },
+            {
+                "Name": "DataFormat",
+                "DisplayName": "DataFormat",
+                "Description": "",
+                "PluralName": "DataFormats",
+                "AirtableName": "DataFormats"
+            },
+            {
+                "Name": "Generation",
+                "DisplayName": "Generation",
+                "Description": "",
+                "PluralName": "Generations",
+                "AirtableName": "Generations"
+            },
+            {
+                "Name": "AppUser",
+                "DisplayName": "AppUser",
+                "Description": "",
+                "PluralName": "AppUsers",
+                "AirtableName": "AppUsers"
+            },
+            {
+                "Name": "MOFLayer",
+                "DisplayName": "MOFLayer",
+                "Description": "",
+                "PluralName": "MOFLayers",
+                "AirtableName": "MOFLayers"
+            },
+            {
+                "Name": "LLM",
+                "DisplayName": "LLM",
+                "Description": "",
+                "PluralName": "LLMs",
+                "AirtableName": "LLMs"
+            },
+            {
+                "Name": "OutputFormatRequest",
+                "DisplayName": "OutputFormatRequest",
+                "Description": "",
+                "PluralName": "OutputFormatRequests",
+                "AirtableName": "OutputFormatRequests"
+            },
+            {
+                "Name": "TransformedArtifact",
+                "DisplayName": "TransformedArtifact",
+                "Description": "",
+                "PluralName": "TransformedArtifacts",
+                "AirtableName": "TransformedArtifacts"
+            },
+            {
+                "Name": "Idea",
+                "DisplayName": "Idea",
+                "Description": "",
+                "PluralName": "Ideas",
+                "AirtableName": "Ideas"
+            }
+    ]
+}

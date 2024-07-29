@@ -1,0 +1,49 @@
+{
+  "ShowHidden": false,
+  "ShowAllFiles": false,
+  "Name": "syntax-locked-vs-syntax-free-research",
+  "ProjectSettings": [
+    {
+      "Name": "project-name",
+      "Value": "syntax-locked-vs-syntax-free-research"
+    }
+  ],
+  "ProjectTranspilers": [
+    {
+      "MatchedTranspiler": {
+        "Name": "AirtableToJson",
+        "Description": "Export an Airtable Base as json"
+      },
+      "Name": "AirtableToJson",
+      "RelativePath": "/SSoT",
+      "CommandLine": "airtable/airtable-to-json -p doubleNest=false -p baseId=app9f8btt7lSPTpw1 -p entities=Ideas,IdeaTransformers,Generations,GenerationTransformers -p includeIdAndCreatedTime=false"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "JsonToOdxml",
+        "Description": "Derivess the Schema of a Json file and produces an Odxml description of that schema."
+      },
+      "Name": "JsonToOdxml",
+      "RelativePath": "/SSoT",
+      "CommandLine": "json-to-odxml -i .\\Airtable.json -p doubleNest=false"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "OdxmlToCleanOdxml",
+        "Description": "Allows for any data model to be \"cleaned up\" while preserving a \"map\" between the old/new models"
+      },
+      "Name": "OdxmlToCleanOdxml",
+      "RelativePath": "/RESEARCH-ODXML",
+      "CommandLine": "odxml-to-clean-odxml -i ..\\rest-api\\ODXML\\DataSchema.odxml -i Renames.xml"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "OdxmlToNodeJSDocs",
+        "Description": "Creates easy to read/navigate html documentation for an Odxml Schema."
+      },
+      "Name": "OdxmlToNodeJSDocs",
+      "RelativePath": "/RESEARCH-ODXML",
+      "CommandLine": "odxml-to-node-js-docs -i .\\DataSchema.odxml"
+    }
+  ]
+}

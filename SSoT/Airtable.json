@@ -1,0 +1,239 @@
+{
+  "Airtable": {
+    "Ideas": [
+      {
+        "SourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
+        "Name": "To Do App",
+        "IsActiveIdea": "True",
+        "Generations": [
+          "recMEUAHCWHP4zqT7",
+          "rec72KHseHTRZCNNt",
+          "recOOhsTc8QeS4QCL"
+        ],
+        "GenerationTransformers": [
+          "recQNBM9btdtItZXf",
+          "recxJHT51V3p6yya0",
+          "recYz5vCD8OSNFiCl",
+          "rectaALVjH7R92fQz"
+        ],
+        "GenerationTransformerFullPrompts": [
+          "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
+          "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
+          "Write a csharp script, based on all of these details.",
+          "Write a csharp script, based on all of these details."
+        ],
+        "GenerationTransformerNames": [
+          "NLP-Single-Paragraph",
+          "Json-SSoT",
+          "CSharp",
+          "Golang"
+        ]
+      },
+      {
+        "SourceIdea": "Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.",
+        "Name": "The Jones",
+        "Generations": [
+          "rec1t3AsL3pvoMIAc",
+          "recdB0a7p1wMvfKFN",
+          "recKAw5Suu0iqdMdB"
+        ],
+        "GenerationTransformers": "recLjf6jP0GmAZluB"
+      }
+    ],
+    "IdeaTransformers": [
+      {
+        "Idea": "reczle9XMG5vHdomS",
+        "IsActiveIdea": "",
+        "IdeasSourceIdea": "Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.",
+        "IdeaName": "The Jones"
+      },
+      {
+        "TransformedArtifacts": "recCx7s2jCkGVp8BN",
+        "Idea": "recW1A5DedlYoR6An",
+        "FullPrompt": "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
+        "Name": "NLP-Single-Paragraph",
+        "IsActiveIdea": "True",
+        "IdeasSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
+        "IdeaName": "To Do App"
+      },
+      {
+        "TransformedArtifacts": "recaDdJWouKulO0MZ",
+        "Idea": "recW1A5DedlYoR6An",
+        "FullPrompt": "Write a csharp script, based on all of these details.",
+        "Name": "CSharp",
+        "IsActiveIdea": "True",
+        "IdeasSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
+        "IdeaName": "To Do App"
+      },
+      {
+        "fields": null
+      },
+      {
+        "Idea": "recW1A5DedlYoR6An",
+        "FullPrompt": "Write a csharp script, based on all of these details.",
+        "Name": "Golang",
+        "IsActiveIdea": "True",
+        "IdeasSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
+        "IdeaName": "To Do App"
+      },
+      {
+        "TransformedArtifacts": "recNAPS31vIaKGEjx",
+        "Idea": "recW1A5DedlYoR6An",
+        "FullPrompt": "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
+        "Name": "Json-SSoT",
+        "IsActiveIdea": "True",
+        "IdeasSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
+        "IdeaName": "To Do App"
+      }
+    ],
+    "Generations": [
+      {
+        "GeneratioNumber": 1,
+        "Idea": "reczle9XMG5vHdomS",
+        "Name": "Generation-1",
+        "IsActiveIdea": "",
+        "IdeaName": "The Jones",
+        "IdeaSourceIdea": "Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo."
+      },
+      {
+        "GeneratioNumber": 2,
+        "Idea": "recW1A5DedlYoR6An",
+        "Name": "Generation-2",
+        "IsActiveIdea": "True",
+        "IdeaName": "To Do App",
+        "IdeaSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples."
+      },
+      {
+        "GeneratioNumber": 3,
+        "Idea": "reczle9XMG5vHdomS",
+        "Name": "Generation-3",
+        "IsActiveIdea": "",
+        "IdeaName": "The Jones",
+        "IdeaSourceIdea": "Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo."
+      },
+      {
+        "TransformedArtifacts": [
+          "recCx7s2jCkGVp8BN",
+          "recNAPS31vIaKGEjx",
+          "recaDdJWouKulO0MZ"
+        ],
+        "GeneratioNumber": 1,
+        "Idea": "recW1A5DedlYoR6An",
+        "Name": "Generation-1",
+        "IsActiveIdea": "True",
+        "IdeaName": "To Do App",
+        "IdeaSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples."
+      },
+      {
+        "GeneratioNumber": 3,
+        "Idea": "recW1A5DedlYoR6An",
+        "Name": "Generation-3",
+        "IsActiveIdea": "True",
+        "IdeaName": "To Do App",
+        "IdeaSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples."
+      },
+      {
+        "GeneratioNumber": 2,
+        "Idea": "reczle9XMG5vHdomS",
+        "Name": "Generation-2",
+        "IsActiveIdea": "",
+        "IdeaName": "The Jones",
+        "IdeaSourceIdea": "Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo."
+      }
+    ],
+    "GenerationTransformers": [
+      {
+        "Transformer": "recQNBM9btdtItZXf",
+        "Generation": "recMEUAHCWHP4zqT7",
+        "TransformedArtifacts": [
+          "recs9F8h9874H1YXK",
+          "receiE8KmlfWCtoIC",
+          "recnVJjQ2YIKLqdjG",
+          "recZMAsntd8XOrMhV",
+          "rechsTE2CKYvxKFjM",
+          "rec3xFP3xWLCjcXzD",
+          "recDkqSfJf0CsT0vC",
+          "recargYbt77BsT3hK",
+          "rec7bRFFdob3BUITM",
+          "recv2xcea6OeGbYCB",
+          "recjiKqTCKix3wXys",
+          "recGNDZ39tZsDbdFA",
+          "recwDqglbUEdubC6U",
+          "recDs2gbl23MpLKlU",
+          "recX3P4a2GXqH2j82",
+          "recC5ixV4O5hfL15v",
+          "recHLMdljy3ZF6hzL",
+          "recvaPQwUjzxeFICC",
+          "recRaQGSx9elPXv8S",
+          "recMQNT2vjEKtS46w",
+          "rec2ih5E9MV5SMZvR",
+          "recZvBSMahwsgdWNp",
+          "rec2zmScRv5PzQbyo",
+          "rec8faCSmJHRUSRWR"
+        ],
+        "GenerationIdea": "recW1A5DedlYoR6An",
+        "GenerationName": "Generation-1",
+        "Name": "To Do App-Generation-1-NLP-Single-Paragraph",
+        "IsActiveIdea": "True",
+        "GeneratioNumber": 1,
+        "GenerationIdeaName": "To Do App",
+        "GenerationSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
+        "TransformerFullPrompt": "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
+        "Prompt": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.\nWrite a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth."
+      },
+      {
+        "Transformer": "recxJHT51V3p6yya0",
+        "Generation": "recMEUAHCWHP4zqT7",
+        "TransformedArtifacts": [
+          "recaicsGi5EvpPWfd",
+          "recMlqISKeM0v4lW9"
+        ],
+        "GenerationIdea": "recW1A5DedlYoR6An",
+        "GenerationName": "Generation-1",
+        "Name": "To Do App-Generation-1-Json-SSoT",
+        "IsActiveIdea": "True",
+        "GeneratioNumber": 1,
+        "GenerationIdeaName": "To Do App",
+        "GenerationSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
+        "TransformerFullPrompt": "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
+        "Prompt": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.\nWrite a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth."
+      },
+      {
+        "Transformer": "recYz5vCD8OSNFiCl",
+        "Generation": "recMEUAHCWHP4zqT7",
+        "TransformedArtifacts": "reci7Zg4u97aScugO",
+        "GenerationIdea": "recW1A5DedlYoR6An",
+        "GenerationName": "Generation-1",
+        "Name": "To Do App-Generation-1-CSharp",
+        "IsActiveIdea": "True",
+        "GeneratioNumber": 1,
+        "GenerationIdeaName": "To Do App",
+        "GenerationSourceIdea": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
+        "TransformerFullPrompt": "Write a csharp script, based on all of these details.",
+        "Prompt": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.\nWrite a csharp script, based on all of these details."
+      }
+    ],
+    "Entities": [
+      {
+        "Name": "Idea",
+        "PluralName": "Ideas",
+        "AirtableName": "Ideas"
+      },
+      {
+        "Name": "IdeaTransformer",
+        "PluralName": "IdeaTransformers",
+        "AirtableName": "IdeaTransformers"
+      },
+      {
+        "Name": "Generation",
+        "PluralName": "Generations",
+        "AirtableName": "Generations"
+      },
+      {
+        "Name": "GenerationTransformer",
+        "PluralName": "GenerationTransformers",
+        "AirtableName": "GenerationTransformers"
+      }
+    ]
+  }
+}
