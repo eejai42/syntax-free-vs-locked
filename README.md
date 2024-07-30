@@ -214,7 +214,7 @@ By organizing the data and processes this way, you ensure that your research met
 
 # add-data.py
 
-This script automates the process of generating new `TransformedArtifacts` and validating existing ones based on `TransformerNumber`. It supports two main commands: `root-prompt` and `validate-response`.
+This script automates the process of generating new `TransformedArtifacts` and validating existing ones based on `TransformerNumber`. It supports two main commands: `add-root` and `add-generation`.
 
 ## Prerequisites
 
@@ -235,36 +235,36 @@ This script automates the process of generating new `TransformedArtifacts` and v
 
 ### Commands
 
-1. **root-prompt**
+1. **Root Prompts**
 
    Generates new `TransformedArtifacts` using a range of transformer numbers and specified iterations.
 
    ```sh
-   python add-data.py root-prompt transformerNumber [maxTransformerNumber] [iterations]
+   python add-data.py add-root iterations transformerNumber [maxTransformerNumber]
+   python add-data add-root 10 1040 1050
    ```
 
    - `transformerNumber`: The starting transformer number.
    - `maxTransformerNumber` (optional): The maximum transformer number (inclusive). If not provided, only `transformerNumber` is used.
    - `iterations` (optional): The number of iterations to run. Default is 1.
 
-2. **validate-response**
+2. **Additional Generations**
 
    Finds existing artifacts without a validator, creates new `TransformedArtifacts` using a validator transformer number, and links them.
 
    ```sh
-   python add-data.py validate-response validatorTransformerNumber transformerNumber [maxTransformerNumber] [iterations]
+   python add-data.py add-generation iterations transformerNumber sourceTransformerNumbers
    ```
 
-   - `validatorTransformerNumber`: The transformer number for the validator.
-   - `transformerNumber`: The starting transformer number.
-   - `maxTransformerNumber` (optional): The maximum transformer number (inclusive). If not provided, only `transformerNumber` is used.
    - `iterations` (optional): The number of iterations to run. Default is 1.
+   - `transformerNumber`: The transformer number for the validator.
+   - `suourceTransformerNumber`: The transformer number to extend for the new generation.
 
 ### Examples
 
 1. Generate new artifacts using a root prompt with transformer number 1001 for 3 iterations:
    ```sh
-   python add-data.py root-prompt 1001 3
+   python add-data.py add-prompt 3 1001
    ```
 
 2. Validate responses using validator transformer number 2001 and target transformer number 1001 for 2 iterations:
@@ -617,16 +617,16 @@ def validate_response(validator_transform_number, iterations=1, transform_number
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: add-data.py command [validatorTransformerNumber] transformerNumber [maxTransformerNumber] [iterations]")
+        print("Usage: add-data.py command [transformerNumber] transformerNumber [maxTransformerNumber] [iterations]")
         sys.exit(1)
 
     command = sys.argv[1]
-    if command == "root-prompt":
+    if command == "add-prompt":
         iterations = int(sys.argv[2])
         transformer_number = int(sys.argv[3])
         max_transformer_number = int(sys.argv[4]) if len(sys.argv) > 4 else None
         root_prompt(iterations, transformer_number, max_transformer_number)
-    elif command == "validate-response":
+    elif command == "add-generation":
         iterations = int(sys.argv[2])
         validator_transform_number = int(sys.argv[3])
         transformer_number = int(sys.argv[4]) if len(sys.argv) > 4 else None

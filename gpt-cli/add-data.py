@@ -179,12 +179,12 @@ if __name__ == "__main__":
     print("Trying to add data now...")
     
     command = sys.argv[1]
-    if command == "root-prompt":
+    if command == "add-root":
         iterations = int(sys.argv[2])
         transformer_number = int(sys.argv[3])
         max_transformer_number = int(sys.argv[4]) if len(sys.argv) > 4 else None
         root_prompt(iterations, transformer_number, max_transformer_number)
-    elif command == "extend-data":
+    elif command == "add-generation":
         iterations = int(sys.argv[2])
         validator_transform_number = int(sys.argv[3])
         transformer_number = int(sys.argv[4]) if len(sys.argv) > 4 else None
