@@ -5,34 +5,6 @@ class AdminService extends BaseService {
     
         
     
-    async AddPromptInputAnswerKey(PromptInputAnswerKey) { 
-        return this.apiCall("POST", "Admin", "PromptInputAnswerKey", null, PromptInputAnswerKey); // PromptInputAnswerKey
-   }
-    
-    
-        
-    
-    async GetPromptInputAnswerKeies(view) { 
-        return this.apiCall("GET", "Admin", "PromptInputAnswerKeies", view, null); // PromptInputAnswerKey
-   }
-    
-    
-        
-    
-    async UpdatePromptInputAnswerKey(PromptInputAnswerKey) {
-        return this.apiCall("PUT", "Admin", "PromptInputAnswerKey", null, PromptInputAnswerKey); // PromptInputAnswerKey
-   }
-    
-    
-        
-    
-    async DeletePromptInputAnswerKey(id) { 
-        return this.apiCall("DELETE", "Admin", "PromptInputAnswerKey", null, id); // PromptInputAnswerKey
-   }
-    
-    
-        
-    
     async AddGenerationTransformer(GenerationTransformer) { 
         return this.apiCall("POST", "Admin", "GenerationTransformer", null, GenerationTransformer); // GenerationTransformer
    }
@@ -84,90 +56,6 @@ class AdminService extends BaseService {
     
     async DeleteIdeaTransformer(id) { 
         return this.apiCall("DELETE", "Admin", "IdeaTransformer", null, id); // IdeaTransformer
-   }
-    
-    
-        
-    
-    async AddMOFNode(MOFNode) { 
-        return this.apiCall("POST", "Admin", "MOFNode", null, MOFNode); // MOFNode
-   }
-    
-    
-        
-    
-    async GetMOFNodes(view) { 
-        return this.apiCall("GET", "Admin", "MOFNodes", view, null); // MOFNode
-   }
-    
-    
-        
-    
-    async UpdateMOFNode(MOFNode) {
-        return this.apiCall("PUT", "Admin", "MOFNode", null, MOFNode); // MOFNode
-   }
-    
-    
-        
-    
-    async DeleteMOFNode(id) { 
-        return this.apiCall("DELETE", "Admin", "MOFNode", null, id); // MOFNode
-   }
-    
-    
-        
-    
-    async AddMOFChoice(MOFChoice) { 
-        return this.apiCall("POST", "Admin", "MOFChoice", null, MOFChoice); // MOFChoice
-   }
-    
-    
-        
-    
-    async GetMOFChoices(view) { 
-        return this.apiCall("GET", "Admin", "MOFChoices", view, null); // MOFChoice
-   }
-    
-    
-        
-    
-    async UpdateMOFChoice(MOFChoice) {
-        return this.apiCall("PUT", "Admin", "MOFChoice", null, MOFChoice); // MOFChoice
-   }
-    
-    
-        
-    
-    async DeleteMOFChoice(id) { 
-        return this.apiCall("DELETE", "Admin", "MOFChoice", null, id); // MOFChoice
-   }
-    
-    
-        
-    
-    async AddDataFormat(DataFormat) { 
-        return this.apiCall("POST", "Admin", "DataFormat", null, DataFormat); // DataFormat
-   }
-    
-    
-        
-    
-    async GetDataFormats(view) { 
-        return this.apiCall("GET", "Admin", "DataFormats", view, null); // DataFormat
-   }
-    
-    
-        
-    
-    async UpdateDataFormat(DataFormat) {
-        return this.apiCall("PUT", "Admin", "DataFormat", null, DataFormat); // DataFormat
-   }
-    
-    
-        
-    
-    async DeleteDataFormat(id) { 
-        return this.apiCall("DELETE", "Admin", "DataFormat", null, id); // DataFormat
    }
     
     
@@ -229,29 +117,29 @@ class AdminService extends BaseService {
     
         
     
-    async AddMOFLayer(MOFLayer) { 
-        return this.apiCall("POST", "Admin", "MOFLayer", null, MOFLayer); // MOFLayer
+    async AddIdeaFeature(IdeaFeature) { 
+        return this.apiCall("POST", "Admin", "IdeaFeature", null, IdeaFeature); // IdeaFeature
    }
     
     
         
     
-    async GetMOFLayers(view) { 
-        return this.apiCall("GET", "Admin", "MOFLayers", view, null); // MOFLayer
+    async GetIdeaFeatures(view) { 
+        return this.apiCall("GET", "Admin", "IdeaFeatures", view, null); // IdeaFeature
    }
     
     
         
     
-    async UpdateMOFLayer(MOFLayer) {
-        return this.apiCall("PUT", "Admin", "MOFLayer", null, MOFLayer); // MOFLayer
+    async UpdateIdeaFeature(IdeaFeature) {
+        return this.apiCall("PUT", "Admin", "IdeaFeature", null, IdeaFeature); // IdeaFeature
    }
     
     
         
     
-    async DeleteMOFLayer(id) { 
-        return this.apiCall("DELETE", "Admin", "MOFLayer", null, id); // MOFLayer
+    async DeleteIdeaFeature(id) { 
+        return this.apiCall("DELETE", "Admin", "IdeaFeature", null, id); // IdeaFeature
    }
     
     
@@ -280,34 +168,6 @@ class AdminService extends BaseService {
     
     async DeleteLLM(id) { 
         return this.apiCall("DELETE", "Admin", "LLM", null, id); // LLM
-   }
-    
-    
-        
-    
-    async AddOutputFormatRequest(OutputFormatRequest) { 
-        return this.apiCall("POST", "Admin", "OutputFormatRequest", null, OutputFormatRequest); // OutputFormatRequest
-   }
-    
-    
-        
-    
-    async GetOutputFormatRequests(view) { 
-        return this.apiCall("GET", "Admin", "OutputFormatRequests", view, null); // OutputFormatRequest
-   }
-    
-    
-        
-    
-    async UpdateOutputFormatRequest(OutputFormatRequest) {
-        return this.apiCall("PUT", "Admin", "OutputFormatRequest", null, OutputFormatRequest); // OutputFormatRequest
-   }
-    
-    
-        
-    
-    async DeleteOutputFormatRequest(id) { 
-        return this.apiCall("DELETE", "Admin", "OutputFormatRequest", null, id); // OutputFormatRequest
    }
     
     

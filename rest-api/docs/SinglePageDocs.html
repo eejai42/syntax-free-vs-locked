@@ -1,46 +1,5 @@
 <html><head><title>ej-syntax-locked-vs-syntax-free - Single Page Doc s</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" /></head><body style="padding: 0.8em;"><h1>        
-ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary" href="Index.html"><<&nbsp;Back Interactive Object Explorer</a><h3>Table of Contents</h3><ol><li><a href="#PromptInputAnswerKey">PromptInputAnswerKey</a></li><li><a href="#GenerationTransformer">GenerationTransformer</a></li><li><a href="#IdeaTransformer">IdeaTransformer</a></li><li><a href="#MOFNode">MOFNode</a></li><li><a href="#MOFChoice">MOFChoice</a></li><li><a href="#DataFormat">DataFormat</a></li><li><a href="#Generation">Generation</a></li><li><a href="#AppUser">AppUser</a></li><li><a href="#MOFLayer">MOFLayer</a></li><li><a href="#LLM">LLM</a></li><li><a href="#OutputFormatRequest">OutputFormatRequest</a></li><li><a href="#TransformedArtifact">TransformedArtifact</a></li><li><a href="#Idea">Idea</a></li></ol><div><b>Actors</b><ol><li><a href="#actor-Guest">Guest</a></li><li><a href="#actor-User">User</a></li><li><a href="#actor-Admin">Admin</a></li></ol></div><table style="width: 100%"><tr><td colspan="3"><span id="PromptInputAnswerKey" />
-                <div style="clear: both"></div><div class="row"><div class="col-md-12">
-                        <a name="PromptInputAnswerKey"></a>
-                        <hr /><h2>
-                            
-                            
-                            
-                            
-                            PromptInputAnswerKey  <span class="pull-right" style="font-size: 0.7em;">(originally - PromptInputAnswerKeys)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        PromptInputAnswerKeyId
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">PromptInput</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Name
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Question
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Answer
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        CONCATENATE('Did it say, or at least imply that  ', Name," is ",Answer)
-                                    </span></div></div>
-                        AnswerKey
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        CONCATENATE('Q. ', Question," A. ",Answer)
-                                    </span></div></div>
-                        AnswerKeycopy
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; ">AnswerKey copy</td></tr><tr><th colspan="3" style="padding-top: 1em;">PromptInputAnswerKey Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> PromptInputAnswerKeyId, Name, Question, Answer, PromptInput, AnswerKey, AnswerKeycopy
-
-<b>FROM</b> PromptInputAnswerKey
-
-</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="GenerationTransformer" />
+ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary" href="Index.html"><<&nbsp;Back Interactive Object Explorer</a><h3>Table of Contents</h3><ol><li><a href="#GenerationTransformer">GenerationTransformer</a></li><li><a href="#IdeaTransformer">IdeaTransformer</a></li><li><a href="#Generation">Generation</a></li><li><a href="#AppUser">AppUser</a></li><li><a href="#IdeaFeature">IdeaFeature</a></li><li><a href="#LLM">LLM</a></li><li><a href="#TransformedArtifact">TransformedArtifact</a></li><li><a href="#Idea">Idea</a></li></ol><div><b>Actors</b><ol><li><a href="#actor-Guest">Guest</a></li><li><a href="#actor-User">User</a></li><li><a href="#actor-Admin">Admin</a></li></ol></div><table style="width: 100%"><tr><td colspan="3"><span id="GenerationTransformer" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
                         <a name="GenerationTransformer"></a>
                         <hr /><h2>
@@ -62,6 +21,27 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 , <a href="#Generation">
                                 
                                     Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
                                     
                                 </a>
                         
@@ -283,8 +263,12 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     <a href="#Idea">IsActiveIdea</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#GenerationTransformer">TransformedArtifacts</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                                    <a href="#GenerationTransformer">TransformedTransformers</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        CONCATENATE(Idea,"-Identifier:",IdeaIdentifier, "-'",LEFT(FullPrompt, 20))
+                                    </span></div></div>
                         Name
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
@@ -316,708 +300,21 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     </div><span style="font-weight: bold; ">
                                         GenerationTransformer.Transformer
                                     </span></div>
-                        TransformedArtifacts
+                        TransformedTransformers
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">IdeaTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaTransformerId, Name, Idea, IdeaName, IdeasSourceIdea, IsActiveIdea, FullPrompt, TransformedArtifacts
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        AutoNumber
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        AutoNumber+5000
+                                    </span></div></div>
+                        IdeaIdentifier
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">IdeaTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaTransformerId, Name, Idea, IdeaName, IdeasSourceIdea, IsActiveIdea, FullPrompt, TransformedTransformers, AutoNumber, IdeaIdentifier
 
 <b>FROM</b> IdeaTransformer
-
-</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="MOFNode" />
-                <div style="clear: both"></div><div class="row"><div class="col-md-12">
-                        <a name="MOFNode"></a>
-                        <hr /><h2>
-                            
-                            
-                            
-                            
-                            MOFNode  <span class="pull-right" style="font-size: 0.7em;">(originally - MOFNodes)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
-                            Each MOFNode may have zero or more associated
-                          
-                            
-                                <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        MOFNodeId
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">FromNodes</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">ToNodes</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">ToNodeEdges</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">TranspilerForEdge</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">CurrentCodeFor</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">CurrentDocsFor</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">NodeEdges</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">NodeChoices</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ToolForChoices</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ToolTransformerForChoices</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        CONCATENATE(SortOrder,".",NodeName)
-                                    </span></div></div>
-                        Name
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        NodeName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        NodeType
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Attachments
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">airtableattachment</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        PlatformAttachments
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">airtableattachment</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        FileExtensions
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        NodeEdges_UNUSED.ToNode
-                                    </span></div>
-                        FromNodes
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        NodeEdges_UNUSED.LockedTranspilerNode
-                                    </span></div>
-                        ToNodes
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        NodeEdges_UNUSED.FromNode
-                                    </span></div>
-                        ToNodeEdges
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        NodeEdges_UNUSED.FreeTranspilerNode
-                                    </span></div>
-                        TranspilerForEdge
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Notes
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        SortOrder
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">decimal</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        IsQueriable
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        DesiredColor
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        OutputIsDocs
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        OutputIsCode
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        NodeEdges_UNUSED.ExpectedColorTranspilerNode
-                                    </span></div>
-                        NodeEdges
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.Node
-                                    </span></div>
-                        NodeChoices
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        DefaultFileName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.Tool
-                                    </span></div>
-                        ToolForChoices
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.ToolTransformer
-                                    </span></div>
-                        ToolTransformerForChoices
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">MOFNode Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> MOFNodeId, Name, NodeName, NodeType, Attachments, PlatformAttachments, FileExtensions, FromNodes, ToNodes, ToNodeEdges, TranspilerForEdge, Notes, SortOrder, IsQueriable, DesiredColor, CurrentCodeFor, CurrentDocsFor, OutputIsDocs, OutputIsCode, NodeEdges, NodeChoices, DefaultFileName, ToolForChoices, ToolTransformerForChoices
-
-<b>FROM</b> MOFNode
-
-</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="MOFChoice" />
-                <div style="clear: both"></div><div class="row"><div class="col-md-12">
-                        <a name="MOFChoice"></a>
-                        <hr /><h2>
-                            
-                            
-                            
-                            
-                            MOFChoice  <span class="pull-right" style="font-size: 0.7em;">(originally - MOFChoices)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
-                            Each MOFChoice may have zero or more associated
-                          
-                            
-                                <a href="#MOFNode">
-                                
-                                    MOFNodes
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFNode">
-                                
-                                    MOFNodes
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFNode">
-                                
-                                    MOFNodes
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFLayer">
-                                
-                                    MOFLayers
-                                    
-                                </a>
-                        
-                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        MOFChoiceId
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFLayer">Layers</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">Node</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">NodeName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ToolInputChoice</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">ToolDefaultFileName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">ToolName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">InputChoiceFileName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">NodeDefaultFileName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">NodeAttachments</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ParentNodeDesiredColor</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">NodeDesiredColor</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">Tool</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ParentNodeAttachments</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">ToolTransformer</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ParentChoiceName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ParentChoice</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFLayer">MOFLayerNumber</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ParentMOFLayerNumber</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">ToolTransformerFileName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">ToolAttachments</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ToolInputAttachments</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ToolInputChoiceNodeAttachments</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFLayer">MOFDisplayOrder</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFChoice">ParentMOFDisplayOrder</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">OutputIsDocs</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">ToolPlatformAttachments</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#MOFNode">NodePlatformAttachments</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        CONCATENATE(Layers,",", Node,IF(IsSyntaxFree," (syntax free)"))
-                                    </span></div></div>
-                        Name
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFLayer.LayerChoices
-                                    </span></div>
-                        Layers
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        CONCATENATE(IF(IsSyntaxFree,"SF-"),NodeName)
-                                    </span></div></div>
-                        FQNChoiceName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.NodeName
-                                    </span></div>
-                        NodeName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.DefaultFileName
-                                    </span></div>
-                        ToolDefaultFileName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.NodeName
-                                    </span></div>
-                        ToolName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.NodeDefaultFileName
-                                    </span></div>
-                        InputChoiceFileName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.DefaultFileName
-                                    </span></div>
-                        NodeDefaultFileName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.Attachments
-                                    </span></div>
-                        NodeAttachments
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">airtableattachment</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.NodeDesiredColor
-                                    </span></div>
-                        ParentNodeDesiredColor
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.DesiredColor
-                                    </span></div>
-                        NodeDesiredColor
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.NodeAttachments
-                                    </span></div>
-                        ParentNodeAttachments
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">airtableattachment</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.ToolTransformerForChoices
-                                    </span></div>
-                        ToolTransformer
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.FQNChoiceName
-                                    </span></div>
-                        ParentChoiceName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Notes
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        IsSyntaxFree
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFLayer.MOFLayerNumber
-                                    </span></div>
-                        MOFLayerNumber
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.MOFLayerNumber
-                                    </span></div>
-                        ParentMOFLayerNumber
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        MixedColor
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        ExpectedColor
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.DefaultFileName
-                                    </span></div>
-                        ToolTransformerFileName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        IF(MixedColor=ExpectedColor,TRUE(),FALSE())
-                                    </span></div></div>
-                        IsInSync
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        IF(IsInSync=1,'âœ”')
-                                    </span></div></div>
-                        IsInSyncImage
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.Attachments
-                                    </span></div>
-                        ToolAttachments
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">airtableattachment</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.ToolAttachments
-                                    </span></div>
-                        ToolInputAttachments
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">airtableattachment</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.NodeAttachments
-                                    </span></div>
-                        ToolInputChoiceNodeAttachments
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">airtableattachment</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFLayer.MOFDisplayOrder
-                                    </span></div>
-                        MOFDisplayOrder
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">decimal</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFChoice.MOFDisplayOrder
-                                    </span></div>
-                        ParentMOFDisplayOrder
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">decimal</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.OutputIsDocs
-                                    </span></div>
-                        OutputIsDocs
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        DesiredColor
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.PlatformAttachments
-                                    </span></div>
-                        ToolPlatformAttachments
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">airtableattachment</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        MOFNode.PlatformAttachments
-                                    </span></div>
-                        NodePlatformAttachments
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">airtableattachment</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">MOFChoice Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> MOFChoiceId, Name, Layers, FQNChoiceName, Node, NodeName, ToolInputChoice, ToolDefaultFileName, ToolName, InputChoiceFileName, NodeDefaultFileName, NodeAttachments, ParentNodeDesiredColor, NodeDesiredColor, Tool, ParentNodeAttachments, ToolTransformer, ParentChoiceName, Notes, ParentChoice, IsSyntaxFree, MOFLayerNumber, ParentMOFLayerNumber, MixedColor, ExpectedColor, ToolTransformerFileName, IsInSync, IsInSyncImage, ToolAttachments, ToolInputAttachments, ToolInputChoiceNodeAttachments, MOFDisplayOrder, ParentMOFDisplayOrder, OutputIsDocs, DesiredColor, ToolPlatformAttachments, NodePlatformAttachments
-
-<b>FROM</b> MOFChoice
-
-</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="DataFormat" />
-                <div style="clear: both"></div><div class="row"><div class="col-md-12">
-                        <a name="DataFormat"></a>
-                        <hr /><h2>
-                            
-                            
-                            
-                            
-                            DataFormat  <span class="pull-right" style="font-size: 0.7em;">(originally - DataFormats)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
-                            Each DataFormat may have zero or more associated
-                          
-                            
-                                <a href="#OutputFormatRequest">
-                                
-                                    OutputFormatRequests
-                                    
-                                </a>
-                        
-                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        DataFormatId
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">PromptInputs</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#OutputFormatRequest">OutputFormatRequests</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Name
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        V1_PromptInput.InputFormat
-                                    </span></div>
-                        PromptInputs
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        PromptVariations
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        OutputFormatRequest.OutputFormat
-                                    </span></div>
-                        OutputFormatRequests
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">DataFormat Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> DataFormatId, Name, PromptInputs, PromptVariations, OutputFormatRequests
-
-<b>FROM</b> DataFormat
 
 </div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="Generation" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
@@ -1180,73 +477,65 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
 
 <b>FROM</b> AppUser
 
-</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="MOFLayer" />
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="IdeaFeature" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
-                        <a name="MOFLayer"></a>
+                        <a name="IdeaFeature"></a>
                         <hr /><h2>
                             
                             
                             
                             
-                            MOFLayer  <span class="pull-right" style="font-size: 0.7em;">(originally - MOFLayers)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
-                            Each MOFLayer may have zero or more associated
+                            IdeaFeature  <span class="pull-right" style="font-size: 0.7em;">(originally - IdeaFeatures)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each IdeaFeature may have zero or more associated
                           
                             
-                                <a href="#MOFChoice">
+                                <a href="#Idea">
                                 
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#MOFChoice">
-                                
-                                    MOFChoices
+                                    Ideas
                                     
                                 </a>
                         
                         </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        MOFLayerId
+                        IdeaFeatureId
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#MOFChoice">LayerChoices</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        CONCATENATE(MOFLayerNumber,".",MOFLayerName)
-                                    </span></div></div>
+                                    <a href="#Idea">SourceIdea</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">Idea</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Idea">IsActiveIdea</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         Name
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        MOFLayerName
+                        Description
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Notes
+                        RequiredStartingAtGeneration
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        MOFLayerNumber
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ExplicitlyRemovedAtGeneration
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        MOFChoice.Layers
+                                        Idea.SourceIdea
                                     </span></div>
-                        LayerChoices
+                        SourceIdea
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        MOFDisplayOrder
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        Idea.IsActiveIdea
+                                    </span></div>
+                        IsActiveIdea
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">decimal</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">MOFLayer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> MOFLayerId, Name, MOFLayerName, Notes, MOFLayerNumber, LayerChoices, MOFDisplayOrder
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">IdeaFeature Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaFeatureId, Name, Description, RequiredStartingAtGeneration, ExplicitlyRemovedAtGeneration, SourceIdea, Idea, IsActiveIdea
 
-<b>FROM</b> MOFLayer
+<b>FROM</b> IdeaFeature
 
 </div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="LLM" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
@@ -1271,9 +560,6 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#">TestRuns</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
                                     <a href="#Generation">Generations</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         Name
@@ -1281,11 +567,7 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         Notes
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        V1_TestRun.LLM
-                                    </span></div>
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         TestRuns
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
@@ -1298,50 +580,6 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">LLM Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> LLMId, Name, Notes, TestRuns, Generations
 
 <b>FROM</b> LLM
-
-</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="OutputFormatRequest" />
-                <div style="clear: both"></div><div class="row"><div class="col-md-12">
-                        <a name="OutputFormatRequest"></a>
-                        <hr /><h2>
-                            
-                            
-                            
-                            
-                            OutputFormatRequest  <span class="pull-right" style="font-size: 0.7em;">(originally - OutputFormatRequests)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
-                            Each OutputFormatRequest may have zero or more associated
-                          
-                            
-                                <a href="#DataFormat">
-                                
-                                    DataFormats
-                                    
-                                </a>
-                        
-                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        OutputFormatRequestId
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#">PromptVariations</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#DataFormat">OutputFormat</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Name
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Prompt
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        V1_PromptVariation.OutputFormatRequest
-                                    </span></div>
-                        PromptVariations
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">OutputFormatRequest Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> OutputFormatRequestId, Name, Prompt, PromptVariations, OutputFormat
-
-<b>FROM</b> OutputFormatRequest
 
 </div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="TransformedArtifact" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
@@ -1382,6 +620,13 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     
                                 </a>
                         
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
                         </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         TransformedArtifactId
                         
@@ -1391,9 +636,6 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#TransformedArtifact">ValidationArtifact</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#TransformedArtifact">ResponseOfArtifactBeingValidated</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#GenerationTransformer">TransformerRawPrompt</a>
@@ -1409,10 +651,25 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#GenerationTransformer">TransformerNumber</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#TransformedArtifact">ResponseOfArtifactBeingExtended</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformerGeneratioNumber</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformerGenerationIdeaName</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformerGenerationName</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#TransformedArtifact">PrimaryExtentionArtifact</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
-                                        CONCATENATE(GenerationTransformer,"-",LEFT(Created, 10),"-",AutoNumber+10000)
+                                        CONCATENATE(GenerationTransformer,"-",LEFT(Created, 10),"-",ArtifactIdentifier)
                                     </span></div></div>
                         Name
                         
@@ -1422,13 +679,6 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                         GenerationTransformer.TransformedArtifacts
                                     </span></div>
                         GenerationTransformer
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        TransformedArtifact.Response
-                                    </span></div>
-                        ResponseOfArtifactBeingValidated
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
@@ -1480,7 +730,7 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">datetime</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
-                                        IF(ValidationArtifact,CONCATENATE(ResponseOfArtifactBeingValidated,"\n\nPROMPT: ",TransformerRawPrompt), TransformerIdeaPrompt)
+                                        IF(ExtensionOf,CONCATENATE("```\n",ResponseOfArtifactBeingExtended,"\n```\n\nPROMPT: ",TransformerRawPrompt), TransformerIdeaPrompt)
                                     </span></div></div>
                         SuggestedPrompt
                         
@@ -1491,7 +741,162 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     </span></div>
                         TransformerNumber
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">TransformedArtifact Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> TransformedArtifactId, Name, GenerationTransformer, ValidationArtifact, ResponseOfArtifactBeingValidated, TransformerRawPrompt, TransformerIdeaPrompt, ActualPrompt, Response, Created, AutoNumber, IsRetiredArtifact, IsActiveIdea, Modified, SuggestedPrompt, ExtensionOf, TransformerNumber
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        TransformedArtifact.Response
+                                    </span></div>
+                        ResponseOfArtifactBeingExtended
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        LongName
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.GeneratioNumber
+                                    </span></div>
+                        TransformerGeneratioNumber
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.GenerationIdeaName
+                                    </span></div>
+                        TransformerGenerationIdeaName
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.GenerationName
+                                    </span></div>
+                        TransformerGenerationName
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        AutoNumber+10000
+                                    </span></div></div>
+                        ArtifactIdentifier
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ToDoItems
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ToDoItemsAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ToDoItemsMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        Categories
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        CategoriesAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        CategoriesMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        DueDates
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        DueDatesAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        DueDatesMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        Priorities
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        PrioritiesAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        PrioritiesMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        Progress
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ProgressAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ProgressMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        Statuses
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        StatusesAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        StatusesMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        Reminders
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        RemindersAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        RemindersMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        Notifications
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        NotificationsAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        NotificationsMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        Completion
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        CompletionAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        CompletionMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ToDoEmployees
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ToDoEmployeesAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ToDoEmployeesMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        Duration
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        DurationAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        DurationMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        CompletedDate
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        CompletedDateAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        CompletedDateMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ToDoColors
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ToDoColorsAKA
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ToDoColorsMismatched
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">TransformedArtifact Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> TransformedArtifactId, Name, GenerationTransformer, ValidationArtifact, TransformerRawPrompt, TransformerIdeaPrompt, ActualPrompt, Response, Created, AutoNumber, IsRetiredArtifact, IsActiveIdea, Modified, SuggestedPrompt, ExtensionOf, TransformerNumber, ResponseOfArtifactBeingExtended, LongName, TransformerGeneratioNumber, TransformerGenerationIdeaName, TransformerGenerationName, ArtifactIdentifier, PrimaryExtentionArtifact, ToDoItems, ToDoItemsAKA, ToDoItemsMismatched, Categories, CategoriesAKA, CategoriesMismatched, DueDates, DueDatesAKA, DueDatesMismatched, Priorities, PrioritiesAKA, PrioritiesMismatched, Progress, ProgressAKA, ProgressMismatched, Statuses, StatusesAKA, StatusesMismatched, Reminders, RemindersAKA, RemindersMismatched, Notifications, NotificationsAKA, NotificationsMismatched, Completion, CompletionAKA, CompletionMismatched, ToDoEmployees, ToDoEmployeesAKA, ToDoEmployeesMismatched, Duration, DurationAKA, DurationMismatched, CompletedDate, CompletedDateAKA, CompletedDateMismatched, ToDoColors, ToDoColorsAKA, ToDoColorsMismatched
 
 <b>FROM</b> TransformedArtifact
 
@@ -1562,6 +967,27 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     
                                 </a>
                         
+                            
+                                , <a href="#IdeaFeature">
+                                
+                                    IdeaFeatures
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#IdeaFeature">
+                                
+                                    IdeaFeatures
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#IdeaFeature">
+                                
+                                    IdeaFeatures
+                                    
+                                </a>
+                        
                         </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         IdeaId
                         
@@ -1570,13 +996,16 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     <a href="#Generation">Generations</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#IdeaTransformer">GenerationTransformers</a>
+                                    <a href="#IdeaTransformer">IdeaTransformers</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#IdeaTransformer">GenerationTransformerNames</a>
+                                    <a href="#IdeaTransformer">IdeaTransformerNames</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#IdeaTransformer">GenerationTransformerFullPrompts</a>
+                                    <a href="#IdeaTransformer">IdeaTransformerFullPrompts</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#IdeaFeature">IdeaFeatures</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         Name
                         
@@ -1590,31 +1019,38 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     </span></div>
                         Generations
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        IsActiveIdea
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
                                         IdeaTransformer.Idea
                                     </span></div>
-                        GenerationTransformers
+                        IdeaTransformers
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
                                         IdeaTransformer.Name
                                     </span></div>
-                        GenerationTransformerNames
+                        IdeaTransformerNames
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
                                         IdeaTransformer.FullPrompt
                                     </span></div>
-                        GenerationTransformerFullPrompts
+                        IdeaTransformerFullPrompts
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        IsActiveIdea
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        IdeaFeature.Idea
+                                    </span></div>
+                        IdeaFeatures
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">Idea Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaId, Name, SourceIdea, Generations, GenerationTransformers, GenerationTransformerNames, GenerationTransformerFullPrompts, IsActiveIdea
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">Idea Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaId, Name, SourceIdea, Generations, IsActiveIdea, IdeaTransformers, IdeaTransformerNames, IdeaTransformerFullPrompts, IdeaFeatures
 
 <b>FROM</b> Idea
 
@@ -1624,7 +1060,7 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                 <div style="min-height: 15em;"><b>Guest</b><div><b>Actor can Say</b><ol><li><b>general: </b>"Request Token" -> CRUDCoordinator</li><li><b>general: </b>"Validate Temporary Access Token" -> CRUDCoordinator</li><li><b>general: </b>"Who Am I" -> CRUDCoordinator</li><li><b>general: </b>"Who Are You" -> CRUDCoordinator</li><li><b>utlity: </b>"Store Temp File" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div>
             
                 <a name="actor-User"></a>
-                <div style="min-height: 15em;"><b>User</b><div><b>Actor can Say</b><ol><li><b>crud: </b>"Add App User" -> CRUDCoordinator</li><li><b>crud: </b>"Add Data Format" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Add M O F Choice" -> CRUDCoordinator</li><li><b>crud: </b>"Add M O F Layer" -> CRUDCoordinator</li><li><b>crud: </b>"Add M O F Node" -> CRUDCoordinator</li><li><b>crud: </b>"Add Output Format Request" -> CRUDCoordinator</li><li><b>crud: </b>"Add Prompt Input Answer Key" -> CRUDCoordinator</li><li><b>crud: </b>"Add Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Delete App User" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Data Format" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Delete M O F Choice" -> CRUDCoordinator</li><li><b>crud: </b>"Delete M O F Layer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete M O F Node" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Output Format Request" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Prompt Input Answer Key" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Get App Users" -> CRUDCoordinator</li><li><b>crud: </b>"Get Data Formats" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generations" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generation Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get Ideas" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get L L Ms" -> CRUDCoordinator</li><li><b>crud: </b>"Get M O F Choices" -> CRUDCoordinator</li><li><b>crud: </b>"Get M O F Layers" -> CRUDCoordinator</li><li><b>crud: </b>"Get M O F Nodes" -> CRUDCoordinator</li><li><b>crud: </b>"Get Output Format Requests" -> CRUDCoordinator</li><li><b>crud: </b>"Get Prompt Input Answer Keies" -> CRUDCoordinator</li><li><b>crud: </b>"Get Transformed Artifacts" -> CRUDCoordinator</li><li><b>crud: </b>"Update App User" -> CRUDCoordinator</li><li><b>crud: </b>"Update Data Format" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Update M O F Choice" -> CRUDCoordinator</li><li><b>crud: </b>"Update M O F Layer" -> CRUDCoordinator</li><li><b>crud: </b>"Update M O F Node" -> CRUDCoordinator</li><li><b>crud: </b>"Update Output Format Request" -> CRUDCoordinator</li><li><b>crud: </b>"Update Prompt Input Answer Key" -> CRUDCoordinator</li><li><b>crud: </b>"Update Transformed Artifact" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div>
+                <div style="min-height: 15em;"><b>User</b><div><b>Actor can Say</b><ol><li><b>crud: </b>"Add App User" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Add Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Delete App User" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Get App Users" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generations" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generation Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Features" -> CRUDCoordinator</li><li><b>crud: </b>"Get Ideas" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get L L Ms" -> CRUDCoordinator</li><li><b>crud: </b>"Get Transformed Artifacts" -> CRUDCoordinator</li><li><b>crud: </b>"Update App User" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Update Transformed Artifact" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div>
             
                 <a name="actor-Admin"></a>
-                <div style="min-height: 15em;"><b>Admin</b><div><b>Actor can Say</b><ol><li><b>crud: </b>"Add App User" -> CRUDCoordinator</li><li><b>crud: </b>"Add Data Format" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Add M O F Choice" -> CRUDCoordinator</li><li><b>crud: </b>"Add M O F Layer" -> CRUDCoordinator</li><li><b>crud: </b>"Add M O F Node" -> CRUDCoordinator</li><li><b>crud: </b>"Add Output Format Request" -> CRUDCoordinator</li><li><b>crud: </b>"Add Prompt Input Answer Key" -> CRUDCoordinator</li><li><b>crud: </b>"Add Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Delete App User" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Data Format" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Delete M O F Choice" -> CRUDCoordinator</li><li><b>crud: </b>"Delete M O F Layer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete M O F Node" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Output Format Request" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Prompt Input Answer Key" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Get App Users" -> CRUDCoordinator</li><li><b>crud: </b>"Get Data Formats" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generations" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generation Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get Ideas" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get L L Ms" -> CRUDCoordinator</li><li><b>crud: </b>"Get M O F Choices" -> CRUDCoordinator</li><li><b>crud: </b>"Get M O F Layers" -> CRUDCoordinator</li><li><b>crud: </b>"Get M O F Nodes" -> CRUDCoordinator</li><li><b>crud: </b>"Get Output Format Requests" -> CRUDCoordinator</li><li><b>crud: </b>"Get Prompt Input Answer Keies" -> CRUDCoordinator</li><li><b>crud: </b>"Get Transformed Artifacts" -> CRUDCoordinator</li><li><b>crud: </b>"Update App User" -> CRUDCoordinator</li><li><b>crud: </b>"Update Data Format" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Update M O F Choice" -> CRUDCoordinator</li><li><b>crud: </b>"Update M O F Layer" -> CRUDCoordinator</li><li><b>crud: </b>"Update M O F Node" -> CRUDCoordinator</li><li><b>crud: </b>"Update Output Format Request" -> CRUDCoordinator</li><li><b>crud: </b>"Update Prompt Input Answer Key" -> CRUDCoordinator</li><li><b>crud: </b>"Update Transformed Artifact" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div></body></html>
+                <div style="min-height: 15em;"><b>Admin</b><div><b>Actor can Say</b><ol><li><b>crud: </b>"Add App User" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Add Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Delete App User" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Get App Users" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generations" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generation Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Features" -> CRUDCoordinator</li><li><b>crud: </b>"Get Ideas" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get L L Ms" -> CRUDCoordinator</li><li><b>crud: </b>"Get Transformed Artifacts" -> CRUDCoordinator</li><li><b>crud: </b>"Update App User" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Update Transformed Artifact" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div></body></html>

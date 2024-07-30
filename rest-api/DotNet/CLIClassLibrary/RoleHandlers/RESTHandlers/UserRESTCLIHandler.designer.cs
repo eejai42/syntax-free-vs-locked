@@ -25,10 +25,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
             {
                 sb.AppendLine();
                 
-                sb.AppendLine($"PromptInputAnswerKey: AddPromptInputAnswerKey");
-                sb.AppendLine($"PromptInputAnswerKey: GetPromptInputAnswerKeies");
-                sb.AppendLine($"PromptInputAnswerKey: UpdatePromptInputAnswerKey");
-                sb.AppendLine($"void: DeletePromptInputAnswerKey");
                 sb.AppendLine($"GenerationTransformer: AddGenerationTransformer");
                 sb.AppendLine($"GenerationTransformer: GetGenerationTransformers");
                 sb.AppendLine($"GenerationTransformer: UpdateGenerationTransformer");
@@ -37,18 +33,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 sb.AppendLine($"IdeaTransformer: GetIdeaTransformers");
                 sb.AppendLine($"IdeaTransformer: UpdateIdeaTransformer");
                 sb.AppendLine($"void: DeleteIdeaTransformer");
-                sb.AppendLine($"MOFNode: AddMOFNode");
-                sb.AppendLine($"MOFNode: GetMOFNodes");
-                sb.AppendLine($"MOFNode: UpdateMOFNode");
-                sb.AppendLine($"void: DeleteMOFNode");
-                sb.AppendLine($"MOFChoice: AddMOFChoice");
-                sb.AppendLine($"MOFChoice: GetMOFChoices");
-                sb.AppendLine($"MOFChoice: UpdateMOFChoice");
-                sb.AppendLine($"void: DeleteMOFChoice");
-                sb.AppendLine($"DataFormat: AddDataFormat");
-                sb.AppendLine($"DataFormat: GetDataFormats");
-                sb.AppendLine($"DataFormat: UpdateDataFormat");
-                sb.AppendLine($"void: DeleteDataFormat");
                 sb.AppendLine($"Generation: AddGeneration");
                 sb.AppendLine($"Generation: GetGenerations");
                 sb.AppendLine($"Generation: UpdateGeneration");
@@ -57,18 +41,14 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 sb.AppendLine($"AppUser: GetAppUsers");
                 sb.AppendLine($"AppUser: UpdateAppUser");
                 sb.AppendLine($"void: DeleteAppUser");
-                sb.AppendLine($"MOFLayer: AddMOFLayer");
-                sb.AppendLine($"MOFLayer: GetMOFLayers");
-                sb.AppendLine($"MOFLayer: UpdateMOFLayer");
-                sb.AppendLine($"void: DeleteMOFLayer");
+                sb.AppendLine($"IdeaFeature: AddIdeaFeature");
+                sb.AppendLine($"IdeaFeature: GetIdeaFeatures");
+                sb.AppendLine($"IdeaFeature: UpdateIdeaFeature");
+                sb.AppendLine($"void: DeleteIdeaFeature");
                 sb.AppendLine($"LLM: AddLLM");
                 sb.AppendLine($"LLM: GetLLMs");
                 sb.AppendLine($"LLM: UpdateLLM");
                 sb.AppendLine($"void: DeleteLLM");
-                sb.AppendLine($"OutputFormatRequest: AddOutputFormatRequest");
-                sb.AppendLine($"OutputFormatRequest: GetOutputFormatRequests");
-                sb.AppendLine($"OutputFormatRequest: UpdateOutputFormatRequest");
-                sb.AppendLine($"void: DeleteOutputFormatRequest");
                 sb.AppendLine($"TransformedArtifact: AddTransformedArtifact");
                 sb.AppendLine($"TransformedArtifact: GetTransformedArtifacts");
                 sb.AppendLine($"TransformedArtifact: UpdateTransformedArtifact");
@@ -81,42 +61,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
             
             sb.AppendLine($"{Environment.NewLine}Available Actions Matching: {helpTerm}");
             
-            if ("addpromptinputanswerkey".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - AddPromptInputAnswerKey");
-                if ("addpromptinputanswerkey".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintAddPromptInputAnswerKeyHelp(sb);
-                }
-                found = true;
-            }
-            if ("getpromptinputanswerkeies".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - GetPromptInputAnswerKeies");
-                if ("getpromptinputanswerkeies".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintGetPromptInputAnswerKeiesHelp(sb);
-                }
-                found = true;
-            }
-            if ("updatepromptinputanswerkey".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - UpdatePromptInputAnswerKey");
-                if ("updatepromptinputanswerkey".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintUpdatePromptInputAnswerKeyHelp(sb);
-                }
-                found = true;
-            }
-            if ("deletepromptinputanswerkey".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - DeletePromptInputAnswerKey");
-                if ("deletepromptinputanswerkey".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintDeletePromptInputAnswerKeyHelp(sb);
-                }
-                found = true;
-            }
             if ("addgenerationtransformer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
                 sb.AppendLine($" - AddGenerationTransformer");
@@ -186,114 +130,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 if ("deleteideatransformer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
                     this.PrintDeleteIdeaTransformerHelp(sb);
-                }
-                found = true;
-            }
-            if ("addmofnode".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - AddMOFNode");
-                if ("addmofnode".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintAddMOFNodeHelp(sb);
-                }
-                found = true;
-            }
-            if ("getmofnodes".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - GetMOFNodes");
-                if ("getmofnodes".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintGetMOFNodesHelp(sb);
-                }
-                found = true;
-            }
-            if ("updatemofnode".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - UpdateMOFNode");
-                if ("updatemofnode".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintUpdateMOFNodeHelp(sb);
-                }
-                found = true;
-            }
-            if ("deletemofnode".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - DeleteMOFNode");
-                if ("deletemofnode".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintDeleteMOFNodeHelp(sb);
-                }
-                found = true;
-            }
-            if ("addmofchoice".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - AddMOFChoice");
-                if ("addmofchoice".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintAddMOFChoiceHelp(sb);
-                }
-                found = true;
-            }
-            if ("getmofchoices".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - GetMOFChoices");
-                if ("getmofchoices".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintGetMOFChoicesHelp(sb);
-                }
-                found = true;
-            }
-            if ("updatemofchoice".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - UpdateMOFChoice");
-                if ("updatemofchoice".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintUpdateMOFChoiceHelp(sb);
-                }
-                found = true;
-            }
-            if ("deletemofchoice".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - DeleteMOFChoice");
-                if ("deletemofchoice".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintDeleteMOFChoiceHelp(sb);
-                }
-                found = true;
-            }
-            if ("adddataformat".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - AddDataFormat");
-                if ("adddataformat".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintAddDataFormatHelp(sb);
-                }
-                found = true;
-            }
-            if ("getdataformats".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - GetDataFormats");
-                if ("getdataformats".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintGetDataFormatsHelp(sb);
-                }
-                found = true;
-            }
-            if ("updatedataformat".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - UpdateDataFormat");
-                if ("updatedataformat".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintUpdateDataFormatHelp(sb);
-                }
-                found = true;
-            }
-            if ("deletedataformat".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - DeleteDataFormat");
-                if ("deletedataformat".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintDeleteDataFormatHelp(sb);
                 }
                 found = true;
             }
@@ -369,39 +205,39 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 }
                 found = true;
             }
-            if ("addmoflayer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            if ("addideafeature".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
-                sb.AppendLine($" - AddMOFLayer");
-                if ("addmoflayer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                sb.AppendLine($" - AddIdeaFeature");
+                if ("addideafeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
-                    this.PrintAddMOFLayerHelp(sb);
+                    this.PrintAddIdeaFeatureHelp(sb);
                 }
                 found = true;
             }
-            if ("getmoflayers".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            if ("getideafeatures".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
-                sb.AppendLine($" - GetMOFLayers");
-                if ("getmoflayers".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                sb.AppendLine($" - GetIdeaFeatures");
+                if ("getideafeatures".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
-                    this.PrintGetMOFLayersHelp(sb);
+                    this.PrintGetIdeaFeaturesHelp(sb);
                 }
                 found = true;
             }
-            if ("updatemoflayer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            if ("updateideafeature".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
-                sb.AppendLine($" - UpdateMOFLayer");
-                if ("updatemoflayer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                sb.AppendLine($" - UpdateIdeaFeature");
+                if ("updateideafeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
-                    this.PrintUpdateMOFLayerHelp(sb);
+                    this.PrintUpdateIdeaFeatureHelp(sb);
                 }
                 found = true;
             }
-            if ("deletemoflayer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            if ("deleteideafeature".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
-                sb.AppendLine($" - DeleteMOFLayer");
-                if ("deletemoflayer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                sb.AppendLine($" - DeleteIdeaFeature");
+                if ("deleteideafeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
-                    this.PrintDeleteMOFLayerHelp(sb);
+                    this.PrintDeleteIdeaFeatureHelp(sb);
                 }
                 found = true;
             }
@@ -438,42 +274,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 if ("deletellm".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
                     this.PrintDeleteLLMHelp(sb);
-                }
-                found = true;
-            }
-            if ("addoutputformatrequest".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - AddOutputFormatRequest");
-                if ("addoutputformatrequest".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintAddOutputFormatRequestHelp(sb);
-                }
-                found = true;
-            }
-            if ("getoutputformatrequests".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - GetOutputFormatRequests");
-                if ("getoutputformatrequests".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintGetOutputFormatRequestsHelp(sb);
-                }
-                found = true;
-            }
-            if ("updateoutputformatrequest".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - UpdateOutputFormatRequest");
-                if ("updateoutputformatrequest".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintUpdateOutputFormatRequestHelp(sb);
-                }
-                found = true;
-            }
-            if ("deleteoutputformatrequest".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - DeleteOutputFormatRequest");
-                if ("deleteoutputformatrequest".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintDeleteOutputFormatRequestHelp(sb);
                 }
                 found = true;
             }
@@ -571,36 +371,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
             {
                 
                 
-                case "addpromptinputanswerkey":
-                    // PromptInputAnswerKey
-                    result = await this.GETRequest("PromptInputAnswerKeies", payload);
-                    break;
-
-                    
-                
-                
-                case "getpromptinputanswerkeies":
-                    // PromptInputAnswerKey
-                    result = await this.GETRequest("PromptInputAnswerKeies", payload);
-                    break;
-
-                    
-                
-                
-                case "updatepromptinputanswerkey":
-                    // PromptInputAnswerKey
-                    result = await this.GETRequest("PromptInputAnswerKeies", payload);
-                    break;
-
-                    
-                
-                
-                case "deletepromptinputanswerkey":
-                    break;
-
-                    
-                
-                
                 case "addgenerationtransformer":
                     // GenerationTransformer
                     result = await this.GETRequest("GenerationTransformers", payload);
@@ -656,96 +426,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 
                 
                 case "deleteideatransformer":
-                    break;
-
-                    
-                
-                
-                case "addmofnode":
-                    // MOFNode
-                    result = await this.GETRequest("MOFNodes", payload);
-                    break;
-
-                    
-                
-                
-                case "getmofnodes":
-                    // MOFNode
-                    result = await this.GETRequest("MOFNodes", payload);
-                    break;
-
-                    
-                
-                
-                case "updatemofnode":
-                    // MOFNode
-                    result = await this.GETRequest("MOFNodes", payload);
-                    break;
-
-                    
-                
-                
-                case "deletemofnode":
-                    break;
-
-                    
-                
-                
-                case "addmofchoice":
-                    // MOFChoice
-                    result = await this.GETRequest("MOFChoices", payload);
-                    break;
-
-                    
-                
-                
-                case "getmofchoices":
-                    // MOFChoice
-                    result = await this.GETRequest("MOFChoices", payload);
-                    break;
-
-                    
-                
-                
-                case "updatemofchoice":
-                    // MOFChoice
-                    result = await this.GETRequest("MOFChoices", payload);
-                    break;
-
-                    
-                
-                
-                case "deletemofchoice":
-                    break;
-
-                    
-                
-                
-                case "adddataformat":
-                    // DataFormat
-                    result = await this.GETRequest("DataFormats", payload);
-                    break;
-
-                    
-                
-                
-                case "getdataformats":
-                    // DataFormat
-                    result = await this.GETRequest("DataFormats", payload);
-                    break;
-
-                    
-                
-                
-                case "updatedataformat":
-                    // DataFormat
-                    result = await this.GETRequest("DataFormats", payload);
-                    break;
-
-                    
-                
-                
-                case "deletedataformat":
                     break;
 
                     
@@ -811,31 +491,31 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     
                 
                 
-                case "addmoflayer":
-                    // MOFLayer
-                    result = await this.GETRequest("MOFLayers", payload);
+                case "addideafeature":
+                    // IdeaFeature
+                    result = await this.GETRequest("IdeaFeatures", payload);
                     break;
 
                     
                 
                 
-                case "getmoflayers":
-                    // MOFLayer
-                    result = await this.GETRequest("MOFLayers", payload);
+                case "getideafeatures":
+                    // IdeaFeature
+                    result = await this.GETRequest("IdeaFeatures", payload);
                     break;
 
                     
                 
                 
-                case "updatemoflayer":
-                    // MOFLayer
-                    result = await this.GETRequest("MOFLayers", payload);
+                case "updateideafeature":
+                    // IdeaFeature
+                    result = await this.GETRequest("IdeaFeatures", payload);
                     break;
 
                     
                 
                 
-                case "deletemoflayer":
+                case "deleteideafeature":
                     break;
 
                     
@@ -866,36 +546,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 
                 
                 case "deletellm":
-                    break;
-
-                    
-                
-                
-                case "addoutputformatrequest":
-                    // OutputFormatRequest
-                    result = await this.GETRequest("OutputFormatRequests", payload);
-                    break;
-
-                    
-                
-                
-                case "getoutputformatrequests":
-                    // OutputFormatRequest
-                    result = await this.GETRequest("OutputFormatRequests", payload);
-                    break;
-
-                    
-                
-                
-                case "updateoutputformatrequest":
-                    // OutputFormatRequest
-                    result = await this.GETRequest("OutputFormatRequests", payload);
-                    break;
-
-                    
-                
-                
-                case "deleteoutputformatrequest":
                     break;
 
                     
@@ -992,74 +642,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
             return results;
         }
         
-        
-        public void PrintAddPromptInputAnswerKeyHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: PromptInputAnswerKey     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - PromptInputAnswerKeyId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Question");
-                    sb.AppendLine($"CRUD      - Answer");
-                    sb.AppendLine($"CRUD      - PromptInput");
-                    sb.AppendLine($"CRUD      - AnswerKey");
-                    sb.AppendLine($"CRUD      - AnswerKeycopy");
-                
-            
-        }
-        
-        public void PrintGetPromptInputAnswerKeiesHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: PromptInputAnswerKey     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - PromptInputAnswerKeyId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Question");
-                    sb.AppendLine($"CRUD      - Answer");
-                    sb.AppendLine($"CRUD      - PromptInput");
-                    sb.AppendLine($"CRUD      - AnswerKey");
-                    sb.AppendLine($"CRUD      - AnswerKeycopy");
-                
-            
-        }
-        
-        public void PrintUpdatePromptInputAnswerKeyHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: PromptInputAnswerKey     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - PromptInputAnswerKeyId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Question");
-                    sb.AppendLine($"CRUD      - Answer");
-                    sb.AppendLine($"CRUD      - PromptInput");
-                    sb.AppendLine($"CRUD      - AnswerKey");
-                    sb.AppendLine($"CRUD      - AnswerKeycopy");
-                
-            
-        }
-        
-        public void PrintDeletePromptInputAnswerKeyHelp(StringBuilder sb)
-        {
-            
-        }
         
         public void PrintAddGenerationTransformerHelp(StringBuilder sb)
         {
@@ -1173,7 +755,9 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - IdeasSourceIdea");
                     sb.AppendLine($"CRUD      - IsActiveIdea");
                     sb.AppendLine($"CRUD      - FullPrompt");
-                    sb.AppendLine($"CRUD      - TransformedArtifacts");
+                    sb.AppendLine($"CRUD      - TransformedTransformers");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - IdeaIdentifier");
                 
             
         }
@@ -1195,7 +779,9 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - IdeasSourceIdea");
                     sb.AppendLine($"CRUD      - IsActiveIdea");
                     sb.AppendLine($"CRUD      - FullPrompt");
-                    sb.AppendLine($"CRUD      - TransformedArtifacts");
+                    sb.AppendLine($"CRUD      - TransformedTransformers");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - IdeaIdentifier");
                 
             
         }
@@ -1217,351 +803,14 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - IdeasSourceIdea");
                     sb.AppendLine($"CRUD      - IsActiveIdea");
                     sb.AppendLine($"CRUD      - FullPrompt");
-                    sb.AppendLine($"CRUD      - TransformedArtifacts");
+                    sb.AppendLine($"CRUD      - TransformedTransformers");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - IdeaIdentifier");
                 
             
         }
         
         public void PrintDeleteIdeaTransformerHelp(StringBuilder sb)
-        {
-            
-        }
-        
-        public void PrintAddMOFNodeHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: MOFNode     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - MOFNodeId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - NodeName");
-                    sb.AppendLine($"CRUD      - NodeType");
-                    sb.AppendLine($"CRUD      - Attachments");
-                    sb.AppendLine($"CRUD      - PlatformAttachments");
-                    sb.AppendLine($"CRUD      - FileExtensions");
-                    sb.AppendLine($"CRUD      - FromNodes");
-                    sb.AppendLine($"CRUD      - ToNodes");
-                    sb.AppendLine($"CRUD      - ToNodeEdges");
-                    sb.AppendLine($"CRUD      - TranspilerForEdge");
-                    sb.AppendLine($"CRUD      - Notes");
-                    sb.AppendLine($"CRUD      - SortOrder");
-                    sb.AppendLine($"CRUD      - IsQueriable");
-                    sb.AppendLine($"CRUD      - DesiredColor");
-                    sb.AppendLine($"CRUD      - CurrentCodeFor");
-                    sb.AppendLine($"CRUD      - CurrentDocsFor");
-                    sb.AppendLine($"CRUD      - OutputIsDocs");
-                    sb.AppendLine($"CRUD      - OutputIsCode");
-                    sb.AppendLine($"CRUD      - NodeEdges");
-                    sb.AppendLine($"CRUD      - NodeChoices");
-                    sb.AppendLine($"CRUD      - DefaultFileName");
-                    sb.AppendLine($"CRUD      - ToolForChoices");
-                    sb.AppendLine($"CRUD      - ToolTransformerForChoices");
-                
-            
-        }
-        
-        public void PrintGetMOFNodesHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: MOFNode     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - MOFNodeId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - NodeName");
-                    sb.AppendLine($"CRUD      - NodeType");
-                    sb.AppendLine($"CRUD      - Attachments");
-                    sb.AppendLine($"CRUD      - PlatformAttachments");
-                    sb.AppendLine($"CRUD      - FileExtensions");
-                    sb.AppendLine($"CRUD      - FromNodes");
-                    sb.AppendLine($"CRUD      - ToNodes");
-                    sb.AppendLine($"CRUD      - ToNodeEdges");
-                    sb.AppendLine($"CRUD      - TranspilerForEdge");
-                    sb.AppendLine($"CRUD      - Notes");
-                    sb.AppendLine($"CRUD      - SortOrder");
-                    sb.AppendLine($"CRUD      - IsQueriable");
-                    sb.AppendLine($"CRUD      - DesiredColor");
-                    sb.AppendLine($"CRUD      - CurrentCodeFor");
-                    sb.AppendLine($"CRUD      - CurrentDocsFor");
-                    sb.AppendLine($"CRUD      - OutputIsDocs");
-                    sb.AppendLine($"CRUD      - OutputIsCode");
-                    sb.AppendLine($"CRUD      - NodeEdges");
-                    sb.AppendLine($"CRUD      - NodeChoices");
-                    sb.AppendLine($"CRUD      - DefaultFileName");
-                    sb.AppendLine($"CRUD      - ToolForChoices");
-                    sb.AppendLine($"CRUD      - ToolTransformerForChoices");
-                
-            
-        }
-        
-        public void PrintUpdateMOFNodeHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: MOFNode     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - MOFNodeId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - NodeName");
-                    sb.AppendLine($"CRUD      - NodeType");
-                    sb.AppendLine($"CRUD      - Attachments");
-                    sb.AppendLine($"CRUD      - PlatformAttachments");
-                    sb.AppendLine($"CRUD      - FileExtensions");
-                    sb.AppendLine($"CRUD      - FromNodes");
-                    sb.AppendLine($"CRUD      - ToNodes");
-                    sb.AppendLine($"CRUD      - ToNodeEdges");
-                    sb.AppendLine($"CRUD      - TranspilerForEdge");
-                    sb.AppendLine($"CRUD      - Notes");
-                    sb.AppendLine($"CRUD      - SortOrder");
-                    sb.AppendLine($"CRUD      - IsQueriable");
-                    sb.AppendLine($"CRUD      - DesiredColor");
-                    sb.AppendLine($"CRUD      - CurrentCodeFor");
-                    sb.AppendLine($"CRUD      - CurrentDocsFor");
-                    sb.AppendLine($"CRUD      - OutputIsDocs");
-                    sb.AppendLine($"CRUD      - OutputIsCode");
-                    sb.AppendLine($"CRUD      - NodeEdges");
-                    sb.AppendLine($"CRUD      - NodeChoices");
-                    sb.AppendLine($"CRUD      - DefaultFileName");
-                    sb.AppendLine($"CRUD      - ToolForChoices");
-                    sb.AppendLine($"CRUD      - ToolTransformerForChoices");
-                
-            
-        }
-        
-        public void PrintDeleteMOFNodeHelp(StringBuilder sb)
-        {
-            
-        }
-        
-        public void PrintAddMOFChoiceHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: MOFChoice     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - MOFChoiceId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Layers");
-                    sb.AppendLine($"CRUD      - FQNChoiceName");
-                    sb.AppendLine($"CRUD      - Node");
-                    sb.AppendLine($"CRUD      - NodeName");
-                    sb.AppendLine($"CRUD      - ToolInputChoice");
-                    sb.AppendLine($"CRUD      - ToolDefaultFileName");
-                    sb.AppendLine($"CRUD      - ToolName");
-                    sb.AppendLine($"CRUD      - InputChoiceFileName");
-                    sb.AppendLine($"CRUD      - NodeDefaultFileName");
-                    sb.AppendLine($"CRUD      - NodeAttachments");
-                    sb.AppendLine($"CRUD      - ParentNodeDesiredColor");
-                    sb.AppendLine($"CRUD      - NodeDesiredColor");
-                    sb.AppendLine($"CRUD      - Tool");
-                    sb.AppendLine($"CRUD      - ParentNodeAttachments");
-                    sb.AppendLine($"CRUD      - ToolTransformer");
-                    sb.AppendLine($"CRUD      - ParentChoiceName");
-                    sb.AppendLine($"CRUD      - Notes");
-                    sb.AppendLine($"CRUD      - ParentChoice");
-                    sb.AppendLine($"CRUD      - IsSyntaxFree");
-                    sb.AppendLine($"CRUD      - MOFLayerNumber");
-                    sb.AppendLine($"CRUD      - ParentMOFLayerNumber");
-                    sb.AppendLine($"CRUD      - MixedColor");
-                    sb.AppendLine($"CRUD      - ExpectedColor");
-                    sb.AppendLine($"CRUD      - ToolTransformerFileName");
-                    sb.AppendLine($"CRUD      - IsInSync");
-                    sb.AppendLine($"CRUD      - IsInSyncImage");
-                    sb.AppendLine($"CRUD      - ToolAttachments");
-                    sb.AppendLine($"CRUD      - ToolInputAttachments");
-                    sb.AppendLine($"CRUD      - ToolInputChoiceNodeAttachments");
-                    sb.AppendLine($"CRUD      - MOFDisplayOrder");
-                    sb.AppendLine($"CRUD      - ParentMOFDisplayOrder");
-                    sb.AppendLine($"CRUD      - OutputIsDocs");
-                    sb.AppendLine($"CRUD      - DesiredColor");
-                    sb.AppendLine($"CRUD      - ToolPlatformAttachments");
-                    sb.AppendLine($"CRUD      - NodePlatformAttachments");
-                
-            
-        }
-        
-        public void PrintGetMOFChoicesHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: MOFChoice     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - MOFChoiceId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Layers");
-                    sb.AppendLine($"CRUD      - FQNChoiceName");
-                    sb.AppendLine($"CRUD      - Node");
-                    sb.AppendLine($"CRUD      - NodeName");
-                    sb.AppendLine($"CRUD      - ToolInputChoice");
-                    sb.AppendLine($"CRUD      - ToolDefaultFileName");
-                    sb.AppendLine($"CRUD      - ToolName");
-                    sb.AppendLine($"CRUD      - InputChoiceFileName");
-                    sb.AppendLine($"CRUD      - NodeDefaultFileName");
-                    sb.AppendLine($"CRUD      - NodeAttachments");
-                    sb.AppendLine($"CRUD      - ParentNodeDesiredColor");
-                    sb.AppendLine($"CRUD      - NodeDesiredColor");
-                    sb.AppendLine($"CRUD      - Tool");
-                    sb.AppendLine($"CRUD      - ParentNodeAttachments");
-                    sb.AppendLine($"CRUD      - ToolTransformer");
-                    sb.AppendLine($"CRUD      - ParentChoiceName");
-                    sb.AppendLine($"CRUD      - Notes");
-                    sb.AppendLine($"CRUD      - ParentChoice");
-                    sb.AppendLine($"CRUD      - IsSyntaxFree");
-                    sb.AppendLine($"CRUD      - MOFLayerNumber");
-                    sb.AppendLine($"CRUD      - ParentMOFLayerNumber");
-                    sb.AppendLine($"CRUD      - MixedColor");
-                    sb.AppendLine($"CRUD      - ExpectedColor");
-                    sb.AppendLine($"CRUD      - ToolTransformerFileName");
-                    sb.AppendLine($"CRUD      - IsInSync");
-                    sb.AppendLine($"CRUD      - IsInSyncImage");
-                    sb.AppendLine($"CRUD      - ToolAttachments");
-                    sb.AppendLine($"CRUD      - ToolInputAttachments");
-                    sb.AppendLine($"CRUD      - ToolInputChoiceNodeAttachments");
-                    sb.AppendLine($"CRUD      - MOFDisplayOrder");
-                    sb.AppendLine($"CRUD      - ParentMOFDisplayOrder");
-                    sb.AppendLine($"CRUD      - OutputIsDocs");
-                    sb.AppendLine($"CRUD      - DesiredColor");
-                    sb.AppendLine($"CRUD      - ToolPlatformAttachments");
-                    sb.AppendLine($"CRUD      - NodePlatformAttachments");
-                
-            
-        }
-        
-        public void PrintUpdateMOFChoiceHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: MOFChoice     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - MOFChoiceId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Layers");
-                    sb.AppendLine($"CRUD      - FQNChoiceName");
-                    sb.AppendLine($"CRUD      - Node");
-                    sb.AppendLine($"CRUD      - NodeName");
-                    sb.AppendLine($"CRUD      - ToolInputChoice");
-                    sb.AppendLine($"CRUD      - ToolDefaultFileName");
-                    sb.AppendLine($"CRUD      - ToolName");
-                    sb.AppendLine($"CRUD      - InputChoiceFileName");
-                    sb.AppendLine($"CRUD      - NodeDefaultFileName");
-                    sb.AppendLine($"CRUD      - NodeAttachments");
-                    sb.AppendLine($"CRUD      - ParentNodeDesiredColor");
-                    sb.AppendLine($"CRUD      - NodeDesiredColor");
-                    sb.AppendLine($"CRUD      - Tool");
-                    sb.AppendLine($"CRUD      - ParentNodeAttachments");
-                    sb.AppendLine($"CRUD      - ToolTransformer");
-                    sb.AppendLine($"CRUD      - ParentChoiceName");
-                    sb.AppendLine($"CRUD      - Notes");
-                    sb.AppendLine($"CRUD      - ParentChoice");
-                    sb.AppendLine($"CRUD      - IsSyntaxFree");
-                    sb.AppendLine($"CRUD      - MOFLayerNumber");
-                    sb.AppendLine($"CRUD      - ParentMOFLayerNumber");
-                    sb.AppendLine($"CRUD      - MixedColor");
-                    sb.AppendLine($"CRUD      - ExpectedColor");
-                    sb.AppendLine($"CRUD      - ToolTransformerFileName");
-                    sb.AppendLine($"CRUD      - IsInSync");
-                    sb.AppendLine($"CRUD      - IsInSyncImage");
-                    sb.AppendLine($"CRUD      - ToolAttachments");
-                    sb.AppendLine($"CRUD      - ToolInputAttachments");
-                    sb.AppendLine($"CRUD      - ToolInputChoiceNodeAttachments");
-                    sb.AppendLine($"CRUD      - MOFDisplayOrder");
-                    sb.AppendLine($"CRUD      - ParentMOFDisplayOrder");
-                    sb.AppendLine($"CRUD      - OutputIsDocs");
-                    sb.AppendLine($"CRUD      - DesiredColor");
-                    sb.AppendLine($"CRUD      - ToolPlatformAttachments");
-                    sb.AppendLine($"CRUD      - NodePlatformAttachments");
-                
-            
-        }
-        
-        public void PrintDeleteMOFChoiceHelp(StringBuilder sb)
-        {
-            
-        }
-        
-        public void PrintAddDataFormatHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: DataFormat     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - DataFormatId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - PromptInputs");
-                    sb.AppendLine($"CRUD      - PromptVariations");
-                    sb.AppendLine($"CRUD      - OutputFormatRequests");
-                
-            
-        }
-        
-        public void PrintGetDataFormatsHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: DataFormat     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - DataFormatId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - PromptInputs");
-                    sb.AppendLine($"CRUD      - PromptVariations");
-                    sb.AppendLine($"CRUD      - OutputFormatRequests");
-                
-            
-        }
-        
-        public void PrintUpdateDataFormatHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: DataFormat     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - DataFormatId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - PromptInputs");
-                    sb.AppendLine($"CRUD      - PromptVariations");
-                    sb.AppendLine($"CRUD      - OutputFormatRequests");
-                
-            
-        }
-        
-        public void PrintDeleteDataFormatHelp(StringBuilder sb)
         {
             
         }
@@ -1699,70 +948,73 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
             
         }
         
-        public void PrintAddMOFLayerHelp(StringBuilder sb)
+        public void PrintAddIdeaFeatureHelp(StringBuilder sb)
         {
             
                 
                 sb.AppendLine();
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: MOFLayer     *");
+                sb.AppendLine($"* *  OBJECT DEF: IdeaFeature     *");
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
                 sb.AppendLine();
                 
-                    sb.AppendLine($"CRUD      - MOFLayerId");
+                    sb.AppendLine($"CRUD      - IdeaFeatureId");
                     sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - MOFLayerName");
-                    sb.AppendLine($"CRUD      - Notes");
-                    sb.AppendLine($"CRUD      - MOFLayerNumber");
-                    sb.AppendLine($"CRUD      - LayerChoices");
-                    sb.AppendLine($"CRUD      - MOFDisplayOrder");
+                    sb.AppendLine($"CRUD      - Description");
+                    sb.AppendLine($"CRUD      - RequiredStartingAtGeneration");
+                    sb.AppendLine($"CRUD      - ExplicitlyRemovedAtGeneration");
+                    sb.AppendLine($"CRUD      - SourceIdea");
+                    sb.AppendLine($"CRUD      - Idea");
+                    sb.AppendLine($"CRUD      - IsActiveIdea");
                 
             
         }
         
-        public void PrintGetMOFLayersHelp(StringBuilder sb)
+        public void PrintGetIdeaFeaturesHelp(StringBuilder sb)
         {
             
                 
                 sb.AppendLine();
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: MOFLayer     *");
+                sb.AppendLine($"* *  OBJECT DEF: IdeaFeature     *");
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
                 sb.AppendLine();
                 
-                    sb.AppendLine($"CRUD      - MOFLayerId");
+                    sb.AppendLine($"CRUD      - IdeaFeatureId");
                     sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - MOFLayerName");
-                    sb.AppendLine($"CRUD      - Notes");
-                    sb.AppendLine($"CRUD      - MOFLayerNumber");
-                    sb.AppendLine($"CRUD      - LayerChoices");
-                    sb.AppendLine($"CRUD      - MOFDisplayOrder");
+                    sb.AppendLine($"CRUD      - Description");
+                    sb.AppendLine($"CRUD      - RequiredStartingAtGeneration");
+                    sb.AppendLine($"CRUD      - ExplicitlyRemovedAtGeneration");
+                    sb.AppendLine($"CRUD      - SourceIdea");
+                    sb.AppendLine($"CRUD      - Idea");
+                    sb.AppendLine($"CRUD      - IsActiveIdea");
                 
             
         }
         
-        public void PrintUpdateMOFLayerHelp(StringBuilder sb)
+        public void PrintUpdateIdeaFeatureHelp(StringBuilder sb)
         {
             
                 
                 sb.AppendLine();
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: MOFLayer     *");
+                sb.AppendLine($"* *  OBJECT DEF: IdeaFeature     *");
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
                 sb.AppendLine();
                 
-                    sb.AppendLine($"CRUD      - MOFLayerId");
+                    sb.AppendLine($"CRUD      - IdeaFeatureId");
                     sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - MOFLayerName");
-                    sb.AppendLine($"CRUD      - Notes");
-                    sb.AppendLine($"CRUD      - MOFLayerNumber");
-                    sb.AppendLine($"CRUD      - LayerChoices");
-                    sb.AppendLine($"CRUD      - MOFDisplayOrder");
+                    sb.AppendLine($"CRUD      - Description");
+                    sb.AppendLine($"CRUD      - RequiredStartingAtGeneration");
+                    sb.AppendLine($"CRUD      - ExplicitlyRemovedAtGeneration");
+                    sb.AppendLine($"CRUD      - SourceIdea");
+                    sb.AppendLine($"CRUD      - Idea");
+                    sb.AppendLine($"CRUD      - IsActiveIdea");
                 
             
         }
         
-        public void PrintDeleteMOFLayerHelp(StringBuilder sb)
+        public void PrintDeleteIdeaFeatureHelp(StringBuilder sb)
         {
             
         }
@@ -1829,68 +1081,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
             
         }
         
-        public void PrintAddOutputFormatRequestHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: OutputFormatRequest     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - OutputFormatRequestId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Prompt");
-                    sb.AppendLine($"CRUD      - PromptVariations");
-                    sb.AppendLine($"CRUD      - OutputFormat");
-                
-            
-        }
-        
-        public void PrintGetOutputFormatRequestsHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: OutputFormatRequest     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - OutputFormatRequestId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Prompt");
-                    sb.AppendLine($"CRUD      - PromptVariations");
-                    sb.AppendLine($"CRUD      - OutputFormat");
-                
-            
-        }
-        
-        public void PrintUpdateOutputFormatRequestHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: OutputFormatRequest     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - OutputFormatRequestId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Prompt");
-                    sb.AppendLine($"CRUD      - PromptVariations");
-                    sb.AppendLine($"CRUD      - OutputFormat");
-                
-            
-        }
-        
-        public void PrintDeleteOutputFormatRequestHelp(StringBuilder sb)
-        {
-            
-        }
-        
         public void PrintAddTransformedArtifactHelp(StringBuilder sb)
         {
             
@@ -1905,7 +1095,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - GenerationTransformer");
                     sb.AppendLine($"CRUD      - ValidationArtifact");
-                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingValidated");
                     sb.AppendLine($"CRUD      - TransformerRawPrompt");
                     sb.AppendLine($"CRUD      - TransformerIdeaPrompt");
                     sb.AppendLine($"CRUD      - ActualPrompt");
@@ -1918,6 +1107,52 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - SuggestedPrompt");
                     sb.AppendLine($"CRUD      - ExtensionOf");
                     sb.AppendLine($"CRUD      - TransformerNumber");
+                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
+                    sb.AppendLine($"CRUD      - LongName");
+                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGenerationIdeaName");
+                    sb.AppendLine($"CRUD      - TransformerGenerationName");
+                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - PrimaryExtentionArtifact");
+                    sb.AppendLine($"CRUD      - ToDoItems");
+                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - Categories");
+                    sb.AppendLine($"CRUD      - CategoriesAKA");
+                    sb.AppendLine($"CRUD      - CategoriesMismatched");
+                    sb.AppendLine($"CRUD      - DueDates");
+                    sb.AppendLine($"CRUD      - DueDatesAKA");
+                    sb.AppendLine($"CRUD      - DueDatesMismatched");
+                    sb.AppendLine($"CRUD      - Priorities");
+                    sb.AppendLine($"CRUD      - PrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - Progress");
+                    sb.AppendLine($"CRUD      - ProgressAKA");
+                    sb.AppendLine($"CRUD      - ProgressMismatched");
+                    sb.AppendLine($"CRUD      - Statuses");
+                    sb.AppendLine($"CRUD      - StatusesAKA");
+                    sb.AppendLine($"CRUD      - StatusesMismatched");
+                    sb.AppendLine($"CRUD      - Reminders");
+                    sb.AppendLine($"CRUD      - RemindersAKA");
+                    sb.AppendLine($"CRUD      - RemindersMismatched");
+                    sb.AppendLine($"CRUD      - Notifications");
+                    sb.AppendLine($"CRUD      - NotificationsAKA");
+                    sb.AppendLine($"CRUD      - NotificationsMismatched");
+                    sb.AppendLine($"CRUD      - Completion");
+                    sb.AppendLine($"CRUD      - CompletionAKA");
+                    sb.AppendLine($"CRUD      - CompletionMismatched");
+                    sb.AppendLine($"CRUD      - ToDoEmployees");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - Duration");
+                    sb.AppendLine($"CRUD      - DurationAKA");
+                    sb.AppendLine($"CRUD      - DurationMismatched");
+                    sb.AppendLine($"CRUD      - CompletedDate");
+                    sb.AppendLine($"CRUD      - CompletedDateAKA");
+                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - ToDoColors");
+                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
                 
             
         }
@@ -1936,7 +1171,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - GenerationTransformer");
                     sb.AppendLine($"CRUD      - ValidationArtifact");
-                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingValidated");
                     sb.AppendLine($"CRUD      - TransformerRawPrompt");
                     sb.AppendLine($"CRUD      - TransformerIdeaPrompt");
                     sb.AppendLine($"CRUD      - ActualPrompt");
@@ -1949,6 +1183,52 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - SuggestedPrompt");
                     sb.AppendLine($"CRUD      - ExtensionOf");
                     sb.AppendLine($"CRUD      - TransformerNumber");
+                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
+                    sb.AppendLine($"CRUD      - LongName");
+                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGenerationIdeaName");
+                    sb.AppendLine($"CRUD      - TransformerGenerationName");
+                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - PrimaryExtentionArtifact");
+                    sb.AppendLine($"CRUD      - ToDoItems");
+                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - Categories");
+                    sb.AppendLine($"CRUD      - CategoriesAKA");
+                    sb.AppendLine($"CRUD      - CategoriesMismatched");
+                    sb.AppendLine($"CRUD      - DueDates");
+                    sb.AppendLine($"CRUD      - DueDatesAKA");
+                    sb.AppendLine($"CRUD      - DueDatesMismatched");
+                    sb.AppendLine($"CRUD      - Priorities");
+                    sb.AppendLine($"CRUD      - PrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - Progress");
+                    sb.AppendLine($"CRUD      - ProgressAKA");
+                    sb.AppendLine($"CRUD      - ProgressMismatched");
+                    sb.AppendLine($"CRUD      - Statuses");
+                    sb.AppendLine($"CRUD      - StatusesAKA");
+                    sb.AppendLine($"CRUD      - StatusesMismatched");
+                    sb.AppendLine($"CRUD      - Reminders");
+                    sb.AppendLine($"CRUD      - RemindersAKA");
+                    sb.AppendLine($"CRUD      - RemindersMismatched");
+                    sb.AppendLine($"CRUD      - Notifications");
+                    sb.AppendLine($"CRUD      - NotificationsAKA");
+                    sb.AppendLine($"CRUD      - NotificationsMismatched");
+                    sb.AppendLine($"CRUD      - Completion");
+                    sb.AppendLine($"CRUD      - CompletionAKA");
+                    sb.AppendLine($"CRUD      - CompletionMismatched");
+                    sb.AppendLine($"CRUD      - ToDoEmployees");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - Duration");
+                    sb.AppendLine($"CRUD      - DurationAKA");
+                    sb.AppendLine($"CRUD      - DurationMismatched");
+                    sb.AppendLine($"CRUD      - CompletedDate");
+                    sb.AppendLine($"CRUD      - CompletedDateAKA");
+                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - ToDoColors");
+                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
                 
             
         }
@@ -1967,7 +1247,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - GenerationTransformer");
                     sb.AppendLine($"CRUD      - ValidationArtifact");
-                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingValidated");
                     sb.AppendLine($"CRUD      - TransformerRawPrompt");
                     sb.AppendLine($"CRUD      - TransformerIdeaPrompt");
                     sb.AppendLine($"CRUD      - ActualPrompt");
@@ -1980,6 +1259,52 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - SuggestedPrompt");
                     sb.AppendLine($"CRUD      - ExtensionOf");
                     sb.AppendLine($"CRUD      - TransformerNumber");
+                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
+                    sb.AppendLine($"CRUD      - LongName");
+                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGenerationIdeaName");
+                    sb.AppendLine($"CRUD      - TransformerGenerationName");
+                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - PrimaryExtentionArtifact");
+                    sb.AppendLine($"CRUD      - ToDoItems");
+                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - Categories");
+                    sb.AppendLine($"CRUD      - CategoriesAKA");
+                    sb.AppendLine($"CRUD      - CategoriesMismatched");
+                    sb.AppendLine($"CRUD      - DueDates");
+                    sb.AppendLine($"CRUD      - DueDatesAKA");
+                    sb.AppendLine($"CRUD      - DueDatesMismatched");
+                    sb.AppendLine($"CRUD      - Priorities");
+                    sb.AppendLine($"CRUD      - PrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - Progress");
+                    sb.AppendLine($"CRUD      - ProgressAKA");
+                    sb.AppendLine($"CRUD      - ProgressMismatched");
+                    sb.AppendLine($"CRUD      - Statuses");
+                    sb.AppendLine($"CRUD      - StatusesAKA");
+                    sb.AppendLine($"CRUD      - StatusesMismatched");
+                    sb.AppendLine($"CRUD      - Reminders");
+                    sb.AppendLine($"CRUD      - RemindersAKA");
+                    sb.AppendLine($"CRUD      - RemindersMismatched");
+                    sb.AppendLine($"CRUD      - Notifications");
+                    sb.AppendLine($"CRUD      - NotificationsAKA");
+                    sb.AppendLine($"CRUD      - NotificationsMismatched");
+                    sb.AppendLine($"CRUD      - Completion");
+                    sb.AppendLine($"CRUD      - CompletionAKA");
+                    sb.AppendLine($"CRUD      - CompletionMismatched");
+                    sb.AppendLine($"CRUD      - ToDoEmployees");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - Duration");
+                    sb.AppendLine($"CRUD      - DurationAKA");
+                    sb.AppendLine($"CRUD      - DurationMismatched");
+                    sb.AppendLine($"CRUD      - CompletedDate");
+                    sb.AppendLine($"CRUD      - CompletedDateAKA");
+                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - ToDoColors");
+                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
                 
             
         }
@@ -2003,10 +1328,11 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - SourceIdea");
                     sb.AppendLine($"CRUD      - Generations");
-                    sb.AppendLine($"CRUD      - GenerationTransformers");
-                    sb.AppendLine($"CRUD      - GenerationTransformerNames");
-                    sb.AppendLine($"CRUD      - GenerationTransformerFullPrompts");
                     sb.AppendLine($"CRUD      - IsActiveIdea");
+                    sb.AppendLine($"CRUD      - IdeaTransformers");
+                    sb.AppendLine($"CRUD      - IdeaTransformerNames");
+                    sb.AppendLine($"CRUD      - IdeaTransformerFullPrompts");
+                    sb.AppendLine($"CRUD      - IdeaFeatures");
                 
             
         }
@@ -2025,10 +1351,11 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - SourceIdea");
                     sb.AppendLine($"CRUD      - Generations");
-                    sb.AppendLine($"CRUD      - GenerationTransformers");
-                    sb.AppendLine($"CRUD      - GenerationTransformerNames");
-                    sb.AppendLine($"CRUD      - GenerationTransformerFullPrompts");
                     sb.AppendLine($"CRUD      - IsActiveIdea");
+                    sb.AppendLine($"CRUD      - IdeaTransformers");
+                    sb.AppendLine($"CRUD      - IdeaTransformerNames");
+                    sb.AppendLine($"CRUD      - IdeaTransformerFullPrompts");
+                    sb.AppendLine($"CRUD      - IdeaFeatures");
                 
             
         }
@@ -2047,10 +1374,11 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - SourceIdea");
                     sb.AppendLine($"CRUD      - Generations");
-                    sb.AppendLine($"CRUD      - GenerationTransformers");
-                    sb.AppendLine($"CRUD      - GenerationTransformerNames");
-                    sb.AppendLine($"CRUD      - GenerationTransformerFullPrompts");
                     sb.AppendLine($"CRUD      - IsActiveIdea");
+                    sb.AppendLine($"CRUD      - IdeaTransformers");
+                    sb.AppendLine($"CRUD      - IdeaTransformerNames");
+                    sb.AppendLine($"CRUD      - IdeaTransformerFullPrompts");
+                    sb.AppendLine($"CRUD      - IdeaFeatures");
                 
             
         }

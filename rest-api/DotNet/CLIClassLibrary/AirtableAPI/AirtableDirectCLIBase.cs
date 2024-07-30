@@ -26,11 +26,6 @@ namespace AirtableDirect.CLI.Lib.Handlers
         }
 
         
-        protected abstract string HandleCreatePromptInputAnswerKey();
-        protected abstract string HandleReadPromptInputAnswerKey();
-        protected abstract string HandleUpdatePromptInputAnswerKey();
-        protected abstract string HandleDeletePromptInputAnswerKey();
-        
         protected abstract string HandleCreateGenerationTransformer();
         protected abstract string HandleReadGenerationTransformer();
         protected abstract string HandleUpdateGenerationTransformer();
@@ -40,21 +35,6 @@ namespace AirtableDirect.CLI.Lib.Handlers
         protected abstract string HandleReadIdeaTransformer();
         protected abstract string HandleUpdateIdeaTransformer();
         protected abstract string HandleDeleteIdeaTransformer();
-        
-        protected abstract string HandleCreateMOFNode();
-        protected abstract string HandleReadMOFNode();
-        protected abstract string HandleUpdateMOFNode();
-        protected abstract string HandleDeleteMOFNode();
-        
-        protected abstract string HandleCreateMOFChoice();
-        protected abstract string HandleReadMOFChoice();
-        protected abstract string HandleUpdateMOFChoice();
-        protected abstract string HandleDeleteMOFChoice();
-        
-        protected abstract string HandleCreateDataFormat();
-        protected abstract string HandleReadDataFormat();
-        protected abstract string HandleUpdateDataFormat();
-        protected abstract string HandleDeleteDataFormat();
         
         protected abstract string HandleCreateGeneration();
         protected abstract string HandleReadGeneration();
@@ -66,20 +46,15 @@ namespace AirtableDirect.CLI.Lib.Handlers
         protected abstract string HandleUpdateAppUser();
         protected abstract string HandleDeleteAppUser();
         
-        protected abstract string HandleCreateMOFLayer();
-        protected abstract string HandleReadMOFLayer();
-        protected abstract string HandleUpdateMOFLayer();
-        protected abstract string HandleDeleteMOFLayer();
+        protected abstract string HandleCreateIdeaFeature();
+        protected abstract string HandleReadIdeaFeature();
+        protected abstract string HandleUpdateIdeaFeature();
+        protected abstract string HandleDeleteIdeaFeature();
         
         protected abstract string HandleCreateLLM();
         protected abstract string HandleReadLLM();
         protected abstract string HandleUpdateLLM();
         protected abstract string HandleDeleteLLM();
-        
-        protected abstract string HandleCreateOutputFormatRequest();
-        protected abstract string HandleReadOutputFormatRequest();
-        protected abstract string HandleUpdateOutputFormatRequest();
-        protected abstract string HandleDeleteOutputFormatRequest();
         
         protected abstract string HandleCreateTransformedArtifact();
         protected abstract string HandleReadTransformedArtifact();

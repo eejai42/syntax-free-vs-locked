@@ -20,14 +20,6 @@ namespace CLIClassLibrary.Controllers
                 },
                 new Endpoint()
                 {
-                    Name = "PromptInputAnswerKeies",
-                    Method = "GET",
-                    Url = "/PromptInputAnswerKeies",
-                    Description = "Get's a list of PromptInputAnswerKeies from the data source."
-                }
-            ,
-                new Endpoint()
-                {
                     Name = "GenerationTransformers",
                     Method = "GET",
                     Url = "/GenerationTransformers",
@@ -40,30 +32,6 @@ namespace CLIClassLibrary.Controllers
                     Method = "GET",
                     Url = "/IdeaTransformers",
                     Description = "Get's a list of IdeaTransformers from the data source."
-                }
-            ,
-                new Endpoint()
-                {
-                    Name = "MOFNodes",
-                    Method = "GET",
-                    Url = "/MOFNodes",
-                    Description = "Get's a list of MOFNodes from the data source."
-                }
-            ,
-                new Endpoint()
-                {
-                    Name = "MOFChoices",
-                    Method = "GET",
-                    Url = "/MOFChoices",
-                    Description = "Get's a list of MOFChoices from the data source."
-                }
-            ,
-                new Endpoint()
-                {
-                    Name = "DataFormats",
-                    Method = "GET",
-                    Url = "/DataFormats",
-                    Description = "Get's a list of DataFormats from the data source."
                 }
             ,
                 new Endpoint()
@@ -84,10 +52,10 @@ namespace CLIClassLibrary.Controllers
             ,
                 new Endpoint()
                 {
-                    Name = "MOFLayers",
+                    Name = "IdeaFeatures",
                     Method = "GET",
-                    Url = "/MOFLayers",
-                    Description = "Get's a list of MOFLayers from the data source."
+                    Url = "/IdeaFeatures",
+                    Description = "Get's a list of IdeaFeatures from the data source."
                 }
             ,
                 new Endpoint()
@@ -96,14 +64,6 @@ namespace CLIClassLibrary.Controllers
                     Method = "GET",
                     Url = "/LLMs",
                     Description = "Get's a list of LLMs from the data source."
-                }
-            ,
-                new Endpoint()
-                {
-                    Name = "OutputFormatRequests",
-                    Method = "GET",
-                    Url = "/OutputFormatRequests",
-                    Description = "Get's a list of OutputFormatRequests from the data source."
                 }
             ,
                 new Endpoint()

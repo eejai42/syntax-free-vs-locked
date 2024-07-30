@@ -1,13 +1,6 @@
 {
     "Entities": [
             {
-                "Name": "PromptInputAnswerKey",
-                "DisplayName": "PromptInputAnswerKey",
-                "Description": "",
-                "PluralName": "PromptInputAnswerKeies",
-                "AirtableName": "PromptInputAnswerKeys"
-            },
-            {
                 "Name": "GenerationTransformer",
                 "DisplayName": "GenerationTransformer",
                 "Description": "",
@@ -20,27 +13,6 @@
                 "Description": "",
                 "PluralName": "IdeaTransformers",
                 "AirtableName": "IdeaTransformers"
-            },
-            {
-                "Name": "MOFNode",
-                "DisplayName": "MOFNode",
-                "Description": "",
-                "PluralName": "MOFNodes",
-                "AirtableName": "MOFNodes"
-            },
-            {
-                "Name": "MOFChoice",
-                "DisplayName": "MOFChoice",
-                "Description": "",
-                "PluralName": "MOFChoices",
-                "AirtableName": "MOFChoices"
-            },
-            {
-                "Name": "DataFormat",
-                "DisplayName": "DataFormat",
-                "Description": "",
-                "PluralName": "DataFormats",
-                "AirtableName": "DataFormats"
             },
             {
                 "Name": "Generation",
@@ -57,11 +29,11 @@
                 "AirtableName": "AppUsers"
             },
             {
-                "Name": "MOFLayer",
-                "DisplayName": "MOFLayer",
+                "Name": "IdeaFeature",
+                "DisplayName": "IdeaFeature",
                 "Description": "",
-                "PluralName": "MOFLayers",
-                "AirtableName": "MOFLayers"
+                "PluralName": "IdeaFeatures",
+                "AirtableName": "IdeaFeatures"
             },
             {
                 "Name": "LLM",
@@ -69,13 +41,6 @@
                 "Description": "",
                 "PluralName": "LLMs",
                 "AirtableName": "LLMs"
-            },
-            {
-                "Name": "OutputFormatRequest",
-                "DisplayName": "OutputFormatRequest",
-                "Description": "",
-                "PluralName": "OutputFormatRequests",
-                "AirtableName": "OutputFormatRequests"
             },
             {
                 "Name": "TransformedArtifact",

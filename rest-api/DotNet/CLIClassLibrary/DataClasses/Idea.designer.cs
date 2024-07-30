@@ -35,20 +35,24 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String[] Generations { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationTransformers")]
-        [RemoteIsCollection]
-        public String[] GenerationTransformers { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationTransformerNames")]
-        [RemoteIsCollection]
-        public String[] GenerationTransformerNames { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationTransformerFullPrompts")]
-        [RemoteIsCollection]
-        public String[] GenerationTransformerFullPrompts { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsActiveIdea")]
         public Nullable<Boolean> IsActiveIdea { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaTransformers")]
+        [RemoteIsCollection]
+        public String[] IdeaTransformers { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaTransformerNames")]
+        [RemoteIsCollection]
+        public String[] IdeaTransformerNames { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaTransformerFullPrompts")]
+        [RemoteIsCollection]
+        public String[] IdeaTransformerFullPrompts { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaFeatures")]
+        [RemoteIsCollection]
+        public String[] IdeaFeatures { get; set; }
     
 
         

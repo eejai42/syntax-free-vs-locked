@@ -28,16 +28,6 @@ namespace CLIClassLibrary.ATDMQ
         
         // Guest Cleaning Extension Methods.  --
         
-        // Guest Cleaning Extension Methods.  --
-        
-        // Guest Cleaning Extension Methods.  --
-        
-        // Guest Cleaning Extension Methods.  --
-        
-        // Guest Cleaning Extension Methods.  --
-        
-        // Guest Cleaning Extension Methods.  --
-        
         // CRUDCoordinator Cleaning Extension Methods.  --
         
         // CRUDCoordinator Cleaning Extension Methods.  --
@@ -54,92 +44,6 @@ namespace CLIClassLibrary.ATDMQ
         
         // CRUDCoordinator Cleaning Extension Methods.  --
         
-        // CRUDCoordinator Cleaning Extension Methods.  --
-        
-        // CRUDCoordinator Cleaning Extension Methods.  --
-        
-        // CRUDCoordinator Cleaning Extension Methods.  --
-        
-        // CRUDCoordinator Cleaning Extension Methods.  --
-        
-        // CRUDCoordinator Cleaning Extension Methods.  --
-        
-        // User Cleaning Extension Methods.  -CRUD-
-        
-        // PromptInputAnswerKey
-        public static dc.PromptInputAnswerKey UserCleanForAdd(this dc.PromptInputAnswerKey cleanPromptInputAnswerKey)
-        {
-            var UserPromptInputAnswerKey = default(dc.PromptInputAnswerKey);
-
-            if (!ReferenceEquals(cleanPromptInputAnswerKey, null))
-            {
-                UserPromptInputAnswerKey = new dc.PromptInputAnswerKey()
-                {
-                     // default value: . 
-                    PromptInputAnswerKeyId = cleanPromptInputAnswerKey.PromptInputAnswerKeyId,
-                     // default value: . 
-                    Name = cleanPromptInputAnswerKey.Name,
-                     // default value: . 
-                    Question = cleanPromptInputAnswerKey.Question,
-                     // default value: . 
-                    Answer = cleanPromptInputAnswerKey.Answer,
-                     // default value: . 
-                    PromptInput = cleanPromptInputAnswerKey.PromptInput
-                };
-                
-            }
-
-            return UserPromptInputAnswerKey;
-        }
-        
-        
-        public static List<dc.PromptInputAnswerKey> UserCleanForGet(this IEnumerable<dc.PromptInputAnswerKey> cleanPromptInputAnswerKeies)
-        {
-            return cleanPromptInputAnswerKeies.Select(PromptInputAnswerKey => PromptInputAnswerKey.UserCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.PromptInputAnswerKey UserCleanForGet(this dc.PromptInputAnswerKey cleanPromptInputAnswerKey)
-        {
-            var UserPromptInputAnswerKey = default(dc.PromptInputAnswerKey);
-
-            if (!ReferenceEquals(cleanPromptInputAnswerKey, null))
-            {
-                UserPromptInputAnswerKey = new dc.PromptInputAnswerKey()
-                {
-                    PromptInputAnswerKeyId = cleanPromptInputAnswerKey.PromptInputAnswerKeyId,
-                    Name = cleanPromptInputAnswerKey.Name,
-                    Question = cleanPromptInputAnswerKey.Question,
-                    Answer = cleanPromptInputAnswerKey.Answer,
-                    PromptInput = cleanPromptInputAnswerKey.PromptInput,
-                    AnswerKey = cleanPromptInputAnswerKey.AnswerKey,
-                    AnswerKeycopy = cleanPromptInputAnswerKey.AnswerKeycopy
-                };
-            }
-
-            return UserPromptInputAnswerKey;
-        }
-        
-        
-        public static dc.PromptInputAnswerKey UserCleanForUpdate(this dc.PromptInputAnswerKey cleanPromptInputAnswerKey)
-        {
-            var UserPromptInputAnswerKey = default(dc.PromptInputAnswerKey);
-
-            if (!ReferenceEquals(cleanPromptInputAnswerKey, null))
-            {
-                UserPromptInputAnswerKey = new dc.PromptInputAnswerKey()
-                {
-                    PromptInputAnswerKeyId = cleanPromptInputAnswerKey.PromptInputAnswerKeyId,
-                    Name = cleanPromptInputAnswerKey.Name,
-                    Question = cleanPromptInputAnswerKey.Question,
-                    Answer = cleanPromptInputAnswerKey.Answer,
-                    PromptInput = cleanPromptInputAnswerKey.PromptInput
-                };
-            }
-
-            return UserPromptInputAnswerKey;
-        }
-
         // User Cleaning Extension Methods.  -CRUD-
         
         // GenerationTransformer
@@ -242,13 +146,13 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
                      // default value: . 
-                    Name = cleanIdeaTransformer.Name,
-                     // default value: . 
                     Idea = cleanIdeaTransformer.Idea,
                      // default value: . 
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
                      // default value: . 
-                    TransformedArtifacts = cleanIdeaTransformer.TransformedArtifacts
+                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
+                     // default value: . 
+                    AutoNumber = cleanIdeaTransformer.AutoNumber
                 };
                 
             }
@@ -278,7 +182,9 @@ namespace CLIClassLibrary.ATDMQ
                     IdeasSourceIdea = cleanIdeaTransformer.IdeasSourceIdea,
                     IsActiveIdea = cleanIdeaTransformer.IsActiveIdea,
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
-                    TransformedArtifacts = cleanIdeaTransformer.TransformedArtifacts
+                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
+                    AutoNumber = cleanIdeaTransformer.AutoNumber,
+                    IdeaIdentifier = cleanIdeaTransformer.IdeaIdentifier
                 };
             }
 
@@ -295,362 +201,14 @@ namespace CLIClassLibrary.ATDMQ
                 UserIdeaTransformer = new dc.IdeaTransformer()
                 {
                     IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
-                    Name = cleanIdeaTransformer.Name,
                     Idea = cleanIdeaTransformer.Idea,
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
-                    TransformedArtifacts = cleanIdeaTransformer.TransformedArtifacts
+                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
+                    AutoNumber = cleanIdeaTransformer.AutoNumber
                 };
             }
 
             return UserIdeaTransformer;
-        }
-
-        // User Cleaning Extension Methods.  -CRUD-
-        
-        // MOFNode
-        public static dc.MOFNode UserCleanForAdd(this dc.MOFNode cleanMOFNode)
-        {
-            var UserMOFNode = default(dc.MOFNode);
-
-            if (!ReferenceEquals(cleanMOFNode, null))
-            {
-                UserMOFNode = new dc.MOFNode()
-                {
-                     // default value: . 
-                    MOFNodeId = cleanMOFNode.MOFNodeId,
-                     // default value: . 
-                    NodeName = cleanMOFNode.NodeName,
-                     // default value: . 
-                    NodeType = cleanMOFNode.NodeType,
-                     // default value: . 
-                    Attachments = cleanMOFNode.Attachments,
-                     // default value: . 
-                    PlatformAttachments = cleanMOFNode.PlatformAttachments,
-                     // default value: . 
-                    FileExtensions = cleanMOFNode.FileExtensions,
-                     // default value: . 
-                    FromNodes = cleanMOFNode.FromNodes,
-                     // default value: . 
-                    ToNodes = cleanMOFNode.ToNodes,
-                     // default value: . 
-                    ToNodeEdges = cleanMOFNode.ToNodeEdges,
-                     // default value: . 
-                    TranspilerForEdge = cleanMOFNode.TranspilerForEdge,
-                     // default value: . 
-                    Notes = cleanMOFNode.Notes,
-                     // default value: . 
-                    SortOrder = cleanMOFNode.SortOrder,
-                     // default value: . 
-                    IsQueriable = cleanMOFNode.IsQueriable,
-                     // default value: . 
-                    DesiredColor = cleanMOFNode.DesiredColor,
-                     // default value: . 
-                    CurrentCodeFor = cleanMOFNode.CurrentCodeFor,
-                     // default value: . 
-                    CurrentDocsFor = cleanMOFNode.CurrentDocsFor,
-                     // default value: . 
-                    OutputIsDocs = cleanMOFNode.OutputIsDocs,
-                     // default value: . 
-                    OutputIsCode = cleanMOFNode.OutputIsCode,
-                     // default value: . 
-                    NodeEdges = cleanMOFNode.NodeEdges,
-                     // default value: . 
-                    NodeChoices = cleanMOFNode.NodeChoices,
-                     // default value: . 
-                    DefaultFileName = cleanMOFNode.DefaultFileName,
-                     // default value: . 
-                    ToolForChoices = cleanMOFNode.ToolForChoices,
-                     // default value: . 
-                    ToolTransformerForChoices = cleanMOFNode.ToolTransformerForChoices
-                };
-                
-            }
-
-            return UserMOFNode;
-        }
-        
-        
-        public static List<dc.MOFNode> UserCleanForGet(this IEnumerable<dc.MOFNode> cleanMOFNodes)
-        {
-            return cleanMOFNodes.Select(MOFNode => MOFNode.UserCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.MOFNode UserCleanForGet(this dc.MOFNode cleanMOFNode)
-        {
-            var UserMOFNode = default(dc.MOFNode);
-
-            if (!ReferenceEquals(cleanMOFNode, null))
-            {
-                UserMOFNode = new dc.MOFNode()
-                {
-                    MOFNodeId = cleanMOFNode.MOFNodeId,
-                    Name = cleanMOFNode.Name,
-                    NodeName = cleanMOFNode.NodeName,
-                    NodeType = cleanMOFNode.NodeType,
-                    Attachments = cleanMOFNode.Attachments,
-                    PlatformAttachments = cleanMOFNode.PlatformAttachments,
-                    FileExtensions = cleanMOFNode.FileExtensions,
-                    FromNodes = cleanMOFNode.FromNodes,
-                    ToNodes = cleanMOFNode.ToNodes,
-                    ToNodeEdges = cleanMOFNode.ToNodeEdges,
-                    TranspilerForEdge = cleanMOFNode.TranspilerForEdge,
-                    Notes = cleanMOFNode.Notes,
-                    SortOrder = cleanMOFNode.SortOrder,
-                    IsQueriable = cleanMOFNode.IsQueriable,
-                    DesiredColor = cleanMOFNode.DesiredColor,
-                    CurrentCodeFor = cleanMOFNode.CurrentCodeFor,
-                    CurrentDocsFor = cleanMOFNode.CurrentDocsFor,
-                    OutputIsDocs = cleanMOFNode.OutputIsDocs,
-                    OutputIsCode = cleanMOFNode.OutputIsCode,
-                    NodeEdges = cleanMOFNode.NodeEdges,
-                    NodeChoices = cleanMOFNode.NodeChoices,
-                    DefaultFileName = cleanMOFNode.DefaultFileName,
-                    ToolForChoices = cleanMOFNode.ToolForChoices,
-                    ToolTransformerForChoices = cleanMOFNode.ToolTransformerForChoices
-                };
-            }
-
-            return UserMOFNode;
-        }
-        
-        
-        public static dc.MOFNode UserCleanForUpdate(this dc.MOFNode cleanMOFNode)
-        {
-            var UserMOFNode = default(dc.MOFNode);
-
-            if (!ReferenceEquals(cleanMOFNode, null))
-            {
-                UserMOFNode = new dc.MOFNode()
-                {
-                    MOFNodeId = cleanMOFNode.MOFNodeId,
-                    NodeName = cleanMOFNode.NodeName,
-                    NodeType = cleanMOFNode.NodeType,
-                    Attachments = cleanMOFNode.Attachments,
-                    PlatformAttachments = cleanMOFNode.PlatformAttachments,
-                    FileExtensions = cleanMOFNode.FileExtensions,
-                    FromNodes = cleanMOFNode.FromNodes,
-                    ToNodes = cleanMOFNode.ToNodes,
-                    ToNodeEdges = cleanMOFNode.ToNodeEdges,
-                    TranspilerForEdge = cleanMOFNode.TranspilerForEdge,
-                    Notes = cleanMOFNode.Notes,
-                    SortOrder = cleanMOFNode.SortOrder,
-                    IsQueriable = cleanMOFNode.IsQueriable,
-                    DesiredColor = cleanMOFNode.DesiredColor,
-                    CurrentCodeFor = cleanMOFNode.CurrentCodeFor,
-                    CurrentDocsFor = cleanMOFNode.CurrentDocsFor,
-                    OutputIsDocs = cleanMOFNode.OutputIsDocs,
-                    OutputIsCode = cleanMOFNode.OutputIsCode,
-                    NodeEdges = cleanMOFNode.NodeEdges,
-                    NodeChoices = cleanMOFNode.NodeChoices,
-                    DefaultFileName = cleanMOFNode.DefaultFileName,
-                    ToolForChoices = cleanMOFNode.ToolForChoices,
-                    ToolTransformerForChoices = cleanMOFNode.ToolTransformerForChoices
-                };
-            }
-
-            return UserMOFNode;
-        }
-
-        // User Cleaning Extension Methods.  -CRUD-
-        
-        // MOFChoice
-        public static dc.MOFChoice UserCleanForAdd(this dc.MOFChoice cleanMOFChoice)
-        {
-            var UserMOFChoice = default(dc.MOFChoice);
-
-            if (!ReferenceEquals(cleanMOFChoice, null))
-            {
-                UserMOFChoice = new dc.MOFChoice()
-                {
-                     // default value: . 
-                    MOFChoiceId = cleanMOFChoice.MOFChoiceId,
-                     // default value: . 
-                    Layers = cleanMOFChoice.Layers,
-                     // default value: . 
-                    Node = cleanMOFChoice.Node,
-                     // default value: . 
-                    ToolInputChoice = cleanMOFChoice.ToolInputChoice,
-                     // default value: . 
-                    Tool = cleanMOFChoice.Tool,
-                     // default value: . 
-                    ToolTransformer = cleanMOFChoice.ToolTransformer,
-                     // default value: . 
-                    Notes = cleanMOFChoice.Notes,
-                     // default value: . 
-                    ParentChoice = cleanMOFChoice.ParentChoice,
-                     // default value: . 
-                    IsSyntaxFree = cleanMOFChoice.IsSyntaxFree,
-                     // default value: . 
-                    MixedColor = cleanMOFChoice.MixedColor,
-                     // default value: . 
-                    ExpectedColor = cleanMOFChoice.ExpectedColor,
-                     // default value: . 
-                    DesiredColor = cleanMOFChoice.DesiredColor
-                };
-                
-            }
-
-            return UserMOFChoice;
-        }
-        
-        
-        public static List<dc.MOFChoice> UserCleanForGet(this IEnumerable<dc.MOFChoice> cleanMOFChoices)
-        {
-            return cleanMOFChoices.Select(MOFChoice => MOFChoice.UserCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.MOFChoice UserCleanForGet(this dc.MOFChoice cleanMOFChoice)
-        {
-            var UserMOFChoice = default(dc.MOFChoice);
-
-            if (!ReferenceEquals(cleanMOFChoice, null))
-            {
-                UserMOFChoice = new dc.MOFChoice()
-                {
-                    MOFChoiceId = cleanMOFChoice.MOFChoiceId,
-                    Name = cleanMOFChoice.Name,
-                    Layers = cleanMOFChoice.Layers,
-                    FQNChoiceName = cleanMOFChoice.FQNChoiceName,
-                    Node = cleanMOFChoice.Node,
-                    NodeName = cleanMOFChoice.NodeName,
-                    ToolInputChoice = cleanMOFChoice.ToolInputChoice,
-                    ToolDefaultFileName = cleanMOFChoice.ToolDefaultFileName,
-                    ToolName = cleanMOFChoice.ToolName,
-                    InputChoiceFileName = cleanMOFChoice.InputChoiceFileName,
-                    NodeDefaultFileName = cleanMOFChoice.NodeDefaultFileName,
-                    NodeAttachments = cleanMOFChoice.NodeAttachments,
-                    ParentNodeDesiredColor = cleanMOFChoice.ParentNodeDesiredColor,
-                    NodeDesiredColor = cleanMOFChoice.NodeDesiredColor,
-                    Tool = cleanMOFChoice.Tool,
-                    ParentNodeAttachments = cleanMOFChoice.ParentNodeAttachments,
-                    ToolTransformer = cleanMOFChoice.ToolTransformer,
-                    ParentChoiceName = cleanMOFChoice.ParentChoiceName,
-                    Notes = cleanMOFChoice.Notes,
-                    ParentChoice = cleanMOFChoice.ParentChoice,
-                    IsSyntaxFree = cleanMOFChoice.IsSyntaxFree,
-                    MOFLayerNumber = cleanMOFChoice.MOFLayerNumber,
-                    ParentMOFLayerNumber = cleanMOFChoice.ParentMOFLayerNumber,
-                    MixedColor = cleanMOFChoice.MixedColor,
-                    ExpectedColor = cleanMOFChoice.ExpectedColor,
-                    ToolTransformerFileName = cleanMOFChoice.ToolTransformerFileName,
-                    IsInSync = cleanMOFChoice.IsInSync,
-                    IsInSyncImage = cleanMOFChoice.IsInSyncImage,
-                    ToolAttachments = cleanMOFChoice.ToolAttachments,
-                    ToolInputAttachments = cleanMOFChoice.ToolInputAttachments,
-                    ToolInputChoiceNodeAttachments = cleanMOFChoice.ToolInputChoiceNodeAttachments,
-                    MOFDisplayOrder = cleanMOFChoice.MOFDisplayOrder,
-                    ParentMOFDisplayOrder = cleanMOFChoice.ParentMOFDisplayOrder,
-                    OutputIsDocs = cleanMOFChoice.OutputIsDocs,
-                    DesiredColor = cleanMOFChoice.DesiredColor,
-                    ToolPlatformAttachments = cleanMOFChoice.ToolPlatformAttachments,
-                    NodePlatformAttachments = cleanMOFChoice.NodePlatformAttachments
-                };
-            }
-
-            return UserMOFChoice;
-        }
-        
-        
-        public static dc.MOFChoice UserCleanForUpdate(this dc.MOFChoice cleanMOFChoice)
-        {
-            var UserMOFChoice = default(dc.MOFChoice);
-
-            if (!ReferenceEquals(cleanMOFChoice, null))
-            {
-                UserMOFChoice = new dc.MOFChoice()
-                {
-                    MOFChoiceId = cleanMOFChoice.MOFChoiceId,
-                    Layers = cleanMOFChoice.Layers,
-                    Node = cleanMOFChoice.Node,
-                    ToolInputChoice = cleanMOFChoice.ToolInputChoice,
-                    Tool = cleanMOFChoice.Tool,
-                    ToolTransformer = cleanMOFChoice.ToolTransformer,
-                    Notes = cleanMOFChoice.Notes,
-                    ParentChoice = cleanMOFChoice.ParentChoice,
-                    IsSyntaxFree = cleanMOFChoice.IsSyntaxFree,
-                    MixedColor = cleanMOFChoice.MixedColor,
-                    ExpectedColor = cleanMOFChoice.ExpectedColor,
-                    DesiredColor = cleanMOFChoice.DesiredColor
-                };
-            }
-
-            return UserMOFChoice;
-        }
-
-        // User Cleaning Extension Methods.  -CRUD-
-        
-        // DataFormat
-        public static dc.DataFormat UserCleanForAdd(this dc.DataFormat cleanDataFormat)
-        {
-            var UserDataFormat = default(dc.DataFormat);
-
-            if (!ReferenceEquals(cleanDataFormat, null))
-            {
-                UserDataFormat = new dc.DataFormat()
-                {
-                     // default value: . 
-                    DataFormatId = cleanDataFormat.DataFormatId,
-                     // default value: . 
-                    Name = cleanDataFormat.Name,
-                     // default value: . 
-                    PromptInputs = cleanDataFormat.PromptInputs,
-                     // default value: . 
-                    PromptVariations = cleanDataFormat.PromptVariations,
-                     // default value: . 
-                    OutputFormatRequests = cleanDataFormat.OutputFormatRequests
-                };
-                
-            }
-
-            return UserDataFormat;
-        }
-        
-        
-        public static List<dc.DataFormat> UserCleanForGet(this IEnumerable<dc.DataFormat> cleanDataFormats)
-        {
-            return cleanDataFormats.Select(DataFormat => DataFormat.UserCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.DataFormat UserCleanForGet(this dc.DataFormat cleanDataFormat)
-        {
-            var UserDataFormat = default(dc.DataFormat);
-
-            if (!ReferenceEquals(cleanDataFormat, null))
-            {
-                UserDataFormat = new dc.DataFormat()
-                {
-                    DataFormatId = cleanDataFormat.DataFormatId,
-                    Name = cleanDataFormat.Name,
-                    PromptInputs = cleanDataFormat.PromptInputs,
-                    PromptVariations = cleanDataFormat.PromptVariations,
-                    OutputFormatRequests = cleanDataFormat.OutputFormatRequests
-                };
-            }
-
-            return UserDataFormat;
-        }
-        
-        
-        public static dc.DataFormat UserCleanForUpdate(this dc.DataFormat cleanDataFormat)
-        {
-            var UserDataFormat = default(dc.DataFormat);
-
-            if (!ReferenceEquals(cleanDataFormat, null))
-            {
-                UserDataFormat = new dc.DataFormat()
-                {
-                    DataFormatId = cleanDataFormat.DataFormatId,
-                    Name = cleanDataFormat.Name,
-                    PromptInputs = cleanDataFormat.PromptInputs,
-                    PromptVariations = cleanDataFormat.PromptVariations,
-                    OutputFormatRequests = cleanDataFormat.OutputFormatRequests
-                };
-            }
-
-            return UserDataFormat;
         }
 
         // User Cleaning Extension Methods.  -CRUD-
@@ -803,81 +361,82 @@ namespace CLIClassLibrary.ATDMQ
 
         // User Cleaning Extension Methods.  -CRUD-
         
-        // MOFLayer
-        public static dc.MOFLayer UserCleanForAdd(this dc.MOFLayer cleanMOFLayer)
+        // IdeaFeature
+        public static dc.IdeaFeature UserCleanForAdd(this dc.IdeaFeature cleanIdeaFeature)
         {
-            var UserMOFLayer = default(dc.MOFLayer);
+            var UserIdeaFeature = default(dc.IdeaFeature);
 
-            if (!ReferenceEquals(cleanMOFLayer, null))
+            if (!ReferenceEquals(cleanIdeaFeature, null))
             {
-                UserMOFLayer = new dc.MOFLayer()
+                UserIdeaFeature = new dc.IdeaFeature()
                 {
                      // default value: . 
-                    MOFLayerId = cleanMOFLayer.MOFLayerId,
+                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
                      // default value: . 
-                    MOFLayerName = cleanMOFLayer.MOFLayerName,
+                    Name = cleanIdeaFeature.Name,
                      // default value: . 
-                    Notes = cleanMOFLayer.Notes,
+                    Description = cleanIdeaFeature.Description,
                      // default value: . 
-                    MOFLayerNumber = cleanMOFLayer.MOFLayerNumber,
+                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
                      // default value: . 
-                    LayerChoices = cleanMOFLayer.LayerChoices,
+                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
                      // default value: . 
-                    MOFDisplayOrder = cleanMOFLayer.MOFDisplayOrder
+                    Idea = cleanIdeaFeature.Idea
                 };
                 
             }
 
-            return UserMOFLayer;
+            return UserIdeaFeature;
         }
         
         
-        public static List<dc.MOFLayer> UserCleanForGet(this IEnumerable<dc.MOFLayer> cleanMOFLayers)
+        public static List<dc.IdeaFeature> UserCleanForGet(this IEnumerable<dc.IdeaFeature> cleanIdeaFeatures)
         {
-            return cleanMOFLayers.Select(MOFLayer => MOFLayer.UserCleanForGet())
+            return cleanIdeaFeatures.Select(IdeaFeature => IdeaFeature.UserCleanForGet())
                             .ToList();
         }
         
-        public static dc.MOFLayer UserCleanForGet(this dc.MOFLayer cleanMOFLayer)
+        public static dc.IdeaFeature UserCleanForGet(this dc.IdeaFeature cleanIdeaFeature)
         {
-            var UserMOFLayer = default(dc.MOFLayer);
+            var UserIdeaFeature = default(dc.IdeaFeature);
 
-            if (!ReferenceEquals(cleanMOFLayer, null))
+            if (!ReferenceEquals(cleanIdeaFeature, null))
             {
-                UserMOFLayer = new dc.MOFLayer()
+                UserIdeaFeature = new dc.IdeaFeature()
                 {
-                    MOFLayerId = cleanMOFLayer.MOFLayerId,
-                    Name = cleanMOFLayer.Name,
-                    MOFLayerName = cleanMOFLayer.MOFLayerName,
-                    Notes = cleanMOFLayer.Notes,
-                    MOFLayerNumber = cleanMOFLayer.MOFLayerNumber,
-                    LayerChoices = cleanMOFLayer.LayerChoices,
-                    MOFDisplayOrder = cleanMOFLayer.MOFDisplayOrder
+                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
+                    Name = cleanIdeaFeature.Name,
+                    Description = cleanIdeaFeature.Description,
+                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
+                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
+                    SourceIdea = cleanIdeaFeature.SourceIdea,
+                    Idea = cleanIdeaFeature.Idea,
+                    IsActiveIdea = cleanIdeaFeature.IsActiveIdea
                 };
             }
 
-            return UserMOFLayer;
+            return UserIdeaFeature;
         }
         
         
-        public static dc.MOFLayer UserCleanForUpdate(this dc.MOFLayer cleanMOFLayer)
+        public static dc.IdeaFeature UserCleanForUpdate(this dc.IdeaFeature cleanIdeaFeature)
         {
-            var UserMOFLayer = default(dc.MOFLayer);
+            var UserIdeaFeature = default(dc.IdeaFeature);
 
-            if (!ReferenceEquals(cleanMOFLayer, null))
+            if (!ReferenceEquals(cleanIdeaFeature, null))
             {
-                UserMOFLayer = new dc.MOFLayer()
+                UserIdeaFeature = new dc.IdeaFeature()
                 {
-                    MOFLayerId = cleanMOFLayer.MOFLayerId,
-                    MOFLayerName = cleanMOFLayer.MOFLayerName,
-                    Notes = cleanMOFLayer.Notes,
-                    MOFLayerNumber = cleanMOFLayer.MOFLayerNumber,
-                    LayerChoices = cleanMOFLayer.LayerChoices,
-                    MOFDisplayOrder = cleanMOFLayer.MOFDisplayOrder
+                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
+                    Name = cleanIdeaFeature.Name,
+                    Description = cleanIdeaFeature.Description,
+                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
+                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
+                    Idea = cleanIdeaFeature.Idea
                 };
             }
 
-            return UserMOFLayer;
+            return UserIdeaFeature;
         }
 
         // User Cleaning Extension Methods.  -CRUD-
@@ -956,80 +515,6 @@ namespace CLIClassLibrary.ATDMQ
 
         // User Cleaning Extension Methods.  -CRUD-
         
-        // OutputFormatRequest
-        public static dc.OutputFormatRequest UserCleanForAdd(this dc.OutputFormatRequest cleanOutputFormatRequest)
-        {
-            var UserOutputFormatRequest = default(dc.OutputFormatRequest);
-
-            if (!ReferenceEquals(cleanOutputFormatRequest, null))
-            {
-                UserOutputFormatRequest = new dc.OutputFormatRequest()
-                {
-                     // default value: . 
-                    OutputFormatRequestId = cleanOutputFormatRequest.OutputFormatRequestId,
-                     // default value: . 
-                    Name = cleanOutputFormatRequest.Name,
-                     // default value: . 
-                    Prompt = cleanOutputFormatRequest.Prompt,
-                     // default value: . 
-                    PromptVariations = cleanOutputFormatRequest.PromptVariations,
-                     // default value: . 
-                    OutputFormat = cleanOutputFormatRequest.OutputFormat
-                };
-                
-            }
-
-            return UserOutputFormatRequest;
-        }
-        
-        
-        public static List<dc.OutputFormatRequest> UserCleanForGet(this IEnumerable<dc.OutputFormatRequest> cleanOutputFormatRequests)
-        {
-            return cleanOutputFormatRequests.Select(OutputFormatRequest => OutputFormatRequest.UserCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.OutputFormatRequest UserCleanForGet(this dc.OutputFormatRequest cleanOutputFormatRequest)
-        {
-            var UserOutputFormatRequest = default(dc.OutputFormatRequest);
-
-            if (!ReferenceEquals(cleanOutputFormatRequest, null))
-            {
-                UserOutputFormatRequest = new dc.OutputFormatRequest()
-                {
-                    OutputFormatRequestId = cleanOutputFormatRequest.OutputFormatRequestId,
-                    Name = cleanOutputFormatRequest.Name,
-                    Prompt = cleanOutputFormatRequest.Prompt,
-                    PromptVariations = cleanOutputFormatRequest.PromptVariations,
-                    OutputFormat = cleanOutputFormatRequest.OutputFormat
-                };
-            }
-
-            return UserOutputFormatRequest;
-        }
-        
-        
-        public static dc.OutputFormatRequest UserCleanForUpdate(this dc.OutputFormatRequest cleanOutputFormatRequest)
-        {
-            var UserOutputFormatRequest = default(dc.OutputFormatRequest);
-
-            if (!ReferenceEquals(cleanOutputFormatRequest, null))
-            {
-                UserOutputFormatRequest = new dc.OutputFormatRequest()
-                {
-                    OutputFormatRequestId = cleanOutputFormatRequest.OutputFormatRequestId,
-                    Name = cleanOutputFormatRequest.Name,
-                    Prompt = cleanOutputFormatRequest.Prompt,
-                    PromptVariations = cleanOutputFormatRequest.PromptVariations,
-                    OutputFormat = cleanOutputFormatRequest.OutputFormat
-                };
-            }
-
-            return UserOutputFormatRequest;
-        }
-
-        // User Cleaning Extension Methods.  -CRUD-
-        
         // TransformedArtifact
         public static dc.TransformedArtifact UserCleanForAdd(this dc.TransformedArtifact cleanTransformedArtifact)
         {
@@ -1054,7 +539,87 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
                      // default value: . 
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf
+                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
+                     // default value: . 
+                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                     // default value: . 
+                    ToDoItems = cleanTransformedArtifact.ToDoItems,
+                     // default value: . 
+                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
+                     // default value: . 
+                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
+                     // default value: . 
+                    Categories = cleanTransformedArtifact.Categories,
+                     // default value: . 
+                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
+                     // default value: . 
+                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
+                     // default value: . 
+                    DueDates = cleanTransformedArtifact.DueDates,
+                     // default value: . 
+                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
+                     // default value: . 
+                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
+                     // default value: . 
+                    Priorities = cleanTransformedArtifact.Priorities,
+                     // default value: . 
+                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
+                     // default value: . 
+                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
+                     // default value: . 
+                    Progress = cleanTransformedArtifact.Progress,
+                     // default value: . 
+                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
+                     // default value: . 
+                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
+                     // default value: . 
+                    Statuses = cleanTransformedArtifact.Statuses,
+                     // default value: . 
+                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
+                     // default value: . 
+                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
+                     // default value: . 
+                    Reminders = cleanTransformedArtifact.Reminders,
+                     // default value: . 
+                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
+                     // default value: . 
+                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
+                     // default value: . 
+                    Notifications = cleanTransformedArtifact.Notifications,
+                     // default value: . 
+                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
+                     // default value: . 
+                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
+                     // default value: . 
+                    Completion = cleanTransformedArtifact.Completion,
+                     // default value: . 
+                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
+                     // default value: . 
+                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
+                     // default value: . 
+                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
+                     // default value: . 
+                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
+                     // default value: . 
+                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
+                     // default value: . 
+                    Duration = cleanTransformedArtifact.Duration,
+                     // default value: . 
+                    DurationAKA = cleanTransformedArtifact.DurationAKA,
+                     // default value: . 
+                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
+                     // default value: . 
+                    CompletedDate = cleanTransformedArtifact.CompletedDate,
+                     // default value: . 
+                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
+                     // default value: . 
+                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
+                     // default value: . 
+                    ToDoColors = cleanTransformedArtifact.ToDoColors,
+                     // default value: . 
+                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
+                     // default value: . 
+                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched
                 };
                 
             }
@@ -1081,7 +646,6 @@ namespace CLIClassLibrary.ATDMQ
                     Name = cleanTransformedArtifact.Name,
                     GenerationTransformer = cleanTransformedArtifact.GenerationTransformer,
                     ValidationArtifact = cleanTransformedArtifact.ValidationArtifact,
-                    ResponseOfArtifactBeingValidated = cleanTransformedArtifact.ResponseOfArtifactBeingValidated,
                     TransformerRawPrompt = cleanTransformedArtifact.TransformerRawPrompt,
                     TransformerIdeaPrompt = cleanTransformedArtifact.TransformerIdeaPrompt,
                     ActualPrompt = cleanTransformedArtifact.ActualPrompt,
@@ -1093,7 +657,53 @@ namespace CLIClassLibrary.ATDMQ
                     Modified = cleanTransformedArtifact.Modified,
                     SuggestedPrompt = cleanTransformedArtifact.SuggestedPrompt,
                     ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                    TransformerNumber = cleanTransformedArtifact.TransformerNumber
+                    TransformerNumber = cleanTransformedArtifact.TransformerNumber,
+                    ResponseOfArtifactBeingExtended = cleanTransformedArtifact.ResponseOfArtifactBeingExtended,
+                    LongName = cleanTransformedArtifact.LongName,
+                    TransformerGeneratioNumber = cleanTransformedArtifact.TransformerGeneratioNumber,
+                    TransformerGenerationIdeaName = cleanTransformedArtifact.TransformerGenerationIdeaName,
+                    TransformerGenerationName = cleanTransformedArtifact.TransformerGenerationName,
+                    ArtifactIdentifier = cleanTransformedArtifact.ArtifactIdentifier,
+                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    ToDoItems = cleanTransformedArtifact.ToDoItems,
+                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
+                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
+                    Categories = cleanTransformedArtifact.Categories,
+                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
+                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
+                    DueDates = cleanTransformedArtifact.DueDates,
+                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
+                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
+                    Priorities = cleanTransformedArtifact.Priorities,
+                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
+                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
+                    Progress = cleanTransformedArtifact.Progress,
+                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
+                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
+                    Statuses = cleanTransformedArtifact.Statuses,
+                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
+                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
+                    Reminders = cleanTransformedArtifact.Reminders,
+                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
+                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
+                    Notifications = cleanTransformedArtifact.Notifications,
+                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
+                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
+                    Completion = cleanTransformedArtifact.Completion,
+                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
+                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
+                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
+                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
+                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
+                    Duration = cleanTransformedArtifact.Duration,
+                    DurationAKA = cleanTransformedArtifact.DurationAKA,
+                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
+                    CompletedDate = cleanTransformedArtifact.CompletedDate,
+                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
+                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
+                    ToDoColors = cleanTransformedArtifact.ToDoColors,
+                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
+                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched
                 };
             }
 
@@ -1116,7 +726,47 @@ namespace CLIClassLibrary.ATDMQ
                     Response = cleanTransformedArtifact.Response,
                     AutoNumber = cleanTransformedArtifact.AutoNumber,
                     IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf
+                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
+                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    ToDoItems = cleanTransformedArtifact.ToDoItems,
+                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
+                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
+                    Categories = cleanTransformedArtifact.Categories,
+                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
+                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
+                    DueDates = cleanTransformedArtifact.DueDates,
+                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
+                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
+                    Priorities = cleanTransformedArtifact.Priorities,
+                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
+                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
+                    Progress = cleanTransformedArtifact.Progress,
+                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
+                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
+                    Statuses = cleanTransformedArtifact.Statuses,
+                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
+                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
+                    Reminders = cleanTransformedArtifact.Reminders,
+                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
+                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
+                    Notifications = cleanTransformedArtifact.Notifications,
+                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
+                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
+                    Completion = cleanTransformedArtifact.Completion,
+                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
+                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
+                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
+                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
+                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
+                    Duration = cleanTransformedArtifact.Duration,
+                    DurationAKA = cleanTransformedArtifact.DurationAKA,
+                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
+                    CompletedDate = cleanTransformedArtifact.CompletedDate,
+                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
+                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
+                    ToDoColors = cleanTransformedArtifact.ToDoColors,
+                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
+                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched
                 };
             }
 
@@ -1143,9 +793,11 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Generations = cleanIdea.Generations,
                      // default value: . 
-                    GenerationTransformers = cleanIdea.GenerationTransformers,
+                    IsActiveIdea = cleanIdea.IsActiveIdea,
                      // default value: . 
-                    IsActiveIdea = cleanIdea.IsActiveIdea
+                    IdeaTransformers = cleanIdea.IdeaTransformers,
+                     // default value: . 
+                    IdeaFeatures = cleanIdea.IdeaFeatures
                 };
                 
             }
@@ -1172,10 +824,11 @@ namespace CLIClassLibrary.ATDMQ
                     Name = cleanIdea.Name,
                     SourceIdea = cleanIdea.SourceIdea,
                     Generations = cleanIdea.Generations,
-                    GenerationTransformers = cleanIdea.GenerationTransformers,
-                    GenerationTransformerNames = cleanIdea.GenerationTransformerNames,
-                    GenerationTransformerFullPrompts = cleanIdea.GenerationTransformerFullPrompts,
-                    IsActiveIdea = cleanIdea.IsActiveIdea
+                    IsActiveIdea = cleanIdea.IsActiveIdea,
+                    IdeaTransformers = cleanIdea.IdeaTransformers,
+                    IdeaTransformerNames = cleanIdea.IdeaTransformerNames,
+                    IdeaTransformerFullPrompts = cleanIdea.IdeaTransformerFullPrompts,
+                    IdeaFeatures = cleanIdea.IdeaFeatures
                 };
             }
 
@@ -1195,88 +848,13 @@ namespace CLIClassLibrary.ATDMQ
                     Name = cleanIdea.Name,
                     SourceIdea = cleanIdea.SourceIdea,
                     Generations = cleanIdea.Generations,
-                    GenerationTransformers = cleanIdea.GenerationTransformers,
-                    IsActiveIdea = cleanIdea.IsActiveIdea
+                    IsActiveIdea = cleanIdea.IsActiveIdea,
+                    IdeaTransformers = cleanIdea.IdeaTransformers,
+                    IdeaFeatures = cleanIdea.IdeaFeatures
                 };
             }
 
             return UserIdea;
-        }
-
-        // Admin Cleaning Extension Methods.  -CRUD-
-        
-        // PromptInputAnswerKey
-        public static dc.PromptInputAnswerKey AdminCleanForAdd(this dc.PromptInputAnswerKey cleanPromptInputAnswerKey)
-        {
-            var AdminPromptInputAnswerKey = default(dc.PromptInputAnswerKey);
-
-            if (!ReferenceEquals(cleanPromptInputAnswerKey, null))
-            {
-                AdminPromptInputAnswerKey = new dc.PromptInputAnswerKey()
-                {
-                     // default value: . 
-                    PromptInputAnswerKeyId = cleanPromptInputAnswerKey.PromptInputAnswerKeyId,
-                     // default value: . 
-                    Name = cleanPromptInputAnswerKey.Name,
-                     // default value: . 
-                    Question = cleanPromptInputAnswerKey.Question,
-                     // default value: . 
-                    Answer = cleanPromptInputAnswerKey.Answer,
-                     // default value: . 
-                    PromptInput = cleanPromptInputAnswerKey.PromptInput
-                };
-                
-            }
-
-            return AdminPromptInputAnswerKey;
-        }
-        
-        
-        public static List<dc.PromptInputAnswerKey> AdminCleanForGet(this IEnumerable<dc.PromptInputAnswerKey> cleanPromptInputAnswerKeies)
-        {
-            return cleanPromptInputAnswerKeies.Select(PromptInputAnswerKey => PromptInputAnswerKey.AdminCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.PromptInputAnswerKey AdminCleanForGet(this dc.PromptInputAnswerKey cleanPromptInputAnswerKey)
-        {
-            var AdminPromptInputAnswerKey = default(dc.PromptInputAnswerKey);
-
-            if (!ReferenceEquals(cleanPromptInputAnswerKey, null))
-            {
-                AdminPromptInputAnswerKey = new dc.PromptInputAnswerKey()
-                {
-                    PromptInputAnswerKeyId = cleanPromptInputAnswerKey.PromptInputAnswerKeyId,
-                    Name = cleanPromptInputAnswerKey.Name,
-                    Question = cleanPromptInputAnswerKey.Question,
-                    Answer = cleanPromptInputAnswerKey.Answer,
-                    PromptInput = cleanPromptInputAnswerKey.PromptInput,
-                    AnswerKey = cleanPromptInputAnswerKey.AnswerKey,
-                    AnswerKeycopy = cleanPromptInputAnswerKey.AnswerKeycopy
-                };
-            }
-
-            return AdminPromptInputAnswerKey;
-        }
-        
-        
-        public static dc.PromptInputAnswerKey AdminCleanForUpdate(this dc.PromptInputAnswerKey cleanPromptInputAnswerKey)
-        {
-            var AdminPromptInputAnswerKey = default(dc.PromptInputAnswerKey);
-
-            if (!ReferenceEquals(cleanPromptInputAnswerKey, null))
-            {
-                AdminPromptInputAnswerKey = new dc.PromptInputAnswerKey()
-                {
-                    PromptInputAnswerKeyId = cleanPromptInputAnswerKey.PromptInputAnswerKeyId,
-                    Name = cleanPromptInputAnswerKey.Name,
-                    Question = cleanPromptInputAnswerKey.Question,
-                    Answer = cleanPromptInputAnswerKey.Answer,
-                    PromptInput = cleanPromptInputAnswerKey.PromptInput
-                };
-            }
-
-            return AdminPromptInputAnswerKey;
         }
 
         // Admin Cleaning Extension Methods.  -CRUD-
@@ -1381,13 +959,13 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
                      // default value: . 
-                    Name = cleanIdeaTransformer.Name,
-                     // default value: . 
                     Idea = cleanIdeaTransformer.Idea,
                      // default value: . 
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
                      // default value: . 
-                    TransformedArtifacts = cleanIdeaTransformer.TransformedArtifacts
+                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
+                     // default value: . 
+                    AutoNumber = cleanIdeaTransformer.AutoNumber
                 };
                 
             }
@@ -1417,7 +995,9 @@ namespace CLIClassLibrary.ATDMQ
                     IdeasSourceIdea = cleanIdeaTransformer.IdeasSourceIdea,
                     IsActiveIdea = cleanIdeaTransformer.IsActiveIdea,
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
-                    TransformedArtifacts = cleanIdeaTransformer.TransformedArtifacts
+                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
+                    AutoNumber = cleanIdeaTransformer.AutoNumber,
+                    IdeaIdentifier = cleanIdeaTransformer.IdeaIdentifier
                 };
             }
 
@@ -1434,362 +1014,14 @@ namespace CLIClassLibrary.ATDMQ
                 AdminIdeaTransformer = new dc.IdeaTransformer()
                 {
                     IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
-                    Name = cleanIdeaTransformer.Name,
                     Idea = cleanIdeaTransformer.Idea,
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
-                    TransformedArtifacts = cleanIdeaTransformer.TransformedArtifacts
+                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
+                    AutoNumber = cleanIdeaTransformer.AutoNumber
                 };
             }
 
             return AdminIdeaTransformer;
-        }
-
-        // Admin Cleaning Extension Methods.  -CRUD-
-        
-        // MOFNode
-        public static dc.MOFNode AdminCleanForAdd(this dc.MOFNode cleanMOFNode)
-        {
-            var AdminMOFNode = default(dc.MOFNode);
-
-            if (!ReferenceEquals(cleanMOFNode, null))
-            {
-                AdminMOFNode = new dc.MOFNode()
-                {
-                     // default value: . 
-                    MOFNodeId = cleanMOFNode.MOFNodeId,
-                     // default value: . 
-                    NodeName = cleanMOFNode.NodeName,
-                     // default value: . 
-                    NodeType = cleanMOFNode.NodeType,
-                     // default value: . 
-                    Attachments = cleanMOFNode.Attachments,
-                     // default value: . 
-                    PlatformAttachments = cleanMOFNode.PlatformAttachments,
-                     // default value: . 
-                    FileExtensions = cleanMOFNode.FileExtensions,
-                     // default value: . 
-                    FromNodes = cleanMOFNode.FromNodes,
-                     // default value: . 
-                    ToNodes = cleanMOFNode.ToNodes,
-                     // default value: . 
-                    ToNodeEdges = cleanMOFNode.ToNodeEdges,
-                     // default value: . 
-                    TranspilerForEdge = cleanMOFNode.TranspilerForEdge,
-                     // default value: . 
-                    Notes = cleanMOFNode.Notes,
-                     // default value: . 
-                    SortOrder = cleanMOFNode.SortOrder,
-                     // default value: . 
-                    IsQueriable = cleanMOFNode.IsQueriable,
-                     // default value: . 
-                    DesiredColor = cleanMOFNode.DesiredColor,
-                     // default value: . 
-                    CurrentCodeFor = cleanMOFNode.CurrentCodeFor,
-                     // default value: . 
-                    CurrentDocsFor = cleanMOFNode.CurrentDocsFor,
-                     // default value: . 
-                    OutputIsDocs = cleanMOFNode.OutputIsDocs,
-                     // default value: . 
-                    OutputIsCode = cleanMOFNode.OutputIsCode,
-                     // default value: . 
-                    NodeEdges = cleanMOFNode.NodeEdges,
-                     // default value: . 
-                    NodeChoices = cleanMOFNode.NodeChoices,
-                     // default value: . 
-                    DefaultFileName = cleanMOFNode.DefaultFileName,
-                     // default value: . 
-                    ToolForChoices = cleanMOFNode.ToolForChoices,
-                     // default value: . 
-                    ToolTransformerForChoices = cleanMOFNode.ToolTransformerForChoices
-                };
-                
-            }
-
-            return AdminMOFNode;
-        }
-        
-        
-        public static List<dc.MOFNode> AdminCleanForGet(this IEnumerable<dc.MOFNode> cleanMOFNodes)
-        {
-            return cleanMOFNodes.Select(MOFNode => MOFNode.AdminCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.MOFNode AdminCleanForGet(this dc.MOFNode cleanMOFNode)
-        {
-            var AdminMOFNode = default(dc.MOFNode);
-
-            if (!ReferenceEquals(cleanMOFNode, null))
-            {
-                AdminMOFNode = new dc.MOFNode()
-                {
-                    MOFNodeId = cleanMOFNode.MOFNodeId,
-                    Name = cleanMOFNode.Name,
-                    NodeName = cleanMOFNode.NodeName,
-                    NodeType = cleanMOFNode.NodeType,
-                    Attachments = cleanMOFNode.Attachments,
-                    PlatformAttachments = cleanMOFNode.PlatformAttachments,
-                    FileExtensions = cleanMOFNode.FileExtensions,
-                    FromNodes = cleanMOFNode.FromNodes,
-                    ToNodes = cleanMOFNode.ToNodes,
-                    ToNodeEdges = cleanMOFNode.ToNodeEdges,
-                    TranspilerForEdge = cleanMOFNode.TranspilerForEdge,
-                    Notes = cleanMOFNode.Notes,
-                    SortOrder = cleanMOFNode.SortOrder,
-                    IsQueriable = cleanMOFNode.IsQueriable,
-                    DesiredColor = cleanMOFNode.DesiredColor,
-                    CurrentCodeFor = cleanMOFNode.CurrentCodeFor,
-                    CurrentDocsFor = cleanMOFNode.CurrentDocsFor,
-                    OutputIsDocs = cleanMOFNode.OutputIsDocs,
-                    OutputIsCode = cleanMOFNode.OutputIsCode,
-                    NodeEdges = cleanMOFNode.NodeEdges,
-                    NodeChoices = cleanMOFNode.NodeChoices,
-                    DefaultFileName = cleanMOFNode.DefaultFileName,
-                    ToolForChoices = cleanMOFNode.ToolForChoices,
-                    ToolTransformerForChoices = cleanMOFNode.ToolTransformerForChoices
-                };
-            }
-
-            return AdminMOFNode;
-        }
-        
-        
-        public static dc.MOFNode AdminCleanForUpdate(this dc.MOFNode cleanMOFNode)
-        {
-            var AdminMOFNode = default(dc.MOFNode);
-
-            if (!ReferenceEquals(cleanMOFNode, null))
-            {
-                AdminMOFNode = new dc.MOFNode()
-                {
-                    MOFNodeId = cleanMOFNode.MOFNodeId,
-                    NodeName = cleanMOFNode.NodeName,
-                    NodeType = cleanMOFNode.NodeType,
-                    Attachments = cleanMOFNode.Attachments,
-                    PlatformAttachments = cleanMOFNode.PlatformAttachments,
-                    FileExtensions = cleanMOFNode.FileExtensions,
-                    FromNodes = cleanMOFNode.FromNodes,
-                    ToNodes = cleanMOFNode.ToNodes,
-                    ToNodeEdges = cleanMOFNode.ToNodeEdges,
-                    TranspilerForEdge = cleanMOFNode.TranspilerForEdge,
-                    Notes = cleanMOFNode.Notes,
-                    SortOrder = cleanMOFNode.SortOrder,
-                    IsQueriable = cleanMOFNode.IsQueriable,
-                    DesiredColor = cleanMOFNode.DesiredColor,
-                    CurrentCodeFor = cleanMOFNode.CurrentCodeFor,
-                    CurrentDocsFor = cleanMOFNode.CurrentDocsFor,
-                    OutputIsDocs = cleanMOFNode.OutputIsDocs,
-                    OutputIsCode = cleanMOFNode.OutputIsCode,
-                    NodeEdges = cleanMOFNode.NodeEdges,
-                    NodeChoices = cleanMOFNode.NodeChoices,
-                    DefaultFileName = cleanMOFNode.DefaultFileName,
-                    ToolForChoices = cleanMOFNode.ToolForChoices,
-                    ToolTransformerForChoices = cleanMOFNode.ToolTransformerForChoices
-                };
-            }
-
-            return AdminMOFNode;
-        }
-
-        // Admin Cleaning Extension Methods.  -CRUD-
-        
-        // MOFChoice
-        public static dc.MOFChoice AdminCleanForAdd(this dc.MOFChoice cleanMOFChoice)
-        {
-            var AdminMOFChoice = default(dc.MOFChoice);
-
-            if (!ReferenceEquals(cleanMOFChoice, null))
-            {
-                AdminMOFChoice = new dc.MOFChoice()
-                {
-                     // default value: . 
-                    MOFChoiceId = cleanMOFChoice.MOFChoiceId,
-                     // default value: . 
-                    Layers = cleanMOFChoice.Layers,
-                     // default value: . 
-                    Node = cleanMOFChoice.Node,
-                     // default value: . 
-                    ToolInputChoice = cleanMOFChoice.ToolInputChoice,
-                     // default value: . 
-                    Tool = cleanMOFChoice.Tool,
-                     // default value: . 
-                    ToolTransformer = cleanMOFChoice.ToolTransformer,
-                     // default value: . 
-                    Notes = cleanMOFChoice.Notes,
-                     // default value: . 
-                    ParentChoice = cleanMOFChoice.ParentChoice,
-                     // default value: . 
-                    IsSyntaxFree = cleanMOFChoice.IsSyntaxFree,
-                     // default value: . 
-                    MixedColor = cleanMOFChoice.MixedColor,
-                     // default value: . 
-                    ExpectedColor = cleanMOFChoice.ExpectedColor,
-                     // default value: . 
-                    DesiredColor = cleanMOFChoice.DesiredColor
-                };
-                
-            }
-
-            return AdminMOFChoice;
-        }
-        
-        
-        public static List<dc.MOFChoice> AdminCleanForGet(this IEnumerable<dc.MOFChoice> cleanMOFChoices)
-        {
-            return cleanMOFChoices.Select(MOFChoice => MOFChoice.AdminCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.MOFChoice AdminCleanForGet(this dc.MOFChoice cleanMOFChoice)
-        {
-            var AdminMOFChoice = default(dc.MOFChoice);
-
-            if (!ReferenceEquals(cleanMOFChoice, null))
-            {
-                AdminMOFChoice = new dc.MOFChoice()
-                {
-                    MOFChoiceId = cleanMOFChoice.MOFChoiceId,
-                    Name = cleanMOFChoice.Name,
-                    Layers = cleanMOFChoice.Layers,
-                    FQNChoiceName = cleanMOFChoice.FQNChoiceName,
-                    Node = cleanMOFChoice.Node,
-                    NodeName = cleanMOFChoice.NodeName,
-                    ToolInputChoice = cleanMOFChoice.ToolInputChoice,
-                    ToolDefaultFileName = cleanMOFChoice.ToolDefaultFileName,
-                    ToolName = cleanMOFChoice.ToolName,
-                    InputChoiceFileName = cleanMOFChoice.InputChoiceFileName,
-                    NodeDefaultFileName = cleanMOFChoice.NodeDefaultFileName,
-                    NodeAttachments = cleanMOFChoice.NodeAttachments,
-                    ParentNodeDesiredColor = cleanMOFChoice.ParentNodeDesiredColor,
-                    NodeDesiredColor = cleanMOFChoice.NodeDesiredColor,
-                    Tool = cleanMOFChoice.Tool,
-                    ParentNodeAttachments = cleanMOFChoice.ParentNodeAttachments,
-                    ToolTransformer = cleanMOFChoice.ToolTransformer,
-                    ParentChoiceName = cleanMOFChoice.ParentChoiceName,
-                    Notes = cleanMOFChoice.Notes,
-                    ParentChoice = cleanMOFChoice.ParentChoice,
-                    IsSyntaxFree = cleanMOFChoice.IsSyntaxFree,
-                    MOFLayerNumber = cleanMOFChoice.MOFLayerNumber,
-                    ParentMOFLayerNumber = cleanMOFChoice.ParentMOFLayerNumber,
-                    MixedColor = cleanMOFChoice.MixedColor,
-                    ExpectedColor = cleanMOFChoice.ExpectedColor,
-                    ToolTransformerFileName = cleanMOFChoice.ToolTransformerFileName,
-                    IsInSync = cleanMOFChoice.IsInSync,
-                    IsInSyncImage = cleanMOFChoice.IsInSyncImage,
-                    ToolAttachments = cleanMOFChoice.ToolAttachments,
-                    ToolInputAttachments = cleanMOFChoice.ToolInputAttachments,
-                    ToolInputChoiceNodeAttachments = cleanMOFChoice.ToolInputChoiceNodeAttachments,
-                    MOFDisplayOrder = cleanMOFChoice.MOFDisplayOrder,
-                    ParentMOFDisplayOrder = cleanMOFChoice.ParentMOFDisplayOrder,
-                    OutputIsDocs = cleanMOFChoice.OutputIsDocs,
-                    DesiredColor = cleanMOFChoice.DesiredColor,
-                    ToolPlatformAttachments = cleanMOFChoice.ToolPlatformAttachments,
-                    NodePlatformAttachments = cleanMOFChoice.NodePlatformAttachments
-                };
-            }
-
-            return AdminMOFChoice;
-        }
-        
-        
-        public static dc.MOFChoice AdminCleanForUpdate(this dc.MOFChoice cleanMOFChoice)
-        {
-            var AdminMOFChoice = default(dc.MOFChoice);
-
-            if (!ReferenceEquals(cleanMOFChoice, null))
-            {
-                AdminMOFChoice = new dc.MOFChoice()
-                {
-                    MOFChoiceId = cleanMOFChoice.MOFChoiceId,
-                    Layers = cleanMOFChoice.Layers,
-                    Node = cleanMOFChoice.Node,
-                    ToolInputChoice = cleanMOFChoice.ToolInputChoice,
-                    Tool = cleanMOFChoice.Tool,
-                    ToolTransformer = cleanMOFChoice.ToolTransformer,
-                    Notes = cleanMOFChoice.Notes,
-                    ParentChoice = cleanMOFChoice.ParentChoice,
-                    IsSyntaxFree = cleanMOFChoice.IsSyntaxFree,
-                    MixedColor = cleanMOFChoice.MixedColor,
-                    ExpectedColor = cleanMOFChoice.ExpectedColor,
-                    DesiredColor = cleanMOFChoice.DesiredColor
-                };
-            }
-
-            return AdminMOFChoice;
-        }
-
-        // Admin Cleaning Extension Methods.  -CRUD-
-        
-        // DataFormat
-        public static dc.DataFormat AdminCleanForAdd(this dc.DataFormat cleanDataFormat)
-        {
-            var AdminDataFormat = default(dc.DataFormat);
-
-            if (!ReferenceEquals(cleanDataFormat, null))
-            {
-                AdminDataFormat = new dc.DataFormat()
-                {
-                     // default value: . 
-                    DataFormatId = cleanDataFormat.DataFormatId,
-                     // default value: . 
-                    Name = cleanDataFormat.Name,
-                     // default value: . 
-                    PromptInputs = cleanDataFormat.PromptInputs,
-                     // default value: . 
-                    PromptVariations = cleanDataFormat.PromptVariations,
-                     // default value: . 
-                    OutputFormatRequests = cleanDataFormat.OutputFormatRequests
-                };
-                
-            }
-
-            return AdminDataFormat;
-        }
-        
-        
-        public static List<dc.DataFormat> AdminCleanForGet(this IEnumerable<dc.DataFormat> cleanDataFormats)
-        {
-            return cleanDataFormats.Select(DataFormat => DataFormat.AdminCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.DataFormat AdminCleanForGet(this dc.DataFormat cleanDataFormat)
-        {
-            var AdminDataFormat = default(dc.DataFormat);
-
-            if (!ReferenceEquals(cleanDataFormat, null))
-            {
-                AdminDataFormat = new dc.DataFormat()
-                {
-                    DataFormatId = cleanDataFormat.DataFormatId,
-                    Name = cleanDataFormat.Name,
-                    PromptInputs = cleanDataFormat.PromptInputs,
-                    PromptVariations = cleanDataFormat.PromptVariations,
-                    OutputFormatRequests = cleanDataFormat.OutputFormatRequests
-                };
-            }
-
-            return AdminDataFormat;
-        }
-        
-        
-        public static dc.DataFormat AdminCleanForUpdate(this dc.DataFormat cleanDataFormat)
-        {
-            var AdminDataFormat = default(dc.DataFormat);
-
-            if (!ReferenceEquals(cleanDataFormat, null))
-            {
-                AdminDataFormat = new dc.DataFormat()
-                {
-                    DataFormatId = cleanDataFormat.DataFormatId,
-                    Name = cleanDataFormat.Name,
-                    PromptInputs = cleanDataFormat.PromptInputs,
-                    PromptVariations = cleanDataFormat.PromptVariations,
-                    OutputFormatRequests = cleanDataFormat.OutputFormatRequests
-                };
-            }
-
-            return AdminDataFormat;
         }
 
         // Admin Cleaning Extension Methods.  -CRUD-
@@ -1942,81 +1174,82 @@ namespace CLIClassLibrary.ATDMQ
 
         // Admin Cleaning Extension Methods.  -CRUD-
         
-        // MOFLayer
-        public static dc.MOFLayer AdminCleanForAdd(this dc.MOFLayer cleanMOFLayer)
+        // IdeaFeature
+        public static dc.IdeaFeature AdminCleanForAdd(this dc.IdeaFeature cleanIdeaFeature)
         {
-            var AdminMOFLayer = default(dc.MOFLayer);
+            var AdminIdeaFeature = default(dc.IdeaFeature);
 
-            if (!ReferenceEquals(cleanMOFLayer, null))
+            if (!ReferenceEquals(cleanIdeaFeature, null))
             {
-                AdminMOFLayer = new dc.MOFLayer()
+                AdminIdeaFeature = new dc.IdeaFeature()
                 {
                      // default value: . 
-                    MOFLayerId = cleanMOFLayer.MOFLayerId,
+                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
                      // default value: . 
-                    MOFLayerName = cleanMOFLayer.MOFLayerName,
+                    Name = cleanIdeaFeature.Name,
                      // default value: . 
-                    Notes = cleanMOFLayer.Notes,
+                    Description = cleanIdeaFeature.Description,
                      // default value: . 
-                    MOFLayerNumber = cleanMOFLayer.MOFLayerNumber,
+                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
                      // default value: . 
-                    LayerChoices = cleanMOFLayer.LayerChoices,
+                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
                      // default value: . 
-                    MOFDisplayOrder = cleanMOFLayer.MOFDisplayOrder
+                    Idea = cleanIdeaFeature.Idea
                 };
                 
             }
 
-            return AdminMOFLayer;
+            return AdminIdeaFeature;
         }
         
         
-        public static List<dc.MOFLayer> AdminCleanForGet(this IEnumerable<dc.MOFLayer> cleanMOFLayers)
+        public static List<dc.IdeaFeature> AdminCleanForGet(this IEnumerable<dc.IdeaFeature> cleanIdeaFeatures)
         {
-            return cleanMOFLayers.Select(MOFLayer => MOFLayer.AdminCleanForGet())
+            return cleanIdeaFeatures.Select(IdeaFeature => IdeaFeature.AdminCleanForGet())
                             .ToList();
         }
         
-        public static dc.MOFLayer AdminCleanForGet(this dc.MOFLayer cleanMOFLayer)
+        public static dc.IdeaFeature AdminCleanForGet(this dc.IdeaFeature cleanIdeaFeature)
         {
-            var AdminMOFLayer = default(dc.MOFLayer);
+            var AdminIdeaFeature = default(dc.IdeaFeature);
 
-            if (!ReferenceEquals(cleanMOFLayer, null))
+            if (!ReferenceEquals(cleanIdeaFeature, null))
             {
-                AdminMOFLayer = new dc.MOFLayer()
+                AdminIdeaFeature = new dc.IdeaFeature()
                 {
-                    MOFLayerId = cleanMOFLayer.MOFLayerId,
-                    Name = cleanMOFLayer.Name,
-                    MOFLayerName = cleanMOFLayer.MOFLayerName,
-                    Notes = cleanMOFLayer.Notes,
-                    MOFLayerNumber = cleanMOFLayer.MOFLayerNumber,
-                    LayerChoices = cleanMOFLayer.LayerChoices,
-                    MOFDisplayOrder = cleanMOFLayer.MOFDisplayOrder
+                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
+                    Name = cleanIdeaFeature.Name,
+                    Description = cleanIdeaFeature.Description,
+                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
+                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
+                    SourceIdea = cleanIdeaFeature.SourceIdea,
+                    Idea = cleanIdeaFeature.Idea,
+                    IsActiveIdea = cleanIdeaFeature.IsActiveIdea
                 };
             }
 
-            return AdminMOFLayer;
+            return AdminIdeaFeature;
         }
         
         
-        public static dc.MOFLayer AdminCleanForUpdate(this dc.MOFLayer cleanMOFLayer)
+        public static dc.IdeaFeature AdminCleanForUpdate(this dc.IdeaFeature cleanIdeaFeature)
         {
-            var AdminMOFLayer = default(dc.MOFLayer);
+            var AdminIdeaFeature = default(dc.IdeaFeature);
 
-            if (!ReferenceEquals(cleanMOFLayer, null))
+            if (!ReferenceEquals(cleanIdeaFeature, null))
             {
-                AdminMOFLayer = new dc.MOFLayer()
+                AdminIdeaFeature = new dc.IdeaFeature()
                 {
-                    MOFLayerId = cleanMOFLayer.MOFLayerId,
-                    MOFLayerName = cleanMOFLayer.MOFLayerName,
-                    Notes = cleanMOFLayer.Notes,
-                    MOFLayerNumber = cleanMOFLayer.MOFLayerNumber,
-                    LayerChoices = cleanMOFLayer.LayerChoices,
-                    MOFDisplayOrder = cleanMOFLayer.MOFDisplayOrder
+                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
+                    Name = cleanIdeaFeature.Name,
+                    Description = cleanIdeaFeature.Description,
+                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
+                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
+                    Idea = cleanIdeaFeature.Idea
                 };
             }
 
-            return AdminMOFLayer;
+            return AdminIdeaFeature;
         }
 
         // Admin Cleaning Extension Methods.  -CRUD-
@@ -2095,80 +1328,6 @@ namespace CLIClassLibrary.ATDMQ
 
         // Admin Cleaning Extension Methods.  -CRUD-
         
-        // OutputFormatRequest
-        public static dc.OutputFormatRequest AdminCleanForAdd(this dc.OutputFormatRequest cleanOutputFormatRequest)
-        {
-            var AdminOutputFormatRequest = default(dc.OutputFormatRequest);
-
-            if (!ReferenceEquals(cleanOutputFormatRequest, null))
-            {
-                AdminOutputFormatRequest = new dc.OutputFormatRequest()
-                {
-                     // default value: . 
-                    OutputFormatRequestId = cleanOutputFormatRequest.OutputFormatRequestId,
-                     // default value: . 
-                    Name = cleanOutputFormatRequest.Name,
-                     // default value: . 
-                    Prompt = cleanOutputFormatRequest.Prompt,
-                     // default value: . 
-                    PromptVariations = cleanOutputFormatRequest.PromptVariations,
-                     // default value: . 
-                    OutputFormat = cleanOutputFormatRequest.OutputFormat
-                };
-                
-            }
-
-            return AdminOutputFormatRequest;
-        }
-        
-        
-        public static List<dc.OutputFormatRequest> AdminCleanForGet(this IEnumerable<dc.OutputFormatRequest> cleanOutputFormatRequests)
-        {
-            return cleanOutputFormatRequests.Select(OutputFormatRequest => OutputFormatRequest.AdminCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.OutputFormatRequest AdminCleanForGet(this dc.OutputFormatRequest cleanOutputFormatRequest)
-        {
-            var AdminOutputFormatRequest = default(dc.OutputFormatRequest);
-
-            if (!ReferenceEquals(cleanOutputFormatRequest, null))
-            {
-                AdminOutputFormatRequest = new dc.OutputFormatRequest()
-                {
-                    OutputFormatRequestId = cleanOutputFormatRequest.OutputFormatRequestId,
-                    Name = cleanOutputFormatRequest.Name,
-                    Prompt = cleanOutputFormatRequest.Prompt,
-                    PromptVariations = cleanOutputFormatRequest.PromptVariations,
-                    OutputFormat = cleanOutputFormatRequest.OutputFormat
-                };
-            }
-
-            return AdminOutputFormatRequest;
-        }
-        
-        
-        public static dc.OutputFormatRequest AdminCleanForUpdate(this dc.OutputFormatRequest cleanOutputFormatRequest)
-        {
-            var AdminOutputFormatRequest = default(dc.OutputFormatRequest);
-
-            if (!ReferenceEquals(cleanOutputFormatRequest, null))
-            {
-                AdminOutputFormatRequest = new dc.OutputFormatRequest()
-                {
-                    OutputFormatRequestId = cleanOutputFormatRequest.OutputFormatRequestId,
-                    Name = cleanOutputFormatRequest.Name,
-                    Prompt = cleanOutputFormatRequest.Prompt,
-                    PromptVariations = cleanOutputFormatRequest.PromptVariations,
-                    OutputFormat = cleanOutputFormatRequest.OutputFormat
-                };
-            }
-
-            return AdminOutputFormatRequest;
-        }
-
-        // Admin Cleaning Extension Methods.  -CRUD-
-        
         // TransformedArtifact
         public static dc.TransformedArtifact AdminCleanForAdd(this dc.TransformedArtifact cleanTransformedArtifact)
         {
@@ -2193,7 +1352,87 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
                      // default value: . 
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf
+                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
+                     // default value: . 
+                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                     // default value: . 
+                    ToDoItems = cleanTransformedArtifact.ToDoItems,
+                     // default value: . 
+                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
+                     // default value: . 
+                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
+                     // default value: . 
+                    Categories = cleanTransformedArtifact.Categories,
+                     // default value: . 
+                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
+                     // default value: . 
+                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
+                     // default value: . 
+                    DueDates = cleanTransformedArtifact.DueDates,
+                     // default value: . 
+                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
+                     // default value: . 
+                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
+                     // default value: . 
+                    Priorities = cleanTransformedArtifact.Priorities,
+                     // default value: . 
+                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
+                     // default value: . 
+                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
+                     // default value: . 
+                    Progress = cleanTransformedArtifact.Progress,
+                     // default value: . 
+                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
+                     // default value: . 
+                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
+                     // default value: . 
+                    Statuses = cleanTransformedArtifact.Statuses,
+                     // default value: . 
+                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
+                     // default value: . 
+                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
+                     // default value: . 
+                    Reminders = cleanTransformedArtifact.Reminders,
+                     // default value: . 
+                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
+                     // default value: . 
+                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
+                     // default value: . 
+                    Notifications = cleanTransformedArtifact.Notifications,
+                     // default value: . 
+                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
+                     // default value: . 
+                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
+                     // default value: . 
+                    Completion = cleanTransformedArtifact.Completion,
+                     // default value: . 
+                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
+                     // default value: . 
+                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
+                     // default value: . 
+                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
+                     // default value: . 
+                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
+                     // default value: . 
+                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
+                     // default value: . 
+                    Duration = cleanTransformedArtifact.Duration,
+                     // default value: . 
+                    DurationAKA = cleanTransformedArtifact.DurationAKA,
+                     // default value: . 
+                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
+                     // default value: . 
+                    CompletedDate = cleanTransformedArtifact.CompletedDate,
+                     // default value: . 
+                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
+                     // default value: . 
+                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
+                     // default value: . 
+                    ToDoColors = cleanTransformedArtifact.ToDoColors,
+                     // default value: . 
+                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
+                     // default value: . 
+                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched
                 };
                 
             }
@@ -2220,7 +1459,6 @@ namespace CLIClassLibrary.ATDMQ
                     Name = cleanTransformedArtifact.Name,
                     GenerationTransformer = cleanTransformedArtifact.GenerationTransformer,
                     ValidationArtifact = cleanTransformedArtifact.ValidationArtifact,
-                    ResponseOfArtifactBeingValidated = cleanTransformedArtifact.ResponseOfArtifactBeingValidated,
                     TransformerRawPrompt = cleanTransformedArtifact.TransformerRawPrompt,
                     TransformerIdeaPrompt = cleanTransformedArtifact.TransformerIdeaPrompt,
                     ActualPrompt = cleanTransformedArtifact.ActualPrompt,
@@ -2232,7 +1470,53 @@ namespace CLIClassLibrary.ATDMQ
                     Modified = cleanTransformedArtifact.Modified,
                     SuggestedPrompt = cleanTransformedArtifact.SuggestedPrompt,
                     ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                    TransformerNumber = cleanTransformedArtifact.TransformerNumber
+                    TransformerNumber = cleanTransformedArtifact.TransformerNumber,
+                    ResponseOfArtifactBeingExtended = cleanTransformedArtifact.ResponseOfArtifactBeingExtended,
+                    LongName = cleanTransformedArtifact.LongName,
+                    TransformerGeneratioNumber = cleanTransformedArtifact.TransformerGeneratioNumber,
+                    TransformerGenerationIdeaName = cleanTransformedArtifact.TransformerGenerationIdeaName,
+                    TransformerGenerationName = cleanTransformedArtifact.TransformerGenerationName,
+                    ArtifactIdentifier = cleanTransformedArtifact.ArtifactIdentifier,
+                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    ToDoItems = cleanTransformedArtifact.ToDoItems,
+                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
+                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
+                    Categories = cleanTransformedArtifact.Categories,
+                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
+                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
+                    DueDates = cleanTransformedArtifact.DueDates,
+                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
+                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
+                    Priorities = cleanTransformedArtifact.Priorities,
+                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
+                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
+                    Progress = cleanTransformedArtifact.Progress,
+                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
+                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
+                    Statuses = cleanTransformedArtifact.Statuses,
+                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
+                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
+                    Reminders = cleanTransformedArtifact.Reminders,
+                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
+                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
+                    Notifications = cleanTransformedArtifact.Notifications,
+                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
+                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
+                    Completion = cleanTransformedArtifact.Completion,
+                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
+                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
+                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
+                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
+                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
+                    Duration = cleanTransformedArtifact.Duration,
+                    DurationAKA = cleanTransformedArtifact.DurationAKA,
+                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
+                    CompletedDate = cleanTransformedArtifact.CompletedDate,
+                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
+                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
+                    ToDoColors = cleanTransformedArtifact.ToDoColors,
+                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
+                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched
                 };
             }
 
@@ -2255,7 +1539,47 @@ namespace CLIClassLibrary.ATDMQ
                     Response = cleanTransformedArtifact.Response,
                     AutoNumber = cleanTransformedArtifact.AutoNumber,
                     IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf
+                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
+                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    ToDoItems = cleanTransformedArtifact.ToDoItems,
+                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
+                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
+                    Categories = cleanTransformedArtifact.Categories,
+                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
+                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
+                    DueDates = cleanTransformedArtifact.DueDates,
+                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
+                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
+                    Priorities = cleanTransformedArtifact.Priorities,
+                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
+                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
+                    Progress = cleanTransformedArtifact.Progress,
+                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
+                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
+                    Statuses = cleanTransformedArtifact.Statuses,
+                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
+                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
+                    Reminders = cleanTransformedArtifact.Reminders,
+                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
+                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
+                    Notifications = cleanTransformedArtifact.Notifications,
+                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
+                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
+                    Completion = cleanTransformedArtifact.Completion,
+                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
+                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
+                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
+                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
+                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
+                    Duration = cleanTransformedArtifact.Duration,
+                    DurationAKA = cleanTransformedArtifact.DurationAKA,
+                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
+                    CompletedDate = cleanTransformedArtifact.CompletedDate,
+                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
+                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
+                    ToDoColors = cleanTransformedArtifact.ToDoColors,
+                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
+                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched
                 };
             }
 
@@ -2282,9 +1606,11 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Generations = cleanIdea.Generations,
                      // default value: . 
-                    GenerationTransformers = cleanIdea.GenerationTransformers,
+                    IsActiveIdea = cleanIdea.IsActiveIdea,
                      // default value: . 
-                    IsActiveIdea = cleanIdea.IsActiveIdea
+                    IdeaTransformers = cleanIdea.IdeaTransformers,
+                     // default value: . 
+                    IdeaFeatures = cleanIdea.IdeaFeatures
                 };
                 
             }
@@ -2311,10 +1637,11 @@ namespace CLIClassLibrary.ATDMQ
                     Name = cleanIdea.Name,
                     SourceIdea = cleanIdea.SourceIdea,
                     Generations = cleanIdea.Generations,
-                    GenerationTransformers = cleanIdea.GenerationTransformers,
-                    GenerationTransformerNames = cleanIdea.GenerationTransformerNames,
-                    GenerationTransformerFullPrompts = cleanIdea.GenerationTransformerFullPrompts,
-                    IsActiveIdea = cleanIdea.IsActiveIdea
+                    IsActiveIdea = cleanIdea.IsActiveIdea,
+                    IdeaTransformers = cleanIdea.IdeaTransformers,
+                    IdeaTransformerNames = cleanIdea.IdeaTransformerNames,
+                    IdeaTransformerFullPrompts = cleanIdea.IdeaTransformerFullPrompts,
+                    IdeaFeatures = cleanIdea.IdeaFeatures
                 };
             }
 
@@ -2334,8 +1661,9 @@ namespace CLIClassLibrary.ATDMQ
                     Name = cleanIdea.Name,
                     SourceIdea = cleanIdea.SourceIdea,
                     Generations = cleanIdea.Generations,
-                    GenerationTransformers = cleanIdea.GenerationTransformers,
-                    IsActiveIdea = cleanIdea.IsActiveIdea
+                    IsActiveIdea = cleanIdea.IsActiveIdea,
+                    IdeaTransformers = cleanIdea.IdeaTransformers,
+                    IdeaFeatures = cleanIdea.IdeaFeatures
                 };
             }
 

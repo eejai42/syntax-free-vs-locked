@@ -18,44 +18,6 @@ namespace AirtableToDotNet.APIWrapper
     {
         
         /// <summary>
-        /// Called before a promptinputanswerkey is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="promptinputanswerkey">The promptinputanswerkey to update</param>
-        partial void BeforeUpdatePromptInputAnswerKey(dc.PromptInputAnswerKey promptinputanswerkey);
-
-        /// <summary>
-        /// Called after a promptinputanswerkey is updated
-        /// </summary>
-        /// <param name="promptinputanswerkey">The promptinputanswerkey which was updated</param>
-        partial void AfterUpdatePromptInputAnswerKey(dc.PromptInputAnswerKey promptinputanswerkey);
-
-        /// <summary>
-        /// Called before a promptinputanswerkey is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="promptinputanswerkey">The promptinputanswerkey to add</param>
-        partial void BeforeAddPromptInputAnswerKey(dc.PromptInputAnswerKey promptinputanswerkey);
-
-        /// <summary>
-        /// Called after a promptinputanswerkey is added
-        /// </summary>
-        /// <param name="promptinputanswerkey">The promptinputanswerkey which was added</param>
-        partial void AfterAddPromptInputAnswerKey(dc.PromptInputAnswerKey promptinputanswerkey);
-
-        /// <summary>
-        /// Called before a promptinputanswerkey is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="promptinputanswerkey">The promptinputanswerkey to add</param>
-        partial void BeforeDeletePromptInputAnswerKey(dc.PromptInputAnswerKey promptinputanswerkey);
-
-        /// <summary>
-        /// Called after a promptinputanswerkey is deleted
-        /// </summary>
-        /// <param name="promptinputanswerkey">The promptinputanswerkey which was deleted</param>
-        partial void AfterDeletePromptInputAnswerKey(dc.PromptInputAnswerKey promptinputanswerkey);
-        /// <summary>
         /// Called before a generationtransformer is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
@@ -131,120 +93,6 @@ namespace AirtableToDotNet.APIWrapper
         /// </summary>
         /// <param name="ideatransformer">The ideatransformer which was deleted</param>
         partial void AfterDeleteIdeaTransformer(dc.IdeaTransformer ideatransformer);
-        /// <summary>
-        /// Called before a mofnode is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="mofnode">The mofnode to update</param>
-        partial void BeforeUpdateMOFNode(dc.MOFNode mofnode);
-
-        /// <summary>
-        /// Called after a mofnode is updated
-        /// </summary>
-        /// <param name="mofnode">The mofnode which was updated</param>
-        partial void AfterUpdateMOFNode(dc.MOFNode mofnode);
-
-        /// <summary>
-        /// Called before a mofnode is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="mofnode">The mofnode to add</param>
-        partial void BeforeAddMOFNode(dc.MOFNode mofnode);
-
-        /// <summary>
-        /// Called after a mofnode is added
-        /// </summary>
-        /// <param name="mofnode">The mofnode which was added</param>
-        partial void AfterAddMOFNode(dc.MOFNode mofnode);
-
-        /// <summary>
-        /// Called before a mofnode is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="mofnode">The mofnode to add</param>
-        partial void BeforeDeleteMOFNode(dc.MOFNode mofnode);
-
-        /// <summary>
-        /// Called after a mofnode is deleted
-        /// </summary>
-        /// <param name="mofnode">The mofnode which was deleted</param>
-        partial void AfterDeleteMOFNode(dc.MOFNode mofnode);
-        /// <summary>
-        /// Called before a mofchoice is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="mofchoice">The mofchoice to update</param>
-        partial void BeforeUpdateMOFChoice(dc.MOFChoice mofchoice);
-
-        /// <summary>
-        /// Called after a mofchoice is updated
-        /// </summary>
-        /// <param name="mofchoice">The mofchoice which was updated</param>
-        partial void AfterUpdateMOFChoice(dc.MOFChoice mofchoice);
-
-        /// <summary>
-        /// Called before a mofchoice is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="mofchoice">The mofchoice to add</param>
-        partial void BeforeAddMOFChoice(dc.MOFChoice mofchoice);
-
-        /// <summary>
-        /// Called after a mofchoice is added
-        /// </summary>
-        /// <param name="mofchoice">The mofchoice which was added</param>
-        partial void AfterAddMOFChoice(dc.MOFChoice mofchoice);
-
-        /// <summary>
-        /// Called before a mofchoice is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="mofchoice">The mofchoice to add</param>
-        partial void BeforeDeleteMOFChoice(dc.MOFChoice mofchoice);
-
-        /// <summary>
-        /// Called after a mofchoice is deleted
-        /// </summary>
-        /// <param name="mofchoice">The mofchoice which was deleted</param>
-        partial void AfterDeleteMOFChoice(dc.MOFChoice mofchoice);
-        /// <summary>
-        /// Called before a dataformat is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="dataformat">The dataformat to update</param>
-        partial void BeforeUpdateDataFormat(dc.DataFormat dataformat);
-
-        /// <summary>
-        /// Called after a dataformat is updated
-        /// </summary>
-        /// <param name="dataformat">The dataformat which was updated</param>
-        partial void AfterUpdateDataFormat(dc.DataFormat dataformat);
-
-        /// <summary>
-        /// Called before a dataformat is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="dataformat">The dataformat to add</param>
-        partial void BeforeAddDataFormat(dc.DataFormat dataformat);
-
-        /// <summary>
-        /// Called after a dataformat is added
-        /// </summary>
-        /// <param name="dataformat">The dataformat which was added</param>
-        partial void AfterAddDataFormat(dc.DataFormat dataformat);
-
-        /// <summary>
-        /// Called before a dataformat is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="dataformat">The dataformat to add</param>
-        partial void BeforeDeleteDataFormat(dc.DataFormat dataformat);
-
-        /// <summary>
-        /// Called after a dataformat is deleted
-        /// </summary>
-        /// <param name="dataformat">The dataformat which was deleted</param>
-        partial void AfterDeleteDataFormat(dc.DataFormat dataformat);
         /// <summary>
         /// Called before a generation is updated.  Throw a SkipOperationException 
         /// if the update should not happen
@@ -322,43 +170,43 @@ namespace AirtableToDotNet.APIWrapper
         /// <param name="appuser">The appuser which was deleted</param>
         partial void AfterDeleteAppUser(dc.AppUser appuser);
         /// <summary>
-        /// Called before a moflayer is updated.  Throw a SkipOperationException 
+        /// Called before a ideafeature is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
-        /// <param name="moflayer">The moflayer to update</param>
-        partial void BeforeUpdateMOFLayer(dc.MOFLayer moflayer);
+        /// <param name="ideafeature">The ideafeature to update</param>
+        partial void BeforeUpdateIdeaFeature(dc.IdeaFeature ideafeature);
 
         /// <summary>
-        /// Called after a moflayer is updated
+        /// Called after a ideafeature is updated
         /// </summary>
-        /// <param name="moflayer">The moflayer which was updated</param>
-        partial void AfterUpdateMOFLayer(dc.MOFLayer moflayer);
+        /// <param name="ideafeature">The ideafeature which was updated</param>
+        partial void AfterUpdateIdeaFeature(dc.IdeaFeature ideafeature);
 
         /// <summary>
-        /// Called before a moflayer is added.  Throw a SkipOperationException 
+        /// Called before a ideafeature is added.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
-        /// <param name="moflayer">The moflayer to add</param>
-        partial void BeforeAddMOFLayer(dc.MOFLayer moflayer);
+        /// <param name="ideafeature">The ideafeature to add</param>
+        partial void BeforeAddIdeaFeature(dc.IdeaFeature ideafeature);
 
         /// <summary>
-        /// Called after a moflayer is added
+        /// Called after a ideafeature is added
         /// </summary>
-        /// <param name="moflayer">The moflayer which was added</param>
-        partial void AfterAddMOFLayer(dc.MOFLayer moflayer);
+        /// <param name="ideafeature">The ideafeature which was added</param>
+        partial void AfterAddIdeaFeature(dc.IdeaFeature ideafeature);
 
         /// <summary>
-        /// Called before a moflayer is deleted.  Throw a SkipOperationException 
+        /// Called before a ideafeature is deleted.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
-        /// <param name="moflayer">The moflayer to add</param>
-        partial void BeforeDeleteMOFLayer(dc.MOFLayer moflayer);
+        /// <param name="ideafeature">The ideafeature to add</param>
+        partial void BeforeDeleteIdeaFeature(dc.IdeaFeature ideafeature);
 
         /// <summary>
-        /// Called after a moflayer is deleted
+        /// Called after a ideafeature is deleted
         /// </summary>
-        /// <param name="moflayer">The moflayer which was deleted</param>
-        partial void AfterDeleteMOFLayer(dc.MOFLayer moflayer);
+        /// <param name="ideafeature">The ideafeature which was deleted</param>
+        partial void AfterDeleteIdeaFeature(dc.IdeaFeature ideafeature);
         /// <summary>
         /// Called before a llm is updated.  Throw a SkipOperationException 
         /// if the update should not happen
@@ -397,44 +245,6 @@ namespace AirtableToDotNet.APIWrapper
         /// </summary>
         /// <param name="llm">The llm which was deleted</param>
         partial void AfterDeleteLLM(dc.LLM llm);
-        /// <summary>
-        /// Called before a outputformatrequest is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="outputformatrequest">The outputformatrequest to update</param>
-        partial void BeforeUpdateOutputFormatRequest(dc.OutputFormatRequest outputformatrequest);
-
-        /// <summary>
-        /// Called after a outputformatrequest is updated
-        /// </summary>
-        /// <param name="outputformatrequest">The outputformatrequest which was updated</param>
-        partial void AfterUpdateOutputFormatRequest(dc.OutputFormatRequest outputformatrequest);
-
-        /// <summary>
-        /// Called before a outputformatrequest is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="outputformatrequest">The outputformatrequest to add</param>
-        partial void BeforeAddOutputFormatRequest(dc.OutputFormatRequest outputformatrequest);
-
-        /// <summary>
-        /// Called after a outputformatrequest is added
-        /// </summary>
-        /// <param name="outputformatrequest">The outputformatrequest which was added</param>
-        partial void AfterAddOutputFormatRequest(dc.OutputFormatRequest outputformatrequest);
-
-        /// <summary>
-        /// Called before a outputformatrequest is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="outputformatrequest">The outputformatrequest to add</param>
-        partial void BeforeDeleteOutputFormatRequest(dc.OutputFormatRequest outputformatrequest);
-
-        /// <summary>
-        /// Called after a outputformatrequest is deleted
-        /// </summary>
-        /// <param name="outputformatrequest">The outputformatrequest which was deleted</param>
-        partial void AfterDeleteOutputFormatRequest(dc.OutputFormatRequest outputformatrequest);
         /// <summary>
         /// Called before a transformedartifact is updated.  Throw a SkipOperationException 
         /// if the update should not happen
@@ -534,78 +344,6 @@ namespace AirtableToDotNet.APIWrapper
             }
         }
 
-        /// <summary>
-        /// Returns a list of PromptInputAnswerKeies
-        /// </summary>
-        /// <param name="view">the specific view to pull PromptInputAnswerKeies from</param>
-        /// <returns>The list of PromptInputAnswerKeies from the given view</returns>
-        public IEnumerable<dc.PromptInputAnswerKey> GetPromptInputAnswerKeies(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("PromptInputAnswerKey", "PromptInputAnswerKeies", "PromptInputAnswerKeys", where, view, maxPages);
-            return rows.ConvertTo<dc.PromptInputAnswerKey>();
-        }
-
-        /// <summary>
-        /// Update the given promptinputanswerkey
-        /// </summary>
-        /// <param name="promptinputanswerkey">The promptinputanswerkey to update</param>
-        public dc.PromptInputAnswerKey Update(dc.PromptInputAnswerKey promptinputanswerkey)
-        {
-            try
-            {
-                this.BeforeUpdatePromptInputAnswerKey(promptinputanswerkey);
-                promptinputanswerkey = this.UpdateAirtableRow<dc.PromptInputAnswerKey>("PromptInputAnswerKey", "PromptInputAnswerKeies", "PromptInputAnswerKeys", promptinputanswerkey);
-                this.AfterUpdatePromptInputAnswerKey(promptinputanswerkey);
-                return promptinputanswerkey;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given promptinputanswerkey
-        /// </summary>
-        /// <param name="promptinputanswerkey">The promptinputanswerkey to delete</param>
-        public void Delete(dc.PromptInputAnswerKey promptinputanswerkey)
-        {
-            try
-            {
-                this.BeforeDeletePromptInputAnswerKey(promptinputanswerkey);
-                this.DeleteAirtableRow<dc.PromptInputAnswerKey>("PromptInputAnswerKeys", promptinputanswerkey);
-                this.AfterDeletePromptInputAnswerKey(promptinputanswerkey);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new promptinputanswerkey into the airtable
-        /// </summary>
-        /// <param name="promptinputanswerkey">The promptinputanswerkey to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.PromptInputAnswerKey Insert(dc.PromptInputAnswerKey promptinputanswerkey)
-        {
-            try
-            {
-                this.BeforeAddPromptInputAnswerKey(promptinputanswerkey);
-                promptinputanswerkey = base.AddAirtableRow<dc.PromptInputAnswerKey>("PromptInputAnswerKey", "PromptInputAnswerKeies", "PromptInputAnswerKeys", promptinputanswerkey);
-                this.AfterAddPromptInputAnswerKey(promptinputanswerkey);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return promptinputanswerkey;
-        }
         /// <summary>
         /// Returns a list of GenerationTransformers
         /// </summary>
@@ -749,222 +487,6 @@ namespace AirtableToDotNet.APIWrapper
             }
 
             return ideatransformer;
-        }
-        /// <summary>
-        /// Returns a list of MOFNodes
-        /// </summary>
-        /// <param name="view">the specific view to pull MOFNodes from</param>
-        /// <returns>The list of MOFNodes from the given view</returns>
-        public IEnumerable<dc.MOFNode> GetMOFNodes(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("MOFNode", "MOFNodes", "MOFNodes", where, view, maxPages);
-            return rows.ConvertTo<dc.MOFNode>();
-        }
-
-        /// <summary>
-        /// Update the given mofnode
-        /// </summary>
-        /// <param name="mofnode">The mofnode to update</param>
-        public dc.MOFNode Update(dc.MOFNode mofnode)
-        {
-            try
-            {
-                this.BeforeUpdateMOFNode(mofnode);
-                mofnode = this.UpdateAirtableRow<dc.MOFNode>("MOFNode", "MOFNodes", "MOFNodes", mofnode);
-                this.AfterUpdateMOFNode(mofnode);
-                return mofnode;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given mofnode
-        /// </summary>
-        /// <param name="mofnode">The mofnode to delete</param>
-        public void Delete(dc.MOFNode mofnode)
-        {
-            try
-            {
-                this.BeforeDeleteMOFNode(mofnode);
-                this.DeleteAirtableRow<dc.MOFNode>("MOFNodes", mofnode);
-                this.AfterDeleteMOFNode(mofnode);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new mofnode into the airtable
-        /// </summary>
-        /// <param name="mofnode">The mofnode to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.MOFNode Insert(dc.MOFNode mofnode)
-        {
-            try
-            {
-                this.BeforeAddMOFNode(mofnode);
-                mofnode = base.AddAirtableRow<dc.MOFNode>("MOFNode", "MOFNodes", "MOFNodes", mofnode);
-                this.AfterAddMOFNode(mofnode);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return mofnode;
-        }
-        /// <summary>
-        /// Returns a list of MOFChoices
-        /// </summary>
-        /// <param name="view">the specific view to pull MOFChoices from</param>
-        /// <returns>The list of MOFChoices from the given view</returns>
-        public IEnumerable<dc.MOFChoice> GetMOFChoices(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("MOFChoice", "MOFChoices", "MOFChoices", where, view, maxPages);
-            return rows.ConvertTo<dc.MOFChoice>();
-        }
-
-        /// <summary>
-        /// Update the given mofchoice
-        /// </summary>
-        /// <param name="mofchoice">The mofchoice to update</param>
-        public dc.MOFChoice Update(dc.MOFChoice mofchoice)
-        {
-            try
-            {
-                this.BeforeUpdateMOFChoice(mofchoice);
-                mofchoice = this.UpdateAirtableRow<dc.MOFChoice>("MOFChoice", "MOFChoices", "MOFChoices", mofchoice);
-                this.AfterUpdateMOFChoice(mofchoice);
-                return mofchoice;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given mofchoice
-        /// </summary>
-        /// <param name="mofchoice">The mofchoice to delete</param>
-        public void Delete(dc.MOFChoice mofchoice)
-        {
-            try
-            {
-                this.BeforeDeleteMOFChoice(mofchoice);
-                this.DeleteAirtableRow<dc.MOFChoice>("MOFChoices", mofchoice);
-                this.AfterDeleteMOFChoice(mofchoice);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new mofchoice into the airtable
-        /// </summary>
-        /// <param name="mofchoice">The mofchoice to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.MOFChoice Insert(dc.MOFChoice mofchoice)
-        {
-            try
-            {
-                this.BeforeAddMOFChoice(mofchoice);
-                mofchoice = base.AddAirtableRow<dc.MOFChoice>("MOFChoice", "MOFChoices", "MOFChoices", mofchoice);
-                this.AfterAddMOFChoice(mofchoice);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return mofchoice;
-        }
-        /// <summary>
-        /// Returns a list of DataFormats
-        /// </summary>
-        /// <param name="view">the specific view to pull DataFormats from</param>
-        /// <returns>The list of DataFormats from the given view</returns>
-        public IEnumerable<dc.DataFormat> GetDataFormats(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("DataFormat", "DataFormats", "DataFormats", where, view, maxPages);
-            return rows.ConvertTo<dc.DataFormat>();
-        }
-
-        /// <summary>
-        /// Update the given dataformat
-        /// </summary>
-        /// <param name="dataformat">The dataformat to update</param>
-        public dc.DataFormat Update(dc.DataFormat dataformat)
-        {
-            try
-            {
-                this.BeforeUpdateDataFormat(dataformat);
-                dataformat = this.UpdateAirtableRow<dc.DataFormat>("DataFormat", "DataFormats", "DataFormats", dataformat);
-                this.AfterUpdateDataFormat(dataformat);
-                return dataformat;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given dataformat
-        /// </summary>
-        /// <param name="dataformat">The dataformat to delete</param>
-        public void Delete(dc.DataFormat dataformat)
-        {
-            try
-            {
-                this.BeforeDeleteDataFormat(dataformat);
-                this.DeleteAirtableRow<dc.DataFormat>("DataFormats", dataformat);
-                this.AfterDeleteDataFormat(dataformat);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new dataformat into the airtable
-        /// </summary>
-        /// <param name="dataformat">The dataformat to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.DataFormat Insert(dc.DataFormat dataformat)
-        {
-            try
-            {
-                this.BeforeAddDataFormat(dataformat);
-                dataformat = base.AddAirtableRow<dc.DataFormat>("DataFormat", "DataFormats", "DataFormats", dataformat);
-                this.AfterAddDataFormat(dataformat);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return dataformat;
         }
         /// <summary>
         /// Returns a list of Generations
@@ -1111,28 +633,28 @@ namespace AirtableToDotNet.APIWrapper
             return appuser;
         }
         /// <summary>
-        /// Returns a list of MOFLayers
+        /// Returns a list of IdeaFeatures
         /// </summary>
-        /// <param name="view">the specific view to pull MOFLayers from</param>
-        /// <returns>The list of MOFLayers from the given view</returns>
-        public IEnumerable<dc.MOFLayer> GetMOFLayers(String where = "", String view = "", int maxPages = 5)
+        /// <param name="view">the specific view to pull IdeaFeatures from</param>
+        /// <returns>The list of IdeaFeatures from the given view</returns>
+        public IEnumerable<dc.IdeaFeature> GetIdeaFeatures(String where = "", String view = "", int maxPages = 5)
         {
-            var rows = this.GetTableAsAirtableRows("MOFLayer", "MOFLayers", "MOFLayers", where, view, maxPages);
-            return rows.ConvertTo<dc.MOFLayer>();
+            var rows = this.GetTableAsAirtableRows("IdeaFeature", "IdeaFeatures", "IdeaFeatures", where, view, maxPages);
+            return rows.ConvertTo<dc.IdeaFeature>();
         }
 
         /// <summary>
-        /// Update the given moflayer
+        /// Update the given ideafeature
         /// </summary>
-        /// <param name="moflayer">The moflayer to update</param>
-        public dc.MOFLayer Update(dc.MOFLayer moflayer)
+        /// <param name="ideafeature">The ideafeature to update</param>
+        public dc.IdeaFeature Update(dc.IdeaFeature ideafeature)
         {
             try
             {
-                this.BeforeUpdateMOFLayer(moflayer);
-                moflayer = this.UpdateAirtableRow<dc.MOFLayer>("MOFLayer", "MOFLayers", "MOFLayers", moflayer);
-                this.AfterUpdateMOFLayer(moflayer);
-                return moflayer;
+                this.BeforeUpdateIdeaFeature(ideafeature);
+                ideafeature = this.UpdateAirtableRow<dc.IdeaFeature>("IdeaFeature", "IdeaFeatures", "IdeaFeatures", ideafeature);
+                this.AfterUpdateIdeaFeature(ideafeature);
+                return ideafeature;
             }
             catch (SkipOperationException soe)
             {
@@ -1143,16 +665,16 @@ namespace AirtableToDotNet.APIWrapper
         }
 
         /// <summary>
-        /// Delete the given moflayer
+        /// Delete the given ideafeature
         /// </summary>
-        /// <param name="moflayer">The moflayer to delete</param>
-        public void Delete(dc.MOFLayer moflayer)
+        /// <param name="ideafeature">The ideafeature to delete</param>
+        public void Delete(dc.IdeaFeature ideafeature)
         {
             try
             {
-                this.BeforeDeleteMOFLayer(moflayer);
-                this.DeleteAirtableRow<dc.MOFLayer>("MOFLayers", moflayer);
-                this.AfterDeleteMOFLayer(moflayer);
+                this.BeforeDeleteIdeaFeature(ideafeature);
+                this.DeleteAirtableRow<dc.IdeaFeature>("IdeaFeatures", ideafeature);
+                this.AfterDeleteIdeaFeature(ideafeature);
             }
             catch (SkipOperationException soe)
             {
@@ -1162,17 +684,17 @@ namespace AirtableToDotNet.APIWrapper
         }
 
         /// <summary>
-        /// Insert a new moflayer into the airtable
+        /// Insert a new ideafeature into the airtable
         /// </summary>
-        /// <param name="moflayer">The moflayer to insert into the airtable</param>
+        /// <param name="ideafeature">The ideafeature to insert into the airtable</param>
         /// <returns></returns>
-        public dc.MOFLayer Insert(dc.MOFLayer moflayer)
+        public dc.IdeaFeature Insert(dc.IdeaFeature ideafeature)
         {
             try
             {
-                this.BeforeAddMOFLayer(moflayer);
-                moflayer = base.AddAirtableRow<dc.MOFLayer>("MOFLayer", "MOFLayers", "MOFLayers", moflayer);
-                this.AfterAddMOFLayer(moflayer);                
+                this.BeforeAddIdeaFeature(ideafeature);
+                ideafeature = base.AddAirtableRow<dc.IdeaFeature>("IdeaFeature", "IdeaFeatures", "IdeaFeatures", ideafeature);
+                this.AfterAddIdeaFeature(ideafeature);                
             }
             catch (SkipOperationException soe)
             {
@@ -1180,7 +702,7 @@ namespace AirtableToDotNet.APIWrapper
                 // Console.WriteLine("Ignoring: {0}", soe.Message);
             }
 
-            return moflayer;
+            return ideafeature;
         }
         /// <summary>
         /// Returns a list of LLMs
@@ -1253,78 +775,6 @@ namespace AirtableToDotNet.APIWrapper
             }
 
             return llm;
-        }
-        /// <summary>
-        /// Returns a list of OutputFormatRequests
-        /// </summary>
-        /// <param name="view">the specific view to pull OutputFormatRequests from</param>
-        /// <returns>The list of OutputFormatRequests from the given view</returns>
-        public IEnumerable<dc.OutputFormatRequest> GetOutputFormatRequests(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("OutputFormatRequest", "OutputFormatRequests", "OutputFormatRequests", where, view, maxPages);
-            return rows.ConvertTo<dc.OutputFormatRequest>();
-        }
-
-        /// <summary>
-        /// Update the given outputformatrequest
-        /// </summary>
-        /// <param name="outputformatrequest">The outputformatrequest to update</param>
-        public dc.OutputFormatRequest Update(dc.OutputFormatRequest outputformatrequest)
-        {
-            try
-            {
-                this.BeforeUpdateOutputFormatRequest(outputformatrequest);
-                outputformatrequest = this.UpdateAirtableRow<dc.OutputFormatRequest>("OutputFormatRequest", "OutputFormatRequests", "OutputFormatRequests", outputformatrequest);
-                this.AfterUpdateOutputFormatRequest(outputformatrequest);
-                return outputformatrequest;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given outputformatrequest
-        /// </summary>
-        /// <param name="outputformatrequest">The outputformatrequest to delete</param>
-        public void Delete(dc.OutputFormatRequest outputformatrequest)
-        {
-            try
-            {
-                this.BeforeDeleteOutputFormatRequest(outputformatrequest);
-                this.DeleteAirtableRow<dc.OutputFormatRequest>("OutputFormatRequests", outputformatrequest);
-                this.AfterDeleteOutputFormatRequest(outputformatrequest);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new outputformatrequest into the airtable
-        /// </summary>
-        /// <param name="outputformatrequest">The outputformatrequest to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.OutputFormatRequest Insert(dc.OutputFormatRequest outputformatrequest)
-        {
-            try
-            {
-                this.BeforeAddOutputFormatRequest(outputformatrequest);
-                outputformatrequest = base.AddAirtableRow<dc.OutputFormatRequest>("OutputFormatRequest", "OutputFormatRequests", "OutputFormatRequests", outputformatrequest);
-                this.AfterAddOutputFormatRequest(outputformatrequest);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return outputformatrequest;
         }
         /// <summary>
         /// Returns a list of TransformedArtifacts

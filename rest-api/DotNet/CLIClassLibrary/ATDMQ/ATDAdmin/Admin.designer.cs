@@ -11,95 +11,6 @@ namespace CLIClassLibrary.ATDMQ
 	public partial class ATDAdmin : ATDActorBase
     {
        public ClaimsIdentity UserIdentity { get; set; } // IsUpdate: false
-       public PromptInputAnswerKey AddPromptInputAnswerKey(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.PromptInputAnswerKey.AdminCleanForAdd());
-			}        
-        private string WrapAdminAddPromptInputAnswerKeyWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public IEnumerable<PromptInputAnswerKey> GetPromptInputAnswerKeies(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetPromptInputAnswerKeies(WrapAdminGetPromptInputAnswerKeiesWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
-			}        
-        private string WrapAdminGetPromptInputAnswerKeiesWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: true
-       public IEnumerable<PromptInputAnswerKey> UpdatePromptInputAnswerKey(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				
-          if (!(Payload.PromptInputAnswerKeies is null))
-          {
-              return this.UpdatePromptInputAnswerKeies(api, Payload);
-          }
-          else
-          {
-              var updatedPromptInputAnswerKey = api.Update(Payload.PromptInputAnswerKey.AdminCleanForUpdate());
-              return new List<PromptInputAnswerKey>(new PromptInputAnswerKey[] { updatedPromptInputAnswerKey });
-          }
-        
-			}        
-        private string WrapAdminUpdatePromptInputAnswerKeyWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-              
-        private List<PromptInputAnswerKey> UpdatePromptInputAnswerKeies(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
-        {
-            if (!(payload.PromptInputAnswerKeies is null) && payload.PromptInputAnswerKeies.Any())
-            {
-                var updatedItems = new List<PromptInputAnswerKey>();
-                payload.PromptInputAnswerKeies.ForEach(item =>
-                {
-                    var updatedPromptInputAnswerKeies = api.Update(item);
-                    updatedItems.Add(updatedPromptInputAnswerKeies);
-                });
-                return updatedItems;
-            }
-            else throw new Exception("Payload.Product or Payload.Products required to update products");
-        }
-      
- // IsUpdate: false
-       public void DeletePromptInputAnswerKey(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.PromptInputAnswerKey);
-			}        
-        private string WrapAdminDeletePromptInputAnswerKeyWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
        public GenerationTransformer AddGenerationTransformer(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
@@ -268,273 +179,6 @@ namespace CLIClassLibrary.ATDMQ
 				api.Delete(Payload.IdeaTransformer);
 			}        
         private string WrapAdminDeleteIdeaTransformerWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public MOFNode AddMOFNode(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.MOFNode.AdminCleanForAdd());
-			}        
-        private string WrapAdminAddMOFNodeWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public IEnumerable<MOFNode> GetMOFNodes(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetMOFNodes(WrapAdminGetMOFNodesWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
-			}        
-        private string WrapAdminGetMOFNodesWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: true
-       public IEnumerable<MOFNode> UpdateMOFNode(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				
-          if (!(Payload.MOFNodes is null))
-          {
-              return this.UpdateMOFNodes(api, Payload);
-          }
-          else
-          {
-              var updatedMOFNode = api.Update(Payload.MOFNode.AdminCleanForUpdate());
-              return new List<MOFNode>(new MOFNode[] { updatedMOFNode });
-          }
-        
-			}        
-        private string WrapAdminUpdateMOFNodeWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-              
-        private List<MOFNode> UpdateMOFNodes(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
-        {
-            if (!(payload.MOFNodes is null) && payload.MOFNodes.Any())
-            {
-                var updatedItems = new List<MOFNode>();
-                payload.MOFNodes.ForEach(item =>
-                {
-                    var updatedMOFNodes = api.Update(item);
-                    updatedItems.Add(updatedMOFNodes);
-                });
-                return updatedItems;
-            }
-            else throw new Exception("Payload.Product or Payload.Products required to update products");
-        }
-      
- // IsUpdate: false
-       public void DeleteMOFNode(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.MOFNode);
-			}        
-        private string WrapAdminDeleteMOFNodeWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public MOFChoice AddMOFChoice(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.MOFChoice.AdminCleanForAdd());
-			}        
-        private string WrapAdminAddMOFChoiceWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public IEnumerable<MOFChoice> GetMOFChoices(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetMOFChoices(WrapAdminGetMOFChoicesWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
-			}        
-        private string WrapAdminGetMOFChoicesWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: true
-       public IEnumerable<MOFChoice> UpdateMOFChoice(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				
-          if (!(Payload.MOFChoices is null))
-          {
-              return this.UpdateMOFChoices(api, Payload);
-          }
-          else
-          {
-              var updatedMOFChoice = api.Update(Payload.MOFChoice.AdminCleanForUpdate());
-              return new List<MOFChoice>(new MOFChoice[] { updatedMOFChoice });
-          }
-        
-			}        
-        private string WrapAdminUpdateMOFChoiceWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-              
-        private List<MOFChoice> UpdateMOFChoices(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
-        {
-            if (!(payload.MOFChoices is null) && payload.MOFChoices.Any())
-            {
-                var updatedItems = new List<MOFChoice>();
-                payload.MOFChoices.ForEach(item =>
-                {
-                    var updatedMOFChoices = api.Update(item);
-                    updatedItems.Add(updatedMOFChoices);
-                });
-                return updatedItems;
-            }
-            else throw new Exception("Payload.Product or Payload.Products required to update products");
-        }
-      
- // IsUpdate: false
-       public void DeleteMOFChoice(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.MOFChoice);
-			}        
-        private string WrapAdminDeleteMOFChoiceWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public DataFormat AddDataFormat(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.DataFormat.AdminCleanForAdd());
-			}        
-        private string WrapAdminAddDataFormatWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public IEnumerable<DataFormat> GetDataFormats(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetDataFormats(WrapAdminGetDataFormatsWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
-			}        
-        private string WrapAdminGetDataFormatsWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: true
-       public IEnumerable<DataFormat> UpdateDataFormat(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				
-          if (!(Payload.DataFormats is null))
-          {
-              return this.UpdateDataFormats(api, Payload);
-          }
-          else
-          {
-              var updatedDataFormat = api.Update(Payload.DataFormat.AdminCleanForUpdate());
-              return new List<DataFormat>(new DataFormat[] { updatedDataFormat });
-          }
-        
-			}        
-        private string WrapAdminUpdateDataFormatWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-              
-        private List<DataFormat> UpdateDataFormats(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
-        {
-            if (!(payload.DataFormats is null) && payload.DataFormats.Any())
-            {
-                var updatedItems = new List<DataFormat>();
-                payload.DataFormats.ForEach(item =>
-                {
-                    var updatedDataFormats = api.Update(item);
-                    updatedItems.Add(updatedDataFormats);
-                });
-                return updatedItems;
-            }
-            else throw new Exception("Payload.Product or Payload.Products required to update products");
-        }
-      
- // IsUpdate: false
-       public void DeleteDataFormat(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.DataFormat);
-			}        
-        private string WrapAdminDeleteDataFormatWhere(string airtableWhere)
         {
                 
         
@@ -723,12 +367,12 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: false
-       public MOFLayer AddMOFLayer(StandardPayload Payload) {
+       public IdeaFeature AddIdeaFeature(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.MOFLayer.AdminCleanForAdd());
+				return api.Insert(Payload.IdeaFeature.AdminCleanForAdd());
 			}        
-        private string WrapAdminAddMOFLayerWhere(string airtableWhere)
+        private string WrapAdminAddIdeaFeatureWhere(string airtableWhere)
         {
                 
         
@@ -739,12 +383,12 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: false
-       public IEnumerable<MOFLayer> GetMOFLayers(StandardPayload Payload) {
+       public IEnumerable<IdeaFeature> GetIdeaFeatures(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetMOFLayers(WrapAdminGetMOFLayersWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
+				return api.GetIdeaFeatures(WrapAdminGetIdeaFeaturesWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
 			}        
-        private string WrapAdminGetMOFLayersWhere(string airtableWhere)
+        private string WrapAdminGetIdeaFeaturesWhere(string airtableWhere)
         {
                 
         
@@ -755,22 +399,22 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: true
-       public IEnumerable<MOFLayer> UpdateMOFLayer(StandardPayload Payload) {
+       public IEnumerable<IdeaFeature> UpdateIdeaFeature(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
 				
-          if (!(Payload.MOFLayers is null))
+          if (!(Payload.IdeaFeatures is null))
           {
-              return this.UpdateMOFLayers(api, Payload);
+              return this.UpdateIdeaFeatures(api, Payload);
           }
           else
           {
-              var updatedMOFLayer = api.Update(Payload.MOFLayer.AdminCleanForUpdate());
-              return new List<MOFLayer>(new MOFLayer[] { updatedMOFLayer });
+              var updatedIdeaFeature = api.Update(Payload.IdeaFeature.AdminCleanForUpdate());
+              return new List<IdeaFeature>(new IdeaFeature[] { updatedIdeaFeature });
           }
         
 			}        
-        private string WrapAdminUpdateMOFLayerWhere(string airtableWhere)
+        private string WrapAdminUpdateIdeaFeatureWhere(string airtableWhere)
         {
                 
         
@@ -780,15 +424,15 @@ namespace CLIClassLibrary.ATDMQ
         }
 
               
-        private List<MOFLayer> UpdateMOFLayers(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
+        private List<IdeaFeature> UpdateIdeaFeatures(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
         {
-            if (!(payload.MOFLayers is null) && payload.MOFLayers.Any())
+            if (!(payload.IdeaFeatures is null) && payload.IdeaFeatures.Any())
             {
-                var updatedItems = new List<MOFLayer>();
-                payload.MOFLayers.ForEach(item =>
+                var updatedItems = new List<IdeaFeature>();
+                payload.IdeaFeatures.ForEach(item =>
                 {
-                    var updatedMOFLayers = api.Update(item);
-                    updatedItems.Add(updatedMOFLayers);
+                    var updatedIdeaFeatures = api.Update(item);
+                    updatedItems.Add(updatedIdeaFeatures);
                 });
                 return updatedItems;
             }
@@ -796,12 +440,12 @@ namespace CLIClassLibrary.ATDMQ
         }
       
  // IsUpdate: false
-       public void DeleteMOFLayer(StandardPayload Payload) {
+       public void DeleteIdeaFeature(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.MOFLayer);
+				api.Delete(Payload.IdeaFeature);
 			}        
-        private string WrapAdminDeleteMOFLayerWhere(string airtableWhere)
+        private string WrapAdminDeleteIdeaFeatureWhere(string airtableWhere)
         {
                 
         
@@ -891,95 +535,6 @@ namespace CLIClassLibrary.ATDMQ
 				api.Delete(Payload.LLM);
 			}        
         private string WrapAdminDeleteLLMWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public OutputFormatRequest AddOutputFormatRequest(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.OutputFormatRequest.AdminCleanForAdd());
-			}        
-        private string WrapAdminAddOutputFormatRequestWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public IEnumerable<OutputFormatRequest> GetOutputFormatRequests(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetOutputFormatRequests(WrapAdminGetOutputFormatRequestsWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
-			}        
-        private string WrapAdminGetOutputFormatRequestsWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: true
-       public IEnumerable<OutputFormatRequest> UpdateOutputFormatRequest(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				
-          if (!(Payload.OutputFormatRequests is null))
-          {
-              return this.UpdateOutputFormatRequests(api, Payload);
-          }
-          else
-          {
-              var updatedOutputFormatRequest = api.Update(Payload.OutputFormatRequest.AdminCleanForUpdate());
-              return new List<OutputFormatRequest>(new OutputFormatRequest[] { updatedOutputFormatRequest });
-          }
-        
-			}        
-        private string WrapAdminUpdateOutputFormatRequestWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-              
-        private List<OutputFormatRequest> UpdateOutputFormatRequests(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
-        {
-            if (!(payload.OutputFormatRequests is null) && payload.OutputFormatRequests.Any())
-            {
-                var updatedItems = new List<OutputFormatRequest>();
-                payload.OutputFormatRequests.ForEach(item =>
-                {
-                    var updatedOutputFormatRequests = api.Update(item);
-                    updatedItems.Add(updatedOutputFormatRequests);
-                });
-                return updatedItems;
-            }
-            else throw new Exception("Payload.Product or Payload.Products required to update products");
-        }
-      
- // IsUpdate: false
-       public void DeleteOutputFormatRequest(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.OutputFormatRequest);
-			}        
-        private string WrapAdminDeleteOutputFormatRequestWhere(string airtableWhere)
         {
                 
         

@@ -14,26 +14,26 @@ namespace ASPNet_REST_API.Controllers.Admin
 {
     [ApiController]
     [Route("/User")]
-    public class UserMOFChoicesController : Controller
+    public class UserIdeaFeaturesController : Controller
     {
         
 
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpGet("MOFChoices")]
+        [HttpGet("IdeaFeatures")]
         public IActionResult Index(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var results = new List<MOFChoice>();
+            var results = new List<IdeaFeature>();
             try
             {
                 ATDUser atdUser = new ATDUser();
                 atdUser.EmailAddress = this.User.Identity.Name;
                 atdUser.UserIdentity = this.User.Identities.FirstOrDefault();
                 var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
-                results = atdUser.GetMOFChoices(payload)?.ToList();
+                results = atdUser.GetIdeaFeatures(payload)?.ToList();
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding MOFChoices: {ex.Message}", ex);
+                throw new Exception($"Error adding IdeaFeatures: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(results, Formatting.Indented);
 
@@ -44,11 +44,11 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPost("MOFChoices")]
-        [HttpPost("MOFChoice")]
+        [HttpPost("IdeaFeatures")]
+        [HttpPost("IdeaFeature")]
         public IActionResult Add(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = default(MOFChoice);
+            var result = default(IdeaFeature);
             try
             {
                 ATDUser atdUser = new ATDUser();
@@ -59,14 +59,14 @@ namespace ASPNet_REST_API.Controllers.Admin
                     var body = reader.ReadToEndAsync().GetAwaiter().GetResult();
                     var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.MOFChoice = bodyAsPayload.MOFChoice.UserCleanForAdd();
-                    if (payload.MOFChoice is null) payload.MOFChoice = JsonConvert.DeserializeObject<MOFChoice>(body).UserCleanForAdd();
-                    result = atdUser.AddMOFChoice(payload).UserCleanForGet();
+                    if (bodyAsPayload != null) payload.IdeaFeature = bodyAsPayload.IdeaFeature.UserCleanForAdd();
+                    if (payload.IdeaFeature is null) payload.IdeaFeature = JsonConvert.DeserializeObject<IdeaFeature>(body).UserCleanForAdd();
+                    result = atdUser.AddIdeaFeature(payload).UserCleanForGet();
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding MOFChoices: {ex.Message}", ex);
+                throw new Exception($"Error adding IdeaFeatures: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -77,10 +77,10 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPut("MOFChoice")]
+        [HttpPut("IdeaFeature")]
         public IActionResult Update(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = new MOFChoice();
+            var result = new IdeaFeature();
             try
             {
                 using (var reader = new StreamReader(this.Request.Body))
@@ -90,15 +90,15 @@ namespace ASPNet_REST_API.Controllers.Admin
                     atdUser.EmailAddress = this.User.Identity.Name;
                     var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.MOFChoice = bodyAsPayload.MOFChoice.UserCleanForAdd();
-                    if (payload.MOFChoice is null) payload.MOFChoice = JsonConvert.DeserializeObject<MOFChoice>(body).UserCleanForAdd();
-                    result = atdUser.UpdateMOFChoice(payload)?.FirstOrDefault();
+                    if (bodyAsPayload != null) payload.IdeaFeature = bodyAsPayload.IdeaFeature.UserCleanForAdd();
+                    if (payload.IdeaFeature is null) payload.IdeaFeature = JsonConvert.DeserializeObject<IdeaFeature>(body).UserCleanForAdd();
+                    result = atdUser.UpdateIdeaFeature(payload)?.FirstOrDefault();
                 }
 
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error updating MOFChoices: {ex.Message}", ex);
+                throw new Exception($"Error updating IdeaFeatures: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -109,20 +109,20 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpDelete("MOFChoice")]
+        [HttpDelete("IdeaFeature")]
         public IActionResult Delete(string id)
         {
             try {
                 ATDUser atdUser = new ATDUser();
                 atdUser.EmailAddress = this.User.Identity.Name;
                 var payload = atdUser.CreatePayload();
-                payload.MOFChoice = new MOFChoice() { MOFChoiceId = id };
-                atdUser.DeleteMOFChoice(payload);
+                payload.IdeaFeature = new IdeaFeature() { IdeaFeatureId = id };
+                atdUser.DeleteIdeaFeature(payload);
                 var json = JsonConvert.SerializeObject(true, Formatting.Indented);
                 return Content(json, "application/json");    
             } 
             catch (Exception ex) {
-                throw new Exception($"Error updating MOFChoices: {ex.Message}", ex);
+                throw new Exception($"Error updating IdeaFeatures: {ex.Message}", ex);
             }
         }                        
     }

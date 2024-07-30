@@ -33,7 +33,7 @@ namespace AirtableDirect.CLI.Lib.DataClasses
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TestRuns")]
         [RemoteIsCollection]
-        public String[] TestRuns { get; set; }
+        public String TestRuns { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Generations")]
         [RemoteIsCollection]

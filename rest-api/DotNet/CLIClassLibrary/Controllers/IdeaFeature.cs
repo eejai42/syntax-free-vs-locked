@@ -7,13 +7,13 @@ using System.Text;
 
 namespace CLIClassLibrary.Controllers
 {
-    public class MOFChoicesController : Controller
+    public class IdeaFeaturesController : Controller
     {
         public IActionResult Index()
         {
             var admin = new ATDAdmin();
             var payload = admin.CreatePayload();
-            return Json(admin.GetMOFChoices(payload));
+            return Json(admin.GetIdeaFeatures(payload));
 
         }
     }
