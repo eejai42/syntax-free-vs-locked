@@ -80,11 +80,8 @@ def read_response_from_file():
     with open("response.txt", "r", encoding="utf-8") as file:
         return file.read()
 
-def update_transformed_artifact(artifact, actual_prompt, response, extension_of=None):
+def update_transformed_artifact(artifact):
     url = f"{BASE_URL}/TransformedArtifact"
-    artifact["ExtensionOf"] = extension_of
-    artifact["ActualPrompt"] = actual_prompt
-    artifact["Response"] = response
     payload = {
         "TransformedArtifact": artifact
     }
@@ -92,45 +89,36 @@ def update_transformed_artifact(artifact, actual_prompt, response, extension_of=
     response.raise_for_status()
     return response.json()
 
-def root_prompt(iterations=1, transform_number=1001, max_transform_number=None):
-    if (max_transform_number == transform_number):
-        max_transform_number = None
-
+def root_prompt(iterations=1, transformer_number=1001):
     # throw exception if a transform number is passed in as place of the iterations platform
     if (iterations > 1000):
         raise Exception("Iterations must be less than 1000")
     
-    if (transform_number < 1001):
+    if (transformer_number < 1001):
         raise Exception("TransformNumber must be greater than 1000")
 
-    print("Adding root prompts now...", iterations, transform_number, max_transform_number)
-    if max_transform_number:
-        transformer_numbers = range(transform_number, max_transform_number + 1)
-    else:
-        transformer_numbers = [transform_number]
-
-    print("TransformerNumbers:", transformer_numbers)
+    print("Processing TransformerNumber:", transformer_number)
+    generation_transform = get_generation_transform_by_number(transformer_number)
+    if not generation_transform:
+        print(f"No GenerationTransform found for TransformerNumber: {transformer_number}")
+        return
     
-    for number in transformer_numbers:
-        print("Processing TransformerNumber:", number)
-        generation_transform = get_generation_transform_by_number(number)
-        if not generation_transform:
-            print(f"No GenerationTransform found for TransformerNumber: {number}")
-            continue
-        
-        generation_transform_id = generation_transform["GenerationTransformerId"]
-        for _ in range(iterations):
-            print("Iterating...")
-            created_artifact = create_transformed_artifact(generation_transform_id)
-            artifact_id = created_artifact["TransformedArtifactId"]
-            artifact = get_transformed_artifact_by_id(artifact_id)
-            suggested_idea_prompt = artifact["SuggestedPrompt"]
-            write_prompt_to_file(suggested_idea_prompt)
-            run_gpt()
-            actual_prompt = suggested_idea_prompt
-            response = read_response_from_file()
-            updated_artifact = update_transformed_artifact(artifact, actual_prompt, response)
-            print("Artifact updated successfully:", updated_artifact)
+    generation_transform_id = generation_transform["GenerationTransformerId"]
+    for _ in range(iterations):
+        print("Iterating...")
+        created_artifact = create_transformed_artifact(generation_transform_id)
+        artifact_id = created_artifact["TransformedArtifactId"]
+        artifact = get_transformed_artifact_by_id(artifact_id)
+        suggested_idea_prompt = artifact["SuggestedPrompt"]
+        write_prompt_to_file(suggested_idea_prompt)
+        run_gpt()
+        actual_prompt = suggested_idea_prompt
+        response = read_response_from_file()
+        artifact["ActualPrompt"] = actual_prompt
+        artifact["Response"] = response
+
+        updated_artifact = update_transformed_artifact(artifact)
+        print("Artifact updated successfully:", updated_artifact)
 
 def add_generation(iterations=1, validator_transform_number=1000, transformer_number=1001):
     validator_transform = get_generation_transform_by_number(validator_transform_number)
@@ -155,7 +143,11 @@ def add_generation(iterations=1, validator_transform_number=1000, transformer_nu
         run_gpt()
         actual_prompt = suggested_idea_prompt
         response = read_response_from_file()
-        updated_validation_artifact = update_transformed_artifact(updated_artifact, actual_prompt, response)
+        updated_validation_artifact["ExtensionOf"] = artifact_id
+        updated_validation_artifact["ActualPrompt"] = actual_prompt
+        updated_validation_artifact["Response"] = response
+
+        updated_validation_artifact = update_transformed_artifact(updated_artifact)
         print("Validation Artifact updated successfully:", updated_validation_artifact)
         
         # Update the original artifact with the ValidationArtifact reference
@@ -164,7 +156,7 @@ def add_generation(iterations=1, validator_transform_number=1000, transformer_nu
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: add-data.py command [validatorTransformerNumber] transformerNumber [maxTransformerNumber] [iterations]")
+        print("Usage: add-data.py command iterations [generationTransformerNumber] transformerNumber")
         sys.exit(1)
 
     print("Trying to add data now...")
@@ -173,13 +165,11 @@ if __name__ == "__main__":
     if command == "add-root":
         iterations = int(sys.argv[2])
         source_transformer_number = int(sys.argv[3])
-        max_transformer_number = int(sys.argv[4]) if len(sys.argv) > 4 else None
-        root_prompt(iterations, source_transformer_number, max_transformer_number)
+        root_prompt(iterations, source_transformer_number)
     elif command == "add-generation":
         iterations = int(sys.argv[2])
         generation_transform_number = int(sys.argv[3])
         source_transformer_number = int(sys.argv[4]) if len(sys.argv) > 4 else None
-        max_transformer_number = int(sys.argv[5]) if len(sys.argv) > 5 else None
         add_generation(iterations, generation_transform_number,  source_transformer_number)
     else:
         print(f"Unknown command: {command}")
