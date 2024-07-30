@@ -55,6 +55,14 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String Model { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaValidationPrompt")]
+        [RemoteIsCollection]
+        public String IdeaValidationPrompt { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformedArtifactRawPrompts")]
+        [RemoteIsCollection]
+        public String[] TransformedArtifactRawPrompts { get; set; }
+    
 
         
 

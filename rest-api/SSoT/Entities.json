@@ -1,25 +1,11 @@
 {
     "Entities": [
             {
-                "Name": "GenerationTransformer",
-                "DisplayName": "GenerationTransformer",
-                "Description": "",
-                "PluralName": "GenerationTransformers",
-                "AirtableName": "GenerationTransformers"
-            },
-            {
                 "Name": "IdeaTransformer",
                 "DisplayName": "IdeaTransformer",
                 "Description": "",
                 "PluralName": "IdeaTransformers",
                 "AirtableName": "IdeaTransformers"
-            },
-            {
-                "Name": "Generation",
-                "DisplayName": "Generation",
-                "Description": "",
-                "PluralName": "Generations",
-                "AirtableName": "Generations"
             },
             {
                 "Name": "AppUser",
@@ -29,6 +15,20 @@
                 "AirtableName": "AppUsers"
             },
             {
+                "Name": "GenerationTransformer",
+                "DisplayName": "GenerationTransformer",
+                "Description": "",
+                "PluralName": "GenerationTransformers",
+                "AirtableName": "GenerationTransformers"
+            },
+            {
+                "Name": "Generation",
+                "DisplayName": "Generation",
+                "Description": "",
+                "PluralName": "Generations",
+                "AirtableName": "Generations"
+            },
+            {
                 "Name": "IdeaFeature",
                 "DisplayName": "IdeaFeature",
                 "Description": "",
@@ -36,18 +36,25 @@
                 "AirtableName": "IdeaFeatures"
             },
             {
-                "Name": "LLM",
-                "DisplayName": "LLM",
-                "Description": "",
-                "PluralName": "LLMs",
-                "AirtableName": "LLMs"
-            },
-            {
                 "Name": "TransformedArtifact",
                 "DisplayName": "TransformedArtifact",
                 "Description": "",
                 "PluralName": "TransformedArtifacts",
                 "AirtableName": "TransformedArtifacts"
+            },
+            {
+                "Name": "DesignDecision",
+                "DisplayName": "DesignDecision",
+                "Description": "",
+                "PluralName": "DesignDecisions",
+                "AirtableName": "DesignDecisions"
+            },
+            {
+                "Name": "LLM",
+                "DisplayName": "LLM",
+                "Description": "",
+                "PluralName": "LLMs",
+                "AirtableName": "LLMs"
             },
             {
                 "Name": "Idea",

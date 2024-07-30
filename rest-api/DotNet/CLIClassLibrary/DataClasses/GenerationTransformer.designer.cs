@@ -36,12 +36,9 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String RawPrompt { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaPrompt")]
-        public String IdeaPrompt { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationSourceIdea")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SourceIdea")]
         [RemoteIsCollection]
-        public String GenerationSourceIdea { get; set; }
+        public String SourceIdea { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Transformer")]
         [RemoteIsCollection]
@@ -79,6 +76,10 @@ namespace AirtableDirect.CLI.Lib.DataClasses
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsArtifactValidator")]
         public Nullable<Boolean> IsArtifactValidator { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaValidationPrompt")]
+        [RemoteIsCollection]
+        public String IdeaValidationPrompt { get; set; }
     
 
         

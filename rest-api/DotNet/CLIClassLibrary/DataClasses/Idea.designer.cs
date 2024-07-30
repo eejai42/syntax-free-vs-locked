@@ -54,6 +54,20 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String[] IdeaFeatures { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaFeatureLowerNames")]
+        [RemoteIsCollection]
+        public String[] IdeaFeatureLowerNames { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaFeatureNames")]
+        [RemoteIsCollection]
+        public String[] IdeaFeatureNames { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "FeaturesArray")]
+        public String FeaturesArray { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ValidationPrompt")]
+        public String ValidationPrompt { get; set; }
+    
 
         
 

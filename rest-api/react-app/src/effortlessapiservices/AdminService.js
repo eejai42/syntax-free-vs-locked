@@ -5,34 +5,6 @@ class AdminService extends BaseService {
     
         
     
-    async AddGenerationTransformer(GenerationTransformer) { 
-        return this.apiCall("POST", "Admin", "GenerationTransformer", null, GenerationTransformer); // GenerationTransformer
-   }
-    
-    
-        
-    
-    async GetGenerationTransformers(view) { 
-        return this.apiCall("GET", "Admin", "GenerationTransformers", view, null); // GenerationTransformer
-   }
-    
-    
-        
-    
-    async UpdateGenerationTransformer(GenerationTransformer) {
-        return this.apiCall("PUT", "Admin", "GenerationTransformer", null, GenerationTransformer); // GenerationTransformer
-   }
-    
-    
-        
-    
-    async DeleteGenerationTransformer(id) { 
-        return this.apiCall("DELETE", "Admin", "GenerationTransformer", null, id); // GenerationTransformer
-   }
-    
-    
-        
-    
     async AddIdeaTransformer(IdeaTransformer) { 
         return this.apiCall("POST", "Admin", "IdeaTransformer", null, IdeaTransformer); // IdeaTransformer
    }
@@ -56,34 +28,6 @@ class AdminService extends BaseService {
     
     async DeleteIdeaTransformer(id) { 
         return this.apiCall("DELETE", "Admin", "IdeaTransformer", null, id); // IdeaTransformer
-   }
-    
-    
-        
-    
-    async AddGeneration(Generation) { 
-        return this.apiCall("POST", "Admin", "Generation", null, Generation); // Generation
-   }
-    
-    
-        
-    
-    async GetGenerations(view) { 
-        return this.apiCall("GET", "Admin", "Generations", view, null); // Generation
-   }
-    
-    
-        
-    
-    async UpdateGeneration(Generation) {
-        return this.apiCall("PUT", "Admin", "Generation", null, Generation); // Generation
-   }
-    
-    
-        
-    
-    async DeleteGeneration(id) { 
-        return this.apiCall("DELETE", "Admin", "Generation", null, id); // Generation
    }
     
     
@@ -117,6 +61,62 @@ class AdminService extends BaseService {
     
         
     
+    async AddGenerationTransformer(GenerationTransformer) { 
+        return this.apiCall("POST", "Admin", "GenerationTransformer", null, GenerationTransformer); // GenerationTransformer
+   }
+    
+    
+        
+    
+    async GetGenerationTransformers(view) { 
+        return this.apiCall("GET", "Admin", "GenerationTransformers", view, null); // GenerationTransformer
+   }
+    
+    
+        
+    
+    async UpdateGenerationTransformer(GenerationTransformer) {
+        return this.apiCall("PUT", "Admin", "GenerationTransformer", null, GenerationTransformer); // GenerationTransformer
+   }
+    
+    
+        
+    
+    async DeleteGenerationTransformer(id) { 
+        return this.apiCall("DELETE", "Admin", "GenerationTransformer", null, id); // GenerationTransformer
+   }
+    
+    
+        
+    
+    async AddGeneration(Generation) { 
+        return this.apiCall("POST", "Admin", "Generation", null, Generation); // Generation
+   }
+    
+    
+        
+    
+    async GetGenerations(view) { 
+        return this.apiCall("GET", "Admin", "Generations", view, null); // Generation
+   }
+    
+    
+        
+    
+    async UpdateGeneration(Generation) {
+        return this.apiCall("PUT", "Admin", "Generation", null, Generation); // Generation
+   }
+    
+    
+        
+    
+    async DeleteGeneration(id) { 
+        return this.apiCall("DELETE", "Admin", "Generation", null, id); // Generation
+   }
+    
+    
+        
+    
     async AddIdeaFeature(IdeaFeature) { 
         return this.apiCall("POST", "Admin", "IdeaFeature", null, IdeaFeature); // IdeaFeature
    }
@@ -145,34 +145,6 @@ class AdminService extends BaseService {
     
         
     
-    async AddLLM(LLM) { 
-        return this.apiCall("POST", "Admin", "LLM", null, LLM); // LLM
-   }
-    
-    
-        
-    
-    async GetLLMs(view) { 
-        return this.apiCall("GET", "Admin", "LLMs", view, null); // LLM
-   }
-    
-    
-        
-    
-    async UpdateLLM(LLM) {
-        return this.apiCall("PUT", "Admin", "LLM", null, LLM); // LLM
-   }
-    
-    
-        
-    
-    async DeleteLLM(id) { 
-        return this.apiCall("DELETE", "Admin", "LLM", null, id); // LLM
-   }
-    
-    
-        
-    
     async AddTransformedArtifact(TransformedArtifact) { 
         return this.apiCall("POST", "Admin", "TransformedArtifact", null, TransformedArtifact); // TransformedArtifact
    }
@@ -196,6 +168,62 @@ class AdminService extends BaseService {
     
     async DeleteTransformedArtifact(id) { 
         return this.apiCall("DELETE", "Admin", "TransformedArtifact", null, id); // TransformedArtifact
+   }
+    
+    
+        
+    
+    async AddDesignDecision(DesignDecision) { 
+        return this.apiCall("POST", "Admin", "DesignDecision", null, DesignDecision); // DesignDecision
+   }
+    
+    
+        
+    
+    async GetDesignDecisions(view) { 
+        return this.apiCall("GET", "Admin", "DesignDecisions", view, null); // DesignDecision
+   }
+    
+    
+        
+    
+    async UpdateDesignDecision(DesignDecision) {
+        return this.apiCall("PUT", "Admin", "DesignDecision", null, DesignDecision); // DesignDecision
+   }
+    
+    
+        
+    
+    async DeleteDesignDecision(id) { 
+        return this.apiCall("DELETE", "Admin", "DesignDecision", null, id); // DesignDecision
+   }
+    
+    
+        
+    
+    async AddLLM(LLM) { 
+        return this.apiCall("POST", "Admin", "LLM", null, LLM); // LLM
+   }
+    
+    
+        
+    
+    async GetLLMs(view) { 
+        return this.apiCall("GET", "Admin", "LLMs", view, null); // LLM
+   }
+    
+    
+        
+    
+    async UpdateLLM(LLM) {
+        return this.apiCall("PUT", "Admin", "LLM", null, LLM); // LLM
+   }
+    
+    
+        
+    
+    async DeleteLLM(id) { 
+        return this.apiCall("DELETE", "Admin", "LLM", null, id); // LLM
    }
     
     

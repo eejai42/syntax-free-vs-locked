@@ -20,26 +20,10 @@ namespace CLIClassLibrary.Controllers
                 },
                 new Endpoint()
                 {
-                    Name = "GenerationTransformers",
-                    Method = "GET",
-                    Url = "/GenerationTransformers",
-                    Description = "Get's a list of GenerationTransformers from the data source."
-                }
-            ,
-                new Endpoint()
-                {
                     Name = "IdeaTransformers",
                     Method = "GET",
                     Url = "/IdeaTransformers",
                     Description = "Get's a list of IdeaTransformers from the data source."
-                }
-            ,
-                new Endpoint()
-                {
-                    Name = "Generations",
-                    Method = "GET",
-                    Url = "/Generations",
-                    Description = "Get's a list of Generations from the data source."
                 }
             ,
                 new Endpoint()
@@ -52,6 +36,22 @@ namespace CLIClassLibrary.Controllers
             ,
                 new Endpoint()
                 {
+                    Name = "GenerationTransformers",
+                    Method = "GET",
+                    Url = "/GenerationTransformers",
+                    Description = "Get's a list of GenerationTransformers from the data source."
+                }
+            ,
+                new Endpoint()
+                {
+                    Name = "Generations",
+                    Method = "GET",
+                    Url = "/Generations",
+                    Description = "Get's a list of Generations from the data source."
+                }
+            ,
+                new Endpoint()
+                {
                     Name = "IdeaFeatures",
                     Method = "GET",
                     Url = "/IdeaFeatures",
@@ -60,18 +60,26 @@ namespace CLIClassLibrary.Controllers
             ,
                 new Endpoint()
                 {
-                    Name = "LLMs",
-                    Method = "GET",
-                    Url = "/LLMs",
-                    Description = "Get's a list of LLMs from the data source."
-                }
-            ,
-                new Endpoint()
-                {
                     Name = "TransformedArtifacts",
                     Method = "GET",
                     Url = "/TransformedArtifacts",
                     Description = "Get's a list of TransformedArtifacts from the data source."
+                }
+            ,
+                new Endpoint()
+                {
+                    Name = "DesignDecisions",
+                    Method = "GET",
+                    Url = "/DesignDecisions",
+                    Description = "Get's a list of DesignDecisions from the data source."
+                }
+            ,
+                new Endpoint()
+                {
+                    Name = "LLMs",
+                    Method = "GET",
+                    Url = "/LLMs",
+                    Description = "Get's a list of LLMs from the data source."
                 }
             ,
                 new Endpoint()

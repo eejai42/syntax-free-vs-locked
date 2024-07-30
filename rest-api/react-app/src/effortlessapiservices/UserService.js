@@ -5,34 +5,6 @@ class UserService extends BaseService {
     
         
     
-    async AddGenerationTransformer(GenerationTransformer) { 
-        return this.apiCall("POST", "User", "GenerationTransformer", null, GenerationTransformer); // GenerationTransformer
-   }
-    
-    
-        
-    
-    async GetGenerationTransformers(view) { 
-        return this.apiCall("GET", "User", "GenerationTransformers", view, null); // GenerationTransformer
-   }
-    
-    
-        
-    
-    async UpdateGenerationTransformer(GenerationTransformer) {
-        return this.apiCall("PUT", "User", "GenerationTransformer", null, GenerationTransformer); // GenerationTransformer
-   }
-    
-    
-        
-    
-    async DeleteGenerationTransformer(id) { 
-        return this.apiCall("DELETE", "User", "GenerationTransformer", null, id); // GenerationTransformer
-   }
-    
-    
-        
-    
     async AddIdeaTransformer(IdeaTransformer) { 
         return this.apiCall("POST", "User", "IdeaTransformer", null, IdeaTransformer); // IdeaTransformer
    }
@@ -56,34 +28,6 @@ class UserService extends BaseService {
     
     async DeleteIdeaTransformer(id) { 
         return this.apiCall("DELETE", "User", "IdeaTransformer", null, id); // IdeaTransformer
-   }
-    
-    
-        
-    
-    async AddGeneration(Generation) { 
-        return this.apiCall("POST", "User", "Generation", null, Generation); // Generation
-   }
-    
-    
-        
-    
-    async GetGenerations(view) { 
-        return this.apiCall("GET", "User", "Generations", view, null); // Generation
-   }
-    
-    
-        
-    
-    async UpdateGeneration(Generation) {
-        return this.apiCall("PUT", "User", "Generation", null, Generation); // Generation
-   }
-    
-    
-        
-    
-    async DeleteGeneration(id) { 
-        return this.apiCall("DELETE", "User", "Generation", null, id); // Generation
    }
     
     
@@ -117,6 +61,62 @@ class UserService extends BaseService {
     
         
     
+    async AddGenerationTransformer(GenerationTransformer) { 
+        return this.apiCall("POST", "User", "GenerationTransformer", null, GenerationTransformer); // GenerationTransformer
+   }
+    
+    
+        
+    
+    async GetGenerationTransformers(view) { 
+        return this.apiCall("GET", "User", "GenerationTransformers", view, null); // GenerationTransformer
+   }
+    
+    
+        
+    
+    async UpdateGenerationTransformer(GenerationTransformer) {
+        return this.apiCall("PUT", "User", "GenerationTransformer", null, GenerationTransformer); // GenerationTransformer
+   }
+    
+    
+        
+    
+    async DeleteGenerationTransformer(id) { 
+        return this.apiCall("DELETE", "User", "GenerationTransformer", null, id); // GenerationTransformer
+   }
+    
+    
+        
+    
+    async AddGeneration(Generation) { 
+        return this.apiCall("POST", "User", "Generation", null, Generation); // Generation
+   }
+    
+    
+        
+    
+    async GetGenerations(view) { 
+        return this.apiCall("GET", "User", "Generations", view, null); // Generation
+   }
+    
+    
+        
+    
+    async UpdateGeneration(Generation) {
+        return this.apiCall("PUT", "User", "Generation", null, Generation); // Generation
+   }
+    
+    
+        
+    
+    async DeleteGeneration(id) { 
+        return this.apiCall("DELETE", "User", "Generation", null, id); // Generation
+   }
+    
+    
+        
+    
     async AddIdeaFeature(IdeaFeature) { 
         return this.apiCall("POST", "User", "IdeaFeature", null, IdeaFeature); // IdeaFeature
    }
@@ -145,34 +145,6 @@ class UserService extends BaseService {
     
         
     
-    async AddLLM(LLM) { 
-        return this.apiCall("POST", "User", "LLM", null, LLM); // LLM
-   }
-    
-    
-        
-    
-    async GetLLMs(view) { 
-        return this.apiCall("GET", "User", "LLMs", view, null); // LLM
-   }
-    
-    
-        
-    
-    async UpdateLLM(LLM) {
-        return this.apiCall("PUT", "User", "LLM", null, LLM); // LLM
-   }
-    
-    
-        
-    
-    async DeleteLLM(id) { 
-        return this.apiCall("DELETE", "User", "LLM", null, id); // LLM
-   }
-    
-    
-        
-    
     async AddTransformedArtifact(TransformedArtifact) { 
         return this.apiCall("POST", "User", "TransformedArtifact", null, TransformedArtifact); // TransformedArtifact
    }
@@ -196,6 +168,62 @@ class UserService extends BaseService {
     
     async DeleteTransformedArtifact(id) { 
         return this.apiCall("DELETE", "User", "TransformedArtifact", null, id); // TransformedArtifact
+   }
+    
+    
+        
+    
+    async AddDesignDecision(DesignDecision) { 
+        return this.apiCall("POST", "User", "DesignDecision", null, DesignDecision); // DesignDecision
+   }
+    
+    
+        
+    
+    async GetDesignDecisions(view) { 
+        return this.apiCall("GET", "User", "DesignDecisions", view, null); // DesignDecision
+   }
+    
+    
+        
+    
+    async UpdateDesignDecision(DesignDecision) {
+        return this.apiCall("PUT", "User", "DesignDecision", null, DesignDecision); // DesignDecision
+   }
+    
+    
+        
+    
+    async DeleteDesignDecision(id) { 
+        return this.apiCall("DELETE", "User", "DesignDecision", null, id); // DesignDecision
+   }
+    
+    
+        
+    
+    async AddLLM(LLM) { 
+        return this.apiCall("POST", "User", "LLM", null, LLM); // LLM
+   }
+    
+    
+        
+    
+    async GetLLMs(view) { 
+        return this.apiCall("GET", "User", "LLMs", view, null); // LLM
+   }
+    
+    
+        
+    
+    async UpdateLLM(LLM) {
+        return this.apiCall("PUT", "User", "LLM", null, LLM); // LLM
+   }
+    
+    
+        
+    
+    async DeleteLLM(id) { 
+        return this.apiCall("DELETE", "User", "LLM", null, id); // LLM
    }
     
     

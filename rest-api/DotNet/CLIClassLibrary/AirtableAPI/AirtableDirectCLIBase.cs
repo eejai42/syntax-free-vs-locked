@@ -26,40 +26,45 @@ namespace AirtableDirect.CLI.Lib.Handlers
         }
 
         
-        protected abstract string HandleCreateGenerationTransformer();
-        protected abstract string HandleReadGenerationTransformer();
-        protected abstract string HandleUpdateGenerationTransformer();
-        protected abstract string HandleDeleteGenerationTransformer();
-        
         protected abstract string HandleCreateIdeaTransformer();
         protected abstract string HandleReadIdeaTransformer();
         protected abstract string HandleUpdateIdeaTransformer();
         protected abstract string HandleDeleteIdeaTransformer();
-        
-        protected abstract string HandleCreateGeneration();
-        protected abstract string HandleReadGeneration();
-        protected abstract string HandleUpdateGeneration();
-        protected abstract string HandleDeleteGeneration();
         
         protected abstract string HandleCreateAppUser();
         protected abstract string HandleReadAppUser();
         protected abstract string HandleUpdateAppUser();
         protected abstract string HandleDeleteAppUser();
         
+        protected abstract string HandleCreateGenerationTransformer();
+        protected abstract string HandleReadGenerationTransformer();
+        protected abstract string HandleUpdateGenerationTransformer();
+        protected abstract string HandleDeleteGenerationTransformer();
+        
+        protected abstract string HandleCreateGeneration();
+        protected abstract string HandleReadGeneration();
+        protected abstract string HandleUpdateGeneration();
+        protected abstract string HandleDeleteGeneration();
+        
         protected abstract string HandleCreateIdeaFeature();
         protected abstract string HandleReadIdeaFeature();
         protected abstract string HandleUpdateIdeaFeature();
         protected abstract string HandleDeleteIdeaFeature();
         
-        protected abstract string HandleCreateLLM();
-        protected abstract string HandleReadLLM();
-        protected abstract string HandleUpdateLLM();
-        protected abstract string HandleDeleteLLM();
-        
         protected abstract string HandleCreateTransformedArtifact();
         protected abstract string HandleReadTransformedArtifact();
         protected abstract string HandleUpdateTransformedArtifact();
         protected abstract string HandleDeleteTransformedArtifact();
+        
+        protected abstract string HandleCreateDesignDecision();
+        protected abstract string HandleReadDesignDecision();
+        protected abstract string HandleUpdateDesignDecision();
+        protected abstract string HandleDeleteDesignDecision();
+        
+        protected abstract string HandleCreateLLM();
+        protected abstract string HandleReadLLM();
+        protected abstract string HandleUpdateLLM();
+        protected abstract string HandleDeleteLLM();
         
         protected abstract string HandleCreateIdea();
         protected abstract string HandleReadIdea();

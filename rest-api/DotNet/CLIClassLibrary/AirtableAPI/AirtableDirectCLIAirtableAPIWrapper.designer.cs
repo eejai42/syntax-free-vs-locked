@@ -18,44 +18,6 @@ namespace AirtableToDotNet.APIWrapper
     {
         
         /// <summary>
-        /// Called before a generationtransformer is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="generationtransformer">The generationtransformer to update</param>
-        partial void BeforeUpdateGenerationTransformer(dc.GenerationTransformer generationtransformer);
-
-        /// <summary>
-        /// Called after a generationtransformer is updated
-        /// </summary>
-        /// <param name="generationtransformer">The generationtransformer which was updated</param>
-        partial void AfterUpdateGenerationTransformer(dc.GenerationTransformer generationtransformer);
-
-        /// <summary>
-        /// Called before a generationtransformer is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="generationtransformer">The generationtransformer to add</param>
-        partial void BeforeAddGenerationTransformer(dc.GenerationTransformer generationtransformer);
-
-        /// <summary>
-        /// Called after a generationtransformer is added
-        /// </summary>
-        /// <param name="generationtransformer">The generationtransformer which was added</param>
-        partial void AfterAddGenerationTransformer(dc.GenerationTransformer generationtransformer);
-
-        /// <summary>
-        /// Called before a generationtransformer is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="generationtransformer">The generationtransformer to add</param>
-        partial void BeforeDeleteGenerationTransformer(dc.GenerationTransformer generationtransformer);
-
-        /// <summary>
-        /// Called after a generationtransformer is deleted
-        /// </summary>
-        /// <param name="generationtransformer">The generationtransformer which was deleted</param>
-        partial void AfterDeleteGenerationTransformer(dc.GenerationTransformer generationtransformer);
-        /// <summary>
         /// Called before a ideatransformer is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
@@ -93,44 +55,6 @@ namespace AirtableToDotNet.APIWrapper
         /// </summary>
         /// <param name="ideatransformer">The ideatransformer which was deleted</param>
         partial void AfterDeleteIdeaTransformer(dc.IdeaTransformer ideatransformer);
-        /// <summary>
-        /// Called before a generation is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="generation">The generation to update</param>
-        partial void BeforeUpdateGeneration(dc.Generation generation);
-
-        /// <summary>
-        /// Called after a generation is updated
-        /// </summary>
-        /// <param name="generation">The generation which was updated</param>
-        partial void AfterUpdateGeneration(dc.Generation generation);
-
-        /// <summary>
-        /// Called before a generation is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="generation">The generation to add</param>
-        partial void BeforeAddGeneration(dc.Generation generation);
-
-        /// <summary>
-        /// Called after a generation is added
-        /// </summary>
-        /// <param name="generation">The generation which was added</param>
-        partial void AfterAddGeneration(dc.Generation generation);
-
-        /// <summary>
-        /// Called before a generation is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="generation">The generation to add</param>
-        partial void BeforeDeleteGeneration(dc.Generation generation);
-
-        /// <summary>
-        /// Called after a generation is deleted
-        /// </summary>
-        /// <param name="generation">The generation which was deleted</param>
-        partial void AfterDeleteGeneration(dc.Generation generation);
         /// <summary>
         /// Called before a appuser is updated.  Throw a SkipOperationException 
         /// if the update should not happen
@@ -170,6 +94,82 @@ namespace AirtableToDotNet.APIWrapper
         /// <param name="appuser">The appuser which was deleted</param>
         partial void AfterDeleteAppUser(dc.AppUser appuser);
         /// <summary>
+        /// Called before a generationtransformer is updated.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="generationtransformer">The generationtransformer to update</param>
+        partial void BeforeUpdateGenerationTransformer(dc.GenerationTransformer generationtransformer);
+
+        /// <summary>
+        /// Called after a generationtransformer is updated
+        /// </summary>
+        /// <param name="generationtransformer">The generationtransformer which was updated</param>
+        partial void AfterUpdateGenerationTransformer(dc.GenerationTransformer generationtransformer);
+
+        /// <summary>
+        /// Called before a generationtransformer is added.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="generationtransformer">The generationtransformer to add</param>
+        partial void BeforeAddGenerationTransformer(dc.GenerationTransformer generationtransformer);
+
+        /// <summary>
+        /// Called after a generationtransformer is added
+        /// </summary>
+        /// <param name="generationtransformer">The generationtransformer which was added</param>
+        partial void AfterAddGenerationTransformer(dc.GenerationTransformer generationtransformer);
+
+        /// <summary>
+        /// Called before a generationtransformer is deleted.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="generationtransformer">The generationtransformer to add</param>
+        partial void BeforeDeleteGenerationTransformer(dc.GenerationTransformer generationtransformer);
+
+        /// <summary>
+        /// Called after a generationtransformer is deleted
+        /// </summary>
+        /// <param name="generationtransformer">The generationtransformer which was deleted</param>
+        partial void AfterDeleteGenerationTransformer(dc.GenerationTransformer generationtransformer);
+        /// <summary>
+        /// Called before a generation is updated.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="generation">The generation to update</param>
+        partial void BeforeUpdateGeneration(dc.Generation generation);
+
+        /// <summary>
+        /// Called after a generation is updated
+        /// </summary>
+        /// <param name="generation">The generation which was updated</param>
+        partial void AfterUpdateGeneration(dc.Generation generation);
+
+        /// <summary>
+        /// Called before a generation is added.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="generation">The generation to add</param>
+        partial void BeforeAddGeneration(dc.Generation generation);
+
+        /// <summary>
+        /// Called after a generation is added
+        /// </summary>
+        /// <param name="generation">The generation which was added</param>
+        partial void AfterAddGeneration(dc.Generation generation);
+
+        /// <summary>
+        /// Called before a generation is deleted.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="generation">The generation to add</param>
+        partial void BeforeDeleteGeneration(dc.Generation generation);
+
+        /// <summary>
+        /// Called after a generation is deleted
+        /// </summary>
+        /// <param name="generation">The generation which was deleted</param>
+        partial void AfterDeleteGeneration(dc.Generation generation);
+        /// <summary>
         /// Called before a ideafeature is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
@@ -208,44 +208,6 @@ namespace AirtableToDotNet.APIWrapper
         /// <param name="ideafeature">The ideafeature which was deleted</param>
         partial void AfterDeleteIdeaFeature(dc.IdeaFeature ideafeature);
         /// <summary>
-        /// Called before a llm is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="llm">The llm to update</param>
-        partial void BeforeUpdateLLM(dc.LLM llm);
-
-        /// <summary>
-        /// Called after a llm is updated
-        /// </summary>
-        /// <param name="llm">The llm which was updated</param>
-        partial void AfterUpdateLLM(dc.LLM llm);
-
-        /// <summary>
-        /// Called before a llm is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="llm">The llm to add</param>
-        partial void BeforeAddLLM(dc.LLM llm);
-
-        /// <summary>
-        /// Called after a llm is added
-        /// </summary>
-        /// <param name="llm">The llm which was added</param>
-        partial void AfterAddLLM(dc.LLM llm);
-
-        /// <summary>
-        /// Called before a llm is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="llm">The llm to add</param>
-        partial void BeforeDeleteLLM(dc.LLM llm);
-
-        /// <summary>
-        /// Called after a llm is deleted
-        /// </summary>
-        /// <param name="llm">The llm which was deleted</param>
-        partial void AfterDeleteLLM(dc.LLM llm);
-        /// <summary>
         /// Called before a transformedartifact is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
@@ -283,6 +245,82 @@ namespace AirtableToDotNet.APIWrapper
         /// </summary>
         /// <param name="transformedartifact">The transformedartifact which was deleted</param>
         partial void AfterDeleteTransformedArtifact(dc.TransformedArtifact transformedartifact);
+        /// <summary>
+        /// Called before a designdecision is updated.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="designdecision">The designdecision to update</param>
+        partial void BeforeUpdateDesignDecision(dc.DesignDecision designdecision);
+
+        /// <summary>
+        /// Called after a designdecision is updated
+        /// </summary>
+        /// <param name="designdecision">The designdecision which was updated</param>
+        partial void AfterUpdateDesignDecision(dc.DesignDecision designdecision);
+
+        /// <summary>
+        /// Called before a designdecision is added.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="designdecision">The designdecision to add</param>
+        partial void BeforeAddDesignDecision(dc.DesignDecision designdecision);
+
+        /// <summary>
+        /// Called after a designdecision is added
+        /// </summary>
+        /// <param name="designdecision">The designdecision which was added</param>
+        partial void AfterAddDesignDecision(dc.DesignDecision designdecision);
+
+        /// <summary>
+        /// Called before a designdecision is deleted.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="designdecision">The designdecision to add</param>
+        partial void BeforeDeleteDesignDecision(dc.DesignDecision designdecision);
+
+        /// <summary>
+        /// Called after a designdecision is deleted
+        /// </summary>
+        /// <param name="designdecision">The designdecision which was deleted</param>
+        partial void AfterDeleteDesignDecision(dc.DesignDecision designdecision);
+        /// <summary>
+        /// Called before a llm is updated.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="llm">The llm to update</param>
+        partial void BeforeUpdateLLM(dc.LLM llm);
+
+        /// <summary>
+        /// Called after a llm is updated
+        /// </summary>
+        /// <param name="llm">The llm which was updated</param>
+        partial void AfterUpdateLLM(dc.LLM llm);
+
+        /// <summary>
+        /// Called before a llm is added.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="llm">The llm to add</param>
+        partial void BeforeAddLLM(dc.LLM llm);
+
+        /// <summary>
+        /// Called after a llm is added
+        /// </summary>
+        /// <param name="llm">The llm which was added</param>
+        partial void AfterAddLLM(dc.LLM llm);
+
+        /// <summary>
+        /// Called before a llm is deleted.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="llm">The llm to add</param>
+        partial void BeforeDeleteLLM(dc.LLM llm);
+
+        /// <summary>
+        /// Called after a llm is deleted
+        /// </summary>
+        /// <param name="llm">The llm which was deleted</param>
+        partial void AfterDeleteLLM(dc.LLM llm);
         /// <summary>
         /// Called before a idea is updated.  Throw a SkipOperationException 
         /// if the update should not happen
@@ -344,78 +382,6 @@ namespace AirtableToDotNet.APIWrapper
             }
         }
 
-        /// <summary>
-        /// Returns a list of GenerationTransformers
-        /// </summary>
-        /// <param name="view">the specific view to pull GenerationTransformers from</param>
-        /// <returns>The list of GenerationTransformers from the given view</returns>
-        public IEnumerable<dc.GenerationTransformer> GetGenerationTransformers(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("GenerationTransformer", "GenerationTransformers", "GenerationTransformers", where, view, maxPages);
-            return rows.ConvertTo<dc.GenerationTransformer>();
-        }
-
-        /// <summary>
-        /// Update the given generationtransformer
-        /// </summary>
-        /// <param name="generationtransformer">The generationtransformer to update</param>
-        public dc.GenerationTransformer Update(dc.GenerationTransformer generationtransformer)
-        {
-            try
-            {
-                this.BeforeUpdateGenerationTransformer(generationtransformer);
-                generationtransformer = this.UpdateAirtableRow<dc.GenerationTransformer>("GenerationTransformer", "GenerationTransformers", "GenerationTransformers", generationtransformer);
-                this.AfterUpdateGenerationTransformer(generationtransformer);
-                return generationtransformer;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given generationtransformer
-        /// </summary>
-        /// <param name="generationtransformer">The generationtransformer to delete</param>
-        public void Delete(dc.GenerationTransformer generationtransformer)
-        {
-            try
-            {
-                this.BeforeDeleteGenerationTransformer(generationtransformer);
-                this.DeleteAirtableRow<dc.GenerationTransformer>("GenerationTransformers", generationtransformer);
-                this.AfterDeleteGenerationTransformer(generationtransformer);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new generationtransformer into the airtable
-        /// </summary>
-        /// <param name="generationtransformer">The generationtransformer to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.GenerationTransformer Insert(dc.GenerationTransformer generationtransformer)
-        {
-            try
-            {
-                this.BeforeAddGenerationTransformer(generationtransformer);
-                generationtransformer = base.AddAirtableRow<dc.GenerationTransformer>("GenerationTransformer", "GenerationTransformers", "GenerationTransformers", generationtransformer);
-                this.AfterAddGenerationTransformer(generationtransformer);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return generationtransformer;
-        }
         /// <summary>
         /// Returns a list of IdeaTransformers
         /// </summary>
@@ -487,78 +453,6 @@ namespace AirtableToDotNet.APIWrapper
             }
 
             return ideatransformer;
-        }
-        /// <summary>
-        /// Returns a list of Generations
-        /// </summary>
-        /// <param name="view">the specific view to pull Generations from</param>
-        /// <returns>The list of Generations from the given view</returns>
-        public IEnumerable<dc.Generation> GetGenerations(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("Generation", "Generations", "Generations", where, view, maxPages);
-            return rows.ConvertTo<dc.Generation>();
-        }
-
-        /// <summary>
-        /// Update the given generation
-        /// </summary>
-        /// <param name="generation">The generation to update</param>
-        public dc.Generation Update(dc.Generation generation)
-        {
-            try
-            {
-                this.BeforeUpdateGeneration(generation);
-                generation = this.UpdateAirtableRow<dc.Generation>("Generation", "Generations", "Generations", generation);
-                this.AfterUpdateGeneration(generation);
-                return generation;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given generation
-        /// </summary>
-        /// <param name="generation">The generation to delete</param>
-        public void Delete(dc.Generation generation)
-        {
-            try
-            {
-                this.BeforeDeleteGeneration(generation);
-                this.DeleteAirtableRow<dc.Generation>("Generations", generation);
-                this.AfterDeleteGeneration(generation);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new generation into the airtable
-        /// </summary>
-        /// <param name="generation">The generation to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.Generation Insert(dc.Generation generation)
-        {
-            try
-            {
-                this.BeforeAddGeneration(generation);
-                generation = base.AddAirtableRow<dc.Generation>("Generation", "Generations", "Generations", generation);
-                this.AfterAddGeneration(generation);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return generation;
         }
         /// <summary>
         /// Returns a list of AppUsers
@@ -633,6 +527,150 @@ namespace AirtableToDotNet.APIWrapper
             return appuser;
         }
         /// <summary>
+        /// Returns a list of GenerationTransformers
+        /// </summary>
+        /// <param name="view">the specific view to pull GenerationTransformers from</param>
+        /// <returns>The list of GenerationTransformers from the given view</returns>
+        public IEnumerable<dc.GenerationTransformer> GetGenerationTransformers(String where = "", String view = "", int maxPages = 5)
+        {
+            var rows = this.GetTableAsAirtableRows("GenerationTransformer", "GenerationTransformers", "GenerationTransformers", where, view, maxPages);
+            return rows.ConvertTo<dc.GenerationTransformer>();
+        }
+
+        /// <summary>
+        /// Update the given generationtransformer
+        /// </summary>
+        /// <param name="generationtransformer">The generationtransformer to update</param>
+        public dc.GenerationTransformer Update(dc.GenerationTransformer generationtransformer)
+        {
+            try
+            {
+                this.BeforeUpdateGenerationTransformer(generationtransformer);
+                generationtransformer = this.UpdateAirtableRow<dc.GenerationTransformer>("GenerationTransformer", "GenerationTransformers", "GenerationTransformers", generationtransformer);
+                this.AfterUpdateGenerationTransformer(generationtransformer);
+                return generationtransformer;
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Delete the given generationtransformer
+        /// </summary>
+        /// <param name="generationtransformer">The generationtransformer to delete</param>
+        public void Delete(dc.GenerationTransformer generationtransformer)
+        {
+            try
+            {
+                this.BeforeDeleteGenerationTransformer(generationtransformer);
+                this.DeleteAirtableRow<dc.GenerationTransformer>("GenerationTransformers", generationtransformer);
+                this.AfterDeleteGenerationTransformer(generationtransformer);
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+        }
+
+        /// <summary>
+        /// Insert a new generationtransformer into the airtable
+        /// </summary>
+        /// <param name="generationtransformer">The generationtransformer to insert into the airtable</param>
+        /// <returns></returns>
+        public dc.GenerationTransformer Insert(dc.GenerationTransformer generationtransformer)
+        {
+            try
+            {
+                this.BeforeAddGenerationTransformer(generationtransformer);
+                generationtransformer = base.AddAirtableRow<dc.GenerationTransformer>("GenerationTransformer", "GenerationTransformers", "GenerationTransformers", generationtransformer);
+                this.AfterAddGenerationTransformer(generationtransformer);                
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+
+            return generationtransformer;
+        }
+        /// <summary>
+        /// Returns a list of Generations
+        /// </summary>
+        /// <param name="view">the specific view to pull Generations from</param>
+        /// <returns>The list of Generations from the given view</returns>
+        public IEnumerable<dc.Generation> GetGenerations(String where = "", String view = "", int maxPages = 5)
+        {
+            var rows = this.GetTableAsAirtableRows("Generation", "Generations", "Generations", where, view, maxPages);
+            return rows.ConvertTo<dc.Generation>();
+        }
+
+        /// <summary>
+        /// Update the given generation
+        /// </summary>
+        /// <param name="generation">The generation to update</param>
+        public dc.Generation Update(dc.Generation generation)
+        {
+            try
+            {
+                this.BeforeUpdateGeneration(generation);
+                generation = this.UpdateAirtableRow<dc.Generation>("Generation", "Generations", "Generations", generation);
+                this.AfterUpdateGeneration(generation);
+                return generation;
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Delete the given generation
+        /// </summary>
+        /// <param name="generation">The generation to delete</param>
+        public void Delete(dc.Generation generation)
+        {
+            try
+            {
+                this.BeforeDeleteGeneration(generation);
+                this.DeleteAirtableRow<dc.Generation>("Generations", generation);
+                this.AfterDeleteGeneration(generation);
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+        }
+
+        /// <summary>
+        /// Insert a new generation into the airtable
+        /// </summary>
+        /// <param name="generation">The generation to insert into the airtable</param>
+        /// <returns></returns>
+        public dc.Generation Insert(dc.Generation generation)
+        {
+            try
+            {
+                this.BeforeAddGeneration(generation);
+                generation = base.AddAirtableRow<dc.Generation>("Generation", "Generations", "Generations", generation);
+                this.AfterAddGeneration(generation);                
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+
+            return generation;
+        }
+        /// <summary>
         /// Returns a list of IdeaFeatures
         /// </summary>
         /// <param name="view">the specific view to pull IdeaFeatures from</param>
@@ -705,78 +743,6 @@ namespace AirtableToDotNet.APIWrapper
             return ideafeature;
         }
         /// <summary>
-        /// Returns a list of LLMs
-        /// </summary>
-        /// <param name="view">the specific view to pull LLMs from</param>
-        /// <returns>The list of LLMs from the given view</returns>
-        public IEnumerable<dc.LLM> GetLLMs(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("LLM", "LLMs", "LLMs", where, view, maxPages);
-            return rows.ConvertTo<dc.LLM>();
-        }
-
-        /// <summary>
-        /// Update the given llm
-        /// </summary>
-        /// <param name="llm">The llm to update</param>
-        public dc.LLM Update(dc.LLM llm)
-        {
-            try
-            {
-                this.BeforeUpdateLLM(llm);
-                llm = this.UpdateAirtableRow<dc.LLM>("LLM", "LLMs", "LLMs", llm);
-                this.AfterUpdateLLM(llm);
-                return llm;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given llm
-        /// </summary>
-        /// <param name="llm">The llm to delete</param>
-        public void Delete(dc.LLM llm)
-        {
-            try
-            {
-                this.BeforeDeleteLLM(llm);
-                this.DeleteAirtableRow<dc.LLM>("LLMs", llm);
-                this.AfterDeleteLLM(llm);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new llm into the airtable
-        /// </summary>
-        /// <param name="llm">The llm to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.LLM Insert(dc.LLM llm)
-        {
-            try
-            {
-                this.BeforeAddLLM(llm);
-                llm = base.AddAirtableRow<dc.LLM>("LLM", "LLMs", "LLMs", llm);
-                this.AfterAddLLM(llm);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return llm;
-        }
-        /// <summary>
         /// Returns a list of TransformedArtifacts
         /// </summary>
         /// <param name="view">the specific view to pull TransformedArtifacts from</param>
@@ -847,6 +813,150 @@ namespace AirtableToDotNet.APIWrapper
             }
 
             return transformedartifact;
+        }
+        /// <summary>
+        /// Returns a list of DesignDecisions
+        /// </summary>
+        /// <param name="view">the specific view to pull DesignDecisions from</param>
+        /// <returns>The list of DesignDecisions from the given view</returns>
+        public IEnumerable<dc.DesignDecision> GetDesignDecisions(String where = "", String view = "", int maxPages = 5)
+        {
+            var rows = this.GetTableAsAirtableRows("DesignDecision", "DesignDecisions", "DesignDecisions", where, view, maxPages);
+            return rows.ConvertTo<dc.DesignDecision>();
+        }
+
+        /// <summary>
+        /// Update the given designdecision
+        /// </summary>
+        /// <param name="designdecision">The designdecision to update</param>
+        public dc.DesignDecision Update(dc.DesignDecision designdecision)
+        {
+            try
+            {
+                this.BeforeUpdateDesignDecision(designdecision);
+                designdecision = this.UpdateAirtableRow<dc.DesignDecision>("DesignDecision", "DesignDecisions", "DesignDecisions", designdecision);
+                this.AfterUpdateDesignDecision(designdecision);
+                return designdecision;
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Delete the given designdecision
+        /// </summary>
+        /// <param name="designdecision">The designdecision to delete</param>
+        public void Delete(dc.DesignDecision designdecision)
+        {
+            try
+            {
+                this.BeforeDeleteDesignDecision(designdecision);
+                this.DeleteAirtableRow<dc.DesignDecision>("DesignDecisions", designdecision);
+                this.AfterDeleteDesignDecision(designdecision);
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+        }
+
+        /// <summary>
+        /// Insert a new designdecision into the airtable
+        /// </summary>
+        /// <param name="designdecision">The designdecision to insert into the airtable</param>
+        /// <returns></returns>
+        public dc.DesignDecision Insert(dc.DesignDecision designdecision)
+        {
+            try
+            {
+                this.BeforeAddDesignDecision(designdecision);
+                designdecision = base.AddAirtableRow<dc.DesignDecision>("DesignDecision", "DesignDecisions", "DesignDecisions", designdecision);
+                this.AfterAddDesignDecision(designdecision);                
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+
+            return designdecision;
+        }
+        /// <summary>
+        /// Returns a list of LLMs
+        /// </summary>
+        /// <param name="view">the specific view to pull LLMs from</param>
+        /// <returns>The list of LLMs from the given view</returns>
+        public IEnumerable<dc.LLM> GetLLMs(String where = "", String view = "", int maxPages = 5)
+        {
+            var rows = this.GetTableAsAirtableRows("LLM", "LLMs", "LLMs", where, view, maxPages);
+            return rows.ConvertTo<dc.LLM>();
+        }
+
+        /// <summary>
+        /// Update the given llm
+        /// </summary>
+        /// <param name="llm">The llm to update</param>
+        public dc.LLM Update(dc.LLM llm)
+        {
+            try
+            {
+                this.BeforeUpdateLLM(llm);
+                llm = this.UpdateAirtableRow<dc.LLM>("LLM", "LLMs", "LLMs", llm);
+                this.AfterUpdateLLM(llm);
+                return llm;
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Delete the given llm
+        /// </summary>
+        /// <param name="llm">The llm to delete</param>
+        public void Delete(dc.LLM llm)
+        {
+            try
+            {
+                this.BeforeDeleteLLM(llm);
+                this.DeleteAirtableRow<dc.LLM>("LLMs", llm);
+                this.AfterDeleteLLM(llm);
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+        }
+
+        /// <summary>
+        /// Insert a new llm into the airtable
+        /// </summary>
+        /// <param name="llm">The llm to insert into the airtable</param>
+        /// <returns></returns>
+        public dc.LLM Insert(dc.LLM llm)
+        {
+            try
+            {
+                this.BeforeAddLLM(llm);
+                llm = base.AddAirtableRow<dc.LLM>("LLM", "LLMs", "LLMs", llm);
+                this.AfterAddLLM(llm);                
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+
+            return llm;
         }
         /// <summary>
         /// Returns a list of Ideas

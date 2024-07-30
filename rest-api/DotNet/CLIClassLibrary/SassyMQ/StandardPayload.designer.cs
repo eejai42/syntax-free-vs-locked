@@ -15,26 +15,29 @@ namespace YP.SassyMQ.Lib.RabbitMQ
     public partial class StandardPayload
     {
         
-        public GenerationTransformer GenerationTransformer { get; set; }
-        public List<GenerationTransformer> GenerationTransformers { get; set; }
-        
         public IdeaTransformer IdeaTransformer { get; set; }
         public List<IdeaTransformer> IdeaTransformers { get; set; }
-        
-        public Generation Generation { get; set; }
-        public List<Generation> Generations { get; set; }
         
         public AppUser AppUser { get; set; }
         public List<AppUser> AppUsers { get; set; }
         
+        public GenerationTransformer GenerationTransformer { get; set; }
+        public List<GenerationTransformer> GenerationTransformers { get; set; }
+        
+        public Generation Generation { get; set; }
+        public List<Generation> Generations { get; set; }
+        
         public IdeaFeature IdeaFeature { get; set; }
         public List<IdeaFeature> IdeaFeatures { get; set; }
         
-        public LLM LLM { get; set; }
-        public List<LLM> LLMs { get; set; }
-        
         public TransformedArtifact TransformedArtifact { get; set; }
         public List<TransformedArtifact> TransformedArtifacts { get; set; }
+        
+        public DesignDecision DesignDecision { get; set; }
+        public List<DesignDecision> DesignDecisions { get; set; }
+        
+        public LLM LLM { get; set; }
+        public List<LLM> LLMs { get; set; }
         
         public Idea Idea { get; set; }
         public List<Idea> Ideas { get; set; }

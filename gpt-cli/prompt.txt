@@ -1,3 +1,3 @@
-Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.
+Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.
 
-PROMPT: Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.
+PROMPT: Testing, Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!

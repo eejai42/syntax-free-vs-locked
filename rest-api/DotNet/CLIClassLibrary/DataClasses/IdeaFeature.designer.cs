@@ -28,6 +28,9 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Name")]
         public String Name { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "LowerName")]
+        public String LowerName { get; set; }
+    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Description")]
         public String Description { get; set; }
     
