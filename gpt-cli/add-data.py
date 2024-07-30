@@ -132,44 +132,35 @@ def root_prompt(iterations=1, transform_number=1001, max_transform_number=None):
             updated_artifact = update_transformed_artifact(artifact, actual_prompt, response)
             print("Artifact updated successfully:", updated_artifact)
 
-def validate_response(validator_transform_number, iterations=1, transform_number=1001, max_transform_number=None):
-    if (max_transform_number == transform_number):
-        max_transform_number = None
-
+def add_generation(iterations=1, validator_transform_number=1000, transformer_number=1001):
     validator_transform = get_generation_transform_by_number(validator_transform_number)
     if not validator_transform:
         print(f"No Validator GenerationTransform found for TransformerNumber: {validator_transform_number}")
         return
     
     validator_transform_id = validator_transform["GenerationTransformerId"]
-    
-    if max_transform_number:
-        transformer_numbers = range(transform_number, max_transform_number + 1)
-    else:
-        transformer_numbers = [transform_number]
-    
-    for transformerNumber in transformer_numbers:
-        artifacts = get_existing_artifact_without_validator(transformerNumber)
-        if not artifacts:
-            print(f"No existing artifacts without validator found for TransformerNumber: {transformerNumber}")
-            continue
         
-        for artifact in artifacts[:iterations]:
-            artifact_id = artifact["TransformedArtifactId"]
-            validation_artifact = create_validation_artifact(artifact_id, validator_transform_id)
-            validation_artifact_id = validation_artifact["TransformedArtifactId"]
-            updated_artifact = get_transformed_artifact_by_id(validation_artifact_id)
-            suggested_idea_prompt = updated_artifact["SuggestedPrompt"]
-            write_prompt_to_file(suggested_idea_prompt)
-            run_gpt()
-            actual_prompt = suggested_idea_prompt
-            response = read_response_from_file()
-            updated_validation_artifact = update_transformed_artifact(updated_artifact, actual_prompt, response)
-            print("Validation Artifact updated successfully:", updated_validation_artifact)
-            
-            # Update the original artifact with the ValidationArtifact reference
-            update_existing_artifact_with_validation(artifact, validation_artifact)
-            print("Existing artifact updated with ValidationArtifact reference successfully")
+    artifacts = get_existing_artifact_without_validator(transformer_number)
+    if not artifacts:
+        print(f"No existing artifacts without validator found for TransformerNumber: {transformer_number}")
+        return
+    
+    for artifact in artifacts[:iterations]:
+        artifact_id = artifact["TransformedArtifactId"]
+        validation_artifact = create_validation_artifact(artifact_id, validator_transform_id)
+        validation_artifact_id = validation_artifact["TransformedArtifactId"]
+        updated_artifact = get_transformed_artifact_by_id(validation_artifact_id)
+        suggested_idea_prompt = updated_artifact["SuggestedPrompt"]
+        write_prompt_to_file(suggested_idea_prompt)
+        run_gpt()
+        actual_prompt = suggested_idea_prompt
+        response = read_response_from_file()
+        updated_validation_artifact = update_transformed_artifact(updated_artifact, actual_prompt, response)
+        print("Validation Artifact updated successfully:", updated_validation_artifact)
+        
+        # Update the original artifact with the ValidationArtifact reference
+        update_existing_artifact_with_validation(artifact, validation_artifact)
+        print("Existing artifact updated with ValidationArtifact reference successfully")
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -181,15 +172,15 @@ if __name__ == "__main__":
     command = sys.argv[1]
     if command == "add-root":
         iterations = int(sys.argv[2])
-        transformer_number = int(sys.argv[3])
+        source_transformer_number = int(sys.argv[3])
         max_transformer_number = int(sys.argv[4]) if len(sys.argv) > 4 else None
-        root_prompt(iterations, transformer_number, max_transformer_number)
+        root_prompt(iterations, source_transformer_number, max_transformer_number)
     elif command == "add-generation":
         iterations = int(sys.argv[2])
-        validator_transform_number = int(sys.argv[3])
-        transformer_number = int(sys.argv[4]) if len(sys.argv) > 4 else None
+        generation_transform_number = int(sys.argv[3])
+        source_transformer_number = int(sys.argv[4]) if len(sys.argv) > 4 else None
         max_transformer_number = int(sys.argv[5]) if len(sys.argv) > 5 else None
-        validate_response(validator_transform_number, iterations, transformer_number, max_transformer_number)
+        add_generation(iterations, generation_transform_number,  source_transformer_number)
     else:
         print(f"Unknown command: {command}")
         sys.exit(1)
