@@ -1,1 +1,18 @@
-YES
+{
+  "Features": ["Categorized To-Do Items", "Employee Assignment", "Due Dates and Reminders", "Progress Tracking"],
+  "Keywords": [
+    { "KeywordName": "ToDoItems", "IsMissing": false, "AKA": "to-do items" },
+    { "KeywordName": "Categories", "IsMissing": false, "AKA": "customizable categories" },
+    { "KeywordName": "DueDates", "IsMissing": false, "AKA": "due dates" },
+    { "KeywordName": "Priorities", "IsMissing": true },
+    { "KeywordName": "Progress", "IsMissing": false, "AKA": "progress tracking" },
+    { "KeywordName": "Statuses", "IsMissing": false, "AKA": "status" },
+    { "KeywordName": "Reminders", "IsMissing": false, "AKA": "reminders" },
+    { "KeywordName": "Notifications", "IsMissing": true },
+    { "KeywordName": "Completion", "IsMissing": false, "AKA": "completed" },
+    { "KeywordName": "ToDoEmployees", "IsMissing": false, "AKA": "employee assignment" },
+    { "KeywordName": "Duration", "IsMissing": true },
+    { "KeywordName": "CompletedDate", "IsMissing": true },
+    { "KeywordName": "ToDoColors", "IsMissing": true }
+  ]
+}

@@ -21,7 +21,7 @@ def get_generation_transform_by_number(transform_number):
         return generator[0]
 
 def get_existing_artifact_without_validator(transform_number):
-    url = f"{BASE_URL}/TransformedArtifacts?airtableWhere=OR(AND(TransformerNumber%3D{transform_number}%2cNOT(ValidationArtifact))%2cArtifactIdentifier%3D{transform_number})"
+    url = f"{BASE_URL}/TransformedArtifacts?airtableWhere=OR(AND(TransformerNumber%3D{transform_number})%2cArtifactIdentifier%3D{transform_number})"
     print("URL:", url)
     response = requests.get(url, headers=HEADERS, verify=False)
     response.raise_for_status()
@@ -89,8 +89,17 @@ def update_transformed_artifact(artifact):
     response.raise_for_status()
     return response.json()
 
+def process_prompt_and_response(artifact, prompt_field, actual_prompt_field, response_field):
+    suggested_prompt = artifact[prompt_field]
+    write_prompt_to_file(suggested_prompt)
+    run_gpt()
+    actual_prompt = suggested_prompt
+    response = read_response_from_file()
+    artifact[actual_prompt_field] = actual_prompt
+    artifact[response_field] = response
+    return artifact
+
 def root_prompt(iterations=1, transformer_number=1001):
-    # throw exception if a transform number is passed in as place of the iterations platform
     if (iterations > 1000):
         raise Exception("Iterations must be less than 1000")
     
@@ -109,16 +118,19 @@ def root_prompt(iterations=1, transformer_number=1001):
         created_artifact = create_transformed_artifact(generation_transform_id)
         artifact_id = created_artifact["TransformedArtifactId"]
         artifact = get_transformed_artifact_by_id(artifact_id)
-        suggested_idea_prompt = artifact["SuggestedPrompt"]
-        write_prompt_to_file(suggested_idea_prompt)
-        run_gpt()
-        actual_prompt = suggested_idea_prompt
-        response = read_response_from_file()
-        artifact["ActualPrompt"] = actual_prompt
-        artifact["Response"] = response
-
+        
+        # Process the initial prompt and response
+        artifact = process_prompt_and_response(artifact, "SuggestedPrompt", "ActualPrompt", "Response")
         updated_artifact = update_transformed_artifact(artifact)
         print("Artifact updated successfully:", updated_artifact)
+        
+        # Reload the artifact after the initial update
+        artifact = get_transformed_artifact_by_id(artifact_id)
+        
+        # Process the validation prompt and response
+        artifact = process_prompt_and_response(artifact, "SuggestedValidationPrompt", "ActualValidationPrompt", "ValidationResponse")
+        updated_artifact = update_transformed_artifact(artifact)
+        print("Validation artifact updated successfully:", updated_artifact)
 
 def add_generation(iterations=1, validator_transform_number=1000, transformer_number=1001):
     validator_transform = get_generation_transform_by_number(validator_transform_number)
@@ -138,17 +150,19 @@ def add_generation(iterations=1, validator_transform_number=1000, transformer_nu
         validation_artifact = create_validation_artifact(artifact_id, validator_transform_id)
         validation_artifact_id = validation_artifact["TransformedArtifactId"]
         updated_artifact = get_transformed_artifact_by_id(validation_artifact_id)
-        suggested_idea_prompt = updated_artifact["SuggestedPrompt"]
-        write_prompt_to_file(suggested_idea_prompt)
-        run_gpt()
-        actual_prompt = suggested_idea_prompt
-        response = read_response_from_file()
-        updated_validation_artifact["ExtensionOf"] = artifact_id
-        updated_validation_artifact["ActualPrompt"] = actual_prompt
-        updated_validation_artifact["Response"] = response
-
-        updated_validation_artifact = update_transformed_artifact(updated_artifact)
-        print("Validation Artifact updated successfully:", updated_validation_artifact)
+        
+        # Process the initial prompt and response
+        updated_artifact = process_prompt_and_response(updated_artifact, "SuggestedPrompt", "ActualPrompt", "Response")
+        updated_artifact = update_transformed_artifact(updated_artifact)
+        print("Validation Artifact updated successfully:", updated_artifact)
+        
+        # Reload the artifact after the initial update
+        updated_artifact = get_transformed_artifact_by_id(validation_artifact_id)
+        
+        # Process the validation prompt and response
+        updated_artifact = process_prompt_and_response(updated_artifact, "SuggestedValidationPrompt", "ActualValidationPrompt", "ValidationResponse")
+        updated_artifact = update_transformed_artifact(updated_artifact)
+        print("Validation artifact updated successfully:", updated_artifact)
         
         # Update the original artifact with the ValidationArtifact reference
         update_existing_artifact_with_validation(artifact, validation_artifact)
