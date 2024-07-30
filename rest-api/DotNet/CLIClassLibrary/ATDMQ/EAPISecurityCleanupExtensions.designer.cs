@@ -475,7 +475,7 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     ExtensionOf = cleanTransformedArtifact.ExtensionOf,
                      // default value: . 
-                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
                      // default value: . 
                     ToDoItems = cleanTransformedArtifact.ToDoItems,
                      // default value: . 
@@ -600,7 +600,7 @@ namespace CLIClassLibrary.ATDMQ
                     TransformerGenerationIdeaName = cleanTransformedArtifact.TransformerGenerationIdeaName,
                     TransformerGenerationName = cleanTransformedArtifact.TransformerGenerationName,
                     ArtifactIdentifier = cleanTransformedArtifact.ArtifactIdentifier,
-                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
                     ToDoItems = cleanTransformedArtifact.ToDoItems,
                     ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
                     ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
@@ -668,7 +668,7 @@ namespace CLIClassLibrary.ATDMQ
                     AutoNumber = cleanTransformedArtifact.AutoNumber,
                     IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
                     ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
                     ToDoItems = cleanTransformedArtifact.ToDoItems,
                     ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
                     ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
@@ -732,7 +732,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Name = cleanDesignDecision.Name,
                      // default value: . 
-                    Notes = cleanDesignDecision.Notes
+                    Notes = cleanDesignDecision.Notes,
+                     // default value: . 
+                    TypeOfDecision = cleanDesignDecision.TypeOfDecision
                 };
                 
             }
@@ -757,7 +759,8 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     DesignDecisionId = cleanDesignDecision.DesignDecisionId,
                     Name = cleanDesignDecision.Name,
-                    Notes = cleanDesignDecision.Notes
+                    Notes = cleanDesignDecision.Notes,
+                    TypeOfDecision = cleanDesignDecision.TypeOfDecision
                 };
             }
 
@@ -775,7 +778,8 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     DesignDecisionId = cleanDesignDecision.DesignDecisionId,
                     Name = cleanDesignDecision.Name,
-                    Notes = cleanDesignDecision.Notes
+                    Notes = cleanDesignDecision.Notes,
+                    TypeOfDecision = cleanDesignDecision.TypeOfDecision
                 };
             }
 
@@ -1371,7 +1375,7 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     ExtensionOf = cleanTransformedArtifact.ExtensionOf,
                      // default value: . 
-                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
                      // default value: . 
                     ToDoItems = cleanTransformedArtifact.ToDoItems,
                      // default value: . 
@@ -1496,7 +1500,7 @@ namespace CLIClassLibrary.ATDMQ
                     TransformerGenerationIdeaName = cleanTransformedArtifact.TransformerGenerationIdeaName,
                     TransformerGenerationName = cleanTransformedArtifact.TransformerGenerationName,
                     ArtifactIdentifier = cleanTransformedArtifact.ArtifactIdentifier,
-                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
                     ToDoItems = cleanTransformedArtifact.ToDoItems,
                     ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
                     ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
@@ -1564,7 +1568,7 @@ namespace CLIClassLibrary.ATDMQ
                     AutoNumber = cleanTransformedArtifact.AutoNumber,
                     IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
                     ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                    PrimaryExtentionArtifact = cleanTransformedArtifact.PrimaryExtentionArtifact,
+                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
                     ToDoItems = cleanTransformedArtifact.ToDoItems,
                     ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
                     ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
@@ -1628,7 +1632,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Name = cleanDesignDecision.Name,
                      // default value: . 
-                    Notes = cleanDesignDecision.Notes
+                    Notes = cleanDesignDecision.Notes,
+                     // default value: . 
+                    TypeOfDecision = cleanDesignDecision.TypeOfDecision
                 };
                 
             }
@@ -1653,7 +1659,8 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     DesignDecisionId = cleanDesignDecision.DesignDecisionId,
                     Name = cleanDesignDecision.Name,
-                    Notes = cleanDesignDecision.Notes
+                    Notes = cleanDesignDecision.Notes,
+                    TypeOfDecision = cleanDesignDecision.TypeOfDecision
                 };
             }
 
@@ -1671,7 +1678,8 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     DesignDecisionId = cleanDesignDecision.DesignDecisionId,
                     Name = cleanDesignDecision.Name,
-                    Notes = cleanDesignDecision.Notes
+                    Notes = cleanDesignDecision.Notes,
+                    TypeOfDecision = cleanDesignDecision.TypeOfDecision
                 };
             }
 

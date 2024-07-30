@@ -91,9 +91,9 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ArtifactIdentifier")]
         public Nullable<Int32> ArtifactIdentifier { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "PrimaryExtentionArtifact")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "PrimaryExtensionArtifact")]
         [RemoteIsCollection]
-        public String PrimaryExtentionArtifact { get; set; }
+        public String PrimaryExtensionArtifact { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ToDoItems")]
         public Nullable<Boolean> ToDoItems { get; set; }
@@ -201,7 +201,7 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         public String CompletedDateAKA { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CompletedDateMismatched")]
-        public String CompletedDateMismatched { get; set; }
+        public Nullable<Boolean> CompletedDateMismatched { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ToDoColors")]
         public Nullable<Boolean> ToDoColors { get; set; }

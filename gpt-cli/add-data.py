@@ -21,7 +21,7 @@ def get_generation_transform_by_number(transform_number):
         return generator[0]
 
 def get_existing_artifact_without_validator(transform_number):
-    url = f"{BASE_URL}/TransformedArtifacts?airtableWhere=OR(AND(TransformerNumber%3D{transform_number})%2cArtifactIdentifier%3D{transform_number})"
+    url = f"{BASE_URL}/TransformedArtifacts?airtableWhere=OR(AND(TransformerNumber%3D{transform_number}%2cNOT(PrimaryExtensionArtifact))%2cArtifactIdentifier%3D{transform_number})"
     print("URL:", url)
     response = requests.get(url, headers=HEADERS, verify=False)
     response.raise_for_status()
@@ -39,7 +39,7 @@ def create_transformed_artifact(generation_transform_id):
     response.raise_for_status()
     return response.json()
 
-def create_validation_artifact(artifact_id, validator_transform_id):
+def create_generation_artifact(artifact_id, validator_transform_id):
     url = f"{BASE_URL}/TransformedArtifact"
     payload = {
         "TransformedArtifact": {
@@ -56,18 +56,6 @@ def get_transformed_artifact_by_id(artifact_id):
     response = requests.get(url, headers=HEADERS, verify=False)
     response.raise_for_status()
     return response.json()[0]
-
-def update_existing_artifact_with_validation(existing_artifact, validation_artifact):
-    url = f"{BASE_URL}/TransformedArtifact"
-    validation_artifact_id = validation_artifact["TransformedArtifactId"]
-
-    existing_artifact["ValidationArtifact"] = validation_artifact_id
-    payload = {
-        "TransformedArtifact": existing_artifact
-    }
-    response = requests.put(url, json=payload, headers=HEADERS, verify=False)
-    response.raise_for_status()
-    return response.json()
 
 def write_prompt_to_file(prompt):
     with open("prompt.txt", "w", encoding="utf-8") as file:
@@ -133,23 +121,30 @@ def root_prompt(iterations=1, transformer_number=1001):
         print("Validation artifact updated successfully:", updated_artifact)
 
 def add_generation(iterations=1, validator_transform_number=1000, transformer_number=1001):
-    validator_transform = get_generation_transform_by_number(validator_transform_number)
-    if not validator_transform:
+    generation_transform = get_generation_transform_by_number(validator_transform_number)
+    if not generation_transform:
         print(f"No Validator GenerationTransform found for TransformerNumber: {validator_transform_number}")
         return
     
-    validator_transform_id = validator_transform["GenerationTransformerId"]
+    generation_transform_id = generation_transform["GenerationTransformerId"]
         
-    artifacts = get_existing_artifact_without_validator(transformer_number)
-    if not artifacts:
+    parent_artifacts = get_existing_artifact_without_validator(transformer_number)
+    if not parent_artifacts:
         print(f"No existing artifacts without validator found for TransformerNumber: {transformer_number}")
         return
     
-    for artifact in artifacts[:iterations]:
-        artifact_id = artifact["TransformedArtifactId"]
-        validation_artifact = create_validation_artifact(artifact_id, validator_transform_id)
-        validation_artifact_id = validation_artifact["TransformedArtifactId"]
-        updated_artifact = get_transformed_artifact_by_id(validation_artifact_id)
+    for parent_artifact in parent_artifacts[:iterations]:
+        parent_artifact_id = parent_artifact["TransformedArtifactId"]
+
+        generation_artifact = create_generation_artifact(parent_artifact_id, generation_transform_id)
+        generation_artifact_id = generation_artifact["TransformedArtifactId"]
+        updated_artifact = get_transformed_artifact_by_id(generation_artifact_id)
+
+        parent_artifact = get_transformed_artifact_by_id(parent_artifact_id)
+        parent_artifact["PrimaryExtensionArtifact"] = generation_artifact_id
+        update_transformed_artifact(parent_artifact)
+        
+        print(updated_artifact)
         
         # Process the initial prompt and response
         updated_artifact = process_prompt_and_response(updated_artifact, "SuggestedPrompt", "ActualPrompt", "Response")
@@ -157,16 +152,14 @@ def add_generation(iterations=1, validator_transform_number=1000, transformer_nu
         print("Validation Artifact updated successfully:", updated_artifact)
         
         # Reload the artifact after the initial update
-        updated_artifact = get_transformed_artifact_by_id(validation_artifact_id)
+        updated_artifact = get_transformed_artifact_by_id(generation_artifact_id)
         
         # Process the validation prompt and response
         updated_artifact = process_prompt_and_response(updated_artifact, "SuggestedValidationPrompt", "ActualValidationPrompt", "ValidationResponse")
         updated_artifact = update_transformed_artifact(updated_artifact)
         print("Validation artifact updated successfully:", updated_artifact)
         
-        # Update the original artifact with the ValidationArtifact reference
-        update_existing_artifact_with_validation(artifact, validation_artifact)
-        print("Existing artifact updated with ValidationArtifact reference successfully")
+        # print("Updated the artifact's PrimaryExtensionArtifact field")
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:

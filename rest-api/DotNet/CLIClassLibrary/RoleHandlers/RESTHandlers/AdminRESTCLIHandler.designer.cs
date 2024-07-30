@@ -1128,7 +1128,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - TransformerGenerationIdeaName");
                     sb.AppendLine($"CRUD      - TransformerGenerationName");
                     sb.AppendLine($"CRUD      - ArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - PrimaryExtentionArtifact");
+                    sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
                     sb.AppendLine($"CRUD      - ToDoItems");
                     sb.AppendLine($"CRUD      - ToDoItemsAKA");
                     sb.AppendLine($"CRUD      - ToDoItemsMismatched");
@@ -1208,7 +1208,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - TransformerGenerationIdeaName");
                     sb.AppendLine($"CRUD      - TransformerGenerationName");
                     sb.AppendLine($"CRUD      - ArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - PrimaryExtentionArtifact");
+                    sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
                     sb.AppendLine($"CRUD      - ToDoItems");
                     sb.AppendLine($"CRUD      - ToDoItemsAKA");
                     sb.AppendLine($"CRUD      - ToDoItemsMismatched");
@@ -1288,7 +1288,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - TransformerGenerationIdeaName");
                     sb.AppendLine($"CRUD      - TransformerGenerationName");
                     sb.AppendLine($"CRUD      - ArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - PrimaryExtentionArtifact");
+                    sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
                     sb.AppendLine($"CRUD      - ToDoItems");
                     sb.AppendLine($"CRUD      - ToDoItemsAKA");
                     sb.AppendLine($"CRUD      - ToDoItemsMismatched");
@@ -1356,6 +1356,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - DesignDecisionId");
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - Notes");
+                    sb.AppendLine($"CRUD      - TypeOfDecision");
                 
             
         }
@@ -1373,6 +1374,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - DesignDecisionId");
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - Notes");
+                    sb.AppendLine($"CRUD      - TypeOfDecision");
                 
             
         }
@@ -1390,6 +1392,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - DesignDecisionId");
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - Notes");
+                    sb.AppendLine($"CRUD      - TypeOfDecision");
                 
             
         }
