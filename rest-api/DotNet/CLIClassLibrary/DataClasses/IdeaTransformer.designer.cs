@@ -57,6 +57,9 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaIdentifier")]
         public Nullable<Int32> IdeaIdentifier { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsSyntaxFree")]
+        public Nullable<Boolean> IsSyntaxFree { get; set; }
+    
 
         
 

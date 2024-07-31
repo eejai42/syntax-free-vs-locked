@@ -68,7 +68,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
                      // default value: . 
-                    AutoNumber = cleanIdeaTransformer.AutoNumber
+                    AutoNumber = cleanIdeaTransformer.AutoNumber,
+                     // default value: . 
+                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
                 };
                 
             }
@@ -100,7 +102,8 @@ namespace CLIClassLibrary.ATDMQ
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
                     TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
                     AutoNumber = cleanIdeaTransformer.AutoNumber,
-                    IdeaIdentifier = cleanIdeaTransformer.IdeaIdentifier
+                    IdeaIdentifier = cleanIdeaTransformer.IdeaIdentifier,
+                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
                 };
             }
 
@@ -120,7 +123,8 @@ namespace CLIClassLibrary.ATDMQ
                     Idea = cleanIdeaTransformer.Idea,
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
                     TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
-                    AutoNumber = cleanIdeaTransformer.AutoNumber
+                    AutoNumber = cleanIdeaTransformer.AutoNumber,
+                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
                 };
             }
 
@@ -213,13 +217,13 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Generation = cleanGenerationTransformer.Generation,
                      // default value: . 
-                    Transformer = cleanGenerationTransformer.Transformer,
-                     // default value: . 
                     TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                      // default value: . 
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                      // default value: . 
-                    IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator
+                    IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
+                     // default value: . 
+                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer
                 };
                 
             }
@@ -247,7 +251,6 @@ namespace CLIClassLibrary.ATDMQ
                     Generation = cleanGenerationTransformer.Generation,
                     RawPrompt = cleanGenerationTransformer.RawPrompt,
                     SourceIdea = cleanGenerationTransformer.SourceIdea,
-                    Transformer = cleanGenerationTransformer.Transformer,
                     GenerationName = cleanGenerationTransformer.GenerationName,
                     GenerationIdea = cleanGenerationTransformer.GenerationIdea,
                     GenerationIdeaName = cleanGenerationTransformer.GenerationIdeaName,
@@ -257,7 +260,9 @@ namespace CLIClassLibrary.ATDMQ
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     TransformerNumber = cleanGenerationTransformer.TransformerNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
-                    IdeaValidationPrompt = cleanGenerationTransformer.IdeaValidationPrompt
+                    IdeaValidationPrompt = cleanGenerationTransformer.IdeaValidationPrompt,
+                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer,
+                    IdeaTransformerIsSyntaxFree = cleanGenerationTransformer.IdeaTransformerIsSyntaxFree
                 };
             }
 
@@ -275,10 +280,10 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     GenerationTransformerId = cleanGenerationTransformer.GenerationTransformerId,
                     Generation = cleanGenerationTransformer.Generation,
-                    Transformer = cleanGenerationTransformer.Transformer,
                     TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
-                    IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator
+                    IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
+                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer
                 };
             }
 
@@ -557,7 +562,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
                      // default value: . 
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse
+                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
+                     // default value: . 
+                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier
                 };
                 
             }
@@ -645,7 +652,16 @@ namespace CLIClassLibrary.ATDMQ
                     GenerationSourceIdea = cleanTransformedArtifact.GenerationSourceIdea,
                     SuggestedValidationPrompt = cleanTransformedArtifact.SuggestedValidationPrompt,
                     ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse
+                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
+                    IdeaTransformerIsSyntaxFreefromGenerationTransformer = cleanTransformedArtifact.IdeaTransformerIsSyntaxFreefromGenerationTransformer,
+                    GenerationName = cleanTransformedArtifact.GenerationName,
+                    GeneratioNumber = cleanTransformedArtifact.GeneratioNumber,
+                    GenerationTransformerNumber = cleanTransformedArtifact.GenerationTransformerNumber,
+                    ExtensionOfArtifactIdentifier = cleanTransformedArtifact.ExtensionOfArtifactIdentifier,
+                    RootArtifactIdentifier = cleanTransformedArtifact.RootArtifactIdentifier,
+                    SuggestedRootIdentifier = cleanTransformedArtifact.SuggestedRootIdentifier,
+                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier,
+                    RootIdentifierMismatch = cleanTransformedArtifact.RootIdentifierMismatch
                 };
             }
 
@@ -709,7 +725,8 @@ namespace CLIClassLibrary.ATDMQ
                     ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
                     ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
                     ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse
+                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
+                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier
                 };
             }
 
@@ -968,7 +985,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
                      // default value: . 
-                    AutoNumber = cleanIdeaTransformer.AutoNumber
+                    AutoNumber = cleanIdeaTransformer.AutoNumber,
+                     // default value: . 
+                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
                 };
                 
             }
@@ -1000,7 +1019,8 @@ namespace CLIClassLibrary.ATDMQ
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
                     TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
                     AutoNumber = cleanIdeaTransformer.AutoNumber,
-                    IdeaIdentifier = cleanIdeaTransformer.IdeaIdentifier
+                    IdeaIdentifier = cleanIdeaTransformer.IdeaIdentifier,
+                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
                 };
             }
 
@@ -1020,7 +1040,8 @@ namespace CLIClassLibrary.ATDMQ
                     Idea = cleanIdeaTransformer.Idea,
                     FullPrompt = cleanIdeaTransformer.FullPrompt,
                     TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
-                    AutoNumber = cleanIdeaTransformer.AutoNumber
+                    AutoNumber = cleanIdeaTransformer.AutoNumber,
+                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
                 };
             }
 
@@ -1113,13 +1134,13 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Generation = cleanGenerationTransformer.Generation,
                      // default value: . 
-                    Transformer = cleanGenerationTransformer.Transformer,
-                     // default value: . 
                     TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                      // default value: . 
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                      // default value: . 
-                    IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator
+                    IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
+                     // default value: . 
+                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer
                 };
                 
             }
@@ -1147,7 +1168,6 @@ namespace CLIClassLibrary.ATDMQ
                     Generation = cleanGenerationTransformer.Generation,
                     RawPrompt = cleanGenerationTransformer.RawPrompt,
                     SourceIdea = cleanGenerationTransformer.SourceIdea,
-                    Transformer = cleanGenerationTransformer.Transformer,
                     GenerationName = cleanGenerationTransformer.GenerationName,
                     GenerationIdea = cleanGenerationTransformer.GenerationIdea,
                     GenerationIdeaName = cleanGenerationTransformer.GenerationIdeaName,
@@ -1157,7 +1177,9 @@ namespace CLIClassLibrary.ATDMQ
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     TransformerNumber = cleanGenerationTransformer.TransformerNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
-                    IdeaValidationPrompt = cleanGenerationTransformer.IdeaValidationPrompt
+                    IdeaValidationPrompt = cleanGenerationTransformer.IdeaValidationPrompt,
+                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer,
+                    IdeaTransformerIsSyntaxFree = cleanGenerationTransformer.IdeaTransformerIsSyntaxFree
                 };
             }
 
@@ -1175,10 +1197,10 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     GenerationTransformerId = cleanGenerationTransformer.GenerationTransformerId,
                     Generation = cleanGenerationTransformer.Generation,
-                    Transformer = cleanGenerationTransformer.Transformer,
                     TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
-                    IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator
+                    IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
+                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer
                 };
             }
 
@@ -1457,7 +1479,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
                      // default value: . 
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse
+                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
+                     // default value: . 
+                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier
                 };
                 
             }
@@ -1545,7 +1569,16 @@ namespace CLIClassLibrary.ATDMQ
                     GenerationSourceIdea = cleanTransformedArtifact.GenerationSourceIdea,
                     SuggestedValidationPrompt = cleanTransformedArtifact.SuggestedValidationPrompt,
                     ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse
+                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
+                    IdeaTransformerIsSyntaxFreefromGenerationTransformer = cleanTransformedArtifact.IdeaTransformerIsSyntaxFreefromGenerationTransformer,
+                    GenerationName = cleanTransformedArtifact.GenerationName,
+                    GeneratioNumber = cleanTransformedArtifact.GeneratioNumber,
+                    GenerationTransformerNumber = cleanTransformedArtifact.GenerationTransformerNumber,
+                    ExtensionOfArtifactIdentifier = cleanTransformedArtifact.ExtensionOfArtifactIdentifier,
+                    RootArtifactIdentifier = cleanTransformedArtifact.RootArtifactIdentifier,
+                    SuggestedRootIdentifier = cleanTransformedArtifact.SuggestedRootIdentifier,
+                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier,
+                    RootIdentifierMismatch = cleanTransformedArtifact.RootIdentifierMismatch
                 };
             }
 
@@ -1609,7 +1642,8 @@ namespace CLIClassLibrary.ATDMQ
                     ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
                     ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
                     ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse
+                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
+                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier
                 };
             }
 

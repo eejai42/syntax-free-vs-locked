@@ -1,18 +1,59 @@
+```json
 {
-  "Features": ["Task Categorization", "Due Dates", "Priority Levels", "Reminders"],
+  "Features": ["Task Creation", "Task Completion", "Due Date Assignment", "Categorization"],
   "Keywords": [
-    {"KeywordName": "ToDoItems", "IsMissing": true},
-    {"KeywordName": "Categories", "IsMissing": false, "AKA": "task categorization"},
-    {"KeywordName": "DueDates", "IsMissing": false, "AKA": "due dates"},
-    {"KeywordName": "Priorities", "IsMissing": false, "AKA": "priority levels"},
-    {"KeywordName": "Progress", "IsMissing": true},
-    {"KeywordName": "Statuses", "IsMissing": true},
-    {"KeywordName": "Reminders", "IsMissing": false, "AKA": "reminders"},
-    {"KeywordName": "Notifications", "IsMissing": true},
-    {"KeywordName": "Completion", "IsMissing": true},
-    {"KeywordName": "ToDoEmployees", "IsMissing": false, "AKA": "Employee category"},
-    {"KeywordName": "Duration", "IsMissing": true},
-    {"KeywordName": "CompletedDate", "IsMissing": true},
-    {"KeywordName": "ToDoColors", "IsMissing": true}
+    {
+      "KeywordName": "ToDoItems",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Categories",
+      "IsMissing": false
+    },
+    {
+      "KeywordName": "DueDates",
+      "IsMissing": false
+    },
+    {
+      "KeywordName": "Priorities",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Progress",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Statuses",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Reminders",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Notifications",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Completion",
+      "IsMissing": false
+    },
+    {
+      "KeywordName": "AssignedTo",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Duration",
+      "IsMissing": false
+    },
+    {
+      "KeywordName": "CompletedDate",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "ToDoColors",
+      "IsMissing": true
+    }
   ]
 }
+```

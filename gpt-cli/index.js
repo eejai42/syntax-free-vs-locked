@@ -16,7 +16,7 @@ const systemMessage = fs.readFileSync('system-message.txt', 'utf8');
 // API settings
 const hostname = 'api.openai.com';
 const path = '/v1/chat/completions';
-const model = "gpt-4o-mini"; // Updated model name
+const model = "gpt-4o"; // Updated model name
 
 const data = JSON.stringify({
   model: model,

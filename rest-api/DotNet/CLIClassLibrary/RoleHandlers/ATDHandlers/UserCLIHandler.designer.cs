@@ -621,6 +621,7 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - TransformedTransformers");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - IdeaIdentifier");
+                    sb.AppendLine($"CRUD      - IsSyntaxFree");
                 
             
         }
@@ -645,6 +646,7 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - TransformedTransformers");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - IdeaIdentifier");
+                    sb.AppendLine($"CRUD      - IsSyntaxFree");
                 
             
         }
@@ -669,6 +671,7 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - TransformedTransformers");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - IdeaIdentifier");
+                    sb.AppendLine($"CRUD      - IsSyntaxFree");
                 
             
         }
@@ -752,7 +755,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Generation");
                     sb.AppendLine($"CRUD      - RawPrompt");
                     sb.AppendLine($"CRUD      - SourceIdea");
-                    sb.AppendLine($"CRUD      - Transformer");
                     sb.AppendLine($"CRUD      - GenerationName");
                     sb.AppendLine($"CRUD      - GenerationIdea");
                     sb.AppendLine($"CRUD      - GenerationIdeaName");
@@ -763,6 +765,8 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - IsArtifactValidator");
                     sb.AppendLine($"CRUD      - IdeaValidationPrompt");
+                    sb.AppendLine($"CRUD      - IdeaTransformer");
+                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFree");
                 
             
         }
@@ -782,7 +786,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Generation");
                     sb.AppendLine($"CRUD      - RawPrompt");
                     sb.AppendLine($"CRUD      - SourceIdea");
-                    sb.AppendLine($"CRUD      - Transformer");
                     sb.AppendLine($"CRUD      - GenerationName");
                     sb.AppendLine($"CRUD      - GenerationIdea");
                     sb.AppendLine($"CRUD      - GenerationIdeaName");
@@ -793,6 +796,8 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - IsArtifactValidator");
                     sb.AppendLine($"CRUD      - IdeaValidationPrompt");
+                    sb.AppendLine($"CRUD      - IdeaTransformer");
+                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFree");
                 
             
         }
@@ -812,7 +817,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Generation");
                     sb.AppendLine($"CRUD      - RawPrompt");
                     sb.AppendLine($"CRUD      - SourceIdea");
-                    sb.AppendLine($"CRUD      - Transformer");
                     sb.AppendLine($"CRUD      - GenerationName");
                     sb.AppendLine($"CRUD      - GenerationIdea");
                     sb.AppendLine($"CRUD      - GenerationIdeaName");
@@ -823,6 +827,8 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - IsArtifactValidator");
                     sb.AppendLine($"CRUD      - IdeaValidationPrompt");
+                    sb.AppendLine($"CRUD      - IdeaTransformer");
+                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFree");
                 
             
         }
@@ -1062,6 +1068,15 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
                     sb.AppendLine($"CRUD      - ActualValidationPrompt");
                     sb.AppendLine($"CRUD      - ValidationResponse");
+                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFreefromGenerationTransformer");
+                    sb.AppendLine($"CRUD      - GenerationName");
+                    sb.AppendLine($"CRUD      - GeneratioNumber");
+                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
+                    sb.AppendLine($"CRUD      - ExtensionOfArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
+                    sb.AppendLine($"CRUD      - CustomRootIdentifier");
+                    sb.AppendLine($"CRUD      - RootIdentifierMismatch");
                 
             
         }
@@ -1142,6 +1157,15 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
                     sb.AppendLine($"CRUD      - ActualValidationPrompt");
                     sb.AppendLine($"CRUD      - ValidationResponse");
+                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFreefromGenerationTransformer");
+                    sb.AppendLine($"CRUD      - GenerationName");
+                    sb.AppendLine($"CRUD      - GeneratioNumber");
+                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
+                    sb.AppendLine($"CRUD      - ExtensionOfArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
+                    sb.AppendLine($"CRUD      - CustomRootIdentifier");
+                    sb.AppendLine($"CRUD      - RootIdentifierMismatch");
                 
             
         }
@@ -1222,6 +1246,15 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
                     sb.AppendLine($"CRUD      - ActualValidationPrompt");
                     sb.AppendLine($"CRUD      - ValidationResponse");
+                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFreefromGenerationTransformer");
+                    sb.AppendLine($"CRUD      - GenerationName");
+                    sb.AppendLine($"CRUD      - GeneratioNumber");
+                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
+                    sb.AppendLine($"CRUD      - ExtensionOfArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
+                    sb.AppendLine($"CRUD      - CustomRootIdentifier");
+                    sb.AppendLine($"CRUD      - RootIdentifierMismatch");
                 
             
         }

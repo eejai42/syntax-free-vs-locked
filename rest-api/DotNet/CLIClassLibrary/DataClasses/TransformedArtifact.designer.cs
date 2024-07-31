@@ -232,6 +232,39 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ValidationResponse")]
         public String ValidationResponse { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaTransformerIsSyntaxFree (from GenerationTransformer)")]
+        [RemoteIsCollection]
+        public Boolean[] IdeaTransformerIsSyntaxFreefromGenerationTransformer { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationName")]
+        [RemoteIsCollection]
+        public String[] GenerationName { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GeneratioNumber")]
+        [RemoteIsCollection]
+        public Int32[] GeneratioNumber { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationTransformerNumber")]
+        [RemoteIsCollection]
+        public Int32[] GenerationTransformerNumber { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExtensionOfArtifactIdentifier")]
+        [RemoteIsCollection]
+        public Nullable<Int32> ExtensionOfArtifactIdentifier { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "RootArtifactIdentifier")]
+        public Nullable<Int32> RootArtifactIdentifier { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SuggestedRootIdentifier")]
+        [RemoteIsCollection]
+        public Nullable<Int32> SuggestedRootIdentifier { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CustomRootIdentifier")]
+        public Nullable<Int32> CustomRootIdentifier { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "RootIdentifierMismatch")]
+        public Nullable<Int32> RootIdentifierMismatch { get; set; }
+    
 
         
 

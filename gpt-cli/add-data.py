@@ -58,6 +58,10 @@ def get_transformed_artifact_by_id(artifact_id):
     return response.json()[0]
 
 def write_prompt_to_file(prompt):
+    # make response.txt say "prompt did not complete... :( try again"
+    with open("response.txt", "w", encoding="utf-8") as file:
+        file.write("prompt did not complete... :( try again")
+
     with open("prompt.txt", "w", encoding="utf-8") as file:
         file.write(prompt)
 
@@ -143,7 +147,7 @@ def add_generation(iterations=1, validator_transform_number=1000, transformer_nu
         parent_artifact = get_transformed_artifact_by_id(parent_artifact_id)
         parent_artifact["PrimaryExtensionArtifact"] = generation_artifact_id
         update_transformed_artifact(parent_artifact)
-        
+
         print(updated_artifact)
         
         # Process the initial prompt and response

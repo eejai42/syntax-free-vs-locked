@@ -40,10 +40,6 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String SourceIdea { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Transformer")]
-        [RemoteIsCollection]
-        public String Transformer { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationName")]
         [RemoteIsCollection]
         public String GenerationName { get; set; }
@@ -80,6 +76,14 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaValidationPrompt")]
         [RemoteIsCollection]
         public String IdeaValidationPrompt { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaTransformer")]
+        [RemoteIsCollection]
+        public String IdeaTransformer { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaTransformerIsSyntaxFree")]
+        [RemoteIsCollection]
+        public Nullable<Boolean> IdeaTransformerIsSyntaxFree { get; set; }
     
 
         

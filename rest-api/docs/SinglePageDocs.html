@@ -25,6 +25,13 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 </a>
                         
                             
+                                , <a href="#GenerationTransformer">
+                                
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
                                 , <a href="#Idea">
                                 
                                     Ideas
@@ -66,7 +73,7 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
-                                        CONCATENATE(Idea,"-Identifier:",IdeaIdentifier, "-'",LEFT(FullPrompt, 20))
+                                        CONCATENATE(IdeaIdentifier, "-'",LEFT(FullPrompt, 20))
                                     </span></div></div>
                         Name
                         
@@ -97,7 +104,7 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        GenerationTransformer.Transformer
+                                        GenerationTransformer.IdeaTransformer
                                     </span></div>
                         TransformedTransformers
                         
@@ -111,7 +118,10 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     </span></div></div>
                         IdeaIdentifier
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">IdeaTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaTransformerId, Name, Idea, IdeaName, IdeasSourceIdea, IsActiveIdea, FullPrompt, TransformedTransformers, AutoNumber, IdeaIdentifier
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        IsSyntaxFree
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">IdeaTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaTransformerId, Name, Idea, IdeaName, IdeasSourceIdea, IsActiveIdea, FullPrompt, TransformedTransformers, AutoNumber, IdeaIdentifier, IsSyntaxFree
 
 <b>FROM</b> IdeaTransformer
 
@@ -234,6 +244,34 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     
                                 </a>
                         
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
                         </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         GenerationTransformerId
                         
@@ -246,9 +284,6 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#Generation">SourceIdea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#IdeaTransformer">Transformer</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#Generation">GenerationName</a>
@@ -270,10 +305,16 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#Generation">IdeaValidationPrompt</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#IdeaTransformer">IdeaTransformer</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#IdeaTransformer">IdeaTransformerIsSyntaxFree</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
-                                        CONCATENATE(TransformerNumber,"-",{GenerationIdea},"-",{GenerationName},"-",Transformer)
+                                        CONCATENATE( TransformerNumber,IF(IdeaTransformerIsSyntaxFree,"-FREE-","-LOCKED-"),{GenerationName},"-",IdeaTransformer)
                                     </span></div></div>
                         Name
                         
@@ -353,7 +394,14 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     </span></div>
                         IdeaValidationPrompt
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">GenerationTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> GenerationTransformerId, Name, Generation, RawPrompt, SourceIdea, Transformer, GenerationName, GenerationIdea, GenerationIdeaName, GeneratioNumber, IsActiveIdea, TransformedArtifacts, AutoNumber, TransformerNumber, IsArtifactValidator, IdeaValidationPrompt
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        IdeaTransformer.IsSyntaxFree
+                                    </span></div>
+                        IdeaTransformerIsSyntaxFree
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">GenerationTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> GenerationTransformerId, Name, Generation, RawPrompt, SourceIdea, GenerationName, GenerationIdea, GenerationIdeaName, GeneratioNumber, IsActiveIdea, TransformedArtifacts, AutoNumber, TransformerNumber, IsArtifactValidator, IdeaValidationPrompt, IdeaTransformer, IdeaTransformerIsSyntaxFree
 
 <b>FROM</b> GenerationTransformer
 
@@ -637,6 +685,20 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     
                                 </a>
                         
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#TransformedArtifact">
+                                
+                                    TransformedArtifacts
+                                    
+                                </a>
+                        
                         </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         TransformedArtifactId
                         
@@ -676,10 +738,28 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#GenerationTransformer">GenerationSourceIdea</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">IdeaTransformerIsSyntaxFreefromGenerationTransformer</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">GenerationName</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">GeneratioNumber</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">GenerationTransformerNumber</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#TransformedArtifact">ExtensionOfArtifactIdentifier</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#TransformedArtifact">SuggestedRootIdentifier</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
-                                        CONCATENATE(GenerationTransformer,"-",LEFT(Created, 10),"-",ArtifactIdentifier)
+                                        CONCATENATE(GenerationTransformer,"-",GenerationName,"-",LEFT(Created, 10),"-",ArtifactIdentifier)
                                     </span></div></div>
                         Name
                         
@@ -933,7 +1013,66 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         ValidationResponse
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">TransformedArtifact Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> TransformedArtifactId, Name, GenerationTransformer, SuggestedPrompt, ActualPrompt, Response, Created, AutoNumber, ResponseOfArtifactBeingExtended, TransformerRawPrompt, IsRetiredArtifact, IsActiveIdea, Modified, ExtensionOf, TransformerNumber, LongName, TransformerGeneratioNumber, TransformerGenerationIdeaName, TransformerGenerationName, ArtifactIdentifier, PrimaryExtensionArtifact, ToDoItems, ToDoItemsAKA, ToDoItemsMismatched, Categories, CategoriesAKA, CategoriesMismatched, DueDates, DueDatesAKA, DueDatesMismatched, Priorities, PrioritiesAKA, PrioritiesMismatched, Progress, ProgressAKA, ProgressMismatched, Statuses, StatusesAKA, StatusesMismatched, Reminders, RemindersAKA, RemindersMismatched, Notifications, NotificationsAKA, NotificationsMismatched, Completion, CompletionAKA, CompletionMismatched, ToDoEmployees, ToDoEmployeesAKA, ToDoEmployeesMismatched, Duration, DurationAKA, DurationMismatched, CompletedDate, CompletedDateAKA, CompletedDateMismatched, ToDoColors, ToDoColorsAKA, ToDoColorsMismatched, IdeaValidationPrompt, ResponseBeingValidated, GenerationSourceIdea, SuggestedValidationPrompt, ActualValidationPrompt, ValidationResponse
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.IdeaTransformerIsSyntaxFree
+                                    </span></div>
+                        IdeaTransformerIsSyntaxFreefromGenerationTransformer
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; ">IdeaTransformerIsSyntaxFree (from GenerationTransformer)[]</td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.GenerationName
+                                    </span></div>
+                        GenerationName
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.GeneratioNumber
+                                    </span></div>
+                        GeneratioNumber
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.TransformerNumber
+                                    </span></div>
+                        GenerationTransformerNumber
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        TransformedArtifact.ArtifactIdentifier
+                                    </span></div>
+                        ExtensionOfArtifactIdentifier
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        IF(CustomRootIdentifier,CustomRootIdentifier,ArtifactIdentifier)
+                                    </span></div></div>
+                        RootArtifactIdentifier
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        TransformedArtifact.RootArtifactIdentifier
+                                    </span></div>
+                        SuggestedRootIdentifier
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        CustomRootIdentifier
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        AND(SuggestedRootIdentifier!=RootArtifactIdentifier,NOT(ExtensionOf = BLANK()))
+                                    </span></div></div>
+                        RootIdentifierMismatch
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">TransformedArtifact Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> TransformedArtifactId, Name, GenerationTransformer, SuggestedPrompt, ActualPrompt, Response, Created, AutoNumber, ResponseOfArtifactBeingExtended, TransformerRawPrompt, IsRetiredArtifact, IsActiveIdea, Modified, ExtensionOf, TransformerNumber, LongName, TransformerGeneratioNumber, TransformerGenerationIdeaName, TransformerGenerationName, ArtifactIdentifier, PrimaryExtensionArtifact, ToDoItems, ToDoItemsAKA, ToDoItemsMismatched, Categories, CategoriesAKA, CategoriesMismatched, DueDates, DueDatesAKA, DueDatesMismatched, Priorities, PrioritiesAKA, PrioritiesMismatched, Progress, ProgressAKA, ProgressMismatched, Statuses, StatusesAKA, StatusesMismatched, Reminders, RemindersAKA, RemindersMismatched, Notifications, NotificationsAKA, NotificationsMismatched, Completion, CompletionAKA, CompletionMismatched, ToDoEmployees, ToDoEmployeesAKA, ToDoEmployeesMismatched, Duration, DurationAKA, DurationMismatched, CompletedDate, CompletedDateAKA, CompletedDateMismatched, ToDoColors, ToDoColorsAKA, ToDoColorsMismatched, IdeaValidationPrompt, ResponseBeingValidated, GenerationSourceIdea, SuggestedValidationPrompt, ActualValidationPrompt, ValidationResponse, IdeaTransformerIsSyntaxFreefromGenerationTransformer, GenerationName, GeneratioNumber, GenerationTransformerNumber, ExtensionOfArtifactIdentifier, RootArtifactIdentifier, SuggestedRootIdentifier, CustomRootIdentifier, RootIdentifierMismatch
 
 <b>FROM</b> TransformedArtifact
 
