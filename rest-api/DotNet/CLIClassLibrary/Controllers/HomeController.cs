@@ -20,14 +20,6 @@ namespace CLIClassLibrary.Controllers
                 },
                 new Endpoint()
                 {
-                    Name = "IdeaTransformers",
-                    Method = "GET",
-                    Url = "/IdeaTransformers",
-                    Description = "Get's a list of IdeaTransformers from the data source."
-                }
-            ,
-                new Endpoint()
-                {
                     Name = "AppUsers",
                     Method = "GET",
                     Url = "/AppUsers",
@@ -52,10 +44,18 @@ namespace CLIClassLibrary.Controllers
             ,
                 new Endpoint()
                 {
-                    Name = "IdeaFeatures",
+                    Name = "ExperimentTransformers",
                     Method = "GET",
-                    Url = "/IdeaFeatures",
-                    Description = "Get's a list of IdeaFeatures from the data source."
+                    Url = "/ExperimentTransformers",
+                    Description = "Get's a list of ExperimentTransformers from the data source."
+                }
+            ,
+                new Endpoint()
+                {
+                    Name = "ExperimentFeatures",
+                    Method = "GET",
+                    Url = "/ExperimentFeatures",
+                    Description = "Get's a list of ExperimentFeatures from the data source."
                 }
             ,
                 new Endpoint()
@@ -76,18 +76,18 @@ namespace CLIClassLibrary.Controllers
             ,
                 new Endpoint()
                 {
-                    Name = "LLMs",
+                    Name = "Experiments",
                     Method = "GET",
-                    Url = "/LLMs",
-                    Description = "Get's a list of LLMs from the data source."
+                    Url = "/Experiments",
+                    Description = "Get's a list of Experiments from the data source."
                 }
             ,
                 new Endpoint()
                 {
-                    Name = "Ideas",
+                    Name = "LLMs",
                     Method = "GET",
-                    Url = "/Ideas",
-                    Description = "Get's a list of Ideas from the data source."
+                    Url = "/LLMs",
+                    Description = "Get's a list of LLMs from the data source."
                 }
             
             });

@@ -28,40 +28,52 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Name")]
         public String Name { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Idea")]
-        [RemoteIsCollection]
-        public String Idea { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaName")]
-        [RemoteIsCollection]
-        public String IdeaName { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GeneratioNumber")]
         public Nullable<Int32> GeneratioNumber { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformedArtifacts")]
-        [RemoteIsCollection]
-        public String[] TransformedArtifacts { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsActiveIdea")]
-        [RemoteIsCollection]
-        public Nullable<Boolean> IsActiveIdea { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaSourceIdea")]
-        [RemoteIsCollection]
-        public String IdeaSourceIdea { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Model")]
         [RemoteIsCollection]
         public String Model { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaValidationPrompt")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Experiment")]
         [RemoteIsCollection]
-        public String IdeaValidationPrompt { get; set; }
+        public String Experiment { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformedArtifactRawPrompts")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpName")]
         [RemoteIsCollection]
-        public String[] TransformedArtifactRawPrompts { get; set; }
+        public String ExpName { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationTransformers")]
+        [RemoteIsCollection]
+        public String[] GenerationTransformers { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsActiveExp")]
+        [RemoteIsCollection]
+        public Nullable<Boolean> IsActiveExp { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpAbstract")]
+        [RemoteIsCollection]
+        public String ExpAbstract { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpValidationPrompt")]
+        [RemoteIsCollection]
+        public String ExpValidationPrompt { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationTransformRawPrompts")]
+        [RemoteIsCollection]
+        public String[] GenerationTransformRawPrompts { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformerNumbers")]
+        [RemoteIsCollection]
+        public Int32[] TransformerNumbers { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SyntaxFreeTransformerNumbers")]
+        [RemoteIsCollection]
+        public Int32[] SyntaxFreeTransformerNumbers { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SyntaxLockedTransformerNumbers")]
+        [RemoteIsCollection]
+        public Int32[] SyntaxLockedTransformerNumbers { get; set; }
     
 
         

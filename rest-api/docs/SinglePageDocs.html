@@ -1,131 +1,5 @@
 <html><head><title>ej-syntax-locked-vs-syntax-free - Single Page Doc s</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" /></head><body style="padding: 0.8em;"><h1>        
-ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary" href="Index.html"><<&nbsp;Back Interactive Object Explorer</a><h3>Table of Contents</h3><ol><li><a href="#IdeaTransformer">IdeaTransformer</a></li><li><a href="#AppUser">AppUser</a></li><li><a href="#GenerationTransformer">GenerationTransformer</a></li><li><a href="#Generation">Generation</a></li><li><a href="#IdeaFeature">IdeaFeature</a></li><li><a href="#TransformedArtifact">TransformedArtifact</a></li><li><a href="#DesignDecision">DesignDecision</a></li><li><a href="#LLM">LLM</a></li><li><a href="#Idea">Idea</a></li></ol><div><b>Actors</b><ol><li><a href="#actor-Guest">Guest</a></li><li><a href="#actor-User">User</a></li><li><a href="#actor-Admin">Admin</a></li></ol></div><table style="width: 100%"><tr><td colspan="3"><span id="IdeaTransformer" />
-                <div style="clear: both"></div><div class="row"><div class="col-md-12">
-                        <a name="IdeaTransformer"></a>
-                        <hr /><h2>
-                            
-                            
-                            
-                            
-                            IdeaTransformer  <span class="pull-right" style="font-size: 0.7em;">(originally - IdeaTransformers)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
-                            Each IdeaTransformer may have zero or more associated
-                          
-                            
-                                <a href="#GenerationTransformer">
-                                
-                                    GenerationTransformers
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#GenerationTransformer">
-                                
-                                    GenerationTransformers
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#GenerationTransformer">
-                                
-                                    GenerationTransformers
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#Idea">
-                                
-                                    Ideas
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#Idea">
-                                
-                                    Ideas
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#Idea">
-                                
-                                    Ideas
-                                    
-                                </a>
-                        
-                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        IdeaTransformerId
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Idea">Idea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Idea">IdeaName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Idea">IdeasSourceIdea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Idea">IsActiveIdea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#GenerationTransformer">TransformedTransformers</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        CONCATENATE(IdeaIdentifier, "-'",LEFT(FullPrompt, 20))
-                                    </span></div></div>
-                        Name
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        Idea.Name
-                                    </span></div>
-                        IdeaName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        Idea.SourceIdea
-                                    </span></div>
-                        IdeasSourceIdea
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        Idea.IsActiveIdea
-                                    </span></div>
-                        IsActiveIdea
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        FullPrompt
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        GenerationTransformer.IdeaTransformer
-                                    </span></div>
-                        TransformedTransformers
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        AutoNumber
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        AutoNumber+5000
-                                    </span></div></div>
-                        IdeaIdentifier
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        IsSyntaxFree
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">IdeaTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaTransformerId, Name, Idea, IdeaName, IdeasSourceIdea, IsActiveIdea, FullPrompt, TransformedTransformers, AutoNumber, IdeaIdentifier, IsSyntaxFree
-
-<b>FROM</b> IdeaTransformer
-
-</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="AppUser" />
+ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary" href="Index.html"><<&nbsp;Back Interactive Object Explorer</a><h3>Table of Contents</h3><ol><li><a href="#AppUser">AppUser</a></li><li><a href="#GenerationTransformer">GenerationTransformer</a></li><li><a href="#Generation">Generation</a></li><li><a href="#ExperimentTransformer">ExperimentTransformer</a></li><li><a href="#ExperimentFeature">ExperimentFeature</a></li><li><a href="#TransformedArtifact">TransformedArtifact</a></li><li><a href="#DesignDecision">DesignDecision</a></li><li><a href="#Experiment">Experiment</a></li><li><a href="#LLM">LLM</a></li></ol><div><b>Actors</b><ol><li><a href="#actor-Guest">Guest</a></li><li><a href="#actor-User">User</a></li><li><a href="#actor-Admin">Admin</a></li></ol></div><table style="width: 100%"><tr><td colspan="3"><span id="AppUser" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
                         <a name="AppUser"></a>
                         <hr /><h2>
@@ -161,9 +35,16 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                             Each GenerationTransformer may have zero or more associated
                           
                             
-                                <a href="#IdeaTransformer">
+                                <a href="#Generation">
                                 
-                                    IdeaTransformers
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
                                     
                                 </a>
                         
@@ -178,6 +59,20 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 , <a href="#Generation">
                                 
                                     Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#ExperimentTransformer">
+                                
+                                    ExperimentTransformers
                                     
                                 </a>
                         
@@ -280,57 +175,50 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     <a href="#Generation">Generation</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#IdeaTransformer">RawPrompt</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Generation">SourceIdea</a>
+                                    <a href="#ExperimentTransformer">RawPrompt</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#Generation">GenerationName</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#Generation">GenerationIdea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Generation">GenerationIdeaName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
                                     <a href="#Generation">GeneratioNumber</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Generation">IsActiveIdea</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#TransformedArtifact">TransformedArtifacts</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#Generation">IdeaValidationPrompt</a>
+                                    <a href="#Generation">ExpAbstract</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#IdeaTransformer">IdeaTransformer</a>
+                                    <a href="#ExperimentTransformer">ExpTransformer</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#IdeaTransformer">IdeaTransformerIsSyntaxFree</a>
+                                    <a href="#Generation">GenerationExp</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">GenerationExpName</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">IsActiveExp</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#ExperimentTransformer">ExpTransformerIsSyntaxFree</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">ExpValidationPrompt</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
-                                        CONCATENATE( TransformerNumber,IF(IdeaTransformerIsSyntaxFree,"-FREE-","-LOCKED-"),{GenerationName},"-",IdeaTransformer)
+                                        CONCATENATE( TransformerNumber,IF(ExpTransformerIsSyntaxFree,"-FREE-","-LOCKED-"),{GenerationName},"-",ExpTransformer)
                                     </span></div></div>
                         Name
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        IdeaTransformer.FullPrompt
+                                        ExperimentTransformer.FullPrompt
                                     </span></div>
                         RawPrompt
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        Generation.IdeaSourceIdea
-                                    </span></div>
-                        SourceIdea
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
@@ -342,32 +230,11 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        Generation.Idea
-                                    </span></div>
-                        GenerationIdea
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        Generation.IdeaName
-                                    </span></div>
-                        GenerationIdeaName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
                                         Generation.GeneratioNumber
                                     </span></div>
                         GeneratioNumber
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        Generation.IsActiveIdea
-                                    </span></div>
-                        IsActiveIdea
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
                                         TransformedArtifact.GenerationTransformer
@@ -390,18 +257,46 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        Generation.IdeaValidationPrompt
+                                        Generation.ExpAbstract
                                     </span></div>
-                        IdeaValidationPrompt
+                        ExpAbstract
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        IdeaTransformer.IsSyntaxFree
+                                        Generation.Experiment
                                     </span></div>
-                        IdeaTransformerIsSyntaxFree
+                        GenerationExp
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">GenerationTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> GenerationTransformerId, Name, Generation, RawPrompt, SourceIdea, GenerationName, GenerationIdea, GenerationIdeaName, GeneratioNumber, IsActiveIdea, TransformedArtifacts, AutoNumber, TransformerNumber, IsArtifactValidator, IdeaValidationPrompt, IdeaTransformer, IdeaTransformerIsSyntaxFree
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        Generation.ExpName
+                                    </span></div>
+                        GenerationExpName
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        Generation.IsActiveExp
+                                    </span></div>
+                        IsActiveExp
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        ExperimentTransformer.IsSyntaxFree
+                                    </span></div>
+                        ExpTransformerIsSyntaxFree
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        Generation.ExpValidationPrompt
+                                    </span></div>
+                        ExpValidationPrompt
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">GenerationTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> GenerationTransformerId, Name, Generation, RawPrompt, GenerationName, GeneratioNumber, TransformedArtifacts, AutoNumber, TransformerNumber, IsArtifactValidator, ExpAbstract, ExpTransformer, GenerationExp, GenerationExpName, IsActiveExp, ExpTransformerIsSyntaxFree, ExpValidationPrompt
 
 <b>FROM</b> GenerationTransformer
 
@@ -473,16 +368,16 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 </a>
                         
                             
-                                , <a href="#LLM">
+                                , <a href="#Experiment">
                                 
-                                    LLMs
+                                    Experiments
                                     
                                 </a>
                         
                             
-                                , <a href="#Idea">
+                                , <a href="#LLM">
                                 
-                                    Ideas
+                                    LLMs
                                     
                                 </a>
                         
@@ -491,28 +386,37 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#Idea">Idea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Idea">IdeaName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#GenerationTransformer">TransformedArtifacts</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Idea">IsActiveIdea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Idea">IdeaSourceIdea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
                                     <a href="#LLM">Model</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#Idea">IdeaValidationPrompt</a>
+                                    <a href="#Experiment">Experiment</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#GenerationTransformer">TransformedArtifactRawPrompts</a>
+                                    <a href="#Experiment">ExpName</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">GenerationTransformers</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Experiment">IsActiveExp</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Experiment">ExpAbstract</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Experiment">ExpValidationPrompt</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">GenerationTransformRawPrompts</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformerNumbers</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">SyntaxFreeTransformerNumbers</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">SyntaxLockedTransformerNumbers</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
@@ -520,99 +424,246 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     </span></div></div>
                         Name
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        Idea.Name
-                                    </span></div>
-                        IdeaName
-                        
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         GeneratioNumber
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        Experiment.Name
+                                    </span></div>
+                        ExpName
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
                                         GenerationTransformer.Generation
                                     </span></div>
-                        TransformedArtifacts
+                        GenerationTransformers
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        Idea.IsActiveIdea
+                                        Experiment.IsActiveExp
                                     </span></div>
-                        IsActiveIdea
+                        IsActiveExp
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        Idea.SourceIdea
+                                        Experiment.ExpAbstract
                                     </span></div>
-                        IdeaSourceIdea
+                        ExpAbstract
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        Idea.ValidationPrompt
+                                        Experiment.ValidationPrompt
                                     </span></div>
-                        IdeaValidationPrompt
+                        ExpValidationPrompt
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
                                         GenerationTransformer.RawPrompt
                                     </span></div>
-                        TransformedArtifactRawPrompts
+                        GenerationTransformRawPrompts
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">Generation Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> GenerationId, Name, Idea, IdeaName, GeneratioNumber, TransformedArtifacts, IsActiveIdea, IdeaSourceIdea, Model, IdeaValidationPrompt, TransformedArtifactRawPrompts
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.TransformerNumber
+                                    </span></div>
+                        TransformerNumbers
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.TransformerNumber
+                                    </span></div>
+                        SyntaxFreeTransformerNumbers
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.TransformerNumber
+                                    </span></div>
+                        SyntaxLockedTransformerNumbers
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">Generation Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> GenerationId, Name, GeneratioNumber, Model, Experiment, ExpName, GenerationTransformers, IsActiveExp, ExpAbstract, ExpValidationPrompt, GenerationTransformRawPrompts, TransformerNumbers, SyntaxFreeTransformerNumbers, SyntaxLockedTransformerNumbers
 
 <b>FROM</b> Generation
 
-</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="IdeaFeature" />
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="ExperimentTransformer" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
-                        <a name="IdeaFeature"></a>
+                        <a name="ExperimentTransformer"></a>
                         <hr /><h2>
                             
                             
                             
                             
-                            IdeaFeature  <span class="pull-right" style="font-size: 0.7em;">(originally - IdeaFeatures)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
-                            Each IdeaFeature may have zero or more associated
+                            ExperimentTransformer  <span class="pull-right" style="font-size: 0.7em;">(originally - ExperimentTransformers)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each ExperimentTransformer may have zero or more associated
                           
                             
-                                <a href="#Idea">
+                                <a href="#GenerationTransformer">
                                 
-                                    Ideas
+                                    GenerationTransformers
                                     
                                 </a>
                         
                             
-                                , <a href="#Idea">
+                                , <a href="#GenerationTransformer">
                                 
-                                    Ideas
+                                    GenerationTransformers
                                     
                                 </a>
                         
                             
-                                , <a href="#Idea">
+                                , <a href="#GenerationTransformer">
                                 
-                                    Ideas
+                                    GenerationTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Experiment">
+                                
+                                    Experiments
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Experiment">
+                                
+                                    Experiments
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Experiment">
+                                
+                                    Experiments
                                     
                                 </a>
                         
                         </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        IdeaFeatureId
+                        ExperimentTransformerId
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#Idea">SourceIdea</a>
+                                    <a href="#Experiment">Experiment</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#Idea">Idea</a>
+                                    <a href="#Experiment">ExpName</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#Idea">IsActiveIdea</a>
+                                    <a href="#Experiment">ExpAbstract</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Experiment">IsActiveExp</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformedTransformers</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        CONCATENATE(TransformerIdentifier, "-'",LEFT(FullPrompt, 20))
+                                    </span></div></div>
+                        Name
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        Experiment.Name
+                                    </span></div>
+                        ExpName
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        Experiment.ExpAbstract
+                                    </span></div>
+                        ExpAbstract
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        Experiment.IsActiveExp
+                                    </span></div>
+                        IsActiveExp
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        FullPrompt
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.ExpTransformer
+                                    </span></div>
+                        TransformedTransformers
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        AutoNumber
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        AutoNumber+5000
+                                    </span></div></div>
+                        TransformerIdentifier
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        IsSyntaxFree
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">ExperimentTransformer Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> ExperimentTransformerId, Name, Experiment, ExpName, ExpAbstract, IsActiveExp, FullPrompt, TransformedTransformers, AutoNumber, TransformerIdentifier, IsSyntaxFree
+
+<b>FROM</b> ExperimentTransformer
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="ExperimentFeature" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="ExperimentFeature"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            ExperimentFeature  <span class="pull-right" style="font-size: 0.7em;">(originally - ExperimentFeatures)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each ExperimentFeature may have zero or more associated
+                          
+                            
+                                <a href="#Experiment">
+                                
+                                    Experiments
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Experiment">
+                                
+                                    Experiments
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Experiment">
+                                
+                                    Experiments
+                                    
+                                </a>
+                        
+                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ExperimentFeatureId
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Experiment">ExpAbstract</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Experiment">Experiment</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Experiment">IsActiveExp</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         Name
                         
@@ -631,20 +682,20 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        Idea.SourceIdea
+                                        Experiment.ExpAbstract
                                     </span></div>
-                        SourceIdea
+                        ExpAbstract
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
-                                        Idea.IsActiveIdea
+                                        Experiment.IsActiveExp
                                     </span></div>
-                        IsActiveIdea
+                        IsActiveExp
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">IdeaFeature Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaFeatureId, Name, LowerName, Description, RequiredStartingAtGeneration, ExplicitlyRemovedAtGeneration, SourceIdea, Idea, IsActiveIdea
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">ExperimentFeature Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> ExperimentFeatureId, Name, LowerName, Description, RequiredStartingAtGeneration, ExplicitlyRemovedAtGeneration, ExpAbstract, Experiment, IsActiveExp
 
-<b>FROM</b> IdeaFeature
+<b>FROM</b> ExperimentFeature
 
 </div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="TransformedArtifact" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
@@ -713,9 +764,6 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     <a href="#GenerationTransformer">TransformerRawPrompt</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#GenerationTransformer">IsActiveIdea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
                                     <a href="#TransformedArtifact">ExtensionOf</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
@@ -725,22 +773,10 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     <a href="#GenerationTransformer">TransformerGeneratioNumber</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#GenerationTransformer">TransformerGenerationIdeaName</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
                                     <a href="#GenerationTransformer">TransformerGenerationName</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#TransformedArtifact">PrimaryExtensionArtifact</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#GenerationTransformer">IdeaValidationPrompt</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#GenerationTransformer">GenerationSourceIdea</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#GenerationTransformer">IdeaTransformerIsSyntaxFreefromGenerationTransformer</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#GenerationTransformer">GenerationName</a>
@@ -756,6 +792,21 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#TransformedArtifact">SuggestedRootIdentifier</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">ExpTransformerIsSyntaxFree</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">IsActiveExp</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">TransformerGenerationExpName</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">ExpValidationPrompt</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#GenerationTransformer">ExpAbstract</a>
                                 </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
@@ -810,13 +861,6 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         IsRetiredArtifact
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        GenerationTransformer.IsActiveIdea
-                                    </span></div>
-                        IsActiveIdea
-                        
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
@@ -842,13 +886,6 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                         TransformerGeneratioNumber
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        GenerationTransformer.GenerationIdeaName
-                                    </span></div>
-                        TransformerGenerationIdeaName
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
                                         GenerationTransformer.GenerationName
@@ -979,31 +1016,17 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
                         ToDoColorsMismatched
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        GenerationTransformer.IdeaValidationPrompt
-                                    </span></div>
-                        IdeaValidationPrompt
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
-                                        IF(ExtensionOf,ResponseOfArtifactBeingExtended, GenerationSourceIdea)
+                                        IF(ExtensionOf,ResponseOfArtifactBeingExtended, ExpAbstract)
                                     </span></div></div>
                         ResponseBeingValidated
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        GenerationTransformer.SourceIdea
-                                    </span></div>
-                        GenerationSourceIdea
-                        
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     using 
                                     <span style="font-weight: bold;">
-                                        CONCATENATE("CONTENT/TEXT BEING VALIDATED: ```", Response,"```\n\nVALIDATION PROMPT: ",IdeaValidationPrompt)
+                                        CONCATENATE("CONTENT/TEXT BEING VALIDATED: ```", Response,"```\n\nVALIDATION PROMPT: ",ExpValidationPrompt)
                                     </span></div></div>
                         SuggestedValidationPrompt
                         
@@ -1014,13 +1037,6 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                         ValidationResponse
                         
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        GenerationTransformer.IdeaTransformerIsSyntaxFree
-                                    </span></div>
-                        IdeaTransformerIsSyntaxFreefromGenerationTransformer
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; ">IdeaTransformerIsSyntaxFree (from GenerationTransformer)[]</td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
                                     w/ associated
                                     </div><span style="font-weight: bold; ">
                                         GenerationTransformer.GenerationName
@@ -1072,7 +1088,42 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                                     </span></div></div>
                         RootIdentifierMismatch
                         
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">TransformedArtifact Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> TransformedArtifactId, Name, GenerationTransformer, SuggestedPrompt, ActualPrompt, Response, Created, AutoNumber, ResponseOfArtifactBeingExtended, TransformerRawPrompt, IsRetiredArtifact, IsActiveIdea, Modified, ExtensionOf, TransformerNumber, LongName, TransformerGeneratioNumber, TransformerGenerationIdeaName, TransformerGenerationName, ArtifactIdentifier, PrimaryExtensionArtifact, ToDoItems, ToDoItemsAKA, ToDoItemsMismatched, Categories, CategoriesAKA, CategoriesMismatched, DueDates, DueDatesAKA, DueDatesMismatched, Priorities, PrioritiesAKA, PrioritiesMismatched, Progress, ProgressAKA, ProgressMismatched, Statuses, StatusesAKA, StatusesMismatched, Reminders, RemindersAKA, RemindersMismatched, Notifications, NotificationsAKA, NotificationsMismatched, Completion, CompletionAKA, CompletionMismatched, ToDoEmployees, ToDoEmployeesAKA, ToDoEmployeesMismatched, Duration, DurationAKA, DurationMismatched, CompletedDate, CompletedDateAKA, CompletedDateMismatched, ToDoColors, ToDoColorsAKA, ToDoColorsMismatched, IdeaValidationPrompt, ResponseBeingValidated, GenerationSourceIdea, SuggestedValidationPrompt, ActualValidationPrompt, ValidationResponse, IdeaTransformerIsSyntaxFreefromGenerationTransformer, GenerationName, GeneratioNumber, GenerationTransformerNumber, ExtensionOfArtifactIdentifier, RootArtifactIdentifier, SuggestedRootIdentifier, CustomRootIdentifier, RootIdentifierMismatch
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.ExpTransformerIsSyntaxFree
+                                    </span></div>
+                        ExpTransformerIsSyntaxFree
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.IsActiveExp
+                                    </span></div>
+                        IsActiveExp
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.GenerationExpName
+                                    </span></div>
+                        TransformerGenerationExpName
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.ExpValidationPrompt
+                                    </span></div>
+                        ExpValidationPrompt
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        GenerationTransformer.ExpAbstract
+                                    </span></div>
+                        ExpAbstract
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">TransformedArtifact Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> TransformedArtifactId, Name, GenerationTransformer, SuggestedPrompt, ActualPrompt, Response, Created, AutoNumber, ResponseOfArtifactBeingExtended, TransformerRawPrompt, IsRetiredArtifact, Modified, ExtensionOf, TransformerNumber, LongName, TransformerGeneratioNumber, TransformerGenerationName, ArtifactIdentifier, PrimaryExtensionArtifact, ToDoItems, ToDoItemsAKA, ToDoItemsMismatched, Categories, CategoriesAKA, CategoriesMismatched, DueDates, DueDatesAKA, DueDatesMismatched, Priorities, PrioritiesAKA, PrioritiesMismatched, Progress, ProgressAKA, ProgressMismatched, Statuses, StatusesAKA, StatusesMismatched, Reminders, RemindersAKA, RemindersMismatched, Notifications, NotificationsAKA, NotificationsMismatched, Completion, CompletionAKA, CompletionMismatched, ToDoEmployees, ToDoEmployeesAKA, ToDoEmployeesMismatched, Duration, DurationAKA, DurationMismatched, CompletedDate, CompletedDateAKA, CompletedDateMismatched, ToDoColors, ToDoColorsAKA, ToDoColorsMismatched, ResponseBeingValidated, SuggestedValidationPrompt, ActualValidationPrompt, ValidationResponse, GenerationName, GeneratioNumber, GenerationTransformerNumber, ExtensionOfArtifactIdentifier, RootArtifactIdentifier, SuggestedRootIdentifier, CustomRootIdentifier, RootIdentifierMismatch, ExpTransformerIsSyntaxFree, IsActiveExp, TransformerGenerationExpName, ExpValidationPrompt, ExpAbstract
 
 <b>FROM</b> TransformedArtifact
 
@@ -1099,6 +1150,214 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
                     </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">DesignDecision Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> DesignDecisionId, Name, Notes, TypeOfDecision
 
 <b>FROM</b> DesignDecision
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="Experiment" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="Experiment"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            Experiment  <span class="pull-right" style="font-size: 0.7em;">(originally - Experiments)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each Experiment may have zero or more associated
+                          
+                            
+                                <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#Generation">
+                                
+                                    Generations
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#ExperimentTransformer">
+                                
+                                    ExperimentTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#ExperimentTransformer">
+                                
+                                    ExperimentTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#ExperimentTransformer">
+                                
+                                    ExperimentTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#ExperimentTransformer">
+                                
+                                    ExperimentTransformers
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#ExperimentFeature">
+                                
+                                    ExperimentFeatures
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#ExperimentFeature">
+                                
+                                    ExperimentFeatures
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#ExperimentFeature">
+                                
+                                    ExperimentFeatures
+                                    
+                                </a>
+                        
+                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ExperimentId
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Generation">Generations</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#ExperimentTransformer">ExpTransformers</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#ExperimentTransformer">ExpTransformerNames</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#ExperimentTransformer">ExpTransformerFullPrompts</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#ExperimentFeature">ExpFeatures</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#ExperimentFeature">ExpFeatureLowerNames</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#ExperimentFeature">ExpFeatureNames</a>
+                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        CONCATENATE(ExpIdentifier,IF(IsActiveExp,"","-INACTIVE"),"-",ExpName)
+                                    </span></div></div>
+                        Name
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ExpName
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        AutoNumber+100
+                                    </span></div></div>
+                        ExpIdentifier
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">int32</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ExpAbstract
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        Generation.Experiment
+                                    </span></div>
+                        Generations
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        ExperimentTransformer.Experiment
+                                    </span></div>
+                        ExpTransformers
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        ExperimentTransformer.Name
+                                    </span></div>
+                        ExpTransformerNames
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        ExperimentTransformer.FullPrompt
+                                    </span></div>
+                        ExpTransformerFullPrompts
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        IsActiveExp
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        ExperimentFeature.Experiment
+                                    </span></div>
+                        ExpFeatures
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        ExperimentFeature.LowerName
+                                    </span></div>
+                        ExpFeatureLowerNames
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    w/ associated
+                                    </div><span style="font-weight: bold; ">
+                                        ExperimentFeature.Name
+                                    </span></div>
+                        ExpFeatureNames
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
+                                    using 
+                                    <span style="font-weight: bold;">
+                                        CONCATENATE("['",ARRAYJOIN(ExpFeatureLowerNames, "', '"),"']")
+                                    </span></div></div>
+                        FeaturesArray
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        ValidationPrompt
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
+                        AutoNumber
+                        
+                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">Experiment Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> ExperimentId, Name, ExpName, ExpIdentifier, ExpAbstract, Generations, ExpTransformers, ExpTransformerNames, ExpTransformerFullPrompts, IsActiveExp, ExpFeatures, ExpFeatureLowerNames, ExpFeatureNames, FeaturesArray, ValidationPrompt, AutoNumber
+
+<b>FROM</b> Experiment
 
 </div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="LLM" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
@@ -1144,204 +1403,13 @@ ej-syntax-locked-vs-syntax-free  Data model</h1><a class="btn btn-sm btn-primary
 
 <b>FROM</b> LLM
 
-</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="Idea" />
-                <div style="clear: both"></div><div class="row"><div class="col-md-12">
-                        <a name="Idea"></a>
-                        <hr /><h2>
-                            
-                            
-                            
-                            
-                            Idea  <span class="pull-right" style="font-size: 0.7em;">(originally - Ideas)</span></h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
-                            Each Idea may have zero or more associated
-                          
-                            
-                                <a href="#IdeaTransformer">
-                                
-                                    IdeaTransformers
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#IdeaTransformer">
-                                
-                                    IdeaTransformers
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#IdeaTransformer">
-                                
-                                    IdeaTransformers
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#IdeaTransformer">
-                                
-                                    IdeaTransformers
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#Generation">
-                                
-                                    Generations
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#Generation">
-                                
-                                    Generations
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#Generation">
-                                
-                                    Generations
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#Generation">
-                                
-                                    Generations
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#Generation">
-                                
-                                    Generations
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#IdeaFeature">
-                                
-                                    IdeaFeatures
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#IdeaFeature">
-                                
-                                    IdeaFeatures
-                                    
-                                </a>
-                        
-                            
-                                , <a href="#IdeaFeature">
-                                
-                                    IdeaFeatures
-                                    
-                                </a>
-                        
-                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th style="text-align:center">Type</th><th align="right">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><img style="width: 1em;" src="images/primary-key.png" /><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        IdeaId
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#Generation">Generations</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#IdeaTransformer">IdeaTransformers</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#IdeaTransformer">IdeaTransformerNames</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#IdeaTransformer">IdeaTransformerFullPrompts</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#IdeaFeature">IdeaFeatures</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#IdeaFeature">IdeaFeatureLowerNames</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
-                                    <a href="#IdeaFeature">IdeaFeatureNames</a>
-                                </td><td style="text-align: center; vertical-align: top; font-weight: bold;">parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        Name
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        SourceIdea
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        Generation.Idea
-                                    </span></div>
-                        Generations
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>None</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        IsActiveIdea
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">boolean</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        IdeaTransformer.Idea
-                                    </span></div>
-                        IdeaTransformers
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        IdeaTransformer.Name
-                                    </span></div>
-                        IdeaTransformerNames
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        IdeaTransformer.FullPrompt
-                                    </span></div>
-                        IdeaTransformerFullPrompts
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Many</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        IdeaFeature.Idea
-                                    </span></div>
-                        IdeaFeatures
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        IdeaFeature.LowerName
-                                    </span></div>
-                        IdeaFeatureLowerNames
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Lookup</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    w/ associated
-                                    </div><span style="font-weight: bold; ">
-                                        IdeaFeature.Name
-                                    </span></div>
-                        IdeaFeatureNames
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"><div>
-                                    using 
-                                    <span style="font-weight: bold;">
-                                        CONCATENATE("['",ARRAYJOIN(IdeaFeatureLowerNames, "', '"),"']")
-                                    </span></div></div>
-                        FeaturesArray
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><td style="padding: 0.25em; width: 5em;vertical-align:top; border-top: solid 1px darkgray"><small>Formula</small></td><td style="; border-top: solid 1px darkgray"><div style="float: right; font-size: 0.8em; text-align: right;"></div>
-                        ValidationPrompt
-                        
-                    </td><td style="text-align: center; vertical-align: top; border-top: solid 1px darkgray">string</td><td style="border-top: solid 1px darkgray; vertical-align: top; "></td></tr><tr><th colspan="3" style="padding-top: 1em;">Idea Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> IdeaId, Name, SourceIdea, Generations, IsActiveIdea, IdeaTransformers, IdeaTransformerNames, IdeaTransformerFullPrompts, IdeaFeatures, IdeaFeatureLowerNames, IdeaFeatureNames, FeaturesArray, ValidationPrompt
-
-<b>FROM</b> Idea
-
 </div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr></table><h1>Actors</h1>
             
                 <a name="actor-Guest"></a>
                 <div style="min-height: 15em;"><b>Guest</b><div><b>Actor can Say</b><ol><li><b>general: </b>"Request Token" -> CRUDCoordinator</li><li><b>general: </b>"Validate Temporary Access Token" -> CRUDCoordinator</li><li><b>general: </b>"Who Am I" -> CRUDCoordinator</li><li><b>general: </b>"Who Are You" -> CRUDCoordinator</li><li><b>utlity: </b>"Store Temp File" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div>
             
                 <a name="actor-User"></a>
-                <div style="min-height: 15em;"><b>User</b><div><b>Actor can Say</b><ol><li><b>crud: </b>"Add App User" -> CRUDCoordinator</li><li><b>crud: </b>"Add Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Add Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Delete App User" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Get App Users" -> CRUDCoordinator</li><li><b>crud: </b>"Get Design Decisions" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generations" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generation Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Features" -> CRUDCoordinator</li><li><b>crud: </b>"Get Ideas" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get L L Ms" -> CRUDCoordinator</li><li><b>crud: </b>"Get Transformed Artifacts" -> CRUDCoordinator</li><li><b>crud: </b>"Update App User" -> CRUDCoordinator</li><li><b>crud: </b>"Update Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Update Transformed Artifact" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div>
+                <div style="min-height: 15em;"><b>User</b><div><b>Actor can Say</b><ol><li><b>crud: </b>"Add App User" -> CRUDCoordinator</li><li><b>crud: </b>"Add Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Add Experiment" -> CRUDCoordinator</li><li><b>crud: </b>"Add Experiment Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Add Experiment Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Add Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Delete App User" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Experiment" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Experiment Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Experiment Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Get App Users" -> CRUDCoordinator</li><li><b>crud: </b>"Get Design Decisions" -> CRUDCoordinator</li><li><b>crud: </b>"Get Experiment Features" -> CRUDCoordinator</li><li><b>crud: </b>"Get Experiments" -> CRUDCoordinator</li><li><b>crud: </b>"Get Experiment Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generations" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generation Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get L L Ms" -> CRUDCoordinator</li><li><b>crud: </b>"Get Transformed Artifacts" -> CRUDCoordinator</li><li><b>crud: </b>"Update App User" -> CRUDCoordinator</li><li><b>crud: </b>"Update Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Update Experiment" -> CRUDCoordinator</li><li><b>crud: </b>"Update Experiment Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Update Experiment Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Update Transformed Artifact" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div>
             
                 <a name="actor-Admin"></a>
-                <div style="min-height: 15em;"><b>Admin</b><div><b>Actor can Say</b><ol><li><b>crud: </b>"Add App User" -> CRUDCoordinator</li><li><b>crud: </b>"Add Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Add Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Add Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Delete App User" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Get App Users" -> CRUDCoordinator</li><li><b>crud: </b>"Get Design Decisions" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generations" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generation Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Features" -> CRUDCoordinator</li><li><b>crud: </b>"Get Ideas" -> CRUDCoordinator</li><li><b>crud: </b>"Get Idea Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get L L Ms" -> CRUDCoordinator</li><li><b>crud: </b>"Get Transformed Artifacts" -> CRUDCoordinator</li><li><b>crud: </b>"Update App User" -> CRUDCoordinator</li><li><b>crud: </b>"Update Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Update Idea Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Update Transformed Artifact" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div></body></html>
+                <div style="min-height: 15em;"><b>Admin</b><div><b>Actor can Say</b><ol><li><b>crud: </b>"Add App User" -> CRUDCoordinator</li><li><b>crud: </b>"Add Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Add Experiment" -> CRUDCoordinator</li><li><b>crud: </b>"Add Experiment Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Add Experiment Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Add Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Add L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Add Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Delete App User" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Experiment" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Experiment Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Experiment Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Delete L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Delete Transformed Artifact" -> CRUDCoordinator</li><li><b>crud: </b>"Get App Users" -> CRUDCoordinator</li><li><b>crud: </b>"Get Design Decisions" -> CRUDCoordinator</li><li><b>crud: </b>"Get Experiment Features" -> CRUDCoordinator</li><li><b>crud: </b>"Get Experiments" -> CRUDCoordinator</li><li><b>crud: </b>"Get Experiment Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generations" -> CRUDCoordinator</li><li><b>crud: </b>"Get Generation Transformers" -> CRUDCoordinator</li><li><b>crud: </b>"Get L L Ms" -> CRUDCoordinator</li><li><b>crud: </b>"Get Transformed Artifacts" -> CRUDCoordinator</li><li><b>crud: </b>"Update App User" -> CRUDCoordinator</li><li><b>crud: </b>"Update Design Decision" -> CRUDCoordinator</li><li><b>crud: </b>"Update Experiment" -> CRUDCoordinator</li><li><b>crud: </b>"Update Experiment Feature" -> CRUDCoordinator</li><li><b>crud: </b>"Update Experiment Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation" -> CRUDCoordinator</li><li><b>crud: </b>"Update Generation Transformer" -> CRUDCoordinator</li><li><b>crud: </b>"Update L L M" -> CRUDCoordinator</li><li><b>crud: </b>"Update Transformed Artifact" -> CRUDCoordinator</li></ol></div><div><b>Actor can Reply To</b><ol></ol></div></div></body></html>

@@ -58,10 +58,6 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsRetiredArtifact")]
         public Nullable<Boolean> IsRetiredArtifact { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsActiveIdea")]
-        [RemoteIsCollection]
-        public Boolean[] IsActiveIdea { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Modified")]
         public Nullable<DateTime> Modified { get; set; }
     
@@ -79,10 +75,6 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformerGeneratioNumber")]
         [RemoteIsCollection]
         public Int32[] TransformerGeneratioNumber { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformerGenerationIdeaName")]
-        [RemoteIsCollection]
-        public String[] TransformerGenerationIdeaName { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformerGenerationName")]
         [RemoteIsCollection]
@@ -212,16 +204,8 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ToDoColorsMismatched")]
         public Nullable<Boolean> ToDoColorsMismatched { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaValidationPrompt")]
-        [RemoteIsCollection]
-        public String[] IdeaValidationPrompt { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ResponseBeingValidated")]
         public String ResponseBeingValidated { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationSourceIdea")]
-        [RemoteIsCollection]
-        public String[] GenerationSourceIdea { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SuggestedValidationPrompt")]
         public String SuggestedValidationPrompt { get; set; }
@@ -231,10 +215,6 @@ namespace AirtableDirect.CLI.Lib.DataClasses
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ValidationResponse")]
         public String ValidationResponse { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaTransformerIsSyntaxFree (from GenerationTransformer)")]
-        [RemoteIsCollection]
-        public Boolean[] IdeaTransformerIsSyntaxFreefromGenerationTransformer { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationName")]
         [RemoteIsCollection]
@@ -264,6 +244,26 @@ namespace AirtableDirect.CLI.Lib.DataClasses
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "RootIdentifierMismatch")]
         public Nullable<Int32> RootIdentifierMismatch { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpTransformerIsSyntaxFree")]
+        [RemoteIsCollection]
+        public Boolean[] ExpTransformerIsSyntaxFree { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsActiveExp")]
+        [RemoteIsCollection]
+        public Boolean[] IsActiveExp { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformerGenerationExpName")]
+        [RemoteIsCollection]
+        public String[] TransformerGenerationExpName { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpValidationPrompt")]
+        [RemoteIsCollection]
+        public String[] ExpValidationPrompt { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpAbstract")]
+        [RemoteIsCollection]
+        public String[] ExpAbstract { get; set; }
     
 
         

@@ -173,84 +173,6 @@
 				}
                     
             ,{
-				"name": "Add IdeaTransformer",
-				"request": {
-					"method": "POST",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","IdeaTransformer"]
-					}
-				},
-				"response": []
-			}     
-        
-            
-            ,{
-				"name": "Get IdeaTransformers",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","IdeaTransformers"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Get IdeaTransformer",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","IdeaTransformer"]
-					}
-				},
-				"response": []
-			}
-        
-          ,{
-				"name": "Update IdeaTransformer",
-				"request": {
-					"method": "PUT",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","IdeaTransformer"]
-					}
-				},
-				"response": []
-			}
-          ,{
-				"name": "Delete IdeaTransformer",
-				"request": {
-					"method": "DELETE",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","IdeaTransformer"]
-					}
-				},
-				"response": []
-			}
-            ,{
 				"name": "Add AppUser",
 				"request": {
 					"method": "POST",
@@ -485,16 +407,16 @@
 				"response": []
 			}
             ,{
-				"name": "Add IdeaFeature",
+				"name": "Add ExperimentTransformer",
 				"request": {
 					"method": "POST",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["User","IdeaFeature"]
+						"path": ["User","ExperimentTransformer"]
 					}
 				},
 				"response": []
@@ -502,62 +424,140 @@
         
             
             ,{
-				"name": "Get IdeaFeatures",
+				"name": "Get ExperimentTransformers",
 				"request": {
 					"method": "GET",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["User","IdeaFeatures"]
+						"path": ["User","ExperimentTransformers"]
 					}
 				},
 				"response": []
 			}
             ,{
-				"name": "Get IdeaFeature",
+				"name": "Get ExperimentTransformer",
 				"request": {
 					"method": "GET",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["User","IdeaFeature"]
+						"path": ["User","ExperimentTransformer"]
 					}
 				},
 				"response": []
 			}
         
           ,{
-				"name": "Update IdeaFeature",
+				"name": "Update ExperimentTransformer",
 				"request": {
 					"method": "PUT",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["User","IdeaFeature"]
+						"path": ["User","ExperimentTransformer"]
 					}
 				},
 				"response": []
 			}
           ,{
-				"name": "Delete IdeaFeature",
+				"name": "Delete ExperimentTransformer",
 				"request": {
 					"method": "DELETE",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["User","IdeaFeature"]
+						"path": ["User","ExperimentTransformer"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Add ExperimentFeature",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ExperimentFeature"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get ExperimentFeatures",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ExperimentFeatures"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get ExperimentFeature",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ExperimentFeature"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update ExperimentFeature",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ExperimentFeature"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete ExperimentFeature",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ExperimentFeature"]
 					}
 				},
 				"response": []
@@ -719,6 +719,84 @@
 				"response": []
 			}
             ,{
+				"name": "Add Experiment",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Experiment"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get Experiments",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Experiments"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get Experiment",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Experiment"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update Experiment",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Experiment"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete Experiment",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Experiment"]
+					}
+				},
+				"response": []
+			}
+            ,{
 				"name": "Add LLM",
 				"request": {
 					"method": "POST",
@@ -796,84 +874,6 @@
 				},
 				"response": []
 			}
-            ,{
-				"name": "Add Idea",
-				"request": {
-					"method": "POST",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","Idea"]
-					}
-				},
-				"response": []
-			}     
-        
-            
-            ,{
-				"name": "Get Ideas",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","Ideas"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Get Idea",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","Idea"]
-					}
-				},
-				"response": []
-			}
-        
-          ,{
-				"name": "Update Idea",
-				"request": {
-					"method": "PUT",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","Idea"]
-					}
-				},
-				"response": []
-			}
-          ,{
-				"name": "Delete Idea",
-				"request": {
-					"method": "DELETE",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","Idea"]
-					}
-				},
-				"response": []
-			}
 		]
 	}
             ,
@@ -901,84 +901,6 @@
 					"response": []
 				}
                     
-            ,{
-				"name": "Add IdeaTransformer",
-				"request": {
-					"method": "POST",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","IdeaTransformer"]
-					}
-				},
-				"response": []
-			}     
-        
-            
-            ,{
-				"name": "Get IdeaTransformers",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","IdeaTransformers"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Get IdeaTransformer",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","IdeaTransformer"]
-					}
-				},
-				"response": []
-			}
-        
-          ,{
-				"name": "Update IdeaTransformer",
-				"request": {
-					"method": "PUT",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","IdeaTransformer"]
-					}
-				},
-				"response": []
-			}
-          ,{
-				"name": "Delete IdeaTransformer",
-				"request": {
-					"method": "DELETE",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideatransformers",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","IdeaTransformer"]
-					}
-				},
-				"response": []
-			}
             ,{
 				"name": "Add AppUser",
 				"request": {
@@ -1214,16 +1136,16 @@
 				"response": []
 			}
             ,{
-				"name": "Add IdeaFeature",
+				"name": "Add ExperimentTransformer",
 				"request": {
 					"method": "POST",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["Admin","IdeaFeature"]
+						"path": ["Admin","ExperimentTransformer"]
 					}
 				},
 				"response": []
@@ -1231,62 +1153,140 @@
         
             
             ,{
-				"name": "Get IdeaFeatures",
+				"name": "Get ExperimentTransformers",
 				"request": {
 					"method": "GET",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["Admin","IdeaFeatures"]
+						"path": ["Admin","ExperimentTransformers"]
 					}
 				},
 				"response": []
 			}
             ,{
-				"name": "Get IdeaFeature",
+				"name": "Get ExperimentTransformer",
 				"request": {
 					"method": "GET",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["Admin","IdeaFeature"]
+						"path": ["Admin","ExperimentTransformer"]
 					}
 				},
 				"response": []
 			}
         
           ,{
-				"name": "Update IdeaFeature",
+				"name": "Update ExperimentTransformer",
 				"request": {
 					"method": "PUT",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["Admin","IdeaFeature"]
+						"path": ["Admin","ExperimentTransformer"]
 					}
 				},
 				"response": []
 			}
           ,{
-				"name": "Delete IdeaFeature",
+				"name": "Delete ExperimentTransformer",
 				"request": {
 					"method": "DELETE",
 					"header": [],
 					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideafeatures",
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimenttransformers",
 						"protocol": "{{protocol}}",
 						"host": ["{{host}}"],
 						"port": "{{port}}",
-						"path": ["Admin","IdeaFeature"]
+						"path": ["Admin","ExperimentTransformer"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Add ExperimentFeature",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ExperimentFeature"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get ExperimentFeatures",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ExperimentFeatures"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get ExperimentFeature",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ExperimentFeature"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update ExperimentFeature",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ExperimentFeature"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete ExperimentFeature",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experimentfeatures",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ExperimentFeature"]
 					}
 				},
 				"response": []
@@ -1448,6 +1448,84 @@
 				"response": []
 			}
             ,{
+				"name": "Add Experiment",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Experiment"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get Experiments",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Experiments"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get Experiment",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Experiment"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update Experiment",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Experiment"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete Experiment",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/experiments",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Experiment"]
+					}
+				},
+				"response": []
+			}
+            ,{
 				"name": "Add LLM",
 				"request": {
 					"method": "POST",
@@ -1521,84 +1599,6 @@
 						"host": ["{{host}}"],
 						"port": "{{port}}",
 						"path": ["Admin","LLM"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Add Idea",
-				"request": {
-					"method": "POST",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","Idea"]
-					}
-				},
-				"response": []
-			}     
-        
-            
-            ,{
-				"name": "Get Ideas",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","Ideas"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Get Idea",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","Idea"]
-					}
-				},
-				"response": []
-			}
-        
-          ,{
-				"name": "Update Idea",
-				"request": {
-					"method": "PUT",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","Idea"]
-					}
-				},
-				"response": []
-			}
-          ,{
-				"name": "Delete Idea",
-				"request": {
-					"method": "DELETE",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/ideas",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","Idea"]
 					}
 				},
 				"response": []

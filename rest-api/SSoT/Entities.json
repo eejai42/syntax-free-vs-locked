@@ -1,13 +1,6 @@
 {
     "Entities": [
             {
-                "Name": "IdeaTransformer",
-                "DisplayName": "IdeaTransformer",
-                "Description": "",
-                "PluralName": "IdeaTransformers",
-                "AirtableName": "IdeaTransformers"
-            },
-            {
                 "Name": "AppUser",
                 "DisplayName": "AppUser",
                 "Description": "",
@@ -29,11 +22,18 @@
                 "AirtableName": "Generations"
             },
             {
-                "Name": "IdeaFeature",
-                "DisplayName": "IdeaFeature",
+                "Name": "ExperimentTransformer",
+                "DisplayName": "ExperimentTransformer",
                 "Description": "",
-                "PluralName": "IdeaFeatures",
-                "AirtableName": "IdeaFeatures"
+                "PluralName": "ExperimentTransformers",
+                "AirtableName": "ExperimentTransformers"
+            },
+            {
+                "Name": "ExperimentFeature",
+                "DisplayName": "ExperimentFeature",
+                "Description": "",
+                "PluralName": "ExperimentFeatures",
+                "AirtableName": "ExperimentFeatures"
             },
             {
                 "Name": "TransformedArtifact",
@@ -50,18 +50,18 @@
                 "AirtableName": "DesignDecisions"
             },
             {
+                "Name": "Experiment",
+                "DisplayName": "Experiment",
+                "Description": "",
+                "PluralName": "Experiments",
+                "AirtableName": "Experiments"
+            },
+            {
                 "Name": "LLM",
                 "DisplayName": "LLM",
                 "Description": "",
                 "PluralName": "LLMs",
                 "AirtableName": "LLMs"
-            },
-            {
-                "Name": "Idea",
-                "DisplayName": "Idea",
-                "Description": "",
-                "PluralName": "Ideas",
-                "AirtableName": "Ideas"
             }
     ]
 }

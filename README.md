@@ -24,12 +24,12 @@ My claim is that natural language is one-dimensional while JSON is multi-dimensi
    - **Project Descriptions**: Define a set of initial descriptions for various types of projects. Each description will be a single sentence summarizing the project.
 
 2. **Branching**:
-   - **Natural Language Description**: Describe the idea in a paragraph of natural language.
-   - **Single-Source-of-Truth JSON**: Represent the idea in a syntax-free JSON format.
+   - **Natural Language Description**: Describe the experiment in a paragraph of natural language.
+   - **Single-Source-of-Truth JSON**: Represent the experiment in a syntax-free JSON format.
    
 3. **Generations and Transformations**:
-   - **IdeaTransformers**: Apply to each generation to create artifacts (e.g., README.md, C# script, JSON SSoT).
-   - **GenerationTransformers**: Link transformations to specific generations and produce artifacts that extend the idea.
+   - **ExperimentTransformers**: Apply to each generation to create artifacts (e.g., README.md, C# script, JSON SSoT).
+   - **GenerationTransformers**: Link transformations to specific generations and produce artifacts that extend the experiment.
 
 4. **Example Transformations**:
    - **Add Employee to Todo**: Adding the notion of an employee per todo item.
@@ -45,7 +45,7 @@ My claim is that natural language is one-dimensional while JSON is multi-dimensi
    - **Name Drift Analysis**: Identify changes in the naming of features across generations.
    - **Preservation of Rules**: Check for consistent preservation of rules in each branch.
 
-6. **Iterations**: Repeat the process for multiple generations, modifying and extending the idea each time, and measuring the drift from the original features.
+6. **Iterations**: Repeat the process for multiple generations, modifying and extending the experiment each time, and measuring the drift from the original features.
 
 7. **Data Collection**: Gather data on feature drift, changes in feature names, and other relevant metrics to compare the robustness of each approach.
 
@@ -60,7 +60,7 @@ Update your Mermaid diagram to include the third branch (MDE tools):
 ```mermaid
 graph TD
   %% Syntax-Locked Branch
-  A[Start with Idea] --> B{Define Initial Description}
+  A[Start with Experiment] --> B{Define Initial Description}
   B --> C1[Branch 1: Natural Language Description]
 
   %% Pre-positioned Validation Nodes for Syntax-Locked Branch
@@ -99,7 +99,7 @@ graph TD
 
 ### Philosophical Context
 
-Your argument that natural language is one-dimensional while JSON is multi-dimensional and thus more effective for representing knowledge aligns well with the core principles of SSoT.me. This research would further substantiate the claim by empirically demonstrating how these different approaches manage transformations and preserve the integrity of the original idea.
+Your argument that natural language is one-dimensional while JSON is multi-dimensional and thus more effective for representing knowledge aligns well with the core principles of SSoT.me. This research would further substantiate the claim by empirically demonstrating how these different approaches manage transformations and preserve the integrity of the original experiment.
 
 ### Potential Impact on Academic Reception
 
@@ -112,54 +112,137 @@ Expanding your research to include MDE tools and comparing them with natural lan
 
 
 
-### Key Elements for Mermaid Diagram
+### Dataset design/structure
 
-Based on your description and the provided schema, I'll focus on the essential fields needed to run the methodology. Here is a Mermaid diagram that illustrates the key elements and relationships in the data schema.
+1. **Experiments**:
+   - Represent the initial concept or application experiment.
+   - Associated with multiple **ExperimentFeatures** and **ExperimentTransformers**.
+   - Have multiple **Generations**.
 
-#### Mermaid Schema Diagram
-Got it. I'll update the diagram to reflect that each `Idea` can have multiple `IdeaTransformers`, and each `IdeaTransformer` can be referenced by multiple `GenerationTransformers`. Here is the revised Mermaid diagram.
+2. **ExperimentFeatures**:
+   - Describe what the application does (e.g., the app does X, Y, or XYZ).
+
+3. **ExperimentTransformers**:
+   - Prompts to modify artifacts from one generation to create a new generation.
+   - Each transformer can be syntax-locked or syntax-free.
+
+4. **Generations**:
+   - Represent the stages of evolution of the experiment.
+   - Linked to specific **GenerationTransformers**.
+
+5. **GenerationTransformers**:
+   - Link a generation to a specific experiment transformer.
+   - Applied to artifacts from one generation to create new artifacts in the next generation.
+
+6. **GeneratedArtifacts**:
+   - Created by applying a **GenerationTransformer** to an artifact from a previous generation.
+   - Include both syntax-locked and syntax-free versions.
+   - Multiple artifacts can be generated per generation and can be evolved further in subsequent generations.
+
+### Flow and Relationships
+
+1. **Experiment**:
+   - Has multiple **ExperimentFeatures**.
+   - Has multiple **ExperimentTransformers**.
+   - Has multiple **Generations**.
+
+2. **Generation**:
+   - Linked to an **Experiment**.
+   - Has multiple **GenerationTransformers**.
+   - Contains artifacts generated by applying **GenerationTransformers** to artifacts from the previous generation.
+
+3. **GenerationTransformer**:
+   - Linked to an **ExperimentTransformer**.
+   - Applied to artifacts from the previous generation to create new artifacts.
+
+4. **GeneratedArtifact**:
+   - Created by applying a **GenerationTransformer** to an artifact.
+   - Can be syntax-locked or syntax-free.
+   - Linked back to the generation and experiment it was derived from.
+
+### Diagram
+
+Here is a Mermaid diagram that represents this structure:
+
+```mermaid
+graph TD
+    Experiment -->|Has| ExperimentFeatures
+    Experiment -->|Has| ExperimentTransformers
+    Experiment -->|Has| Generations
+    
+    Generations -->|Linked to| Experiment
+    
+    Generations -->|Has| GenerationTransformers
+    GenerationTransformers -->|Linked to| ExperimentTransformers
+    GenerationTransformers -->|Creates| GeneratedArtifacts
+    
+    GeneratedArtifacts -->|Linked to| Generations
+    GeneratedArtifacts -->|Linked to| GenerationTransformers
+    
+    subgraph ExperimentStructure
+        Experiment
+        ExperimentFeatures
+        ExperimentTransformers
+    end
+    
+    subgraph GenerationStructure
+        Generations
+        GenerationTransformers
+        GeneratedArtifacts
+    end
+```
+
+This diagram helps visualize how experiments, features, transformers, generations, and artifacts are interrelated within your study.
+
+### Summary
+- **Experiments** contain the initial concept and are linked to features, transformers, and generations.
+- **Generations** represent stages in the experiment's evolution and are linked to transformers.
+- **GenerationTransformers** are applied to artifacts to create new artifacts, forming new generations.
+- **GeneratedArtifacts** are the result of applying transformers to previous generation artifacts and can be syntax-locked or syntax-free.
+
+This structure ensures a systematic and organized approach to tracking the evolution of experiments and their artifacts across multiple generations and transformations.
 
 ### Revised Mermaid Diagram
 
 ```mermaid
 classDiagram
-    Idea --> Generation : "1 to many"
-    Idea --> IdeaTransformer : "1 to many"
+    Experiment --> Generation : "1 to many"
+    Experiment --> ExperimentTransformer : "1 to many"
     Generation --> GenerationTransformer : "1 to many"
-    IdeaTransformer --> GenerationTransformer : "1 to many"
+    ExperimentTransformer --> GenerationTransformer : "1 to many"
     GenerationTransformer --> TransformedArtifact : "1 to many"
 
-    class Idea {
-        +Int IdeaId
+    class Experiment {
+        +Int ExperimentId
         +String Name
-        +String SourceIdea
-        +Boolean IsActiveIdea
+        +String SourceExperiment
+        +Boolean IsActiveExperiment
     }
 
     class Generation {
         +Int GenerationId
         +String Name
-        +Int IdeaId
+        +Int ExperimentId
         +Int GeneratioNumber
-        +Boolean IsActiveIdea
+        +Boolean IsActiveExperiment
     }
 
     class GenerationTransformer {
         +Int GenerationTransformerId
         +String Name
         +Int GenerationId
-        +Int IdeaTransformerId
+        +Int ExperimentTransformerId
         +String RawPrompt
-        +String IdeaPrompt
+        +String ExperimentPrompt
         +Boolean IsArtifactValidator
     }
 
-    class IdeaTransformer {
-        +Int IdeaTransformerId
+    class ExperimentTransformer {
+        +Int ExperimentTransformerId
         +String Name
-        +Int IdeaId
+        +Int ExperimentId
         +String FullPrompt
-        +Boolean IsActiveIdea
+        +Boolean IsActiveExperiment
     }
 
     class TransformedArtifact {
@@ -169,38 +252,24 @@ classDiagram
         +String ActualPrompt
         +String Response
         +Boolean IsRetiredArtifact
-        +Boolean IsActiveIdea
+        +Boolean IsActiveExperiment
     }
 ```
-
-### Explanation of Changes
-
-1. **IdeaTransformer**:
-    - Represents transformations applied to an idea.
-    - **Fields**: `IdeaTransformerId`, `Name`, `IdeaId`, `FullPrompt`, `IsActiveIdea`.
-    - **Relationships**: Each `Idea` can have multiple `IdeaTransformers`.
-
-2. **GenerationTransformer**:
-    - Handles transformations of a generation into various forms.
-    - **Fields**: `GenerationTransformerId`, `Name`, `GenerationId`, `IdeaTransformerId`, `RawPrompt`, `IdeaPrompt`, `IsArtifactValidator`.
-    - **Relationships**: Each `Generation` can have multiple `GenerationTransformers`, and each `GenerationTransformer` references an `IdeaTransformer`.
-
-This structure supports applying the same `IdeaTransformer` over multiple generations, which aligns with the recursive application of transformations in your methodology.
 
 ### Updated Methodology Steps
 
 1. **Initial Setup**:
-   - Create initial `Idea` and `Generation` entries.
-   - Define `IdeaTransformers` for each type of transformation (Natural Language, JSON SSoT, MDE Tool).
+   - Create initial `Experiment` and `Generation` entries.
+   - Define `ExperimentTransformers` for each type of transformation (Natural Language, JSON SSoT, MDE Tool).
 
 2. **Branching**:
-   - Use `GenerationTransformer` to apply `IdeaTransformers` to each generation.
+   - Use `GenerationTransformer` to apply `ExperimentTransformers` to each generation.
 
 3. **Generations and Transformations**:
    - Apply transformations and create corresponding `TransformedArtifacts`.
 
 4. **Validation and Analysis**:
-   - Validate `TransformedArtifacts` against the original `Idea` and expected outcomes.
+   - Validate `TransformedArtifacts` against the original `Experiment` and expected outcomes.
    - Use relationships to track feature drift and preservation across generations.
 
 By organizing the data and processes this way, you ensure that your research methodology is both systematic and scalable, enabling you to analyze feature drift, robustness, and consistency effectively.
@@ -568,10 +637,10 @@ Adding root prompts now...", iterations, transform_number, max_transform_number)
             created_artifact = create_transformed_artifact(generation_transform_id)
             artifact_id = created_artifact["TransformedArtifactId"]
             artifact = get_transformed_artifact_by_id(artifact_id)
-            suggested_idea_prompt = artifact["SuggestedPrompt"]
-            write_prompt_to_file(suggested_idea_prompt)
+            suggested_experiment_prompt = artifact["SuggestedPrompt"]
+            write_prompt_to_file(suggested_experiment_prompt)
             run_gpt()
-            actual_prompt = suggested_idea_prompt
+            actual_prompt = suggested_experiment_prompt
             response = read_response_from_file()
             updated_artifact = update_transformed_artifact(artifact, actual_prompt, response)
             print("Artifact updated successfully:", updated_artifact)
@@ -603,10 +672,10 @@ def validate_response(validator_transform_number, iterations=1, transform_number
             validation_artifact = create_validation_artifact(artifact_id, validator_transform_id)
             validation_artifact_id = validation_artifact["TransformedArtifactId"]
             updated_artifact = get_transformed_artifact_by_id(validation_artifact_id)
-            suggested_idea_prompt = updated_artifact["SuggestedPrompt"]
-            write_prompt_to_file(suggested_idea_prompt)
+            suggested_experiment_prompt = updated_artifact["SuggestedPrompt"]
+            write_prompt_to_file(suggested_experiment_prompt)
             run_gpt()
-            actual_prompt = suggested_idea_prompt
+            actual_prompt = suggested_experiment_prompt
             response = read_response_from_file()
             updated_validation_artifact = update_transformed_artifact(updated_artifact, actual_prompt, response)
             print("Validation Artifact updated successfully:", updated_validation_artifact)

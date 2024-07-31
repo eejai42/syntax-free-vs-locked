@@ -7,13 +7,13 @@ using System.Text;
 
 namespace CLIClassLibrary.Controllers
 {
-    public class IdeasController : Controller
+    public class ExperimentsController : Controller
     {
         public IActionResult Index()
         {
             var admin = new ATDAdmin();
             var payload = admin.CreatePayload();
-            return Json(admin.GetIdeas(payload));
+            return Json(admin.GetExperiments(payload));
 
         }
     }

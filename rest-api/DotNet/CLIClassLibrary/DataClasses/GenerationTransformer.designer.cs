@@ -36,29 +36,13 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String RawPrompt { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SourceIdea")]
-        [RemoteIsCollection]
-        public String SourceIdea { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationName")]
         [RemoteIsCollection]
         public String GenerationName { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationIdea")]
-        [RemoteIsCollection]
-        public String GenerationIdea { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationIdeaName")]
-        [RemoteIsCollection]
-        public String GenerationIdeaName { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GeneratioNumber")]
         [RemoteIsCollection]
         public Nullable<Int32> GeneratioNumber { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsActiveIdea")]
-        [RemoteIsCollection]
-        public Nullable<Boolean> IsActiveIdea { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformedArtifacts")]
         [RemoteIsCollection]
@@ -73,17 +57,33 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsArtifactValidator")]
         public Nullable<Boolean> IsArtifactValidator { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaValidationPrompt")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpAbstract")]
         [RemoteIsCollection]
-        public String IdeaValidationPrompt { get; set; }
+        public String ExpAbstract { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaTransformer")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpTransformer")]
         [RemoteIsCollection]
-        public String IdeaTransformer { get; set; }
+        public String ExpTransformer { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaTransformerIsSyntaxFree")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationExp")]
         [RemoteIsCollection]
-        public Nullable<Boolean> IdeaTransformerIsSyntaxFree { get; set; }
+        public String GenerationExp { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationExpName")]
+        [RemoteIsCollection]
+        public String GenerationExpName { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsActiveExp")]
+        [RemoteIsCollection]
+        public Nullable<Boolean> IsActiveExp { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpTransformerIsSyntaxFree")]
+        [RemoteIsCollection]
+        public Nullable<Boolean> ExpTransformerIsSyntaxFree { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpValidationPrompt")]
+        [RemoteIsCollection]
+        public String ExpValidationPrompt { get; set; }
     
 
         

@@ -13,49 +13,6 @@
     }
   ],
   "ProjectTranspilers": [
-    {
-      "MatchedTranspiler": {
-        "TranspilerId": "08b622df-33d7-40ee-8780-db6928c00386",
-        "Name": "AirtableToJson",
-        "Description": "Export an Airtable Base as json"
-      },
-      "ProjectTranspilerId": "4d624edc-ec6c-414d-9e19-b223436e54b2",
-      "Name": "AirtableToJson",
-      "RelativePath": "/the-joneses/martini-scroller-app/public/mof-data",
-      "CommandLine": "airtable/airtable-to-json -p baseid=app9f8btt7lSPTpw1 -p entities=MOFLayers,MOFNodes,MOFChoices -o raw-data.json -p view=ForExport"
-    },
-    {
-      "MatchedTranspiler": {
-        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
-        "Name": "XmlXsltTransform",
-        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
-      },
-      "ProjectTranspilerId": "02dd04de-e063-47b4-b6dc-4cfc50fe7393",
-      "Name": "XmlXsltTransform",
-      "RelativePath": "/the-joneses/martini-scroller-app/public/mof-data",
-      "CommandLine": "xml-xslt-transform -i ./raw-data.xml -i ./trimmed-mof-data.xslt"
-    },
-    {
-      "MatchedTranspiler": {
-        "TranspilerId": "ba509977-74bf-486e-a405-1b2125bd5d15",
-        "Name": "XmlToJson",
-        "Description": "Converts XML to JSON using the NewtonSoft C# conversion tools."
-      },
-      "ProjectTranspilerId": "28693e96-6629-44e1-ab72-6b3bc9223b17",
-      "Name": "XmlToJson",
-      "RelativePath": "/the-joneses/martini-scroller-app/public/mof-data",
-      "CommandLine": "xml-to-json -i ./trimmed-mof-data.xml -o ../mof-data.json"
-    },
-    {
-      "MatchedTranspiler": {
-        "TranspilerId": "7d24b632-a7a5-45a2-ba2a-99b26e47477d",
-        "Name": "JsonHbarsTransform",
-        "Description": "Json-Hbars-Transform"
-      },
-      "ProjectTranspilerId": "c8934a20-6163-4adb-b7af-762d59e000dd",
-      "Name": "JsonHbarsTransform",
-      "RelativePath": "/the-joneses/martini-scroller-app/public/docs",
-      "CommandLine": "json-hbars-transform -i ../mof-data.json -i ./README.hbars -o ./README.html"
-    }
+   
   ]
 }

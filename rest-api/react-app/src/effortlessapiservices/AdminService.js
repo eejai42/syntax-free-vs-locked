@@ -5,34 +5,6 @@ class AdminService extends BaseService {
     
         
     
-    async AddIdeaTransformer(IdeaTransformer) { 
-        return this.apiCall("POST", "Admin", "IdeaTransformer", null, IdeaTransformer); // IdeaTransformer
-   }
-    
-    
-        
-    
-    async GetIdeaTransformers(view) { 
-        return this.apiCall("GET", "Admin", "IdeaTransformers", view, null); // IdeaTransformer
-   }
-    
-    
-        
-    
-    async UpdateIdeaTransformer(IdeaTransformer) {
-        return this.apiCall("PUT", "Admin", "IdeaTransformer", null, IdeaTransformer); // IdeaTransformer
-   }
-    
-    
-        
-    
-    async DeleteIdeaTransformer(id) { 
-        return this.apiCall("DELETE", "Admin", "IdeaTransformer", null, id); // IdeaTransformer
-   }
-    
-    
-        
-    
     async AddAppUser(AppUser) { 
         return this.apiCall("POST", "Admin", "AppUser", null, AppUser); // AppUser
    }
@@ -117,29 +89,57 @@ class AdminService extends BaseService {
     
         
     
-    async AddIdeaFeature(IdeaFeature) { 
-        return this.apiCall("POST", "Admin", "IdeaFeature", null, IdeaFeature); // IdeaFeature
+    async AddExperimentTransformer(ExperimentTransformer) { 
+        return this.apiCall("POST", "Admin", "ExperimentTransformer", null, ExperimentTransformer); // ExperimentTransformer
    }
     
     
         
     
-    async GetIdeaFeatures(view) { 
-        return this.apiCall("GET", "Admin", "IdeaFeatures", view, null); // IdeaFeature
+    async GetExperimentTransformers(view) { 
+        return this.apiCall("GET", "Admin", "ExperimentTransformers", view, null); // ExperimentTransformer
    }
     
     
         
     
-    async UpdateIdeaFeature(IdeaFeature) {
-        return this.apiCall("PUT", "Admin", "IdeaFeature", null, IdeaFeature); // IdeaFeature
+    async UpdateExperimentTransformer(ExperimentTransformer) {
+        return this.apiCall("PUT", "Admin", "ExperimentTransformer", null, ExperimentTransformer); // ExperimentTransformer
    }
     
     
         
     
-    async DeleteIdeaFeature(id) { 
-        return this.apiCall("DELETE", "Admin", "IdeaFeature", null, id); // IdeaFeature
+    async DeleteExperimentTransformer(id) { 
+        return this.apiCall("DELETE", "Admin", "ExperimentTransformer", null, id); // ExperimentTransformer
+   }
+    
+    
+        
+    
+    async AddExperimentFeature(ExperimentFeature) { 
+        return this.apiCall("POST", "Admin", "ExperimentFeature", null, ExperimentFeature); // ExperimentFeature
+   }
+    
+    
+        
+    
+    async GetExperimentFeatures(view) { 
+        return this.apiCall("GET", "Admin", "ExperimentFeatures", view, null); // ExperimentFeature
+   }
+    
+    
+        
+    
+    async UpdateExperimentFeature(ExperimentFeature) {
+        return this.apiCall("PUT", "Admin", "ExperimentFeature", null, ExperimentFeature); // ExperimentFeature
+   }
+    
+    
+        
+    
+    async DeleteExperimentFeature(id) { 
+        return this.apiCall("DELETE", "Admin", "ExperimentFeature", null, id); // ExperimentFeature
    }
     
     
@@ -201,6 +201,34 @@ class AdminService extends BaseService {
     
         
     
+    async AddExperiment(Experiment) { 
+        return this.apiCall("POST", "Admin", "Experiment", null, Experiment); // Experiment
+   }
+    
+    
+        
+    
+    async GetExperiments(view) { 
+        return this.apiCall("GET", "Admin", "Experiments", view, null); // Experiment
+   }
+    
+    
+        
+    
+    async UpdateExperiment(Experiment) {
+        return this.apiCall("PUT", "Admin", "Experiment", null, Experiment); // Experiment
+   }
+    
+    
+        
+    
+    async DeleteExperiment(id) { 
+        return this.apiCall("DELETE", "Admin", "Experiment", null, id); // Experiment
+   }
+    
+    
+        
+    
     async AddLLM(LLM) { 
         return this.apiCall("POST", "Admin", "LLM", null, LLM); // LLM
    }
@@ -224,34 +252,6 @@ class AdminService extends BaseService {
     
     async DeleteLLM(id) { 
         return this.apiCall("DELETE", "Admin", "LLM", null, id); // LLM
-   }
-    
-    
-        
-    
-    async AddIdea(Idea) { 
-        return this.apiCall("POST", "Admin", "Idea", null, Idea); // Idea
-   }
-    
-    
-        
-    
-    async GetIdeas(view) { 
-        return this.apiCall("GET", "Admin", "Ideas", view, null); // Idea
-   }
-    
-    
-        
-    
-    async UpdateIdea(Idea) {
-        return this.apiCall("PUT", "Admin", "Idea", null, Idea); // Idea
-   }
-    
-    
-        
-    
-    async DeleteIdea(id) { 
-        return this.apiCall("DELETE", "Admin", "Idea", null, id); // Idea
    }
     
     

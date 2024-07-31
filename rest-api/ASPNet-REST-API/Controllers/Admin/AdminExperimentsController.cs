@@ -14,26 +14,26 @@ namespace ASPNet_REST_API.Controllers.Admin
 {
     [ApiController]
     [Route("/Admin")]
-    public class AdminIdeaFeaturesController : Controller
+    public class AdminExperimentsController : Controller
     {
         
 
         [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpGet("IdeaFeatures")]
+        [HttpGet("Experiments")]
         public IActionResult Index(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var results = new List<IdeaFeature>();
+            var results = new List<Experiment>();
             try
             {
                 ATDAdmin atdAdmin = new ATDAdmin();
                 atdAdmin.EmailAddress = this.User.Identity.Name;
                 atdAdmin.UserIdentity = this.User.Identities.FirstOrDefault();
                 var payload = atdAdmin.CreatePayload("{}", airtableWhere, view, maxPages);
-                results = atdAdmin.GetIdeaFeatures(payload)?.ToList();
+                results = atdAdmin.GetExperiments(payload)?.ToList();
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding IdeaFeatures: {ex.Message}", ex);
+                throw new Exception($"Error adding Experiments: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(results, Formatting.Indented);
 
@@ -44,11 +44,11 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPost("IdeaFeatures")]
-        [HttpPost("IdeaFeature")]
+        [HttpPost("Experiments")]
+        [HttpPost("Experiment")]
         public IActionResult Add(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = default(IdeaFeature);
+            var result = default(Experiment);
             try
             {
                 ATDAdmin atdAdmin = new ATDAdmin();
@@ -59,14 +59,14 @@ namespace ASPNet_REST_API.Controllers.Admin
                     var body = reader.ReadToEndAsync().GetAwaiter().GetResult();
                     var payload = atdAdmin.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.IdeaFeature = bodyAsPayload.IdeaFeature.AdminCleanForAdd();
-                    if (payload.IdeaFeature is null) payload.IdeaFeature = JsonConvert.DeserializeObject<IdeaFeature>(body).AdminCleanForAdd();
-                    result = atdAdmin.AddIdeaFeature(payload).AdminCleanForGet();
+                    if (bodyAsPayload != null) payload.Experiment = bodyAsPayload.Experiment.AdminCleanForAdd();
+                    if (payload.Experiment is null) payload.Experiment = JsonConvert.DeserializeObject<Experiment>(body).AdminCleanForAdd();
+                    result = atdAdmin.AddExperiment(payload).AdminCleanForGet();
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding IdeaFeatures: {ex.Message}", ex);
+                throw new Exception($"Error adding Experiments: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -77,10 +77,10 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPut("IdeaFeature")]
+        [HttpPut("Experiment")]
         public IActionResult Update(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = new IdeaFeature();
+            var result = new Experiment();
             try
             {
                 using (var reader = new StreamReader(this.Request.Body))
@@ -90,15 +90,15 @@ namespace ASPNet_REST_API.Controllers.Admin
                     atdAdmin.EmailAddress = this.User.Identity.Name;
                     var payload = atdAdmin.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.IdeaFeature = bodyAsPayload.IdeaFeature.AdminCleanForAdd();
-                    if (payload.IdeaFeature is null) payload.IdeaFeature = JsonConvert.DeserializeObject<IdeaFeature>(body).AdminCleanForAdd();
-                    result = atdAdmin.UpdateIdeaFeature(payload)?.FirstOrDefault();
+                    if (bodyAsPayload != null) payload.Experiment = bodyAsPayload.Experiment.AdminCleanForAdd();
+                    if (payload.Experiment is null) payload.Experiment = JsonConvert.DeserializeObject<Experiment>(body).AdminCleanForAdd();
+                    result = atdAdmin.UpdateExperiment(payload)?.FirstOrDefault();
                 }
 
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error updating IdeaFeatures: {ex.Message}", ex);
+                throw new Exception($"Error updating Experiments: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -109,20 +109,20 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpDelete("IdeaFeature")]
+        [HttpDelete("Experiment")]
         public IActionResult Delete(string id)
         {
             try {
                 ATDAdmin atdAdmin = new ATDAdmin();
                 atdAdmin.EmailAddress = this.User.Identity.Name;
                 var payload = atdAdmin.CreatePayload();
-                payload.IdeaFeature = new IdeaFeature() { IdeaFeatureId = id };
-                atdAdmin.DeleteIdeaFeature(payload);
+                payload.Experiment = new Experiment() { ExperimentId = id };
+                atdAdmin.DeleteExperiment(payload);
                 var json = JsonConvert.SerializeObject(true, Formatting.Indented);
                 return Content(json, "application/json");    
             } 
             catch (Exception ex) {
-                throw new Exception($"Error updating IdeaFeatures: {ex.Message}", ex);
+                throw new Exception($"Error updating Experiments: {ex.Message}", ex);
             }
         }                        
     }

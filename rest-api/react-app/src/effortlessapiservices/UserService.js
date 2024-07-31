@@ -5,34 +5,6 @@ class UserService extends BaseService {
     
         
     
-    async AddIdeaTransformer(IdeaTransformer) { 
-        return this.apiCall("POST", "User", "IdeaTransformer", null, IdeaTransformer); // IdeaTransformer
-   }
-    
-    
-        
-    
-    async GetIdeaTransformers(view) { 
-        return this.apiCall("GET", "User", "IdeaTransformers", view, null); // IdeaTransformer
-   }
-    
-    
-        
-    
-    async UpdateIdeaTransformer(IdeaTransformer) {
-        return this.apiCall("PUT", "User", "IdeaTransformer", null, IdeaTransformer); // IdeaTransformer
-   }
-    
-    
-        
-    
-    async DeleteIdeaTransformer(id) { 
-        return this.apiCall("DELETE", "User", "IdeaTransformer", null, id); // IdeaTransformer
-   }
-    
-    
-        
-    
     async AddAppUser(AppUser) { 
         return this.apiCall("POST", "User", "AppUser", null, AppUser); // AppUser
    }
@@ -117,29 +89,57 @@ class UserService extends BaseService {
     
         
     
-    async AddIdeaFeature(IdeaFeature) { 
-        return this.apiCall("POST", "User", "IdeaFeature", null, IdeaFeature); // IdeaFeature
+    async AddExperimentTransformer(ExperimentTransformer) { 
+        return this.apiCall("POST", "User", "ExperimentTransformer", null, ExperimentTransformer); // ExperimentTransformer
    }
     
     
         
     
-    async GetIdeaFeatures(view) { 
-        return this.apiCall("GET", "User", "IdeaFeatures", view, null); // IdeaFeature
+    async GetExperimentTransformers(view) { 
+        return this.apiCall("GET", "User", "ExperimentTransformers", view, null); // ExperimentTransformer
    }
     
     
         
     
-    async UpdateIdeaFeature(IdeaFeature) {
-        return this.apiCall("PUT", "User", "IdeaFeature", null, IdeaFeature); // IdeaFeature
+    async UpdateExperimentTransformer(ExperimentTransformer) {
+        return this.apiCall("PUT", "User", "ExperimentTransformer", null, ExperimentTransformer); // ExperimentTransformer
    }
     
     
         
     
-    async DeleteIdeaFeature(id) { 
-        return this.apiCall("DELETE", "User", "IdeaFeature", null, id); // IdeaFeature
+    async DeleteExperimentTransformer(id) { 
+        return this.apiCall("DELETE", "User", "ExperimentTransformer", null, id); // ExperimentTransformer
+   }
+    
+    
+        
+    
+    async AddExperimentFeature(ExperimentFeature) { 
+        return this.apiCall("POST", "User", "ExperimentFeature", null, ExperimentFeature); // ExperimentFeature
+   }
+    
+    
+        
+    
+    async GetExperimentFeatures(view) { 
+        return this.apiCall("GET", "User", "ExperimentFeatures", view, null); // ExperimentFeature
+   }
+    
+    
+        
+    
+    async UpdateExperimentFeature(ExperimentFeature) {
+        return this.apiCall("PUT", "User", "ExperimentFeature", null, ExperimentFeature); // ExperimentFeature
+   }
+    
+    
+        
+    
+    async DeleteExperimentFeature(id) { 
+        return this.apiCall("DELETE", "User", "ExperimentFeature", null, id); // ExperimentFeature
    }
     
     
@@ -201,6 +201,34 @@ class UserService extends BaseService {
     
         
     
+    async AddExperiment(Experiment) { 
+        return this.apiCall("POST", "User", "Experiment", null, Experiment); // Experiment
+   }
+    
+    
+        
+    
+    async GetExperiments(view) { 
+        return this.apiCall("GET", "User", "Experiments", view, null); // Experiment
+   }
+    
+    
+        
+    
+    async UpdateExperiment(Experiment) {
+        return this.apiCall("PUT", "User", "Experiment", null, Experiment); // Experiment
+   }
+    
+    
+        
+    
+    async DeleteExperiment(id) { 
+        return this.apiCall("DELETE", "User", "Experiment", null, id); // Experiment
+   }
+    
+    
+        
+    
     async AddLLM(LLM) { 
         return this.apiCall("POST", "User", "LLM", null, LLM); // LLM
    }
@@ -224,34 +252,6 @@ class UserService extends BaseService {
     
     async DeleteLLM(id) { 
         return this.apiCall("DELETE", "User", "LLM", null, id); // LLM
-   }
-    
-    
-        
-    
-    async AddIdea(Idea) { 
-        return this.apiCall("POST", "User", "Idea", null, Idea); // Idea
-   }
-    
-    
-        
-    
-    async GetIdeas(view) { 
-        return this.apiCall("GET", "User", "Ideas", view, null); // Idea
-   }
-    
-    
-        
-    
-    async UpdateIdea(Idea) {
-        return this.apiCall("PUT", "User", "Idea", null, Idea); // Idea
-   }
-    
-    
-        
-    
-    async DeleteIdea(id) { 
-        return this.apiCall("DELETE", "User", "Idea", null, id); // Idea
    }
     
     

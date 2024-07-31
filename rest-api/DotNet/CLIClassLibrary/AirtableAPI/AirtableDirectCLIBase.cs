@@ -26,11 +26,6 @@ namespace AirtableDirect.CLI.Lib.Handlers
         }
 
         
-        protected abstract string HandleCreateIdeaTransformer();
-        protected abstract string HandleReadIdeaTransformer();
-        protected abstract string HandleUpdateIdeaTransformer();
-        protected abstract string HandleDeleteIdeaTransformer();
-        
         protected abstract string HandleCreateAppUser();
         protected abstract string HandleReadAppUser();
         protected abstract string HandleUpdateAppUser();
@@ -46,10 +41,15 @@ namespace AirtableDirect.CLI.Lib.Handlers
         protected abstract string HandleUpdateGeneration();
         protected abstract string HandleDeleteGeneration();
         
-        protected abstract string HandleCreateIdeaFeature();
-        protected abstract string HandleReadIdeaFeature();
-        protected abstract string HandleUpdateIdeaFeature();
-        protected abstract string HandleDeleteIdeaFeature();
+        protected abstract string HandleCreateExperimentTransformer();
+        protected abstract string HandleReadExperimentTransformer();
+        protected abstract string HandleUpdateExperimentTransformer();
+        protected abstract string HandleDeleteExperimentTransformer();
+        
+        protected abstract string HandleCreateExperimentFeature();
+        protected abstract string HandleReadExperimentFeature();
+        protected abstract string HandleUpdateExperimentFeature();
+        protected abstract string HandleDeleteExperimentFeature();
         
         protected abstract string HandleCreateTransformedArtifact();
         protected abstract string HandleReadTransformedArtifact();
@@ -61,15 +61,15 @@ namespace AirtableDirect.CLI.Lib.Handlers
         protected abstract string HandleUpdateDesignDecision();
         protected abstract string HandleDeleteDesignDecision();
         
+        protected abstract string HandleCreateExperiment();
+        protected abstract string HandleReadExperiment();
+        protected abstract string HandleUpdateExperiment();
+        protected abstract string HandleDeleteExperiment();
+        
         protected abstract string HandleCreateLLM();
         protected abstract string HandleReadLLM();
         protected abstract string HandleUpdateLLM();
         protected abstract string HandleDeleteLLM();
-        
-        protected abstract string HandleCreateIdea();
-        protected abstract string HandleReadIdea();
-        protected abstract string HandleUpdateIdea();
-        protected abstract string HandleDeleteIdea();
         
 
         protected abstract string HandleCustomRequest();

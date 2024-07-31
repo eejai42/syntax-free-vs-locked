@@ -24,10 +24,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
             {
                 sb.AppendLine();
                 
-                sb.AppendLine($"IdeaTransformer: AddIdeaTransformer");
-                sb.AppendLine($"IdeaTransformer: GetIdeaTransformers");
-                sb.AppendLine($"IdeaTransformer: UpdateIdeaTransformer");
-                sb.AppendLine($"void: DeleteIdeaTransformer");
                 sb.AppendLine($"AppUser: AddAppUser");
                 sb.AppendLine($"AppUser: GetAppUsers");
                 sb.AppendLine($"AppUser: UpdateAppUser");
@@ -40,10 +36,14 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 sb.AppendLine($"Generation: GetGenerations");
                 sb.AppendLine($"Generation: UpdateGeneration");
                 sb.AppendLine($"void: DeleteGeneration");
-                sb.AppendLine($"IdeaFeature: AddIdeaFeature");
-                sb.AppendLine($"IdeaFeature: GetIdeaFeatures");
-                sb.AppendLine($"IdeaFeature: UpdateIdeaFeature");
-                sb.AppendLine($"void: DeleteIdeaFeature");
+                sb.AppendLine($"ExperimentTransformer: AddExperimentTransformer");
+                sb.AppendLine($"ExperimentTransformer: GetExperimentTransformers");
+                sb.AppendLine($"ExperimentTransformer: UpdateExperimentTransformer");
+                sb.AppendLine($"void: DeleteExperimentTransformer");
+                sb.AppendLine($"ExperimentFeature: AddExperimentFeature");
+                sb.AppendLine($"ExperimentFeature: GetExperimentFeatures");
+                sb.AppendLine($"ExperimentFeature: UpdateExperimentFeature");
+                sb.AppendLine($"void: DeleteExperimentFeature");
                 sb.AppendLine($"TransformedArtifact: AddTransformedArtifact");
                 sb.AppendLine($"TransformedArtifact: GetTransformedArtifacts");
                 sb.AppendLine($"TransformedArtifact: UpdateTransformedArtifact");
@@ -52,54 +52,18 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 sb.AppendLine($"DesignDecision: GetDesignDecisions");
                 sb.AppendLine($"DesignDecision: UpdateDesignDecision");
                 sb.AppendLine($"void: DeleteDesignDecision");
+                sb.AppendLine($"Experiment: AddExperiment");
+                sb.AppendLine($"Experiment: GetExperiments");
+                sb.AppendLine($"Experiment: UpdateExperiment");
+                sb.AppendLine($"void: DeleteExperiment");
                 sb.AppendLine($"LLM: AddLLM");
                 sb.AppendLine($"LLM: GetLLMs");
                 sb.AppendLine($"LLM: UpdateLLM");
-                sb.AppendLine($"void: DeleteLLM");
-                sb.AppendLine($"Idea: AddIdea");
-                sb.AppendLine($"Idea: GetIdeas");
-                sb.AppendLine($"Idea: UpdateIdea");
-                sb.AppendLine($"void: DeleteIdea");                                            
+                sb.AppendLine($"void: DeleteLLM");                                            
             }
             
             sb.AppendLine($"{Environment.NewLine}Available Actions Matching: {helpTerm}");
             
-            if ("addideatransformer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - AddIdeaTransformer");
-                if ("addideatransformer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintAddIdeaTransformerHelp(sb);
-                }
-                found = true;
-            }
-            if ("getideatransformers".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - GetIdeaTransformers");
-                if ("getideatransformers".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintGetIdeaTransformersHelp(sb);
-                }
-                found = true;
-            }
-            if ("updateideatransformer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - UpdateIdeaTransformer");
-                if ("updateideatransformer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintUpdateIdeaTransformerHelp(sb);
-                }
-                found = true;
-            }
-            if ("deleteideatransformer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - DeleteIdeaTransformer");
-                if ("deleteideatransformer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintDeleteIdeaTransformerHelp(sb);
-                }
-                found = true;
-            }
             if ("addappuser".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
                 sb.AppendLine($" - AddAppUser");
@@ -208,39 +172,75 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 }
                 found = true;
             }
-            if ("addideafeature".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            if ("addexperimenttransformer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
-                sb.AppendLine($" - AddIdeaFeature");
-                if ("addideafeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                sb.AppendLine($" - AddExperimentTransformer");
+                if ("addexperimenttransformer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
-                    this.PrintAddIdeaFeatureHelp(sb);
+                    this.PrintAddExperimentTransformerHelp(sb);
                 }
                 found = true;
             }
-            if ("getideafeatures".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            if ("getexperimenttransformers".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
-                sb.AppendLine($" - GetIdeaFeatures");
-                if ("getideafeatures".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                sb.AppendLine($" - GetExperimentTransformers");
+                if ("getexperimenttransformers".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
-                    this.PrintGetIdeaFeaturesHelp(sb);
+                    this.PrintGetExperimentTransformersHelp(sb);
                 }
                 found = true;
             }
-            if ("updateideafeature".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            if ("updateexperimenttransformer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
-                sb.AppendLine($" - UpdateIdeaFeature");
-                if ("updateideafeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                sb.AppendLine($" - UpdateExperimentTransformer");
+                if ("updateexperimenttransformer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
-                    this.PrintUpdateIdeaFeatureHelp(sb);
+                    this.PrintUpdateExperimentTransformerHelp(sb);
                 }
                 found = true;
             }
-            if ("deleteideafeature".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            if ("deleteexperimenttransformer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
-                sb.AppendLine($" - DeleteIdeaFeature");
-                if ("deleteideafeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                sb.AppendLine($" - DeleteExperimentTransformer");
+                if ("deleteexperimenttransformer".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
-                    this.PrintDeleteIdeaFeatureHelp(sb);
+                    this.PrintDeleteExperimentTransformerHelp(sb);
+                }
+                found = true;
+            }
+            if ("addexperimentfeature".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - AddExperimentFeature");
+                if ("addexperimentfeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintAddExperimentFeatureHelp(sb);
+                }
+                found = true;
+            }
+            if ("getexperimentfeatures".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - GetExperimentFeatures");
+                if ("getexperimentfeatures".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintGetExperimentFeaturesHelp(sb);
+                }
+                found = true;
+            }
+            if ("updateexperimentfeature".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - UpdateExperimentFeature");
+                if ("updateexperimentfeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintUpdateExperimentFeatureHelp(sb);
+                }
+                found = true;
+            }
+            if ("deleteexperimentfeature".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - DeleteExperimentFeature");
+                if ("deleteexperimentfeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintDeleteExperimentFeatureHelp(sb);
                 }
                 found = true;
             }
@@ -316,6 +316,42 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 }
                 found = true;
             }
+            if ("addexperiment".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - AddExperiment");
+                if ("addexperiment".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintAddExperimentHelp(sb);
+                }
+                found = true;
+            }
+            if ("getexperiments".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - GetExperiments");
+                if ("getexperiments".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintGetExperimentsHelp(sb);
+                }
+                found = true;
+            }
+            if ("updateexperiment".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - UpdateExperiment");
+                if ("updateexperiment".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintUpdateExperimentHelp(sb);
+                }
+                found = true;
+            }
+            if ("deleteexperiment".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - DeleteExperiment");
+                if ("deleteexperiment".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintDeleteExperimentHelp(sb);
+                }
+                found = true;
+            }
             if ("addllm".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
                 sb.AppendLine($" - AddLLM");
@@ -352,42 +388,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 }
                 found = true;
             }
-            if ("addidea".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - AddIdea");
-                if ("addidea".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintAddIdeaHelp(sb);
-                }
-                found = true;
-            }
-            if ("getideas".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - GetIdeas");
-                if ("getideas".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintGetIdeasHelp(sb);
-                }
-                found = true;
-            }
-            if ("updateidea".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - UpdateIdea");
-                if ("updateidea".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintUpdateIdeaHelp(sb);
-                }
-                found = true;
-            }
-            if ("deleteidea".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - DeleteIdea");
-                if ("deleteidea".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintDeleteIdeaHelp(sb);
-                }
-                found = true;
-            }
                        
             if (!found)
             {
@@ -413,26 +413,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
 			
             switch (invokeRequest.ToLower())
             {
-                case "addideatransformer":
-				    reply = this.ATDActor.AddIdeaTransformer(payload);
-                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
-                    break;                   
-
-                case "getideatransformers":
-				    reply = this.ATDActor.GetIdeaTransformers(payload);
-                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
-                    break;                   
-
-                case "updateideatransformer":
-				    reply = this.ATDActor.UpdateIdeaTransformer(payload);
-                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
-                    break;                   
-
-                case "deleteideatransformer":
-				    this.ATDActor.DeleteIdeaTransformer(payload);
-				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
-                    break;                   
-
                 case "addappuser":
 				    reply = this.ATDActor.AddAppUser(payload);
                     result = JsonConvert.SerializeObject(reply, Formatting.Indented);
@@ -493,23 +473,43 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
 				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
                     break;                   
 
-                case "addideafeature":
-				    reply = this.ATDActor.AddIdeaFeature(payload);
+                case "addexperimenttransformer":
+				    reply = this.ATDActor.AddExperimentTransformer(payload);
                     result = JsonConvert.SerializeObject(reply, Formatting.Indented);
                     break;                   
 
-                case "getideafeatures":
-				    reply = this.ATDActor.GetIdeaFeatures(payload);
+                case "getexperimenttransformers":
+				    reply = this.ATDActor.GetExperimentTransformers(payload);
                     result = JsonConvert.SerializeObject(reply, Formatting.Indented);
                     break;                   
 
-                case "updateideafeature":
-				    reply = this.ATDActor.UpdateIdeaFeature(payload);
+                case "updateexperimenttransformer":
+				    reply = this.ATDActor.UpdateExperimentTransformer(payload);
                     result = JsonConvert.SerializeObject(reply, Formatting.Indented);
                     break;                   
 
-                case "deleteideafeature":
-				    this.ATDActor.DeleteIdeaFeature(payload);
+                case "deleteexperimenttransformer":
+				    this.ATDActor.DeleteExperimentTransformer(payload);
+				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                    break;                   
+
+                case "addexperimentfeature":
+				    reply = this.ATDActor.AddExperimentFeature(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "getexperimentfeatures":
+				    reply = this.ATDActor.GetExperimentFeatures(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "updateexperimentfeature":
+				    reply = this.ATDActor.UpdateExperimentFeature(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "deleteexperimentfeature":
+				    this.ATDActor.DeleteExperimentFeature(payload);
 				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
                     break;                   
 
@@ -553,6 +553,26 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
 				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
                     break;                   
 
+                case "addexperiment":
+				    reply = this.ATDActor.AddExperiment(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "getexperiments":
+				    reply = this.ATDActor.GetExperiments(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "updateexperiment":
+				    reply = this.ATDActor.UpdateExperiment(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "deleteexperiment":
+				    this.ATDActor.DeleteExperiment(payload);
+				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                    break;                   
+
                 case "addllm":
 				    reply = this.ATDActor.AddLLM(payload);
                     result = JsonConvert.SerializeObject(reply, Formatting.Indented);
@@ -573,26 +593,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
 				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
                     break;                   
 
-                case "addidea":
-				    reply = this.ATDActor.AddIdea(payload);
-                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
-                    break;                   
-
-                case "getideas":
-				    reply = this.ATDActor.GetIdeas(payload);
-                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
-                    break;                   
-
-                case "updateidea":
-				    reply = this.ATDActor.UpdateIdea(payload);
-                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
-                    break;                   
-
-                case "deleteidea":
-				    this.ATDActor.DeleteIdea(payload);
-				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
-                    break;                   
-
                 default:
                     throw new Exception($"Invalid request: {invokeRequest}");
             }
@@ -600,86 +600,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
             return result;
         }
         
-        
-        public void PrintAddIdeaTransformerHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: IdeaTransformer     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - IdeaTransformerId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Idea");
-                    sb.AppendLine($"CRUD      - IdeaName");
-                    sb.AppendLine($"CRUD      - IdeasSourceIdea");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
-                    sb.AppendLine($"CRUD      - FullPrompt");
-                    sb.AppendLine($"CRUD      - TransformedTransformers");
-                    sb.AppendLine($"CRUD      - AutoNumber");
-                    sb.AppendLine($"CRUD      - IdeaIdentifier");
-                    sb.AppendLine($"CRUD      - IsSyntaxFree");
-                
-            
-        }
-        
-        public void PrintGetIdeaTransformersHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: IdeaTransformer     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - IdeaTransformerId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Idea");
-                    sb.AppendLine($"CRUD      - IdeaName");
-                    sb.AppendLine($"CRUD      - IdeasSourceIdea");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
-                    sb.AppendLine($"CRUD      - FullPrompt");
-                    sb.AppendLine($"CRUD      - TransformedTransformers");
-                    sb.AppendLine($"CRUD      - AutoNumber");
-                    sb.AppendLine($"CRUD      - IdeaIdentifier");
-                    sb.AppendLine($"CRUD      - IsSyntaxFree");
-                
-            
-        }
-        
-        public void PrintUpdateIdeaTransformerHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: IdeaTransformer     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - IdeaTransformerId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Idea");
-                    sb.AppendLine($"CRUD      - IdeaName");
-                    sb.AppendLine($"CRUD      - IdeasSourceIdea");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
-                    sb.AppendLine($"CRUD      - FullPrompt");
-                    sb.AppendLine($"CRUD      - TransformedTransformers");
-                    sb.AppendLine($"CRUD      - AutoNumber");
-                    sb.AppendLine($"CRUD      - IdeaIdentifier");
-                    sb.AppendLine($"CRUD      - IsSyntaxFree");
-                
-            
-        }
-        
-        public void PrintDeleteIdeaTransformerHelp(StringBuilder sb)
-        {
-            
-        }
         
         public void PrintAddAppUserHelp(StringBuilder sb)
         {
@@ -754,19 +674,19 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - Generation");
                     sb.AppendLine($"CRUD      - RawPrompt");
-                    sb.AppendLine($"CRUD      - SourceIdea");
                     sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - GenerationIdea");
-                    sb.AppendLine($"CRUD      - GenerationIdeaName");
                     sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
                     sb.AppendLine($"CRUD      - TransformedArtifacts");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - IsArtifactValidator");
-                    sb.AppendLine($"CRUD      - IdeaValidationPrompt");
-                    sb.AppendLine($"CRUD      - IdeaTransformer");
-                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - ExpTransformer");
+                    sb.AppendLine($"CRUD      - GenerationExp");
+                    sb.AppendLine($"CRUD      - GenerationExpName");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
                 
             
         }
@@ -785,19 +705,19 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - Generation");
                     sb.AppendLine($"CRUD      - RawPrompt");
-                    sb.AppendLine($"CRUD      - SourceIdea");
                     sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - GenerationIdea");
-                    sb.AppendLine($"CRUD      - GenerationIdeaName");
                     sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
                     sb.AppendLine($"CRUD      - TransformedArtifacts");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - IsArtifactValidator");
-                    sb.AppendLine($"CRUD      - IdeaValidationPrompt");
-                    sb.AppendLine($"CRUD      - IdeaTransformer");
-                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - ExpTransformer");
+                    sb.AppendLine($"CRUD      - GenerationExp");
+                    sb.AppendLine($"CRUD      - GenerationExpName");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
                 
             
         }
@@ -816,19 +736,19 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - Generation");
                     sb.AppendLine($"CRUD      - RawPrompt");
-                    sb.AppendLine($"CRUD      - SourceIdea");
                     sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - GenerationIdea");
-                    sb.AppendLine($"CRUD      - GenerationIdeaName");
                     sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
                     sb.AppendLine($"CRUD      - TransformedArtifacts");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - IsArtifactValidator");
-                    sb.AppendLine($"CRUD      - IdeaValidationPrompt");
-                    sb.AppendLine($"CRUD      - IdeaTransformer");
-                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - ExpTransformer");
+                    sb.AppendLine($"CRUD      - GenerationExp");
+                    sb.AppendLine($"CRUD      - GenerationExpName");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
                 
             
         }
@@ -850,15 +770,18 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 
                     sb.AppendLine($"CRUD      - GenerationId");
                     sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Idea");
-                    sb.AppendLine($"CRUD      - IdeaName");
                     sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformedArtifacts");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
-                    sb.AppendLine($"CRUD      - IdeaSourceIdea");
                     sb.AppendLine($"CRUD      - Model");
-                    sb.AppendLine($"CRUD      - IdeaValidationPrompt");
-                    sb.AppendLine($"CRUD      - TransformedArtifactRawPrompts");
+                    sb.AppendLine($"CRUD      - Experiment");
+                    sb.AppendLine($"CRUD      - ExpName");
+                    sb.AppendLine($"CRUD      - GenerationTransformers");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - GenerationTransformRawPrompts");
+                    sb.AppendLine($"CRUD      - TransformerNumbers");
+                    sb.AppendLine($"CRUD      - SyntaxFreeTransformerNumbers");
+                    sb.AppendLine($"CRUD      - SyntaxLockedTransformerNumbers");
                 
             
         }
@@ -875,15 +798,18 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 
                     sb.AppendLine($"CRUD      - GenerationId");
                     sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Idea");
-                    sb.AppendLine($"CRUD      - IdeaName");
                     sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformedArtifacts");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
-                    sb.AppendLine($"CRUD      - IdeaSourceIdea");
                     sb.AppendLine($"CRUD      - Model");
-                    sb.AppendLine($"CRUD      - IdeaValidationPrompt");
-                    sb.AppendLine($"CRUD      - TransformedArtifactRawPrompts");
+                    sb.AppendLine($"CRUD      - Experiment");
+                    sb.AppendLine($"CRUD      - ExpName");
+                    sb.AppendLine($"CRUD      - GenerationTransformers");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - GenerationTransformRawPrompts");
+                    sb.AppendLine($"CRUD      - TransformerNumbers");
+                    sb.AppendLine($"CRUD      - SyntaxFreeTransformerNumbers");
+                    sb.AppendLine($"CRUD      - SyntaxLockedTransformerNumbers");
                 
             
         }
@@ -900,15 +826,18 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 
                     sb.AppendLine($"CRUD      - GenerationId");
                     sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - Idea");
-                    sb.AppendLine($"CRUD      - IdeaName");
                     sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformedArtifacts");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
-                    sb.AppendLine($"CRUD      - IdeaSourceIdea");
                     sb.AppendLine($"CRUD      - Model");
-                    sb.AppendLine($"CRUD      - IdeaValidationPrompt");
-                    sb.AppendLine($"CRUD      - TransformedArtifactRawPrompts");
+                    sb.AppendLine($"CRUD      - Experiment");
+                    sb.AppendLine($"CRUD      - ExpName");
+                    sb.AppendLine($"CRUD      - GenerationTransformers");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - GenerationTransformRawPrompts");
+                    sb.AppendLine($"CRUD      - TransformerNumbers");
+                    sb.AppendLine($"CRUD      - SyntaxFreeTransformerNumbers");
+                    sb.AppendLine($"CRUD      - SyntaxLockedTransformerNumbers");
                 
             
         }
@@ -918,76 +847,156 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
             
         }
         
-        public void PrintAddIdeaFeatureHelp(StringBuilder sb)
+        public void PrintAddExperimentTransformerHelp(StringBuilder sb)
         {
             
                 
                 sb.AppendLine();
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: IdeaFeature     *");
+                sb.AppendLine($"* *  OBJECT DEF: ExperimentTransformer     *");
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
                 sb.AppendLine();
                 
-                    sb.AppendLine($"CRUD      - IdeaFeatureId");
+                    sb.AppendLine($"CRUD      - ExperimentTransformerId");
                     sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - LowerName");
-                    sb.AppendLine($"CRUD      - Description");
-                    sb.AppendLine($"CRUD      - RequiredStartingAtGeneration");
-                    sb.AppendLine($"CRUD      - ExplicitlyRemovedAtGeneration");
-                    sb.AppendLine($"CRUD      - SourceIdea");
-                    sb.AppendLine($"CRUD      - Idea");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
+                    sb.AppendLine($"CRUD      - Experiment");
+                    sb.AppendLine($"CRUD      - ExpName");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - FullPrompt");
+                    sb.AppendLine($"CRUD      - TransformedTransformers");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - TransformerIdentifier");
+                    sb.AppendLine($"CRUD      - IsSyntaxFree");
                 
             
         }
         
-        public void PrintGetIdeaFeaturesHelp(StringBuilder sb)
+        public void PrintGetExperimentTransformersHelp(StringBuilder sb)
         {
             
                 
                 sb.AppendLine();
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: IdeaFeature     *");
+                sb.AppendLine($"* *  OBJECT DEF: ExperimentTransformer     *");
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
                 sb.AppendLine();
                 
-                    sb.AppendLine($"CRUD      - IdeaFeatureId");
+                    sb.AppendLine($"CRUD      - ExperimentTransformerId");
                     sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - LowerName");
-                    sb.AppendLine($"CRUD      - Description");
-                    sb.AppendLine($"CRUD      - RequiredStartingAtGeneration");
-                    sb.AppendLine($"CRUD      - ExplicitlyRemovedAtGeneration");
-                    sb.AppendLine($"CRUD      - SourceIdea");
-                    sb.AppendLine($"CRUD      - Idea");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
+                    sb.AppendLine($"CRUD      - Experiment");
+                    sb.AppendLine($"CRUD      - ExpName");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - FullPrompt");
+                    sb.AppendLine($"CRUD      - TransformedTransformers");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - TransformerIdentifier");
+                    sb.AppendLine($"CRUD      - IsSyntaxFree");
                 
             
         }
         
-        public void PrintUpdateIdeaFeatureHelp(StringBuilder sb)
+        public void PrintUpdateExperimentTransformerHelp(StringBuilder sb)
         {
             
                 
                 sb.AppendLine();
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: IdeaFeature     *");
+                sb.AppendLine($"* *  OBJECT DEF: ExperimentTransformer     *");
                 sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
                 sb.AppendLine();
                 
-                    sb.AppendLine($"CRUD      - IdeaFeatureId");
+                    sb.AppendLine($"CRUD      - ExperimentTransformerId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - Experiment");
+                    sb.AppendLine($"CRUD      - ExpName");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - FullPrompt");
+                    sb.AppendLine($"CRUD      - TransformedTransformers");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - TransformerIdentifier");
+                    sb.AppendLine($"CRUD      - IsSyntaxFree");
+                
+            
+        }
+        
+        public void PrintDeleteExperimentTransformerHelp(StringBuilder sb)
+        {
+            
+        }
+        
+        public void PrintAddExperimentFeatureHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: ExperimentFeature     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - ExperimentFeatureId");
                     sb.AppendLine($"CRUD      - Name");
                     sb.AppendLine($"CRUD      - LowerName");
                     sb.AppendLine($"CRUD      - Description");
                     sb.AppendLine($"CRUD      - RequiredStartingAtGeneration");
                     sb.AppendLine($"CRUD      - ExplicitlyRemovedAtGeneration");
-                    sb.AppendLine($"CRUD      - SourceIdea");
-                    sb.AppendLine($"CRUD      - Idea");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - Experiment");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
                 
             
         }
         
-        public void PrintDeleteIdeaFeatureHelp(StringBuilder sb)
+        public void PrintGetExperimentFeaturesHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: ExperimentFeature     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - ExperimentFeatureId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - LowerName");
+                    sb.AppendLine($"CRUD      - Description");
+                    sb.AppendLine($"CRUD      - RequiredStartingAtGeneration");
+                    sb.AppendLine($"CRUD      - ExplicitlyRemovedAtGeneration");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - Experiment");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                
+            
+        }
+        
+        public void PrintUpdateExperimentFeatureHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: ExperimentFeature     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - ExperimentFeatureId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - LowerName");
+                    sb.AppendLine($"CRUD      - Description");
+                    sb.AppendLine($"CRUD      - RequiredStartingAtGeneration");
+                    sb.AppendLine($"CRUD      - ExplicitlyRemovedAtGeneration");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - Experiment");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                
+            
+        }
+        
+        public void PrintDeleteExperimentFeatureHelp(StringBuilder sb)
         {
             
         }
@@ -1013,13 +1022,11 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
                     sb.AppendLine($"CRUD      - TransformerRawPrompt");
                     sb.AppendLine($"CRUD      - IsRetiredArtifact");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
                     sb.AppendLine($"CRUD      - Modified");
                     sb.AppendLine($"CRUD      - ExtensionOf");
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - LongName");
                     sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGenerationIdeaName");
                     sb.AppendLine($"CRUD      - TransformerGenerationName");
                     sb.AppendLine($"CRUD      - ArtifactIdentifier");
                     sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
@@ -1062,13 +1069,10 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - ToDoColors");
                     sb.AppendLine($"CRUD      - ToDoColorsAKA");
                     sb.AppendLine($"CRUD      - ToDoColorsMismatched");
-                    sb.AppendLine($"CRUD      - IdeaValidationPrompt");
                     sb.AppendLine($"CRUD      - ResponseBeingValidated");
-                    sb.AppendLine($"CRUD      - GenerationSourceIdea");
                     sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
                     sb.AppendLine($"CRUD      - ActualValidationPrompt");
                     sb.AppendLine($"CRUD      - ValidationResponse");
-                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFreefromGenerationTransformer");
                     sb.AppendLine($"CRUD      - GenerationName");
                     sb.AppendLine($"CRUD      - GeneratioNumber");
                     sb.AppendLine($"CRUD      - GenerationTransformerNumber");
@@ -1077,6 +1081,11 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
                     sb.AppendLine($"CRUD      - CustomRootIdentifier");
                     sb.AppendLine($"CRUD      - RootIdentifierMismatch");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - TransformerGenerationExpName");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
                 
             
         }
@@ -1102,13 +1111,11 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
                     sb.AppendLine($"CRUD      - TransformerRawPrompt");
                     sb.AppendLine($"CRUD      - IsRetiredArtifact");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
                     sb.AppendLine($"CRUD      - Modified");
                     sb.AppendLine($"CRUD      - ExtensionOf");
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - LongName");
                     sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGenerationIdeaName");
                     sb.AppendLine($"CRUD      - TransformerGenerationName");
                     sb.AppendLine($"CRUD      - ArtifactIdentifier");
                     sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
@@ -1151,13 +1158,10 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - ToDoColors");
                     sb.AppendLine($"CRUD      - ToDoColorsAKA");
                     sb.AppendLine($"CRUD      - ToDoColorsMismatched");
-                    sb.AppendLine($"CRUD      - IdeaValidationPrompt");
                     sb.AppendLine($"CRUD      - ResponseBeingValidated");
-                    sb.AppendLine($"CRUD      - GenerationSourceIdea");
                     sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
                     sb.AppendLine($"CRUD      - ActualValidationPrompt");
                     sb.AppendLine($"CRUD      - ValidationResponse");
-                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFreefromGenerationTransformer");
                     sb.AppendLine($"CRUD      - GenerationName");
                     sb.AppendLine($"CRUD      - GeneratioNumber");
                     sb.AppendLine($"CRUD      - GenerationTransformerNumber");
@@ -1166,6 +1170,11 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
                     sb.AppendLine($"CRUD      - CustomRootIdentifier");
                     sb.AppendLine($"CRUD      - RootIdentifierMismatch");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - TransformerGenerationExpName");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
                 
             
         }
@@ -1191,13 +1200,11 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
                     sb.AppendLine($"CRUD      - TransformerRawPrompt");
                     sb.AppendLine($"CRUD      - IsRetiredArtifact");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
                     sb.AppendLine($"CRUD      - Modified");
                     sb.AppendLine($"CRUD      - ExtensionOf");
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - LongName");
                     sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGenerationIdeaName");
                     sb.AppendLine($"CRUD      - TransformerGenerationName");
                     sb.AppendLine($"CRUD      - ArtifactIdentifier");
                     sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
@@ -1240,13 +1247,10 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - ToDoColors");
                     sb.AppendLine($"CRUD      - ToDoColorsAKA");
                     sb.AppendLine($"CRUD      - ToDoColorsMismatched");
-                    sb.AppendLine($"CRUD      - IdeaValidationPrompt");
                     sb.AppendLine($"CRUD      - ResponseBeingValidated");
-                    sb.AppendLine($"CRUD      - GenerationSourceIdea");
                     sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
                     sb.AppendLine($"CRUD      - ActualValidationPrompt");
                     sb.AppendLine($"CRUD      - ValidationResponse");
-                    sb.AppendLine($"CRUD      - IdeaTransformerIsSyntaxFreefromGenerationTransformer");
                     sb.AppendLine($"CRUD      - GenerationName");
                     sb.AppendLine($"CRUD      - GeneratioNumber");
                     sb.AppendLine($"CRUD      - GenerationTransformerNumber");
@@ -1255,6 +1259,11 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
                     sb.AppendLine($"CRUD      - CustomRootIdentifier");
                     sb.AppendLine($"CRUD      - RootIdentifierMismatch");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - TransformerGenerationExpName");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
                 
             
         }
@@ -1323,6 +1332,101 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
             
         }
         
+        public void PrintAddExperimentHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: Experiment     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - ExperimentId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - ExpName");
+                    sb.AppendLine($"CRUD      - ExpIdentifier");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - Generations");
+                    sb.AppendLine($"CRUD      - ExpTransformers");
+                    sb.AppendLine($"CRUD      - ExpTransformerNames");
+                    sb.AppendLine($"CRUD      - ExpTransformerFullPrompts");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - ExpFeatures");
+                    sb.AppendLine($"CRUD      - ExpFeatureLowerNames");
+                    sb.AppendLine($"CRUD      - ExpFeatureNames");
+                    sb.AppendLine($"CRUD      - FeaturesArray");
+                    sb.AppendLine($"CRUD      - ValidationPrompt");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                
+            
+        }
+        
+        public void PrintGetExperimentsHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: Experiment     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - ExperimentId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - ExpName");
+                    sb.AppendLine($"CRUD      - ExpIdentifier");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - Generations");
+                    sb.AppendLine($"CRUD      - ExpTransformers");
+                    sb.AppendLine($"CRUD      - ExpTransformerNames");
+                    sb.AppendLine($"CRUD      - ExpTransformerFullPrompts");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - ExpFeatures");
+                    sb.AppendLine($"CRUD      - ExpFeatureLowerNames");
+                    sb.AppendLine($"CRUD      - ExpFeatureNames");
+                    sb.AppendLine($"CRUD      - FeaturesArray");
+                    sb.AppendLine($"CRUD      - ValidationPrompt");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                
+            
+        }
+        
+        public void PrintUpdateExperimentHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: Experiment     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - ExperimentId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - ExpName");
+                    sb.AppendLine($"CRUD      - ExpIdentifier");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                    sb.AppendLine($"CRUD      - Generations");
+                    sb.AppendLine($"CRUD      - ExpTransformers");
+                    sb.AppendLine($"CRUD      - ExpTransformerNames");
+                    sb.AppendLine($"CRUD      - ExpTransformerFullPrompts");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - ExpFeatures");
+                    sb.AppendLine($"CRUD      - ExpFeatureLowerNames");
+                    sb.AppendLine($"CRUD      - ExpFeatureNames");
+                    sb.AppendLine($"CRUD      - FeaturesArray");
+                    sb.AppendLine($"CRUD      - ValidationPrompt");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                
+            
+        }
+        
+        public void PrintDeleteExperimentHelp(StringBuilder sb)
+        {
+            
+        }
+        
         public void PrintAddLLMHelp(StringBuilder sb)
         {
             
@@ -1381,92 +1485,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
         }
         
         public void PrintDeleteLLMHelp(StringBuilder sb)
-        {
-            
-        }
-        
-        public void PrintAddIdeaHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: Idea     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - IdeaId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - SourceIdea");
-                    sb.AppendLine($"CRUD      - Generations");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
-                    sb.AppendLine($"CRUD      - IdeaTransformers");
-                    sb.AppendLine($"CRUD      - IdeaTransformerNames");
-                    sb.AppendLine($"CRUD      - IdeaTransformerFullPrompts");
-                    sb.AppendLine($"CRUD      - IdeaFeatures");
-                    sb.AppendLine($"CRUD      - IdeaFeatureLowerNames");
-                    sb.AppendLine($"CRUD      - IdeaFeatureNames");
-                    sb.AppendLine($"CRUD      - FeaturesArray");
-                    sb.AppendLine($"CRUD      - ValidationPrompt");
-                
-            
-        }
-        
-        public void PrintGetIdeasHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: Idea     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - IdeaId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - SourceIdea");
-                    sb.AppendLine($"CRUD      - Generations");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
-                    sb.AppendLine($"CRUD      - IdeaTransformers");
-                    sb.AppendLine($"CRUD      - IdeaTransformerNames");
-                    sb.AppendLine($"CRUD      - IdeaTransformerFullPrompts");
-                    sb.AppendLine($"CRUD      - IdeaFeatures");
-                    sb.AppendLine($"CRUD      - IdeaFeatureLowerNames");
-                    sb.AppendLine($"CRUD      - IdeaFeatureNames");
-                    sb.AppendLine($"CRUD      - FeaturesArray");
-                    sb.AppendLine($"CRUD      - ValidationPrompt");
-                
-            
-        }
-        
-        public void PrintUpdateIdeaHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: Idea     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - IdeaId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - SourceIdea");
-                    sb.AppendLine($"CRUD      - Generations");
-                    sb.AppendLine($"CRUD      - IsActiveIdea");
-                    sb.AppendLine($"CRUD      - IdeaTransformers");
-                    sb.AppendLine($"CRUD      - IdeaTransformerNames");
-                    sb.AppendLine($"CRUD      - IdeaTransformerFullPrompts");
-                    sb.AppendLine($"CRUD      - IdeaFeatures");
-                    sb.AppendLine($"CRUD      - IdeaFeatureLowerNames");
-                    sb.AppendLine($"CRUD      - IdeaFeatureNames");
-                    sb.AppendLine($"CRUD      - FeaturesArray");
-                    sb.AppendLine($"CRUD      - ValidationPrompt");
-                
-            
-        }
-        
-        public void PrintDeleteIdeaHelp(StringBuilder sb)
         {
             
         }

@@ -50,89 +50,6 @@ namespace CLIClassLibrary.ATDMQ
         
         // User Cleaning Extension Methods.  -CRUD-
         
-        // IdeaTransformer
-        public static dc.IdeaTransformer UserCleanForAdd(this dc.IdeaTransformer cleanIdeaTransformer)
-        {
-            var UserIdeaTransformer = default(dc.IdeaTransformer);
-
-            if (!ReferenceEquals(cleanIdeaTransformer, null))
-            {
-                UserIdeaTransformer = new dc.IdeaTransformer()
-                {
-                     // default value: . 
-                    IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
-                     // default value: . 
-                    Idea = cleanIdeaTransformer.Idea,
-                     // default value: . 
-                    FullPrompt = cleanIdeaTransformer.FullPrompt,
-                     // default value: . 
-                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
-                     // default value: . 
-                    AutoNumber = cleanIdeaTransformer.AutoNumber,
-                     // default value: . 
-                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
-                };
-                
-            }
-
-            return UserIdeaTransformer;
-        }
-        
-        
-        public static List<dc.IdeaTransformer> UserCleanForGet(this IEnumerable<dc.IdeaTransformer> cleanIdeaTransformers)
-        {
-            return cleanIdeaTransformers.Select(IdeaTransformer => IdeaTransformer.UserCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.IdeaTransformer UserCleanForGet(this dc.IdeaTransformer cleanIdeaTransformer)
-        {
-            var UserIdeaTransformer = default(dc.IdeaTransformer);
-
-            if (!ReferenceEquals(cleanIdeaTransformer, null))
-            {
-                UserIdeaTransformer = new dc.IdeaTransformer()
-                {
-                    IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
-                    Name = cleanIdeaTransformer.Name,
-                    Idea = cleanIdeaTransformer.Idea,
-                    IdeaName = cleanIdeaTransformer.IdeaName,
-                    IdeasSourceIdea = cleanIdeaTransformer.IdeasSourceIdea,
-                    IsActiveIdea = cleanIdeaTransformer.IsActiveIdea,
-                    FullPrompt = cleanIdeaTransformer.FullPrompt,
-                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
-                    AutoNumber = cleanIdeaTransformer.AutoNumber,
-                    IdeaIdentifier = cleanIdeaTransformer.IdeaIdentifier,
-                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
-                };
-            }
-
-            return UserIdeaTransformer;
-        }
-        
-        
-        public static dc.IdeaTransformer UserCleanForUpdate(this dc.IdeaTransformer cleanIdeaTransformer)
-        {
-            var UserIdeaTransformer = default(dc.IdeaTransformer);
-
-            if (!ReferenceEquals(cleanIdeaTransformer, null))
-            {
-                UserIdeaTransformer = new dc.IdeaTransformer()
-                {
-                    IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
-                    Idea = cleanIdeaTransformer.Idea,
-                    FullPrompt = cleanIdeaTransformer.FullPrompt,
-                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
-                    AutoNumber = cleanIdeaTransformer.AutoNumber,
-                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
-                };
-            }
-
-            return UserIdeaTransformer;
-        }
-
-        // User Cleaning Extension Methods.  -CRUD-
-        
         // AppUser
         public static dc.AppUser UserCleanForAdd(this dc.AppUser cleanAppUser)
         {
@@ -223,7 +140,7 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
                      // default value: . 
-                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer
                 };
                 
             }
@@ -250,19 +167,19 @@ namespace CLIClassLibrary.ATDMQ
                     Name = cleanGenerationTransformer.Name,
                     Generation = cleanGenerationTransformer.Generation,
                     RawPrompt = cleanGenerationTransformer.RawPrompt,
-                    SourceIdea = cleanGenerationTransformer.SourceIdea,
                     GenerationName = cleanGenerationTransformer.GenerationName,
-                    GenerationIdea = cleanGenerationTransformer.GenerationIdea,
-                    GenerationIdeaName = cleanGenerationTransformer.GenerationIdeaName,
                     GeneratioNumber = cleanGenerationTransformer.GeneratioNumber,
-                    IsActiveIdea = cleanGenerationTransformer.IsActiveIdea,
                     TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     TransformerNumber = cleanGenerationTransformer.TransformerNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
-                    IdeaValidationPrompt = cleanGenerationTransformer.IdeaValidationPrompt,
-                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer,
-                    IdeaTransformerIsSyntaxFree = cleanGenerationTransformer.IdeaTransformerIsSyntaxFree
+                    ExpAbstract = cleanGenerationTransformer.ExpAbstract,
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
+                    GenerationExp = cleanGenerationTransformer.GenerationExp,
+                    GenerationExpName = cleanGenerationTransformer.GenerationExpName,
+                    IsActiveExp = cleanGenerationTransformer.IsActiveExp,
+                    ExpTransformerIsSyntaxFree = cleanGenerationTransformer.ExpTransformerIsSyntaxFree,
+                    ExpValidationPrompt = cleanGenerationTransformer.ExpValidationPrompt
                 };
             }
 
@@ -283,7 +200,7 @@ namespace CLIClassLibrary.ATDMQ
                     TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
-                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer
                 };
             }
 
@@ -304,13 +221,13 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     GenerationId = cleanGeneration.GenerationId,
                      // default value: . 
-                    Idea = cleanGeneration.Idea,
-                     // default value: . 
                     GeneratioNumber = cleanGeneration.GeneratioNumber,
                      // default value: . 
-                    TransformedArtifacts = cleanGeneration.TransformedArtifacts,
+                    Model = cleanGeneration.Model,
                      // default value: . 
-                    Model = cleanGeneration.Model
+                    Experiment = cleanGeneration.Experiment,
+                     // default value: . 
+                    GenerationTransformers = cleanGeneration.GenerationTransformers
                 };
                 
             }
@@ -335,15 +252,18 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     GenerationId = cleanGeneration.GenerationId,
                     Name = cleanGeneration.Name,
-                    Idea = cleanGeneration.Idea,
-                    IdeaName = cleanGeneration.IdeaName,
                     GeneratioNumber = cleanGeneration.GeneratioNumber,
-                    TransformedArtifacts = cleanGeneration.TransformedArtifacts,
-                    IsActiveIdea = cleanGeneration.IsActiveIdea,
-                    IdeaSourceIdea = cleanGeneration.IdeaSourceIdea,
                     Model = cleanGeneration.Model,
-                    IdeaValidationPrompt = cleanGeneration.IdeaValidationPrompt,
-                    TransformedArtifactRawPrompts = cleanGeneration.TransformedArtifactRawPrompts
+                    Experiment = cleanGeneration.Experiment,
+                    ExpName = cleanGeneration.ExpName,
+                    GenerationTransformers = cleanGeneration.GenerationTransformers,
+                    IsActiveExp = cleanGeneration.IsActiveExp,
+                    ExpAbstract = cleanGeneration.ExpAbstract,
+                    ExpValidationPrompt = cleanGeneration.ExpValidationPrompt,
+                    GenerationTransformRawPrompts = cleanGeneration.GenerationTransformRawPrompts,
+                    TransformerNumbers = cleanGeneration.TransformerNumbers,
+                    SyntaxFreeTransformerNumbers = cleanGeneration.SyntaxFreeTransformerNumbers,
+                    SyntaxLockedTransformerNumbers = cleanGeneration.SyntaxLockedTransformerNumbers
                 };
             }
 
@@ -360,10 +280,10 @@ namespace CLIClassLibrary.ATDMQ
                 UserGeneration = new dc.Generation()
                 {
                     GenerationId = cleanGeneration.GenerationId,
-                    Idea = cleanGeneration.Idea,
                     GeneratioNumber = cleanGeneration.GeneratioNumber,
-                    TransformedArtifacts = cleanGeneration.TransformedArtifacts,
-                    Model = cleanGeneration.Model
+                    Model = cleanGeneration.Model,
+                    Experiment = cleanGeneration.Experiment,
+                    GenerationTransformers = cleanGeneration.GenerationTransformers
                 };
             }
 
@@ -372,86 +292,169 @@ namespace CLIClassLibrary.ATDMQ
 
         // User Cleaning Extension Methods.  -CRUD-
         
-        // IdeaFeature
-        public static dc.IdeaFeature UserCleanForAdd(this dc.IdeaFeature cleanIdeaFeature)
+        // ExperimentTransformer
+        public static dc.ExperimentTransformer UserCleanForAdd(this dc.ExperimentTransformer cleanExperimentTransformer)
         {
-            var UserIdeaFeature = default(dc.IdeaFeature);
+            var UserExperimentTransformer = default(dc.ExperimentTransformer);
 
-            if (!ReferenceEquals(cleanIdeaFeature, null))
+            if (!ReferenceEquals(cleanExperimentTransformer, null))
             {
-                UserIdeaFeature = new dc.IdeaFeature()
+                UserExperimentTransformer = new dc.ExperimentTransformer()
                 {
                      // default value: . 
-                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
+                    ExperimentTransformerId = cleanExperimentTransformer.ExperimentTransformerId,
                      // default value: . 
-                    Name = cleanIdeaFeature.Name,
+                    Experiment = cleanExperimentTransformer.Experiment,
                      // default value: . 
-                    LowerName = cleanIdeaFeature.LowerName,
+                    FullPrompt = cleanExperimentTransformer.FullPrompt,
                      // default value: . 
-                    Description = cleanIdeaFeature.Description,
+                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
                      // default value: . 
-                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
+                    AutoNumber = cleanExperimentTransformer.AutoNumber,
                      // default value: . 
-                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
-                     // default value: . 
-                    Idea = cleanIdeaFeature.Idea
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
                 };
                 
             }
 
-            return UserIdeaFeature;
+            return UserExperimentTransformer;
         }
         
         
-        public static List<dc.IdeaFeature> UserCleanForGet(this IEnumerable<dc.IdeaFeature> cleanIdeaFeatures)
+        public static List<dc.ExperimentTransformer> UserCleanForGet(this IEnumerable<dc.ExperimentTransformer> cleanExperimentTransformers)
         {
-            return cleanIdeaFeatures.Select(IdeaFeature => IdeaFeature.UserCleanForGet())
+            return cleanExperimentTransformers.Select(ExperimentTransformer => ExperimentTransformer.UserCleanForGet())
                             .ToList();
         }
         
-        public static dc.IdeaFeature UserCleanForGet(this dc.IdeaFeature cleanIdeaFeature)
+        public static dc.ExperimentTransformer UserCleanForGet(this dc.ExperimentTransformer cleanExperimentTransformer)
         {
-            var UserIdeaFeature = default(dc.IdeaFeature);
+            var UserExperimentTransformer = default(dc.ExperimentTransformer);
 
-            if (!ReferenceEquals(cleanIdeaFeature, null))
+            if (!ReferenceEquals(cleanExperimentTransformer, null))
             {
-                UserIdeaFeature = new dc.IdeaFeature()
+                UserExperimentTransformer = new dc.ExperimentTransformer()
                 {
-                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
-                    Name = cleanIdeaFeature.Name,
-                    LowerName = cleanIdeaFeature.LowerName,
-                    Description = cleanIdeaFeature.Description,
-                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
-                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
-                    SourceIdea = cleanIdeaFeature.SourceIdea,
-                    Idea = cleanIdeaFeature.Idea,
-                    IsActiveIdea = cleanIdeaFeature.IsActiveIdea
+                    ExperimentTransformerId = cleanExperimentTransformer.ExperimentTransformerId,
+                    Name = cleanExperimentTransformer.Name,
+                    Experiment = cleanExperimentTransformer.Experiment,
+                    ExpName = cleanExperimentTransformer.ExpName,
+                    ExpAbstract = cleanExperimentTransformer.ExpAbstract,
+                    IsActiveExp = cleanExperimentTransformer.IsActiveExp,
+                    FullPrompt = cleanExperimentTransformer.FullPrompt,
+                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
+                    AutoNumber = cleanExperimentTransformer.AutoNumber,
+                    TransformerIdentifier = cleanExperimentTransformer.TransformerIdentifier,
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
                 };
             }
 
-            return UserIdeaFeature;
+            return UserExperimentTransformer;
         }
         
         
-        public static dc.IdeaFeature UserCleanForUpdate(this dc.IdeaFeature cleanIdeaFeature)
+        public static dc.ExperimentTransformer UserCleanForUpdate(this dc.ExperimentTransformer cleanExperimentTransformer)
         {
-            var UserIdeaFeature = default(dc.IdeaFeature);
+            var UserExperimentTransformer = default(dc.ExperimentTransformer);
 
-            if (!ReferenceEquals(cleanIdeaFeature, null))
+            if (!ReferenceEquals(cleanExperimentTransformer, null))
             {
-                UserIdeaFeature = new dc.IdeaFeature()
+                UserExperimentTransformer = new dc.ExperimentTransformer()
                 {
-                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
-                    Name = cleanIdeaFeature.Name,
-                    LowerName = cleanIdeaFeature.LowerName,
-                    Description = cleanIdeaFeature.Description,
-                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
-                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
-                    Idea = cleanIdeaFeature.Idea
+                    ExperimentTransformerId = cleanExperimentTransformer.ExperimentTransformerId,
+                    Experiment = cleanExperimentTransformer.Experiment,
+                    FullPrompt = cleanExperimentTransformer.FullPrompt,
+                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
+                    AutoNumber = cleanExperimentTransformer.AutoNumber,
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
                 };
             }
 
-            return UserIdeaFeature;
+            return UserExperimentTransformer;
+        }
+
+        // User Cleaning Extension Methods.  -CRUD-
+        
+        // ExperimentFeature
+        public static dc.ExperimentFeature UserCleanForAdd(this dc.ExperimentFeature cleanExperimentFeature)
+        {
+            var UserExperimentFeature = default(dc.ExperimentFeature);
+
+            if (!ReferenceEquals(cleanExperimentFeature, null))
+            {
+                UserExperimentFeature = new dc.ExperimentFeature()
+                {
+                     // default value: . 
+                    ExperimentFeatureId = cleanExperimentFeature.ExperimentFeatureId,
+                     // default value: . 
+                    Name = cleanExperimentFeature.Name,
+                     // default value: . 
+                    LowerName = cleanExperimentFeature.LowerName,
+                     // default value: . 
+                    Description = cleanExperimentFeature.Description,
+                     // default value: . 
+                    RequiredStartingAtGeneration = cleanExperimentFeature.RequiredStartingAtGeneration,
+                     // default value: . 
+                    ExplicitlyRemovedAtGeneration = cleanExperimentFeature.ExplicitlyRemovedAtGeneration,
+                     // default value: . 
+                    Experiment = cleanExperimentFeature.Experiment
+                };
+                
+            }
+
+            return UserExperimentFeature;
+        }
+        
+        
+        public static List<dc.ExperimentFeature> UserCleanForGet(this IEnumerable<dc.ExperimentFeature> cleanExperimentFeatures)
+        {
+            return cleanExperimentFeatures.Select(ExperimentFeature => ExperimentFeature.UserCleanForGet())
+                            .ToList();
+        }
+        
+        public static dc.ExperimentFeature UserCleanForGet(this dc.ExperimentFeature cleanExperimentFeature)
+        {
+            var UserExperimentFeature = default(dc.ExperimentFeature);
+
+            if (!ReferenceEquals(cleanExperimentFeature, null))
+            {
+                UserExperimentFeature = new dc.ExperimentFeature()
+                {
+                    ExperimentFeatureId = cleanExperimentFeature.ExperimentFeatureId,
+                    Name = cleanExperimentFeature.Name,
+                    LowerName = cleanExperimentFeature.LowerName,
+                    Description = cleanExperimentFeature.Description,
+                    RequiredStartingAtGeneration = cleanExperimentFeature.RequiredStartingAtGeneration,
+                    ExplicitlyRemovedAtGeneration = cleanExperimentFeature.ExplicitlyRemovedAtGeneration,
+                    ExpAbstract = cleanExperimentFeature.ExpAbstract,
+                    Experiment = cleanExperimentFeature.Experiment,
+                    IsActiveExp = cleanExperimentFeature.IsActiveExp
+                };
+            }
+
+            return UserExperimentFeature;
+        }
+        
+        
+        public static dc.ExperimentFeature UserCleanForUpdate(this dc.ExperimentFeature cleanExperimentFeature)
+        {
+            var UserExperimentFeature = default(dc.ExperimentFeature);
+
+            if (!ReferenceEquals(cleanExperimentFeature, null))
+            {
+                UserExperimentFeature = new dc.ExperimentFeature()
+                {
+                    ExperimentFeatureId = cleanExperimentFeature.ExperimentFeatureId,
+                    Name = cleanExperimentFeature.Name,
+                    LowerName = cleanExperimentFeature.LowerName,
+                    Description = cleanExperimentFeature.Description,
+                    RequiredStartingAtGeneration = cleanExperimentFeature.RequiredStartingAtGeneration,
+                    ExplicitlyRemovedAtGeneration = cleanExperimentFeature.ExplicitlyRemovedAtGeneration,
+                    Experiment = cleanExperimentFeature.Experiment
+                };
+            }
+
+            return UserExperimentFeature;
         }
 
         // User Cleaning Extension Methods.  -CRUD-
@@ -598,13 +601,11 @@ namespace CLIClassLibrary.ATDMQ
                     ResponseOfArtifactBeingExtended = cleanTransformedArtifact.ResponseOfArtifactBeingExtended,
                     TransformerRawPrompt = cleanTransformedArtifact.TransformerRawPrompt,
                     IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                    IsActiveIdea = cleanTransformedArtifact.IsActiveIdea,
                     Modified = cleanTransformedArtifact.Modified,
                     ExtensionOf = cleanTransformedArtifact.ExtensionOf,
                     TransformerNumber = cleanTransformedArtifact.TransformerNumber,
                     LongName = cleanTransformedArtifact.LongName,
                     TransformerGeneratioNumber = cleanTransformedArtifact.TransformerGeneratioNumber,
-                    TransformerGenerationIdeaName = cleanTransformedArtifact.TransformerGenerationIdeaName,
                     TransformerGenerationName = cleanTransformedArtifact.TransformerGenerationName,
                     ArtifactIdentifier = cleanTransformedArtifact.ArtifactIdentifier,
                     PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
@@ -647,13 +648,10 @@ namespace CLIClassLibrary.ATDMQ
                     ToDoColors = cleanTransformedArtifact.ToDoColors,
                     ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
                     ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
-                    IdeaValidationPrompt = cleanTransformedArtifact.IdeaValidationPrompt,
                     ResponseBeingValidated = cleanTransformedArtifact.ResponseBeingValidated,
-                    GenerationSourceIdea = cleanTransformedArtifact.GenerationSourceIdea,
                     SuggestedValidationPrompt = cleanTransformedArtifact.SuggestedValidationPrompt,
                     ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
                     ValidationResponse = cleanTransformedArtifact.ValidationResponse,
-                    IdeaTransformerIsSyntaxFreefromGenerationTransformer = cleanTransformedArtifact.IdeaTransformerIsSyntaxFreefromGenerationTransformer,
                     GenerationName = cleanTransformedArtifact.GenerationName,
                     GeneratioNumber = cleanTransformedArtifact.GeneratioNumber,
                     GenerationTransformerNumber = cleanTransformedArtifact.GenerationTransformerNumber,
@@ -661,7 +659,12 @@ namespace CLIClassLibrary.ATDMQ
                     RootArtifactIdentifier = cleanTransformedArtifact.RootArtifactIdentifier,
                     SuggestedRootIdentifier = cleanTransformedArtifact.SuggestedRootIdentifier,
                     CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier,
-                    RootIdentifierMismatch = cleanTransformedArtifact.RootIdentifierMismatch
+                    RootIdentifierMismatch = cleanTransformedArtifact.RootIdentifierMismatch,
+                    ExpTransformerIsSyntaxFree = cleanTransformedArtifact.ExpTransformerIsSyntaxFree,
+                    IsActiveExp = cleanTransformedArtifact.IsActiveExp,
+                    TransformerGenerationExpName = cleanTransformedArtifact.TransformerGenerationExpName,
+                    ExpValidationPrompt = cleanTransformedArtifact.ExpValidationPrompt,
+                    ExpAbstract = cleanTransformedArtifact.ExpAbstract
                 };
             }
 
@@ -805,6 +808,100 @@ namespace CLIClassLibrary.ATDMQ
 
         // User Cleaning Extension Methods.  -CRUD-
         
+        // Experiment
+        public static dc.Experiment UserCleanForAdd(this dc.Experiment cleanExperiment)
+        {
+            var UserExperiment = default(dc.Experiment);
+
+            if (!ReferenceEquals(cleanExperiment, null))
+            {
+                UserExperiment = new dc.Experiment()
+                {
+                     // default value: . 
+                    ExperimentId = cleanExperiment.ExperimentId,
+                     // default value: . 
+                    ExpName = cleanExperiment.ExpName,
+                     // default value: . 
+                    ExpAbstract = cleanExperiment.ExpAbstract,
+                     // default value: . 
+                    Generations = cleanExperiment.Generations,
+                     // default value: . 
+                    ExpTransformers = cleanExperiment.ExpTransformers,
+                     // default value: . 
+                    IsActiveExp = cleanExperiment.IsActiveExp,
+                     // default value: . 
+                    ExpFeatures = cleanExperiment.ExpFeatures,
+                     // default value: . 
+                    AutoNumber = cleanExperiment.AutoNumber
+                };
+                
+            }
+
+            return UserExperiment;
+        }
+        
+        
+        public static List<dc.Experiment> UserCleanForGet(this IEnumerable<dc.Experiment> cleanExperiments)
+        {
+            return cleanExperiments.Select(Experiment => Experiment.UserCleanForGet())
+                            .ToList();
+        }
+        
+        public static dc.Experiment UserCleanForGet(this dc.Experiment cleanExperiment)
+        {
+            var UserExperiment = default(dc.Experiment);
+
+            if (!ReferenceEquals(cleanExperiment, null))
+            {
+                UserExperiment = new dc.Experiment()
+                {
+                    ExperimentId = cleanExperiment.ExperimentId,
+                    Name = cleanExperiment.Name,
+                    ExpName = cleanExperiment.ExpName,
+                    ExpIdentifier = cleanExperiment.ExpIdentifier,
+                    ExpAbstract = cleanExperiment.ExpAbstract,
+                    Generations = cleanExperiment.Generations,
+                    ExpTransformers = cleanExperiment.ExpTransformers,
+                    ExpTransformerNames = cleanExperiment.ExpTransformerNames,
+                    ExpTransformerFullPrompts = cleanExperiment.ExpTransformerFullPrompts,
+                    IsActiveExp = cleanExperiment.IsActiveExp,
+                    ExpFeatures = cleanExperiment.ExpFeatures,
+                    ExpFeatureLowerNames = cleanExperiment.ExpFeatureLowerNames,
+                    ExpFeatureNames = cleanExperiment.ExpFeatureNames,
+                    FeaturesArray = cleanExperiment.FeaturesArray,
+                    ValidationPrompt = cleanExperiment.ValidationPrompt,
+                    AutoNumber = cleanExperiment.AutoNumber
+                };
+            }
+
+            return UserExperiment;
+        }
+        
+        
+        public static dc.Experiment UserCleanForUpdate(this dc.Experiment cleanExperiment)
+        {
+            var UserExperiment = default(dc.Experiment);
+
+            if (!ReferenceEquals(cleanExperiment, null))
+            {
+                UserExperiment = new dc.Experiment()
+                {
+                    ExperimentId = cleanExperiment.ExperimentId,
+                    ExpName = cleanExperiment.ExpName,
+                    ExpAbstract = cleanExperiment.ExpAbstract,
+                    Generations = cleanExperiment.Generations,
+                    ExpTransformers = cleanExperiment.ExpTransformers,
+                    IsActiveExp = cleanExperiment.IsActiveExp,
+                    ExpFeatures = cleanExperiment.ExpFeatures,
+                    AutoNumber = cleanExperiment.AutoNumber
+                };
+            }
+
+            return UserExperiment;
+        }
+
+        // User Cleaning Extension Methods.  -CRUD-
+        
         // LLM
         public static dc.LLM UserCleanForAdd(this dc.LLM cleanLLM)
         {
@@ -875,177 +972,6 @@ namespace CLIClassLibrary.ATDMQ
             }
 
             return UserLLM;
-        }
-
-        // User Cleaning Extension Methods.  -CRUD-
-        
-        // Idea
-        public static dc.Idea UserCleanForAdd(this dc.Idea cleanIdea)
-        {
-            var UserIdea = default(dc.Idea);
-
-            if (!ReferenceEquals(cleanIdea, null))
-            {
-                UserIdea = new dc.Idea()
-                {
-                     // default value: . 
-                    IdeaId = cleanIdea.IdeaId,
-                     // default value: . 
-                    Name = cleanIdea.Name,
-                     // default value: . 
-                    SourceIdea = cleanIdea.SourceIdea,
-                     // default value: . 
-                    Generations = cleanIdea.Generations,
-                     // default value: . 
-                    IsActiveIdea = cleanIdea.IsActiveIdea,
-                     // default value: . 
-                    IdeaTransformers = cleanIdea.IdeaTransformers,
-                     // default value: . 
-                    IdeaFeatures = cleanIdea.IdeaFeatures
-                };
-                
-            }
-
-            return UserIdea;
-        }
-        
-        
-        public static List<dc.Idea> UserCleanForGet(this IEnumerable<dc.Idea> cleanIdeas)
-        {
-            return cleanIdeas.Select(Idea => Idea.UserCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.Idea UserCleanForGet(this dc.Idea cleanIdea)
-        {
-            var UserIdea = default(dc.Idea);
-
-            if (!ReferenceEquals(cleanIdea, null))
-            {
-                UserIdea = new dc.Idea()
-                {
-                    IdeaId = cleanIdea.IdeaId,
-                    Name = cleanIdea.Name,
-                    SourceIdea = cleanIdea.SourceIdea,
-                    Generations = cleanIdea.Generations,
-                    IsActiveIdea = cleanIdea.IsActiveIdea,
-                    IdeaTransformers = cleanIdea.IdeaTransformers,
-                    IdeaTransformerNames = cleanIdea.IdeaTransformerNames,
-                    IdeaTransformerFullPrompts = cleanIdea.IdeaTransformerFullPrompts,
-                    IdeaFeatures = cleanIdea.IdeaFeatures,
-                    IdeaFeatureLowerNames = cleanIdea.IdeaFeatureLowerNames,
-                    IdeaFeatureNames = cleanIdea.IdeaFeatureNames,
-                    FeaturesArray = cleanIdea.FeaturesArray,
-                    ValidationPrompt = cleanIdea.ValidationPrompt
-                };
-            }
-
-            return UserIdea;
-        }
-        
-        
-        public static dc.Idea UserCleanForUpdate(this dc.Idea cleanIdea)
-        {
-            var UserIdea = default(dc.Idea);
-
-            if (!ReferenceEquals(cleanIdea, null))
-            {
-                UserIdea = new dc.Idea()
-                {
-                    IdeaId = cleanIdea.IdeaId,
-                    Name = cleanIdea.Name,
-                    SourceIdea = cleanIdea.SourceIdea,
-                    Generations = cleanIdea.Generations,
-                    IsActiveIdea = cleanIdea.IsActiveIdea,
-                    IdeaTransformers = cleanIdea.IdeaTransformers,
-                    IdeaFeatures = cleanIdea.IdeaFeatures
-                };
-            }
-
-            return UserIdea;
-        }
-
-        // Admin Cleaning Extension Methods.  -CRUD-
-        
-        // IdeaTransformer
-        public static dc.IdeaTransformer AdminCleanForAdd(this dc.IdeaTransformer cleanIdeaTransformer)
-        {
-            var AdminIdeaTransformer = default(dc.IdeaTransformer);
-
-            if (!ReferenceEquals(cleanIdeaTransformer, null))
-            {
-                AdminIdeaTransformer = new dc.IdeaTransformer()
-                {
-                     // default value: . 
-                    IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
-                     // default value: . 
-                    Idea = cleanIdeaTransformer.Idea,
-                     // default value: . 
-                    FullPrompt = cleanIdeaTransformer.FullPrompt,
-                     // default value: . 
-                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
-                     // default value: . 
-                    AutoNumber = cleanIdeaTransformer.AutoNumber,
-                     // default value: . 
-                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
-                };
-                
-            }
-
-            return AdminIdeaTransformer;
-        }
-        
-        
-        public static List<dc.IdeaTransformer> AdminCleanForGet(this IEnumerable<dc.IdeaTransformer> cleanIdeaTransformers)
-        {
-            return cleanIdeaTransformers.Select(IdeaTransformer => IdeaTransformer.AdminCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.IdeaTransformer AdminCleanForGet(this dc.IdeaTransformer cleanIdeaTransformer)
-        {
-            var AdminIdeaTransformer = default(dc.IdeaTransformer);
-
-            if (!ReferenceEquals(cleanIdeaTransformer, null))
-            {
-                AdminIdeaTransformer = new dc.IdeaTransformer()
-                {
-                    IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
-                    Name = cleanIdeaTransformer.Name,
-                    Idea = cleanIdeaTransformer.Idea,
-                    IdeaName = cleanIdeaTransformer.IdeaName,
-                    IdeasSourceIdea = cleanIdeaTransformer.IdeasSourceIdea,
-                    IsActiveIdea = cleanIdeaTransformer.IsActiveIdea,
-                    FullPrompt = cleanIdeaTransformer.FullPrompt,
-                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
-                    AutoNumber = cleanIdeaTransformer.AutoNumber,
-                    IdeaIdentifier = cleanIdeaTransformer.IdeaIdentifier,
-                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
-                };
-            }
-
-            return AdminIdeaTransformer;
-        }
-        
-        
-        public static dc.IdeaTransformer AdminCleanForUpdate(this dc.IdeaTransformer cleanIdeaTransformer)
-        {
-            var AdminIdeaTransformer = default(dc.IdeaTransformer);
-
-            if (!ReferenceEquals(cleanIdeaTransformer, null))
-            {
-                AdminIdeaTransformer = new dc.IdeaTransformer()
-                {
-                    IdeaTransformerId = cleanIdeaTransformer.IdeaTransformerId,
-                    Idea = cleanIdeaTransformer.Idea,
-                    FullPrompt = cleanIdeaTransformer.FullPrompt,
-                    TransformedTransformers = cleanIdeaTransformer.TransformedTransformers,
-                    AutoNumber = cleanIdeaTransformer.AutoNumber,
-                    IsSyntaxFree = cleanIdeaTransformer.IsSyntaxFree
-                };
-            }
-
-            return AdminIdeaTransformer;
         }
 
         // Admin Cleaning Extension Methods.  -CRUD-
@@ -1140,7 +1066,7 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
                      // default value: . 
-                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer
                 };
                 
             }
@@ -1167,19 +1093,19 @@ namespace CLIClassLibrary.ATDMQ
                     Name = cleanGenerationTransformer.Name,
                     Generation = cleanGenerationTransformer.Generation,
                     RawPrompt = cleanGenerationTransformer.RawPrompt,
-                    SourceIdea = cleanGenerationTransformer.SourceIdea,
                     GenerationName = cleanGenerationTransformer.GenerationName,
-                    GenerationIdea = cleanGenerationTransformer.GenerationIdea,
-                    GenerationIdeaName = cleanGenerationTransformer.GenerationIdeaName,
                     GeneratioNumber = cleanGenerationTransformer.GeneratioNumber,
-                    IsActiveIdea = cleanGenerationTransformer.IsActiveIdea,
                     TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     TransformerNumber = cleanGenerationTransformer.TransformerNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
-                    IdeaValidationPrompt = cleanGenerationTransformer.IdeaValidationPrompt,
-                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer,
-                    IdeaTransformerIsSyntaxFree = cleanGenerationTransformer.IdeaTransformerIsSyntaxFree
+                    ExpAbstract = cleanGenerationTransformer.ExpAbstract,
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
+                    GenerationExp = cleanGenerationTransformer.GenerationExp,
+                    GenerationExpName = cleanGenerationTransformer.GenerationExpName,
+                    IsActiveExp = cleanGenerationTransformer.IsActiveExp,
+                    ExpTransformerIsSyntaxFree = cleanGenerationTransformer.ExpTransformerIsSyntaxFree,
+                    ExpValidationPrompt = cleanGenerationTransformer.ExpValidationPrompt
                 };
             }
 
@@ -1200,7 +1126,7 @@ namespace CLIClassLibrary.ATDMQ
                     TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
-                    IdeaTransformer = cleanGenerationTransformer.IdeaTransformer
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer
                 };
             }
 
@@ -1221,13 +1147,13 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     GenerationId = cleanGeneration.GenerationId,
                      // default value: . 
-                    Idea = cleanGeneration.Idea,
-                     // default value: . 
                     GeneratioNumber = cleanGeneration.GeneratioNumber,
                      // default value: . 
-                    TransformedArtifacts = cleanGeneration.TransformedArtifacts,
+                    Model = cleanGeneration.Model,
                      // default value: . 
-                    Model = cleanGeneration.Model
+                    Experiment = cleanGeneration.Experiment,
+                     // default value: . 
+                    GenerationTransformers = cleanGeneration.GenerationTransformers
                 };
                 
             }
@@ -1252,15 +1178,18 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     GenerationId = cleanGeneration.GenerationId,
                     Name = cleanGeneration.Name,
-                    Idea = cleanGeneration.Idea,
-                    IdeaName = cleanGeneration.IdeaName,
                     GeneratioNumber = cleanGeneration.GeneratioNumber,
-                    TransformedArtifacts = cleanGeneration.TransformedArtifacts,
-                    IsActiveIdea = cleanGeneration.IsActiveIdea,
-                    IdeaSourceIdea = cleanGeneration.IdeaSourceIdea,
                     Model = cleanGeneration.Model,
-                    IdeaValidationPrompt = cleanGeneration.IdeaValidationPrompt,
-                    TransformedArtifactRawPrompts = cleanGeneration.TransformedArtifactRawPrompts
+                    Experiment = cleanGeneration.Experiment,
+                    ExpName = cleanGeneration.ExpName,
+                    GenerationTransformers = cleanGeneration.GenerationTransformers,
+                    IsActiveExp = cleanGeneration.IsActiveExp,
+                    ExpAbstract = cleanGeneration.ExpAbstract,
+                    ExpValidationPrompt = cleanGeneration.ExpValidationPrompt,
+                    GenerationTransformRawPrompts = cleanGeneration.GenerationTransformRawPrompts,
+                    TransformerNumbers = cleanGeneration.TransformerNumbers,
+                    SyntaxFreeTransformerNumbers = cleanGeneration.SyntaxFreeTransformerNumbers,
+                    SyntaxLockedTransformerNumbers = cleanGeneration.SyntaxLockedTransformerNumbers
                 };
             }
 
@@ -1277,10 +1206,10 @@ namespace CLIClassLibrary.ATDMQ
                 AdminGeneration = new dc.Generation()
                 {
                     GenerationId = cleanGeneration.GenerationId,
-                    Idea = cleanGeneration.Idea,
                     GeneratioNumber = cleanGeneration.GeneratioNumber,
-                    TransformedArtifacts = cleanGeneration.TransformedArtifacts,
-                    Model = cleanGeneration.Model
+                    Model = cleanGeneration.Model,
+                    Experiment = cleanGeneration.Experiment,
+                    GenerationTransformers = cleanGeneration.GenerationTransformers
                 };
             }
 
@@ -1289,86 +1218,169 @@ namespace CLIClassLibrary.ATDMQ
 
         // Admin Cleaning Extension Methods.  -CRUD-
         
-        // IdeaFeature
-        public static dc.IdeaFeature AdminCleanForAdd(this dc.IdeaFeature cleanIdeaFeature)
+        // ExperimentTransformer
+        public static dc.ExperimentTransformer AdminCleanForAdd(this dc.ExperimentTransformer cleanExperimentTransformer)
         {
-            var AdminIdeaFeature = default(dc.IdeaFeature);
+            var AdminExperimentTransformer = default(dc.ExperimentTransformer);
 
-            if (!ReferenceEquals(cleanIdeaFeature, null))
+            if (!ReferenceEquals(cleanExperimentTransformer, null))
             {
-                AdminIdeaFeature = new dc.IdeaFeature()
+                AdminExperimentTransformer = new dc.ExperimentTransformer()
                 {
                      // default value: . 
-                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
+                    ExperimentTransformerId = cleanExperimentTransformer.ExperimentTransformerId,
                      // default value: . 
-                    Name = cleanIdeaFeature.Name,
+                    Experiment = cleanExperimentTransformer.Experiment,
                      // default value: . 
-                    LowerName = cleanIdeaFeature.LowerName,
+                    FullPrompt = cleanExperimentTransformer.FullPrompt,
                      // default value: . 
-                    Description = cleanIdeaFeature.Description,
+                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
                      // default value: . 
-                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
+                    AutoNumber = cleanExperimentTransformer.AutoNumber,
                      // default value: . 
-                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
-                     // default value: . 
-                    Idea = cleanIdeaFeature.Idea
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
                 };
                 
             }
 
-            return AdminIdeaFeature;
+            return AdminExperimentTransformer;
         }
         
         
-        public static List<dc.IdeaFeature> AdminCleanForGet(this IEnumerable<dc.IdeaFeature> cleanIdeaFeatures)
+        public static List<dc.ExperimentTransformer> AdminCleanForGet(this IEnumerable<dc.ExperimentTransformer> cleanExperimentTransformers)
         {
-            return cleanIdeaFeatures.Select(IdeaFeature => IdeaFeature.AdminCleanForGet())
+            return cleanExperimentTransformers.Select(ExperimentTransformer => ExperimentTransformer.AdminCleanForGet())
                             .ToList();
         }
         
-        public static dc.IdeaFeature AdminCleanForGet(this dc.IdeaFeature cleanIdeaFeature)
+        public static dc.ExperimentTransformer AdminCleanForGet(this dc.ExperimentTransformer cleanExperimentTransformer)
         {
-            var AdminIdeaFeature = default(dc.IdeaFeature);
+            var AdminExperimentTransformer = default(dc.ExperimentTransformer);
 
-            if (!ReferenceEquals(cleanIdeaFeature, null))
+            if (!ReferenceEquals(cleanExperimentTransformer, null))
             {
-                AdminIdeaFeature = new dc.IdeaFeature()
+                AdminExperimentTransformer = new dc.ExperimentTransformer()
                 {
-                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
-                    Name = cleanIdeaFeature.Name,
-                    LowerName = cleanIdeaFeature.LowerName,
-                    Description = cleanIdeaFeature.Description,
-                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
-                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
-                    SourceIdea = cleanIdeaFeature.SourceIdea,
-                    Idea = cleanIdeaFeature.Idea,
-                    IsActiveIdea = cleanIdeaFeature.IsActiveIdea
+                    ExperimentTransformerId = cleanExperimentTransformer.ExperimentTransformerId,
+                    Name = cleanExperimentTransformer.Name,
+                    Experiment = cleanExperimentTransformer.Experiment,
+                    ExpName = cleanExperimentTransformer.ExpName,
+                    ExpAbstract = cleanExperimentTransformer.ExpAbstract,
+                    IsActiveExp = cleanExperimentTransformer.IsActiveExp,
+                    FullPrompt = cleanExperimentTransformer.FullPrompt,
+                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
+                    AutoNumber = cleanExperimentTransformer.AutoNumber,
+                    TransformerIdentifier = cleanExperimentTransformer.TransformerIdentifier,
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
                 };
             }
 
-            return AdminIdeaFeature;
+            return AdminExperimentTransformer;
         }
         
         
-        public static dc.IdeaFeature AdminCleanForUpdate(this dc.IdeaFeature cleanIdeaFeature)
+        public static dc.ExperimentTransformer AdminCleanForUpdate(this dc.ExperimentTransformer cleanExperimentTransformer)
         {
-            var AdminIdeaFeature = default(dc.IdeaFeature);
+            var AdminExperimentTransformer = default(dc.ExperimentTransformer);
 
-            if (!ReferenceEquals(cleanIdeaFeature, null))
+            if (!ReferenceEquals(cleanExperimentTransformer, null))
             {
-                AdminIdeaFeature = new dc.IdeaFeature()
+                AdminExperimentTransformer = new dc.ExperimentTransformer()
                 {
-                    IdeaFeatureId = cleanIdeaFeature.IdeaFeatureId,
-                    Name = cleanIdeaFeature.Name,
-                    LowerName = cleanIdeaFeature.LowerName,
-                    Description = cleanIdeaFeature.Description,
-                    RequiredStartingAtGeneration = cleanIdeaFeature.RequiredStartingAtGeneration,
-                    ExplicitlyRemovedAtGeneration = cleanIdeaFeature.ExplicitlyRemovedAtGeneration,
-                    Idea = cleanIdeaFeature.Idea
+                    ExperimentTransformerId = cleanExperimentTransformer.ExperimentTransformerId,
+                    Experiment = cleanExperimentTransformer.Experiment,
+                    FullPrompt = cleanExperimentTransformer.FullPrompt,
+                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
+                    AutoNumber = cleanExperimentTransformer.AutoNumber,
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
                 };
             }
 
-            return AdminIdeaFeature;
+            return AdminExperimentTransformer;
+        }
+
+        // Admin Cleaning Extension Methods.  -CRUD-
+        
+        // ExperimentFeature
+        public static dc.ExperimentFeature AdminCleanForAdd(this dc.ExperimentFeature cleanExperimentFeature)
+        {
+            var AdminExperimentFeature = default(dc.ExperimentFeature);
+
+            if (!ReferenceEquals(cleanExperimentFeature, null))
+            {
+                AdminExperimentFeature = new dc.ExperimentFeature()
+                {
+                     // default value: . 
+                    ExperimentFeatureId = cleanExperimentFeature.ExperimentFeatureId,
+                     // default value: . 
+                    Name = cleanExperimentFeature.Name,
+                     // default value: . 
+                    LowerName = cleanExperimentFeature.LowerName,
+                     // default value: . 
+                    Description = cleanExperimentFeature.Description,
+                     // default value: . 
+                    RequiredStartingAtGeneration = cleanExperimentFeature.RequiredStartingAtGeneration,
+                     // default value: . 
+                    ExplicitlyRemovedAtGeneration = cleanExperimentFeature.ExplicitlyRemovedAtGeneration,
+                     // default value: . 
+                    Experiment = cleanExperimentFeature.Experiment
+                };
+                
+            }
+
+            return AdminExperimentFeature;
+        }
+        
+        
+        public static List<dc.ExperimentFeature> AdminCleanForGet(this IEnumerable<dc.ExperimentFeature> cleanExperimentFeatures)
+        {
+            return cleanExperimentFeatures.Select(ExperimentFeature => ExperimentFeature.AdminCleanForGet())
+                            .ToList();
+        }
+        
+        public static dc.ExperimentFeature AdminCleanForGet(this dc.ExperimentFeature cleanExperimentFeature)
+        {
+            var AdminExperimentFeature = default(dc.ExperimentFeature);
+
+            if (!ReferenceEquals(cleanExperimentFeature, null))
+            {
+                AdminExperimentFeature = new dc.ExperimentFeature()
+                {
+                    ExperimentFeatureId = cleanExperimentFeature.ExperimentFeatureId,
+                    Name = cleanExperimentFeature.Name,
+                    LowerName = cleanExperimentFeature.LowerName,
+                    Description = cleanExperimentFeature.Description,
+                    RequiredStartingAtGeneration = cleanExperimentFeature.RequiredStartingAtGeneration,
+                    ExplicitlyRemovedAtGeneration = cleanExperimentFeature.ExplicitlyRemovedAtGeneration,
+                    ExpAbstract = cleanExperimentFeature.ExpAbstract,
+                    Experiment = cleanExperimentFeature.Experiment,
+                    IsActiveExp = cleanExperimentFeature.IsActiveExp
+                };
+            }
+
+            return AdminExperimentFeature;
+        }
+        
+        
+        public static dc.ExperimentFeature AdminCleanForUpdate(this dc.ExperimentFeature cleanExperimentFeature)
+        {
+            var AdminExperimentFeature = default(dc.ExperimentFeature);
+
+            if (!ReferenceEquals(cleanExperimentFeature, null))
+            {
+                AdminExperimentFeature = new dc.ExperimentFeature()
+                {
+                    ExperimentFeatureId = cleanExperimentFeature.ExperimentFeatureId,
+                    Name = cleanExperimentFeature.Name,
+                    LowerName = cleanExperimentFeature.LowerName,
+                    Description = cleanExperimentFeature.Description,
+                    RequiredStartingAtGeneration = cleanExperimentFeature.RequiredStartingAtGeneration,
+                    ExplicitlyRemovedAtGeneration = cleanExperimentFeature.ExplicitlyRemovedAtGeneration,
+                    Experiment = cleanExperimentFeature.Experiment
+                };
+            }
+
+            return AdminExperimentFeature;
         }
 
         // Admin Cleaning Extension Methods.  -CRUD-
@@ -1515,13 +1527,11 @@ namespace CLIClassLibrary.ATDMQ
                     ResponseOfArtifactBeingExtended = cleanTransformedArtifact.ResponseOfArtifactBeingExtended,
                     TransformerRawPrompt = cleanTransformedArtifact.TransformerRawPrompt,
                     IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                    IsActiveIdea = cleanTransformedArtifact.IsActiveIdea,
                     Modified = cleanTransformedArtifact.Modified,
                     ExtensionOf = cleanTransformedArtifact.ExtensionOf,
                     TransformerNumber = cleanTransformedArtifact.TransformerNumber,
                     LongName = cleanTransformedArtifact.LongName,
                     TransformerGeneratioNumber = cleanTransformedArtifact.TransformerGeneratioNumber,
-                    TransformerGenerationIdeaName = cleanTransformedArtifact.TransformerGenerationIdeaName,
                     TransformerGenerationName = cleanTransformedArtifact.TransformerGenerationName,
                     ArtifactIdentifier = cleanTransformedArtifact.ArtifactIdentifier,
                     PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
@@ -1564,13 +1574,10 @@ namespace CLIClassLibrary.ATDMQ
                     ToDoColors = cleanTransformedArtifact.ToDoColors,
                     ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
                     ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
-                    IdeaValidationPrompt = cleanTransformedArtifact.IdeaValidationPrompt,
                     ResponseBeingValidated = cleanTransformedArtifact.ResponseBeingValidated,
-                    GenerationSourceIdea = cleanTransformedArtifact.GenerationSourceIdea,
                     SuggestedValidationPrompt = cleanTransformedArtifact.SuggestedValidationPrompt,
                     ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
                     ValidationResponse = cleanTransformedArtifact.ValidationResponse,
-                    IdeaTransformerIsSyntaxFreefromGenerationTransformer = cleanTransformedArtifact.IdeaTransformerIsSyntaxFreefromGenerationTransformer,
                     GenerationName = cleanTransformedArtifact.GenerationName,
                     GeneratioNumber = cleanTransformedArtifact.GeneratioNumber,
                     GenerationTransformerNumber = cleanTransformedArtifact.GenerationTransformerNumber,
@@ -1578,7 +1585,12 @@ namespace CLIClassLibrary.ATDMQ
                     RootArtifactIdentifier = cleanTransformedArtifact.RootArtifactIdentifier,
                     SuggestedRootIdentifier = cleanTransformedArtifact.SuggestedRootIdentifier,
                     CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier,
-                    RootIdentifierMismatch = cleanTransformedArtifact.RootIdentifierMismatch
+                    RootIdentifierMismatch = cleanTransformedArtifact.RootIdentifierMismatch,
+                    ExpTransformerIsSyntaxFree = cleanTransformedArtifact.ExpTransformerIsSyntaxFree,
+                    IsActiveExp = cleanTransformedArtifact.IsActiveExp,
+                    TransformerGenerationExpName = cleanTransformedArtifact.TransformerGenerationExpName,
+                    ExpValidationPrompt = cleanTransformedArtifact.ExpValidationPrompt,
+                    ExpAbstract = cleanTransformedArtifact.ExpAbstract
                 };
             }
 
@@ -1722,6 +1734,100 @@ namespace CLIClassLibrary.ATDMQ
 
         // Admin Cleaning Extension Methods.  -CRUD-
         
+        // Experiment
+        public static dc.Experiment AdminCleanForAdd(this dc.Experiment cleanExperiment)
+        {
+            var AdminExperiment = default(dc.Experiment);
+
+            if (!ReferenceEquals(cleanExperiment, null))
+            {
+                AdminExperiment = new dc.Experiment()
+                {
+                     // default value: . 
+                    ExperimentId = cleanExperiment.ExperimentId,
+                     // default value: . 
+                    ExpName = cleanExperiment.ExpName,
+                     // default value: . 
+                    ExpAbstract = cleanExperiment.ExpAbstract,
+                     // default value: . 
+                    Generations = cleanExperiment.Generations,
+                     // default value: . 
+                    ExpTransformers = cleanExperiment.ExpTransformers,
+                     // default value: . 
+                    IsActiveExp = cleanExperiment.IsActiveExp,
+                     // default value: . 
+                    ExpFeatures = cleanExperiment.ExpFeatures,
+                     // default value: . 
+                    AutoNumber = cleanExperiment.AutoNumber
+                };
+                
+            }
+
+            return AdminExperiment;
+        }
+        
+        
+        public static List<dc.Experiment> AdminCleanForGet(this IEnumerable<dc.Experiment> cleanExperiments)
+        {
+            return cleanExperiments.Select(Experiment => Experiment.AdminCleanForGet())
+                            .ToList();
+        }
+        
+        public static dc.Experiment AdminCleanForGet(this dc.Experiment cleanExperiment)
+        {
+            var AdminExperiment = default(dc.Experiment);
+
+            if (!ReferenceEquals(cleanExperiment, null))
+            {
+                AdminExperiment = new dc.Experiment()
+                {
+                    ExperimentId = cleanExperiment.ExperimentId,
+                    Name = cleanExperiment.Name,
+                    ExpName = cleanExperiment.ExpName,
+                    ExpIdentifier = cleanExperiment.ExpIdentifier,
+                    ExpAbstract = cleanExperiment.ExpAbstract,
+                    Generations = cleanExperiment.Generations,
+                    ExpTransformers = cleanExperiment.ExpTransformers,
+                    ExpTransformerNames = cleanExperiment.ExpTransformerNames,
+                    ExpTransformerFullPrompts = cleanExperiment.ExpTransformerFullPrompts,
+                    IsActiveExp = cleanExperiment.IsActiveExp,
+                    ExpFeatures = cleanExperiment.ExpFeatures,
+                    ExpFeatureLowerNames = cleanExperiment.ExpFeatureLowerNames,
+                    ExpFeatureNames = cleanExperiment.ExpFeatureNames,
+                    FeaturesArray = cleanExperiment.FeaturesArray,
+                    ValidationPrompt = cleanExperiment.ValidationPrompt,
+                    AutoNumber = cleanExperiment.AutoNumber
+                };
+            }
+
+            return AdminExperiment;
+        }
+        
+        
+        public static dc.Experiment AdminCleanForUpdate(this dc.Experiment cleanExperiment)
+        {
+            var AdminExperiment = default(dc.Experiment);
+
+            if (!ReferenceEquals(cleanExperiment, null))
+            {
+                AdminExperiment = new dc.Experiment()
+                {
+                    ExperimentId = cleanExperiment.ExperimentId,
+                    ExpName = cleanExperiment.ExpName,
+                    ExpAbstract = cleanExperiment.ExpAbstract,
+                    Generations = cleanExperiment.Generations,
+                    ExpTransformers = cleanExperiment.ExpTransformers,
+                    IsActiveExp = cleanExperiment.IsActiveExp,
+                    ExpFeatures = cleanExperiment.ExpFeatures,
+                    AutoNumber = cleanExperiment.AutoNumber
+                };
+            }
+
+            return AdminExperiment;
+        }
+
+        // Admin Cleaning Extension Methods.  -CRUD-
+        
         // LLM
         public static dc.LLM AdminCleanForAdd(this dc.LLM cleanLLM)
         {
@@ -1792,94 +1898,6 @@ namespace CLIClassLibrary.ATDMQ
             }
 
             return AdminLLM;
-        }
-
-        // Admin Cleaning Extension Methods.  -CRUD-
-        
-        // Idea
-        public static dc.Idea AdminCleanForAdd(this dc.Idea cleanIdea)
-        {
-            var AdminIdea = default(dc.Idea);
-
-            if (!ReferenceEquals(cleanIdea, null))
-            {
-                AdminIdea = new dc.Idea()
-                {
-                     // default value: . 
-                    IdeaId = cleanIdea.IdeaId,
-                     // default value: . 
-                    Name = cleanIdea.Name,
-                     // default value: . 
-                    SourceIdea = cleanIdea.SourceIdea,
-                     // default value: . 
-                    Generations = cleanIdea.Generations,
-                     // default value: . 
-                    IsActiveIdea = cleanIdea.IsActiveIdea,
-                     // default value: . 
-                    IdeaTransformers = cleanIdea.IdeaTransformers,
-                     // default value: . 
-                    IdeaFeatures = cleanIdea.IdeaFeatures
-                };
-                
-            }
-
-            return AdminIdea;
-        }
-        
-        
-        public static List<dc.Idea> AdminCleanForGet(this IEnumerable<dc.Idea> cleanIdeas)
-        {
-            return cleanIdeas.Select(Idea => Idea.AdminCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.Idea AdminCleanForGet(this dc.Idea cleanIdea)
-        {
-            var AdminIdea = default(dc.Idea);
-
-            if (!ReferenceEquals(cleanIdea, null))
-            {
-                AdminIdea = new dc.Idea()
-                {
-                    IdeaId = cleanIdea.IdeaId,
-                    Name = cleanIdea.Name,
-                    SourceIdea = cleanIdea.SourceIdea,
-                    Generations = cleanIdea.Generations,
-                    IsActiveIdea = cleanIdea.IsActiveIdea,
-                    IdeaTransformers = cleanIdea.IdeaTransformers,
-                    IdeaTransformerNames = cleanIdea.IdeaTransformerNames,
-                    IdeaTransformerFullPrompts = cleanIdea.IdeaTransformerFullPrompts,
-                    IdeaFeatures = cleanIdea.IdeaFeatures,
-                    IdeaFeatureLowerNames = cleanIdea.IdeaFeatureLowerNames,
-                    IdeaFeatureNames = cleanIdea.IdeaFeatureNames,
-                    FeaturesArray = cleanIdea.FeaturesArray,
-                    ValidationPrompt = cleanIdea.ValidationPrompt
-                };
-            }
-
-            return AdminIdea;
-        }
-        
-        
-        public static dc.Idea AdminCleanForUpdate(this dc.Idea cleanIdea)
-        {
-            var AdminIdea = default(dc.Idea);
-
-            if (!ReferenceEquals(cleanIdea, null))
-            {
-                AdminIdea = new dc.Idea()
-                {
-                    IdeaId = cleanIdea.IdeaId,
-                    Name = cleanIdea.Name,
-                    SourceIdea = cleanIdea.SourceIdea,
-                    Generations = cleanIdea.Generations,
-                    IsActiveIdea = cleanIdea.IsActiveIdea,
-                    IdeaTransformers = cleanIdea.IdeaTransformers,
-                    IdeaFeatures = cleanIdea.IdeaFeatures
-                };
-            }
-
-            return AdminIdea;
         }
 
     }

@@ -11,95 +11,6 @@ namespace CLIClassLibrary.ATDMQ
 	public partial class ATDAdmin : ATDActorBase
     {
        public ClaimsIdentity UserIdentity { get; set; } // IsUpdate: false
-       public IdeaTransformer AddIdeaTransformer(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.IdeaTransformer.AdminCleanForAdd());
-			}        
-        private string WrapAdminAddIdeaTransformerWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public IEnumerable<IdeaTransformer> GetIdeaTransformers(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetIdeaTransformers(WrapAdminGetIdeaTransformersWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
-			}        
-        private string WrapAdminGetIdeaTransformersWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: true
-       public IEnumerable<IdeaTransformer> UpdateIdeaTransformer(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				
-          if (!(Payload.IdeaTransformers is null))
-          {
-              return this.UpdateIdeaTransformers(api, Payload);
-          }
-          else
-          {
-              var updatedIdeaTransformer = api.Update(Payload.IdeaTransformer.AdminCleanForUpdate());
-              return new List<IdeaTransformer>(new IdeaTransformer[] { updatedIdeaTransformer });
-          }
-        
-			}        
-        private string WrapAdminUpdateIdeaTransformerWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-              
-        private List<IdeaTransformer> UpdateIdeaTransformers(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
-        {
-            if (!(payload.IdeaTransformers is null) && payload.IdeaTransformers.Any())
-            {
-                var updatedItems = new List<IdeaTransformer>();
-                payload.IdeaTransformers.ForEach(item =>
-                {
-                    var updatedIdeaTransformers = api.Update(item);
-                    updatedItems.Add(updatedIdeaTransformers);
-                });
-                return updatedItems;
-            }
-            else throw new Exception("Payload.Product or Payload.Products required to update products");
-        }
-      
- // IsUpdate: false
-       public void DeleteIdeaTransformer(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.IdeaTransformer);
-			}        
-        private string WrapAdminDeleteIdeaTransformerWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
        public AppUser AddAppUser(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
@@ -367,12 +278,12 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: false
-       public IdeaFeature AddIdeaFeature(StandardPayload Payload) {
+       public ExperimentTransformer AddExperimentTransformer(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.IdeaFeature.AdminCleanForAdd());
+				return api.Insert(Payload.ExperimentTransformer.AdminCleanForAdd());
 			}        
-        private string WrapAdminAddIdeaFeatureWhere(string airtableWhere)
+        private string WrapAdminAddExperimentTransformerWhere(string airtableWhere)
         {
                 
         
@@ -383,12 +294,12 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: false
-       public IEnumerable<IdeaFeature> GetIdeaFeatures(StandardPayload Payload) {
+       public IEnumerable<ExperimentTransformer> GetExperimentTransformers(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetIdeaFeatures(WrapAdminGetIdeaFeaturesWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
+				return api.GetExperimentTransformers(WrapAdminGetExperimentTransformersWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
 			}        
-        private string WrapAdminGetIdeaFeaturesWhere(string airtableWhere)
+        private string WrapAdminGetExperimentTransformersWhere(string airtableWhere)
         {
                 
         
@@ -399,22 +310,22 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: true
-       public IEnumerable<IdeaFeature> UpdateIdeaFeature(StandardPayload Payload) {
+       public IEnumerable<ExperimentTransformer> UpdateExperimentTransformer(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
 				
-          if (!(Payload.IdeaFeatures is null))
+          if (!(Payload.ExperimentTransformers is null))
           {
-              return this.UpdateIdeaFeatures(api, Payload);
+              return this.UpdateExperimentTransformers(api, Payload);
           }
           else
           {
-              var updatedIdeaFeature = api.Update(Payload.IdeaFeature.AdminCleanForUpdate());
-              return new List<IdeaFeature>(new IdeaFeature[] { updatedIdeaFeature });
+              var updatedExperimentTransformer = api.Update(Payload.ExperimentTransformer.AdminCleanForUpdate());
+              return new List<ExperimentTransformer>(new ExperimentTransformer[] { updatedExperimentTransformer });
           }
         
 			}        
-        private string WrapAdminUpdateIdeaFeatureWhere(string airtableWhere)
+        private string WrapAdminUpdateExperimentTransformerWhere(string airtableWhere)
         {
                 
         
@@ -424,15 +335,15 @@ namespace CLIClassLibrary.ATDMQ
         }
 
               
-        private List<IdeaFeature> UpdateIdeaFeatures(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
+        private List<ExperimentTransformer> UpdateExperimentTransformers(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
         {
-            if (!(payload.IdeaFeatures is null) && payload.IdeaFeatures.Any())
+            if (!(payload.ExperimentTransformers is null) && payload.ExperimentTransformers.Any())
             {
-                var updatedItems = new List<IdeaFeature>();
-                payload.IdeaFeatures.ForEach(item =>
+                var updatedItems = new List<ExperimentTransformer>();
+                payload.ExperimentTransformers.ForEach(item =>
                 {
-                    var updatedIdeaFeatures = api.Update(item);
-                    updatedItems.Add(updatedIdeaFeatures);
+                    var updatedExperimentTransformers = api.Update(item);
+                    updatedItems.Add(updatedExperimentTransformers);
                 });
                 return updatedItems;
             }
@@ -440,12 +351,101 @@ namespace CLIClassLibrary.ATDMQ
         }
       
  // IsUpdate: false
-       public void DeleteIdeaFeature(StandardPayload Payload) {
+       public void DeleteExperimentTransformer(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.IdeaFeature);
+				api.Delete(Payload.ExperimentTransformer);
 			}        
-        private string WrapAdminDeleteIdeaFeatureWhere(string airtableWhere)
+        private string WrapAdminDeleteExperimentTransformerWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
+       public ExperimentFeature AddExperimentFeature(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.Insert(Payload.ExperimentFeature.AdminCleanForAdd());
+			}        
+        private string WrapAdminAddExperimentFeatureWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
+       public IEnumerable<ExperimentFeature> GetExperimentFeatures(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.GetExperimentFeatures(WrapAdminGetExperimentFeaturesWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
+			}        
+        private string WrapAdminGetExperimentFeaturesWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: true
+       public IEnumerable<ExperimentFeature> UpdateExperimentFeature(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				
+          if (!(Payload.ExperimentFeatures is null))
+          {
+              return this.UpdateExperimentFeatures(api, Payload);
+          }
+          else
+          {
+              var updatedExperimentFeature = api.Update(Payload.ExperimentFeature.AdminCleanForUpdate());
+              return new List<ExperimentFeature>(new ExperimentFeature[] { updatedExperimentFeature });
+          }
+        
+			}        
+        private string WrapAdminUpdateExperimentFeatureWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+              
+        private List<ExperimentFeature> UpdateExperimentFeatures(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
+        {
+            if (!(payload.ExperimentFeatures is null) && payload.ExperimentFeatures.Any())
+            {
+                var updatedItems = new List<ExperimentFeature>();
+                payload.ExperimentFeatures.ForEach(item =>
+                {
+                    var updatedExperimentFeatures = api.Update(item);
+                    updatedItems.Add(updatedExperimentFeatures);
+                });
+                return updatedItems;
+            }
+            else throw new Exception("Payload.Product or Payload.Products required to update products");
+        }
+      
+ // IsUpdate: false
+       public void DeleteExperimentFeature(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				api.Delete(Payload.ExperimentFeature);
+			}        
+        private string WrapAdminDeleteExperimentFeatureWhere(string airtableWhere)
         {
                 
         
@@ -634,6 +634,95 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: false
+       public Experiment AddExperiment(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.Insert(Payload.Experiment.AdminCleanForAdd());
+			}        
+        private string WrapAdminAddExperimentWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
+       public IEnumerable<Experiment> GetExperiments(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.GetExperiments(WrapAdminGetExperimentsWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
+			}        
+        private string WrapAdminGetExperimentsWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: true
+       public IEnumerable<Experiment> UpdateExperiment(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				
+          if (!(Payload.Experiments is null))
+          {
+              return this.UpdateExperiments(api, Payload);
+          }
+          else
+          {
+              var updatedExperiment = api.Update(Payload.Experiment.AdminCleanForUpdate());
+              return new List<Experiment>(new Experiment[] { updatedExperiment });
+          }
+        
+			}        
+        private string WrapAdminUpdateExperimentWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+              
+        private List<Experiment> UpdateExperiments(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
+        {
+            if (!(payload.Experiments is null) && payload.Experiments.Any())
+            {
+                var updatedItems = new List<Experiment>();
+                payload.Experiments.ForEach(item =>
+                {
+                    var updatedExperiments = api.Update(item);
+                    updatedItems.Add(updatedExperiments);
+                });
+                return updatedItems;
+            }
+            else throw new Exception("Payload.Product or Payload.Products required to update products");
+        }
+      
+ // IsUpdate: false
+       public void DeleteExperiment(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				api.Delete(Payload.Experiment);
+			}        
+        private string WrapAdminDeleteExperimentWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
        public LLM AddLLM(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
@@ -713,95 +802,6 @@ namespace CLIClassLibrary.ATDMQ
 				api.Delete(Payload.LLM);
 			}        
         private string WrapAdminDeleteLLMWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public Idea AddIdea(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.Idea.AdminCleanForAdd());
-			}        
-        private string WrapAdminAddIdeaWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public IEnumerable<Idea> GetIdeas(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetIdeas(WrapAdminGetIdeasWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
-			}        
-        private string WrapAdminGetIdeasWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: true
-       public IEnumerable<Idea> UpdateIdea(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				
-          if (!(Payload.Ideas is null))
-          {
-              return this.UpdateIdeas(api, Payload);
-          }
-          else
-          {
-              var updatedIdea = api.Update(Payload.Idea.AdminCleanForUpdate());
-              return new List<Idea>(new Idea[] { updatedIdea });
-          }
-        
-			}        
-        private string WrapAdminUpdateIdeaWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-              
-        private List<Idea> UpdateIdeas(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
-        {
-            if (!(payload.Ideas is null) && payload.Ideas.Any())
-            {
-                var updatedItems = new List<Idea>();
-                payload.Ideas.ForEach(item =>
-                {
-                    var updatedIdeas = api.Update(item);
-                    updatedItems.Add(updatedIdeas);
-                });
-                return updatedItems;
-            }
-            else throw new Exception("Payload.Product or Payload.Products required to update products");
-        }
-      
- // IsUpdate: false
-       public void DeleteIdea(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.Idea);
-			}        
-        private string WrapAdminDeleteIdeaWhere(string airtableWhere)
         {
                 
         

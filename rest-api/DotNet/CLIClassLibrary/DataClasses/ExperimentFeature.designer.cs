@@ -7,7 +7,7 @@ using CoreLibrary.Extensions;
 
 namespace AirtableDirect.CLI.Lib.DataClasses
 {                            
-    public partial class IdeaFeature
+    public partial class ExperimentFeature
     {
         private void InitPoco()
         {
@@ -22,8 +22,8 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         
 
         
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IdeaFeatureId")]
-        public String IdeaFeatureId { get; set; }
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExperimentFeatureId")]
+        public String ExperimentFeatureId { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Name")]
         public String Name { get; set; }
@@ -40,17 +40,17 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExplicitlyRemovedAtGeneration")]
         public Nullable<Int32> ExplicitlyRemovedAtGeneration { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SourceIdea")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpAbstract")]
         [RemoteIsCollection]
-        public String SourceIdea { get; set; }
+        public String ExpAbstract { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Idea")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Experiment")]
         [RemoteIsCollection]
-        public String Idea { get; set; }
+        public String Experiment { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsActiveIdea")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsActiveExp")]
         [RemoteIsCollection]
-        public Nullable<Boolean> IsActiveIdea { get; set; }
+        public Nullable<Boolean> IsActiveExp { get; set; }
     
 
         

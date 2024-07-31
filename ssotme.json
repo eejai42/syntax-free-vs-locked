@@ -16,7 +16,7 @@
       },
       "Name": "AirtableToJson",
       "RelativePath": "/SSoT",
-      "CommandLine": "airtable/airtable-to-json -p doubleNest=false -p baseId=app9f8btt7lSPTpw1 -p entities=Ideas,IdeaTransformers,Generations,GenerationTransformers -p includeIdAndCreatedTime=false"
+      "CommandLine": "airtable/airtable-to-json -p doubleNest=false -p baseId=app9f8btt7lSPTpw1 -p entities=Experiments,ExperimentFeatures,ExperimentTransformers,Generations,GenerationTransformers -p includeIdAndCreatedTime=false"
     },
     {
       "MatchedTranspiler": {
@@ -44,6 +44,46 @@
       "Name": "OdxmlToNodeJSDocs",
       "RelativePath": "/RESEARCH-ODXML",
       "CommandLine": "odxml-to-node-js-docs -i .\\DataSchema.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "AirtableToJson",
+        "Description": "Export an Airtable Base as json"
+      },
+      "Name": "AirtableToJson",
+      "RelativePath": "/the-joneses/martini-scroller-app/public/mof-data",
+      "CommandLine": "airtable/airtable-to-json -p baseid=app9f8btt7lSPTpw1 -p entities=MOFLayers,MOFNodes,MOFChoices -o raw-data.json -p view=ForExport",
+      "IsDisabled": true
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/the-joneses/martini-scroller-app/public/mof-data",
+      "CommandLine": "xml-xslt-transform -i ./raw-data.xml -i ./trimmed-mof-data.xslt",
+      "IsDisabled": true
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlToJson",
+        "Description": "Converts XML to JSON using the NewtonSoft C# conversion tools."
+      },
+      "Name": "XmlToJson",
+      "RelativePath": "/the-joneses/martini-scroller-app/public/mof-data",
+      "CommandLine": "xml-to-json -i ./trimmed-mof-data.xml -o ../mof-data.json",
+      "IsDisabled": true
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "JsonHbarsTransform",
+        "Description": "Json-Hbars-Transform"
+      },
+      "Name": "JsonHbarsTransform",
+      "RelativePath": "/the-joneses/martini-scroller-app/public/docs",
+      "CommandLine": "json-hbars-transform -i ../mof-data.json -i ./README.hbars -o ./README.html",
+      "IsDisabled": true
     }
   ]
 }

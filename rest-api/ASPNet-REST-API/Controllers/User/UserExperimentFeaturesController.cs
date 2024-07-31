@@ -14,26 +14,26 @@ namespace ASPNet_REST_API.Controllers.Admin
 {
     [ApiController]
     [Route("/User")]
-    public class UserIdeaTransformersController : Controller
+    public class UserExperimentFeaturesController : Controller
     {
         
 
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpGet("IdeaTransformers")]
+        [HttpGet("ExperimentFeatures")]
         public IActionResult Index(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var results = new List<IdeaTransformer>();
+            var results = new List<ExperimentFeature>();
             try
             {
                 ATDUser atdUser = new ATDUser();
                 atdUser.EmailAddress = this.User.Identity.Name;
                 atdUser.UserIdentity = this.User.Identities.FirstOrDefault();
                 var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
-                results = atdUser.GetIdeaTransformers(payload)?.ToList();
+                results = atdUser.GetExperimentFeatures(payload)?.ToList();
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding IdeaTransformers: {ex.Message}", ex);
+                throw new Exception($"Error adding ExperimentFeatures: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(results, Formatting.Indented);
 
@@ -44,11 +44,11 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPost("IdeaTransformers")]
-        [HttpPost("IdeaTransformer")]
+        [HttpPost("ExperimentFeatures")]
+        [HttpPost("ExperimentFeature")]
         public IActionResult Add(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = default(IdeaTransformer);
+            var result = default(ExperimentFeature);
             try
             {
                 ATDUser atdUser = new ATDUser();
@@ -59,14 +59,14 @@ namespace ASPNet_REST_API.Controllers.Admin
                     var body = reader.ReadToEndAsync().GetAwaiter().GetResult();
                     var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.IdeaTransformer = bodyAsPayload.IdeaTransformer.UserCleanForAdd();
-                    if (payload.IdeaTransformer is null) payload.IdeaTransformer = JsonConvert.DeserializeObject<IdeaTransformer>(body).UserCleanForAdd();
-                    result = atdUser.AddIdeaTransformer(payload).UserCleanForGet();
+                    if (bodyAsPayload != null) payload.ExperimentFeature = bodyAsPayload.ExperimentFeature.UserCleanForAdd();
+                    if (payload.ExperimentFeature is null) payload.ExperimentFeature = JsonConvert.DeserializeObject<ExperimentFeature>(body).UserCleanForAdd();
+                    result = atdUser.AddExperimentFeature(payload).UserCleanForGet();
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding IdeaTransformers: {ex.Message}", ex);
+                throw new Exception($"Error adding ExperimentFeatures: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -77,10 +77,10 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPut("IdeaTransformer")]
+        [HttpPut("ExperimentFeature")]
         public IActionResult Update(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = new IdeaTransformer();
+            var result = new ExperimentFeature();
             try
             {
                 using (var reader = new StreamReader(this.Request.Body))
@@ -90,15 +90,15 @@ namespace ASPNet_REST_API.Controllers.Admin
                     atdUser.EmailAddress = this.User.Identity.Name;
                     var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.IdeaTransformer = bodyAsPayload.IdeaTransformer.UserCleanForAdd();
-                    if (payload.IdeaTransformer is null) payload.IdeaTransformer = JsonConvert.DeserializeObject<IdeaTransformer>(body).UserCleanForAdd();
-                    result = atdUser.UpdateIdeaTransformer(payload)?.FirstOrDefault();
+                    if (bodyAsPayload != null) payload.ExperimentFeature = bodyAsPayload.ExperimentFeature.UserCleanForAdd();
+                    if (payload.ExperimentFeature is null) payload.ExperimentFeature = JsonConvert.DeserializeObject<ExperimentFeature>(body).UserCleanForAdd();
+                    result = atdUser.UpdateExperimentFeature(payload)?.FirstOrDefault();
                 }
 
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error updating IdeaTransformers: {ex.Message}", ex);
+                throw new Exception($"Error updating ExperimentFeatures: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -109,20 +109,20 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpDelete("IdeaTransformer")]
+        [HttpDelete("ExperimentFeature")]
         public IActionResult Delete(string id)
         {
             try {
                 ATDUser atdUser = new ATDUser();
                 atdUser.EmailAddress = this.User.Identity.Name;
                 var payload = atdUser.CreatePayload();
-                payload.IdeaTransformer = new IdeaTransformer() { IdeaTransformerId = id };
-                atdUser.DeleteIdeaTransformer(payload);
+                payload.ExperimentFeature = new ExperimentFeature() { ExperimentFeatureId = id };
+                atdUser.DeleteExperimentFeature(payload);
                 var json = JsonConvert.SerializeObject(true, Formatting.Indented);
                 return Content(json, "application/json");    
             } 
             catch (Exception ex) {
-                throw new Exception($"Error updating IdeaTransformers: {ex.Message}", ex);
+                throw new Exception($"Error updating ExperimentFeatures: {ex.Message}", ex);
             }
         }                        
     }

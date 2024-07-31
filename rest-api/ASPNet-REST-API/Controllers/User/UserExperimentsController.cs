@@ -14,26 +14,26 @@ namespace ASPNet_REST_API.Controllers.Admin
 {
     [ApiController]
     [Route("/User")]
-    public class UserIdeasController : Controller
+    public class UserExperimentsController : Controller
     {
         
 
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpGet("Ideas")]
+        [HttpGet("Experiments")]
         public IActionResult Index(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var results = new List<Idea>();
+            var results = new List<Experiment>();
             try
             {
                 ATDUser atdUser = new ATDUser();
                 atdUser.EmailAddress = this.User.Identity.Name;
                 atdUser.UserIdentity = this.User.Identities.FirstOrDefault();
                 var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
-                results = atdUser.GetIdeas(payload)?.ToList();
+                results = atdUser.GetExperiments(payload)?.ToList();
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding Ideas: {ex.Message}", ex);
+                throw new Exception($"Error adding Experiments: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(results, Formatting.Indented);
 
@@ -44,11 +44,11 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPost("Ideas")]
-        [HttpPost("Idea")]
+        [HttpPost("Experiments")]
+        [HttpPost("Experiment")]
         public IActionResult Add(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = default(Idea);
+            var result = default(Experiment);
             try
             {
                 ATDUser atdUser = new ATDUser();
@@ -59,14 +59,14 @@ namespace ASPNet_REST_API.Controllers.Admin
                     var body = reader.ReadToEndAsync().GetAwaiter().GetResult();
                     var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.Idea = bodyAsPayload.Idea.UserCleanForAdd();
-                    if (payload.Idea is null) payload.Idea = JsonConvert.DeserializeObject<Idea>(body).UserCleanForAdd();
-                    result = atdUser.AddIdea(payload).UserCleanForGet();
+                    if (bodyAsPayload != null) payload.Experiment = bodyAsPayload.Experiment.UserCleanForAdd();
+                    if (payload.Experiment is null) payload.Experiment = JsonConvert.DeserializeObject<Experiment>(body).UserCleanForAdd();
+                    result = atdUser.AddExperiment(payload).UserCleanForGet();
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding Ideas: {ex.Message}", ex);
+                throw new Exception($"Error adding Experiments: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -77,10 +77,10 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPut("Idea")]
+        [HttpPut("Experiment")]
         public IActionResult Update(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = new Idea();
+            var result = new Experiment();
             try
             {
                 using (var reader = new StreamReader(this.Request.Body))
@@ -90,15 +90,15 @@ namespace ASPNet_REST_API.Controllers.Admin
                     atdUser.EmailAddress = this.User.Identity.Name;
                     var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.Idea = bodyAsPayload.Idea.UserCleanForAdd();
-                    if (payload.Idea is null) payload.Idea = JsonConvert.DeserializeObject<Idea>(body).UserCleanForAdd();
-                    result = atdUser.UpdateIdea(payload)?.FirstOrDefault();
+                    if (bodyAsPayload != null) payload.Experiment = bodyAsPayload.Experiment.UserCleanForAdd();
+                    if (payload.Experiment is null) payload.Experiment = JsonConvert.DeserializeObject<Experiment>(body).UserCleanForAdd();
+                    result = atdUser.UpdateExperiment(payload)?.FirstOrDefault();
                 }
 
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error updating Ideas: {ex.Message}", ex);
+                throw new Exception($"Error updating Experiments: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -109,20 +109,20 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpDelete("Idea")]
+        [HttpDelete("Experiment")]
         public IActionResult Delete(string id)
         {
             try {
                 ATDUser atdUser = new ATDUser();
                 atdUser.EmailAddress = this.User.Identity.Name;
                 var payload = atdUser.CreatePayload();
-                payload.Idea = new Idea() { IdeaId = id };
-                atdUser.DeleteIdea(payload);
+                payload.Experiment = new Experiment() { ExperimentId = id };
+                atdUser.DeleteExperiment(payload);
                 var json = JsonConvert.SerializeObject(true, Formatting.Indented);
                 return Content(json, "application/json");    
             } 
             catch (Exception ex) {
-                throw new Exception($"Error updating Ideas: {ex.Message}", ex);
+                throw new Exception($"Error updating Experiments: {ex.Message}", ex);
             }
         }                        
     }

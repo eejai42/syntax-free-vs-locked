@@ -9,16 +9,16 @@ using System.ComponentModel;
 namespace AirtableDirect.CLI.Lib.DataClasses
 {                   
     
-    public partial class IdeaTransformer 
+    public partial class ExperimentTransformer 
     {
-        public IdeaTransformer()
+        public ExperimentTransformer()
         {
             this.InitPoco();
         }
 
         public override String ToString()
         {
-            return String.Format("IdeaTransformer: {0}", this.Name);
+            return String.Format("ExperimentTransformer: {0}", this.Name);
         }
                             
     }

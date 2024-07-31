@@ -18,44 +18,6 @@ namespace AirtableToDotNet.APIWrapper
     {
         
         /// <summary>
-        /// Called before a ideatransformer is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="ideatransformer">The ideatransformer to update</param>
-        partial void BeforeUpdateIdeaTransformer(dc.IdeaTransformer ideatransformer);
-
-        /// <summary>
-        /// Called after a ideatransformer is updated
-        /// </summary>
-        /// <param name="ideatransformer">The ideatransformer which was updated</param>
-        partial void AfterUpdateIdeaTransformer(dc.IdeaTransformer ideatransformer);
-
-        /// <summary>
-        /// Called before a ideatransformer is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="ideatransformer">The ideatransformer to add</param>
-        partial void BeforeAddIdeaTransformer(dc.IdeaTransformer ideatransformer);
-
-        /// <summary>
-        /// Called after a ideatransformer is added
-        /// </summary>
-        /// <param name="ideatransformer">The ideatransformer which was added</param>
-        partial void AfterAddIdeaTransformer(dc.IdeaTransformer ideatransformer);
-
-        /// <summary>
-        /// Called before a ideatransformer is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="ideatransformer">The ideatransformer to add</param>
-        partial void BeforeDeleteIdeaTransformer(dc.IdeaTransformer ideatransformer);
-
-        /// <summary>
-        /// Called after a ideatransformer is deleted
-        /// </summary>
-        /// <param name="ideatransformer">The ideatransformer which was deleted</param>
-        partial void AfterDeleteIdeaTransformer(dc.IdeaTransformer ideatransformer);
-        /// <summary>
         /// Called before a appuser is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
@@ -170,43 +132,81 @@ namespace AirtableToDotNet.APIWrapper
         /// <param name="generation">The generation which was deleted</param>
         partial void AfterDeleteGeneration(dc.Generation generation);
         /// <summary>
-        /// Called before a ideafeature is updated.  Throw a SkipOperationException 
+        /// Called before a experimenttransformer is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
-        /// <param name="ideafeature">The ideafeature to update</param>
-        partial void BeforeUpdateIdeaFeature(dc.IdeaFeature ideafeature);
+        /// <param name="experimenttransformer">The experimenttransformer to update</param>
+        partial void BeforeUpdateExperimentTransformer(dc.ExperimentTransformer experimenttransformer);
 
         /// <summary>
-        /// Called after a ideafeature is updated
+        /// Called after a experimenttransformer is updated
         /// </summary>
-        /// <param name="ideafeature">The ideafeature which was updated</param>
-        partial void AfterUpdateIdeaFeature(dc.IdeaFeature ideafeature);
+        /// <param name="experimenttransformer">The experimenttransformer which was updated</param>
+        partial void AfterUpdateExperimentTransformer(dc.ExperimentTransformer experimenttransformer);
 
         /// <summary>
-        /// Called before a ideafeature is added.  Throw a SkipOperationException 
+        /// Called before a experimenttransformer is added.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
-        /// <param name="ideafeature">The ideafeature to add</param>
-        partial void BeforeAddIdeaFeature(dc.IdeaFeature ideafeature);
+        /// <param name="experimenttransformer">The experimenttransformer to add</param>
+        partial void BeforeAddExperimentTransformer(dc.ExperimentTransformer experimenttransformer);
 
         /// <summary>
-        /// Called after a ideafeature is added
+        /// Called after a experimenttransformer is added
         /// </summary>
-        /// <param name="ideafeature">The ideafeature which was added</param>
-        partial void AfterAddIdeaFeature(dc.IdeaFeature ideafeature);
+        /// <param name="experimenttransformer">The experimenttransformer which was added</param>
+        partial void AfterAddExperimentTransformer(dc.ExperimentTransformer experimenttransformer);
 
         /// <summary>
-        /// Called before a ideafeature is deleted.  Throw a SkipOperationException 
+        /// Called before a experimenttransformer is deleted.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
-        /// <param name="ideafeature">The ideafeature to add</param>
-        partial void BeforeDeleteIdeaFeature(dc.IdeaFeature ideafeature);
+        /// <param name="experimenttransformer">The experimenttransformer to add</param>
+        partial void BeforeDeleteExperimentTransformer(dc.ExperimentTransformer experimenttransformer);
 
         /// <summary>
-        /// Called after a ideafeature is deleted
+        /// Called after a experimenttransformer is deleted
         /// </summary>
-        /// <param name="ideafeature">The ideafeature which was deleted</param>
-        partial void AfterDeleteIdeaFeature(dc.IdeaFeature ideafeature);
+        /// <param name="experimenttransformer">The experimenttransformer which was deleted</param>
+        partial void AfterDeleteExperimentTransformer(dc.ExperimentTransformer experimenttransformer);
+        /// <summary>
+        /// Called before a experimentfeature is updated.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="experimentfeature">The experimentfeature to update</param>
+        partial void BeforeUpdateExperimentFeature(dc.ExperimentFeature experimentfeature);
+
+        /// <summary>
+        /// Called after a experimentfeature is updated
+        /// </summary>
+        /// <param name="experimentfeature">The experimentfeature which was updated</param>
+        partial void AfterUpdateExperimentFeature(dc.ExperimentFeature experimentfeature);
+
+        /// <summary>
+        /// Called before a experimentfeature is added.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="experimentfeature">The experimentfeature to add</param>
+        partial void BeforeAddExperimentFeature(dc.ExperimentFeature experimentfeature);
+
+        /// <summary>
+        /// Called after a experimentfeature is added
+        /// </summary>
+        /// <param name="experimentfeature">The experimentfeature which was added</param>
+        partial void AfterAddExperimentFeature(dc.ExperimentFeature experimentfeature);
+
+        /// <summary>
+        /// Called before a experimentfeature is deleted.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="experimentfeature">The experimentfeature to add</param>
+        partial void BeforeDeleteExperimentFeature(dc.ExperimentFeature experimentfeature);
+
+        /// <summary>
+        /// Called after a experimentfeature is deleted
+        /// </summary>
+        /// <param name="experimentfeature">The experimentfeature which was deleted</param>
+        partial void AfterDeleteExperimentFeature(dc.ExperimentFeature experimentfeature);
         /// <summary>
         /// Called before a transformedartifact is updated.  Throw a SkipOperationException 
         /// if the update should not happen
@@ -284,6 +284,44 @@ namespace AirtableToDotNet.APIWrapper
         /// <param name="designdecision">The designdecision which was deleted</param>
         partial void AfterDeleteDesignDecision(dc.DesignDecision designdecision);
         /// <summary>
+        /// Called before a experiment is updated.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="experiment">The experiment to update</param>
+        partial void BeforeUpdateExperiment(dc.Experiment experiment);
+
+        /// <summary>
+        /// Called after a experiment is updated
+        /// </summary>
+        /// <param name="experiment">The experiment which was updated</param>
+        partial void AfterUpdateExperiment(dc.Experiment experiment);
+
+        /// <summary>
+        /// Called before a experiment is added.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="experiment">The experiment to add</param>
+        partial void BeforeAddExperiment(dc.Experiment experiment);
+
+        /// <summary>
+        /// Called after a experiment is added
+        /// </summary>
+        /// <param name="experiment">The experiment which was added</param>
+        partial void AfterAddExperiment(dc.Experiment experiment);
+
+        /// <summary>
+        /// Called before a experiment is deleted.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="experiment">The experiment to add</param>
+        partial void BeforeDeleteExperiment(dc.Experiment experiment);
+
+        /// <summary>
+        /// Called after a experiment is deleted
+        /// </summary>
+        /// <param name="experiment">The experiment which was deleted</param>
+        partial void AfterDeleteExperiment(dc.Experiment experiment);
+        /// <summary>
         /// Called before a llm is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
@@ -321,44 +359,6 @@ namespace AirtableToDotNet.APIWrapper
         /// </summary>
         /// <param name="llm">The llm which was deleted</param>
         partial void AfterDeleteLLM(dc.LLM llm);
-        /// <summary>
-        /// Called before a idea is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="idea">The idea to update</param>
-        partial void BeforeUpdateIdea(dc.Idea idea);
-
-        /// <summary>
-        /// Called after a idea is updated
-        /// </summary>
-        /// <param name="idea">The idea which was updated</param>
-        partial void AfterUpdateIdea(dc.Idea idea);
-
-        /// <summary>
-        /// Called before a idea is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="idea">The idea to add</param>
-        partial void BeforeAddIdea(dc.Idea idea);
-
-        /// <summary>
-        /// Called after a idea is added
-        /// </summary>
-        /// <param name="idea">The idea which was added</param>
-        partial void AfterAddIdea(dc.Idea idea);
-
-        /// <summary>
-        /// Called before a idea is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="idea">The idea to add</param>
-        partial void BeforeDeleteIdea(dc.Idea idea);
-
-        /// <summary>
-        /// Called after a idea is deleted
-        /// </summary>
-        /// <param name="idea">The idea which was deleted</param>
-        partial void AfterDeleteIdea(dc.Idea idea);
 
         /// <summary>
         /// Throw this exception to SKIP a CRUD operation like update, insert or delete
@@ -382,78 +382,6 @@ namespace AirtableToDotNet.APIWrapper
             }
         }
 
-        /// <summary>
-        /// Returns a list of IdeaTransformers
-        /// </summary>
-        /// <param name="view">the specific view to pull IdeaTransformers from</param>
-        /// <returns>The list of IdeaTransformers from the given view</returns>
-        public IEnumerable<dc.IdeaTransformer> GetIdeaTransformers(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("IdeaTransformer", "IdeaTransformers", "IdeaTransformers", where, view, maxPages);
-            return rows.ConvertTo<dc.IdeaTransformer>();
-        }
-
-        /// <summary>
-        /// Update the given ideatransformer
-        /// </summary>
-        /// <param name="ideatransformer">The ideatransformer to update</param>
-        public dc.IdeaTransformer Update(dc.IdeaTransformer ideatransformer)
-        {
-            try
-            {
-                this.BeforeUpdateIdeaTransformer(ideatransformer);
-                ideatransformer = this.UpdateAirtableRow<dc.IdeaTransformer>("IdeaTransformer", "IdeaTransformers", "IdeaTransformers", ideatransformer);
-                this.AfterUpdateIdeaTransformer(ideatransformer);
-                return ideatransformer;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given ideatransformer
-        /// </summary>
-        /// <param name="ideatransformer">The ideatransformer to delete</param>
-        public void Delete(dc.IdeaTransformer ideatransformer)
-        {
-            try
-            {
-                this.BeforeDeleteIdeaTransformer(ideatransformer);
-                this.DeleteAirtableRow<dc.IdeaTransformer>("IdeaTransformers", ideatransformer);
-                this.AfterDeleteIdeaTransformer(ideatransformer);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new ideatransformer into the airtable
-        /// </summary>
-        /// <param name="ideatransformer">The ideatransformer to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.IdeaTransformer Insert(dc.IdeaTransformer ideatransformer)
-        {
-            try
-            {
-                this.BeforeAddIdeaTransformer(ideatransformer);
-                ideatransformer = base.AddAirtableRow<dc.IdeaTransformer>("IdeaTransformer", "IdeaTransformers", "IdeaTransformers", ideatransformer);
-                this.AfterAddIdeaTransformer(ideatransformer);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return ideatransformer;
-        }
         /// <summary>
         /// Returns a list of AppUsers
         /// </summary>
@@ -671,28 +599,28 @@ namespace AirtableToDotNet.APIWrapper
             return generation;
         }
         /// <summary>
-        /// Returns a list of IdeaFeatures
+        /// Returns a list of ExperimentTransformers
         /// </summary>
-        /// <param name="view">the specific view to pull IdeaFeatures from</param>
-        /// <returns>The list of IdeaFeatures from the given view</returns>
-        public IEnumerable<dc.IdeaFeature> GetIdeaFeatures(String where = "", String view = "", int maxPages = 5)
+        /// <param name="view">the specific view to pull ExperimentTransformers from</param>
+        /// <returns>The list of ExperimentTransformers from the given view</returns>
+        public IEnumerable<dc.ExperimentTransformer> GetExperimentTransformers(String where = "", String view = "", int maxPages = 5)
         {
-            var rows = this.GetTableAsAirtableRows("IdeaFeature", "IdeaFeatures", "IdeaFeatures", where, view, maxPages);
-            return rows.ConvertTo<dc.IdeaFeature>();
+            var rows = this.GetTableAsAirtableRows("ExperimentTransformer", "ExperimentTransformers", "ExperimentTransformers", where, view, maxPages);
+            return rows.ConvertTo<dc.ExperimentTransformer>();
         }
 
         /// <summary>
-        /// Update the given ideafeature
+        /// Update the given experimenttransformer
         /// </summary>
-        /// <param name="ideafeature">The ideafeature to update</param>
-        public dc.IdeaFeature Update(dc.IdeaFeature ideafeature)
+        /// <param name="experimenttransformer">The experimenttransformer to update</param>
+        public dc.ExperimentTransformer Update(dc.ExperimentTransformer experimenttransformer)
         {
             try
             {
-                this.BeforeUpdateIdeaFeature(ideafeature);
-                ideafeature = this.UpdateAirtableRow<dc.IdeaFeature>("IdeaFeature", "IdeaFeatures", "IdeaFeatures", ideafeature);
-                this.AfterUpdateIdeaFeature(ideafeature);
-                return ideafeature;
+                this.BeforeUpdateExperimentTransformer(experimenttransformer);
+                experimenttransformer = this.UpdateAirtableRow<dc.ExperimentTransformer>("ExperimentTransformer", "ExperimentTransformers", "ExperimentTransformers", experimenttransformer);
+                this.AfterUpdateExperimentTransformer(experimenttransformer);
+                return experimenttransformer;
             }
             catch (SkipOperationException soe)
             {
@@ -703,16 +631,16 @@ namespace AirtableToDotNet.APIWrapper
         }
 
         /// <summary>
-        /// Delete the given ideafeature
+        /// Delete the given experimenttransformer
         /// </summary>
-        /// <param name="ideafeature">The ideafeature to delete</param>
-        public void Delete(dc.IdeaFeature ideafeature)
+        /// <param name="experimenttransformer">The experimenttransformer to delete</param>
+        public void Delete(dc.ExperimentTransformer experimenttransformer)
         {
             try
             {
-                this.BeforeDeleteIdeaFeature(ideafeature);
-                this.DeleteAirtableRow<dc.IdeaFeature>("IdeaFeatures", ideafeature);
-                this.AfterDeleteIdeaFeature(ideafeature);
+                this.BeforeDeleteExperimentTransformer(experimenttransformer);
+                this.DeleteAirtableRow<dc.ExperimentTransformer>("ExperimentTransformers", experimenttransformer);
+                this.AfterDeleteExperimentTransformer(experimenttransformer);
             }
             catch (SkipOperationException soe)
             {
@@ -722,17 +650,17 @@ namespace AirtableToDotNet.APIWrapper
         }
 
         /// <summary>
-        /// Insert a new ideafeature into the airtable
+        /// Insert a new experimenttransformer into the airtable
         /// </summary>
-        /// <param name="ideafeature">The ideafeature to insert into the airtable</param>
+        /// <param name="experimenttransformer">The experimenttransformer to insert into the airtable</param>
         /// <returns></returns>
-        public dc.IdeaFeature Insert(dc.IdeaFeature ideafeature)
+        public dc.ExperimentTransformer Insert(dc.ExperimentTransformer experimenttransformer)
         {
             try
             {
-                this.BeforeAddIdeaFeature(ideafeature);
-                ideafeature = base.AddAirtableRow<dc.IdeaFeature>("IdeaFeature", "IdeaFeatures", "IdeaFeatures", ideafeature);
-                this.AfterAddIdeaFeature(ideafeature);                
+                this.BeforeAddExperimentTransformer(experimenttransformer);
+                experimenttransformer = base.AddAirtableRow<dc.ExperimentTransformer>("ExperimentTransformer", "ExperimentTransformers", "ExperimentTransformers", experimenttransformer);
+                this.AfterAddExperimentTransformer(experimenttransformer);                
             }
             catch (SkipOperationException soe)
             {
@@ -740,7 +668,79 @@ namespace AirtableToDotNet.APIWrapper
                 // Console.WriteLine("Ignoring: {0}", soe.Message);
             }
 
-            return ideafeature;
+            return experimenttransformer;
+        }
+        /// <summary>
+        /// Returns a list of ExperimentFeatures
+        /// </summary>
+        /// <param name="view">the specific view to pull ExperimentFeatures from</param>
+        /// <returns>The list of ExperimentFeatures from the given view</returns>
+        public IEnumerable<dc.ExperimentFeature> GetExperimentFeatures(String where = "", String view = "", int maxPages = 5)
+        {
+            var rows = this.GetTableAsAirtableRows("ExperimentFeature", "ExperimentFeatures", "ExperimentFeatures", where, view, maxPages);
+            return rows.ConvertTo<dc.ExperimentFeature>();
+        }
+
+        /// <summary>
+        /// Update the given experimentfeature
+        /// </summary>
+        /// <param name="experimentfeature">The experimentfeature to update</param>
+        public dc.ExperimentFeature Update(dc.ExperimentFeature experimentfeature)
+        {
+            try
+            {
+                this.BeforeUpdateExperimentFeature(experimentfeature);
+                experimentfeature = this.UpdateAirtableRow<dc.ExperimentFeature>("ExperimentFeature", "ExperimentFeatures", "ExperimentFeatures", experimentfeature);
+                this.AfterUpdateExperimentFeature(experimentfeature);
+                return experimentfeature;
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Delete the given experimentfeature
+        /// </summary>
+        /// <param name="experimentfeature">The experimentfeature to delete</param>
+        public void Delete(dc.ExperimentFeature experimentfeature)
+        {
+            try
+            {
+                this.BeforeDeleteExperimentFeature(experimentfeature);
+                this.DeleteAirtableRow<dc.ExperimentFeature>("ExperimentFeatures", experimentfeature);
+                this.AfterDeleteExperimentFeature(experimentfeature);
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+        }
+
+        /// <summary>
+        /// Insert a new experimentfeature into the airtable
+        /// </summary>
+        /// <param name="experimentfeature">The experimentfeature to insert into the airtable</param>
+        /// <returns></returns>
+        public dc.ExperimentFeature Insert(dc.ExperimentFeature experimentfeature)
+        {
+            try
+            {
+                this.BeforeAddExperimentFeature(experimentfeature);
+                experimentfeature = base.AddAirtableRow<dc.ExperimentFeature>("ExperimentFeature", "ExperimentFeatures", "ExperimentFeatures", experimentfeature);
+                this.AfterAddExperimentFeature(experimentfeature);                
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+
+            return experimentfeature;
         }
         /// <summary>
         /// Returns a list of TransformedArtifacts
@@ -887,6 +887,78 @@ namespace AirtableToDotNet.APIWrapper
             return designdecision;
         }
         /// <summary>
+        /// Returns a list of Experiments
+        /// </summary>
+        /// <param name="view">the specific view to pull Experiments from</param>
+        /// <returns>The list of Experiments from the given view</returns>
+        public IEnumerable<dc.Experiment> GetExperiments(String where = "", String view = "", int maxPages = 5)
+        {
+            var rows = this.GetTableAsAirtableRows("Experiment", "Experiments", "Experiments", where, view, maxPages);
+            return rows.ConvertTo<dc.Experiment>();
+        }
+
+        /// <summary>
+        /// Update the given experiment
+        /// </summary>
+        /// <param name="experiment">The experiment to update</param>
+        public dc.Experiment Update(dc.Experiment experiment)
+        {
+            try
+            {
+                this.BeforeUpdateExperiment(experiment);
+                experiment = this.UpdateAirtableRow<dc.Experiment>("Experiment", "Experiments", "Experiments", experiment);
+                this.AfterUpdateExperiment(experiment);
+                return experiment;
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Delete the given experiment
+        /// </summary>
+        /// <param name="experiment">The experiment to delete</param>
+        public void Delete(dc.Experiment experiment)
+        {
+            try
+            {
+                this.BeforeDeleteExperiment(experiment);
+                this.DeleteAirtableRow<dc.Experiment>("Experiments", experiment);
+                this.AfterDeleteExperiment(experiment);
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+        }
+
+        /// <summary>
+        /// Insert a new experiment into the airtable
+        /// </summary>
+        /// <param name="experiment">The experiment to insert into the airtable</param>
+        /// <returns></returns>
+        public dc.Experiment Insert(dc.Experiment experiment)
+        {
+            try
+            {
+                this.BeforeAddExperiment(experiment);
+                experiment = base.AddAirtableRow<dc.Experiment>("Experiment", "Experiments", "Experiments", experiment);
+                this.AfterAddExperiment(experiment);                
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+
+            return experiment;
+        }
+        /// <summary>
         /// Returns a list of LLMs
         /// </summary>
         /// <param name="view">the specific view to pull LLMs from</param>
@@ -957,78 +1029,6 @@ namespace AirtableToDotNet.APIWrapper
             }
 
             return llm;
-        }
-        /// <summary>
-        /// Returns a list of Ideas
-        /// </summary>
-        /// <param name="view">the specific view to pull Ideas from</param>
-        /// <returns>The list of Ideas from the given view</returns>
-        public IEnumerable<dc.Idea> GetIdeas(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("Idea", "Ideas", "Ideas", where, view, maxPages);
-            return rows.ConvertTo<dc.Idea>();
-        }
-
-        /// <summary>
-        /// Update the given idea
-        /// </summary>
-        /// <param name="idea">The idea to update</param>
-        public dc.Idea Update(dc.Idea idea)
-        {
-            try
-            {
-                this.BeforeUpdateIdea(idea);
-                idea = this.UpdateAirtableRow<dc.Idea>("Idea", "Ideas", "Ideas", idea);
-                this.AfterUpdateIdea(idea);
-                return idea;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given idea
-        /// </summary>
-        /// <param name="idea">The idea to delete</param>
-        public void Delete(dc.Idea idea)
-        {
-            try
-            {
-                this.BeforeDeleteIdea(idea);
-                this.DeleteAirtableRow<dc.Idea>("Ideas", idea);
-                this.AfterDeleteIdea(idea);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new idea into the airtable
-        /// </summary>
-        /// <param name="idea">The idea to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.Idea Insert(dc.Idea idea)
-        {
-            try
-            {
-                this.BeforeAddIdea(idea);
-                idea = base.AddAirtableRow<dc.Idea>("Idea", "Ideas", "Ideas", idea);
-                this.AfterAddIdea(idea);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return idea;
         }
     }
 }
