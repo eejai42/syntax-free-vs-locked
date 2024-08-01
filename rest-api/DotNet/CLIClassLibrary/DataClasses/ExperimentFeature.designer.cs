@@ -52,6 +52,12 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public Nullable<Boolean> IsActiveExp { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Variations")]
+        public String Variations { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "PartialMatches")]
+        public String PartialMatches { get; set; }
+    
 
         
 

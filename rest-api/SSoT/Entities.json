@@ -36,6 +36,13 @@
                 "AirtableName": "Trials"
             },
             {
+                "Name": "ArtifactAnalysi",
+                "DisplayName": "ArtifactAnalysi",
+                "Description": "",
+                "PluralName": "ArtifactAnalysis",
+                "AirtableName": "ArtifactAnalysis"
+            },
+            {
                 "Name": "ExperimentTransformer",
                 "DisplayName": "ExperimentTransformer",
                 "Description": "",

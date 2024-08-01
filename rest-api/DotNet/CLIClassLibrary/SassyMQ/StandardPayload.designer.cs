@@ -30,6 +30,9 @@ namespace YP.SassyMQ.Lib.RabbitMQ
         public Trial Trial { get; set; }
         public List<Trial> Trials { get; set; }
         
+        public ArtifactAnalysi ArtifactAnalysi { get; set; }
+        public List<ArtifactAnalysi> ArtifactAnalysis { get; set; }
+        
         public ExperimentTransformer ExperimentTransformer { get; set; }
         public List<ExperimentTransformer> ExperimentTransformers { get; set; }
         

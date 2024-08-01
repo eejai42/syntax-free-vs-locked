@@ -45,6 +45,19 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Created")]
         public Nullable<DateTime> Created { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "DesiredPromptChainCount")]
+        public Nullable<Int32> DesiredPromptChainCount { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TrialArtifactCount")]
+        public Nullable<Int32> TrialArtifactCount { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GatherTrialDataScript")]
+        public String GatherTrialDataScript { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExperimentRunTrialScript")]
+        [RemoteIsCollection]
+        public String ExperimentRunTrialScript { get; set; }
+    
 
         
 

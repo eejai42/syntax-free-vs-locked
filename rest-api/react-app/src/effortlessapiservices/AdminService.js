@@ -145,6 +145,34 @@ class AdminService extends BaseService {
     
         
     
+    async AddArtifactAnalysi(ArtifactAnalysi) { 
+        return this.apiCall("POST", "Admin", "ArtifactAnalysi", null, ArtifactAnalysi); // ArtifactAnalysi
+   }
+    
+    
+        
+    
+    async GetArtifactAnalysis(view) { 
+        return this.apiCall("GET", "Admin", "ArtifactAnalysis", view, null); // ArtifactAnalysi
+   }
+    
+    
+        
+    
+    async UpdateArtifactAnalysi(ArtifactAnalysi) {
+        return this.apiCall("PUT", "Admin", "ArtifactAnalysi", null, ArtifactAnalysi); // ArtifactAnalysi
+   }
+    
+    
+        
+    
+    async DeleteArtifactAnalysi(id) { 
+        return this.apiCall("DELETE", "Admin", "ArtifactAnalysi", null, id); // ArtifactAnalysi
+   }
+    
+    
+        
+    
     async AddExperimentTransformer(ExperimentTransformer) { 
         return this.apiCall("POST", "Admin", "ExperimentTransformer", null, ExperimentTransformer); // ExperimentTransformer
    }

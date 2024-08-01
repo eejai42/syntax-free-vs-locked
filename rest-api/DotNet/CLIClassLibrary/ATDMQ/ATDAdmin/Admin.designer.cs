@@ -456,6 +456,95 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: false
+       public ArtifactAnalysi AddArtifactAnalysi(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.Insert(Payload.ArtifactAnalysi.AdminCleanForAdd());
+			}        
+        private string WrapAdminAddArtifactAnalysiWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
+       public IEnumerable<ArtifactAnalysi> GetArtifactAnalysis(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.GetArtifactAnalysis(WrapAdminGetArtifactAnalysisWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).AdminCleanForGet();
+			}        
+        private string WrapAdminGetArtifactAnalysisWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: true
+       public IEnumerable<ArtifactAnalysi> UpdateArtifactAnalysi(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				
+          if (!(Payload.ArtifactAnalysis is null))
+          {
+              return this.UpdateArtifactAnalysis(api, Payload);
+          }
+          else
+          {
+              var updatedArtifactAnalysi = api.Update(Payload.ArtifactAnalysi.AdminCleanForUpdate());
+              return new List<ArtifactAnalysi>(new ArtifactAnalysi[] { updatedArtifactAnalysi });
+          }
+        
+			}        
+        private string WrapAdminUpdateArtifactAnalysiWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+              
+        private List<ArtifactAnalysi> UpdateArtifactAnalysis(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
+        {
+            if (!(payload.ArtifactAnalysis is null) && payload.ArtifactAnalysis.Any())
+            {
+                var updatedItems = new List<ArtifactAnalysi>();
+                payload.ArtifactAnalysis.ForEach(item =>
+                {
+                    var updatedArtifactAnalysis = api.Update(item);
+                    updatedItems.Add(updatedArtifactAnalysis);
+                });
+                return updatedItems;
+            }
+            else throw new Exception("Payload.Product or Payload.Products required to update products");
+        }
+      
+ // IsUpdate: false
+       public void DeleteArtifactAnalysi(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				api.Delete(Payload.ArtifactAnalysi);
+			}        
+        private string WrapAdminDeleteArtifactAnalysiWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
        public ExperimentTransformer AddExperimentTransformer(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);

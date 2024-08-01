@@ -145,6 +145,34 @@ class UserService extends BaseService {
     
         
     
+    async AddArtifactAnalysi(ArtifactAnalysi) { 
+        return this.apiCall("POST", "User", "ArtifactAnalysi", null, ArtifactAnalysi); // ArtifactAnalysi
+   }
+    
+    
+        
+    
+    async GetArtifactAnalysis(view) { 
+        return this.apiCall("GET", "User", "ArtifactAnalysis", view, null); // ArtifactAnalysi
+   }
+    
+    
+        
+    
+    async UpdateArtifactAnalysi(ArtifactAnalysi) {
+        return this.apiCall("PUT", "User", "ArtifactAnalysi", null, ArtifactAnalysi); // ArtifactAnalysi
+   }
+    
+    
+        
+    
+    async DeleteArtifactAnalysi(id) { 
+        return this.apiCall("DELETE", "User", "ArtifactAnalysi", null, id); // ArtifactAnalysi
+   }
+    
+    
+        
+    
     async AddExperimentTransformer(ExperimentTransformer) { 
         return this.apiCall("POST", "User", "ExperimentTransformer", null, ExperimentTransformer); // ExperimentTransformer
    }

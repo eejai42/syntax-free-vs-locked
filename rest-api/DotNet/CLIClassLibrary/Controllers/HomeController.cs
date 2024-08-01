@@ -60,6 +60,14 @@ namespace CLIClassLibrary.Controllers
             ,
                 new Endpoint()
                 {
+                    Name = "ArtifactAnalysis",
+                    Method = "GET",
+                    Url = "/ArtifactAnalysis",
+                    Description = "Get's a list of ArtifactAnalysis from the data source."
+                }
+            ,
+                new Endpoint()
+                {
                     Name = "ExperimentTransformers",
                     Method = "GET",
                     Url = "/ExperimentTransformers",

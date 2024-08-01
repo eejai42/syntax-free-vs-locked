@@ -96,6 +96,9 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String[] GenerationAddDataCommandScripts { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "PromptChainsToCreate")]
+        public Nullable<Int32> PromptChainsToCreate { get; set; }
+    
 
         
 
