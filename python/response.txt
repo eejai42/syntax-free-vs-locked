@@ -1,6 +1,6 @@
 ```json
 {
-  "Features": ["Task Creation", "Task Categorization", "Due Date Setting", "Reminder Notifications"],
+  "Features": ["Add To-Do Item", "Edit To-Do Item", "Delete To-Do Item", "Mark To-Do Item as Complete"],
   "Keywords": [
     {
       "KeywordName": "ToDoItems",
@@ -10,54 +10,62 @@
     {
       "KeywordName": "Categories",
       "IsMissing": false,
-      "AKA": "distinct groups"
+      "AKA": null
     },
     {
       "KeywordName": "DueDates",
-      "IsMissing": false,
-      "AKA": "due date"
+      "IsMissing": true,
+      "AKA": null
     },
     {
       "KeywordName": "Priorities",
-      "IsMissing": true
+      "IsMissing": true,
+      "AKA": null
     },
     {
       "KeywordName": "Progress",
-      "IsMissing": true
+      "IsMissing": true,
+      "AKA": null
     },
     {
       "KeywordName": "Statuses",
-      "IsMissing": true
+      "IsMissing": false,
+      "AKA": "Status"
     },
     {
       "KeywordName": "Reminders",
-      "IsMissing": false,
-      "AKA": "reminder notifications"
+      "IsMissing": true,
+      "AKA": null
     },
     {
       "KeywordName": "Notifications",
-      "IsMissing": false,
-      "AKA": "reminder notifications"
+      "IsMissing": true,
+      "AKA": null
     },
     {
       "KeywordName": "Completion",
-      "IsMissing": true
+      "IsMissing": false,
+      "AKA": "Mark To-Do Item as Complete"
     },
     {
       "KeywordName": "AssignedTo",
-      "IsMissing": true
+      "IsMissing": true,
+      "AKA": null
     },
     {
       "KeywordName": "Duration",
-      "IsMissing": true
+      "IsMissing": false,
+      "AKA": null
     },
     {
       "KeywordName": "CompletedDate",
-      "IsMissing": true
+      "IsMissing": true,
+      "AKA": null
     },
     {
       "KeywordName": "ToDoColors",
-      "IsMissing": true
+      "IsMissing": true,
+      "AKA": null
     }
   ]
 }

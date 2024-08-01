@@ -1,0 +1,119 @@
+CONTENT/TEXT BEING VALIDATED: ``````json
+{
+  "AppName": "To-Do Pro",
+  "Version": "1.4",
+  "Features": [
+    {
+      "Name": "Add To-Do Item",
+      "Description": "Allows users to add new tasks to their to-do list.",
+      "Example": "Add a task called 'Buy groceries'."
+    },
+    {
+      "Name": "Edit To-Do Item",
+      "Description": "Enables users to modify existing tasks.",
+      "Example": "Change the task 'Buy groceries' to 'Buy groceries and cook dinner'."
+    },
+    {
+      "Name": "Delete To-Do Item",
+      "Description": "Permits users to remove tasks from their to-do list.",
+      "Example": "Delete the task 'Buy groceries'."
+    },
+    {
+      "Name": "Mark To-Do Item as Complete",
+      "Description": "Allows users to mark tasks as completed.",
+      "Example": "Mark the task 'Buy groceries' as complete."
+    }
+  ],
+  "Categories": [
+    {
+      "Name": "Personal",
+      "Description": "Tasks related to personal life and self-care.",
+      "Examples": [
+        {
+          "Task": "Go for a run",
+          "Status": "Incomplete",
+          "Duration": "30 minutes"
+        },
+        {
+          "Task": "Read a book",
+          "Status": "Complete",
+          "Duration": "2 hours"
+        }
+      ]
+    },
+    {
+      "Name": "Work",
+      "Description": "Tasks related to professional responsibilities.",
+      "Examples": [
+        {
+          "Task": "Finish project report",
+          "Status": "Incomplete",
+          "Duration": "3 hours"
+        },
+        {
+          "Task": "Email client",
+          "Status": "Complete",
+          "Duration": "15 minutes"
+        }
+      ]
+    },
+    {
+      "Name": "Shopping",
+      "Description": "Tasks related to purchasing items.",
+      "Examples": [
+        {
+          "Task": "Buy groceries",
+          "Status": "Incomplete",
+          "Duration": "1 hour"
+        },
+        {
+          "Task": "Order new laptop",
+          "Status": "Complete",
+          "Duration": "30 minutes"
+        }
+      ]
+    },
+    {
+      "Name": "Miscellaneous",
+      "Description": "Tasks that do not fit into other categories.",
+      "Examples": [
+        {
+          "Task": "Call plumber",
+          "Status": "Incomplete",
+          "Duration": "10 minutes"
+        },
+        {
+          "Task": "Renew library books",
+          "Status": "Complete",
+          "Duration": "20 minutes"
+        }
+      ]
+    }
+  ]
+}
+``````
+
+VALIDATION PROMPT: What (if anything) of the content being validated is in the app/features listed below, & if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]
