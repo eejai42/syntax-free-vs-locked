@@ -11,40 +11,27 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
-# Define the experiment features with variations and partial matches
-experiment_features = [
-    {
-        "Name": "ToDoItems",
-        "Variations": "to do items, items, tasks, to do tasks, to dos, to do item, item, task, to do task, to do",
-        "PartialMatches": "task, do"
-    },
-    {
-        "Name": "Categories",
-        "Variations": "categories, category",
-        "PartialMatches": "categ"
-    },
-    {
-        "Name": "DueDates",
-        "Variations": "due dates, due date, due on, due",
-        "PartialMatches": "due"
-    },
-    # Add other features with their variations and partial matches
-]
-
 def get_trial_artifacts_needing_cleaning():
     url = f"{BASE_URL}/ArtifactAnalyses?view=NeedsCleanValidationJson"
     response = requests.get(url, headers=HEADERS, verify=False)
     response.raise_for_status()
     return response.json()
 
+def GetExperimentFeatures(view_name):
+    url = f"{BASE_URL}/ExperimentFeatures?view={view_name}"
+    response = requests.get(url, headers=HEADERS, verify=False)
+    response.raise_for_status()
+    return response.json()
+
 def clean_and_update_artifacts():
     artifacts = get_trial_artifacts_needing_cleaning()
+    experiment_features = GetExperimentFeatures("ActiveExperiments")
     for artifact in artifacts:
         artifact["GenerationName"] = None
         artifact["GenerationTransformerNumber"] = None
         artifact["TransformerGeneratioNumber"] = None
         artifact["TransformerGenerationName"] = None
-        cleaned_json = clean_json(artifact['TrialArtifactValidationResponse'])
+        cleaned_json = clean_json(artifact['TrialArtifactValidationResponse'], experiment_features)
         cleaned_json_string = json.dumps(cleaned_json, indent=4)
         artifact['CleanValidationJson'] = cleaned_json_string
         update_trial_artifact(artifact)
@@ -82,7 +69,7 @@ def extract_json_from_natural_language_text(llm_json_response):
         return json_blob
     except json.JSONDecodeError:
         return None
-    
+
 def extract_comma_separated_list_of_features_identified(llm_json):
     # Extract the list of features from the Features field
     try:
@@ -107,14 +94,14 @@ def normalize_feature_name(name, feature_data):
     name_lower = name.lower()
     for feature in feature_data:
         # Generate sub-variations for each variation
-        variations = feature["Variations"].split(", ")
+        variations = feature.get("Variations", "").split(", ")
         for base_variation in variations:
             sub_variations = generate_sub_variations(base_variation)
             if any(name_lower == sub_variation.lower() for sub_variation in sub_variations):
                 return feature["Name"]
         
         # Check for partial matches
-        partial_matches = feature["PartialMatches"].split(", ")
+        partial_matches = feature.get("PartialMatches", "").split(", ")
         if any(pm in name_lower for pm in partial_matches):
             return feature["Name"]
     
@@ -127,43 +114,55 @@ def generate_sub_variations(variation):
     hyphen_variation = variation.replace(" ", "-")
     return [space_variation, no_space_variation, hyphen_variation]
 
-def extract_clean_features_feature_elements(raw_feature_elements):
+def are_names_equivalent(name1, name2):
+    # Compare two names for equivalence, case-insensitively and ignoring spaces/hyphens
+    def normalize(name):
+        return name.lower().replace(" ", "").replace("-", "")
+    return normalize(name1) == normalize(name2)
+
+def extract_clean_features_feature_elements(raw_feature_elements, experiment_features):
     # Clean and normalize the raw feature elements
     clean_features = []
-    for keyword in raw_feature_elements:
-        keyword_name = keyword.get("KeywordName") or keyword.get("Keyword Name") or keyword.get("Keyword")
-        is_missing = keyword.get("IsMissing")
-        aka = keyword.get("AKA")
+    for feature in experiment_features:
+        feature_name = feature["Name"]
+        is_missing = True
+        aka = None
+
+        for keyword in raw_feature_elements:
+            keyword_name = keyword.get("KeywordName") or keyword.get("Keyword Name") or keyword.get("Keyword")
+            if keyword_name and normalize_feature_name(keyword_name, experiment_features) == feature_name:
+                is_missing = keyword.get("IsMissing", False)
+                aka_name = keyword.get("AKA")
+                if aka_name and not are_names_equivalent(aka_name, feature_name):
+                    aka = aka_name
+                break
         
-        normalized_name = normalize_feature_name(keyword_name, experiment_features)
-        if normalized_name:
-            clean_feature = {
-                "KeywordName": normalized_name,
-                "IsMissing": is_missing if is_missing is not None else False,
-                "AKA": aka
-            }
-            clean_features.append(clean_feature)
-    
+        clean_feature = {
+            "Name": feature_name,
+            "IsMissing": is_missing,
+            "AKA": aka
+        }
+        clean_features.append(clean_feature)
+
     return clean_features
 
-def clean_json(llm_json_response):
+def clean_json(llm_json_response, experiment_features):
     # Extract JSON from natural language
     llm_json = extract_json_from_natural_language_text(llm_json_response)
-    print(llm_json)
     if not llm_json:
         return {}
-    
+
     # Extract features and raw feature elements
-    feature_list = extract_comma_separated_list_of_features_identified(llm_json)
+    characteristics = extract_comma_separated_list_of_features_identified(llm_json)
     raw_feature_elements = extract_keywords_listed_as_raw_data(llm_json)
     
     # Normalize and clean features
-    clean_features = extract_clean_features_feature_elements(raw_feature_elements)
+    clean_features = extract_clean_features_feature_elements(raw_feature_elements, experiment_features)
     
     # Create the clean JSON structure
     clean_json_structure = {
-        "Features": feature_list,
-        "Keywords": clean_features
+        "Characteristics": ", ".join(characteristics),
+        "Features": clean_features
     }
     
     return clean_json_structure
