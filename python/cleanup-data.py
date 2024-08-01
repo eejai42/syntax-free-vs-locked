@@ -44,21 +44,45 @@ def clean_and_update_artifacts():
         artifact["GenerationTransformerNumber"] = None
         artifact["TransformerGeneratioNumber"] = None
         artifact["TransformerGenerationName"] = None
-        artifact["GenerationName"] = None
-        artifact["GenerationName"] = None
-        artifact["GenerationName"] = None
         cleaned_json = clean_json(artifact['TrialArtifactValidationResponse'])
         cleaned_json_string = json.dumps(cleaned_json, indent=4)
         artifact['CleanValidationJson'] = cleaned_json_string
         update_trial_artifact(artifact)
 
-def extract_json_from_natural_language_text_with_regex(llm_json_response):
-    # Extract JSON blob from natural language text
-    json_match = re.search(r"\{[\s\S]*?\}", llm_json_response)
-    if json_match:
-        return json_match.group(0)
-    return None
+def extract_json_from_natural_language_text(llm_json_response):
+    """Extracts a JSON blob from a string that contains natural language text.
+    
+    Args:
+        llm_json_response (str): The input string containing natural language text with embedded JSON.
 
+    Returns:
+        str: A JSON string if extraction is successful; None otherwise.
+    """
+    json_blob = ''
+    brace_count = 0
+    json_start = False
+
+    for index, char in enumerate(llm_json_response):
+        if char == '{':
+            if not json_start:
+                json_start = True
+            brace_count += 1
+
+        if json_start:
+            json_blob += char
+
+        if char == '}':
+            brace_count -= 1
+            if brace_count == 0 and json_start:
+                break
+
+    # Validate and return the extracted JSON string
+    try:
+        json.loads(json_blob)
+        return json_blob
+    except json.JSONDecodeError:
+        return None
+    
 def extract_comma_separated_list_of_features_identified(llm_json):
     # Extract the list of features from the Features field
     try:
@@ -124,7 +148,8 @@ def extract_clean_features_feature_elements(raw_feature_elements):
 
 def clean_json(llm_json_response):
     # Extract JSON from natural language
-    llm_json = extract_json_from_natural_language_text_with_regex(llm_json_response)
+    llm_json = extract_json_from_natural_language_text(llm_json_response)
+    print(llm_json)
     if not llm_json:
         return {}
     
