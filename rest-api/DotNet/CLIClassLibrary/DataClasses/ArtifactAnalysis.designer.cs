@@ -394,6 +394,9 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Ready")]
         public Nullable<Boolean> Ready { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "HasBeenAnalyzed")]
+        public Nullable<Boolean> HasBeenAnalyzed { get; set; }
+    
 
         
 

@@ -115,9 +115,16 @@ def generate_sub_variations(variation):
     return [space_variation, no_space_variation, hyphen_variation]
 
 def are_names_equivalent(name1, name2):
-    # Compare two names for equivalence, case-insensitively and ignoring spaces/hyphens
+    """
+    Compare two names for equivalence, considering case-insensitivity and ignoring spaces/hyphens.
+    If the names are arrays, convert them into strings of comma-separated values first.
+    """
     def normalize(name):
+        # Convert lists to comma-separated strings
+        if isinstance(name, list):
+            name = ", ".join(name)
         return name.lower().replace(" ", "").replace("-", "")
+
     return normalize(name1) == normalize(name2)
 
 def extract_clean_features_feature_elements(raw_feature_elements, experiment_features):

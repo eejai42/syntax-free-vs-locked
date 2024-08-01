@@ -286,7 +286,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     ToDoColorsMismatched = cleanArtifactAnalysis.ToDoColorsMismatched,
                      // default value: . 
-                    Ready = cleanArtifactAnalysis.Ready
+                    Ready = cleanArtifactAnalysis.Ready,
+                     // default value: . 
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
                 };
                 
             }
@@ -412,7 +414,8 @@ namespace CLIClassLibrary.ATDMQ
                     PrevGenToDoColorsMismatched = cleanArtifactAnalysis.PrevGenToDoColorsMismatched,
                     Modified = cleanArtifactAnalysis.Modified,
                     TrailIdentifier = cleanArtifactAnalysis.TrailIdentifier,
-                    Ready = cleanArtifactAnalysis.Ready
+                    Ready = cleanArtifactAnalysis.Ready,
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
                 };
             }
 
@@ -471,7 +474,8 @@ namespace CLIClassLibrary.ATDMQ
                     ToDoColors = cleanArtifactAnalysis.ToDoColors,
                     ToDoColorsAKA = cleanArtifactAnalysis.ToDoColorsAKA,
                     ToDoColorsMismatched = cleanArtifactAnalysis.ToDoColorsMismatched,
-                    Ready = cleanArtifactAnalysis.Ready
+                    Ready = cleanArtifactAnalysis.Ready,
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
                 };
             }
 
@@ -1470,7 +1474,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     ToDoColorsMismatched = cleanArtifactAnalysis.ToDoColorsMismatched,
                      // default value: . 
-                    Ready = cleanArtifactAnalysis.Ready
+                    Ready = cleanArtifactAnalysis.Ready,
+                     // default value: . 
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
                 };
                 
             }
@@ -1596,7 +1602,8 @@ namespace CLIClassLibrary.ATDMQ
                     PrevGenToDoColorsMismatched = cleanArtifactAnalysis.PrevGenToDoColorsMismatched,
                     Modified = cleanArtifactAnalysis.Modified,
                     TrailIdentifier = cleanArtifactAnalysis.TrailIdentifier,
-                    Ready = cleanArtifactAnalysis.Ready
+                    Ready = cleanArtifactAnalysis.Ready,
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
                 };
             }
 
@@ -1655,7 +1662,8 @@ namespace CLIClassLibrary.ATDMQ
                     ToDoColors = cleanArtifactAnalysis.ToDoColors,
                     ToDoColorsAKA = cleanArtifactAnalysis.ToDoColorsAKA,
                     ToDoColorsMismatched = cleanArtifactAnalysis.ToDoColorsMismatched,
-                    Ready = cleanArtifactAnalysis.Ready
+                    Ready = cleanArtifactAnalysis.Ready,
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
                 };
             }
 

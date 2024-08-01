@@ -999,6 +999,7 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Modified");
                     sb.AppendLine($"CRUD      - TrailIdentifier");
                     sb.AppendLine($"CRUD      - Ready");
+                    sb.AppendLine($"CRUD      - HasBeenAnalyzed");
                 
             
         }
@@ -1117,6 +1118,7 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Modified");
                     sb.AppendLine($"CRUD      - TrailIdentifier");
                     sb.AppendLine($"CRUD      - Ready");
+                    sb.AppendLine($"CRUD      - HasBeenAnalyzed");
                 
             
         }
@@ -1235,6 +1237,7 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Modified");
                     sb.AppendLine($"CRUD      - TrailIdentifier");
                     sb.AppendLine($"CRUD      - Ready");
+                    sb.AppendLine($"CRUD      - HasBeenAnalyzed");
                 
             
         }
