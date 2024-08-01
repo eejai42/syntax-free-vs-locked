@@ -397,6 +397,18 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "HasBeenAnalyzed")]
         public Nullable<Boolean> HasBeenAnalyzed { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CountOfCharacteristics")]
+        public Nullable<Int32> CountOfCharacteristics { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CountOfFeatures")]
+        public Nullable<Int32> CountOfFeatures { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CountOfAKAs")]
+        public Nullable<Int32> CountOfAKAs { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CountOfMismatches")]
+        public Nullable<Int32> CountOfMismatches { get; set; }
+    
 
         
 

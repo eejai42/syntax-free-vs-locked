@@ -288,7 +288,15 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Ready = cleanArtifactAnalysis.Ready,
                      // default value: . 
-                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed,
+                     // default value: . 
+                    CountOfCharacteristics = cleanArtifactAnalysis.CountOfCharacteristics,
+                     // default value: . 
+                    CountOfFeatures = cleanArtifactAnalysis.CountOfFeatures,
+                     // default value: . 
+                    CountOfAKAs = cleanArtifactAnalysis.CountOfAKAs,
+                     // default value: . 
+                    CountOfMismatches = cleanArtifactAnalysis.CountOfMismatches
                 };
                 
             }
@@ -415,7 +423,11 @@ namespace CLIClassLibrary.ATDMQ
                     Modified = cleanArtifactAnalysis.Modified,
                     TrailIdentifier = cleanArtifactAnalysis.TrailIdentifier,
                     Ready = cleanArtifactAnalysis.Ready,
-                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed,
+                    CountOfCharacteristics = cleanArtifactAnalysis.CountOfCharacteristics,
+                    CountOfFeatures = cleanArtifactAnalysis.CountOfFeatures,
+                    CountOfAKAs = cleanArtifactAnalysis.CountOfAKAs,
+                    CountOfMismatches = cleanArtifactAnalysis.CountOfMismatches
                 };
             }
 
@@ -475,7 +487,11 @@ namespace CLIClassLibrary.ATDMQ
                     ToDoColorsAKA = cleanArtifactAnalysis.ToDoColorsAKA,
                     ToDoColorsMismatched = cleanArtifactAnalysis.ToDoColorsMismatched,
                     Ready = cleanArtifactAnalysis.Ready,
-                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed,
+                    CountOfCharacteristics = cleanArtifactAnalysis.CountOfCharacteristics,
+                    CountOfFeatures = cleanArtifactAnalysis.CountOfFeatures,
+                    CountOfAKAs = cleanArtifactAnalysis.CountOfAKAs,
+                    CountOfMismatches = cleanArtifactAnalysis.CountOfMismatches
                 };
             }
 
@@ -1476,7 +1492,15 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Ready = cleanArtifactAnalysis.Ready,
                      // default value: . 
-                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed,
+                     // default value: . 
+                    CountOfCharacteristics = cleanArtifactAnalysis.CountOfCharacteristics,
+                     // default value: . 
+                    CountOfFeatures = cleanArtifactAnalysis.CountOfFeatures,
+                     // default value: . 
+                    CountOfAKAs = cleanArtifactAnalysis.CountOfAKAs,
+                     // default value: . 
+                    CountOfMismatches = cleanArtifactAnalysis.CountOfMismatches
                 };
                 
             }
@@ -1603,7 +1627,11 @@ namespace CLIClassLibrary.ATDMQ
                     Modified = cleanArtifactAnalysis.Modified,
                     TrailIdentifier = cleanArtifactAnalysis.TrailIdentifier,
                     Ready = cleanArtifactAnalysis.Ready,
-                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed,
+                    CountOfCharacteristics = cleanArtifactAnalysis.CountOfCharacteristics,
+                    CountOfFeatures = cleanArtifactAnalysis.CountOfFeatures,
+                    CountOfAKAs = cleanArtifactAnalysis.CountOfAKAs,
+                    CountOfMismatches = cleanArtifactAnalysis.CountOfMismatches
                 };
             }
 
@@ -1663,7 +1691,11 @@ namespace CLIClassLibrary.ATDMQ
                     ToDoColorsAKA = cleanArtifactAnalysis.ToDoColorsAKA,
                     ToDoColorsMismatched = cleanArtifactAnalysis.ToDoColorsMismatched,
                     Ready = cleanArtifactAnalysis.Ready,
-                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed
+                    HasBeenAnalyzed = cleanArtifactAnalysis.HasBeenAnalyzed,
+                    CountOfCharacteristics = cleanArtifactAnalysis.CountOfCharacteristics,
+                    CountOfFeatures = cleanArtifactAnalysis.CountOfFeatures,
+                    CountOfAKAs = cleanArtifactAnalysis.CountOfAKAs,
+                    CountOfMismatches = cleanArtifactAnalysis.CountOfMismatches
                 };
             }
 

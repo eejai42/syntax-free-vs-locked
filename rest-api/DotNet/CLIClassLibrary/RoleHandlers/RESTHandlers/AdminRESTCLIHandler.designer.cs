@@ -1132,6 +1132,10 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - TrailIdentifier");
                     sb.AppendLine($"CRUD      - Ready");
                     sb.AppendLine($"CRUD      - HasBeenAnalyzed");
+                    sb.AppendLine($"CRUD      - CountOfCharacteristics");
+                    sb.AppendLine($"CRUD      - CountOfFeatures");
+                    sb.AppendLine($"CRUD      - CountOfAKAs");
+                    sb.AppendLine($"CRUD      - CountOfMismatches");
                 
             
         }
@@ -1251,6 +1255,10 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - TrailIdentifier");
                     sb.AppendLine($"CRUD      - Ready");
                     sb.AppendLine($"CRUD      - HasBeenAnalyzed");
+                    sb.AppendLine($"CRUD      - CountOfCharacteristics");
+                    sb.AppendLine($"CRUD      - CountOfFeatures");
+                    sb.AppendLine($"CRUD      - CountOfAKAs");
+                    sb.AppendLine($"CRUD      - CountOfMismatches");
                 
             
         }
@@ -1370,6 +1378,10 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - TrailIdentifier");
                     sb.AppendLine($"CRUD      - Ready");
                     sb.AppendLine($"CRUD      - HasBeenAnalyzed");
+                    sb.AppendLine($"CRUD      - CountOfCharacteristics");
+                    sb.AppendLine($"CRUD      - CountOfFeatures");
+                    sb.AppendLine($"CRUD      - CountOfAKAs");
+                    sb.AppendLine($"CRUD      - CountOfMismatches");
                 
             
         }

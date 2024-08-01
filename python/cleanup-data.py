@@ -147,7 +147,8 @@ def extract_clean_features_feature_elements(raw_feature_elements, experiment_fea
         clean_feature = {
             "Name": feature_name,
             "IsMissing": is_missing,
-            "AKA": aka
+            "AKA": aka,
+            "IsMismatched": False  # Default to False for now
         }
         clean_features.append(clean_feature)
 
@@ -165,9 +166,19 @@ def clean_json(llm_json_response, experiment_features):
     
     # Normalize and clean features
     clean_features = extract_clean_features_feature_elements(raw_feature_elements, experiment_features)
-    
+
+    # Calculate metrics
+    count_of_characteristics = len(characteristics)
+    count_of_features = sum(1 for feature in clean_features if not feature["IsMissing"])
+    count_of_akas = sum(1 for feature in clean_features if feature["AKA"] is not None)
+    count_of_mismatches = sum(1 for feature in clean_features if feature["IsMismatched"])
+
     # Create the clean JSON structure
     clean_json_structure = {
+        "CountOfCharacteristics": count_of_characteristics,
+        "CountOfFeatures": count_of_features,
+        "CountOfAKAs": count_of_akas,
+        "CountOfMismatches": count_of_mismatches,
         "Characteristics": ", ".join(characteristics),
         "Features": clean_features
     }
