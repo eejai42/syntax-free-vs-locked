@@ -7,13 +7,13 @@ using System.Text;
 
 namespace CLIClassLibrary.Controllers
 {
-    public class ArtifactAnalysisController : Controller
+    public class ArtifactAnalysesController : Controller
     {
         public IActionResult Index()
         {
             var admin = new ATDAdmin();
             var payload = admin.CreatePayload();
-            return Json(admin.GetArtifactAnalysis(payload));
+            return Json(admin.GetArtifactAnalyses(payload));
 
         }
     }

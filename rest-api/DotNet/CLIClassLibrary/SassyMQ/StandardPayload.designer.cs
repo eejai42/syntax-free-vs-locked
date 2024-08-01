@@ -18,6 +18,9 @@ namespace YP.SassyMQ.Lib.RabbitMQ
         public TrialArtifact TrialArtifact { get; set; }
         public List<TrialArtifact> TrialArtifacts { get; set; }
         
+        public ArtifactAnalysis ArtifactAnalysis { get; set; }
+        public List<ArtifactAnalysis> ArtifactAnalyses { get; set; }
+        
         public AppUser AppUser { get; set; }
         public List<AppUser> AppUsers { get; set; }
         
@@ -29,9 +32,6 @@ namespace YP.SassyMQ.Lib.RabbitMQ
         
         public Trial Trial { get; set; }
         public List<Trial> Trials { get; set; }
-        
-        public ArtifactAnalysi ArtifactAnalysi { get; set; }
-        public List<ArtifactAnalysi> ArtifactAnalysis { get; set; }
         
         public ExperimentTransformer ExperimentTransformer { get; set; }
         public List<ExperimentTransformer> ExperimentTransformers { get; set; }

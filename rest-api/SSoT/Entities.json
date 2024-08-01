@@ -8,6 +8,13 @@
                 "AirtableName": "TrialArtifacts"
             },
             {
+                "Name": "ArtifactAnalysis",
+                "DisplayName": "ArtifactAnalysis",
+                "Description": "",
+                "PluralName": "ArtifactAnalyses",
+                "AirtableName": "ArtifactAnalyses"
+            },
+            {
                 "Name": "AppUser",
                 "DisplayName": "AppUser",
                 "Description": "",
@@ -34,13 +41,6 @@
                 "Description": "",
                 "PluralName": "Trials",
                 "AirtableName": "Trials"
-            },
-            {
-                "Name": "ArtifactAnalysi",
-                "DisplayName": "ArtifactAnalysi",
-                "Description": "",
-                "PluralName": "ArtifactAnalysis",
-                "AirtableName": "ArtifactAnalysis"
             },
             {
                 "Name": "ExperimentTransformer",

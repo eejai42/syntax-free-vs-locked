@@ -31,6 +31,11 @@ namespace AirtableDirect.CLI.Lib.Handlers
         protected abstract string HandleUpdateTrialArtifact();
         protected abstract string HandleDeleteTrialArtifact();
         
+        protected abstract string HandleCreateArtifactAnalysis();
+        protected abstract string HandleReadArtifactAnalysis();
+        protected abstract string HandleUpdateArtifactAnalysis();
+        protected abstract string HandleDeleteArtifactAnalysis();
+        
         protected abstract string HandleCreateAppUser();
         protected abstract string HandleReadAppUser();
         protected abstract string HandleUpdateAppUser();
@@ -50,11 +55,6 @@ namespace AirtableDirect.CLI.Lib.Handlers
         protected abstract string HandleReadTrial();
         protected abstract string HandleUpdateTrial();
         protected abstract string HandleDeleteTrial();
-        
-        protected abstract string HandleCreateArtifactAnalysi();
-        protected abstract string HandleReadArtifactAnalysi();
-        protected abstract string HandleUpdateArtifactAnalysi();
-        protected abstract string HandleDeleteArtifactAnalysi();
         
         protected abstract string HandleCreateExperimentTransformer();
         protected abstract string HandleReadExperimentTransformer();

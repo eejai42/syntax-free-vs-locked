@@ -7,7 +7,7 @@ using CoreLibrary.Extensions;
 
 namespace AirtableDirect.CLI.Lib.DataClasses
 {                            
-    public partial class ArtifactAnalysi
+    public partial class ArtifactAnalysis
     {
         private void InitPoco()
         {
@@ -22,8 +22,8 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         
 
         
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ArtifactAnalysiId")]
-        public String ArtifactAnalysiId { get; set; }
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ArtifactAnalysisId")]
+        public String ArtifactAnalysisId { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Name")]
         public String Name { get; set; }
@@ -383,6 +383,16 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "PrevGenToDoColorsMismatched")]
         [RemoteIsCollection]
         public Nullable<Boolean> PrevGenToDoColorsMismatched { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Modified")]
+        public Nullable<DateTime> Modified { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TrailIdentifier")]
+        [RemoteIsCollection]
+        public Nullable<Int32> TrailIdentifier { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Ready")]
+        public Nullable<Boolean> Ready { get; set; }
     
 
         

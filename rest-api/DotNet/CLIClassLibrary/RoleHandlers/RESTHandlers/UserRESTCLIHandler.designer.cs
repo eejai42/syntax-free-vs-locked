@@ -29,6 +29,10 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 sb.AppendLine($"TrialArtifact: GetTrialArtifacts");
                 sb.AppendLine($"TrialArtifact: UpdateTrialArtifact");
                 sb.AppendLine($"void: DeleteTrialArtifact");
+                sb.AppendLine($"ArtifactAnalysis: AddArtifactAnalysis");
+                sb.AppendLine($"ArtifactAnalysis: GetArtifactAnalyses");
+                sb.AppendLine($"ArtifactAnalysis: UpdateArtifactAnalysis");
+                sb.AppendLine($"void: DeleteArtifactAnalysis");
                 sb.AppendLine($"AppUser: AddAppUser");
                 sb.AppendLine($"AppUser: GetAppUsers");
                 sb.AppendLine($"AppUser: UpdateAppUser");
@@ -45,10 +49,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 sb.AppendLine($"Trial: GetTrials");
                 sb.AppendLine($"Trial: UpdateTrial");
                 sb.AppendLine($"void: DeleteTrial");
-                sb.AppendLine($"ArtifactAnalysi: AddArtifactAnalysi");
-                sb.AppendLine($"ArtifactAnalysi: GetArtifactAnalysis");
-                sb.AppendLine($"ArtifactAnalysi: UpdateArtifactAnalysi");
-                sb.AppendLine($"void: DeleteArtifactAnalysi");
                 sb.AppendLine($"ExperimentTransformer: AddExperimentTransformer");
                 sb.AppendLine($"ExperimentTransformer: GetExperimentTransformers");
                 sb.AppendLine($"ExperimentTransformer: UpdateExperimentTransformer");
@@ -106,6 +106,42 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 if ("deletetrialartifact".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
                     this.PrintDeleteTrialArtifactHelp(sb);
+                }
+                found = true;
+            }
+            if ("addartifactanalysis".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - AddArtifactAnalysis");
+                if ("addartifactanalysis".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintAddArtifactAnalysisHelp(sb);
+                }
+                found = true;
+            }
+            if ("getartifactanalyses".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - GetArtifactAnalyses");
+                if ("getartifactanalyses".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintGetArtifactAnalysesHelp(sb);
+                }
+                found = true;
+            }
+            if ("updateartifactanalysis".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - UpdateArtifactAnalysis");
+                if ("updateartifactanalysis".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintUpdateArtifactAnalysisHelp(sb);
+                }
+                found = true;
+            }
+            if ("deleteartifactanalysis".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - DeleteArtifactAnalysis");
+                if ("deleteartifactanalysis".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintDeleteArtifactAnalysisHelp(sb);
                 }
                 found = true;
             }
@@ -250,42 +286,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 if ("deletetrial".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
                     this.PrintDeleteTrialHelp(sb);
-                }
-                found = true;
-            }
-            if ("addartifactanalysi".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - AddArtifactAnalysi");
-                if ("addartifactanalysi".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintAddArtifactAnalysiHelp(sb);
-                }
-                found = true;
-            }
-            if ("getartifactanalysis".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - GetArtifactAnalysis");
-                if ("getartifactanalysis".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintGetArtifactAnalysisHelp(sb);
-                }
-                found = true;
-            }
-            if ("updateartifactanalysi".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - UpdateArtifactAnalysi");
-                if ("updateartifactanalysi".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintUpdateArtifactAnalysiHelp(sb);
-                }
-                found = true;
-            }
-            if ("deleteartifactanalysi".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - DeleteArtifactAnalysi");
-                if ("deleteartifactanalysi".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintDeleteArtifactAnalysiHelp(sb);
                 }
                 found = true;
             }
@@ -521,6 +521,36 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     
                 
                 
+                case "addartifactanalysis":
+                    // ArtifactAnalysis
+                    result = await this.GETRequest("ArtifactAnalyses", payload);
+                    break;
+
+                    
+                
+                
+                case "getartifactanalyses":
+                    // ArtifactAnalysis
+                    result = await this.GETRequest("ArtifactAnalyses", payload);
+                    break;
+
+                    
+                
+                
+                case "updateartifactanalysis":
+                    // ArtifactAnalysis
+                    result = await this.GETRequest("ArtifactAnalyses", payload);
+                    break;
+
+                    
+                
+                
+                case "deleteartifactanalysis":
+                    break;
+
+                    
+                
+                
                 case "addappuser":
                     // AppUser
                     result = await this.GETRequest("AppUsers", payload);
@@ -636,36 +666,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                 
                 
                 case "deletetrial":
-                    break;
-
-                    
-                
-                
-                case "addartifactanalysi":
-                    // ArtifactAnalysi
-                    result = await this.GETRequest("ArtifactAnalysis", payload);
-                    break;
-
-                    
-                
-                
-                case "getartifactanalysis":
-                    // ArtifactAnalysi
-                    result = await this.GETRequest("ArtifactAnalysis", payload);
-                    break;
-
-                    
-                
-                
-                case "updateartifactanalysi":
-                    // ArtifactAnalysi
-                    result = await this.GETRequest("ArtifactAnalysis", payload);
-                    break;
-
-                    
-                
-                
-                case "deleteartifactanalysi":
                     break;
 
                     
@@ -901,6 +901,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
                     sb.AppendLine($"CRUD      - RootIdentifierMismatch");
                     sb.AppendLine($"CRUD      - ArtifactAnalysis");
+                    sb.AppendLine($"CRUD      - TrailIdentifier");
                 
             
         }
@@ -953,6 +954,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
                     sb.AppendLine($"CRUD      - RootIdentifierMismatch");
                     sb.AppendLine($"CRUD      - ArtifactAnalysis");
+                    sb.AppendLine($"CRUD      - TrailIdentifier");
                 
             
         }
@@ -1005,11 +1007,371 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
                     sb.AppendLine($"CRUD      - RootIdentifierMismatch");
                     sb.AppendLine($"CRUD      - ArtifactAnalysis");
+                    sb.AppendLine($"CRUD      - TrailIdentifier");
                 
             
         }
         
         public void PrintDeleteTrialArtifactHelp(StringBuilder sb)
+        {
+            
+        }
+        
+        public void PrintAddArtifactAnalysisHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: ArtifactAnalysis     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - ArtifactAnalysisId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - PreviousGeneration");
+                    sb.AppendLine($"CRUD      - PrevGenName");
+                    sb.AppendLine($"CRUD      - PrevGenArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - PrevGenTransformerNumber");
+                    sb.AppendLine($"CRUD      - TrialArtifact");
+                    sb.AppendLine($"CRUD      - TrialArtifactExtensionOf");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - GenerationName");
+                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
+                    sb.AppendLine($"CRUD      - TrialArtifactLongName");
+                    sb.AppendLine($"CRUD      - TrialArtifactGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGenerationName");
+                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
+                    sb.AppendLine($"CRUD      - TrialArtifactActualPrompt");
+                    sb.AppendLine($"CRUD      - TrialArtifactResponse");
+                    sb.AppendLine($"CRUD      - TrialArtifactActualValidationPrompt");
+                    sb.AppendLine($"CRUD      - TrialArtifactValidationResponse");
+                    sb.AppendLine($"CRUD      - CleanValidationJson");
+                    sb.AppendLine($"CRUD      - ToDoItems");
+                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - Categories");
+                    sb.AppendLine($"CRUD      - CategoriesAKA");
+                    sb.AppendLine($"CRUD      - CategoriesMismatched");
+                    sb.AppendLine($"CRUD      - DueDates");
+                    sb.AppendLine($"CRUD      - DueDatesAKA");
+                    sb.AppendLine($"CRUD      - DueDatesMismatched");
+                    sb.AppendLine($"CRUD      - Priorities");
+                    sb.AppendLine($"CRUD      - PrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - Progress");
+                    sb.AppendLine($"CRUD      - ProgressAKA");
+                    sb.AppendLine($"CRUD      - ProgressMismatched");
+                    sb.AppendLine($"CRUD      - Statuses");
+                    sb.AppendLine($"CRUD      - StatusesAKA");
+                    sb.AppendLine($"CRUD      - StatusesMismatched");
+                    sb.AppendLine($"CRUD      - Reminders");
+                    sb.AppendLine($"CRUD      - RemindersAKA");
+                    sb.AppendLine($"CRUD      - RemindersMismatched");
+                    sb.AppendLine($"CRUD      - Notifications");
+                    sb.AppendLine($"CRUD      - NotificationsAKA");
+                    sb.AppendLine($"CRUD      - NotificationsMismatched");
+                    sb.AppendLine($"CRUD      - Completion");
+                    sb.AppendLine($"CRUD      - CompletionAKA");
+                    sb.AppendLine($"CRUD      - CompletionMismatched");
+                    sb.AppendLine($"CRUD      - ToDoEmployees");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - Duration");
+                    sb.AppendLine($"CRUD      - DurationAKA");
+                    sb.AppendLine($"CRUD      - DurationMismatched");
+                    sb.AppendLine($"CRUD      - CompletedDate");
+                    sb.AppendLine($"CRUD      - CompletedDateAKA");
+                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - ToDoColors");
+                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenToDoItems");
+                    sb.AppendLine($"CRUD      - PrevGenToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - PrevGenToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenCategories");
+                    sb.AppendLine($"CRUD      - PrevGenCategoriesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenCategoriesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenDueDates");
+                    sb.AppendLine($"CRUD      - PrevGenDueDatesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenDueDatesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenPriorities");
+                    sb.AppendLine($"CRUD      - PrevGenPrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenPrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenProgress");
+                    sb.AppendLine($"CRUD      - PrevGenProgressAKA");
+                    sb.AppendLine($"CRUD      - PrevGenProgressMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenStatuses");
+                    sb.AppendLine($"CRUD      - PrevGenStatusesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenStatusesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenReminders");
+                    sb.AppendLine($"CRUD      - PrevGenRemindersAKA");
+                    sb.AppendLine($"CRUD      - PrevGenRemindersMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenNotifications");
+                    sb.AppendLine($"CRUD      - PrevGenNotificationsAKA");
+                    sb.AppendLine($"CRUD      - PrevGenNotificationsMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenCompletion");
+                    sb.AppendLine($"CRUD      - PrevGenCompletionAKA");
+                    sb.AppendLine($"CRUD      - PrevGenCompletionMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenToDoEmployees");
+                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenDuration");
+                    sb.AppendLine($"CRUD      - PrevGenDurationAKA");
+                    sb.AppendLine($"CRUD      - PrevGenDurationMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenCompletedDate");
+                    sb.AppendLine($"CRUD      - PrevGenCompletedDateAKA");
+                    sb.AppendLine($"CRUD      - PrevGenCompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenToDoColors");
+                    sb.AppendLine($"CRUD      - PrevGenToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - PrevGenToDoColorsMismatched");
+                    sb.AppendLine($"CRUD      - Modified");
+                    sb.AppendLine($"CRUD      - TrailIdentifier");
+                    sb.AppendLine($"CRUD      - Ready");
+                
+            
+        }
+        
+        public void PrintGetArtifactAnalysesHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: ArtifactAnalysis     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - ArtifactAnalysisId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - PreviousGeneration");
+                    sb.AppendLine($"CRUD      - PrevGenName");
+                    sb.AppendLine($"CRUD      - PrevGenArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - PrevGenTransformerNumber");
+                    sb.AppendLine($"CRUD      - TrialArtifact");
+                    sb.AppendLine($"CRUD      - TrialArtifactExtensionOf");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - GenerationName");
+                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
+                    sb.AppendLine($"CRUD      - TrialArtifactLongName");
+                    sb.AppendLine($"CRUD      - TrialArtifactGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGenerationName");
+                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
+                    sb.AppendLine($"CRUD      - TrialArtifactActualPrompt");
+                    sb.AppendLine($"CRUD      - TrialArtifactResponse");
+                    sb.AppendLine($"CRUD      - TrialArtifactActualValidationPrompt");
+                    sb.AppendLine($"CRUD      - TrialArtifactValidationResponse");
+                    sb.AppendLine($"CRUD      - CleanValidationJson");
+                    sb.AppendLine($"CRUD      - ToDoItems");
+                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - Categories");
+                    sb.AppendLine($"CRUD      - CategoriesAKA");
+                    sb.AppendLine($"CRUD      - CategoriesMismatched");
+                    sb.AppendLine($"CRUD      - DueDates");
+                    sb.AppendLine($"CRUD      - DueDatesAKA");
+                    sb.AppendLine($"CRUD      - DueDatesMismatched");
+                    sb.AppendLine($"CRUD      - Priorities");
+                    sb.AppendLine($"CRUD      - PrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - Progress");
+                    sb.AppendLine($"CRUD      - ProgressAKA");
+                    sb.AppendLine($"CRUD      - ProgressMismatched");
+                    sb.AppendLine($"CRUD      - Statuses");
+                    sb.AppendLine($"CRUD      - StatusesAKA");
+                    sb.AppendLine($"CRUD      - StatusesMismatched");
+                    sb.AppendLine($"CRUD      - Reminders");
+                    sb.AppendLine($"CRUD      - RemindersAKA");
+                    sb.AppendLine($"CRUD      - RemindersMismatched");
+                    sb.AppendLine($"CRUD      - Notifications");
+                    sb.AppendLine($"CRUD      - NotificationsAKA");
+                    sb.AppendLine($"CRUD      - NotificationsMismatched");
+                    sb.AppendLine($"CRUD      - Completion");
+                    sb.AppendLine($"CRUD      - CompletionAKA");
+                    sb.AppendLine($"CRUD      - CompletionMismatched");
+                    sb.AppendLine($"CRUD      - ToDoEmployees");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - Duration");
+                    sb.AppendLine($"CRUD      - DurationAKA");
+                    sb.AppendLine($"CRUD      - DurationMismatched");
+                    sb.AppendLine($"CRUD      - CompletedDate");
+                    sb.AppendLine($"CRUD      - CompletedDateAKA");
+                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - ToDoColors");
+                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenToDoItems");
+                    sb.AppendLine($"CRUD      - PrevGenToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - PrevGenToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenCategories");
+                    sb.AppendLine($"CRUD      - PrevGenCategoriesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenCategoriesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenDueDates");
+                    sb.AppendLine($"CRUD      - PrevGenDueDatesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenDueDatesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenPriorities");
+                    sb.AppendLine($"CRUD      - PrevGenPrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenPrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenProgress");
+                    sb.AppendLine($"CRUD      - PrevGenProgressAKA");
+                    sb.AppendLine($"CRUD      - PrevGenProgressMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenStatuses");
+                    sb.AppendLine($"CRUD      - PrevGenStatusesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenStatusesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenReminders");
+                    sb.AppendLine($"CRUD      - PrevGenRemindersAKA");
+                    sb.AppendLine($"CRUD      - PrevGenRemindersMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenNotifications");
+                    sb.AppendLine($"CRUD      - PrevGenNotificationsAKA");
+                    sb.AppendLine($"CRUD      - PrevGenNotificationsMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenCompletion");
+                    sb.AppendLine($"CRUD      - PrevGenCompletionAKA");
+                    sb.AppendLine($"CRUD      - PrevGenCompletionMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenToDoEmployees");
+                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenDuration");
+                    sb.AppendLine($"CRUD      - PrevGenDurationAKA");
+                    sb.AppendLine($"CRUD      - PrevGenDurationMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenCompletedDate");
+                    sb.AppendLine($"CRUD      - PrevGenCompletedDateAKA");
+                    sb.AppendLine($"CRUD      - PrevGenCompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenToDoColors");
+                    sb.AppendLine($"CRUD      - PrevGenToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - PrevGenToDoColorsMismatched");
+                    sb.AppendLine($"CRUD      - Modified");
+                    sb.AppendLine($"CRUD      - TrailIdentifier");
+                    sb.AppendLine($"CRUD      - Ready");
+                
+            
+        }
+        
+        public void PrintUpdateArtifactAnalysisHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: ArtifactAnalysis     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - ArtifactAnalysisId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - PreviousGeneration");
+                    sb.AppendLine($"CRUD      - PrevGenName");
+                    sb.AppendLine($"CRUD      - PrevGenArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - PrevGenTransformerNumber");
+                    sb.AppendLine($"CRUD      - TrialArtifact");
+                    sb.AppendLine($"CRUD      - TrialArtifactExtensionOf");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - GenerationName");
+                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
+                    sb.AppendLine($"CRUD      - TrialArtifactLongName");
+                    sb.AppendLine($"CRUD      - TrialArtifactGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGenerationName");
+                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
+                    sb.AppendLine($"CRUD      - TrialArtifactActualPrompt");
+                    sb.AppendLine($"CRUD      - TrialArtifactResponse");
+                    sb.AppendLine($"CRUD      - TrialArtifactActualValidationPrompt");
+                    sb.AppendLine($"CRUD      - TrialArtifactValidationResponse");
+                    sb.AppendLine($"CRUD      - CleanValidationJson");
+                    sb.AppendLine($"CRUD      - ToDoItems");
+                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - Categories");
+                    sb.AppendLine($"CRUD      - CategoriesAKA");
+                    sb.AppendLine($"CRUD      - CategoriesMismatched");
+                    sb.AppendLine($"CRUD      - DueDates");
+                    sb.AppendLine($"CRUD      - DueDatesAKA");
+                    sb.AppendLine($"CRUD      - DueDatesMismatched");
+                    sb.AppendLine($"CRUD      - Priorities");
+                    sb.AppendLine($"CRUD      - PrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - Progress");
+                    sb.AppendLine($"CRUD      - ProgressAKA");
+                    sb.AppendLine($"CRUD      - ProgressMismatched");
+                    sb.AppendLine($"CRUD      - Statuses");
+                    sb.AppendLine($"CRUD      - StatusesAKA");
+                    sb.AppendLine($"CRUD      - StatusesMismatched");
+                    sb.AppendLine($"CRUD      - Reminders");
+                    sb.AppendLine($"CRUD      - RemindersAKA");
+                    sb.AppendLine($"CRUD      - RemindersMismatched");
+                    sb.AppendLine($"CRUD      - Notifications");
+                    sb.AppendLine($"CRUD      - NotificationsAKA");
+                    sb.AppendLine($"CRUD      - NotificationsMismatched");
+                    sb.AppendLine($"CRUD      - Completion");
+                    sb.AppendLine($"CRUD      - CompletionAKA");
+                    sb.AppendLine($"CRUD      - CompletionMismatched");
+                    sb.AppendLine($"CRUD      - ToDoEmployees");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - Duration");
+                    sb.AppendLine($"CRUD      - DurationAKA");
+                    sb.AppendLine($"CRUD      - DurationMismatched");
+                    sb.AppendLine($"CRUD      - CompletedDate");
+                    sb.AppendLine($"CRUD      - CompletedDateAKA");
+                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - ToDoColors");
+                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenToDoItems");
+                    sb.AppendLine($"CRUD      - PrevGenToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - PrevGenToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenCategories");
+                    sb.AppendLine($"CRUD      - PrevGenCategoriesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenCategoriesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenDueDates");
+                    sb.AppendLine($"CRUD      - PrevGenDueDatesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenDueDatesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenPriorities");
+                    sb.AppendLine($"CRUD      - PrevGenPrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenPrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenProgress");
+                    sb.AppendLine($"CRUD      - PrevGenProgressAKA");
+                    sb.AppendLine($"CRUD      - PrevGenProgressMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenStatuses");
+                    sb.AppendLine($"CRUD      - PrevGenStatusesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenStatusesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenReminders");
+                    sb.AppendLine($"CRUD      - PrevGenRemindersAKA");
+                    sb.AppendLine($"CRUD      - PrevGenRemindersMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenNotifications");
+                    sb.AppendLine($"CRUD      - PrevGenNotificationsAKA");
+                    sb.AppendLine($"CRUD      - PrevGenNotificationsMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenCompletion");
+                    sb.AppendLine($"CRUD      - PrevGenCompletionAKA");
+                    sb.AppendLine($"CRUD      - PrevGenCompletionMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenToDoEmployees");
+                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenDuration");
+                    sb.AppendLine($"CRUD      - PrevGenDurationAKA");
+                    sb.AppendLine($"CRUD      - PrevGenDurationMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenCompletedDate");
+                    sb.AppendLine($"CRUD      - PrevGenCompletedDateAKA");
+                    sb.AppendLine($"CRUD      - PrevGenCompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - PrevGenToDoColors");
+                    sb.AppendLine($"CRUD      - PrevGenToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - PrevGenToDoColorsMismatched");
+                    sb.AppendLine($"CRUD      - Modified");
+                    sb.AppendLine($"CRUD      - TrailIdentifier");
+                    sb.AppendLine($"CRUD      - Ready");
+                
+            
+        }
+        
+        public void PrintDeleteArtifactAnalysisHelp(StringBuilder sb)
         {
             
         }
@@ -1355,356 +1717,6 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
             
         }
         
-        public void PrintAddArtifactAnalysiHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: ArtifactAnalysi     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - ArtifactAnalysiId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - PreviousGeneration");
-                    sb.AppendLine($"CRUD      - PrevGenName");
-                    sb.AppendLine($"CRUD      - PrevGenArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - PrevGenTransformerNumber");
-                    sb.AppendLine($"CRUD      - TrialArtifact");
-                    sb.AppendLine($"CRUD      - TrialArtifactExtensionOf");
-                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
-                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
-                    sb.AppendLine($"CRUD      - TrialArtifactLongName");
-                    sb.AppendLine($"CRUD      - TrialArtifactGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGenerationName");
-                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
-                    sb.AppendLine($"CRUD      - TrialArtifactActualPrompt");
-                    sb.AppendLine($"CRUD      - TrialArtifactResponse");
-                    sb.AppendLine($"CRUD      - TrialArtifactActualValidationPrompt");
-                    sb.AppendLine($"CRUD      - TrialArtifactValidationResponse");
-                    sb.AppendLine($"CRUD      - CleanValidationJson");
-                    sb.AppendLine($"CRUD      - ToDoItems");
-                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
-                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
-                    sb.AppendLine($"CRUD      - Categories");
-                    sb.AppendLine($"CRUD      - CategoriesAKA");
-                    sb.AppendLine($"CRUD      - CategoriesMismatched");
-                    sb.AppendLine($"CRUD      - DueDates");
-                    sb.AppendLine($"CRUD      - DueDatesAKA");
-                    sb.AppendLine($"CRUD      - DueDatesMismatched");
-                    sb.AppendLine($"CRUD      - Priorities");
-                    sb.AppendLine($"CRUD      - PrioritiesAKA");
-                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
-                    sb.AppendLine($"CRUD      - Progress");
-                    sb.AppendLine($"CRUD      - ProgressAKA");
-                    sb.AppendLine($"CRUD      - ProgressMismatched");
-                    sb.AppendLine($"CRUD      - Statuses");
-                    sb.AppendLine($"CRUD      - StatusesAKA");
-                    sb.AppendLine($"CRUD      - StatusesMismatched");
-                    sb.AppendLine($"CRUD      - Reminders");
-                    sb.AppendLine($"CRUD      - RemindersAKA");
-                    sb.AppendLine($"CRUD      - RemindersMismatched");
-                    sb.AppendLine($"CRUD      - Notifications");
-                    sb.AppendLine($"CRUD      - NotificationsAKA");
-                    sb.AppendLine($"CRUD      - NotificationsMismatched");
-                    sb.AppendLine($"CRUD      - Completion");
-                    sb.AppendLine($"CRUD      - CompletionAKA");
-                    sb.AppendLine($"CRUD      - CompletionMismatched");
-                    sb.AppendLine($"CRUD      - ToDoEmployees");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
-                    sb.AppendLine($"CRUD      - Duration");
-                    sb.AppendLine($"CRUD      - DurationAKA");
-                    sb.AppendLine($"CRUD      - DurationMismatched");
-                    sb.AppendLine($"CRUD      - CompletedDate");
-                    sb.AppendLine($"CRUD      - CompletedDateAKA");
-                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
-                    sb.AppendLine($"CRUD      - ToDoColors");
-                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
-                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenToDoItems");
-                    sb.AppendLine($"CRUD      - PrevGenToDoItemsAKA");
-                    sb.AppendLine($"CRUD      - PrevGenToDoItemsMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenCategories");
-                    sb.AppendLine($"CRUD      - PrevGenCategoriesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenCategoriesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenDueDates");
-                    sb.AppendLine($"CRUD      - PrevGenDueDatesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenDueDatesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenPriorities");
-                    sb.AppendLine($"CRUD      - PrevGenPrioritiesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenPrioritiesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenProgress");
-                    sb.AppendLine($"CRUD      - PrevGenProgressAKA");
-                    sb.AppendLine($"CRUD      - PrevGenProgressMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenStatuses");
-                    sb.AppendLine($"CRUD      - PrevGenStatusesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenStatusesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenReminders");
-                    sb.AppendLine($"CRUD      - PrevGenRemindersAKA");
-                    sb.AppendLine($"CRUD      - PrevGenRemindersMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenNotifications");
-                    sb.AppendLine($"CRUD      - PrevGenNotificationsAKA");
-                    sb.AppendLine($"CRUD      - PrevGenNotificationsMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenCompletion");
-                    sb.AppendLine($"CRUD      - PrevGenCompletionAKA");
-                    sb.AppendLine($"CRUD      - PrevGenCompletionMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenToDoEmployees");
-                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenDuration");
-                    sb.AppendLine($"CRUD      - PrevGenDurationAKA");
-                    sb.AppendLine($"CRUD      - PrevGenDurationMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenCompletedDate");
-                    sb.AppendLine($"CRUD      - PrevGenCompletedDateAKA");
-                    sb.AppendLine($"CRUD      - PrevGenCompletedDateMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenToDoColors");
-                    sb.AppendLine($"CRUD      - PrevGenToDoColorsAKA");
-                    sb.AppendLine($"CRUD      - PrevGenToDoColorsMismatched");
-                
-            
-        }
-        
-        public void PrintGetArtifactAnalysisHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: ArtifactAnalysi     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - ArtifactAnalysiId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - PreviousGeneration");
-                    sb.AppendLine($"CRUD      - PrevGenName");
-                    sb.AppendLine($"CRUD      - PrevGenArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - PrevGenTransformerNumber");
-                    sb.AppendLine($"CRUD      - TrialArtifact");
-                    sb.AppendLine($"CRUD      - TrialArtifactExtensionOf");
-                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
-                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
-                    sb.AppendLine($"CRUD      - TrialArtifactLongName");
-                    sb.AppendLine($"CRUD      - TrialArtifactGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGenerationName");
-                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
-                    sb.AppendLine($"CRUD      - TrialArtifactActualPrompt");
-                    sb.AppendLine($"CRUD      - TrialArtifactResponse");
-                    sb.AppendLine($"CRUD      - TrialArtifactActualValidationPrompt");
-                    sb.AppendLine($"CRUD      - TrialArtifactValidationResponse");
-                    sb.AppendLine($"CRUD      - CleanValidationJson");
-                    sb.AppendLine($"CRUD      - ToDoItems");
-                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
-                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
-                    sb.AppendLine($"CRUD      - Categories");
-                    sb.AppendLine($"CRUD      - CategoriesAKA");
-                    sb.AppendLine($"CRUD      - CategoriesMismatched");
-                    sb.AppendLine($"CRUD      - DueDates");
-                    sb.AppendLine($"CRUD      - DueDatesAKA");
-                    sb.AppendLine($"CRUD      - DueDatesMismatched");
-                    sb.AppendLine($"CRUD      - Priorities");
-                    sb.AppendLine($"CRUD      - PrioritiesAKA");
-                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
-                    sb.AppendLine($"CRUD      - Progress");
-                    sb.AppendLine($"CRUD      - ProgressAKA");
-                    sb.AppendLine($"CRUD      - ProgressMismatched");
-                    sb.AppendLine($"CRUD      - Statuses");
-                    sb.AppendLine($"CRUD      - StatusesAKA");
-                    sb.AppendLine($"CRUD      - StatusesMismatched");
-                    sb.AppendLine($"CRUD      - Reminders");
-                    sb.AppendLine($"CRUD      - RemindersAKA");
-                    sb.AppendLine($"CRUD      - RemindersMismatched");
-                    sb.AppendLine($"CRUD      - Notifications");
-                    sb.AppendLine($"CRUD      - NotificationsAKA");
-                    sb.AppendLine($"CRUD      - NotificationsMismatched");
-                    sb.AppendLine($"CRUD      - Completion");
-                    sb.AppendLine($"CRUD      - CompletionAKA");
-                    sb.AppendLine($"CRUD      - CompletionMismatched");
-                    sb.AppendLine($"CRUD      - ToDoEmployees");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
-                    sb.AppendLine($"CRUD      - Duration");
-                    sb.AppendLine($"CRUD      - DurationAKA");
-                    sb.AppendLine($"CRUD      - DurationMismatched");
-                    sb.AppendLine($"CRUD      - CompletedDate");
-                    sb.AppendLine($"CRUD      - CompletedDateAKA");
-                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
-                    sb.AppendLine($"CRUD      - ToDoColors");
-                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
-                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenToDoItems");
-                    sb.AppendLine($"CRUD      - PrevGenToDoItemsAKA");
-                    sb.AppendLine($"CRUD      - PrevGenToDoItemsMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenCategories");
-                    sb.AppendLine($"CRUD      - PrevGenCategoriesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenCategoriesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenDueDates");
-                    sb.AppendLine($"CRUD      - PrevGenDueDatesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenDueDatesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenPriorities");
-                    sb.AppendLine($"CRUD      - PrevGenPrioritiesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenPrioritiesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenProgress");
-                    sb.AppendLine($"CRUD      - PrevGenProgressAKA");
-                    sb.AppendLine($"CRUD      - PrevGenProgressMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenStatuses");
-                    sb.AppendLine($"CRUD      - PrevGenStatusesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenStatusesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenReminders");
-                    sb.AppendLine($"CRUD      - PrevGenRemindersAKA");
-                    sb.AppendLine($"CRUD      - PrevGenRemindersMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenNotifications");
-                    sb.AppendLine($"CRUD      - PrevGenNotificationsAKA");
-                    sb.AppendLine($"CRUD      - PrevGenNotificationsMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenCompletion");
-                    sb.AppendLine($"CRUD      - PrevGenCompletionAKA");
-                    sb.AppendLine($"CRUD      - PrevGenCompletionMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenToDoEmployees");
-                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenDuration");
-                    sb.AppendLine($"CRUD      - PrevGenDurationAKA");
-                    sb.AppendLine($"CRUD      - PrevGenDurationMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenCompletedDate");
-                    sb.AppendLine($"CRUD      - PrevGenCompletedDateAKA");
-                    sb.AppendLine($"CRUD      - PrevGenCompletedDateMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenToDoColors");
-                    sb.AppendLine($"CRUD      - PrevGenToDoColorsAKA");
-                    sb.AppendLine($"CRUD      - PrevGenToDoColorsMismatched");
-                
-            
-        }
-        
-        public void PrintUpdateArtifactAnalysiHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: ArtifactAnalysi     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - ArtifactAnalysiId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - PreviousGeneration");
-                    sb.AppendLine($"CRUD      - PrevGenName");
-                    sb.AppendLine($"CRUD      - PrevGenArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - PrevGenTransformerNumber");
-                    sb.AppendLine($"CRUD      - TrialArtifact");
-                    sb.AppendLine($"CRUD      - TrialArtifactExtensionOf");
-                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
-                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
-                    sb.AppendLine($"CRUD      - TrialArtifactLongName");
-                    sb.AppendLine($"CRUD      - TrialArtifactGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGenerationName");
-                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
-                    sb.AppendLine($"CRUD      - TrialArtifactActualPrompt");
-                    sb.AppendLine($"CRUD      - TrialArtifactResponse");
-                    sb.AppendLine($"CRUD      - TrialArtifactActualValidationPrompt");
-                    sb.AppendLine($"CRUD      - TrialArtifactValidationResponse");
-                    sb.AppendLine($"CRUD      - CleanValidationJson");
-                    sb.AppendLine($"CRUD      - ToDoItems");
-                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
-                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
-                    sb.AppendLine($"CRUD      - Categories");
-                    sb.AppendLine($"CRUD      - CategoriesAKA");
-                    sb.AppendLine($"CRUD      - CategoriesMismatched");
-                    sb.AppendLine($"CRUD      - DueDates");
-                    sb.AppendLine($"CRUD      - DueDatesAKA");
-                    sb.AppendLine($"CRUD      - DueDatesMismatched");
-                    sb.AppendLine($"CRUD      - Priorities");
-                    sb.AppendLine($"CRUD      - PrioritiesAKA");
-                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
-                    sb.AppendLine($"CRUD      - Progress");
-                    sb.AppendLine($"CRUD      - ProgressAKA");
-                    sb.AppendLine($"CRUD      - ProgressMismatched");
-                    sb.AppendLine($"CRUD      - Statuses");
-                    sb.AppendLine($"CRUD      - StatusesAKA");
-                    sb.AppendLine($"CRUD      - StatusesMismatched");
-                    sb.AppendLine($"CRUD      - Reminders");
-                    sb.AppendLine($"CRUD      - RemindersAKA");
-                    sb.AppendLine($"CRUD      - RemindersMismatched");
-                    sb.AppendLine($"CRUD      - Notifications");
-                    sb.AppendLine($"CRUD      - NotificationsAKA");
-                    sb.AppendLine($"CRUD      - NotificationsMismatched");
-                    sb.AppendLine($"CRUD      - Completion");
-                    sb.AppendLine($"CRUD      - CompletionAKA");
-                    sb.AppendLine($"CRUD      - CompletionMismatched");
-                    sb.AppendLine($"CRUD      - ToDoEmployees");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
-                    sb.AppendLine($"CRUD      - Duration");
-                    sb.AppendLine($"CRUD      - DurationAKA");
-                    sb.AppendLine($"CRUD      - DurationMismatched");
-                    sb.AppendLine($"CRUD      - CompletedDate");
-                    sb.AppendLine($"CRUD      - CompletedDateAKA");
-                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
-                    sb.AppendLine($"CRUD      - ToDoColors");
-                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
-                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenToDoItems");
-                    sb.AppendLine($"CRUD      - PrevGenToDoItemsAKA");
-                    sb.AppendLine($"CRUD      - PrevGenToDoItemsMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenCategories");
-                    sb.AppendLine($"CRUD      - PrevGenCategoriesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenCategoriesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenDueDates");
-                    sb.AppendLine($"CRUD      - PrevGenDueDatesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenDueDatesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenPriorities");
-                    sb.AppendLine($"CRUD      - PrevGenPrioritiesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenPrioritiesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenProgress");
-                    sb.AppendLine($"CRUD      - PrevGenProgressAKA");
-                    sb.AppendLine($"CRUD      - PrevGenProgressMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenStatuses");
-                    sb.AppendLine($"CRUD      - PrevGenStatusesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenStatusesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenReminders");
-                    sb.AppendLine($"CRUD      - PrevGenRemindersAKA");
-                    sb.AppendLine($"CRUD      - PrevGenRemindersMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenNotifications");
-                    sb.AppendLine($"CRUD      - PrevGenNotificationsAKA");
-                    sb.AppendLine($"CRUD      - PrevGenNotificationsMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenCompletion");
-                    sb.AppendLine($"CRUD      - PrevGenCompletionAKA");
-                    sb.AppendLine($"CRUD      - PrevGenCompletionMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenToDoEmployees");
-                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesAKA");
-                    sb.AppendLine($"CRUD      - PrevGenToDoEmployeesMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenDuration");
-                    sb.AppendLine($"CRUD      - PrevGenDurationAKA");
-                    sb.AppendLine($"CRUD      - PrevGenDurationMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenCompletedDate");
-                    sb.AppendLine($"CRUD      - PrevGenCompletedDateAKA");
-                    sb.AppendLine($"CRUD      - PrevGenCompletedDateMismatched");
-                    sb.AppendLine($"CRUD      - PrevGenToDoColors");
-                    sb.AppendLine($"CRUD      - PrevGenToDoColorsAKA");
-                    sb.AppendLine($"CRUD      - PrevGenToDoColorsMismatched");
-                
-            
-        }
-        
-        public void PrintDeleteArtifactAnalysiHelp(StringBuilder sb)
-        {
-            
-        }
-        
         public void PrintAddExperimentTransformerHelp(StringBuilder sb)
         {
             
@@ -1806,6 +1818,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - IsActiveExp");
                     sb.AppendLine($"CRUD      - Variations");
                     sb.AppendLine($"CRUD      - PartialMatches");
+                    sb.AppendLine($"CRUD      - AutoNumber");
                 
             
         }
@@ -1831,6 +1844,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - IsActiveExp");
                     sb.AppendLine($"CRUD      - Variations");
                     sb.AppendLine($"CRUD      - PartialMatches");
+                    sb.AppendLine($"CRUD      - AutoNumber");
                 
             
         }
@@ -1856,6 +1870,7 @@ namespace CLIClassLibrary.RoleHandlers.RESTHandlers
                     sb.AppendLine($"CRUD      - IsActiveExp");
                     sb.AppendLine($"CRUD      - Variations");
                     sb.AppendLine($"CRUD      - PartialMatches");
+                    sb.AppendLine($"CRUD      - AutoNumber");
                 
             
         }

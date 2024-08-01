@@ -100,6 +100,95 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: false
+       public ArtifactAnalysis AddArtifactAnalysis(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.Insert(Payload.ArtifactAnalysis.UserCleanForAdd());
+			}        
+        private string WrapUserAddArtifactAnalysisWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
+       public IEnumerable<ArtifactAnalysis> GetArtifactAnalyses(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.GetArtifactAnalyses(WrapUserGetArtifactAnalysesWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).UserCleanForGet();
+			}        
+        private string WrapUserGetArtifactAnalysesWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: true
+       public IEnumerable<ArtifactAnalysis> UpdateArtifactAnalysis(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				
+          if (!(Payload.ArtifactAnalyses is null))
+          {
+              return this.UpdateArtifactAnalyses(api, Payload);
+          }
+          else
+          {
+              var updatedArtifactAnalysis = api.Update(Payload.ArtifactAnalysis.UserCleanForUpdate());
+              return new List<ArtifactAnalysis>(new ArtifactAnalysis[] { updatedArtifactAnalysis });
+          }
+        
+			}        
+        private string WrapUserUpdateArtifactAnalysisWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+              
+        private List<ArtifactAnalysis> UpdateArtifactAnalyses(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
+        {
+            if (!(payload.ArtifactAnalyses is null) && payload.ArtifactAnalyses.Any())
+            {
+                var updatedItems = new List<ArtifactAnalysis>();
+                payload.ArtifactAnalyses.ForEach(item =>
+                {
+                    var updatedArtifactAnalyses = api.Update(item);
+                    updatedItems.Add(updatedArtifactAnalyses);
+                });
+                return updatedItems;
+            }
+            else throw new Exception("Payload.Product or Payload.Products required to update products");
+        }
+      
+ // IsUpdate: false
+       public void DeleteArtifactAnalysis(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				api.Delete(Payload.ArtifactAnalysis);
+			}        
+        private string WrapUserDeleteArtifactAnalysisWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
        public AppUser AddAppUser(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
@@ -449,95 +538,6 @@ namespace CLIClassLibrary.ATDMQ
 				api.Delete(Payload.Trial);
 			}        
         private string WrapUserDeleteTrialWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public ArtifactAnalysi AddArtifactAnalysi(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.ArtifactAnalysi.UserCleanForAdd());
-			}        
-        private string WrapUserAddArtifactAnalysiWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public IEnumerable<ArtifactAnalysi> GetArtifactAnalysis(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetArtifactAnalysis(WrapUserGetArtifactAnalysisWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).UserCleanForGet();
-			}        
-        private string WrapUserGetArtifactAnalysisWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: true
-       public IEnumerable<ArtifactAnalysi> UpdateArtifactAnalysi(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				
-          if (!(Payload.ArtifactAnalysis is null))
-          {
-              return this.UpdateArtifactAnalysis(api, Payload);
-          }
-          else
-          {
-              var updatedArtifactAnalysi = api.Update(Payload.ArtifactAnalysi.UserCleanForUpdate());
-              return new List<ArtifactAnalysi>(new ArtifactAnalysi[] { updatedArtifactAnalysi });
-          }
-        
-			}        
-        private string WrapUserUpdateArtifactAnalysiWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-              
-        private List<ArtifactAnalysi> UpdateArtifactAnalysis(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
-        {
-            if (!(payload.ArtifactAnalysis is null) && payload.ArtifactAnalysis.Any())
-            {
-                var updatedItems = new List<ArtifactAnalysi>();
-                payload.ArtifactAnalysis.ForEach(item =>
-                {
-                    var updatedArtifactAnalysis = api.Update(item);
-                    updatedItems.Add(updatedArtifactAnalysis);
-                });
-                return updatedItems;
-            }
-            else throw new Exception("Payload.Product or Payload.Products required to update products");
-        }
-      
- // IsUpdate: false
-       public void DeleteArtifactAnalysi(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.ArtifactAnalysi);
-			}        
-        private string WrapUserDeleteArtifactAnalysiWhere(string airtableWhere)
         {
                 
         

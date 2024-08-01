@@ -33,6 +33,34 @@ class AdminService extends BaseService {
     
         
     
+    async AddArtifactAnalysis(ArtifactAnalysis) { 
+        return this.apiCall("POST", "Admin", "ArtifactAnalysis", null, ArtifactAnalysis); // ArtifactAnalysis
+   }
+    
+    
+        
+    
+    async GetArtifactAnalyses(view) { 
+        return this.apiCall("GET", "Admin", "ArtifactAnalyses", view, null); // ArtifactAnalysis
+   }
+    
+    
+        
+    
+    async UpdateArtifactAnalysis(ArtifactAnalysis) {
+        return this.apiCall("PUT", "Admin", "ArtifactAnalysis", null, ArtifactAnalysis); // ArtifactAnalysis
+   }
+    
+    
+        
+    
+    async DeleteArtifactAnalysis(id) { 
+        return this.apiCall("DELETE", "Admin", "ArtifactAnalysis", null, id); // ArtifactAnalysis
+   }
+    
+    
+        
+    
     async AddAppUser(AppUser) { 
         return this.apiCall("POST", "Admin", "AppUser", null, AppUser); // AppUser
    }
@@ -140,34 +168,6 @@ class AdminService extends BaseService {
     
     async DeleteTrial(id) { 
         return this.apiCall("DELETE", "Admin", "Trial", null, id); // Trial
-   }
-    
-    
-        
-    
-    async AddArtifactAnalysi(ArtifactAnalysi) { 
-        return this.apiCall("POST", "Admin", "ArtifactAnalysi", null, ArtifactAnalysi); // ArtifactAnalysi
-   }
-    
-    
-        
-    
-    async GetArtifactAnalysis(view) { 
-        return this.apiCall("GET", "Admin", "ArtifactAnalysis", view, null); // ArtifactAnalysi
-   }
-    
-    
-        
-    
-    async UpdateArtifactAnalysi(ArtifactAnalysi) {
-        return this.apiCall("PUT", "Admin", "ArtifactAnalysi", null, ArtifactAnalysi); // ArtifactAnalysi
-   }
-    
-    
-        
-    
-    async DeleteArtifactAnalysi(id) { 
-        return this.apiCall("DELETE", "Admin", "ArtifactAnalysi", null, id); // ArtifactAnalysi
    }
     
     

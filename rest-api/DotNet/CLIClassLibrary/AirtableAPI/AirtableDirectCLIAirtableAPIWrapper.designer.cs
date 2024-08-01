@@ -56,6 +56,44 @@ namespace AirtableToDotNet.APIWrapper
         /// <param name="trialartifact">The trialartifact which was deleted</param>
         partial void AfterDeleteTrialArtifact(dc.TrialArtifact trialartifact);
         /// <summary>
+        /// Called before a artifactanalysis is updated.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="artifactanalysis">The artifactanalysis to update</param>
+        partial void BeforeUpdateArtifactAnalysis(dc.ArtifactAnalysis artifactanalysis);
+
+        /// <summary>
+        /// Called after a artifactanalysis is updated
+        /// </summary>
+        /// <param name="artifactanalysis">The artifactanalysis which was updated</param>
+        partial void AfterUpdateArtifactAnalysis(dc.ArtifactAnalysis artifactanalysis);
+
+        /// <summary>
+        /// Called before a artifactanalysis is added.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="artifactanalysis">The artifactanalysis to add</param>
+        partial void BeforeAddArtifactAnalysis(dc.ArtifactAnalysis artifactanalysis);
+
+        /// <summary>
+        /// Called after a artifactanalysis is added
+        /// </summary>
+        /// <param name="artifactanalysis">The artifactanalysis which was added</param>
+        partial void AfterAddArtifactAnalysis(dc.ArtifactAnalysis artifactanalysis);
+
+        /// <summary>
+        /// Called before a artifactanalysis is deleted.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="artifactanalysis">The artifactanalysis to add</param>
+        partial void BeforeDeleteArtifactAnalysis(dc.ArtifactAnalysis artifactanalysis);
+
+        /// <summary>
+        /// Called after a artifactanalysis is deleted
+        /// </summary>
+        /// <param name="artifactanalysis">The artifactanalysis which was deleted</param>
+        partial void AfterDeleteArtifactAnalysis(dc.ArtifactAnalysis artifactanalysis);
+        /// <summary>
         /// Called before a appuser is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
@@ -207,44 +245,6 @@ namespace AirtableToDotNet.APIWrapper
         /// </summary>
         /// <param name="trial">The trial which was deleted</param>
         partial void AfterDeleteTrial(dc.Trial trial);
-        /// <summary>
-        /// Called before a artifactanalysi is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="artifactanalysi">The artifactanalysi to update</param>
-        partial void BeforeUpdateArtifactAnalysi(dc.ArtifactAnalysi artifactanalysi);
-
-        /// <summary>
-        /// Called after a artifactanalysi is updated
-        /// </summary>
-        /// <param name="artifactanalysi">The artifactanalysi which was updated</param>
-        partial void AfterUpdateArtifactAnalysi(dc.ArtifactAnalysi artifactanalysi);
-
-        /// <summary>
-        /// Called before a artifactanalysi is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="artifactanalysi">The artifactanalysi to add</param>
-        partial void BeforeAddArtifactAnalysi(dc.ArtifactAnalysi artifactanalysi);
-
-        /// <summary>
-        /// Called after a artifactanalysi is added
-        /// </summary>
-        /// <param name="artifactanalysi">The artifactanalysi which was added</param>
-        partial void AfterAddArtifactAnalysi(dc.ArtifactAnalysi artifactanalysi);
-
-        /// <summary>
-        /// Called before a artifactanalysi is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="artifactanalysi">The artifactanalysi to add</param>
-        partial void BeforeDeleteArtifactAnalysi(dc.ArtifactAnalysi artifactanalysi);
-
-        /// <summary>
-        /// Called after a artifactanalysi is deleted
-        /// </summary>
-        /// <param name="artifactanalysi">The artifactanalysi which was deleted</param>
-        partial void AfterDeleteArtifactAnalysi(dc.ArtifactAnalysi artifactanalysi);
         /// <summary>
         /// Called before a experimenttransformer is updated.  Throw a SkipOperationException 
         /// if the update should not happen
@@ -529,6 +529,78 @@ namespace AirtableToDotNet.APIWrapper
             }
 
             return trialartifact;
+        }
+        /// <summary>
+        /// Returns a list of ArtifactAnalyses
+        /// </summary>
+        /// <param name="view">the specific view to pull ArtifactAnalyses from</param>
+        /// <returns>The list of ArtifactAnalyses from the given view</returns>
+        public IEnumerable<dc.ArtifactAnalysis> GetArtifactAnalyses(String where = "", String view = "", int maxPages = 5)
+        {
+            var rows = this.GetTableAsAirtableRows("ArtifactAnalysis", "ArtifactAnalyses", "ArtifactAnalyses", where, view, maxPages);
+            return rows.ConvertTo<dc.ArtifactAnalysis>();
+        }
+
+        /// <summary>
+        /// Update the given artifactanalysis
+        /// </summary>
+        /// <param name="artifactanalysis">The artifactanalysis to update</param>
+        public dc.ArtifactAnalysis Update(dc.ArtifactAnalysis artifactanalysis)
+        {
+            try
+            {
+                this.BeforeUpdateArtifactAnalysis(artifactanalysis);
+                artifactanalysis = this.UpdateAirtableRow<dc.ArtifactAnalysis>("ArtifactAnalysis", "ArtifactAnalyses", "ArtifactAnalyses", artifactanalysis);
+                this.AfterUpdateArtifactAnalysis(artifactanalysis);
+                return artifactanalysis;
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Delete the given artifactanalysis
+        /// </summary>
+        /// <param name="artifactanalysis">The artifactanalysis to delete</param>
+        public void Delete(dc.ArtifactAnalysis artifactanalysis)
+        {
+            try
+            {
+                this.BeforeDeleteArtifactAnalysis(artifactanalysis);
+                this.DeleteAirtableRow<dc.ArtifactAnalysis>("ArtifactAnalyses", artifactanalysis);
+                this.AfterDeleteArtifactAnalysis(artifactanalysis);
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+        }
+
+        /// <summary>
+        /// Insert a new artifactanalysis into the airtable
+        /// </summary>
+        /// <param name="artifactanalysis">The artifactanalysis to insert into the airtable</param>
+        /// <returns></returns>
+        public dc.ArtifactAnalysis Insert(dc.ArtifactAnalysis artifactanalysis)
+        {
+            try
+            {
+                this.BeforeAddArtifactAnalysis(artifactanalysis);
+                artifactanalysis = base.AddAirtableRow<dc.ArtifactAnalysis>("ArtifactAnalysis", "ArtifactAnalyses", "ArtifactAnalyses", artifactanalysis);
+                this.AfterAddArtifactAnalysis(artifactanalysis);                
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+
+            return artifactanalysis;
         }
         /// <summary>
         /// Returns a list of AppUsers
@@ -817,78 +889,6 @@ namespace AirtableToDotNet.APIWrapper
             }
 
             return trial;
-        }
-        /// <summary>
-        /// Returns a list of ArtifactAnalysis
-        /// </summary>
-        /// <param name="view">the specific view to pull ArtifactAnalysis from</param>
-        /// <returns>The list of ArtifactAnalysis from the given view</returns>
-        public IEnumerable<dc.ArtifactAnalysi> GetArtifactAnalysis(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("ArtifactAnalysi", "ArtifactAnalysis", "ArtifactAnalysis", where, view, maxPages);
-            return rows.ConvertTo<dc.ArtifactAnalysi>();
-        }
-
-        /// <summary>
-        /// Update the given artifactanalysi
-        /// </summary>
-        /// <param name="artifactanalysi">The artifactanalysi to update</param>
-        public dc.ArtifactAnalysi Update(dc.ArtifactAnalysi artifactanalysi)
-        {
-            try
-            {
-                this.BeforeUpdateArtifactAnalysi(artifactanalysi);
-                artifactanalysi = this.UpdateAirtableRow<dc.ArtifactAnalysi>("ArtifactAnalysi", "ArtifactAnalysis", "ArtifactAnalysis", artifactanalysi);
-                this.AfterUpdateArtifactAnalysi(artifactanalysi);
-                return artifactanalysi;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given artifactanalysi
-        /// </summary>
-        /// <param name="artifactanalysi">The artifactanalysi to delete</param>
-        public void Delete(dc.ArtifactAnalysi artifactanalysi)
-        {
-            try
-            {
-                this.BeforeDeleteArtifactAnalysi(artifactanalysi);
-                this.DeleteAirtableRow<dc.ArtifactAnalysi>("ArtifactAnalysis", artifactanalysi);
-                this.AfterDeleteArtifactAnalysi(artifactanalysi);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new artifactanalysi into the airtable
-        /// </summary>
-        /// <param name="artifactanalysi">The artifactanalysi to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.ArtifactAnalysi Insert(dc.ArtifactAnalysi artifactanalysi)
-        {
-            try
-            {
-                this.BeforeAddArtifactAnalysi(artifactanalysi);
-                artifactanalysi = base.AddAirtableRow<dc.ArtifactAnalysi>("ArtifactAnalysi", "ArtifactAnalysis", "ArtifactAnalysis", artifactanalysi);
-                this.AfterAddArtifactAnalysi(artifactanalysi);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return artifactanalysi;
         }
         /// <summary>
         /// Returns a list of ExperimentTransformers

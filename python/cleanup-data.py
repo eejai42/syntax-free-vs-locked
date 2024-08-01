@@ -1,7 +1,17 @@
+import requests
 import json
+import os
+import sys
 import re
 
-# Sample experiment features with variations and partial matches
+REST_BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImF1dGgwfDY2N2Y1YjU1OTBiOTYzZTM2NzIyNGUwOCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlaitoYW5nbWFuMUBzc290Lm1lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiZWoraGFuZ21hbjFAc3NvdC5tZSIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9kMmFiZmYzYmNhY2NmYmFlZmM0NjE2ODI1MTdlMTE3OD9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRmVqLnBuZyIsImVtYWlsX3ZlcmlmaWVkIjoiVHJ1ZSIsImV4cCI6MTcyMjU3ODY3MywiaXNzIjoiZWotdGljdGFjdG9lLWRlbW8udXMuYXV0aDAuY29tIiwiYXVkIjoiaHR0cHM6Ly9lai10aWN0YWN0b2UtZGVtby51cy5hdXRoMC5jb20vYXBpL3YyIn0.AnflVJjZmXdeGV6FGLCHFxDH2-2ALAf8uTO-1X5I_vU"
+BASE_URL = "https://localhost:42016/User"
+HEADERS = {
+    "Authorization": f"Bearer {REST_BEARER_TOKEN}",
+    "Content-Type": "application/json"
+}
+
+# Define the experiment features with variations and partial matches
 experiment_features = [
     {
         "Name": "ToDoItems",
@@ -18,8 +28,29 @@ experiment_features = [
         "Variations": "due dates, due date, due on, due",
         "PartialMatches": "due"
     },
-    # ... add all other features with their variations and partial matches
+    # Add other features with their variations and partial matches
 ]
+
+def get_trial_artifacts_needing_cleaning():
+    url = f"{BASE_URL}/ArtifactAnalyses?view=NeedsCleanValidationJson"
+    response = requests.get(url, headers=HEADERS, verify=False)
+    response.raise_for_status()
+    return response.json()
+
+def clean_and_update_artifacts():
+    artifacts = get_trial_artifacts_needing_cleaning()
+    for artifact in artifacts:
+        artifact["GenerationName"] = None
+        artifact["GenerationTransformerNumber"] = None
+        artifact["TransformerGeneratioNumber"] = None
+        artifact["TransformerGenerationName"] = None
+        artifact["GenerationName"] = None
+        artifact["GenerationName"] = None
+        artifact["GenerationName"] = None
+        cleaned_json = clean_json(artifact['TrialArtifactValidationResponse'])
+        cleaned_json_string = json.dumps(cleaned_json, indent=4)
+        artifact['CleanValidationJson'] = cleaned_json_string
+        update_trial_artifact(artifact)
 
 def extract_json_from_natural_language_text_with_regex(llm_json_response):
     # Extract JSON blob from natural language text
@@ -46,6 +77,9 @@ def extract_keywords_listed_as_raw_data(llm_json):
 
 def normalize_feature_name(name, feature_data):
     # Normalize the feature name based on the variations and partial matches
+    if not name:
+        return None
+
     name_lower = name.lower()
     for feature in feature_data:
         # Generate sub-variations for each variation
@@ -109,73 +143,16 @@ def clean_json(llm_json_response):
     
     return clean_json_structure
 
-# Example usage with a sample JSON response
-llm_json_response = """
-Some introduction text here. Below is the JSON:
-{
-  "Features": ["ToDoItems", "Categories", "DueDates", "Reminders", "AssignedTo"],
-  "Keywords": [
-    {
-      "KeywordName": "ToDoItems",
-      "IsMissing": false,
-      "AKA": "tasks"
-    },
-    {
-      "KeywordName": "Categories",
-      "IsMissing": false,
-      "AKA": "categorization of tasks"
-    },
-    {
-      "KeywordName": "DueDates",
-      "IsMissing": false,
-      "AKA": "due date feature"
-    },
-    {
-      "KeywordName": "Priorities",
-      "IsMissing": true
-    },
-    {
-      "KeywordName": "Progress",
-      "IsMissing": true
-    },
-    {
-      "KeywordName": "Statuses",
-      "IsMissing": true
-    },
-    {
-      "KeywordName": "Reminders",
-      "IsMissing": false,
-      "AKA": "timely reminders"
-    },
-    {
-      "KeywordName": "Notifications",
-      "IsMissing": true
-    },
-    {
-      "KeywordName": "Completion",
-      "IsMissing": true
-    },
-    {
-      "KeywordName": "AssignedTo",
-      "IsMissing": false,
-      "AKA": "assigned to attribute"
-    },
-    {
-      "KeywordName": "Duration",
-      "IsMissing": true
-    },
-    {
-      "KeywordName": "CompletedDate",
-      "IsMissing": true
-    },
-    {
-      "KeywordName": "ToDoColors",
-      "IsMissing": true
+def update_trial_artifact(artifact):
+    url = f"{BASE_URL}/ArtifactAnalysis"
+    payload = {
+        "ArtifactAnalysis": artifact
     }
-  ]
-}
-Some concluding text here.
-"""
+    response = requests.put(url, json=payload, headers=HEADERS, verify=False)
+    response.raise_for_status()
+    return response.json()
 
-cleaned_json = clean_json(llm_json_response)
-print(json.dumps(cleaned_json, indent=2))
+if __name__ == "__main__":
+    print("Starting cleanup process...")
+    clean_and_update_artifacts()
+    print("Cleanup process completed successfully.")

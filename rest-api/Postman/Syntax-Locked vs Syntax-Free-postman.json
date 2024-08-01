@@ -251,6 +251,84 @@
 				"response": []
 			}
             ,{
+				"name": "Add ArtifactAnalysis",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ArtifactAnalysis"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get ArtifactAnalyses",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ArtifactAnalyses"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get ArtifactAnalysis",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ArtifactAnalysis"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update ArtifactAnalysis",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ArtifactAnalysis"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete ArtifactAnalysis",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","ArtifactAnalysis"]
+					}
+				},
+				"response": []
+			}
+            ,{
 				"name": "Add AppUser",
 				"request": {
 					"method": "POST",
@@ -558,84 +636,6 @@
 						"host": ["{{host}}"],
 						"port": "{{port}}",
 						"path": ["User","Trial"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Add ArtifactAnalysi",
-				"request": {
-					"method": "POST",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","ArtifactAnalysi"]
-					}
-				},
-				"response": []
-			}     
-        
-            
-            ,{
-				"name": "Get ArtifactAnalysis",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","ArtifactAnalysis"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Get ArtifactAnalysi",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","ArtifactAnalysi"]
-					}
-				},
-				"response": []
-			}
-        
-          ,{
-				"name": "Update ArtifactAnalysi",
-				"request": {
-					"method": "PUT",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","ArtifactAnalysi"]
-					}
-				},
-				"response": []
-			}
-          ,{
-				"name": "Delete ArtifactAnalysi",
-				"request": {
-					"method": "DELETE",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","ArtifactAnalysi"]
 					}
 				},
 				"response": []
@@ -1136,6 +1136,84 @@
 				"response": []
 			}
             ,{
+				"name": "Add ArtifactAnalysis",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ArtifactAnalysis"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get ArtifactAnalyses",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ArtifactAnalyses"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get ArtifactAnalysis",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ArtifactAnalysis"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update ArtifactAnalysis",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ArtifactAnalysis"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete ArtifactAnalysis",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalyses",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","ArtifactAnalysis"]
+					}
+				},
+				"response": []
+			}
+            ,{
 				"name": "Add AppUser",
 				"request": {
 					"method": "POST",
@@ -1443,84 +1521,6 @@
 						"host": ["{{host}}"],
 						"port": "{{port}}",
 						"path": ["Admin","Trial"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Add ArtifactAnalysi",
-				"request": {
-					"method": "POST",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","ArtifactAnalysi"]
-					}
-				},
-				"response": []
-			}     
-        
-            
-            ,{
-				"name": "Get ArtifactAnalysis",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","ArtifactAnalysis"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Get ArtifactAnalysi",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","ArtifactAnalysi"]
-					}
-				},
-				"response": []
-			}
-        
-          ,{
-				"name": "Update ArtifactAnalysi",
-				"request": {
-					"method": "PUT",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","ArtifactAnalysi"]
-					}
-				},
-				"response": []
-			}
-          ,{
-				"name": "Delete ArtifactAnalysi",
-				"request": {
-					"method": "DELETE",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/artifactanalysis",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","ArtifactAnalysi"]
 					}
 				},
 				"response": []

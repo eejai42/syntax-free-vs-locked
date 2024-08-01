@@ -156,6 +156,10 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String[] ArtifactAnalysis { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TrailIdentifier")]
+        [RemoteIsCollection]
+        public Nullable<Int32> TrailIdentifier { get; set; }
+    
 
         
 

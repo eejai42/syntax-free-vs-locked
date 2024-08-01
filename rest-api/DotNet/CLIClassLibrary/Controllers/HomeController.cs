@@ -28,6 +28,14 @@ namespace CLIClassLibrary.Controllers
             ,
                 new Endpoint()
                 {
+                    Name = "ArtifactAnalyses",
+                    Method = "GET",
+                    Url = "/ArtifactAnalyses",
+                    Description = "Get's a list of ArtifactAnalyses from the data source."
+                }
+            ,
+                new Endpoint()
+                {
                     Name = "AppUsers",
                     Method = "GET",
                     Url = "/AppUsers",
@@ -56,14 +64,6 @@ namespace CLIClassLibrary.Controllers
                     Method = "GET",
                     Url = "/Trials",
                     Description = "Get's a list of Trials from the data source."
-                }
-            ,
-                new Endpoint()
-                {
-                    Name = "ArtifactAnalysis",
-                    Method = "GET",
-                    Url = "/ArtifactAnalysis",
-                    Description = "Get's a list of ArtifactAnalysis from the data source."
                 }
             ,
                 new Endpoint()

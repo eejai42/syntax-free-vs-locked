@@ -14,26 +14,26 @@ namespace ASPNet_REST_API.Controllers.Admin
 {
     [ApiController]
     [Route("/Admin")]
-    public class AdminArtifactAnalysisController : Controller
+    public class AdminArtifactAnalysesController : Controller
     {
         
 
         [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpGet("ArtifactAnalysis")]
+        [HttpGet("ArtifactAnalyses")]
         public IActionResult Index(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var results = new List<ArtifactAnalysi>();
+            var results = new List<ArtifactAnalysis>();
             try
             {
                 ATDAdmin atdAdmin = new ATDAdmin();
                 atdAdmin.EmailAddress = this.User.Identity.Name;
                 atdAdmin.UserIdentity = this.User.Identities.FirstOrDefault();
                 var payload = atdAdmin.CreatePayload("{}", airtableWhere, view, maxPages);
-                results = atdAdmin.GetArtifactAnalysis(payload)?.ToList();
+                results = atdAdmin.GetArtifactAnalyses(payload)?.ToList();
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding ArtifactAnalysis: {ex.Message}", ex);
+                throw new Exception($"Error adding ArtifactAnalyses: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(results, Formatting.Indented);
 
@@ -44,11 +44,11 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpPost("ArtifactAnalyses")]
         [HttpPost("ArtifactAnalysis")]
-        [HttpPost("ArtifactAnalysi")]
         public IActionResult Add(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = default(ArtifactAnalysi);
+            var result = default(ArtifactAnalysis);
             try
             {
                 ATDAdmin atdAdmin = new ATDAdmin();
@@ -59,14 +59,14 @@ namespace ASPNet_REST_API.Controllers.Admin
                     var body = reader.ReadToEndAsync().GetAwaiter().GetResult();
                     var payload = atdAdmin.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.ArtifactAnalysi = bodyAsPayload.ArtifactAnalysi.AdminCleanForAdd();
-                    if (payload.ArtifactAnalysi is null) payload.ArtifactAnalysi = JsonConvert.DeserializeObject<ArtifactAnalysi>(body).AdminCleanForAdd();
-                    result = atdAdmin.AddArtifactAnalysi(payload).AdminCleanForGet();
+                    if (bodyAsPayload != null) payload.ArtifactAnalysis = bodyAsPayload.ArtifactAnalysis.AdminCleanForAdd();
+                    if (payload.ArtifactAnalysis is null) payload.ArtifactAnalysis = JsonConvert.DeserializeObject<ArtifactAnalysis>(body).AdminCleanForAdd();
+                    result = atdAdmin.AddArtifactAnalysis(payload).AdminCleanForGet();
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding ArtifactAnalysis: {ex.Message}", ex);
+                throw new Exception($"Error adding ArtifactAnalyses: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -77,10 +77,10 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPut("ArtifactAnalysi")]
+        [HttpPut("ArtifactAnalysis")]
         public IActionResult Update(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = new ArtifactAnalysi();
+            var result = new ArtifactAnalysis();
             try
             {
                 using (var reader = new StreamReader(this.Request.Body))
@@ -90,15 +90,15 @@ namespace ASPNet_REST_API.Controllers.Admin
                     atdAdmin.EmailAddress = this.User.Identity.Name;
                     var payload = atdAdmin.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.ArtifactAnalysi = bodyAsPayload.ArtifactAnalysi.AdminCleanForAdd();
-                    if (payload.ArtifactAnalysi is null) payload.ArtifactAnalysi = JsonConvert.DeserializeObject<ArtifactAnalysi>(body).AdminCleanForAdd();
-                    result = atdAdmin.UpdateArtifactAnalysi(payload)?.FirstOrDefault();
+                    if (bodyAsPayload != null) payload.ArtifactAnalysis = bodyAsPayload.ArtifactAnalysis.AdminCleanForAdd();
+                    if (payload.ArtifactAnalysis is null) payload.ArtifactAnalysis = JsonConvert.DeserializeObject<ArtifactAnalysis>(body).AdminCleanForAdd();
+                    result = atdAdmin.UpdateArtifactAnalysis(payload)?.FirstOrDefault();
                 }
 
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error updating ArtifactAnalysis: {ex.Message}", ex);
+                throw new Exception($"Error updating ArtifactAnalyses: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -109,20 +109,20 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpDelete("ArtifactAnalysi")]
+        [HttpDelete("ArtifactAnalysis")]
         public IActionResult Delete(string id)
         {
             try {
                 ATDAdmin atdAdmin = new ATDAdmin();
                 atdAdmin.EmailAddress = this.User.Identity.Name;
                 var payload = atdAdmin.CreatePayload();
-                payload.ArtifactAnalysi = new ArtifactAnalysi() { ArtifactAnalysiId = id };
-                atdAdmin.DeleteArtifactAnalysi(payload);
+                payload.ArtifactAnalysis = new ArtifactAnalysis() { ArtifactAnalysisId = id };
+                atdAdmin.DeleteArtifactAnalysis(payload);
                 var json = JsonConvert.SerializeObject(true, Formatting.Indented);
                 return Content(json, "application/json");    
             } 
             catch (Exception ex) {
-                throw new Exception($"Error updating ArtifactAnalysis: {ex.Message}", ex);
+                throw new Exception($"Error updating ArtifactAnalyses: {ex.Message}", ex);
             }
         }                        
     }

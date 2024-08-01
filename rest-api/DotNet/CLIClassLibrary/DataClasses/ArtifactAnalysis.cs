@@ -9,16 +9,16 @@ using System.ComponentModel;
 namespace AirtableDirect.CLI.Lib.DataClasses
 {                   
     
-    public partial class ArtifactAnalysi 
+    public partial class ArtifactAnalysis 
     {
-        public ArtifactAnalysi()
+        public ArtifactAnalysis()
         {
             this.InitPoco();
         }
 
         public override String ToString()
         {
-            return String.Format("ArtifactAnalysi: {0}", this.Name);
+            return String.Format("ArtifactAnalysis: {0}", this.Name);
         }
                             
     }
