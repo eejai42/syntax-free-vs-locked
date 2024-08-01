@@ -11,6 +11,95 @@ namespace CLIClassLibrary.ATDMQ
 	public partial class ATDUser : ATDActorBase
     {
        public ClaimsIdentity UserIdentity { get; set; } // IsUpdate: false
+       public TrialArtifact AddTrialArtifact(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.Insert(Payload.TrialArtifact.UserCleanForAdd());
+			}        
+        private string WrapUserAddTrialArtifactWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
+       public IEnumerable<TrialArtifact> GetTrialArtifacts(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.GetTrialArtifacts(WrapUserGetTrialArtifactsWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).UserCleanForGet();
+			}        
+        private string WrapUserGetTrialArtifactsWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: true
+       public IEnumerable<TrialArtifact> UpdateTrialArtifact(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				
+          if (!(Payload.TrialArtifacts is null))
+          {
+              return this.UpdateTrialArtifacts(api, Payload);
+          }
+          else
+          {
+              var updatedTrialArtifact = api.Update(Payload.TrialArtifact.UserCleanForUpdate());
+              return new List<TrialArtifact>(new TrialArtifact[] { updatedTrialArtifact });
+          }
+        
+			}        
+        private string WrapUserUpdateTrialArtifactWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+              
+        private List<TrialArtifact> UpdateTrialArtifacts(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
+        {
+            if (!(payload.TrialArtifacts is null) && payload.TrialArtifacts.Any())
+            {
+                var updatedItems = new List<TrialArtifact>();
+                payload.TrialArtifacts.ForEach(item =>
+                {
+                    var updatedTrialArtifacts = api.Update(item);
+                    updatedItems.Add(updatedTrialArtifacts);
+                });
+                return updatedItems;
+            }
+            else throw new Exception("Payload.Product or Payload.Products required to update products");
+        }
+      
+ // IsUpdate: false
+       public void DeleteTrialArtifact(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				api.Delete(Payload.TrialArtifact);
+			}        
+        private string WrapUserDeleteTrialArtifactWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
        public AppUser AddAppUser(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
@@ -281,6 +370,95 @@ namespace CLIClassLibrary.ATDMQ
 
       
  // IsUpdate: false
+       public Trial AddTrial(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.Insert(Payload.Trial.UserCleanForAdd());
+			}        
+        private string WrapUserAddTrialWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
+       public IEnumerable<Trial> GetTrials(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				return api.GetTrials(WrapUserGetTrialsWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).UserCleanForGet();
+			}        
+        private string WrapUserGetTrialsWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: true
+       public IEnumerable<Trial> UpdateTrial(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				
+          if (!(Payload.Trials is null))
+          {
+              return this.UpdateTrials(api, Payload);
+          }
+          else
+          {
+              var updatedTrial = api.Update(Payload.Trial.UserCleanForUpdate());
+              return new List<Trial>(new Trial[] { updatedTrial });
+          }
+        
+			}        
+        private string WrapUserUpdateTrialWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+              
+        private List<Trial> UpdateTrials(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
+        {
+            if (!(payload.Trials is null) && payload.Trials.Any())
+            {
+                var updatedItems = new List<Trial>();
+                payload.Trials.ForEach(item =>
+                {
+                    var updatedTrials = api.Update(item);
+                    updatedItems.Add(updatedTrials);
+                });
+                return updatedItems;
+            }
+            else throw new Exception("Payload.Product or Payload.Products required to update products");
+        }
+      
+ // IsUpdate: false
+       public void DeleteTrial(StandardPayload Payload) {
+			
+				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
+				api.Delete(Payload.Trial);
+			}        
+        private string WrapUserDeleteTrialWhere(string airtableWhere)
+        {
+                
+        
+        
+            // AirtableWhere: 
+            return airtableWhere; 
+        }
+
+      
+ // IsUpdate: false
        public ExperimentTransformer AddExperimentTransformer(StandardPayload Payload) {
 			
 				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
@@ -449,95 +627,6 @@ namespace CLIClassLibrary.ATDMQ
 				api.Delete(Payload.ExperimentFeature);
 			}        
         private string WrapUserDeleteExperimentFeatureWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public TransformedArtifact AddTransformedArtifact(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.Insert(Payload.TransformedArtifact.UserCleanForAdd());
-			}        
-        private string WrapUserAddTransformedArtifactWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: false
-       public IEnumerable<TransformedArtifact> GetTransformedArtifacts(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				return api.GetTransformedArtifacts(WrapUserGetTransformedArtifactsWhere(Payload.AirtableWhere), Payload.View, Payload.MaxPages).UserCleanForGet();
-			}        
-        private string WrapUserGetTransformedArtifactsWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-      
- // IsUpdate: true
-       public IEnumerable<TransformedArtifact> UpdateTransformedArtifact(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				
-          if (!(Payload.TransformedArtifacts is null))
-          {
-              return this.UpdateTransformedArtifacts(api, Payload);
-          }
-          else
-          {
-              var updatedTransformedArtifact = api.Update(Payload.TransformedArtifact.UserCleanForUpdate());
-              return new List<TransformedArtifact>(new TransformedArtifact[] { updatedTransformedArtifact });
-          }
-        
-			}        
-        private string WrapUserUpdateTransformedArtifactWhere(string airtableWhere)
-        {
-                
-        
-        
-            // AirtableWhere: 
-            return airtableWhere; 
-        }
-
-              
-        private List<TransformedArtifact> UpdateTransformedArtifacts(AirtableDirectCLIAirtableAPIWrapper api, StandardPayload payload)
-        {
-            if (!(payload.TransformedArtifacts is null) && payload.TransformedArtifacts.Any())
-            {
-                var updatedItems = new List<TransformedArtifact>();
-                payload.TransformedArtifacts.ForEach(item =>
-                {
-                    var updatedTransformedArtifacts = api.Update(item);
-                    updatedItems.Add(updatedTransformedArtifacts);
-                });
-                return updatedItems;
-            }
-            else throw new Exception("Payload.Product or Payload.Products required to update products");
-        }
-      
- // IsUpdate: false
-       public void DeleteTransformedArtifact(StandardPayload Payload) {
-			
-				AirtableDirectCLIAirtableAPIWrapper api = new AirtableDirectCLIAirtableAPIWrapper(Payload.ApiKey, Payload.BaseId);
-				api.Delete(Payload.TransformedArtifact);
-			}        
-        private string WrapUserDeleteTransformedArtifactWhere(string airtableWhere)
         {
                 
         

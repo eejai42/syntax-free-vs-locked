@@ -5,6 +5,34 @@ class UserService extends BaseService {
     
         
     
+    async AddTrialArtifact(TrialArtifact) { 
+        return this.apiCall("POST", "User", "TrialArtifact", null, TrialArtifact); // TrialArtifact
+   }
+    
+    
+        
+    
+    async GetTrialArtifacts(view) { 
+        return this.apiCall("GET", "User", "TrialArtifacts", view, null); // TrialArtifact
+   }
+    
+    
+        
+    
+    async UpdateTrialArtifact(TrialArtifact) {
+        return this.apiCall("PUT", "User", "TrialArtifact", null, TrialArtifact); // TrialArtifact
+   }
+    
+    
+        
+    
+    async DeleteTrialArtifact(id) { 
+        return this.apiCall("DELETE", "User", "TrialArtifact", null, id); // TrialArtifact
+   }
+    
+    
+        
+    
     async AddAppUser(AppUser) { 
         return this.apiCall("POST", "User", "AppUser", null, AppUser); // AppUser
    }
@@ -89,6 +117,34 @@ class UserService extends BaseService {
     
         
     
+    async AddTrial(Trial) { 
+        return this.apiCall("POST", "User", "Trial", null, Trial); // Trial
+   }
+    
+    
+        
+    
+    async GetTrials(view) { 
+        return this.apiCall("GET", "User", "Trials", view, null); // Trial
+   }
+    
+    
+        
+    
+    async UpdateTrial(Trial) {
+        return this.apiCall("PUT", "User", "Trial", null, Trial); // Trial
+   }
+    
+    
+        
+    
+    async DeleteTrial(id) { 
+        return this.apiCall("DELETE", "User", "Trial", null, id); // Trial
+   }
+    
+    
+        
+    
     async AddExperimentTransformer(ExperimentTransformer) { 
         return this.apiCall("POST", "User", "ExperimentTransformer", null, ExperimentTransformer); // ExperimentTransformer
    }
@@ -140,34 +196,6 @@ class UserService extends BaseService {
     
     async DeleteExperimentFeature(id) { 
         return this.apiCall("DELETE", "User", "ExperimentFeature", null, id); // ExperimentFeature
-   }
-    
-    
-        
-    
-    async AddTransformedArtifact(TransformedArtifact) { 
-        return this.apiCall("POST", "User", "TransformedArtifact", null, TransformedArtifact); // TransformedArtifact
-   }
-    
-    
-        
-    
-    async GetTransformedArtifacts(view) { 
-        return this.apiCall("GET", "User", "TransformedArtifacts", view, null); // TransformedArtifact
-   }
-    
-    
-        
-    
-    async UpdateTransformedArtifact(TransformedArtifact) {
-        return this.apiCall("PUT", "User", "TransformedArtifact", null, TransformedArtifact); // TransformedArtifact
-   }
-    
-    
-        
-    
-    async DeleteTransformedArtifact(id) { 
-        return this.apiCall("DELETE", "User", "TransformedArtifact", null, id); // TransformedArtifact
    }
     
     

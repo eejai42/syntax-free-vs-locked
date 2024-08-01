@@ -173,6 +173,84 @@
 				}
                     
             ,{
+				"name": "Add TrialArtifact",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","TrialArtifact"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get TrialArtifacts",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","TrialArtifacts"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get TrialArtifact",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","TrialArtifact"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update TrialArtifact",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","TrialArtifact"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete TrialArtifact",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","TrialArtifact"]
+					}
+				},
+				"response": []
+			}
+            ,{
 				"name": "Add AppUser",
 				"request": {
 					"method": "POST",
@@ -407,6 +485,84 @@
 				"response": []
 			}
             ,{
+				"name": "Add Trial",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Trial"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get Trials",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Trials"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get Trial",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Trial"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update Trial",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Trial"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete Trial",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["User","Trial"]
+					}
+				},
+				"response": []
+			}
+            ,{
 				"name": "Add ExperimentTransformer",
 				"request": {
 					"method": "POST",
@@ -558,84 +714,6 @@
 						"host": ["{{host}}"],
 						"port": "{{port}}",
 						"path": ["User","ExperimentFeature"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Add TransformedArtifact",
-				"request": {
-					"method": "POST",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","TransformedArtifact"]
-					}
-				},
-				"response": []
-			}     
-        
-            
-            ,{
-				"name": "Get TransformedArtifacts",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","TransformedArtifacts"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Get TransformedArtifact",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","TransformedArtifact"]
-					}
-				},
-				"response": []
-			}
-        
-          ,{
-				"name": "Update TransformedArtifact",
-				"request": {
-					"method": "PUT",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","TransformedArtifact"]
-					}
-				},
-				"response": []
-			}
-          ,{
-				"name": "Delete TransformedArtifact",
-				"request": {
-					"method": "DELETE",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/user/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["User","TransformedArtifact"]
 					}
 				},
 				"response": []
@@ -902,6 +980,84 @@
 				}
                     
             ,{
+				"name": "Add TrialArtifact",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","TrialArtifact"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get TrialArtifacts",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","TrialArtifacts"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get TrialArtifact",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","TrialArtifact"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update TrialArtifact",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","TrialArtifact"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete TrialArtifact",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trialartifacts",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","TrialArtifact"]
+					}
+				},
+				"response": []
+			}
+            ,{
 				"name": "Add AppUser",
 				"request": {
 					"method": "POST",
@@ -1136,6 +1292,84 @@
 				"response": []
 			}
             ,{
+				"name": "Add Trial",
+				"request": {
+					"method": "POST",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Trial"]
+					}
+				},
+				"response": []
+			}     
+        
+            
+            ,{
+				"name": "Get Trials",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Trials"]
+					}
+				},
+				"response": []
+			}
+            ,{
+				"name": "Get Trial",
+				"request": {
+					"method": "GET",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Trial"]
+					}
+				},
+				"response": []
+			}
+        
+          ,{
+				"name": "Update Trial",
+				"request": {
+					"method": "PUT",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Trial"]
+					}
+				},
+				"response": []
+			}
+          ,{
+				"name": "Delete Trial",
+				"request": {
+					"method": "DELETE",
+					"header": [],
+					"url": {
+						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/trials",
+						"protocol": "{{protocol}}",
+						"host": ["{{host}}"],
+						"port": "{{port}}",
+						"path": ["Admin","Trial"]
+					}
+				},
+				"response": []
+			}
+            ,{
 				"name": "Add ExperimentTransformer",
 				"request": {
 					"method": "POST",
@@ -1287,84 +1521,6 @@
 						"host": ["{{host}}"],
 						"port": "{{port}}",
 						"path": ["Admin","ExperimentFeature"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Add TransformedArtifact",
-				"request": {
-					"method": "POST",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","TransformedArtifact"]
-					}
-				},
-				"response": []
-			}     
-        
-            
-            ,{
-				"name": "Get TransformedArtifacts",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","TransformedArtifacts"]
-					}
-				},
-				"response": []
-			}
-            ,{
-				"name": "Get TransformedArtifact",
-				"request": {
-					"method": "GET",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","TransformedArtifact"]
-					}
-				},
-				"response": []
-			}
-        
-          ,{
-				"name": "Update TransformedArtifact",
-				"request": {
-					"method": "PUT",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","TransformedArtifact"]
-					}
-				},
-				"response": []
-			}
-          ,{
-				"name": "Delete TransformedArtifact",
-				"request": {
-					"method": "DELETE",
-					"header": [],
-					"url": {
-						"raw": "https://routinely-humorous-skunk.ngrok-free.app/admin/transformedartifacts",
-						"protocol": "{{protocol}}",
-						"host": ["{{host}}"],
-						"port": "{{port}}",
-						"path": ["Admin","TransformedArtifact"]
 					}
 				},
 				"response": []

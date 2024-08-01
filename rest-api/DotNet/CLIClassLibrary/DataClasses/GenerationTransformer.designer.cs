@@ -40,14 +40,6 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String GenerationName { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GeneratioNumber")]
-        [RemoteIsCollection]
-        public Nullable<Int32> GeneratioNumber { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformedArtifacts")]
-        [RemoteIsCollection]
-        public String[] TransformedArtifacts { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AutoNumber")]
         public String AutoNumber { get; set; }
     
@@ -61,10 +53,6 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public String ExpAbstract { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpTransformer")]
-        [RemoteIsCollection]
-        public String ExpTransformer { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationExp")]
         [RemoteIsCollection]
         public String GenerationExp { get; set; }
@@ -77,13 +65,36 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public Nullable<Boolean> IsActiveExp { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpTransformerIsSyntaxFree")]
-        [RemoteIsCollection]
-        public Nullable<Boolean> ExpTransformerIsSyntaxFree { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpValidationPrompt")]
         [RemoteIsCollection]
         public String ExpValidationPrompt { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationNumber")]
+        [RemoteIsCollection]
+        public Nullable<Int32> GenerationNumber { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ParentTransformer")]
+        [RemoteIsCollection]
+        public String ParentTransformer { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ParentTransformerNumber")]
+        [RemoteIsCollection]
+        public Nullable<Int32> ParentTransformerNumber { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AddDataCommand")]
+        public String AddDataCommand { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpTransformer")]
+        [RemoteIsCollection]
+        public String ExpTransformer { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TrialArtifacts")]
+        [RemoteIsCollection]
+        public String[] TrialArtifacts { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ExpTransformerIsSyntaxFree")]
+        [RemoteIsCollection]
+        public Nullable<Boolean> ExpTransformerIsSyntaxFree { get; set; }
     
 
         

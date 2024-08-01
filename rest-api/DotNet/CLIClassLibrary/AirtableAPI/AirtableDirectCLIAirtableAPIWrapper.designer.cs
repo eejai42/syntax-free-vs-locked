@@ -18,6 +18,44 @@ namespace AirtableToDotNet.APIWrapper
     {
         
         /// <summary>
+        /// Called before a trialartifact is updated.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="trialartifact">The trialartifact to update</param>
+        partial void BeforeUpdateTrialArtifact(dc.TrialArtifact trialartifact);
+
+        /// <summary>
+        /// Called after a trialartifact is updated
+        /// </summary>
+        /// <param name="trialartifact">The trialartifact which was updated</param>
+        partial void AfterUpdateTrialArtifact(dc.TrialArtifact trialartifact);
+
+        /// <summary>
+        /// Called before a trialartifact is added.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="trialartifact">The trialartifact to add</param>
+        partial void BeforeAddTrialArtifact(dc.TrialArtifact trialartifact);
+
+        /// <summary>
+        /// Called after a trialartifact is added
+        /// </summary>
+        /// <param name="trialartifact">The trialartifact which was added</param>
+        partial void AfterAddTrialArtifact(dc.TrialArtifact trialartifact);
+
+        /// <summary>
+        /// Called before a trialartifact is deleted.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="trialartifact">The trialartifact to add</param>
+        partial void BeforeDeleteTrialArtifact(dc.TrialArtifact trialartifact);
+
+        /// <summary>
+        /// Called after a trialartifact is deleted
+        /// </summary>
+        /// <param name="trialartifact">The trialartifact which was deleted</param>
+        partial void AfterDeleteTrialArtifact(dc.TrialArtifact trialartifact);
+        /// <summary>
         /// Called before a appuser is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
@@ -132,6 +170,44 @@ namespace AirtableToDotNet.APIWrapper
         /// <param name="generation">The generation which was deleted</param>
         partial void AfterDeleteGeneration(dc.Generation generation);
         /// <summary>
+        /// Called before a trial is updated.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="trial">The trial to update</param>
+        partial void BeforeUpdateTrial(dc.Trial trial);
+
+        /// <summary>
+        /// Called after a trial is updated
+        /// </summary>
+        /// <param name="trial">The trial which was updated</param>
+        partial void AfterUpdateTrial(dc.Trial trial);
+
+        /// <summary>
+        /// Called before a trial is added.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="trial">The trial to add</param>
+        partial void BeforeAddTrial(dc.Trial trial);
+
+        /// <summary>
+        /// Called after a trial is added
+        /// </summary>
+        /// <param name="trial">The trial which was added</param>
+        partial void AfterAddTrial(dc.Trial trial);
+
+        /// <summary>
+        /// Called before a trial is deleted.  Throw a SkipOperationException 
+        /// if the update should not happen
+        /// </summary>
+        /// <param name="trial">The trial to add</param>
+        partial void BeforeDeleteTrial(dc.Trial trial);
+
+        /// <summary>
+        /// Called after a trial is deleted
+        /// </summary>
+        /// <param name="trial">The trial which was deleted</param>
+        partial void AfterDeleteTrial(dc.Trial trial);
+        /// <summary>
         /// Called before a experimenttransformer is updated.  Throw a SkipOperationException 
         /// if the update should not happen
         /// </summary>
@@ -207,44 +283,6 @@ namespace AirtableToDotNet.APIWrapper
         /// </summary>
         /// <param name="experimentfeature">The experimentfeature which was deleted</param>
         partial void AfterDeleteExperimentFeature(dc.ExperimentFeature experimentfeature);
-        /// <summary>
-        /// Called before a transformedartifact is updated.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="transformedartifact">The transformedartifact to update</param>
-        partial void BeforeUpdateTransformedArtifact(dc.TransformedArtifact transformedartifact);
-
-        /// <summary>
-        /// Called after a transformedartifact is updated
-        /// </summary>
-        /// <param name="transformedartifact">The transformedartifact which was updated</param>
-        partial void AfterUpdateTransformedArtifact(dc.TransformedArtifact transformedartifact);
-
-        /// <summary>
-        /// Called before a transformedartifact is added.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="transformedartifact">The transformedartifact to add</param>
-        partial void BeforeAddTransformedArtifact(dc.TransformedArtifact transformedartifact);
-
-        /// <summary>
-        /// Called after a transformedartifact is added
-        /// </summary>
-        /// <param name="transformedartifact">The transformedartifact which was added</param>
-        partial void AfterAddTransformedArtifact(dc.TransformedArtifact transformedartifact);
-
-        /// <summary>
-        /// Called before a transformedartifact is deleted.  Throw a SkipOperationException 
-        /// if the update should not happen
-        /// </summary>
-        /// <param name="transformedartifact">The transformedartifact to add</param>
-        partial void BeforeDeleteTransformedArtifact(dc.TransformedArtifact transformedartifact);
-
-        /// <summary>
-        /// Called after a transformedartifact is deleted
-        /// </summary>
-        /// <param name="transformedartifact">The transformedartifact which was deleted</param>
-        partial void AfterDeleteTransformedArtifact(dc.TransformedArtifact transformedartifact);
         /// <summary>
         /// Called before a designdecision is updated.  Throw a SkipOperationException 
         /// if the update should not happen
@@ -382,6 +420,78 @@ namespace AirtableToDotNet.APIWrapper
             }
         }
 
+        /// <summary>
+        /// Returns a list of TrialArtifacts
+        /// </summary>
+        /// <param name="view">the specific view to pull TrialArtifacts from</param>
+        /// <returns>The list of TrialArtifacts from the given view</returns>
+        public IEnumerable<dc.TrialArtifact> GetTrialArtifacts(String where = "", String view = "", int maxPages = 5)
+        {
+            var rows = this.GetTableAsAirtableRows("TrialArtifact", "TrialArtifacts", "TrialArtifacts", where, view, maxPages);
+            return rows.ConvertTo<dc.TrialArtifact>();
+        }
+
+        /// <summary>
+        /// Update the given trialartifact
+        /// </summary>
+        /// <param name="trialartifact">The trialartifact to update</param>
+        public dc.TrialArtifact Update(dc.TrialArtifact trialartifact)
+        {
+            try
+            {
+                this.BeforeUpdateTrialArtifact(trialartifact);
+                trialartifact = this.UpdateAirtableRow<dc.TrialArtifact>("TrialArtifact", "TrialArtifacts", "TrialArtifacts", trialartifact);
+                this.AfterUpdateTrialArtifact(trialartifact);
+                return trialartifact;
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Delete the given trialartifact
+        /// </summary>
+        /// <param name="trialartifact">The trialartifact to delete</param>
+        public void Delete(dc.TrialArtifact trialartifact)
+        {
+            try
+            {
+                this.BeforeDeleteTrialArtifact(trialartifact);
+                this.DeleteAirtableRow<dc.TrialArtifact>("TrialArtifacts", trialartifact);
+                this.AfterDeleteTrialArtifact(trialartifact);
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+        }
+
+        /// <summary>
+        /// Insert a new trialartifact into the airtable
+        /// </summary>
+        /// <param name="trialartifact">The trialartifact to insert into the airtable</param>
+        /// <returns></returns>
+        public dc.TrialArtifact Insert(dc.TrialArtifact trialartifact)
+        {
+            try
+            {
+                this.BeforeAddTrialArtifact(trialartifact);
+                trialartifact = base.AddAirtableRow<dc.TrialArtifact>("TrialArtifact", "TrialArtifacts", "TrialArtifacts", trialartifact);
+                this.AfterAddTrialArtifact(trialartifact);                
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+
+            return trialartifact;
+        }
         /// <summary>
         /// Returns a list of AppUsers
         /// </summary>
@@ -599,6 +709,78 @@ namespace AirtableToDotNet.APIWrapper
             return generation;
         }
         /// <summary>
+        /// Returns a list of Trials
+        /// </summary>
+        /// <param name="view">the specific view to pull Trials from</param>
+        /// <returns>The list of Trials from the given view</returns>
+        public IEnumerable<dc.Trial> GetTrials(String where = "", String view = "", int maxPages = 5)
+        {
+            var rows = this.GetTableAsAirtableRows("Trial", "Trials", "Trials", where, view, maxPages);
+            return rows.ConvertTo<dc.Trial>();
+        }
+
+        /// <summary>
+        /// Update the given trial
+        /// </summary>
+        /// <param name="trial">The trial to update</param>
+        public dc.Trial Update(dc.Trial trial)
+        {
+            try
+            {
+                this.BeforeUpdateTrial(trial);
+                trial = this.UpdateAirtableRow<dc.Trial>("Trial", "Trials", "Trials", trial);
+                this.AfterUpdateTrial(trial);
+                return trial;
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Delete the given trial
+        /// </summary>
+        /// <param name="trial">The trial to delete</param>
+        public void Delete(dc.Trial trial)
+        {
+            try
+            {
+                this.BeforeDeleteTrial(trial);
+                this.DeleteAirtableRow<dc.Trial>("Trials", trial);
+                this.AfterDeleteTrial(trial);
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+        }
+
+        /// <summary>
+        /// Insert a new trial into the airtable
+        /// </summary>
+        /// <param name="trial">The trial to insert into the airtable</param>
+        /// <returns></returns>
+        public dc.Trial Insert(dc.Trial trial)
+        {
+            try
+            {
+                this.BeforeAddTrial(trial);
+                trial = base.AddAirtableRow<dc.Trial>("Trial", "Trials", "Trials", trial);
+                this.AfterAddTrial(trial);                
+            }
+            catch (SkipOperationException soe)
+            {
+                // Ignore soe exceptions
+                // Console.WriteLine("Ignoring: {0}", soe.Message);
+            }
+
+            return trial;
+        }
+        /// <summary>
         /// Returns a list of ExperimentTransformers
         /// </summary>
         /// <param name="view">the specific view to pull ExperimentTransformers from</param>
@@ -741,78 +923,6 @@ namespace AirtableToDotNet.APIWrapper
             }
 
             return experimentfeature;
-        }
-        /// <summary>
-        /// Returns a list of TransformedArtifacts
-        /// </summary>
-        /// <param name="view">the specific view to pull TransformedArtifacts from</param>
-        /// <returns>The list of TransformedArtifacts from the given view</returns>
-        public IEnumerable<dc.TransformedArtifact> GetTransformedArtifacts(String where = "", String view = "", int maxPages = 5)
-        {
-            var rows = this.GetTableAsAirtableRows("TransformedArtifact", "TransformedArtifacts", "TransformedArtifacts", where, view, maxPages);
-            return rows.ConvertTo<dc.TransformedArtifact>();
-        }
-
-        /// <summary>
-        /// Update the given transformedartifact
-        /// </summary>
-        /// <param name="transformedartifact">The transformedartifact to update</param>
-        public dc.TransformedArtifact Update(dc.TransformedArtifact transformedartifact)
-        {
-            try
-            {
-                this.BeforeUpdateTransformedArtifact(transformedartifact);
-                transformedartifact = this.UpdateAirtableRow<dc.TransformedArtifact>("TransformedArtifact", "TransformedArtifacts", "TransformedArtifacts", transformedartifact);
-                this.AfterUpdateTransformedArtifact(transformedartifact);
-                return transformedartifact;
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Delete the given transformedartifact
-        /// </summary>
-        /// <param name="transformedartifact">The transformedartifact to delete</param>
-        public void Delete(dc.TransformedArtifact transformedartifact)
-        {
-            try
-            {
-                this.BeforeDeleteTransformedArtifact(transformedartifact);
-                this.DeleteAirtableRow<dc.TransformedArtifact>("TransformedArtifacts", transformedartifact);
-                this.AfterDeleteTransformedArtifact(transformedartifact);
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-        }
-
-        /// <summary>
-        /// Insert a new transformedartifact into the airtable
-        /// </summary>
-        /// <param name="transformedartifact">The transformedartifact to insert into the airtable</param>
-        /// <returns></returns>
-        public dc.TransformedArtifact Insert(dc.TransformedArtifact transformedartifact)
-        {
-            try
-            {
-                this.BeforeAddTransformedArtifact(transformedartifact);
-                transformedartifact = base.AddAirtableRow<dc.TransformedArtifact>("TransformedArtifact", "TransformedArtifacts", "TransformedArtifacts", transformedartifact);
-                this.AfterAddTransformedArtifact(transformedartifact);                
-            }
-            catch (SkipOperationException soe)
-            {
-                // Ignore soe exceptions
-                // Console.WriteLine("Ignoring: {0}", soe.Message);
-            }
-
-            return transformedartifact;
         }
         /// <summary>
         /// Returns a list of DesignDecisions

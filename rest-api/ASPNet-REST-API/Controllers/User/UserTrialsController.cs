@@ -14,26 +14,26 @@ namespace ASPNet_REST_API.Controllers.Admin
 {
     [ApiController]
     [Route("/User")]
-    public class UserTransformedArtifactsController : Controller
+    public class UserTrialsController : Controller
     {
         
 
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpGet("TransformedArtifacts")]
+        [HttpGet("Trials")]
         public IActionResult Index(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var results = new List<TransformedArtifact>();
+            var results = new List<Trial>();
             try
             {
                 ATDUser atdUser = new ATDUser();
                 atdUser.EmailAddress = this.User.Identity.Name;
                 atdUser.UserIdentity = this.User.Identities.FirstOrDefault();
                 var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
-                results = atdUser.GetTransformedArtifacts(payload)?.ToList();
+                results = atdUser.GetTrials(payload)?.ToList();
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding TransformedArtifacts: {ex.Message}", ex);
+                throw new Exception($"Error adding Trials: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(results, Formatting.Indented);
 
@@ -44,11 +44,11 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPost("TransformedArtifacts")]
-        [HttpPost("TransformedArtifact")]
+        [HttpPost("Trials")]
+        [HttpPost("Trial")]
         public IActionResult Add(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = default(TransformedArtifact);
+            var result = default(Trial);
             try
             {
                 ATDUser atdUser = new ATDUser();
@@ -59,14 +59,14 @@ namespace ASPNet_REST_API.Controllers.Admin
                     var body = reader.ReadToEndAsync().GetAwaiter().GetResult();
                     var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.TransformedArtifact = bodyAsPayload.TransformedArtifact.UserCleanForAdd();
-                    if (payload.TransformedArtifact is null) payload.TransformedArtifact = JsonConvert.DeserializeObject<TransformedArtifact>(body).UserCleanForAdd();
-                    result = atdUser.AddTransformedArtifact(payload).UserCleanForGet();
+                    if (bodyAsPayload != null) payload.Trial = bodyAsPayload.Trial.UserCleanForAdd();
+                    if (payload.Trial is null) payload.Trial = JsonConvert.DeserializeObject<Trial>(body).UserCleanForAdd();
+                    result = atdUser.AddTrial(payload).UserCleanForGet();
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error adding TransformedArtifacts: {ex.Message}", ex);
+                throw new Exception($"Error adding Trials: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -77,10 +77,10 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPut("TransformedArtifact")]
+        [HttpPut("Trial")]
         public IActionResult Update(string airtableWhere = null, string view = null, int maxPages = 5)
         {
-            var result = new TransformedArtifact();
+            var result = new Trial();
             try
             {
                 using (var reader = new StreamReader(this.Request.Body))
@@ -90,15 +90,15 @@ namespace ASPNet_REST_API.Controllers.Admin
                     atdUser.EmailAddress = this.User.Identity.Name;
                     var payload = atdUser.CreatePayload("{}", airtableWhere, view, maxPages);
                     var bodyAsPayload = JsonConvert.DeserializeObject<StandardPayload>(body);
-                    if (bodyAsPayload != null) payload.TransformedArtifact = bodyAsPayload.TransformedArtifact.UserCleanForAdd();
-                    if (payload.TransformedArtifact is null) payload.TransformedArtifact = JsonConvert.DeserializeObject<TransformedArtifact>(body).UserCleanForAdd();
-                    result = atdUser.UpdateTransformedArtifact(payload)?.FirstOrDefault();
+                    if (bodyAsPayload != null) payload.Trial = bodyAsPayload.Trial.UserCleanForAdd();
+                    if (payload.Trial is null) payload.Trial = JsonConvert.DeserializeObject<Trial>(body).UserCleanForAdd();
+                    result = atdUser.UpdateTrial(payload)?.FirstOrDefault();
                 }
 
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error updating TransformedArtifacts: {ex.Message}", ex);
+                throw new Exception($"Error updating Trials: {ex.Message}", ex);
             }
             var json = JsonConvert.SerializeObject(result, Formatting.Indented);
 
@@ -109,20 +109,20 @@ namespace ASPNet_REST_API.Controllers.Admin
 
     
         [Authorize(Roles = "User", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpDelete("TransformedArtifact")]
+        [HttpDelete("Trial")]
         public IActionResult Delete(string id)
         {
             try {
                 ATDUser atdUser = new ATDUser();
                 atdUser.EmailAddress = this.User.Identity.Name;
                 var payload = atdUser.CreatePayload();
-                payload.TransformedArtifact = new TransformedArtifact() { TransformedArtifactId = id };
-                atdUser.DeleteTransformedArtifact(payload);
+                payload.Trial = new Trial() { TrialId = id };
+                atdUser.DeleteTrial(payload);
                 var json = JsonConvert.SerializeObject(true, Formatting.Indented);
                 return Content(json, "application/json");    
             } 
             catch (Exception ex) {
-                throw new Exception($"Error updating TransformedArtifacts: {ex.Message}", ex);
+                throw new Exception($"Error updating Trials: {ex.Message}", ex);
             }
         }                        
     }

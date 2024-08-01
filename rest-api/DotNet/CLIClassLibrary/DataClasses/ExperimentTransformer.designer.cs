@@ -47,10 +47,6 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "FullPrompt")]
         public String FullPrompt { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TransformedTransformers")]
-        [RemoteIsCollection]
-        public String[] TransformedTransformers { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AutoNumber")]
         public String AutoNumber { get; set; }
     
@@ -59,6 +55,10 @@ namespace AirtableDirect.CLI.Lib.DataClasses
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsSyntaxFree")]
         public Nullable<Boolean> IsSyntaxFree { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationTransformer")]
+        [RemoteIsCollection]
+        public String[] GenerationTransformer { get; set; }
     
 
         

@@ -1,17 +1,17 @@
 <Airtable xmlns:json="http://james.newtonking.com/projects/json">
   <Experiments json:Array="true">
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <Generations json:Array="true">recWwVkUT8wc1zSyC</Generations>
     <Generations json:Array="true">recmBq2JG52grVKBr</Generations>
     <Generations json:Array="true">rec7ka3c4BGjhN9dN</Generations>
     <Generations json:Array="true">rec7gQazwWTs39YDk</Generations>
     <Generations json:Array="true">recjQkUQEHnyqQK3K</Generations>
+    <Generations json:Array="true">recfndFgycb2Lvub1</Generations>
     <Generations json:Array="true">rec4u0oAL96jOz25A</Generations>
     <Generations json:Array="true">rec5B1YhbQho4yzeS</Generations>
     <Generations json:Array="true">recBNe7Vq3OWOdkUr</Generations>
     <Generations json:Array="true">recpq95lILCoWOMyS</Generations>
     <Generations json:Array="true">recO0h53dJJKrUmG8</Generations>
-    <Generations json:Array="true">recfndFgycb2Lvub1</Generations>
-    <Generations json:Array="true">recWwVkUT8wc1zSyC</Generations>
     <ExpTransformers json:Array="true">recQzt8ZwxUMZjlwS</ExpTransformers>
     <ExpTransformers json:Array="true">recG6QbNZGIWnqxb2</ExpTransformers>
     <ExpTransformers json:Array="true">recSRuHKkZmwHINk6</ExpTransformers>
@@ -41,12 +41,15 @@
     <ExpFeatures json:Array="true">rect4iemXq2VdC6KS</ExpFeatures>
     <AutoNumber>4</AutoNumber>
     <ExpName>To Do App</ExpName>
+    <Trials json:Array="true">recs7PrHNyer1w5m0</Trials>
+    <Trials json:Array="true">rect3F9OHoG6Z2T7j</Trials>
+    <PromptChainsToCreate>25</PromptChainsToCreate>
     <ExpTransformerFullPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Remove employee from todo items.</ExpTransformerFullPrompts>
-    <ExpTransformerFullPrompts json:Array="true">Testing, Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Remove employee from todo items.</ExpTransformerFullPrompts>
@@ -54,19 +57,19 @@
     <ExpTransformerFullPrompts json:Array="true">Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</ExpTransformerFullPrompts>
-    <ExpTransformerNames json:Array="true">5017-'Write a 1 paragraph </ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5018-'Add assigned to attr</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5020-'Add the notion of du</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5021-'Write a single-sourc</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5022-'Remove employee from</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5023-'Testing, Testing 123</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5024-'Add assigned to attr</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5025-'Add the notion of du</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5026-'Remove employee from</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5027-'Please write this in</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5028-'Write a single-sourc</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5029-'Please write this in</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5030-'Write a 1 paragraph </ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5017-Write a 1 paragraph </ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5018-Add assigned to attr</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5020-Add the notion of du</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5021-Write a single-sourc</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5022-Remove employee from</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5023-Testing... Testing 1</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5024-Add assigned to attr</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5025-Add the notion of du</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5026-Remove employee from</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5027-Please write this in</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5028-Write a single-sourc</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5029-Please write this in</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5030-Write a 1 paragraph </ExpTransformerNames>
     <ExpFeatureLowerNames json:Array="true">to-do items</ExpFeatureLowerNames>
     <ExpFeatureLowerNames json:Array="true">categories</ExpFeatureLowerNames>
     <ExpFeatureLowerNames json:Array="true">due dates</ExpFeatureLowerNames>
@@ -81,8 +84,61 @@
     <ExpFeatureLowerNames json:Array="true">completed date</ExpFeatureLowerNames>
     <ExpFeatureLowerNames json:Array="true">todo colors</ExpFeatureLowerNames>
     <FeaturesArray>['to-do items', 'categories', 'due dates', 'priorities', 'progress', 'statuses', 'reminders', 'notifications', 'completion', 'assigned-to', 'duration', 'completed date', 'todo colors']</FeaturesArray>
+    <SyntaxLockedTransformerNumbers json:Array="true">1026</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1030</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1031</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1032</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1033</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1035</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1020</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1021</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1022</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1027</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1038</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1039</SyntaxFreeTransformerNumbers>
     <ExpIdentifier>104</ExpIdentifier>
     <Name>104-To Do App</Name>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 1020 
+python ./add-data.py add-root 5 1026 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1021 1020
+python ./add-data.py add-generation 5 1030 1026</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1022 1021
+python ./add-data.py add-generation 5 1031 1030</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1027 1022
+python ./add-data.py add-generation 5 1032 1031</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1033 1032
+python ./add-data.py add-generation 5 1038 1028</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1039 1038
+python ./add-data.py add-generation 5 1035 1033</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <RunTrialScript>python ./add-data.py add-root 25 1020 
+python ./add-data.py add-root 25 1026 
+
+python ./add-data.py add-generation 25 1021 1020
+python ./add-data.py add-generation 25 1030 1026
+
+python ./add-data.py add-generation 25 1022 1021
+python ./add-data.py add-generation 25 1031 1030
+
+python ./add-data.py add-generation 25 1027 1022
+python ./add-data.py add-generation 25 1032 1031
+
+python ./add-data.py add-generation 25 1033 1032
+python ./add-data.py add-generation 25 1038 1028
+
+python ./add-data.py add-generation 25 1039 1038
+python ./add-data.py add-generation 25 1035 1033
+
+
+
+
+
+
+
+</RunTrialScript>
     <ExpFeatureNames json:Array="true">ToDoItems</ExpFeatureNames>
     <ExpFeatureNames json:Array="true">Categories</ExpFeatureNames>
     <ExpFeatureNames json:Array="true">DueDates</ExpFeatureNames>
@@ -206,14 +262,59 @@ FULL Example: {
  }
  ]
 }</ExpTransformerFullPrompts>
-    <ExpTransformerNames json:Array="true">5011-'Write a 1 paragraph </ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5012-'Add employee to the </ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5014-'Add the notion of du</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5016-'Write a single-sourc</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5013-'Which part(s) of the</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5011-Write a 1 paragraph </ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5012-Add employee to the </ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5014-Add the notion of du</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5016-Write a single-sourc</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5013-Which part(s) of the</ExpTransformerNames>
     <FeaturesArray>['']</FeaturesArray>
+    <SyntaxFreeTransformerNumbers json:Array="true">1011</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1018</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1012</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9014</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9013</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1015</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9016</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1019</SyntaxFreeTransformerNumbers>
     <ExpIdentifier>103</ExpIdentifier>
     <Name>103-INACTIVE-To Do App v2</Name>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 1011 
+python ./add-data.py add-root 5 1018 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 1012 
+python ./add-data.py add-root 5 9014 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9013 
+python ./add-data.py add-root 5 1015 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9016 
+python ./add-data.py add-root 5 1019 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <RunTrialScript>python ./add-data.py add-root  1011 
+python ./add-data.py add-root  1018 
+
+python ./add-data.py add-root  1012 
+python ./add-data.py add-root  9014 
+
+python ./add-data.py add-root  9013 
+python ./add-data.py add-root  1015 
+
+python ./add-data.py add-root  9016 
+python ./add-data.py add-root  1019 
+
+
+
+
+
+
+
+
+
+
+
+</RunTrialScript>
     <ExpFeatureNames>Unused</ExpFeatureNames>
     <ValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
 
@@ -297,17 +398,47 @@ FULL Example: {
     <ExpTransformerFullPrompts json:Array="true">Is this a to-do-list app?  Yes/No</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">How many words are there?</ExpTransformerFullPrompts>
     <ExpTransformerFullPrompts json:Array="true">Is this a contact management app?  Yes/No</ExpTransformerFullPrompts>
-    <ExpTransformerNames json:Array="true">5001-'Write a 1 paragraph </ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5002-'Write a single-sourc</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5003-'Write a csharp scrip</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5004-'Write a golang scrip</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5005-'Which part(s) of the</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5006-'Is this a to-do-list</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5007-'How many words are t</ExpTransformerNames>
-    <ExpTransformerNames json:Array="true">5008-'Is this a contact ma</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5001-Write a 1 paragraph </ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5002-Write a single-sourc</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5003-Write a csharp scrip</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5004-Write a golang scrip</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5005-Which part(s) of the</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5006-Is this a to-do-list</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5007-How many words are t</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5008-Is this a contact ma</ExpTransformerNames>
     <FeaturesArray>['']</FeaturesArray>
+    <SyntaxFreeTransformerNumbers json:Array="true">1001</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1002</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1003</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1005</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9006</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9004</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9008</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9009</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9010</SyntaxFreeTransformerNumbers>
     <ExpIdentifier>101</ExpIdentifier>
     <Name>101-INACTIVE-To Do App v1</Name>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 1001 
+python ./add-data.py add-root 5 1002 
+python ./add-data.py add-root 5 1003 
+python ./add-data.py add-root 5 1005 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9006 
+python ./add-data.py add-root 5 9004 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9008 
+python ./add-data.py add-root 5 9009 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9010 </GenerationAddDataCommandScripts>
+    <RunTrialScript>python ./add-data.py add-root  1001 
+python ./add-data.py add-root  1002 
+python ./add-data.py add-root  1003 
+python ./add-data.py add-root  1005 
+
+python ./add-data.py add-root  9006 
+python ./add-data.py add-root  9004 
+
+python ./add-data.py add-root  9008 
+python ./add-data.py add-root  9009 
+
+python ./add-data.py add-root  9010 </RunTrialScript>
     <ExpFeatureNames>Unused</ExpFeatureNames>
     <ValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
 
@@ -331,10 +462,14 @@ FULL Example: {
     <ExpFeatures>recpq9qUjVAgWu2nO</ExpFeatures>
     <AutoNumber>2</AutoNumber>
     <ExpName>The Jones</ExpName>
-    <ExpTransformerNames>5010-'</ExpTransformerNames>
+    <ExpTransformerNames>5010-</ExpTransformerNames>
     <FeaturesArray>['']</FeaturesArray>
     <ExpIdentifier>102</ExpIdentifier>
     <Name>102-INACTIVE-The Jones</Name>
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <RunTrialScript></RunTrialScript>
     <ExpFeatureNames>Unused</ExpFeatureNames>
     <ValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
 
@@ -486,10 +621,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Remove employee from todo items.</FullPrompt>
-    <TransformedTransformers>recMbJPAkrbktSLBw</TransformedTransformers>
+    <GenerationTransformer>recMbJPAkrbktSLBw</GenerationTransformer>
     <AutoNumber>22</AutoNumber>
     <TransformerIdentifier>5022</TransformerIdentifier>
-    <Name>5022-'Remove employee from</Name>
+    <Name>5022-Remove employee from</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -497,10 +632,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec2FEIFfgH75YILP</Experiment>
     <FullPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers>recGIzvOorwnUFv0e</TransformedTransformers>
+    <GenerationTransformer>recGIzvOorwnUFv0e</GenerationTransformer>
     <AutoNumber>11</AutoNumber>
     <TransformerIdentifier>5011</TransformerIdentifier>
-    <Name>5011-'Write a 1 paragraph </Name>
+    <Name>5011-Write a 1 paragraph </Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>103-INACTIVE-To Do App v2</ExpName>
@@ -508,11 +643,11 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</FullPrompt>
-    <TransformedTransformers>recQqryPqWrLenFdE</TransformedTransformers>
+    <GenerationTransformer>recQqryPqWrLenFdE</GenerationTransformer>
     <AutoNumber>27</AutoNumber>
     <IsSyntaxFree>True</IsSyntaxFree>
     <TransformerIdentifier>5027</TransformerIdentifier>
-    <Name>5027-'Please write this in</Name>
+    <Name>5027-Please write this in</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -520,10 +655,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers>reclAn6w105mmMayi</TransformedTransformers>
+    <GenerationTransformer>reclAn6w105mmMayi</GenerationTransformer>
     <AutoNumber>18</AutoNumber>
     <TransformerIdentifier>5018</TransformerIdentifier>
-    <Name>5018-'Add assigned to attr</Name>
+    <Name>5018-Add assigned to attr</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -531,10 +666,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec2FEIFfgH75YILP</Experiment>
     <FullPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers>reciqR2XfiXA7rkeG</TransformedTransformers>
+    <GenerationTransformer>reciqR2XfiXA7rkeG</GenerationTransformer>
     <AutoNumber>16</AutoNumber>
     <TransformerIdentifier>5016</TransformerIdentifier>
-    <Name>5016-'Write a single-sourc</Name>
+    <Name>5016-Write a single-sourc</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>103-INACTIVE-To Do App v2</ExpName>
@@ -543,7 +678,7 @@ FULL Example: {
     <Experiment>reczle9XMG5vHdomS</Experiment>
     <AutoNumber>10</AutoNumber>
     <TransformerIdentifier>5010</TransformerIdentifier>
-    <Name>5010-'</Name>
+    <Name>5010-</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</ExpAbstract>
     <ExpName>102-INACTIVE-The Jones</ExpName>
@@ -551,11 +686,11 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec2FEIFfgH75YILP</Experiment>
     <FullPrompt>Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers json:Array="true">recul5xBQVwNMydZq</TransformedTransformers>
-    <TransformedTransformers json:Array="true">rechBx9YtjRtwXq1A</TransformedTransformers>
+    <GenerationTransformer json:Array="true">recul5xBQVwNMydZq</GenerationTransformer>
+    <GenerationTransformer json:Array="true">rechBx9YtjRtwXq1A</GenerationTransformer>
     <AutoNumber>12</AutoNumber>
     <TransformerIdentifier>5012</TransformerIdentifier>
-    <Name>5012-'Add employee to the </Name>
+    <Name>5012-Add employee to the </Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>103-INACTIVE-To Do App v2</ExpName>
@@ -563,10 +698,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>recW1A5DedlYoR6An</Experiment>
     <FullPrompt>Is this a contact management app?  Yes/No</FullPrompt>
-    <TransformedTransformers>rec6UpP4NzYKOVZOj</TransformedTransformers>
+    <GenerationTransformer>rec6UpP4NzYKOVZOj</GenerationTransformer>
     <AutoNumber>8</AutoNumber>
     <TransformerIdentifier>5008</TransformerIdentifier>
-    <Name>5008-'Is this a contact ma</Name>
+    <Name>5008-Is this a contact ma</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -574,10 +709,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>recW1A5DedlYoR6An</Experiment>
     <FullPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers>recCx7s2jCkGVp8BN</TransformedTransformers>
+    <GenerationTransformer>recCx7s2jCkGVp8BN</GenerationTransformer>
     <AutoNumber>1</AutoNumber>
     <TransformerIdentifier>5001</TransformerIdentifier>
-    <Name>5001-'Write a 1 paragraph </Name>
+    <Name>5001-Write a 1 paragraph </Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -585,10 +720,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers>reca7Gfxv0KMLAOJz</TransformedTransformers>
+    <GenerationTransformer>reca7Gfxv0KMLAOJz</GenerationTransformer>
     <AutoNumber>17</AutoNumber>
     <TransformerIdentifier>5017</TransformerIdentifier>
-    <Name>5017-'Write a 1 paragraph </Name>
+    <Name>5017-Write a 1 paragraph </Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -596,10 +731,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</FullPrompt>
-    <TransformedTransformers>reckeYQjRL4jvd0jY</TransformedTransformers>
+    <GenerationTransformer>reckeYQjRL4jvd0jY</GenerationTransformer>
     <AutoNumber>20</AutoNumber>
     <TransformerIdentifier>5020</TransformerIdentifier>
-    <Name>5020-'Add the notion of du</Name>
+    <Name>5020-Add the notion of du</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -607,10 +742,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>recW1A5DedlYoR6An</Experiment>
     <FullPrompt>Is this a to-do-list app?  Yes/No</FullPrompt>
-    <TransformedTransformers>recA14kPIaizrx2hY</TransformedTransformers>
+    <GenerationTransformer>recA14kPIaizrx2hY</GenerationTransformer>
     <AutoNumber>6</AutoNumber>
     <TransformerIdentifier>5006</TransformerIdentifier>
-    <Name>5006-'Is this a to-do-list</Name>
+    <Name>5006-Is this a to-do-list</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -618,10 +753,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</FullPrompt>
-    <TransformedTransformers>recWYK5AUswVvirqk</TransformedTransformers>
+    <GenerationTransformer>recWYK5AUswVvirqk</GenerationTransformer>
     <AutoNumber>29</AutoNumber>
     <TransformerIdentifier>5029</TransformerIdentifier>
-    <Name>5029-'Please write this in</Name>
+    <Name>5029-Please write this in</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -629,10 +764,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec2FEIFfgH75YILP</Experiment>
     <FullPrompt>Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</FullPrompt>
-    <TransformedTransformers>recaiAC5xjsgvxCnl</TransformedTransformers>
+    <GenerationTransformer>recaiAC5xjsgvxCnl</GenerationTransformer>
     <AutoNumber>14</AutoNumber>
     <TransformerIdentifier>5014</TransformerIdentifier>
-    <Name>5014-'Add the notion of du</Name>
+    <Name>5014-Add the notion of du</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>103-INACTIVE-To Do App v2</ExpName>
@@ -640,10 +775,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>recW1A5DedlYoR6An</Experiment>
     <FullPrompt>Write a csharp script, based on all of these details.</FullPrompt>
-    <TransformedTransformers>recaDdJWouKulO0MZ</TransformedTransformers>
+    <GenerationTransformer>recaDdJWouKulO0MZ</GenerationTransformer>
     <AutoNumber>3</AutoNumber>
     <TransformerIdentifier>5003</TransformerIdentifier>
-    <Name>5003-'Write a csharp scrip</Name>
+    <Name>5003-Write a csharp scrip</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -651,11 +786,11 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</FullPrompt>
-    <TransformedTransformers>recvNub7ngHZ5pEYi</TransformedTransformers>
+    <GenerationTransformer>recvNub7ngHZ5pEYi</GenerationTransformer>
     <AutoNumber>28</AutoNumber>
     <IsSyntaxFree>True</IsSyntaxFree>
     <TransformerIdentifier>5028</TransformerIdentifier>
-    <Name>5028-'Write a single-sourc</Name>
+    <Name>5028-Write a single-sourc</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -663,11 +798,11 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers>recPrRjr5Pf8IiRdR</TransformedTransformers>
+    <GenerationTransformer>recPrRjr5Pf8IiRdR</GenerationTransformer>
     <AutoNumber>21</AutoNumber>
     <IsSyntaxFree>True</IsSyntaxFree>
     <TransformerIdentifier>5021</TransformerIdentifier>
-    <Name>5021-'Write a single-sourc</Name>
+    <Name>5021-Write a single-sourc</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -719,11 +854,11 @@ FULL Example: {
  }
  ]
 }</FullPrompt>
-    <TransformedTransformers json:Array="true">recBlNsq2bQqo5lzD</TransformedTransformers>
-    <TransformedTransformers json:Array="true">recS1LDJeoajssImk</TransformedTransformers>
+    <GenerationTransformer json:Array="true">recBlNsq2bQqo5lzD</GenerationTransformer>
+    <GenerationTransformer json:Array="true">recS1LDJeoajssImk</GenerationTransformer>
     <AutoNumber>5</AutoNumber>
     <TransformerIdentifier>5005</TransformerIdentifier>
-    <Name>5005-'Which part(s) of the</Name>
+    <Name>5005-Which part(s) of the</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -791,12 +926,12 @@ FULL Example: {
  }
  ]
 }</FullPrompt>
-    <TransformedTransformers json:Array="true">recjzDANsnzbd1R07</TransformedTransformers>
-    <TransformedTransformers json:Array="true">recKqgS5QL0LFPQFW</TransformedTransformers>
-    <TransformedTransformers json:Array="true">recxndDytrKufEXZZ</TransformedTransformers>
+    <GenerationTransformer json:Array="true">recjzDANsnzbd1R07</GenerationTransformer>
+    <GenerationTransformer json:Array="true">recKqgS5QL0LFPQFW</GenerationTransformer>
+    <GenerationTransformer json:Array="true">recxndDytrKufEXZZ</GenerationTransformer>
     <AutoNumber>13</AutoNumber>
     <TransformerIdentifier>5013</TransformerIdentifier>
-    <Name>5013-'Which part(s) of the</Name>
+    <Name>5013-Which part(s) of the</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>103-INACTIVE-To Do App v2</ExpName>
@@ -804,11 +939,11 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers>recvZYuU4p338Dncl</TransformedTransformers>
+    <GenerationTransformer>recvZYuU4p338Dncl</GenerationTransformer>
     <AutoNumber>25</AutoNumber>
     <IsSyntaxFree>True</IsSyntaxFree>
     <TransformerIdentifier>5025</TransformerIdentifier>
-    <Name>5025-'Add the notion of du</Name>
+    <Name>5025-Add the notion of du</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -816,22 +951,22 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Remove employee from todo items.</FullPrompt>
-    <TransformedTransformers>recRPX4wi5krtc5MR</TransformedTransformers>
+    <GenerationTransformer>recRPX4wi5krtc5MR</GenerationTransformer>
     <AutoNumber>26</AutoNumber>
     <IsSyntaxFree>True</IsSyntaxFree>
     <TransformerIdentifier>5026</TransformerIdentifier>
-    <Name>5026-'Remove employee from</Name>
+    <Name>5026-Remove employee from</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
   </ExperimentTransformers>
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
-    <FullPrompt>Testing, Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</FullPrompt>
-    <TransformedTransformers>rec9ffMsYT41EHvcl</TransformedTransformers>
+    <FullPrompt>Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</FullPrompt>
+    <GenerationTransformer>rec9ffMsYT41EHvcl</GenerationTransformer>
     <AutoNumber>23</AutoNumber>
     <TransformerIdentifier>5023</TransformerIdentifier>
-    <Name>5023-'Testing, Testing 123</Name>
+    <Name>5023-Testing... Testing 1</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -839,10 +974,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</FullPrompt>
-    <TransformedTransformers>recaont3llGhNnxrM</TransformedTransformers>
+    <GenerationTransformer>recaont3llGhNnxrM</GenerationTransformer>
     <AutoNumber>30</AutoNumber>
     <TransformerIdentifier>5030</TransformerIdentifier>
-    <Name>5030-'Write a 1 paragraph </Name>
+    <Name>5030-Write a 1 paragraph </Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -850,10 +985,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>recW1A5DedlYoR6An</Experiment>
     <FullPrompt>How many words are there?</FullPrompt>
-    <TransformedTransformers>recpFH1D9efGH6y0G</TransformedTransformers>
+    <GenerationTransformer>recpFH1D9efGH6y0G</GenerationTransformer>
     <AutoNumber>7</AutoNumber>
     <TransformerIdentifier>5007</TransformerIdentifier>
-    <Name>5007-'How many words are t</Name>
+    <Name>5007-How many words are t</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -861,10 +996,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>recW1A5DedlYoR6An</Experiment>
     <FullPrompt>Write a golang script, based on all of these details.</FullPrompt>
-    <TransformedTransformers>recwcCSgtDWvgtgEa</TransformedTransformers>
+    <GenerationTransformer>recwcCSgtDWvgtgEa</GenerationTransformer>
     <AutoNumber>4</AutoNumber>
     <TransformerIdentifier>5004</TransformerIdentifier>
-    <Name>5004-'Write a golang scrip</Name>
+    <Name>5004-Write a golang scrip</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -872,11 +1007,11 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>rec1moh66lbXJerna</Experiment>
     <FullPrompt>Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers>recjRflJxgJCqBAai</TransformedTransformers>
+    <GenerationTransformer>recjRflJxgJCqBAai</GenerationTransformer>
     <AutoNumber>24</AutoNumber>
     <IsSyntaxFree>True</IsSyntaxFree>
     <TransformerIdentifier>5024</TransformerIdentifier>
-    <Name>5024-'Add assigned to attr</Name>
+    <Name>5024-Add assigned to attr</Name>
     <IsActiveExp>True</IsActiveExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>104-To Do App</ExpName>
@@ -884,10 +1019,10 @@ FULL Example: {
   <ExperimentTransformers json:Array="true">
     <Experiment>recW1A5DedlYoR6An</Experiment>
     <FullPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
-    <TransformedTransformers>recNAPS31vIaKGEjx</TransformedTransformers>
+    <GenerationTransformer>recNAPS31vIaKGEjx</GenerationTransformer>
     <AutoNumber>2</AutoNumber>
     <TransformerIdentifier>5002</TransformerIdentifier>
-    <Name>5002-'Write a single-sourc</Name>
+    <Name>5002-Write a single-sourc</Name>
     <IsActiveExp></IsActiveExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -918,12 +1053,16 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recaont3llGhNnxrM</GenerationTransformers>
     <GenerationTransformers json:Array="true">recvNub7ngHZ5pEYi</GenerationTransformers>
     <Name>Generation-6</Name>
+    <SyntaxLockedTransformerNumbers>1035</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1039</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1039 1038</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1035 1033</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1039 1038
+python ./add-data.py add-generation 5 1035 1033</AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">1039</TransformerNumbers>
     <TransformerNumbers json:Array="true">1035</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers>1039</SyntaxFreeTransformerNumbers>
-    <SyntaxLockedTransformerNumbers>1035</SyntaxLockedTransformerNumbers>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
     <ExpName>104-To Do App</ExpName>
@@ -990,6 +1129,12 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recA14kPIaizrx2hY</GenerationTransformers>
     <GenerationTransformers json:Array="true">recBlNsq2bQqo5lzD</GenerationTransformers>
     <Name>Generation-2</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">9006</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9004</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9006 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9004 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9006 
+python ./add-data.py add-root 5 9004 </AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Is this a to-do-list app?  Yes/No</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
@@ -1038,8 +1183,6 @@ FULL Example: {
 }</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">9006</TransformerNumbers>
     <TransformerNumbers json:Array="true">9004</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">9006</SyntaxFreeTransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">9004</SyntaxFreeTransformerNumbers>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -1062,12 +1205,16 @@ FULL Example: {
     <GenerationTransformers json:Array="true">reckeYQjRL4jvd0jY</GenerationTransformers>
     <GenerationTransformers json:Array="true">recvZYuU4p338Dncl</GenerationTransformers>
     <Name>Generation-3</Name>
+    <SyntaxLockedTransformerNumbers>1031</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1022</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1022 1021</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1031 1030</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1022 1021
+python ./add-data.py add-generation 5 1031 1030</AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">1022</TransformerNumbers>
     <TransformerNumbers json:Array="true">1031</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers>1022</SyntaxFreeTransformerNumbers>
-    <SyntaxLockedTransformerNumbers>1031</SyntaxLockedTransformerNumbers>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
     <ExpName>104-To Do App</ExpName>
@@ -1102,12 +1249,16 @@ FULL Example: {
     <GenerationTransformers json:Array="true">reclAn6w105mmMayi</GenerationTransformers>
     <GenerationTransformers json:Array="true">recjRflJxgJCqBAai</GenerationTransformers>
     <Name>Generation-2</Name>
+    <SyntaxLockedTransformerNumbers>1030</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1021</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1021 1020</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1030 1026</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1021 1020
+python ./add-data.py add-generation 5 1030 1026</AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">1021</TransformerNumbers>
     <TransformerNumbers json:Array="true">1030</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers>1021</SyntaxFreeTransformerNumbers>
-    <SyntaxLockedTransformerNumbers>1030</SyntaxLockedTransformerNumbers>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
     <ExpName>104-To Do App</ExpName>
@@ -1174,12 +1325,16 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recGIzvOorwnUFv0e</GenerationTransformers>
     <GenerationTransformers json:Array="true">reciqR2XfiXA7rkeG</GenerationTransformers>
     <Name>Generation-1</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">1011</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1018</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1011 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1018 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 1011 
+python ./add-data.py add-root 5 1018 </AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">1011</TransformerNumbers>
     <TransformerNumbers json:Array="true">1018</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">1011</SyntaxFreeTransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">1018</SyntaxFreeTransformerNumbers>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
     <ExpName>103-INACTIVE-To Do App v2</ExpName>
@@ -1202,6 +1357,12 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recxndDytrKufEXZZ</GenerationTransformers>
     <GenerationTransformers json:Array="true">rechBx9YtjRtwXq1A</GenerationTransformers>
     <Name>Generation-4</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">9016</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1019</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9016 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1019 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9016 
+python ./add-data.py add-root 5 1019 </AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
 {
@@ -1266,8 +1427,6 @@ FULL Example: {
     <GenerationTransformRawPrompts json:Array="true">Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">9016</TransformerNumbers>
     <TransformerNumbers json:Array="true">1019</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">9016</SyntaxFreeTransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">1019</SyntaxFreeTransformerNumbers>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
     <ExpName>103-INACTIVE-To Do App v2</ExpName>
@@ -1290,6 +1449,12 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recKqgS5QL0LFPQFW</GenerationTransformers>
     <GenerationTransformers json:Array="true">recaiAC5xjsgvxCnl</GenerationTransformers>
     <Name>Generation-3</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">9013</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1015</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9013 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1015 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9013 
+python ./add-data.py add-root 5 1015 </AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
 {
@@ -1354,8 +1519,6 @@ FULL Example: {
     <GenerationTransformRawPrompts json:Array="true">Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">9013</TransformerNumbers>
     <TransformerNumbers json:Array="true">1015</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">9013</SyntaxFreeTransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">1015</SyntaxFreeTransformerNumbers>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
     <ExpName>103-INACTIVE-To Do App v2</ExpName>
@@ -1461,6 +1624,18 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recwcCSgtDWvgtgEa</GenerationTransformers>
     <Model>recInEVN8vXxYqxth</Model>
     <Name>Generation-1</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">1001</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1002</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1003</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1005</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1001 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1002 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1003 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1005 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 1001 
+python ./add-data.py add-root 5 1002 
+python ./add-data.py add-root 5 1003 
+python ./add-data.py add-root 5 1005 </AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Write a csharp script, based on all of these details.</GenerationTransformRawPrompts>
@@ -1469,10 +1644,6 @@ FULL Example: {
     <TransformerNumbers json:Array="true">1002</TransformerNumbers>
     <TransformerNumbers json:Array="true">1003</TransformerNumbers>
     <TransformerNumbers json:Array="true">1005</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">1001</SyntaxFreeTransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">1002</SyntaxFreeTransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">1003</SyntaxFreeTransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">1005</SyntaxFreeTransformerNumbers>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -1527,12 +1698,16 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recpFH1D9efGH6y0G</GenerationTransformers>
     <GenerationTransformers json:Array="true">rec6UpP4NzYKOVZOj</GenerationTransformers>
     <Name>Generation-3</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">9008</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9009</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9008 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9009 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9008 
+python ./add-data.py add-root 5 9009 </AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">How many words are there?</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Is this a contact management app?  Yes/No</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">9008</TransformerNumbers>
     <TransformerNumbers json:Array="true">9009</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">9008</SyntaxFreeTransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">9009</SyntaxFreeTransformerNumbers>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -1574,7 +1749,7 @@ FULL Example: {
     <GeneratioNumber>0</GeneratioNumber>
     <GenerationTransformers>rec9ffMsYT41EHvcl</GenerationTransformers>
     <Name>Generation-0</Name>
-    <GenerationTransformRawPrompts>Testing, Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts>Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</GenerationTransformRawPrompts>
     <TransformerNumbers>1028</TransformerNumbers>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -1610,6 +1785,12 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recul5xBQVwNMydZq</GenerationTransformers>
     <GenerationTransformers json:Array="true">recjzDANsnzbd1R07</GenerationTransformers>
     <Name>Generation-2</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">1012</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9014</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1012 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9014 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 1012 
+python ./add-data.py add-root 5 9014 </AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
@@ -1674,8 +1855,6 @@ FULL Example: {
 }</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">1012</TransformerNumbers>
     <TransformerNumbers json:Array="true">9014</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">1012</SyntaxFreeTransformerNumbers>
-    <SyntaxFreeTransformerNumbers json:Array="true">9014</SyntaxFreeTransformerNumbers>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
     <ExpName>103-INACTIVE-To Do App v2</ExpName>
@@ -1697,6 +1876,9 @@ FULL Example: {
     <GeneratioNumber>4</GeneratioNumber>
     <GenerationTransformers>recS1LDJeoajssImk</GenerationTransformers>
     <Name>Generation-4</Name>
+    <SyntaxFreeTransformerNumbers>9010</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands>python ./add-data.py add-root 5 9010 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9010 </AddDataCommandScript>
     <GenerationTransformRawPrompts>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
 {
@@ -1743,7 +1925,6 @@ FULL Example: {
  ]
 }</GenerationTransformRawPrompts>
     <TransformerNumbers>9010</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers>9010</SyntaxFreeTransformerNumbers>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
     <ExpName>101-INACTIVE-To Do App v1</ExpName>
@@ -1786,12 +1967,16 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recQqryPqWrLenFdE</GenerationTransformers>
     <GenerationTransformers json:Array="true">recWYK5AUswVvirqk</GenerationTransformers>
     <Name>Generation-5</Name>
+    <SyntaxLockedTransformerNumbers>1033</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1038</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1033 1032</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1038 1028</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1033 1032
+python ./add-data.py add-generation 5 1038 1028</AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">1033</TransformerNumbers>
     <TransformerNumbers json:Array="true">1038</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers>1038</SyntaxFreeTransformerNumbers>
-    <SyntaxLockedTransformerNumbers>1033</SyntaxLockedTransformerNumbers>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
     <ExpName>104-To Do App</ExpName>
@@ -1826,12 +2011,16 @@ FULL Example: {
     <GenerationTransformers json:Array="true">recMbJPAkrbktSLBw</GenerationTransformers>
     <GenerationTransformers json:Array="true">recRPX4wi5krtc5MR</GenerationTransformers>
     <Name>Generation-4</Name>
+    <SyntaxLockedTransformerNumbers>1032</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1027</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1027 1022</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1032 1031</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1027 1022
+python ./add-data.py add-generation 5 1032 1031</AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Remove employee from todo items.</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Remove employee from todo items.</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">1027</TransformerNumbers>
     <TransformerNumbers json:Array="true">1032</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers>1027</SyntaxFreeTransformerNumbers>
-    <SyntaxLockedTransformerNumbers>1032</SyntaxLockedTransformerNumbers>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
     <ExpName>104-To Do App</ExpName>
@@ -1886,12 +2075,16 @@ FULL Example: {
     <GenerationTransformers json:Array="true">reca7Gfxv0KMLAOJz</GenerationTransformers>
     <GenerationTransformers json:Array="true">recPrRjr5Pf8IiRdR</GenerationTransformers>
     <Name>Generation-1</Name>
+    <SyntaxLockedTransformerNumbers>1026</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1020</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1020 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1026 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 1020 
+python ./add-data.py add-root 5 1026 </AddDataCommandScript>
     <GenerationTransformRawPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <GenerationTransformRawPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
     <TransformerNumbers json:Array="true">1020</TransformerNumbers>
     <TransformerNumbers json:Array="true">1026</TransformerNumbers>
-    <SyntaxFreeTransformerNumbers>1020</SyntaxFreeTransformerNumbers>
-    <SyntaxLockedTransformerNumbers>1026</SyntaxLockedTransformerNumbers>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
     <ExpName>104-To Do App</ExpName>
@@ -1975,16 +2168,17 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recOOhsTc8QeS4QCL</Generation>
     <ExpTransformer>recPgmmLnUmgL1iXk</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recGgIExtJmOcAnPq</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec0EMy4IbK2ji9Me</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recGgIExtJmOcAnPq</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec0EMy4IbK2ji9Me</TrialArtifacts>
     <AutoNumber>9</AutoNumber>
     <IsArtifactValidator>True</IsArtifactValidator>
     <TransformerNumber>9009</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-3</GenerationName>
-    <Name>9009-LOCKED-Generation-3-5008-'Is this a contact ma</Name>
+    <Name>9009-LOCKED-Generation-3-5008-Is this a contact ma</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9009 </AddDataCommand>
     <RawPrompt>Is this a contact management app?  Yes/No</RawPrompt>
-    <GeneratioNumber>3</GeneratioNumber>
     <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2005,14 +2199,16 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recWwVkUT8wc1zSyC</Generation>
     <ExpTransformer>recluJNtspj3gGDsa</ExpTransformer>
-    <TransformedArtifacts>recslvEbM7gSZ3RJn</TransformedArtifacts>
+    <TrialArtifacts>recslvEbM7gSZ3RJn</TrialArtifacts>
     <AutoNumber>28</AutoNumber>
+    <ParentTransformer>recMbJPAkrbktSLBw</ParentTransformer>
     <TransformerNumber>1028</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-0</GenerationName>
-    <Name>1028-LOCKED-Generation-0-"5023-'Testing, Testing 123"</Name>
-    <RawPrompt>Testing, Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</RawPrompt>
-    <GeneratioNumber>0</GeneratioNumber>
+    <Name>1028-LOCKED-Generation-0-5023-Testing... Testing 1</Name>
+    <GenerationNumber>0</GenerationNumber>
+    <ParentTransformerNumber>1027</ParentTransformerNumber>
+    <RawPrompt>Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</RawPrompt>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -2045,15 +2241,16 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>rec72KHseHTRZCNNt</Generation>
     <ExpTransformer>recW9189SAZ84yv5u</ExpTransformer>
-    <TransformedArtifacts>recyfv3NkVgJlafHE</TransformedArtifacts>
+    <TrialArtifacts>recyfv3NkVgJlafHE</TrialArtifacts>
     <AutoNumber>6</AutoNumber>
     <IsArtifactValidator>True</IsArtifactValidator>
     <TransformerNumber>9006</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-2</GenerationName>
-    <Name>9006-LOCKED-Generation-2-5006-'Is this a to-do-list</Name>
+    <Name>9006-LOCKED-Generation-2-5006-Is this a to-do-list</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9006 </AddDataCommand>
     <RawPrompt>Is this a to-do-list app?  Yes/No</RawPrompt>
-    <GeneratioNumber>2</GeneratioNumber>
     <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2079,7 +2276,9 @@ FULL Example: {
     <TransformerNumber>9004</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-2</GenerationName>
-    <Name>9004-LOCKED-Generation-2-5005-'Which part(s) of the</Name>
+    <Name>9004-LOCKED-Generation-2-5005-Which part(s) of the</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9004 </AddDataCommand>
     <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
 {
@@ -2125,7 +2324,6 @@ FULL Example: {
  }
  ]
 }</RawPrompt>
-    <GeneratioNumber>2</GeneratioNumber>
     <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2146,14 +2344,15 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recMEUAHCWHP4zqT7</Generation>
     <ExpTransformer>recQNBM9btdtItZXf</ExpTransformer>
-    <TransformedArtifacts>recrs04ZrVVS4UQWn</TransformedArtifacts>
+    <TrialArtifacts>recrs04ZrVVS4UQWn</TrialArtifacts>
     <AutoNumber>1</AutoNumber>
     <TransformerNumber>1001</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-1</GenerationName>
-    <Name>1001-LOCKED-Generation-1-5001-'Write a 1 paragraph </Name>
+    <Name>1001-LOCKED-Generation-1-5001-Write a 1 paragraph </Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1001 </AddDataCommand>
     <RawPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>1</GeneratioNumber>
     <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2174,19 +2373,20 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recDXYMNu5oEP7bDE</Generation>
     <ExpTransformer>rec8FCcLAYBIGOxyo</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recwr2cTFljE6Xn0j</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rechyYKE6CyKan7v3</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recjGyJTZk8GR9f6y</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recUgncdkZsUYhLMY</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recWgn2Sr4DeR9TZx</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recP0hyXRKqhCZXAR</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recwr2cTFljE6Xn0j</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rechyYKE6CyKan7v3</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recjGyJTZk8GR9f6y</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recUgncdkZsUYhLMY</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recWgn2Sr4DeR9TZx</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recP0hyXRKqhCZXAR</TrialArtifacts>
     <AutoNumber>11</AutoNumber>
     <TransformerNumber>1011</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-1</GenerationName>
-    <Name>1011-LOCKED-Generation-1-5011-'Write a 1 paragraph </Name>
+    <Name>1011-LOCKED-Generation-1-5011-Write a 1 paragraph </Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1011 </AddDataCommand>
     <RawPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>1</GeneratioNumber>
     <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2217,7 +2417,9 @@ FULL Example: {
     <TransformerNumber>9013</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-3</GenerationName>
-    <Name>9013-LOCKED-Generation-3-5013-'Which part(s) of the</Name>
+    <Name>9013-LOCKED-Generation-3-5013-Which part(s) of the</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9013 </AddDataCommand>
     <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
 {
@@ -2279,7 +2481,6 @@ FULL Example: {
  }
  ]
 }</RawPrompt>
-    <GeneratioNumber>3</GeneratioNumber>
     <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2300,19 +2501,21 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recjQkUQEHnyqQK3K</Generation>
     <ExpTransformer>rec0zZsvQ93wxHnwH</ExpTransformer>
-    <TransformedArtifacts json:Array="true">rec1FAW0BUOEaK1y4</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec17MgKKCrFmOd7x</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rectbx6uzj1rhSKVb</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recU9jdtWk8qua5Zd</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recOktmeZhANJlXUQ</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recAdU3SDFhZ3K4ry</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">rec1FAW0BUOEaK1y4</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rectbx6uzj1rhSKVb</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recU9jdtWk8qua5Zd</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recOktmeZhANJlXUQ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recAdU3SDFhZ3K4ry</TrialArtifacts>
     <AutoNumber>27</AutoNumber>
+    <ParentTransformer>reckeYQjRL4jvd0jY</ParentTransformer>
     <TransformerNumber>1027</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-4</GenerationName>
-    <Name>1027-LOCKED-Generation-4-5022-'Remove employee from</Name>
+    <Name>1027-LOCKED-Generation-4-5022-Remove employee from</Name>
+    <GenerationNumber>4</GenerationNumber>
+    <ParentTransformerNumber>1022</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1027 1022</AddDataCommand>
     <RawPrompt>Remove employee from todo items.</RawPrompt>
-    <GeneratioNumber>4</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -2349,9 +2552,10 @@ FULL Example: {
     <TransformerNumber>1002</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-1</GenerationName>
-    <Name>1002-LOCKED-Generation-1-5002-'Write a single-sourc</Name>
+    <Name>1002-LOCKED-Generation-1-5002-Write a single-sourc</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1002 </AddDataCommand>
     <RawPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>1</GeneratioNumber>
     <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2372,19 +2576,20 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recmBq2JG52grVKBr</Generation>
     <ExpTransformer>recaHRXNnNuhvhvbz</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recp4NPUW6MfftAuH</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recuYcfhfZwxsBmER</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rectMTwieg0U6xMC8</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec9zGLITejfrpPv8</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recU2nPZdQhmlTJNz</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recue9vfGmocdFsSo</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recp4NPUW6MfftAuH</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recuYcfhfZwxsBmER</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rectMTwieg0U6xMC8</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec9zGLITejfrpPv8</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recU2nPZdQhmlTJNz</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recue9vfGmocdFsSo</TrialArtifacts>
     <AutoNumber>26</AutoNumber>
     <TransformerNumber>1026</TransformerNumber>
     <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-1</GenerationName>
-    <Name>1026-FREE-Generation-1-5021-'Write a single-sourc</Name>
+    <Name>1026-FREE-Generation-1-5021-Write a single-sourc</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1026 </AddDataCommand>
     <RawPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>1</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -2417,19 +2622,22 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recfndFgycb2Lvub1</Generation>
     <ExpTransformer>recG613I1Dzd6bcKX</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recxCaBLNHbgY8jzE</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recMY3XfurqBJ0wJn</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">reclxIqB1kslEZQR3</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recRpDODkc2FC8ESA</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recG38AhCCdsK8jQj</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rece06Zgog89B3RvG</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recxCaBLNHbgY8jzE</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recMY3XfurqBJ0wJn</TrialArtifacts>
+    <TrialArtifacts json:Array="true">reclxIqB1kslEZQR3</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recRpDODkc2FC8ESA</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recG38AhCCdsK8jQj</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rece06Zgog89B3RvG</TrialArtifacts>
     <AutoNumber>33</AutoNumber>
+    <ParentTransformer>recRPX4wi5krtc5MR</ParentTransformer>
     <TransformerNumber>1033</TransformerNumber>
     <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-5</GenerationName>
-    <Name>1033-FREE-Generation-5-5027-'Please write this in</Name>
+    <Name>1033-FREE-Generation-5-5027-Please write this in</Name>
+    <GenerationNumber>5</GenerationNumber>
+    <ParentTransformerNumber>1032</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1033 1032</AddDataCommand>
     <RawPrompt>Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</RawPrompt>
-    <GeneratioNumber>5</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -2462,19 +2670,22 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recjQkUQEHnyqQK3K</Generation>
     <ExpTransformer>recjfznKlLfFGX2wV</ExpTransformer>
-    <TransformedArtifacts json:Array="true">reco2pPyVm9fQLduJ</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recsSP5jhocFRLEDb</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recv5t8uLltHVJ5vv</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recnf5BP6bTBdpgLc</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recn68jZH20LbMGTJ</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec08xCxiEH5C8Zek</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">reco2pPyVm9fQLduJ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recsSP5jhocFRLEDb</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recv5t8uLltHVJ5vv</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recnf5BP6bTBdpgLc</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recn68jZH20LbMGTJ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec08xCxiEH5C8Zek</TrialArtifacts>
     <AutoNumber>32</AutoNumber>
+    <ParentTransformer>recvZYuU4p338Dncl</ParentTransformer>
     <TransformerNumber>1032</TransformerNumber>
     <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-4</GenerationName>
-    <Name>1032-FREE-Generation-4-5026-'Remove employee from</Name>
+    <Name>1032-FREE-Generation-4-5026-Remove employee from</Name>
+    <GenerationNumber>4</GenerationNumber>
+    <ParentTransformerNumber>1031</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1032 1031</AddDataCommand>
     <RawPrompt>Remove employee from todo items.</RawPrompt>
-    <GeneratioNumber>4</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -2512,7 +2723,9 @@ FULL Example: {
     <TransformerNumber>9010</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-4</GenerationName>
-    <Name>9010-LOCKED-Generation-4-5005-'Which part(s) of the</Name>
+    <Name>9010-LOCKED-Generation-4-5005-Which part(s) of the</Name>
+    <GenerationNumber>4</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9010 </AddDataCommand>
     <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
 {
@@ -2558,7 +2771,6 @@ FULL Example: {
  }
  ]
 }</RawPrompt>
-    <GeneratioNumber>4</GeneratioNumber>
     <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2579,19 +2791,21 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recfndFgycb2Lvub1</Generation>
     <ExpTransformer>recWmsUYb7maZZDv4</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recOGR3FuQMkTo36g</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">reciAr1T76vWla47C</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec5B6srLfY88H5Bu</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec9Uv4Smddck0gLd</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec6jkXqtnoYnTNMT</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recmvScnicsWBDNUc</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recOGR3FuQMkTo36g</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec5B6srLfY88H5Bu</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec9Uv4Smddck0gLd</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec6jkXqtnoYnTNMT</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recmvScnicsWBDNUc</TrialArtifacts>
     <AutoNumber>38</AutoNumber>
+    <ParentTransformer>rec9ffMsYT41EHvcl</ParentTransformer>
     <TransformerNumber>1038</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-5</GenerationName>
-    <Name>1038-LOCKED-Generation-5-5029-'Please write this in</Name>
+    <Name>1038-LOCKED-Generation-5-5029-Please write this in</Name>
+    <GenerationNumber>5</GenerationNumber>
+    <ParentTransformerNumber>1028</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1038 1028</AddDataCommand>
     <RawPrompt>Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</RawPrompt>
-    <GeneratioNumber>5</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -2624,19 +2838,19 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recmBq2JG52grVKBr</Generation>
     <ExpTransformer>recQzt8ZwxUMZjlwS</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recAAhGue7KXL1l1q</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec5taQwBTEBYKfTW</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recRJ2ZpfiHcimVBk</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec2sCNpJCZhXJdC5</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recf4vjwgJkgv0hxZ</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recUohucTQTpaGqMn</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recAAhGue7KXL1l1q</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec5taQwBTEBYKfTW</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recRJ2ZpfiHcimVBk</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec2sCNpJCZhXJdC5</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recf4vjwgJkgv0hxZ</TrialArtifacts>
     <AutoNumber>20</AutoNumber>
     <TransformerNumber>1020</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-1</GenerationName>
-    <Name>1020-LOCKED-Generation-1-5017-'Write a 1 paragraph </Name>
+    <Name>1020-LOCKED-Generation-1-5017-Write a 1 paragraph </Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1020 </AddDataCommand>
     <RawPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>1</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -2673,9 +2887,10 @@ FULL Example: {
     <TransformerNumber>1003</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-1</GenerationName>
-    <Name>1003-LOCKED-Generation-1-5003-'Write a csharp scrip</Name>
+    <Name>1003-LOCKED-Generation-1-5003-Write a csharp scrip</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1003 </AddDataCommand>
     <RawPrompt>Write a csharp script, based on all of these details.</RawPrompt>
-    <GeneratioNumber>1</GeneratioNumber>
     <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2696,19 +2911,20 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recIzlejj3zgJpsbe</Generation>
     <ExpTransformer>recYw8nlner6LTLpt</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recOSo5PWsEJnVQ0W</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recEsqEXem2loLt94</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recX8xmFqhBkmzyhe</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec0hYbaFRDNkXw3y</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recUxuWNaxJOcS1CE</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rechR4NLpAgoApkMj</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recOSo5PWsEJnVQ0W</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recEsqEXem2loLt94</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recX8xmFqhBkmzyhe</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec0hYbaFRDNkXw3y</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recUxuWNaxJOcS1CE</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rechR4NLpAgoApkMj</TrialArtifacts>
     <AutoNumber>15</AutoNumber>
     <TransformerNumber>1015</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-3</GenerationName>
-    <Name>1015-LOCKED-Generation-3-5014-'Add the notion of du</Name>
+    <Name>1015-LOCKED-Generation-3-5014-Add the notion of du</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1015 </AddDataCommand>
     <RawPrompt>Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</RawPrompt>
-    <GeneratioNumber>3</GeneratioNumber>
     <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2729,19 +2945,21 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>rec4u0oAL96jOz25A</Generation>
     <ExpTransformer>recmn5czMOPk9AfqV</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recSn4conv7TfE1ZA</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recqkRYlumEndgflP</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recmJKoUbkw54W3l5</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">reclfcplgj5aJTuAu</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recYnv82dZmyAZQmS</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rectRFriOd7AWjVHD</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recSn4conv7TfE1ZA</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recqkRYlumEndgflP</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recmJKoUbkw54W3l5</TrialArtifacts>
+    <TrialArtifacts json:Array="true">reclfcplgj5aJTuAu</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rectRFriOd7AWjVHD</TrialArtifacts>
     <AutoNumber>39</AutoNumber>
+    <ParentTransformer>recWYK5AUswVvirqk</ParentTransformer>
     <TransformerNumber>1039</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-6</GenerationName>
-    <Name>1039-LOCKED-Generation-6-5030-'Write a 1 paragraph </Name>
+    <Name>1039-LOCKED-Generation-6-5030-Write a 1 paragraph </Name>
+    <GenerationNumber>6</GenerationNumber>
+    <ParentTransformerNumber>1038</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1039 1038</AddDataCommand>
     <RawPrompt>Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</RawPrompt>
-    <GeneratioNumber>6</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -2778,9 +2996,10 @@ FULL Example: {
     <TransformerNumber>1019</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-4</GenerationName>
-    <Name>1019-LOCKED-Generation-4-5012-'Add employee to the </Name>
+    <Name>1019-LOCKED-Generation-4-5012-Add employee to the </Name>
+    <GenerationNumber>4</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1019 </AddDataCommand>
     <RawPrompt>Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>4</GeneratioNumber>
     <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2801,19 +3020,20 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recDXYMNu5oEP7bDE</Generation>
     <ExpTransformer>recH46rTQX2JIpz8Y</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recV6rXWhics3ZY6k</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recPqNJ985pQGysKY</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recPsoYAkPlZ4GEmR</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recRqPJdGTF6J171r</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recoJKi53SxLYJPrn</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recAGMoYHBB73VBqp</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recV6rXWhics3ZY6k</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recPqNJ985pQGysKY</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recPsoYAkPlZ4GEmR</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recRqPJdGTF6J171r</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recoJKi53SxLYJPrn</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recAGMoYHBB73VBqp</TrialArtifacts>
     <AutoNumber>18</AutoNumber>
     <TransformerNumber>1018</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-1</GenerationName>
-    <Name>1018-LOCKED-Generation-1-5016-'Write a single-sourc</Name>
+    <Name>1018-LOCKED-Generation-1-5016-Write a single-sourc</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1018 </AddDataCommand>
     <RawPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>1</GeneratioNumber>
     <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2834,19 +3054,22 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>rec7ka3c4BGjhN9dN</Generation>
     <ExpTransformer>recvlmgnJuIuc113J</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recsl2h85hr1dleJS</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec5wf3RsMoxt9f9V</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recF6aA0W5sZOgHAf</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recHbRevim0BlGpFM</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recyFpfZWFIIL6ASr</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recrpat6Rl9YPc0y6</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recsl2h85hr1dleJS</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec5wf3RsMoxt9f9V</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recF6aA0W5sZOgHAf</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recHbRevim0BlGpFM</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recyFpfZWFIIL6ASr</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recrpat6Rl9YPc0y6</TrialArtifacts>
     <AutoNumber>30</AutoNumber>
+    <ParentTransformer>recPrRjr5Pf8IiRdR</ParentTransformer>
     <TransformerNumber>1030</TransformerNumber>
     <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-2</GenerationName>
-    <Name>1030-FREE-Generation-2-5024-'Add assigned to attr</Name>
+    <Name>1030-FREE-Generation-2-5024-Add assigned to attr</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <ParentTransformerNumber>1026</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1030 1026</AddDataCommand>
     <RawPrompt>Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>2</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -2884,7 +3107,9 @@ FULL Example: {
     <TransformerNumber>9014</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-2</GenerationName>
-    <Name>9014-LOCKED-Generation-2-5013-'Which part(s) of the</Name>
+    <Name>9014-LOCKED-Generation-2-5013-Which part(s) of the</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9014 </AddDataCommand>
     <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
 {
@@ -2946,7 +3171,6 @@ FULL Example: {
  }
  ]
 }</RawPrompt>
-    <GeneratioNumber>2</GeneratioNumber>
     <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -2967,19 +3191,21 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>rec7gQazwWTs39YDk</Generation>
     <ExpTransformer>recSRuHKkZmwHINk6</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recdf2zLDa9FP22HM</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec8Wr3GsnNP7Gghd</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recdWPLfpAb5njpwt</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec4HOCQsl48aHLbQ</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recd6gkxNsxzdKwnX</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recrpRozr2WQc40mz</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recdf2zLDa9FP22HM</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec8Wr3GsnNP7Gghd</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recdWPLfpAb5njpwt</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recd6gkxNsxzdKwnX</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recrpRozr2WQc40mz</TrialArtifacts>
     <AutoNumber>22</AutoNumber>
+    <ParentTransformer>reclAn6w105mmMayi</ParentTransformer>
     <TransformerNumber>1022</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-3</GenerationName>
-    <Name>1022-LOCKED-Generation-3-5020-'Add the notion of du</Name>
+    <Name>1022-LOCKED-Generation-3-5020-Add the notion of du</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <ParentTransformerNumber>1021</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1022 1021</AddDataCommand>
     <RawPrompt>Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</RawPrompt>
-    <GeneratioNumber>3</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -3012,19 +3238,21 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>rec7ka3c4BGjhN9dN</Generation>
     <ExpTransformer>recG6QbNZGIWnqxb2</ExpTransformer>
-    <TransformedArtifacts json:Array="true">rec6DRKYuaEVc7UQC</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recjgb29xpJeE6Afx</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec0EDj8l1KNXoldQ</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rectLTuzK4wSIsqhQ</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recFtfcF8NIvvUvmy</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec5iM2CwNeGnMZzl</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">rec6DRKYuaEVc7UQC</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recjgb29xpJeE6Afx</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec0EDj8l1KNXoldQ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rectLTuzK4wSIsqhQ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec5iM2CwNeGnMZzl</TrialArtifacts>
     <AutoNumber>21</AutoNumber>
+    <ParentTransformer>reca7Gfxv0KMLAOJz</ParentTransformer>
     <TransformerNumber>1021</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-2</GenerationName>
-    <Name>1021-LOCKED-Generation-2-5018-'Add assigned to attr</Name>
+    <Name>1021-LOCKED-Generation-2-5018-Add assigned to attr</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <ParentTransformerNumber>1020</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1021 1020</AddDataCommand>
     <RawPrompt>Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>2</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -3057,15 +3285,16 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recOOhsTc8QeS4QCL</Generation>
     <ExpTransformer>recrLRqehI58winaK</ExpTransformer>
-    <TransformedArtifacts>recBR2KRmIwkX47Iy</TransformedArtifacts>
+    <TrialArtifacts>recBR2KRmIwkX47Iy</TrialArtifacts>
     <AutoNumber>8</AutoNumber>
     <IsArtifactValidator>True</IsArtifactValidator>
     <TransformerNumber>9008</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-3</GenerationName>
-    <Name>9008-LOCKED-Generation-3-5007-'How many words are t</Name>
+    <Name>9008-LOCKED-Generation-3-5007-How many words are t</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9008 </AddDataCommand>
     <RawPrompt>How many words are there?</RawPrompt>
-    <GeneratioNumber>3</GeneratioNumber>
     <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -3086,19 +3315,20 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>recb394zuGgNoocna</Generation>
     <ExpTransformer>recMDtAdYLUJiB32q</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recLwlGmpbQcOAavZ</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recXjqOpM0idw2MjH</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recnISd4YDCaw8hXZ</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recC375nFEb2Hojb3</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recxCKLnsUTqEWzeb</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recCT3CK2P0k1IjE0</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recLwlGmpbQcOAavZ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recXjqOpM0idw2MjH</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recnISd4YDCaw8hXZ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recC375nFEb2Hojb3</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recxCKLnsUTqEWzeb</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recCT3CK2P0k1IjE0</TrialArtifacts>
     <AutoNumber>12</AutoNumber>
     <TransformerNumber>1012</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-2</GenerationName>
-    <Name>1012-LOCKED-Generation-2-5012-'Add employee to the </Name>
+    <Name>1012-LOCKED-Generation-2-5012-Add employee to the </Name>
+    <GenerationNumber>2</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1012 </AddDataCommand>
     <RawPrompt>Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>2</GeneratioNumber>
     <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -3119,19 +3349,22 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>rec4u0oAL96jOz25A</Generation>
     <ExpTransformer>recaA5iJAzZYc3kaY</ExpTransformer>
-    <TransformedArtifacts json:Array="true">recV5gAGwD71Ipuhm</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recs3d0ubIFAaOQdi</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recohHZ1q5Bj5qkJ2</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec9rz3u6Tzm3pOhU</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recclC2jfw4FlgtHY</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recxzkDJht6GWuHZz</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">recV5gAGwD71Ipuhm</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recs3d0ubIFAaOQdi</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recohHZ1q5Bj5qkJ2</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec9rz3u6Tzm3pOhU</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recclC2jfw4FlgtHY</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recxzkDJht6GWuHZz</TrialArtifacts>
     <AutoNumber>35</AutoNumber>
+    <ParentTransformer>recQqryPqWrLenFdE</ParentTransformer>
     <TransformerNumber>1035</TransformerNumber>
     <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-6</GenerationName>
-    <Name>1035-FREE-Generation-6-5028-'Write a single-sourc</Name>
+    <Name>1035-FREE-Generation-6-5028-Write a single-sourc</Name>
+    <GenerationNumber>6</GenerationNumber>
+    <ParentTransformerNumber>1033</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1035 1033</AddDataCommand>
     <RawPrompt>Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</RawPrompt>
-    <GeneratioNumber>6</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -3164,19 +3397,22 @@ FULL Example: {
   <GenerationTransformers json:Array="true">
     <Generation>rec7gQazwWTs39YDk</Generation>
     <ExpTransformer>reciQUcauehxklMYi</ExpTransformer>
-    <TransformedArtifacts json:Array="true">rec9xIo4BhmWNuRsa</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recYvZHlVpwfzjEVn</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recWiM6U1KNguBBJD</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">rec1g5harPK4EkWRj</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recXqx6oeknIIiWCP</TransformedArtifacts>
-    <TransformedArtifacts json:Array="true">recwCHRafRXzkGcaB</TransformedArtifacts>
+    <TrialArtifacts json:Array="true">rec9xIo4BhmWNuRsa</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recYvZHlVpwfzjEVn</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recWiM6U1KNguBBJD</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec1g5harPK4EkWRj</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recXqx6oeknIIiWCP</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recwCHRafRXzkGcaB</TrialArtifacts>
     <AutoNumber>31</AutoNumber>
+    <ParentTransformer>recjRflJxgJCqBAai</ParentTransformer>
     <TransformerNumber>1031</TransformerNumber>
     <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-3</GenerationName>
-    <Name>1031-FREE-Generation-3-5025-'Add the notion of du</Name>
+    <Name>1031-FREE-Generation-3-5025-Add the notion of du</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <ParentTransformerNumber>1030</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1031 1030</AddDataCommand>
     <RawPrompt>Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
-    <GeneratioNumber>3</GeneratioNumber>
     <GenerationExp>rec1moh66lbXJerna</GenerationExp>
     <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp>True</IsActiveExp>
@@ -3213,9 +3449,10 @@ FULL Example: {
     <TransformerNumber>1005</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-1</GenerationName>
-    <Name>1005-LOCKED-Generation-1-5004-'Write a golang scrip</Name>
+    <Name>1005-LOCKED-Generation-1-5004-Write a golang scrip</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1005 </AddDataCommand>
     <RawPrompt>Write a golang script, based on all of these details.</RawPrompt>
-    <GeneratioNumber>1</GeneratioNumber>
     <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
     <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>
@@ -3241,7 +3478,9 @@ FULL Example: {
     <TransformerNumber>9016</TransformerNumber>
     <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
     <GenerationName>Generation-4</GenerationName>
-    <Name>9016-LOCKED-Generation-4-5013-'Which part(s) of the</Name>
+    <Name>9016-LOCKED-Generation-4-5013-Which part(s) of the</Name>
+    <GenerationNumber>4</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9016 </AddDataCommand>
     <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
 
 {
@@ -3303,7 +3542,6 @@ FULL Example: {
  }
  ]
 }</RawPrompt>
-    <GeneratioNumber>4</GeneratioNumber>
     <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
     <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
     <IsActiveExp></IsActiveExp>

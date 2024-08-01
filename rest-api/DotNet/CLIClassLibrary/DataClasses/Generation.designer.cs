@@ -75,6 +75,13 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [RemoteIsCollection]
         public Int32[] SyntaxLockedTransformerNumbers { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationTransformerAddDataCommands")]
+        [RemoteIsCollection]
+        public String[] GenerationTransformerAddDataCommands { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AddDataCommandScript")]
+        public String AddDataCommandScript { get; set; }
+    
 
         
 

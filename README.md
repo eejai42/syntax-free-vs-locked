@@ -210,7 +210,7 @@ classDiagram
     Experiment --> ExperimentTransformer : "1 to many"
     Generation --> GenerationTransformer : "1 to many"
     ExperimentTransformer --> GenerationTransformer : "1 to many"
-    GenerationTransformer --> TransformedArtifact : "1 to many"
+    GenerationTransformer --> TrialArtifact : "1 to many"
 
     class Experiment {
         +Int ExperimentId
@@ -245,8 +245,8 @@ classDiagram
         +Boolean IsActiveExperiment
     }
 
-    class TransformedArtifact {
-        +Int TransformedArtifactId
+    class TrialArtifact {
+        +Int TrialArtifactId
         +String Name
         +Int GenerationTransformerId
         +String ActualPrompt
@@ -266,10 +266,10 @@ classDiagram
    - Use `GenerationTransformer` to apply `ExperimentTransformers` to each generation.
 
 3. **Generations and Transformations**:
-   - Apply transformations and create corresponding `TransformedArtifacts`.
+   - Apply transformations and create corresponding `TrialArtifacts`.
 
 4. **Validation and Analysis**:
-   - Validate `TransformedArtifacts` against the original `Experiment` and expected outcomes.
+   - Validate `TrialArtifacts` against the original `Experiment` and expected outcomes.
    - Use relationships to track feature drift and preservation across generations.
 
 By organizing the data and processes this way, you ensure that your research methodology is both systematic and scalable, enabling you to analyze feature drift, robustness, and consistency effectively.
@@ -283,7 +283,7 @@ By organizing the data and processes this way, you ensure that your research met
 
 # add-data.py
 
-This script automates the process of generating new `TransformedArtifacts` and validating existing ones based on `TransformerNumber`. It supports two main commands: `add-root` and `add-generation`.
+This script automates the process of generating new `TrialArtifacts` and validating existing ones based on `TransformerNumber`. It supports two main commands: `add-root` and `add-generation`.
 
 ## Prerequisites
 
@@ -306,7 +306,7 @@ This script automates the process of generating new `TransformedArtifacts` and v
 
 1. **Root Prompts**
 
-   Generates new `TransformedArtifacts` using a range of transformer numbers and specified iterations.
+   Generates new `TrialArtifacts` using a range of transformer numbers and specified iterations.
 
    ```sh
    python add-data.py add-root iterations transformerNumber [maxTransformerNumber]
@@ -319,7 +319,7 @@ This script automates the process of generating new `TransformedArtifacts` and v
 
 2. **Additional Generations**
 
-   Finds existing artifacts without a validator, creates new `TransformedArtifacts` using a validator transformer number, and links them.
+   Finds existing artifacts without a validator, creates new `TrialArtifacts` using a validator transformer number, and links them.
 
    ```sh
    python add-data.py add-generation iterations transformerNumber sourceTransformerNumbers
@@ -347,16 +347,16 @@ This script automates the process of generating new `TransformedArtifacts` and v
   Retrieves a `GenerationTransform` by its transformer number.
 
 - **get_existing_artifact_without_validator(transform_number)**:
-  Retrieves existing `TransformedArtifacts` without a validator by transformer number.
+  Retrieves existing `TrialArtifacts` without a validator by transformer number.
 
-- **create_transformed_artifact(generation_transform_id)**:
-  Creates a new `TransformedArtifact`.
+- **create_trial_artifact(generation_transform_id)**:
+  Creates a new `TrialArtifact`.
 
 - **create_validation_artifact(artifact_id, validator_transform_id)**:
   Creates a new validation artifact linked to the provided artifact and validator transformer.
 
-- **get_transformed_artifact_by_id(artifact_id)**:
-  Retrieves a `TransformedArtifact` by its ID.
+- **get_trial_artifact_by_id(artifact_id)**:
+  Retrieves a `TrialArtifact` by its ID.
 
 - **write_prompt_to_file(prompt)**:
   Writes the provided prompt to `prompt.txt`.
@@ -367,8 +367,8 @@ This script automates the process of generating new `TransformedArtifacts` and v
 - **read_response_from_file()**:
   Reads the response from `response.txt`.
 
-- **update_transformed_artifact(artifact, actual_prompt, response)**:
-  Updates the `TransformedArtifact` with the actual prompt and generated response.
+- **update_trial_artifact(artifact, actual_prompt, response)**:
+  Updates the `TrialArtifact` with the actual prompt and generated response.
 
 ## Notes
 
@@ -392,8 +392,8 @@ To effectively capture the generation and validation of artifacts, including det
 - **Type**: Type of transformer (e.g., root, validation).
 - **CreatedDate**: Date the transformer was created.
 
-**TransformedArtifact**
-- **TransformedArtifactId**: Unique identifier (primary key).
+**TrialArtifact**
+- **TrialArtifactId**: Unique identifier (primary key).
 - **ArtifactIdentifier**: Unique identifier (>10,000).
 - **GenerationTransformerId**: Foreign key to GenerationTransformer.
 - **SuggestedPrompt**: The prompt used for generating the artifact.
@@ -406,16 +406,16 @@ To effectively capture the generation and validation of artifacts, including det
 
 **ValidationArtifact**
 - **ValidationArtifactId**: Unique identifier (primary key).
-- **TransformedArtifactId**: Foreign key to the TransformedArtifact being validated.
+- **TrialArtifactId**: Foreign key to the TrialArtifact being validated.
 - **ValidatorTransformerId**: Foreign key to GenerationTransformer used for validation.
 - **ValidationResult**: The result of the validation.
 - **ValidationDate**: Date the validation was performed.
 
 #### Extracted Features from Response
-The extracted features should be stored in a structured format with additional columns added to the `TransformedArtifact` table. Here is the schema with the additional columns:
+The extracted features should be stored in a structured format with additional columns added to the `TrialArtifact` table. Here is the schema with the additional columns:
 
-**TransformedArtifact (Extended)**
-- **TransformedArtifactId**: Unique identifier (primary key).
+**TrialArtifact (Extended)**
+- **TrialArtifactId**: Unique identifier (primary key).
 - **ArtifactIdentifier**: Unique identifier (>10,000).
 - **GenerationTransformerId**: Foreign key to GenerationTransformer.
 - **SuggestedPrompt**: The prompt used for generating the artifact.
@@ -453,8 +453,8 @@ erDiagram
         datetime CreatedDate
     }
 
-    TransformedArtifact {
-        int TransformedArtifactId
+    TrialArtifact {
+        int TrialArtifactId
         int ArtifactIdentifier
         int GenerationTransformerId
         string SuggestedPrompt
@@ -483,21 +483,21 @@ erDiagram
 
     ValidationArtifact {
         int ValidationArtifactId
-        int TransformedArtifactId
+        int TrialArtifactId
         int ValidatorTransformerId
         string ValidationResult
         datetime ValidationDate
     }
 
-    GenerationTransformer ||--o{ TransformedArtifact : generates
-    TransformedArtifact ||--o{ ValidationArtifact : validates
+    GenerationTransformer ||--o{ TrialArtifact : generates
+    TrialArtifact ||--o{ ValidationArtifact : validates
     GenerationTransformer ||--o{ ValidationArtifact : uses
-    TransformedArtifact ||--|{ TransformedArtifact : extends
+    TrialArtifact ||--|{ TrialArtifact : extends
 ```
 
 ### Sample Python Code Implementation
 
-Here is an updated Python code implementation to include data extraction and updating the additional columns in `TransformedArtifact`:
+Here is an updated Python code implementation to include data extraction and updating the additional columns in `TrialArtifact`:
 
 ```python
 import requests
@@ -523,16 +523,16 @@ def get_generation_transform_by_number(transform_number):
         return generator[0]
 
 def get_existing_artifact_without_validator(transform_number):
-    url = f"{BASE_URL}/TransformedArtifacts?airtableWhere=OR(AND(TransformerNumber%3D{transform_number}%2cNOT(ValidationArtifact))%2cArtifactIdentifier%3D{transform_number})"
+    url = f"{BASE_URL}/TrialArtifacts?airtableWhere=OR(AND(TransformerNumber%3D{transform_number}%2cNOT(ValidationArtifact))%2cArtifactIdentifier%3D{transform_number})"
     response = requests.get(url, headers=HEADERS, verify=False)
     response.raise_for_status()
     artifacts = response.json()
     return artifacts
 
-def create_transformed_artifact(generation_transform_id):
-    url = f"{BASE_URL}/TransformedArtifact"
+def create_trial_artifact(generation_transform_id):
+    url = f"{BASE_URL}/TrialArtifact"
     payload = {
-        "TransformedArtifact": {
+        "TrialArtifact": {
             "GenerationTransformer": [generation_transform_id]
         }
     }
@@ -541,9 +541,9 @@ def create_transformed_artifact(generation_transform_id):
     return response.json()
 
 def create_validation_artifact(artifact_id, validator_transform_id):
-    url = f"{BASE_URL}/TransformedArtifact"
+    url = f"{BASE_URL}/TrialArtifact"
     payload = {
-        "TransformedArtifact": {
+        "TrialArtifact": {
             "ExtensionOf": artifact_id,
             "GenerationTransformer": [validator_transform_id]
         }
@@ -552,18 +552,18 @@ def create_validation_artifact(artifact_id, validator_transform_id):
     response.raise_for_status()
     return response.json()
 
-def get_transformed_artifact_by_id(artifact_id):
-    url = f"{BASE_URL}/TransformedArtifacts?airtableWhere=RECORD_ID()%3D'{artifact_id}'"
+def get_trial_artifact_by_id(artifact_id):
+    url = f"{BASE_URL}/TrialArtifacts?airtableWhere=RECORD_ID()%3D'{artifact_id}'"
     response = requests.get(url, headers=HEADERS, verify=False)
     response.raise_for_status()
     return response.json()[0]
 
 def update_existing_artifact_with_validation(existing_artifact, validation_artifact):
-    url = f"{BASE_URL}/TransformedArtifact"
-    validation_artifact_id = validation_artifact["TransformedArtifactId"]
+    url = f"{BASE_URL}/TrialArtifact"
+    validation_artifact_id = validation_artifact["TrialArtifactId"]
     existing_artifact["ValidationArtifact"] = validation_artifact_id
     payload = {
-        "TransformedArtifact": existing_artifact
+        "TrialArtifact": existing_artifact
     }
     response = requests.put(url, json=payload, headers=HEADERS, verify=False)
     response.raise_for_status()
@@ -580,15 +580,15 @@ def read_response_from_file():
     with open("response.txt", "r", encoding="utf-8") as file:
         return file.read()
 
-def update_transformed_artifact(artifact, actual_prompt, response, extension_of=None):
-    url = f"{BASE_URL}/TransformedArtifact"
+def update_trial_artifact(artifact, actual_prompt, response, extension_of=None):
+    url = f"{BASE_URL}/TrialArtifact"
     artifact["ExtensionOf"] = extension_of
     artifact["ActualPrompt"] = actual_prompt
     artifact["Response"] = response
     extracted_features = extract_features_from_response(response)
     artifact.update(extracted_features)
     payload = {
-        "TransformedArtifact": artifact
+        "TrialArtifact": artifact
     }
     response = requests.put(url, json=payload, headers=HEADERS, verify=False)
     response.raise_for_status()
@@ -634,15 +634,15 @@ Adding root prompts now...", iterations, transform_number, max_transform_number)
         
         generation_transform_id = generation_transform["GenerationTransformerId"]
         for _ in range(iterations):
-            created_artifact = create_transformed_artifact(generation_transform_id)
-            artifact_id = created_artifact["TransformedArtifactId"]
-            artifact = get_transformed_artifact_by_id(artifact_id)
+            created_artifact = create_trial_artifact(generation_transform_id)
+            artifact_id = created_artifact["TrialArtifactId"]
+            artifact = get_trial_artifact_by_id(artifact_id)
             suggested_experiment_prompt = artifact["SuggestedPrompt"]
             write_prompt_to_file(suggested_experiment_prompt)
             run_gpt()
             actual_prompt = suggested_experiment_prompt
             response = read_response_from_file()
-            updated_artifact = update_transformed_artifact(artifact, actual_prompt, response)
+            updated_artifact = update_trial_artifact(artifact, actual_prompt, response)
             print("Artifact updated successfully:", updated_artifact)
 
 def validate_response(validator_transform_number, iterations=1, transform_number=1001, max_transform_number=None):
@@ -668,16 +668,16 @@ def validate_response(validator_transform_number, iterations=1, transform_number
             continue
  
         for artifact in artifacts[:iterations]:
-            artifact_id = artifact["TransformedArtifactId"]
+            artifact_id = artifact["TrialArtifactId"]
             validation_artifact = create_validation_artifact(artifact_id, validator_transform_id)
-            validation_artifact_id = validation_artifact["TransformedArtifactId"]
-            updated_artifact = get_transformed_artifact_by_id(validation_artifact_id)
+            validation_artifact_id = validation_artifact["TrialArtifactId"]
+            updated_artifact = get_trial_artifact_by_id(validation_artifact_id)
             suggested_experiment_prompt = updated_artifact["SuggestedPrompt"]
             write_prompt_to_file(suggested_experiment_prompt)
             run_gpt()
             actual_prompt = suggested_experiment_prompt
             response = read_response_from_file()
-            updated_validation_artifact = update_transformed_artifact(updated_artifact, actual_prompt, response)
+            updated_validation_artifact = update_trial_artifact(updated_artifact, actual_prompt, response)
             print("Validation Artifact updated successfully:", updated_validation_artifact)
             
             # Update the original artifact with the ValidationArtifact reference

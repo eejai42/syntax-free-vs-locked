@@ -26,6 +26,11 @@ namespace AirtableDirect.CLI.Lib.Handlers
         }
 
         
+        protected abstract string HandleCreateTrialArtifact();
+        protected abstract string HandleReadTrialArtifact();
+        protected abstract string HandleUpdateTrialArtifact();
+        protected abstract string HandleDeleteTrialArtifact();
+        
         protected abstract string HandleCreateAppUser();
         protected abstract string HandleReadAppUser();
         protected abstract string HandleUpdateAppUser();
@@ -41,6 +46,11 @@ namespace AirtableDirect.CLI.Lib.Handlers
         protected abstract string HandleUpdateGeneration();
         protected abstract string HandleDeleteGeneration();
         
+        protected abstract string HandleCreateTrial();
+        protected abstract string HandleReadTrial();
+        protected abstract string HandleUpdateTrial();
+        protected abstract string HandleDeleteTrial();
+        
         protected abstract string HandleCreateExperimentTransformer();
         protected abstract string HandleReadExperimentTransformer();
         protected abstract string HandleUpdateExperimentTransformer();
@@ -50,11 +60,6 @@ namespace AirtableDirect.CLI.Lib.Handlers
         protected abstract string HandleReadExperimentFeature();
         protected abstract string HandleUpdateExperimentFeature();
         protected abstract string HandleDeleteExperimentFeature();
-        
-        protected abstract string HandleCreateTransformedArtifact();
-        protected abstract string HandleReadTransformedArtifact();
-        protected abstract string HandleUpdateTransformedArtifact();
-        protected abstract string HandleDeleteTransformedArtifact();
         
         protected abstract string HandleCreateDesignDecision();
         protected abstract string HandleReadDesignDecision();

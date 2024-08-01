@@ -24,6 +24,10 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
             {
                 sb.AppendLine();
                 
+                sb.AppendLine($"TrialArtifact: AddTrialArtifact");
+                sb.AppendLine($"TrialArtifact: GetTrialArtifacts");
+                sb.AppendLine($"TrialArtifact: UpdateTrialArtifact");
+                sb.AppendLine($"void: DeleteTrialArtifact");
                 sb.AppendLine($"AppUser: AddAppUser");
                 sb.AppendLine($"AppUser: GetAppUsers");
                 sb.AppendLine($"AppUser: UpdateAppUser");
@@ -36,6 +40,10 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 sb.AppendLine($"Generation: GetGenerations");
                 sb.AppendLine($"Generation: UpdateGeneration");
                 sb.AppendLine($"void: DeleteGeneration");
+                sb.AppendLine($"Trial: AddTrial");
+                sb.AppendLine($"Trial: GetTrials");
+                sb.AppendLine($"Trial: UpdateTrial");
+                sb.AppendLine($"void: DeleteTrial");
                 sb.AppendLine($"ExperimentTransformer: AddExperimentTransformer");
                 sb.AppendLine($"ExperimentTransformer: GetExperimentTransformers");
                 sb.AppendLine($"ExperimentTransformer: UpdateExperimentTransformer");
@@ -44,10 +52,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 sb.AppendLine($"ExperimentFeature: GetExperimentFeatures");
                 sb.AppendLine($"ExperimentFeature: UpdateExperimentFeature");
                 sb.AppendLine($"void: DeleteExperimentFeature");
-                sb.AppendLine($"TransformedArtifact: AddTransformedArtifact");
-                sb.AppendLine($"TransformedArtifact: GetTransformedArtifacts");
-                sb.AppendLine($"TransformedArtifact: UpdateTransformedArtifact");
-                sb.AppendLine($"void: DeleteTransformedArtifact");
                 sb.AppendLine($"DesignDecision: AddDesignDecision");
                 sb.AppendLine($"DesignDecision: GetDesignDecisions");
                 sb.AppendLine($"DesignDecision: UpdateDesignDecision");
@@ -64,6 +68,42 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
             
             sb.AppendLine($"{Environment.NewLine}Available Actions Matching: {helpTerm}");
             
+            if ("addtrialartifact".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - AddTrialArtifact");
+                if ("addtrialartifact".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintAddTrialArtifactHelp(sb);
+                }
+                found = true;
+            }
+            if ("gettrialartifacts".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - GetTrialArtifacts");
+                if ("gettrialartifacts".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintGetTrialArtifactsHelp(sb);
+                }
+                found = true;
+            }
+            if ("updatetrialartifact".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - UpdateTrialArtifact");
+                if ("updatetrialartifact".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintUpdateTrialArtifactHelp(sb);
+                }
+                found = true;
+            }
+            if ("deletetrialartifact".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - DeleteTrialArtifact");
+                if ("deletetrialartifact".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintDeleteTrialArtifactHelp(sb);
+                }
+                found = true;
+            }
             if ("addappuser".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
                 sb.AppendLine($" - AddAppUser");
@@ -172,6 +212,42 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 }
                 found = true;
             }
+            if ("addtrial".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - AddTrial");
+                if ("addtrial".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintAddTrialHelp(sb);
+                }
+                found = true;
+            }
+            if ("gettrials".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - GetTrials");
+                if ("gettrials".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintGetTrialsHelp(sb);
+                }
+                found = true;
+            }
+            if ("updatetrial".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - UpdateTrial");
+                if ("updatetrial".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintUpdateTrialHelp(sb);
+                }
+                found = true;
+            }
+            if ("deletetrial".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
+            {
+                sb.AppendLine($" - DeleteTrial");
+                if ("deletetrial".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
+                {
+                    this.PrintDeleteTrialHelp(sb);
+                }
+                found = true;
+            }
             if ("addexperimenttransformer".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
             {
                 sb.AppendLine($" - AddExperimentTransformer");
@@ -241,42 +317,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                 if ("deleteexperimentfeature".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
                 {
                     this.PrintDeleteExperimentFeatureHelp(sb);
-                }
-                found = true;
-            }
-            if ("addtransformedartifact".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - AddTransformedArtifact");
-                if ("addtransformedartifact".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintAddTransformedArtifactHelp(sb);
-                }
-                found = true;
-            }
-            if ("gettransformedartifacts".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - GetTransformedArtifacts");
-                if ("gettransformedartifacts".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintGetTransformedArtifactsHelp(sb);
-                }
-                found = true;
-            }
-            if ("updatetransformedartifact".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - UpdateTransformedArtifact");
-                if ("updatetransformedartifact".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintUpdateTransformedArtifactHelp(sb);
-                }
-                found = true;
-            }
-            if ("deletetransformedartifact".Contains(helpTerm, StringComparison.OrdinalIgnoreCase))
-            {
-                sb.AppendLine($" - DeleteTransformedArtifact");
-                if ("deletetransformedartifact".Equals(helpTerm, StringComparison.OrdinalIgnoreCase)) 
-                {
-                    this.PrintDeleteTransformedArtifactHelp(sb);
                 }
                 found = true;
             }
@@ -413,6 +453,26 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
 			
             switch (invokeRequest.ToLower())
             {
+                case "addtrialartifact":
+				    reply = this.ATDActor.AddTrialArtifact(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "gettrialartifacts":
+				    reply = this.ATDActor.GetTrialArtifacts(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "updatetrialartifact":
+				    reply = this.ATDActor.UpdateTrialArtifact(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "deletetrialartifact":
+				    this.ATDActor.DeleteTrialArtifact(payload);
+				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                    break;                   
+
                 case "addappuser":
 				    reply = this.ATDActor.AddAppUser(payload);
                     result = JsonConvert.SerializeObject(reply, Formatting.Indented);
@@ -473,6 +533,26 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
 				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
                     break;                   
 
+                case "addtrial":
+				    reply = this.ATDActor.AddTrial(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "gettrials":
+				    reply = this.ATDActor.GetTrials(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "updatetrial":
+				    reply = this.ATDActor.UpdateTrial(payload);
+                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
+                    break;                   
+
+                case "deletetrial":
+				    this.ATDActor.DeleteTrial(payload);
+				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                    break;                   
+
                 case "addexperimenttransformer":
 				    reply = this.ATDActor.AddExperimentTransformer(payload);
                     result = JsonConvert.SerializeObject(reply, Formatting.Indented);
@@ -510,26 +590,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
 
                 case "deleteexperimentfeature":
 				    this.ATDActor.DeleteExperimentFeature(payload);
-				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
-                    break;                   
-
-                case "addtransformedartifact":
-				    reply = this.ATDActor.AddTransformedArtifact(payload);
-                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
-                    break;                   
-
-                case "gettransformedartifacts":
-				    reply = this.ATDActor.GetTransformedArtifacts(payload);
-                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
-                    break;                   
-
-                case "updatetransformedartifact":
-				    reply = this.ATDActor.UpdateTransformedArtifact(payload);
-                    result = JsonConvert.SerializeObject(reply, Formatting.Indented);
-                    break;                   
-
-                case "deletetransformedartifact":
-				    this.ATDActor.DeleteTransformedArtifact(payload);
 				    result = JsonConvert.SerializeObject(payload, Formatting.Indented);
                     break;                   
 
@@ -600,6 +660,281 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
             return result;
         }
         
+        
+        public void PrintAddTrialArtifactHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: TrialArtifact     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - TrialArtifactId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - ActualPrompt");
+                    sb.AppendLine($"CRUD      - Response");
+                    sb.AppendLine($"CRUD      - ActualValidationPrompt");
+                    sb.AppendLine($"CRUD      - ValidationResponse");
+                    sb.AppendLine($"CRUD      - ExtensionOf");
+                    sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
+                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
+                    sb.AppendLine($"CRUD      - SuggestedPrompt");
+                    sb.AppendLine($"CRUD      - Created");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - IsRetiredArtifact");
+                    sb.AppendLine($"CRUD      - Modified");
+                    sb.AppendLine($"CRUD      - LongName");
+                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - ToDoItems");
+                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - Categories");
+                    sb.AppendLine($"CRUD      - CategoriesAKA");
+                    sb.AppendLine($"CRUD      - CategoriesMismatched");
+                    sb.AppendLine($"CRUD      - DueDates");
+                    sb.AppendLine($"CRUD      - DueDatesAKA");
+                    sb.AppendLine($"CRUD      - DueDatesMismatched");
+                    sb.AppendLine($"CRUD      - Priorities");
+                    sb.AppendLine($"CRUD      - PrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - Progress");
+                    sb.AppendLine($"CRUD      - ProgressAKA");
+                    sb.AppendLine($"CRUD      - ProgressMismatched");
+                    sb.AppendLine($"CRUD      - Statuses");
+                    sb.AppendLine($"CRUD      - StatusesAKA");
+                    sb.AppendLine($"CRUD      - StatusesMismatched");
+                    sb.AppendLine($"CRUD      - Reminders");
+                    sb.AppendLine($"CRUD      - RemindersAKA");
+                    sb.AppendLine($"CRUD      - RemindersMismatched");
+                    sb.AppendLine($"CRUD      - Notifications");
+                    sb.AppendLine($"CRUD      - NotificationsAKA");
+                    sb.AppendLine($"CRUD      - NotificationsMismatched");
+                    sb.AppendLine($"CRUD      - Completion");
+                    sb.AppendLine($"CRUD      - CompletionAKA");
+                    sb.AppendLine($"CRUD      - CompletionMismatched");
+                    sb.AppendLine($"CRUD      - ToDoEmployees");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - Duration");
+                    sb.AppendLine($"CRUD      - DurationAKA");
+                    sb.AppendLine($"CRUD      - DurationMismatched");
+                    sb.AppendLine($"CRUD      - CompletedDate");
+                    sb.AppendLine($"CRUD      - CompletedDateAKA");
+                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - ToDoColors");
+                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
+                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
+                    sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
+                    sb.AppendLine($"CRUD      - ExtensionOfArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
+                    sb.AppendLine($"CRUD      - CustomRootIdentifier");
+                    sb.AppendLine($"CRUD      - RootIdentifierMismatch");
+                    sb.AppendLine($"CRUD      - Trial");
+                    sb.AppendLine($"CRUD      - GenerationTransformer");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - GenerationName");
+                    sb.AppendLine($"CRUD      - GeneratioNumber");
+                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
+                    sb.AppendLine($"CRUD      - TransformerRawPrompt");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - TransformerNumber");
+                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGenerationExpName");
+                    sb.AppendLine($"CRUD      - TransformerGenerationName");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                
+            
+        }
+        
+        public void PrintGetTrialArtifactsHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: TrialArtifact     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - TrialArtifactId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - ActualPrompt");
+                    sb.AppendLine($"CRUD      - Response");
+                    sb.AppendLine($"CRUD      - ActualValidationPrompt");
+                    sb.AppendLine($"CRUD      - ValidationResponse");
+                    sb.AppendLine($"CRUD      - ExtensionOf");
+                    sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
+                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
+                    sb.AppendLine($"CRUD      - SuggestedPrompt");
+                    sb.AppendLine($"CRUD      - Created");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - IsRetiredArtifact");
+                    sb.AppendLine($"CRUD      - Modified");
+                    sb.AppendLine($"CRUD      - LongName");
+                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - ToDoItems");
+                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - Categories");
+                    sb.AppendLine($"CRUD      - CategoriesAKA");
+                    sb.AppendLine($"CRUD      - CategoriesMismatched");
+                    sb.AppendLine($"CRUD      - DueDates");
+                    sb.AppendLine($"CRUD      - DueDatesAKA");
+                    sb.AppendLine($"CRUD      - DueDatesMismatched");
+                    sb.AppendLine($"CRUD      - Priorities");
+                    sb.AppendLine($"CRUD      - PrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - Progress");
+                    sb.AppendLine($"CRUD      - ProgressAKA");
+                    sb.AppendLine($"CRUD      - ProgressMismatched");
+                    sb.AppendLine($"CRUD      - Statuses");
+                    sb.AppendLine($"CRUD      - StatusesAKA");
+                    sb.AppendLine($"CRUD      - StatusesMismatched");
+                    sb.AppendLine($"CRUD      - Reminders");
+                    sb.AppendLine($"CRUD      - RemindersAKA");
+                    sb.AppendLine($"CRUD      - RemindersMismatched");
+                    sb.AppendLine($"CRUD      - Notifications");
+                    sb.AppendLine($"CRUD      - NotificationsAKA");
+                    sb.AppendLine($"CRUD      - NotificationsMismatched");
+                    sb.AppendLine($"CRUD      - Completion");
+                    sb.AppendLine($"CRUD      - CompletionAKA");
+                    sb.AppendLine($"CRUD      - CompletionMismatched");
+                    sb.AppendLine($"CRUD      - ToDoEmployees");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - Duration");
+                    sb.AppendLine($"CRUD      - DurationAKA");
+                    sb.AppendLine($"CRUD      - DurationMismatched");
+                    sb.AppendLine($"CRUD      - CompletedDate");
+                    sb.AppendLine($"CRUD      - CompletedDateAKA");
+                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - ToDoColors");
+                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
+                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
+                    sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
+                    sb.AppendLine($"CRUD      - ExtensionOfArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
+                    sb.AppendLine($"CRUD      - CustomRootIdentifier");
+                    sb.AppendLine($"CRUD      - RootIdentifierMismatch");
+                    sb.AppendLine($"CRUD      - Trial");
+                    sb.AppendLine($"CRUD      - GenerationTransformer");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - GenerationName");
+                    sb.AppendLine($"CRUD      - GeneratioNumber");
+                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
+                    sb.AppendLine($"CRUD      - TransformerRawPrompt");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - TransformerNumber");
+                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGenerationExpName");
+                    sb.AppendLine($"CRUD      - TransformerGenerationName");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                
+            
+        }
+        
+        public void PrintUpdateTrialArtifactHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: TrialArtifact     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - TrialArtifactId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - ActualPrompt");
+                    sb.AppendLine($"CRUD      - Response");
+                    sb.AppendLine($"CRUD      - ActualValidationPrompt");
+                    sb.AppendLine($"CRUD      - ValidationResponse");
+                    sb.AppendLine($"CRUD      - ExtensionOf");
+                    sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
+                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
+                    sb.AppendLine($"CRUD      - SuggestedPrompt");
+                    sb.AppendLine($"CRUD      - Created");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - IsRetiredArtifact");
+                    sb.AppendLine($"CRUD      - Modified");
+                    sb.AppendLine($"CRUD      - LongName");
+                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - ToDoItems");
+                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
+                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
+                    sb.AppendLine($"CRUD      - Categories");
+                    sb.AppendLine($"CRUD      - CategoriesAKA");
+                    sb.AppendLine($"CRUD      - CategoriesMismatched");
+                    sb.AppendLine($"CRUD      - DueDates");
+                    sb.AppendLine($"CRUD      - DueDatesAKA");
+                    sb.AppendLine($"CRUD      - DueDatesMismatched");
+                    sb.AppendLine($"CRUD      - Priorities");
+                    sb.AppendLine($"CRUD      - PrioritiesAKA");
+                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
+                    sb.AppendLine($"CRUD      - Progress");
+                    sb.AppendLine($"CRUD      - ProgressAKA");
+                    sb.AppendLine($"CRUD      - ProgressMismatched");
+                    sb.AppendLine($"CRUD      - Statuses");
+                    sb.AppendLine($"CRUD      - StatusesAKA");
+                    sb.AppendLine($"CRUD      - StatusesMismatched");
+                    sb.AppendLine($"CRUD      - Reminders");
+                    sb.AppendLine($"CRUD      - RemindersAKA");
+                    sb.AppendLine($"CRUD      - RemindersMismatched");
+                    sb.AppendLine($"CRUD      - Notifications");
+                    sb.AppendLine($"CRUD      - NotificationsAKA");
+                    sb.AppendLine($"CRUD      - NotificationsMismatched");
+                    sb.AppendLine($"CRUD      - Completion");
+                    sb.AppendLine($"CRUD      - CompletionAKA");
+                    sb.AppendLine($"CRUD      - CompletionMismatched");
+                    sb.AppendLine($"CRUD      - ToDoEmployees");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
+                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
+                    sb.AppendLine($"CRUD      - Duration");
+                    sb.AppendLine($"CRUD      - DurationAKA");
+                    sb.AppendLine($"CRUD      - DurationMismatched");
+                    sb.AppendLine($"CRUD      - CompletedDate");
+                    sb.AppendLine($"CRUD      - CompletedDateAKA");
+                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
+                    sb.AppendLine($"CRUD      - ToDoColors");
+                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
+                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
+                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
+                    sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
+                    sb.AppendLine($"CRUD      - ExtensionOfArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
+                    sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
+                    sb.AppendLine($"CRUD      - CustomRootIdentifier");
+                    sb.AppendLine($"CRUD      - RootIdentifierMismatch");
+                    sb.AppendLine($"CRUD      - Trial");
+                    sb.AppendLine($"CRUD      - GenerationTransformer");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
+                    sb.AppendLine($"CRUD      - GenerationName");
+                    sb.AppendLine($"CRUD      - GeneratioNumber");
+                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
+                    sb.AppendLine($"CRUD      - TransformerRawPrompt");
+                    sb.AppendLine($"CRUD      - IsActiveExp");
+                    sb.AppendLine($"CRUD      - TransformerNumber");
+                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
+                    sb.AppendLine($"CRUD      - TransformerGenerationExpName");
+                    sb.AppendLine($"CRUD      - TransformerGenerationName");
+                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - ExpAbstract");
+                
+            
+        }
+        
+        public void PrintDeleteTrialArtifactHelp(StringBuilder sb)
+        {
+            
+        }
         
         public void PrintAddAppUserHelp(StringBuilder sb)
         {
@@ -675,18 +1010,21 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Generation");
                     sb.AppendLine($"CRUD      - RawPrompt");
                     sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformedArtifacts");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - IsArtifactValidator");
                     sb.AppendLine($"CRUD      - ExpAbstract");
-                    sb.AppendLine($"CRUD      - ExpTransformer");
                     sb.AppendLine($"CRUD      - GenerationExp");
                     sb.AppendLine($"CRUD      - GenerationExpName");
                     sb.AppendLine($"CRUD      - IsActiveExp");
-                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
                     sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - GenerationNumber");
+                    sb.AppendLine($"CRUD      - ParentTransformer");
+                    sb.AppendLine($"CRUD      - ParentTransformerNumber");
+                    sb.AppendLine($"CRUD      - AddDataCommand");
+                    sb.AppendLine($"CRUD      - ExpTransformer");
+                    sb.AppendLine($"CRUD      - TrialArtifacts");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
                 
             
         }
@@ -706,18 +1044,21 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Generation");
                     sb.AppendLine($"CRUD      - RawPrompt");
                     sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformedArtifacts");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - IsArtifactValidator");
                     sb.AppendLine($"CRUD      - ExpAbstract");
-                    sb.AppendLine($"CRUD      - ExpTransformer");
                     sb.AppendLine($"CRUD      - GenerationExp");
                     sb.AppendLine($"CRUD      - GenerationExpName");
                     sb.AppendLine($"CRUD      - IsActiveExp");
-                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
                     sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - GenerationNumber");
+                    sb.AppendLine($"CRUD      - ParentTransformer");
+                    sb.AppendLine($"CRUD      - ParentTransformerNumber");
+                    sb.AppendLine($"CRUD      - AddDataCommand");
+                    sb.AppendLine($"CRUD      - ExpTransformer");
+                    sb.AppendLine($"CRUD      - TrialArtifacts");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
                 
             
         }
@@ -737,18 +1078,21 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - Generation");
                     sb.AppendLine($"CRUD      - RawPrompt");
                     sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformedArtifacts");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - TransformerNumber");
                     sb.AppendLine($"CRUD      - IsArtifactValidator");
                     sb.AppendLine($"CRUD      - ExpAbstract");
-                    sb.AppendLine($"CRUD      - ExpTransformer");
                     sb.AppendLine($"CRUD      - GenerationExp");
                     sb.AppendLine($"CRUD      - GenerationExpName");
                     sb.AppendLine($"CRUD      - IsActiveExp");
-                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
                     sb.AppendLine($"CRUD      - ExpValidationPrompt");
+                    sb.AppendLine($"CRUD      - GenerationNumber");
+                    sb.AppendLine($"CRUD      - ParentTransformer");
+                    sb.AppendLine($"CRUD      - ParentTransformerNumber");
+                    sb.AppendLine($"CRUD      - AddDataCommand");
+                    sb.AppendLine($"CRUD      - ExpTransformer");
+                    sb.AppendLine($"CRUD      - TrialArtifacts");
+                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
                 
             
         }
@@ -782,6 +1126,8 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - TransformerNumbers");
                     sb.AppendLine($"CRUD      - SyntaxFreeTransformerNumbers");
                     sb.AppendLine($"CRUD      - SyntaxLockedTransformerNumbers");
+                    sb.AppendLine($"CRUD      - GenerationTransformerAddDataCommands");
+                    sb.AppendLine($"CRUD      - AddDataCommandScript");
                 
             
         }
@@ -810,6 +1156,8 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - TransformerNumbers");
                     sb.AppendLine($"CRUD      - SyntaxFreeTransformerNumbers");
                     sb.AppendLine($"CRUD      - SyntaxLockedTransformerNumbers");
+                    sb.AppendLine($"CRUD      - GenerationTransformerAddDataCommands");
+                    sb.AppendLine($"CRUD      - AddDataCommandScript");
                 
             
         }
@@ -838,11 +1186,81 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - TransformerNumbers");
                     sb.AppendLine($"CRUD      - SyntaxFreeTransformerNumbers");
                     sb.AppendLine($"CRUD      - SyntaxLockedTransformerNumbers");
+                    sb.AppendLine($"CRUD      - GenerationTransformerAddDataCommands");
+                    sb.AppendLine($"CRUD      - AddDataCommandScript");
                 
             
         }
         
         public void PrintDeleteGenerationHelp(StringBuilder sb)
+        {
+            
+        }
+        
+        public void PrintAddTrialHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: Trial     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - TrialId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - Experiement");
+                    sb.AppendLine($"CRUD      - TrialArtifacts");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - TrailIdentifier");
+                    sb.AppendLine($"CRUD      - Created");
+                
+            
+        }
+        
+        public void PrintGetTrialsHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: Trial     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - TrialId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - Experiement");
+                    sb.AppendLine($"CRUD      - TrialArtifacts");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - TrailIdentifier");
+                    sb.AppendLine($"CRUD      - Created");
+                
+            
+        }
+        
+        public void PrintUpdateTrialHelp(StringBuilder sb)
+        {
+            
+                
+                sb.AppendLine();
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine($"* *  OBJECT DEF: Trial     *");
+                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
+                sb.AppendLine();
+                
+                    sb.AppendLine($"CRUD      - TrialId");
+                    sb.AppendLine($"CRUD      - Name");
+                    sb.AppendLine($"CRUD      - Experiement");
+                    sb.AppendLine($"CRUD      - TrialArtifacts");
+                    sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - TrailIdentifier");
+                    sb.AppendLine($"CRUD      - Created");
+                
+            
+        }
+        
+        public void PrintDeleteTrialHelp(StringBuilder sb)
         {
             
         }
@@ -864,10 +1282,10 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - ExpAbstract");
                     sb.AppendLine($"CRUD      - IsActiveExp");
                     sb.AppendLine($"CRUD      - FullPrompt");
-                    sb.AppendLine($"CRUD      - TransformedTransformers");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - TransformerIdentifier");
                     sb.AppendLine($"CRUD      - IsSyntaxFree");
+                    sb.AppendLine($"CRUD      - GenerationTransformer");
                 
             
         }
@@ -889,10 +1307,10 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - ExpAbstract");
                     sb.AppendLine($"CRUD      - IsActiveExp");
                     sb.AppendLine($"CRUD      - FullPrompt");
-                    sb.AppendLine($"CRUD      - TransformedTransformers");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - TransformerIdentifier");
                     sb.AppendLine($"CRUD      - IsSyntaxFree");
+                    sb.AppendLine($"CRUD      - GenerationTransformer");
                 
             
         }
@@ -914,10 +1332,10 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - ExpAbstract");
                     sb.AppendLine($"CRUD      - IsActiveExp");
                     sb.AppendLine($"CRUD      - FullPrompt");
-                    sb.AppendLine($"CRUD      - TransformedTransformers");
                     sb.AppendLine($"CRUD      - AutoNumber");
                     sb.AppendLine($"CRUD      - TransformerIdentifier");
                     sb.AppendLine($"CRUD      - IsSyntaxFree");
+                    sb.AppendLine($"CRUD      - GenerationTransformer");
                 
             
         }
@@ -997,278 +1415,6 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
         }
         
         public void PrintDeleteExperimentFeatureHelp(StringBuilder sb)
-        {
-            
-        }
-        
-        public void PrintAddTransformedArtifactHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: TransformedArtifact     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - TransformedArtifactId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - GenerationTransformer");
-                    sb.AppendLine($"CRUD      - SuggestedPrompt");
-                    sb.AppendLine($"CRUD      - ActualPrompt");
-                    sb.AppendLine($"CRUD      - Response");
-                    sb.AppendLine($"CRUD      - Created");
-                    sb.AppendLine($"CRUD      - AutoNumber");
-                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
-                    sb.AppendLine($"CRUD      - TransformerRawPrompt");
-                    sb.AppendLine($"CRUD      - IsRetiredArtifact");
-                    sb.AppendLine($"CRUD      - Modified");
-                    sb.AppendLine($"CRUD      - ExtensionOf");
-                    sb.AppendLine($"CRUD      - TransformerNumber");
-                    sb.AppendLine($"CRUD      - LongName");
-                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGenerationName");
-                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
-                    sb.AppendLine($"CRUD      - ToDoItems");
-                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
-                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
-                    sb.AppendLine($"CRUD      - Categories");
-                    sb.AppendLine($"CRUD      - CategoriesAKA");
-                    sb.AppendLine($"CRUD      - CategoriesMismatched");
-                    sb.AppendLine($"CRUD      - DueDates");
-                    sb.AppendLine($"CRUD      - DueDatesAKA");
-                    sb.AppendLine($"CRUD      - DueDatesMismatched");
-                    sb.AppendLine($"CRUD      - Priorities");
-                    sb.AppendLine($"CRUD      - PrioritiesAKA");
-                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
-                    sb.AppendLine($"CRUD      - Progress");
-                    sb.AppendLine($"CRUD      - ProgressAKA");
-                    sb.AppendLine($"CRUD      - ProgressMismatched");
-                    sb.AppendLine($"CRUD      - Statuses");
-                    sb.AppendLine($"CRUD      - StatusesAKA");
-                    sb.AppendLine($"CRUD      - StatusesMismatched");
-                    sb.AppendLine($"CRUD      - Reminders");
-                    sb.AppendLine($"CRUD      - RemindersAKA");
-                    sb.AppendLine($"CRUD      - RemindersMismatched");
-                    sb.AppendLine($"CRUD      - Notifications");
-                    sb.AppendLine($"CRUD      - NotificationsAKA");
-                    sb.AppendLine($"CRUD      - NotificationsMismatched");
-                    sb.AppendLine($"CRUD      - Completion");
-                    sb.AppendLine($"CRUD      - CompletionAKA");
-                    sb.AppendLine($"CRUD      - CompletionMismatched");
-                    sb.AppendLine($"CRUD      - ToDoEmployees");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
-                    sb.AppendLine($"CRUD      - Duration");
-                    sb.AppendLine($"CRUD      - DurationAKA");
-                    sb.AppendLine($"CRUD      - DurationMismatched");
-                    sb.AppendLine($"CRUD      - CompletedDate");
-                    sb.AppendLine($"CRUD      - CompletedDateAKA");
-                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
-                    sb.AppendLine($"CRUD      - ToDoColors");
-                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
-                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
-                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
-                    sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
-                    sb.AppendLine($"CRUD      - ActualValidationPrompt");
-                    sb.AppendLine($"CRUD      - ValidationResponse");
-                    sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
-                    sb.AppendLine($"CRUD      - ExtensionOfArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
-                    sb.AppendLine($"CRUD      - CustomRootIdentifier");
-                    sb.AppendLine($"CRUD      - RootIdentifierMismatch");
-                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
-                    sb.AppendLine($"CRUD      - IsActiveExp");
-                    sb.AppendLine($"CRUD      - TransformerGenerationExpName");
-                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
-                    sb.AppendLine($"CRUD      - ExpAbstract");
-                
-            
-        }
-        
-        public void PrintGetTransformedArtifactsHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: TransformedArtifact     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - TransformedArtifactId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - GenerationTransformer");
-                    sb.AppendLine($"CRUD      - SuggestedPrompt");
-                    sb.AppendLine($"CRUD      - ActualPrompt");
-                    sb.AppendLine($"CRUD      - Response");
-                    sb.AppendLine($"CRUD      - Created");
-                    sb.AppendLine($"CRUD      - AutoNumber");
-                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
-                    sb.AppendLine($"CRUD      - TransformerRawPrompt");
-                    sb.AppendLine($"CRUD      - IsRetiredArtifact");
-                    sb.AppendLine($"CRUD      - Modified");
-                    sb.AppendLine($"CRUD      - ExtensionOf");
-                    sb.AppendLine($"CRUD      - TransformerNumber");
-                    sb.AppendLine($"CRUD      - LongName");
-                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGenerationName");
-                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
-                    sb.AppendLine($"CRUD      - ToDoItems");
-                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
-                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
-                    sb.AppendLine($"CRUD      - Categories");
-                    sb.AppendLine($"CRUD      - CategoriesAKA");
-                    sb.AppendLine($"CRUD      - CategoriesMismatched");
-                    sb.AppendLine($"CRUD      - DueDates");
-                    sb.AppendLine($"CRUD      - DueDatesAKA");
-                    sb.AppendLine($"CRUD      - DueDatesMismatched");
-                    sb.AppendLine($"CRUD      - Priorities");
-                    sb.AppendLine($"CRUD      - PrioritiesAKA");
-                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
-                    sb.AppendLine($"CRUD      - Progress");
-                    sb.AppendLine($"CRUD      - ProgressAKA");
-                    sb.AppendLine($"CRUD      - ProgressMismatched");
-                    sb.AppendLine($"CRUD      - Statuses");
-                    sb.AppendLine($"CRUD      - StatusesAKA");
-                    sb.AppendLine($"CRUD      - StatusesMismatched");
-                    sb.AppendLine($"CRUD      - Reminders");
-                    sb.AppendLine($"CRUD      - RemindersAKA");
-                    sb.AppendLine($"CRUD      - RemindersMismatched");
-                    sb.AppendLine($"CRUD      - Notifications");
-                    sb.AppendLine($"CRUD      - NotificationsAKA");
-                    sb.AppendLine($"CRUD      - NotificationsMismatched");
-                    sb.AppendLine($"CRUD      - Completion");
-                    sb.AppendLine($"CRUD      - CompletionAKA");
-                    sb.AppendLine($"CRUD      - CompletionMismatched");
-                    sb.AppendLine($"CRUD      - ToDoEmployees");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
-                    sb.AppendLine($"CRUD      - Duration");
-                    sb.AppendLine($"CRUD      - DurationAKA");
-                    sb.AppendLine($"CRUD      - DurationMismatched");
-                    sb.AppendLine($"CRUD      - CompletedDate");
-                    sb.AppendLine($"CRUD      - CompletedDateAKA");
-                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
-                    sb.AppendLine($"CRUD      - ToDoColors");
-                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
-                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
-                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
-                    sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
-                    sb.AppendLine($"CRUD      - ActualValidationPrompt");
-                    sb.AppendLine($"CRUD      - ValidationResponse");
-                    sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
-                    sb.AppendLine($"CRUD      - ExtensionOfArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
-                    sb.AppendLine($"CRUD      - CustomRootIdentifier");
-                    sb.AppendLine($"CRUD      - RootIdentifierMismatch");
-                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
-                    sb.AppendLine($"CRUD      - IsActiveExp");
-                    sb.AppendLine($"CRUD      - TransformerGenerationExpName");
-                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
-                    sb.AppendLine($"CRUD      - ExpAbstract");
-                
-            
-        }
-        
-        public void PrintUpdateTransformedArtifactHelp(StringBuilder sb)
-        {
-            
-                
-                sb.AppendLine();
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine($"* *  OBJECT DEF: TransformedArtifact     *");
-                sb.AppendLine($"* * * * * * * * * * * * * * * * * * * * * * * * * * *");
-                sb.AppendLine();
-                
-                    sb.AppendLine($"CRUD      - TransformedArtifactId");
-                    sb.AppendLine($"CRUD      - Name");
-                    sb.AppendLine($"CRUD      - GenerationTransformer");
-                    sb.AppendLine($"CRUD      - SuggestedPrompt");
-                    sb.AppendLine($"CRUD      - ActualPrompt");
-                    sb.AppendLine($"CRUD      - Response");
-                    sb.AppendLine($"CRUD      - Created");
-                    sb.AppendLine($"CRUD      - AutoNumber");
-                    sb.AppendLine($"CRUD      - ResponseOfArtifactBeingExtended");
-                    sb.AppendLine($"CRUD      - TransformerRawPrompt");
-                    sb.AppendLine($"CRUD      - IsRetiredArtifact");
-                    sb.AppendLine($"CRUD      - Modified");
-                    sb.AppendLine($"CRUD      - ExtensionOf");
-                    sb.AppendLine($"CRUD      - TransformerNumber");
-                    sb.AppendLine($"CRUD      - LongName");
-                    sb.AppendLine($"CRUD      - TransformerGeneratioNumber");
-                    sb.AppendLine($"CRUD      - TransformerGenerationName");
-                    sb.AppendLine($"CRUD      - ArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - PrimaryExtensionArtifact");
-                    sb.AppendLine($"CRUD      - ToDoItems");
-                    sb.AppendLine($"CRUD      - ToDoItemsAKA");
-                    sb.AppendLine($"CRUD      - ToDoItemsMismatched");
-                    sb.AppendLine($"CRUD      - Categories");
-                    sb.AppendLine($"CRUD      - CategoriesAKA");
-                    sb.AppendLine($"CRUD      - CategoriesMismatched");
-                    sb.AppendLine($"CRUD      - DueDates");
-                    sb.AppendLine($"CRUD      - DueDatesAKA");
-                    sb.AppendLine($"CRUD      - DueDatesMismatched");
-                    sb.AppendLine($"CRUD      - Priorities");
-                    sb.AppendLine($"CRUD      - PrioritiesAKA");
-                    sb.AppendLine($"CRUD      - PrioritiesMismatched");
-                    sb.AppendLine($"CRUD      - Progress");
-                    sb.AppendLine($"CRUD      - ProgressAKA");
-                    sb.AppendLine($"CRUD      - ProgressMismatched");
-                    sb.AppendLine($"CRUD      - Statuses");
-                    sb.AppendLine($"CRUD      - StatusesAKA");
-                    sb.AppendLine($"CRUD      - StatusesMismatched");
-                    sb.AppendLine($"CRUD      - Reminders");
-                    sb.AppendLine($"CRUD      - RemindersAKA");
-                    sb.AppendLine($"CRUD      - RemindersMismatched");
-                    sb.AppendLine($"CRUD      - Notifications");
-                    sb.AppendLine($"CRUD      - NotificationsAKA");
-                    sb.AppendLine($"CRUD      - NotificationsMismatched");
-                    sb.AppendLine($"CRUD      - Completion");
-                    sb.AppendLine($"CRUD      - CompletionAKA");
-                    sb.AppendLine($"CRUD      - CompletionMismatched");
-                    sb.AppendLine($"CRUD      - ToDoEmployees");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesAKA");
-                    sb.AppendLine($"CRUD      - ToDoEmployeesMismatched");
-                    sb.AppendLine($"CRUD      - Duration");
-                    sb.AppendLine($"CRUD      - DurationAKA");
-                    sb.AppendLine($"CRUD      - DurationMismatched");
-                    sb.AppendLine($"CRUD      - CompletedDate");
-                    sb.AppendLine($"CRUD      - CompletedDateAKA");
-                    sb.AppendLine($"CRUD      - CompletedDateMismatched");
-                    sb.AppendLine($"CRUD      - ToDoColors");
-                    sb.AppendLine($"CRUD      - ToDoColorsAKA");
-                    sb.AppendLine($"CRUD      - ToDoColorsMismatched");
-                    sb.AppendLine($"CRUD      - ResponseBeingValidated");
-                    sb.AppendLine($"CRUD      - SuggestedValidationPrompt");
-                    sb.AppendLine($"CRUD      - ActualValidationPrompt");
-                    sb.AppendLine($"CRUD      - ValidationResponse");
-                    sb.AppendLine($"CRUD      - GenerationName");
-                    sb.AppendLine($"CRUD      - GeneratioNumber");
-                    sb.AppendLine($"CRUD      - GenerationTransformerNumber");
-                    sb.AppendLine($"CRUD      - ExtensionOfArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - RootArtifactIdentifier");
-                    sb.AppendLine($"CRUD      - SuggestedRootIdentifier");
-                    sb.AppendLine($"CRUD      - CustomRootIdentifier");
-                    sb.AppendLine($"CRUD      - RootIdentifierMismatch");
-                    sb.AppendLine($"CRUD      - ExpTransformerIsSyntaxFree");
-                    sb.AppendLine($"CRUD      - IsActiveExp");
-                    sb.AppendLine($"CRUD      - TransformerGenerationExpName");
-                    sb.AppendLine($"CRUD      - ExpValidationPrompt");
-                    sb.AppendLine($"CRUD      - ExpAbstract");
-                
-            
-        }
-        
-        public void PrintDeleteTransformedArtifactHelp(StringBuilder sb)
         {
             
         }
@@ -1358,6 +1504,11 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - FeaturesArray");
                     sb.AppendLine($"CRUD      - ValidationPrompt");
                     sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - SyntaxLockedTransformerNumbers");
+                    sb.AppendLine($"CRUD      - SyntaxFreeTransformerNumbers");
+                    sb.AppendLine($"CRUD      - Trials");
+                    sb.AppendLine($"CRUD      - RunTrialScript");
+                    sb.AppendLine($"CRUD      - GenerationAddDataCommandScripts");
                 
             
         }
@@ -1388,6 +1539,11 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - FeaturesArray");
                     sb.AppendLine($"CRUD      - ValidationPrompt");
                     sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - SyntaxLockedTransformerNumbers");
+                    sb.AppendLine($"CRUD      - SyntaxFreeTransformerNumbers");
+                    sb.AppendLine($"CRUD      - Trials");
+                    sb.AppendLine($"CRUD      - RunTrialScript");
+                    sb.AppendLine($"CRUD      - GenerationAddDataCommandScripts");
                 
             
         }
@@ -1418,6 +1574,11 @@ namespace CLIClassLibrary.RoleHandlers.ATDHandlers
                     sb.AppendLine($"CRUD      - FeaturesArray");
                     sb.AppendLine($"CRUD      - ValidationPrompt");
                     sb.AppendLine($"CRUD      - AutoNumber");
+                    sb.AppendLine($"CRUD      - SyntaxLockedTransformerNumbers");
+                    sb.AppendLine($"CRUD      - SyntaxFreeTransformerNumbers");
+                    sb.AppendLine($"CRUD      - Trials");
+                    sb.AppendLine($"CRUD      - RunTrialScript");
+                    sb.AppendLine($"CRUD      - GenerationAddDataCommandScripts");
                 
             
         }

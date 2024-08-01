@@ -20,6 +20,14 @@ namespace CLIClassLibrary.Controllers
                 },
                 new Endpoint()
                 {
+                    Name = "TrialArtifacts",
+                    Method = "GET",
+                    Url = "/TrialArtifacts",
+                    Description = "Get's a list of TrialArtifacts from the data source."
+                }
+            ,
+                new Endpoint()
+                {
                     Name = "AppUsers",
                     Method = "GET",
                     Url = "/AppUsers",
@@ -44,6 +52,14 @@ namespace CLIClassLibrary.Controllers
             ,
                 new Endpoint()
                 {
+                    Name = "Trials",
+                    Method = "GET",
+                    Url = "/Trials",
+                    Description = "Get's a list of Trials from the data source."
+                }
+            ,
+                new Endpoint()
+                {
                     Name = "ExperimentTransformers",
                     Method = "GET",
                     Url = "/ExperimentTransformers",
@@ -56,14 +72,6 @@ namespace CLIClassLibrary.Controllers
                     Method = "GET",
                     Url = "/ExperimentFeatures",
                     Description = "Get's a list of ExperimentFeatures from the data source."
-                }
-            ,
-                new Endpoint()
-                {
-                    Name = "TransformedArtifacts",
-                    Method = "GET",
-                    Url = "/TransformedArtifacts",
-                    Description = "Get's a list of TransformedArtifacts from the data source."
                 }
             ,
                 new Endpoint()

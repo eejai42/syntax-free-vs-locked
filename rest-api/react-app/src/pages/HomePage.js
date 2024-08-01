@@ -7,7 +7,7 @@ const HomePage = () => {
 
   useEffect(() => {
     if (accessToken) {
-      UserService.GetTransformedArtifacts()
+      UserService.GetTrialArtifactss()
         .then(response => {
           setArtifacts(response);
         })
@@ -26,7 +26,7 @@ const HomePage = () => {
           <h2>Details</h2>
           <ul>
             {artifacts.map((artifact) => (
-              <li key={artifact.TransformedArtifactId}>{artifact.Name}</li>
+              <li key={artifact.TrialArtifactId}>{artifact.Name}</li>
             ))}
           </ul>
         </div>

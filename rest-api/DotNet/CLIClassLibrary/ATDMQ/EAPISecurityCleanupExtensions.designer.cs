@@ -30,7 +30,7 @@ namespace CLIClassLibrary.ATDMQ
         
         // Guest Cleaning Extension Methods.  --
         
-        // CRUDCoordinator Cleaning Extension Methods.  --
+        // Guest Cleaning Extension Methods.  --
         
         // CRUDCoordinator Cleaning Extension Methods.  --
         
@@ -48,6 +48,293 @@ namespace CLIClassLibrary.ATDMQ
         
         // CRUDCoordinator Cleaning Extension Methods.  --
         
+        // CRUDCoordinator Cleaning Extension Methods.  --
+        
+        // CRUDCoordinator Cleaning Extension Methods.  --
+        
+        // User Cleaning Extension Methods.  -CRUD-
+        
+        // TrialArtifact
+        public static dc.TrialArtifact UserCleanForAdd(this dc.TrialArtifact cleanTrialArtifact)
+        {
+            var UserTrialArtifact = default(dc.TrialArtifact);
+
+            if (!ReferenceEquals(cleanTrialArtifact, null))
+            {
+                UserTrialArtifact = new dc.TrialArtifact()
+                {
+                     // default value: . 
+                    TrialArtifactId = cleanTrialArtifact.TrialArtifactId,
+                     // default value: . 
+                    ActualPrompt = cleanTrialArtifact.ActualPrompt,
+                     // default value: . 
+                    Response = cleanTrialArtifact.Response,
+                     // default value: . 
+                    ActualValidationPrompt = cleanTrialArtifact.ActualValidationPrompt,
+                     // default value: . 
+                    ValidationResponse = cleanTrialArtifact.ValidationResponse,
+                     // default value: . 
+                    ExtensionOf = cleanTrialArtifact.ExtensionOf,
+                     // default value: . 
+                    PrimaryExtensionArtifact = cleanTrialArtifact.PrimaryExtensionArtifact,
+                     // default value: . 
+                    AutoNumber = cleanTrialArtifact.AutoNumber,
+                     // default value: . 
+                    IsRetiredArtifact = cleanTrialArtifact.IsRetiredArtifact,
+                     // default value: . 
+                    ToDoItems = cleanTrialArtifact.ToDoItems,
+                     // default value: . 
+                    ToDoItemsAKA = cleanTrialArtifact.ToDoItemsAKA,
+                     // default value: . 
+                    ToDoItemsMismatched = cleanTrialArtifact.ToDoItemsMismatched,
+                     // default value: . 
+                    Categories = cleanTrialArtifact.Categories,
+                     // default value: . 
+                    CategoriesAKA = cleanTrialArtifact.CategoriesAKA,
+                     // default value: . 
+                    CategoriesMismatched = cleanTrialArtifact.CategoriesMismatched,
+                     // default value: . 
+                    DueDates = cleanTrialArtifact.DueDates,
+                     // default value: . 
+                    DueDatesAKA = cleanTrialArtifact.DueDatesAKA,
+                     // default value: . 
+                    DueDatesMismatched = cleanTrialArtifact.DueDatesMismatched,
+                     // default value: . 
+                    Priorities = cleanTrialArtifact.Priorities,
+                     // default value: . 
+                    PrioritiesAKA = cleanTrialArtifact.PrioritiesAKA,
+                     // default value: . 
+                    PrioritiesMismatched = cleanTrialArtifact.PrioritiesMismatched,
+                     // default value: . 
+                    Progress = cleanTrialArtifact.Progress,
+                     // default value: . 
+                    ProgressAKA = cleanTrialArtifact.ProgressAKA,
+                     // default value: . 
+                    ProgressMismatched = cleanTrialArtifact.ProgressMismatched,
+                     // default value: . 
+                    Statuses = cleanTrialArtifact.Statuses,
+                     // default value: . 
+                    StatusesAKA = cleanTrialArtifact.StatusesAKA,
+                     // default value: . 
+                    StatusesMismatched = cleanTrialArtifact.StatusesMismatched,
+                     // default value: . 
+                    Reminders = cleanTrialArtifact.Reminders,
+                     // default value: . 
+                    RemindersAKA = cleanTrialArtifact.RemindersAKA,
+                     // default value: . 
+                    RemindersMismatched = cleanTrialArtifact.RemindersMismatched,
+                     // default value: . 
+                    Notifications = cleanTrialArtifact.Notifications,
+                     // default value: . 
+                    NotificationsAKA = cleanTrialArtifact.NotificationsAKA,
+                     // default value: . 
+                    NotificationsMismatched = cleanTrialArtifact.NotificationsMismatched,
+                     // default value: . 
+                    Completion = cleanTrialArtifact.Completion,
+                     // default value: . 
+                    CompletionAKA = cleanTrialArtifact.CompletionAKA,
+                     // default value: . 
+                    CompletionMismatched = cleanTrialArtifact.CompletionMismatched,
+                     // default value: . 
+                    ToDoEmployees = cleanTrialArtifact.ToDoEmployees,
+                     // default value: . 
+                    ToDoEmployeesAKA = cleanTrialArtifact.ToDoEmployeesAKA,
+                     // default value: . 
+                    ToDoEmployeesMismatched = cleanTrialArtifact.ToDoEmployeesMismatched,
+                     // default value: . 
+                    Duration = cleanTrialArtifact.Duration,
+                     // default value: . 
+                    DurationAKA = cleanTrialArtifact.DurationAKA,
+                     // default value: . 
+                    DurationMismatched = cleanTrialArtifact.DurationMismatched,
+                     // default value: . 
+                    CompletedDate = cleanTrialArtifact.CompletedDate,
+                     // default value: . 
+                    CompletedDateAKA = cleanTrialArtifact.CompletedDateAKA,
+                     // default value: . 
+                    CompletedDateMismatched = cleanTrialArtifact.CompletedDateMismatched,
+                     // default value: . 
+                    ToDoColors = cleanTrialArtifact.ToDoColors,
+                     // default value: . 
+                    ToDoColorsAKA = cleanTrialArtifact.ToDoColorsAKA,
+                     // default value: . 
+                    ToDoColorsMismatched = cleanTrialArtifact.ToDoColorsMismatched,
+                     // default value: . 
+                    CustomRootIdentifier = cleanTrialArtifact.CustomRootIdentifier,
+                     // default value: . 
+                    Trial = cleanTrialArtifact.Trial,
+                     // default value: . 
+                    GenerationTransformer = cleanTrialArtifact.GenerationTransformer
+                };
+                
+            }
+
+            return UserTrialArtifact;
+        }
+        
+        
+        public static List<dc.TrialArtifact> UserCleanForGet(this IEnumerable<dc.TrialArtifact> cleanTrialArtifacts)
+        {
+            return cleanTrialArtifacts.Select(TrialArtifact => TrialArtifact.UserCleanForGet())
+                            .ToList();
+        }
+        
+        public static dc.TrialArtifact UserCleanForGet(this dc.TrialArtifact cleanTrialArtifact)
+        {
+            var UserTrialArtifact = default(dc.TrialArtifact);
+
+            if (!ReferenceEquals(cleanTrialArtifact, null))
+            {
+                UserTrialArtifact = new dc.TrialArtifact()
+                {
+                    TrialArtifactId = cleanTrialArtifact.TrialArtifactId,
+                    Name = cleanTrialArtifact.Name,
+                    ActualPrompt = cleanTrialArtifact.ActualPrompt,
+                    Response = cleanTrialArtifact.Response,
+                    ActualValidationPrompt = cleanTrialArtifact.ActualValidationPrompt,
+                    ValidationResponse = cleanTrialArtifact.ValidationResponse,
+                    ExtensionOf = cleanTrialArtifact.ExtensionOf,
+                    PrimaryExtensionArtifact = cleanTrialArtifact.PrimaryExtensionArtifact,
+                    ResponseOfArtifactBeingExtended = cleanTrialArtifact.ResponseOfArtifactBeingExtended,
+                    SuggestedPrompt = cleanTrialArtifact.SuggestedPrompt,
+                    Created = cleanTrialArtifact.Created,
+                    AutoNumber = cleanTrialArtifact.AutoNumber,
+                    IsRetiredArtifact = cleanTrialArtifact.IsRetiredArtifact,
+                    Modified = cleanTrialArtifact.Modified,
+                    LongName = cleanTrialArtifact.LongName,
+                    ArtifactIdentifier = cleanTrialArtifact.ArtifactIdentifier,
+                    ToDoItems = cleanTrialArtifact.ToDoItems,
+                    ToDoItemsAKA = cleanTrialArtifact.ToDoItemsAKA,
+                    ToDoItemsMismatched = cleanTrialArtifact.ToDoItemsMismatched,
+                    Categories = cleanTrialArtifact.Categories,
+                    CategoriesAKA = cleanTrialArtifact.CategoriesAKA,
+                    CategoriesMismatched = cleanTrialArtifact.CategoriesMismatched,
+                    DueDates = cleanTrialArtifact.DueDates,
+                    DueDatesAKA = cleanTrialArtifact.DueDatesAKA,
+                    DueDatesMismatched = cleanTrialArtifact.DueDatesMismatched,
+                    Priorities = cleanTrialArtifact.Priorities,
+                    PrioritiesAKA = cleanTrialArtifact.PrioritiesAKA,
+                    PrioritiesMismatched = cleanTrialArtifact.PrioritiesMismatched,
+                    Progress = cleanTrialArtifact.Progress,
+                    ProgressAKA = cleanTrialArtifact.ProgressAKA,
+                    ProgressMismatched = cleanTrialArtifact.ProgressMismatched,
+                    Statuses = cleanTrialArtifact.Statuses,
+                    StatusesAKA = cleanTrialArtifact.StatusesAKA,
+                    StatusesMismatched = cleanTrialArtifact.StatusesMismatched,
+                    Reminders = cleanTrialArtifact.Reminders,
+                    RemindersAKA = cleanTrialArtifact.RemindersAKA,
+                    RemindersMismatched = cleanTrialArtifact.RemindersMismatched,
+                    Notifications = cleanTrialArtifact.Notifications,
+                    NotificationsAKA = cleanTrialArtifact.NotificationsAKA,
+                    NotificationsMismatched = cleanTrialArtifact.NotificationsMismatched,
+                    Completion = cleanTrialArtifact.Completion,
+                    CompletionAKA = cleanTrialArtifact.CompletionAKA,
+                    CompletionMismatched = cleanTrialArtifact.CompletionMismatched,
+                    ToDoEmployees = cleanTrialArtifact.ToDoEmployees,
+                    ToDoEmployeesAKA = cleanTrialArtifact.ToDoEmployeesAKA,
+                    ToDoEmployeesMismatched = cleanTrialArtifact.ToDoEmployeesMismatched,
+                    Duration = cleanTrialArtifact.Duration,
+                    DurationAKA = cleanTrialArtifact.DurationAKA,
+                    DurationMismatched = cleanTrialArtifact.DurationMismatched,
+                    CompletedDate = cleanTrialArtifact.CompletedDate,
+                    CompletedDateAKA = cleanTrialArtifact.CompletedDateAKA,
+                    CompletedDateMismatched = cleanTrialArtifact.CompletedDateMismatched,
+                    ToDoColors = cleanTrialArtifact.ToDoColors,
+                    ToDoColorsAKA = cleanTrialArtifact.ToDoColorsAKA,
+                    ToDoColorsMismatched = cleanTrialArtifact.ToDoColorsMismatched,
+                    ResponseBeingValidated = cleanTrialArtifact.ResponseBeingValidated,
+                    SuggestedValidationPrompt = cleanTrialArtifact.SuggestedValidationPrompt,
+                    ExtensionOfArtifactIdentifier = cleanTrialArtifact.ExtensionOfArtifactIdentifier,
+                    RootArtifactIdentifier = cleanTrialArtifact.RootArtifactIdentifier,
+                    SuggestedRootIdentifier = cleanTrialArtifact.SuggestedRootIdentifier,
+                    CustomRootIdentifier = cleanTrialArtifact.CustomRootIdentifier,
+                    RootIdentifierMismatch = cleanTrialArtifact.RootIdentifierMismatch,
+                    Trial = cleanTrialArtifact.Trial,
+                    GenerationTransformer = cleanTrialArtifact.GenerationTransformer,
+                    ExpTransformerIsSyntaxFree = cleanTrialArtifact.ExpTransformerIsSyntaxFree,
+                    GenerationName = cleanTrialArtifact.GenerationName,
+                    GeneratioNumber = cleanTrialArtifact.GeneratioNumber,
+                    GenerationTransformerNumber = cleanTrialArtifact.GenerationTransformerNumber,
+                    TransformerRawPrompt = cleanTrialArtifact.TransformerRawPrompt,
+                    IsActiveExp = cleanTrialArtifact.IsActiveExp,
+                    TransformerNumber = cleanTrialArtifact.TransformerNumber,
+                    TransformerGeneratioNumber = cleanTrialArtifact.TransformerGeneratioNumber,
+                    TransformerGenerationExpName = cleanTrialArtifact.TransformerGenerationExpName,
+                    TransformerGenerationName = cleanTrialArtifact.TransformerGenerationName,
+                    ExpValidationPrompt = cleanTrialArtifact.ExpValidationPrompt,
+                    ExpAbstract = cleanTrialArtifact.ExpAbstract
+                };
+            }
+
+            return UserTrialArtifact;
+        }
+        
+        
+        public static dc.TrialArtifact UserCleanForUpdate(this dc.TrialArtifact cleanTrialArtifact)
+        {
+            var UserTrialArtifact = default(dc.TrialArtifact);
+
+            if (!ReferenceEquals(cleanTrialArtifact, null))
+            {
+                UserTrialArtifact = new dc.TrialArtifact()
+                {
+                    TrialArtifactId = cleanTrialArtifact.TrialArtifactId,
+                    ActualPrompt = cleanTrialArtifact.ActualPrompt,
+                    Response = cleanTrialArtifact.Response,
+                    ActualValidationPrompt = cleanTrialArtifact.ActualValidationPrompt,
+                    ValidationResponse = cleanTrialArtifact.ValidationResponse,
+                    ExtensionOf = cleanTrialArtifact.ExtensionOf,
+                    PrimaryExtensionArtifact = cleanTrialArtifact.PrimaryExtensionArtifact,
+                    AutoNumber = cleanTrialArtifact.AutoNumber,
+                    IsRetiredArtifact = cleanTrialArtifact.IsRetiredArtifact,
+                    ToDoItems = cleanTrialArtifact.ToDoItems,
+                    ToDoItemsAKA = cleanTrialArtifact.ToDoItemsAKA,
+                    ToDoItemsMismatched = cleanTrialArtifact.ToDoItemsMismatched,
+                    Categories = cleanTrialArtifact.Categories,
+                    CategoriesAKA = cleanTrialArtifact.CategoriesAKA,
+                    CategoriesMismatched = cleanTrialArtifact.CategoriesMismatched,
+                    DueDates = cleanTrialArtifact.DueDates,
+                    DueDatesAKA = cleanTrialArtifact.DueDatesAKA,
+                    DueDatesMismatched = cleanTrialArtifact.DueDatesMismatched,
+                    Priorities = cleanTrialArtifact.Priorities,
+                    PrioritiesAKA = cleanTrialArtifact.PrioritiesAKA,
+                    PrioritiesMismatched = cleanTrialArtifact.PrioritiesMismatched,
+                    Progress = cleanTrialArtifact.Progress,
+                    ProgressAKA = cleanTrialArtifact.ProgressAKA,
+                    ProgressMismatched = cleanTrialArtifact.ProgressMismatched,
+                    Statuses = cleanTrialArtifact.Statuses,
+                    StatusesAKA = cleanTrialArtifact.StatusesAKA,
+                    StatusesMismatched = cleanTrialArtifact.StatusesMismatched,
+                    Reminders = cleanTrialArtifact.Reminders,
+                    RemindersAKA = cleanTrialArtifact.RemindersAKA,
+                    RemindersMismatched = cleanTrialArtifact.RemindersMismatched,
+                    Notifications = cleanTrialArtifact.Notifications,
+                    NotificationsAKA = cleanTrialArtifact.NotificationsAKA,
+                    NotificationsMismatched = cleanTrialArtifact.NotificationsMismatched,
+                    Completion = cleanTrialArtifact.Completion,
+                    CompletionAKA = cleanTrialArtifact.CompletionAKA,
+                    CompletionMismatched = cleanTrialArtifact.CompletionMismatched,
+                    ToDoEmployees = cleanTrialArtifact.ToDoEmployees,
+                    ToDoEmployeesAKA = cleanTrialArtifact.ToDoEmployeesAKA,
+                    ToDoEmployeesMismatched = cleanTrialArtifact.ToDoEmployeesMismatched,
+                    Duration = cleanTrialArtifact.Duration,
+                    DurationAKA = cleanTrialArtifact.DurationAKA,
+                    DurationMismatched = cleanTrialArtifact.DurationMismatched,
+                    CompletedDate = cleanTrialArtifact.CompletedDate,
+                    CompletedDateAKA = cleanTrialArtifact.CompletedDateAKA,
+                    CompletedDateMismatched = cleanTrialArtifact.CompletedDateMismatched,
+                    ToDoColors = cleanTrialArtifact.ToDoColors,
+                    ToDoColorsAKA = cleanTrialArtifact.ToDoColorsAKA,
+                    ToDoColorsMismatched = cleanTrialArtifact.ToDoColorsMismatched,
+                    CustomRootIdentifier = cleanTrialArtifact.CustomRootIdentifier,
+                    Trial = cleanTrialArtifact.Trial,
+                    GenerationTransformer = cleanTrialArtifact.GenerationTransformer
+                };
+            }
+
+            return UserTrialArtifact;
+        }
+
         // User Cleaning Extension Methods.  -CRUD-
         
         // AppUser
@@ -134,13 +421,15 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Generation = cleanGenerationTransformer.Generation,
                      // default value: . 
-                    TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
-                     // default value: . 
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                      // default value: . 
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
                      // default value: . 
-                    ExpTransformer = cleanGenerationTransformer.ExpTransformer
+                    ParentTransformer = cleanGenerationTransformer.ParentTransformer,
+                     // default value: . 
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
+                     // default value: . 
+                    TrialArtifacts = cleanGenerationTransformer.TrialArtifacts
                 };
                 
             }
@@ -168,18 +457,21 @@ namespace CLIClassLibrary.ATDMQ
                     Generation = cleanGenerationTransformer.Generation,
                     RawPrompt = cleanGenerationTransformer.RawPrompt,
                     GenerationName = cleanGenerationTransformer.GenerationName,
-                    GeneratioNumber = cleanGenerationTransformer.GeneratioNumber,
-                    TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     TransformerNumber = cleanGenerationTransformer.TransformerNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
                     ExpAbstract = cleanGenerationTransformer.ExpAbstract,
-                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
                     GenerationExp = cleanGenerationTransformer.GenerationExp,
                     GenerationExpName = cleanGenerationTransformer.GenerationExpName,
                     IsActiveExp = cleanGenerationTransformer.IsActiveExp,
-                    ExpTransformerIsSyntaxFree = cleanGenerationTransformer.ExpTransformerIsSyntaxFree,
-                    ExpValidationPrompt = cleanGenerationTransformer.ExpValidationPrompt
+                    ExpValidationPrompt = cleanGenerationTransformer.ExpValidationPrompt,
+                    GenerationNumber = cleanGenerationTransformer.GenerationNumber,
+                    ParentTransformer = cleanGenerationTransformer.ParentTransformer,
+                    ParentTransformerNumber = cleanGenerationTransformer.ParentTransformerNumber,
+                    AddDataCommand = cleanGenerationTransformer.AddDataCommand,
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
+                    TrialArtifacts = cleanGenerationTransformer.TrialArtifacts,
+                    ExpTransformerIsSyntaxFree = cleanGenerationTransformer.ExpTransformerIsSyntaxFree
                 };
             }
 
@@ -197,10 +489,11 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     GenerationTransformerId = cleanGenerationTransformer.GenerationTransformerId,
                     Generation = cleanGenerationTransformer.Generation,
-                    TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
-                    ExpTransformer = cleanGenerationTransformer.ExpTransformer
+                    ParentTransformer = cleanGenerationTransformer.ParentTransformer,
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
+                    TrialArtifacts = cleanGenerationTransformer.TrialArtifacts
                 };
             }
 
@@ -263,7 +556,9 @@ namespace CLIClassLibrary.ATDMQ
                     GenerationTransformRawPrompts = cleanGeneration.GenerationTransformRawPrompts,
                     TransformerNumbers = cleanGeneration.TransformerNumbers,
                     SyntaxFreeTransformerNumbers = cleanGeneration.SyntaxFreeTransformerNumbers,
-                    SyntaxLockedTransformerNumbers = cleanGeneration.SyntaxLockedTransformerNumbers
+                    SyntaxLockedTransformerNumbers = cleanGeneration.SyntaxLockedTransformerNumbers,
+                    GenerationTransformerAddDataCommands = cleanGeneration.GenerationTransformerAddDataCommands,
+                    AddDataCommandScript = cleanGeneration.AddDataCommandScript
                 };
             }
 
@@ -292,6 +587,79 @@ namespace CLIClassLibrary.ATDMQ
 
         // User Cleaning Extension Methods.  -CRUD-
         
+        // Trial
+        public static dc.Trial UserCleanForAdd(this dc.Trial cleanTrial)
+        {
+            var UserTrial = default(dc.Trial);
+
+            if (!ReferenceEquals(cleanTrial, null))
+            {
+                UserTrial = new dc.Trial()
+                {
+                     // default value: . 
+                    TrialId = cleanTrial.TrialId,
+                     // default value: . 
+                    Experiement = cleanTrial.Experiement,
+                     // default value: . 
+                    TrialArtifacts = cleanTrial.TrialArtifacts,
+                     // default value: . 
+                    AutoNumber = cleanTrial.AutoNumber
+                };
+                
+            }
+
+            return UserTrial;
+        }
+        
+        
+        public static List<dc.Trial> UserCleanForGet(this IEnumerable<dc.Trial> cleanTrials)
+        {
+            return cleanTrials.Select(Trial => Trial.UserCleanForGet())
+                            .ToList();
+        }
+        
+        public static dc.Trial UserCleanForGet(this dc.Trial cleanTrial)
+        {
+            var UserTrial = default(dc.Trial);
+
+            if (!ReferenceEquals(cleanTrial, null))
+            {
+                UserTrial = new dc.Trial()
+                {
+                    TrialId = cleanTrial.TrialId,
+                    Name = cleanTrial.Name,
+                    Experiement = cleanTrial.Experiement,
+                    TrialArtifacts = cleanTrial.TrialArtifacts,
+                    AutoNumber = cleanTrial.AutoNumber,
+                    TrailIdentifier = cleanTrial.TrailIdentifier,
+                    Created = cleanTrial.Created
+                };
+            }
+
+            return UserTrial;
+        }
+        
+        
+        public static dc.Trial UserCleanForUpdate(this dc.Trial cleanTrial)
+        {
+            var UserTrial = default(dc.Trial);
+
+            if (!ReferenceEquals(cleanTrial, null))
+            {
+                UserTrial = new dc.Trial()
+                {
+                    TrialId = cleanTrial.TrialId,
+                    Experiement = cleanTrial.Experiement,
+                    TrialArtifacts = cleanTrial.TrialArtifacts,
+                    AutoNumber = cleanTrial.AutoNumber
+                };
+            }
+
+            return UserTrial;
+        }
+
+        // User Cleaning Extension Methods.  -CRUD-
+        
         // ExperimentTransformer
         public static dc.ExperimentTransformer UserCleanForAdd(this dc.ExperimentTransformer cleanExperimentTransformer)
         {
@@ -308,11 +676,11 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     FullPrompt = cleanExperimentTransformer.FullPrompt,
                      // default value: . 
-                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
-                     // default value: . 
                     AutoNumber = cleanExperimentTransformer.AutoNumber,
                      // default value: . 
-                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree,
+                     // default value: . 
+                    GenerationTransformer = cleanExperimentTransformer.GenerationTransformer
                 };
                 
             }
@@ -342,10 +710,10 @@ namespace CLIClassLibrary.ATDMQ
                     ExpAbstract = cleanExperimentTransformer.ExpAbstract,
                     IsActiveExp = cleanExperimentTransformer.IsActiveExp,
                     FullPrompt = cleanExperimentTransformer.FullPrompt,
-                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
                     AutoNumber = cleanExperimentTransformer.AutoNumber,
                     TransformerIdentifier = cleanExperimentTransformer.TransformerIdentifier,
-                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree,
+                    GenerationTransformer = cleanExperimentTransformer.GenerationTransformer
                 };
             }
 
@@ -364,9 +732,9 @@ namespace CLIClassLibrary.ATDMQ
                     ExperimentTransformerId = cleanExperimentTransformer.ExperimentTransformerId,
                     Experiment = cleanExperimentTransformer.Experiment,
                     FullPrompt = cleanExperimentTransformer.FullPrompt,
-                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
                     AutoNumber = cleanExperimentTransformer.AutoNumber,
-                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree,
+                    GenerationTransformer = cleanExperimentTransformer.GenerationTransformer
                 };
             }
 
@@ -455,285 +823,6 @@ namespace CLIClassLibrary.ATDMQ
             }
 
             return UserExperimentFeature;
-        }
-
-        // User Cleaning Extension Methods.  -CRUD-
-        
-        // TransformedArtifact
-        public static dc.TransformedArtifact UserCleanForAdd(this dc.TransformedArtifact cleanTransformedArtifact)
-        {
-            var UserTransformedArtifact = default(dc.TransformedArtifact);
-
-            if (!ReferenceEquals(cleanTransformedArtifact, null))
-            {
-                UserTransformedArtifact = new dc.TransformedArtifact()
-                {
-                     // default value: . 
-                    TransformedArtifactId = cleanTransformedArtifact.TransformedArtifactId,
-                     // default value: . 
-                    GenerationTransformer = cleanTransformedArtifact.GenerationTransformer,
-                     // default value: . 
-                    ActualPrompt = cleanTransformedArtifact.ActualPrompt,
-                     // default value: . 
-                    Response = cleanTransformedArtifact.Response,
-                     // default value: . 
-                    AutoNumber = cleanTransformedArtifact.AutoNumber,
-                     // default value: . 
-                    IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                     // default value: . 
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                     // default value: . 
-                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
-                     // default value: . 
-                    ToDoItems = cleanTransformedArtifact.ToDoItems,
-                     // default value: . 
-                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
-                     // default value: . 
-                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
-                     // default value: . 
-                    Categories = cleanTransformedArtifact.Categories,
-                     // default value: . 
-                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
-                     // default value: . 
-                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
-                     // default value: . 
-                    DueDates = cleanTransformedArtifact.DueDates,
-                     // default value: . 
-                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
-                     // default value: . 
-                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
-                     // default value: . 
-                    Priorities = cleanTransformedArtifact.Priorities,
-                     // default value: . 
-                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
-                     // default value: . 
-                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
-                     // default value: . 
-                    Progress = cleanTransformedArtifact.Progress,
-                     // default value: . 
-                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
-                     // default value: . 
-                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
-                     // default value: . 
-                    Statuses = cleanTransformedArtifact.Statuses,
-                     // default value: . 
-                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
-                     // default value: . 
-                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
-                     // default value: . 
-                    Reminders = cleanTransformedArtifact.Reminders,
-                     // default value: . 
-                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
-                     // default value: . 
-                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
-                     // default value: . 
-                    Notifications = cleanTransformedArtifact.Notifications,
-                     // default value: . 
-                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
-                     // default value: . 
-                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
-                     // default value: . 
-                    Completion = cleanTransformedArtifact.Completion,
-                     // default value: . 
-                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
-                     // default value: . 
-                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
-                     // default value: . 
-                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
-                     // default value: . 
-                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
-                     // default value: . 
-                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
-                     // default value: . 
-                    Duration = cleanTransformedArtifact.Duration,
-                     // default value: . 
-                    DurationAKA = cleanTransformedArtifact.DurationAKA,
-                     // default value: . 
-                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
-                     // default value: . 
-                    CompletedDate = cleanTransformedArtifact.CompletedDate,
-                     // default value: . 
-                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
-                     // default value: . 
-                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
-                     // default value: . 
-                    ToDoColors = cleanTransformedArtifact.ToDoColors,
-                     // default value: . 
-                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
-                     // default value: . 
-                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
-                     // default value: . 
-                    ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                     // default value: . 
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
-                     // default value: . 
-                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier
-                };
-                
-            }
-
-            return UserTransformedArtifact;
-        }
-        
-        
-        public static List<dc.TransformedArtifact> UserCleanForGet(this IEnumerable<dc.TransformedArtifact> cleanTransformedArtifacts)
-        {
-            return cleanTransformedArtifacts.Select(TransformedArtifact => TransformedArtifact.UserCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.TransformedArtifact UserCleanForGet(this dc.TransformedArtifact cleanTransformedArtifact)
-        {
-            var UserTransformedArtifact = default(dc.TransformedArtifact);
-
-            if (!ReferenceEquals(cleanTransformedArtifact, null))
-            {
-                UserTransformedArtifact = new dc.TransformedArtifact()
-                {
-                    TransformedArtifactId = cleanTransformedArtifact.TransformedArtifactId,
-                    Name = cleanTransformedArtifact.Name,
-                    GenerationTransformer = cleanTransformedArtifact.GenerationTransformer,
-                    SuggestedPrompt = cleanTransformedArtifact.SuggestedPrompt,
-                    ActualPrompt = cleanTransformedArtifact.ActualPrompt,
-                    Response = cleanTransformedArtifact.Response,
-                    Created = cleanTransformedArtifact.Created,
-                    AutoNumber = cleanTransformedArtifact.AutoNumber,
-                    ResponseOfArtifactBeingExtended = cleanTransformedArtifact.ResponseOfArtifactBeingExtended,
-                    TransformerRawPrompt = cleanTransformedArtifact.TransformerRawPrompt,
-                    IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                    Modified = cleanTransformedArtifact.Modified,
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                    TransformerNumber = cleanTransformedArtifact.TransformerNumber,
-                    LongName = cleanTransformedArtifact.LongName,
-                    TransformerGeneratioNumber = cleanTransformedArtifact.TransformerGeneratioNumber,
-                    TransformerGenerationName = cleanTransformedArtifact.TransformerGenerationName,
-                    ArtifactIdentifier = cleanTransformedArtifact.ArtifactIdentifier,
-                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
-                    ToDoItems = cleanTransformedArtifact.ToDoItems,
-                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
-                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
-                    Categories = cleanTransformedArtifact.Categories,
-                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
-                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
-                    DueDates = cleanTransformedArtifact.DueDates,
-                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
-                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
-                    Priorities = cleanTransformedArtifact.Priorities,
-                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
-                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
-                    Progress = cleanTransformedArtifact.Progress,
-                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
-                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
-                    Statuses = cleanTransformedArtifact.Statuses,
-                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
-                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
-                    Reminders = cleanTransformedArtifact.Reminders,
-                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
-                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
-                    Notifications = cleanTransformedArtifact.Notifications,
-                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
-                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
-                    Completion = cleanTransformedArtifact.Completion,
-                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
-                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
-                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
-                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
-                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
-                    Duration = cleanTransformedArtifact.Duration,
-                    DurationAKA = cleanTransformedArtifact.DurationAKA,
-                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
-                    CompletedDate = cleanTransformedArtifact.CompletedDate,
-                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
-                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
-                    ToDoColors = cleanTransformedArtifact.ToDoColors,
-                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
-                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
-                    ResponseBeingValidated = cleanTransformedArtifact.ResponseBeingValidated,
-                    SuggestedValidationPrompt = cleanTransformedArtifact.SuggestedValidationPrompt,
-                    ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
-                    GenerationName = cleanTransformedArtifact.GenerationName,
-                    GeneratioNumber = cleanTransformedArtifact.GeneratioNumber,
-                    GenerationTransformerNumber = cleanTransformedArtifact.GenerationTransformerNumber,
-                    ExtensionOfArtifactIdentifier = cleanTransformedArtifact.ExtensionOfArtifactIdentifier,
-                    RootArtifactIdentifier = cleanTransformedArtifact.RootArtifactIdentifier,
-                    SuggestedRootIdentifier = cleanTransformedArtifact.SuggestedRootIdentifier,
-                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier,
-                    RootIdentifierMismatch = cleanTransformedArtifact.RootIdentifierMismatch,
-                    ExpTransformerIsSyntaxFree = cleanTransformedArtifact.ExpTransformerIsSyntaxFree,
-                    IsActiveExp = cleanTransformedArtifact.IsActiveExp,
-                    TransformerGenerationExpName = cleanTransformedArtifact.TransformerGenerationExpName,
-                    ExpValidationPrompt = cleanTransformedArtifact.ExpValidationPrompt,
-                    ExpAbstract = cleanTransformedArtifact.ExpAbstract
-                };
-            }
-
-            return UserTransformedArtifact;
-        }
-        
-        
-        public static dc.TransformedArtifact UserCleanForUpdate(this dc.TransformedArtifact cleanTransformedArtifact)
-        {
-            var UserTransformedArtifact = default(dc.TransformedArtifact);
-
-            if (!ReferenceEquals(cleanTransformedArtifact, null))
-            {
-                UserTransformedArtifact = new dc.TransformedArtifact()
-                {
-                    TransformedArtifactId = cleanTransformedArtifact.TransformedArtifactId,
-                    GenerationTransformer = cleanTransformedArtifact.GenerationTransformer,
-                    ActualPrompt = cleanTransformedArtifact.ActualPrompt,
-                    Response = cleanTransformedArtifact.Response,
-                    AutoNumber = cleanTransformedArtifact.AutoNumber,
-                    IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
-                    ToDoItems = cleanTransformedArtifact.ToDoItems,
-                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
-                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
-                    Categories = cleanTransformedArtifact.Categories,
-                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
-                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
-                    DueDates = cleanTransformedArtifact.DueDates,
-                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
-                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
-                    Priorities = cleanTransformedArtifact.Priorities,
-                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
-                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
-                    Progress = cleanTransformedArtifact.Progress,
-                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
-                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
-                    Statuses = cleanTransformedArtifact.Statuses,
-                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
-                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
-                    Reminders = cleanTransformedArtifact.Reminders,
-                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
-                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
-                    Notifications = cleanTransformedArtifact.Notifications,
-                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
-                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
-                    Completion = cleanTransformedArtifact.Completion,
-                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
-                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
-                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
-                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
-                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
-                    Duration = cleanTransformedArtifact.Duration,
-                    DurationAKA = cleanTransformedArtifact.DurationAKA,
-                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
-                    CompletedDate = cleanTransformedArtifact.CompletedDate,
-                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
-                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
-                    ToDoColors = cleanTransformedArtifact.ToDoColors,
-                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
-                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
-                    ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
-                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier
-                };
-            }
-
-            return UserTransformedArtifact;
         }
 
         // User Cleaning Extension Methods.  -CRUD-
@@ -832,7 +921,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     ExpFeatures = cleanExperiment.ExpFeatures,
                      // default value: . 
-                    AutoNumber = cleanExperiment.AutoNumber
+                    AutoNumber = cleanExperiment.AutoNumber,
+                     // default value: . 
+                    Trials = cleanExperiment.Trials
                 };
                 
             }
@@ -870,7 +961,12 @@ namespace CLIClassLibrary.ATDMQ
                     ExpFeatureNames = cleanExperiment.ExpFeatureNames,
                     FeaturesArray = cleanExperiment.FeaturesArray,
                     ValidationPrompt = cleanExperiment.ValidationPrompt,
-                    AutoNumber = cleanExperiment.AutoNumber
+                    AutoNumber = cleanExperiment.AutoNumber,
+                    SyntaxLockedTransformerNumbers = cleanExperiment.SyntaxLockedTransformerNumbers,
+                    SyntaxFreeTransformerNumbers = cleanExperiment.SyntaxFreeTransformerNumbers,
+                    Trials = cleanExperiment.Trials,
+                    RunTrialScript = cleanExperiment.RunTrialScript,
+                    GenerationAddDataCommandScripts = cleanExperiment.GenerationAddDataCommandScripts
                 };
             }
 
@@ -893,7 +989,8 @@ namespace CLIClassLibrary.ATDMQ
                     ExpTransformers = cleanExperiment.ExpTransformers,
                     IsActiveExp = cleanExperiment.IsActiveExp,
                     ExpFeatures = cleanExperiment.ExpFeatures,
-                    AutoNumber = cleanExperiment.AutoNumber
+                    AutoNumber = cleanExperiment.AutoNumber,
+                    Trials = cleanExperiment.Trials
                 };
             }
 
@@ -972,6 +1069,289 @@ namespace CLIClassLibrary.ATDMQ
             }
 
             return UserLLM;
+        }
+
+        // Admin Cleaning Extension Methods.  -CRUD-
+        
+        // TrialArtifact
+        public static dc.TrialArtifact AdminCleanForAdd(this dc.TrialArtifact cleanTrialArtifact)
+        {
+            var AdminTrialArtifact = default(dc.TrialArtifact);
+
+            if (!ReferenceEquals(cleanTrialArtifact, null))
+            {
+                AdminTrialArtifact = new dc.TrialArtifact()
+                {
+                     // default value: . 
+                    TrialArtifactId = cleanTrialArtifact.TrialArtifactId,
+                     // default value: . 
+                    ActualPrompt = cleanTrialArtifact.ActualPrompt,
+                     // default value: . 
+                    Response = cleanTrialArtifact.Response,
+                     // default value: . 
+                    ActualValidationPrompt = cleanTrialArtifact.ActualValidationPrompt,
+                     // default value: . 
+                    ValidationResponse = cleanTrialArtifact.ValidationResponse,
+                     // default value: . 
+                    ExtensionOf = cleanTrialArtifact.ExtensionOf,
+                     // default value: . 
+                    PrimaryExtensionArtifact = cleanTrialArtifact.PrimaryExtensionArtifact,
+                     // default value: . 
+                    AutoNumber = cleanTrialArtifact.AutoNumber,
+                     // default value: . 
+                    IsRetiredArtifact = cleanTrialArtifact.IsRetiredArtifact,
+                     // default value: . 
+                    ToDoItems = cleanTrialArtifact.ToDoItems,
+                     // default value: . 
+                    ToDoItemsAKA = cleanTrialArtifact.ToDoItemsAKA,
+                     // default value: . 
+                    ToDoItemsMismatched = cleanTrialArtifact.ToDoItemsMismatched,
+                     // default value: . 
+                    Categories = cleanTrialArtifact.Categories,
+                     // default value: . 
+                    CategoriesAKA = cleanTrialArtifact.CategoriesAKA,
+                     // default value: . 
+                    CategoriesMismatched = cleanTrialArtifact.CategoriesMismatched,
+                     // default value: . 
+                    DueDates = cleanTrialArtifact.DueDates,
+                     // default value: . 
+                    DueDatesAKA = cleanTrialArtifact.DueDatesAKA,
+                     // default value: . 
+                    DueDatesMismatched = cleanTrialArtifact.DueDatesMismatched,
+                     // default value: . 
+                    Priorities = cleanTrialArtifact.Priorities,
+                     // default value: . 
+                    PrioritiesAKA = cleanTrialArtifact.PrioritiesAKA,
+                     // default value: . 
+                    PrioritiesMismatched = cleanTrialArtifact.PrioritiesMismatched,
+                     // default value: . 
+                    Progress = cleanTrialArtifact.Progress,
+                     // default value: . 
+                    ProgressAKA = cleanTrialArtifact.ProgressAKA,
+                     // default value: . 
+                    ProgressMismatched = cleanTrialArtifact.ProgressMismatched,
+                     // default value: . 
+                    Statuses = cleanTrialArtifact.Statuses,
+                     // default value: . 
+                    StatusesAKA = cleanTrialArtifact.StatusesAKA,
+                     // default value: . 
+                    StatusesMismatched = cleanTrialArtifact.StatusesMismatched,
+                     // default value: . 
+                    Reminders = cleanTrialArtifact.Reminders,
+                     // default value: . 
+                    RemindersAKA = cleanTrialArtifact.RemindersAKA,
+                     // default value: . 
+                    RemindersMismatched = cleanTrialArtifact.RemindersMismatched,
+                     // default value: . 
+                    Notifications = cleanTrialArtifact.Notifications,
+                     // default value: . 
+                    NotificationsAKA = cleanTrialArtifact.NotificationsAKA,
+                     // default value: . 
+                    NotificationsMismatched = cleanTrialArtifact.NotificationsMismatched,
+                     // default value: . 
+                    Completion = cleanTrialArtifact.Completion,
+                     // default value: . 
+                    CompletionAKA = cleanTrialArtifact.CompletionAKA,
+                     // default value: . 
+                    CompletionMismatched = cleanTrialArtifact.CompletionMismatched,
+                     // default value: . 
+                    ToDoEmployees = cleanTrialArtifact.ToDoEmployees,
+                     // default value: . 
+                    ToDoEmployeesAKA = cleanTrialArtifact.ToDoEmployeesAKA,
+                     // default value: . 
+                    ToDoEmployeesMismatched = cleanTrialArtifact.ToDoEmployeesMismatched,
+                     // default value: . 
+                    Duration = cleanTrialArtifact.Duration,
+                     // default value: . 
+                    DurationAKA = cleanTrialArtifact.DurationAKA,
+                     // default value: . 
+                    DurationMismatched = cleanTrialArtifact.DurationMismatched,
+                     // default value: . 
+                    CompletedDate = cleanTrialArtifact.CompletedDate,
+                     // default value: . 
+                    CompletedDateAKA = cleanTrialArtifact.CompletedDateAKA,
+                     // default value: . 
+                    CompletedDateMismatched = cleanTrialArtifact.CompletedDateMismatched,
+                     // default value: . 
+                    ToDoColors = cleanTrialArtifact.ToDoColors,
+                     // default value: . 
+                    ToDoColorsAKA = cleanTrialArtifact.ToDoColorsAKA,
+                     // default value: . 
+                    ToDoColorsMismatched = cleanTrialArtifact.ToDoColorsMismatched,
+                     // default value: . 
+                    CustomRootIdentifier = cleanTrialArtifact.CustomRootIdentifier,
+                     // default value: . 
+                    Trial = cleanTrialArtifact.Trial,
+                     // default value: . 
+                    GenerationTransformer = cleanTrialArtifact.GenerationTransformer
+                };
+                
+            }
+
+            return AdminTrialArtifact;
+        }
+        
+        
+        public static List<dc.TrialArtifact> AdminCleanForGet(this IEnumerable<dc.TrialArtifact> cleanTrialArtifacts)
+        {
+            return cleanTrialArtifacts.Select(TrialArtifact => TrialArtifact.AdminCleanForGet())
+                            .ToList();
+        }
+        
+        public static dc.TrialArtifact AdminCleanForGet(this dc.TrialArtifact cleanTrialArtifact)
+        {
+            var AdminTrialArtifact = default(dc.TrialArtifact);
+
+            if (!ReferenceEquals(cleanTrialArtifact, null))
+            {
+                AdminTrialArtifact = new dc.TrialArtifact()
+                {
+                    TrialArtifactId = cleanTrialArtifact.TrialArtifactId,
+                    Name = cleanTrialArtifact.Name,
+                    ActualPrompt = cleanTrialArtifact.ActualPrompt,
+                    Response = cleanTrialArtifact.Response,
+                    ActualValidationPrompt = cleanTrialArtifact.ActualValidationPrompt,
+                    ValidationResponse = cleanTrialArtifact.ValidationResponse,
+                    ExtensionOf = cleanTrialArtifact.ExtensionOf,
+                    PrimaryExtensionArtifact = cleanTrialArtifact.PrimaryExtensionArtifact,
+                    ResponseOfArtifactBeingExtended = cleanTrialArtifact.ResponseOfArtifactBeingExtended,
+                    SuggestedPrompt = cleanTrialArtifact.SuggestedPrompt,
+                    Created = cleanTrialArtifact.Created,
+                    AutoNumber = cleanTrialArtifact.AutoNumber,
+                    IsRetiredArtifact = cleanTrialArtifact.IsRetiredArtifact,
+                    Modified = cleanTrialArtifact.Modified,
+                    LongName = cleanTrialArtifact.LongName,
+                    ArtifactIdentifier = cleanTrialArtifact.ArtifactIdentifier,
+                    ToDoItems = cleanTrialArtifact.ToDoItems,
+                    ToDoItemsAKA = cleanTrialArtifact.ToDoItemsAKA,
+                    ToDoItemsMismatched = cleanTrialArtifact.ToDoItemsMismatched,
+                    Categories = cleanTrialArtifact.Categories,
+                    CategoriesAKA = cleanTrialArtifact.CategoriesAKA,
+                    CategoriesMismatched = cleanTrialArtifact.CategoriesMismatched,
+                    DueDates = cleanTrialArtifact.DueDates,
+                    DueDatesAKA = cleanTrialArtifact.DueDatesAKA,
+                    DueDatesMismatched = cleanTrialArtifact.DueDatesMismatched,
+                    Priorities = cleanTrialArtifact.Priorities,
+                    PrioritiesAKA = cleanTrialArtifact.PrioritiesAKA,
+                    PrioritiesMismatched = cleanTrialArtifact.PrioritiesMismatched,
+                    Progress = cleanTrialArtifact.Progress,
+                    ProgressAKA = cleanTrialArtifact.ProgressAKA,
+                    ProgressMismatched = cleanTrialArtifact.ProgressMismatched,
+                    Statuses = cleanTrialArtifact.Statuses,
+                    StatusesAKA = cleanTrialArtifact.StatusesAKA,
+                    StatusesMismatched = cleanTrialArtifact.StatusesMismatched,
+                    Reminders = cleanTrialArtifact.Reminders,
+                    RemindersAKA = cleanTrialArtifact.RemindersAKA,
+                    RemindersMismatched = cleanTrialArtifact.RemindersMismatched,
+                    Notifications = cleanTrialArtifact.Notifications,
+                    NotificationsAKA = cleanTrialArtifact.NotificationsAKA,
+                    NotificationsMismatched = cleanTrialArtifact.NotificationsMismatched,
+                    Completion = cleanTrialArtifact.Completion,
+                    CompletionAKA = cleanTrialArtifact.CompletionAKA,
+                    CompletionMismatched = cleanTrialArtifact.CompletionMismatched,
+                    ToDoEmployees = cleanTrialArtifact.ToDoEmployees,
+                    ToDoEmployeesAKA = cleanTrialArtifact.ToDoEmployeesAKA,
+                    ToDoEmployeesMismatched = cleanTrialArtifact.ToDoEmployeesMismatched,
+                    Duration = cleanTrialArtifact.Duration,
+                    DurationAKA = cleanTrialArtifact.DurationAKA,
+                    DurationMismatched = cleanTrialArtifact.DurationMismatched,
+                    CompletedDate = cleanTrialArtifact.CompletedDate,
+                    CompletedDateAKA = cleanTrialArtifact.CompletedDateAKA,
+                    CompletedDateMismatched = cleanTrialArtifact.CompletedDateMismatched,
+                    ToDoColors = cleanTrialArtifact.ToDoColors,
+                    ToDoColorsAKA = cleanTrialArtifact.ToDoColorsAKA,
+                    ToDoColorsMismatched = cleanTrialArtifact.ToDoColorsMismatched,
+                    ResponseBeingValidated = cleanTrialArtifact.ResponseBeingValidated,
+                    SuggestedValidationPrompt = cleanTrialArtifact.SuggestedValidationPrompt,
+                    ExtensionOfArtifactIdentifier = cleanTrialArtifact.ExtensionOfArtifactIdentifier,
+                    RootArtifactIdentifier = cleanTrialArtifact.RootArtifactIdentifier,
+                    SuggestedRootIdentifier = cleanTrialArtifact.SuggestedRootIdentifier,
+                    CustomRootIdentifier = cleanTrialArtifact.CustomRootIdentifier,
+                    RootIdentifierMismatch = cleanTrialArtifact.RootIdentifierMismatch,
+                    Trial = cleanTrialArtifact.Trial,
+                    GenerationTransformer = cleanTrialArtifact.GenerationTransformer,
+                    ExpTransformerIsSyntaxFree = cleanTrialArtifact.ExpTransformerIsSyntaxFree,
+                    GenerationName = cleanTrialArtifact.GenerationName,
+                    GeneratioNumber = cleanTrialArtifact.GeneratioNumber,
+                    GenerationTransformerNumber = cleanTrialArtifact.GenerationTransformerNumber,
+                    TransformerRawPrompt = cleanTrialArtifact.TransformerRawPrompt,
+                    IsActiveExp = cleanTrialArtifact.IsActiveExp,
+                    TransformerNumber = cleanTrialArtifact.TransformerNumber,
+                    TransformerGeneratioNumber = cleanTrialArtifact.TransformerGeneratioNumber,
+                    TransformerGenerationExpName = cleanTrialArtifact.TransformerGenerationExpName,
+                    TransformerGenerationName = cleanTrialArtifact.TransformerGenerationName,
+                    ExpValidationPrompt = cleanTrialArtifact.ExpValidationPrompt,
+                    ExpAbstract = cleanTrialArtifact.ExpAbstract
+                };
+            }
+
+            return AdminTrialArtifact;
+        }
+        
+        
+        public static dc.TrialArtifact AdminCleanForUpdate(this dc.TrialArtifact cleanTrialArtifact)
+        {
+            var AdminTrialArtifact = default(dc.TrialArtifact);
+
+            if (!ReferenceEquals(cleanTrialArtifact, null))
+            {
+                AdminTrialArtifact = new dc.TrialArtifact()
+                {
+                    TrialArtifactId = cleanTrialArtifact.TrialArtifactId,
+                    ActualPrompt = cleanTrialArtifact.ActualPrompt,
+                    Response = cleanTrialArtifact.Response,
+                    ActualValidationPrompt = cleanTrialArtifact.ActualValidationPrompt,
+                    ValidationResponse = cleanTrialArtifact.ValidationResponse,
+                    ExtensionOf = cleanTrialArtifact.ExtensionOf,
+                    PrimaryExtensionArtifact = cleanTrialArtifact.PrimaryExtensionArtifact,
+                    AutoNumber = cleanTrialArtifact.AutoNumber,
+                    IsRetiredArtifact = cleanTrialArtifact.IsRetiredArtifact,
+                    ToDoItems = cleanTrialArtifact.ToDoItems,
+                    ToDoItemsAKA = cleanTrialArtifact.ToDoItemsAKA,
+                    ToDoItemsMismatched = cleanTrialArtifact.ToDoItemsMismatched,
+                    Categories = cleanTrialArtifact.Categories,
+                    CategoriesAKA = cleanTrialArtifact.CategoriesAKA,
+                    CategoriesMismatched = cleanTrialArtifact.CategoriesMismatched,
+                    DueDates = cleanTrialArtifact.DueDates,
+                    DueDatesAKA = cleanTrialArtifact.DueDatesAKA,
+                    DueDatesMismatched = cleanTrialArtifact.DueDatesMismatched,
+                    Priorities = cleanTrialArtifact.Priorities,
+                    PrioritiesAKA = cleanTrialArtifact.PrioritiesAKA,
+                    PrioritiesMismatched = cleanTrialArtifact.PrioritiesMismatched,
+                    Progress = cleanTrialArtifact.Progress,
+                    ProgressAKA = cleanTrialArtifact.ProgressAKA,
+                    ProgressMismatched = cleanTrialArtifact.ProgressMismatched,
+                    Statuses = cleanTrialArtifact.Statuses,
+                    StatusesAKA = cleanTrialArtifact.StatusesAKA,
+                    StatusesMismatched = cleanTrialArtifact.StatusesMismatched,
+                    Reminders = cleanTrialArtifact.Reminders,
+                    RemindersAKA = cleanTrialArtifact.RemindersAKA,
+                    RemindersMismatched = cleanTrialArtifact.RemindersMismatched,
+                    Notifications = cleanTrialArtifact.Notifications,
+                    NotificationsAKA = cleanTrialArtifact.NotificationsAKA,
+                    NotificationsMismatched = cleanTrialArtifact.NotificationsMismatched,
+                    Completion = cleanTrialArtifact.Completion,
+                    CompletionAKA = cleanTrialArtifact.CompletionAKA,
+                    CompletionMismatched = cleanTrialArtifact.CompletionMismatched,
+                    ToDoEmployees = cleanTrialArtifact.ToDoEmployees,
+                    ToDoEmployeesAKA = cleanTrialArtifact.ToDoEmployeesAKA,
+                    ToDoEmployeesMismatched = cleanTrialArtifact.ToDoEmployeesMismatched,
+                    Duration = cleanTrialArtifact.Duration,
+                    DurationAKA = cleanTrialArtifact.DurationAKA,
+                    DurationMismatched = cleanTrialArtifact.DurationMismatched,
+                    CompletedDate = cleanTrialArtifact.CompletedDate,
+                    CompletedDateAKA = cleanTrialArtifact.CompletedDateAKA,
+                    CompletedDateMismatched = cleanTrialArtifact.CompletedDateMismatched,
+                    ToDoColors = cleanTrialArtifact.ToDoColors,
+                    ToDoColorsAKA = cleanTrialArtifact.ToDoColorsAKA,
+                    ToDoColorsMismatched = cleanTrialArtifact.ToDoColorsMismatched,
+                    CustomRootIdentifier = cleanTrialArtifact.CustomRootIdentifier,
+                    Trial = cleanTrialArtifact.Trial,
+                    GenerationTransformer = cleanTrialArtifact.GenerationTransformer
+                };
+            }
+
+            return AdminTrialArtifact;
         }
 
         // Admin Cleaning Extension Methods.  -CRUD-
@@ -1060,13 +1440,15 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     Generation = cleanGenerationTransformer.Generation,
                      // default value: . 
-                    TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
-                     // default value: . 
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                      // default value: . 
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
                      // default value: . 
-                    ExpTransformer = cleanGenerationTransformer.ExpTransformer
+                    ParentTransformer = cleanGenerationTransformer.ParentTransformer,
+                     // default value: . 
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
+                     // default value: . 
+                    TrialArtifacts = cleanGenerationTransformer.TrialArtifacts
                 };
                 
             }
@@ -1094,18 +1476,21 @@ namespace CLIClassLibrary.ATDMQ
                     Generation = cleanGenerationTransformer.Generation,
                     RawPrompt = cleanGenerationTransformer.RawPrompt,
                     GenerationName = cleanGenerationTransformer.GenerationName,
-                    GeneratioNumber = cleanGenerationTransformer.GeneratioNumber,
-                    TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     TransformerNumber = cleanGenerationTransformer.TransformerNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
                     ExpAbstract = cleanGenerationTransformer.ExpAbstract,
-                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
                     GenerationExp = cleanGenerationTransformer.GenerationExp,
                     GenerationExpName = cleanGenerationTransformer.GenerationExpName,
                     IsActiveExp = cleanGenerationTransformer.IsActiveExp,
-                    ExpTransformerIsSyntaxFree = cleanGenerationTransformer.ExpTransformerIsSyntaxFree,
-                    ExpValidationPrompt = cleanGenerationTransformer.ExpValidationPrompt
+                    ExpValidationPrompt = cleanGenerationTransformer.ExpValidationPrompt,
+                    GenerationNumber = cleanGenerationTransformer.GenerationNumber,
+                    ParentTransformer = cleanGenerationTransformer.ParentTransformer,
+                    ParentTransformerNumber = cleanGenerationTransformer.ParentTransformerNumber,
+                    AddDataCommand = cleanGenerationTransformer.AddDataCommand,
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
+                    TrialArtifacts = cleanGenerationTransformer.TrialArtifacts,
+                    ExpTransformerIsSyntaxFree = cleanGenerationTransformer.ExpTransformerIsSyntaxFree
                 };
             }
 
@@ -1123,10 +1508,11 @@ namespace CLIClassLibrary.ATDMQ
                 {
                     GenerationTransformerId = cleanGenerationTransformer.GenerationTransformerId,
                     Generation = cleanGenerationTransformer.Generation,
-                    TransformedArtifacts = cleanGenerationTransformer.TransformedArtifacts,
                     AutoNumber = cleanGenerationTransformer.AutoNumber,
                     IsArtifactValidator = cleanGenerationTransformer.IsArtifactValidator,
-                    ExpTransformer = cleanGenerationTransformer.ExpTransformer
+                    ParentTransformer = cleanGenerationTransformer.ParentTransformer,
+                    ExpTransformer = cleanGenerationTransformer.ExpTransformer,
+                    TrialArtifacts = cleanGenerationTransformer.TrialArtifacts
                 };
             }
 
@@ -1189,7 +1575,9 @@ namespace CLIClassLibrary.ATDMQ
                     GenerationTransformRawPrompts = cleanGeneration.GenerationTransformRawPrompts,
                     TransformerNumbers = cleanGeneration.TransformerNumbers,
                     SyntaxFreeTransformerNumbers = cleanGeneration.SyntaxFreeTransformerNumbers,
-                    SyntaxLockedTransformerNumbers = cleanGeneration.SyntaxLockedTransformerNumbers
+                    SyntaxLockedTransformerNumbers = cleanGeneration.SyntaxLockedTransformerNumbers,
+                    GenerationTransformerAddDataCommands = cleanGeneration.GenerationTransformerAddDataCommands,
+                    AddDataCommandScript = cleanGeneration.AddDataCommandScript
                 };
             }
 
@@ -1218,6 +1606,79 @@ namespace CLIClassLibrary.ATDMQ
 
         // Admin Cleaning Extension Methods.  -CRUD-
         
+        // Trial
+        public static dc.Trial AdminCleanForAdd(this dc.Trial cleanTrial)
+        {
+            var AdminTrial = default(dc.Trial);
+
+            if (!ReferenceEquals(cleanTrial, null))
+            {
+                AdminTrial = new dc.Trial()
+                {
+                     // default value: . 
+                    TrialId = cleanTrial.TrialId,
+                     // default value: . 
+                    Experiement = cleanTrial.Experiement,
+                     // default value: . 
+                    TrialArtifacts = cleanTrial.TrialArtifacts,
+                     // default value: . 
+                    AutoNumber = cleanTrial.AutoNumber
+                };
+                
+            }
+
+            return AdminTrial;
+        }
+        
+        
+        public static List<dc.Trial> AdminCleanForGet(this IEnumerable<dc.Trial> cleanTrials)
+        {
+            return cleanTrials.Select(Trial => Trial.AdminCleanForGet())
+                            .ToList();
+        }
+        
+        public static dc.Trial AdminCleanForGet(this dc.Trial cleanTrial)
+        {
+            var AdminTrial = default(dc.Trial);
+
+            if (!ReferenceEquals(cleanTrial, null))
+            {
+                AdminTrial = new dc.Trial()
+                {
+                    TrialId = cleanTrial.TrialId,
+                    Name = cleanTrial.Name,
+                    Experiement = cleanTrial.Experiement,
+                    TrialArtifacts = cleanTrial.TrialArtifacts,
+                    AutoNumber = cleanTrial.AutoNumber,
+                    TrailIdentifier = cleanTrial.TrailIdentifier,
+                    Created = cleanTrial.Created
+                };
+            }
+
+            return AdminTrial;
+        }
+        
+        
+        public static dc.Trial AdminCleanForUpdate(this dc.Trial cleanTrial)
+        {
+            var AdminTrial = default(dc.Trial);
+
+            if (!ReferenceEquals(cleanTrial, null))
+            {
+                AdminTrial = new dc.Trial()
+                {
+                    TrialId = cleanTrial.TrialId,
+                    Experiement = cleanTrial.Experiement,
+                    TrialArtifacts = cleanTrial.TrialArtifacts,
+                    AutoNumber = cleanTrial.AutoNumber
+                };
+            }
+
+            return AdminTrial;
+        }
+
+        // Admin Cleaning Extension Methods.  -CRUD-
+        
         // ExperimentTransformer
         public static dc.ExperimentTransformer AdminCleanForAdd(this dc.ExperimentTransformer cleanExperimentTransformer)
         {
@@ -1234,11 +1695,11 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     FullPrompt = cleanExperimentTransformer.FullPrompt,
                      // default value: . 
-                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
-                     // default value: . 
                     AutoNumber = cleanExperimentTransformer.AutoNumber,
                      // default value: . 
-                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree,
+                     // default value: . 
+                    GenerationTransformer = cleanExperimentTransformer.GenerationTransformer
                 };
                 
             }
@@ -1268,10 +1729,10 @@ namespace CLIClassLibrary.ATDMQ
                     ExpAbstract = cleanExperimentTransformer.ExpAbstract,
                     IsActiveExp = cleanExperimentTransformer.IsActiveExp,
                     FullPrompt = cleanExperimentTransformer.FullPrompt,
-                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
                     AutoNumber = cleanExperimentTransformer.AutoNumber,
                     TransformerIdentifier = cleanExperimentTransformer.TransformerIdentifier,
-                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree,
+                    GenerationTransformer = cleanExperimentTransformer.GenerationTransformer
                 };
             }
 
@@ -1290,9 +1751,9 @@ namespace CLIClassLibrary.ATDMQ
                     ExperimentTransformerId = cleanExperimentTransformer.ExperimentTransformerId,
                     Experiment = cleanExperimentTransformer.Experiment,
                     FullPrompt = cleanExperimentTransformer.FullPrompt,
-                    TransformedTransformers = cleanExperimentTransformer.TransformedTransformers,
                     AutoNumber = cleanExperimentTransformer.AutoNumber,
-                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree
+                    IsSyntaxFree = cleanExperimentTransformer.IsSyntaxFree,
+                    GenerationTransformer = cleanExperimentTransformer.GenerationTransformer
                 };
             }
 
@@ -1381,285 +1842,6 @@ namespace CLIClassLibrary.ATDMQ
             }
 
             return AdminExperimentFeature;
-        }
-
-        // Admin Cleaning Extension Methods.  -CRUD-
-        
-        // TransformedArtifact
-        public static dc.TransformedArtifact AdminCleanForAdd(this dc.TransformedArtifact cleanTransformedArtifact)
-        {
-            var AdminTransformedArtifact = default(dc.TransformedArtifact);
-
-            if (!ReferenceEquals(cleanTransformedArtifact, null))
-            {
-                AdminTransformedArtifact = new dc.TransformedArtifact()
-                {
-                     // default value: . 
-                    TransformedArtifactId = cleanTransformedArtifact.TransformedArtifactId,
-                     // default value: . 
-                    GenerationTransformer = cleanTransformedArtifact.GenerationTransformer,
-                     // default value: . 
-                    ActualPrompt = cleanTransformedArtifact.ActualPrompt,
-                     // default value: . 
-                    Response = cleanTransformedArtifact.Response,
-                     // default value: . 
-                    AutoNumber = cleanTransformedArtifact.AutoNumber,
-                     // default value: . 
-                    IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                     // default value: . 
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                     // default value: . 
-                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
-                     // default value: . 
-                    ToDoItems = cleanTransformedArtifact.ToDoItems,
-                     // default value: . 
-                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
-                     // default value: . 
-                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
-                     // default value: . 
-                    Categories = cleanTransformedArtifact.Categories,
-                     // default value: . 
-                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
-                     // default value: . 
-                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
-                     // default value: . 
-                    DueDates = cleanTransformedArtifact.DueDates,
-                     // default value: . 
-                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
-                     // default value: . 
-                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
-                     // default value: . 
-                    Priorities = cleanTransformedArtifact.Priorities,
-                     // default value: . 
-                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
-                     // default value: . 
-                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
-                     // default value: . 
-                    Progress = cleanTransformedArtifact.Progress,
-                     // default value: . 
-                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
-                     // default value: . 
-                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
-                     // default value: . 
-                    Statuses = cleanTransformedArtifact.Statuses,
-                     // default value: . 
-                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
-                     // default value: . 
-                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
-                     // default value: . 
-                    Reminders = cleanTransformedArtifact.Reminders,
-                     // default value: . 
-                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
-                     // default value: . 
-                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
-                     // default value: . 
-                    Notifications = cleanTransformedArtifact.Notifications,
-                     // default value: . 
-                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
-                     // default value: . 
-                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
-                     // default value: . 
-                    Completion = cleanTransformedArtifact.Completion,
-                     // default value: . 
-                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
-                     // default value: . 
-                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
-                     // default value: . 
-                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
-                     // default value: . 
-                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
-                     // default value: . 
-                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
-                     // default value: . 
-                    Duration = cleanTransformedArtifact.Duration,
-                     // default value: . 
-                    DurationAKA = cleanTransformedArtifact.DurationAKA,
-                     // default value: . 
-                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
-                     // default value: . 
-                    CompletedDate = cleanTransformedArtifact.CompletedDate,
-                     // default value: . 
-                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
-                     // default value: . 
-                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
-                     // default value: . 
-                    ToDoColors = cleanTransformedArtifact.ToDoColors,
-                     // default value: . 
-                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
-                     // default value: . 
-                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
-                     // default value: . 
-                    ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                     // default value: . 
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
-                     // default value: . 
-                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier
-                };
-                
-            }
-
-            return AdminTransformedArtifact;
-        }
-        
-        
-        public static List<dc.TransformedArtifact> AdminCleanForGet(this IEnumerable<dc.TransformedArtifact> cleanTransformedArtifacts)
-        {
-            return cleanTransformedArtifacts.Select(TransformedArtifact => TransformedArtifact.AdminCleanForGet())
-                            .ToList();
-        }
-        
-        public static dc.TransformedArtifact AdminCleanForGet(this dc.TransformedArtifact cleanTransformedArtifact)
-        {
-            var AdminTransformedArtifact = default(dc.TransformedArtifact);
-
-            if (!ReferenceEquals(cleanTransformedArtifact, null))
-            {
-                AdminTransformedArtifact = new dc.TransformedArtifact()
-                {
-                    TransformedArtifactId = cleanTransformedArtifact.TransformedArtifactId,
-                    Name = cleanTransformedArtifact.Name,
-                    GenerationTransformer = cleanTransformedArtifact.GenerationTransformer,
-                    SuggestedPrompt = cleanTransformedArtifact.SuggestedPrompt,
-                    ActualPrompt = cleanTransformedArtifact.ActualPrompt,
-                    Response = cleanTransformedArtifact.Response,
-                    Created = cleanTransformedArtifact.Created,
-                    AutoNumber = cleanTransformedArtifact.AutoNumber,
-                    ResponseOfArtifactBeingExtended = cleanTransformedArtifact.ResponseOfArtifactBeingExtended,
-                    TransformerRawPrompt = cleanTransformedArtifact.TransformerRawPrompt,
-                    IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                    Modified = cleanTransformedArtifact.Modified,
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                    TransformerNumber = cleanTransformedArtifact.TransformerNumber,
-                    LongName = cleanTransformedArtifact.LongName,
-                    TransformerGeneratioNumber = cleanTransformedArtifact.TransformerGeneratioNumber,
-                    TransformerGenerationName = cleanTransformedArtifact.TransformerGenerationName,
-                    ArtifactIdentifier = cleanTransformedArtifact.ArtifactIdentifier,
-                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
-                    ToDoItems = cleanTransformedArtifact.ToDoItems,
-                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
-                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
-                    Categories = cleanTransformedArtifact.Categories,
-                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
-                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
-                    DueDates = cleanTransformedArtifact.DueDates,
-                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
-                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
-                    Priorities = cleanTransformedArtifact.Priorities,
-                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
-                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
-                    Progress = cleanTransformedArtifact.Progress,
-                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
-                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
-                    Statuses = cleanTransformedArtifact.Statuses,
-                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
-                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
-                    Reminders = cleanTransformedArtifact.Reminders,
-                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
-                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
-                    Notifications = cleanTransformedArtifact.Notifications,
-                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
-                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
-                    Completion = cleanTransformedArtifact.Completion,
-                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
-                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
-                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
-                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
-                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
-                    Duration = cleanTransformedArtifact.Duration,
-                    DurationAKA = cleanTransformedArtifact.DurationAKA,
-                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
-                    CompletedDate = cleanTransformedArtifact.CompletedDate,
-                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
-                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
-                    ToDoColors = cleanTransformedArtifact.ToDoColors,
-                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
-                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
-                    ResponseBeingValidated = cleanTransformedArtifact.ResponseBeingValidated,
-                    SuggestedValidationPrompt = cleanTransformedArtifact.SuggestedValidationPrompt,
-                    ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
-                    GenerationName = cleanTransformedArtifact.GenerationName,
-                    GeneratioNumber = cleanTransformedArtifact.GeneratioNumber,
-                    GenerationTransformerNumber = cleanTransformedArtifact.GenerationTransformerNumber,
-                    ExtensionOfArtifactIdentifier = cleanTransformedArtifact.ExtensionOfArtifactIdentifier,
-                    RootArtifactIdentifier = cleanTransformedArtifact.RootArtifactIdentifier,
-                    SuggestedRootIdentifier = cleanTransformedArtifact.SuggestedRootIdentifier,
-                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier,
-                    RootIdentifierMismatch = cleanTransformedArtifact.RootIdentifierMismatch,
-                    ExpTransformerIsSyntaxFree = cleanTransformedArtifact.ExpTransformerIsSyntaxFree,
-                    IsActiveExp = cleanTransformedArtifact.IsActiveExp,
-                    TransformerGenerationExpName = cleanTransformedArtifact.TransformerGenerationExpName,
-                    ExpValidationPrompt = cleanTransformedArtifact.ExpValidationPrompt,
-                    ExpAbstract = cleanTransformedArtifact.ExpAbstract
-                };
-            }
-
-            return AdminTransformedArtifact;
-        }
-        
-        
-        public static dc.TransformedArtifact AdminCleanForUpdate(this dc.TransformedArtifact cleanTransformedArtifact)
-        {
-            var AdminTransformedArtifact = default(dc.TransformedArtifact);
-
-            if (!ReferenceEquals(cleanTransformedArtifact, null))
-            {
-                AdminTransformedArtifact = new dc.TransformedArtifact()
-                {
-                    TransformedArtifactId = cleanTransformedArtifact.TransformedArtifactId,
-                    GenerationTransformer = cleanTransformedArtifact.GenerationTransformer,
-                    ActualPrompt = cleanTransformedArtifact.ActualPrompt,
-                    Response = cleanTransformedArtifact.Response,
-                    AutoNumber = cleanTransformedArtifact.AutoNumber,
-                    IsRetiredArtifact = cleanTransformedArtifact.IsRetiredArtifact,
-                    ExtensionOf = cleanTransformedArtifact.ExtensionOf,
-                    PrimaryExtensionArtifact = cleanTransformedArtifact.PrimaryExtensionArtifact,
-                    ToDoItems = cleanTransformedArtifact.ToDoItems,
-                    ToDoItemsAKA = cleanTransformedArtifact.ToDoItemsAKA,
-                    ToDoItemsMismatched = cleanTransformedArtifact.ToDoItemsMismatched,
-                    Categories = cleanTransformedArtifact.Categories,
-                    CategoriesAKA = cleanTransformedArtifact.CategoriesAKA,
-                    CategoriesMismatched = cleanTransformedArtifact.CategoriesMismatched,
-                    DueDates = cleanTransformedArtifact.DueDates,
-                    DueDatesAKA = cleanTransformedArtifact.DueDatesAKA,
-                    DueDatesMismatched = cleanTransformedArtifact.DueDatesMismatched,
-                    Priorities = cleanTransformedArtifact.Priorities,
-                    PrioritiesAKA = cleanTransformedArtifact.PrioritiesAKA,
-                    PrioritiesMismatched = cleanTransformedArtifact.PrioritiesMismatched,
-                    Progress = cleanTransformedArtifact.Progress,
-                    ProgressAKA = cleanTransformedArtifact.ProgressAKA,
-                    ProgressMismatched = cleanTransformedArtifact.ProgressMismatched,
-                    Statuses = cleanTransformedArtifact.Statuses,
-                    StatusesAKA = cleanTransformedArtifact.StatusesAKA,
-                    StatusesMismatched = cleanTransformedArtifact.StatusesMismatched,
-                    Reminders = cleanTransformedArtifact.Reminders,
-                    RemindersAKA = cleanTransformedArtifact.RemindersAKA,
-                    RemindersMismatched = cleanTransformedArtifact.RemindersMismatched,
-                    Notifications = cleanTransformedArtifact.Notifications,
-                    NotificationsAKA = cleanTransformedArtifact.NotificationsAKA,
-                    NotificationsMismatched = cleanTransformedArtifact.NotificationsMismatched,
-                    Completion = cleanTransformedArtifact.Completion,
-                    CompletionAKA = cleanTransformedArtifact.CompletionAKA,
-                    CompletionMismatched = cleanTransformedArtifact.CompletionMismatched,
-                    ToDoEmployees = cleanTransformedArtifact.ToDoEmployees,
-                    ToDoEmployeesAKA = cleanTransformedArtifact.ToDoEmployeesAKA,
-                    ToDoEmployeesMismatched = cleanTransformedArtifact.ToDoEmployeesMismatched,
-                    Duration = cleanTransformedArtifact.Duration,
-                    DurationAKA = cleanTransformedArtifact.DurationAKA,
-                    DurationMismatched = cleanTransformedArtifact.DurationMismatched,
-                    CompletedDate = cleanTransformedArtifact.CompletedDate,
-                    CompletedDateAKA = cleanTransformedArtifact.CompletedDateAKA,
-                    CompletedDateMismatched = cleanTransformedArtifact.CompletedDateMismatched,
-                    ToDoColors = cleanTransformedArtifact.ToDoColors,
-                    ToDoColorsAKA = cleanTransformedArtifact.ToDoColorsAKA,
-                    ToDoColorsMismatched = cleanTransformedArtifact.ToDoColorsMismatched,
-                    ActualValidationPrompt = cleanTransformedArtifact.ActualValidationPrompt,
-                    ValidationResponse = cleanTransformedArtifact.ValidationResponse,
-                    CustomRootIdentifier = cleanTransformedArtifact.CustomRootIdentifier
-                };
-            }
-
-            return AdminTransformedArtifact;
         }
 
         // Admin Cleaning Extension Methods.  -CRUD-
@@ -1758,7 +1940,9 @@ namespace CLIClassLibrary.ATDMQ
                      // default value: . 
                     ExpFeatures = cleanExperiment.ExpFeatures,
                      // default value: . 
-                    AutoNumber = cleanExperiment.AutoNumber
+                    AutoNumber = cleanExperiment.AutoNumber,
+                     // default value: . 
+                    Trials = cleanExperiment.Trials
                 };
                 
             }
@@ -1796,7 +1980,12 @@ namespace CLIClassLibrary.ATDMQ
                     ExpFeatureNames = cleanExperiment.ExpFeatureNames,
                     FeaturesArray = cleanExperiment.FeaturesArray,
                     ValidationPrompt = cleanExperiment.ValidationPrompt,
-                    AutoNumber = cleanExperiment.AutoNumber
+                    AutoNumber = cleanExperiment.AutoNumber,
+                    SyntaxLockedTransformerNumbers = cleanExperiment.SyntaxLockedTransformerNumbers,
+                    SyntaxFreeTransformerNumbers = cleanExperiment.SyntaxFreeTransformerNumbers,
+                    Trials = cleanExperiment.Trials,
+                    RunTrialScript = cleanExperiment.RunTrialScript,
+                    GenerationAddDataCommandScripts = cleanExperiment.GenerationAddDataCommandScripts
                 };
             }
 
@@ -1819,7 +2008,8 @@ namespace CLIClassLibrary.ATDMQ
                     ExpTransformers = cleanExperiment.ExpTransformers,
                     IsActiveExp = cleanExperiment.IsActiveExp,
                     ExpFeatures = cleanExperiment.ExpFeatures,
-                    AutoNumber = cleanExperiment.AutoNumber
+                    AutoNumber = cleanExperiment.AutoNumber,
+                    Trials = cleanExperiment.Trials
                 };
             }
 

@@ -4,17 +4,17 @@
       {
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "Generations": [
+          "recWwVkUT8wc1zSyC",
           "recmBq2JG52grVKBr",
           "rec7ka3c4BGjhN9dN",
           "rec7gQazwWTs39YDk",
           "recjQkUQEHnyqQK3K",
+          "recfndFgycb2Lvub1",
           "rec4u0oAL96jOz25A",
           "rec5B1YhbQho4yzeS",
           "recBNe7Vq3OWOdkUr",
           "recpq95lILCoWOMyS",
-          "recO0h53dJJKrUmG8",
-          "recfndFgycb2Lvub1",
-          "recWwVkUT8wc1zSyC"
+          "recO0h53dJJKrUmG8"
         ],
         "ExpTransformers": [
           "recQzt8ZwxUMZjlwS",
@@ -49,13 +49,18 @@
         ],
         "AutoNumber": 4,
         "ExpName": "To Do App",
+        "Trials": [
+          "recs7PrHNyer1w5m0",
+          "rect3F9OHoG6Z2T7j"
+        ],
+        "PromptChainsToCreate": 25,
         "ExpTransformerFullPrompts": [
           "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,",
           "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Remove employee from todo items.",
-          "Testing, Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!",
+          "Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!",
           "Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Remove employee from todo items.",
@@ -65,19 +70,19 @@
           "Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please"
         ],
         "ExpTransformerNames": [
-          "5017-'Write a 1 paragraph ",
-          "5018-'Add assigned to attr",
-          "5020-'Add the notion of du",
-          "5021-'Write a single-sourc",
-          "5022-'Remove employee from",
-          "5023-'Testing, Testing 123",
-          "5024-'Add assigned to attr",
-          "5025-'Add the notion of du",
-          "5026-'Remove employee from",
-          "5027-'Please write this in",
-          "5028-'Write a single-sourc",
-          "5029-'Please write this in",
-          "5030-'Write a 1 paragraph "
+          "5017-Write a 1 paragraph ",
+          "5018-Add assigned to attr",
+          "5020-Add the notion of du",
+          "5021-Write a single-sourc",
+          "5022-Remove employee from",
+          "5023-Testing... Testing 1",
+          "5024-Add assigned to attr",
+          "5025-Add the notion of du",
+          "5026-Remove employee from",
+          "5027-Please write this in",
+          "5028-Write a single-sourc",
+          "5029-Please write this in",
+          "5030-Write a 1 paragraph "
         ],
         "ExpFeatureLowerNames": [
           "to-do items",
@@ -95,8 +100,37 @@
           "todo colors"
         ],
         "FeaturesArray": "['to-do items', 'categories', 'due dates', 'priorities', 'progress', 'statuses', 'reminders', 'notifications', 'completion', 'assigned-to', 'duration', 'completed date', 'todo colors']",
+        "SyntaxLockedTransformerNumbers": [
+          "1026",
+          "1030",
+          "1031",
+          "1032",
+          "1033",
+          "1035"
+        ],
+        "SyntaxFreeTransformerNumbers": [
+          "1020",
+          "1021",
+          "1022",
+          "1027",
+          "1038",
+          "1039"
+        ],
         "ExpIdentifier": 104,
         "Name": "104-To Do App",
+        "GenerationAddDataCommandScripts": [
+          "python ./add-data.py add-root 5 1020 \npython ./add-data.py add-root 5 1026 ",
+          "python ./add-data.py add-generation 5 1021 1020\npython ./add-data.py add-generation 5 1030 1026",
+          "python ./add-data.py add-generation 5 1022 1021\npython ./add-data.py add-generation 5 1031 1030",
+          "python ./add-data.py add-generation 5 1027 1022\npython ./add-data.py add-generation 5 1032 1031",
+          "python ./add-data.py add-generation 5 1033 1032\npython ./add-data.py add-generation 5 1038 1028",
+          "python ./add-data.py add-generation 5 1039 1038\npython ./add-data.py add-generation 5 1035 1033",
+          {},
+          {},
+          {},
+          {}
+        ],
+        "RunTrialScript": "python ./add-data.py add-root 25 1020 \npython ./add-data.py add-root 25 1026 \n\npython ./add-data.py add-generation 25 1021 1020\npython ./add-data.py add-generation 25 1030 1026\n\npython ./add-data.py add-generation 25 1022 1021\npython ./add-data.py add-generation 25 1031 1030\n\npython ./add-data.py add-generation 25 1027 1022\npython ./add-data.py add-generation 25 1032 1031\n\npython ./add-data.py add-generation 25 1033 1032\npython ./add-data.py add-generation 25 1038 1028\n\npython ./add-data.py add-generation 25 1039 1038\npython ./add-data.py add-generation 25 1035 1033\n\n\n\n\n\n\n\n",
         "ExpFeatureNames": [
           "ToDoItems",
           "Categories",
@@ -146,15 +180,38 @@
           "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo employees\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"duration\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completed date\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo colors\",\n \"IsMissing\": false\n }\n ]\n}"
         ],
         "ExpTransformerNames": [
-          "5011-'Write a 1 paragraph ",
-          "5012-'Add employee to the ",
-          "5014-'Add the notion of du",
-          "5016-'Write a single-sourc",
-          "5013-'Which part(s) of the"
+          "5011-Write a 1 paragraph ",
+          "5012-Add employee to the ",
+          "5014-Add the notion of du",
+          "5016-Write a single-sourc",
+          "5013-Which part(s) of the"
         ],
         "FeaturesArray": "['']",
+        "SyntaxFreeTransformerNumbers": [
+          "1011",
+          "1018",
+          "1012",
+          "9014",
+          "9013",
+          "1015",
+          "9016",
+          "1019"
+        ],
         "ExpIdentifier": 103,
         "Name": "103-INACTIVE-To Do App v2",
+        "GenerationAddDataCommandScripts": [
+          "python ./add-data.py add-root 5 1011 \npython ./add-data.py add-root 5 1018 ",
+          "python ./add-data.py add-root 5 1012 \npython ./add-data.py add-root 5 9014 ",
+          "python ./add-data.py add-root 5 9013 \npython ./add-data.py add-root 5 1015 ",
+          "python ./add-data.py add-root 5 9016 \npython ./add-data.py add-root 5 1019 ",
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "RunTrialScript": "python ./add-data.py add-root  1011 \npython ./add-data.py add-root  1018 \n\npython ./add-data.py add-root  1012 \npython ./add-data.py add-root  9014 \n\npython ./add-data.py add-root  9013 \npython ./add-data.py add-root  1015 \n\npython ./add-data.py add-root  9016 \npython ./add-data.py add-root  1019 \n\n\n\n\n\n\n\n\n\n\n\n",
         "ExpFeatureNames": "Unused",
         "ValidationPrompt": "What (if anything) of the content being validated is in the app/features listed below, & if mentioned, what are they called? (ie\"due dates\" are AKA \"deadlines\"). Present/Missing/Different Name (i.e. AKA):Unused\n\nFormat your response like this:\n{  \"Features\": [\"Durations\",Statuses\",...],\n  \"Keywords\": [{  \"Keyword Name\": \"priorities\",\n  \"IsMissing\": true (if true),\n  \"AKA\": \"priority levels\" (if diff.)\n },...]\n\nFULL Example: {\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"Keywords\": [{\"KeywordName\": \"Unused\", IsMissing?, AKA? }]"
       },
@@ -190,18 +247,36 @@
           "Is this a contact management app?  Yes/No"
         ],
         "ExpTransformerNames": [
-          "5001-'Write a 1 paragraph ",
-          "5002-'Write a single-sourc",
-          "5003-'Write a csharp scrip",
-          "5004-'Write a golang scrip",
-          "5005-'Which part(s) of the",
-          "5006-'Is this a to-do-list",
-          "5007-'How many words are t",
-          "5008-'Is this a contact ma"
+          "5001-Write a 1 paragraph ",
+          "5002-Write a single-sourc",
+          "5003-Write a csharp scrip",
+          "5004-Write a golang scrip",
+          "5005-Which part(s) of the",
+          "5006-Is this a to-do-list",
+          "5007-How many words are t",
+          "5008-Is this a contact ma"
         ],
         "FeaturesArray": "['']",
+        "SyntaxFreeTransformerNumbers": [
+          "1001",
+          "1002",
+          "1003",
+          "1005",
+          "9006",
+          "9004",
+          "9008",
+          "9009",
+          "9010"
+        ],
         "ExpIdentifier": 101,
         "Name": "101-INACTIVE-To Do App v1",
+        "GenerationAddDataCommandScripts": [
+          "python ./add-data.py add-root 5 1001 \npython ./add-data.py add-root 5 1002 \npython ./add-data.py add-root 5 1003 \npython ./add-data.py add-root 5 1005 ",
+          "python ./add-data.py add-root 5 9006 \npython ./add-data.py add-root 5 9004 ",
+          "python ./add-data.py add-root 5 9008 \npython ./add-data.py add-root 5 9009 ",
+          "python ./add-data.py add-root 5 9010 "
+        ],
+        "RunTrialScript": "python ./add-data.py add-root  1001 \npython ./add-data.py add-root  1002 \npython ./add-data.py add-root  1003 \npython ./add-data.py add-root  1005 \n\npython ./add-data.py add-root  9006 \npython ./add-data.py add-root  9004 \n\npython ./add-data.py add-root  9008 \npython ./add-data.py add-root  9009 \n\npython ./add-data.py add-root  9010 ",
         "ExpFeatureNames": "Unused",
         "ValidationPrompt": "What (if anything) of the content being validated is in the app/features listed below, & if mentioned, what are they called? (ie\"due dates\" are AKA \"deadlines\"). Present/Missing/Different Name (i.e. AKA):Unused\n\nFormat your response like this:\n{  \"Features\": [\"Durations\",Statuses\",...],\n  \"Keywords\": [{  \"Keyword Name\": \"priorities\",\n  \"IsMissing\": true (if true),\n  \"AKA\": \"priority levels\" (if diff.)\n },...]\n\nFULL Example: {\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"Keywords\": [{\"KeywordName\": \"Unused\", IsMissing?, AKA? }]"
       },
@@ -216,10 +291,16 @@
         "ExpFeatures": "recpq9qUjVAgWu2nO",
         "AutoNumber": 2,
         "ExpName": "The Jones",
-        "ExpTransformerNames": "5010-'",
+        "ExpTransformerNames": -5010.0,
         "FeaturesArray": "['']",
         "ExpIdentifier": 102,
         "Name": "102-INACTIVE-The Jones",
+        "GenerationAddDataCommandScripts": [
+          {},
+          {},
+          {}
+        ],
+        "RunTrialScript": "",
         "ExpFeatureNames": "Unused",
         "ValidationPrompt": "What (if anything) of the content being validated is in the app/features listed below, & if mentioned, what are they called? (ie\"due dates\" are AKA \"deadlines\"). Present/Missing/Different Name (i.e. AKA):Unused\n\nFormat your response like this:\n{  \"Features\": [\"Durations\",Statuses\",...],\n  \"Keywords\": [{  \"Keyword Name\": \"priorities\",\n  \"IsMissing\": true (if true),\n  \"AKA\": \"priority levels\" (if diff.)\n },...]\n\nFULL Example: {\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"Keywords\": [{\"KeywordName\": \"Unused\", IsMissing?, AKA? }]"
       }
@@ -364,10 +445,10 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Remove employee from todo items.",
-        "TransformedTransformers": "recMbJPAkrbktSLBw",
+        "GenerationTransformer": "recMbJPAkrbktSLBw",
         "AutoNumber": 22,
         "TransformerIdentifier": 5022,
-        "Name": "5022-'Remove employee from",
+        "Name": "5022-Remove employee from",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -375,10 +456,10 @@
       {
         "Experiment": "rec2FEIFfgH75YILP",
         "FullPrompt": "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": "recGIzvOorwnUFv0e",
+        "GenerationTransformer": "recGIzvOorwnUFv0e",
         "AutoNumber": 11,
         "TransformerIdentifier": 5011,
-        "Name": "5011-'Write a 1 paragraph ",
+        "Name": "5011-Write a 1 paragraph ",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "103-INACTIVE-To Do App v2"
@@ -386,11 +467,11 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please",
-        "TransformedTransformers": "recQqryPqWrLenFdE",
+        "GenerationTransformer": "recQqryPqWrLenFdE",
         "AutoNumber": 27,
         "IsSyntaxFree": "True",
         "TransformerIdentifier": 5027,
-        "Name": "5027-'Please write this in",
+        "Name": "5027-Please write this in",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -398,10 +479,10 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": "reclAn6w105mmMayi",
+        "GenerationTransformer": "reclAn6w105mmMayi",
         "AutoNumber": 18,
         "TransformerIdentifier": 5018,
-        "Name": "5018-'Add assigned to attr",
+        "Name": "5018-Add assigned to attr",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -409,10 +490,10 @@
       {
         "Experiment": "rec2FEIFfgH75YILP",
         "FullPrompt": "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": "reciqR2XfiXA7rkeG",
+        "GenerationTransformer": "reciqR2XfiXA7rkeG",
         "AutoNumber": 16,
         "TransformerIdentifier": 5016,
-        "Name": "5016-'Write a single-sourc",
+        "Name": "5016-Write a single-sourc",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "103-INACTIVE-To Do App v2"
@@ -421,7 +502,7 @@
         "Experiment": "reczle9XMG5vHdomS",
         "AutoNumber": 10,
         "TransformerIdentifier": 5010,
-        "Name": "5010-'",
+        "Name": -5010.0,
         "IsActiveExp": "",
         "ExpAbstract": "Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.",
         "ExpName": "102-INACTIVE-The Jones"
@@ -429,13 +510,13 @@
       {
         "Experiment": "rec2FEIFfgH75YILP",
         "FullPrompt": "Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": [
+        "GenerationTransformer": [
           "recul5xBQVwNMydZq",
           "rechBx9YtjRtwXq1A"
         ],
         "AutoNumber": 12,
         "TransformerIdentifier": 5012,
-        "Name": "5012-'Add employee to the ",
+        "Name": "5012-Add employee to the ",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "103-INACTIVE-To Do App v2"
@@ -443,10 +524,10 @@
       {
         "Experiment": "recW1A5DedlYoR6An",
         "FullPrompt": "Is this a contact management app?  Yes/No",
-        "TransformedTransformers": "rec6UpP4NzYKOVZOj",
+        "GenerationTransformer": "rec6UpP4NzYKOVZOj",
         "AutoNumber": 8,
         "TransformerIdentifier": 5008,
-        "Name": "5008-'Is this a contact ma",
+        "Name": "5008-Is this a contact ma",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "101-INACTIVE-To Do App v1"
@@ -454,10 +535,10 @@
       {
         "Experiment": "recW1A5DedlYoR6An",
         "FullPrompt": "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": "recCx7s2jCkGVp8BN",
+        "GenerationTransformer": "recCx7s2jCkGVp8BN",
         "AutoNumber": 1,
         "TransformerIdentifier": 5001,
-        "Name": "5001-'Write a 1 paragraph ",
+        "Name": "5001-Write a 1 paragraph ",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "101-INACTIVE-To Do App v1"
@@ -465,10 +546,10 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": "reca7Gfxv0KMLAOJz",
+        "GenerationTransformer": "reca7Gfxv0KMLAOJz",
         "AutoNumber": 17,
         "TransformerIdentifier": 5017,
-        "Name": "5017-'Write a 1 paragraph ",
+        "Name": "5017-Write a 1 paragraph ",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -476,10 +557,10 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,",
-        "TransformedTransformers": "reckeYQjRL4jvd0jY",
+        "GenerationTransformer": "reckeYQjRL4jvd0jY",
         "AutoNumber": 20,
         "TransformerIdentifier": 5020,
-        "Name": "5020-'Add the notion of du",
+        "Name": "5020-Add the notion of du",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -487,10 +568,10 @@
       {
         "Experiment": "recW1A5DedlYoR6An",
         "FullPrompt": "Is this a to-do-list app?  Yes/No",
-        "TransformedTransformers": "recA14kPIaizrx2hY",
+        "GenerationTransformer": "recA14kPIaizrx2hY",
         "AutoNumber": 6,
         "TransformerIdentifier": 5006,
-        "Name": "5006-'Is this a to-do-list",
+        "Name": "5006-Is this a to-do-list",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "101-INACTIVE-To Do App v1"
@@ -498,10 +579,10 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please",
-        "TransformedTransformers": "recWYK5AUswVvirqk",
+        "GenerationTransformer": "recWYK5AUswVvirqk",
         "AutoNumber": 29,
         "TransformerIdentifier": 5029,
-        "Name": "5029-'Please write this in",
+        "Name": "5029-Please write this in",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -509,10 +590,10 @@
       {
         "Experiment": "rec2FEIFfgH75YILP",
         "FullPrompt": "Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,",
-        "TransformedTransformers": "recaiAC5xjsgvxCnl",
+        "GenerationTransformer": "recaiAC5xjsgvxCnl",
         "AutoNumber": 14,
         "TransformerIdentifier": 5014,
-        "Name": "5014-'Add the notion of du",
+        "Name": "5014-Add the notion of du",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "103-INACTIVE-To Do App v2"
@@ -520,10 +601,10 @@
       {
         "Experiment": "recW1A5DedlYoR6An",
         "FullPrompt": "Write a csharp script, based on all of these details.",
-        "TransformedTransformers": "recaDdJWouKulO0MZ",
+        "GenerationTransformer": "recaDdJWouKulO0MZ",
         "AutoNumber": 3,
         "TransformerIdentifier": 5003,
-        "Name": "5003-'Write a csharp scrip",
+        "Name": "5003-Write a csharp scrip",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "101-INACTIVE-To Do App v1"
@@ -531,11 +612,11 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please",
-        "TransformedTransformers": "recvNub7ngHZ5pEYi",
+        "GenerationTransformer": "recvNub7ngHZ5pEYi",
         "AutoNumber": 28,
         "IsSyntaxFree": "True",
         "TransformerIdentifier": 5028,
-        "Name": "5028-'Write a single-sourc",
+        "Name": "5028-Write a single-sourc",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -543,11 +624,11 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": "recPrRjr5Pf8IiRdR",
+        "GenerationTransformer": "recPrRjr5Pf8IiRdR",
         "AutoNumber": 21,
         "IsSyntaxFree": "True",
         "TransformerIdentifier": 5021,
-        "Name": "5021-'Write a single-sourc",
+        "Name": "5021-Write a single-sourc",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -555,13 +636,13 @@
       {
         "Experiment": "recW1A5DedlYoR6An",
         "FullPrompt": "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n }\n ]\n}",
-        "TransformedTransformers": [
+        "GenerationTransformer": [
           "recBlNsq2bQqo5lzD",
           "recS1LDJeoajssImk"
         ],
         "AutoNumber": 5,
         "TransformerIdentifier": 5005,
-        "Name": "5005-'Which part(s) of the",
+        "Name": "5005-Which part(s) of the",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "101-INACTIVE-To Do App v1"
@@ -569,14 +650,14 @@
       {
         "Experiment": "rec2FEIFfgH75YILP",
         "FullPrompt": "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo employees\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"duration\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completed date\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo colors\",\n \"IsMissing\": false\n }\n ]\n}",
-        "TransformedTransformers": [
+        "GenerationTransformer": [
           "recjzDANsnzbd1R07",
           "recKqgS5QL0LFPQFW",
           "recxndDytrKufEXZZ"
         ],
         "AutoNumber": 13,
         "TransformerIdentifier": 5013,
-        "Name": "5013-'Which part(s) of the",
+        "Name": "5013-Which part(s) of the",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "103-INACTIVE-To Do App v2"
@@ -584,11 +665,11 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": "recvZYuU4p338Dncl",
+        "GenerationTransformer": "recvZYuU4p338Dncl",
         "AutoNumber": 25,
         "IsSyntaxFree": "True",
         "TransformerIdentifier": 5025,
-        "Name": "5025-'Add the notion of du",
+        "Name": "5025-Add the notion of du",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -596,22 +677,22 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Remove employee from todo items.",
-        "TransformedTransformers": "recRPX4wi5krtc5MR",
+        "GenerationTransformer": "recRPX4wi5krtc5MR",
         "AutoNumber": 26,
         "IsSyntaxFree": "True",
         "TransformerIdentifier": 5026,
-        "Name": "5026-'Remove employee from",
+        "Name": "5026-Remove employee from",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
       },
       {
         "Experiment": "rec1moh66lbXJerna",
-        "FullPrompt": "Testing, Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!",
-        "TransformedTransformers": "rec9ffMsYT41EHvcl",
+        "FullPrompt": "Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!",
+        "GenerationTransformer": "rec9ffMsYT41EHvcl",
         "AutoNumber": 23,
         "TransformerIdentifier": 5023,
-        "Name": "5023-'Testing, Testing 123",
+        "Name": "5023-Testing... Testing 1",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -619,10 +700,10 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please",
-        "TransformedTransformers": "recaont3llGhNnxrM",
+        "GenerationTransformer": "recaont3llGhNnxrM",
         "AutoNumber": 30,
         "TransformerIdentifier": 5030,
-        "Name": "5030-'Write a 1 paragraph ",
+        "Name": "5030-Write a 1 paragraph ",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -630,10 +711,10 @@
       {
         "Experiment": "recW1A5DedlYoR6An",
         "FullPrompt": "How many words are there?",
-        "TransformedTransformers": "recpFH1D9efGH6y0G",
+        "GenerationTransformer": "recpFH1D9efGH6y0G",
         "AutoNumber": 7,
         "TransformerIdentifier": 5007,
-        "Name": "5007-'How many words are t",
+        "Name": "5007-How many words are t",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "101-INACTIVE-To Do App v1"
@@ -641,10 +722,10 @@
       {
         "Experiment": "recW1A5DedlYoR6An",
         "FullPrompt": "Write a golang script, based on all of these details.",
-        "TransformedTransformers": "recwcCSgtDWvgtgEa",
+        "GenerationTransformer": "recwcCSgtDWvgtgEa",
         "AutoNumber": 4,
         "TransformerIdentifier": 5004,
-        "Name": "5004-'Write a golang scrip",
+        "Name": "5004-Write a golang scrip",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "101-INACTIVE-To Do App v1"
@@ -652,11 +733,11 @@
       {
         "Experiment": "rec1moh66lbXJerna",
         "FullPrompt": "Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": "recjRflJxgJCqBAai",
+        "GenerationTransformer": "recjRflJxgJCqBAai",
         "AutoNumber": 24,
         "IsSyntaxFree": "True",
         "TransformerIdentifier": 5024,
-        "Name": "5024-'Add assigned to attr",
+        "Name": "5024-Add assigned to attr",
         "IsActiveExp": "True",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "104-To Do App"
@@ -664,10 +745,10 @@
       {
         "Experiment": "recW1A5DedlYoR6An",
         "FullPrompt": "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "TransformedTransformers": "recNAPS31vIaKGEjx",
+        "GenerationTransformer": "recNAPS31vIaKGEjx",
         "AutoNumber": 2,
         "TransformerIdentifier": 5002,
-        "Name": "5002-'Write a single-sourc",
+        "Name": "5002-Write a single-sourc",
         "IsActiveExp": "",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "ExpName": "101-INACTIVE-To Do App v1"
@@ -691,6 +772,13 @@
           "recvNub7ngHZ5pEYi"
         ],
         "Name": "Generation-6",
+        "SyntaxLockedTransformerNumbers": 1035,
+        "SyntaxFreeTransformerNumbers": 1039,
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-generation 5 1039 1038",
+          "python ./add-data.py add-generation 5 1035 1033"
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-generation 5 1039 1038\npython ./add-data.py add-generation 5 1035 1033",
         "GenerationTransformRawPrompts": [
           "Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please",
           "Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please"
@@ -699,8 +787,6 @@
           "1039",
           "1035"
         ],
-        "SyntaxFreeTransformerNumbers": 1039,
-        "SyntaxLockedTransformerNumbers": 1035,
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
         "ExpName": "104-To Do App",
@@ -723,15 +809,20 @@
           "recBlNsq2bQqo5lzD"
         ],
         "Name": "Generation-2",
+        "SyntaxFreeTransformerNumbers": [
+          "9006",
+          "9004"
+        ],
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-root 5 9006 ",
+          "python ./add-data.py add-root 5 9004 "
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-root 5 9006 \npython ./add-data.py add-root 5 9004 ",
         "GenerationTransformRawPrompts": [
           "Is this a to-do-list app?  Yes/No",
           "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n }\n ]\n}"
         ],
         "TransformerNumbers": [
-          "9006",
-          "9004"
-        ],
-        "SyntaxFreeTransformerNumbers": [
           "9006",
           "9004"
         ],
@@ -748,6 +839,13 @@
           "recvZYuU4p338Dncl"
         ],
         "Name": "Generation-3",
+        "SyntaxLockedTransformerNumbers": 1031,
+        "SyntaxFreeTransformerNumbers": 1022,
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-generation 5 1022 1021",
+          "python ./add-data.py add-generation 5 1031 1030"
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-generation 5 1022 1021\npython ./add-data.py add-generation 5 1031 1030",
         "GenerationTransformRawPrompts": [
           "Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,",
           "Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth."
@@ -756,8 +854,6 @@
           "1022",
           "1031"
         ],
-        "SyntaxFreeTransformerNumbers": 1022,
-        "SyntaxLockedTransformerNumbers": 1031,
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
         "ExpName": "104-To Do App",
@@ -771,6 +867,13 @@
           "recjRflJxgJCqBAai"
         ],
         "Name": "Generation-2",
+        "SyntaxLockedTransformerNumbers": 1030,
+        "SyntaxFreeTransformerNumbers": 1021,
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-generation 5 1021 1020",
+          "python ./add-data.py add-generation 5 1030 1026"
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-generation 5 1021 1020\npython ./add-data.py add-generation 5 1030 1026",
         "GenerationTransformRawPrompts": [
           "Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth."
@@ -779,8 +882,6 @@
           "1021",
           "1030"
         ],
-        "SyntaxFreeTransformerNumbers": 1021,
-        "SyntaxLockedTransformerNumbers": 1030,
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
         "ExpName": "104-To Do App",
@@ -803,15 +904,20 @@
           "reciqR2XfiXA7rkeG"
         ],
         "Name": "Generation-1",
+        "SyntaxFreeTransformerNumbers": [
+          "1011",
+          "1018"
+        ],
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-root 5 1011 ",
+          "python ./add-data.py add-root 5 1018 "
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-root 5 1011 \npython ./add-data.py add-root 5 1018 ",
         "GenerationTransformRawPrompts": [
           "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth."
         ],
         "TransformerNumbers": [
-          "1011",
-          "1018"
-        ],
-        "SyntaxFreeTransformerNumbers": [
           "1011",
           "1018"
         ],
@@ -828,15 +934,20 @@
           "rechBx9YtjRtwXq1A"
         ],
         "Name": "Generation-4",
+        "SyntaxFreeTransformerNumbers": [
+          "9016",
+          "1019"
+        ],
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-root 5 9016 ",
+          "python ./add-data.py add-root 5 1019 "
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-root 5 9016 \npython ./add-data.py add-root 5 1019 ",
         "GenerationTransformRawPrompts": [
           "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo employees\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"duration\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completed date\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo colors\",\n \"IsMissing\": false\n }\n ]\n}",
           "Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth."
         ],
         "TransformerNumbers": [
-          "9016",
-          "1019"
-        ],
-        "SyntaxFreeTransformerNumbers": [
           "9016",
           "1019"
         ],
@@ -853,15 +964,20 @@
           "recaiAC5xjsgvxCnl"
         ],
         "Name": "Generation-3",
+        "SyntaxFreeTransformerNumbers": [
+          "9013",
+          "1015"
+        ],
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-root 5 9013 ",
+          "python ./add-data.py add-root 5 1015 "
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-root 5 9013 \npython ./add-data.py add-root 5 1015 ",
         "GenerationTransformRawPrompts": [
           "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo employees\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"duration\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completed date\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo colors\",\n \"IsMissing\": false\n }\n ]\n}",
           "Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,"
         ],
         "TransformerNumbers": [
-          "9013",
-          "1015"
-        ],
-        "SyntaxFreeTransformerNumbers": [
           "9013",
           "1015"
         ],
@@ -917,6 +1033,19 @@
         ],
         "Model": "recInEVN8vXxYqxth",
         "Name": "Generation-1",
+        "SyntaxFreeTransformerNumbers": [
+          "1001",
+          "1002",
+          "1003",
+          "1005"
+        ],
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-root 5 1001 ",
+          "python ./add-data.py add-root 5 1002 ",
+          "python ./add-data.py add-root 5 1003 ",
+          "python ./add-data.py add-root 5 1005 "
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-root 5 1001 \npython ./add-data.py add-root 5 1002 \npython ./add-data.py add-root 5 1003 \npython ./add-data.py add-root 5 1005 ",
         "GenerationTransformRawPrompts": [
           "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
@@ -924,12 +1053,6 @@
           "Write a golang script, based on all of these details."
         ],
         "TransformerNumbers": [
-          "1001",
-          "1002",
-          "1003",
-          "1005"
-        ],
-        "SyntaxFreeTransformerNumbers": [
           "1001",
           "1002",
           "1003",
@@ -957,15 +1080,20 @@
           "rec6UpP4NzYKOVZOj"
         ],
         "Name": "Generation-3",
+        "SyntaxFreeTransformerNumbers": [
+          "9008",
+          "9009"
+        ],
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-root 5 9008 ",
+          "python ./add-data.py add-root 5 9009 "
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-root 5 9008 \npython ./add-data.py add-root 5 9009 ",
         "GenerationTransformRawPrompts": [
           "How many words are there?",
           "Is this a contact management app?  Yes/No"
         ],
         "TransformerNumbers": [
-          "9008",
-          "9009"
-        ],
-        "SyntaxFreeTransformerNumbers": [
           "9008",
           "9009"
         ],
@@ -988,7 +1116,7 @@
         "GeneratioNumber": 0,
         "GenerationTransformers": "rec9ffMsYT41EHvcl",
         "Name": "Generation-0",
-        "GenerationTransformRawPrompts": "Testing, Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!",
+        "GenerationTransformRawPrompts": "Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!",
         "TransformerNumbers": 1028,
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1003,15 +1131,20 @@
           "recjzDANsnzbd1R07"
         ],
         "Name": "Generation-2",
+        "SyntaxFreeTransformerNumbers": [
+          "1012",
+          "9014"
+        ],
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-root 5 1012 ",
+          "python ./add-data.py add-root 5 9014 "
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-root 5 1012 \npython ./add-data.py add-root 5 9014 ",
         "GenerationTransformRawPrompts": [
           "Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo employees\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"duration\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completed date\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo colors\",\n \"IsMissing\": false\n }\n ]\n}"
         ],
         "TransformerNumbers": [
-          "1012",
-          "9014"
-        ],
-        "SyntaxFreeTransformerNumbers": [
           "1012",
           "9014"
         ],
@@ -1025,9 +1158,11 @@
         "GeneratioNumber": 4,
         "GenerationTransformers": "recS1LDJeoajssImk",
         "Name": "Generation-4",
+        "SyntaxFreeTransformerNumbers": 9010,
+        "GenerationTransformerAddDataCommands": "python ./add-data.py add-root 5 9010 ",
+        "AddDataCommandScript": "python ./add-data.py add-root 5 9010 ",
         "GenerationTransformRawPrompts": "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n }\n ]\n}",
         "TransformerNumbers": 9010,
-        "SyntaxFreeTransformerNumbers": 9010,
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
         "ExpName": "101-INACTIVE-To Do App v1",
@@ -1050,6 +1185,13 @@
           "recWYK5AUswVvirqk"
         ],
         "Name": "Generation-5",
+        "SyntaxLockedTransformerNumbers": 1033,
+        "SyntaxFreeTransformerNumbers": 1038,
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-generation 5 1033 1032",
+          "python ./add-data.py add-generation 5 1038 1028"
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-generation 5 1033 1032\npython ./add-data.py add-generation 5 1038 1028",
         "GenerationTransformRawPrompts": [
           "Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please",
           "Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please"
@@ -1058,8 +1200,6 @@
           "1033",
           "1038"
         ],
-        "SyntaxFreeTransformerNumbers": 1038,
-        "SyntaxLockedTransformerNumbers": 1033,
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
         "ExpName": "104-To Do App",
@@ -1073,6 +1213,13 @@
           "recRPX4wi5krtc5MR"
         ],
         "Name": "Generation-4",
+        "SyntaxLockedTransformerNumbers": 1032,
+        "SyntaxFreeTransformerNumbers": 1027,
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-generation 5 1027 1022",
+          "python ./add-data.py add-generation 5 1032 1031"
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-generation 5 1027 1022\npython ./add-data.py add-generation 5 1032 1031",
         "GenerationTransformRawPrompts": [
           "Remove employee from todo items.",
           "Remove employee from todo items."
@@ -1081,8 +1228,6 @@
           "1027",
           "1032"
         ],
-        "SyntaxFreeTransformerNumbers": 1027,
-        "SyntaxLockedTransformerNumbers": 1032,
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
         "ExpName": "104-To Do App",
@@ -1105,6 +1250,13 @@
           "recPrRjr5Pf8IiRdR"
         ],
         "Name": "Generation-1",
+        "SyntaxLockedTransformerNumbers": 1026,
+        "SyntaxFreeTransformerNumbers": 1020,
+        "GenerationTransformerAddDataCommands": [
+          "python ./add-data.py add-root 5 1020 ",
+          "python ./add-data.py add-root 5 1026 "
+        ],
+        "AddDataCommandScript": "python ./add-data.py add-root 5 1020 \npython ./add-data.py add-root 5 1026 ",
         "GenerationTransformRawPrompts": [
           "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
           "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth."
@@ -1113,8 +1265,6 @@
           "1020",
           "1026"
         ],
-        "SyntaxFreeTransformerNumbers": 1020,
-        "SyntaxLockedTransformerNumbers": 1026,
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
         "ExpName": "104-To Do App",
@@ -1143,7 +1293,7 @@
       {
         "Generation": "recOOhsTc8QeS4QCL",
         "ExpTransformer": "recPgmmLnUmgL1iXk",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recGgIExtJmOcAnPq",
           "rec0EMy4IbK2ji9Me"
         ],
@@ -1152,9 +1302,10 @@
         "TransformerNumber": 9009,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-3",
-        "Name": "9009-LOCKED-Generation-3-5008-'Is this a contact ma",
+        "Name": "9009-LOCKED-Generation-3-5008-Is this a contact ma",
+        "GenerationNumber": 3,
+        "AddDataCommand": "python ./add-data.py add-root 5 9009 ",
         "RawPrompt": "Is this a contact management app?  Yes/No",
-        "GeneratioNumber": 3,
         "GenerationExp": "recW1A5DedlYoR6An",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1164,14 +1315,16 @@
       {
         "Generation": "recWwVkUT8wc1zSyC",
         "ExpTransformer": "recluJNtspj3gGDsa",
-        "TransformedArtifacts": "recslvEbM7gSZ3RJn",
+        "TrialArtifacts": "recslvEbM7gSZ3RJn",
         "AutoNumber": 28,
+        "ParentTransformer": "recMbJPAkrbktSLBw",
         "TransformerNumber": 1028,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-0",
-        "Name": "1028-LOCKED-Generation-0-\"5023-'Testing, Testing 123\"",
-        "RawPrompt": "Testing, Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!",
-        "GeneratioNumber": 0,
+        "Name": "1028-LOCKED-Generation-0-5023-Testing... Testing 1",
+        "GenerationNumber": 0,
+        "ParentTransformerNumber": 1027,
+        "RawPrompt": "Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!",
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1181,15 +1334,16 @@
       {
         "Generation": "rec72KHseHTRZCNNt",
         "ExpTransformer": "recW9189SAZ84yv5u",
-        "TransformedArtifacts": "recyfv3NkVgJlafHE",
+        "TrialArtifacts": "recyfv3NkVgJlafHE",
         "AutoNumber": 6,
         "IsArtifactValidator": "True",
         "TransformerNumber": 9006,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-2",
-        "Name": "9006-LOCKED-Generation-2-5006-'Is this a to-do-list",
+        "Name": "9006-LOCKED-Generation-2-5006-Is this a to-do-list",
+        "GenerationNumber": 2,
+        "AddDataCommand": "python ./add-data.py add-root 5 9006 ",
         "RawPrompt": "Is this a to-do-list app?  Yes/No",
-        "GeneratioNumber": 2,
         "GenerationExp": "recW1A5DedlYoR6An",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1204,9 +1358,10 @@
         "TransformerNumber": 9004,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-2",
-        "Name": "9004-LOCKED-Generation-2-5005-'Which part(s) of the",
+        "Name": "9004-LOCKED-Generation-2-5005-Which part(s) of the",
+        "GenerationNumber": 2,
+        "AddDataCommand": "python ./add-data.py add-root 5 9004 ",
         "RawPrompt": "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n }\n ]\n}",
-        "GeneratioNumber": 2,
         "GenerationExp": "recW1A5DedlYoR6An",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1216,14 +1371,15 @@
       {
         "Generation": "recMEUAHCWHP4zqT7",
         "ExpTransformer": "recQNBM9btdtItZXf",
-        "TransformedArtifacts": "recrs04ZrVVS4UQWn",
+        "TrialArtifacts": "recrs04ZrVVS4UQWn",
         "AutoNumber": 1,
         "TransformerNumber": 1001,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-1",
-        "Name": "1001-LOCKED-Generation-1-5001-'Write a 1 paragraph ",
+        "Name": "1001-LOCKED-Generation-1-5001-Write a 1 paragraph ",
+        "GenerationNumber": 1,
+        "AddDataCommand": "python ./add-data.py add-root 5 1001 ",
         "RawPrompt": "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 1,
         "GenerationExp": "recW1A5DedlYoR6An",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1233,7 +1389,7 @@
       {
         "Generation": "recDXYMNu5oEP7bDE",
         "ExpTransformer": "rec8FCcLAYBIGOxyo",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recwr2cTFljE6Xn0j",
           "rechyYKE6CyKan7v3",
           "recjGyJTZk8GR9f6y",
@@ -1245,9 +1401,10 @@
         "TransformerNumber": 1011,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-1",
-        "Name": "1011-LOCKED-Generation-1-5011-'Write a 1 paragraph ",
+        "Name": "1011-LOCKED-Generation-1-5011-Write a 1 paragraph ",
+        "GenerationNumber": 1,
+        "AddDataCommand": "python ./add-data.py add-root 5 1011 ",
         "RawPrompt": "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 1,
         "GenerationExp": "rec2FEIFfgH75YILP",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1267,9 +1424,10 @@
         "TransformerNumber": 9013,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-3",
-        "Name": "9013-LOCKED-Generation-3-5013-'Which part(s) of the",
+        "Name": "9013-LOCKED-Generation-3-5013-Which part(s) of the",
+        "GenerationNumber": 3,
+        "AddDataCommand": "python ./add-data.py add-root 5 9013 ",
         "RawPrompt": "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo employees\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"duration\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completed date\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo colors\",\n \"IsMissing\": false\n }\n ]\n}",
-        "GeneratioNumber": 3,
         "GenerationExp": "rec2FEIFfgH75YILP",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1279,21 +1437,23 @@
       {
         "Generation": "recjQkUQEHnyqQK3K",
         "ExpTransformer": "rec0zZsvQ93wxHnwH",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "rec1FAW0BUOEaK1y4",
-          "rec17MgKKCrFmOd7x",
           "rectbx6uzj1rhSKVb",
           "recU9jdtWk8qua5Zd",
           "recOktmeZhANJlXUQ",
           "recAdU3SDFhZ3K4ry"
         ],
         "AutoNumber": 27,
+        "ParentTransformer": "reckeYQjRL4jvd0jY",
         "TransformerNumber": 1027,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-4",
-        "Name": "1027-LOCKED-Generation-4-5022-'Remove employee from",
+        "Name": "1027-LOCKED-Generation-4-5022-Remove employee from",
+        "GenerationNumber": 4,
+        "ParentTransformerNumber": 1022,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1027 1022",
         "RawPrompt": "Remove employee from todo items.",
-        "GeneratioNumber": 4,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1307,9 +1467,10 @@
         "TransformerNumber": 1002,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-1",
-        "Name": "1002-LOCKED-Generation-1-5002-'Write a single-sourc",
+        "Name": "1002-LOCKED-Generation-1-5002-Write a single-sourc",
+        "GenerationNumber": 1,
+        "AddDataCommand": "python ./add-data.py add-root 5 1002 ",
         "RawPrompt": "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 1,
         "GenerationExp": "recW1A5DedlYoR6An",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1319,7 +1480,7 @@
       {
         "Generation": "recmBq2JG52grVKBr",
         "ExpTransformer": "recaHRXNnNuhvhvbz",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recp4NPUW6MfftAuH",
           "recuYcfhfZwxsBmER",
           "rectMTwieg0U6xMC8",
@@ -1331,9 +1492,10 @@
         "TransformerNumber": 1026,
         "ExpTransformerIsSyntaxFree": "True",
         "GenerationName": "Generation-1",
-        "Name": "1026-FREE-Generation-1-5021-'Write a single-sourc",
+        "Name": "1026-FREE-Generation-1-5021-Write a single-sourc",
+        "GenerationNumber": 1,
+        "AddDataCommand": "python ./add-data.py add-root 5 1026 ",
         "RawPrompt": "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 1,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1343,7 +1505,7 @@
       {
         "Generation": "recfndFgycb2Lvub1",
         "ExpTransformer": "recG613I1Dzd6bcKX",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recxCaBLNHbgY8jzE",
           "recMY3XfurqBJ0wJn",
           "reclxIqB1kslEZQR3",
@@ -1352,12 +1514,15 @@
           "rece06Zgog89B3RvG"
         ],
         "AutoNumber": 33,
+        "ParentTransformer": "recRPX4wi5krtc5MR",
         "TransformerNumber": 1033,
         "ExpTransformerIsSyntaxFree": "True",
         "GenerationName": "Generation-5",
-        "Name": "1033-FREE-Generation-5-5027-'Please write this in",
+        "Name": "1033-FREE-Generation-5-5027-Please write this in",
+        "GenerationNumber": 5,
+        "ParentTransformerNumber": 1032,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1033 1032",
         "RawPrompt": "Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please",
-        "GeneratioNumber": 5,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1367,7 +1532,7 @@
       {
         "Generation": "recjQkUQEHnyqQK3K",
         "ExpTransformer": "recjfznKlLfFGX2wV",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "reco2pPyVm9fQLduJ",
           "recsSP5jhocFRLEDb",
           "recv5t8uLltHVJ5vv",
@@ -1376,12 +1541,15 @@
           "rec08xCxiEH5C8Zek"
         ],
         "AutoNumber": 32,
+        "ParentTransformer": "recvZYuU4p338Dncl",
         "TransformerNumber": 1032,
         "ExpTransformerIsSyntaxFree": "True",
         "GenerationName": "Generation-4",
-        "Name": "1032-FREE-Generation-4-5026-'Remove employee from",
+        "Name": "1032-FREE-Generation-4-5026-Remove employee from",
+        "GenerationNumber": 4,
+        "ParentTransformerNumber": 1031,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1032 1031",
         "RawPrompt": "Remove employee from todo items.",
-        "GeneratioNumber": 4,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1396,9 +1564,10 @@
         "TransformerNumber": 9010,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-4",
-        "Name": "9010-LOCKED-Generation-4-5005-'Which part(s) of the",
+        "Name": "9010-LOCKED-Generation-4-5005-Which part(s) of the",
+        "GenerationNumber": 4,
+        "AddDataCommand": "python ./add-data.py add-root 5 9010 ",
         "RawPrompt": "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n }\n ]\n}",
-        "GeneratioNumber": 4,
         "GenerationExp": "recW1A5DedlYoR6An",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1408,21 +1577,23 @@
       {
         "Generation": "recfndFgycb2Lvub1",
         "ExpTransformer": "recWmsUYb7maZZDv4",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recOGR3FuQMkTo36g",
-          "reciAr1T76vWla47C",
           "rec5B6srLfY88H5Bu",
           "rec9Uv4Smddck0gLd",
           "rec6jkXqtnoYnTNMT",
           "recmvScnicsWBDNUc"
         ],
         "AutoNumber": 38,
+        "ParentTransformer": "rec9ffMsYT41EHvcl",
         "TransformerNumber": 1038,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-5",
-        "Name": "1038-LOCKED-Generation-5-5029-'Please write this in",
+        "Name": "1038-LOCKED-Generation-5-5029-Please write this in",
+        "GenerationNumber": 5,
+        "ParentTransformerNumber": 1028,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1038 1028",
         "RawPrompt": "Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please",
-        "GeneratioNumber": 5,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1432,21 +1603,21 @@
       {
         "Generation": "recmBq2JG52grVKBr",
         "ExpTransformer": "recQzt8ZwxUMZjlwS",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recAAhGue7KXL1l1q",
           "rec5taQwBTEBYKfTW",
           "recRJ2ZpfiHcimVBk",
           "rec2sCNpJCZhXJdC5",
-          "recf4vjwgJkgv0hxZ",
-          "recUohucTQTpaGqMn"
+          "recf4vjwgJkgv0hxZ"
         ],
         "AutoNumber": 20,
         "TransformerNumber": 1020,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-1",
-        "Name": "1020-LOCKED-Generation-1-5017-'Write a 1 paragraph ",
+        "Name": "1020-LOCKED-Generation-1-5017-Write a 1 paragraph ",
+        "GenerationNumber": 1,
+        "AddDataCommand": "python ./add-data.py add-root 5 1020 ",
         "RawPrompt": "Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 1,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1460,9 +1631,10 @@
         "TransformerNumber": 1003,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-1",
-        "Name": "1003-LOCKED-Generation-1-5003-'Write a csharp scrip",
+        "Name": "1003-LOCKED-Generation-1-5003-Write a csharp scrip",
+        "GenerationNumber": 1,
+        "AddDataCommand": "python ./add-data.py add-root 5 1003 ",
         "RawPrompt": "Write a csharp script, based on all of these details.",
-        "GeneratioNumber": 1,
         "GenerationExp": "recW1A5DedlYoR6An",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1472,7 +1644,7 @@
       {
         "Generation": "recIzlejj3zgJpsbe",
         "ExpTransformer": "recYw8nlner6LTLpt",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recOSo5PWsEJnVQ0W",
           "recEsqEXem2loLt94",
           "recX8xmFqhBkmzyhe",
@@ -1484,9 +1656,10 @@
         "TransformerNumber": 1015,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-3",
-        "Name": "1015-LOCKED-Generation-3-5014-'Add the notion of du",
+        "Name": "1015-LOCKED-Generation-3-5014-Add the notion of du",
+        "GenerationNumber": 3,
+        "AddDataCommand": "python ./add-data.py add-root 5 1015 ",
         "RawPrompt": "Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,",
-        "GeneratioNumber": 3,
         "GenerationExp": "rec2FEIFfgH75YILP",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1496,21 +1669,23 @@
       {
         "Generation": "rec4u0oAL96jOz25A",
         "ExpTransformer": "recmn5czMOPk9AfqV",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recSn4conv7TfE1ZA",
           "recqkRYlumEndgflP",
           "recmJKoUbkw54W3l5",
           "reclfcplgj5aJTuAu",
-          "recYnv82dZmyAZQmS",
           "rectRFriOd7AWjVHD"
         ],
         "AutoNumber": 39,
+        "ParentTransformer": "recWYK5AUswVvirqk",
         "TransformerNumber": 1039,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-6",
-        "Name": "1039-LOCKED-Generation-6-5030-'Write a 1 paragraph ",
+        "Name": "1039-LOCKED-Generation-6-5030-Write a 1 paragraph ",
+        "GenerationNumber": 6,
+        "ParentTransformerNumber": 1038,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1039 1038",
         "RawPrompt": "Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please",
-        "GeneratioNumber": 6,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1524,9 +1699,10 @@
         "TransformerNumber": 1019,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-4",
-        "Name": "1019-LOCKED-Generation-4-5012-'Add employee to the ",
+        "Name": "1019-LOCKED-Generation-4-5012-Add employee to the ",
+        "GenerationNumber": 4,
+        "AddDataCommand": "python ./add-data.py add-root 5 1019 ",
         "RawPrompt": "Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 4,
         "GenerationExp": "rec2FEIFfgH75YILP",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1536,7 +1712,7 @@
       {
         "Generation": "recDXYMNu5oEP7bDE",
         "ExpTransformer": "recH46rTQX2JIpz8Y",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recV6rXWhics3ZY6k",
           "recPqNJ985pQGysKY",
           "recPsoYAkPlZ4GEmR",
@@ -1548,9 +1724,10 @@
         "TransformerNumber": 1018,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-1",
-        "Name": "1018-LOCKED-Generation-1-5016-'Write a single-sourc",
+        "Name": "1018-LOCKED-Generation-1-5016-Write a single-sourc",
+        "GenerationNumber": 1,
+        "AddDataCommand": "python ./add-data.py add-root 5 1018 ",
         "RawPrompt": "Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 1,
         "GenerationExp": "rec2FEIFfgH75YILP",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1560,7 +1737,7 @@
       {
         "Generation": "rec7ka3c4BGjhN9dN",
         "ExpTransformer": "recvlmgnJuIuc113J",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recsl2h85hr1dleJS",
           "rec5wf3RsMoxt9f9V",
           "recF6aA0W5sZOgHAf",
@@ -1569,12 +1746,15 @@
           "recrpat6Rl9YPc0y6"
         ],
         "AutoNumber": 30,
+        "ParentTransformer": "recPrRjr5Pf8IiRdR",
         "TransformerNumber": 1030,
         "ExpTransformerIsSyntaxFree": "True",
         "GenerationName": "Generation-2",
-        "Name": "1030-FREE-Generation-2-5024-'Add assigned to attr",
+        "Name": "1030-FREE-Generation-2-5024-Add assigned to attr",
+        "GenerationNumber": 2,
+        "ParentTransformerNumber": 1026,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1030 1026",
         "RawPrompt": "Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 2,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1589,9 +1769,10 @@
         "TransformerNumber": 9014,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-2",
-        "Name": "9014-LOCKED-Generation-2-5013-'Which part(s) of the",
+        "Name": "9014-LOCKED-Generation-2-5013-Which part(s) of the",
+        "GenerationNumber": 2,
+        "AddDataCommand": "python ./add-data.py add-root 5 9014 ",
         "RawPrompt": "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo employees\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"duration\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completed date\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo colors\",\n \"IsMissing\": false\n }\n ]\n}",
-        "GeneratioNumber": 2,
         "GenerationExp": "rec2FEIFfgH75YILP",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1601,21 +1782,23 @@
       {
         "Generation": "rec7gQazwWTs39YDk",
         "ExpTransformer": "recSRuHKkZmwHINk6",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recdf2zLDa9FP22HM",
           "rec8Wr3GsnNP7Gghd",
           "recdWPLfpAb5njpwt",
-          "rec4HOCQsl48aHLbQ",
           "recd6gkxNsxzdKwnX",
           "recrpRozr2WQc40mz"
         ],
         "AutoNumber": 22,
+        "ParentTransformer": "reclAn6w105mmMayi",
         "TransformerNumber": 1022,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-3",
-        "Name": "1022-LOCKED-Generation-3-5020-'Add the notion of du",
+        "Name": "1022-LOCKED-Generation-3-5020-Add the notion of du",
+        "GenerationNumber": 3,
+        "ParentTransformerNumber": 1021,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1022 1021",
         "RawPrompt": "Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,",
-        "GeneratioNumber": 3,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1625,21 +1808,23 @@
       {
         "Generation": "rec7ka3c4BGjhN9dN",
         "ExpTransformer": "recG6QbNZGIWnqxb2",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "rec6DRKYuaEVc7UQC",
           "recjgb29xpJeE6Afx",
           "rec0EDj8l1KNXoldQ",
           "rectLTuzK4wSIsqhQ",
-          "recFtfcF8NIvvUvmy",
           "rec5iM2CwNeGnMZzl"
         ],
         "AutoNumber": 21,
+        "ParentTransformer": "reca7Gfxv0KMLAOJz",
         "TransformerNumber": 1021,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-2",
-        "Name": "1021-LOCKED-Generation-2-5018-'Add assigned to attr",
+        "Name": "1021-LOCKED-Generation-2-5018-Add assigned to attr",
+        "GenerationNumber": 2,
+        "ParentTransformerNumber": 1020,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1021 1020",
         "RawPrompt": "Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 2,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1649,15 +1834,16 @@
       {
         "Generation": "recOOhsTc8QeS4QCL",
         "ExpTransformer": "recrLRqehI58winaK",
-        "TransformedArtifacts": "recBR2KRmIwkX47Iy",
+        "TrialArtifacts": "recBR2KRmIwkX47Iy",
         "AutoNumber": 8,
         "IsArtifactValidator": "True",
         "TransformerNumber": 9008,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-3",
-        "Name": "9008-LOCKED-Generation-3-5007-'How many words are t",
+        "Name": "9008-LOCKED-Generation-3-5007-How many words are t",
+        "GenerationNumber": 3,
+        "AddDataCommand": "python ./add-data.py add-root 5 9008 ",
         "RawPrompt": "How many words are there?",
-        "GeneratioNumber": 3,
         "GenerationExp": "recW1A5DedlYoR6An",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1667,7 +1853,7 @@
       {
         "Generation": "recb394zuGgNoocna",
         "ExpTransformer": "recMDtAdYLUJiB32q",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recLwlGmpbQcOAavZ",
           "recXjqOpM0idw2MjH",
           "recnISd4YDCaw8hXZ",
@@ -1679,9 +1865,10 @@
         "TransformerNumber": 1012,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-2",
-        "Name": "1012-LOCKED-Generation-2-5012-'Add employee to the ",
+        "Name": "1012-LOCKED-Generation-2-5012-Add employee to the ",
+        "GenerationNumber": 2,
+        "AddDataCommand": "python ./add-data.py add-root 5 1012 ",
         "RawPrompt": "Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 2,
         "GenerationExp": "rec2FEIFfgH75YILP",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1691,7 +1878,7 @@
       {
         "Generation": "rec4u0oAL96jOz25A",
         "ExpTransformer": "recaA5iJAzZYc3kaY",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "recV5gAGwD71Ipuhm",
           "recs3d0ubIFAaOQdi",
           "recohHZ1q5Bj5qkJ2",
@@ -1700,12 +1887,15 @@
           "recxzkDJht6GWuHZz"
         ],
         "AutoNumber": 35,
+        "ParentTransformer": "recQqryPqWrLenFdE",
         "TransformerNumber": 1035,
         "ExpTransformerIsSyntaxFree": "True",
         "GenerationName": "Generation-6",
-        "Name": "1035-FREE-Generation-6-5028-'Write a single-sourc",
+        "Name": "1035-FREE-Generation-6-5028-Write a single-sourc",
+        "GenerationNumber": 6,
+        "ParentTransformerNumber": 1033,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1035 1033",
         "RawPrompt": "Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please",
-        "GeneratioNumber": 6,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1715,7 +1905,7 @@
       {
         "Generation": "rec7gQazwWTs39YDk",
         "ExpTransformer": "reciQUcauehxklMYi",
-        "TransformedArtifacts": [
+        "TrialArtifacts": [
           "rec9xIo4BhmWNuRsa",
           "recYvZHlVpwfzjEVn",
           "recWiM6U1KNguBBJD",
@@ -1724,12 +1914,15 @@
           "recwCHRafRXzkGcaB"
         ],
         "AutoNumber": 31,
+        "ParentTransformer": "recjRflJxgJCqBAai",
         "TransformerNumber": 1031,
         "ExpTransformerIsSyntaxFree": "True",
         "GenerationName": "Generation-3",
-        "Name": "1031-FREE-Generation-3-5025-'Add the notion of du",
+        "Name": "1031-FREE-Generation-3-5025-Add the notion of du",
+        "GenerationNumber": 3,
+        "ParentTransformerNumber": 1030,
+        "AddDataCommand": "python ./add-data.py add-generation 5 1031 1030",
         "RawPrompt": "Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.",
-        "GeneratioNumber": 3,
         "GenerationExp": "rec1moh66lbXJerna",
         "ExpAbstract": "Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "True",
@@ -1743,9 +1936,10 @@
         "TransformerNumber": 1005,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-1",
-        "Name": "1005-LOCKED-Generation-1-5004-'Write a golang scrip",
+        "Name": "1005-LOCKED-Generation-1-5004-Write a golang scrip",
+        "GenerationNumber": 1,
+        "AddDataCommand": "python ./add-data.py add-root 5 1005 ",
         "RawPrompt": "Write a golang script, based on all of these details.",
-        "GeneratioNumber": 1,
         "GenerationExp": "recW1A5DedlYoR6An",
         "ExpAbstract": "Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",
@@ -1760,9 +1954,10 @@
         "TransformerNumber": 9016,
         "ExpTransformerIsSyntaxFree": "",
         "GenerationName": "Generation-4",
-        "Name": "9016-LOCKED-Generation-4-5013-'Which part(s) of the",
+        "Name": "9016-LOCKED-Generation-4-5013-Which part(s) of the",
+        "GenerationNumber": 4,
+        "AddDataCommand": "python ./add-data.py add-root 5 9016 ",
         "RawPrompt": "Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe \"due dates\" are called \"deadlines\" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:\n\n{\n \"Features\":[\"Feature xyz\", \"Feature ...\",...],\n \"keywords\": [\n {\n \"Keyword Name\": \"to-do items\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"categories\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"due dates\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"priorities\",\n \"IsMissing\": false,\n \"AKA\": \"priority levels\"\n },\n {\n \"Keyword Name\": \"progress\",\n \"IsMissing\": false,\n \"AKA\": \"progress tracker\"\n },\n {\n \"Keyword Name\": \"statuses\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"reminders\",\n \"IsMissing\": true\n },\n {\n \"Keyword Name\": \"notifications\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completion\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo employees\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"duration\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"completed date\",\n \"IsMissing\": false\n },\n {\n \"Keyword Name\": \"todo colors\",\n \"IsMissing\": false\n }\n ]\n}",
-        "GeneratioNumber": 4,
         "GenerationExp": "rec2FEIFfgH75YILP",
         "ExpAbstract": "Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.",
         "IsActiveExp": "",

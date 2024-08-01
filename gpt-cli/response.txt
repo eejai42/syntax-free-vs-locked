@@ -1,18 +1,21 @@
 ```json
 {
-  "Features": ["Task Creation", "Task Completion", "Due Date Assignment", "Categorization"],
+  "Features": ["Task Creation", "Task Categorization", "Due Date Setting", "Reminder Notifications"],
   "Keywords": [
     {
       "KeywordName": "ToDoItems",
-      "IsMissing": true
+      "IsMissing": false,
+      "AKA": "tasks"
     },
     {
       "KeywordName": "Categories",
-      "IsMissing": false
+      "IsMissing": false,
+      "AKA": "distinct groups"
     },
     {
       "KeywordName": "DueDates",
-      "IsMissing": false
+      "IsMissing": false,
+      "AKA": "due date"
     },
     {
       "KeywordName": "Priorities",
@@ -28,15 +31,17 @@
     },
     {
       "KeywordName": "Reminders",
-      "IsMissing": true
+      "IsMissing": false,
+      "AKA": "reminder notifications"
     },
     {
       "KeywordName": "Notifications",
-      "IsMissing": true
+      "IsMissing": false,
+      "AKA": "reminder notifications"
     },
     {
       "KeywordName": "Completion",
-      "IsMissing": false
+      "IsMissing": true
     },
     {
       "KeywordName": "AssignedTo",
@@ -44,7 +49,7 @@
     },
     {
       "KeywordName": "Duration",
-      "IsMissing": false
+      "IsMissing": true
     },
     {
       "KeywordName": "CompletedDate",

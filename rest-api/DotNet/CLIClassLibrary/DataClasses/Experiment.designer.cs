@@ -77,6 +77,25 @@ namespace AirtableDirect.CLI.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AutoNumber")]
         public String AutoNumber { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SyntaxLockedTransformerNumbers")]
+        [RemoteIsCollection]
+        public Int32[] SyntaxLockedTransformerNumbers { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SyntaxFreeTransformerNumbers")]
+        [RemoteIsCollection]
+        public Int32[] SyntaxFreeTransformerNumbers { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Trials")]
+        [RemoteIsCollection]
+        public String[] Trials { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "RunTrialScript")]
+        public String RunTrialScript { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "GenerationAddDataCommandScripts")]
+        [RemoteIsCollection]
+        public String[] GenerationAddDataCommandScripts { get; set; }
+    
 
         
 
