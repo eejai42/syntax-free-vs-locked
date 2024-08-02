@@ -27,13 +27,22 @@ def clean_and_update_artifacts():
     artifacts = get_trial_artifacts_needing_cleaning()
     experiment_features = GetExperimentFeatures("ActiveExperiments")
     for artifact in artifacts:
+        cleaned_json = clean_json(artifact, experiment_features)
+        cleaned_json_string = json.dumps(cleaned_json, indent=4)
+
+        # Update the artifact with cleaned data and new fields
+        artifact['CleanValidationJson'] = cleaned_json_string
+        artifact['HasBeenAnalyzed'] = True
+        # if CountOfCharacteristics exists then..
+        artifact['CountOfCharacteristics'] = cleaned_json['CountOfCharacteristics'] if 'CountOfCharacteristics' in cleaned_json else 0
+        artifact['CountOfFeatures'] = cleaned_json['CountOfFeatures'] if 'CountOfFeatures' in cleaned_json else 0
+        artifact['CountOfAKAs'] = cleaned_json['CountOfAKAs'] if 'CountOfAKAs' in cleaned_json else 0
+        artifact['CountOfMismatches'] = cleaned_json['CountOfMismatches'] if 'CountOfMismatches' in cleaned_json else 0
         artifact["GenerationName"] = None
         artifact["GenerationTransformerNumber"] = None
         artifact["TransformerGeneratioNumber"] = None
         artifact["TransformerGenerationName"] = None
-        cleaned_json = clean_json(artifact['TrialArtifactValidationResponse'], experiment_features)
-        cleaned_json_string = json.dumps(cleaned_json, indent=4)
-        artifact['CleanValidationJson'] = cleaned_json_string
+
         update_trial_artifact(artifact)
 
 def extract_json_from_natural_language_text(llm_json_response):
@@ -154,7 +163,8 @@ def extract_clean_features_feature_elements(raw_feature_elements, experiment_fea
 
     return clean_features
 
-def clean_json(llm_json_response, experiment_features):
+def clean_json(artifact, experiment_features):
+    llm_json_response = artifact['TrialArtifactValidationResponse']
     # Extract JSON from natural language
     llm_json = extract_json_from_natural_language_text(llm_json_response)
     if not llm_json:

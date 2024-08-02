@@ -1,0 +1,6 @@
+Metric,Syntax-Locked-Median,Syntax-Locked Std Dev,Syntax-Free-Median,Syntax-Free Std Dev
+CountOfCharacteristics,5,1.810012405,4,0.813058685
+CountOfFeatures,5,1.831691097,4,1.155185605
+CountOfAKAs,4,2.536069262,1,0.964023722
+ChangeInCharacteristics,0.21,1.600474127,0.05,0.808047756
+ChangeInAKAs,0.02597,2.032460435,0.083333,1.293703779
