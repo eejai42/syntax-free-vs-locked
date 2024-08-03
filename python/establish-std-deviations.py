@@ -105,17 +105,17 @@ with pd.ExcelWriter("output_data.xlsx", engine='openpyxl') as writer:
 print("Data has been saved to 'output_data.xlsx' with original data and results.")
 
 # Function to create a box plot for each metric
-def create_box_plots():
-    for column in columns_to_analyze:
-        plt.figure(figsize=(10, 6))
-        sns.boxplot(x='ExpTransformerIsSyntaxFree', y=column, data=df, palette='Set2')
-        plt.title(f'Box Plot of {column} (0 = Syntax-Locked, 1 = Syntax-Free)')
-        plt.xticks([0, 1], ['Syntax-Locked', 'Syntax-Free'])
-        plt.xlabel('Methodology')
-        plt.ylabel(column)
-        plt.grid(True)
-        plt.savefig(f'{column}_boxplot.png')
-        plt.show()
+# def create_box_plots():
+#     for column in columns_to_analyze:
+#         plt.figure(figsize=(10, 6))
+#         sns.boxplot(x='ExpTransformerIsSyntaxFree', y=column, data=df, palette='Set2')
+#         plt.title(f'Box Plot of {column} (0 = Syntax-Locked, 1 = Syntax-Free)')
+#         plt.xticks([0, 1], ['Syntax-Locked', 'Syntax-Free'])
+#         plt.xlabel('Methodology')
+#         plt.ylabel(column)
+#         plt.grid(True)
+#         plt.savefig(f'{column}_boxplot.png')
+        # plt.show()
 
 # Function to create a distribution plot for each metric
 def create_distribution_plots():
@@ -129,7 +129,7 @@ def create_distribution_plots():
         plt.legend()
         plt.grid(True)
         plt.savefig(f'{column}_distribution.png')
-        plt.show()
+        # plt.show()
 
 # Function to create a bar plot comparing mean values
 def create_mean_comparison_plot():
@@ -143,7 +143,7 @@ def create_mean_comparison_plot():
     plt.xlabel('Metric')
     plt.grid(True)
     plt.savefig('mean_comparison.png')
-    plt.show()
+    # plt.show()
 
 # Call the functions to generate the plots
 create_box_plots()

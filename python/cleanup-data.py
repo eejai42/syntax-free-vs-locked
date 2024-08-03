@@ -4,7 +4,7 @@ import os
 import sys
 import re
 
-REST_BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImF1dGgwfDY2N2Y1YjU1OTBiOTYzZTM2NzIyNGUwOCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlaitoYW5nbWFuMUBzc290Lm1lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiZWoraGFuZ21hbjFAc3NvdC5tZSIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9kMmFiZmYzYmNhY2NmYmFlZmM0NjE2ODI1MTdlMTE3OD9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRmVqLnBuZyIsImVtYWlsX3ZlcmlmaWVkIjoiVHJ1ZSIsImV4cCI6MTcyMjU3ODY3MywiaXNzIjoiZWotdGljdGFjdG9lLWRlbW8udXMuYXV0aDAuY29tIiwiYXVkIjoiaHR0cHM6Ly9lai10aWN0YWN0b2UtZGVtby51cy5hdXRoMC5jb20vYXBpL3YyIn0.AnflVJjZmXdeGV6FGLCHFxDH2-2ALAf8uTO-1X5I_vU"
+REST_BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imdvb2dsZS1vYXV0aDJ8MTA1NzYwMDM4MzgyNzgzMTI0MTYxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IkVKIEFsZXhhbmRyYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVlamFpNDJAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0kxbWFHeXVIUG5tSWFFbG40cVI5UXFaUFdMX3NMLVZabmVfd1ZxeUV4bXg4b2JRYWJ6bXc9czk2LWMiLCJlbWFpbF92ZXJpZmllZCI6IlRydWUiLCJleHAiOjE3MjI2OTIzMzMsImlzcyI6ImVqLXRpY3RhY3RvZS1kZW1vLnVzLmF1dGgwLmNvbSIsImF1ZCI6Imh0dHBzOi8vZWotdGljdGFjdG9lLWRlbW8udXMuYXV0aDAuY29tL2FwaS92MiJ9.72HMn4RQhihzStjMCKoNqVHS1OnXEfXYwT4zC-DeJ10"
 BASE_URL = "https://localhost:42016/User"
 HEADERS = {
     "Authorization": f"Bearer {REST_BEARER_TOKEN}",
@@ -114,7 +114,7 @@ def normalize_feature_name(name, feature_data):
         if any(pm in name_lower for pm in partial_matches):
             return feature["Name"]
     
-    return None
+    return "MISSING_" + name
 
 def generate_sub_variations(variation):
     # Generate variations with spaces, no spaces, and hyphens
@@ -146,12 +146,19 @@ def extract_clean_features_feature_elements(raw_feature_elements, experiment_fea
 
         for keyword in raw_feature_elements:
             keyword_name = keyword.get("KeywordName") or keyword.get("Keyword Name") or keyword.get("Keyword")
-            if keyword_name and normalize_feature_name(keyword_name, experiment_features) == feature_name:
-                is_missing = keyword.get("IsMissing", False)
-                aka_name = keyword.get("AKA")
-                if aka_name and not are_names_equivalent(aka_name, feature_name):
-                    aka = aka_name
-                break
+            if keyword_name:
+                normalized_name = normalize_feature_name(keyword_name, experiment_features)
+                if normalized_name:
+                    if normalized_name == feature_name:
+                        is_missing = keyword.get("IsMissing", False)
+                        aka_name = keyword.get("AKA") or keyword_name
+                        if aka_name and not are_names_equivalent(aka_name, feature_name):
+                            aka = aka_name
+                        break
+                else:
+                    is_missing = True
+            else:
+                is_missing = True
         
         clean_feature = {
             "Name": feature_name,
