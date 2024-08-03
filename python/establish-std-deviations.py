@@ -2,6 +2,8 @@ import os
 import sys
 import openpyxl
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 from scipy.stats import ttest_ind
 
 # Load the CSV file
@@ -60,20 +62,20 @@ p_values = calculate_p_values()
 # Prepare the output data
 output_data = {
     'Metric': columns_to_analyze,
-    'Syntax-Locked Std Dev': [syntax_locked_stats[col]['Std Dev'] for col in columns_to_analyze],
-    'Syntax-Free Std Dev': [syntax_free_stats[col]['Std Dev'] for col in columns_to_analyze],
-    'P-Value': [f"{p_values[col]:.6f}" for col in columns_to_analyze],
-    'Std Dev Factor': [syntax_locked_stats[col]['Std Dev'] / syntax_free_stats[col]['Std Dev'] if syntax_free_stats[col]['Std Dev'] != 0 else None for col in columns_to_analyze],
-    'Syntax-Locked Count': [syntax_locked_stats[col]['Count'] for col in columns_to_analyze],
-    'Syntax-Free Count': [syntax_free_stats[col]['Count'] for col in columns_to_analyze],
-    'Syntax-Locked Mean': [syntax_locked_stats[col]['Mean'] for col in columns_to_analyze],
-    'Syntax-Free Mean': [syntax_free_stats[col]['Mean'] for col in columns_to_analyze],
-    'Syntax-Locked Median': [syntax_locked_stats[col]['Median'] for col in columns_to_analyze],
-    'Syntax-Free Median': [syntax_free_stats[col]['Median'] for col in columns_to_analyze],
-    'Syntax-Locked Min': [syntax_locked_stats[col]['Min'] for col in columns_to_analyze],
-    'Syntax-Free Min': [syntax_free_stats[col]['Min'] for col in columns_to_analyze],
-    'Syntax-Locked Max': [syntax_locked_stats[col]['Max'] for col in columns_to_analyze],
-    'Syntax-Free Max': [syntax_free_stats[col]['Max'] for col in columns_to_analyze],
+    'SLStdDev': [syntax_locked_stats[col]['Std Dev'] for col in columns_to_analyze],
+    'SFStdDev': [syntax_free_stats[col]['Std Dev'] for col in columns_to_analyze],
+    'PValue': [f"{p_values[col]:.6f}" for col in columns_to_analyze],
+    'StdDevFactor': [syntax_locked_stats[col]['Std Dev'] / syntax_free_stats[col]['Std Dev'] if syntax_free_stats[col]['Std Dev'] != 0 else None for col in columns_to_analyze],
+    'SLCount': [syntax_locked_stats[col]['Count'] for col in columns_to_analyze],
+    'SLMean': [syntax_locked_stats[col]['Mean'] for col in columns_to_analyze],
+    'SLMedian': [syntax_locked_stats[col]['Median'] for col in columns_to_analyze],
+    'SLMin': [syntax_locked_stats[col]['Min'] for col in columns_to_analyze],
+    'SLMax': [syntax_locked_stats[col]['Max'] for col in columns_to_analyze],
+    'SFCount': [syntax_free_stats[col]['Count'] for col in columns_to_analyze],
+    'SFMean': [syntax_free_stats[col]['Mean'] for col in columns_to_analyze],
+    'SFMedian': [syntax_free_stats[col]['Median'] for col in columns_to_analyze],
+    'SFMin': [syntax_free_stats[col]['Min'] for col in columns_to_analyze],
+    'SFMax': [syntax_free_stats[col]['Max'] for col in columns_to_analyze],
 }
 
 # Create a DataFrame for the output data
@@ -101,3 +103,49 @@ with pd.ExcelWriter("output_data.xlsx", engine='openpyxl') as writer:
     set_column_widths(worksheet2, output_df)
 
 print("Data has been saved to 'output_data.xlsx' with original data and results.")
+
+# Function to create a box plot for each metric
+def create_box_plots():
+    for column in columns_to_analyze:
+        plt.figure(figsize=(10, 6))
+        sns.boxplot(x='ExpTransformerIsSyntaxFree', y=column, data=df, palette='Set2')
+        plt.title(f'Box Plot of {column} (0 = Syntax-Locked, 1 = Syntax-Free)')
+        plt.xticks([0, 1], ['Syntax-Locked', 'Syntax-Free'])
+        plt.xlabel('Methodology')
+        plt.ylabel(column)
+        plt.grid(True)
+        plt.savefig(f'{column}_boxplot.png')
+        plt.show()
+
+# Function to create a distribution plot for each metric
+def create_distribution_plots():
+    for column in columns_to_analyze:
+        plt.figure(figsize=(10, 6))
+        sns.histplot(df[df['ExpTransformerIsSyntaxFree'] == 0][column], color='blue', label='Syntax-Locked', kde=True, stat="density", linewidth=0)
+        sns.histplot(df[df['ExpTransformerIsSyntaxFree'] == 1][column], color='green', label='Syntax-Free', kde=True, stat="density", linewidth=0)
+        plt.title(f'Distribution of {column}')
+        plt.xlabel(column)
+        plt.ylabel('Density')
+        plt.legend()
+        plt.grid(True)
+        plt.savefig(f'{column}_distribution.png')
+        plt.show()
+
+# Function to create a bar plot comparing mean values
+def create_mean_comparison_plot():
+    mean_values = output_df[['Metric', 'SLMean', 'SFMean']].melt(id_vars='Metric', var_name='Methodology', value_name='Mean')
+    
+    plt.figure(figsize=(12, 7))
+    sns.barplot(x='Metric', y='Mean', hue='Methodology', data=mean_values, palette='Set1')
+    plt.title('Comparison of Mean Values')
+    plt.xticks(rotation=45)
+    plt.ylabel('Mean')
+    plt.xlabel('Metric')
+    plt.grid(True)
+    plt.savefig('mean_comparison.png')
+    plt.show()
+
+# Call the functions to generate the plots
+create_box_plots()
+create_distribution_plots()
+create_mean_comparison_plot()
