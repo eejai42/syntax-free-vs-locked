@@ -1,6 +1,8 @@
 import os
 import sys
+import openpyxl
 import pandas as pd
+from scipy.stats import ttest_ind
 
 # Load the CSV file
 # Get the directory where the script is located
@@ -10,46 +12,92 @@ script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
 csv_file_path = os.path.join(script_directory, "trial.csv")
 df = pd.read_csv(csv_file_path)
 
-# Define columns to analyze for standard deviation
+# Define columns to analyze
 columns_to_analyze = [
     'CountOfCharacteristics',
-    'CountOfFeatures',
     'CountOfAKAs',
-    'CountOfMismatches',
     'ChangeInCharacteristics',
     'ChangeInAKAs'
 ]
 
 # Separate the syntax-locked and syntax-free groups
-syntax_locked_df = df[df['ExpTransformerIsSyntaxFree'].str.contains("0 checked out of 1")]
-syntax_free_df = df[df['ExpTransformerIsSyntaxFree'].str.contains("1 checked out of 1")]
+syntax_locked_df = df[df['ExpTransformerIsSyntaxFree'] == 0]
+syntax_free_df = df[df['ExpTransformerIsSyntaxFree'] == 1]
 
-# Function to calculate standard deviations
-def calculate_std_devs(group_df, group_name):
-    std_devs = {}
-    print(f"Standard Deviations for {group_name}:")
+# Function to calculate statistics
+def calculate_statistics(group_df, group_name):
+    statistics = {}
+    print(f"Statistics for {group_name}:")
     for column in columns_to_analyze:
-        std_dev = group_df[column].std()
-        std_devs[column] = std_dev
-        print(f"{column}: {std_dev}")
+        stats = {
+            'Count': group_df[column].count(),
+            'Mean': group_df[column].mean(),
+            'Median': group_df[column].median(),
+            'Min': group_df[column].min(),
+            'Max': group_df[column].max(),
+            'Std Dev': group_df[column].std()
+        }
+        statistics[column] = stats
+        print(f"{column}: {stats}")
     print("\n")
-    return std_devs
+    return statistics
 
-# Calculate standard deviations for each group
-syntax_locked_std_devs = calculate_std_devs(syntax_locked_df, "Syntax-Locked")
-syntax_free_std_devs = calculate_std_devs(syntax_free_df, "Syntax-Free")
+# Calculate statistics for each group
+syntax_locked_stats = calculate_statistics(syntax_locked_df, "Syntax-Locked")
+syntax_free_stats = calculate_statistics(syntax_free_df, "Syntax-Free")
+
+# Function to calculate p-values
+def calculate_p_values():
+    p_values = {}
+    for column in columns_to_analyze:
+        _, p_value = ttest_ind(syntax_locked_df[column], syntax_free_df[column], equal_var=False)
+        p_values[column] = p_value
+    return p_values
+
+# Calculate p-values for each metric
+p_values = calculate_p_values()
 
 # Prepare the output data
 output_data = {
     'Metric': columns_to_analyze,
-    'Syntax-Locked Std Dev': [syntax_locked_std_devs[col] for col in columns_to_analyze],
-    'Syntax-Free Std Dev': [syntax_free_std_devs[col] for col in columns_to_analyze]
+    'Syntax-Locked Std Dev': [syntax_locked_stats[col]['Std Dev'] for col in columns_to_analyze],
+    'Syntax-Free Std Dev': [syntax_free_stats[col]['Std Dev'] for col in columns_to_analyze],
+    'P-Value': [f"{p_values[col]:.6f}" for col in columns_to_analyze],
+    'Std Dev Factor': [syntax_locked_stats[col]['Std Dev'] / syntax_free_stats[col]['Std Dev'] if syntax_free_stats[col]['Std Dev'] != 0 else None for col in columns_to_analyze],
+    'Syntax-Locked Count': [syntax_locked_stats[col]['Count'] for col in columns_to_analyze],
+    'Syntax-Free Count': [syntax_free_stats[col]['Count'] for col in columns_to_analyze],
+    'Syntax-Locked Mean': [syntax_locked_stats[col]['Mean'] for col in columns_to_analyze],
+    'Syntax-Free Mean': [syntax_free_stats[col]['Mean'] for col in columns_to_analyze],
+    'Syntax-Locked Median': [syntax_locked_stats[col]['Median'] for col in columns_to_analyze],
+    'Syntax-Free Median': [syntax_free_stats[col]['Median'] for col in columns_to_analyze],
+    'Syntax-Locked Min': [syntax_locked_stats[col]['Min'] for col in columns_to_analyze],
+    'Syntax-Free Min': [syntax_free_stats[col]['Min'] for col in columns_to_analyze],
+    'Syntax-Locked Max': [syntax_locked_stats[col]['Max'] for col in columns_to_analyze],
+    'Syntax-Free Max': [syntax_free_stats[col]['Max'] for col in columns_to_analyze],
 }
 
 # Create a DataFrame for the output data
 output_df = pd.DataFrame(output_data)
 
-# Save the results to a new CSV file
-output_df.to_csv("std_devs_output.csv", index=False)
+# Create an Excel writer object and save the DataFrame to Excel
+with pd.ExcelWriter("output_data.xlsx", engine='openpyxl') as writer:
+    # Write original data to the first sheet
+    df.to_excel(writer, sheet_name='Original Data', index=False)
+    
+    # Write output data (statistics and p-values) to the second sheet
+    output_df.to_excel(writer, sheet_name='Results', index=False)
 
-print("Standard deviations have been saved to 'std_devs_output.csv'.")
+    # Adjust column widths for better visibility
+    worksheet1 = writer.sheets['Original Data']
+    worksheet2 = writer.sheets['Results']
+
+    # Function to set the column widths based on the maximum content width
+    def set_column_widths(worksheet, dataframe):
+        for i, column in enumerate(dataframe.columns):
+            max_length = max(dataframe[column].astype(str).apply(len).max(), len(column)) + 2
+            worksheet.column_dimensions[openpyxl.utils.get_column_letter(i+1)].width = max_length
+
+    set_column_widths(worksheet1, df)
+    set_column_widths(worksheet2, output_df)
+
+print("Data has been saved to 'output_data.xlsx' with original data and results.")
