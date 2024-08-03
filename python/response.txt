@@ -1,72 +1,128 @@
+Please validate the following JSON content. Additionally, remove the ability for users to delete to-do items:
+
 ```json
 {
-  "Features": ["Add To-Do Item", "Edit To-Do Item", "Delete To-Do Item", "Mark To-Do Item as Complete"],
-  "Keywords": [
-    {
-      "KeywordName": "ToDoItems",
-      "IsMissing": false,
-      "AKA": "tasks"
-    },
-    {
-      "KeywordName": "Categories",
-      "IsMissing": false,
-      "AKA": null
-    },
-    {
-      "KeywordName": "DueDates",
-      "IsMissing": true,
-      "AKA": null
-    },
-    {
-      "KeywordName": "Priorities",
-      "IsMissing": true,
-      "AKA": null
-    },
-    {
-      "KeywordName": "Progress",
-      "IsMissing": true,
-      "AKA": null
-    },
-    {
-      "KeywordName": "Statuses",
-      "IsMissing": false,
-      "AKA": "Status"
-    },
-    {
-      "KeywordName": "Reminders",
-      "IsMissing": true,
-      "AKA": null
-    },
-    {
-      "KeywordName": "Notifications",
-      "IsMissing": true,
-      "AKA": null
-    },
-    {
-      "KeywordName": "Completion",
-      "IsMissing": false,
-      "AKA": "Mark To-Do Item as Complete"
-    },
-    {
-      "KeywordName": "AssignedTo",
-      "IsMissing": true,
-      "AKA": null
-    },
-    {
-      "KeywordName": "Duration",
-      "IsMissing": false,
-      "AKA": null
-    },
-    {
-      "KeywordName": "CompletedDate",
-      "IsMissing": true,
-      "AKA": null
-    },
-    {
-      "KeywordName": "ToDoColors",
-      "IsMissing": true,
-      "AKA": null
-    }
-  ]
+  "ToDoProApp": {
+    "Name": "To-Do Pro",
+    "Version": "1.3",
+    "Features": [
+      {
+        "Id": 1,
+        "Name": "Add To-Do Item",
+        "Description": "Allows users to add a new to-do item to their list.",
+        "Example": {
+          "Input": {
+            "task": "Buy groceries",
+            "duration": "1 hour"
+          },
+          "Output": "To-do item 'Buy groceries' with duration '1 hour' added to your list."
+        }
+      },
+      {
+        "Id": 2,
+        "Name": "Edit To-Do Item",
+        "Description": "Allows users to edit an existing to-do item.",
+        "Example": {
+          "Input": {
+            "old": {
+              "task": "Buy groceries",
+              "duration": "1 hour"
+            },
+            "new": {
+              "task": "Buy groceries and cook dinner",
+              "duration": "2 hours"
+            }
+          },
+          "Output": "To-do item 'Buy groceries' with duration '1 hour' updated to 'Buy groceries and cook dinner' with duration '2 hours'."
+        }
+      },
+      {
+        "Id": 4,
+        "Name": "Mark To-Do Item as Complete",
+        "Description": "Allows users to mark a to-do item as complete.",
+        "Example": {
+          "Input": {
+            "task": "Buy groceries",
+            "duration": "1 hour"
+          },
+          "Output": "To-do item 'Buy groceries' with duration '1 hour' marked as complete."
+        }
+      }
+    ],
+    "Categories": [
+      {
+        "Id": 1,
+        "Name": "Personal",
+        "Examples": [
+          {
+            "Task": "Buy groceries",
+            "Duration": "1 hour"
+          },
+          {
+            "Task": "Call mom",
+            "Duration": "30 minutes"
+          },
+          {
+            "Task": "Go for a run",
+            "Duration": "45 minutes"
+          }
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "Work",
+        "Examples": [
+          {
+            "Task": "Finish project report",
+            "Duration": "3 hours"
+          },
+          {
+            "Task": "Email client",
+            "Duration": "15 minutes"
+          },
+          {
+            "Task": "Attend team meeting",
+            "Duration": "1 hour"
+          }
+        ]
+      },
+      {
+        "Id": 3,
+        "Name": "Shopping",
+        "Examples": [
+          {
+            "Task": "Buy milk",
+            "Duration": "10 minutes"
+          },
+          {
+            "Task": "Order new laptop",
+            "Duration": "30 minutes"
+          },
+          {
+            "Task": "Purchase birthday gift",
+            "Duration": "1 hour"
+          }
+        ]
+      },
+      {
+        "Id": 4,
+        "Name": "Errands",
+        "Examples": [
+          {
+            "Task": "Pick up dry cleaning",
+            "Duration": "20 minutes"
+          },
+          {
+            "Task": "Mail package",
+            "Duration": "15 minutes"
+          },
+          {
+            "Task": "Renew car insurance",
+            "Duration": "1 hour"
+          }
+        ]
+      }
+    ]
+  }
 }
 ```

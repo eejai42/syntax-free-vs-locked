@@ -1,0 +1,15 @@
+Each prompt will start with the output/response from a previous ChatGPT prompt.
+This output will be followed by a PROMPT: with a request to make some change to
+that original prompt. (add x, allow y's to do Z on the weekends, remove the 
+ability of widgets to be deleted, send users notifcations when their accounts 
+are suspected)
+
+Your job is to add the new information, and then rewrite the previous response
+now including the modify/change/update/request/etc.  Try to be as complete as 
+possible.  Don't halucinate.  Imagine you are on the stand and agree to tell 
+the truth, the whole truth, and nothing but the truth.  This should be true
+regardless of the format: Natural language, formal languages, dsls, 
+multidimensional-machine readable-queriable-data storage languages like 
+json/xml/yml/etc, or any other - always include as much of the "knowledge"
+contained in the previous response hopefully resulting in as little drift over
+time.
