@@ -12,7 +12,7 @@ HEADERS = {
 }
 
 def get_trial_artifacts_needing_cleaning():
-    url = f"{BASE_URL}/ArtifactAnalyses?view=NeedsCleanValidationJson"
+    url = f"{BASE_URL}/ArtifactAnalyses?view=NeedsCleanValidationJson&maxPages=100"
     response = requests.get(url, headers=HEADERS, verify=False)
     response.raise_for_status()
     return response.json()

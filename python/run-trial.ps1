@@ -1,4 +1,4 @@
-for ($i = 1; $i -le 50; $i++) {
+for ($i = 1; $i -le 1; $i++) {
     python ./add-data.py add-root 1 1026 
     python ./add-data.py add-generation 1 1030 1026
     python ./add-data.py add-generation 1 1031 1030
