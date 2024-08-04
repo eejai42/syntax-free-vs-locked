@@ -1,7 +1,26 @@
-Version 1.4 of To-Do Pro introduces four simple yet powerful features: task prioritization, due date reminders, progress tracking, and categorized to-do items. With task prioritization, users can now easily mark tasks as high, medium, or low priority, ensuring that the most critical tasks get the attention they deserve. Due date reminders help users stay on top of their deadlines by sending timely notifications, while progress tracking allows users to see how much of a task has been completed at a glance. Additionally, to-do items are now categorized for better organization, with examples including "Work" for tasks like "Finish project report," "Personal" for items such as "Buy groceries," and "Fitness" for activities like "Go for a run." These enhancements make To-Do Pro a more efficient and user-friendly tool for managing daily tasks and staying productive. Sandra and Tom discussed the feedback from initial users and decided to remove the "Assigned to" feature from to-do items, as it complicated the user interface for individual users who preferred a simpler task management tool. Sandra and Tom analyzed user data and feedback on the todo list app and agreed that the app was performing well with its current features, seeing no immediate need for additional changes. They opted to continue monitoring user satisfaction.
+CONTENT/TEXT BEING VALIDATED: ```prompt did not complete... :( try again```
 
-PROMPT: Cindy and Joan met to review the latest version of the todo app. After thorough discussion, they concluded that the app adequately met all the planned specifications and decided that no modifications were necessary at this moment.
+VALIDATION PROMPT: What (if anything) of the content being validated is in the app/features listed below, & if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
 
-DATA FORMAT: Natural Language 1 Paragraph English Description
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
 
-Start with the the previous response, make the change requested.  Include as much of the knowledge from the previous step as possible.
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]
