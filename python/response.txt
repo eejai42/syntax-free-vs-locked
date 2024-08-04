@@ -1,22 +1,59 @@
 ```json
 {
-  "Features": ["ToDoItems", "Categories", "Priorities", "Duration"],
+  "Features": ["ToDoItems", "Categories", "Duration"],
   "Keywords": [
-    { "KeywordName": "ToDoItems", "IsMissing": false },
-    { "KeywordName": "Categories", "IsMissing": false },
-    { "KeywordName": "DueDates", "IsMissing": true },
-    { "KeywordName": "Priorities", "IsMissing": false },
-    { "KeywordName": "Progress", "IsMissing": true },
-    { "KeywordName": "Statuses", "IsMissing": true },
-    { "KeywordName": "Reminders", "IsMissing": true },
-    { "KeywordName": "Notifications", "IsMissing": true },
-    { "KeywordName": "Completion", "IsMissing": true },
-    { "KeywordName": "AssignedTo", "IsMissing": true },
-    { "KeywordName": "Duration", "IsMissing": false },
-    { "KeywordName": "CompletedDate", "IsMissing": true },
-    { "KeywordName": "ToDoColors", "IsMissing": true }
+    {
+      "KeywordName": "ToDoItems",
+      "IsMissing": false
+    },
+    {
+      "KeywordName": "Categories",
+      "IsMissing": false
+    },
+    {
+      "KeywordName": "DueDates",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Priorities",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Progress",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Statuses",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Reminders",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Notifications",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Completion",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "AssignedTo",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "Duration",
+      "IsMissing": false
+    },
+    {
+      "KeywordName": "CompletedDate",
+      "IsMissing": true
+    },
+    {
+      "KeywordName": "ToDoColors",
+      "IsMissing": true
+    }
   ]
 }
 ```
-
-PROMPT: Add the ability to send users notifications when their accounts are suspected of suspicious activity.
