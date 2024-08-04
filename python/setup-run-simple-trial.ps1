@@ -13,3 +13,7 @@ for ($i = 1; $i -le 1; $i++) {
     python ./add-data.py add-generation 1 1038 1027
     python ./add-data.py add-generation 1 1039 1038
 }
+
+
+python ./step-2-connect-artifacts.py
+python ./step-3-cleanup-data.py
