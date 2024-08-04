@@ -1,140 +1,26 @@
-CONTENT/TEXT BEING VALIDATED: ``````json
-{
-  "ToDoProApp": {
-    "Name": "To-Do Pro",
-    "Version": "1.3",
-    "Features": [
-      {
-        "Id": 1,
-        "Name": "Add To-Do Item",
-        "Description": "Allows users to add a new to-do item to their list.",
-        "Example": {
-          "Input": {
-            "task": "Buy groceries",
-            "duration": "1 hour"
-          },
-          "Output": "To-do item 'Buy groceries' with duration '1 hour' added to your list."
-        }
-      },
-      {
-        "Id": 2,
-        "Name": "Edit To-Do Item",
-        "Description": "Allows users to edit an existing to-do item.",
-        "Example": {
-          "Input": {
-            "old": {
-              "task": "Buy groceries",
-              "duration": "1 hour"
-            },
-            "new": {
-              "task": "Buy groceries and cook dinner",
-              "duration": "2 hours"
-            }
-          },
-          "Output": "To-do item 'Buy groceries' with duration '1 hour' updated to 'Buy groceries and cook dinner' with duration '2 hours'."
-        }
-      },
-      {
-        "Id": 3,
-        "Name": "Delete To-Do Item",
-        "Description": "Allows users to delete a to-do item from their list.",
-        "Example": {
-          "Input": {
-            "task": "Buy groceries",
-            "duration": "1 hour"
-          },
-          "Output": "To-do item 'Buy groceries' with duration '1 hour' deleted from your list."
-        }
-      },
-      {
-        "Id": 4,
-        "Name": "Mark To-Do Item as Complete",
-        "Description": "Allows users to mark a to-do item as complete.",
-        "Example": {
-          "Input": {
-            "task": "Buy groceries",
-            "duration": "1 hour"
-          },
-          "Output": "To-do item 'Buy groceries' with duration '1 hour' marked as complete."
-        }
-      }
-    ],
-    "Categories": [
-      {
-        "Id": 1,
-        "Name": "Personal",
-        "Examples": [
-          {
-            "Task": "Buy groceries",
-            "Duration": "1 hour"
-          },
-          {
-            "Task": "Call mom",
-            "Duration": "30 minutes"
-          },
-          {
-            "Task": "Go for a run",
-            "Duration": "45 minutes"
-          }
-        ]
-      },
-      {
-        "Id": 2,
-        "Name": "Work",
-        "Examples": [
-          {
-            "Task": "Finish project report",
-            "Duration": "3 hours"
-          },
-          {
-            "Task": "Email client",
-            "Duration": "15 minutes"
-          },
-          {
-            "Task": "Attend team meeting",
-            "Duration": "1 hour"
-          }
-        ]
-      },
-      {
-        "Id": 3,
-        "Name": "Shopping",
-        "Examples": [
-          {
-            "Task": "Buy milk",
-            "Duration": "10 minutes"
-          },
-          {
-            "Task": "Order new laptop",
-            "Duration": "30 minutes"
-          },
-          {
-            "Task": "Purchase birthday gift",
-            "Duration": "1 hour"
-          }
-        ]
-      },
-      {
-        "Id": 4,
-        "Name": "Errands",
-        "Examples": [
-          {
-            "Task": "Pick up dry cleaning",
-            "Duration": "20 minutes"
-          },
-          {
-            "Task": "Mail package",
-            "Duration": "15 minutes"
-          },
-          {
-            "Task": "Renew car insurance",
-            "Duration": "1 hour"
-          }
-        ]
-      }
-    ]
-  }
-}
-``````
+CONTENT/TEXT BEING VALIDATED: ```The provided C# code defines a simple to-do list application. It includes a `ToDoItem` class with properties `Title`, `Category`, `Duration`, and `Priority`, and a constructor to initialize these properties. The `ToDoList` class maintains a list of `ToDoItem` objects and provides methods to add new items (`AddItem`), edit existing items by index (`EditItem`), and list all items (`ListItems`). The `Program` class contains the `Main` method, which creates an instance of `ToDoList`, adds several to-do items across different categories like "Work", "Personal", "Shopping", and "Errands" with varying durations and priorities, and then lists all the items to the console.```
 
-VALIDATION PROMPT: 
+VALIDATION PROMPT: What (if anything) of the content being validated is in the app/features listed below, & if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]

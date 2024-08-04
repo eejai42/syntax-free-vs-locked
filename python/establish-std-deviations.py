@@ -11,7 +11,7 @@ from scipy.stats import ttest_ind
 script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 # Construct the full path to the CSV file
-csv_file_path = os.path.join(script_directory, "trial.csv")
+csv_file_path = os.path.join(script_directory, "..", "trial.csv")
 df = pd.read_csv(csv_file_path)
 
 # Define columns to analyze
@@ -146,6 +146,6 @@ def create_mean_comparison_plot():
     # plt.show()
 
 # Call the functions to generate the plots
-create_box_plots()
+# create_box_plots()
 create_distribution_plots()
 create_mean_comparison_plot()

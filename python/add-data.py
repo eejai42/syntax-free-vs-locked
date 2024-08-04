@@ -21,7 +21,7 @@ def get_generation_transform_by_number(transform_number):
         return generator[0]
 
 def get_existing_artifact_without_validator(transform_number):
-    url = f"{BASE_URL}/TrialArtifacts?airtableWhere=OR(AND(TransformerNumber%3D{transform_number}%2cNOT(PrimaryExtensionArtifact))%2cArtifactIdentifier%3D{transform_number})"
+    url = f"{BASE_URL}/TrialArtifacts?airtableWhere=OR(AND(Trial=Blank(),TransformerNumber%3D{transform_number}%2cNOT(PrimaryExtensionArtifact))%2cArtifactIdentifier%3D{transform_number})"
     print("URL:", url)
     response = requests.get(url, headers=HEADERS, verify=False)
     response.raise_for_status()

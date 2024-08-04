@@ -1,128 +1,22 @@
-Please validate the following JSON content. Additionally, remove the ability for users to delete to-do items:
-
 ```json
 {
-  "ToDoProApp": {
-    "Name": "To-Do Pro",
-    "Version": "1.3",
-    "Features": [
-      {
-        "Id": 1,
-        "Name": "Add To-Do Item",
-        "Description": "Allows users to add a new to-do item to their list.",
-        "Example": {
-          "Input": {
-            "task": "Buy groceries",
-            "duration": "1 hour"
-          },
-          "Output": "To-do item 'Buy groceries' with duration '1 hour' added to your list."
-        }
-      },
-      {
-        "Id": 2,
-        "Name": "Edit To-Do Item",
-        "Description": "Allows users to edit an existing to-do item.",
-        "Example": {
-          "Input": {
-            "old": {
-              "task": "Buy groceries",
-              "duration": "1 hour"
-            },
-            "new": {
-              "task": "Buy groceries and cook dinner",
-              "duration": "2 hours"
-            }
-          },
-          "Output": "To-do item 'Buy groceries' with duration '1 hour' updated to 'Buy groceries and cook dinner' with duration '2 hours'."
-        }
-      },
-      {
-        "Id": 4,
-        "Name": "Mark To-Do Item as Complete",
-        "Description": "Allows users to mark a to-do item as complete.",
-        "Example": {
-          "Input": {
-            "task": "Buy groceries",
-            "duration": "1 hour"
-          },
-          "Output": "To-do item 'Buy groceries' with duration '1 hour' marked as complete."
-        }
-      }
-    ],
-    "Categories": [
-      {
-        "Id": 1,
-        "Name": "Personal",
-        "Examples": [
-          {
-            "Task": "Buy groceries",
-            "Duration": "1 hour"
-          },
-          {
-            "Task": "Call mom",
-            "Duration": "30 minutes"
-          },
-          {
-            "Task": "Go for a run",
-            "Duration": "45 minutes"
-          }
-        ]
-      },
-      {
-        "Id": 2,
-        "Name": "Work",
-        "Examples": [
-          {
-            "Task": "Finish project report",
-            "Duration": "3 hours"
-          },
-          {
-            "Task": "Email client",
-            "Duration": "15 minutes"
-          },
-          {
-            "Task": "Attend team meeting",
-            "Duration": "1 hour"
-          }
-        ]
-      },
-      {
-        "Id": 3,
-        "Name": "Shopping",
-        "Examples": [
-          {
-            "Task": "Buy milk",
-            "Duration": "10 minutes"
-          },
-          {
-            "Task": "Order new laptop",
-            "Duration": "30 minutes"
-          },
-          {
-            "Task": "Purchase birthday gift",
-            "Duration": "1 hour"
-          }
-        ]
-      },
-      {
-        "Id": 4,
-        "Name": "Errands",
-        "Examples": [
-          {
-            "Task": "Pick up dry cleaning",
-            "Duration": "20 minutes"
-          },
-          {
-            "Task": "Mail package",
-            "Duration": "15 minutes"
-          },
-          {
-            "Task": "Renew car insurance",
-            "Duration": "1 hour"
-          }
-        ]
-      }
-    ]
-  }
+  "Features": ["ToDoItems", "Categories", "Priorities", "Duration"],
+  "Keywords": [
+    { "KeywordName": "ToDoItems", "IsMissing": false },
+    { "KeywordName": "Categories", "IsMissing": false },
+    { "KeywordName": "DueDates", "IsMissing": true },
+    { "KeywordName": "Priorities", "IsMissing": false },
+    { "KeywordName": "Progress", "IsMissing": true },
+    { "KeywordName": "Statuses", "IsMissing": true },
+    { "KeywordName": "Reminders", "IsMissing": true },
+    { "KeywordName": "Notifications", "IsMissing": true },
+    { "KeywordName": "Completion", "IsMissing": true },
+    { "KeywordName": "AssignedTo", "IsMissing": true },
+    { "KeywordName": "Duration", "IsMissing": false },
+    { "KeywordName": "CompletedDate", "IsMissing": true },
+    { "KeywordName": "ToDoColors", "IsMissing": true }
+  ]
 }
 ```
+
+PROMPT: Add the ability to send users notifications when their accounts are suspected of suspicious activity.
