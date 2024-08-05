@@ -1,1 +1,46 @@
-prompt did not complete... :( try again
+CONTENT/TEXT BEING VALIDATED: ```The system is currently at version 1.3 and includes features such as adding, editing, categorizing, and marking tasks as complete. It allows users to organize their tasks into various categories. For example, the "Work" category includes tasks like finishing the quarterly report, emailing the client about the new project, and preparing a presentation for the Monday meeting. The "Personal" category includes tasks such as buying groceries, scheduling a dentist appointment, and calling mom. The "Fitness" category covers tasks like going for a 30-minute run, attending a yoga class, and planning weekly meal prep. Lastly, the "Errands" category includes tasks such as picking up dry cleaning, returning library books, and buying a birthday gift for Sarah.```
+
+VALIDATION PROMPT: What (if anything) of the content being validated is in the app/features listed below, & if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff. name)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }] 
+
+RESPONSE:
+{
+  "Features": ["adding", "editing", "categorizing", "marking tasks as complete"],
+  "Keywords": [
+    { "KeywordName": "ToDoItems", "IsMissing": false },
+    { "KeywordName": "Categories", "IsMissing": false },
+    { "KeywordName": "DueDates", "IsMissing": true },
+    { "KeywordName": "Priorities", "IsMissing": true },
+    { "KeywordName": "Progress", "IsMissing": true },
+    { "KeywordName": "Statuses", "IsMissing": true },
+    { "KeywordName": "Reminders", "IsMissing": true },
+    { "KeywordName": "Notifications", "IsMissing": true },
+    { "KeywordName": "Completion", "IsMissing": false },
+    { "KeywordName": "AssignedTo", "IsMissing": true },
+    { "KeywordName": "Duration", "IsMissing": true },
+    { "KeywordName": "CompletedDate", "IsMissing": true },
+    { "KeywordName": "ToDoColors", "IsMissing": true }
+  ]
+}

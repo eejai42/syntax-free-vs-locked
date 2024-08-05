@@ -1,41 +1,26 @@
-```json
-{
-  "meeting": {
-    "attendees": ["Cindy", "Joan"],
-    "agenda": "Review the latest version of the todo app",
-    "discussion": "After thorough discussion, they concluded that the app adequately met all the planned specifications.",
-    "decision": "No modifications were necessary at this moment."
-  },
-  "analysis": {
-    "attendees": ["Sandra", "Tom"],
-    "subject": "User data and feedback on the todo list app",
-    "discussion": "Sandra and Tom discussed the feedback from initial users and decided to remove the 'Assigned to' feature from todo items. They found that it complicated the user interface for individual users who preferred a simpler task management tool.",
-    "conclusion": "The app was performing well with its current features.",
-    "decision": "Remove the 'Assigned to' feature from todo items and continue monitoring user satisfaction."
-  },
-  "follow_up_meeting": {
-    "attendees": ["Cindy", "Joan"],
-    "agenda": "Review the current app design",
-    "discussion": "They reviewed the current app design and decided to add a duration feature for each task. They agreed that users should be able to set expected completion times for tasks, which would help in planning and time management.",
-    "decision": "Add a duration feature for each task."
-  },
-  "progress_review": {
-    "attendees": ["Bob", "Mary"],
-    "agenda": "Discuss the current state of the software",
-    "discussion": "Bob and Mary revisited the app's progress and discussed the current state of the software. They appreciated the seamless integration of the existing features and the app's overall stability.",
-    "decision": "No new changes were needed at this time."
-  },
-  "project_update": {
-    "attendees": ["Luke", "Bishop"],
-    "agenda": "Evaluate feedback on the app",
-    "discussion": "Luke and Bishop evaluated the feedback on the app and agreed that the current feature set was comprehensive and met user needs effectively.",
-    "decision": "Maintain the status quo and focus on refining the existing functionalities."
-  }
-}
-```
+CONTENT/TEXT BEING VALIDATED: ```The system is currently at version 1.3 and includes features such as adding, editing, categorizing, and marking tasks as complete. It allows users to organize their tasks into various categories. For example, the "Work" category includes tasks like finishing the quarterly report, emailing the client about the new project, and preparing a presentation for the Monday meeting. The "Personal" category includes tasks such as buying groceries, scheduling a dentist appointment, and calling mom. The "Fitness" category covers tasks like going for a 30-minute run, attending a yoga class, and planning weekly meal prep. Lastly, the "Errands" category includes tasks such as picking up dry cleaning, returning library books, and buying a birthday gift for Sarah.```
 
-PROMPT: In the final review session, Alex and Kim confirmed that the app’s architecture and codebase were robust. They discussed the long-term maintenance plan and agreed that no further developments were needed unless future user feedback indicated otherwise.
+VALIDATION PROMPT: What (if anything) of the content being validated is in the app/features listed below, & if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
 
-DATA FORMAT: JSON - Syntax Free SSoT
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
 
-Start with the the previous response, make the change requested.  Include as much of the knowledge from the previous step as possible.
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]

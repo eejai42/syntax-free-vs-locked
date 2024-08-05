@@ -10,15 +10,17 @@ from scipy.stats import ttest_ind
 # Get the directory where the script is located
 script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
 
+trial = "simple"
+# trial = "long_prompt"
+# trial = "format_toggle"
+
 # Construct the full path to the CSV file
-csv_file_path = os.path.join(script_directory, "..", "trial.csv")
+csv_file_path = os.path.join(script_directory, "..", f"{trial}_trial.csv")
 df = pd.read_csv(csv_file_path)
 
 # Define columns to analyze
 columns_to_analyze = [
-    'CountOfCharacteristics',
     'CountOfAKAs',
-    'ChangeInCharacteristics',
     'ChangeInAKAs'
 ]
 
@@ -82,7 +84,7 @@ output_data = {
 output_df = pd.DataFrame(output_data)
 
 # Create an Excel writer object and save the DataFrame to Excel
-with pd.ExcelWriter("output_data.xlsx", engine='openpyxl') as writer:
+with pd.ExcelWriter(f"{trial}_analysis.xlsx", engine='openpyxl') as writer:
     # Write original data to the first sheet
     df.to_excel(writer, sheet_name='Original Data', index=False)
     
@@ -128,7 +130,7 @@ def create_distribution_plots():
         plt.ylabel('Density')
         plt.legend()
         plt.grid(True)
-        png_file_path = os.path.join(script_directory, "..", f'{column}_distribution.png')
+        png_file_path = os.path.join(script_directory, "..", f'{trial}_{column}_distribution.png')
         plt.savefig(png_file_path)
         # plt.show()
 
