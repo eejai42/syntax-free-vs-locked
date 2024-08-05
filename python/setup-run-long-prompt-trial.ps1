@@ -1,4 +1,4 @@
-for ($i = 1; $i -le 25; $i++) {
+for ($i = 1; $i -le 20; $i++) {
     python ./step-1-add-data.py add-root 1 1042 
     python ./step-1-add-data.py add-generation 1 1043 1042
     python ./step-1-add-data.py add-generation 1 1044 1043
@@ -23,5 +23,5 @@ for ($i = 1; $i -le 25; $i++) {
 }
 
 
-python ./step-2- connect-artifacts.py
+python ./step-2-connect-artifacts.py
 python ./step-3-cleanup-data.py

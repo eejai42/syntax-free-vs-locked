@@ -24,7 +24,7 @@ const data = JSON.stringify({
     { role: "system", content: systemMessage },
     { role: "user", content: prompt }
   ],
-  max_tokens: 1000,
+  max_tokens: 1500,
   temperature: 0.5
 });
 

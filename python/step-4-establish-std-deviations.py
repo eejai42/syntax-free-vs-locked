@@ -128,7 +128,8 @@ def create_distribution_plots():
         plt.ylabel('Density')
         plt.legend()
         plt.grid(True)
-        plt.savefig(f'{column}_distribution.png')
+        png_file_path = os.path.join(script_directory, "..", f'{column}_distribution.png')
+        plt.savefig(png_file_path)
         # plt.show()
 
 # Function to create a bar plot comparing mean values
@@ -142,7 +143,8 @@ def create_mean_comparison_plot():
     plt.ylabel('Mean')
     plt.xlabel('Metric')
     plt.grid(True)
-    plt.savefig('mean_comparison.png')
+    png_file_path = os.path.join(script_directory, "..", 'mean_comparison.png')
+    plt.savefig(png_file_path)
     # plt.show()
 
 # Call the functions to generate the plots

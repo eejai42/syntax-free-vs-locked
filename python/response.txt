@@ -1,18 +1,1 @@
-{
-  "Features": ["ToDoItems", "Categories", "DueDates", "Priorities", "Progress", "Statuses", "Reminders", "Notifications", "Completion", "AssignedTo", "Duration", "CompletedDate", "ToDoColors"],
-  "Keywords": [
-    { "KeywordName": "ToDoItems", "IsMissing": true },
-    { "KeywordName": "Categories", "IsMissing": true },
-    { "KeywordName": "DueDates", "IsMissing": true },
-    { "KeywordName": "Priorities", "IsMissing": true },
-    { "KeywordName": "Progress", "IsMissing": true },
-    { "KeywordName": "Statuses", "IsMissing": true },
-    { "KeywordName": "Reminders", "IsMissing": true },
-    { "KeywordName": "Notifications", "IsMissing": true },
-    { "KeywordName": "Completion", "IsMissing": true },
-    { "KeywordName": "AssignedTo", "IsMissing": true },
-    { "KeywordName": "Duration", "IsMissing": true },
-    { "KeywordName": "CompletedDate", "IsMissing": true },
-    { "KeywordName": "ToDoColors", "IsMissing": true }
-  ]
-}
+prompt did not complete... :( try again

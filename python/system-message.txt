@@ -2,7 +2,8 @@ Each prompt will start with the output/response from a previous ChatGPT prompt.
 This output will be followed by a PROMPT: with a request to make some change to
 that original prompt. (add x, allow y's to do Z on the weekends, remove the 
 ability of widgets to be deleted, send users notifcations when their accounts 
-are suspected)
+are suspected).  Be as specific as possible with details about the request, 
+features, examples, etc.
 
 Your job is to add the new information, and then rewrite the previous response
 now including the modify/change/update/request/etc.  Try to be as complete as 

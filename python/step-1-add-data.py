@@ -1,9 +1,10 @@
+from time import sleep
 import requests
 import json
 import os
 import sys
 
-REST_BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imdvb2dsZS1vYXV0aDJ8MTA1NzYwMDM4MzgyNzgzMTI0MTYxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IkVKIEFsZXhhbmRyYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVlamFpNDJAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0kxbWFHeXVIUG5tSWFFbG40cVI5UXFaUFdMX3NMLVZabmVfd1ZxeUV4bXg4b2JRYWJ6bXc9czk2LWMiLCJlbWFpbF92ZXJpZmllZCI6IlRydWUiLCJleHAiOjE3MjI4MjM3MDUsImlzcyI6ImVqLXRpY3RhY3RvZS1kZW1vLnVzLmF1dGgwLmNvbSIsImF1ZCI6Imh0dHBzOi8vZWotdGljdGFjdG9lLWRlbW8udXMuYXV0aDAuY29tL2FwaS92MiJ9.blIjJCTFrXYpJvquW133qaw65H7DBzerbCLUBamizxI"
+REST_BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imdvb2dsZS1vYXV0aDJ8MTA1NzYwMDM4MzgyNzgzMTI0MTYxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IkVKIEFsZXhhbmRyYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVlamFpNDJAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0kxbWFHeXVIUG5tSWFFbG40cVI5UXFaUFdMX3NMLVZabmVfd1ZxeUV4bXg4b2JRYWJ6bXc9czk2LWMiLCJlbWFpbF92ZXJpZmllZCI6IlRydWUiLCJleHAiOjE3MjI4NjgwOTYsImlzcyI6ImVqLXRpY3RhY3RvZS1kZW1vLnVzLmF1dGgwLmNvbSIsImF1ZCI6Imh0dHBzOi8vZWotdGljdGFjdG9lLWRlbW8udXMuYXV0aDAuY29tL2FwaS92MiJ9.vzbd2vFYnz_WJ1yKLynjMFcp3ZBEvBXSY06yaBH6_Ck"
 BASE_URL = "https://localhost:42016/User"
 HEADERS = {
     "Authorization": f"Bearer {REST_BEARER_TOKEN}",
@@ -57,20 +58,56 @@ def get_trial_artifact_by_id(artifact_id):
     response.raise_for_status()
     return response.json()[0]
 
-def write_prompt_to_file(prompt):
-    # make response.txt say "prompt did not complete... :( try again"
+def write_prompt_and_setup_response_file(prompt):
+    # Initially set up the response file to indicate that the prompt has not yet completed
     with open("response.txt", "w", encoding="utf-8") as file:
         file.write("prompt did not complete... :( try again")
-
+    
+    # Write the prompt to a text file for the GPT process
     with open("prompt.txt", "w", encoding="utf-8") as file:
         file.write(prompt)
 
 def run_gpt():
+    # Execute the GPT process using the system command
     os.system("gpt prompt.txt")
 
 def read_response_from_file():
+    # Read the response from the output file
     with open("response.txt", "r", encoding="utf-8") as file:
         return file.read()
+
+def process_prompt_and_response(artifact, prompt_field, actual_prompt_field, response_field):
+    suggested_prompt = artifact[prompt_field]
+
+    # if suggested prompt is "" reload artifact = get_trial_artifact_by_id(artifact_id["TrialArtifactId"])
+    if suggested_prompt == "":
+        artifact = get_trial_artifact_by_id(artifact["TrialArtifactId"])
+        suggested_prompt = artifact[prompt_field]
+        if (suggested_prompt == ""):
+            suggested_prompt = "This is a default prompt. Please provide a prompt for the artifact."
+            artifact[prompt_field] = suggested_prompt
+            artifact[actual_prompt_field] = suggested_prompt
+            artifact[response_field] = "Prompt processing failed after 3 attempts."
+            return artifact
+    
+    response = "prompt did not complete"
+    attempt = 0
+    while attempt < 10 and "prompt did not complete" in response:
+        write_prompt_and_setup_response_file(suggested_prompt)
+        run_gpt()
+        response = read_response_from_file()
+        attempt += 1
+        if "prompt did not complete" in response:
+            suggested_prompt += " [Retry " + attempt + "] - try something different this time.\n"  # Add a retry indicator to the prompt
+            sleep(1)  # Add a delay to allow the prompt to complete
+
+    # If after 3 tries the prompt still did not complete, handle the case (e.g., log, alert, or use a fallback response)
+    if "prompt did not complete" in response:
+        response = "Prompt processing failed after 3 attempts."
+
+    artifact[actual_prompt_field] = suggested_prompt  # Usually, the actual prompt is the same as the suggested unless changed dynamically
+    artifact[response_field] = response
+    return artifact
 
 def update_trial_artifact(artifact):
     url = f"{BASE_URL}/TrialArtifact"
@@ -80,16 +117,6 @@ def update_trial_artifact(artifact):
     response = requests.put(url, json=payload, headers=HEADERS, verify=False)
     response.raise_for_status()
     return response.json()
-
-def process_prompt_and_response(artifact, prompt_field, actual_prompt_field, response_field):
-    suggested_prompt = artifact[prompt_field]
-    write_prompt_to_file(suggested_prompt)
-    run_gpt()
-    actual_prompt = suggested_prompt
-    response = read_response_from_file()
-    artifact[actual_prompt_field] = actual_prompt
-    artifact[response_field] = response
-    return artifact
 
 def root_prompt(iterations=1, transformer_number=1001):
     if (iterations > 1000):
@@ -121,6 +148,12 @@ def root_prompt(iterations=1, transformer_number=1001):
         
         # Process the validation prompt and response
         artifact = process_prompt_and_response(artifact, "SuggestedValidationPrompt", "ActualValidationPrompt", "ValidationResponse")
+        if (artifact.get("Response") is None or artifact.get("Response") == ""):
+            print("Prompt processing failed after 3 attempts.")
+            sleep(15)
+            artifact = process_prompt_and_response(artifact, "SuggestedValidationPrompt", "ActualValidationPrompt", "ValidationResponse")
+            sleep(5)
+            break
         updated_artifact = update_trial_artifact(artifact)
         print("Validation artifact updated successfully:", updated_artifact)
 

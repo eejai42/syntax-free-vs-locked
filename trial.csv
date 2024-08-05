@@ -1,401 +1,401 @@
 ﻿Name,ArtifactIdentifier,GenerationName,PrevGenArtifactIdentifier,PrevGenName,RootArtifactIdentifier,CountOfCharacteristics,PrevGenCountOfCharacteristics,ChangeInCharacteristics,CountOfAKAs,PrevGenCountOfAKAs,ChangeInAKAs,ExpTransformerIsSyntaxFree
-12445:12445-Analysis-Locked,12445,106-Long Prompt Experiment-Generation-1,,,12445,7.000,,0.000000,0.000,,0.000,0
-12445:12446-Analysis-Locked,12446,106-Long Prompt Experiment-Generation-2,12454,106-Long Prompt Experiment-Generation-10,12445,9.000,1.000,8.000000,1.000,0.000,1.000,0
-12445:12447-Analysis-Locked,12447,106-Long Prompt Experiment-Generation-3,12446,106-Long Prompt Experiment-Generation-2,12445,7.000,9.000,2.000000,0.000,1.000,1.000,0
-12445:12448-Analysis-Locked,12448,106-Long Prompt Experiment-Generation-4,12447,106-Long Prompt Experiment-Generation-3,12445,8.000,7.000,1.000000,1.000,0.000,1.000,0
-12445:12449-Analysis-Locked,12449,106-Long Prompt Experiment-Generation-5,12448,106-Long Prompt Experiment-Generation-4,12445,9.000,8.000,1.000000,0.000,1.000,1.000,0
-12445:12450-Analysis-Locked,12450,106-Long Prompt Experiment-Generation-6,12449,106-Long Prompt Experiment-Generation-5,12445,5.000,9.000,4.000000,7.000,0.000,7.000,0
-12445:12451-Analysis-Locked,12451,106-Long Prompt Experiment-Generation-7,12450,106-Long Prompt Experiment-Generation-6,12445,0.000,5.000,5.000000,0.000,7.000,7.000,0
-12445:12452-Analysis-Locked,12452,106-Long Prompt Experiment-Generation-8,12451,106-Long Prompt Experiment-Generation-7,12445,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12445:12453-Analysis-Locked,12453,106-Long Prompt Experiment-Generation-9,12452,106-Long Prompt Experiment-Generation-8,12445,0.000,2.000,2.000000,0.000,0.000,0.000,0
-12445:12454-Analysis-Locked,12454,106-Long Prompt Experiment-Generation-10,12445,106-Long Prompt Experiment-Generation-1,12445,1.000,7.000,6.000000,0.000,0.000,0.000,0
-12465:12465-Analysis-Locked,12465,106-Long Prompt Experiment-Generation-1,,,12465,3.000,,0.000000,0.000,,0.000,0
-12465:12466-Analysis-Locked,12466,106-Long Prompt Experiment-Generation-2,12474,106-Long Prompt Experiment-Generation-10,12465,5.000,2.000,3.000000,1.000,0.000,1.000,0
-12465:12467-Analysis-Locked,12467,106-Long Prompt Experiment-Generation-3,12466,106-Long Prompt Experiment-Generation-2,12465,3.000,5.000,2.000000,0.000,1.000,1.000,0
-12465:12468-Analysis-Locked,12468,106-Long Prompt Experiment-Generation-4,12467,106-Long Prompt Experiment-Generation-3,12465,6.000,3.000,3.000000,1.000,0.000,1.000,0
-12465:12469-Analysis-Locked,12469,106-Long Prompt Experiment-Generation-5,12468,106-Long Prompt Experiment-Generation-4,12465,6.000,6.000,0.000000,2.000,1.000,1.000,0
-12465:12470-Analysis-Locked,12470,106-Long Prompt Experiment-Generation-6,12469,106-Long Prompt Experiment-Generation-5,12465,4.000,6.000,2.000000,0.000,2.000,2.000,0
-12465:12471-Analysis-Locked,12471,106-Long Prompt Experiment-Generation-7,12470,106-Long Prompt Experiment-Generation-6,12465,0.000,4.000,4.000000,0.000,0.000,0.000,0
-12465:12472-Analysis-Locked,12472,106-Long Prompt Experiment-Generation-8,12471,106-Long Prompt Experiment-Generation-7,12465,1.000,0.000,1.000000,0.000,0.000,0.000,0
-12465:12473-Analysis-Locked,12473,106-Long Prompt Experiment-Generation-9,12472,106-Long Prompt Experiment-Generation-8,12465,0.000,1.000,1.000000,0.000,0.000,0.000,0
-12465:12474-Analysis-Locked,12474,106-Long Prompt Experiment-Generation-10,12465,106-Long Prompt Experiment-Generation-1,12465,2.000,3.000,1.000000,0.000,0.000,0.000,0
-12485:12485-Analysis-Locked,12485,106-Long Prompt Experiment-Generation-1,,,12485,5.000,,0.000000,5.000,,0.000,0
-12485:12486-Analysis-Locked,12486,106-Long Prompt Experiment-Generation-2,12494,106-Long Prompt Experiment-Generation-10,12485,4.000,1.000,3.000000,5.000,0.000,5.000,0
-12485:12487-Analysis-Locked,12487,106-Long Prompt Experiment-Generation-3,12486,106-Long Prompt Experiment-Generation-2,12485,5.000,4.000,1.000000,3.000,5.000,2.000,0
-12485:12488-Analysis-Locked,12488,106-Long Prompt Experiment-Generation-4,12487,106-Long Prompt Experiment-Generation-3,12485,5.000,5.000,0.000000,3.000,3.000,0.000,0
-12485:12489-Analysis-Locked,12489,106-Long Prompt Experiment-Generation-5,12488,106-Long Prompt Experiment-Generation-4,12485,5.000,5.000,0.000000,3.000,3.000,0.000,0
-12485:12490-Analysis-Locked,12490,106-Long Prompt Experiment-Generation-6,12489,106-Long Prompt Experiment-Generation-5,12485,4.000,5.000,1.000000,6.000,3.000,3.000,0
-12485:12491-Analysis-Locked,12491,106-Long Prompt Experiment-Generation-7,12490,106-Long Prompt Experiment-Generation-6,12485,0.000,4.000,4.000000,0.000,6.000,6.000,0
-12485:12492-Analysis-Locked,12492,106-Long Prompt Experiment-Generation-8,12491,106-Long Prompt Experiment-Generation-7,12485,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12485:12493-Analysis-Locked,12493,106-Long Prompt Experiment-Generation-9,12492,106-Long Prompt Experiment-Generation-8,12485,1.000,2.000,1.000000,0.000,0.000,0.000,0
-12485:12494-Analysis-Locked,12494,106-Long Prompt Experiment-Generation-10,12485,106-Long Prompt Experiment-Generation-1,12485,1.000,5.000,4.000000,0.000,5.000,5.000,0
-12505:12505-Analysis-Locked,12505,106-Long Prompt Experiment-Generation-1,,,12505,6.000,,0.000000,4.000,,0.000,0
-12505:12506-Analysis-Locked,12506,106-Long Prompt Experiment-Generation-2,12514,106-Long Prompt Experiment-Generation-10,12505,8.000,1.000,7.000000,4.000,0.000,4.000,0
-12505:12507-Analysis-Locked,12507,106-Long Prompt Experiment-Generation-3,12506,106-Long Prompt Experiment-Generation-2,12505,8.000,8.000,0.000000,4.000,4.000,0.000,0
-12505:12508-Analysis-Locked,12508,106-Long Prompt Experiment-Generation-4,12507,106-Long Prompt Experiment-Generation-3,12505,6.000,8.000,2.000000,4.000,4.000,0.000,0
-12505:12509-Analysis-Locked,12509,106-Long Prompt Experiment-Generation-5,12508,106-Long Prompt Experiment-Generation-4,12505,7.000,6.000,1.000000,4.000,4.000,0.000,0
-12505:12510-Analysis-Locked,12510,106-Long Prompt Experiment-Generation-6,12509,106-Long Prompt Experiment-Generation-5,12505,5.000,7.000,2.000000,5.000,4.000,1.000,0
-12505:12511-Analysis-Locked,12511,106-Long Prompt Experiment-Generation-7,12510,106-Long Prompt Experiment-Generation-6,12505,0.000,5.000,5.000000,0.000,5.000,5.000,0
-12505:12512-Analysis-Locked,12512,106-Long Prompt Experiment-Generation-8,12511,106-Long Prompt Experiment-Generation-7,12505,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12505:12513-Analysis-Locked,12513,106-Long Prompt Experiment-Generation-9,12512,106-Long Prompt Experiment-Generation-8,12505,0.000,2.000,2.000000,0.000,0.000,0.000,0
-12505:12514-Analysis-Locked,12514,106-Long Prompt Experiment-Generation-10,12505,106-Long Prompt Experiment-Generation-1,12505,1.000,6.000,5.000000,0.000,4.000,4.000,0
-12525:12525-Analysis-Locked,12525,106-Long Prompt Experiment-Generation-1,,,12525,5.000,,0.000000,3.000,,0.000,0
-12525:12526-Analysis-Locked,12526,106-Long Prompt Experiment-Generation-2,12534,106-Long Prompt Experiment-Generation-10,12525,6.000,1.000,5.000000,3.000,0.000,3.000,0
-12525:12527-Analysis-Locked,12527,106-Long Prompt Experiment-Generation-3,12526,106-Long Prompt Experiment-Generation-2,12525,6.000,6.000,0.000000,3.000,3.000,0.000,0
-12525:12528-Analysis-Locked,12528,106-Long Prompt Experiment-Generation-4,12527,106-Long Prompt Experiment-Generation-3,12525,6.000,6.000,0.000000,3.000,3.000,0.000,0
-12525:12529-Analysis-Locked,12529,106-Long Prompt Experiment-Generation-5,12528,106-Long Prompt Experiment-Generation-4,12525,6.000,6.000,0.000000,3.000,3.000,0.000,0
-12525:12530-Analysis-Locked,12530,106-Long Prompt Experiment-Generation-6,12529,106-Long Prompt Experiment-Generation-5,12525,7.000,6.000,1.000000,4.000,3.000,1.000,0
-12525:12531-Analysis-Locked,12531,106-Long Prompt Experiment-Generation-7,12530,106-Long Prompt Experiment-Generation-6,12525,0.000,7.000,7.000000,0.000,4.000,4.000,0
-12525:12532-Analysis-Locked,12532,106-Long Prompt Experiment-Generation-8,12531,106-Long Prompt Experiment-Generation-7,12525,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12525:12533-Analysis-Locked,12533,106-Long Prompt Experiment-Generation-9,12532,106-Long Prompt Experiment-Generation-8,12525,12.000,2.000,10.000000,0.000,0.000,0.000,0
-12525:12534-Analysis-Locked,12534,106-Long Prompt Experiment-Generation-10,12525,106-Long Prompt Experiment-Generation-1,12525,1.000,5.000,4.000000,0.000,3.000,3.000,0
-12545:12545-Analysis-Locked,12545,106-Long Prompt Experiment-Generation-1,,,12545,0.000,,0.000000,0.000,,0.000,0
-12545:12546-Analysis-Locked,12546,106-Long Prompt Experiment-Generation-2,12554,106-Long Prompt Experiment-Generation-10,12545,4.000,1.000,3.000000,0.000,0.000,0.000,0
-12545:12547-Analysis-Locked,12547,106-Long Prompt Experiment-Generation-3,12546,106-Long Prompt Experiment-Generation-2,12545,4.000,4.000,0.000000,0.000,0.000,0.000,0
-12545:12548-Analysis-Locked,12548,106-Long Prompt Experiment-Generation-4,12547,106-Long Prompt Experiment-Generation-3,12545,5.000,4.000,1.000000,0.000,0.000,0.000,0
-12545:12549-Analysis-Locked,12549,106-Long Prompt Experiment-Generation-5,12548,106-Long Prompt Experiment-Generation-4,12545,5.000,5.000,0.000000,3.000,0.000,3.000,0
-12545:12550-Analysis-Locked,12550,106-Long Prompt Experiment-Generation-6,12549,106-Long Prompt Experiment-Generation-5,12545,6.000,5.000,1.000000,0.000,3.000,3.000,0
-12545:12551-Analysis-Locked,12551,106-Long Prompt Experiment-Generation-7,12550,106-Long Prompt Experiment-Generation-6,12545,0.000,6.000,6.000000,0.000,0.000,0.000,0
-12545:12552-Analysis-Locked,12552,106-Long Prompt Experiment-Generation-8,12551,106-Long Prompt Experiment-Generation-7,12545,3.000,0.000,3.000000,0.000,0.000,0.000,0
-12545:12553-Analysis-Locked,12553,106-Long Prompt Experiment-Generation-9,12552,106-Long Prompt Experiment-Generation-8,12545,0.000,3.000,3.000000,0.000,0.000,0.000,0
-12545:12554-Analysis-Locked,12554,106-Long Prompt Experiment-Generation-10,12545,106-Long Prompt Experiment-Generation-1,12545,1.000,0.000,1.000000,0.000,0.000,0.000,0
-12565:12565-Analysis-Locked,12565,106-Long Prompt Experiment-Generation-1,,,12565,4.000,,0.000000,0.000,,0.000,0
-12565:12566-Analysis-Locked,12566,106-Long Prompt Experiment-Generation-2,12574,106-Long Prompt Experiment-Generation-10,12565,4.000,0.000,4.000000,0.000,0.000,0.000,0
-12565:12567-Analysis-Locked,12567,106-Long Prompt Experiment-Generation-3,12566,106-Long Prompt Experiment-Generation-2,12565,3.000,4.000,1.000000,0.000,0.000,0.000,0
-12565:12568-Analysis-Locked,12568,106-Long Prompt Experiment-Generation-4,12567,106-Long Prompt Experiment-Generation-3,12565,3.000,3.000,0.000000,0.000,0.000,0.000,0
-12565:12569-Analysis-Locked,12569,106-Long Prompt Experiment-Generation-5,12568,106-Long Prompt Experiment-Generation-4,12565,3.000,3.000,0.000000,1.000,0.000,1.000,0
-12565:12570-Analysis-Locked,12570,106-Long Prompt Experiment-Generation-6,12569,106-Long Prompt Experiment-Generation-5,12565,4.000,3.000,1.000000,2.000,1.000,1.000,0
-12565:12571-Analysis-Locked,12571,106-Long Prompt Experiment-Generation-7,12570,106-Long Prompt Experiment-Generation-6,12565,0.000,4.000,4.000000,0.000,2.000,2.000,0
-12565:12572-Analysis-Locked,12572,106-Long Prompt Experiment-Generation-8,12571,106-Long Prompt Experiment-Generation-7,12565,1.000,0.000,1.000000,0.000,0.000,0.000,0
-12565:12573-Analysis-Locked,12573,106-Long Prompt Experiment-Generation-9,12572,106-Long Prompt Experiment-Generation-8,12565,13.000,1.000,12.000000,0.000,0.000,0.000,0
-12565:12574-Analysis-Locked,12574,106-Long Prompt Experiment-Generation-10,12565,106-Long Prompt Experiment-Generation-1,12565,0.000,4.000,4.000000,0.000,0.000,0.000,0
-12585:12585-Analysis-Locked,12585,106-Long Prompt Experiment-Generation-1,,,12585,2.000,,0.000000,0.000,,0.000,0
-12585:12586-Analysis-Locked,12586,106-Long Prompt Experiment-Generation-2,12594,106-Long Prompt Experiment-Generation-10,12585,3.000,1.000,2.000000,0.000,0.000,0.000,0
-12585:12587-Analysis-Locked,12587,106-Long Prompt Experiment-Generation-3,12586,106-Long Prompt Experiment-Generation-2,12585,3.000,3.000,0.000000,0.000,0.000,0.000,0
-12585:12588-Analysis-Locked,12588,106-Long Prompt Experiment-Generation-4,12587,106-Long Prompt Experiment-Generation-3,12585,2.000,3.000,1.000000,0.000,0.000,0.000,0
-12585:12589-Analysis-Locked,12589,106-Long Prompt Experiment-Generation-5,12588,106-Long Prompt Experiment-Generation-4,12585,4.000,2.000,2.000000,0.000,0.000,0.000,0
-12585:12590-Analysis-Locked,12590,106-Long Prompt Experiment-Generation-6,12589,106-Long Prompt Experiment-Generation-5,12585,0.000,4.000,4.000000,0.000,0.000,0.000,0
-12585:12591-Analysis-Locked,12591,106-Long Prompt Experiment-Generation-7,12590,106-Long Prompt Experiment-Generation-6,12585,0.000,0.000,0.000000,0.000,0.000,0.000,0
-12585:12592-Analysis-Locked,12592,106-Long Prompt Experiment-Generation-8,12591,106-Long Prompt Experiment-Generation-7,12585,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12585:12593-Analysis-Locked,12593,106-Long Prompt Experiment-Generation-9,12592,106-Long Prompt Experiment-Generation-8,12585,0.000,2.000,2.000000,0.000,0.000,0.000,0
-12585:12594-Analysis-Locked,12594,106-Long Prompt Experiment-Generation-10,12585,106-Long Prompt Experiment-Generation-1,12585,1.000,2.000,1.000000,0.000,0.000,0.000,0
-12605:12605-Analysis-Locked,12605,106-Long Prompt Experiment-Generation-1,,,12605,7.000,,0.000000,4.000,,0.000,0
-12605:12606-Analysis-Locked,12606,106-Long Prompt Experiment-Generation-2,12614,106-Long Prompt Experiment-Generation-10,12605,6.000,1.000,5.000000,5.000,0.000,5.000,0
-12605:12607-Analysis-Locked,12607,106-Long Prompt Experiment-Generation-3,12606,106-Long Prompt Experiment-Generation-2,12605,5.000,6.000,1.000000,4.000,5.000,1.000,0
-12605:12608-Analysis-Locked,12608,106-Long Prompt Experiment-Generation-4,12607,106-Long Prompt Experiment-Generation-3,12605,8.000,5.000,3.000000,4.000,4.000,0.000,0
-12605:12609-Analysis-Locked,12609,106-Long Prompt Experiment-Generation-5,12608,106-Long Prompt Experiment-Generation-4,12605,8.000,8.000,0.000000,5.000,4.000,1.000,0
-12605:12610-Analysis-Locked,12610,106-Long Prompt Experiment-Generation-6,12609,106-Long Prompt Experiment-Generation-5,12605,8.000,8.000,0.000000,5.000,5.000,0.000,0
-12605:12611-Analysis-Locked,12611,106-Long Prompt Experiment-Generation-7,12610,106-Long Prompt Experiment-Generation-6,12605,0.000,8.000,8.000000,0.000,5.000,5.000,0
-12605:12612-Analysis-Locked,12612,106-Long Prompt Experiment-Generation-8,12611,106-Long Prompt Experiment-Generation-7,12605,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12605:12613-Analysis-Locked,12613,106-Long Prompt Experiment-Generation-9,12612,106-Long Prompt Experiment-Generation-8,12605,0.000,2.000,2.000000,0.000,0.000,0.000,0
-12605:12614-Analysis-Locked,12614,106-Long Prompt Experiment-Generation-10,12605,106-Long Prompt Experiment-Generation-1,12605,1.000,7.000,6.000000,0.000,4.000,4.000,0
-12625:12625-Analysis-Locked,12625,106-Long Prompt Experiment-Generation-1,,,12625,4.000,,0.000000,0.000,,0.000,0
-12625:12626-Analysis-Locked,12626,106-Long Prompt Experiment-Generation-2,12634,106-Long Prompt Experiment-Generation-10,12625,5.000,1.000,4.000000,0.000,0.000,0.000,0
-12625:12627-Analysis-Locked,12627,106-Long Prompt Experiment-Generation-3,12626,106-Long Prompt Experiment-Generation-2,12625,4.000,5.000,1.000000,0.000,0.000,0.000,0
-12625:12628-Analysis-Locked,12628,106-Long Prompt Experiment-Generation-4,12627,106-Long Prompt Experiment-Generation-3,12625,4.000,4.000,0.000000,0.000,0.000,0.000,0
-12625:12629-Analysis-Locked,12629,106-Long Prompt Experiment-Generation-5,12628,106-Long Prompt Experiment-Generation-4,12625,4.000,4.000,0.000000,0.000,0.000,0.000,0
-12625:12630-Analysis-Locked,12630,106-Long Prompt Experiment-Generation-6,12629,106-Long Prompt Experiment-Generation-5,12625,5.000,4.000,1.000000,0.000,0.000,0.000,0
-12625:12631-Analysis-Locked,12631,106-Long Prompt Experiment-Generation-7,12630,106-Long Prompt Experiment-Generation-6,12625,0.000,5.000,5.000000,0.000,0.000,0.000,0
-12625:12632-Analysis-Locked,12632,106-Long Prompt Experiment-Generation-8,12631,106-Long Prompt Experiment-Generation-7,12625,2.000,0.000,2.000000,2.000,0.000,2.000,0
-12625:12633-Analysis-Locked,12633,106-Long Prompt Experiment-Generation-9,12632,106-Long Prompt Experiment-Generation-8,12625,0.000,2.000,2.000000,0.000,2.000,2.000,0
-12625:12634-Analysis-Locked,12634,106-Long Prompt Experiment-Generation-10,12625,106-Long Prompt Experiment-Generation-1,12625,1.000,4.000,3.000000,0.000,0.000,0.000,0
-12645:12645-Analysis-Locked,12645,106-Long Prompt Experiment-Generation-1,,,12645,6.000,,0.000000,4.000,,0.000,0
-12645:12646-Analysis-Locked,12646,106-Long Prompt Experiment-Generation-2,12654,106-Long Prompt Experiment-Generation-10,12645,9.000,1.000,8.000000,4.000,0.000,4.000,0
-12645:12647-Analysis-Locked,12647,106-Long Prompt Experiment-Generation-3,12646,106-Long Prompt Experiment-Generation-2,12645,6.000,9.000,3.000000,4.000,4.000,0.000,0
-12645:12648-Analysis-Locked,12648,106-Long Prompt Experiment-Generation-4,12647,106-Long Prompt Experiment-Generation-3,12645,7.000,6.000,1.000000,4.000,4.000,0.000,0
-12645:12649-Analysis-Locked,12649,106-Long Prompt Experiment-Generation-5,12648,106-Long Prompt Experiment-Generation-4,12645,8.000,7.000,1.000000,4.000,4.000,0.000,0
-12645:12650-Analysis-Locked,12650,106-Long Prompt Experiment-Generation-6,12649,106-Long Prompt Experiment-Generation-5,12645,7.000,8.000,1.000000,5.000,4.000,1.000,0
-12645:12651-Analysis-Locked,12651,106-Long Prompt Experiment-Generation-7,12650,106-Long Prompt Experiment-Generation-6,12645,0.000,7.000,7.000000,0.000,5.000,5.000,0
-12645:12652-Analysis-Locked,12652,106-Long Prompt Experiment-Generation-8,12651,106-Long Prompt Experiment-Generation-7,12645,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12645:12653-Analysis-Locked,12653,106-Long Prompt Experiment-Generation-9,12652,106-Long Prompt Experiment-Generation-8,12645,0.000,2.000,2.000000,0.000,0.000,0.000,0
-12645:12654-Analysis-Locked,12654,106-Long Prompt Experiment-Generation-10,12645,106-Long Prompt Experiment-Generation-1,12645,1.000,6.000,5.000000,0.000,4.000,4.000,0
-12665:12665-Analysis-Locked,12665,106-Long Prompt Experiment-Generation-1,,,12665,5.000,,0.000000,4.000,,0.000,0
-12665:12666-Analysis-Locked,12666,106-Long Prompt Experiment-Generation-2,12674,106-Long Prompt Experiment-Generation-10,12665,7.000,1.000,6.000000,2.000,0.000,2.000,0
-12665:12667-Analysis-Locked,12667,106-Long Prompt Experiment-Generation-3,12666,106-Long Prompt Experiment-Generation-2,12665,5.000,7.000,2.000000,0.000,2.000,2.000,0
-12665:12668-Analysis-Locked,12668,106-Long Prompt Experiment-Generation-4,12667,106-Long Prompt Experiment-Generation-3,12665,6.000,5.000,1.000000,4.000,0.000,4.000,0
-12665:12669-Analysis-Locked,12669,106-Long Prompt Experiment-Generation-5,12668,106-Long Prompt Experiment-Generation-4,12665,7.000,6.000,1.000000,2.000,4.000,2.000,0
-12665:12670-Analysis-Locked,12670,106-Long Prompt Experiment-Generation-6,12669,106-Long Prompt Experiment-Generation-5,12665,7.000,7.000,0.000000,0.000,2.000,2.000,0
-12665:12671-Analysis-Locked,12671,106-Long Prompt Experiment-Generation-7,12670,106-Long Prompt Experiment-Generation-6,12665,0.000,7.000,7.000000,0.000,0.000,0.000,0
-12665:12672-Analysis-Locked,12672,106-Long Prompt Experiment-Generation-8,12671,106-Long Prompt Experiment-Generation-7,12665,4.000,0.000,4.000000,3.000,0.000,3.000,0
-12665:12673-Analysis-Locked,12673,106-Long Prompt Experiment-Generation-9,12672,106-Long Prompt Experiment-Generation-8,12665,0.000,4.000,4.000000,0.000,3.000,3.000,0
-12665:12674-Analysis-Locked,12674,106-Long Prompt Experiment-Generation-10,12665,106-Long Prompt Experiment-Generation-1,12665,1.000,5.000,4.000000,0.000,4.000,4.000,0
-12685:12685-Analysis-Locked,12685,106-Long Prompt Experiment-Generation-1,,,12685,2.000,,0.000000,1.000,,0.000,0
-12685:12686-Analysis-Locked,12686,106-Long Prompt Experiment-Generation-2,12694,106-Long Prompt Experiment-Generation-10,12685,3.000,1.000,2.000000,0.000,0.000,0.000,0
-12685:12687-Analysis-Locked,12687,106-Long Prompt Experiment-Generation-3,12686,106-Long Prompt Experiment-Generation-2,12685,4.000,3.000,1.000000,0.000,0.000,0.000,0
-12685:12688-Analysis-Locked,12688,106-Long Prompt Experiment-Generation-4,12687,106-Long Prompt Experiment-Generation-3,12685,4.000,4.000,0.000000,0.000,0.000,0.000,0
-12685:12689-Analysis-Locked,12689,106-Long Prompt Experiment-Generation-5,12688,106-Long Prompt Experiment-Generation-4,12685,4.000,4.000,0.000000,1.000,0.000,1.000,0
-12685:12690-Analysis-Locked,12690,106-Long Prompt Experiment-Generation-6,12689,106-Long Prompt Experiment-Generation-5,12685,4.000,4.000,0.000000,0.000,1.000,1.000,0
-12685:12691-Analysis-Locked,12691,106-Long Prompt Experiment-Generation-7,12690,106-Long Prompt Experiment-Generation-6,12685,0.000,4.000,4.000000,0.000,0.000,0.000,0
-12685:12692-Analysis-Locked,12692,106-Long Prompt Experiment-Generation-8,12691,106-Long Prompt Experiment-Generation-7,12685,4.000,0.000,4.000000,0.000,0.000,0.000,0
-12685:12693-Analysis-Locked,12693,106-Long Prompt Experiment-Generation-9,12692,106-Long Prompt Experiment-Generation-8,12685,0.000,4.000,4.000000,0.000,0.000,0.000,0
-12685:12694-Analysis-Locked,12694,106-Long Prompt Experiment-Generation-10,12685,106-Long Prompt Experiment-Generation-1,12685,1.000,2.000,1.000000,0.000,1.000,1.000,0
-12705:12705-Analysis-Locked,12705,106-Long Prompt Experiment-Generation-1,,,12705,4.000,,0.000000,0.000,,0.000,0
-12705:12706-Analysis-Locked,12706,106-Long Prompt Experiment-Generation-2,12714,106-Long Prompt Experiment-Generation-10,12705,4.000,1.000,3.000000,0.000,0.000,0.000,0
-12705:12707-Analysis-Locked,12707,106-Long Prompt Experiment-Generation-3,12706,106-Long Prompt Experiment-Generation-2,12705,4.000,4.000,0.000000,0.000,0.000,0.000,0
-12705:12708-Analysis-Locked,12708,106-Long Prompt Experiment-Generation-4,12707,106-Long Prompt Experiment-Generation-3,12705,5.000,4.000,1.000000,0.000,0.000,0.000,0
-12705:12709-Analysis-Locked,12709,106-Long Prompt Experiment-Generation-5,12708,106-Long Prompt Experiment-Generation-4,12705,5.000,5.000,0.000000,0.000,0.000,0.000,0
-12705:12710-Analysis-Locked,12710,106-Long Prompt Experiment-Generation-6,12709,106-Long Prompt Experiment-Generation-5,12705,6.000,5.000,1.000000,0.000,0.000,0.000,0
-12705:12711-Analysis-Locked,12711,106-Long Prompt Experiment-Generation-7,12710,106-Long Prompt Experiment-Generation-6,12705,0.000,6.000,6.000000,0.000,0.000,0.000,0
-12705:12712-Analysis-Locked,12712,106-Long Prompt Experiment-Generation-8,12711,106-Long Prompt Experiment-Generation-7,12705,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12705:12713-Analysis-Locked,12713,106-Long Prompt Experiment-Generation-9,12712,106-Long Prompt Experiment-Generation-8,12705,1.000,2.000,1.000000,0.000,0.000,0.000,0
-12705:12714-Analysis-Locked,12714,106-Long Prompt Experiment-Generation-10,12705,106-Long Prompt Experiment-Generation-1,12705,1.000,4.000,3.000000,0.000,0.000,0.000,0
-12725:12725-Analysis-Locked,12725,106-Long Prompt Experiment-Generation-1,,,12725,6.000,,0.000000,4.000,,0.000,0
-12725:12726-Analysis-Locked,12726,106-Long Prompt Experiment-Generation-2,12734,106-Long Prompt Experiment-Generation-10,12725,8.000,1.000,7.000000,5.000,0.000,5.000,0
-12725:12727-Analysis-Locked,12727,106-Long Prompt Experiment-Generation-3,12726,106-Long Prompt Experiment-Generation-2,12725,0.000,8.000,8.000000,0.000,5.000,5.000,0
-12725:12728-Analysis-Locked,12728,106-Long Prompt Experiment-Generation-4,12727,106-Long Prompt Experiment-Generation-3,12725,6.000,0.000,6.000000,4.000,0.000,4.000,0
-12725:12729-Analysis-Locked,12729,106-Long Prompt Experiment-Generation-5,12728,106-Long Prompt Experiment-Generation-4,12725,8.000,6.000,2.000000,4.000,4.000,0.000,0
-12725:12730-Analysis-Locked,12730,106-Long Prompt Experiment-Generation-6,12729,106-Long Prompt Experiment-Generation-5,12725,4.000,8.000,4.000000,7.000,4.000,3.000,0
-12725:12731-Analysis-Locked,12731,106-Long Prompt Experiment-Generation-7,12730,106-Long Prompt Experiment-Generation-6,12725,0.000,4.000,4.000000,0.000,7.000,7.000,0
-12725:12732-Analysis-Locked,12732,106-Long Prompt Experiment-Generation-8,12731,106-Long Prompt Experiment-Generation-7,12725,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12725:12733-Analysis-Locked,12733,106-Long Prompt Experiment-Generation-9,12732,106-Long Prompt Experiment-Generation-8,12725,0.000,2.000,2.000000,0.000,0.000,0.000,0
-12725:12734-Analysis-Locked,12734,106-Long Prompt Experiment-Generation-10,12725,106-Long Prompt Experiment-Generation-1,12725,1.000,6.000,5.000000,0.000,4.000,4.000,0
-12745:12745-Analysis-Locked,12745,106-Long Prompt Experiment-Generation-1,,,12745,3.000,,0.000000,0.000,,0.000,0
-12745:12746-Analysis-Locked,12746,106-Long Prompt Experiment-Generation-2,12754,106-Long Prompt Experiment-Generation-10,12745,4.000,1.000,3.000000,0.000,0.000,0.000,0
-12745:12747-Analysis-Locked,12747,106-Long Prompt Experiment-Generation-3,12746,106-Long Prompt Experiment-Generation-2,12745,3.000,4.000,1.000000,0.000,0.000,0.000,0
-12745:12748-Analysis-Locked,12748,106-Long Prompt Experiment-Generation-4,12747,106-Long Prompt Experiment-Generation-3,12745,0.000,3.000,3.000000,0.000,0.000,0.000,0
-12745:12749-Analysis-Locked,12749,106-Long Prompt Experiment-Generation-5,12748,106-Long Prompt Experiment-Generation-4,12745,4.000,0.000,4.000000,0.000,0.000,0.000,0
-12745:12750-Analysis-Locked,12750,106-Long Prompt Experiment-Generation-6,12749,106-Long Prompt Experiment-Generation-5,12745,5.000,4.000,1.000000,0.000,0.000,0.000,0
-12745:12751-Analysis-Locked,12751,106-Long Prompt Experiment-Generation-7,12750,106-Long Prompt Experiment-Generation-6,12745,0.000,5.000,5.000000,0.000,0.000,0.000,0
-12745:12752-Analysis-Locked,12752,106-Long Prompt Experiment-Generation-8,12751,106-Long Prompt Experiment-Generation-7,12745,1.000,0.000,1.000000,3.000,0.000,3.000,0
-12745:12753-Analysis-Locked,12753,106-Long Prompt Experiment-Generation-9,12752,106-Long Prompt Experiment-Generation-8,12745,0.000,1.000,1.000000,0.000,3.000,3.000,0
-12745:12754-Analysis-Locked,12754,106-Long Prompt Experiment-Generation-10,12745,106-Long Prompt Experiment-Generation-1,12745,1.000,3.000,2.000000,0.000,0.000,0.000,0
-12765:12765-Analysis-Locked,12765,106-Long Prompt Experiment-Generation-1,,,12765,5.000,,0.000000,0.000,,0.000,0
-12765:12766-Analysis-Locked,12766,106-Long Prompt Experiment-Generation-2,12774,106-Long Prompt Experiment-Generation-10,12765,6.000,1.000,5.000000,2.000,0.000,2.000,0
-12765:12767-Analysis-Locked,12767,106-Long Prompt Experiment-Generation-3,12766,106-Long Prompt Experiment-Generation-2,12765,5.000,6.000,1.000000,1.000,2.000,1.000,0
-12765:12768-Analysis-Locked,12768,106-Long Prompt Experiment-Generation-4,12767,106-Long Prompt Experiment-Generation-3,12765,5.000,5.000,0.000000,1.000,1.000,0.000,0
-12765:12769-Analysis-Locked,12769,106-Long Prompt Experiment-Generation-5,12768,106-Long Prompt Experiment-Generation-4,12765,5.000,5.000,0.000000,1.000,1.000,0.000,0
-12765:12770-Analysis-Locked,12770,106-Long Prompt Experiment-Generation-6,12769,106-Long Prompt Experiment-Generation-5,12765,7.000,5.000,2.000000,3.000,1.000,2.000,0
-12765:12771-Analysis-Locked,12771,106-Long Prompt Experiment-Generation-7,12770,106-Long Prompt Experiment-Generation-6,12765,0.000,7.000,7.000000,0.000,3.000,3.000,0
-12765:12772-Analysis-Locked,12772,106-Long Prompt Experiment-Generation-8,12771,106-Long Prompt Experiment-Generation-7,12765,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12765:12773-Analysis-Locked,12773,106-Long Prompt Experiment-Generation-9,12772,106-Long Prompt Experiment-Generation-8,12765,0.000,2.000,2.000000,0.000,0.000,0.000,0
-12765:12774-Analysis-Locked,12774,106-Long Prompt Experiment-Generation-10,12765,106-Long Prompt Experiment-Generation-1,12765,1.000,5.000,4.000000,0.000,0.000,0.000,0
-12785:12785-Analysis-Locked,12785,106-Long Prompt Experiment-Generation-1,,,12785,6.000,,0.000000,4.000,,0.000,0
-12785:12786-Analysis-Locked,12786,106-Long Prompt Experiment-Generation-2,12794,106-Long Prompt Experiment-Generation-10,12785,7.000,1.000,6.000000,4.000,0.000,4.000,0
-12785:12787-Analysis-Locked,12787,106-Long Prompt Experiment-Generation-3,12786,106-Long Prompt Experiment-Generation-2,12785,0.000,7.000,7.000000,0.000,4.000,4.000,0
-12785:12788-Analysis-Locked,12788,106-Long Prompt Experiment-Generation-4,12787,106-Long Prompt Experiment-Generation-3,12785,6.000,0.000,6.000000,4.000,0.000,4.000,0
-12785:12789-Analysis-Locked,12789,106-Long Prompt Experiment-Generation-5,12788,106-Long Prompt Experiment-Generation-4,12785,6.000,6.000,0.000000,5.000,4.000,1.000,0
-12785:12790-Analysis-Locked,12790,106-Long Prompt Experiment-Generation-6,12789,106-Long Prompt Experiment-Generation-5,12785,7.000,6.000,1.000000,5.000,5.000,0.000,0
-12785:12791-Analysis-Locked,12791,106-Long Prompt Experiment-Generation-7,12790,106-Long Prompt Experiment-Generation-6,12785,0.000,7.000,7.000000,0.000,5.000,5.000,0
-12785:12792-Analysis-Locked,12792,106-Long Prompt Experiment-Generation-8,12791,106-Long Prompt Experiment-Generation-7,12785,3.000,0.000,3.000000,0.000,0.000,0.000,0
-12785:12793-Analysis-Locked,12793,106-Long Prompt Experiment-Generation-9,12792,106-Long Prompt Experiment-Generation-8,12785,0.000,3.000,3.000000,0.000,0.000,0.000,0
-12785:12794-Analysis-Locked,12794,106-Long Prompt Experiment-Generation-10,12785,106-Long Prompt Experiment-Generation-1,12785,1.000,6.000,5.000000,0.000,4.000,4.000,0
-12805:12805-Analysis-Locked,12805,106-Long Prompt Experiment-Generation-1,,,12805,3.000,,0.000000,0.000,,0.000,0
-12805:12806-Analysis-Locked,12806,106-Long Prompt Experiment-Generation-2,12814,106-Long Prompt Experiment-Generation-10,12805,4.000,0.000,4.000000,0.000,0.000,0.000,0
-12805:12807-Analysis-Locked,12807,106-Long Prompt Experiment-Generation-3,12806,106-Long Prompt Experiment-Generation-2,12805,4.000,4.000,0.000000,0.000,0.000,0.000,0
-12805:12808-Analysis-Locked,12808,106-Long Prompt Experiment-Generation-4,12807,106-Long Prompt Experiment-Generation-3,12805,3.000,4.000,1.000000,0.000,0.000,0.000,0
-12805:12809-Analysis-Locked,12809,106-Long Prompt Experiment-Generation-5,12808,106-Long Prompt Experiment-Generation-4,12805,3.000,3.000,0.000000,0.000,0.000,0.000,0
-12805:12810-Analysis-Locked,12810,106-Long Prompt Experiment-Generation-6,12809,106-Long Prompt Experiment-Generation-5,12805,4.000,3.000,1.000000,0.000,0.000,0.000,0
-12805:12811-Analysis-Locked,12811,106-Long Prompt Experiment-Generation-7,12810,106-Long Prompt Experiment-Generation-6,12805,0.000,4.000,4.000000,0.000,0.000,0.000,0
-12805:12812-Analysis-Locked,12812,106-Long Prompt Experiment-Generation-8,12811,106-Long Prompt Experiment-Generation-7,12805,0.000,0.000,0.000000,0.000,0.000,0.000,0
-12805:12813-Analysis-Locked,12813,106-Long Prompt Experiment-Generation-9,12812,106-Long Prompt Experiment-Generation-8,12805,0.000,0.000,0.000000,0.000,0.000,0.000,0
-12805:12814-Analysis-Locked,12814,106-Long Prompt Experiment-Generation-10,12805,106-Long Prompt Experiment-Generation-1,12805,0.000,3.000,3.000000,0.000,0.000,0.000,0
-12825:12825-Analysis-Locked,12825,106-Long Prompt Experiment-Generation-1,,,12825,4.000,,0.000000,0.000,,0.000,0
-12825:12826-Analysis-Locked,12826,106-Long Prompt Experiment-Generation-2,12834,106-Long Prompt Experiment-Generation-10,12825,5.000,1.000,4.000000,0.000,0.000,0.000,0
-12825:12827-Analysis-Locked,12827,106-Long Prompt Experiment-Generation-3,12826,106-Long Prompt Experiment-Generation-2,12825,6.000,5.000,1.000000,0.000,0.000,0.000,0
-12825:12828-Analysis-Locked,12828,106-Long Prompt Experiment-Generation-4,12827,106-Long Prompt Experiment-Generation-3,12825,6.000,6.000,0.000000,0.000,0.000,0.000,0
-12825:12829-Analysis-Locked,12829,106-Long Prompt Experiment-Generation-5,12828,106-Long Prompt Experiment-Generation-4,12825,5.000,6.000,1.000000,0.000,0.000,0.000,0
-12825:12830-Analysis-Locked,12830,106-Long Prompt Experiment-Generation-6,12829,106-Long Prompt Experiment-Generation-5,12825,6.000,5.000,1.000000,0.000,0.000,0.000,0
-12825:12831-Analysis-Locked,12831,106-Long Prompt Experiment-Generation-7,12830,106-Long Prompt Experiment-Generation-6,12825,0.000,6.000,6.000000,0.000,0.000,0.000,0
-12825:12832-Analysis-Locked,12832,106-Long Prompt Experiment-Generation-8,12831,106-Long Prompt Experiment-Generation-7,12825,2.000,0.000,2.000000,0.000,0.000,0.000,0
-12825:12833-Analysis-Locked,12833,106-Long Prompt Experiment-Generation-9,12832,106-Long Prompt Experiment-Generation-8,12825,0.000,2.000,2.000000,0.000,0.000,0.000,0
-12825:12834-Analysis-Locked,12834,106-Long Prompt Experiment-Generation-10,12825,106-Long Prompt Experiment-Generation-1,12825,1.000,4.000,3.000000,0.000,0.000,0.000,0
-12455:12455-Analysis-FREE,12455,106-Long Prompt Experiment-Generation-1,,,12455,3.000,,0.000000,0.000,,0.000,1
-12455:12456-Analysis-FREE,12456,106-Long Prompt Experiment-Generation-2,12464,106-Long Prompt Experiment-Generation-10,12455,4.000,0.000,4.000000,0.000,0.000,0.000,1
-12455:12457-Analysis-FREE,12457,106-Long Prompt Experiment-Generation-3,12456,106-Long Prompt Experiment-Generation-2,12455,0.000,4.000,4.000000,0.000,0.000,0.000,1
-12455:12458-Analysis-FREE,12458,106-Long Prompt Experiment-Generation-4,12457,106-Long Prompt Experiment-Generation-3,12455,5.000,0.000,5.000000,0.000,0.000,0.000,1
-12455:12459-Analysis-FREE,12459,106-Long Prompt Experiment-Generation-5,12458,106-Long Prompt Experiment-Generation-4,12455,5.000,5.000,0.000000,0.000,0.000,0.000,1
-12455:12460-Analysis-FREE,12460,106-Long Prompt Experiment-Generation-6,12459,106-Long Prompt Experiment-Generation-5,12455,0.000,5.000,5.000000,0.000,0.000,0.000,1
-12455:12461-Analysis-FREE,12461,106-Long Prompt Experiment-Generation-7,12460,106-Long Prompt Experiment-Generation-6,12455,3.000,0.000,3.000000,0.000,0.000,0.000,1
-12455:12462-Analysis-FREE,12462,106-Long Prompt Experiment-Generation-8,12461,106-Long Prompt Experiment-Generation-7,12455,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12455:12463-Analysis-FREE,12463,106-Long Prompt Experiment-Generation-9,12462,106-Long Prompt Experiment-Generation-8,12455,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12455:12464-Analysis-FREE,12464,106-Long Prompt Experiment-Generation-10,12455,106-Long Prompt Experiment-Generation-1,12455,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12475:12475-Analysis-FREE,12475,106-Long Prompt Experiment-Generation-1,,,12475,3.000,,0.000000,5.000,,0.000,1
-12475:12476-Analysis-FREE,12476,106-Long Prompt Experiment-Generation-2,12484,106-Long Prompt Experiment-Generation-10,12475,3.000,0.000,3.000000,0.000,0.000,0.000,1
-12475:12477-Analysis-FREE,12477,106-Long Prompt Experiment-Generation-3,12476,106-Long Prompt Experiment-Generation-2,12475,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12475:12478-Analysis-FREE,12478,106-Long Prompt Experiment-Generation-4,12477,106-Long Prompt Experiment-Generation-3,12475,1.000,0.000,1.000000,1.000,0.000,1.000,1
-12475:12479-Analysis-FREE,12479,106-Long Prompt Experiment-Generation-5,12478,106-Long Prompt Experiment-Generation-4,12475,0.000,1.000,1.000000,0.000,1.000,1.000,1
-12475:12480-Analysis-FREE,12480,106-Long Prompt Experiment-Generation-6,12479,106-Long Prompt Experiment-Generation-5,12475,1.000,0.000,1.000000,0.000,0.000,0.000,1
-12475:12481-Analysis-FREE,12481,106-Long Prompt Experiment-Generation-7,12480,106-Long Prompt Experiment-Generation-6,12475,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12475:12482-Analysis-FREE,12482,106-Long Prompt Experiment-Generation-8,12481,106-Long Prompt Experiment-Generation-7,12475,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12475:12483-Analysis-FREE,12483,106-Long Prompt Experiment-Generation-9,12482,106-Long Prompt Experiment-Generation-8,12475,5.000,3.000,2.000000,0.000,0.000,0.000,1
-12475:12484-Analysis-FREE,12484,106-Long Prompt Experiment-Generation-10,12475,106-Long Prompt Experiment-Generation-1,12475,0.000,3.000,3.000000,0.000,5.000,5.000,1
-12495:12495-Analysis-FREE,12495,106-Long Prompt Experiment-Generation-1,,,12495,3.000,,0.000000,2.000,,0.000,1
-12495:12496-Analysis-FREE,12496,106-Long Prompt Experiment-Generation-2,12504,106-Long Prompt Experiment-Generation-10,12495,3.000,0.000,3.000000,1.000,0.000,1.000,1
-12495:12497-Analysis-FREE,12497,106-Long Prompt Experiment-Generation-3,12496,106-Long Prompt Experiment-Generation-2,12495,0.000,3.000,3.000000,0.000,1.000,1.000,1
-12495:12498-Analysis-FREE,12498,106-Long Prompt Experiment-Generation-4,12497,106-Long Prompt Experiment-Generation-3,12495,2.000,0.000,2.000000,1.000,0.000,1.000,1
-12495:12499-Analysis-FREE,12499,106-Long Prompt Experiment-Generation-5,12498,106-Long Prompt Experiment-Generation-4,12495,0.000,2.000,2.000000,0.000,1.000,1.000,1
-12495:12500-Analysis-FREE,12500,106-Long Prompt Experiment-Generation-6,12499,106-Long Prompt Experiment-Generation-5,12495,1.000,0.000,1.000000,0.000,0.000,0.000,1
-12495:12501-Analysis-FREE,12501,106-Long Prompt Experiment-Generation-7,12500,106-Long Prompt Experiment-Generation-6,12495,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12495:12502-Analysis-FREE,12502,106-Long Prompt Experiment-Generation-8,12501,106-Long Prompt Experiment-Generation-7,12495,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12495:12503-Analysis-FREE,12503,106-Long Prompt Experiment-Generation-9,12502,106-Long Prompt Experiment-Generation-8,12495,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12495:12504-Analysis-FREE,12504,106-Long Prompt Experiment-Generation-10,12495,106-Long Prompt Experiment-Generation-1,12495,0.000,3.000,3.000000,0.000,2.000,2.000,1
-12515:12515-Analysis-FREE,12515,106-Long Prompt Experiment-Generation-1,,,12515,3.000,,0.000000,0.000,,0.000,1
-12515:12516-Analysis-FREE,12516,106-Long Prompt Experiment-Generation-2,12524,106-Long Prompt Experiment-Generation-10,12515,3.000,0.000,3.000000,3.000,0.000,3.000,1
-12515:12517-Analysis-FREE,12517,106-Long Prompt Experiment-Generation-3,12516,106-Long Prompt Experiment-Generation-2,12515,13.000,3.000,10.000000,0.000,3.000,3.000,1
-12515:12518-Analysis-FREE,12518,106-Long Prompt Experiment-Generation-4,12517,106-Long Prompt Experiment-Generation-3,12515,3.000,13.000,10.000000,0.000,0.000,0.000,1
-12515:12519-Analysis-FREE,12519,106-Long Prompt Experiment-Generation-5,12518,106-Long Prompt Experiment-Generation-4,12515,2.000,3.000,1.000000,0.000,0.000,0.000,1
-12515:12520-Analysis-FREE,12520,106-Long Prompt Experiment-Generation-6,12519,106-Long Prompt Experiment-Generation-5,12515,1.000,2.000,1.000000,0.000,0.000,0.000,1
-12515:12521-Analysis-FREE,12521,106-Long Prompt Experiment-Generation-7,12520,106-Long Prompt Experiment-Generation-6,12515,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12515:12522-Analysis-FREE,12522,106-Long Prompt Experiment-Generation-8,12521,106-Long Prompt Experiment-Generation-7,12515,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12515:12523-Analysis-FREE,12523,106-Long Prompt Experiment-Generation-9,12522,106-Long Prompt Experiment-Generation-8,12515,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12515:12524-Analysis-FREE,12524,106-Long Prompt Experiment-Generation-10,12515,106-Long Prompt Experiment-Generation-1,12515,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12535:12535-Analysis-FREE,12535,106-Long Prompt Experiment-Generation-1,,,12535,3.000,,0.000000,0.000,,0.000,1
-12535:12536-Analysis-FREE,12536,106-Long Prompt Experiment-Generation-2,12544,106-Long Prompt Experiment-Generation-10,12535,4.000,0.000,4.000000,0.000,0.000,0.000,1
-12535:12537-Analysis-FREE,12537,106-Long Prompt Experiment-Generation-3,12536,106-Long Prompt Experiment-Generation-2,12535,0.000,4.000,4.000000,0.000,0.000,0.000,1
-12535:12538-Analysis-FREE,12538,106-Long Prompt Experiment-Generation-4,12537,106-Long Prompt Experiment-Generation-3,12535,0.000,0.000,0.000000,0.000,0.000,0.000,1
-12535:12539-Analysis-FREE,12539,106-Long Prompt Experiment-Generation-5,12538,106-Long Prompt Experiment-Generation-4,12535,13.000,0.000,13.000000,0.000,0.000,0.000,1
-12535:12540-Analysis-FREE,12540,106-Long Prompt Experiment-Generation-6,12539,106-Long Prompt Experiment-Generation-5,12535,1.000,13.000,12.000000,0.000,0.000,0.000,1
-12535:12541-Analysis-FREE,12541,106-Long Prompt Experiment-Generation-7,12540,106-Long Prompt Experiment-Generation-6,12535,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12535:12542-Analysis-FREE,12542,106-Long Prompt Experiment-Generation-8,12541,106-Long Prompt Experiment-Generation-7,12535,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12535:12543-Analysis-FREE,12543,106-Long Prompt Experiment-Generation-9,12542,106-Long Prompt Experiment-Generation-8,12535,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12535:12544-Analysis-FREE,12544,106-Long Prompt Experiment-Generation-10,12535,106-Long Prompt Experiment-Generation-1,12535,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12555:12555-Analysis-FREE,12555,106-Long Prompt Experiment-Generation-1,,,12555,3.000,,0.000000,2.000,,0.000,1
-12555:12556-Analysis-FREE,12556,106-Long Prompt Experiment-Generation-2,12564,106-Long Prompt Experiment-Generation-10,12555,3.000,0.000,3.000000,1.000,0.000,1.000,1
-12555:12557-Analysis-FREE,12557,106-Long Prompt Experiment-Generation-3,12556,106-Long Prompt Experiment-Generation-2,12555,13.000,3.000,10.000000,0.000,1.000,1.000,1
-12555:12558-Analysis-FREE,12558,106-Long Prompt Experiment-Generation-4,12557,106-Long Prompt Experiment-Generation-3,12555,1.000,13.000,12.000000,0.000,0.000,0.000,1
-12555:12559-Analysis-FREE,12559,106-Long Prompt Experiment-Generation-5,12558,106-Long Prompt Experiment-Generation-4,12555,0.000,1.000,1.000000,0.000,0.000,0.000,1
-12555:12560-Analysis-FREE,12560,106-Long Prompt Experiment-Generation-6,12559,106-Long Prompt Experiment-Generation-5,12555,1.000,0.000,1.000000,1.000,0.000,1.000,1
-12555:12561-Analysis-FREE,12561,106-Long Prompt Experiment-Generation-7,12560,106-Long Prompt Experiment-Generation-6,12555,4.000,1.000,3.000000,3.000,1.000,2.000,1
-12555:12562-Analysis-FREE,12562,106-Long Prompt Experiment-Generation-8,12561,106-Long Prompt Experiment-Generation-7,12555,3.000,4.000,1.000000,0.000,3.000,3.000,1
-12555:12563-Analysis-FREE,12563,106-Long Prompt Experiment-Generation-9,12562,106-Long Prompt Experiment-Generation-8,12555,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12555:12564-Analysis-FREE,12564,106-Long Prompt Experiment-Generation-10,12555,106-Long Prompt Experiment-Generation-1,12555,0.000,3.000,3.000000,0.000,2.000,2.000,1
-12575:12575-Analysis-FREE,12575,106-Long Prompt Experiment-Generation-1,,,12575,3.000,,0.000000,1.000,,0.000,1
-12575:12576-Analysis-FREE,12576,106-Long Prompt Experiment-Generation-2,12584,106-Long Prompt Experiment-Generation-10,12575,3.000,0.000,3.000000,1.000,0.000,1.000,1
-12575:12577-Analysis-FREE,12577,106-Long Prompt Experiment-Generation-3,12576,106-Long Prompt Experiment-Generation-2,12575,0.000,3.000,3.000000,0.000,1.000,1.000,1
-12575:12578-Analysis-FREE,12578,106-Long Prompt Experiment-Generation-4,12577,106-Long Prompt Experiment-Generation-3,12575,13.000,0.000,13.000000,0.000,0.000,0.000,1
-12575:12579-Analysis-FREE,12579,106-Long Prompt Experiment-Generation-5,12578,106-Long Prompt Experiment-Generation-4,12575,1.000,13.000,12.000000,0.000,0.000,0.000,1
-12575:12580-Analysis-FREE,12580,106-Long Prompt Experiment-Generation-6,12579,106-Long Prompt Experiment-Generation-5,12575,1.000,1.000,0.000000,0.000,0.000,0.000,1
-12575:12581-Analysis-FREE,12581,106-Long Prompt Experiment-Generation-7,12580,106-Long Prompt Experiment-Generation-6,12575,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12575:12582-Analysis-FREE,12582,106-Long Prompt Experiment-Generation-8,12581,106-Long Prompt Experiment-Generation-7,12575,3.000,3.000,0.000000,1.000,0.000,1.000,1
-12575:12583-Analysis-FREE,12583,106-Long Prompt Experiment-Generation-9,12582,106-Long Prompt Experiment-Generation-8,12575,3.000,3.000,0.000000,0.000,1.000,1.000,1
-12575:12584-Analysis-FREE,12584,106-Long Prompt Experiment-Generation-10,12575,106-Long Prompt Experiment-Generation-1,12575,0.000,3.000,3.000000,0.000,1.000,1.000,1
-12595:12595-Analysis-FREE,12595,106-Long Prompt Experiment-Generation-1,,,12595,3.000,,0.000000,1.000,,0.000,1
-12595:12596-Analysis-FREE,12596,106-Long Prompt Experiment-Generation-2,12604,106-Long Prompt Experiment-Generation-10,12595,4.000,0.000,4.000000,2.000,0.000,2.000,1
-12595:12597-Analysis-FREE,12597,106-Long Prompt Experiment-Generation-3,12596,106-Long Prompt Experiment-Generation-2,12595,0.000,4.000,4.000000,0.000,2.000,2.000,1
-12595:12598-Analysis-FREE,12598,106-Long Prompt Experiment-Generation-4,12597,106-Long Prompt Experiment-Generation-3,12595,4.000,0.000,4.000000,0.000,0.000,0.000,1
-12595:12599-Analysis-FREE,12599,106-Long Prompt Experiment-Generation-5,12598,106-Long Prompt Experiment-Generation-4,12595,0.000,4.000,4.000000,0.000,0.000,0.000,1
-12595:12600-Analysis-FREE,12600,106-Long Prompt Experiment-Generation-6,12599,106-Long Prompt Experiment-Generation-5,12595,1.000,0.000,1.000000,0.000,0.000,0.000,1
-12595:12601-Analysis-FREE,12601,106-Long Prompt Experiment-Generation-7,12600,106-Long Prompt Experiment-Generation-6,12595,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12595:12602-Analysis-FREE,12602,106-Long Prompt Experiment-Generation-8,12601,106-Long Prompt Experiment-Generation-7,12595,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12595:12603-Analysis-FREE,12603,106-Long Prompt Experiment-Generation-9,12602,106-Long Prompt Experiment-Generation-8,12595,2.000,3.000,1.000000,0.000,0.000,0.000,1
-12595:12604-Analysis-FREE,12604,106-Long Prompt Experiment-Generation-10,12595,106-Long Prompt Experiment-Generation-1,12595,0.000,3.000,3.000000,0.000,1.000,1.000,1
-12615:12615-Analysis-FREE,12615,106-Long Prompt Experiment-Generation-1,,,12615,3.000,,0.000000,0.000,,0.000,1
-12615:12616-Analysis-FREE,12616,106-Long Prompt Experiment-Generation-2,12624,106-Long Prompt Experiment-Generation-10,12615,4.000,0.000,4.000000,0.000,0.000,0.000,1
-12615:12617-Analysis-FREE,12617,106-Long Prompt Experiment-Generation-3,12616,106-Long Prompt Experiment-Generation-2,12615,0.000,4.000,4.000000,0.000,0.000,0.000,1
-12615:12618-Analysis-FREE,12618,106-Long Prompt Experiment-Generation-4,12617,106-Long Prompt Experiment-Generation-3,12615,4.000,0.000,4.000000,0.000,0.000,0.000,1
-12615:12619-Analysis-FREE,12619,106-Long Prompt Experiment-Generation-5,12618,106-Long Prompt Experiment-Generation-4,12615,5.000,4.000,1.000000,0.000,0.000,0.000,1
-12615:12620-Analysis-FREE,12620,106-Long Prompt Experiment-Generation-6,12619,106-Long Prompt Experiment-Generation-5,12615,1.000,5.000,4.000000,0.000,0.000,0.000,1
-12615:12621-Analysis-FREE,12621,106-Long Prompt Experiment-Generation-7,12620,106-Long Prompt Experiment-Generation-6,12615,2.000,1.000,1.000000,0.000,0.000,0.000,1
-12615:12622-Analysis-FREE,12622,106-Long Prompt Experiment-Generation-8,12621,106-Long Prompt Experiment-Generation-7,12615,3.000,2.000,1.000000,0.000,0.000,0.000,1
-12615:12623-Analysis-FREE,12623,106-Long Prompt Experiment-Generation-9,12622,106-Long Prompt Experiment-Generation-8,12615,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12615:12624-Analysis-FREE,12624,106-Long Prompt Experiment-Generation-10,12615,106-Long Prompt Experiment-Generation-1,12615,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12635:12635-Analysis-FREE,12635,106-Long Prompt Experiment-Generation-1,,,12635,3.000,,0.000000,1.000,,0.000,1
-12635:12636-Analysis-FREE,12636,106-Long Prompt Experiment-Generation-2,12644,106-Long Prompt Experiment-Generation-10,12635,4.000,0.000,4.000000,1.000,0.000,1.000,1
-12635:12637-Analysis-FREE,12637,106-Long Prompt Experiment-Generation-3,12636,106-Long Prompt Experiment-Generation-2,12635,0.000,4.000,4.000000,0.000,1.000,1.000,1
-12635:12638-Analysis-FREE,12638,106-Long Prompt Experiment-Generation-4,12637,106-Long Prompt Experiment-Generation-3,12635,3.000,0.000,3.000000,0.000,0.000,0.000,1
-12635:12639-Analysis-FREE,12639,106-Long Prompt Experiment-Generation-5,12638,106-Long Prompt Experiment-Generation-4,12635,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12635:12640-Analysis-FREE,12640,106-Long Prompt Experiment-Generation-6,12639,106-Long Prompt Experiment-Generation-5,12635,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12635:12641-Analysis-FREE,12641,106-Long Prompt Experiment-Generation-7,12640,106-Long Prompt Experiment-Generation-6,12635,9.000,0.000,9.000000,3.000,0.000,3.000,1
-12635:12642-Analysis-FREE,12642,106-Long Prompt Experiment-Generation-8,12641,106-Long Prompt Experiment-Generation-7,12635,9.000,9.000,0.000000,4.000,3.000,1.000,1
-12635:12643-Analysis-FREE,12643,106-Long Prompt Experiment-Generation-9,12642,106-Long Prompt Experiment-Generation-8,12635,9.000,9.000,0.000000,4.000,4.000,0.000,1
-12635:12644-Analysis-FREE,12644,106-Long Prompt Experiment-Generation-10,12635,106-Long Prompt Experiment-Generation-1,12635,0.000,3.000,3.000000,0.000,1.000,1.000,1
-12655:12655-Analysis-FREE,12655,106-Long Prompt Experiment-Generation-1,,,12655,3.000,,0.000000,0.000,,0.000,1
-12655:12656-Analysis-FREE,12656,106-Long Prompt Experiment-Generation-2,12664,106-Long Prompt Experiment-Generation-10,12655,4.000,0.000,4.000000,3.000,0.000,3.000,1
-12655:12657-Analysis-FREE,12657,106-Long Prompt Experiment-Generation-3,12656,106-Long Prompt Experiment-Generation-2,12655,0.000,4.000,4.000000,0.000,3.000,3.000,1
-12655:12658-Analysis-FREE,12658,106-Long Prompt Experiment-Generation-4,12657,106-Long Prompt Experiment-Generation-3,12655,3.000,0.000,3.000000,0.000,0.000,0.000,1
-12655:12659-Analysis-FREE,12659,106-Long Prompt Experiment-Generation-5,12658,106-Long Prompt Experiment-Generation-4,12655,2.000,3.000,1.000000,0.000,0.000,0.000,1
-12655:12660-Analysis-FREE,12660,106-Long Prompt Experiment-Generation-6,12659,106-Long Prompt Experiment-Generation-5,12655,1.000,2.000,1.000000,0.000,0.000,0.000,1
-12655:12661-Analysis-FREE,12661,106-Long Prompt Experiment-Generation-7,12660,106-Long Prompt Experiment-Generation-6,12655,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12655:12662-Analysis-FREE,12662,106-Long Prompt Experiment-Generation-8,12661,106-Long Prompt Experiment-Generation-7,12655,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12655:12663-Analysis-FREE,12663,106-Long Prompt Experiment-Generation-9,12662,106-Long Prompt Experiment-Generation-8,12655,4.000,3.000,1.000000,0.000,0.000,0.000,1
-12655:12664-Analysis-FREE,12664,106-Long Prompt Experiment-Generation-10,12655,106-Long Prompt Experiment-Generation-1,12655,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12675:12675-Analysis-FREE,12675,106-Long Prompt Experiment-Generation-1,,,12675,3.000,,0.000000,0.000,,0.000,1
-12675:12676-Analysis-FREE,12676,106-Long Prompt Experiment-Generation-2,12684,106-Long Prompt Experiment-Generation-10,12675,4.000,0.000,4.000000,1.000,0.000,1.000,1
-12675:12677-Analysis-FREE,12677,106-Long Prompt Experiment-Generation-3,12676,106-Long Prompt Experiment-Generation-2,12675,0.000,4.000,4.000000,0.000,1.000,1.000,1
-12675:12678-Analysis-FREE,12678,106-Long Prompt Experiment-Generation-4,12677,106-Long Prompt Experiment-Generation-3,12675,3.000,0.000,3.000000,0.000,0.000,0.000,1
-12675:12679-Analysis-FREE,12679,106-Long Prompt Experiment-Generation-5,12678,106-Long Prompt Experiment-Generation-4,12675,1.000,3.000,2.000000,0.000,0.000,0.000,1
-12675:12680-Analysis-FREE,12680,106-Long Prompt Experiment-Generation-6,12679,106-Long Prompt Experiment-Generation-5,12675,1.000,1.000,0.000000,0.000,0.000,0.000,1
-12675:12681-Analysis-FREE,12681,106-Long Prompt Experiment-Generation-7,12680,106-Long Prompt Experiment-Generation-6,12675,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12675:12682-Analysis-FREE,12682,106-Long Prompt Experiment-Generation-8,12681,106-Long Prompt Experiment-Generation-7,12675,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12675:12683-Analysis-FREE,12683,106-Long Prompt Experiment-Generation-9,12682,106-Long Prompt Experiment-Generation-8,12675,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12675:12684-Analysis-FREE,12684,106-Long Prompt Experiment-Generation-10,12675,106-Long Prompt Experiment-Generation-1,12675,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12695:12695-Analysis-FREE,12695,106-Long Prompt Experiment-Generation-1,,,12695,3.000,,0.000000,1.000,,0.000,1
-12695:12696-Analysis-FREE,12696,106-Long Prompt Experiment-Generation-2,12704,106-Long Prompt Experiment-Generation-10,12695,4.000,0.000,4.000000,2.000,0.000,2.000,1
-12695:12697-Analysis-FREE,12697,106-Long Prompt Experiment-Generation-3,12696,106-Long Prompt Experiment-Generation-2,12695,13.000,4.000,9.000000,0.000,2.000,2.000,1
-12695:12698-Analysis-FREE,12698,106-Long Prompt Experiment-Generation-4,12697,106-Long Prompt Experiment-Generation-3,12695,4.000,13.000,9.000000,0.000,0.000,0.000,1
-12695:12699-Analysis-FREE,12699,106-Long Prompt Experiment-Generation-5,12698,106-Long Prompt Experiment-Generation-4,12695,13.000,4.000,9.000000,0.000,0.000,0.000,1
-12695:12700-Analysis-FREE,12700,106-Long Prompt Experiment-Generation-6,12699,106-Long Prompt Experiment-Generation-5,12695,1.000,13.000,12.000000,0.000,0.000,0.000,1
-12695:12701-Analysis-FREE,12701,106-Long Prompt Experiment-Generation-7,12700,106-Long Prompt Experiment-Generation-6,12695,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12695:12702-Analysis-FREE,12702,106-Long Prompt Experiment-Generation-8,12701,106-Long Prompt Experiment-Generation-7,12695,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12695:12703-Analysis-FREE,12703,106-Long Prompt Experiment-Generation-9,12702,106-Long Prompt Experiment-Generation-8,12695,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12695:12704-Analysis-FREE,12704,106-Long Prompt Experiment-Generation-10,12695,106-Long Prompt Experiment-Generation-1,12695,0.000,3.000,3.000000,0.000,1.000,1.000,1
-12715:12715-Analysis-FREE,12715,106-Long Prompt Experiment-Generation-1,,,12715,3.000,,0.000000,1.000,,0.000,1
-12715:12716-Analysis-FREE,12716,106-Long Prompt Experiment-Generation-2,12724,106-Long Prompt Experiment-Generation-10,12715,4.000,13.000,9.000000,0.000,0.000,0.000,1
-12715:12717-Analysis-FREE,12717,106-Long Prompt Experiment-Generation-3,12716,106-Long Prompt Experiment-Generation-2,12715,0.000,4.000,4.000000,0.000,0.000,0.000,1
-12715:12718-Analysis-FREE,12718,106-Long Prompt Experiment-Generation-4,12717,106-Long Prompt Experiment-Generation-3,12715,0.000,0.000,0.000000,0.000,0.000,0.000,1
-12715:12719-Analysis-FREE,12719,106-Long Prompt Experiment-Generation-5,12718,106-Long Prompt Experiment-Generation-4,12715,3.000,0.000,3.000000,0.000,0.000,0.000,1
-12715:12720-Analysis-FREE,12720,106-Long Prompt Experiment-Generation-6,12719,106-Long Prompt Experiment-Generation-5,12715,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12715:12721-Analysis-FREE,12721,106-Long Prompt Experiment-Generation-7,12720,106-Long Prompt Experiment-Generation-6,12715,3.000,0.000,3.000000,1.000,0.000,1.000,1
-12715:12722-Analysis-FREE,12722,106-Long Prompt Experiment-Generation-8,12721,106-Long Prompt Experiment-Generation-7,12715,3.000,3.000,0.000000,0.000,1.000,1.000,1
-12715:12723-Analysis-FREE,12723,106-Long Prompt Experiment-Generation-9,12722,106-Long Prompt Experiment-Generation-8,12715,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12715:12724-Analysis-FREE,12724,106-Long Prompt Experiment-Generation-10,12715,106-Long Prompt Experiment-Generation-1,12715,13.000,3.000,10.000000,0.000,1.000,1.000,1
-12735:12735-Analysis-FREE,12735,106-Long Prompt Experiment-Generation-1,,,12735,3.000,,0.000000,1.000,,0.000,1
-12735:12736-Analysis-FREE,12736,106-Long Prompt Experiment-Generation-2,12744,106-Long Prompt Experiment-Generation-10,12735,3.000,0.000,3.000000,1.000,0.000,1.000,1
-12735:12737-Analysis-FREE,12737,106-Long Prompt Experiment-Generation-3,12736,106-Long Prompt Experiment-Generation-2,12735,0.000,3.000,3.000000,0.000,1.000,1.000,1
-12735:12738-Analysis-FREE,12738,106-Long Prompt Experiment-Generation-4,12737,106-Long Prompt Experiment-Generation-3,12735,3.000,0.000,3.000000,0.000,0.000,0.000,1
-12735:12739-Analysis-FREE,12739,106-Long Prompt Experiment-Generation-5,12738,106-Long Prompt Experiment-Generation-4,12735,1.000,3.000,2.000000,0.000,0.000,0.000,1
-12735:12740-Analysis-FREE,12740,106-Long Prompt Experiment-Generation-6,12739,106-Long Prompt Experiment-Generation-5,12735,1.000,1.000,0.000000,0.000,0.000,0.000,1
-12735:12741-Analysis-FREE,12741,106-Long Prompt Experiment-Generation-7,12740,106-Long Prompt Experiment-Generation-6,12735,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12735:12742-Analysis-FREE,12742,106-Long Prompt Experiment-Generation-8,12741,106-Long Prompt Experiment-Generation-7,12735,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12735:12743-Analysis-FREE,12743,106-Long Prompt Experiment-Generation-9,12742,106-Long Prompt Experiment-Generation-8,12735,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12735:12744-Analysis-FREE,12744,106-Long Prompt Experiment-Generation-10,12735,106-Long Prompt Experiment-Generation-1,12735,0.000,3.000,3.000000,0.000,1.000,1.000,1
-12755:12755-Analysis-FREE,12755,106-Long Prompt Experiment-Generation-1,,,12755,3.000,,0.000000,1.000,,0.000,1
-12755:12756-Analysis-FREE,12756,106-Long Prompt Experiment-Generation-2,12764,106-Long Prompt Experiment-Generation-10,12755,4.000,0.000,4.000000,2.000,0.000,2.000,1
-12755:12757-Analysis-FREE,12757,106-Long Prompt Experiment-Generation-3,12756,106-Long Prompt Experiment-Generation-2,12755,0.000,4.000,4.000000,0.000,2.000,2.000,1
-12755:12758-Analysis-FREE,12758,106-Long Prompt Experiment-Generation-4,12757,106-Long Prompt Experiment-Generation-3,12755,5.000,0.000,5.000000,0.000,0.000,0.000,1
-12755:12759-Analysis-FREE,12759,106-Long Prompt Experiment-Generation-5,12758,106-Long Prompt Experiment-Generation-4,12755,0.000,5.000,5.000000,0.000,0.000,0.000,1
-12755:12760-Analysis-FREE,12760,106-Long Prompt Experiment-Generation-6,12759,106-Long Prompt Experiment-Generation-5,12755,1.000,0.000,1.000000,0.000,0.000,0.000,1
-12755:12761-Analysis-FREE,12761,106-Long Prompt Experiment-Generation-7,12760,106-Long Prompt Experiment-Generation-6,12755,3.000,1.000,2.000000,1.000,0.000,1.000,1
-12755:12762-Analysis-FREE,12762,106-Long Prompt Experiment-Generation-8,12761,106-Long Prompt Experiment-Generation-7,12755,3.000,3.000,0.000000,0.000,1.000,1.000,1
-12755:12763-Analysis-FREE,12763,106-Long Prompt Experiment-Generation-9,12762,106-Long Prompt Experiment-Generation-8,12755,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12755:12764-Analysis-FREE,12764,106-Long Prompt Experiment-Generation-10,12755,106-Long Prompt Experiment-Generation-1,12755,0.000,3.000,3.000000,0.000,1.000,1.000,1
-12775:12775-Analysis-FREE,12775,106-Long Prompt Experiment-Generation-1,,,12775,3.000,,0.000000,0.000,,0.000,1
-12775:12776-Analysis-FREE,12776,106-Long Prompt Experiment-Generation-2,12784,106-Long Prompt Experiment-Generation-10,12775,3.000,0.000,3.000000,1.000,0.000,1.000,1
-12775:12777-Analysis-FREE,12777,106-Long Prompt Experiment-Generation-3,12776,106-Long Prompt Experiment-Generation-2,12775,13.000,3.000,10.000000,0.000,1.000,1.000,1
-12775:12778-Analysis-FREE,12778,106-Long Prompt Experiment-Generation-4,12777,106-Long Prompt Experiment-Generation-3,12775,5.000,13.000,8.000000,0.000,0.000,0.000,1
-12775:12779-Analysis-FREE,12779,106-Long Prompt Experiment-Generation-5,12778,106-Long Prompt Experiment-Generation-4,12775,4.000,5.000,1.000000,0.000,0.000,0.000,1
-12775:12780-Analysis-FREE,12780,106-Long Prompt Experiment-Generation-6,12779,106-Long Prompt Experiment-Generation-5,12775,0.000,4.000,4.000000,0.000,0.000,0.000,1
-12775:12781-Analysis-FREE,12781,106-Long Prompt Experiment-Generation-7,12780,106-Long Prompt Experiment-Generation-6,12775,3.000,0.000,3.000000,0.000,0.000,0.000,1
-12775:12782-Analysis-FREE,12782,106-Long Prompt Experiment-Generation-8,12781,106-Long Prompt Experiment-Generation-7,12775,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12775:12783-Analysis-FREE,12783,106-Long Prompt Experiment-Generation-9,12782,106-Long Prompt Experiment-Generation-8,12775,13.000,3.000,10.000000,0.000,0.000,0.000,1
-12775:12784-Analysis-FREE,12784,106-Long Prompt Experiment-Generation-10,12775,106-Long Prompt Experiment-Generation-1,12775,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12795:12795-Analysis-FREE,12795,106-Long Prompt Experiment-Generation-1,,,12795,0.000,,0.000000,0.000,,0.000,1
-12795:12796-Analysis-FREE,12796,106-Long Prompt Experiment-Generation-2,12804,106-Long Prompt Experiment-Generation-10,12795,4.000,0.000,4.000000,0.000,0.000,0.000,1
-12795:12797-Analysis-FREE,12797,106-Long Prompt Experiment-Generation-3,12796,106-Long Prompt Experiment-Generation-2,12795,0.000,4.000,4.000000,0.000,0.000,0.000,1
-12795:12798-Analysis-FREE,12798,106-Long Prompt Experiment-Generation-4,12797,106-Long Prompt Experiment-Generation-3,12795,0.000,0.000,0.000000,0.000,0.000,0.000,1
-12795:12799-Analysis-FREE,12799,106-Long Prompt Experiment-Generation-5,12798,106-Long Prompt Experiment-Generation-4,12795,4.000,0.000,4.000000,0.000,0.000,0.000,1
-12795:12800-Analysis-FREE,12800,106-Long Prompt Experiment-Generation-6,12799,106-Long Prompt Experiment-Generation-5,12795,3.000,4.000,1.000000,0.000,0.000,0.000,1
-12795:12801-Analysis-FREE,12801,106-Long Prompt Experiment-Generation-7,12800,106-Long Prompt Experiment-Generation-6,12795,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12795:12802-Analysis-FREE,12802,106-Long Prompt Experiment-Generation-8,12801,106-Long Prompt Experiment-Generation-7,12795,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12795:12803-Analysis-FREE,12803,106-Long Prompt Experiment-Generation-9,12802,106-Long Prompt Experiment-Generation-8,12795,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12795:12804-Analysis-FREE,12804,106-Long Prompt Experiment-Generation-10,12795,106-Long Prompt Experiment-Generation-1,12795,0.000,0.000,0.000000,0.000,0.000,0.000,1
-12815:12815-Analysis-FREE,12815,106-Long Prompt Experiment-Generation-1,,,12815,3.000,,0.000000,0.000,,0.000,1
-12815:12816-Analysis-FREE,12816,106-Long Prompt Experiment-Generation-2,12824,106-Long Prompt Experiment-Generation-10,12815,4.000,0.000,4.000000,0.000,0.000,0.000,1
-12815:12817-Analysis-FREE,12817,106-Long Prompt Experiment-Generation-3,12816,106-Long Prompt Experiment-Generation-2,12815,0.000,4.000,4.000000,0.000,0.000,0.000,1
-12815:12818-Analysis-FREE,12818,106-Long Prompt Experiment-Generation-4,12817,106-Long Prompt Experiment-Generation-3,12815,5.000,0.000,5.000000,0.000,0.000,0.000,1
-12815:12819-Analysis-FREE,12819,106-Long Prompt Experiment-Generation-5,12818,106-Long Prompt Experiment-Generation-4,12815,0.000,5.000,5.000000,0.000,0.000,0.000,1
-12815:12820-Analysis-FREE,12820,106-Long Prompt Experiment-Generation-6,12819,106-Long Prompt Experiment-Generation-5,12815,1.000,0.000,1.000000,1.000,0.000,1.000,1
-12815:12821-Analysis-FREE,12821,106-Long Prompt Experiment-Generation-7,12820,106-Long Prompt Experiment-Generation-6,12815,3.000,1.000,2.000000,0.000,1.000,1.000,1
-12815:12822-Analysis-FREE,12822,106-Long Prompt Experiment-Generation-8,12821,106-Long Prompt Experiment-Generation-7,12815,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12815:12823-Analysis-FREE,12823,106-Long Prompt Experiment-Generation-9,12822,106-Long Prompt Experiment-Generation-8,12815,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12815:12824-Analysis-FREE,12824,106-Long Prompt Experiment-Generation-10,12815,106-Long Prompt Experiment-Generation-1,12815,0.000,3.000,3.000000,0.000,0.000,0.000,1
-12835:12835-Analysis-FREE,12835,106-Long Prompt Experiment-Generation-1,,,12835,3.000,,0.000000,2.000,,0.000,1
-12835:12836-Analysis-FREE,12836,106-Long Prompt Experiment-Generation-2,12844,106-Long Prompt Experiment-Generation-10,12835,4.000,13.000,9.000000,1.000,0.000,1.000,1
-12835:12837-Analysis-FREE,12837,106-Long Prompt Experiment-Generation-3,12836,106-Long Prompt Experiment-Generation-2,12835,0.000,4.000,4.000000,0.000,1.000,1.000,1
-12835:12838-Analysis-FREE,12838,106-Long Prompt Experiment-Generation-4,12837,106-Long Prompt Experiment-Generation-3,12835,1.000,0.000,1.000000,0.000,0.000,0.000,1
-12835:12839-Analysis-FREE,12839,106-Long Prompt Experiment-Generation-5,12838,106-Long Prompt Experiment-Generation-4,12835,3.000,1.000,2.000000,0.000,0.000,0.000,1
-12835:12840-Analysis-FREE,12840,106-Long Prompt Experiment-Generation-6,12839,106-Long Prompt Experiment-Generation-5,12835,1.000,3.000,2.000000,0.000,0.000,0.000,1
-12835:12841-Analysis-FREE,12841,106-Long Prompt Experiment-Generation-7,12840,106-Long Prompt Experiment-Generation-6,12835,2.000,1.000,1.000000,0.000,0.000,0.000,1
-12835:12842-Analysis-FREE,12842,106-Long Prompt Experiment-Generation-8,12841,106-Long Prompt Experiment-Generation-7,12835,3.000,2.000,1.000000,0.000,0.000,0.000,1
-12835:12843-Analysis-FREE,12843,106-Long Prompt Experiment-Generation-9,12842,106-Long Prompt Experiment-Generation-8,12835,3.000,3.000,0.000000,0.000,0.000,0.000,1
-12835:12844-Analysis-FREE,12844,106-Long Prompt Experiment-Generation-10,12835,106-Long Prompt Experiment-Generation-1,12835,13.000,3.000,10.000000,0.000,2.000,2.000,1
+13016:13016-Analysis-Locked,13016,106-Long Prompt Experiment-Generation-1,,,13016,4.000,,0.000000,0.000,,0.000,0
+13016:13017-Analysis-Locked,13017,106-Long Prompt Experiment-Generation-2,13025,106-Long Prompt Experiment-Generation-10,13016,5.000,1.000,4.000000,0.000,0.000,0.000,0
+13016:13018-Analysis-Locked,13018,106-Long Prompt Experiment-Generation-3,13017,106-Long Prompt Experiment-Generation-2,13016,5.000,5.000,0.000000,1.000,0.000,1.000,0
+13016:13019-Analysis-Locked,13019,106-Long Prompt Experiment-Generation-4,13018,106-Long Prompt Experiment-Generation-3,13016,5.000,5.000,0.000000,2.000,1.000,1.000,0
+13016:13020-Analysis-Locked,13020,106-Long Prompt Experiment-Generation-5,13019,106-Long Prompt Experiment-Generation-4,13016,4.000,5.000,1.000000,0.000,2.000,2.000,0
+13016:13021-Analysis-Locked,13021,106-Long Prompt Experiment-Generation-6,13020,106-Long Prompt Experiment-Generation-5,13016,6.000,4.000,2.000000,0.000,0.000,0.000,0
+13016:13022-Analysis-Locked,13022,106-Long Prompt Experiment-Generation-7,13021,106-Long Prompt Experiment-Generation-6,13016,0.000,6.000,6.000000,0.000,0.000,0.000,0
+13016:13023-Analysis-Locked,13023,106-Long Prompt Experiment-Generation-8,13022,106-Long Prompt Experiment-Generation-7,13016,1.000,0.000,1.000000,0.000,0.000,0.000,0
+13016:13024-Analysis-Locked,13024,106-Long Prompt Experiment-Generation-9,13023,106-Long Prompt Experiment-Generation-8,13016,0.000,1.000,1.000000,0.000,0.000,0.000,0
+13016:13025-Analysis-Locked,13025,106-Long Prompt Experiment-Generation-10,13016,106-Long Prompt Experiment-Generation-1,13016,1.000,4.000,3.000000,0.000,0.000,0.000,0
+13036:13036-Analysis-Locked,13036,106-Long Prompt Experiment-Generation-1,,,13036,4.000,,0.000000,0.000,,0.000,0
+13036:13037-Analysis-Locked,13037,106-Long Prompt Experiment-Generation-2,13045,106-Long Prompt Experiment-Generation-10,13036,4.000,0.000,4.000000,0.000,0.000,0.000,0
+13036:13038-Analysis-Locked,13038,106-Long Prompt Experiment-Generation-3,13037,106-Long Prompt Experiment-Generation-2,13036,3.000,4.000,1.000000,0.000,0.000,0.000,0
+13036:13039-Analysis-Locked,13039,106-Long Prompt Experiment-Generation-4,13038,106-Long Prompt Experiment-Generation-3,13036,5.000,3.000,2.000000,0.000,0.000,0.000,0
+13036:13040-Analysis-Locked,13040,106-Long Prompt Experiment-Generation-5,13039,106-Long Prompt Experiment-Generation-4,13036,5.000,5.000,0.000000,1.000,0.000,1.000,0
+13036:13041-Analysis-Locked,13041,106-Long Prompt Experiment-Generation-6,13040,106-Long Prompt Experiment-Generation-5,13036,5.000,5.000,0.000000,4.000,1.000,3.000,0
+13036:13042-Analysis-Locked,13042,106-Long Prompt Experiment-Generation-7,13041,106-Long Prompt Experiment-Generation-6,13036,0.000,5.000,5.000000,0.000,4.000,4.000,0
+13036:13043-Analysis-Locked,13043,106-Long Prompt Experiment-Generation-8,13042,106-Long Prompt Experiment-Generation-7,13036,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13036:13044-Analysis-Locked,13044,106-Long Prompt Experiment-Generation-9,13043,106-Long Prompt Experiment-Generation-8,13036,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13036:13045-Analysis-Locked,13045,106-Long Prompt Experiment-Generation-10,13036,106-Long Prompt Experiment-Generation-1,13036,0.000,4.000,4.000000,0.000,0.000,0.000,0
+13056:13056-Analysis-Locked,13056,106-Long Prompt Experiment-Generation-1,,,13056,4.000,,0.000000,3.000,,0.000,0
+13056:13057-Analysis-Locked,13057,106-Long Prompt Experiment-Generation-2,13065,106-Long Prompt Experiment-Generation-10,13056,5.000,1.000,4.000000,3.000,0.000,3.000,0
+13056:13058-Analysis-Locked,13058,106-Long Prompt Experiment-Generation-3,13057,106-Long Prompt Experiment-Generation-2,13056,5.000,5.000,0.000000,3.000,3.000,0.000,0
+13056:13059-Analysis-Locked,13059,106-Long Prompt Experiment-Generation-4,13058,106-Long Prompt Experiment-Generation-3,13056,5.000,5.000,0.000000,3.000,3.000,0.000,0
+13056:13060-Analysis-Locked,13060,106-Long Prompt Experiment-Generation-5,13059,106-Long Prompt Experiment-Generation-4,13056,6.000,5.000,1.000000,3.000,3.000,0.000,0
+13056:13061-Analysis-Locked,13061,106-Long Prompt Experiment-Generation-6,13060,106-Long Prompt Experiment-Generation-5,13056,6.000,6.000,0.000000,3.000,3.000,0.000,0
+13056:13062-Analysis-Locked,13062,106-Long Prompt Experiment-Generation-7,13061,106-Long Prompt Experiment-Generation-6,13056,0.000,6.000,6.000000,0.000,3.000,3.000,0
+13056:13063-Analysis-Locked,13063,106-Long Prompt Experiment-Generation-8,13062,106-Long Prompt Experiment-Generation-7,13056,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13056:13064-Analysis-Locked,13064,106-Long Prompt Experiment-Generation-9,13063,106-Long Prompt Experiment-Generation-8,13056,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13056:13065-Analysis-Locked,13065,106-Long Prompt Experiment-Generation-10,13056,106-Long Prompt Experiment-Generation-1,13056,1.000,4.000,3.000000,0.000,3.000,3.000,0
+13076:13076-Analysis-Locked,13076,106-Long Prompt Experiment-Generation-1,,,13076,3.000,,0.000000,0.000,,0.000,0
+13076:13077-Analysis-Locked,13077,106-Long Prompt Experiment-Generation-2,13085,106-Long Prompt Experiment-Generation-10,13076,4.000,1.000,3.000000,0.000,0.000,0.000,0
+13076:13078-Analysis-Locked,13078,106-Long Prompt Experiment-Generation-3,13077,106-Long Prompt Experiment-Generation-2,13076,5.000,4.000,1.000000,0.000,0.000,0.000,0
+13076:13079-Analysis-Locked,13079,106-Long Prompt Experiment-Generation-4,13078,106-Long Prompt Experiment-Generation-3,13076,3.000,5.000,2.000000,0.000,0.000,0.000,0
+13076:13080-Analysis-Locked,13080,106-Long Prompt Experiment-Generation-5,13079,106-Long Prompt Experiment-Generation-4,13076,4.000,3.000,1.000000,0.000,0.000,0.000,0
+13076:13081-Analysis-Locked,13081,106-Long Prompt Experiment-Generation-6,13080,106-Long Prompt Experiment-Generation-5,13076,4.000,4.000,0.000000,0.000,0.000,0.000,0
+13076:13082-Analysis-Locked,13082,106-Long Prompt Experiment-Generation-7,13081,106-Long Prompt Experiment-Generation-6,13076,0.000,4.000,4.000000,0.000,0.000,0.000,0
+13076:13083-Analysis-Locked,13083,106-Long Prompt Experiment-Generation-8,13082,106-Long Prompt Experiment-Generation-7,13076,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13076:13084-Analysis-Locked,13084,106-Long Prompt Experiment-Generation-9,13083,106-Long Prompt Experiment-Generation-8,13076,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13076:13085-Analysis-Locked,13085,106-Long Prompt Experiment-Generation-10,13076,106-Long Prompt Experiment-Generation-1,13076,1.000,3.000,2.000000,0.000,0.000,0.000,0
+13096:13096-Analysis-Locked,13096,106-Long Prompt Experiment-Generation-1,,,13096,5.000,,0.000000,2.000,,0.000,0
+13096:13097-Analysis-Locked,13097,106-Long Prompt Experiment-Generation-2,13105,106-Long Prompt Experiment-Generation-10,13096,6.000,1.000,5.000000,1.000,0.000,1.000,0
+13096:13098-Analysis-Locked,13098,106-Long Prompt Experiment-Generation-3,13097,106-Long Prompt Experiment-Generation-2,13096,5.000,6.000,1.000000,0.000,1.000,1.000,0
+13096:13099-Analysis-Locked,13099,106-Long Prompt Experiment-Generation-4,13098,106-Long Prompt Experiment-Generation-3,13096,0.000,5.000,5.000000,0.000,0.000,0.000,0
+13096:13100-Analysis-Locked,13100,106-Long Prompt Experiment-Generation-5,13099,106-Long Prompt Experiment-Generation-4,13096,6.000,0.000,6.000000,2.000,0.000,2.000,0
+13096:13101-Analysis-Locked,13101,106-Long Prompt Experiment-Generation-6,13100,106-Long Prompt Experiment-Generation-5,13096,7.000,6.000,1.000000,1.000,2.000,1.000,0
+13096:13102-Analysis-Locked,13102,106-Long Prompt Experiment-Generation-7,13101,106-Long Prompt Experiment-Generation-6,13096,0.000,7.000,7.000000,0.000,1.000,1.000,0
+13096:13103-Analysis-Locked,13103,106-Long Prompt Experiment-Generation-8,13102,106-Long Prompt Experiment-Generation-7,13096,2.000,0.000,2.000000,2.000,0.000,2.000,0
+13096:13104-Analysis-Locked,13104,106-Long Prompt Experiment-Generation-9,13103,106-Long Prompt Experiment-Generation-8,13096,0.000,2.000,2.000000,0.000,2.000,2.000,0
+13096:13105-Analysis-Locked,13105,106-Long Prompt Experiment-Generation-10,13096,106-Long Prompt Experiment-Generation-1,13096,1.000,5.000,4.000000,0.000,2.000,2.000,0
+13116:13116-Analysis-Locked,13116,106-Long Prompt Experiment-Generation-1,,,13116,5.000,,0.000000,4.000,,0.000,0
+13116:13117-Analysis-Locked,13117,106-Long Prompt Experiment-Generation-2,13125,106-Long Prompt Experiment-Generation-10,13116,6.000,1.000,5.000000,3.000,0.000,3.000,0
+13116:13118-Analysis-Locked,13118,106-Long Prompt Experiment-Generation-3,13117,106-Long Prompt Experiment-Generation-2,13116,7.000,6.000,1.000000,3.000,3.000,0.000,0
+13116:13119-Analysis-Locked,13119,106-Long Prompt Experiment-Generation-4,13118,106-Long Prompt Experiment-Generation-3,13116,0.000,7.000,7.000000,0.000,3.000,3.000,0
+13116:13120-Analysis-Locked,13120,106-Long Prompt Experiment-Generation-5,13119,106-Long Prompt Experiment-Generation-4,13116,7.000,0.000,7.000000,3.000,0.000,3.000,0
+13116:13121-Analysis-Locked,13121,106-Long Prompt Experiment-Generation-6,13120,106-Long Prompt Experiment-Generation-5,13116,8.000,7.000,1.000000,4.000,3.000,1.000,0
+13116:13122-Analysis-Locked,13122,106-Long Prompt Experiment-Generation-7,13121,106-Long Prompt Experiment-Generation-6,13116,0.000,8.000,8.000000,0.000,4.000,4.000,0
+13116:13123-Analysis-Locked,13123,106-Long Prompt Experiment-Generation-8,13122,106-Long Prompt Experiment-Generation-7,13116,3.000,0.000,3.000000,0.000,0.000,0.000,0
+13116:13124-Analysis-Locked,13124,106-Long Prompt Experiment-Generation-9,13123,106-Long Prompt Experiment-Generation-8,13116,0.000,3.000,3.000000,0.000,0.000,0.000,0
+13116:13125-Analysis-Locked,13125,106-Long Prompt Experiment-Generation-10,13116,106-Long Prompt Experiment-Generation-1,13116,1.000,5.000,4.000000,0.000,4.000,4.000,0
+13136:13136-Analysis-Locked,13136,106-Long Prompt Experiment-Generation-1,,,13136,5.000,,0.000000,0.000,,0.000,0
+13136:13137-Analysis-Locked,13137,106-Long Prompt Experiment-Generation-2,13145,106-Long Prompt Experiment-Generation-10,13136,5.000,0.000,5.000000,1.000,0.000,1.000,0
+13136:13138-Analysis-Locked,13138,106-Long Prompt Experiment-Generation-3,13137,106-Long Prompt Experiment-Generation-2,13136,6.000,5.000,1.000000,2.000,1.000,1.000,0
+13136:13139-Analysis-Locked,13139,106-Long Prompt Experiment-Generation-4,13138,106-Long Prompt Experiment-Generation-3,13136,6.000,6.000,0.000000,1.000,2.000,1.000,0
+13136:13140-Analysis-Locked,13140,106-Long Prompt Experiment-Generation-5,13139,106-Long Prompt Experiment-Generation-4,13136,6.000,6.000,0.000000,0.000,1.000,1.000,0
+13136:13141-Analysis-Locked,13141,106-Long Prompt Experiment-Generation-6,13140,106-Long Prompt Experiment-Generation-5,13136,7.000,6.000,1.000000,1.000,0.000,1.000,0
+13136:13142-Analysis-Locked,13142,106-Long Prompt Experiment-Generation-7,13141,106-Long Prompt Experiment-Generation-6,13136,0.000,7.000,7.000000,0.000,1.000,1.000,0
+13136:13143-Analysis-Locked,13143,106-Long Prompt Experiment-Generation-8,13142,106-Long Prompt Experiment-Generation-7,13136,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13136:13144-Analysis-Locked,13144,106-Long Prompt Experiment-Generation-9,13143,106-Long Prompt Experiment-Generation-8,13136,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13136:13145-Analysis-Locked,13145,106-Long Prompt Experiment-Generation-10,13136,106-Long Prompt Experiment-Generation-1,13136,0.000,5.000,5.000000,0.000,0.000,0.000,0
+13156:13156-Analysis-Locked,13156,106-Long Prompt Experiment-Generation-1,,,13156,4.000,,0.000000,1.000,,0.000,0
+13156:13157-Analysis-Locked,13157,106-Long Prompt Experiment-Generation-2,13165,106-Long Prompt Experiment-Generation-10,13156,6.000,1.000,5.000000,1.000,0.000,1.000,0
+13156:13158-Analysis-Locked,13158,106-Long Prompt Experiment-Generation-3,13157,106-Long Prompt Experiment-Generation-2,13156,6.000,6.000,0.000000,1.000,1.000,0.000,0
+13156:13159-Analysis-Locked,13159,106-Long Prompt Experiment-Generation-4,13158,106-Long Prompt Experiment-Generation-3,13156,6.000,6.000,0.000000,2.000,1.000,1.000,0
+13156:13160-Analysis-Locked,13160,106-Long Prompt Experiment-Generation-5,13159,106-Long Prompt Experiment-Generation-4,13156,6.000,6.000,0.000000,1.000,2.000,1.000,0
+13156:13161-Analysis-Locked,13161,106-Long Prompt Experiment-Generation-6,13160,106-Long Prompt Experiment-Generation-5,13156,6.000,6.000,0.000000,1.000,1.000,0.000,0
+13156:13162-Analysis-Locked,13162,106-Long Prompt Experiment-Generation-7,13161,106-Long Prompt Experiment-Generation-6,13156,0.000,6.000,6.000000,0.000,1.000,1.000,0
+13156:13163-Analysis-Locked,13163,106-Long Prompt Experiment-Generation-8,13162,106-Long Prompt Experiment-Generation-7,13156,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13156:13164-Analysis-Locked,13164,106-Long Prompt Experiment-Generation-9,13163,106-Long Prompt Experiment-Generation-8,13156,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13156:13165-Analysis-Locked,13165,106-Long Prompt Experiment-Generation-10,13156,106-Long Prompt Experiment-Generation-1,13156,1.000,4.000,3.000000,0.000,1.000,1.000,0
+13176:13176-Analysis-Locked,13176,106-Long Prompt Experiment-Generation-1,,,13176,4.000,,0.000000,0.000,,0.000,0
+13176:13177-Analysis-Locked,13177,106-Long Prompt Experiment-Generation-2,13185,106-Long Prompt Experiment-Generation-10,13176,4.000,0.000,4.000000,1.000,0.000,1.000,0
+13176:13178-Analysis-Locked,13178,106-Long Prompt Experiment-Generation-3,13177,106-Long Prompt Experiment-Generation-2,13176,6.000,4.000,2.000000,0.000,1.000,1.000,0
+13176:13179-Analysis-Locked,13179,106-Long Prompt Experiment-Generation-4,13178,106-Long Prompt Experiment-Generation-3,13176,5.000,6.000,1.000000,0.000,0.000,0.000,0
+13176:13180-Analysis-Locked,13180,106-Long Prompt Experiment-Generation-5,13179,106-Long Prompt Experiment-Generation-4,13176,4.000,5.000,1.000000,0.000,0.000,0.000,0
+13176:13181-Analysis-Locked,13181,106-Long Prompt Experiment-Generation-6,13180,106-Long Prompt Experiment-Generation-5,13176,5.000,4.000,1.000000,0.000,0.000,0.000,0
+13176:13182-Analysis-Locked,13182,106-Long Prompt Experiment-Generation-7,13181,106-Long Prompt Experiment-Generation-6,13176,0.000,5.000,5.000000,0.000,0.000,0.000,0
+13176:13183-Analysis-Locked,13183,106-Long Prompt Experiment-Generation-8,13182,106-Long Prompt Experiment-Generation-7,13176,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13176:13184-Analysis-Locked,13184,106-Long Prompt Experiment-Generation-9,13183,106-Long Prompt Experiment-Generation-8,13176,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13176:13185-Analysis-Locked,13185,106-Long Prompt Experiment-Generation-10,13176,106-Long Prompt Experiment-Generation-1,13176,0.000,4.000,4.000000,0.000,0.000,0.000,0
+13196:13196-Analysis-Locked,13196,106-Long Prompt Experiment-Generation-1,,,13196,2.000,,0.000000,0.000,,0.000,0
+13196:13197-Analysis-Locked,13197,106-Long Prompt Experiment-Generation-2,13205,106-Long Prompt Experiment-Generation-10,13196,4.000,0.000,4.000000,0.000,0.000,0.000,0
+13196:13198-Analysis-Locked,13198,106-Long Prompt Experiment-Generation-3,13197,106-Long Prompt Experiment-Generation-2,13196,2.000,4.000,2.000000,0.000,0.000,0.000,0
+13196:13199-Analysis-Locked,13199,106-Long Prompt Experiment-Generation-4,13198,106-Long Prompt Experiment-Generation-3,13196,5.000,2.000,3.000000,0.000,0.000,0.000,0
+13196:13200-Analysis-Locked,13200,106-Long Prompt Experiment-Generation-5,13199,106-Long Prompt Experiment-Generation-4,13196,2.000,5.000,3.000000,0.000,0.000,0.000,0
+13196:13201-Analysis-Locked,13201,106-Long Prompt Experiment-Generation-6,13200,106-Long Prompt Experiment-Generation-5,13196,3.000,2.000,1.000000,0.000,0.000,0.000,0
+13196:13202-Analysis-Locked,13202,106-Long Prompt Experiment-Generation-7,13201,106-Long Prompt Experiment-Generation-6,13196,0.000,3.000,3.000000,0.000,0.000,0.000,0
+13196:13203-Analysis-Locked,13203,106-Long Prompt Experiment-Generation-8,13202,106-Long Prompt Experiment-Generation-7,13196,3.000,0.000,3.000000,0.000,0.000,0.000,0
+13196:13204-Analysis-Locked,13204,106-Long Prompt Experiment-Generation-9,13203,106-Long Prompt Experiment-Generation-8,13196,0.000,3.000,3.000000,0.000,0.000,0.000,0
+13196:13205-Analysis-Locked,13205,106-Long Prompt Experiment-Generation-10,13196,106-Long Prompt Experiment-Generation-1,13196,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13216:13216-Analysis-Locked,13216,106-Long Prompt Experiment-Generation-1,,,13216,4.000,,0.000000,0.000,,0.000,0
+13216:13217-Analysis-Locked,13217,106-Long Prompt Experiment-Generation-2,13225,106-Long Prompt Experiment-Generation-10,13216,5.000,1.000,4.000000,0.000,0.000,0.000,0
+13216:13218-Analysis-Locked,13218,106-Long Prompt Experiment-Generation-3,13217,106-Long Prompt Experiment-Generation-2,13216,5.000,5.000,0.000000,0.000,0.000,0.000,0
+13216:13219-Analysis-Locked,13219,106-Long Prompt Experiment-Generation-4,13218,106-Long Prompt Experiment-Generation-3,13216,5.000,5.000,0.000000,0.000,0.000,0.000,0
+13216:13220-Analysis-Locked,13220,106-Long Prompt Experiment-Generation-5,13219,106-Long Prompt Experiment-Generation-4,13216,5.000,5.000,0.000000,0.000,0.000,0.000,0
+13216:13221-Analysis-Locked,13221,106-Long Prompt Experiment-Generation-6,13220,106-Long Prompt Experiment-Generation-5,13216,6.000,5.000,1.000000,0.000,0.000,0.000,0
+13216:13222-Analysis-Locked,13222,106-Long Prompt Experiment-Generation-7,13221,106-Long Prompt Experiment-Generation-6,13216,0.000,6.000,6.000000,0.000,0.000,0.000,0
+13216:13223-Analysis-Locked,13223,106-Long Prompt Experiment-Generation-8,13222,106-Long Prompt Experiment-Generation-7,13216,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13216:13224-Analysis-Locked,13224,106-Long Prompt Experiment-Generation-9,13223,106-Long Prompt Experiment-Generation-8,13216,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13216:13225-Analysis-Locked,13225,106-Long Prompt Experiment-Generation-10,13216,106-Long Prompt Experiment-Generation-1,13216,1.000,4.000,3.000000,0.000,0.000,0.000,0
+13236:13236-Analysis-Locked,13236,106-Long Prompt Experiment-Generation-1,,,13236,3.000,,0.000000,0.000,,0.000,0
+13236:13237-Analysis-Locked,13237,106-Long Prompt Experiment-Generation-2,13245,106-Long Prompt Experiment-Generation-10,13236,5.000,1.000,4.000000,0.000,0.000,0.000,0
+13236:13238-Analysis-Locked,13238,106-Long Prompt Experiment-Generation-3,13237,106-Long Prompt Experiment-Generation-2,13236,4.000,5.000,1.000000,0.000,0.000,0.000,0
+13236:13239-Analysis-Locked,13239,106-Long Prompt Experiment-Generation-4,13238,106-Long Prompt Experiment-Generation-3,13236,0.000,4.000,4.000000,0.000,0.000,0.000,0
+13236:13240-Analysis-Locked,13240,106-Long Prompt Experiment-Generation-5,13239,106-Long Prompt Experiment-Generation-4,13236,4.000,0.000,4.000000,0.000,0.000,0.000,0
+13236:13241-Analysis-Locked,13241,106-Long Prompt Experiment-Generation-6,13240,106-Long Prompt Experiment-Generation-5,13236,5.000,4.000,1.000000,0.000,0.000,0.000,0
+13236:13242-Analysis-Locked,13242,106-Long Prompt Experiment-Generation-7,13241,106-Long Prompt Experiment-Generation-6,13236,0.000,5.000,5.000000,0.000,0.000,0.000,0
+13236:13243-Analysis-Locked,13243,106-Long Prompt Experiment-Generation-8,13242,106-Long Prompt Experiment-Generation-7,13236,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13236:13244-Analysis-Locked,13244,106-Long Prompt Experiment-Generation-9,13243,106-Long Prompt Experiment-Generation-8,13236,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13236:13245-Analysis-Locked,13245,106-Long Prompt Experiment-Generation-10,13236,106-Long Prompt Experiment-Generation-1,13236,1.000,3.000,2.000000,0.000,0.000,0.000,0
+13256:13256-Analysis-Locked,13256,106-Long Prompt Experiment-Generation-1,,,13256,4.000,,0.000000,1.000,,0.000,0
+13256:13257-Analysis-Locked,13257,106-Long Prompt Experiment-Generation-2,13265,106-Long Prompt Experiment-Generation-10,13256,4.000,2.000,2.000000,2.000,2.000,0.000,0
+13256:13258-Analysis-Locked,13258,106-Long Prompt Experiment-Generation-3,13257,106-Long Prompt Experiment-Generation-2,13256,4.000,4.000,0.000000,1.000,2.000,1.000,0
+13256:13259-Analysis-Locked,13259,106-Long Prompt Experiment-Generation-4,13258,106-Long Prompt Experiment-Generation-3,13256,5.000,4.000,1.000000,1.000,1.000,0.000,0
+13256:13260-Analysis-Locked,13260,106-Long Prompt Experiment-Generation-5,13259,106-Long Prompt Experiment-Generation-4,13256,3.000,5.000,2.000000,0.000,1.000,1.000,0
+13256:13261-Analysis-Locked,13261,106-Long Prompt Experiment-Generation-6,13260,106-Long Prompt Experiment-Generation-5,13256,4.000,3.000,1.000000,3.000,0.000,3.000,0
+13256:13262-Analysis-Locked,13262,106-Long Prompt Experiment-Generation-7,13261,106-Long Prompt Experiment-Generation-6,13256,0.000,4.000,4.000000,0.000,3.000,3.000,0
+13256:13263-Analysis-Locked,13263,106-Long Prompt Experiment-Generation-8,13262,106-Long Prompt Experiment-Generation-7,13256,1.000,0.000,1.000000,0.000,0.000,0.000,0
+13256:13264-Analysis-Locked,13264,106-Long Prompt Experiment-Generation-9,13263,106-Long Prompt Experiment-Generation-8,13256,0.000,1.000,1.000000,0.000,0.000,0.000,0
+13256:13265-Analysis-Locked,13265,106-Long Prompt Experiment-Generation-10,13256,106-Long Prompt Experiment-Generation-1,13256,2.000,4.000,2.000000,2.000,1.000,1.000,0
+13276:13276-Analysis-Locked,13276,106-Long Prompt Experiment-Generation-1,,,13276,5.000,,0.000000,3.000,,0.000,0
+13276:13277-Analysis-Locked,13277,106-Long Prompt Experiment-Generation-2,13285,106-Long Prompt Experiment-Generation-10,13276,5.000,1.000,4.000000,1.000,0.000,1.000,0
+13276:13278-Analysis-Locked,13278,106-Long Prompt Experiment-Generation-3,13277,106-Long Prompt Experiment-Generation-2,13276,4.000,5.000,1.000000,3.000,1.000,2.000,0
+13276:13279-Analysis-Locked,13279,106-Long Prompt Experiment-Generation-4,13278,106-Long Prompt Experiment-Generation-3,13276,4.000,4.000,0.000000,3.000,3.000,0.000,0
+13276:13280-Analysis-Locked,13280,106-Long Prompt Experiment-Generation-5,13279,106-Long Prompt Experiment-Generation-4,13276,4.000,4.000,0.000000,1.000,3.000,2.000,0
+13276:13281-Analysis-Locked,13281,106-Long Prompt Experiment-Generation-6,13280,106-Long Prompt Experiment-Generation-5,13276,5.000,4.000,1.000000,2.000,1.000,1.000,0
+13276:13282-Analysis-Locked,13282,106-Long Prompt Experiment-Generation-7,13281,106-Long Prompt Experiment-Generation-6,13276,0.000,5.000,5.000000,0.000,2.000,2.000,0
+13276:13283-Analysis-Locked,13283,106-Long Prompt Experiment-Generation-8,13282,106-Long Prompt Experiment-Generation-7,13276,0.000,0.000,0.000000,0.000,0.000,0.000,0
+13276:13284-Analysis-Locked,13284,106-Long Prompt Experiment-Generation-9,13283,106-Long Prompt Experiment-Generation-8,13276,0.000,0.000,0.000000,0.000,0.000,0.000,0
+13276:13285-Analysis-Locked,13285,106-Long Prompt Experiment-Generation-10,13276,106-Long Prompt Experiment-Generation-1,13276,1.000,5.000,4.000000,0.000,3.000,3.000,0
+13296:13296-Analysis-Locked,13296,106-Long Prompt Experiment-Generation-1,,,13296,5.000,,0.000000,2.000,,0.000,0
+13296:13297-Analysis-Locked,13297,106-Long Prompt Experiment-Generation-2,13305,106-Long Prompt Experiment-Generation-10,13296,6.000,1.000,5.000000,1.000,0.000,1.000,0
+13296:13298-Analysis-Locked,13298,106-Long Prompt Experiment-Generation-3,13297,106-Long Prompt Experiment-Generation-2,13296,6.000,6.000,0.000000,2.000,1.000,1.000,0
+13296:13299-Analysis-Locked,13299,106-Long Prompt Experiment-Generation-4,13298,106-Long Prompt Experiment-Generation-3,13296,6.000,6.000,0.000000,0.000,2.000,2.000,0
+13296:13300-Analysis-Locked,13300,106-Long Prompt Experiment-Generation-5,13299,106-Long Prompt Experiment-Generation-4,13296,7.000,6.000,1.000000,0.000,0.000,0.000,0
+13296:13301-Analysis-Locked,13301,106-Long Prompt Experiment-Generation-6,13300,106-Long Prompt Experiment-Generation-5,13296,7.000,7.000,0.000000,3.000,0.000,3.000,0
+13296:13302-Analysis-Locked,13302,106-Long Prompt Experiment-Generation-7,13301,106-Long Prompt Experiment-Generation-6,13296,0.000,7.000,7.000000,0.000,3.000,3.000,0
+13296:13303-Analysis-Locked,13303,106-Long Prompt Experiment-Generation-8,13302,106-Long Prompt Experiment-Generation-7,13296,3.000,0.000,3.000000,0.000,0.000,0.000,0
+13296:13304-Analysis-Locked,13304,106-Long Prompt Experiment-Generation-9,13303,106-Long Prompt Experiment-Generation-8,13296,0.000,3.000,3.000000,0.000,0.000,0.000,0
+13296:13305-Analysis-Locked,13305,106-Long Prompt Experiment-Generation-10,13296,106-Long Prompt Experiment-Generation-1,13296,1.000,5.000,4.000000,0.000,2.000,2.000,0
+13316:13316-Analysis-Locked,13316,106-Long Prompt Experiment-Generation-1,,,13316,6.000,,0.000000,2.000,,0.000,0
+13316:13317-Analysis-Locked,13317,106-Long Prompt Experiment-Generation-2,13325,106-Long Prompt Experiment-Generation-10,13316,7.000,1.000,6.000000,1.000,0.000,1.000,0
+13316:13318-Analysis-Locked,13318,106-Long Prompt Experiment-Generation-3,13317,106-Long Prompt Experiment-Generation-2,13316,7.000,7.000,0.000000,1.000,1.000,0.000,0
+13316:13319-Analysis-Locked,13319,106-Long Prompt Experiment-Generation-4,13318,106-Long Prompt Experiment-Generation-3,13316,7.000,7.000,0.000000,2.000,1.000,1.000,0
+13316:13320-Analysis-Locked,13320,106-Long Prompt Experiment-Generation-5,13319,106-Long Prompt Experiment-Generation-4,13316,7.000,7.000,0.000000,0.000,2.000,2.000,0
+13316:13321-Analysis-Locked,13321,106-Long Prompt Experiment-Generation-6,13320,106-Long Prompt Experiment-Generation-5,13316,4.000,7.000,3.000000,4.000,0.000,4.000,0
+13316:13322-Analysis-Locked,13322,106-Long Prompt Experiment-Generation-7,13321,106-Long Prompt Experiment-Generation-6,13316,0.000,4.000,4.000000,0.000,4.000,4.000,0
+13316:13323-Analysis-Locked,13323,106-Long Prompt Experiment-Generation-8,13322,106-Long Prompt Experiment-Generation-7,13316,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13316:13324-Analysis-Locked,13324,106-Long Prompt Experiment-Generation-9,13323,106-Long Prompt Experiment-Generation-8,13316,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13316:13325-Analysis-Locked,13325,106-Long Prompt Experiment-Generation-10,13316,106-Long Prompt Experiment-Generation-1,13316,1.000,6.000,5.000000,0.000,2.000,2.000,0
+13336:13336-Analysis-Locked,13336,106-Long Prompt Experiment-Generation-1,,,13336,4.000,,0.000000,0.000,,0.000,0
+13336:13337-Analysis-Locked,13337,106-Long Prompt Experiment-Generation-2,13345,106-Long Prompt Experiment-Generation-10,13336,4.000,1.000,3.000000,0.000,0.000,0.000,0
+13336:13338-Analysis-Locked,13338,106-Long Prompt Experiment-Generation-3,13337,106-Long Prompt Experiment-Generation-2,13336,5.000,4.000,1.000000,0.000,0.000,0.000,0
+13336:13339-Analysis-Locked,13339,106-Long Prompt Experiment-Generation-4,13338,106-Long Prompt Experiment-Generation-3,13336,5.000,5.000,0.000000,1.000,0.000,1.000,0
+13336:13340-Analysis-Locked,13340,106-Long Prompt Experiment-Generation-5,13339,106-Long Prompt Experiment-Generation-4,13336,5.000,5.000,0.000000,1.000,1.000,0.000,0
+13336:13341-Analysis-Locked,13341,106-Long Prompt Experiment-Generation-6,13340,106-Long Prompt Experiment-Generation-5,13336,6.000,5.000,1.000000,0.000,1.000,1.000,0
+13336:13342-Analysis-Locked,13342,106-Long Prompt Experiment-Generation-7,13341,106-Long Prompt Experiment-Generation-6,13336,0.000,6.000,6.000000,0.000,0.000,0.000,0
+13336:13343-Analysis-Locked,13343,106-Long Prompt Experiment-Generation-8,13342,106-Long Prompt Experiment-Generation-7,13336,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13336:13344-Analysis-Locked,13344,106-Long Prompt Experiment-Generation-9,13343,106-Long Prompt Experiment-Generation-8,13336,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13336:13345-Analysis-Locked,13345,106-Long Prompt Experiment-Generation-10,13336,106-Long Prompt Experiment-Generation-1,13336,1.000,4.000,3.000000,0.000,0.000,0.000,0
+13356:13356-Analysis-Locked,13356,106-Long Prompt Experiment-Generation-1,,,13356,5.000,,0.000000,0.000,,0.000,0
+13356:13357-Analysis-Locked,13357,106-Long Prompt Experiment-Generation-2,13365,106-Long Prompt Experiment-Generation-10,13356,6.000,0.000,6.000000,3.000,0.000,3.000,0
+13356:13358-Analysis-Locked,13358,106-Long Prompt Experiment-Generation-3,13357,106-Long Prompt Experiment-Generation-2,13356,7.000,6.000,1.000000,4.000,3.000,1.000,0
+13356:13359-Analysis-Locked,13359,106-Long Prompt Experiment-Generation-4,13358,106-Long Prompt Experiment-Generation-3,13356,7.000,7.000,0.000000,0.000,4.000,4.000,0
+13356:13360-Analysis-Locked,13360,106-Long Prompt Experiment-Generation-5,13359,106-Long Prompt Experiment-Generation-4,13356,8.000,7.000,1.000000,0.000,0.000,0.000,0
+13356:13361-Analysis-Locked,13361,106-Long Prompt Experiment-Generation-6,13360,106-Long Prompt Experiment-Generation-5,13356,5.000,8.000,3.000000,0.000,0.000,0.000,0
+13356:13362-Analysis-Locked,13362,106-Long Prompt Experiment-Generation-7,13361,106-Long Prompt Experiment-Generation-6,13356,0.000,5.000,5.000000,0.000,0.000,0.000,0
+13356:13363-Analysis-Locked,13363,106-Long Prompt Experiment-Generation-8,13362,106-Long Prompt Experiment-Generation-7,13356,2.000,0.000,2.000000,0.000,0.000,0.000,0
+13356:13364-Analysis-Locked,13364,106-Long Prompt Experiment-Generation-9,13363,106-Long Prompt Experiment-Generation-8,13356,0.000,2.000,2.000000,0.000,0.000,0.000,0
+13356:13365-Analysis-Locked,13365,106-Long Prompt Experiment-Generation-10,13356,106-Long Prompt Experiment-Generation-1,13356,0.000,5.000,5.000000,0.000,0.000,0.000,0
+13376:13376-Analysis-Locked,13376,106-Long Prompt Experiment-Generation-1,,,13376,4.000,,0.000000,2.000,,0.000,0
+13376:13377-Analysis-Locked,13377,106-Long Prompt Experiment-Generation-2,13385,106-Long Prompt Experiment-Generation-10,13376,4.000,1.000,3.000000,2.000,0.000,2.000,0
+13376:13378-Analysis-Locked,13378,106-Long Prompt Experiment-Generation-3,13377,106-Long Prompt Experiment-Generation-2,13376,4.000,4.000,0.000000,1.000,2.000,1.000,0
+13376:13379-Analysis-Locked,13379,106-Long Prompt Experiment-Generation-4,13378,106-Long Prompt Experiment-Generation-3,13376,5.000,4.000,1.000000,2.000,1.000,1.000,0
+13376:13380-Analysis-Locked,13380,106-Long Prompt Experiment-Generation-5,13379,106-Long Prompt Experiment-Generation-4,13376,4.000,5.000,1.000000,2.000,2.000,0.000,0
+13376:13381-Analysis-Locked,13381,106-Long Prompt Experiment-Generation-6,13380,106-Long Prompt Experiment-Generation-5,13376,5.000,4.000,1.000000,2.000,2.000,0.000,0
+13376:13382-Analysis-Locked,13382,106-Long Prompt Experiment-Generation-7,13381,106-Long Prompt Experiment-Generation-6,13376,0.000,5.000,5.000000,0.000,2.000,2.000,0
+13376:13383-Analysis-Locked,13383,106-Long Prompt Experiment-Generation-8,13382,106-Long Prompt Experiment-Generation-7,13376,3.000,0.000,3.000000,0.000,0.000,0.000,0
+13376:13384-Analysis-Locked,13384,106-Long Prompt Experiment-Generation-9,13383,106-Long Prompt Experiment-Generation-8,13376,0.000,3.000,3.000000,0.000,0.000,0.000,0
+13376:13385-Analysis-Locked,13385,106-Long Prompt Experiment-Generation-10,13376,106-Long Prompt Experiment-Generation-1,13376,1.000,4.000,3.000000,0.000,2.000,2.000,0
+13396:13396-Analysis-Locked,13396,106-Long Prompt Experiment-Generation-1,,,13396,0.000,,0.000000,0.000,,0.000,0
+13396:13397-Analysis-Locked,13397,106-Long Prompt Experiment-Generation-2,13405,106-Long Prompt Experiment-Generation-10,13396,5.000,0.000,5.000000,1.000,0.000,1.000,0
+13396:13398-Analysis-Locked,13398,106-Long Prompt Experiment-Generation-3,13397,106-Long Prompt Experiment-Generation-2,13396,4.000,5.000,1.000000,1.000,1.000,0.000,0
+13396:13399-Analysis-Locked,13399,106-Long Prompt Experiment-Generation-4,13398,106-Long Prompt Experiment-Generation-3,13396,4.000,4.000,0.000000,1.000,1.000,0.000,0
+13396:13400-Analysis-Locked,13400,106-Long Prompt Experiment-Generation-5,13399,106-Long Prompt Experiment-Generation-4,13396,5.000,4.000,1.000000,1.000,1.000,0.000,0
+13396:13401-Analysis-Locked,13401,106-Long Prompt Experiment-Generation-6,13400,106-Long Prompt Experiment-Generation-5,13396,5.000,5.000,0.000000,1.000,1.000,0.000,0
+13396:13402-Analysis-Locked,13402,106-Long Prompt Experiment-Generation-7,13401,106-Long Prompt Experiment-Generation-6,13396,0.000,5.000,5.000000,0.000,1.000,1.000,0
+13396:13403-Analysis-Locked,13403,106-Long Prompt Experiment-Generation-8,13402,106-Long Prompt Experiment-Generation-7,13396,1.000,0.000,1.000000,0.000,0.000,0.000,0
+13396:13404-Analysis-Locked,13404,106-Long Prompt Experiment-Generation-9,13403,106-Long Prompt Experiment-Generation-8,13396,0.000,1.000,1.000000,0.000,0.000,0.000,0
+13396:13405-Analysis-Locked,13405,106-Long Prompt Experiment-Generation-10,13396,106-Long Prompt Experiment-Generation-1,13396,0.000,0.000,0.000000,0.000,0.000,0.000,0
+13026:13026-Analysis-FREE,13026,106-Long Prompt Experiment-Generation-1,,,13026,3.000,,0.000000,0.000,,0.000,1
+13026:13027-Analysis-FREE,13027,106-Long Prompt Experiment-Generation-2,13035,106-Long Prompt Experiment-Generation-10,13026,4.000,0.000,4.000000,0.000,0.000,0.000,1
+13026:13028-Analysis-FREE,13028,106-Long Prompt Experiment-Generation-3,13027,106-Long Prompt Experiment-Generation-2,13026,0.000,4.000,4.000000,0.000,0.000,0.000,1
+13026:13029-Analysis-FREE,13029,106-Long Prompt Experiment-Generation-4,13028,106-Long Prompt Experiment-Generation-3,13026,1.000,0.000,1.000000,1.000,0.000,1.000,1
+13026:13030-Analysis-FREE,13030,106-Long Prompt Experiment-Generation-5,13029,106-Long Prompt Experiment-Generation-4,13026,5.000,1.000,4.000000,1.000,1.000,0.000,1
+13026:13031-Analysis-FREE,13031,106-Long Prompt Experiment-Generation-6,13030,106-Long Prompt Experiment-Generation-5,13026,1.000,5.000,4.000000,0.000,1.000,1.000,1
+13026:13032-Analysis-FREE,13032,106-Long Prompt Experiment-Generation-7,13031,106-Long Prompt Experiment-Generation-6,13026,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13026:13033-Analysis-FREE,13033,106-Long Prompt Experiment-Generation-8,13032,106-Long Prompt Experiment-Generation-7,13026,2.000,3.000,1.000000,0.000,0.000,0.000,1
+13026:13034-Analysis-FREE,13034,106-Long Prompt Experiment-Generation-9,13033,106-Long Prompt Experiment-Generation-8,13026,3.000,2.000,1.000000,0.000,0.000,0.000,1
+13026:13035-Analysis-FREE,13035,106-Long Prompt Experiment-Generation-10,13026,106-Long Prompt Experiment-Generation-1,13026,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13046:13046-Analysis-FREE,13046,106-Long Prompt Experiment-Generation-1,,,13046,3.000,,0.000000,0.000,,0.000,1
+13046:13047-Analysis-FREE,13047,106-Long Prompt Experiment-Generation-2,13055,106-Long Prompt Experiment-Generation-10,13046,4.000,0.000,4.000000,0.000,0.000,0.000,1
+13046:13048-Analysis-FREE,13048,106-Long Prompt Experiment-Generation-3,13047,106-Long Prompt Experiment-Generation-2,13046,0.000,4.000,4.000000,0.000,0.000,0.000,1
+13046:13049-Analysis-FREE,13049,106-Long Prompt Experiment-Generation-4,13048,106-Long Prompt Experiment-Generation-3,13046,4.000,0.000,4.000000,1.000,0.000,1.000,1
+13046:13050-Analysis-FREE,13050,106-Long Prompt Experiment-Generation-5,13049,106-Long Prompt Experiment-Generation-4,13046,4.000,4.000,0.000000,0.000,1.000,1.000,1
+13046:13051-Analysis-FREE,13051,106-Long Prompt Experiment-Generation-6,13050,106-Long Prompt Experiment-Generation-5,13046,1.000,4.000,3.000000,0.000,0.000,0.000,1
+13046:13052-Analysis-FREE,13052,106-Long Prompt Experiment-Generation-7,13051,106-Long Prompt Experiment-Generation-6,13046,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13046:13053-Analysis-FREE,13053,106-Long Prompt Experiment-Generation-8,13052,106-Long Prompt Experiment-Generation-7,13046,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13046:13054-Analysis-FREE,13054,106-Long Prompt Experiment-Generation-9,13053,106-Long Prompt Experiment-Generation-8,13046,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13046:13055-Analysis-FREE,13055,106-Long Prompt Experiment-Generation-10,13046,106-Long Prompt Experiment-Generation-1,13046,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13066:13066-Analysis-FREE,13066,106-Long Prompt Experiment-Generation-1,,,13066,3.000,,0.000000,0.000,,0.000,1
+13066:13067-Analysis-FREE,13067,106-Long Prompt Experiment-Generation-2,13075,106-Long Prompt Experiment-Generation-10,13066,4.000,0.000,4.000000,1.000,0.000,1.000,1
+13066:13068-Analysis-FREE,13068,106-Long Prompt Experiment-Generation-3,13067,106-Long Prompt Experiment-Generation-2,13066,0.000,4.000,4.000000,0.000,1.000,1.000,1
+13066:13069-Analysis-FREE,13069,106-Long Prompt Experiment-Generation-4,13068,106-Long Prompt Experiment-Generation-3,13066,5.000,0.000,5.000000,0.000,0.000,0.000,1
+13066:13070-Analysis-FREE,13070,106-Long Prompt Experiment-Generation-5,13069,106-Long Prompt Experiment-Generation-4,13066,5.000,5.000,0.000000,0.000,0.000,0.000,1
+13066:13071-Analysis-FREE,13071,106-Long Prompt Experiment-Generation-6,13070,106-Long Prompt Experiment-Generation-5,13066,1.000,5.000,4.000000,0.000,0.000,0.000,1
+13066:13072-Analysis-FREE,13072,106-Long Prompt Experiment-Generation-7,13071,106-Long Prompt Experiment-Generation-6,13066,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13066:13073-Analysis-FREE,13073,106-Long Prompt Experiment-Generation-8,13072,106-Long Prompt Experiment-Generation-7,13066,2.000,3.000,1.000000,0.000,0.000,0.000,1
+13066:13074-Analysis-FREE,13074,106-Long Prompt Experiment-Generation-9,13073,106-Long Prompt Experiment-Generation-8,13066,3.000,2.000,1.000000,0.000,0.000,0.000,1
+13066:13075-Analysis-FREE,13075,106-Long Prompt Experiment-Generation-10,13066,106-Long Prompt Experiment-Generation-1,13066,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13086:13086-Analysis-FREE,13086,106-Long Prompt Experiment-Generation-1,,,13086,3.000,,0.000000,0.000,,0.000,1
+13086:13087-Analysis-FREE,13087,106-Long Prompt Experiment-Generation-2,13095,106-Long Prompt Experiment-Generation-10,13086,3.000,0.000,3.000000,3.000,0.000,3.000,1
+13086:13088-Analysis-FREE,13088,106-Long Prompt Experiment-Generation-3,13087,106-Long Prompt Experiment-Generation-2,13086,0.000,3.000,3.000000,0.000,3.000,3.000,1
+13086:13089-Analysis-FREE,13089,106-Long Prompt Experiment-Generation-4,13088,106-Long Prompt Experiment-Generation-3,13086,5.000,0.000,5.000000,0.000,0.000,0.000,1
+13086:13090-Analysis-FREE,13090,106-Long Prompt Experiment-Generation-5,13089,106-Long Prompt Experiment-Generation-4,13086,0.000,5.000,5.000000,0.000,0.000,0.000,1
+13086:13091-Analysis-FREE,13091,106-Long Prompt Experiment-Generation-6,13090,106-Long Prompt Experiment-Generation-5,13086,1.000,0.000,1.000000,0.000,0.000,0.000,1
+13086:13092-Analysis-FREE,13092,106-Long Prompt Experiment-Generation-7,13091,106-Long Prompt Experiment-Generation-6,13086,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13086:13093-Analysis-FREE,13093,106-Long Prompt Experiment-Generation-8,13092,106-Long Prompt Experiment-Generation-7,13086,2.000,3.000,1.000000,0.000,0.000,0.000,1
+13086:13094-Analysis-FREE,13094,106-Long Prompt Experiment-Generation-9,13093,106-Long Prompt Experiment-Generation-8,13086,0.000,2.000,2.000000,0.000,0.000,0.000,1
+13086:13095-Analysis-FREE,13095,106-Long Prompt Experiment-Generation-10,13086,106-Long Prompt Experiment-Generation-1,13086,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13106:13106-Analysis-FREE,13106,106-Long Prompt Experiment-Generation-1,,,13106,3.000,,0.000000,0.000,,0.000,1
+13106:13107-Analysis-FREE,13107,106-Long Prompt Experiment-Generation-2,13115,106-Long Prompt Experiment-Generation-10,13106,4.000,0.000,4.000000,1.000,0.000,1.000,1
+13106:13108-Analysis-FREE,13108,106-Long Prompt Experiment-Generation-3,13107,106-Long Prompt Experiment-Generation-2,13106,0.000,4.000,4.000000,0.000,1.000,1.000,1
+13106:13109-Analysis-FREE,13109,106-Long Prompt Experiment-Generation-4,13108,106-Long Prompt Experiment-Generation-3,13106,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13106:13110-Analysis-FREE,13110,106-Long Prompt Experiment-Generation-5,13109,106-Long Prompt Experiment-Generation-4,13106,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13106:13111-Analysis-FREE,13111,106-Long Prompt Experiment-Generation-6,13110,106-Long Prompt Experiment-Generation-5,13106,1.000,0.000,1.000000,0.000,0.000,0.000,1
+13106:13112-Analysis-FREE,13112,106-Long Prompt Experiment-Generation-7,13111,106-Long Prompt Experiment-Generation-6,13106,0.000,1.000,1.000000,0.000,0.000,0.000,1
+13106:13113-Analysis-FREE,13113,106-Long Prompt Experiment-Generation-8,13112,106-Long Prompt Experiment-Generation-7,13106,3.000,0.000,3.000000,0.000,0.000,0.000,1
+13106:13114-Analysis-FREE,13114,106-Long Prompt Experiment-Generation-9,13113,106-Long Prompt Experiment-Generation-8,13106,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13106:13115-Analysis-FREE,13115,106-Long Prompt Experiment-Generation-10,13106,106-Long Prompt Experiment-Generation-1,13106,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13126:13126-Analysis-FREE,13126,106-Long Prompt Experiment-Generation-1,,,13126,3.000,,0.000000,0.000,,0.000,1
+13126:13127-Analysis-FREE,13127,106-Long Prompt Experiment-Generation-2,13135,106-Long Prompt Experiment-Generation-10,13126,4.000,0.000,4.000000,0.000,0.000,0.000,1
+13126:13128-Analysis-FREE,13128,106-Long Prompt Experiment-Generation-3,13127,106-Long Prompt Experiment-Generation-2,13126,0.000,4.000,4.000000,0.000,0.000,0.000,1
+13126:13129-Analysis-FREE,13129,106-Long Prompt Experiment-Generation-4,13128,106-Long Prompt Experiment-Generation-3,13126,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13126:13130-Analysis-FREE,13130,106-Long Prompt Experiment-Generation-5,13129,106-Long Prompt Experiment-Generation-4,13126,1.000,0.000,1.000000,0.000,0.000,0.000,1
+13126:13131-Analysis-FREE,13131,106-Long Prompt Experiment-Generation-6,13130,106-Long Prompt Experiment-Generation-5,13126,1.000,1.000,0.000000,0.000,0.000,0.000,1
+13126:13132-Analysis-FREE,13132,106-Long Prompt Experiment-Generation-7,13131,106-Long Prompt Experiment-Generation-6,13126,2.000,1.000,1.000000,0.000,0.000,0.000,1
+13126:13133-Analysis-FREE,13133,106-Long Prompt Experiment-Generation-8,13132,106-Long Prompt Experiment-Generation-7,13126,3.000,2.000,1.000000,0.000,0.000,0.000,1
+13126:13134-Analysis-FREE,13134,106-Long Prompt Experiment-Generation-9,13133,106-Long Prompt Experiment-Generation-8,13126,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13126:13135-Analysis-FREE,13135,106-Long Prompt Experiment-Generation-10,13126,106-Long Prompt Experiment-Generation-1,13126,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13146:13146-Analysis-FREE,13146,106-Long Prompt Experiment-Generation-1,,,13146,3.000,,0.000000,3.000,,0.000,1
+13146:13147-Analysis-FREE,13147,106-Long Prompt Experiment-Generation-2,13155,106-Long Prompt Experiment-Generation-10,13146,4.000,0.000,4.000000,1.000,0.000,1.000,1
+13146:13148-Analysis-FREE,13148,106-Long Prompt Experiment-Generation-3,13147,106-Long Prompt Experiment-Generation-2,13146,0.000,4.000,4.000000,0.000,1.000,1.000,1
+13146:13149-Analysis-FREE,13149,106-Long Prompt Experiment-Generation-4,13148,106-Long Prompt Experiment-Generation-3,13146,3.000,0.000,3.000000,0.000,0.000,0.000,1
+13146:13150-Analysis-FREE,13150,106-Long Prompt Experiment-Generation-5,13149,106-Long Prompt Experiment-Generation-4,13146,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13146:13151-Analysis-FREE,13151,106-Long Prompt Experiment-Generation-6,13150,106-Long Prompt Experiment-Generation-5,13146,1.000,0.000,1.000000,0.000,0.000,0.000,1
+13146:13152-Analysis-FREE,13152,106-Long Prompt Experiment-Generation-7,13151,106-Long Prompt Experiment-Generation-6,13146,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13146:13153-Analysis-FREE,13153,106-Long Prompt Experiment-Generation-8,13152,106-Long Prompt Experiment-Generation-7,13146,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13146:13154-Analysis-FREE,13154,106-Long Prompt Experiment-Generation-9,13153,106-Long Prompt Experiment-Generation-8,13146,13.000,3.000,10.000000,0.000,0.000,0.000,1
+13146:13155-Analysis-FREE,13155,106-Long Prompt Experiment-Generation-10,13146,106-Long Prompt Experiment-Generation-1,13146,0.000,3.000,3.000000,0.000,3.000,3.000,1
+13166:13166-Analysis-FREE,13166,106-Long Prompt Experiment-Generation-1,,,13166,3.000,,0.000000,1.000,,0.000,1
+13166:13167-Analysis-FREE,13167,106-Long Prompt Experiment-Generation-2,13175,106-Long Prompt Experiment-Generation-10,13166,6.000,0.000,6.000000,5.000,0.000,5.000,1
+13166:13168-Analysis-FREE,13168,106-Long Prompt Experiment-Generation-3,13167,106-Long Prompt Experiment-Generation-2,13166,0.000,6.000,6.000000,0.000,5.000,5.000,1
+13166:13169-Analysis-FREE,13169,106-Long Prompt Experiment-Generation-4,13168,106-Long Prompt Experiment-Generation-3,13166,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13166:13170-Analysis-FREE,13170,106-Long Prompt Experiment-Generation-5,13169,106-Long Prompt Experiment-Generation-4,13166,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13166:13171-Analysis-FREE,13171,106-Long Prompt Experiment-Generation-6,13170,106-Long Prompt Experiment-Generation-5,13166,1.000,0.000,1.000000,0.000,0.000,0.000,1
+13166:13172-Analysis-FREE,13172,106-Long Prompt Experiment-Generation-7,13171,106-Long Prompt Experiment-Generation-6,13166,2.000,1.000,1.000000,0.000,0.000,0.000,1
+13166:13173-Analysis-FREE,13173,106-Long Prompt Experiment-Generation-8,13172,106-Long Prompt Experiment-Generation-7,13166,3.000,2.000,1.000000,0.000,0.000,0.000,1
+13166:13174-Analysis-FREE,13174,106-Long Prompt Experiment-Generation-9,13173,106-Long Prompt Experiment-Generation-8,13166,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13166:13175-Analysis-FREE,13175,106-Long Prompt Experiment-Generation-10,13166,106-Long Prompt Experiment-Generation-1,13166,0.000,3.000,3.000000,0.000,1.000,1.000,1
+13186:13186-Analysis-FREE,13186,106-Long Prompt Experiment-Generation-1,,,13186,3.000,,0.000000,2.000,,0.000,1
+13186:13187-Analysis-FREE,13187,106-Long Prompt Experiment-Generation-2,13195,106-Long Prompt Experiment-Generation-10,13186,4.000,0.000,4.000000,0.000,0.000,0.000,1
+13186:13188-Analysis-FREE,13188,106-Long Prompt Experiment-Generation-3,13187,106-Long Prompt Experiment-Generation-2,13186,0.000,4.000,4.000000,0.000,0.000,0.000,1
+13186:13189-Analysis-FREE,13189,106-Long Prompt Experiment-Generation-4,13188,106-Long Prompt Experiment-Generation-3,13186,4.000,0.000,4.000000,0.000,0.000,0.000,1
+13186:13190-Analysis-FREE,13190,106-Long Prompt Experiment-Generation-5,13189,106-Long Prompt Experiment-Generation-4,13186,4.000,4.000,0.000000,0.000,0.000,0.000,1
+13186:13191-Analysis-FREE,13191,106-Long Prompt Experiment-Generation-6,13190,106-Long Prompt Experiment-Generation-5,13186,1.000,4.000,3.000000,0.000,0.000,0.000,1
+13186:13192-Analysis-FREE,13192,106-Long Prompt Experiment-Generation-7,13191,106-Long Prompt Experiment-Generation-6,13186,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13186:13193-Analysis-FREE,13193,106-Long Prompt Experiment-Generation-8,13192,106-Long Prompt Experiment-Generation-7,13186,2.000,3.000,1.000000,0.000,0.000,0.000,1
+13186:13194-Analysis-FREE,13194,106-Long Prompt Experiment-Generation-9,13193,106-Long Prompt Experiment-Generation-8,13186,0.000,2.000,2.000000,0.000,0.000,0.000,1
+13186:13195-Analysis-FREE,13195,106-Long Prompt Experiment-Generation-10,13186,106-Long Prompt Experiment-Generation-1,13186,0.000,3.000,3.000000,0.000,2.000,2.000,1
+13206:13206-Analysis-FREE,13206,106-Long Prompt Experiment-Generation-1,,,13206,3.000,,0.000000,2.000,,0.000,1
+13206:13207-Analysis-FREE,13207,106-Long Prompt Experiment-Generation-2,13215,106-Long Prompt Experiment-Generation-10,13206,4.000,0.000,4.000000,2.000,0.000,2.000,1
+13206:13208-Analysis-FREE,13208,106-Long Prompt Experiment-Generation-3,13207,106-Long Prompt Experiment-Generation-2,13206,0.000,4.000,4.000000,0.000,2.000,2.000,1
+13206:13209-Analysis-FREE,13209,106-Long Prompt Experiment-Generation-4,13208,106-Long Prompt Experiment-Generation-3,13206,6.000,0.000,6.000000,0.000,0.000,0.000,1
+13206:13210-Analysis-FREE,13210,106-Long Prompt Experiment-Generation-5,13209,106-Long Prompt Experiment-Generation-4,13206,4.000,6.000,2.000000,0.000,0.000,0.000,1
+13206:13211-Analysis-FREE,13211,106-Long Prompt Experiment-Generation-6,13210,106-Long Prompt Experiment-Generation-5,13206,1.000,4.000,3.000000,0.000,0.000,0.000,1
+13206:13212-Analysis-FREE,13212,106-Long Prompt Experiment-Generation-7,13211,106-Long Prompt Experiment-Generation-6,13206,2.000,1.000,1.000000,0.000,0.000,0.000,1
+13206:13213-Analysis-FREE,13213,106-Long Prompt Experiment-Generation-8,13212,106-Long Prompt Experiment-Generation-7,13206,13.000,2.000,11.000000,0.000,0.000,0.000,1
+13206:13214-Analysis-FREE,13214,106-Long Prompt Experiment-Generation-9,13213,106-Long Prompt Experiment-Generation-8,13206,3.000,13.000,10.000000,0.000,0.000,0.000,1
+13206:13215-Analysis-FREE,13215,106-Long Prompt Experiment-Generation-10,13206,106-Long Prompt Experiment-Generation-1,13206,0.000,3.000,3.000000,0.000,2.000,2.000,1
+13226:13226-Analysis-FREE,13226,106-Long Prompt Experiment-Generation-1,,,13226,3.000,,0.000000,2.000,,0.000,1
+13226:13227-Analysis-FREE,13227,106-Long Prompt Experiment-Generation-2,13235,106-Long Prompt Experiment-Generation-10,13226,4.000,0.000,4.000000,2.000,0.000,2.000,1
+13226:13228-Analysis-FREE,13228,106-Long Prompt Experiment-Generation-3,13227,106-Long Prompt Experiment-Generation-2,13226,0.000,4.000,4.000000,0.000,2.000,2.000,1
+13226:13229-Analysis-FREE,13229,106-Long Prompt Experiment-Generation-4,13228,106-Long Prompt Experiment-Generation-3,13226,3.000,0.000,3.000000,0.000,0.000,0.000,1
+13226:13230-Analysis-FREE,13230,106-Long Prompt Experiment-Generation-5,13229,106-Long Prompt Experiment-Generation-4,13226,13.000,3.000,10.000000,0.000,0.000,0.000,1
+13226:13231-Analysis-FREE,13231,106-Long Prompt Experiment-Generation-6,13230,106-Long Prompt Experiment-Generation-5,13226,1.000,13.000,12.000000,0.000,0.000,0.000,1
+13226:13232-Analysis-FREE,13232,106-Long Prompt Experiment-Generation-7,13231,106-Long Prompt Experiment-Generation-6,13226,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13226:13233-Analysis-FREE,13233,106-Long Prompt Experiment-Generation-8,13232,106-Long Prompt Experiment-Generation-7,13226,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13226:13234-Analysis-FREE,13234,106-Long Prompt Experiment-Generation-9,13233,106-Long Prompt Experiment-Generation-8,13226,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13226:13235-Analysis-FREE,13235,106-Long Prompt Experiment-Generation-10,13226,106-Long Prompt Experiment-Generation-1,13226,0.000,3.000,3.000000,0.000,2.000,2.000,1
+13246:13246-Analysis-FREE,13246,106-Long Prompt Experiment-Generation-1,,,13246,3.000,,0.000000,0.000,,0.000,1
+13246:13247-Analysis-FREE,13247,106-Long Prompt Experiment-Generation-2,13255,106-Long Prompt Experiment-Generation-10,13246,4.000,0.000,4.000000,6.000,0.000,6.000,1
+13246:13248-Analysis-FREE,13248,106-Long Prompt Experiment-Generation-3,13247,106-Long Prompt Experiment-Generation-2,13246,0.000,4.000,4.000000,0.000,6.000,6.000,1
+13246:13249-Analysis-FREE,13249,106-Long Prompt Experiment-Generation-4,13248,106-Long Prompt Experiment-Generation-3,13246,1.000,0.000,1.000000,1.000,0.000,1.000,1
+13246:13250-Analysis-FREE,13250,106-Long Prompt Experiment-Generation-5,13249,106-Long Prompt Experiment-Generation-4,13246,1.000,1.000,0.000000,0.000,1.000,1.000,1
+13246:13251-Analysis-FREE,13251,106-Long Prompt Experiment-Generation-6,13250,106-Long Prompt Experiment-Generation-5,13246,2.000,1.000,1.000000,0.000,0.000,0.000,1
+13246:13252-Analysis-FREE,13252,106-Long Prompt Experiment-Generation-7,13251,106-Long Prompt Experiment-Generation-6,13246,0.000,2.000,2.000000,0.000,0.000,0.000,1
+13246:13253-Analysis-FREE,13253,106-Long Prompt Experiment-Generation-8,13252,106-Long Prompt Experiment-Generation-7,13246,3.000,0.000,3.000000,2.000,0.000,2.000,1
+13246:13254-Analysis-FREE,13254,106-Long Prompt Experiment-Generation-9,13253,106-Long Prompt Experiment-Generation-8,13246,3.000,3.000,0.000000,3.000,2.000,1.000,1
+13246:13255-Analysis-FREE,13255,106-Long Prompt Experiment-Generation-10,13246,106-Long Prompt Experiment-Generation-1,13246,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13266:13266-Analysis-FREE,13266,106-Long Prompt Experiment-Generation-1,,,13266,3.000,,0.000000,2.000,,0.000,1
+13266:13267-Analysis-FREE,13267,106-Long Prompt Experiment-Generation-2,13275,106-Long Prompt Experiment-Generation-10,13266,3.000,0.000,3.000000,2.000,0.000,2.000,1
+13266:13268-Analysis-FREE,13268,106-Long Prompt Experiment-Generation-3,13267,106-Long Prompt Experiment-Generation-2,13266,0.000,3.000,3.000000,0.000,2.000,2.000,1
+13266:13269-Analysis-FREE,13269,106-Long Prompt Experiment-Generation-4,13268,106-Long Prompt Experiment-Generation-3,13266,2.000,0.000,2.000000,2.000,0.000,2.000,1
+13266:13270-Analysis-FREE,13270,106-Long Prompt Experiment-Generation-5,13269,106-Long Prompt Experiment-Generation-4,13266,0.000,2.000,2.000000,0.000,2.000,2.000,1
+13266:13271-Analysis-FREE,13271,106-Long Prompt Experiment-Generation-6,13270,106-Long Prompt Experiment-Generation-5,13266,1.000,0.000,1.000000,0.000,0.000,0.000,1
+13266:13272-Analysis-FREE,13272,106-Long Prompt Experiment-Generation-7,13271,106-Long Prompt Experiment-Generation-6,13266,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13266:13273-Analysis-FREE,13273,106-Long Prompt Experiment-Generation-8,13272,106-Long Prompt Experiment-Generation-7,13266,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13266:13274-Analysis-FREE,13274,106-Long Prompt Experiment-Generation-9,13273,106-Long Prompt Experiment-Generation-8,13266,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13266:13275-Analysis-FREE,13275,106-Long Prompt Experiment-Generation-10,13266,106-Long Prompt Experiment-Generation-1,13266,0.000,3.000,3.000000,0.000,2.000,2.000,1
+13286:13286-Analysis-FREE,13286,106-Long Prompt Experiment-Generation-1,,,13286,3.000,,0.000000,2.000,,0.000,1
+13286:13287-Analysis-FREE,13287,106-Long Prompt Experiment-Generation-2,13295,106-Long Prompt Experiment-Generation-10,13286,4.000,0.000,4.000000,1.000,0.000,1.000,1
+13286:13288-Analysis-FREE,13288,106-Long Prompt Experiment-Generation-3,13287,106-Long Prompt Experiment-Generation-2,13286,0.000,4.000,4.000000,0.000,1.000,1.000,1
+13286:13289-Analysis-FREE,13289,106-Long Prompt Experiment-Generation-4,13288,106-Long Prompt Experiment-Generation-3,13286,3.000,0.000,3.000000,0.000,0.000,0.000,1
+13286:13290-Analysis-FREE,13290,106-Long Prompt Experiment-Generation-5,13289,106-Long Prompt Experiment-Generation-4,13286,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13286:13291-Analysis-FREE,13291,106-Long Prompt Experiment-Generation-6,13290,106-Long Prompt Experiment-Generation-5,13286,1.000,3.000,2.000000,0.000,0.000,0.000,1
+13286:13292-Analysis-FREE,13292,106-Long Prompt Experiment-Generation-7,13291,106-Long Prompt Experiment-Generation-6,13286,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13286:13293-Analysis-FREE,13293,106-Long Prompt Experiment-Generation-8,13292,106-Long Prompt Experiment-Generation-7,13286,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13286:13294-Analysis-FREE,13294,106-Long Prompt Experiment-Generation-9,13293,106-Long Prompt Experiment-Generation-8,13286,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13286:13295-Analysis-FREE,13295,106-Long Prompt Experiment-Generation-10,13286,106-Long Prompt Experiment-Generation-1,13286,0.000,3.000,3.000000,0.000,2.000,2.000,1
+13306:13306-Analysis-FREE,13306,106-Long Prompt Experiment-Generation-1,,,13306,3.000,,0.000000,1.000,,0.000,1
+13306:13307-Analysis-FREE,13307,106-Long Prompt Experiment-Generation-2,13315,106-Long Prompt Experiment-Generation-10,13306,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13306:13308-Analysis-FREE,13308,106-Long Prompt Experiment-Generation-3,13307,106-Long Prompt Experiment-Generation-2,13306,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13306:13309-Analysis-FREE,13309,106-Long Prompt Experiment-Generation-4,13308,106-Long Prompt Experiment-Generation-3,13306,3.000,0.000,3.000000,0.000,0.000,0.000,1
+13306:13310-Analysis-FREE,13310,106-Long Prompt Experiment-Generation-5,13309,106-Long Prompt Experiment-Generation-4,13306,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13306:13311-Analysis-FREE,13311,106-Long Prompt Experiment-Generation-6,13310,106-Long Prompt Experiment-Generation-5,13306,1.000,3.000,2.000000,0.000,0.000,0.000,1
+13306:13312-Analysis-FREE,13312,106-Long Prompt Experiment-Generation-7,13311,106-Long Prompt Experiment-Generation-6,13306,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13306:13313-Analysis-FREE,13313,106-Long Prompt Experiment-Generation-8,13312,106-Long Prompt Experiment-Generation-7,13306,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13306:13314-Analysis-FREE,13314,106-Long Prompt Experiment-Generation-9,13313,106-Long Prompt Experiment-Generation-8,13306,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13306:13315-Analysis-FREE,13315,106-Long Prompt Experiment-Generation-10,13306,106-Long Prompt Experiment-Generation-1,13306,0.000,3.000,3.000000,0.000,1.000,1.000,1
+13326:13326-Analysis-FREE,13326,106-Long Prompt Experiment-Generation-1,,,13326,3.000,,0.000000,1.000,,0.000,1
+13326:13327-Analysis-FREE,13327,106-Long Prompt Experiment-Generation-2,13335,106-Long Prompt Experiment-Generation-10,13326,3.000,0.000,3.000000,2.000,0.000,2.000,1
+13326:13328-Analysis-FREE,13328,106-Long Prompt Experiment-Generation-3,13327,106-Long Prompt Experiment-Generation-2,13326,0.000,3.000,3.000000,0.000,2.000,2.000,1
+13326:13329-Analysis-FREE,13329,106-Long Prompt Experiment-Generation-4,13328,106-Long Prompt Experiment-Generation-3,13326,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13326:13330-Analysis-FREE,13330,106-Long Prompt Experiment-Generation-5,13329,106-Long Prompt Experiment-Generation-4,13326,1.000,0.000,1.000000,0.000,0.000,0.000,1
+13326:13331-Analysis-FREE,13331,106-Long Prompt Experiment-Generation-6,13330,106-Long Prompt Experiment-Generation-5,13326,0.000,1.000,1.000000,0.000,0.000,0.000,1
+13326:13332-Analysis-FREE,13332,106-Long Prompt Experiment-Generation-7,13331,106-Long Prompt Experiment-Generation-6,13326,3.000,0.000,3.000000,0.000,0.000,0.000,1
+13326:13333-Analysis-FREE,13333,106-Long Prompt Experiment-Generation-8,13332,106-Long Prompt Experiment-Generation-7,13326,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13326:13334-Analysis-FREE,13334,106-Long Prompt Experiment-Generation-9,13333,106-Long Prompt Experiment-Generation-8,13326,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13326:13335-Analysis-FREE,13335,106-Long Prompt Experiment-Generation-10,13326,106-Long Prompt Experiment-Generation-1,13326,0.000,3.000,3.000000,0.000,1.000,1.000,1
+13346:13346-Analysis-FREE,13346,106-Long Prompt Experiment-Generation-1,,,13346,3.000,,0.000000,0.000,,0.000,1
+13346:13347-Analysis-FREE,13347,106-Long Prompt Experiment-Generation-2,13355,106-Long Prompt Experiment-Generation-10,13346,4.000,0.000,4.000000,0.000,0.000,0.000,1
+13346:13348-Analysis-FREE,13348,106-Long Prompt Experiment-Generation-3,13347,106-Long Prompt Experiment-Generation-2,13346,0.000,4.000,4.000000,0.000,0.000,0.000,1
+13346:13349-Analysis-FREE,13349,106-Long Prompt Experiment-Generation-4,13348,106-Long Prompt Experiment-Generation-3,13346,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13346:13350-Analysis-FREE,13350,106-Long Prompt Experiment-Generation-5,13349,106-Long Prompt Experiment-Generation-4,13346,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13346:13351-Analysis-FREE,13351,106-Long Prompt Experiment-Generation-6,13350,106-Long Prompt Experiment-Generation-5,13346,1.000,0.000,1.000000,0.000,0.000,0.000,1
+13346:13352-Analysis-FREE,13352,106-Long Prompt Experiment-Generation-7,13351,106-Long Prompt Experiment-Generation-6,13346,3.000,1.000,2.000000,0.000,0.000,0.000,1
+13346:13353-Analysis-FREE,13353,106-Long Prompt Experiment-Generation-8,13352,106-Long Prompt Experiment-Generation-7,13346,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13346:13354-Analysis-FREE,13354,106-Long Prompt Experiment-Generation-9,13353,106-Long Prompt Experiment-Generation-8,13346,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13346:13355-Analysis-FREE,13355,106-Long Prompt Experiment-Generation-10,13346,106-Long Prompt Experiment-Generation-1,13346,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13366:13366-Analysis-FREE,13366,106-Long Prompt Experiment-Generation-1,,,13366,3.000,,0.000000,0.000,,0.000,1
+13366:13367-Analysis-FREE,13367,106-Long Prompt Experiment-Generation-2,13375,106-Long Prompt Experiment-Generation-10,13366,4.000,0.000,4.000000,1.000,0.000,1.000,1
+13366:13368-Analysis-FREE,13368,106-Long Prompt Experiment-Generation-3,13367,106-Long Prompt Experiment-Generation-2,13366,0.000,4.000,4.000000,0.000,1.000,1.000,1
+13366:13369-Analysis-FREE,13369,106-Long Prompt Experiment-Generation-4,13368,106-Long Prompt Experiment-Generation-3,13366,3.000,0.000,3.000000,0.000,0.000,0.000,1
+13366:13370-Analysis-FREE,13370,106-Long Prompt Experiment-Generation-5,13369,106-Long Prompt Experiment-Generation-4,13366,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13366:13371-Analysis-FREE,13371,106-Long Prompt Experiment-Generation-6,13370,106-Long Prompt Experiment-Generation-5,13366,1.000,3.000,2.000000,0.000,0.000,0.000,1
+13366:13372-Analysis-FREE,13372,106-Long Prompt Experiment-Generation-7,13371,106-Long Prompt Experiment-Generation-6,13366,2.000,1.000,1.000000,0.000,0.000,0.000,1
+13366:13373-Analysis-FREE,13373,106-Long Prompt Experiment-Generation-8,13372,106-Long Prompt Experiment-Generation-7,13366,3.000,2.000,1.000000,0.000,0.000,0.000,1
+13366:13374-Analysis-FREE,13374,106-Long Prompt Experiment-Generation-9,13373,106-Long Prompt Experiment-Generation-8,13366,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13366:13375-Analysis-FREE,13375,106-Long Prompt Experiment-Generation-10,13366,106-Long Prompt Experiment-Generation-1,13366,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13386:13386-Analysis-FREE,13386,106-Long Prompt Experiment-Generation-1,,,13386,3.000,,0.000000,3.000,,0.000,1
+13386:13387-Analysis-FREE,13387,106-Long Prompt Experiment-Generation-2,13395,106-Long Prompt Experiment-Generation-10,13386,4.000,0.000,4.000000,0.000,0.000,0.000,1
+13386:13388-Analysis-FREE,13388,106-Long Prompt Experiment-Generation-3,13387,106-Long Prompt Experiment-Generation-2,13386,0.000,4.000,4.000000,0.000,0.000,0.000,1
+13386:13389-Analysis-FREE,13389,106-Long Prompt Experiment-Generation-4,13388,106-Long Prompt Experiment-Generation-3,13386,3.000,0.000,3.000000,0.000,0.000,0.000,1
+13386:13390-Analysis-FREE,13390,106-Long Prompt Experiment-Generation-5,13389,106-Long Prompt Experiment-Generation-4,13386,0.000,3.000,3.000000,0.000,0.000,0.000,1
+13386:13391-Analysis-FREE,13391,106-Long Prompt Experiment-Generation-6,13390,106-Long Prompt Experiment-Generation-5,13386,1.000,0.000,1.000000,0.000,0.000,0.000,1
+13386:13392-Analysis-FREE,13392,106-Long Prompt Experiment-Generation-7,13391,106-Long Prompt Experiment-Generation-6,13386,0.000,1.000,1.000000,0.000,0.000,0.000,1
+13386:13393-Analysis-FREE,13393,106-Long Prompt Experiment-Generation-8,13392,106-Long Prompt Experiment-Generation-7,13386,3.000,0.000,3.000000,0.000,0.000,0.000,1
+13386:13394-Analysis-FREE,13394,106-Long Prompt Experiment-Generation-9,13393,106-Long Prompt Experiment-Generation-8,13386,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13386:13395-Analysis-FREE,13395,106-Long Prompt Experiment-Generation-10,13386,106-Long Prompt Experiment-Generation-1,13386,0.000,3.000,3.000000,0.000,3.000,3.000,1
+13406:13406-Analysis-FREE,13406,106-Long Prompt Experiment-Generation-1,,,13406,3.000,,0.000000,0.000,,0.000,1
+13406:13407-Analysis-FREE,13407,106-Long Prompt Experiment-Generation-2,13415,106-Long Prompt Experiment-Generation-10,13406,4.000,0.000,4.000000,0.000,0.000,0.000,1
+13406:13408-Analysis-FREE,13408,106-Long Prompt Experiment-Generation-3,13407,106-Long Prompt Experiment-Generation-2,13406,0.000,4.000,4.000000,0.000,0.000,0.000,1
+13406:13409-Analysis-FREE,13409,106-Long Prompt Experiment-Generation-4,13408,106-Long Prompt Experiment-Generation-3,13406,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13406:13410-Analysis-FREE,13410,106-Long Prompt Experiment-Generation-5,13409,106-Long Prompt Experiment-Generation-4,13406,0.000,0.000,0.000000,0.000,0.000,0.000,1
+13406:13411-Analysis-FREE,13411,106-Long Prompt Experiment-Generation-6,13410,106-Long Prompt Experiment-Generation-5,13406,2.000,0.000,2.000000,0.000,0.000,0.000,1
+13406:13412-Analysis-FREE,13412,106-Long Prompt Experiment-Generation-7,13411,106-Long Prompt Experiment-Generation-6,13406,3.000,2.000,1.000000,0.000,0.000,0.000,1
+13406:13413-Analysis-FREE,13413,106-Long Prompt Experiment-Generation-8,13412,106-Long Prompt Experiment-Generation-7,13406,3.000,3.000,0.000000,0.000,0.000,0.000,1
+13406:13414-Analysis-FREE,13414,106-Long Prompt Experiment-Generation-9,13413,106-Long Prompt Experiment-Generation-8,13406,2.000,3.000,1.000000,0.000,0.000,0.000,1
+13406:13415-Analysis-FREE,13415,106-Long Prompt Experiment-Generation-10,13406,106-Long Prompt Experiment-Generation-1,13406,0.000,3.000,3.000000,0.000,0.000,0.000,1

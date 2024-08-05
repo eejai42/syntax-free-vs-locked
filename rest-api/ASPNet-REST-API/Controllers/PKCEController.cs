@@ -142,7 +142,7 @@ namespace ASPNet_REST_API.Controllers
                     issuer: _auth0Settings.Domain,
                     audience: _auth0Settings.Audience,
                     claims: claims,
-                    expires: DateTime.Now.AddHours(12),
+                    expires: DateTime.Now.AddDays(30),
                     signingCredentials: creds
                 );
 
