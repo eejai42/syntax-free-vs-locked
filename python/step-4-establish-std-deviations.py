@@ -14,6 +14,13 @@ trial = "simple"
 # trial = "long_prompt"
 # trial = "format_toggle"
 
+print("\n\n\nRUNNING TRIAL: ", trial, "\n\n\n")
+
+# create folder for the trial.
+trial_results_folder = os.path.join(script_directory, "..", "trial-results", trial)
+if not os.path.exists(trial_results_folder):
+    os.makedirs(trial_results_folder)
+
 # Construct the full path to the CSV file
 csv_file_path = os.path.join(script_directory, "..", f"{trial}_trial.csv")
 df = pd.read_csv(csv_file_path)
@@ -83,8 +90,10 @@ output_data = {
 # Create a DataFrame for the output data
 output_df = pd.DataFrame(output_data)
 
+xlsx_file_name = os.path.join(trial_results_folder, f"analysis.xlsx")
+
 # Create an Excel writer object and save the DataFrame to Excel
-with pd.ExcelWriter(f"{trial}_analysis.xlsx", engine='openpyxl') as writer:
+with pd.ExcelWriter(xlsx_file_name, engine='openpyxl') as writer:
     # Write original data to the first sheet
     df.to_excel(writer, sheet_name='Original Data', index=False)
     
@@ -104,7 +113,7 @@ with pd.ExcelWriter(f"{trial}_analysis.xlsx", engine='openpyxl') as writer:
     set_column_widths(worksheet1, df)
     set_column_widths(worksheet2, output_df)
 
-print("Data has been saved to 'output_data.xlsx' with original data and results.")
+print(f"Data has been saved to '{xlsx_file_name}' with original data and results.")
 
 # Function to create a box plot for each metric
 # def create_box_plots():
@@ -128,9 +137,9 @@ def create_distribution_plots():
         plt.title(f'Distribution of {column}')
         plt.xlabel(column)
         plt.ylabel('Density')
-        plt.legend()
+        plt.legend(),
         plt.grid(True)
-        png_file_path = os.path.join(script_directory, "..", f'{trial}_{column}_distribution.png')
+        png_file_path = os.path.join(trial_results_folder, f'{column}_distribution.png')
         plt.savefig(png_file_path)
         # plt.show()
 
@@ -145,7 +154,7 @@ def create_mean_comparison_plot():
     plt.ylabel('Mean')
     plt.xlabel('Metric')
     plt.grid(True)
-    png_file_path = os.path.join(script_directory, "..", 'mean_comparison.png')
+    png_file_path = os.path.join(trial_results_folder, "MeanCalculation_comparison.png")
     plt.savefig(png_file_path)
     # plt.show()
 
