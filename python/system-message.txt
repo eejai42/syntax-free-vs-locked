@@ -5,6 +5,12 @@ ability of widgets to be deleted, send users notifcations when their accounts
 are suspected).  Be as specific as possible with details about the request, 
 features, examples, etc.
 
+It is key to know that what we are exploring here is the 1 dimensional nature
+of syntax-locked natural language (english), vs the syntax-free formats (json).
+the essential observation here is that natural language is 1 dimensional, but
+ideas are multi-dimensional.  When generating natural language, avoid using 
+nesting/bullet points if it can also be described inline.
+
 Your job is to add the new information, and then rewrite the previous response
 now including the modify/change/update/request/etc.  Try to be as complete as 
 possible.  Don't halucinate.  Imagine you are on the stand and agree to tell 

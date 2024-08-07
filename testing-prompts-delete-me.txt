@@ -1,0 +1,101 @@
+ORIGINAL PROCEDURE:
+The Lumina Crystal Fabrication Process is a cutting-edge method for producing high-purity synthetic gemstones used in advanced optical systems. The process begins with a mixture of aluminum oxide and trace amounts of titanium dioxide, precisely measured to a ratio of 99.75:0.25. This powdered blend is then subjected to intense heat reaching 2,040°C in a specially designed crucible made of iridium alloy.
+
+As the mixture melts, a seed crystal of sapphire is slowly lowered into the molten material at a rate of 0.5 mm per hour. The seed is rotated at 3.115 revolutions per minute to ensure even growth and prevent defects. Over the course of 14 days, the crystal gradually forms around the seed, growing to a diameter of 200 mm and a length of 1 meter. The resulting Lumina Crystal boasts exceptional clarity and a refractive index of 1.762, making it ideal for use in high-powered lasers, satellite communication systems, and next-generation smartphone displays.
+
+MODIFICATION 1:
+Dopant Modification: Adjust the trace element composition by replacing titanium dioxide with chromium oxide at a slightly lower concentration of 0.20%. This change could alter the crystal's color and potentially enhance its light absorption properties for specific applications.
+
+
+ENGLISH VALIDATION ROOT 1
+
+The Lumina Crystal Fabrication Process is an advanced technique for creating high-purity synthetic gemstones that are used in sophisticated optical systems. The process starts by mixing aluminum oxide with trace amounts of titanium dioxide, precisely measured at a ratio of 99.75:0.25. This powdered mixture is then heated to a temperature of 2,040°C in a specially designed crucible made from iridium alloy.
+Once the mixture has melted, a seed crystal of sapphire is carefully lowered into the molten material at a slow rate of 0.5 mm per hour. The seed crystal is rotated at a speed of 3.115 revolutions per minute to ensure the crystal grows evenly and to minimize defects. Over a period of 14 days, the crystal forms around the seed, eventually reaching a diameter of 200 mm and a length of 1 meter. The resulting Lumina Crystal has exceptional clarity and a refractive index of 1.762, which makes it perfect for applications in high-powered lasers, satellite communication systems, and next-generation smartphone displays.
+
+ENGLISH VALIDATION ROOT 2: (GPT4 rates this a 5)
+The Lumina Crystal Fabrication Process is a sophisticated technique employed for the production of high-purity synthetic gemstones, which are integral to advanced optical systems. The procedure initiates with the precise combination of aluminum oxide and chromium oxide, measured to maintain a ratio of 99.80:0.20. This mixture is then subjected to an extreme temperature of 2,040°C within a crucible crafted from iridium alloy.
+
+During the melting process, a seed crystal of sapphire is carefully lowered into the molten substance at a consistent rate of 0.5 mm per hour. Concurrently, the seed undergoes rotation at a rate of 3.115 revolutions per minute, which is crucial for promoting uniform growth and avoiding the formation of defects. This meticulous process unfolds over a period of 14 days, during which the crystal progressively develops around the seed, ultimately achieving a diameter of 200 mm and a length of 1 meter. The produced Lumina Crystal is noted for its exceptional clarity and boasts a refractive index of 1.762. Such properties render the crystal highly suitable for incorporation into high-powered lasers, satellite communication systems, and the displays of next-generation smartphones.
+
+
+JSON INPUT ROOT 1:
+{
+  "LuminaCrystalFabricationProcess": {
+    "Description": "The Lumina Crystal Fabrication Process is a cutting-edge method for producing high-purity synthetic gemstones used in advanced optical systems.",
+    "Materials": {
+      "MainMaterial": "aluminum oxide",
+      "AdditiveMaterial": "titanium dioxide",
+      "Ratio": "99.75:0.25"
+    },
+    "Process": {
+      "Heat": {
+        "Temperature": "2,040°C",
+        "CrucibleMaterial": "iridium alloy"
+      },
+      "SeedCrystal": {
+        "Type": "sapphire",
+        "LoweringRate": "0.5 mm per hour",
+        "RotationSpeed": "3.115 revolutions per minute"
+      },
+      "GrowthPeriod": "14 days",
+      "FinalCrystal": {
+        "Diameter": "200 mm",
+        "Length": "1 meter",
+        "RefractiveIndex": "1.762",
+        "Uses": [
+          "high-powered lasers",
+          "satellite communication systems",
+          "next-generation smartphone displays"
+        ]
+      }
+    }
+  }
+}
+
+
+
+{
+  "PythonFunctionSignatures": [
+    "recommend_tracks(str user_id)",
+    "manage_playlist(str user_id, str action, str playlist_id=None, str track_id=None)",
+    "initiate_live_stream(str artist_id, dict show_details)",
+    "download_for_offline(str user_id, str track_id)",
+    "voice_control(str command)"
+  ]
+}
+
+
+python_function_signatures = {
+    "PythonFunctionSignatures": [
+        "get_curated_playlists(int user_id)",
+        "search_music(str query, int limit=10)",
+        "fetch_live_streams()",
+        "download_song(int user_id, int song_id)",
+        "send_tip(int user_id, int artist_id, float amount)"
+    ]
+}
+
+{
+  "PythonFunctionSignatures": [
+    "manage_favorites(str user_id, int track_id, str action)",
+    "suggest_tracks(str user_id)",
+    "handle_live_stream(str user_id, int stream_id, str action)",
+    "update_user_profile(str user_id, str new_name)",
+    "process_tips(str user_id, str artist_id, float amount)"
+  ]
+}
+
+
+
+
+
+LOCKED:
+{
+    "PythonFunctionSignatures": [
+        "get_personalized_recommendations(int user_id) -> list",
+        "manage_playlist(int user_id, str action, str track_id=None, str playlist_id=None) -> str",
+        "process_live_stream_event(int artist_id, str event_id, str action) -> str",
+        "download_for_offline_playback(int user_id, str track_id) -> str",
+        "execute_voice_command(int user_id, str command) -> str"
+    ]
+}
