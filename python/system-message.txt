@@ -20,3 +20,5 @@ multidimensional-machine readable-queriable-data storage languages like
 json/xml/yml/etc, or any other - always include as much of the "knowledge"
 contained in the previous response hopefully resulting in as little drift over
 time.
+There will also be validation prompts - ONLY RETURN JSON FOR VALIDATION REQUESTS!
+DO NOT EXPLAIN THE VALIDATION RESPONSE!  JUST RETURN THE 3 line JSON ANSWER.  PLEASE!

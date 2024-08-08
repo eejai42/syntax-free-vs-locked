@@ -1,10 +1,11 @@
+import re
 from time import sleep
 import requests
 import json
 import os
 import sys
 
-REST_BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imdvb2dsZS1vYXV0aDJ8MTA1NzYwMDM4MzgyNzgzMTI0MTYxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IkVKIEFsZXhhbmRyYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVlamFpNDJAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0kxbWFHeXVIUG5tSWFFbG40cVI5UXFaUFdMX3NMLVZabmVfd1ZxeUV4bXg4b2JRYWJ6bXc9czk2LWMiLCJlbWFpbF92ZXJpZmllZCI6IlRydWUiLCJleHAiOjE3MjI4NjgwOTYsImlzcyI6ImVqLXRpY3RhY3RvZS1kZW1vLnVzLmF1dGgwLmNvbSIsImF1ZCI6Imh0dHBzOi8vZWotdGljdGFjdG9lLWRlbW8udXMuYXV0aDAuY29tL2FwaS92MiJ9.vzbd2vFYnz_WJ1yKLynjMFcp3ZBEvBXSY06yaBH6_Ck"
+REST_BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imdvb2dsZS1vYXV0aDJ8MTA1NzYwMDM4MzgyNzgzMTI0MTYxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IkVKIEFsZXhhbmRyYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVlamFpNDJAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0kxbWFHeXVIUG5tSWFFbG40cVI5UXFaUFdMX3NMLVZabmVfd1ZxeUV4bXg4b2JRYWJ6bXc9czk2LWMiLCJlbWFpbF92ZXJpZmllZCI6IlRydWUiLCJleHAiOjE3MjU2NDU1NDYsImlzcyI6ImVqLXRpY3RhY3RvZS1kZW1vLnVzLmF1dGgwLmNvbSIsImF1ZCI6Imh0dHBzOi8vZWotdGljdGFjdG9lLWRlbW8udXMuYXV0aDAuY29tL2FwaS92MiJ9.ehq9454DD-tFe48QWolcPsdoYGqWkvVQZz5L8SMedoc"
 BASE_URL = "https://localhost:42016/User"
 HEADERS = {
     "Authorization": f"Bearer {REST_BEARER_TOKEN}",
@@ -23,7 +24,6 @@ def get_generation_transform_by_number(transform_number):
 
 def get_existing_artifact_without_validator(transform_number):
     url = f"{BASE_URL}/TrialArtifacts?airtableWhere=OR(AND(Trial=Blank(),TransformerNumber%3D{transform_number}%2cNOT(PrimaryExtensionArtifact))%2cArtifactIdentifier%3D{transform_number})"
-    print("URL:", url)
     response = requests.get(url, headers=HEADERS, verify=False)
     response.raise_for_status()
     artifacts = response.json()
@@ -64,8 +64,9 @@ def write_prompt_and_setup_response_file(prompt):
         file.write("prompt did not complete... :( try again")
     
     # Write the prompt to a text file for the GPT process
+    prompt = prompt.replace("\"", "\\\"")  # Escape double quotes in the prompt
     with open("prompt.txt", "w", encoding="utf-8") as file:
-        file.write(prompt)
+        file.write(prompt)    
 
 def run_gpt():
     # Execute the GPT process using the system command
@@ -75,6 +76,19 @@ def read_response_from_file():
     # Read the response from the output file
     with open("response.txt", "r", encoding="utf-8") as file:
         return file.read()
+    
+def extract_json_from_response(response):
+    # Use a regular expression to find the content between triple backticks
+    if ('```' not in response):
+        return response
+    
+    match = re.search(r"```json\n(.*?)```", response, re.DOTALL)
+    if match:
+        return match.group(1).strip()  # Return the JSON content without leading/trailing whitespace
+    match = re.search(r"```\n(.*?)```", response, re.DOTALL)
+    if match:
+        return match.group(1).strip()  # Return the JSON content without leading/trailing whitespace
+    return response  # Return None if no JSON block is found    
 
 def process_prompt_and_response(artifact, prompt_field, actual_prompt_field, response_field):
     suggested_prompt = artifact[prompt_field]
@@ -106,7 +120,7 @@ def process_prompt_and_response(artifact, prompt_field, actual_prompt_field, res
         response = "Prompt processing failed after 3 attempts."
 
     artifact[actual_prompt_field] = suggested_prompt  # Usually, the actual prompt is the same as the suggested unless changed dynamically
-    artifact[response_field] = response
+    artifact[response_field] = extract_json_from_response(response)
     return artifact
 
 def update_trial_artifact(artifact):
@@ -141,7 +155,6 @@ def root_prompt(iterations=1, transformer_number=1001):
         # Process the initial prompt and response
         artifact = process_prompt_and_response(artifact, "SuggestedPrompt", "ActualPrompt", "Response")
         updated_artifact = update_trial_artifact(artifact)
-        print("Artifact updated successfully:", updated_artifact)
         
         # Reload the artifact after the initial update
         artifact = get_trial_artifact_by_id(artifact_id)
@@ -155,7 +168,6 @@ def root_prompt(iterations=1, transformer_number=1001):
             sleep(5)
             break
         updated_artifact = update_trial_artifact(artifact)
-        print("Validation artifact updated successfully:", updated_artifact)
 
 def add_generation(iterations=1, validator_transform_number=1000, transformer_number=1001):
     generation_transform = get_generation_transform_by_number(validator_transform_number)
@@ -181,12 +193,9 @@ def add_generation(iterations=1, validator_transform_number=1000, transformer_nu
         parent_artifact["PrimaryExtensionArtifact"] = generation_artifact_id
         update_trial_artifact(parent_artifact)
 
-        print(updated_artifact)
-        
         # Process the initial prompt and response
         updated_artifact = process_prompt_and_response(updated_artifact, "SuggestedPrompt", "ActualPrompt", "Response")
         updated_artifact = update_trial_artifact(updated_artifact)
-        print("Validation Artifact updated successfully:", updated_artifact)
         
         # Reload the artifact after the initial update
         updated_artifact = get_trial_artifact_by_id(generation_artifact_id)
@@ -194,7 +203,6 @@ def add_generation(iterations=1, validator_transform_number=1000, transformer_nu
         # Process the validation prompt and response
         updated_artifact = process_prompt_and_response(updated_artifact, "SuggestedValidationPrompt", "ActualValidationPrompt", "ValidationResponse")
         updated_artifact = update_trial_artifact(updated_artifact)
-        print("Validation artifact updated successfully:", updated_artifact)
         
         # print("Updated the artifact's PrimaryExtensionArtifact field")
 

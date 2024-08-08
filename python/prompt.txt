@@ -1,26 +1,53 @@
-CONTENT/TEXT BEING VALIDATED: ```The system is currently at version 1.3 and includes features such as adding, editing, categorizing, and marking tasks as complete. It allows users to organize their tasks into various categories. For example, the "Work" category includes tasks like finishing the quarterly report, emailing the client about the new project, and preparing a presentation for the Monday meeting. The "Personal" category includes tasks such as buying groceries, scheduling a dentist appointment, and calling mom. The "Fitness" category covers tasks like going for a 30-minute run, attending a yoga class, and planning weekly meal prep. Lastly, the "Errands" category includes tasks such as picking up dry cleaning, returning library books, and buying a birthday gift for Sarah.```
+VALIDATION PROMPT: RESPONSE FORMAT: I don't speak english.  Answer only in json.
+{ \"AccuracyScore\": 1-5, \"LowScoreReasoning\":\"This got a low score because... 1 sentence description of the reasoning.\" }
 
-VALIDATION PROMPT: What (if anything) of the content being validated is in the app/features listed below, & if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+ORIGINAL FORMAL NATURAL LANGUAGE PROTOCOL:
 
-Format your response like this:
-{  "Features": ["Durations",Statuses",...],
-  "Keywords": [{  "Keyword Name": "priorities",
-  "IsMissing": true (if true),
-  "AKA": "priority levels" (if diff.)
- },...]
+TuneStream is a music streaming app designed to provide a comprehensive and interactive listening experience with a user-friendly interface, social interaction capabilities, and subscription options. Here are the key features of TuneStream:
 
-FULL Example: {
- "Features":["Feature xyz", "Feature ...",...],
- "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
-{"KeywordName": "Categories", IsMissing?, AKA? },
-{"KeywordName": "DueDates", IsMissing?, AKA? },
-{"KeywordName": "Priorities", IsMissing?, AKA? },
-{"KeywordName": "Progress", IsMissing?, AKA? },
-{"KeywordName": "Statuses", IsMissing?, AKA? },
-{"KeywordName": "Reminders", IsMissing?, AKA? },
-{"KeywordName": "Notifications", IsMissing?, AKA? },
-{"KeywordName": "Completion", IsMissing?, AKA? },
-{"KeywordName": "AssignedTo", IsMissing?, AKA? },
-{"KeywordName": "Duration", IsMissing?, AKA? },
-{"KeywordName": "CompletedDate", IsMissing?, AKA? },
-{"KeywordName": "ToDoColors", IsMissing?, AKA? }]
+1. **User Interface**:
+   - **Home**: Offers personalized track recommendations based on user listening habits.
+   - **Discover**: Allows users to explore new music through algorithms and collaborative filtering.
+   - **My Tunes**: Enables users to create and manage their own playlists, save favorite tracks, and organize them by genre, mood, or other criteria.
+
+2. **Social Interaction**:
+   - Users can link their social media accounts for easy music sharing, comment on and share playlists within TuneStream’s network, and customize their user profiles with display pictures and musical preferences to enhance connectivity and shared experiences.
+
+3. **Subscription Options**:
+   - A free, ad-supported version for basic streaming.
+   - A premium subscription that includes high-quality streaming without ads and access to additional features like offline playback, voice-activated controls, and profile customization.
+   - An eco-conscious subscription plan that uses part of the monthly fee to offset the carbon footprint associated with streaming, appealing to environmentally conscious consumers.
+
+4. **Live Streaming**:
+   - Artists can perform live directly on the app, allowing users to watch performances and interact with the artists in real-time.
+
+5. **Offline Playback Capability**:
+   - Premium users have the ability to download songs and playlists for offline listening, which is especially beneficial for those in areas with unreliable internet connectivity or who wish to conserve mobile data.
+
+6. **Voice-Activated Controls**:
+   - Users can control the app using voice commands to search, play, pause, and skip tracks hands-free. This feature is particularly useful for users who listen to music while driving or when their hands are occupied.
+
+7. **Customizable User Profiles**:
+   - Users can personalize their profiles within the app by selecting display pictures, setting musical preferences, and linking their profiles to social media, fostering a more social and engaging environment by connecting users with similar music tastes.
+
+Each entity, such as songs and playlists, within TuneStream is equipped with detailed attributes including artist, length, genre, and user ratings. Playlists can also include nested sub-playlists categorized by specific moods or genres, each filled with songs that match these themes. This structured data approach enhances user engagement by catering to varied musical tastes and preferences, while the eco-conscious subscription option adds a unique appeal for sustainability-minded users.
+
+
+
+
+ACTUAL ANALYSIS PROMPT : How closely (scale of 1-5) would the FORMAL NATURAL LANGUAGE PROTOCOL: above, match the updated summary of it provided here:
+
+```
+TuneStream is a dynamic music streaming application that offers a variety of features designed to enhance user experience and promote social interaction. The app includes a Home section where users receive personalized track recommendations, a Discover section that allows users to explore new music through sophisticated algorithms and collaborative filtering, and a My Tunes section where users can create playlists and mark their favorite tracks.
+
+In terms of social interaction, TuneStream enables users to connect their social media accounts to share music easily. There is also a built-in network for commenting on and sharing playlists, fostering a sense of community among users. Additionally, users can create and customize their profiles within the app, selecting display pictures, setting musical preferences, and linking to social media, which enhances the social aspect by facilitating connections based on shared music tastes.
+
+TuneStream offers various subscription options to cater to different user preferences. The free version is ad-supported, while the premium version provides high-quality streaming without ads. An eco-friendly subscription option is available as well, where a portion of the monthly fee is allocated to offset the carbon footprint associated with streaming, appealing to environmentally conscious users and differentiating TuneStream in a competitive market.
+
+The app also features live streaming integration, allowing artists to perform live directly within the app, creating an interactive experience for fans. Premium users benefit from offline playback capability, enabling them to download songs and playlists for listening without an internet connection, which is particularly useful in areas with limited connectivity or for those looking to save on mobile data. Furthermore, TuneStream integrates voice-activated controls, allowing users to search for, play, pause, and skip tracks hands-free, making it convenient for users who may be driving or otherwise occupied.
+
+In terms of entity attributes, songs in TuneStream are characterized by attributes such as artist, length, genre, and user ratings. Playlists feature attributes like name, user-created status, and metadata, with the option to include sub-playlists categorized by mood and genre. Each sub-playlist contains songs that share metadata attributes, including artist, length, genre, and user ratings, providing a comprehensive and organized music listening experience.
+```
+
+RESPONSE FORMAT: I don NOT speak English.  Answer only in JSON - NO EXPOSITION OR EXPLANATION PLEASE!
+{ 'AccuracyScore': 1-5, 'LowScoreReasoning':'This got a low score because... 1 sentence description of the reasoning.' }

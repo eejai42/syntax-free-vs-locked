@@ -8,7 +8,7 @@ const apiKey = process.env.OPENAI_API_KEY;
 
 // Get the filename from the command line arguments
 const fileName = process.argv[2]; // This will read the second argument (e.g., "prompt.txt")
-const prompt = fs.readFileSync(fileName, "utf8");
+const prompt = fs.readFileSync(fileName, "utf8").replaceAll("’", "'");
 
 // Load the system message from system-message.txt
 const systemMessage = fs.readFileSync('system-message.txt', 'utf8');
@@ -16,7 +16,7 @@ const systemMessage = fs.readFileSync('system-message.txt', 'utf8');
 // API settings
 const hostname = 'api.openai.com';
 const path = '/v1/chat/completions';
-const model = "gpt-4o"; // Updated model name
+const model = "gpt-4o-mini"; // Updated model name
 
 const data = JSON.stringify({
   model: model,

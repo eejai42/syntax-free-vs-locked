@@ -54,48 +54,50 @@ JSON INPUT ROOT 1:
 
 
 
-{
-  "PythonFunctionSignatures": [
-    "recommend_tracks(str user_id)",
-    "manage_playlist(str user_id, str action, str playlist_id=None, str track_id=None)",
-    "initiate_live_stream(str artist_id, dict show_details)",
-    "download_for_offline(str user_id, str track_id)",
-    "voice_control(str command)"
-  ]
-}
+"VALIDATION PROMPT: ORIGINAL FORMAL PROTOCOL:
+
+TuneStream is a music streaming app designed to provide a comprehensive and interactive listening experience with a user-friendly interface, social interaction capabilities, and subscription options. Here are the key features of TuneStream:
+
+1. **User Interface**:
+   - **Home**: Offers personalized track recommendations based on user listening habits.
+   - **Discover**: Allows users to explore new music through algorithms and collaborative filtering.
+   - **My Tunes**: Enables users to create and manage their own playlists, save favorite tracks, and organize them by genre, mood, or other criteria.
+
+2. **Social Interaction**:
+   - Users can link their social media accounts for easy music sharing or utilize TuneStream’s built-in network to comment on and share playlists with the community.
+
+3. **Subscription Options**:
+   - A free, ad-supported version for basic streaming.
+   - A premium subscription that includes high-quality streaming without ads and access to additional features like offline playback.
+
+4. **Live Streaming**:
+   - Artists can perform live directly on the app, allowing users to watch performances and interact with the artists in real-time.
+
+5. **Offline Playback Capability**:
+   - Premium users have the ability to download songs and playlists for offline listening, which is especially beneficial for those in areas with unreliable internet connectivity or who wish to conserve mobile data.
+
+Each entity, such as songs and playlists, within TuneStream is equipped with detailed attributes including artist, length, genre, and user ratings. Playlists can also include nested sub-playlists categorized by specific moods or genres, each filled with songs that match these themes. This structured data approach enhances user engagement by catering to varied musical tastes and preferences.
+
+PROMPT: How closely (scale of 1-5) would the updated formal protocol described above, match the summary of it provided below?
 
 
-python_function_signatures = {
-    "PythonFunctionSignatures": [
-        "get_curated_playlists(int user_id)",
-        "search_music(str query, int limit=10)",
-        "fetch_live_streams()",
-        "download_song(int user_id, int song_id)",
-        "send_tip(int user_id, int artist_id, float amount)"
-    ]
-}
+```
 
-{
-  "PythonFunctionSignatures": [
-    "manage_favorites(str user_id, int track_id, str action)",
-    "suggest_tracks(str user_id)",
-    "handle_live_stream(str user_id, int stream_id, str action)",
-    "update_user_profile(str user_id, str new_name)",
-    "process_tips(str user_id, str artist_id, float amount)"
-  ]
-}
+For our upcoming music streaming app, ""TuneStream,"" we are focusing on five main features:
 
+User Interface - The app will have three primary sections: ""Home"" for personalized track recommendations, ""Discover"" for exploring new music via algorithms and collaborative filtering, and ""My Tunes"" for user-created playlists and favorites.
 
+Social Interaction - Users can connect their social media to share music or use our built-in network to comment on and share playlists.
 
+Subscription Options - TuneStream will offer a free, ad-supported version and a premium subscription that includes high-quality streaming and no ads.
 
+Live Streaming Integration - TuneStream will allow artists to live stream performances directly within the app, providing users with real-time access to live music events.
 
-LOCKED:
-{
-    "PythonFunctionSignatures": [
-        "get_personalized_recommendations(int user_id) -> list",
-        "manage_playlist(int user_id, str action, str track_id=None, str playlist_id=None) -> str",
-        "process_live_stream_event(int artist_id, str event_id, str action) -> str",
-        "download_for_offline_playback(int user_id, str track_id) -> str",
-        "execute_voice_command(int user_id, str command) -> str"
-    ]
-}
+Offline Playback Capability - Premium users will have the ability to download songs and playlists to their devices, enabling listening without an internet connection. This feature caters to users in areas with poor connectivity or those who want to conserve mobile data.
+
+Each entity, such as songs and playlists, will have detailed attributes tracked, like artist, length, genre, and user ratings. For instance, a nested playlist might include sub-playlists categorized by mood or genre, each containing songs with their metadata.
+
+```
+
+RESPONSE FORMAT:
+{ ""AccuracyScore"": 1-5, ""LowScoreReasoning"":""This got a low score because... 1 sentence description of the reasoning."" }"
