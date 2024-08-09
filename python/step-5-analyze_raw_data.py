@@ -60,9 +60,9 @@ def process_data(input_file):
         'Syntax-Locked': {'color': 'red', 'linestyle': ':', 'linewidth': 1},
         'FREE-Locked': {'color': 'purple', 'linestyle': '--', 'linewidth': 2}
     }
-    for status in ['Syntax-FREE', 'Syntax-Locked', 'FREE-Locked']:
+    for status in ['Syntax-FREE', 'FREE-Locked', 'Syntax-Locked']:
         subset = stats_df[stats_df['CalculatedStatus'] == status]
-        ax.plot(subset['BinNumber'], subset['AccuracyScore'], label=f'{status} (n={len(subset)})', **styles[status])
+        ax.plot(subset['BinNumber'], subset['AccuracyScore'], label=f'{status} (Avg: {subset["AccuracyScore"].mean():.2f})', **styles[status])
     
     ax.set_title('Average Accuracy Score by Status and Bin')
     ax.set_xlabel('Bin Number (Each bin represents an average of 35 scores)')
@@ -75,4 +75,4 @@ def process_data(input_file):
     plt.close()
 
 # Example usage:
-process_data('raw_trail_data.csv')
+process_data('raw_trial_data.csv')
