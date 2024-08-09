@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy import stats
 
 def process_data(input_file):
     # Construct the full file path
@@ -16,14 +17,12 @@ def process_data(input_file):
     # Open a Pandas Excel writer using XlsxWriter as the engine
     writer = pd.ExcelWriter(output_file, engine='xlsxwriter')
     
-    # RawData tab
-    data.to_excel(writer, sheet_name='RawData', index=False)
+    # Statistics (formerly RawStatistics)
+    raw_stats = data.groupby('CalculatedStatus')['ExtractedAccuracyScore'].agg(['count', 'min', 'max', 'mean', 'median', 'std'])
+    raw_stats['p-value'] = stats.norm.sf(raw_stats['mean']/raw_stats['std']) # assuming normal distribution
+    raw_stats.reset_index().to_excel(writer, sheet_name='Statistics', index=False)
     
-    # RawStatistics
-    raw_stats = data.groupby('CalculatedStatus')['ExtractedAccuracyScore'].agg(['count', 'min', 'max', 'mean', 'median', 'std']).reset_index()
-    raw_stats.to_excel(writer, sheet_name='RawStatistics', index=False)
-    
-    # BinnedData and Statistics
+    # BinnedData and RawData (renamed to Binned Conversations and Detailed Conversations)
     binned_data_list = []
     stats_list = []
     for status, group in data.groupby('CalculatedStatus'):
@@ -36,30 +35,38 @@ def process_data(input_file):
         binned_data['CalculatedStatus'] = status
         binned_data_list.append(binned_data)
         
-        # Statistics tab
+        # Binned Conversations tab
         stats_list.extend([
-            {'CalculatedStatus': status, 'BinNumber': bin_number + 1, 'AverageSuccessScore': row['mean']}
+            {'CalculatedStatus': status, 'BinNumber': bin_number + 1, 'AccuracyScore': row['mean']}
             for bin_number, row in binned_data.iterrows()
         ])
         
     binned_data_combined = pd.concat(binned_data_list)
-    binned_data_combined.to_excel(writer, sheet_name='BinnedData', index=False)
+    binned_data_combined.to_excel(writer, sheet_name='Binned Conversations', index=False)
     
     stats_df = pd.DataFrame(stats_list)
-    stats_df.to_excel(writer, sheet_name='Statistics', index=False)
+    stats_df.to_excel(writer, sheet_name='Detailed Conversations', index=False)
+    
+    # RawData tab (moved to the end)
+    data.to_excel(writer, sheet_name='RawData', index=False)
     
     # Save the writer and close the Excel file
     writer.close()
     
     # Plotting
     fig, ax = plt.subplots()
+    styles = {
+        'Syntax-FREE': {'color': 'blue', 'linestyle': '-', 'linewidth': 2},
+        'Syntax-Locked': {'color': 'red', 'linestyle': ':', 'linewidth': 1},
+        'FREE-Locked': {'color': 'purple', 'linestyle': '--', 'linewidth': 2}
+    }
     for status in ['Syntax-FREE', 'Syntax-Locked', 'FREE-Locked']:
         subset = stats_df[stats_df['CalculatedStatus'] == status]
-        ax.plot(subset['BinNumber'], subset['AverageSuccessScore'], label=status)
+        ax.plot(subset['BinNumber'], subset['AccuracyScore'], label=f'{status} (n={len(subset)})', **styles[status])
     
-    ax.set_title('Average Success Score by Status and Bin')
-    ax.set_xlabel('Bin Number')
-    ax.set_ylabel('Average Success Score')
+    ax.set_title('Average Accuracy Score by Status and Bin')
+    ax.set_xlabel('Bin Number (Each bin represents an average of 35 scores)')
+    ax.set_ylabel('Average Accuracy Score')
     ax.legend(title='Calculated Status')
     
     # Save the plot as an image file

@@ -16,6 +16,8 @@ def load_trial_artifacts_without_trial():
     return response.json()
 
 def update_custom_root_identifiers(artifacts):
+    return
+
     for root_artifact in artifacts:
         if root_artifact.get('ExtensionOf') is not None:
             continue
@@ -42,10 +44,13 @@ def update_custom_root_identifiers(artifacts):
                 break
 
             # Update the CustomRootIdentifier for the current artifact
-            if next_artifact['CustomRootIdentifier'] != root_id:
-                next_artifact['CustomRootIdentifier'] = root_id
-                next_artifact["PrimaryExtensionArtifact"] = None
-                update_trial_artifact(next_artifact)
+            if ('CustomRootIdentifier' not in next_artifact or \
+                    next_artifact['CustomRootIdentifier'] != root_id) and \
+                    "Generation-1" not in next_artifact['Name']: 
+                if ('RootArtifactIdentifier' in next_artifact and next_artifact['RootArtifactIdentifier'] != root_id):
+                    next_artifact['CustomRootIdentifier'] = root_id
+                    next_artifact["PrimaryExtensionArtifact"] = None
+                    update_trial_artifact(next_artifact)
 
 
 def update_trial_artifact(artifact):
