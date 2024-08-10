@@ -18,7 +18,7 @@ def process_data(input_file):
     writer = pd.ExcelWriter(output_file, engine='xlsxwriter')
     
     # Statistics (formerly RawStatistics)
-    raw_stats = data.groupby('CalculatedStatus')['ExtractedAccuracyScore'].agg(['count', 'min', 'max', 'mean', 'median', 'std'])
+    raw_stats = data.groupby('CalculatedStatus')['ExtractedAccuracyScore'].agg(['count', 'mean', 'std'])
     raw_stats['p-value'] = stats.norm.sf(raw_stats['mean']/raw_stats['std']) # assuming normal distribution
     raw_stats.reset_index().to_excel(writer, sheet_name='Statistics', index=False)
     
