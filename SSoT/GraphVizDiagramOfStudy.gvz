@@ -1,0 +1,47 @@
+digraph ExperimentProcess {
+    // Define attributes for style
+    node [shape=box, style=filled, color="#D5E8D4"]; // Light green fill
+    edge [fontsize=10];
+
+    // High-level phase nodes, horizontally aligned
+    node [shape=ellipse, style=filled, color="#DAE8FC"]; // Light blue fill for phases
+    Start [label="Start Experiment"];
+    SetupPhase [label="Setup Phase"];
+    KeyGenerationPhase [label="Answer Key Generation Phase"];
+    TrialPhase [label="Trial Phase"];
+    AnalysisPhase [label="Analysis Phase"];
+
+    // Detailed function nodes
+    node [shape=box, style=filled, color="#FFF2CC"]; // Light yellow fill for functions
+    CreatePrompt [label="createOriginalPrompt()"];
+    GenerateChanges [label="generateChangeFor(generation)"];
+    SetupLoop [label="generateOriginalArtifacts()", shape=ellipse, style=dashed];
+
+    GenerateKey [label="generateAnswerKeys()"];
+    KeyLoop [label="Recursive Key Generation\nLoop", shape=ellipse, style=dashed];
+
+    ConductTrial [label="conductTrial()"];
+    Evaluate [label="evaluateResponses()"];
+    TrialLoop [label="Recursive Trial\nLoop", shape=ellipse, style=dashed];
+
+    // Connect high-level phases
+    Start -> SetupPhase -> KeyGenerationPhase -> TrialPhase -> AnalysisPhase;
+
+    // Connect loops and functions below each phase
+    SetupPhase -> SetupLoop;
+    SetupLoop -> CreatePrompt -> GenerateChanges;
+    GenerateChanges -> SetupLoop [label="loop for n generations", style=dotted];
+
+    KeyGenerationPhase -> KeyLoop;
+    KeyLoop -> GenerateKey;
+    GenerateKey -> KeyLoop [label="loop for each generation", style=dotted];
+
+    TrialPhase -> TrialLoop;
+    TrialLoop -> ConductTrial -> Evaluate;
+    Evaluate -> TrialLoop [label="loop until all generations completed", style=dotted];
+
+    // Separate end node for clarity
+    node [shape=ellipse, style=filled, color="#FFD966"]; // Darker yellow for completion
+    Completion [label="Complete Experiment"];
+    TrialLoop -> AnalysisPhase -> Completion;
+}
