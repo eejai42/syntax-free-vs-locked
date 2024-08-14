@@ -5,17 +5,16 @@ Synatx-Locked:
 ----------------------
 Imagine just a plain old small red 1-inch plastic cube.
 
-Summarize this verbosely, and completely - leave nothing out, but don't invent facts.
+PROMPT: Summarize this verbosely, and completely - but don't invent or infer facts not in evidence.  Don't repeat yourself.
 Language: Natural Language English
 
-
-It has a rough surface.
+It is rough.
 
 Syntax-FREE:
 ----------------------
 Imagine just a plain old small red 1-inch plastic cube.
 
-Summarize this verbosely, and completely - leave nothing out, but don't invent facts.
+PROMPT: Summarize this verbosely, and completely - but don't invent or infer facts not in evidence.  Don't repeat yourself.
 Language: Nested JSON
 
 
@@ -25,8 +24,15 @@ Validation:
 On a scale of 1-5 how closely does the following participant response match the instructions 
 given to them about a: `Imagine just a plain old small red 1-inch plastic cube.`
 
-PROMPT: Explain it as completely and accurately as possible, in Natural Language English.  Leave nothing out, it's important that you do not invent/hallucinate.
+PROMPT: Summarize this verbosely, and completely - but don't invent or infer facts not in evidence.  Don't repeat yourself.
 
 Participant's Response: 
 
- - It has a rough surface.
+It is rough.
+
+
+v18:
+v17: Summarize this verbosely, and completely - but don't invent or infer facts not in evidence.  Don't repeat yourself.
+v16: Summarize this verbosely, and completely - but don't invent or infer facts not in evidence. Language: JSON
+v15: Summarize this verbosely, and completely - leave nothing out, infer details not presented. Language: Natural Language English
+

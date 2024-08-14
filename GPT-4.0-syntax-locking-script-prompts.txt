@@ -1,0 +1,146 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+ENGLISH:-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-
+v3
+bobby, is a small white fluffy cotton ball.
+===========================================
+
+Describe him as completely as possible in natural language English, but don't infer more than necessary.
+
+v2: 
+A small white fluffy cotton ball named bobby.
+=============================================
+
+☝ a Syntax Locked" description of bobby in English.
+
+Describe him as completely as possible in natural language English, but don't infer more than necessary.
+
+
+v1:
+A small white fluffy cotton ball named bobby.
+===============================
+
+Describe it as completely as possible in natural language English, but don't infer more than necessary.
+
+
+
+
+JSON -=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-
+A small white fluffy cotton ball named bobby.
+===============================
+
+Describe it as completely as possible in a small JSON object, but don't infer more than necessary.
+
+
+
+-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-
+Small red 1-inch plastic cube.
+it has holes in the front and back sides
+it's a pyramid
+the base is 2 inches
+it's a cube.
+
+
+
+LLM: GPT MUST BE GPT-4o
+
+
+Synatx-Locked:
+----------------------
+Small red 1-inch plastic cube.
+
+Describe it as completely as possible in natural language English, but don't infer.
+
+It is rough.
+
+Syntax-FREE:
+----------------------
+Small red 1-inch plastic cube.
+
+Describe it as completely as possible as a JSON Object, but don't infer.
+
+
+Validation:
+----------------------
+On a scale of 1-5 how closely does the following participant response match the instructions 
+given to them about a: `Small red 1-inch plastic cube.`
+
+PROMPT: Describe it as completely as possible, but don't infer.
+
+Participant's Response: 
+
+It is rough.
+
+v19 GPT: 4o - Describe it as completely as possible as a JSON Object, but don't infer.
+v18: Describe it as completely as possible in natural language English, but don't infer.
+v17: Summarize this verbosely, and completely - but don't invent or infer facts not in evidence.  Don't repeat yourself.
+v16: Summarize this verbosely, and completely - but don't invent or infer facts not in evidence. Language: JSON
+v15: Summarize this verbosely, and completely - leave nothing out, infer details not presented. Language: Natural Language English
+
+
+CANDIDATE VALIDATION FOR 4o
+----------------------------------
+On a scale of 1-5 how closely does the following participant response match the instructions 
+given to them about a: Small red 1-inch plastic cube.
+
+PROMPT: Describe it as completely as possible, but don't infer more than necessary.
+
+
+Claud.ai
+------------------------------------------
+Small red 1-inch plastic cube.
+Describe the above as completely and accurately as possible in natural language english. Tell the truth, the whole truth, and nothing but the truth.
+
+On a scale of 1-5 how closely does the following participant response match the instructions 
+given to them about a: Small red 1-inch plastic cube. it is rough.
+
+PROMPT Describe it as completely and accurately as possible.  Tell the truth, the whole truth, and nothing but the truth.
+
+Participants Response:
+
+
+
+
+
+
+
+4o VALIDATION CANDIDATE
+A participant was asked: 
+
+Prompt 1: Small red 1-inch plastic cube.
+Describe it as completely as possible in natural language English, but don't infer more than necessary
+
+Prompt 2: previous response + 
+it has holes in the front and back sides
+
+Prompt 3: previous response + 
+it's a pyramid
+
+Prompt 4: previous response + 
+the base is 2 inches
+
+Prompt 5: previous response + 
+it's a cube.
+--------------------------------------------------
+Imagine what it should say at this point... on a scale of 1-5 how closely does the following participant response is what would be expected.
+
+After all 5 prompts - this was  Participant's final Response: 
+
+The object is a small, solid cube made entirely of plastic. Each side of the cube is square, with all six sides measuring exactly 2 inches per side. The overall structure of the cube is uniformly red, with the color consistent and even across its entire surface.
+
+The cube has twelve edges, all of which are sharp and well-defined, creating a precise geometric form. The corners of the cube, where the edges intersect, are similarly sharp and free from any rounding or imperfections. The plastic material of the cube is lightweight but hard, giving the object a rigid and sturdy feel when handled. Despite its small size, the cube feels solid and durable.
+
+The surface of the cube is smooth and glossy, reflecting light evenly across its surface, which contributes to a polished and shiny appearance. The design of the cube is simple and minimalistic, with no additional patterns, symbols, or variations in texture. The uniform red color and smooth surface emphasize the geometric shape of the object.
+
+The cube has no holes, indentations, or markings; it is a solid piece of plastic, with the focus entirely on its form and consistent red color. The edges of the cube, where the faces meet, are clean and precise, completing the straightforward and elegant design of the object.
