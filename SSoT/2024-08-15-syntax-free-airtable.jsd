@@ -1,0 +1,1468 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "EffortlessAPIProject": {
+      "type": "object",
+      "properties": {
+        "AirtableTablesById": {},
+        "AirtableTablesByName": {},
+        "AirtableTablesByColumnId": {},
+        "AirtableColumnsById": {},
+        "AirtableColumnsByName": {},
+        "ProjectAccessList": {},
+        "ProjectTableList": {},
+        "Json": {},
+        "Xml": {},
+        "ApproveAll": {
+          "type": "boolean"
+        },
+        "ApprovedChanges": {},
+        "S3Client": {
+          "type": "object",
+          "properties": {
+            "Paginators": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            },
+            "Config": {
+              "type": "object",
+              "properties": {
+                "ForcePathStyle": {
+                  "type": "boolean"
+                },
+                "UseAccelerateEndpoint": {
+                  "type": "boolean"
+                },
+                "UseArnRegion": {
+                  "type": "boolean"
+                },
+                "DisableMultiregionAccessPoints": {
+                  "type": "boolean"
+                },
+                "USEast1RegionalEndpointValue": {
+                  "type": "number"
+                },
+                "ServiceId": {
+                  "type": "string"
+                },
+                "RegionEndpointServiceName": {
+                  "type": "string"
+                },
+                "ServiceVersion": {
+                  "type": "string"
+                },
+                "UserAgent": {
+                  "type": "string"
+                },
+                "Profile": {},
+                "AWSTokenProvider": {
+                  "type": "object",
+                  "properties": {
+                    "ProfileName": {}
+                  },
+                  "required": [
+                    "ProfileName"
+                  ]
+                },
+                "SignatureMethod": {
+                  "type": "number"
+                },
+                "SignatureVersion": {
+                  "type": "string"
+                },
+                "UseAlternateUserAgentHeader": {
+                  "type": "boolean"
+                },
+                "RegionEndpoint": {
+                  "type": "object",
+                  "properties": {
+                    "SystemName": {
+                      "type": "string"
+                    },
+                    "OriginalSystemName": {
+                      "type": "string"
+                    },
+                    "DisplayName": {
+                      "type": "string"
+                    },
+                    "PartitionName": {
+                      "type": "string"
+                    },
+                    "PartitionDnsSuffix": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "SystemName",
+                    "OriginalSystemName",
+                    "DisplayName",
+                    "PartitionName",
+                    "PartitionDnsSuffix"
+                  ]
+                },
+                "ServiceURL": {},
+                "UseHttp": {
+                  "type": "boolean"
+                },
+                "AuthenticationRegion": {},
+                "AuthenticationServiceName": {
+                  "type": "string"
+                },
+                "MaxErrorRetry": {
+                  "type": "number"
+                },
+                "IsMaxErrorRetrySet": {
+                  "type": "boolean"
+                },
+                "LogResponse": {
+                  "type": "boolean"
+                },
+                "ReadEntireResponse": {
+                  "type": "boolean"
+                },
+                "BufferSize": {
+                  "type": "number"
+                },
+                "ProgressUpdateInterval": {
+                  "type": "number"
+                },
+                "ResignRetries": {
+                  "type": "boolean"
+                },
+                "AllowAutoRedirect": {
+                  "type": "boolean"
+                },
+                "LogMetrics": {
+                  "type": "boolean"
+                },
+                "DisableLogging": {
+                  "type": "boolean"
+                },
+                "DefaultConfigurationMode": {
+                  "type": "number"
+                },
+                "ProxyCredentials": {},
+                "Timeout": {
+                  "type": "string"
+                },
+                "UseDualstackEndpoint": {
+                  "type": "boolean"
+                },
+                "UseFIPSEndpoint": {
+                  "type": "boolean"
+                },
+                "IgnoreConfiguredEndpointUrls": {
+                  "type": "boolean"
+                },
+                "DisableRequestCompression": {
+                  "type": "boolean"
+                },
+                "RequestMinCompressionSizeBytes": {
+                  "type": "number"
+                },
+                "ThrottleRetries": {
+                  "type": "boolean"
+                },
+                "CorrectedUtcNow": {
+                  "type": "string"
+                },
+                "ClockOffset": {
+                  "type": "string"
+                },
+                "DisableHostPrefixInjection": {
+                  "type": "boolean"
+                },
+                "EndpointDiscoveryEnabled": {
+                  "type": "boolean"
+                },
+                "EndpointDiscoveryCacheLimit": {
+                  "type": "number"
+                },
+                "RetryMode": {
+                  "type": "number"
+                },
+                "FastFailRequests": {
+                  "type": "boolean"
+                },
+                "CacheHttpClient": {
+                  "type": "boolean"
+                },
+                "HttpClientCacheSize": {
+                  "type": "number"
+                },
+                "ReadWriteTimeout": {
+                  "type": "string"
+                },
+                "EndpointProvider": {
+                  "type": "object",
+                  "properties": {},
+                  "required": []
+                },
+                "ProxyHost": {},
+                "ProxyPort": {
+                  "type": "number"
+                },
+                "MaxConnectionsPerServer": {},
+                "HttpClientFactory": {}
+              },
+              "required": [
+                "ForcePathStyle",
+                "UseAccelerateEndpoint",
+                "UseArnRegion",
+                "DisableMultiregionAccessPoints",
+                "USEast1RegionalEndpointValue",
+                "ServiceId",
+                "RegionEndpointServiceName",
+                "ServiceVersion",
+                "UserAgent",
+                "Profile",
+                "AWSTokenProvider",
+                "SignatureMethod",
+                "SignatureVersion",
+                "UseAlternateUserAgentHeader",
+                "RegionEndpoint",
+                "ServiceURL",
+                "UseHttp",
+                "AuthenticationRegion",
+                "AuthenticationServiceName",
+                "MaxErrorRetry",
+                "IsMaxErrorRetrySet",
+                "LogResponse",
+                "ReadEntireResponse",
+                "BufferSize",
+                "ProgressUpdateInterval",
+                "ResignRetries",
+                "AllowAutoRedirect",
+                "LogMetrics",
+                "DisableLogging",
+                "DefaultConfigurationMode",
+                "ProxyCredentials",
+                "Timeout",
+                "UseDualstackEndpoint",
+                "UseFIPSEndpoint",
+                "IgnoreConfiguredEndpointUrls",
+                "DisableRequestCompression",
+                "RequestMinCompressionSizeBytes",
+                "ThrottleRetries",
+                "CorrectedUtcNow",
+                "ClockOffset",
+                "DisableHostPrefixInjection",
+                "EndpointDiscoveryEnabled",
+                "EndpointDiscoveryCacheLimit",
+                "RetryMode",
+                "FastFailRequests",
+                "CacheHttpClient",
+                "HttpClientCacheSize",
+                "ReadWriteTimeout",
+                "EndpointProvider",
+                "ProxyHost",
+                "ProxyPort",
+                "MaxConnectionsPerServer",
+                "HttpClientFactory"
+              ]
+            }
+          },
+          "required": [
+            "Paginators",
+            "Config"
+          ]
+        },
+        "FileTransferUtility": {
+          "type": "object",
+          "properties": {
+            "S3Client": {
+              "type": "object",
+              "properties": {
+                "Paginators": {
+                  "type": "object",
+                  "properties": {},
+                  "required": []
+                },
+                "Config": {
+                  "type": "object",
+                  "properties": {
+                    "ForcePathStyle": {
+                      "type": "boolean"
+                    },
+                    "UseAccelerateEndpoint": {
+                      "type": "boolean"
+                    },
+                    "UseArnRegion": {
+                      "type": "boolean"
+                    },
+                    "DisableMultiregionAccessPoints": {
+                      "type": "boolean"
+                    },
+                    "USEast1RegionalEndpointValue": {
+                      "type": "number"
+                    },
+                    "ServiceId": {
+                      "type": "string"
+                    },
+                    "RegionEndpointServiceName": {
+                      "type": "string"
+                    },
+                    "ServiceVersion": {
+                      "type": "string"
+                    },
+                    "UserAgent": {
+                      "type": "string"
+                    },
+                    "Profile": {},
+                    "AWSTokenProvider": {
+                      "type": "object",
+                      "properties": {
+                        "ProfileName": {}
+                      },
+                      "required": [
+                        "ProfileName"
+                      ]
+                    },
+                    "SignatureMethod": {
+                      "type": "number"
+                    },
+                    "SignatureVersion": {
+                      "type": "string"
+                    },
+                    "UseAlternateUserAgentHeader": {
+                      "type": "boolean"
+                    },
+                    "RegionEndpoint": {
+                      "type": "object",
+                      "properties": {
+                        "SystemName": {
+                          "type": "string"
+                        },
+                        "OriginalSystemName": {
+                          "type": "string"
+                        },
+                        "DisplayName": {
+                          "type": "string"
+                        },
+                        "PartitionName": {
+                          "type": "string"
+                        },
+                        "PartitionDnsSuffix": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "SystemName",
+                        "OriginalSystemName",
+                        "DisplayName",
+                        "PartitionName",
+                        "PartitionDnsSuffix"
+                      ]
+                    },
+                    "ServiceURL": {},
+                    "UseHttp": {
+                      "type": "boolean"
+                    },
+                    "AuthenticationRegion": {},
+                    "AuthenticationServiceName": {
+                      "type": "string"
+                    },
+                    "MaxErrorRetry": {
+                      "type": "number"
+                    },
+                    "IsMaxErrorRetrySet": {
+                      "type": "boolean"
+                    },
+                    "LogResponse": {
+                      "type": "boolean"
+                    },
+                    "ReadEntireResponse": {
+                      "type": "boolean"
+                    },
+                    "BufferSize": {
+                      "type": "number"
+                    },
+                    "ProgressUpdateInterval": {
+                      "type": "number"
+                    },
+                    "ResignRetries": {
+                      "type": "boolean"
+                    },
+                    "AllowAutoRedirect": {
+                      "type": "boolean"
+                    },
+                    "LogMetrics": {
+                      "type": "boolean"
+                    },
+                    "DisableLogging": {
+                      "type": "boolean"
+                    },
+                    "DefaultConfigurationMode": {
+                      "type": "number"
+                    },
+                    "ProxyCredentials": {},
+                    "Timeout": {
+                      "type": "string"
+                    },
+                    "UseDualstackEndpoint": {
+                      "type": "boolean"
+                    },
+                    "UseFIPSEndpoint": {
+                      "type": "boolean"
+                    },
+                    "IgnoreConfiguredEndpointUrls": {
+                      "type": "boolean"
+                    },
+                    "DisableRequestCompression": {
+                      "type": "boolean"
+                    },
+                    "RequestMinCompressionSizeBytes": {
+                      "type": "number"
+                    },
+                    "ThrottleRetries": {
+                      "type": "boolean"
+                    },
+                    "CorrectedUtcNow": {
+                      "type": "string"
+                    },
+                    "ClockOffset": {
+                      "type": "string"
+                    },
+                    "DisableHostPrefixInjection": {
+                      "type": "boolean"
+                    },
+                    "EndpointDiscoveryEnabled": {
+                      "type": "boolean"
+                    },
+                    "EndpointDiscoveryCacheLimit": {
+                      "type": "number"
+                    },
+                    "RetryMode": {
+                      "type": "number"
+                    },
+                    "FastFailRequests": {
+                      "type": "boolean"
+                    },
+                    "CacheHttpClient": {
+                      "type": "boolean"
+                    },
+                    "HttpClientCacheSize": {
+                      "type": "number"
+                    },
+                    "ReadWriteTimeout": {
+                      "type": "string"
+                    },
+                    "EndpointProvider": {
+                      "type": "object",
+                      "properties": {},
+                      "required": []
+                    },
+                    "ProxyHost": {},
+                    "ProxyPort": {
+                      "type": "number"
+                    },
+                    "MaxConnectionsPerServer": {},
+                    "HttpClientFactory": {}
+                  },
+                  "required": [
+                    "ForcePathStyle",
+                    "UseAccelerateEndpoint",
+                    "UseArnRegion",
+                    "DisableMultiregionAccessPoints",
+                    "USEast1RegionalEndpointValue",
+                    "ServiceId",
+                    "RegionEndpointServiceName",
+                    "ServiceVersion",
+                    "UserAgent",
+                    "Profile",
+                    "AWSTokenProvider",
+                    "SignatureMethod",
+                    "SignatureVersion",
+                    "UseAlternateUserAgentHeader",
+                    "RegionEndpoint",
+                    "ServiceURL",
+                    "UseHttp",
+                    "AuthenticationRegion",
+                    "AuthenticationServiceName",
+                    "MaxErrorRetry",
+                    "IsMaxErrorRetrySet",
+                    "LogResponse",
+                    "ReadEntireResponse",
+                    "BufferSize",
+                    "ProgressUpdateInterval",
+                    "ResignRetries",
+                    "AllowAutoRedirect",
+                    "LogMetrics",
+                    "DisableLogging",
+                    "DefaultConfigurationMode",
+                    "ProxyCredentials",
+                    "Timeout",
+                    "UseDualstackEndpoint",
+                    "UseFIPSEndpoint",
+                    "IgnoreConfiguredEndpointUrls",
+                    "DisableRequestCompression",
+                    "RequestMinCompressionSizeBytes",
+                    "ThrottleRetries",
+                    "CorrectedUtcNow",
+                    "ClockOffset",
+                    "DisableHostPrefixInjection",
+                    "EndpointDiscoveryEnabled",
+                    "EndpointDiscoveryCacheLimit",
+                    "RetryMode",
+                    "FastFailRequests",
+                    "CacheHttpClient",
+                    "HttpClientCacheSize",
+                    "ReadWriteTimeout",
+                    "EndpointProvider",
+                    "ProxyHost",
+                    "ProxyPort",
+                    "MaxConnectionsPerServer",
+                    "HttpClientFactory"
+                  ]
+                }
+              },
+              "required": [
+                "Paginators",
+                "Config"
+              ]
+            }
+          },
+          "required": [
+            "S3Client"
+          ]
+        },
+        "EffortlessAPIProjectId": {
+          "type": "string"
+        },
+        "ModifiedOn": {
+          "type": "string"
+        },
+        "Account": {
+          "type": "string"
+        },
+        "AccountName": {
+          "type": "string"
+        },
+        "AdminRole": {
+          "type": "string"
+        },
+        "AirtableId": {
+          "type": "string"
+        },
+        "Alias": {
+          "type": "string"
+        },
+        "AutoAssignedID": {
+          "type": "number"
+        },
+        "AutoNumber": {
+          "type": "string"
+        },
+        "CreatedOn": {
+          "type": "string"
+        },
+        "DefaultDesiredAlias": {
+          "type": "string"
+        },
+        "EffortlessApiService": {
+          "type": "string"
+        },
+        "EntitiesTable": {
+          "type": "string"
+        },
+        "GuestRole": {
+          "type": "string"
+        },
+        "HeadStage": {
+          "type": "string"
+        },
+        "HeadVersion": {
+          "type": "string"
+        },
+        "LowerAirtableId": {
+          "type": "string"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "OwnerEmail": {
+          "type": "string"
+        },
+        "ProjectEmailList": {
+          "type": "string"
+        },
+        "ProjectEmails": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ProjectStage": {
+          "type": "string"
+        },
+        "ProjectStages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ProjectType": {
+          "type": "string"
+        },
+        "ProjectVersions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "RolesTable": {
+          "type": "string"
+        },
+        "RowKey": {
+          "type": "string"
+        },
+        "ServiceLogo": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "filename": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "filename",
+              "url"
+            ]
+          }
+        },
+        "UserRole": {
+          "type": "string"
+        },
+        "UserTable": {
+          "type": "string"
+        },
+        "EffortlessAPIServiceName": {
+          "type": "string"
+        },
+        "LastPublished": {
+          "type": "string"
+        },
+        "RECORD_ID": {
+          "type": "string"
+        },
+        "SubscriptionTotals": {
+          "type": "number"
+        },
+        "AccountDiscount": {
+          "type": "number"
+        },
+        "AccountDefaultMaxPages": {
+          "type": "number"
+        },
+        "MaxPages": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "AirtableTablesById",
+        "AirtableTablesByName",
+        "AirtableTablesByColumnId",
+        "AirtableColumnsById",
+        "AirtableColumnsByName",
+        "ProjectAccessList",
+        "ProjectTableList",
+        "Json",
+        "Xml",
+        "ApproveAll",
+        "ApprovedChanges",
+        "S3Client",
+        "FileTransferUtility",
+        "EffortlessAPIProjectId",
+        "ModifiedOn",
+        "Account",
+        "AccountName",
+        "AdminRole",
+        "AirtableId",
+        "Alias",
+        "AutoAssignedID",
+        "AutoNumber",
+        "CreatedOn",
+        "DefaultDesiredAlias",
+        "EffortlessApiService",
+        "EntitiesTable",
+        "GuestRole",
+        "HeadStage",
+        "HeadVersion",
+        "LowerAirtableId",
+        "Name",
+        "OwnerEmail",
+        "ProjectEmailList",
+        "ProjectEmails",
+        "ProjectStage",
+        "ProjectStages",
+        "ProjectType",
+        "ProjectVersions",
+        "RolesTable",
+        "RowKey",
+        "ServiceLogo",
+        "UserRole",
+        "UserTable",
+        "EffortlessAPIServiceName",
+        "LastPublished",
+        "RECORD_ID",
+        "SubscriptionTotals",
+        "AccountDiscount",
+        "AccountDefaultMaxPages",
+        "MaxPages"
+      ]
+    },
+    "ProjectVersion": {
+      "type": "object",
+      "properties": {
+        "ProjectVersionId": {
+          "type": "string"
+        },
+        "Attachments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "filename": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "filename",
+              "url"
+            ]
+          }
+        },
+        "CreatedAt": {
+          "type": "string"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Project": {
+          "type": "string"
+        },
+        "ProjectEmails": {
+          "type": "string"
+        },
+        "ProjectNumber": {
+          "type": "number"
+        },
+        "ProjectRoles": {
+          "type": "array",
+          "items": {}
+        },
+        "ProjectStages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ProjectTables": {
+          "type": "array",
+          "items": {}
+        },
+        "StageNames": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "VersionNumber": {
+          "type": "string"
+        },
+        "ProjectService": {
+          "type": "string"
+        },
+        "ProjectServiceLogo": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "filename": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "filename",
+              "url"
+            ]
+          }
+        },
+        "ProjectServiceName": {
+          "type": "string"
+        },
+        "ProjectLexiconTerms": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "ProjectVersionId",
+        "Attachments",
+        "CreatedAt",
+        "Name",
+        "Project",
+        "ProjectEmails",
+        "ProjectNumber",
+        "ProjectRoles",
+        "ProjectStages",
+        "ProjectTables",
+        "StageNames",
+        "VersionNumber",
+        "ProjectService",
+        "ProjectServiceLogo",
+        "ProjectServiceName",
+        "ProjectLexiconTerms"
+      ]
+    },
+    "ProjectStage": {
+      "type": "object",
+      "properties": {
+        "ProjectStageId": {
+          "type": "string"
+        },
+        "VSPAlias": {
+          "type": "string"
+        },
+        "ActiveVersion": {
+          "type": "string"
+        },
+        "Alias": {
+          "type": "string"
+        },
+        "HeadStageForProjects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Project": {
+          "type": "string"
+        },
+        "ProjectAlias": {
+          "type": "string"
+        },
+        "ProjectEmails": {
+          "type": "string"
+        },
+        "ProjectId": {
+          "type": "number"
+        },
+        "ProjectVersionMismatch": {
+          "type": "string"
+        },
+        "SPVAlias": {
+          "type": "string"
+        },
+        "Stage": {
+          "type": "string"
+        },
+        "StageAlias": {
+          "type": "string"
+        },
+        "TemplateTaskEndpoint": {
+          "type": "string"
+        },
+        "VersionNumber": {
+          "type": "string"
+        },
+        "VersionProject": {
+          "type": "string"
+        },
+        "VPSAlias": {
+          "type": "string"
+        },
+        "CreatedOn": {
+          "type": "string"
+        },
+        "UpdatedOn": {
+          "type": "string"
+        },
+        "BasePrice": {
+          "type": "number"
+        },
+        "SuggestedMonthlySubscription": {
+          "type": "number"
+        },
+        "AccountDiscount": {
+          "type": "number"
+        },
+        "SuggestedMonthlySubscriptionWithAccountDiscount": {
+          "type": "number"
+        },
+        "RecId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ProjectStageId",
+        "VSPAlias",
+        "ActiveVersion",
+        "Alias",
+        "HeadStageForProjects",
+        "Name",
+        "Project",
+        "ProjectAlias",
+        "ProjectEmails",
+        "ProjectId",
+        "ProjectVersionMismatch",
+        "SPVAlias",
+        "Stage",
+        "StageAlias",
+        "TemplateTaskEndpoint",
+        "VersionNumber",
+        "VersionProject",
+        "VPSAlias",
+        "CreatedOn",
+        "UpdatedOn",
+        "BasePrice",
+        "SuggestedMonthlySubscription",
+        "AccountDiscount",
+        "SuggestedMonthlySubscriptionWithAccountDiscount",
+        "RecId"
+      ]
+    },
+    "ProjectRoles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ProjectRoleId": {
+            "type": "string"
+          },
+          "CanCreateByDefault": {
+            "type": "boolean"
+          },
+          "CanDeleteByDefault": {
+            "type": "boolean"
+          },
+          "CanReadByDefault": {
+            "type": "boolean"
+          },
+          "CanUpdateByDefault": {
+            "type": "boolean"
+          },
+          "CreatedOn": {
+            "type": "string"
+          },
+          "DefaultCRUD": {
+            "type": "string"
+          },
+          "DefaultHasAccess": {
+            "type": "boolean"
+          },
+          "Name": {
+            "type": "string"
+          },
+          "Project": {
+            "type": "string"
+          },
+          "ProjectEmails": {
+            "type": "string"
+          },
+          "ProjectVersion": {
+            "type": "string"
+          },
+          "RowKey": {
+            "type": "string"
+          },
+          "SortOrder": {
+            "type": "number"
+          },
+          "TableRoleWhere": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "ProjectRoleId",
+          "CreatedOn",
+          "Name",
+          "Project",
+          "ProjectEmails",
+          "ProjectVersion",
+          "RowKey",
+          "SortOrder"
+        ]
+      }
+    },
+    "ProjectTables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ProjectTableId": {
+            "type": "string"
+          },
+          "AirtableName": {
+            "type": "string"
+          },
+          "CreatedAt": {
+            "type": "string"
+          },
+          "DisplayName": {
+            "type": "string"
+          },
+          "Name": {
+            "type": "string"
+          },
+          "PluralName": {
+            "type": "string"
+          },
+          "Project": {
+            "type": "string"
+          },
+          "ProjectEmails": {
+            "type": "string"
+          },
+          "ProjectVersion": {
+            "type": "string"
+          },
+          "RowKey": {
+            "type": "string"
+          },
+          "TableColumns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "TableGroup": {
+            "type": "string"
+          },
+          "ToName": {
+            "type": "string"
+          },
+          "TableRoleWhere": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "ProjectTableId",
+          "AirtableName",
+          "CreatedAt",
+          "DisplayName",
+          "Name",
+          "PluralName",
+          "Project",
+          "ProjectEmails",
+          "ProjectVersion",
+          "RowKey",
+          "TableColumns",
+          "TableGroup",
+          "ToName"
+        ]
+      }
+    },
+    "ProjectLexiconTerms": {
+      "type": "array",
+      "items": {}
+    },
+    "TableRoleWheres": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "TableRoleWhereId": {
+            "type": "string"
+          },
+          "CreatedAt": {
+            "type": "string"
+          },
+          "AirtableWhereClause": {
+            "type": "string"
+          },
+          "CanCallCreate": {
+            "type": "boolean"
+          },
+          "CanCallDelete": {
+            "type": "boolean"
+          },
+          "CanCallRead": {
+            "type": "boolean"
+          },
+          "CanCallUpdate": {
+            "type": "boolean"
+          },
+          "CanCreateByDefault": {
+            "type": "boolean"
+          },
+          "CanDeleteByDefault": {
+            "type": "boolean"
+          },
+          "CanReadByDefault": {
+            "type": "boolean"
+          },
+          "CanUpdateByDefault": {
+            "type": "boolean"
+          },
+          "DefaultCRUD": {
+            "type": "string"
+          },
+          "HasAccess": {
+            "type": "boolean"
+          },
+          "Name": {
+            "type": "string"
+          },
+          "Project": {
+            "type": "string"
+          },
+          "ProjectEmails": {
+            "type": "string"
+          },
+          "ProjectRole": {
+            "type": "string"
+          },
+          "ProjectTable": {
+            "type": "string"
+          },
+          "ProjectVersion": {
+            "type": "string"
+          },
+          "RoleDefaultCRUD": {
+            "type": "string"
+          },
+          "RoleDefaultHasAccess": {
+            "type": "boolean"
+          },
+          "DefaultCallCRUD": {
+            "type": "string"
+          },
+          "LastModifiedTime": {
+            "type": "string"
+          },
+          "DefaultCRUD_legacy": {
+            "type": "string"
+          },
+          "CallCRUD": {
+            "type": "string"
+          },
+          "TableName": {
+            "type": "string"
+          },
+          "RoleName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "TableRoleWhereId",
+          "CreatedAt",
+          "AirtableWhereClause",
+          "CanCallCreate",
+          "CanCallDelete",
+          "CanCallRead",
+          "CanCallUpdate",
+          "CanCreateByDefault",
+          "CanDeleteByDefault",
+          "CanReadByDefault",
+          "CanUpdateByDefault",
+          "DefaultCRUD",
+          "HasAccess",
+          "Name",
+          "Project",
+          "ProjectEmails",
+          "ProjectRole",
+          "ProjectTable",
+          "ProjectVersion",
+          "RoleDefaultCRUD",
+          "RoleDefaultHasAccess",
+          "DefaultCallCRUD",
+          "LastModifiedTime",
+          "DefaultCRUD_legacy",
+          "CallCRUD",
+          "TableName",
+          "RoleName"
+        ]
+      }
+    },
+    "TableColumns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "TableColumnId": {
+            "type": "string"
+          },
+          "RelationshipType": {
+            "type": "string"
+          },
+          "ModifiedOn": {
+            "type": "string"
+          },
+          "ColumnAutoNumber": {
+            "type": "string"
+          },
+          "CreatedOn": {
+            "type": "string"
+          },
+          "DataType": {
+            "type": "string"
+          },
+          "DisplayName": {
+            "type": "string"
+          },
+          "Name": {
+            "type": "string"
+          },
+          "Project": {
+            "type": "string"
+          },
+          "ProjectEmails": {
+            "type": "string"
+          },
+          "ProjectEmails1": {
+            "type": "string"
+          },
+          "ProjectTable": {
+            "type": "string"
+          },
+          "ProjectVersion": {
+            "type": "string"
+          },
+          "RowKey": {
+            "type": "string"
+          },
+          "SortOrder": {
+            "type": "number"
+          },
+          "TableName": {
+            "type": "string"
+          },
+          "TableProject": {
+            "type": "string"
+          },
+          "ToName": {
+            "type": "string"
+          },
+          "DefaultSortOrder": {
+            "type": "string"
+          },
+          "CRCCount": {
+            "type": "number"
+          },
+          "SymmetricTableColumn": {
+            "type": "string"
+          },
+          "OtherSideOfRelationship": {
+            "type": "string"
+          },
+          "RelationshipName": {
+            "type": "string"
+          },
+          "IsReadonly": {
+            "type": "boolean"
+          },
+          "IsCollection": {
+            "type": "boolean"
+          },
+          "LookupColumn": {
+            "type": "string"
+          },
+          "LookupColumnName": {
+            "type": "string"
+          },
+          "SymmetricTableColumnName": {
+            "type": "string"
+          },
+          "SymmetricTableName": {
+            "type": "string"
+          },
+          "SymmetricColumnName": {
+            "type": "string"
+          },
+          "LookupTableName": {
+            "type": "string"
+          },
+          "LookupColumnSymmetricTableName": {
+            "type": "string"
+          },
+          "LookupColumnSymmetricColumnName": {
+            "type": "string"
+          },
+          "IsRequired": {
+            "type": "boolean"
+          },
+          "Formula": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "TableColumnId",
+          "RelationshipType",
+          "ModifiedOn",
+          "ColumnAutoNumber",
+          "CreatedOn",
+          "DataType",
+          "Name",
+          "Project",
+          "ProjectEmails",
+          "ProjectEmails1",
+          "ProjectTable",
+          "ProjectVersion",
+          "RowKey",
+          "SortOrder",
+          "TableName",
+          "TableProject",
+          "ToName",
+          "DefaultSortOrder",
+          "CRCCount"
+        ]
+      }
+    },
+    "ColumnRoleCRUDs": {
+      "type": "array",
+      "items": {}
+    },
+    "NewProjectVersion": {
+      "type": "object",
+      "properties": {
+        "ProjectVersionId": {
+          "type": "string"
+        },
+        "Attachments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "filename": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "filename",
+              "url"
+            ]
+          }
+        },
+        "CreatedAt": {
+          "type": "string"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Project": {
+          "type": "string"
+        },
+        "ProjectEmails": {
+          "type": "string"
+        },
+        "ProjectNumber": {
+          "type": "number"
+        },
+        "ProjectRoles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ProjectStages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ProjectTables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "RoleCount": {
+          "type": "number"
+        },
+        "StageNames": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "TableCount": {
+          "type": "number"
+        },
+        "VersionNumber": {
+          "type": "string"
+        },
+        "ProjectService": {
+          "type": "string"
+        },
+        "ProjectServiceLogo": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "filename": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "filename",
+              "url"
+            ]
+          }
+        },
+        "ProjectServiceName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ProjectVersionId",
+        "Attachments",
+        "CreatedAt",
+        "Name",
+        "Project",
+        "ProjectEmails",
+        "ProjectNumber",
+        "ProjectRoles",
+        "ProjectStages",
+        "ProjectTables",
+        "RoleCount",
+        "StageNames",
+        "TableCount",
+        "VersionNumber",
+        "ProjectService",
+        "ProjectServiceLogo",
+        "ProjectServiceName"
+      ]
+    }
+  },
+  "required": [
+    "EffortlessAPIProject",
+    "ProjectVersion",
+    "ProjectStage",
+    "ProjectRoles",
+    "ProjectTables",
+    "ProjectLexiconTerms",
+    "TableRoleWheres",
+    "TableColumns",
+    "ColumnRoleCRUDs",
+    "NewProjectVersion"
+  ]
+}
