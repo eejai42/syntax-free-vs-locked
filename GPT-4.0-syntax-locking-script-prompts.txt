@@ -1,4 +1,14 @@
+Roast and Toast
 
+ENGLISH:-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-
+A puffy white marshmallow, named bobby.
+=============================================
+
+Describe him as completely as possible in natural language English, but don't infer more than necessary.
+
+JSON -=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-
+
+Describe him as completely as possible as a small JSON Object, but don't infer more than necessary.
 
 
 

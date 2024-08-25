@@ -806,4 +806,4 @@ This research provides concrete evidence that syntax-free methodologies are more
 
 ### Conclusion
 
-Including the relative likelihood calculation clarifies just how much more prone syntax-locked artifacts are to feature drift compared to syntax-free artifacts. This quantification strengthens the argument for adopting syntax-free methodologies in contexts where maintaining the integrity and stability of complex ideas over time is crucial.
+Including the relative likelihood calculation clarifies just how much more prone syntax-locked artifacts are to feature drift compared to syntax-free artifacts. This quantification strengthens the argument for adopting syntax-free methodologies in contexts where maintaining the integrity and stability of complex ideas over time is crucial.s

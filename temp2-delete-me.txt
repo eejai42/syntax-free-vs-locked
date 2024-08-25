@@ -1,0 +1,5 @@
+{
+        "description": "English class with Mr Engles.",
+        "date": "2024-08-08",
+        "time": "08:00"
+}
