@@ -1,0 +1,91 @@
+{
+    "ContactArea": {
+      "Definition": {
+        "Contact": {
+          "Description": "When two objects touch, only a certain portion of their surface areas will be in contact with each other.",
+          "TrueContactArea": {
+            "Description": "This area of true contact, most often constitutes only a very small fraction of the apparent or nominal contact area.",
+            "Details": {
+              "AtomsInContact": {
+                "Description": "The contact area consists of atoms of one object in true contact with the atoms of the other object."
+              },
+              "Asperities": {
+                "Description": "Objects are never perfectly flat due to asperities."
+              },
+              "MicroscopicScale": {
+                "Description": "The actual contact area is usually much less than the apparent contact area on a macroscopic scale."
+              },
+              "DependenceOnForce": {
+                "Description": "Contact area may depend on the normal force between the two objects due to deformation."
+              }
+            }
+          }
+        }
+      },
+      "FactorsAffectingContactArea": {
+        "Geometry": {
+          "Description": "The contact area depends on the geometry of the contacting bodies."
+        },
+        "Load": {
+          "Description": "The contact area depends on the load applied to the bodies."
+        },
+        "MaterialProperties": {
+          "Description": "The contact area depends on the material properties of the bodies."
+        },
+        "Examples": {
+          "ParallelCylinders": {
+            "Description": "The contact area between two parallel cylinders is a narrow rectangle."
+          },
+          "NonParallelCylinders": {
+            "Description": "Two non-parallel cylinders have an elliptical contact area."
+          },
+          "PerpendicularCylinders": {
+            "Description": "Two cylinders crossed at 90 degrees have a circular contact area."
+          },
+          "Spheres": {
+            "Description": "Two spheres have a circular contact area."
+          }
+        }
+      },
+      "FrictionAndContactArea": {
+        "EmpiricalRelationship": {
+          "Description": "It is an empirical fact for many materials that F = μN.",
+          "Details": {
+            "F": {
+              "Description": "F represents the frictional force for sliding friction."
+            },
+            "Mu": {
+              "Description": "μ represents the coefficient of friction."
+            },
+            "N": {
+              "Description": "N represents the normal force."
+            },
+            "IndependenceFromArea": {
+              "Description": "There isn't a simple derivation for sliding friction's independence from area."
+            }
+          }
+        }
+      },
+      "MethodsForDeterminingContactArea": {
+        "IndirectMethods": {
+          "Description": "One way of determining the actual contact area is to determine it indirectly through a physical process that depends on contact area.",
+          "Examples": {
+            "ElectricalResistance": {
+              "Description": "The resistance of a wire is dependent on the cross-sectional area.",
+              "Application": {
+                "CurrentMeasurement": {
+                  "Description": "One may find the contact area of a metal by measuring the current that flows through that area."
+                }
+              }
+            }
+          }
+        }
+      },
+      "References": {
+        "Citation1": {
+          "Description": "[1]"
+        }
+      }
+    }
+  }
+  
