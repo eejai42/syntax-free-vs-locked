@@ -1,0 +1,81 @@
+{
+  "article": {
+    "title": "Suspended cymbal",
+    "sections": [
+      {
+        "name": "Introduction",
+        "description": "A suspended cymbal is any single cymbal played with a stick or beater rather than struck against another cymbal. Common abbreviations used are 'sus. cym.' or 'sus. cymb.' (with or without the period). Most drum kits contain at least two suspended cymbals: a crash cymbal and a ride cymbal."
+      },
+      {
+        "name": "History",
+        "description": "The term 'suspended cymbal' originates from the modern orchestra, where 'cymbals' typically refers to a pair of clash cymbals.",
+        "details": [
+          {
+            "origin": "The first suspended cymbals used in the modern orchestra were one of a pair of orchestral cymbals, supported by hanging it bell upwards (with concavity opening downward) by its strap.",
+            "uses": [
+              {
+                "description": "Originally used as a replacement for a gong, this technique has largely been replaced by specialized cymbals with larger mounting holes that can be mounted on a cymbal stand."
+              },
+              {
+                "description": "Occasionally, the term 'suspended cymbal' still refers to one of a pair of orchestral cymbals hung by its strap, especially in older scores."
+              }
+            ],
+            "notes": [
+              {
+                "importance": "It is essential to check whether the term 'suspended cymbal' in a score refers to the traditional or modern usage before committing to a particular technique."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Technique",
+        "description": "In an orchestral setting, suspended cymbals are most often used for rolled crescendos or swells.",
+        "techniques": [
+          {
+            "name": "Suspended cymbal roll",
+            "description": "The percussionist uses a single-stroke roll on the outside edge of the cymbal using soft mallets, one on each side."
+          },
+          {
+            "name": "Hitting with a stick",
+            "description": "The cymbal is struck with a stick as specified in some scores."
+          },
+          {
+            "name": "Scraping with a triangle beater",
+            "description": "The cymbal is scraped with a triangle beater to produce a specific sound."
+          },
+          {
+            "name": "Bow technique",
+            "description": "A contrabass bow is drawn slowly across the outside rim of the cymbal, producing a shrill, eerie sound. This is particularly useful in film music."
+          },
+          {
+            "name": "Timpani head placement",
+            "description": "The cymbal is placed upside down on a timpani head, and the timpanist rolls ad lib while moving the timpani pedal up and down for a glissando effect.",
+            "example": "This technique has been prominently used by film composer Danny Elfman."
+          },
+          {
+            "name": "Reverse sample playback",
+            "description": "A sample of a cymbal struck by a mallet is recorded with a long, natural decay and played backward, resulting in a crescendo to a crisp cutoff. This is often used in film and pop music, particularly in reality television shows."
+          }
+        ]
+      },
+      {
+        "name": "Other uses",
+        "description": "In a drum kit, nearly all the cymbals used are suspended cymbals in the broadest sense, with the main exception being the hi-hat cymbal."
+      },
+      {
+        "name": "References",
+        "sources": [
+          {
+            "author": "Riemann, Hugo",
+            "title": "Dictionary of Music",
+            "translator": "J.A. Shedlock",
+            "publisher": "Augener", 
+            "year": 1900,
+            "page": 288
+          }
+        ]
+      }
+    ]
+  }
+}

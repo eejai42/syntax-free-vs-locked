@@ -1,0 +1,146 @@
+{
+    "Ladybird": {
+      "CommonNames": {
+        "NorthAmerica": "Ladybug",
+        "UnitedKingdom": "Ladybird",
+        "OtherNames": ["Ladybird beetle", "Lady beetle"]
+      },
+      "Taxonomy": {
+        "Domain": "Eukaryota",
+        "Kingdom": "Animalia",
+        "Phylum": "Arthropoda",
+        "Class": "Insecta",
+        "Order": "Coleoptera",
+        "Suborder": "Polyphaga",
+        "Infraorder": "Cucujiformia",
+        "Superfamily": "Coccinelloidea",
+        "Family": {
+          "Name": "Coccinellidae",
+          "Authority": "Latreille, 1807",
+          "Subfamilies": [
+            {"Name": "Chilocorinae", "Authority": "Mulsant, 1846"},
+            {"Name": "Coccidulinae", "Authority": "Mulsant, 1846"},
+            {"Name": "Coccinellinae", "Authority": "Latreille, 1807"},
+            {"Name": "Epilachninae", "Authority": "Mulsant, 1846"},
+            {"Name": "Microweiseinae", "Authority": "Leng, 1920"},
+            {"Name": "Scymninae", "Authority": "Mulsant, 1846"},
+            {"Name": "Sticholotidinae", "Authority": "Weise, 1901"}
+          ],
+          "Synonyms": ["Cerasommatidiidae", "Epilachnidae"]
+        }
+      },
+      "Description": {
+        "SizeRange_mm": {"Min": 0.8, "Max": 18},
+        "SexualDimorphism": "Females larger than males",
+        "BodyShape": "Oval with domed back and flat underside",
+        "EyeType": "Large compound eyes",
+        "Antennae": "Clubbed, with 7-11 segments",
+        "Mandibles": "Powerful with paired 'teeth'",
+        "Prothorax": "Broad and convex, covering the back of the head",
+        "Wings": {
+          "Forewings": "Hardened, non-overlapping, known as elytra",
+          "Hindwings": "Fragile, used for flight"
+        },
+        "Legs": {
+          "TarsalFormula": "4-4-4 or 3-3-3",
+          "TarsusClaws": 2
+        },
+        "Spiracles": 5,
+        "Tentorium": "Internal supports with separated branches at front",
+        "CoxalCavities": "Open from back in front thorax, front in middle thorax",
+        "Epimeron": "On metathorax with parallel edges",
+        "MaleGenitalia": "Tube-shaped, siphon-like"
+      },
+      "ColorationAndPatterns": {
+        "CommonPatterns": [
+          {"BaseColor": "Red", "SpotsColor": "Black", "ExampleSpecies": "Coccinella septempunctata"},
+          {"BaseColor": "Yellow", "SpotsColor": "Black", "ExampleSpecies": "Psyllobora vigintiduopunctata"},
+          {"BaseColor": "Brown", "SpotsColor": "Whitish", "ExampleSpecies": "Vibidia duodecimguttata"},
+          {"PatternType": "Striped", "ExampleSpecies": "Brumoides suturalis"},
+          {"PatternType": "Unspotted", "ExampleSpecies": "Rhyzobius chrysomeloides"}
+        ],
+        "Pigments": {
+          "Carotene": "Creates lighter colors",
+          "Melanins": "Creates darker colors"
+        },
+        "Function": ["Warning coloration", "Camouflage", "Mate attraction", "Heat regulation"]
+      },
+      "LifeCycle": {
+        "DevelopmentStages": ["Larva", "Pupa", "Adult"],
+        "BreedingSeasons": {
+          "TemperateRegions": ["Spring", "Summer"],
+          "TropicalRegions": "Wet season"
+        },
+        "Dormancy": {
+          "TemperateSpecies": ["Hibernation", "Diapause during winter"],
+          "TropicalSpecies": "Dormant during dry season"
+        },
+        "Migration": "Between dormancy and breeding sites"
+      },
+      "Diet": {
+        "CarnivorousSpecies": ["Aphids", "Scale insects"],
+        "HerbivorousSpecies": ["Plants", "Fungi"],
+        "BreedingStrategy": "Lay eggs near prey colonies"
+      },
+      "HumanInteraction": {
+        "BeneficialInsects": {
+          "Description": "Species preying on agricultural pests",
+          "BiologicalControlAgents": "Introduced outside range with varying success"
+        },
+        "PestSpecies": {
+          "Description": "Some species attack agricultural crops or infest homes",
+          "InvasiveSpecies": {
+            "Species": "Harmonia axyridis",
+            "Threat": "Poses ecological threat to native species"
+          }
+        },
+        "Threats": ["Climate change", "Habitat destruction"]
+      },
+      "CulturalSignificance": {
+        "Etymology": {
+          "FamilyName": {
+            "Origin": "Latin word 'coccineus' meaning 'scarlet'",
+            "Creator": "Pierre André Latreille, 1807"
+          },
+          "CommonName": {
+            "Origin": "Our Lady's birds",
+            "Connection": "Mary (Our Lady) depicted in red cloak with seven joys and sorrows"
+          },
+          "NameVariations": [
+            {"Region": "Germany", "Name": "Marienkäfer", "Meaning": "Marybeetle or ladybeetle"}
+          ]
+        },
+        "Folklore": "Featured in nursery rhymes, religion, and poetry"
+      },
+      "EvolutionAndPhylogeny": {
+        "FossilRecord": {
+          "TimeRange": "Eocene—Present",
+          "OldestFossils": {
+            "Location": "Oise amber, France",
+            "Age_Mya": 53,
+            "Genera": ["Rhyzobius", "Nephus"]
+          },
+          "FossilRichLocations": ["Baltic amber", "Extinct genera in Microweiseini and Sticholotidini tribes"]
+        },
+        "Phylogeny": {
+          "Superfamily": "Coccinelloidea",
+          "RelatedGroups": [
+            {"Superfamily": "Tenebrionoidea", "ExampleSpecies": "Nephodinus metallescens"},
+            {"Superfamily": "Cleroidea", "ExampleSpecies": "Thaneroclerus buqueti"},
+            {"Superfamily": "Chrysomeloidea", "ExampleSpecies": "Chrysomela vigintipunctata"},
+            {"Superfamily": "Curculionoidea", "ExampleSpecies": "Curculio nucum"}
+          ],
+          "GeneticStudies": {
+            "SubfamilyClassification": {
+              "Microweiseinae": "3 tribes",
+              "Coccinellinae": "26 tribes",
+              "Monocoryninae": "1 tribe"
+            },
+            "MonophylySupport": "Strong for Coccinellinae",
+            "EvolutionaryInsights": "Diversified rapidly during Late Cretaceous due to angiosperm diversity"
+          }
+        }
+      }
+    }
+  }
+  

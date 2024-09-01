@@ -1,0 +1,158 @@
+FROM THIS WIKI-to-JSON GPT:
+https://chatgpt.com/g/g-sVdU6Ouaf-wiki-to-json
+
+follow the process described for this content:
+
+From Wikipedia, the free encyclopedia
+
+This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.
+Find sources: "Suspended cymbal" – news · newspapers · books · scholar · JSTOR (February 2024) (Learn how and when to remove this message)
+The drum kit
+Drum Kit
+Bass drum
+Floor tom
+Snare drum
+Rack tom
+Hi-hat
+Crash cymbal
+Ride cymbal
+Splash cymbal
+China cymbal
+Not shown
+Bongos
+Rototoms
+Octoban
+Crash/ride cymbal
+Sizzle cymbal
+Bell cymbal
+Swish cymbal
+Cowbell
+Jam block
+Temple blocks
+Tambourine
+Tam-tam
+Mark tree
+See also
+Drum hardware
+Drum stick
+Drum case
+Trigger
+Electronic drum
+Drum module
+vte
+
+Classical suspended cymbal
+A suspended cymbal is any single cymbal played with a stick or beater rather than struck against another cymbal. Common abbreviations used are "sus. cym.," or "sus. cymb." (with or without the period).
+
+Most drum kits contain at least two suspended cymbals: a crash cymbal and a ride cymbal.
+
+History
+The term comes from the modern orchestra, in which the term cymbals normally refers to a pair of clash cymbals. The first suspended cymbals used in the modern orchestra were one of a pair of orchestral cymbals, supported by hanging it bell upwards (i.e., with concavity opening downward) by its strap. They could be used as a replacement for a gong.[1] This technique is still used, at times, but has largely been replaced by specialised cymbals with larger mounting holes that can be mounted on a cymbal stand.
+
+Occasionally the term suspended cymbal is still used in the original sense of one of a pair of orchestral cymbals hung by its strap, and this is the usage in older scores and may be the wish of modern conductors in playing them. It is essential to check this before committing to a particular technique.
+
+Technique
+In an orchestral setting, suspended cymbals are most often used for rolled crescendos, or swells. To do this, the percussionist uses a single-stroke roll on the outside edge of the cymbal, using soft mallets, one on each side. The terminology most commonly used to describe this technique is a suspended cymbal roll. At times, a score also calls for hitting the cymbal with a stick or scraping it with a triangle beater. Other techniques utilize the bow of a contrabass, to be drawn slowly across the outside rim of the cymbal. This technique will give a very shrill, eerie sound, particularly useful in film music. Another lesser-known technique is to place a suspended cymbal upside down on a timpani head. The timpanist is instructed to roll ad lib on the suspended cymbal while moving the timpani pedal up and down as a glissando. Film composer Danny Elfman has made great use of this technique, which needs to be performed in a more "transparent" orchestral setting to be heard.
+
+Other composers will use a sample, or recording, of the cymbal struck by a mallet with a long, natural decay. They will then play that segment backwards, so the effect heard is a crescendo to a crisp cutoff of the sound. This is used to great effect for film and pop music to punctuate scenes in many reality television shows.
+
+Other uses
+In a drum kit, nearly all the cymbals used are suspended cymbals in the broadest sense, the main exception being the hi-hat cymbal.
+
+References
+ Riemann, Hugo. Dictionary of Music. Trans. J.A. Shedlock. Augener, 1900. 288.
+
+
+
+ RESPONSE:
+ {
+    "ContactArea": {
+      "Definition": {
+        "Contact": {
+          "Description": "When two objects touch, only a certain portion of their surface areas will be in contact with each other.",
+          "TrueContactArea": {
+            "Description": "This area of true contact, most often constitutes only a very small fraction of the apparent or nominal contact area.",
+            "Details": {
+              "AtomsInContact": {
+                "Description": "The contact area consists of atoms of one object in true contact with the atoms of the other object."
+              },
+              "Asperities": {
+                "Description": "Objects are never perfectly flat due to asperities."
+              },
+              "MicroscopicScale": {
+                "Description": "The actual contact area is usually much less than the apparent contact area on a macroscopic scale."
+              },
+              "DependenceOnForce": {
+                "Description": "Contact area may depend on the normal force between the two objects due to deformation."
+              }
+            }
+          }
+        }
+      },
+      "FactorsAffectingContactArea": {
+        "Geometry": {
+          "Description": "The contact area depends on the geometry of the contacting bodies."
+        },
+        "Load": {
+          "Description": "The contact area depends on the load applied to the bodies."
+        },
+        "MaterialProperties": {
+          "Description": "The contact area depends on the material properties of the bodies."
+        },
+        "Examples": {
+          "ParallelCylinders": {
+            "Description": "The contact area between two parallel cylinders is a narrow rectangle."
+          },
+          "NonParallelCylinders": {
+            "Description": "Two non-parallel cylinders have an elliptical contact area."
+          },
+          "PerpendicularCylinders": {
+            "Description": "Two cylinders crossed at 90 degrees have a circular contact area."
+          },
+          "Spheres": {
+            "Description": "Two spheres have a circular contact area."
+          }
+        }
+      },
+      "FrictionAndContactArea": {
+        "EmpiricalRelationship": {
+          "Description": "It is an empirical fact for many materials that F = μN.",
+          "Details": {
+            "F": {
+              "Description": "F represents the frictional force for sliding friction."
+            },
+            "Mu": {
+              "Description": "μ represents the coefficient of friction."
+            },
+            "N": {
+              "Description": "N represents the normal force."
+            },
+            "IndependenceFromArea": {
+              "Description": "There isn't a simple derivation for sliding friction's independence from area."
+            }
+          }
+        }
+      },
+      "MethodsForDeterminingContactArea": {
+        "IndirectMethods": {
+          "Description": "One way of determining the actual contact area is to determine it indirectly through a physical process that depends on contact area.",
+          "Examples": {
+            "ElectricalResistance": {
+              "Description": "The resistance of a wire is dependent on the cross-sectional area.",
+              "Application": {
+                "CurrentMeasurement": {
+                  "Description": "One may find the contact area of a metal by measuring the current that flows through that area."
+                }
+              }
+            }
+          }
+        }
+      },
+      "References": {
+        "Citation1": {
+          "Description": "[1]"
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,99 @@
+{
+    "ArticleTitle": "Ladybird, ladybug, lady beetle",
+    "Taxonomy": {
+      "ScientificClassification": {
+        "Domain": "Eukaryota", 
+        "Kingdom": "Animalia", 
+        "Phylum": "Arthropoda", 
+        "Class": "Insecta", 
+        "Order": "Coleoptera", 
+        "Suborder": "Polyphaga", 
+        "Infraorder": "Cucujiformia", 
+        "Superfamily": "Coccinelloidea", 
+        "Family": "Coccinellidae"
+      },
+      "Subfamilies": ["Chilocorinae", "Coccidulinae", "Coccinellinae", "Epilachninae", "Microweiseinae", "Scymninae", "Sticholotidinae"],
+      "Synonyms": ["Cerasommatidiidae", "Epilachnidae"]
+    },
+    "GeneralInformation": {
+      "CommonNames": {
+        "NorthAmerica": "ladybugs",
+        "UnitedKingdom": "ladybirds",
+        "ScientificName": "Coccinellidae"
+      },
+      "Description": {
+        "Shape": "Oval with domed back and flat underside",
+        "SizeRange": "0.8 to 18 mm",
+        "SexualDimorphism": "Females slightly larger",
+        "Coloration": {
+          "Pigments": ["Carotene (light colors)", "Melanins (dark colors)"],
+          "ColorPatterns": "Warning coloration, camouflage, mate attraction, heat regulation",
+          "Variability": "Polymorphism, seasonal color changes"
+        },
+        "Features": {
+          "Eyes": "Large compound eyes",
+          "Antennae": "Clubbed with 7-11 segments",
+          "Mandibles": "Powerful with pairs of opposing teeth",
+          "Prothorax": "Broad, convex, covering back of head",
+          "Wings": "Hardened, non-overlapping forewings (elytra), fragile hindwings",
+          "Legs": "Short with 4-4-4 or 3-3-3 tarsal formula, two claws at tip"
+        }
+      },
+      "Lifecycle": {
+        "BreedingSeasons": {
+          "Temperate": "Spring and summer",
+          "Tropical": "Wet season"
+        },
+        "DevelopmentStages": ["Larva", "Pupa", "Adult"],
+        "Dormancy": {
+          "TemperateSpecies": "Hibernate and diapause in winter",
+          "TropicalSpecies": "Dormant during dry season"
+        }
+      },
+      "Diet": {
+        "PredatorySpecies": "Carnivorous, preying on aphids and scale insects",
+        "OtherSpecies": "Consume plants, fungi, non-animal matter"
+      },
+      "Migration": "Between dormancy and breeding sites"
+    },
+    "EcologicalImpact": {
+      "BeneficialSpecies": "Control agricultural pests",
+      "IntroducedSpecies": "Used as biological control agents, varying success",
+      "PestSpecies": "Some attack crops, infest homes in winter",
+      "InvasiveSpecies": "Harmonia axyridis poses ecological threat to native species",
+      "Threats": ["Climate change", "Habitat destruction"]
+    },
+    "CulturalSignificance": {
+      "Folklore": "Roles in folklore, religion, poetry",
+      "NurseryRhymes": "Popular in nursery rhymes"
+    },
+    "Etymology": {
+      "FamilyNameOrigin": "Coccinellidae, from Latin 'coccineus' meaning 'scarlet'",
+      "CommonNameOrigin": {
+        "UK": "'Our Lady's birds', related to Virgin Mary",
+        "US": "'Ladybug', popular adaptation"
+      }
+    },
+    "Evolution": {
+      "FossilHistory": {
+        "OldestFossils": "Early Eocene, 53 million years ago",
+        "KnownFrom": ["Oise amber, France", "Baltic amber"],
+        "Genera": ["Rhyzobius", "Nephus", "Serangium"]
+      },
+      "Phylogeny": {
+        "Group": "Superfamily Coccinelloidea within infraorder Cucujiformia",
+        "SubfamiliesAndTribes": {
+          "Traditional": "Seven subfamilies, 35 tribes based on morphology",
+          "RecentStudy": {
+            "Year": 2021,
+            "Findings": "Three subfamilies: Microweiseinae (3 tribes), Coccinellinae (26 tribes), Monocoryninae (1 tribe)"
+          }
+        },
+        "DietEvolution": {
+          "BasalDiet": "Scale insects",
+          "Evolutions": ["Aphid-eating evolved three times", "Leaf-eating evolved twice", "Fungi-eating evolved from aphid-eating"]
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,143 @@
+{
+    "article": {
+      "title": "Traditional Bluegrass",
+      "needs_citations": true,
+      "improvement_requests": [
+        "Add citations to reliable sources",
+        "Remove unsourced material"
+      ],
+      "origin": {
+        "stylistic_origins": [
+          "English Folk",
+          "Scottish Folk",
+          "Irish Folk",
+          "Appalachian Music",
+          "Old-Time Music",
+          "African-American Music",
+          "String Bands",
+          "Blues",
+          "Jazz"
+        ],
+        "cultural_origin": {
+          "time_period": "Circa 1948",
+          "location": "United States"
+        }
+      },
+      "instruments": {
+        "typical_instruments": [
+          "Violins (Fiddles)",
+          "Violas",
+          "Cellos",
+          "Conga Drums",
+          "African Drum",
+          "Classical Guitars",
+          "Banjos",
+          "Guitars (typically Acoustic Guitars)",
+          "Vocals",
+          "Ukuleles",
+          "Mandolins",
+          "Dobro",
+          "Upright Basses"
+        ]
+      },
+      "related_topics": [
+        "Bluegrass",
+        "Progressive Bluegrass"
+      ],
+      "characteristics": {
+        "description": "Emphasizes traditional elements of bluegrass music, contrasting with progressive bluegrass.",
+        "musical_style": {
+          "song_types": [
+            "Folk Songs",
+            "Tunes with Simple Traditional Chord Progressions"
+          ],
+          "instruments_usage": [
+            "Acoustic Instruments similar to those used by Bill Monroe and his Blue Grass Boys band in the late 1940s",
+            "Multiple guitars or fiddles in a band"
+          ],
+          "guitar_role": [
+            "Acts as a rhythm instrument",
+            "Rarely takes the lead, except in gospel-based songs"
+          ],
+          "melodies_and_lyrics": [
+            "Simple melodies and lyrics",
+            "Commonly in the key of G or other keys",
+            "I-IV-V chord pattern"
+          ],
+          "performance_practices": [
+            "No use of electrically amplified instruments",
+            "Acoustic instruments are miked during stage performances before larger audiences"
+          ]
+        }
+      },
+      "influential_musicians": {
+        "mandolin_standard": {
+          "name": "Bill Monroe",
+          "contribution": "Set the standard for mandolin playing style in traditional bluegrass"
+        },
+        "fiddling_standard": {
+          "name": "Kenny Baker",
+          "contribution": "Set the standard for fiddling in traditional bluegrass"
+        },
+        "banjo_playing": {
+          "name": "Earl Scruggs",
+          "contribution": "Developed the three-finger style banjo playing"
+        }
+      },
+      "ideological_divisions": {
+        "debate": "What constitutes 'Bluegrass Music'",
+        "traditional_views": [
+          "Some traditional musicians do not consider progressive bluegrass to be true 'bluegrass'",
+          "Some believe bluegrass must be styled directly after Bill Monroe's bands"
+        ],
+        "stylistic_divergences": {
+          "description": "Center on which first generation bands contemporary musicians draw inspiration from.",
+          "examples": [
+            {
+              "tradition": "Stanley Brothers",
+              "followers": [
+                "Roy Lee Centers",
+                "Larry Sparks",
+                "Sammy Adkins",
+                "The Fields Bros",
+                "The Wilson Brothers",
+                "The Gillis Brothers",
+                "Various local bands across the country"
+              ]
+            },
+            {
+              "tradition": "Lester Flatt",
+              "followers": [
+                "Willis Spears",
+                "Curley Seckler",
+                "Karl Shifflett"
+              ]
+            },
+            {
+              "tradition": "Mac Wiseman",
+              "followers": [
+                "Hylo Brown",
+                "Sid Campbell"
+              ]
+            },
+            {
+              "tradition": "Osborne Brothers",
+              "followers": [
+                "Larry Stephenson",
+                "The Grascals"
+              ]
+            },
+            {
+              "tradition": "Jimmy Martin",
+              "followers": [
+                "Frank Necessary",
+                "Blue Maggie",
+                "Hud Hadley"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  
