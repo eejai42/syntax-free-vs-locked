@@ -1,6 +1,24 @@
 Roast and Toast
 
 ENGLISH:-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-
+
+A small, white, puffy, marshmallow, named Charlie.
+=============================================
+Describe him as completely as possible in natural language English, 
+but don't infer more than necessary.
+
+Charlie is actually crispy.
+
+No, his name is actualy Crispy now.
+
+The game, named Roast and Toast, is "summer camp themed" for 
+version 1.1.  Crispy's BFF is Melty, the tastiest Chocolate bar 
+ever... and the S'mors gang makes the best S'mors in the world.  
+Oh... their pal Crunchy hangs around them too.
+
+
+
+ENGLISH:-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-
 A puffy white marshmallow, named bobby.
 =============================================
 
