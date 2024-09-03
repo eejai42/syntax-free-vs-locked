@@ -1,0 +1,103 @@
+
+[
+    {
+      "PythonFunctionSignatures": [
+        "recommend_tracks(str user_id)",
+        "manage_playlist(str user_id, str action, str playlist_id=None, str track_id=None)",
+        "initiate_live_stream(str artist_id, dict show_details)",
+        "download_for_offline(str user_id, str track_id)",
+        "voice_control(str command)"
+      ]
+    },
+    
+    {
+      "PythonFunctionSignatures": 
+      [
+        "get_curated_playlists(int user_id)",
+        "search_music(str query, int limit=10)",
+        "fetch_live_streams()",
+        "download_song(int user_id, int song_id)",
+        "send_tip(int user_id, int artist_id, float amount)"
+      ]
+    },
+    
+    {
+      "PythonFunctionSignatures": [
+        "manage_favorites(str user_id, int track_id, str action)",
+        "suggest_tracks(str user_id)",
+        "handle_live_stream(str user_id, int stream_id, str action)",
+        "update_user_profile(str user_id, str new_name)",
+        "process_tips(str user_id, str artist_id, float amount)"
+      ]
+    },
+    
+    {
+      "PythonFunctionSignatures": [
+        "get_curated_playlists(str user_id, dict preferences, int max_playlists=10)",
+        "discover_new_music(str user_id, str genre, int max_tracks=20)",
+        "manage_favorites(str user_id, str action, str item_type, str item_id)",
+        "handle_live_interaction(str user_id, str stream_id, str action, str message='')",
+        "manage_offline_playback(str user_id, str content_id, str action)"
+      ]
+    },
+    
+    {
+      "PythonFunctionSignatures": [
+        "curate_personalized_playlists(int user_id)",
+        "generate_music_suggestions(int user_id)",
+        "manage_favorites(int user_id, str action, int track_id)",
+        "update_live_show_feed(int artist_id, str show_status)",
+        "download_songs(int user_id, list track_ids)"
+      ]
+    },
+    
+    {
+        "PythonFunctionSignatures": [
+            "get_curated_playlists(int user_id)",
+            "discover_new_music(int user_id)",
+            "manage_favorite_tracks(int user_id)",
+            "simulate_live_streaming(int artist_id, int user_id)",
+            "handle_voice_commands(str command)"
+        ]
+    },
+    
+    {
+      "PythonFunctionSignatures": [
+        "add_track_to_playlist(int user_id, int playlist_id, int track_id)",
+        "get_personalized_recommendations(int user_id)",
+        "start_live_stream(int artist_id, string stream_title)",
+        "download_track_for_offline_playback(int user_id, int track_id)",
+        "process_tip(int user_id, int artist_id, float amount)"
+      ]
+    },
+    
+    {
+      "PythonFunctionSignatures": [
+        "fetch_curated_playlists(int user_id)",
+        "get_trending_tracks()",
+        "stream_live_performance(int artist_id)",
+        "download_song(int song_id, int user_id)",
+        "log_user_activity(int user_id, string activity_type, datetime timestamp)"
+      ]
+    },
+    
+    {
+      "PythonFunctionSignatures": [
+        "authenticate_user(string username, string password)",
+        "add_track_to_playlist(int user_id, int track_id, int playlist_id)",
+        "start_live_stream(int artist_id, dict stream_details)",
+        "encrypt_user_data(dict user_data)",
+        "process_subscription_payment(int user_id, dict payment_details)"
+      ]
+    },
+    
+    {
+      "PythonFunctionSignatures": [
+        "format_recommendations(recommendations: List[Dict[str, str]]) -> str",
+        "check_license_compliance(licenses: List[str]) -> bool",
+        "log_user_interaction(user_id: str, action: str, timestamp: datetime) -> None",
+        "validate_subscription(user_data: Dict[str, str]) -> bool",
+        "send_notification(user_id: str, message: str) -> None"
+      ]
+    }
+    ]

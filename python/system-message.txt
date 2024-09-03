@@ -1,0 +1,24 @@
+Each prompt will start with the output/response from a previous ChatGPT prompt.
+This output will be followed by a PROMPT: with a request to make some change to
+that original prompt. (add x, allow y's to do Z on the weekends, remove the 
+ability of widgets to be deleted, send users notifcations when their accounts 
+are suspected).  Be as specific as possible with details about the request, 
+features, examples, etc.
+
+It is key to know that what we are exploring here is the 1 dimensional nature
+of syntax-locked natural language (english), vs the syntax-free formats (json).
+the essential observation here is that natural language is 1 dimensional, but
+ideas are multi-dimensional.  When generating natural language, avoid using 
+nesting/bullet points if it can also be described inline.
+
+Your job is to add the new information, and then rewrite the previous response
+now including the modify/change/update/request/etc.  Try to be as complete as 
+possible.  Don't halucinate.  Imagine you are on the stand and agree to tell 
+the truth, the whole truth, and nothing but the truth.  This should be true
+regardless of the format: Natural language, formal languages, dsls, 
+multidimensional-machine readable-queriable-data storage languages like 
+json/xml/yml/etc, or any other - always include as much of the "knowledge"
+contained in the previous response hopefully resulting in as little drift over
+time.
+There will also be validation prompts - ONLY RETURN JSON FOR VALIDATION REQUESTS!
+DO NOT EXPLAIN THE VALIDATION RESPONSE!  JUST RETURN THE 3 line JSON ANSWER.  PLEASE!

@@ -6,6 +6,8 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
                                       outputLabelName="svc-output-label-name",
                                       leftYTranspilerLabel="svc-missing-lefty-transpiler-label",
                                       leftYColorLabel="svc-missing-lefty-color-label",
+                                      leftYImage="svc-missing-lefty-color-label",
+                                      rightYImage="svc-missing-lefty-color-label",
                                       leftYRightColorLabel="svc-missing-lefty-right-color-label",
                                       rightYTranspilerLabel="svc-missing-righty-transpiler-label",
                                       rightYRightColorLabel="svc-missing-righty-right-color-label",
@@ -14,6 +16,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
                                       showArrows = true,
                                       followAlong = false,
                                       isSyntaxFree = false,
+                                      showPictures = true
                                     }) => {
   const [outputColor, setOutputColor] = useState("#ff00ff"); // Initial color set to a placeholder
   const presets = [{
@@ -21,54 +24,88 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
     "Name" : "Requirements v1",
     "SyntaxLocked": "Natural Language",
     "SyntaxFree": "Requirements v1",
-    "Output": "Devices.json"
+    "LockedImage": "requirements-v1.webp",
+    "FreeImage": "requirements-v1.webp",
+    "Output": "AIC Devices.json"
   },{
     "Type": "Input",
     "Name" : "Requirements v2",
     "SyntaxLocked": "Natural Language",
     "SyntaxFree": "Requirements v2",
-    "Output": "Devices.json"
+    "LockedImage": "requirements-v2.webp",
+    "FreeImage": "requirements-v2.webp",
+    "Output": "AIC Devices.json"
   },{
     "Type": "Input",
     "Name" : "Grg Dr Opener",
     "SyntaxLocked": "Natural Language",
     "SyntaxFree": "Door Specs",
-    "Output": "Devices.json",
+    "LockedImage": "garage-door.webp",
+    "FreeImage": "garage-door.webp",
+    "RightLockedImage": "arduino.webp",
+    "RightFreeImage": "arduino.webp",
+
+    "Output": "AIC Devices.json",
   },{
     "Type": "Left",
     "Name": "C++",
     "SyntaxLocked":  "Common.h/cpp",
     "SyntaxFree": "Arduino.hbars",
+    "RightLockedImage": "developer.webp",
+    "RightFreeImage": "arduino-hbars.webp",
+    "LockedImage": "arduino.webp",
+    "FreeImage": "arduino.webp",
+
     "Output": "Common.h/cpp",
   },{
     "Type": "Left",
     "Name": "Python",
     "SyntaxLocked": "Common.py",
     "SyntaxFree": "Python.hbars",
+    "RightLockedImage": "developer.webp",
+    "RightFreeImage": "arduino-hbars.webp",
+    "LockedImage": "pi.webp",
+    "FreeImage": "pi.webp",
     "Output": "Common.py",
   },{
     "Type": "Left",
     "Name": "C#",
     "SyntaxLocked":  "Common.cs",
     "SyntaxFree": "DotNet.hbars",
+    "RightLockedImage": "developer.webp",
+    "RightFreeImage": "arduino-hbars.webp",
+    "LockedImage": "windows.webp",
+    "FreeImage": "windows.webp",
     "Output": "Common.cs",
   },{
     "Type": "Right",
     "Name": "Markdown",
     "SyntaxLocked":  "README.md",
     "SyntaxFree":  "README.hbars",
+    "LockedImage": "editor.webp",
+    "FreeImage": "readme.hbars.webp",
+    "RightLockedImage": "markdown.webp",
+    "RightFreeImage": "markdown.webp",
     "Output": "README.md",
   },{
     "Type": "Right",
     "Name": "HTML",
     "SyntaxLocked":  "Index.html",
     "SyntaxFree":  "Index.hbars",
+    "LockedImage": "editor.webp",
+    "FreeImage": "readme.hbars.webp",
+    "RightLockedImage": "html.webp",
+    "RightFreeImage": "html.webp",
     "Output": "Index.html",
   },{
     "Type": "Right",
     "Name": "WIKI docs",
     "SyntaxLocked":  "Home.wiki",
     "SyntaxFree":  "Home.hbars",
+    "LockedImage": "editor.webp",
+    "FreeImage": "readme.hbars.webp",
+    "RightLockedImage": "wiki.webp",
+    "RightFreeImage": "wiki.webp",
     "Output": "Home.wiki",
   }
 ]
@@ -100,6 +137,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             topLeftPreset3={presets[2]}
             alignment="center"
             isSyntaxFree={isSyntaxFree}
+            showPictures={showPictures}
           />
         </td>
       </tr>
@@ -108,6 +146,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
           {/* Pass the output color from the top YCombiner to this YCombiner */}
           <YCombiner key="bottomLeft"   style={{backgroundColor: 'red', paddingLeft: '5em'}}
             externalColor2={outputColor}
+            externalImage2={leftYImage}
             onMixedColorChange={() => {}}
             // link the leftColor , as a string, to the defaultLeftColor prop
             defaultRightColor="#ff0000"
@@ -121,12 +160,14 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             topLeftPreset3={presets[5]}
             alignment="flex-end"
             isSyntaxFree={isSyntaxFree}
+            showPictures={showPictures}
           />
         </td>
         <td>
           {/* Another YCombiner using the output color */}
           <YCombiner key="bottomRight"
             externalColor1={outputColor}
+            externalImage1={rightYImage}
             onMixedColorChange={() => {}}
             defaultRightColor="#Efff00"
             leftColorLabel={rightYColorLabel}
@@ -138,6 +179,7 @@ const SyntaxVisualizationComponent = ({topLeftColorLabel="svc-missing-top-left-c
             topRightPreset2={presets[7]}
             topRightPreset3={presets[8]}
             isSyntaxFree={isSyntaxFree}
+            showPictures={showPictures}
           />
         </td>
       </tr>

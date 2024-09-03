@@ -1,0 +1,1160 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<style>
+
+.row {
+  margin: 0px;
+}
+  table {
+    font-size: normal;
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 1.5em;
+  }
+
+  .from-label, .to-label {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .match-status {
+    font-weight: bold; 
+    font-size: 1.3em;
+    width: 30em; 
+    margin-left: 1em;
+    min-height: 1.5rem; 
+    border: solid black 1px"
+    text-align: center;
+    color: #aaaaaa; 
+    text-align: center;
+  }
+
+  .goal {
+  }
+
+  .current {
+    float: left; 
+  }
+
+  .unused {
+    font-size: 0.5em;
+    border: solid green 10px;
+    background-color: #c9c9c9;
+    text-decoration: line-through;
+  }
+
+  .in-sync {
+    height: 1em;
+    margin: 10px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #edfded;
+  }
+
+  .out-of-sync {
+    border: solid red 10px;
+    background-color: #fde3e3;
+  }
+
+  .missing-layer {
+    margin: 2rem; 
+    padding: 5%;
+    background-color: #eeee00;
+    border-radius: 3em;
+  }
+
+  .stale {
+    color: red; 
+    font-size: 1.5em;
+    font-weight: bold; 
+    width: 90%; 
+    text-align: center; 
+    background-color: #FFFFFF; 
+    margin-left: auto; 
+    margin-right: auto
+  }
+
+  .platform-image {
+    margin: 0.5rem; 
+    margin-left: 2em;
+    margin-top: 2em;
+    width: 6rem; 
+  }
+
+  .from-node-image {
+    padding: 0rem; 
+    border-right: dashed black 3px; 
+    height: 22rem;
+    width: 12rem;
+    padding-top: 0;
+  }
+
+  .transpiler-attachments {
+    margin: 0.5rem; 
+    width: 5rem; 
+    float: left;
+  }
+
+  .from-node-attachment {
+    margin: 0.5rem; 
+    width: 8rem;
+  }
+
+  .transpiler-node {
+    padding-before: 2em;
+    min-width: 45rem;
+    height: 23rem;
+    margin: 0rem;
+    border: solid #eeeeee 3px;
+  }
+
+
+
+
+  body {
+    font-size: 1rem;
+  }
+
+</style>
+
+<table style="max-width: 100rem;">
+<tbody>
+<tr><td valign="top" style="max-width: 55rem;">
+
+<h1 style="text-align: center; wrap: none;">Syntax-Locked Methodology</h1>
+
+      <div class="transpiler-node in-sync">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Product Owner  ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      Natural Language Idea
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+              <table><tr>
+                <td valign="top" colspan="3">
+                  <div class="match-status current in-sync" style="background-color: #0000FF;">#0000FF
+                  </div>
+                </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
+                <tr><td colSpan="1">
+                    <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments"><img src="../transpiler-images/Product_Owner/Natural_Language_Idea_TranspilerNodeAttachments_1.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Manager & Architect</h4>
+                </td><td colspan="2" style="text-align: center">
+                  <div style="display: block;">
+                      <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                  </div>
+
+                  <div>➡ Requirements.docx</div>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>NaturalLanguage</b> Specification
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+      <div class="transpiler-node in-sync">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Specification/Tickets_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Specification  ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Specification/Tickets_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      Tickets
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+              <table><tr>
+                <td valign="top" colspan="3">
+                  <div class="match-status current in-sync" style="background-color: #0000FF;">#0000FF
+                  </div>
+                </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
+                <tr><td colSpan="1">
+                    <img src="../transpiler-images/Specification/Tickets_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments"><img src="../transpiler-images/Specification/Tickets_TranspilerNodeAttachments_1.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Manager & Architect</h4>
+                </td><td colspan="2" style="text-align: center">
+                  <div style="display: block;">
+                      <img src="../transpiler-images/Specification/Tickets_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                  </div>
+
+                  <div>➡ Tickets.docx</div>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>NaturalLanguage</b> Tickets
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+      <div class="transpiler-node ">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Product Owner  ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      Syntax-Free Idea
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+        <div style="margin: 0.5rem; margin-bottom: 2rem; text-align: center; horizontal-align: middle;">
+          <div class="missing-layer">-- Missing Layer --</div>
+        </div>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+      <div class="transpiler-node ">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Airtable/Install_Airtable_to_Json_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Airtable  ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Airtable/Install_Airtable_to_Json_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      Install Airtable to Json
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+        <div style="margin: 0.5rem; margin-bottom: 2rem; text-align: center; horizontal-align: middle;">
+          <div class="missing-layer">-- Missing Layer --</div>
+        </div>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+      <div class="transpiler-node out-of-sync">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/Markdown_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Tickets  ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Tickets/Markdown_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      Markdown
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+              <table><tr>
+                <td valign="top" colspan="3">
+                  <div class="match-status current out-of-sync" style="background-color: #3300EE;">#3300EE
+                      <div class="stale">Stale Artifacts</div>
+                  </div>
+                </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
+                <tr><td colSpan="1">
+                    <img src="../transpiler-images/Tickets/Markdown_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Editor</h4>
+                </td><td colspan="2" style="text-align: center">
+                  <div style="display: block;">
+                      <img src="../transpiler-images/Tickets/Markdown_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                  </div>
+
+                  <div>➡ README.md</div>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> Markdown
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+      <div class="transpiler-node out-of-sync">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/C++_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Tickets  ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Tickets/C++_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      C++
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+              <table><tr>
+                <td valign="top" colspan="3">
+                  <div class="match-status current out-of-sync" style="background-color: #3300EE;">#3300EE
+                      <div class="stale">Stale Artifacts</div>
+                  </div>
+                </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
+                <tr><td colSpan="1">
+                    <img src="../transpiler-images/Tickets/C++_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Developer</h4>
+                </td><td colspan="2" style="text-align: center">
+                  <div style="display: block;">
+                      <img src="../transpiler-images/Tickets/C++_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                  </div>
+
+                  <div>➡ Arduino.ino</div>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> Cpp
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+      <div class="transpiler-node unused">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/HTML_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Tickets  ( unused ) ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Tickets/HTML_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      HTML
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+              <table><tr>
+                <td valign="top" colspan="3">
+                  <div class="match-status current out-of-sync" style="background-color: #3300EE;">#3300EE
+                      <div class="stale">Stale Artifacts</div>
+                  </div>
+                </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
+                <tr><td colSpan="1">
+                    <img src="../transpiler-images/Tickets/HTML_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Editor</h4>
+                </td><td colspan="2" style="text-align: center">
+                  <div style="display: block;">
+                      <img src="../transpiler-images/Tickets/HTML_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                  </div>
+
+                  <div>➡ Index.html</div>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> HTML
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+      <div class="transpiler-node unused">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/WIKI_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Tickets  ( unused ) ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Tickets/WIKI_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      WIKI
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+              <table><tr>
+                <td valign="top" colspan="3">
+                  <div class="match-status current out-of-sync" style="background-color: #3300EE;">#3300EE
+                      <div class="stale">Stale Artifacts</div>
+                  </div>
+                </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
+                <tr><td colSpan="1">
+                    <img src="../transpiler-images/Tickets/WIKI_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Editor</h4>
+                </td><td colspan="2" style="text-align: center">
+                  <div style="display: block;">
+                      <img src="../transpiler-images/Tickets/WIKI_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                  </div>
+
+                  <div>➡ Home.WIKI</div>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> WIKI
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+      <div class="transpiler-node unused">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/Python_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Tickets  ( unused ) ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Tickets/Python_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      Python
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+              <table><tr>
+                <td valign="top" colspan="3">
+                  <div class="match-status current out-of-sync" style="background-color: #3300EE;">#3300EE
+                      <div class="stale">Stale Artifacts</div>
+                  </div>
+                </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
+                <tr><td colSpan="1">
+                    <img src="../transpiler-images/Tickets/Python_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Developer</h4>
+                </td><td colspan="2" style="text-align: center">
+                  <div style="display: block;">
+                      <img src="../transpiler-images/Tickets/Python_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                  </div>
+
+                  <div>➡ MachineController.py</div>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> Python
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+      <div class="transpiler-node unused">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: #0000FF;">
+                <div class="from-node-image">
+                    <img src="../transpiler-images/Tickets/C%23_FromNodeAttachments_0.png" alt="From Node Attachment Image" class="from-node-attachment">
+                  <div class="from-label">
+                    Tickets  ( unused ) ➡ 
+                  </div>
+                  <div>
+                      <img src="../transpiler-images/Tickets/C%23_ToNodePlatformAttachments_0.png" alt="To Node Platform Attachment Image" class="platform-image">
+                    <div class="to-label">
+                      C#
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+              <table><tr>
+                <td valign="top" colspan="3">
+                  <div class="match-status current out-of-sync" style="background-color: #3300EE;">#3300EE
+                      <div class="stale">Stale Artifacts</div>
+                  </div>
+                </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
+                <tr><td colSpan="1">
+                    <img src="../transpiler-images/Tickets/C%23_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Developer</h4>
+                </td><td colspan="2" style="text-align: center">
+                  <div style="display: block;">
+                      <img src="../transpiler-images/Tickets/C%23_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                  </div>
+
+                  <div>➡ MachineController.cs</div>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> CSharp
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+
+
+</td>
+<td valign="top" style="max-width: 55rem;">
+
+
+
+<h1 style="text-align: center">Syntax-Free Methodology</h1>
+
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments"><img src="../transpiler-images/Product_Owner/Natural_Language_Idea_TranspilerNodeAttachments_1.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Manager & Architect</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                </td><td style="text-align: center">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Product_Owner/Natural_Language_Idea_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                       
+                </td><td>
+                      
+                </td><td>
+                      ➡  <b>Requirements.docx</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>NaturalLanguage</b> Specification
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Specification/Tickets_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments"><img src="../transpiler-images/Specification/Tickets_TranspilerNodeAttachments_1.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Manager & Architect</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                    <img src="../transpiler-images/Specification/Tickets_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+                </td><td style="text-align: center">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Specification/Tickets_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                      Requirements.docx 
+                </td><td>
+                      
+                </td><td>
+                      ➡  <b>Tickets.docx</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>NaturalLanguage</b> Tickets
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Architect</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                    <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+                </td><td style="text-align: center">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Product_Owner/Syntax-Free_Idea_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                      Requirements.docx 
+                </td><td>
+                      
+                </td><td>
+                      ➡  <b>Airtable Base</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>QueryableSSoT</b> Airtable
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Airtable/Install_Airtable_to_Json_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Architect</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                    <img src="../transpiler-images/Airtable/Install_Airtable_to_Json_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+                </td><td style="text-align: center">
+                    <img src="../transpiler-images/Airtable/Install_Airtable_to_Json_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Airtable/Install_Airtable_to_Json_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                      Airtable Base 
+                </td><td>
+                       ➡ airtable-to-json 
+                </td><td>
+                      ➡  <b>Devices.json</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>QueryableSSoT</b> Json
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Tickets/Markdown_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Editor</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                    <img src="../transpiler-images/Tickets/Markdown_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+                </td><td style="text-align: center">
+                    <img src="../transpiler-images/Tickets/Markdown_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Tickets/Markdown_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                      Devices.json 
+                </td><td>
+                       ➡ json-hbars-transform 
+                </td><td>
+                      ➡  <b>README.md</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> Markdown
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Tickets/C++_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Developer</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                    <img src="../transpiler-images/Tickets/C++_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+                </td><td style="text-align: center">
+                    <img src="../transpiler-images/Tickets/C++_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Tickets/C++_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                      Devices.json 
+                </td><td>
+                       ➡ json-hbars-transform 
+                </td><td>
+                      ➡  <b>Arduino.ino</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> Cpp
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Tickets/HTML_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Editor</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                    <img src="../transpiler-images/Tickets/HTML_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+                </td><td style="text-align: center">
+                    <img src="../transpiler-images/Tickets/HTML_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Tickets/HTML_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                      Devices.json 
+                </td><td>
+                       ➡ json-hbars-transform 
+                </td><td>
+                      ➡  <b>Index.html</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> HTML
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Tickets/WIKI_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Editor</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                    <img src="../transpiler-images/Tickets/WIKI_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+                </td><td style="text-align: center">
+                    <img src="../transpiler-images/Tickets/WIKI_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Tickets/WIKI_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                      Devices.json 
+                </td><td>
+                       ➡ json-hbars-transform 
+                </td><td>
+                      ➡  <b>Home.WIKI</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> WIKI
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Tickets/Python_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Developer</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                    <img src="../transpiler-images/Tickets/Python_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+                </td><td style="text-align: center">
+                    <img src="../transpiler-images/Tickets/Python_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Tickets/Python_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                      Devices.json 
+                </td><td>
+                       ➡ json-hbars-transform 
+                </td><td>
+                      ➡  <b>MachineController.py</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> Python
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+        <div class="transpiler-node in-sync">
+
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  in-sync" style="background-color: #0000FF;">#0000FF
+              
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                    <img src="../transpiler-images/Tickets/C%23_TranspilerNodeAttachments_0.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">
+                  <h4 style="clear: left">Developer</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                    <img src="../transpiler-images/Tickets/C%23_FromEdgeFreeAttachments_0.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">
+                </td><td style="text-align: center">
+                    <img src="../transpiler-images/Tickets/C%23_FreeTranspilerAttachments_0.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">
+                </td><td  style="text-align: center">
+
+                    <img src="../transpiler-images/Tickets/C%23_ToNodeAttachments_0.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">
+                </td></tr><td>
+
+                      Devices.json 
+                </td><td>
+                       ➡ json-hbars-transform 
+                </td><td>
+                      ➡  <b>MachineController.cs</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>File</b> CSharp
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+</td>
+</tr>
+</tbody>
+</table>
+
+

@@ -1,0 +1,156 @@
+{
+    "Airtable": {
+        "Attributes": {
+            "AirtableId": "int",
+            "Experiments": "Experiment[]",
+            "ExperimentFeatures": "ExperimentFeature[]",
+            "ExperimentTransformers": "ExperimentTransformer[]",
+            "Generations": "Generation[]",
+            "GenerationTransformers": "GenerationTransformer[]",
+            "Entities": "Entity[]"
+        },
+        "SingularName": "Airtable",
+        "PluralName": "Airtables",
+        "PrimaryKey": "AirtableId"
+    },
+    "Experiments": {
+        "Attributes": {
+            "ExperimentId": "int",
+            "ExpAbstract": "string",
+            "Generations": "string[]",
+            "ExpTransformers": "string[]",
+            "IsActiveExp": "string",
+            "ExpFeatures": "string[]",
+            "AutoNumber": "int",
+            "ExpName": "string",
+            "Trials": "string[]",
+            "PromptChainsToCreate": "int",
+            "ExpTransformerFullPrompts": "string[]",
+            "ExpTransformerNames": "string[]",
+            "ExpFeatureLowerNames": "string[]",
+            "FeaturesArray": "string",
+            "SyntaxLockedTransformerNumbers": "string[]",
+            "SyntaxFreeTransformerNumbers": "string[]",
+            "ExpIdentifier": "int",
+            "Name": "string",
+            "GenerationAddDataCommandScripts": "string[]",
+            "RunTrialScript": "string",
+            "ExpFeatureNames": "string[]",
+            "ValidationPrompt": "string",
+            "AirtableId": "fk"
+        },
+        "SingularName": "Experiment",
+        "PluralName": "Experiments",
+        "PrimaryKey": "ExperimentId"
+    },
+    "GenerationAddDataCommandScripts": {
+        "Attributes": {
+            "GenerationAddDataCommandScriptId": "int",
+            "ExperimentId": "fk"
+        },
+        "SingularName": "GenerationAddDataCommandScript",
+        "PluralName": "GenerationAddDataCommandScripts",
+        "PrimaryKey": "GenerationAddDataCommandScriptId"
+    },
+    "ExperimentFeatures": {
+        "Attributes": {
+            "ExperimentFeatureId": "int",
+            "Name": "string",
+            "Experiment": "string",
+            "Description": "string",
+            "RequiredStartingAtGeneration": "int",
+            "ExplicitlyRemovedAtGeneration": "int",
+            "LowerName": "string",
+            "IsActiveExp": "string",
+            "ExpAbstract": "string",
+            "AirtableId": "fk",
+            "fields": "string"
+        },
+        "SingularName": "ExperimentFeature",
+        "PluralName": "ExperimentFeatures",
+        "PrimaryKey": "ExperimentFeatureId"
+    },
+    "ExperimentTransformers": {
+        "Attributes": {
+            "ExperimentTransformerId": "int",
+            "Experiment": "string",
+            "FullPrompt": "string",
+            "GenerationTransformer": "string[]",
+            "AutoNumber": "int",
+            "TransformerIdentifier": "int",
+            "Name": "string",
+            "IsActiveExp": "string",
+            "ExpAbstract": "string",
+            "ExpName": "string",
+            "AirtableId": "fk",
+            "IsSyntaxFree": "string"
+        },
+        "SingularName": "ExperimentTransformer",
+        "PluralName": "ExperimentTransformers",
+        "PrimaryKey": "ExperimentTransformerId"
+    },
+    "Generations": {
+        "Attributes": {
+            "GenerationId": "int",
+            "Experiment": "string",
+            "GeneratioNumber": "int",
+            "Name": "string",
+            "ExpAbstract": "string",
+            "IsActiveExp": "string",
+            "ExpName": "string",
+            "ExpValidationPrompt": "string",
+            "AirtableId": "fk",
+            "GenerationTransformers": "string[]",
+            "SyntaxLockedTransformerNumbers": "int",
+            "SyntaxFreeTransformerNumbers": "string[]",
+            "GenerationTransformerAddDataCommands": "string[]",
+            "AddDataCommandScript": "string",
+            "GenerationTransformRawPrompts": "string[]",
+            "TransformerNumbers": "string[]",
+            "Model": "string"
+        },
+        "SingularName": "Generation",
+        "PluralName": "Generations",
+        "PrimaryKey": "GenerationId"
+    },
+    "GenerationTransformers": {
+        "Attributes": {
+            "GenerationTransformerId": "int",
+            "Generation": "string",
+            "ExpTransformer": "string",
+            "TrialArtifacts": "string[]",
+            "AutoNumber": "int",
+            "IsArtifactValidator": "string",
+            "TransformerNumber": "int",
+            "ExpTransformerIsSyntaxFree": "string",
+            "GenerationName": "string",
+            "Name": "string",
+            "GenerationNumber": "int",
+            "AddDataCommand": "string",
+            "RawPrompt": "string",
+            "GenerationExp": "string",
+            "ExpAbstract": "string",
+            "IsActiveExp": "string",
+            "GenerationExpName": "string",
+            "ExpValidationPrompt": "string",
+            "AirtableId": "fk",
+            "ParentTransformer": "string",
+            "ParentTransformerNumber": "int"
+        },
+        "SingularName": "GenerationTransformer",
+        "PluralName": "GenerationTransformers",
+        "PrimaryKey": "GenerationTransformerId"
+    },
+    "Entities": {
+        "Attributes": {
+            "EntityId": "int",
+            "Name": "string",
+            "PluralName": "string",
+            "AirtableName": "string",
+            "AirtableId": "fk"
+        },
+        "SingularName": "Entity",
+        "PluralName": "Entities",
+        "PrimaryKey": "EntityId"
+    }
+}

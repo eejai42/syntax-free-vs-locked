@@ -1,0 +1,81 @@
+{
+    "Entities": [
+            {
+                "Name": "TrialArtifact",
+                "DisplayName": "TrialArtifact",
+                "Description": "",
+                "PluralName": "TrialArtifacts",
+                "AirtableName": "TrialArtifacts"
+            },
+            {
+                "Name": "ArtifactAnalysis",
+                "DisplayName": "ArtifactAnalysis",
+                "Description": "",
+                "PluralName": "ArtifactAnalyses",
+                "AirtableName": "ArtifactAnalyses"
+            },
+            {
+                "Name": "AppUser",
+                "DisplayName": "AppUser",
+                "Description": "",
+                "PluralName": "AppUsers",
+                "AirtableName": "AppUsers"
+            },
+            {
+                "Name": "GenerationTransformer",
+                "DisplayName": "GenerationTransformer",
+                "Description": "",
+                "PluralName": "GenerationTransformers",
+                "AirtableName": "GenerationTransformers"
+            },
+            {
+                "Name": "Generation",
+                "DisplayName": "Generation",
+                "Description": "",
+                "PluralName": "Generations",
+                "AirtableName": "Generations"
+            },
+            {
+                "Name": "Trial",
+                "DisplayName": "Trial",
+                "Description": "",
+                "PluralName": "Trials",
+                "AirtableName": "Trials"
+            },
+            {
+                "Name": "ExperimentTransformer",
+                "DisplayName": "ExperimentTransformer",
+                "Description": "",
+                "PluralName": "ExperimentTransformers",
+                "AirtableName": "ExperimentTransformers"
+            },
+            {
+                "Name": "ExperimentFeature",
+                "DisplayName": "ExperimentFeature",
+                "Description": "",
+                "PluralName": "ExperimentFeatures",
+                "AirtableName": "ExperimentFeatures"
+            },
+            {
+                "Name": "DesignDecision",
+                "DisplayName": "DesignDecision",
+                "Description": "",
+                "PluralName": "DesignDecisions",
+                "AirtableName": "DesignDecisions"
+            },
+            {
+                "Name": "Experiment",
+                "DisplayName": "Experiment",
+                "Description": "",
+                "PluralName": "Experiments",
+                "AirtableName": "Experiments"
+            },
+            {
+                "Name": "LLM",
+                "DisplayName": "LLM",
+                "Description": "",
+                "PluralName": "LLMs",
+                "AirtableName": "LLMs"
+            }
+    ]
+}

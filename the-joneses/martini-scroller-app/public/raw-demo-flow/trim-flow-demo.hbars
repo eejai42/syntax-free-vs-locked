@@ -1,0 +1,79 @@
+{"DataFlow":[{{#each Airtable.NodeEdges}}
+  {
+    "Name": "{{Name}}",
+    "EdgeName": "{{EdgeName}}",
+    {{#unless (eq IsLeaf 0)}}"IsLeaf": {{IsLeaf}},
+    {{/unless}}{{#unless (eq (length FromNodeMasterColor) 0)}}"FromNodeMasterColor": "{{FromNodeMasterColor}}",
+    {{/unless}}"FromNodeFlowType": "{{FromNodeFlowType}}",
+    "FromNodeName": "{{FromNodeName}}",
+    "TransformerNodeFlowType": "{{TransformerNodeFlowType}}",
+    "TransformerNodeName": "{{TransformerNodeName}}",
+    "ToNodeType": "{{ToNodeType}}",
+    "ToNodeName": "{{ToNodeName}}",
+    "OutputFileName": "{{OutputFileName}}",
+    "ExpectedColor": "{{ExpectedColor}}",
+    "InterruptPropagationChain": "{{InterruptPropagationChain}}",
+    {{#unless (eq (length SkipForSyntaxFree) 0)}}"SkipForSyntaxFree": {{lowercase SkipForSyntaxFree}},
+    {{/unless}}{{#unless (eq (length ToNodeMasterColor) 0)}}"ToNodeMasterColor": "{{ToNodeMasterColor}}",
+    {{/unless}}{{#unless (eq HasSyntaxFreeParent 0)}}"HasSyntaxFreeParent": {{HasSyntaxFreeParent}},
+    {{/unless}}{{#unless (eq (length SyntaxFreeColor) 0)}}"IsSyntaxFreeCapable": true,
+    {{/unless}}{{#unless (eq (length LockedColor) 0)}}"LockedColor": "{{LockedColor}}",
+    {{/unless}}{{#unless (eq (length SyntaxFreeColor) 0)}}"SyntaxFreeColor": "{{SyntaxFreeColor}}",
+    {{/unless}}{{#unless (eq (length ParentFreeEdgeColor) 0)}}"ParentFreeEdgeColor": "{{ParentFreeEdgeColor}}",
+    {{/unless}}{{#unless (eq (length FromFreeEdgeToNodeType) 0)}}"FromFreeEdgeToNodeType": "{{FromFreeEdgeToNodeType}}",
+    {{/unless}}{{#unless (eq (length SyntaxFreeEdgeName) 0)}}"SyntaxFreeEdgeName": "{{SyntaxFreeEdgeName}}",
+    {{/unless}}{{#unless (eq (length FreeTranspilerNodeName) 0)}}"FreeTranspilerNodeName": "{{FreeTranspilerNodeName}}",
+    {{/unless}}{{#unless (eq (length SyntaxFreeEdgeOutputFileName) 0)}}"SyntaxFreeEdgeOutputFileName": "{{SyntaxFreeEdgeOutputFileName}}",
+    {{/unless}}{{#unless (eq (length ToNodeOutputIsCode) 0)}}"ToNodeOutputIsCode": "{{ToNodeOutputIsCode}}",
+    {{/unless}}
+    "LockedAttachments": [
+      {{#each LockedAttachments}}
+        "{{this.url}}"{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],
+    "FreeAttachments": [
+      {{#each FreeAttachments}}
+        "{{this.url}}"{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],
+    "FromNodeAttachments": [
+      {{#each FromNodeAttachments}}
+        "{{this.url}}"{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],
+    "ToNodeAttachments": [
+      {{#each ToNodeAttachments}}
+        "{{this.url}}"{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],
+    "TranspilerNodeAttachments": [
+      {{#each TranspilerNodeAttachments}}
+        "{{this.url}}"{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],
+    "FromEdgeLockedAttachments": [
+      {{#each FromEdgeLockedAttachments}}
+        "{{this.url}}"{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],
+    "FreeTranspilerAttachments": [
+      {{#each FreeTranspilerAttachments}}
+        "{{this.url}}"{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],
+    "FromEdgeFreeAttachments": [
+      {{#each FromEdgeFreeAttachments}}
+        "{{this.url}}"{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],
+    "ToNodePlatformAttachments": [
+      {{#each ToNodePlatformAttachments}}
+        "{{this.url}}"{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],
+    "ToNodeIsQueriable": "{{ToNodeIsQueriable}}",
+    "FromFreeEdgeIsQueriable": "{{FromFreeEdgeIsQueriable}}",
+    "IsUsed": {{IsUsed}}
+  }{{#unless @last}},{{/unless}}
+{{/each}}]
+}

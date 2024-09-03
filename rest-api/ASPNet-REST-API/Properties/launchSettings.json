@@ -1,0 +1,17 @@
+{
+    "profiles": {
+        "Docker": {
+            "commandName": "Docker",
+            "launchBrowser": true,
+            "launchUrl": "https://localhost:42016",
+            "environmentVariables": {
+                "ASPNETCORE_URLS": "https://+:42016",
+                "ASPNETCORE_HTTPS_PORT": "42016"
+            },
+            "sslPort": 42016,
+            "publishAllPorts": true,
+            "useSSL": true
+        }
+    },
+    "$schema": "https://json.schemastore.org/launchsettings.json"
+}

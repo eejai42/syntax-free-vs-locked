@@ -1,0 +1,95 @@
+[
+  {
+    "PythonFunctionSignatures": [
+      "get_personalized_recommendations(int user_id)",
+      "search_music(string query)",
+      "download_playlist(int user_id, int playlist_id)",
+      "share_playlist(int user_id, int playlist_id, string platform)",
+      "log_user_activity(int user_id, string activity_type, datetime timestamp)"
+    ]
+  },
+
+  {
+    "PythonFunctionSignatures": [
+      "get_personalized_recommendations(int user_id, List[str] history)",
+      "manage_playlist(int user_id, string playlist_name, string action, List[str] track_ids)",
+      "share_playlist(int user_id, string playlist_name, string social_media_platform)",
+      "download_for_offline(int user_id, List[str] track_ids)",
+      "voice_control(string command)"
+    ]
+  },
+
+  {
+    "PythonFunctionSignatures": [
+      "get_personalized_recommendations(str user_id, List[str] listening_history) -> List[str]",
+      "manage_playlist(str user_id, str playlist_name, str action, List[str] track_ids = None) -> Dict[str, List[str]]",
+      "download_for_offline(str user_id, List[str] track_ids) -> List[str]",
+      "voice_control(str command, str user_id) -> str",
+      "interact_with_live_stream(str user_id, str artist_id, str action, str message = '') -> str"
+    ]
+  },
+
+  {
+    "PythonFunctionSignatures": [
+      "get_recommendations(int user_id, List[str] listening_history)",
+      "manage_playlists(int user_id, str action, str playlist_id, List[str] track_ids = None)",
+      "enable_offline_playback(int user_id, List[str] track_ids)",
+      "voice_command_handler(str command)",
+      "live_stream_interaction(int artist_id, int user_id, str action, float amount = 0.0)"
+    ]
+  },
+  {
+    "PythonFunctionSignatures": [
+      "get_trending_tracks(limit=10)",
+      "recommend_tracks(user_id, num_recommendations=10)",
+      "manage_playlist(user_id, action, track_id)",
+      "download_for_offline(user_id, track_id)",
+      "handle_voice_command(command)"
+    ]
+  },
+  {
+    "PythonFunctionSignatures": [
+      "get_trending_tracks(int limit)",
+      "fetch_user_recommendations(int user_id)",
+      "download_song_for_offline(int song_id, int user_id)",
+      "handle_voice_command(string command)",
+      "stream_live_performance(int artist_id)"
+    ]
+  },
+  {
+    "PythonFunctionSignatures": [
+      "get_trending_tracks() -> list",
+      "get_recommendations(user_id: int) -> list",
+      "download_song(song_id: int) -> bool",
+      "search_music(query: str) -> list",
+      "share_playlist(playlist_id: int, user_id: int) -> bool"
+    ]
+  },
+  {
+    "PythonFunctionSignatures": [
+      "get_personalized_recommendations(int user_id)",
+      "create_playlist(int user_id, string playlist_name)",
+      "download_songs_for_offline(int user_id, list song_ids)",
+      "search_by_voice_command(string command)",
+      "stream_live_performance(int artist_id)"
+    ]
+  },
+  {
+    "PythonFunctionSignatures": [
+      "get_personal_recommendations(int user_id)",
+      "search_tracks(string query)",
+      "create_playlist(int user_id, string playlist_name, list tracks)",
+      "fetch_live_streams()",
+      "log_user_activity(int user_id, string action, datetime datetime)"
+    ]
+  },
+  {
+    "PythonFunctionSignatures": [
+      "get_user_recommendations(int user_id)",
+      "search_music(string query)",
+      "download_track(int track_id, int user_id)",
+      "log_user_action(int user_id, string action, datetime timestamp)",
+      "activate_voice_control(int user_id, string command)"
+    ]
+  }
+]

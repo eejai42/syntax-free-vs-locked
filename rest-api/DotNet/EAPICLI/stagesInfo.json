@@ -1,0 +1,14 @@
+[
+	{
+		"Stage": "develop",
+		"BaseID": "app9f8btt7lSPTpw1"
+	},
+	{
+		"Stage": "staging",
+		"BaseID": "app9f8btt7lSPTpw1"
+	},
+	{
+		"Stage": "production",
+		"BaseID": "app9f8btt7lSPTpw1"
+	}
+]

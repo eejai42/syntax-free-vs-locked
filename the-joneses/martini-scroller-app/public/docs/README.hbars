@@ -1,0 +1,292 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<style>
+
+.row {
+  margin: 0px;
+}
+  table {
+    font-size: normal;
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 1.5em;
+  }
+
+  .from-label, .to-label {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .match-status {
+    font-weight: bold; 
+    font-size: 1.3em;
+    width: 30em; 
+    margin-left: 1em;
+    min-height: 1.5rem; 
+    border: solid black 1px"
+    text-align: center;
+    color: #aaaaaa; 
+    text-align: center;
+  }
+
+  .goal {
+  }
+
+  .current {
+    float: left; 
+  }
+
+  .unused {
+    font-size: 0.5em;
+    border: solid green 10px;
+    background-color: #c9c9c9;
+    text-decoration: line-through;
+  }
+
+  .in-sync {
+    height: 1em;
+    margin: 10px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #edfded;
+  }
+
+  .out-of-sync {
+    border: solid red 10px;
+    background-color: #fde3e3;
+  }
+
+  .missing-layer {
+    margin: 2rem; 
+    padding: 5%;
+    background-color: #eeee00;
+    border-radius: 3em;
+  }
+
+  .stale {
+    color: red; 
+    font-size: 1.5em;
+    font-weight: bold; 
+    width: 90%; 
+    text-align: center; 
+    background-color: #FFFFFF; 
+    margin-left: auto; 
+    margin-right: auto
+  }
+
+  .platform-image {
+    margin: 0.5rem; 
+    margin-left: 2em;
+    margin-top: 2em;
+    width: 6rem; 
+  }
+
+  .from-node-image {
+    padding: 0rem; 
+    border-right: dashed black 3px; 
+    height: 22rem;
+    width: 12rem;
+    padding-top: 0;
+  }
+
+  .transpiler-attachments {
+    margin: 0.5rem; 
+    width: 5rem; 
+    float: left;
+  }
+
+  .from-node-attachment {
+    margin: 0.5rem; 
+    width: 8rem;
+  }
+
+  .transpiler-node {
+    padding-before: 2em;
+    min-width: 45rem;
+    height: 23rem;
+    margin: 0rem;
+    border: solid #eeeeee 3px;
+  }
+
+
+
+
+  body {
+    font-size: 1rem;
+  }
+
+</style>
+{{#with this}}
+
+<table style="max-width: 100rem;">
+<tbody>
+<tr><td valign="top" style="max-width: 55rem;">
+
+<h1 style="text-align: center; wrap: none;">Syntax-Locked Methodology</h1>
+
+  {{#each this }}
+    {{#each this }}
+      <div class="transpiler-node {{#if (eq IsUsed 0)}}unused{{else}}{{#unless (eq (length LockedColor) 0)}}{{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}{{/unless}}{{/if}}">
+
+        <table style="border: none; width: 55em;">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 12rem; background-color: {{ExpectedColor}};">
+                <div class="from-node-image">
+                  {{#if FromNodeAttachments}}
+                    {{#each FromNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromNodeAttachments_{{@index}}.png" alt="From Node Attachment Image" class="from-node-attachment">{{/each}}
+                  {{/if}}
+                  <div class="from-label">
+                    {{FromNodeName}} {{#if (eq IsUsed 0)}} ( unused ){{/if}} ➡ 
+                  </div>
+                  <div>
+                    {{#if ToNodePlatformAttachments}}
+                      {{#each ToNodePlatformAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodePlatformAttachments_{{@index}}.png" alt="To Node Platform Attachment Image" class="platform-image">{{/each}}
+                    {{/if}}
+                    <div class="to-label">
+                      {{EdgeName}}
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td valign="top" style="padding: 0.25em;">
+      {{#if (eq (length LockedColor) 0)}}
+        <div style="margin: 0.5rem; margin-bottom: 2rem; text-align: center; horizontal-align: middle;">
+          <div class="missing-layer">-- Missing Layer --</div>
+        </div>
+      {{else}}
+              <table><tr>
+                <td valign="top" colspan="3">
+                  <div class="match-status current {{#if (eq LockedColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{LockedColor}};">{{LockedColor}}
+                    {{#unless (eq LockedColor ExpectedColor)}}
+                      <div class="stale">Stale Artifacts</div>
+                    {{/unless}}
+                  </div>
+                </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+
+                <tr><td colSpan="1">
+                  {{#if TranspilerNodeAttachments}}
+                    {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
+                  {{/if}}
+                  <h4 style="clear: left">{{TransformerNodeName}}</h4>
+                </td><td colspan="2" style="text-align: center">
+                  <div style="display: block;">
+                    {{#if ToNodeAttachments}}
+                      {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">{{/each}}
+                    {{/if}}
+                  </div>
+
+                  <div>➡ {{OutputFileName}}</div>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>{{ToNodeType}}</b> {{ToNodeName}}
+                  </div>
+                  
+                  <div style="display: block; clear: left;"></div>
+                </td></tr>
+              </table>
+      {{/if}}
+            </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+
+          </tbody>
+        </table>
+        <div style="display: block; clear: left;"></div>
+  </div>
+  {{/each}}
+{{/each}}
+
+
+</td>
+<td valign="top" style="max-width: 55rem;">
+
+
+
+<h1 style="text-align: center">Syntax-Free Methodology</h1>
+
+  {{#each this }}
+    {{#each this }}
+        <div class="transpiler-node {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}">
+
+      {{#unless false}}
+
+        <table style="border: none; width: 100%;">
+        <tr>
+        <td></td>
+        <td valign="top" style="padding: 0.25em;">
+          <table><tr>
+            <td valign="top" colspan="3">
+              <div class="match-status current match-row  {{#if (eq SyntaxFreeColor ExpectedColor)}}in-sync{{else}}out-of-sync{{/if}}" style="background-color: {{SyntaxFreeColor}};">{{SyntaxFreeColor}}
+              
+              {{#unless (eq SyntaxFreeColor ExpectedColor)}}
+                <div class="stale">Stale Artifacts</div>
+              {{/unless}}
+
+              </div>
+
+
+            </td>
+            <tr><td colspan="3"><div style="min-height: 1.5em;" /></td></tr>
+            <tr>
+              <td colSpan="1">
+                <div style="padding: 1em; min-width: 12em;">  
+                  {{#if TranspilerNodeAttachments}}
+                    {{#each TranspilerNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_TranspilerNodeAttachments_{{@index}}.png" alt="Transpiler Node Attachment Image" class="transpiler-attachments">{{/each}}
+                  {{/if}}
+                  <h4 style="clear: left">{{TransformerNodeName}}</h4>
+                </div>
+              </td>
+              <td colSpan="2">
+                <div style="padding: 1em;">  
+
+                <table><tr><td  style="text-align: center">
+                  {{#if FromEdgeFreeAttachments}}
+                    {{#each FromEdgeFreeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FromEdgeFreeAttachments_{{@index}}.png" alt="From Edge Free Attachment Image" style="margin: 0.5rem; width: 5rem; float: left;">{{/each}}
+                  {{/if}}
+                </td><td style="text-align: center">
+                  {{#if FreeTranspilerAttachments}}
+                    {{#each FreeTranspilerAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_FreeTranspilerAttachments_{{@index}}.png" alt="FreeTranspilerAttachment Image" style="margin: 0.5rem; width: 5rem;">{{/each}}
+                  {{/if}}
+                </td><td  style="text-align: center">
+
+                  {{#if ToNodeAttachments}}
+                    {{#each ToNodeAttachments}}<img src="../transpiler-images/{{replace ../FromNodeName ' ' '_'}}/{{replace (replace ../EdgeName ' ' '_') '#' '%23'}}_ToNodeAttachments_{{@index}}.png" alt="To Node Attachment Image" style="margin: 0.5rem; width: 6rem;">{{/each}}
+                  {{/if}}
+                </td></tr><td>
+
+                      {{#if (eq (length TransformerNodeName) 0)}}{{TransformerNodeName}}{{else}}{{SyntaxFreeEdgeOutputFileName}}{{/if}} 
+                </td><td>
+                      {{#unless (eq (length FreeTranspilerNodeName) 0)}} ➡ {{FreeTranspilerNodeName}} {{/unless}}
+                </td><td>
+                      ➡  <b>{{OutputFileName}}</b>                      
+                  </td></tr></table>
+                  <div style="text-align: right; padding: 0.5em;">
+                    <b>{{ToNodeType}}</b> {{ToNodeName}}
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+          <tr><td colspan="3" class="padding-bottom"></td></tr>
+        </table>
+        </div>
+      {{/unless}}
+    {{/each}}
+  {{/each}}
+</td>
+</tr>
+</tbody>
+</table>
+
+{{/with}}

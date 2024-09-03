@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "EAPICLI": {
+      "commandName": "Project",
+      "commandLineArgs": "GetUsers",
+      "remoteDebugEnabled": false
+    }
+  }
+}

@@ -1,0 +1,3587 @@
+<Airtable xmlns:json="http://james.newtonking.com/projects/json">
+  <Experiments json:Array="true">
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <Generations json:Array="true">recWwVkUT8wc1zSyC</Generations>
+    <Generations json:Array="true">recmBq2JG52grVKBr</Generations>
+    <Generations json:Array="true">rec7ka3c4BGjhN9dN</Generations>
+    <Generations json:Array="true">rec7gQazwWTs39YDk</Generations>
+    <Generations json:Array="true">recjQkUQEHnyqQK3K</Generations>
+    <Generations json:Array="true">recfndFgycb2Lvub1</Generations>
+    <Generations json:Array="true">rec4u0oAL96jOz25A</Generations>
+    <Generations json:Array="true">rec5B1YhbQho4yzeS</Generations>
+    <Generations json:Array="true">recBNe7Vq3OWOdkUr</Generations>
+    <Generations json:Array="true">recpq95lILCoWOMyS</Generations>
+    <Generations json:Array="true">recO0h53dJJKrUmG8</Generations>
+    <ExpTransformers json:Array="true">recQzt8ZwxUMZjlwS</ExpTransformers>
+    <ExpTransformers json:Array="true">recG6QbNZGIWnqxb2</ExpTransformers>
+    <ExpTransformers json:Array="true">recSRuHKkZmwHINk6</ExpTransformers>
+    <ExpTransformers json:Array="true">recaHRXNnNuhvhvbz</ExpTransformers>
+    <ExpTransformers json:Array="true">rec0zZsvQ93wxHnwH</ExpTransformers>
+    <ExpTransformers json:Array="true">recluJNtspj3gGDsa</ExpTransformers>
+    <ExpTransformers json:Array="true">recvlmgnJuIuc113J</ExpTransformers>
+    <ExpTransformers json:Array="true">reciQUcauehxklMYi</ExpTransformers>
+    <ExpTransformers json:Array="true">recjfznKlLfFGX2wV</ExpTransformers>
+    <ExpTransformers json:Array="true">recG613I1Dzd6bcKX</ExpTransformers>
+    <ExpTransformers json:Array="true">recaA5iJAzZYc3kaY</ExpTransformers>
+    <ExpTransformers json:Array="true">recWmsUYb7maZZDv4</ExpTransformers>
+    <ExpTransformers json:Array="true">recmn5czMOPk9AfqV</ExpTransformers>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpFeatures json:Array="true">rec98Skf5JWdifQjf</ExpFeatures>
+    <ExpFeatures json:Array="true">reciR7oBaM2CINo2o</ExpFeatures>
+    <ExpFeatures json:Array="true">recIx9DhoslkTaOYO</ExpFeatures>
+    <ExpFeatures json:Array="true">recbjNeDl27Hs7k0d</ExpFeatures>
+    <ExpFeatures json:Array="true">recQRygl3ap0FRgYG</ExpFeatures>
+    <ExpFeatures json:Array="true">recMaXa4WyNWvFAOz</ExpFeatures>
+    <ExpFeatures json:Array="true">recSN3W2B6Kx5sOgj</ExpFeatures>
+    <ExpFeatures json:Array="true">recMpEle6fH2XU5UU</ExpFeatures>
+    <ExpFeatures json:Array="true">recl1JNvEjqq8jHQw</ExpFeatures>
+    <ExpFeatures json:Array="true">rec89XipnPVt4vnS1</ExpFeatures>
+    <ExpFeatures json:Array="true">recwpH3u5UE5y9JhA</ExpFeatures>
+    <ExpFeatures json:Array="true">recMWwE6zzlDnAhfR</ExpFeatures>
+    <ExpFeatures json:Array="true">rect4iemXq2VdC6KS</ExpFeatures>
+    <AutoNumber>4</AutoNumber>
+    <ExpName>To Do App</ExpName>
+    <Trials json:Array="true">recs7PrHNyer1w5m0</Trials>
+    <Trials json:Array="true">rect3F9OHoG6Z2T7j</Trials>
+    <PromptChainsToCreate>25</PromptChainsToCreate>
+    <ExpTransformerFullPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Remove employee from todo items.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Remove employee from todo items.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</ExpTransformerFullPrompts>
+    <ExpTransformerNames json:Array="true">5017-Write a 1 paragraph </ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5018-Add assigned to attr</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5020-Add the notion of du</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5021-Write a single-sourc</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5022-Remove employee from</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5023-Testing... Testing 1</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5024-Add assigned to attr</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5025-Add the notion of du</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5026-Remove employee from</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5027-Please write this in</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5028-Write a single-sourc</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5029-Please write this in</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5030-Write a 1 paragraph </ExpTransformerNames>
+    <ExpFeatureLowerNames json:Array="true">to-do items</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">categories</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">due dates</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">priorities</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">progress</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">statuses</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">reminders</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">notifications</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">completion</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">assigned-to</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">duration</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">completed date</ExpFeatureLowerNames>
+    <ExpFeatureLowerNames json:Array="true">todo colors</ExpFeatureLowerNames>
+    <FeaturesArray>['to-do items', 'categories', 'due dates', 'priorities', 'progress', 'statuses', 'reminders', 'notifications', 'completion', 'assigned-to', 'duration', 'completed date', 'todo colors']</FeaturesArray>
+    <SyntaxLockedTransformerNumbers json:Array="true">1026</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1030</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1031</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1032</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1033</SyntaxLockedTransformerNumbers>
+    <SyntaxLockedTransformerNumbers json:Array="true">1035</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1020</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1021</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1022</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1027</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1038</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1039</SyntaxFreeTransformerNumbers>
+    <ExpIdentifier>104</ExpIdentifier>
+    <Name>104-To Do App</Name>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 1020 
+python ./add-data.py add-root 5 1026 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1021 1020
+python ./add-data.py add-generation 5 1030 1026</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1022 1021
+python ./add-data.py add-generation 5 1031 1030</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1027 1022
+python ./add-data.py add-generation 5 1032 1031</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1033 1032
+python ./add-data.py add-generation 5 1038 1028</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-generation 5 1039 1038
+python ./add-data.py add-generation 5 1035 1033</GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <RunTrialScript>python ./add-data.py add-root 25 1020 
+python ./add-data.py add-root 25 1026 
+
+python ./add-data.py add-generation 25 1021 1020
+python ./add-data.py add-generation 25 1030 1026
+
+python ./add-data.py add-generation 25 1022 1021
+python ./add-data.py add-generation 25 1031 1030
+
+python ./add-data.py add-generation 25 1027 1022
+python ./add-data.py add-generation 25 1032 1031
+
+python ./add-data.py add-generation 25 1033 1032
+python ./add-data.py add-generation 25 1038 1028
+
+python ./add-data.py add-generation 25 1039 1038
+python ./add-data.py add-generation 25 1035 1033
+
+
+
+
+
+
+
+</RunTrialScript>
+    <ExpFeatureNames json:Array="true">ToDoItems</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">Categories</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">DueDates</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">Priorities</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">Progress</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">Statuses</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">Reminders</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">Notifications</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">Completion</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">AssignedTo</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">Duration</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">CompletedDate</ExpFeatureNames>
+    <ExpFeatureNames json:Array="true">ToDoColors</ExpFeatureNames>
+    <ValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ValidationPrompt>
+  </Experiments>
+  <Experiments json:Array="true">
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <Generations json:Array="true">recDXYMNu5oEP7bDE</Generations>
+    <Generations json:Array="true">recb394zuGgNoocna</Generations>
+    <Generations json:Array="true">recIzlejj3zgJpsbe</Generations>
+    <Generations json:Array="true">recHugSE0TVTs9mbC</Generations>
+    <Generations json:Array="true">recu82apHArRacXQa</Generations>
+    <Generations json:Array="true">recLfaOZmpCIIoBvN</Generations>
+    <Generations json:Array="true">recM8gQpLAMDrfmy2</Generations>
+    <Generations json:Array="true">recQ25sUtB1lbO9hT</Generations>
+    <Generations json:Array="true">reckMWuIsvk8gwwBc</Generations>
+    <Generations json:Array="true">recKTo0XJL25Kiflt</Generations>
+    <ExpTransformers json:Array="true">rec8FCcLAYBIGOxyo</ExpTransformers>
+    <ExpTransformers json:Array="true">recMDtAdYLUJiB32q</ExpTransformers>
+    <ExpTransformers json:Array="true">recYw8nlner6LTLpt</ExpTransformers>
+    <ExpTransformers json:Array="true">recH46rTQX2JIpz8Y</ExpTransformers>
+    <ExpTransformers json:Array="true">receC1RlgyEeyU6lT</ExpTransformers>
+    <ExpFeatures>recQV5E8VRhqC2s5v</ExpFeatures>
+    <AutoNumber>3</AutoNumber>
+    <ExpName>To Do App v2</ExpName>
+    <ExpTransformerFullPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo employees",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "duration",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completed date",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo colors",
+ "IsMissing": false
+ }
+ ]
+}</ExpTransformerFullPrompts>
+    <ExpTransformerNames json:Array="true">5011-Write a 1 paragraph </ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5012-Add employee to the </ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5014-Add the notion of du</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5016-Write a single-sourc</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5013-Which part(s) of the</ExpTransformerNames>
+    <FeaturesArray>['']</FeaturesArray>
+    <SyntaxFreeTransformerNumbers json:Array="true">1011</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1018</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1012</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9014</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9013</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1015</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9016</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1019</SyntaxFreeTransformerNumbers>
+    <ExpIdentifier>103</ExpIdentifier>
+    <Name>103-INACTIVE-To Do App v2</Name>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 1011 
+python ./add-data.py add-root 5 1018 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 1012 
+python ./add-data.py add-root 5 9014 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9013 
+python ./add-data.py add-root 5 1015 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9016 
+python ./add-data.py add-root 5 1019 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <RunTrialScript>python ./add-data.py add-root  1011 
+python ./add-data.py add-root  1018 
+
+python ./add-data.py add-root  1012 
+python ./add-data.py add-root  9014 
+
+python ./add-data.py add-root  9013 
+python ./add-data.py add-root  1015 
+
+python ./add-data.py add-root  9016 
+python ./add-data.py add-root  1019 
+
+
+
+
+
+
+
+
+
+
+
+</RunTrialScript>
+    <ExpFeatureNames>Unused</ExpFeatureNames>
+    <ValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ValidationPrompt>
+  </Experiments>
+  <Experiments json:Array="true">
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <Generations json:Array="true">recMEUAHCWHP4zqT7</Generations>
+    <Generations json:Array="true">rec72KHseHTRZCNNt</Generations>
+    <Generations json:Array="true">recOOhsTc8QeS4QCL</Generations>
+    <Generations json:Array="true">recbFbC1OoPfUGK9K</Generations>
+    <ExpTransformers json:Array="true">recQNBM9btdtItZXf</ExpTransformers>
+    <ExpTransformers json:Array="true">recxJHT51V3p6yya0</ExpTransformers>
+    <ExpTransformers json:Array="true">recYz5vCD8OSNFiCl</ExpTransformers>
+    <ExpTransformers json:Array="true">rectaALVjH7R92fQz</ExpTransformers>
+    <ExpTransformers json:Array="true">recbmqVgtkNuIdNwp</ExpTransformers>
+    <ExpTransformers json:Array="true">recW9189SAZ84yv5u</ExpTransformers>
+    <ExpTransformers json:Array="true">recrLRqehI58winaK</ExpTransformers>
+    <ExpTransformers json:Array="true">recPgmmLnUmgL1iXk</ExpTransformers>
+    <ExpFeatures>recZcDMmUlOZ9RXHb</ExpFeatures>
+    <AutoNumber>1</AutoNumber>
+    <ExpName>To Do App v1</ExpName>
+    <ExpTransformerFullPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Write a csharp script, based on all of these details.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Write a golang script, based on all of these details.</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ }
+ ]
+}</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Is this a to-do-list app?  Yes/No</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">How many words are there?</ExpTransformerFullPrompts>
+    <ExpTransformerFullPrompts json:Array="true">Is this a contact management app?  Yes/No</ExpTransformerFullPrompts>
+    <ExpTransformerNames json:Array="true">5001-Write a 1 paragraph </ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5002-Write a single-sourc</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5003-Write a csharp scrip</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5004-Write a golang scrip</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5005-Which part(s) of the</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5006-Is this a to-do-list</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5007-How many words are t</ExpTransformerNames>
+    <ExpTransformerNames json:Array="true">5008-Is this a contact ma</ExpTransformerNames>
+    <FeaturesArray>['']</FeaturesArray>
+    <SyntaxFreeTransformerNumbers json:Array="true">1001</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1002</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1003</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1005</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9006</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9004</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9008</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9009</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9010</SyntaxFreeTransformerNumbers>
+    <ExpIdentifier>101</ExpIdentifier>
+    <Name>101-INACTIVE-To Do App v1</Name>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 1001 
+python ./add-data.py add-root 5 1002 
+python ./add-data.py add-root 5 1003 
+python ./add-data.py add-root 5 1005 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9006 
+python ./add-data.py add-root 5 9004 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9008 
+python ./add-data.py add-root 5 9009 </GenerationAddDataCommandScripts>
+    <GenerationAddDataCommandScripts json:Array="true">python ./add-data.py add-root 5 9010 </GenerationAddDataCommandScripts>
+    <RunTrialScript>python ./add-data.py add-root  1001 
+python ./add-data.py add-root  1002 
+python ./add-data.py add-root  1003 
+python ./add-data.py add-root  1005 
+
+python ./add-data.py add-root  9006 
+python ./add-data.py add-root  9004 
+
+python ./add-data.py add-root  9008 
+python ./add-data.py add-root  9009 
+
+python ./add-data.py add-root  9010 </RunTrialScript>
+    <ExpFeatureNames>Unused</ExpFeatureNames>
+    <ValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ValidationPrompt>
+  </Experiments>
+  <Experiments json:Array="true">
+    <ExpAbstract>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</ExpAbstract>
+    <Generations json:Array="true">rec1t3AsL3pvoMIAc</Generations>
+    <Generations json:Array="true">recdB0a7p1wMvfKFN</Generations>
+    <Generations json:Array="true">recKAw5Suu0iqdMdB</Generations>
+    <ExpTransformers>recLjf6jP0GmAZluB</ExpTransformers>
+    <ExpFeatures>recpq9qUjVAgWu2nO</ExpFeatures>
+    <AutoNumber>2</AutoNumber>
+    <ExpName>The Jones</ExpName>
+    <ExpTransformerNames>5010-</ExpTransformerNames>
+    <FeaturesArray>['']</FeaturesArray>
+    <ExpIdentifier>102</ExpIdentifier>
+    <Name>102-INACTIVE-The Jones</Name>
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <GenerationAddDataCommandScripts json:Array="true" />
+    <RunTrialScript></RunTrialScript>
+    <ExpFeatureNames>Unused</ExpFeatureNames>
+    <ValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ValidationPrompt>
+  </Experiments>
+  <ExperimentFeatures json:Array="true">
+    <Name>AssignedTo</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that associates employees with to-do items</Description>
+    <RequiredStartingAtGeneration>3</RequiredStartingAtGeneration>
+    <ExplicitlyRemovedAtGeneration>7</ExplicitlyRemovedAtGeneration>
+    <LowerName>assigned-to</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>ToDoItems</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that allows users to create and manage to-do items</Description>
+    <LowerName>to-do items</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>DueDates</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that allows users to set due dates for their to-do items</Description>
+    <LowerName>due dates</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>CompletedDate</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that records the completion date of to-do items</Description>
+    <RequiredStartingAtGeneration>5</RequiredStartingAtGeneration>
+    <LowerName>completed date</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Statuses</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that allows users to set statuses for their to-do items</Description>
+    <LowerName>statuses</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Notifications</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that sends notifications related to to-do items</Description>
+    <RequiredStartingAtGeneration>8</RequiredStartingAtGeneration>
+    <LowerName>notifications</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Progress</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that tracks the progress of to-do items</Description>
+    <RequiredStartingAtGeneration>9</RequiredStartingAtGeneration>
+    <LowerName>progress</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Unused</Name>
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Reminders</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that allows users to set reminders for their to-do items</Description>
+    <LowerName>reminders</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Unused</Name>
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Priorities</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that allows users to assign priority levels to their to-do items</Description>
+    <LowerName>priorities</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <fields />
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Categories</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that allows users to categorize their to-do items</Description>
+    <RequiredStartingAtGeneration>1</RequiredStartingAtGeneration>
+    <LowerName>categories</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Completion</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that marks to-do items as completed</Description>
+    <RequiredStartingAtGeneration>2</RequiredStartingAtGeneration>
+    <LowerName>completion</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Unused</Name>
+    <Experiment>reczle9XMG5vHdomS</Experiment>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>ToDoColors</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that allows users to assign colors to their to-do items</Description>
+    <RequiredStartingAtGeneration>6</RequiredStartingAtGeneration>
+    <LowerName>todo colors</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentFeatures json:Array="true">
+    <Name>Duration</Name>
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <Description>A feature that tracks the duration of to-do items</Description>
+    <RequiredStartingAtGeneration>4</RequiredStartingAtGeneration>
+    <LowerName>duration</LowerName>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+  </ExperimentFeatures>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Remove employee from todo items.</FullPrompt>
+    <GenerationTransformer>recMbJPAkrbktSLBw</GenerationTransformer>
+    <AutoNumber>22</AutoNumber>
+    <TransformerIdentifier>5022</TransformerIdentifier>
+    <Name>5022-Remove employee from</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <FullPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer>recGIzvOorwnUFv0e</GenerationTransformer>
+    <AutoNumber>11</AutoNumber>
+    <TransformerIdentifier>5011</TransformerIdentifier>
+    <Name>5011-Write a 1 paragraph </Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</FullPrompt>
+    <GenerationTransformer>recQqryPqWrLenFdE</GenerationTransformer>
+    <AutoNumber>27</AutoNumber>
+    <IsSyntaxFree>True</IsSyntaxFree>
+    <TransformerIdentifier>5027</TransformerIdentifier>
+    <Name>5027-Please write this in</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer>reclAn6w105mmMayi</GenerationTransformer>
+    <AutoNumber>18</AutoNumber>
+    <TransformerIdentifier>5018</TransformerIdentifier>
+    <Name>5018-Add assigned to attr</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <FullPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer>reciqR2XfiXA7rkeG</GenerationTransformer>
+    <AutoNumber>16</AutoNumber>
+    <TransformerIdentifier>5016</TransformerIdentifier>
+    <Name>5016-Write a single-sourc</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>reczle9XMG5vHdomS</Experiment>
+    <AutoNumber>10</AutoNumber>
+    <TransformerIdentifier>5010</TransformerIdentifier>
+    <Name>5010-</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</ExpAbstract>
+    <ExpName>102-INACTIVE-The Jones</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <FullPrompt>Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer json:Array="true">recul5xBQVwNMydZq</GenerationTransformer>
+    <GenerationTransformer json:Array="true">rechBx9YtjRtwXq1A</GenerationTransformer>
+    <AutoNumber>12</AutoNumber>
+    <TransformerIdentifier>5012</TransformerIdentifier>
+    <Name>5012-Add employee to the </Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <FullPrompt>Is this a contact management app?  Yes/No</FullPrompt>
+    <GenerationTransformer>rec6UpP4NzYKOVZOj</GenerationTransformer>
+    <AutoNumber>8</AutoNumber>
+    <TransformerIdentifier>5008</TransformerIdentifier>
+    <Name>5008-Is this a contact ma</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <FullPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer>recCx7s2jCkGVp8BN</GenerationTransformer>
+    <AutoNumber>1</AutoNumber>
+    <TransformerIdentifier>5001</TransformerIdentifier>
+    <Name>5001-Write a 1 paragraph </Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer>reca7Gfxv0KMLAOJz</GenerationTransformer>
+    <AutoNumber>17</AutoNumber>
+    <TransformerIdentifier>5017</TransformerIdentifier>
+    <Name>5017-Write a 1 paragraph </Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</FullPrompt>
+    <GenerationTransformer>reckeYQjRL4jvd0jY</GenerationTransformer>
+    <AutoNumber>20</AutoNumber>
+    <TransformerIdentifier>5020</TransformerIdentifier>
+    <Name>5020-Add the notion of du</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <FullPrompt>Is this a to-do-list app?  Yes/No</FullPrompt>
+    <GenerationTransformer>recA14kPIaizrx2hY</GenerationTransformer>
+    <AutoNumber>6</AutoNumber>
+    <TransformerIdentifier>5006</TransformerIdentifier>
+    <Name>5006-Is this a to-do-list</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</FullPrompt>
+    <GenerationTransformer>recWYK5AUswVvirqk</GenerationTransformer>
+    <AutoNumber>29</AutoNumber>
+    <TransformerIdentifier>5029</TransformerIdentifier>
+    <Name>5029-Please write this in</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <FullPrompt>Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</FullPrompt>
+    <GenerationTransformer>recaiAC5xjsgvxCnl</GenerationTransformer>
+    <AutoNumber>14</AutoNumber>
+    <TransformerIdentifier>5014</TransformerIdentifier>
+    <Name>5014-Add the notion of du</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <FullPrompt>Write a csharp script, based on all of these details.</FullPrompt>
+    <GenerationTransformer>recaDdJWouKulO0MZ</GenerationTransformer>
+    <AutoNumber>3</AutoNumber>
+    <TransformerIdentifier>5003</TransformerIdentifier>
+    <Name>5003-Write a csharp scrip</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</FullPrompt>
+    <GenerationTransformer>recvNub7ngHZ5pEYi</GenerationTransformer>
+    <AutoNumber>28</AutoNumber>
+    <IsSyntaxFree>True</IsSyntaxFree>
+    <TransformerIdentifier>5028</TransformerIdentifier>
+    <Name>5028-Write a single-sourc</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer>recPrRjr5Pf8IiRdR</GenerationTransformer>
+    <AutoNumber>21</AutoNumber>
+    <IsSyntaxFree>True</IsSyntaxFree>
+    <TransformerIdentifier>5021</TransformerIdentifier>
+    <Name>5021-Write a single-sourc</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <FullPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ }
+ ]
+}</FullPrompt>
+    <GenerationTransformer json:Array="true">recBlNsq2bQqo5lzD</GenerationTransformer>
+    <GenerationTransformer json:Array="true">recS1LDJeoajssImk</GenerationTransformer>
+    <AutoNumber>5</AutoNumber>
+    <TransformerIdentifier>5005</TransformerIdentifier>
+    <Name>5005-Which part(s) of the</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <FullPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo employees",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "duration",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completed date",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo colors",
+ "IsMissing": false
+ }
+ ]
+}</FullPrompt>
+    <GenerationTransformer json:Array="true">recjzDANsnzbd1R07</GenerationTransformer>
+    <GenerationTransformer json:Array="true">recKqgS5QL0LFPQFW</GenerationTransformer>
+    <GenerationTransformer json:Array="true">recxndDytrKufEXZZ</GenerationTransformer>
+    <AutoNumber>13</AutoNumber>
+    <TransformerIdentifier>5013</TransformerIdentifier>
+    <Name>5013-Which part(s) of the</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer>recvZYuU4p338Dncl</GenerationTransformer>
+    <AutoNumber>25</AutoNumber>
+    <IsSyntaxFree>True</IsSyntaxFree>
+    <TransformerIdentifier>5025</TransformerIdentifier>
+    <Name>5025-Add the notion of du</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Remove employee from todo items.</FullPrompt>
+    <GenerationTransformer>recRPX4wi5krtc5MR</GenerationTransformer>
+    <AutoNumber>26</AutoNumber>
+    <IsSyntaxFree>True</IsSyntaxFree>
+    <TransformerIdentifier>5026</TransformerIdentifier>
+    <Name>5026-Remove employee from</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</FullPrompt>
+    <GenerationTransformer>rec9ffMsYT41EHvcl</GenerationTransformer>
+    <AutoNumber>23</AutoNumber>
+    <TransformerIdentifier>5023</TransformerIdentifier>
+    <Name>5023-Testing... Testing 1</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</FullPrompt>
+    <GenerationTransformer>recaont3llGhNnxrM</GenerationTransformer>
+    <AutoNumber>30</AutoNumber>
+    <TransformerIdentifier>5030</TransformerIdentifier>
+    <Name>5030-Write a 1 paragraph </Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <FullPrompt>How many words are there?</FullPrompt>
+    <GenerationTransformer>recpFH1D9efGH6y0G</GenerationTransformer>
+    <AutoNumber>7</AutoNumber>
+    <TransformerIdentifier>5007</TransformerIdentifier>
+    <Name>5007-How many words are t</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <FullPrompt>Write a golang script, based on all of these details.</FullPrompt>
+    <GenerationTransformer>recwcCSgtDWvgtgEa</GenerationTransformer>
+    <AutoNumber>4</AutoNumber>
+    <TransformerIdentifier>5004</TransformerIdentifier>
+    <Name>5004-Write a golang scrip</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <FullPrompt>Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer>recjRflJxgJCqBAai</GenerationTransformer>
+    <AutoNumber>24</AutoNumber>
+    <IsSyntaxFree>True</IsSyntaxFree>
+    <TransformerIdentifier>5024</TransformerIdentifier>
+    <Name>5024-Add assigned to attr</Name>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>104-To Do App</ExpName>
+  </ExperimentTransformers>
+  <ExperimentTransformers json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <FullPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</FullPrompt>
+    <GenerationTransformer>recNAPS31vIaKGEjx</GenerationTransformer>
+    <AutoNumber>2</AutoNumber>
+    <TransformerIdentifier>5002</TransformerIdentifier>
+    <Name>5002-Write a single-sourc</Name>
+    <IsActiveExp></IsActiveExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+  </ExperimentTransformers>
+  <Generations json:Array="true">
+    <Experiment>reczle9XMG5vHdomS</Experiment>
+    <GeneratioNumber>1</GeneratioNumber>
+    <Name>Generation-1</Name>
+    <ExpAbstract>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>102-INACTIVE-The Jones</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>6</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recaont3llGhNnxrM</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recvNub7ngHZ5pEYi</GenerationTransformers>
+    <Name>Generation-6</Name>
+    <SyntaxLockedTransformerNumbers>1035</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1039</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1039 1038</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1035 1033</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1039 1038
+python ./add-data.py add-generation 5 1035 1033</AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">1039</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1035</TransformerNumbers>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>7</GeneratioNumber>
+    <Name>Generation-7</Name>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <GeneratioNumber>2</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recA14kPIaizrx2hY</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recBlNsq2bQqo5lzD</GenerationTransformers>
+    <Name>Generation-2</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">9006</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9004</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9006 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9004 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9006 
+python ./add-data.py add-root 5 9004 </AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Is this a to-do-list app?  Yes/No</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ }
+ ]
+}</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">9006</TransformerNumbers>
+    <TransformerNumbers json:Array="true">9004</TransformerNumbers>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>3</GeneratioNumber>
+    <GenerationTransformers json:Array="true">reckeYQjRL4jvd0jY</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recvZYuU4p338Dncl</GenerationTransformers>
+    <Name>Generation-3</Name>
+    <SyntaxLockedTransformerNumbers>1031</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1022</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1022 1021</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1031 1030</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1022 1021
+python ./add-data.py add-generation 5 1031 1030</AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">1022</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1031</TransformerNumbers>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>2</GeneratioNumber>
+    <GenerationTransformers json:Array="true">reclAn6w105mmMayi</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recjRflJxgJCqBAai</GenerationTransformers>
+    <Name>Generation-2</Name>
+    <SyntaxLockedTransformerNumbers>1030</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1021</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1021 1020</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1030 1026</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1021 1020
+python ./add-data.py add-generation 5 1030 1026</AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">1021</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1030</TransformerNumbers>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>8</GeneratioNumber>
+    <Name>Generation-8</Name>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>1</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recGIzvOorwnUFv0e</GenerationTransformers>
+    <GenerationTransformers json:Array="true">reciqR2XfiXA7rkeG</GenerationTransformers>
+    <Name>Generation-1</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">1011</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1018</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1011 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1018 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 1011 
+python ./add-data.py add-root 5 1018 </AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">1011</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1018</TransformerNumbers>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>4</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recxndDytrKufEXZZ</GenerationTransformers>
+    <GenerationTransformers json:Array="true">rechBx9YtjRtwXq1A</GenerationTransformers>
+    <Name>Generation-4</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">9016</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1019</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9016 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1019 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9016 
+python ./add-data.py add-root 5 1019 </AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo employees",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "duration",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completed date",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo colors",
+ "IsMissing": false
+ }
+ ]
+}</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">9016</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1019</TransformerNumbers>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>3</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recKqgS5QL0LFPQFW</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recaiAC5xjsgvxCnl</GenerationTransformers>
+    <Name>Generation-3</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">9013</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1015</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9013 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1015 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9013 
+python ./add-data.py add-root 5 1015 </AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo employees",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "duration",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completed date",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo colors",
+ "IsMissing": false
+ }
+ ]
+}</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">9013</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1015</TransformerNumbers>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>reczle9XMG5vHdomS</Experiment>
+    <GeneratioNumber>3</GeneratioNumber>
+    <Name>Generation-3</Name>
+    <ExpAbstract>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>102-INACTIVE-The Jones</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>10</GeneratioNumber>
+    <Name>Generation-10</Name>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>6</GeneratioNumber>
+    <Name>Generation-6</Name>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>7</GeneratioNumber>
+    <Name>Generation-7</Name>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <GeneratioNumber>1</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recCx7s2jCkGVp8BN</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recNAPS31vIaKGEjx</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recaDdJWouKulO0MZ</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recwcCSgtDWvgtgEa</GenerationTransformers>
+    <Model>recInEVN8vXxYqxth</Model>
+    <Name>Generation-1</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">1001</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1002</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1003</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">1005</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1001 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1002 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1003 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1005 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 1001 
+python ./add-data.py add-root 5 1002 
+python ./add-data.py add-root 5 1003 
+python ./add-data.py add-root 5 1005 </AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Write a csharp script, based on all of these details.</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Write a golang script, based on all of these details.</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">1001</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1002</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1003</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1005</TransformerNumbers>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>10</GeneratioNumber>
+    <Name>Generation-10</Name>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <GeneratioNumber>3</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recpFH1D9efGH6y0G</GenerationTransformers>
+    <GenerationTransformers json:Array="true">rec6UpP4NzYKOVZOj</GenerationTransformers>
+    <Name>Generation-3</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">9008</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9009</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9008 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9009 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9008 
+python ./add-data.py add-root 5 9009 </AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">How many words are there?</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Is this a contact management app?  Yes/No</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">9008</TransformerNumbers>
+    <TransformerNumbers json:Array="true">9009</TransformerNumbers>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>8</GeneratioNumber>
+    <Name>Generation-8</Name>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>0</GeneratioNumber>
+    <GenerationTransformers>rec9ffMsYT41EHvcl</GenerationTransformers>
+    <Name>Generation-0</Name>
+    <GenerationTransformRawPrompts>Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</GenerationTransformRawPrompts>
+    <TransformerNumbers>1028</TransformerNumbers>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>2</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recul5xBQVwNMydZq</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recjzDANsnzbd1R07</GenerationTransformers>
+    <Name>Generation-2</Name>
+    <SyntaxFreeTransformerNumbers json:Array="true">1012</SyntaxFreeTransformerNumbers>
+    <SyntaxFreeTransformerNumbers json:Array="true">9014</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1012 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 9014 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 1012 
+python ./add-data.py add-root 5 9014 </AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo employees",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "duration",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completed date",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo colors",
+ "IsMissing": false
+ }
+ ]
+}</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">1012</TransformerNumbers>
+    <TransformerNumbers json:Array="true">9014</TransformerNumbers>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>recW1A5DedlYoR6An</Experiment>
+    <GeneratioNumber>4</GeneratioNumber>
+    <GenerationTransformers>recS1LDJeoajssImk</GenerationTransformers>
+    <Name>Generation-4</Name>
+    <SyntaxFreeTransformerNumbers>9010</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands>python ./add-data.py add-root 5 9010 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 9010 </AddDataCommandScript>
+    <GenerationTransformRawPrompts>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ }
+ ]
+}</GenerationTransformRawPrompts>
+    <TransformerNumbers>9010</TransformerNumbers>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>101-INACTIVE-To Do App v1</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>reczle9XMG5vHdomS</Experiment>
+    <GeneratioNumber>2</GeneratioNumber>
+    <Name>Generation-2</Name>
+    <ExpAbstract>Alice and Bob Jones have a 12 year old son Charlie, who has a White, Fluffy Dog name Dingo.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>102-INACTIVE-The Jones</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>5</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recQqryPqWrLenFdE</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recWYK5AUswVvirqk</GenerationTransformers>
+    <Name>Generation-5</Name>
+    <SyntaxLockedTransformerNumbers>1033</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1038</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1033 1032</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1038 1028</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1033 1032
+python ./add-data.py add-generation 5 1038 1028</AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">1033</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1038</TransformerNumbers>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>4</GeneratioNumber>
+    <GenerationTransformers json:Array="true">recMbJPAkrbktSLBw</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recRPX4wi5krtc5MR</GenerationTransformers>
+    <Name>Generation-4</Name>
+    <SyntaxLockedTransformerNumbers>1032</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1027</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1027 1022</GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-generation 5 1032 1031</GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-generation 5 1027 1022
+python ./add-data.py add-generation 5 1032 1031</AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Remove employee from todo items.</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Remove employee from todo items.</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">1027</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1032</TransformerNumbers>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>9</GeneratioNumber>
+    <Name>Generation-9</Name>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>1</GeneratioNumber>
+    <GenerationTransformers json:Array="true">reca7Gfxv0KMLAOJz</GenerationTransformers>
+    <GenerationTransformers json:Array="true">recPrRjr5Pf8IiRdR</GenerationTransformers>
+    <Name>Generation-1</Name>
+    <SyntaxLockedTransformerNumbers>1026</SyntaxLockedTransformerNumbers>
+    <SyntaxFreeTransformerNumbers>1020</SyntaxFreeTransformerNumbers>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1020 </GenerationTransformerAddDataCommands>
+    <GenerationTransformerAddDataCommands json:Array="true">python ./add-data.py add-root 5 1026 </GenerationTransformerAddDataCommands>
+    <AddDataCommandScript>python ./add-data.py add-root 5 1020 
+python ./add-data.py add-root 5 1026 </AddDataCommandScript>
+    <GenerationTransformRawPrompts json:Array="true">Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <GenerationTransformRawPrompts json:Array="true">Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</GenerationTransformRawPrompts>
+    <TransformerNumbers json:Array="true">1020</TransformerNumbers>
+    <TransformerNumbers json:Array="true">1026</TransformerNumbers>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec1moh66lbXJerna</Experiment>
+    <GeneratioNumber>9</GeneratioNumber>
+    <Name>Generation-9</Name>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <ExpName>104-To Do App</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <Generations json:Array="true">
+    <Experiment>rec2FEIFfgH75YILP</Experiment>
+    <GeneratioNumber>5</GeneratioNumber>
+    <Name>Generation-5</Name>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <ExpName>103-INACTIVE-To Do App v2</ExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </Generations>
+  <GenerationTransformers json:Array="true">
+    <Generation>recOOhsTc8QeS4QCL</Generation>
+    <ExpTransformer>recPgmmLnUmgL1iXk</ExpTransformer>
+    <TrialArtifacts json:Array="true">recGgIExtJmOcAnPq</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec0EMy4IbK2ji9Me</TrialArtifacts>
+    <AutoNumber>9</AutoNumber>
+    <IsArtifactValidator>True</IsArtifactValidator>
+    <TransformerNumber>9009</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-3</GenerationName>
+    <Name>9009-LOCKED-Generation-3-5008-Is this a contact ma</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9009 </AddDataCommand>
+    <RawPrompt>Is this a contact management app?  Yes/No</RawPrompt>
+    <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>101-INACTIVE-To Do App v1</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recWwVkUT8wc1zSyC</Generation>
+    <ExpTransformer>recluJNtspj3gGDsa</ExpTransformer>
+    <TrialArtifacts>recslvEbM7gSZ3RJn</TrialArtifacts>
+    <AutoNumber>28</AutoNumber>
+    <ParentTransformer>recMbJPAkrbktSLBw</ParentTransformer>
+    <TransformerNumber>1028</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-0</GenerationName>
+    <Name>1028-LOCKED-Generation-0-5023-Testing... Testing 1</Name>
+    <GenerationNumber>0</GenerationNumber>
+    <ParentTransformerNumber>1027</ParentTransformerNumber>
+    <RawPrompt>Testing... Testing 123.  Is this thing on?  :) I want to discuss the app above.  Are you with me?  One word answer please.  YES/NO!</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>rec72KHseHTRZCNNt</Generation>
+    <ExpTransformer>recW9189SAZ84yv5u</ExpTransformer>
+    <TrialArtifacts>recyfv3NkVgJlafHE</TrialArtifacts>
+    <AutoNumber>6</AutoNumber>
+    <IsArtifactValidator>True</IsArtifactValidator>
+    <TransformerNumber>9006</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-2</GenerationName>
+    <Name>9006-LOCKED-Generation-2-5006-Is this a to-do-list</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9006 </AddDataCommand>
+    <RawPrompt>Is this a to-do-list app?  Yes/No</RawPrompt>
+    <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>101-INACTIVE-To Do App v1</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>rec72KHseHTRZCNNt</Generation>
+    <ExpTransformer>recbmqVgtkNuIdNwp</ExpTransformer>
+    <AutoNumber>4</AutoNumber>
+    <IsArtifactValidator>True</IsArtifactValidator>
+    <TransformerNumber>9004</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-2</GenerationName>
+    <Name>9004-LOCKED-Generation-2-5005-Which part(s) of the</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9004 </AddDataCommand>
+    <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ }
+ ]
+}</RawPrompt>
+    <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>101-INACTIVE-To Do App v1</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recMEUAHCWHP4zqT7</Generation>
+    <ExpTransformer>recQNBM9btdtItZXf</ExpTransformer>
+    <TrialArtifacts>recrs04ZrVVS4UQWn</TrialArtifacts>
+    <AutoNumber>1</AutoNumber>
+    <TransformerNumber>1001</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>1001-LOCKED-Generation-1-5001-Write a 1 paragraph </Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1001 </AddDataCommand>
+    <RawPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>101-INACTIVE-To Do App v1</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recDXYMNu5oEP7bDE</Generation>
+    <ExpTransformer>rec8FCcLAYBIGOxyo</ExpTransformer>
+    <TrialArtifacts json:Array="true">recwr2cTFljE6Xn0j</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rechyYKE6CyKan7v3</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recjGyJTZk8GR9f6y</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recUgncdkZsUYhLMY</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recWgn2Sr4DeR9TZx</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recP0hyXRKqhCZXAR</TrialArtifacts>
+    <AutoNumber>11</AutoNumber>
+    <TransformerNumber>1011</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>1011-LOCKED-Generation-1-5011-Write a 1 paragraph </Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1011 </AddDataCommand>
+    <RawPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>103-INACTIVE-To Do App v2</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <AutoNumber>34</AutoNumber>
+    <TransformerNumber>1034</TransformerNumber>
+    <Name>1034-LOCKED--</Name>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recIzlejj3zgJpsbe</Generation>
+    <ExpTransformer>receC1RlgyEeyU6lT</ExpTransformer>
+    <AutoNumber>13</AutoNumber>
+    <IsArtifactValidator>True</IsArtifactValidator>
+    <TransformerNumber>9013</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-3</GenerationName>
+    <Name>9013-LOCKED-Generation-3-5013-Which part(s) of the</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9013 </AddDataCommand>
+    <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo employees",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "duration",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completed date",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo colors",
+ "IsMissing": false
+ }
+ ]
+}</RawPrompt>
+    <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>103-INACTIVE-To Do App v2</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recjQkUQEHnyqQK3K</Generation>
+    <ExpTransformer>rec0zZsvQ93wxHnwH</ExpTransformer>
+    <TrialArtifacts json:Array="true">rec1FAW0BUOEaK1y4</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rectbx6uzj1rhSKVb</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recU9jdtWk8qua5Zd</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recOktmeZhANJlXUQ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recAdU3SDFhZ3K4ry</TrialArtifacts>
+    <AutoNumber>27</AutoNumber>
+    <ParentTransformer>reckeYQjRL4jvd0jY</ParentTransformer>
+    <TransformerNumber>1027</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-4</GenerationName>
+    <Name>1027-LOCKED-Generation-4-5022-Remove employee from</Name>
+    <GenerationNumber>4</GenerationNumber>
+    <ParentTransformerNumber>1022</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1027 1022</AddDataCommand>
+    <RawPrompt>Remove employee from todo items.</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recMEUAHCWHP4zqT7</Generation>
+    <ExpTransformer>recxJHT51V3p6yya0</ExpTransformer>
+    <AutoNumber>2</AutoNumber>
+    <TransformerNumber>1002</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>1002-LOCKED-Generation-1-5002-Write a single-sourc</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1002 </AddDataCommand>
+    <RawPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>101-INACTIVE-To Do App v1</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recmBq2JG52grVKBr</Generation>
+    <ExpTransformer>recaHRXNnNuhvhvbz</ExpTransformer>
+    <TrialArtifacts json:Array="true">recp4NPUW6MfftAuH</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recuYcfhfZwxsBmER</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rectMTwieg0U6xMC8</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec9zGLITejfrpPv8</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recU2nPZdQhmlTJNz</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recue9vfGmocdFsSo</TrialArtifacts>
+    <AutoNumber>26</AutoNumber>
+    <TransformerNumber>1026</TransformerNumber>
+    <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>1026-FREE-Generation-1-5021-Write a single-sourc</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1026 </AddDataCommand>
+    <RawPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recfndFgycb2Lvub1</Generation>
+    <ExpTransformer>recG613I1Dzd6bcKX</ExpTransformer>
+    <TrialArtifacts json:Array="true">recxCaBLNHbgY8jzE</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recMY3XfurqBJ0wJn</TrialArtifacts>
+    <TrialArtifacts json:Array="true">reclxIqB1kslEZQR3</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recRpDODkc2FC8ESA</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recG38AhCCdsK8jQj</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rece06Zgog89B3RvG</TrialArtifacts>
+    <AutoNumber>33</AutoNumber>
+    <ParentTransformer>recRPX4wi5krtc5MR</ParentTransformer>
+    <TransformerNumber>1033</TransformerNumber>
+    <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-5</GenerationName>
+    <Name>1033-FREE-Generation-5-5027-Please write this in</Name>
+    <GenerationNumber>5</GenerationNumber>
+    <ParentTransformerNumber>1032</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1033 1032</AddDataCommand>
+    <RawPrompt>Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recjQkUQEHnyqQK3K</Generation>
+    <ExpTransformer>recjfznKlLfFGX2wV</ExpTransformer>
+    <TrialArtifacts json:Array="true">reco2pPyVm9fQLduJ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recsSP5jhocFRLEDb</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recv5t8uLltHVJ5vv</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recnf5BP6bTBdpgLc</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recn68jZH20LbMGTJ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec08xCxiEH5C8Zek</TrialArtifacts>
+    <AutoNumber>32</AutoNumber>
+    <ParentTransformer>recvZYuU4p338Dncl</ParentTransformer>
+    <TransformerNumber>1032</TransformerNumber>
+    <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-4</GenerationName>
+    <Name>1032-FREE-Generation-4-5026-Remove employee from</Name>
+    <GenerationNumber>4</GenerationNumber>
+    <ParentTransformerNumber>1031</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1032 1031</AddDataCommand>
+    <RawPrompt>Remove employee from todo items.</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recbFbC1OoPfUGK9K</Generation>
+    <ExpTransformer>recbmqVgtkNuIdNwp</ExpTransformer>
+    <AutoNumber>10</AutoNumber>
+    <IsArtifactValidator>True</IsArtifactValidator>
+    <TransformerNumber>9010</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-4</GenerationName>
+    <Name>9010-LOCKED-Generation-4-5005-Which part(s) of the</Name>
+    <GenerationNumber>4</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9010 </AddDataCommand>
+    <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ }
+ ]
+}</RawPrompt>
+    <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>101-INACTIVE-To Do App v1</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recfndFgycb2Lvub1</Generation>
+    <ExpTransformer>recWmsUYb7maZZDv4</ExpTransformer>
+    <TrialArtifacts json:Array="true">recOGR3FuQMkTo36g</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec5B6srLfY88H5Bu</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec9Uv4Smddck0gLd</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec6jkXqtnoYnTNMT</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recmvScnicsWBDNUc</TrialArtifacts>
+    <AutoNumber>38</AutoNumber>
+    <ParentTransformer>rec9ffMsYT41EHvcl</ParentTransformer>
+    <TransformerNumber>1038</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-5</GenerationName>
+    <Name>1038-LOCKED-Generation-5-5029-Please write this in</Name>
+    <GenerationNumber>5</GenerationNumber>
+    <ParentTransformerNumber>1028</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1038 1028</AddDataCommand>
+    <RawPrompt>Please write this in c#.  Don't embed the json - make the equivelant decisions, but expressed in c# instead of json.  Do not include any exposition (introductions, conclusions) - just give me the code please</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recmBq2JG52grVKBr</Generation>
+    <ExpTransformer>recQzt8ZwxUMZjlwS</ExpTransformer>
+    <TrialArtifacts json:Array="true">recAAhGue7KXL1l1q</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec5taQwBTEBYKfTW</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recRJ2ZpfiHcimVBk</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec2sCNpJCZhXJdC5</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recf4vjwgJkgv0hxZ</TrialArtifacts>
+    <AutoNumber>20</AutoNumber>
+    <TransformerNumber>1020</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>1020-LOCKED-Generation-1-5017-Write a 1 paragraph </Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1020 </AddDataCommand>
+    <RawPrompt>Write a 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recMEUAHCWHP4zqT7</Generation>
+    <ExpTransformer>recYz5vCD8OSNFiCl</ExpTransformer>
+    <AutoNumber>3</AutoNumber>
+    <TransformerNumber>1003</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>1003-LOCKED-Generation-1-5003-Write a csharp scrip</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1003 </AddDataCommand>
+    <RawPrompt>Write a csharp script, based on all of these details.</RawPrompt>
+    <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>101-INACTIVE-To Do App v1</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recIzlejj3zgJpsbe</Generation>
+    <ExpTransformer>recYw8nlner6LTLpt</ExpTransformer>
+    <TrialArtifacts json:Array="true">recOSo5PWsEJnVQ0W</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recEsqEXem2loLt94</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recX8xmFqhBkmzyhe</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec0hYbaFRDNkXw3y</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recUxuWNaxJOcS1CE</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rechR4NLpAgoApkMj</TrialArtifacts>
+    <AutoNumber>15</AutoNumber>
+    <TransformerNumber>1015</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-3</GenerationName>
+    <Name>1015-LOCKED-Generation-3-5014-Add the notion of du</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1015 </AddDataCommand>
+    <RawPrompt>Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</RawPrompt>
+    <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>103-INACTIVE-To Do App v2</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>rec4u0oAL96jOz25A</Generation>
+    <ExpTransformer>recmn5czMOPk9AfqV</ExpTransformer>
+    <TrialArtifacts json:Array="true">recSn4conv7TfE1ZA</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recqkRYlumEndgflP</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recmJKoUbkw54W3l5</TrialArtifacts>
+    <TrialArtifacts json:Array="true">reclfcplgj5aJTuAu</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rectRFriOd7AWjVHD</TrialArtifacts>
+    <AutoNumber>39</AutoNumber>
+    <ParentTransformer>recWYK5AUswVvirqk</ParentTransformer>
+    <TransformerNumber>1039</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-6</GenerationName>
+    <Name>1039-LOCKED-Generation-6-5030-Write a 1 paragraph </Name>
+    <GenerationNumber>6</GenerationNumber>
+    <ParentTransformerNumber>1038</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1039 1038</AddDataCommand>
+    <RawPrompt>Write a 1 paragraph description.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recHugSE0TVTs9mbC</Generation>
+    <ExpTransformer>recMDtAdYLUJiB32q</ExpTransformer>
+    <AutoNumber>19</AutoNumber>
+    <TransformerNumber>1019</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-4</GenerationName>
+    <Name>1019-LOCKED-Generation-4-5012-Add employee to the </Name>
+    <GenerationNumber>4</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1019 </AddDataCommand>
+    <RawPrompt>Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>103-INACTIVE-To Do App v2</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recDXYMNu5oEP7bDE</Generation>
+    <ExpTransformer>recH46rTQX2JIpz8Y</ExpTransformer>
+    <TrialArtifacts json:Array="true">recV6rXWhics3ZY6k</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recPqNJ985pQGysKY</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recPsoYAkPlZ4GEmR</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recRqPJdGTF6J171r</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recoJKi53SxLYJPrn</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recAGMoYHBB73VBqp</TrialArtifacts>
+    <AutoNumber>18</AutoNumber>
+    <TransformerNumber>1018</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>1018-LOCKED-Generation-1-5016-Write a single-sourc</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1018 </AddDataCommand>
+    <RawPrompt>Write a single-source-of-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>103-INACTIVE-To Do App v2</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>rec7ka3c4BGjhN9dN</Generation>
+    <ExpTransformer>recvlmgnJuIuc113J</ExpTransformer>
+    <TrialArtifacts json:Array="true">recsl2h85hr1dleJS</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec5wf3RsMoxt9f9V</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recF6aA0W5sZOgHAf</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recHbRevim0BlGpFM</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recyFpfZWFIIL6ASr</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recrpat6Rl9YPc0y6</TrialArtifacts>
+    <AutoNumber>30</AutoNumber>
+    <ParentTransformer>recPrRjr5Pf8IiRdR</ParentTransformer>
+    <TransformerNumber>1030</TransformerNumber>
+    <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-2</GenerationName>
+    <Name>1030-FREE-Generation-2-5024-Add assigned to attr</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <ParentTransformerNumber>1026</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1030 1026</AddDataCommand>
+    <RawPrompt>Add assigned to attribute on To Do Items.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recb394zuGgNoocna</Generation>
+    <ExpTransformer>receC1RlgyEeyU6lT</ExpTransformer>
+    <AutoNumber>14</AutoNumber>
+    <IsArtifactValidator>True</IsArtifactValidator>
+    <TransformerNumber>9014</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-2</GenerationName>
+    <Name>9014-LOCKED-Generation-2-5013-Which part(s) of the</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9014 </AddDataCommand>
+    <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo employees",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "duration",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completed date",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo colors",
+ "IsMissing": false
+ }
+ ]
+}</RawPrompt>
+    <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>103-INACTIVE-To Do App v2</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>rec7gQazwWTs39YDk</Generation>
+    <ExpTransformer>recSRuHKkZmwHINk6</ExpTransformer>
+    <TrialArtifacts json:Array="true">recdf2zLDa9FP22HM</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec8Wr3GsnNP7Gghd</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recdWPLfpAb5njpwt</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recd6gkxNsxzdKwnX</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recrpRozr2WQc40mz</TrialArtifacts>
+    <AutoNumber>22</AutoNumber>
+    <ParentTransformer>reclAn6w105mmMayi</ParentTransformer>
+    <TransformerNumber>1022</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-3</GenerationName>
+    <Name>1022-LOCKED-Generation-3-5020-Add the notion of du</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <ParentTransformerNumber>1021</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1022 1021</AddDataCommand>
+    <RawPrompt>Add the notion of duration.  Then write a 1 paragraph description of the app, be as complete and accurate as possible.  Tell the truth, the whole truth, and nothing but the truth,</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>rec7ka3c4BGjhN9dN</Generation>
+    <ExpTransformer>recG6QbNZGIWnqxb2</ExpTransformer>
+    <TrialArtifacts json:Array="true">rec6DRKYuaEVc7UQC</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recjgb29xpJeE6Afx</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec0EDj8l1KNXoldQ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rectLTuzK4wSIsqhQ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec5iM2CwNeGnMZzl</TrialArtifacts>
+    <AutoNumber>21</AutoNumber>
+    <ParentTransformer>reca7Gfxv0KMLAOJz</ParentTransformer>
+    <TransformerNumber>1021</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-2</GenerationName>
+    <Name>1021-LOCKED-Generation-2-5018-Add assigned to attr</Name>
+    <GenerationNumber>2</GenerationNumber>
+    <ParentTransformerNumber>1020</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1021 1020</AddDataCommand>
+    <RawPrompt>Add assigned to attribute on To Do Items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recOOhsTc8QeS4QCL</Generation>
+    <ExpTransformer>recrLRqehI58winaK</ExpTransformer>
+    <TrialArtifacts>recBR2KRmIwkX47Iy</TrialArtifacts>
+    <AutoNumber>8</AutoNumber>
+    <IsArtifactValidator>True</IsArtifactValidator>
+    <TransformerNumber>9008</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-3</GenerationName>
+    <Name>9008-LOCKED-Generation-3-5007-How many words are t</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9008 </AddDataCommand>
+    <RawPrompt>How many words are there?</RawPrompt>
+    <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>101-INACTIVE-To Do App v1</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recb394zuGgNoocna</Generation>
+    <ExpTransformer>recMDtAdYLUJiB32q</ExpTransformer>
+    <TrialArtifacts json:Array="true">recLwlGmpbQcOAavZ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recXjqOpM0idw2MjH</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recnISd4YDCaw8hXZ</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recC375nFEb2Hojb3</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recxCKLnsUTqEWzeb</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recCT3CK2P0k1IjE0</TrialArtifacts>
+    <AutoNumber>12</AutoNumber>
+    <TransformerNumber>1012</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-2</GenerationName>
+    <Name>1012-LOCKED-Generation-2-5012-Add employee to the </Name>
+    <GenerationNumber>2</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1012 </AddDataCommand>
+    <RawPrompt>Add employee to the to do items.  Then rewrite the 1 paragraph description.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>103-INACTIVE-To Do App v2</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>rec4u0oAL96jOz25A</Generation>
+    <ExpTransformer>recaA5iJAzZYc3kaY</ExpTransformer>
+    <TrialArtifacts json:Array="true">recV5gAGwD71Ipuhm</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recs3d0ubIFAaOQdi</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recohHZ1q5Bj5qkJ2</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec9rz3u6Tzm3pOhU</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recclC2jfw4FlgtHY</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recxzkDJht6GWuHZz</TrialArtifacts>
+    <AutoNumber>35</AutoNumber>
+    <ParentTransformer>recQqryPqWrLenFdE</ParentTransformer>
+    <TransformerNumber>1035</TransformerNumber>
+    <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-6</GenerationName>
+    <Name>1035-FREE-Generation-6-5028-Write a single-sourc</Name>
+    <GenerationNumber>6</GenerationNumber>
+    <ParentTransformerNumber>1033</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1035 1033</AddDataCommand>
+    <RawPrompt>Write a single-source-of-truth.json.  Infer as much detail as you can from the c#.  Tell the truth, the whole truth, and nothing but the truth.  Do not include any exposition (introductions, conclusions) - just give me the code please</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>rec7gQazwWTs39YDk</Generation>
+    <ExpTransformer>reciQUcauehxklMYi</ExpTransformer>
+    <TrialArtifacts json:Array="true">rec9xIo4BhmWNuRsa</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recYvZHlVpwfzjEVn</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recWiM6U1KNguBBJD</TrialArtifacts>
+    <TrialArtifacts json:Array="true">rec1g5harPK4EkWRj</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recXqx6oeknIIiWCP</TrialArtifacts>
+    <TrialArtifacts json:Array="true">recwCHRafRXzkGcaB</TrialArtifacts>
+    <AutoNumber>31</AutoNumber>
+    <ParentTransformer>recjRflJxgJCqBAai</ParentTransformer>
+    <TransformerNumber>1031</TransformerNumber>
+    <ExpTransformerIsSyntaxFree>True</ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-3</GenerationName>
+    <Name>1031-FREE-Generation-3-5025-Add the notion of du</Name>
+    <GenerationNumber>3</GenerationNumber>
+    <ParentTransformerNumber>1030</ParentTransformerNumber>
+    <AddDataCommand>python ./add-data.py add-generation 5 1031 1030</AddDataCommand>
+    <RawPrompt>Add the notion of duration.  Then rewrite the single-source-truth.json.  Be as complete, accurate and inclusive as possible.  Tell the truth, the whole truth, and nothing but the truth.</RawPrompt>
+    <GenerationExp>rec1moh66lbXJerna</GenerationExp>
+    <ExpAbstract>Version 1.3 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp>True</IsActiveExp>
+    <GenerationExpName>104-To Do App</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):ToDoItems, Categories, DueDates, Priorities, Progress, Statuses, Reminders, Notifications, Completion, AssignedTo, Duration, CompletedDate, ToDoColors
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "ToDoItems", IsMissing?, AKA? },
+{"KeywordName": "Categories", IsMissing?, AKA? },
+{"KeywordName": "DueDates", IsMissing?, AKA? },
+{"KeywordName": "Priorities", IsMissing?, AKA? },
+{"KeywordName": "Progress", IsMissing?, AKA? },
+{"KeywordName": "Statuses", IsMissing?, AKA? },
+{"KeywordName": "Reminders", IsMissing?, AKA? },
+{"KeywordName": "Notifications", IsMissing?, AKA? },
+{"KeywordName": "Completion", IsMissing?, AKA? },
+{"KeywordName": "AssignedTo", IsMissing?, AKA? },
+{"KeywordName": "Duration", IsMissing?, AKA? },
+{"KeywordName": "CompletedDate", IsMissing?, AKA? },
+{"KeywordName": "ToDoColors", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recMEUAHCWHP4zqT7</Generation>
+    <ExpTransformer>rectaALVjH7R92fQz</ExpTransformer>
+    <AutoNumber>5</AutoNumber>
+    <TransformerNumber>1005</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-1</GenerationName>
+    <Name>1005-LOCKED-Generation-1-5004-Write a golang scrip</Name>
+    <GenerationNumber>1</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 1005 </AddDataCommand>
+    <RawPrompt>Write a golang script, based on all of these details.</RawPrompt>
+    <GenerationExp>recW1A5DedlYoR6An</GenerationExp>
+    <ExpAbstract>Version 1.0 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>101-INACTIVE-To Do App v1</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <GenerationTransformers json:Array="true">
+    <Generation>recHugSE0TVTs9mbC</Generation>
+    <ExpTransformer>receC1RlgyEeyU6lT</ExpTransformer>
+    <AutoNumber>16</AutoNumber>
+    <IsArtifactValidator>True</IsArtifactValidator>
+    <TransformerNumber>9016</TransformerNumber>
+    <ExpTransformerIsSyntaxFree></ExpTransformerIsSyntaxFree>
+    <GenerationName>Generation-4</GenerationName>
+    <Name>9016-LOCKED-Generation-4-5013-Which part(s) of the</Name>
+    <GenerationNumber>4</GenerationNumber>
+    <AddDataCommand>python ./add-data.py add-root 5 9016 </AddDataCommand>
+    <RawPrompt>Which part(s) of the content above are of this specification, and if they are, what are they called? (like, maybe "due dates" are called "deadlines" - for example, AKA).  Look for these features to either be present, missing, or named/referenced differently (AKAs): to-do items, categories, due dates, priorities, progress, statuses, reminders, notifications, completion. Format your response like this:
+
+{
+ "Features":["Feature xyz", "Feature ...",...],
+ "keywords": [
+ {
+ "Keyword Name": "to-do items",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "categories",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "due dates",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "priorities",
+ "IsMissing": false,
+ "AKA": "priority levels"
+ },
+ {
+ "Keyword Name": "progress",
+ "IsMissing": false,
+ "AKA": "progress tracker"
+ },
+ {
+ "Keyword Name": "statuses",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "reminders",
+ "IsMissing": true
+ },
+ {
+ "Keyword Name": "notifications",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completion",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo employees",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "duration",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "completed date",
+ "IsMissing": false
+ },
+ {
+ "Keyword Name": "todo colors",
+ "IsMissing": false
+ }
+ ]
+}</RawPrompt>
+    <GenerationExp>rec2FEIFfgH75YILP</GenerationExp>
+    <ExpAbstract>Version 1.2 of a do list app (To-Do Pro) with a 4 simple features, along with categorized to-do items with examples.</ExpAbstract>
+    <IsActiveExp></IsActiveExp>
+    <GenerationExpName>103-INACTIVE-To Do App v2</GenerationExpName>
+    <ExpValidationPrompt>What (if anything) of the content being validated is in the app/features listed below, &amp; if mentioned, what are they called? (ie"due dates" are AKA "deadlines"). Present/Missing/Different Name (i.e. AKA):Unused
+
+Format your response like this:
+{  "Features": ["Durations",Statuses",...],
+  "Keywords": [{  "Keyword Name": "priorities",
+  "IsMissing": true (if true),
+  "AKA": "priority levels" (if diff.)
+ },...]
+
+FULL Example: {
+ "Features":["Feature xyz", "Feature ...",...],
+ "Keywords": [{"KeywordName": "Unused", IsMissing?, AKA? }]</ExpValidationPrompt>
+  </GenerationTransformers>
+  <Entities json:Array="true">
+    <Name>Experiment</Name>
+    <PluralName>Experiments</PluralName>
+    <AirtableName>Experiments</AirtableName>
+  </Entities>
+  <Entities json:Array="true">
+    <Name>ExperimentFeature</Name>
+    <PluralName>ExperimentFeatures</PluralName>
+    <AirtableName>ExperimentFeatures</AirtableName>
+  </Entities>
+  <Entities json:Array="true">
+    <Name>ExperimentTransformer</Name>
+    <PluralName>ExperimentTransformers</PluralName>
+    <AirtableName>ExperimentTransformers</AirtableName>
+  </Entities>
+  <Entities json:Array="true">
+    <Name>Generation</Name>
+    <PluralName>Generations</PluralName>
+    <AirtableName>Generations</AirtableName>
+  </Entities>
+  <Entities json:Array="true">
+    <Name>GenerationTransformer</Name>
+    <PluralName>GenerationTransformers</PluralName>
+    <AirtableName>GenerationTransformers</AirtableName>
+  </Entities>
+</Airtable>

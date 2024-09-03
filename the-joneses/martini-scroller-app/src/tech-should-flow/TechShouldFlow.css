@@ -1,0 +1,245 @@
+th {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+
+.row {
+  margin: 0px;
+}
+
+table {
+  font-size: normal;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: -0.0rem;
+  text-align: center;
+  border-bottom: solid black 1px;
+}
+
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.from-label,
+.to-label {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.output-node {
+  padding: 0.25rem;
+  margin: 0rem auto;      /* Auto margins for horizontal centering, 1rem margin for top and bottom */
+  padding-left: 0%;
+  padding-right: 0%;
+  border: solid black 1px;
+  border-radius: 1rem;
+}
+
+.flow-arrow {
+  font-size: 3em;
+  font-weight: bold;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  color: green;
+  z-index: 9999999999999;
+}
+
+
+.pickerLabel {
+  background-color: white;
+  height: 22rem;
+  width: 90%;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  margin: auto;
+  margin-right: 1em;
+  text-align: center;
+  text-decoration: underline;
+  border-radius: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+
+
+.switch-icon {
+  border-radius: 3em;
+  float: left;
+  width: 2em; 
+  height: 2em;
+  margin: 0.2em;
+  margin-right: 0.4em;
+}
+
+.match-status {
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 24rem;
+  margin-left: 1rem;
+  min-height: 3rem;
+  border: solid black 1px;
+  text-align: center;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.choices-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 80vh;
+  text-align: center;
+  vertical-align: top;
+
+}
+
+.main-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100em;
+  height: 80vh;
+  text-align: center;
+  vertical-align: top;  
+}
+
+.main-table th {
+  border: solid black 1px;
+  background-color: #f8f8f8;
+}
+
+.main-table td {
+  text-align: center;
+  vertical-align: top;
+}
+
+.main-table div {
+  /* border: solid black 1px;
+  background-color: red; */
+  border-radius: 1rem;
+}
+
+
+.EraIcon {
+  width: 8em;
+  right: 3rem;
+  top: 5em;
+  position: absolute;
+  border-radius: 4em;
+  margin: 1em;
+}
+
+.node-table {
+  border-radius: 3rem;
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.node-header {
+  margin-bottom: 0rem;
+  width: 100%;
+}
+
+.node-table td {
+  width: auto;
+}
+
+.node-table div {
+  /* border: solid black 1px;
+  border-radius: 3rem; */
+  margin: 0.5rem;
+}
+
+.current {
+  float: left;
+}
+
+.unused {
+  font-size: 0.5rem;
+  border: solid green 3px;
+  background-color: #c9c9c9;
+  text-decoration: line-through;
+}
+
+.in-sync {
+  border: solid green 2px;
+  height: 1rem;
+  margin: 10px;
+  font-weight: normal;
+  text-align: center;
+  background-color: #eef8ee;
+}
+
+.out-of-sync {
+  border: solid red 1px;
+  background-color: #f8e9e9;
+}
+
+.missing-layer {
+  margin: 2rem;
+  padding: 5%;
+  background-color: #eeee00;
+  border-radius: 3rem;
+}
+
+.stale {
+  cursor: pointer;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.platform-image {
+  margin: 0.5rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  width: 7rem;
+}
+
+.from-node-image {
+  padding: 0rem;
+  border-right: dashed black 3px;
+  height: 22rem;
+  width: 12rem;
+  padding-top: 0;
+}
+
+.transpiler-attachments {
+  margin: 0.5rem;
+  width: 5rem;
+  float: left;
+}
+
+.from-node-attachment {
+  width: 8rem;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+.transpiler-node {
+  padding-top: 1rem;
+  height: 23rem;
+  min-height: 23rem;
+  margin: 0rem;
+  padding: 0rem
+}
